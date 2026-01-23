@@ -1,0 +1,2 @@
+#Localization files is for localized texts, such as names and descriptions.
+#Each localization file must be encoded in UTF-8 with BOM.

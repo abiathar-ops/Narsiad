@@ -1,4 +1,4 @@
-ioni = {
+x = {
 	color = { 0.98 0.92 0.84 }
 	
 	ethos = ethos_bureaucratic
@@ -25,64 +25,4 @@ ioni = {
 	ethnicities = {
 		10 = narso
 	}
-}
-
-asai = {
-	color = { 0.98 0.92 0.84 }
-	
-	ethos = ethos_bureaucratic
-	heritage = heritage_nars
-	language = language_nars
-	martial_custom = martial_custom_equal
-	head_determination = head_determination_domain
-
-	traditions = {
-		tradition_nars_war
-		tradition_nars_bastion_makers
-		tradition_nars_house_of_wisdom
-		tradition_nars_sowed_seeds
-	}
-	
-	name_list = name_list_nars
-	
-	coa_gfx = { chinese_group_coa_gfx }
-	building_gfx = { byzantine_building_gfx } 
-	clothing_gfx = { byzantine_clothing_gfx } 
-	unit_gfx = { eastern_unit_gfx } 	
-	house_coa_frame = house_china	
-	
-	ethnicities = {
-		10 = narso
-	}
-}
-
-# --- NEW NARSESI CULTURE ---
-narsesi = {
-    color = { 0.8 0.8 1.0 } 
-    
-    ethos = ethos_perfectionist
-    heritage = heritage_nars
-    language = language_nars
-    martial_custom = martial_custom_equal
-    head_determination = head_determination_domain
-    
-    traditions = {
-        tradition_nars_war
-        tradition_philosopher_culture
-        tradition_forest_fighters
-        tradition_musical_theorists
-        tradition_nars_eldaric_blood
-    }
-    
-    name_list = name_list_nars
-    
-    coa_gfx = { chinese_group_coa_gfx }
-    building_gfx = { byzantine_building_gfx } 
-    clothing_gfx = { byzantine_clothing_gfx } 
-    unit_gfx = { eastern_unit_gfx }     
-    house_coa_frame = house_china
-
-    ethnicities = {
-        10 = narso
-    }
 }

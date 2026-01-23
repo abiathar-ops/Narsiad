@@ -23,7 +23,7 @@ tradition_nars_war = {
 	}
 }
 
-tradition_nars_house_of_wisdom = { 
+tradition_nars_science = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
 	parameters = {
@@ -50,7 +50,7 @@ tradition_nars_house_of_wisdom = {
 	}
 }
 
-tradition_nars_bastion_makers = { 
+tradition_nars_engineering = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = jirga.dds }
 	parameters = {
@@ -74,7 +74,7 @@ tradition_nars_bastion_makers = {
 	}
 }
 
-tradition_nars_sowed_seeds = { 
+tradition_nars_agriculture = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
 	parameters = {
@@ -99,7 +99,7 @@ tradition_nars_sowed_seeds = {
 	}
 }
 
-tradition_nars_inquisitive = { #Arsic only WIP
+tradition_nars_inquisitive = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
 	parameters = { }
@@ -107,7 +107,7 @@ tradition_nars_inquisitive = { #Arsic only WIP
 	county_modifier = { }
 }
 
-tradition_nars_libertine = { #Asaic only WIP
+tradition_nars_libertine = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
 	parameters = { }
