@@ -1,1 +1,1 @@
-A CK3 MOd, Narsiad or the Poem of Nars is an epic poem detailing a series of conflicts fought between the generals, known as the diadokhoi, over who would rule their people following the untimely death of a leader.
+A CK3 Mod, Narsiad or the Poem of Nars is an epic poem detailing a series of conflicts fought between the generals, known as the diadokhoi, over who would rule their people following the untimely death of a leader.
