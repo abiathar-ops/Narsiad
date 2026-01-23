@@ -1,0 +1,115 @@
+nars_trait = {
+	icon = narses.dds
+	category = fame
+
+	general_opinion = 75
+	inherit_chance = 100
+	inherit_from_real_father = yes
+	parent_inheritance_sex = all
+	no_prowess_loss_from_age = yes
+	flag = nars_ageless_appearance_tt
+	custom_tooltip = {
+		text = nars_ageless_appearance_tt }
+	health = 1
+	old_age = -5
+	prowess = 15
+	inbreeding_chance = -0.5
+	years_of_fertility = 5
+	fertility = 0.5
+	life_expectancy = 5
+	flag = nars_visuals
+	monthly_lifestyle_xp_gain_mult = 0.5
+	good = yes
+	physical = yes
+	
+	opposites = {
+		infertile
+		dull
+		intellect_bad
+		beauty_bad
+		physique_bad
+	}
+
+	genetic_constraint_all = beauty_3
+	genetic_constraint_men = male_beauty_3
+	genetic_constraint_women = female_beauty_3
+
+	culture_modifier = {
+		parameter = strong_traits_more_valued
+		monthly_prestige = 1
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_nars_trait_desc
+			}
+			desc = trait_nars_trait_character_desc
+		}
+	}
+	tracks = {
+		hoplites = {
+			25 = {
+				martial = 3
+				prowess = 3
+				health = 0.10
+				stress_loss_mult = 0.03
+			}
+			50 = {
+				martial = 6
+				prowess = 6
+				health = 0.20
+				stress_loss_mult = 0.06
+			}
+			75 = {
+				martial = 9
+				prowess = 9
+				health = 0.30
+				stress_loss_mult = 0.9
+			}
+			100 = {
+				martial = 12
+				prowess = 12
+				health = 0.4
+				stress_loss_mult = 0.12
+				movement_speed = 0.4
+			}
+		}
+		sophos = {
+
+			25 = {
+				stewardship = 3
+				intrigue = 3
+				development_growth_factor = 0.03
+				monthly_county_control_growth_add = 0.3
+			}
+			50 = {
+				stewardship = 6
+				intrigue = 6
+				development_growth_factor = 0.06
+				monthly_county_control_growth_add = 0.6
+			}
+			75 = {
+				stewardship = 9
+				intrigue = 9
+				development_growth_factor = 0.09
+				monthly_county_control_growth_add = 0.9
+			}	
+			100 = {
+				stewardship = 12
+				intrigue = 12
+				development_growth_factor = 0.12
+				monthly_county_control_growth_add = 1.2
+				tax_mult = 0.12
+			}
+		}
+    }
+	compatibility = {
+		nars_trait = @pos_compat_medium
+	}
+
+	ai_energy = 15
+}

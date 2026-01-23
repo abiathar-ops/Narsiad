@@ -1,0 +1,20 @@
+﻿l_english:
+ nars_group: "Narsic"
+ nars_group_collective_noun: "Narses"
+
+ ioni: "Arsic"
+ ioni_prefix: "Arsic"
+ ioni_collective_noun: "Arses"
+ asai: "Asaic"
+ asai_prefix: "Asaic"
+ asai_collective_noun: "Asaes"
+ narses: "Narsic"
+ narses_prefix: "Narsic"
+ narses_collective_noun: "Narses"
+
+ name_list_nars: "Narsic"
+ language_nars_name: "Narsic"
+ heritage_nars_name: "Narsic"
+ heritage_nars_collective_name: "Narses"
+ ioni_opinion: "$ioni$ Opinion"
+ asai_opinion: "$asai$ Opinion"
