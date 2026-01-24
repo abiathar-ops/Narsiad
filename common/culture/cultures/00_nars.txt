@@ -9,9 +9,9 @@ narsics = {
 	
 	traditions = {
 		tradition_nars_war
-		tradition_nars_bastion_makers
-		tradition_nars_house_of_wisdom
-		tradition_nars_sowed_seeds
+		tradition_nars_science
+		tradition_nars_builder
+		tradition_nars_agriculture
 	}
 	
 	name_list = name_list_nars
@@ -23,6 +23,6 @@ narsics = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = nars
+		10 = mediterranean_byzantine #narsics
 	}
 }
