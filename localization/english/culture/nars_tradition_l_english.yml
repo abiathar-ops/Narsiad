@@ -1,0 +1,14 @@
+﻿
+l_english:
+ # Ethos
+ ethos_nars_name:0 "Hermetic"
+ ethos_nars_desc:1 "This culture believes that true power lies in the secrets of the past, sealed away from the unworthy. Through the preservation of ancient knowledge and the guarding of hidden truths, they ensure their survival in a world that has forgotten."
+ # Traditions
+ tradition_nars_science_name: "Sagacious"
+ tradition_nars_science_desc: "This culture has embraced the use of philosophy and scholarly discourse as a social method of regulating behavior. Intellectual rigor, curiosity, debate, and moral reasoning are prized, as are dense treatises, spirited symposiums, and overly long commentaries on ancient texts."
+ tradition_nars_builder_name: "Chauvinists"
+ tradition_nars_builder_desc: "This culture has embraced the ways of using craftsmanship and industrious labor as a social method of regulating behavior. Masterful construction, tireless productivity, precision, and durability are prized, as are grand fortresses, ingenious mechanisms, and meticulous artistry in every crafted artifact"
+ tradition_nars_war_name: "Diadokói"
+ tradition_nars_war_desc: "This culture has embraced the pursuit of warfare as a defining social force. Valor, ferocity, strategic cunning, and relentless ambition are prized, as are glorious battle-sagas, ruthless campaigns, and the belief that greatness is earned only through conquest."
+ tradition_nars_unique_1_name: "Cultivators"
+ tradition_nars_unique_1_desc: "This culture has embraced the rhythms of the earth as a social method of regulating behavior. Stewardship, patience, abundance, and communal responsibility are prized, as are fertile fields, innovative cultivation, and festivals that honor the quiet power of growth."

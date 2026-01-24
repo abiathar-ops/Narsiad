@@ -1,11 +1,9 @@
 ethos_nars = {
 	type = ethos
 	character_modifier = {
-		cultural_head_fascination_mult = 0.05
-		monthly_lifestyle_xp_gain_mult = 0.10
-		monthly_county_control_growth_factor = 0.15
+		cultural_head_fascination_mult = 0.15
+		monthly_lifestyle_xp_gain_mult = 0.15
 		minority_different_culture_opinion = -15
-		stress_gain_mult = 0.30
 	}
 	county_modifier = {
 		development_growth_factor = 0.15

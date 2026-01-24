@@ -4,7 +4,6 @@ tradition_nars_war = {
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = imperial_tagmata.dds }
 	parameters = {
-		unlock_nars_optimates = yes
 		strong_traits_more_valued = yes
 		strong_traits_more_common = yes
 		unlock_voluntary_laampdom = yes
@@ -76,7 +75,7 @@ tradition_nars_builder = {
 	}
 }
 
-tradition_nars_agriculture = { 
+tradition_nars_unique_1 = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
 	parameters = {
@@ -98,20 +97,6 @@ tradition_nars_agriculture = {
 	}
 	county_modifier = {
 		development_growth_factor = 0.3
-	}
-}
-
-tradition_nars_unique_1 = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = { 
-
-	}
-	character_modifier = { 
-
-	}
-	county_modifier = { 
-
 	}
 }
 

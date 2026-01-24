@@ -1,0 +1,11 @@
+﻿l_english:
+ building_type_alkastron_01:0 "Alkastrōns"
+ building_type_alkastron_01_desc:0 "A tradition of military bastions devoted to disciplined command, officer formation, and the machinery of state power."
+ building_alkastron_01:0 "Archēgions"
+ building_alkastron_01_desc:0 "A disciplined compound where cadets and junior officers receive their early formation in command, administration, and bastille oversight."
+ building_alkastron_02:0 "Stratēgions"
+ building_alkastron_02_desc:1 "A fortified instruction hall where mid-ranked officers study campaign logistics, battlefield doctrine, and the coordination of multi-regiment forces."
+ building_alkastron_03:0 "Hēgemonion"
+ building_alkastron_03_desc:2 "A seat of military authority and statecraft. Commanders trained within the Hēgemonion master both strategic warfare and the governance of martial institutions."
+ NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsic or consider this a [holy_site|E]"
+ alkastron_effect_desc:1 ""
