@@ -1,0 +1,177 @@
+name_list_nars = {
+	cadet_dynasty_names = {
+		"dynn_Eleuthereus"
+		"dynn_Acharneus"
+		"dynn_Acherdousios"
+		"dynn_Agrylethen"
+		"dynn_Aigilieus"
+		"dynn_Aithalides"
+		"dynn_Aixoneus"
+		"dynn_Alopekethen"
+		"dynn_Amphitropethen"
+		"dynn_Anagyrasios"
+		"dynn_Anakaieus"
+		"dynn_Anaphlystios"
+		"dynn_Angelethen"
+		"dynn_Ankylethen"
+		"dynn_Aphidnaios"
+		"dynn_Araphenios"
+		"dynn_Ateneus"
+		"dynn_Athmoneus"
+		"dynn_Aurides"
+		"dynn_Azenieus"
+		"dynn_Batethen"
+		"dynn_Besaieus"
+		"dynn_Boutades"
+		"dynn_Cholargeus"
+		"dynn_Cholleides"
+		"dynn_Daidalides"
+		"dynn_Deiradiotes"
+		"dynn_Dekeleieus"
+		"dynn_Diomeieus"
+		"dynn_Eiteaios"
+		"dynn_Elaiousios"
+		"dynn_Eupyridaios"
+		"dynn_Eonymeus"
+		"dynn_Erikeieus"
+		"dynn_Eroiades"
+		"dynn_Eupyrides"
+		"dynn_Gargettios"
+		"dynn_Halaios"
+		"dynn_Halimousios"
+		"dynn_Hamaxanteieus"
+		"dynn_Hekaleus"
+		"dynn_Hermos"
+		"dynn_Hestiaiothen"
+		"dynn_Hippotomades"
+		"dynn_Ikarieus"
+		"dynn_Ionides"
+		"dynn_Kephaleus"
+		"dynn_Kephisiaeus"
+		"dynn_Kerameis"
+		"dynn_Kettios"
+		"dynn_Kydathenaieus"
+		"dynn_Kydantides"
+		"dynn_Kytherrios"
+		"dynn_Lakiades"
+		"dynn_Lamptreus"
+		"dynn_Leukonoieus"
+		"dynn_Lousieus"
+		"dynn_Marathonios"
+		"dynn_Meliteus"
+		"dynn_Myrrhinousios"
+		"dynn_Oaios"
+		"dynn_Oeos"
+		"dynn_Oinaios"
+		"dynn_Oinoios"
+		"dynn_Oion"
+		"dynn_Paianieus"
+		"dynn_Paionides"
+		"dynn_Palleneus"
+		"dynn_Pambotades"
+		"dynn_Peiraieus"
+		"dynn_Pelleus"
+		"dynn_Pergaseus"
+		"dynn_Perithoides"
+		"dynn_Phaler eus"
+		"dynn_Phegaieus"
+		"dynn_Philaides"
+		"dynn_Phlyeus"
+		"dynn_Phrearrhios"
+		"dynn_Phyleus"
+		"dynn_Pitheus"
+		"dynn_Potamios"
+		"dynn_Prasieuse"
+		"dynn_Probalisios"
+		"dynn_Prospaltios"
+		"dynn_Pteleasios"
+		"dynn_Rhamnousios"
+		"dynn_Skambonides"
+		"dynn_Sounieus"
+		"dynn_Sphettios"
+		"dynn_Steirieus"
+		"dynn_Sypalettios"
+		"dynn_Teithrasios"
+		"dynn_Thoraios"
+		"dynn_Thorikios"
+		"dynn_Thriasius"
+		"dynn_Thymaitades"
+		"dynn_Trikoryseus"
+		"dynn_Trinemeeus"
+		"dynn_Tyrmeides"
+		"dynn_Xypetaion"
+	}
+
+	male_names = {
+		Abaskantos Abron Abronichos Aichmotheos Agasikles Agathokles Agathon Agathos Agis Agnostos Ainetos Aiolos Aischines Aischylos Aisopos Akestor Akestorides 
+		Akrillios Akrotatos Akteon Alexikles Alexippos Alkibiades Alkibiades_Alcibiades Alkmeon Alkmeonides Alkmeonides_Alcmaeonid Alkyoneus Ameinias Ameinokles 
+		Ameipsias Aminias Amphares Amyris Amyntas Amyntor Anacharsis Anakreon Anaxagoras Anaxandrides Anaxandros Anaxilas Anaximenes Andocides Androkleidas Androkles 
+		Androsthenes Antalkidas Antenor Anthelos Antigenes Antigonos Antikrates Antilochos Antimachos Antiochos Antipatros Antiphon Anyteos Anyteos_Anytus Anyteos_Anytos 
+		Apelles Apemantos Apollodoros Apollonios Apollophanes Archedemos Archelaos Archeptolis Archias Archidamos Archilochos Archytas Arimnestos Ariphron Aristagoras 
+		Aristander Aristarchos Aristeides Aristion Aristippos Aristoboulos Aristodemos Aristogeiton Aristokles Aristomachos Aristomenes Ariston Aristophon Aristoteles 
+		Aristoxenos Arrhibaios Arrhidaios Arsenios Artabasdos Artemidorous Artemios Arybbas Asandros Asklepiades Asklepiodorus Asklepios Aspar Aspasios Asterios 
+		Athenaios Athenodorus Attalos Autokles Axiothea Bacchylides Bagaios Bardas Basileios Bion Bion_Bion Boethos Boulagoras Brasidas Briareos Bryennios Brygos 
+		Callicrates Callimachus Chaireas Chairephon Chares Chariclea Charidemos Charilaos Chariton Charon Cheiron Chionides Choirilos Chremon Chremonides Chremonides_Chremonides 
+		Chrysippos Chrysoloras Chrysostomos Conon Cypselus Damas Damasippos Damastor Damianos Damiskos Damon Damophiles Deinias Deinokrates Deinolochos Demades 
+		Demaratos Demetrios Demochares Democedes Demokedes Demokrates Demokedes Demonax Demosthenes Derdas Dexippos Diagoras Dikaiarchos Dinias Diocles Diodoros 
+		Diodotos Diogenes Diogoinetos Diokles Diomedes Dion Dionysios Dionysodoros Diophantus Diopithes Dioscorus Dioskourides Diphilos Diphilus Doros Drakon Dromeus 
+		Echembrotos Echestratos Eetion Eireneios Empedokles Endios Epaminondas Epeigeus Ephialtes Epicharmus Epikrates Epikouros Epimenides Epiphanes Eratosthenes 
+		Erechtheus Eirenaios Eteokles Euagoras Euboulos Eucratides Eudoxos Euenos Euemerus Eukleides Eukles Eumolpos Euneos Eunomios Euphemios Euphranor Euphronios 
+		Eupolis Euripides Euryanax Eurybiades Eurycliedes Eurydemos Eurymedon Euryptolemos Euthydemos Euthykles Euthymines Euthymios Eutropios Eutyches Eutychios 
+		Evagoras Evander Evangelos Exekias Favorinus Galenus Galenos Gelon Glaukias Glaukon Gnathon Gorgias Gorgidas Gorgion Gorgos Gregoras Gregorios Gylippos Hagnon 
+		Hagnonides Hagnotheos Harmonides Harpalos Hecataeus Hegesandros Hegesippos Hegesistratos Hektor Heliodoros Hellanikos Hephaestion Herakleides Herakleios 
+		Herakleitos Hermagoras Hermippos Hermogenes Herodes Herodoros Herodotos Heromenes Hesiodos Hestiaios Hieron Hieronymos Hipparchos Hipparinos Hippias 
+		Hippokleides Hippokrates Hippolytos Hippomachos Hippomenes Hipponax Homeros Hypereides Hyperbolos Hyrcanus Iamblichos Iason Iatrokles Ibykos Idrieus Ikaros 
+		Ioannes Ion Iophon Iordanes Iosephos Iovianos Iphikrates Iphicrates Isagoras Isaios Ischyrion Isidoros Ismenias Isocrates Isokrates Isyllos Kadmos Kallias 
+		Kallikrates Kallimachos Kallinikos Kallinos Kallipides Kallisthenes Kallistos Kallistratos Karantenos Karneades Karpos Kassandros Kebes Kekrops Kephalos 
+		Kephisodotos Kimon Kinesias Kleandridas Kleandros Klearchos Kleisthenes Kleitos Kleombrotos Kleomenes Kleon Kleonymos Kleophon Klitomachus Koios Konon 
+		Konstantinos Krateros Krates Kratinos Kratippos Kreon Kritias Kriton Ktesibios Ktesiphon Kylon Kynaegeirus Kypselos Labdas Lachares Laches Lacydes Laios 
+		Lamachus Lampon Laomedon Lasos Leagros Leandros Leochares Leon Leonidas Leontios Leosthenes Leotychidas Lesbonax Leukippos Libanios Lichas Linos Loukas 
+		Lucian Lycophron Lycurgus Lydus Lykourgos Lysander Lysandros Lysias Lysikrates Lysimachos Lysippos Lysis Machaon Machanidas Maiandrios Makarios Maleos 
+		Mandrokles Manetho Marcellinus Maron Marsyas Mausolos Megakles Megasthenes Meidias Melanippides Melanthios Meleager Melissos Melitos Memnon Menander Menandros 
+		Menas Menecliedes Menekles Menelaos Menestheus Menippos Menoitios Menoides Mentor Metagenes Meton Metrodoros Midas Miltiades Mimnermus Minos Mnesikles 
+		Mnesilochus Mnesimachus Moschos Musaeus Musaios Myron Myronides Nabis Narkissos Nearchos Neilos Neocles Neoptolemos Nereus Nestor Nikanor Nikarchos Nikator 
+		Nikephoros Nikeratos Nikias Nikokles Nikomachos Nikon Nikostratos Niobides Numenius Nymphis Nymphodoros Oenopides Olympiodorus Onetor Onomakles Onomarchos 
+		Orestes Origenes Orion Orpheus Otus Pachymeres Paionios Pamphilos Panagios Panaitios Pantaleon Panyassis Parmenides Parmenion Parrhasius Parthenius Pasikles 
+		Pasion Patroklos Pausanias Pedanius Peisistratos Peithon Pelagios Pelopidas Perdikkas Periander Perikles Perseus Phaedo Phaedon Phaidon Phaidros Phalaecus 
+		Phalaris Phanokles Phantias Pheidias Pheidon Pherekydes Philemon Philetas Philinos Philippos Philiskos Philistion Philistus Philochorus Philokles Philokrates 
+		Philolaos Philomelos Philopoemen Philostratos Philotas Philoxenos Phocion Phoebammon Phoinix Phormion Phormos Photius Phradmon Phrynicus Phrynichos Phylarchos 
+		Pindar Pindaros Pleistonax Pleistarchos Plethon Ploutarchos Polemon Polus Polyainos Polybios Polycarpus Polychares Polydoros Polygnotos Polykleitos Polykrates 
+		Polyeuctus Polyeuktos Polyperchon Polyphemus Polyxenos Porphyrios Poseidippos Posidonius Potamon Pratinas Praxilas Praxiteles Proclus Prokopios Protagoras 
+		Protogenes Psammetichos Ptolemaios Pyrrho Pyrrhon Pyrrhos Pythagoras Pytheas Pythodorus Pythokles Pythos Python Rhadamanthys Rhinton Romanos Sabas Sadyattes 
+		Saleph Salmoneus Sapphos Satyros Skopas Scylax Seleucus Semonides Seuthes Simias Simmias Simonides Simos Skiron Sokrates Solon Sopater Sophanes Sophilos 
+		Sophocles Sophokles Sophron Sophroniskos Sosibios Sosigenes Sosigines Sosikles Sosistratos Sosthenes Sostratos Sotades Sotodes Speusippos Spintharos 
+		Stasinos Stesichoros Stesimbrotos Stobaeus Strabo Strato Straton Symeon Synesios Taras Technon Telekles Telemachos Telephos Telesphoros Terpander Terpandro 
+		Thales Thaletas Theagenes Theano Themison Themistokles Theocritus Theodektes Theodoros Theodotos Theodoulos Theognis Theon Theophanes Theophilos Theophrastos 
+		Theopompos Theoros Theos Thespis Thestor Theudeas Theron Thersites Thrasybulus Thrasyllus Thrasymachus Thucydides Thoukydides Thymoetes Tigranes Timagenes 
+		Timaios Timanthes Timarchos Timasitheos Timnes Timoleon Timon Timotheos Timoxenos Tissaphernes Tlepolemos Tryphon Tychon Tyrannion Tyrtaeus Tzetzes 
+		Xanthippos Xanthos Xenagoras Xenarchos Xeniades Xenokles Xenokrates Xenophanes Xenophon Xenos Xerxes Zaleucus Zaleukos Zenodoros Zenon Zeuxidamos Zeuxis 
+		Zoilos Zosimos
+	}
+
+	female_names = {
+		Adriane Agathe Agne Aikaterine Alexandra Alexeia Anastasia Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+		Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+		Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Hypatia Ioanna Ioulia Iouliana Ioustina Kale Konstantia Konstantine Kyra Kyriake
+		Leontia Margarita Maria Markia Martha Melissa Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronia Philippa Philomena Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla
+		Simonis Sophia Stephania Thekla Theochariste Theodora Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
+	}
+
+	dynasty_of_location_prefix = ""
+
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 40
+	mat_grf_name_chance = 10
+	father_name_chance = 25
+
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 40
+	mother_name_chance = 25
+
+	mercenary_names = {
+		{ name = "mercenary_company_cretans" }
+		{ name = "mercenary_company_heruli" }
+		{ name = "mercenary_company_hoplites_of_place" }
+	}
+}

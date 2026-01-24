@@ -101,18 +101,44 @@ tradition_nars_agriculture = {
 	}
 }
 
-tradition_nars_inquisitive = { 
+tradition_nars_unique_1 = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = { }
-	character_modifier = { }
-	county_modifier = { }
+	parameters = { 
+
+	}
+	character_modifier = { 
+
+	}
+	county_modifier = { 
+
+	}
 }
 
-tradition_nars_libertine = { 
+tradition_nars_unique_2 = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = { }
-	character_modifier = { }
-	county_modifier = { }
+	parameters = { 
+
+	}
+	character_modifier = { 
+
+	}
+	county_modifier = { 
+
+	}
+}
+
+tradition_nars_unique_3 = { 
+	category = societal
+	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
+	parameters = { 
+
+	}
+	character_modifier = { 
+
+	}
+	county_modifier = { 
+
+	}
 }
