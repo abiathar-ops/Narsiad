@@ -1,3 +1,5 @@
+# Nars Culture Traditions should have 3 default tradition and 1 unique to the culture.
+
 tradition_nars_war = {
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = imperial_tagmata.dds }
@@ -50,7 +52,7 @@ tradition_nars_science = {
 	}
 }
 
-tradition_nars_engineering = { 
+tradition_nars_builder = { 
 	category = societal
 	layers = { 0 = learning 1 = mena 4 = jirga.dds }
 	parameters = {

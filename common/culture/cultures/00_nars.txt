@@ -1,7 +1,7 @@
-test = {
+narsics = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_bureaucratic
+	ethos = ethos_bureaucratic #ethos_nars
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -23,6 +23,6 @@ test = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = narso
+		10 = nars
 	}
 }
