@@ -1,129 +1,123 @@
 # Nars Culture Traditions should have 3 default tradition and 1 unique to the culture.
 
 tradition_nars_war = {
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = imperial_tagmata.dds }
-	parameters = {
-		strong_traits_more_valued = yes
-		strong_traits_more_common = yes
-		unlock_voluntary_laampdom = yes
-		more_likely_to_be_laamps = yes
-		no_limit_to_kingdom_level_holy_wars = yes
-		cb_lower_piety_level_requirement = yes
-		trade_ports_stationed_maa_bonus = yes
-		trade_ports_enabled_for_tribals = yes
-		next_level_trade_ports = yes
-		maritime_mercantilism_avaricious_bonus = yes
-		harder_to_hybridize = yes
-	}
-	character_modifier = {
-		siege_phase_time = -0.2
-		men_at_arms_title_limit = 2
-		knight_effectiveness_mult = 0.2
-		ai_zeal = 20
-	}
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = indomitable_azatani.dds }
+    parameters = {
+        strong_traits_more_valued = yes
+        strong_traits_more_common = yes
+        unlock_voluntary_laampdom = yes
+        more_likely_to_be_laamps = yes
+        no_limit_to_kingdom_level_holy_wars = yes
+        cb_lower_piety_level_requirement = yes
+		better_knights_from_decision = yes
+    }
+    character_modifier = {
+        siege_phase_time = -0.2
+        men_at_arms_title_limit = 2
+        knight_effectiveness_mult = 0.2
+        ai_zeal = 20
+    }
+}
+
+tradition_nars_agriculture = { # Agrarian & Artisan
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = roman_ceremonies.dds }
+    parameters = { 
+        pastures_building_bonuses = yes
+        farm_estates_pastures_unlock = yes
+        better_herders_pasturalists = yes
+        better_disease_resistance = yes
+        hard_working_traits_more_valued = yes
+        diligent_trait_more_common = yes
+        pensive_trait_more_common = yes
+        rowdy_trait_less_common = yes
+        harder_to_hybridize = yes
+    }
+    character_modifier = { 
+        wetlands_travel_danger = wetlands_medium_danger_reduction
+        floodplains_travel_danger = floodplains_medium_danger_reduction
+        character_travel_speed_mult = 0.2
+    }
+    county_modifier = { 
+         # Modifiers for specific holding types could go here
+    }
 }
 
 tradition_nars_science = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
-	parameters = {
-		can_author_books = yes
+    category = societal
+    layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
+    parameters = {
+        can_author_books = yes
+        innovation_from_learning_traits = yes
+        tells_stories = yes
+        can_recruit_prisoners_easily = yes
+		consolidate_rule_decision = yes 
 		pardoning_gives_loyalty = yes
-		better_knights_from_decision = yes
-		can_appoint_court_scholar = yes
-		can_appoint_court_gardener = yes
-		can_recruit_gardeners = yes
-		scandinavian_elective_enabled = yes
-		innovation_from_learning_traits = yes
-		guardian_education_better_outcomes = yes
-		tells_stories = yes
-		can_recruit_prisoners_easily = yes
-	}
-	character_modifier = {
-		monthly_learning_lifestyle_xp_gain_mult = 0.2
-		learning_per_piety_level = 2
-		movement_speed = 0.2
-		diplomatic_range_mult = 0.2
-		character_travel_safety_mult = 0.2
-		character_travel_speed_mult = 0.2
-		owned_legend_spread_mult = 0.2
-	}
+    }
+    character_modifier = {
+        monthly_learning_lifestyle_xp_gain_mult = 0.2
+        learning_per_piety_level = 2
+    }
 }
+
+tradition_nars_politics = { # Court & Diplomacy
+    category = societal
+    layers = { 0 = learning 1 = mena 4 = jirga.dds }
+    parameters = { 
+        can_appoint_court_scholar = yes
+        can_appoint_court_gardener = yes
+        can_recruit_gardeners = yes
+        can_appoint_chief_eunuch = yes
+        allows_noble_family_adoption = yes
+		guardian_education_better_outcomes = yes
+    }
+    character_modifier = { 
+        hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+        owned_legend_spread_mult = 0.25
+        character_travel_safety_mult = 0.25
+    }
+    county_modifier = { 
+        development_growth_factor = 0.3
+    }
+}
+
 
 tradition_nars_builder = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = jirga.dds }
-	parameters = {
-		renown_from_temple_construction = yes
-		extra_piety_from_temple_construction = yes
-		can_appoint_chief_eunuch = yes
-		development_gain_on_building_complete = yes
-		allows_noble_family_adoption = yes
-		next_level_w_mills = yes
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = imperial_tagmata.dds }
+    parameters = {
+        renown_from_temple_construction = yes
+        extra_piety_from_temple_construction = yes
+        development_gain_on_building_complete = yes
+        next_level_w_mills = yes
 		improved_artisan_inspiration = yes
-		improved_weaver_inspiration = yes
-		improved_weapon_inspiration = yes
-		nomadic_metal_artifact_unlock = yes
-		consolidate_rule_decision = yes		
-	}
-	character_modifier = {
-		build_speed = -0.3
-		build_gold_cost = 0.3
-		monthly_piety_from_buildings_mult = 0.15
-		hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
-	}
+        improved_weaver_inspiration = yes
+        improved_weapon_inspiration = yes
+    }
+    character_modifier = {
+        build_speed = -0.3
+        build_gold_cost = -0.15 # Note: In game code, positive cost usually increases cost. Changed to negative for discount.
+        monthly_piety_from_buildings_mult = 0.15
+    }
 }
 
-tradition_nars_unique_1 = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = {
-		coastal_agriculture_building_bonuses = yes
-		pastures_building_bonuses = yes
-		farm_estates_pastures_unlock = yes
-		better_herders_pasturalists = yes
-		better_disease_resistance = yes
-		hard_working_traits_more_valued = yes
-		diligent_trait_more_common = yes
-		pensive_trait_more_common = yes
-		rowdy_trait_less_common = yes
-	}
-	character_modifier = {
-		sea_travel_danger = medium_sea_danger_reduction
-		coastal_sea_travel_danger = medium_sea_danger_reduction
-		wetlands_travel_danger = wetlands_medium_danger_reduction
-		floodplains_travel_danger = floodplains_medium_danger_reduction
-	}
-	county_modifier = {
-		development_growth_factor = 0.3
-	}
+tradition_nars_merchant = { # Maritime & Mercantile
+    category = societal
+    layers = { 0 = learning 1 = mena 4 = knight.dds } 
+    parameters = {
+        trade_ports_stationed_maa_bonus = yes
+        trade_ports_enabled_for_tribals = yes
+        next_level_trade_ports = yes
+        maritime_mercantilism_avaricious_bonus = yes
+        coastal_agriculture_building_bonuses = yes
+    }
+    character_modifier = {
+        sea_travel_danger = medium_sea_danger_reduction
+        coastal_sea_travel_danger = medium_sea_danger_reduction
+        movement_speed = 0.2
+        diplomatic_range_mult = 0.2
+    }
 }
 
-tradition_nars_unique_2 = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = { 
 
-	}
-	character_modifier = { 
-
-	}
-	county_modifier = { 
-
-	}
-}
-
-tradition_nars_unique_3 = { 
-	category = societal
-	layers = { 0 = learning 1 = mena 4 = philosopher.dds }
-	parameters = { 
-
-	}
-	character_modifier = { 
-
-	}
-	county_modifier = { 
-
-	}
-}

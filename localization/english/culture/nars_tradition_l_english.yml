@@ -1,14 +1,17 @@
-﻿
-l_english:
+﻿l_english:
  # Ethos
- ethos_nars_name:0 "Hermetic"
- ethos_nars_desc:1 "This culture believes that true power lies in the secrets of the past, sealed away from the unworthy. Through the preservation of ancient knowledge and the guarding of hidden truths, they ensure their survival in a world that has forgotten."
+ ethos_nars_name:0 "Orphic"
+ ethos_nars_desc:1 "Through the hoarding of esoteric knowledge and the guarding of bygone secrets, this culture ensures their survival in a world that has forgotten them."
  # Traditions
- tradition_nars_science_name: "Sagacious"
- tradition_nars_science_desc: "This culture has embraced the use of philosophy and scholarly discourse as a social method of regulating behavior. Intellectual rigor, curiosity, debate, and moral reasoning are prized, as are dense treatises, spirited symposiums, and overly long commentaries on ancient texts."
- tradition_nars_builder_name: "Chauvinists"
- tradition_nars_builder_desc: "This culture has embraced the ways of using craftsmanship and industrious labor as a social method of regulating behavior. Masterful construction, tireless productivity, precision, and durability are prized, as are grand fortresses, ingenious mechanisms, and meticulous artistry in every crafted artifact"
- tradition_nars_war_name: "Diadokói"
- tradition_nars_war_desc: "This culture has embraced the pursuit of warfare as a defining social force. Valor, ferocity, strategic cunning, and relentless ambition are prized, as are glorious battle-sagas, ruthless campaigns, and the belief that greatness is earned only through conquest."
- tradition_nars_unique_1_name: "Cultivators"
- tradition_nars_unique_1_desc: "This culture has embraced the rhythms of the earth as a social method of regulating behavior. Stewardship, patience, abundance, and communal responsibility are prized, as are fertile fields, innovative cultivation, and festivals that honor the quiet power of growth."
+ tradition_nars_war_name: "Haîma"
+ tradition_nars_war_desc: "This culture has embraced the pursuit of warfare as a defining social force based on the belief that greatness is earned only through conquest."
+ tradition_nars_science_name: "Akadēmeia"
+ tradition_nars_science_desc: "This culture has embraced the use of philosophy and scholarly discourse as a social method of regulating behavior and ideology."
+ tradition_nars_builder_name: "Geotektōn"
+ tradition_nars_builder_desc: "This culture has embraced the ways of using craftsmanship and industrious labor as a social method of regulating behavior."
+ tradition_nars_agriculture_name: "Autárkeia"
+ tradition_nars_agriculture_desc: "This culture has embraced the rhythms of the earth as a social method of regulating behavior. Communal responsibility are prized."
+ tradition_nars_merchant_name: "Plūtos"
+ tradition_nars_merchant_desc: "By dominating trade routes and mastering the tides, this culture accumulates vast wealth, turning every port into a thriving center of commerce."
+ tradition_nars_politics_name: "Deinótēs"
+ tradition_nars_politics_desc: "Life is a stage, and the court is its drama. These masters of rhetoric and intrigue value the subtle knife of diplomacy and the stabilizing power of a well-oiled bureaucracy."

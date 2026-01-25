@@ -8,12 +8,9 @@ ethos_nars = {
 	county_modifier = {
 		development_growth_factor = 0.15
 	}
-	province_modifier = {
-		build_speed = -0.15
-	}
 
 	parameters = {
-		can_adopt_administrative_government_as_kingdom_tier = yes
+		can_adopt_administrative_government_as_kingdom_tier = yes #Hoplites should replace this
 	}
 
 	ai_will_do = {
