@@ -32,7 +32,6 @@ tradition_nars_agriculture = { # Agrarian & Artisan
         diligent_trait_more_common = yes
         pensive_trait_more_common = yes
         rowdy_trait_less_common = yes
-        harder_to_hybridize = yes
     }
     character_modifier = { 
         wetlands_travel_danger = wetlands_medium_danger_reduction
@@ -54,6 +53,7 @@ tradition_nars_science = {
         can_recruit_prisoners_easily = yes
 		consolidate_rule_decision = yes 
 		pardoning_gives_loyalty = yes
+        harder_to_hybridize = yes
     }
     character_modifier = {
         monthly_learning_lifestyle_xp_gain_mult = 0.2

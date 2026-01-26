@@ -26,7 +26,7 @@ nars_narsid = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = mediterranean_byzantine #narsics
+		10 = narsid #narsics
 	}
 }
 
