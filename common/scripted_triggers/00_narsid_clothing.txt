@@ -1,0 +1,6 @@
+portrait_narsid_clothing_trigger = {
+	portrait_shared_clothing_contents_trigger = {
+		CULTURE_SCOPE = scope:culture
+		CULTURE_FLAG = narsid
+	}
+}
