@@ -1,7 +1,7 @@
 ﻿l_english:
  # Ethos
- ethos_nars_name:0 "Orphic"
- ethos_nars_desc:1 "Through the hoarding of esoteric knowledge and the guarding of bygone secrets, this culture ensures their survival in a world that has forgotten them."
+ ethos_orphic_name:0 "Orphic"
+ ethos_orphic_desc:1 "Through the hoarding of esoteric knowledge and the guarding of bygone secrets, this culture ensures their survival in a world that has forgotten them."
  # Traditions
  tradition_nars_war_name: "Haîma"
  tradition_nars_war_desc: "This culture has embraced the pursuit of warfare as a defining social force based on the belief that greatness is earned only through conquest."

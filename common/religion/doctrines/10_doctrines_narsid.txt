@@ -10,4 +10,17 @@ doctrine_bigamy = {
 			number_of_spouses = 2
 			marriage_event = yes
 		}
-	}
+}
+
+doctrine_trigamy = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = doctrine_trigamy }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		parameters = {
+			number_of_spouses = 3
+		}
+}

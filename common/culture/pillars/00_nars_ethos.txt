@@ -1,4 +1,4 @@
-ethos_nars = {
+ethos_orphic = {
 	type = ethos
 	character_modifier = {
 		cultural_head_fascination_mult = 0.15

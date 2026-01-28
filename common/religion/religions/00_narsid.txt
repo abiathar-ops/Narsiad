@@ -1,9 +1,10 @@
-nars_religion = {
+narsid_group = {
 	family = rf_narsid
 	graphical_faith = pagan.gfx  
 	doctrine = narsid_hostility_doctrine
-	pagan_roots = yes
-		#Main Group
+	doctrine = divine_destiny_doctrine
+
+	#Main Group
 	doctrine = doctrine_monotheist
 	doctrine = doctrine_spiritual_head
 	doctrine = doctrine_gender_male_dominated
@@ -13,25 +14,22 @@ nars_religion = {
 	#Marriage
 	doctrine = doctrine_monogamy
 	doctrine = doctrine_divorce_approval
-	doctrine = doctrine_bastardry_legitimization
-	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+	doctrine = doctrine_bastardry_none
+	doctrine = doctrine_consanguinity_unrestricted
 
 	#Crimes
 	doctrine = doctrine_homosexuality_shunned
 	doctrine = doctrine_adultery_men_shunned
-	doctrine = doctrine_adultery_women_crime
-	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_kinslaying_shunned
 	doctrine = doctrine_deviancy_virtuous
 	doctrine = doctrine_witchcraft_virtuous
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_taxation
-	doctrine = doctrine_clerical_gender_male_only
-	doctrine = doctrine_clerical_marriage_disallowed
-	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
-
-	#Special Doctrine for Christian Syncretism
-	doctrine = special_doctrine_is_christian_faith
+	doctrine = doctrine_clerical_gender_female_only
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_spiritual_appointment
 
 	#Allow pilgrimages
 	doctrine = doctrine_pilgrimage_encouraged
@@ -227,6 +225,65 @@ nars_religion = {
 
 		GHWName = ghw_crusade
 		GHWNamePlural = ghw_crusades
-
 	}
+	
+	faiths {
+			nars_religion = {
+				color = { 230 228 216 }
+				icon = narsid_0 #custom_faith_dove
+				#icon = dhyana
+
+				holy_site = rome
+				holy_site = athens
+				holy_site = alexandria
+				holy_site = carthage
+				holy_site = olympus
+
+				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_pantheon
+				doctrine = tenet_nars_erudition
+			}
+			propatros_religion = {
+				color = { 230 228 216 }
+				icon = narsid_1 #custom_faith_dove
+
+				holy_site = rome
+				holy_site = athens
+				holy_site = alexandria
+				holy_site = carthage
+				holy_site = olympus
+
+				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_pantheon
+				doctrine = tenet_nars_erudition
+			}
+			nikatores_religion = {
+				color = { 230 228 216 }
+				icon = narsid_2 #custom_faith_1
+
+				holy_site = rome
+				holy_site = athens
+				holy_site = alexandria
+				holy_site = carthage
+				holy_site = olympus
+
+				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_pantheon
+				doctrine = tenet_nars_erudition
+			}
+			liberatores_religion = {
+				color = { 230 228 216 }
+				icon = narsid_3 #custom_faith_9
+
+				holy_site = rome
+				holy_site = athens
+				holy_site = alexandria
+				holy_site = carthage
+				holy_site = olympus
+
+				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_pantheon
+				doctrine = tenet_nars_erudition
+			}
+		}
 }

@@ -1,0 +1,136 @@
+doctrine_nars_tenets = {
+	group = "core_tenets"
+    number_of_picks = 3
+    
+	tenet_nars_pantheon = {
+        name = tenet_nars_pantheon_name
+        desc = tenet_nars_pantheon_desc
+		icon = core_tenet_adorcism
+
+		can_pick = {
+			religion_tag = narsid_group
+		}
+
+		piety_cost = faith_tenet_cost_mid
+
+
+		character_modifier = {
+			church_holding_build_speed = -0.5
+			church_holding_holding_build_speed = -0.5
+            monthly_influence = 0.5
+			ignore_opinion_of_different_faith = yes
+			different_faith_county_opinion_mult = -0.1
+		}
+
+		parameters = {
+            same_culture_conversion_bonus_active = yes
+			same_faith_promote_culture_bonus_active = yes
+			reincarnation_events_active = yes
+			building_temples_gives_development = yes
+			monastic_schools_allowed_in_every_holding_type = yes
+		}
+    }
+
+	tenet_nars_crusade = {
+        name = tenet_nars_crusade_name
+        desc = tenet_nars_crusade_desc
+		icon = core_tenet_cranial_trophies
+		#icon = core_tenet_armed_pilgrimages
+		#icon = core_tenet_gruesome_festivals
+
+		can_pick = {
+			religion_tag = narsid_group
+		}
+
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 10
+        }
+		parameters = {
+			great_holy_wars_active = yes
+            warmonger = yes
+			conquest_cb_enabled = yes
+			invasion_cb_enabled = yes
+			sanctioned_assassinations = yes
+			killing_bestows_heads = yes
+			decapitation_steals_prestige_as_piety = yes
+			clergy_can_fight = yes
+		}
+
+        character_modifier = {
+			domain_tax_same_faith_mult = 0.2
+            ai_war_chance = 0.5
+			ai_war_cooldown = -0.25
+			accolade_glory_gain_mult = 0.2
+		}
+	}
+
+	tenet_nars_erudition = {
+        name = tenet_nars_erudition_name
+        desc = tenet_nars_erudition_desc
+		icon = core_tenet_alexandrian_catechism
+		#icon = core_tenet_astrology
+		#icon = core_tenet_bhakti
+
+		is_shown = {
+			religion_tag = narsid_group
+		}
+		can_pick = {
+			religion_tag = narsid_group
+		}
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 10
+		}
+		parameters = {
+			inspections_unlocked_and_costs_piety = yes
+			inspection_gives_devotion = yes
+			children_less_likely_to_be_burdened = yes
+			tenet_esotericism_mystic_education = yes
+			reforging_artifacts_costs_piety = yes
+			destroying_artifacts_is_pious = yes
+			divine_the_stars_active = yes
+			better_artifacts = yes
+		}
+		character_modifier = {
+			monthly_learning_lifestyle_xp_gain_mult = 0.2 
+			learning_per_piety_level = 2
+            domain_limit = 1
+            development_growth_factor = 0.2
+			
+		}
+
+		traits = {
+			virtues = {
+				scholar
+			}
+		}
+	}
+
+	## Asaic Tenet
+	tenet_nars_vestals = {
+		icon = core_tenet_polyamory
+		
+		parameters = {
+			no_unfaithfulness_penalty_active = yes
+			safer_childbirths_active = yes
+			healthier_children_active = yes
+			piety_from_childbirth_active = yes
+			divine_marriage_opinion = 10
+			divine_marriage_piety_gain_active = yes
+			no_unfaithfulness_penalty_active = yes
+			parents_get_hooks_on_children = yes
+		}
+		character_modifier = {
+			fertility = 0.25
+			stress_gain_mult = -0.25
+			stress_loss_mult = 0.25
+			development_growth_factor = 0.25
+			domain_limit = 2
+		}
+		virtues = {
+				pure_blooded 
+				incestuous 
+			}
+	}
+}

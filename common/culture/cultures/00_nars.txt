@@ -1,7 +1,7 @@
 nars_narsid = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_nars
+	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -33,7 +33,7 @@ nars_narsid = {
 nars_patrosi = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_nars
+	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -55,14 +55,14 @@ nars_patrosi = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = mediterranean_byzantine #narsics
+		10 = narsid #narsics
 	}
 }
 
 nars_ionioi = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_nars
+	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -85,14 +85,14 @@ nars_ionioi = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = mediterranean_byzantine #narsics
+		10 = narsid #narsics
 	}
 }
 
 nars_karian = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_nars
+	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -114,6 +114,6 @@ nars_karian = {
 	house_coa_frame = house_china
 	
 	ethnicities = {
-		10 = mediterranean_byzantine #narsics
+		10 = narsid #narsics
 	}
 }
