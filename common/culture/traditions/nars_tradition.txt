@@ -3,6 +3,17 @@
 tradition_nars_war = {
     category = societal
     layers = { 0 = learning 1 = mena3 4 = indomitable_azatani.dds }
+     is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
     parameters = {
         strong_traits_more_valued = yes
         strong_traits_more_common = yes
@@ -23,6 +34,17 @@ tradition_nars_war = {
 tradition_nars_agriculture = { # Agrarian & Artisan
     category = societal
     layers = { 0 = learning 1 = mena3 4 = roman_ceremonies.dds }
+     is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
     parameters = { 
         pastures_building_bonuses = yes
         farm_estates_pastures_unlock = yes
@@ -38,12 +60,20 @@ tradition_nars_agriculture = { # Agrarian & Artisan
         floodplains_travel_danger = floodplains_medium_danger_reduction
         character_travel_speed_mult = 0.2
     }
-    county_modifier = { 
-         # Modifiers for specific holding types could go here
-    }
 }
 
 tradition_nars_science = { 
+     is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
     category = societal
     layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
     parameters = {
@@ -62,6 +92,17 @@ tradition_nars_science = {
 }
 
 tradition_nars_politics = { # Court & Diplomacy
+    is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
     category = societal
     layers = { 0 = learning 1 = mena 4 = jirga.dds }
     parameters = { 
@@ -86,6 +127,17 @@ tradition_nars_politics = { # Court & Diplomacy
 tradition_nars_builder = { 
     category = societal
     layers = { 0 = learning 1 = mena3 4 = imperial_tagmata.dds }
+    is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
     parameters = {
         renown_from_temple_construction = yes
         extra_piety_from_temple_construction = yes
@@ -105,6 +157,17 @@ tradition_nars_builder = {
 tradition_nars_merchant = { # Maritime & Mercantile
     category = societal
     layers = { 0 = learning 1 = mena 4 = knight.dds } 
+    is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+	}
     parameters = {
         trade_ports_stationed_maa_bonus = yes
         trade_ports_enabled_for_tribals = yes
