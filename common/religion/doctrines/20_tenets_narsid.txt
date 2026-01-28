@@ -2,6 +2,8 @@ doctrine_nars_tenets = {
 	group = "core_tenets"
     number_of_picks = 3
     
+	# Default Narsid tenets
+
 	tenet_nars_pantheon = {
         name = tenet_nars_pantheon_name
         desc = tenet_nars_pantheon_desc
@@ -31,6 +33,120 @@ doctrine_nars_tenets = {
 		}
     }
 
+
+	tenet_nars_erudition = {
+        name = tenet_nars_erudition_name
+        desc = tenet_nars_erudition_desc
+		icon = core_tenet_alexandrian_catechism
+		#icon = core_tenet_astrology
+		#icon = core_tenet_bhakti
+
+		is_shown = {
+			religion_tag = narsid_group
+		}
+		can_pick = {
+			religion_tag = narsid_group
+		}
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 10
+		}
+		parameters = {
+			inspections_unlocked_and_costs_piety = yes
+			inspection_gives_devotion = yes
+			children_less_likely_to_be_burdened = yes
+			tenet_esotericism_mystic_education = yes
+			reforging_artifacts_costs_piety = yes
+			destroying_artifacts_is_pious = yes
+			divine_the_stars_active = yes
+		}
+		character_modifier = {
+			monthly_learning_lifestyle_xp_gain_mult = 0.25
+			learning_per_piety_level = 2
+			martial_per_piety_level = 2
+		}
+
+		traits = {
+			virtues = {
+				scholar
+			}
+		}
+	}
+
+	# Branch Narsid tenets 
+	tenet_nars_sanguine = {
+		name = tenet_nars_sanguine_name
+		desc = tenet_nars_sanguine_desc
+		icon = core_tenet_pentarchy #core_tenet_warrior_monks
+
+		can_pick = {
+			religion_tag = narsid_group
+		}
+
+		piety_cost = faith_tenet_cost_massive
+
+		parameters = {
+			great_holy_wars_active = yes
+            warmonger = yes
+			conquest_cb_enabled = yes
+			invasion_cb_enabled = yes
+			parents_get_hooks_on_children = yes
+			better_artifacts = yes
+			#nars_get_maa_1 = yes (MAA could be mastiges)
+		}
+
+		character_modifier = {
+			domain_tax_different_faith_mult = 0.5
+			domain_tax_same_faith_mult = 0.5
+            ai_war_chance = 0.5
+			ai_war_cooldown = -0.25
+			accolade_glory_gain_mult = 0.25
+			holding_build_gold_cost = 0.25
+			holding_build_speed = 0.5
+			development_growth_factor = 0.5
+			domain_limit = 2
+		}
+
+		traits = {
+			virtues = {
+				robust
+			}
+		}
+		
+	}
+	tenet_nars_banking = {
+        name = tenet_nars_banking_name
+        desc = tenet_nars_banking_desc
+		icon = core_tenet_vows_of_poverty
+		#icon = core_tenet_armed_pilgrimages
+		#icon = core_tenet_gruesome_festivals
+
+		can_pick = {
+			religion_tag = narsid_group
+		}
+
+		piety_cost = {
+			value = faith_tenet_cost_massive
+			multiply = 10
+        }
+		parameters = {
+			unlock_jizya_contract = yes
+			better_artifacts = yes
+		}
+
+        character_modifier = {
+			domain_tax_different_faith_mult = 0.25
+			domain_tax_same_faith_mult = 0.25
+            ai_war_chance = 0.5
+			ai_war_cooldown = -0.25
+			accolade_glory_gain_mult = 0.2
+			holding_build_gold_cost = 0.25
+			holding_build_speed = 0.25
+			development_growth_factor = 0.25
+			domain_limit = 2
+		}
+	}
+	
 	tenet_nars_crusade = {
         name = tenet_nars_crusade_name
         desc = tenet_nars_crusade_desc
@@ -58,56 +174,15 @@ doctrine_nars_tenets = {
 		}
 
         character_modifier = {
-			domain_tax_same_faith_mult = 0.2
-            ai_war_chance = 0.5
-			ai_war_cooldown = -0.25
-			accolade_glory_gain_mult = 0.2
+			domain_tax_same_faith_mult = 0.15
+            ai_war_chance = 0.3
+			ai_war_cooldown = -0.15
+			accolade_glory_gain_mult = 0.15
+			domain_limit = 1
+			development_growth_factor = 0.15
 		}
 	}
 
-	tenet_nars_erudition = {
-        name = tenet_nars_erudition_name
-        desc = tenet_nars_erudition_desc
-		icon = core_tenet_alexandrian_catechism
-		#icon = core_tenet_astrology
-		#icon = core_tenet_bhakti
-
-		is_shown = {
-			religion_tag = narsid_group
-		}
-		can_pick = {
-			religion_tag = narsid_group
-		}
-		piety_cost = {
-			value = faith_tenet_cost_massive
-			multiply = 10
-		}
-		parameters = {
-			inspections_unlocked_and_costs_piety = yes
-			inspection_gives_devotion = yes
-			children_less_likely_to_be_burdened = yes
-			tenet_esotericism_mystic_education = yes
-			reforging_artifacts_costs_piety = yes
-			destroying_artifacts_is_pious = yes
-			divine_the_stars_active = yes
-			better_artifacts = yes
-		}
-		character_modifier = {
-			monthly_learning_lifestyle_xp_gain_mult = 0.2 
-			learning_per_piety_level = 2
-            domain_limit = 1
-            development_growth_factor = 0.2
-			
-		}
-
-		traits = {
-			virtues = {
-				scholar
-			}
-		}
-	}
-
-	## Asaic Tenet
 	tenet_nars_vestals = {
 		icon = core_tenet_polyamory
 		

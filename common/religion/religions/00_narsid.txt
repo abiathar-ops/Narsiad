@@ -239,7 +239,7 @@ narsid_group = {
 				holy_site = carthage
 				holy_site = olympus
 
-				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_sanguine
 				doctrine = tenet_nars_pantheon
 				doctrine = tenet_nars_erudition
 			}
@@ -253,7 +253,7 @@ narsid_group = {
 				holy_site = carthage
 				holy_site = olympus
 
-				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_banking
 				doctrine = tenet_nars_pantheon
 				doctrine = tenet_nars_erudition
 			}
@@ -281,7 +281,7 @@ narsid_group = {
 				holy_site = carthage
 				holy_site = olympus
 
-				doctrine = tenet_nars_crusade
+				doctrine = tenet_nars_vestals
 				doctrine = tenet_nars_pantheon
 				doctrine = tenet_nars_erudition
 			}
