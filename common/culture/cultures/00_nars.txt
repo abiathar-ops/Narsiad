@@ -33,6 +33,8 @@ nars_narsid = {
 nars_patrosi = {
 	color = { 0.98 0.92 0.84 }
 	
+	parents = { nars_narsid }
+
 	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
@@ -61,7 +63,8 @@ nars_patrosi = {
 
 nars_ionioi = {
 	color = { 0.98 0.92 0.84 }
-	
+	parents = { nars_narsid }
+
 	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars
@@ -91,7 +94,8 @@ nars_ionioi = {
 
 nars_karian = {
 	color = { 0.98 0.92 0.84 }
-	
+	parents = { nars_narsid }
+
 	ethos = ethos_orphic
 	heritage = heritage_nars
 	language = language_nars

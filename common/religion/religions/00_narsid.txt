@@ -8,7 +8,7 @@ narsid_group = {
 	doctrine = doctrine_monotheist
 	doctrine = doctrine_spiritual_head
 	doctrine = doctrine_gender_male_dominated
-	doctrine = doctrine_pluralism_righteous
+	doctrine = doctrine_pluralism_fundamentalist
 	doctrine = doctrine_theocracy_temporal
 
 	#Marriage
@@ -22,7 +22,7 @@ narsid_group = {
 	doctrine = doctrine_adultery_men_shunned
 	doctrine = doctrine_adultery_women_shunned
 	doctrine = doctrine_kinslaying_shunned
-	doctrine = doctrine_deviancy_virtuous
+	doctrine = doctrine_deviancy_shunned
 	doctrine = doctrine_witchcraft_virtuous
 
 	#Clerical Functions

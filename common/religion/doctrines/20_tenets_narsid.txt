@@ -1,4 +1,4 @@
-doctrine_nars_tenets = {
+doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 	group = "core_tenets"
     number_of_picks = 3
     
@@ -9,6 +9,9 @@ doctrine_nars_tenets = {
         desc = tenet_nars_pantheon_desc
 		icon = core_tenet_adorcism #core_tenet_bhakti
 
+		is_shown = {
+			religion_tag = narsid_group
+		}
 		can_pick = {
 			religion_tag = narsid_group
 		}
@@ -25,19 +28,17 @@ doctrine_nars_tenets = {
 		}
 
 		parameters = {
-            same_culture_conversion_bonus_active = yes
-			same_faith_promote_culture_bonus_active = yes
 			reincarnation_events_active = yes
 			building_temples_gives_development = yes
 			monastic_schools_allowed_in_every_holding_type = yes
 			clergy_can_fight = yes
 			legalism_reduced_faction_virtues = yes
 			legalism_increased_faction_sins = yes
+			seek_indulgences_active = yes
+			seek_indulgences_active_2 = yes
 		}
     }
 
-
-	
 
 	# Branch Narsid tenets 
 	tenet_nars_sanguine = {
@@ -45,6 +46,9 @@ doctrine_nars_tenets = {
 		desc = tenet_nars_sanguine_desc
 		icon = core_tenet_household_gods #core_tenet_pentarchy #core_tenet_warrior_monks
 
+		is_shown = {
+			religion_tag = narsid_group
+		}
 		can_pick = {
 			religion_tag = narsid_group
 		}
@@ -82,10 +86,14 @@ doctrine_nars_tenets = {
 	tenet_nars_banking = {
         name = tenet_nars_banking_name
         desc = tenet_nars_banking_desc
-		icon = core_tenet_tax_nonbelievers
+		#icon = core_tenet_tax_nonbelievers
+		icon = core_tenet_astrology
 		#icon = core_tenet_armed_pilgrimages
 		#icon = core_tenet_gruesome_festivals
 
+		is_shown = {
+			religion_tag = narsid_group
+		}
 		can_pick = {
 			religion_tag = narsid_group
 		}
@@ -126,6 +134,9 @@ doctrine_nars_tenets = {
 		#icon = core_tenet_armed_pilgrimages
 		#icon = core_tenet_gruesome_festivals
 
+		is_shown = {
+			religion_tag = narsid_group
+		}
 		can_pick = {
 			religion_tag = narsid_group
 		}
@@ -164,7 +175,8 @@ doctrine_nars_tenets = {
 			piety_from_childbirth_active = yes
 			divine_marriage_opinion = 10
 			divine_marriage_piety_gain_active = yes
-			no_unfaithfulness_penalty_active = yes
+			reincarnation_resistance_to_conversion = yes
+			literalist_debate_enabled = yes
 		}
 		character_modifier = {
 			fertility = 0.25
@@ -183,7 +195,6 @@ doctrine_nars_tenets = {
         name = tenet_nars_erudition_name
         desc = tenet_nars_erudition_desc
 		icon = core_tenet_alexandrian_catechism
-		#icon = core_tenet_astrology
 		#icon = core_tenet_bhakti
 
 		is_shown = {
@@ -205,8 +216,6 @@ doctrine_nars_tenets = {
 			destroying_artifacts_is_pious = yes
 			divine_the_stars_active = yes
 			parents_get_hooks_on_children = yes
-			literalist_debate_enabled = yes
-			reincarnation_resistance_to_conversion = yes
 		}
 		character_modifier = {
 			monthly_learning_lifestyle_xp_gain_mult = 0.25

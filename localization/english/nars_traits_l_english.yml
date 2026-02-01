@@ -10,4 +10,5 @@
  trait_track_sophos_desc:0 "He rules himself first; knowledge is his power, quiet and feared by all. Through wisdom and discipline, he bends the world to his will."
 
  nars_ageless_appearance_tt:0 "This character does not visually age, though they remain bounded by mortal coil and the vicissitudes of time."
+
  TRAIT_FLAG_DESC_nars_visuals: "[character|E] will remain youthful"
