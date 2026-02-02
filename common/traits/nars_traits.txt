@@ -1,5 +1,5 @@
 nars_trait = {
-	icon = narses.dds
+	icon = nars_lineage.dds
 	category = fame
 
 	general_opinion = 75

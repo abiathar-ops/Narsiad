@@ -1,0 +1,38 @@
+# Basic Triggers
+
+can_recruit_elite_maa = {
+  OR = {
+    highest_held_title_tier >= tier_duchy
+    AND = {
+      is_independent_ruler = yes
+    }
+  }
+}
+
+can_recruit_guard_maa = {
+  AND = {
+  is_independent_ruler = yes
+  highest_held_title_tier >= tier_duchy
+  }
+}
+
+# Culture Triggers
+
+narsid_maa_trigger = { # Handles access to Narsid units
+	culture = { has_cultural_pillar = heritage_narsid }
+}
+
+can_recruit_maa_hoplites_trigger = {
+	AND = {
+		narsid_maa_trigger = yes
+		can_recruit_elite_maa = yes
+		culture = { 
+			has_innovation = innovation_war_hoplites #innovation not made
+		}
+	}
+}
+
+#### MAA ART TRIGGERS ####
+narsid_maa_art_trigger = {
+	culture = { has_cultural_pillar = heritage_narsid }
+}

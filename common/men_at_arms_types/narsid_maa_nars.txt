@@ -1,0 +1,40 @@
+nars_hoplites = {
+    type = heavy_infantry
+
+    can_recruit = {
+        can_recruit_maa_hoplites_trigger = yes #script not yet made
+    }
+
+    damage = 40
+    toughness = 20
+    pursuit = 10
+    screen = 6
+
+    terrain_bonus = {
+        plains = { damage = 21 toughness = 9 }
+        mountains = { damage = -6 }
+        forest = { damage = -6 }
+        hills = { toughness = -3 damage = -3 }
+        wetlands = { toughness = -3 damage = -3 }
+    }
+
+    counters = {
+        heavy_infantry = 0.5
+        pikemen = 0.5
+        archers = 0.5
+    }
+
+    buy_cost = { gold = 140 }
+    low_maintenance_cost = { gold = 1.1 }
+    high_maintenance_cost = { gold = 3.3 }
+    
+    mercenary_fallback = no
+    holy_order_fallback = yes
+    
+    stack = 50
+    ai_quality = {
+        value = ATHA_ai_weight_heavy_cavalry
+        add = ATHA_ai_weight_guard
+    }
+    icon = hoplites
+}
