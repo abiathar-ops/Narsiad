@@ -32,6 +32,16 @@ can_recruit_maa_hoplites_trigger = {
 	}
 }
 
+can_recruit_maa_mastiges_trigger = {
+	AND = {
+		narsid_maa_trigger = yes
+		can_recruit_elite_maa = yes
+		culture = { 
+			has_innovation = innovation_war_mastiges #innovation not made
+		}
+	}
+}
+
 #### MAA ART TRIGGERS ####
 narsid_maa_art_trigger = {
 	culture = { has_cultural_pillar = heritage_narsid }

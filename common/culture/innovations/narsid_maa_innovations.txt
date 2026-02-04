@@ -66,7 +66,9 @@ innovation_narsid_maa_03 = {
 	icon = @maa_01
 
 	potential = {
-		has_cultural_pillar = heritage_narsid
+		OR = {
+			this = culture:nars_narsid
+		}
 	}
 
 	custom = unlock_narsid_artillery

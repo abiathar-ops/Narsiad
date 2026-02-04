@@ -10,7 +10,7 @@ ethos_orphic = {
 	}
 
 	parameters = {
-		can_adopt_administrative_government_as_kingdom_tier = yes #Hoplites should replace this
+		can_adopt_administrative_government_as_kingdom_tier = yes #hoplitai should replace this
 	}
 
 	ai_will_do = {

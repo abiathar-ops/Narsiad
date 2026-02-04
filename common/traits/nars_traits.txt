@@ -51,7 +51,7 @@ nars_trait = {
 		}
 	}
 	tracks = {
-		hoplites = {
+		hoplitai = {
 			25 = {
 				martial = 3
 				prowess = 3
