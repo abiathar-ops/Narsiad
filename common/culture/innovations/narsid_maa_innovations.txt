@@ -36,12 +36,14 @@ innovation_narsid_maa_01 = {
 	icon = @special_maa_02
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
+		has_cultural_pillar = heritage_narsid
 	}
-	custom = unlock_hoplites
+	custom = unlock_hoplitai
+	custom = unlock_toxotai
 	custom = unlock_hetairoi
+
+	flag = global_maa
+	flag = culture_era_tribal
 }
 
 innovation_narsid_maa_02 = {
@@ -53,8 +55,8 @@ innovation_narsid_maa_02 = {
 		has_cultural_pillar = heritage_narsid
 	}
 
-	custom = unlock_narsid_artillery
-	
+	custom = unlock_athanatoi
+
 	flag = global_maa
 	flag = culture_era_early_medieval
 }
@@ -71,7 +73,7 @@ innovation_narsid_maa_03 = {
 		}
 	}
 
-	custom = unlock_narsid_artillery
+	custom = unlock_mastiges
 	
 	flag = global_maa
 	flag = culture_era_high_medieval

@@ -22,22 +22,22 @@ narsid_maa_trigger = { # Handles access to Narsid units
 	culture = { has_cultural_pillar = heritage_narsid }
 }
 
-can_recruit_maa_hoplites_trigger = {
+can_recruit_maa_01_trigger = {
 	AND = {
 		narsid_maa_trigger = yes
-		can_recruit_elite_maa = yes
+		#can_recruit_elite_maa = yes
 		culture = { 
-			has_innovation = innovation_war_hoplites #innovation not made
+			has_innovation = innovation_narsid_maa_01 #innovation not made
 		}
 	}
 }
 
-can_recruit_maa_mastiges_trigger = {
+can_recruit_maa_02_trigger = {
 	AND = {
 		narsid_maa_trigger = yes
-		can_recruit_elite_maa = yes
+		#can_recruit_elite_maa = yes
 		culture = { 
-			has_innovation = innovation_war_mastiges #innovation not made
+			has_innovation = innovation_narsid_maa_02 #innovation not made
 		}
 	}
 }

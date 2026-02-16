@@ -23,36 +23,10 @@
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
-@mumakil = "gfx/interface/icons/culture_innovations/innovation_mumakil.dds"
-
-innovation_narsid_heritage = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @civil_construction_2
-
-	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
-	}
-	character_modifier = {
-		embarkation_cost_mult = -0.5
-		naval_movement_speed_mult = 0.1
-		build_speed = -0.15
-		build_gold_cost = -0.05
-		development_growth_factor = 0.1
-	}
-
-	custom = unlocks_naval_raiding
-	custom = unlocks_sailable_major_rivers
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
 
 innovation_narsid_architecture_01 = {
 	group = culture_group_regional
-	culture_era = culture_era_early_medieval
+	culture_era = culture_era_tribal
 	icon = @fortifications
 
 	potential = {
@@ -65,10 +39,10 @@ innovation_narsid_architecture_01 = {
 	custom = innovation_narsid_architecture_01_tooltip
 	
 	flag = global_regional
-	flag = early_medieval_era_regional
+	flag = culture_era_early_tribal
 }
 
-innovation_numenorean_architecture_02 = {
+innovation_narsid_architecture_02 = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @fortifications
@@ -82,12 +56,12 @@ innovation_numenorean_architecture_02 = {
 	custom = innovation_narsid_architecture_02_tooltip
 	
 	flag = global_regional
-	flag = early_medieval_era_regional
+	flag = culture_era_early_medieval
 }
 
-innovation_numenorean_architecture_03 = {
+innovation_narsid_architecture_03 = {
 	group = culture_group_regional
-	culture_era = culture_era_early_medieval
+	culture_era = culture_era_high_medieval
 	icon = @fortifications
 
 	potential = {
@@ -95,9 +69,9 @@ innovation_numenorean_architecture_03 = {
 			this = culture:nars_narsid
 		}
 	}
-
+	
 	custom = innovation_narsid_architecture_03_tooltip
 	
 	flag = global_regional
-	flag = early_medieval_era_regional
+	flag = culture_era_high_medieval
 }
