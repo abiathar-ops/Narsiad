@@ -1,29 +1,34 @@
 ﻿l_english:
+
+  # Culture Innovation
+  innovation_narsid_identity: "Narsid's Banner"
+  innovation_narsid_identity_desc: "The Narsid identity is a tapestry woven from the threads of our history, values, and aspirations. From the tales of our ancestors to the ideals we hold dear, it is a collective consciousness that binds us together as a people, shaping our worldview and guiding our actions.."
+
   # MAA Innovations
-  innovation_narsid_maa_01_name: "Synaspismós"
+  innovation_narsid_maa_01: "Synaspismós"
   innovation_narsid_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields (*synaspismós*) and move as a single organism, we create an impenetrable wall of bronze and iron."
   unlock_hoplitai: "Can recruit [GetMaA('nars_hoplitai').GetName] as [men_at_arms|E]"
   unlock_toxotai: "Can recruit [GetMaA('nars_toxotai').GetName] as [men_at_arms|E]"
   unlock_hetairoi: "Can recruit [GetMaA('nars_hetairoi').GetName] as [men_at_arms|E]"
   
-  innovation_narsid_maa_02_name: "Athanasía"
-  innovation_narsid_maa_02_desc: "We have established a corps of elite guards whose number is never allowed to drop below ten thousand. If one falls, another instantly takes his place, creating the illusion of *athanasía*—immortality."
+  innovation_narsid_maa_02: "Kataphraía"
+  innovation_narsid_maa_02_desc: "We have established a corps of elite guards whose number is never allowed to drop below ten thousand. If one falls, another instantly takes his place, creating the illusion of immortality."
   unlock_athanatoi: "Can recruit [GetMaA('nars_athanatoi').GetName] as [men_at_arms|E]"
 
-  innovation_narsid_maa_03_name: "Peitharchía"
+  innovation_narsid_maa_03: "Petharchía"
   innovation_narsid_maa_03_desc: "Through the strictest discipline (*peitharchía*), we forge soldiers who fear their officers more than the enemy. The 'Scourges' are the embodiment of this ruthless order."
   unlock_mastiges: "Can recruit [GetMaA('nars_mastiges').GetName] as [men_at_arms|E]"
 
   # Architecture
   # Note: Matches the keys 'innovation_narsid_...' and 'innovation_narsid_...' from your file
-  innovation_narsid_architecture_01_name: "Kyklōpeía"
+  innovation_narsid_architecture_01: "Kyklōpeía"
   innovation_narsid_architecture_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants (*Kýklōpes*). These walls do not crumble."
   innovation_narsid_architecture_01_tooltip: "Can construct [buildings|E] [GetDomicileBuilding(' building_type_alkastron_01').GetName]
 
-  innovation_narsid_architecture_02_name: "Isódomon"
+  innovation_narsid_architecture_02: "Aisódomon"
   innovation_narsid_architecture_02_desc: "Moving beyond rough stone, we adopt the *isódomon* style—cutting blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
   innovation_narsid_architecture_02_tooltip: "Can construct [buildings|E] [GetDomicileBuilding(' building_type_alkastron_02').GetName]
 
-  innovation_narsid_architecture_03_name: "Hippodámeios"
+  innovation_narsid_architecture_03: "Hippodámeios"
   innovation_narsid_architecture_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
   innovation_narsid_architecture_03_tooltip: "Can construct [buildings|E] [GetDomicileBuilding(' building_type_alkastron_03').GetName]"

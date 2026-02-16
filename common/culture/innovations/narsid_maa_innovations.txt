@@ -23,59 +23,76 @@
 @nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
 @nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+@gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
 
 
 innovation_narsid_maa_01 = {
 	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @special_maa_02
+	culture_era = culture_era_early_medieval
+	icon = @leadership_1
 
 	potential = {
-		has_cultural_pillar = heritage_narsid
+		OR = {
+			has_cultural_pillar = heritage_narsid
+		}
 	}
+	
 	custom = unlock_hoplitai
 	custom = unlock_toxotai
 	custom = unlock_hetairoi
 
 	flag = global_maa
-	flag = culture_era_tribal
+	flag = culture_era_early_medieval
 }
 
 innovation_narsid_maa_02 = {
 	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @maa_01
+	culture_era = culture_era_high_medieval
+	icon = @leadership_2
 
 	potential = {
-		has_cultural_pillar = heritage_narsid
+		OR = {
+			has_cultural_pillar = heritage_narsid
+		}
+	}
+
+	maa_upgrade = {
+		men_at_arms = nars_hoplitai
+		damage = 20
+		toughness = 5
 	}
 
 	custom = unlock_athanatoi
 
 	flag = global_maa
-	flag = culture_era_early_medieval
+	flag = culture_era_high_medieval
 }
 
 
 innovation_narsid_maa_03 = {
 	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @maa_01
+	culture_era = culture_era_late_medieval
+	icon = @gunpowder_02
 
 	potential = {
 		OR = {
-			this = culture:nars_narsid
+			has_cultural_pillar = heritage_narsid
 		}
+	}
+
+	maa_upgrade = {
+		men_at_arms = nars_hoplitai
+		damage = 20
+		toughness = 5
 	}
 
 	custom = unlock_mastiges
 	
 	flag = global_maa
-	flag = culture_era_high_medieval
+	flag = culture_era_late_medieval
 }
 

@@ -24,10 +24,27 @@
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 
-innovation_narsid_architecture_01 = {
+innovation_narsid_identity = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @fortifications
+	icon = @raised_banner
+	potential = {
+		OR = {
+			has_cultural_pillar = heritage_narsid
+			#has_cultural_tradition = tradition_narsid_prospectors 
+		}
+	}
+
+	custom = innovation_narsid_identity_tooltip
+	
+	flag = global_regional
+	flag = culture_era_early_tribal
+}
+
+innovation_narsid_architecture_01 = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = @levy_building
 
 	potential = {
 		OR = {
@@ -39,13 +56,13 @@ innovation_narsid_architecture_01 = {
 	custom = innovation_narsid_architecture_01_tooltip
 	
 	flag = global_regional
-	flag = culture_era_early_tribal
+	flag = culture_era_early_medieval
 }
 
 innovation_narsid_architecture_02 = {
 	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @fortifications
+	culture_era = culture_era_high_medieval
+	icon = @civil_construction_2
 
 	potential = {
 		OR = {
@@ -56,22 +73,22 @@ innovation_narsid_architecture_02 = {
 	custom = innovation_narsid_architecture_02_tooltip
 	
 	flag = global_regional
-	flag = culture_era_early_medieval
+	flag = culture_era_high_medieval
 }
 
 innovation_narsid_architecture_03 = {
 	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @fortifications
+	culture_era = culture_era_late_medieval
+	icon = @misc_inventions
 
 	potential = {
 		OR = {
-			this = culture:nars_narsid
+			has_cultural_pillar = heritage_narsid
 		}
 	}
 	
 	custom = innovation_narsid_architecture_03_tooltip
 	
 	flag = global_regional
-	flag = culture_era_high_medieval
+	flag = culture_era_late_medieval
 }

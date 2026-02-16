@@ -1,0 +1,188 @@
+# 00_alkastron_buildings.txt
+
+alkastron_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		AND = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			building_requirement_tribal = no
+			culture = { 
+				has_cultural_pillar = heritage_nars
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+
+	cost_gold = expensive_building_tier_3_cost
+
+	# Archēgion - The Cadet Hall
+	character_modifier = {
+		knight_limit = 2
+		knight_effectiveness_mult = 0.10
+		command_modifier = 2 
+	}
+	
+	province_modifier = {
+		levy_reinforcement_rate = 0.15
+		defender_advantage = 5
+	}
+	
+	duchy_capital_county_modifier = {
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	next_building = alkastron_02
+
+	type_icon = "icon_building_military_academy.dds" # Or use a custom icon path if you have one
+
+	type = duchy_capital
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+alkastron_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		# Replace with your actual culture check
+		culture = { 
+			has_cultural_pillar = heritage_nars 
+			has_innovation = innovation_narsid_architecture_02
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_battlements
+		}
+	}
+
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+
+	cost_gold = expensive_building_tier_3_cost
+
+	# Stratēgion - The Officer's College
+	character_modifier = {
+		knight_limit = 4
+		knight_effectiveness_mult = 0.20
+		martial_skill_add = 1
+		command_modifier = 4
+	}
+	
+	province_modifier = {
+		levy_reinforcement_rate = 0.25
+		defender_advantage = 10
+	}
+
+	duchy_capital_county_modifier = {
+		monthly_county_control_growth_factor = 0.2
+	}
+
+	next_building = alkastron_03
+
+	type_icon = "icon_building_military_academy.dds"
+
+	type = duchy_capital
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+alkastron_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		AND = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			building_requirement_tribal = no
+			culture = { 
+				has_cultural_pillar = heritage_nars
+				has_innovation = innovation_narsid_architecture_03 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+
+	cost_gold = expensive_building_tier_3_cost
+
+	# Hēgemonion - The High Command
+	character_modifier = {
+		knight_limit = 6
+		knight_effectiveness_mult = 0.40
+		martial_skill_add = 3
+		command_modifier = 8
+		prowess_add = 4
+	}
+	
+	province_modifier = {
+		levy_reinforcement_rate = 0.50
+		defender_advantage = 20
+		army_maintenance_mult = -0.10
+	}
+
+	duchy_capital_county_modifier = {
+		monthly_county_control_growth_factor = 0.5
+	}
+
+	type_icon = "icon_building_military_academy.dds"
+
+	type = duchy_capital
+
+	ai_value = {
+		base = 20
+		modifier = {
+			factor = 2
+			scope:holder.capital_province = this
+		}
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
