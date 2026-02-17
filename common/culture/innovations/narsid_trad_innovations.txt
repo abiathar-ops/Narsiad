@@ -29,10 +29,7 @@ innovation_narsid_identity = {
 	culture_era = culture_era_tribal
 	icon = @raised_banner
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-			#has_cultural_tradition = tradition_narsid_prospectors 
-		}
+		has_cultural_pillar = heritage_nars
 	}
 
 	custom = innovation_narsid_identity_tooltip
@@ -47,10 +44,7 @@ innovation_narsid_architecture_01 = {
 	icon = @levy_building
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-			#has_cultural_tradition = tradition_narsid_prospectors 
-		}
+		has_cultural_pillar = heritage_nars
 	}
 
 	custom = innovation_narsid_architecture_01_tooltip
@@ -66,7 +60,7 @@ innovation_narsid_architecture_02 = {
 
 	potential = {
 		OR = {
-			has_cultural_pillar = heritage_narsid
+			has_cultural_pillar = heritage_nars
 		}
 	}
 
@@ -82,9 +76,7 @@ innovation_narsid_architecture_03 = {
 	icon = @misc_inventions
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
+		has_cultural_pillar = heritage_nars
 	}
 	
 	custom = innovation_narsid_architecture_03_tooltip

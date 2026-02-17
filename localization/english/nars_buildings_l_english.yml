@@ -8,5 +8,5 @@
  building_alkastron_03:0 "Hēgemonion"
  building_alkastron_03_desc:2 "A seat of military authority and statecraft. Commanders trained within the Hēgemonion master both strategic warfare and the governance of martial institutions."
  
- NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsic or consider this a [holy_site|E]"
+ NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsid or consider this a [holy_site|E]"
  alkastron_effect_desc:1 ""

@@ -36,9 +36,7 @@ innovation_narsid_maa_01 = {
 	icon = @leadership_1
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
+		has_cultural_pillar = heritage_nars
 	}
 	
 	custom = unlock_hoplitai
@@ -55,9 +53,7 @@ innovation_narsid_maa_02 = {
 	icon = @leadership_2
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
+		has_cultural_pillar = heritage_nars
 	}
 
 	maa_upgrade = {
@@ -79,9 +75,7 @@ innovation_narsid_maa_03 = {
 	icon = @gunpowder_02
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_narsid
-		}
+		has_cultural_pillar = heritage_nars
 	}
 
 	maa_upgrade = {
