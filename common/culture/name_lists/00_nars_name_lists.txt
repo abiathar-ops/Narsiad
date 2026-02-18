@@ -1,1096 +1,1984 @@
 name_list_nars = {
 
 	cadet_dynasty_names = {
-		"dynn_Kantakouzenos"
-		"dynn_Palaiologos"
-		"dynn_Komnenos"
-		"dynn_Macrodoukas"
-		"dynn_Aineidas"
-		"dynn_Kantakouzenos"
-		"dynn_Kastriotis"
-		"dynn_Doukas_Kamateros"
-		"dynn_Skleros"
-		"dynn_Palaiologos"
-		"dynn_Makrembolites"
-		"dynn_Botaneiates"
-		"dynn_Diogenes"
-		"dynn_Komnenos"
-		"dynn_Monomachos"
-		"dynn_Argyros"
-		"dynn_Kourkouas"
-		"dynn_Phokas"
-		"dynn_Stryphnos"
-		"dynn_Gabras"
-		"dynn_Aaron"
-		"dynn_Grammatikos"
-		"dynn_Zeno"
-		"dynn_Bua_Spatas"
-		"dynn_Gavalas"
-		"dynn_Axuchos"
-		"dynn_Kamonas"
-		"dynn_Asidenos"
-		"dynn_Komnenos_Doukas"
-		"dynn_Karatzas"
-		"dynn_Amiroutzes"
-		"dynn_Bessarion"
-		"dynn_Callistus"
-		"dynn_Chalkokondyles"
-		"dynn_Gazis"
-		"dynn_Kourtesios"
-		"dynn_Kallistos"
-		"dynn_Kladas"
-		{ "dynnp_de" "dynn_Patras" }
-		"dynn_Gemistus"
-		"dynn_Allatios"
-		"dynn_Chalcocondyles"
-		"dynn_Korniaktos"
-		"dynn_Damaskenos"
-		"dynn_Eparchos"
-		"dynn_Flanginis"
-		"dynn_FokA_s"
-		"dynn_Heraclides"
-		"dynn_Kallokratos"
-		"dynn_Kottounios"
-		"dynn_Leontaritis"
-		"dynn_Loukanis"
-		"dynn_Margunios"
-		"dynn_Musurus"
-		"dynn_Nafpliotis"
-		"dynn_HatzidA_kis"
-		"dynn_Aprenos"
-		"dynn_Chortatzis"
-		"dynn_Gabrielopoulos"
-		"dynn_Gounaropoulos"
-		"dynn_Belissariotis"
-		"dynn_Konstantopoulos"
-		"dynn_Kavallarios"
-		"dynn_Maniakis"
-		"dynn_Notaras"
-		"dynn_Sgouromallis"
-		"dynn_Epiphanis"
-		"dynn_Logaras"
-		"dynn_Eudaimon"
-		"dynn_Sakellarios"
-		"dynn_Maurozoumis"
-		"dynn_Stylaios"
-		"dynn_Basilakios"
-		"dynn_Mamonas"
-		"dynn_Kekaumenos"
-		"dynn_Metaxas"
-		"dynn_Kanavos"
-		"dynn_Koukouzelis"
-		"dynn_Koresis"
-		"dynn_Makrinos"
-		"dynn_Lambardas"
-		"dynn_Adrianos"
-		"dynn_Agallon"
-		"dynn_Akropolites"
-		"dynn_Aoinos"
-		"dynn_Apokaukos"
-		"dynn_Aprenos"
-		"dynn_Arbantenos"
-		"dynn_Argyros"
-		"dynn_Arianites"
-		"dynn_Atrapes"
-		"dynn_Balsamon"
-		"dynn_Botaneiates"
-		"dynn_Boumbalis"
-		"dynn_Bourtzes"
-		"dynn_Chandrenos"
-		"dynn_Choniates"
-		"dynn_Choumnos"
-		"dynn_Chrysoloras"
-		"dynn_Exazenos"
-		"dynn_Glabas"
-		"dynn_Kabasilas"
-		"dynn_Kalamanos"
-		"dynn_Kaloethes"
-		"dynn_Kalothetos"
-		"dynn_Kantakouzenos"
-		"dynn_Katrares"
-		"dynn_Koresses"
-		"dynn_Kourkouas"
-		"dynn_Kourtikes"
-		"dynn_Laskaris"
-		"dynn_Limpidares"
-		"dynn_Machoneos"
-		"dynn_Makrembolites"
-		"dynn_Malakes"
-		"dynn_Maliasenos"
-		"dynn_Mamalis"
-		"dynn_Mandromenos"
-		"dynn_Manouelites"
-		"dynn_Melachroinos"
-		"dynn_Mourtzouphlos"
-		"dynn_Mouzakios"
-		"dynn_Mouzalon"
-		"dynn_Neokaisareites"
-		"dynn_Nestongos"
-		"dynn_Pantechnes"
-		"dynn_Paraspondylos"
-		"dynn_Petraliphas"
-		"dynn_Petzikopoulos"
-		"dynn_Philanthropenos"
-		"dynn_Phokas"
-		"dynn_Prasomales"
-		"dynn_Prinkips"
-		"dynn_Rossatas"
-		"dynn_Sebastopoulos"
-		"dynn_Segouropoulos"
-		"dynn_Sgouros"
-		"dynn_Sphrantzes"
-		"dynn_Strabomytes"
-		"dynn_Syraneres"
-		"dynn_Syropoulos"
-		"dynn_Tagares"
-		"dynn_Trichas"
-		"dynn_Tsaphas"
-		"dynn_Tzykandeles"
-		"dynn_Zaridas"
-		"dynn_Akunin"
-		"dynn_Abalantes"
-		"dynn_Aboudimos"
-		"dynn_Adralestos"
-		"dynn_Agallianos"
-		"dynn_Akapnes"
-		"dynn_Alopos"
-		"dynn_Alousianos"
-		"dynn_Amiropoulos"
-		"dynn_Anatolikos"
-		"dynn_Andreiomenos"
-		"dynn_Androsalites"
-		"dynn_Angoures"
-		"dynn_Antiochites"
-		"dynn_Antiochos"
-		"dynn_Antipapas"
-		"dynn_Arbintenos"
-		"dynn_Areobindenos"
-		"dynn_Areobindos"
-		"dynn_Argyropoulos"
-		"dynn_Aristenos"
-		"dynn_Artoukomites"
-		"dynn_Arvantenos"
-		"dynn_Aulenos"
-		"dynn_Aulepates"
-		"dynn_Axinites"
-		"dynn_Axiomatikos"
-		"dynn_Balantes"
-		"dynn_Barbaros"
-		"dynn_Bardales"
-		"dynn_Barenos"
-		"dynn_Barys"
-		"dynn_Belissariotes"
-		"dynn_Bempetziotes"
-		"dynn_Beriboes"
-		"dynn_Beriotes"
-		"dynn_Blachernites"
-		"dynn_Blangas"
-		"dynn_BoI_las"
-		"dynn_Bouches"
-		"dynn_Boutzares"
-		"dynn_Bouzenos"
-		"dynn_Brachamios"
-		"dynn_Chaldos"
-		"dynn_Chalkites"
-		"dynn_Chalkoutzes"
-		"dynn_Chamaretos"
-		"dynn_Charsianites"
-		"dynn_Chasanes"
-		"dynn_Chazanes"
-		"dynn_Choinides"
-		"dynn_Chomatenos"
-		"dynn_Chordolibas"
-		"dynn_Choriates"
-		"dynn_Chrouselios"
-		"dynn_Chrousos"
-		"dynn_Chrysanthos"
-		"dynn_Chryselios"
-		"dynn_Chrysobalantites"
-		"dynn_Chytes"
-		"dynn_Daimones"
-		"dynn_Dalessenos"
-		"dynn_Dalassenos_Doukas"
-		"dynn_Dekanos"
-		"dynn_Diabatenos"
-		"dynn_Dikaios"
-		"dynn_Diogenes"
-		"dynn_Domestikopouolos"
-		"dynn_Doukas_Laskaris"
-		"dynn_Doukas_Palaiologos"
-		"dynn_Doxapatres"
-		"dynn_Drakontopoulos"
-		"dynn_Drosinos"
-		"dynn_Drosos"
-		"dynn_Droulenos"
-		"dynn_Elegmites"
-		"dynn_Enochos"
-		"dynn_Epanokomites"
-		"dynn_Ergodotes"
-		"dynn_Erotikos"
-		"dynn_Eugenianos"
-		"dynn_Eugenios"
-		"dynn_Eulogios"
-		"dynn_Exotrochos"
-		"dynn_Gabalas"
-		"dynn_Galaton"
-		"dynn_Gelotes"
-		"dynn_Gidos"
-		"dynn_Glykys"
-		"dynn_Goudeles"
-		"dynn_Gourzoubathenos"
-		"dynn_Granatos"
-		"dynn_Gribas"
-		"dynn_Grispos"
-		"dynn_Gymnos"
-		"dynn_Hagiochrisophorites"
-		"dynn_Hagioprokopites"
-		"dynn_Hagiotheodorites"
-		"dynn_Hagiozacharites"
-		"dynn_Hamartolos"
-		"dynn_Haplorabdes"
-		"dynn_Haploucheir"
-		"dynn_Hexakionites"
-		"dynn_Hexaklinites"
-		"dynn_Hexamilites"
-		"dynn_Hierakes"
-		"dynn_Hikanatos"
-		"dynn_Iasites"
-		"dynn_Iberopoulos"
-		"dynn_Isakiotes"
-		"dynn_Italikos"
-		"dynn_Kaballarios"
-		"dynn_Kabasilas"
-		"dynn_Kaisar"
-		"dynn_Kalameteros"
-		"dynn_Kalamaras"
-		"dynn_Kalampakes"
-		"dynn_Kalognomos"
-		"dynn_Kamytzes_Komnenodoukas"
-		"dynn_Kappadox_Kalampakes"
-		"dynn_Karabitenos"
-		"dynn_Karabitziotes"
-		"dynn_KaraI_onatan"
-		"dynn_Karamallos"
-		"dynn_Karantes"
-		"dynn_Kardamopoulos"
-		"dynn_Karenos"
-		"dynn_Karianites"
-		"dynn_Karkaronymos"
-		"dynn_Karmalikes"
-		"dynn_Karouzeiates"
-		"dynn_Kaspax"
-		"dynn_Kastamonites"
-		"dynn_Katakalon"
-		"dynn_Katakalos"
-		"dynn_Kataphloros"
-		"dynn_Katas"
-		"dynn_Katharos"
-		"dynn_Katotikos"
-		"dynn_Katzamoundes"
-		"dynn_Kegenes"
-		"dynn_Kekaleimenos"
-		"dynn_Keklymmenos"
-		"dynn_Kemineianos"
-		"dynn_Kenchres"
-		"dynn_Kentenares"
-		"dynn_Kephalas"
-		"dynn_Kibyrraiotes"
-		"dynn_Kinnamos"
-		"dynn_Kokkinos"
-		"dynn_Komnenodoukas"
-		"dynn_Konops"
-		"dynn_Kontostephanos_Komnenos"
-		"dynn_Kopsenos"
-		"dynn_Kostomyres"
-		"dynn_Kotertzes"
-		"dynn_Kouloukes"
-		"dynn_Kouneres"
-		"dynn_Kritharas"
-		"dynn_Kritopolos"
-		"dynn_Kyminianos"
-		"dynn_Kynochorites"
-		"dynn_Kyriotes"
-		"dynn_Kyritzes"
-		"dynn_Labouzenos"
-		"dynn_Laktentitzes"
-		"dynn_Lalakon"
-		"dynn_Lampsiotes"
-		"dynn_Lapardas"
-		"dynn_Lependrenos"
-		"dynn_Leukedonites"
-		"dynn_Libadares"
-		"dynn_Libadas"
-		"dynn_Libellisios"
-		"dynn_Limas"
-		"dynn_Liparites"
-		"dynn_Lithokastrites"
-		"dynn_Logariastes"
-		"dynn_Loules"
-		"dynn_Louloukes"
-		"dynn_Lykaon"
-		"dynn_Machetarios"
-		"dynn_Madrites"
-		"dynn_Madytenos"
-		"dynn_Makropoderes"
-		"dynn_MaleI_nos"
-		"dynn_Maleses"
-		"dynn_Mamalos"
-		"dynn_Manganes"
-		"dynn_Marachas"
-		"dynn_Marapas"
-		"dynn_Marchapsabos"
-		"dynn_Marianites"
-		"dynn_Marzapoulos"
-		"dynn_Matzaris"
-		"dynn_Matzas"
-		"dynn_Matzoukes"
-		"dynn_Maurex"
-		"dynn_Maurokatakalos"
-		"dynn_Mauros"
-		"dynn_Maurozomes"
-		"dynn_Mechos"
-		"dynn_Megalommates"
-		"dynn_Megenos"
-		"dynn_Meginos"
-		"dynn_Mermentoulos"
-		"dynn_Mesarites"
-		"dynn_Meschos"
-		"dynn_Mesopotamites"
-		"dynn_Metochites"
-		"dynn_Metropoulos"
-		"dynn_Mitylenaios"
-		"dynn_Monachites"
-		"dynn_Monokarites"
-		"dynn_Moroiannes"
-		"dynn_Mosaraph"
-		"dynn_Moschos"
-		"dynn_Mosele"
-		"dynn_Moungos"
-		"dynn_Mourmoures"
-		"dynn_Moustakes"
-		"dynn_Mozaes"
-		"dynn_Myralides"
-		"dynn_MyredeI_tes"
-		"dynn_Myrelaetes"
-		"dynn_Myron"
-		"dynn_Nabatenos"
-		"dynn_Narbiotes"
-		"dynn_Narsites"
-		"dynn_Neophytos"
-		"dynn_Neustongios"
-		"dynn_Nikerites"
-		"dynn_Nikoulitzes"
-		"dynn_Noe"
-		"dynn_Oinaiotes"
-		"dynn_Olyntenos"
-		"dynn_Opos"
-		"dynn_Pagomenos"
-		"dynn_Paktiares"
-		"dynn_Palaiologos_Komnenos"
-		"dynn_Doukas_Mourtzouphlos"
-		"dynn_Palaiotes"
-		"dynn_Palatinos"
-		"dynn_Pamphilos"
-		"dynn_Panaretos"
-		"dynn_Pankalos"
-		"dynn_Panokomites"
-		"dynn_Parsakoutenos"
-		"dynn_Parthenios"
-		"dynn_Paxenos"
-		"dynn_Pediasimos"
-		"dynn_Peganites"
-		"dynn_Pekoules"
-		"dynn_Pelamedes"
-		"dynn_Pentarkles"
-		"dynn_Pepagomenos"
-		"dynn_Pepanos"
-		"dynn_Perenos"
-		"dynn_Peribleptenos"
-		"dynn_Phalkon"
-		"dynn_Phialites"
-		"dynn_Philaretos"
-		"dynn_Philinos"
-		"dynn_Phrangopolos"
-		"dynn_Pistophilos"
-		"dynn_Pleures"
-		"dynn_Politopolos"
-		"dynn_Pothos"
-		"dynn_Probatas"
-		"dynn_Promountenos"
-		"dynn_Proteuon"
-		"dynn_Ptochos"
-		"dynn_Rentakenos"
-		"dynn_Rizenos"
-		"dynn_Rodios"
-		"dynn_Rogerios"
-		"dynn_Romaios"
-		"dynn_Rousopoulos"
-		"dynn_Sagopoulos"
-		"dynn_Sarakenopoulos"
-		"dynn_Saronites"
-		"dynn_Sauloioannes"
-		"dynn_Semnos"
-		"dynn_Serblias"
-		"dynn_Sikoundenos"
-		"dynn_Sinopites"
-		"dynn_Skandales"
-		"dynn_Skanranos"
-		"dynn_Skeblenos"
-		"dynn_Skleropoulos"
-		"dynn_Skoutariotes"
-		"dynn_Skribas"
-		"dynn_Smyrnaios"
-		"dynn_Solomon"
-		"dynn_Sortes"
-		"dynn_Soumenos"
-		"dynn_Spanogregores"
-		"dynn_Spanopoulos"
-		"dynn_Spondyles"
-		"dynn_Stachytzes"
-		"dynn_Stemnitziotes"
-		"dynn_Strategopoulos"
-		"dynn_Strephnes"
-		"dynn_Stypeiotes"
-		"dynn_Styppes"
-		"dynn_Synacheris"
-		"dynn_Syros"
-		"dynn_Tatikes"
-		"dynn_Tetragonites"
-		"dynn_Theodorokanos"
-		"dynn_Theodosiopolites"
-		"dynn_Thylakas"
-		"dynn_Tilapos"
-		"dynn_Timonites"
-		"dynn_Tourmarchopoulos"
-		"dynn_Traphines"
-		"dynn_Trellos"
-		"dynn_Triakontaphyllos"
-		"dynn_Triblattites"
-		"dynn_Trichinopodes"
-		"dynn_Triphyllios"
-		"dynn_Tzanzes"
-		"dynn_Tzefres"
-		"dynn_Tzetas"
-		"dynn_Tzipoureles"
-		"dynn_Tzirithon"
-		"dynn_Tzoulas"
-		"dynn_Tzoumenes"
-		"dynn_Tzouroulles"
-		"dynn_Tzympenos"
-		"dynn_Vatatzes"
-		"dynn_Xenos"
-		"dynn_Xeros"
-		"dynn_Xiphias"
-		"dynn_Zabareiotes"
-		"dynn_Zagarommates"
-		"dynn_Zerbos"
-		"dynn_Zomes"
-		"dynn_Zonaras"
-		"dynn_Kalomalas"
-		"dynn_Kaloudes"
-		"dynn_Kamateros_Kantakouzenos"
-		"dynn_Kampanarios"
-		"dynn_Kallierges"
-		"dynn_Loukites"
-		"dynn_Kometopoulos"
-		"dynn_Pateranos"
-		"dynn_Paleologo"
-		"dynn_Gregoras"
-		"dynn_Sanudo"
-		"dynn_Komytzes"
-		"dynn_Lascaris"
-		"dynn_Attikos"
-		"dynn_Anastasiotis"
-		"dynn_Evergetidiotis"
-		"dynn_Chliarinos"
-		"dynn_Chysovergis"
-		"dynn_Eugeniotis"
-		"dynn_Vorradiotis"
-		"dynn_Mountanis"
-		"dynn_Theotokitis"
-		"dynn_Viticlenou"
-		"dynn_Autoreianos"
-		"dynn_Akoimitos"
-		"dynn_Charitopoulos"
-		"dynn_Panemorphiotis"
-		"dynn_Hyakinthiotis"
-		"dynn_Galesiotis"
-		"dynn_Bekkos"
-		"dynn_Kyprios"
-		"dynn_Gonitis"
-		"dynn_Pammakaristiotis"
-		"dynn_Perivleptiotis"
-		"dynn_Manganiotis"
-		"dynn_Kalekas"
-		"dynn_Xylaloes"
-		"dynn_Syrikos"
-		"dynn_Tatikios"
-		"dynn_Aspietes"
-		"dynn_Leon"
-		"dynn_Phokas"
-		"dynn_Leon"
-		"dynn_Matteski"
-		{ "dynnp_al-" "dynn_Muzaffar" }
-		"dynn_Kastriotis"
-		"dynn_Kourkoas"
-		"dynn_Euferbenos"
+		"dynn_Aigeiratas"
+		"dynn_Aigieus"
+		"dynn_Ascheus"
+		"dynn_Bourios"
+		"dynn_Dymaios"
+		"dynn_Kallistatas"
+		"dynn_Karyneus"
+		"dynn_Leontesios"
+		"dynn_Olenios"
+		"dynn_Patreus"
+		"dynn_Pellaneus"
+		"dynn_Pharaieus"
+		"dynn_Rhyps"
+		"dynn_Stratidas"
+		"dynn_Thesmiaios"
+		"dynn_Tritaieus"
+		"dynn_Assios"
+		"dynn_Elaitas"
+		"dynn_Eresios"
+		"dynn_Kymaios"
+		"dynn_Mytilenaios"
+		"dynn_Pergamenos"
+		"dynn_Aleios"
+		"dynn_Alipheires"
+		"dynn_Aseatas"
+		"dynn_Dipaies"
+		"dynn_Erchominios"
+		"dynn_Euaimnios"
+		"dynn_Eutaies"
+		"dynn_Heliswasios"
+		"dynn_Heraies"
+		"dynn_Kaphyies"
+		"dynn_Kletorios"
+		"dynn_Kortynes"
+		"dynn_Kynaithes"
+		"dynn_Lousiatas"
+		"dynn_Lykourasios"
+		"dynn_Mainalios"
+		"dynn_Mantines"
+		"dynn_Megalopolitas"
+		"dynn_Metidries"
+		"dynn_Nestanios"
+		"dynn_Nonakries"
+		"dynn_Oresthasios"
+		"dynn_Pallantes"
+		"dynn_Parpylaios"
+		"dynn_Pheneatas"
+		"dynn_Phiales"
+		"dynn_Psophidios"
+		"dynn_Stymphalios"
+		"dynn_Tegeatas"
+		"dynn_Teuthidas"
+		"dynn_Thelphousios"
+		"dynn_Thisoaios"
+		"dynn_Torthynes"
+		"dynn_Enyaliatas"
+		"dynn_Epaleatas"
+		"dynn_Hoplodmiatas"
+		{ "dynnp_ep_" "dynn_Posoidaian" }
+		"dynn_Wanakisiatas"
+		"dynn_Apolloniatas"
+		{ "dynnp_ep_" "dynn_Athanaian" }
+		"dynn_Hippothoitas"
+		"dynn_Krariotas"
+		"dynn_Eleuthereus"
+		"dynn_Acharneus"
+		"dynn_Acherdousios"
+		"dynn_Agrylethen"
+		"dynn_Aigilieus"
+		"dynn_Aithalides"
+		"dynn_Aixoneus"
+		"dynn_Alopekethen"
+		"dynn_Amphitropethen"
+		"dynn_Anagyrasios"
+		"dynn_Anakaieus"
+		"dynn_Anaphlystios"
+		"dynn_Angelethen"
+		"dynn_Ankylethen"
+		"dynn_Aphidnaios"
+		"dynn_Araphenios"
+		"dynn_Ateneus"
+		"dynn_Athmoneus"
+		"dynn_Aurides"
+		"dynn_Azenieus"
+		"dynn_Batethen"
+		"dynn_Besaieus"
+		"dynn_Boutades"
+		"dynn_Cholargeus"
+		"dynn_Cholleides"
+		"dynn_Daidalides"
+		"dynn_Deiradiotes"
+		"dynn_Dekeleeus"
+		"dynn_Diomeeus"
+		"dynn_Eiresides"
+		"dynn_Eiteaios"
+		"dynn_Elaiousios"
+		"dynn_Eleusinios"
+		"dynn_Epieikides"
+		"dynn_Epikephisios"
+		"dynn_Erchieus"
+		"dynn_Erikeeus"
+		"dynn_Eroiades"
+		"dynn_Euonymeus"
+		"dynn_Eupyrides"
+		"dynn_Gargettios"
+		"dynn_Hagnousios"
+		"dynn_Halaieus"
+		"dynn_Halimousios"
+		"dynn_Hamaxanteus"
+		"dynn_Hekalethen"
+		"dynn_Hermeios"
+		"dynn_Hestiaiothen"
+		"dynn_Hippotomades"
+		"dynn_Hybades"
+		"dynn_Ikarieus"
+		"dynn_Ionides"
+		"dynn_Iphistiades"
+		{ "dynnp_ek" "dynn_Kedon" }
+		"dynn_Keiriades"
+		"dynn_Kephalethen"
+		"dynn_Kephisieus"
+		{ "dynnp_ek" "dynn_Kerameon" }
+		"dynn_Kettios"
+		"dynn_Kikkyneus"
+		{ "dynnp_ek" "dynn_Koiles" }
+		"dynn_Kollyteus"
+		"dynn_Kolonethen"
+		{ "dynnp_ek" "dynn_Kolonou" }
+		"dynn_Konthylethen"
+		"dynn_Kopreios"
+		"dynn_Korydalleus"
+		"dynn_Kothokides"
+		"dynn_Krioeus"
+		"dynn_Kropides"
+		"dynn_Kydantides"
+		"dynn_Kydathenaieus"
+		"dynn_Kytherios"
+		"dynn_Lakiades"
+		"dynn_Lamptreus"
+		"dynn_Leukonoeus"
+		"dynn_Lousieus"
+		"dynn_Marathonios"
+		"dynn_Meliteus"
+		"dynn_Myrrhinousios"
+		{ "dynnp_eg" "dynn_Myrrhinouttes" }
+		"dynn_Oathen"
+		"dynn_Oethen"
+		"dynn_Oinaios"
+		{ "dynnp_ex" "dynn_Oiou" }
+		"dynn_Otryneus"
+		"dynn_Paianieus"
+		"dynn_Paionides"
+		"dynn_Palleneus"
+		"dynn_Pambotades"
+		"dynn_Peiraieus"
+		"dynn_Pelekes"
+		"dynn_Pergasethen"
+		"dynn_Perithoides"
+		"dynn_Phalereus"
+		"dynn_Phegaieus"
+		"dynn_Phegousios"
+		"dynn_Philaides"
+		"dynn_Phlyeus"
+		"dynn_Phrearrhios"
+		"dynn_Phylasios"
+		"dynn_Pitheus"
+		"dynn_Plotheus"
+		"dynn_Porios"
+		"dynn_Potamios"
+		"dynn_Prasieus"
+		"dynn_Probalisios"
+		"dynn_Prospaltios"
+		"dynn_Pteleasios"
+		"dynn_Rhamnousios"
+		"dynn_Semachides"
+		"dynn_Skambonides"
+		"dynn_Sounieus"
+		"dynn_Sphettios"
+		"dynn_Steirieus"
+		"dynn_Sybrides"
+		"dynn_Sypalettios"
+		"dynn_Teithrasios"
+		"dynn_Themakeus"
+		"dynn_Thoraieus"
+		"dynn_Thorikios"
+		"dynn_Thriasios"
+		"dynn_Thymaitades"
+		"dynn_Trikorysios"
+		"dynn_Trinemeeus"
+		"dynn_Tyrmeides"
+		"dynn_Xypetaion"
+		"dynn_Achniades"
+		"dynn_Aigeirotomos"
+		"dynn_Amynandrides"
+		"dynn_Apheidantides"
+		"dynn_Boutypos"
+		"dynn_Brytides"
+		"dynn_Charides"
+		"dynn_Chimarides"
+		"dynn_Daitros"
+		"dynn_Demokleides"
+		"dynn_Demotionides"
+		"dynn_Dipoliastes"
+		"dynn_Dyaleus"
+		"dynn_Eikadeus"
+		"dynn_Elasides"
+		"dynn_Epakreus"
+		"dynn_Epikleides"
+		"dynn_Erysichthonides"
+		"dynn_Eteoboutades"
+		"dynn_Etionides"
+		"dynn_Eudanemos"
+		"dynn_Euenorides"
+		"dynn_Euergides"
+		"dynn_Eumolpides"
+		"dynn_Euneides"
+		"dynn_Gephyraios"
+		"dynn_Glaukides"
+		"dynn_Gleontis"
+		"dynn_Hesychides"
+		"dynn_Kentriades"
+		"dynn_Kephalides"
+		"dynn_Keryx"
+		"dynn_Koironides"
+		"dynn_Kolieus"
+		"dynn_Komades"
+		"dynn_Konnides"
+		"dynn_Krokonides"
+		"dynn_Kynnides"
+		"dynn_Lykomides"
+		"dynn_Medontides"
+		"dynn_Mesogeios"
+		"dynn_Oikates"
+		"dynn_Pamphides"
+		"dynn_Philieus"
+		"dynn_Philleides"
+		"dynn_Phoinix"
+		"dynn_Phrasides"
+		"dynn_Phreoruchos"
+		"dynn_Phytalides"
+		"dynn_Poimenides"
+		"dynn_Praxiergides"
+		"dynn_Pyrrhakides"
+		"dynn_Salaminios"
+		"dynn_Tetrapolis"
+		"dynn_Thaulonides"
+		"dynn_Therrikleides"
+		"dynn_Thymaitidos"
+		"dynn_Thyrgonides"
+		"dynn_Titakides"
+		"dynn_Zakyades"
+		"dynn_Zeuxantides"
+		"dynn_Akrephieus"
+		"dynn_Alalkomeneus"
+		"dynn_Anthadonios"
+		"dynn_Cheroneus"
+		"dynn_Chorsieus"
+		"dynn_Erchomenios"
+		"dynn_Erythreos"
+		"dynn_Hariartios"
+		"dynn_Hyeittios"
+		"dynn_Hysios"
+		"dynn_Kopeos"
+		"dynn_Koroneus"
+		"dynn_Lebadeieos"
+		"dynn_Mykalessios"
+		"dynn_Oropios"
+		"dynn_Plateeus"
+		"dynn_Sipheieus"
+		"dynn_Skaphleus"
+		"dynn_Skolieus"
+		"dynn_Tanagreos"
+		"dynn_Theibeos"
+		"dynn_Theispieus"
+		"dynn_Thisbeus"
+		"dynn_Askreos"
+		"dynn_Aulideus"
+		"dynn_Glisantios"
+		"dynn_Hyrieus"
+		"dynn_Kreusios"
+		"dynn_Salganios"
+		"dynn_Aiginatas"
+		"dynn_Argeios"
+		"dynn_Belbinitas"
+		"dynn_Epidaurios"
+		"dynn_Halikos"
+		"dynn_Hermioneus"
+		"dynn_Kalaureatas"
+		"dynn_Kleonaios"
+		"dynn_Methanaios"
+		"dynn_Orneatas"
+		"dynn_Trozanios"
+		"dynn_Arachnas"
+		"dynn_Arkois"
+		"dynn_Asina"
+		"dynn_Elaiwon"
+		"dynn_Eryneion"
+		"dynn_Hysea_ano"
+		"dynn_Keramis"
+		"dynn_Kerkas"
+		"dynn_Kleonai"
+		"dynn_Koila"
+		"dynn_Kolouris"
+		"dynn_Lagaria"
+		"dynn_Lyrkeion"
+		"dynn_Mansetos"
+		"dynn_Mykana"
+		"dynn_Paionis"
+		"dynn_Pallas"
+		"dynn_Pedion"
+		"dynn_Pholygas"
+		"dynn_Poimonis"
+		"dynn_Posidaon"
+		"dynn_Prosymna"
+		"dynn_Skleris"
+		"dynn_Sticheleion"
+		"dynn_Achaios"
+		"dynn_Aithalieus"
+		"dynn_Aithonidas"
+		"dynn_Amphisseus"
+		"dynn_Arachnidas"
+		"dynn_Arkeidas"
+		"dynn_Damoitadas"
+		"dynn_Dymmadas"
+		"dynn_Hyadas"
+		"dynn_Kerkadas"
+		"dynn_Kleodaidas"
+		"dynn_Kolonos"
+		"dynn_Kylarabos"
+		"dynn_Leukyridas"
+		"dynn_Lykophronidas"
+		"dynn_Moklas"
+		"dynn_Ophellokleidas"
+		"dynn_Paionidas"
+		"dynn_Pholygadas"
+		"dynn_Polatheus"
+		"dynn_Smireidas"
+		"dynn_Sphyreidas"
+		"dynn_Wanidas"
+		"dynn_Amphiareteidas"
+		"dynn_Arkoidas"
+		"dynn_Dorieus"
+		"dynn_Daiphonteus"
+		"dynn_Diwonysios"
+		"dynn_Dmaihippidas"
+		"dynn_Eualkidas"
+		"dynn_Heraieus"
+		"dynn_Lykotadas"
+		"dynn_Melanippidas"
+		"dynn_Naupliadas"
+		"dynn_Temenidas"
+		"dynn_Aischiadas"
+		"dynn_Olisseidas"
+		"dynn_Hyrnathios"
+		"dynn_Pamphylas"
+		"dynn_Dymans"
+		"dynn_Hylleus"
+		"dynn_Agrias"
+		"dynn_Alamais"
+		"dynn_Alekmeis"
+		"dynn_Bounoias"
+		"dynn_Dorimachis"
+		"dynn_Erilais"
+		"dynn_Hysidrias"
+		"dynn_Koleis"
+		"dynn_Lasieis"
+		"dynn_Melkidon"
+		"dynn_Mesogais"
+		"dynn_Miltiados"
+		"dynn_Mysias"
+		"dynn_Naupheis"
+		"dynn_Nauplias"
+		"dynn_Nymphaidos"
+		"dynn_Phragias"
+		"dynn_Pieriados"
+		"dynn_Politados"
+		"dynn_Rhopitais"
+		"dynn_Selegeis"
+		"dynn_Sinias"
+		"dynn_Stratitis"
+		"dynn_Tantalis"
+		"dynn_Teichias"
+		"dynn_Tenias"
+		"dynn_Anaias"
+		"dynn_Aphylonias"
+		"dynn_Bryantinas"
+		"dynn_Dexelias"
+		"dynn_Hysminaias"
+		"dynn_Isarnias"
+		"dynn_Kolonaias"
+		"dynn_enerthen_Oiseiathen"
+		"dynn_enerthen_Teikhiathen"
+		"dynn_Oiseias_hyperthen"
+		"dynn_Azantios"
+		"dynn_Hysminatas"
+		"dynn_Agraios"
+		"dynn_Agrinieus"
+		"dynn_Aperantos"
+		"dynn_Apodotos"
+		"dynn_Arakyneus"
+		"dynn_Arsinoeus"
+		"dynn_Chalkideus"
+		"dynn_Daian"
+		"dynn_Dexieus"
+		"dynn_Eidaios"
+		"dynn_Eoitan"
+		"dynn_Eurytan"
+		"dynn_Halikyrnaios"
+		"dynn_Hyposeirios"
+		"dynn_Kallieus"
+		"dynn_Kallipolitas"
+		"dynn_Kalydonios"
+		"dynn_Kasilios"
+		"dynn_Lysimacheus"
+		"dynn_Makyneus"
+		"dynn_Molykreus"
+		"dynn_Mystakeus"
+		"dynn_Ophieus"
+		"dynn_Ophioneus"
+		"dynn_Pamphanos"
+		"dynn_Pamphieus"
+		"dynn_Pellotios"
+		"dynn_Philotaieus"
+		"dynn_Phistyos"
+		"dynn_Pholantios"
+		"dynn_Phytaieus"
+		"dynn_Pleuronios"
+		"dynn_Poteidanieus"
+		"dynn_Proscheios"
+		"dynn_Tapheieus"
+		"dynn_Thermios"
+		"dynn_Thestieus"
+		"dynn_Trichoneus"
+		"dynn_Apteraios"
+		"dynn_Eleuthernaios"
+		"dynn_Gortynios"
+		"dynn_Itanios"
+		"dynn_Knosios"
+		"dynn_Koronaeus"
+		"dynn_Kydoniatas"
+		"dynn_Kyparisseus"
+		"dynn_Lisios"
+		"dynn_Lyttios"
+		"dynn_Malios"
+		"dynn_Mallaios"
+		"dynn_Messenios"
+		"dynn_Polyrhenios"
+		"dynn_Praisios"
+		"dynn_Pylios"
+		"dynn_Theraios"
+		"dynn_Thourios"
+		"dynn_Antigoneus"
+		"dynn_Argethieus"
+		"dynn_Athaman"
+		"dynn_Atintan"
+		"dynn_Chaon"
+		"dynn_Ethnestos"
+		"dynn_Genoaios"
+		"dynn_Kassopaios"
+		"dynn_Keletronios"
+		"dynn_Kyestos"
+		"dynn_Omphals"
+		"dynn_Opatos"
+		"dynn_Orestos"
+		"dynn_Paroros"
+		"dynn_Peukestos"
+		"dynn_Thesprotos"
+		"dynn_Trampyeus"
+		"dynn_Triphylas"
+		"dynn_Abderites"
+		"dynn_Abydenos"
+		"dynn_Akanthios"
+		"dynn_Alabandeus"
+		"dynn_Apolloniates"
+		"dynn_Bisanthenos"
+		"dynn_Chios"
+		"dynn_Erythraios"
+		"dynn_Histiaieus"
+		"dynn_Karthaieus"
+		"dynn_Karystios"
+		"dynn_Kassandreus"
+		"dynn_Kianos"
+		"dynn_Klazomenios"
+		"dynn_Kyzikenos"
+		"dynn_Lampsakenos"
+		"dynn_Maronites"
+		"dynn_Milesios"
+		"dynn_Miletopolites"
+		"dynn_Mylaseus"
+		"dynn_Myrleanos"
+		"dynn_Naxios"
+		"dynn_Oinoaios"
+		"dynn_Olynthios"
+		"dynn_Parianos"
+		"dynn_Parios"
+		"dynn_Peparethios"
+		"dynn_Perinthios"
+		"dynn_Philippeus"
+		"dynn_Phokaieus"
+		"dynn_Samios"
+		"dynn_Teios"
+		"dynn_Thasios"
+		"dynn_Theopropides"
+		"dynn_Amphipolites"
+		"dynn_Arethousios"
+		"dynn_Arkynieus"
+		"dynn_Beroiaios"
+		"dynn_Bragylios"
+		"dynn_Dieus"
+		"dynn_Edessaios"
+		"dynn_Elemiotes"
+		"dynn_Eordaios"
+		"dynn_Euiestes"
+		"dynn_Herakleotes"
+		"dynn_Letaios"
+		"dynn_Lynkestas"
+		"dynn_Morrylios"
+		{ "dynnp_ek" "dynn_Orestidos" }
+		"dynn_Pellaios"
+		"dynn_Pydnaios"
+		"dynn_Thessalonikeus"
+		"dynn_Thyateirenos"
+		"dynn_Dolops"
+		"dynn_Gonneus"
+		"dynn_Larisaios"
+		"dynn_Matropolitas"
+		"dynn_Meliboieus"
+		"dynn_Melitaieus"
+		"dynn_Menondas"
+		"dynn_Phalannaios"
+		"dynn_Phaloriastas"
+		"dynn_Pharsalios"
+		"dynn_Proernios"
+		"dynn_Pythoiastas"
+		"dynn_Theibaios"
+		"dynn_Trikkaios"
 	}
 
 	dynasty_names = {
-		"dynn_Kantakouzenos"
-		"dynn_Palaiologos"
-		"dynn_Komnenos"
-		"dynn_Macrodoukas"
-		"dynn_Aineidas"
-		"dynn_Kantakouzenos"
-		"dynn_Kastriotis"
-		"dynn_Doukas_Kamateros"
-		"dynn_Skleros"
-		"dynn_Palaiologos"
-		"dynn_Makrembolites"
-		"dynn_Botaneiates"
-		"dynn_Diogenes"
-		"dynn_Komnenos"
-		"dynn_Monomachos"
-		"dynn_Argyros"
-		"dynn_Kourkouas"
-		"dynn_Phokas"
-		"dynn_Stryphnos"
-		"dynn_Gabras"
-		"dynn_Aaron"
-		"dynn_Grammatikos"
-		"dynn_Zeno"
-		"dynn_Bua_Spatas"
-		"dynn_Gavalas"
-		"dynn_Axuchos"
-		"dynn_Kamonas"
-		"dynn_Asidenos"
-		"dynn_Komnenos_Doukas"
-		"dynn_Karatzas"
-		"dynn_Amiroutzes"
-		"dynn_Bessarion"
-		"dynn_Callistus"
-		"dynn_Chalkokondyles"
-		"dynn_Gazis"
-		"dynn_Kourtesios"
-		"dynn_Kallistos"
-		"dynn_Kladas"
-		{ "dynnp_de" "dynn_Patras" }
-		"dynn_Gemistus"
-		"dynn_Allatios"
-		"dynn_Chalcocondyles"
-		"dynn_Korniaktos"
-		"dynn_Damaskenos"
-		"dynn_Eparchos"
-		"dynn_Flanginis"
-		"dynn_FokA_s"
-		"dynn_Heraclides"
-		"dynn_Kallokratos"
-		"dynn_Kottounios"
-		"dynn_Leontaritis"
-		"dynn_Loukanis"
-		"dynn_Margunios"
-		"dynn_Musurus"
-		"dynn_Nafpliotis"
-		"dynn_HatzidA_kis"
-		"dynn_Aprenos"
-		"dynn_Chortatzis"
-		"dynn_Gabrielopoulos"
-		"dynn_Gounaropoulos"
-		"dynn_Belissariotis"
-		"dynn_Konstantopoulos"
-		"dynn_Kavallarios"
-		"dynn_Maniakis"
-		"dynn_Notaras"
-		"dynn_Sgouromallis"
-		"dynn_Epiphanis"
-		"dynn_Logaras"
-		"dynn_Eudaimon"
-		"dynn_Sakellarios"
-		"dynn_Maurozoumis"
-		"dynn_Stylaios"
-		"dynn_Basilakios"
-		"dynn_Mamonas"
-		"dynn_Kekaumenos"
-		"dynn_Metaxas"
-		"dynn_Kanavos"
-		"dynn_Koukouzelis"
-		"dynn_Koresis"
-		"dynn_Makrinos"
-		"dynn_Lambardas"
-		"dynn_Adrianos"
-		"dynn_Agallon"
-		"dynn_Akropolites"
-		"dynn_Aoinos"
-		"dynn_Apokaukos"
-		"dynn_Aprenos"
-		"dynn_Arbantenos"
-		"dynn_Argyros"
-		"dynn_Arianites"
-		"dynn_Atrapes"
-		"dynn_Balsamon"
-		"dynn_Botaneiates"
-		"dynn_Boumbalis"
-		"dynn_Bourtzes"
-		"dynn_Chandrenos"
-		"dynn_Choniates"
-		"dynn_Choumnos"
-		"dynn_Chrysoloras"
-		"dynn_Exazenos"
-		"dynn_Glabas"
-		"dynn_Kabasilas"
-		"dynn_Kalamanos"
-		"dynn_Kaloethes"
-		"dynn_Kalothetos"
-		"dynn_Kantakouzenos"
-		"dynn_Katrares"
-		"dynn_Koresses"
-		"dynn_Kourkouas"
-		"dynn_Kourtikes"
-		"dynn_Laskaris"
-		"dynn_Limpidares"
-		"dynn_Machoneos"
-		"dynn_Makrembolites"
-		"dynn_Malakes"
-		"dynn_Maliasenos"
-		"dynn_Mamalis"
-		"dynn_Mandromenos"
-		"dynn_Manouelites"
-		"dynn_Melachroinos"
-		"dynn_Mourtzouphlos"
-		"dynn_Mouzakios"
-		"dynn_Mouzalon"
-		"dynn_Neokaisareites"
-		"dynn_Nestongos"
-		"dynn_Pantechnes"
-		"dynn_Paraspondylos"
-		"dynn_Petraliphas"
-		"dynn_Petzikopoulos"
-		"dynn_Philanthropenos"
-		"dynn_Phokas"
-		"dynn_Prasomales"
-		"dynn_Prinkips"
-		"dynn_Rossatas"
-		"dynn_Sebastopoulos"
-		"dynn_Segouropoulos"
-		"dynn_Sgouros"
-		"dynn_Sphrantzes"
-		"dynn_Strabomytes"
-		"dynn_Syraneres"
-		"dynn_Syropoulos"
-		"dynn_Tagares"
-		"dynn_Trichas"
-		"dynn_Tsaphas"
-		"dynn_Tzykandeles"
-		"dynn_Zaridas"
-		"dynn_Akunin"
-		"dynn_Abalantes"
-		"dynn_Aboudimos"
-		"dynn_Adralestos"
-		"dynn_Agallianos"
-		"dynn_Akapnes"
-		"dynn_Alopos"
-		"dynn_Alousianos"
-		"dynn_Amiropoulos"
-		"dynn_Anatolikos"
-		"dynn_Andreiomenos"
-		"dynn_Androsalites"
-		"dynn_Angoures"
-		"dynn_Antiochites"
-		"dynn_Antiochos"
-		"dynn_Antipapas"
-		"dynn_Arbintenos"
-		"dynn_Areobindenos"
-		"dynn_Areobindos"
-		"dynn_Argyropoulos"
-		"dynn_Aristenos"
-		"dynn_Artoukomites"
-		"dynn_Arvantenos"
-		"dynn_Aulenos"
-		"dynn_Aulepates"
-		"dynn_Axinites"
-		"dynn_Axiomatikos"
-		"dynn_Balantes"
-		"dynn_Barbaros"
-		"dynn_Bardales"
-		"dynn_Barenos"
-		"dynn_Barys"
-		"dynn_Belissariotes"
-		"dynn_Bempetziotes"
-		"dynn_Beriboes"
-		"dynn_Beriotes"
-		"dynn_Blachernites"
-		"dynn_Blangas"
-		"dynn_BoI_las"
-		"dynn_Bouches"
-		"dynn_Boutzares"
-		"dynn_Bouzenos"
-		"dynn_Brachamios"
-		"dynn_Chaldos"
-		"dynn_Chalkites"
-		"dynn_Chalkoutzes"
-		"dynn_Chamaretos"
-		"dynn_Charsianites"
-		"dynn_Chasanes"
-		"dynn_Chazanes"
-		"dynn_Choinides"
-		"dynn_Chomatenos"
-		"dynn_Chordolibas"
-		"dynn_Choriates"
-		"dynn_Chrouselios"
-		"dynn_Chrousos"
-		"dynn_Chrysanthos"
-		"dynn_Chryselios"
-		"dynn_Chrysobalantites"
-		"dynn_Chytes"
-		"dynn_Daimones"
-		"dynn_Dalessenos"
-		"dynn_Dalassenos_Doukas"
-		"dynn_Dekanos"
-		"dynn_Diabatenos"
-		"dynn_Dikaios"
-		"dynn_Diogenes"
-		"dynn_Domestikopouolos"
-		"dynn_Doukas_Laskaris"
-		"dynn_Doukas_Palaiologos"
-		"dynn_Doxapatres"
-		"dynn_Drakontopoulos"
-		"dynn_Drosinos"
-		"dynn_Drosos"
-		"dynn_Droulenos"
-		"dynn_Elegmites"
-		"dynn_Enochos"
-		"dynn_Epanokomites"
-		"dynn_Ergodotes"
-		"dynn_Erotikos"
-		"dynn_Eugenianos"
-		"dynn_Eugenios"
-		"dynn_Eulogios"
-		"dynn_Exotrochos"
-		"dynn_Gabalas"
-		"dynn_Galaton"
-		"dynn_Gelotes"
-		"dynn_Gidos"
-		"dynn_Glykys"
-		"dynn_Goudeles"
-		"dynn_Gourzoubathenos"
-		"dynn_Granatos"
-		"dynn_Gribas"
-		"dynn_Grispos"
-		"dynn_Gymnos"
-		"dynn_Hagiochrisophorites"
-		"dynn_Hagioprokopites"
-		"dynn_Hagiotheodorites"
-		"dynn_Hagiozacharites"
-		"dynn_Hamartolos"
-		"dynn_Haplorabdes"
-		"dynn_Haploucheir"
-		"dynn_Hexakionites"
-		"dynn_Hexaklinites"
-		"dynn_Hexamilites"
-		"dynn_Hierakes"
-		"dynn_Hikanatos"
-		"dynn_Iasites"
-		"dynn_Iberopoulos"
-		"dynn_Isakiotes"
-		"dynn_Italikos"
-		"dynn_Kaballarios"
-		"dynn_Kabasilas"
-		"dynn_Kaisar"
-		"dynn_Kalameteros"
-		"dynn_Kalamaras"
-		"dynn_Kalampakes"
-		"dynn_Kalognomos"
-		"dynn_Kamytzes_Komnenodoukas"
-		"dynn_Kappadox_Kalampakes"
-		"dynn_Karabitenos"
-		"dynn_Karabitziotes"
-		"dynn_KaraI_onatan"
-		"dynn_Karamallos"
-		"dynn_Karantes"
-		"dynn_Kardamopoulos"
-		"dynn_Karenos"
-		"dynn_Karianites"
-		"dynn_Karkaronymos"
-		"dynn_Karmalikes"
-		"dynn_Karouzeiates"
-		"dynn_Kaspax"
-		"dynn_Kastamonites"
-		"dynn_Katakalon"
-		"dynn_Katakalos"
-		"dynn_Kataphloros"
-		"dynn_Katas"
-		"dynn_Katharos"
-		"dynn_Katotikos"
-		"dynn_Katzamoundes"
-		"dynn_Kegenes"
-		"dynn_Kekaleimenos"
-		"dynn_Keklymmenos"
-		"dynn_Kemineianos"
-		"dynn_Kenchres"
-		"dynn_Kentenares"
-		"dynn_Kephalas"
-		"dynn_Kibyrraiotes"
-		"dynn_Kinnamos"
-		"dynn_Kokkinos"
-		"dynn_Komnenodoukas"
-		"dynn_Konops"
-		"dynn_Kontostephanos_Komnenos"
-		"dynn_Kopsenos"
-		"dynn_Kostomyres"
-		"dynn_Kotertzes"
-		"dynn_Kouloukes"
-		"dynn_Kouneres"
-		"dynn_Kritharas"
-		"dynn_Kritopolos"
-		"dynn_Kyminianos"
-		"dynn_Kynochorites"
-		"dynn_Kyriotes"
-		"dynn_Kyritzes"
-		"dynn_Labouzenos"
-		"dynn_Laktentitzes"
-		"dynn_Lalakon"
-		"dynn_Lampsiotes"
-		"dynn_Lapardas"
-		"dynn_Lependrenos"
-		"dynn_Leukedonites"
-		"dynn_Libadares"
-		"dynn_Libadas"
-		"dynn_Libellisios"
-		"dynn_Limas"
-		"dynn_Liparites"
-		"dynn_Lithokastrites"
-		"dynn_Logariastes"
-		"dynn_Loules"
-		"dynn_Louloukes"
-		"dynn_Lykaon"
-		"dynn_Machetarios"
-		"dynn_Madrites"
-		"dynn_Madytenos"
-		"dynn_Makropoderes"
-		"dynn_MaleI_nos"
-		"dynn_Maleses"
-		"dynn_Mamalos"
-		"dynn_Manganes"
-		"dynn_Marachas"
-		"dynn_Marapas"
-		"dynn_Marchapsabos"
-		"dynn_Marianites"
-		"dynn_Marzapoulos"
-		"dynn_Matzaris"
-		"dynn_Matzas"
-		"dynn_Matzoukes"
-		"dynn_Maurex"
-		"dynn_Maurokatakalos"
-		"dynn_Mauros"
-		"dynn_Maurozomes"
-		"dynn_Mechos"
-		"dynn_Megalommates"
-		"dynn_Megenos"
-		"dynn_Meginos"
-		"dynn_Mermentoulos"
-		"dynn_Mesarites"
-		"dynn_Meschos"
-		"dynn_Mesopotamites"
-		"dynn_Metochites"
-		"dynn_Metropoulos"
-		"dynn_Mitylenaios"
-		"dynn_Monachites"
-		"dynn_Monokarites"
-		"dynn_Moroiannes"
-		"dynn_Mosaraph"
-		"dynn_Moschos"
-		"dynn_Mosele"
-		"dynn_Moungos"
-		"dynn_Mourmoures"
-		"dynn_Moustakes"
-		"dynn_Mozaes"
-		"dynn_Myralides"
-		"dynn_MyredeI_tes"
-		"dynn_Myrelaetes"
-		"dynn_Myron"
-		"dynn_Nabatenos"
-		"dynn_Narbiotes"
-		"dynn_Narsites"
-		"dynn_Neophytos"
-		"dynn_Neustongios"
-		"dynn_Nikerites"
-		"dynn_Nikoulitzes"
-		"dynn_Noe"
-		"dynn_Oinaiotes"
-		"dynn_Olyntenos"
-		"dynn_Opos"
-		"dynn_Pagomenos"
-		"dynn_Paktiares"
-		"dynn_Palaiologos_Komnenos"
-		"dynn_Doukas_Mourtzouphlos"
-		"dynn_Palaiotes"
-		"dynn_Palatinos"
-		"dynn_Pamphilos"
-		"dynn_Panaretos"
-		"dynn_Pankalos"
-		"dynn_Panokomites"
-		"dynn_Parsakoutenos"
-		"dynn_Parthenios"
-		"dynn_Paxenos"
-		"dynn_Pediasimos"
-		"dynn_Peganites"
-		"dynn_Pekoules"
-		"dynn_Pelamedes"
-		"dynn_Pentarkles"
-		"dynn_Pepagomenos"
-		"dynn_Pepanos"
-		"dynn_Perenos"
-		"dynn_Peribleptenos"
-		"dynn_Phalkon"
-		"dynn_Phialites"
-		"dynn_Philaretos"
-		"dynn_Philinos"
-		"dynn_Phrangopolos"
-		"dynn_Pistophilos"
-		"dynn_Pleures"
-		"dynn_Politopolos"
-		"dynn_Pothos"
-		"dynn_Probatas"
-		"dynn_Promountenos"
-		"dynn_Proteuon"
-		"dynn_Ptochos"
-		"dynn_Rentakenos"
-		"dynn_Rizenos"
-		"dynn_Rodios"
-		"dynn_Rogerios"
-		"dynn_Romaios"
-		"dynn_Rousopoulos"
-		"dynn_Sagopoulos"
-		"dynn_Sarakenopoulos"
-		"dynn_Saronites"
-		"dynn_Sauloioannes"
-		"dynn_Semnos"
-		"dynn_Serblias"
-		"dynn_Sikoundenos"
-		"dynn_Sinopites"
-		"dynn_Skandales"
-		"dynn_Skanranos"
-		"dynn_Skeblenos"
-		"dynn_Skleropoulos"
-		"dynn_Skoutariotes"
-		"dynn_Skribas"
-		"dynn_Smyrnaios"
-		"dynn_Solomon"
-		"dynn_Sortes"
-		"dynn_Soumenos"
-		"dynn_Spanogregores"
-		"dynn_Spanopoulos"
-		"dynn_Spondyles"
-		"dynn_Stachytzes"
-		"dynn_Stemnitziotes"
-		"dynn_Strategopoulos"
-		"dynn_Strephnes"
-		"dynn_Stypeiotes"
-		"dynn_Styppes"
-		"dynn_Synacheris"
-		"dynn_Syros"
-		"dynn_Tatikes"
-		"dynn_Tetragonites"
-		"dynn_Theodorokanos"
-		"dynn_Theodosiopolites"
-		"dynn_Thylakas"
-		"dynn_Tilapos"
-		"dynn_Timonites"
-		"dynn_Tourmarchopoulos"
-		"dynn_Traphines"
-		"dynn_Trellos"
-		"dynn_Triakontaphyllos"
-		"dynn_Triblattites"
-		"dynn_Trichinopodes"
-		"dynn_Triphyllios"
-		"dynn_Tzanzes"
-		"dynn_Tzefres"
-		"dynn_Tzetas"
-		"dynn_Tzipoureles"
-		"dynn_Tzirithon"
-		"dynn_Tzoulas"
-		"dynn_Tzoumenes"
-		"dynn_Tzouroulles"
-		"dynn_Tzympenos"
-		"dynn_Vatatzes"
-		"dynn_Xenos"
-		"dynn_Xeros"
-		"dynn_Xiphias"
-		"dynn_Zabareiotes"
-		"dynn_Zagarommates"
-		"dynn_Zerbos"
-		"dynn_Zomes"
-		"dynn_Zonaras"
-		"dynn_Kalomalas"
-		"dynn_Kaloudes"
-		"dynn_Kamateros_Kantakouzenos"
-		"dynn_Kampanarios"
-		"dynn_Kallierges"
-		"dynn_Loukites"
-		"dynn_Kometopoulos"
-		"dynn_Pateranos"
-		"dynn_Paleologo"
-		"dynn_Gregoras"
-		"dynn_Sanudo"
-		"dynn_Komytzes"
-		"dynn_Lascaris"
-		"dynn_Attikos"
-		"dynn_Anastasiotis"
-		"dynn_Evergetidiotis"
-		"dynn_Chliarinos"
-		"dynn_Chysovergis"
-		"dynn_Eugeniotis"
-		"dynn_Vorradiotis"
-		"dynn_Mountanis"
-		"dynn_Theotokitis"
-		"dynn_Viticlenou"
-		"dynn_Autoreianos"
-		"dynn_Akoimitos"
-		"dynn_Charitopoulos"
-		"dynn_Panemorphiotis"
-		"dynn_Hyakinthiotis"
-		"dynn_Galesiotis"
-		"dynn_Bekkos"
-		"dynn_Kyprios"
-		"dynn_Gonitis"
-		"dynn_Pammakaristiotis"
-		"dynn_Perivleptiotis"
-		"dynn_Manganiotis"
-		"dynn_Kalekas"
-		"dynn_Xylaloes"
-		"dynn_Syrikos"
-		"dynn_Tatikios"
-		"dynn_Aspietes"
-		"dynn_Leon"
-		"dynn_Phokas"
-		"dynn_Leon"
-		"dynn_Matteski"
-		{ "dynnp_al-" "dynn_Muzaffar" }
-		"dynn_Kastriotis"
-		"dynn_Kourkoas"
-		"dynn_Euferbenos"
+		"dynn_Aigeiratas"
+		"dynn_Aigieus"
+		"dynn_Ascheus"
+		"dynn_Bourios"
+		"dynn_Dymaios"
+		"dynn_Kallistatas"
+		"dynn_Karyneus"
+		"dynn_Leontesios"
+		"dynn_Olenios"
+		"dynn_Patreus"
+		"dynn_Pellaneus"
+		"dynn_Pharaieus"
+		"dynn_Rhyps"
+		"dynn_Stratidas"
+		"dynn_Thesmiaios"
+		"dynn_Tritaieus"
+		"dynn_Assios"
+		"dynn_Elaitas"
+		"dynn_Eresios"
+		"dynn_Kymaios"
+		"dynn_Mytilenaios"
+		"dynn_Pergamenos"
+		"dynn_Aleios"
+		"dynn_Alipheires"
+		"dynn_Aseatas"
+		"dynn_Dipaies"
+		"dynn_Erchominios"
+		"dynn_Euaimnios"
+		"dynn_Eutaies"
+		"dynn_Heliswasios"
+		"dynn_Heraies"
+		"dynn_Kaphyies"
+		"dynn_Kletorios"
+		"dynn_Kortynes"
+		"dynn_Kynaithes"
+		"dynn_Lousiatas"
+		"dynn_Lykourasios"
+		"dynn_Mainalios"
+		"dynn_Mantines"
+		"dynn_Megalopolitas"
+		"dynn_Metidries"
+		"dynn_Nestanios"
+		"dynn_Nonakries"
+		"dynn_Oresthasios"
+		"dynn_Pallantes"
+		"dynn_Parpylaios"
+		"dynn_Pheneatas"
+		"dynn_Phiales"
+		"dynn_Psophidios"
+		"dynn_Stymphalios"
+		"dynn_Tegeatas"
+		"dynn_Teuthidas"
+		"dynn_Thelphousios"
+		"dynn_Thisoaios"
+		"dynn_Torthynes"
+		"dynn_Enyaliatas"
+		"dynn_Epaleatas"
+		"dynn_Hoplodmiatas"
+		{ "dynnp_ep_" "dynn_Posoidaian" }
+		"dynn_Wanakisiatas"
+		"dynn_Apolloniatas"
+		{ "dynnp_ep_" "dynn_Athanaian" }
+		"dynn_Hippothoitas"
+		"dynn_Krariotas"
+		"dynn_Eleuthereus"
+		"dynn_Acharneus"
+		"dynn_Acherdousios"
+		"dynn_Agrylethen"
+		"dynn_Aigilieus"
+		"dynn_Aithalides"
+		"dynn_Aixoneus"
+		"dynn_Alopekethen"
+		"dynn_Amphitropethen"
+		"dynn_Anagyrasios"
+		"dynn_Anakaieus"
+		"dynn_Anaphlystios"
+		"dynn_Angelethen"
+		"dynn_Ankylethen"
+		"dynn_Aphidnaios"
+		"dynn_Araphenios"
+		"dynn_Ateneus"
+		"dynn_Athmoneus"
+		"dynn_Aurides"
+		"dynn_Azenieus"
+		"dynn_Batethen"
+		"dynn_Besaieus"
+		"dynn_Boutades"
+		"dynn_Cholargeus"
+		"dynn_Cholleides"
+		"dynn_Daidalides"
+		"dynn_Deiradiotes"
+		"dynn_Dekeleeus"
+		"dynn_Diomeeus"
+		"dynn_Eiresides"
+		"dynn_Eiteaios"
+		"dynn_Elaiousios"
+		"dynn_Eleusinios"
+		"dynn_Epieikides"
+		"dynn_Epikephisios"
+		"dynn_Erchieus"
+		"dynn_Erikeeus"
+		"dynn_Eroiades"
+		"dynn_Euonymeus"
+		"dynn_Eupyrides"
+		"dynn_Gargettios"
+		"dynn_Hagnousios"
+		"dynn_Halaieus"
+		"dynn_Halimousios"
+		"dynn_Hamaxanteus"
+		"dynn_Hekalethen"
+		"dynn_Hermeios"
+		"dynn_Hestiaiothen"
+		"dynn_Hippotomades"
+		"dynn_Hybades"
+		"dynn_Ikarieus"
+		"dynn_Ionides"
+		"dynn_Iphistiades"
+		{ "dynnp_ek" "dynn_Kedon" }
+		"dynn_Keiriades"
+		"dynn_Kephalethen"
+		"dynn_Kephisieus"
+		{ "dynnp_ek" "dynn_Kerameon" }
+		"dynn_Kettios"
+		"dynn_Kikkyneus"
+		{ "dynnp_ek" "dynn_Koiles" }
+		"dynn_Kollyteus"
+		"dynn_Kolonethen"
+		{ "dynnp_ek" "dynn_Kolonou" }
+		"dynn_Konthylethen"
+		"dynn_Kopreios"
+		"dynn_Korydalleus"
+		"dynn_Kothokides"
+		"dynn_Krioeus"
+		"dynn_Kropides"
+		"dynn_Kydantides"
+		"dynn_Kydathenaieus"
+		"dynn_Kytherios"
+		"dynn_Lakiades"
+		"dynn_Lamptreus"
+		"dynn_Leukonoeus"
+		"dynn_Lousieus"
+		"dynn_Marathonios"
+		"dynn_Meliteus"
+		"dynn_Myrrhinousios"
+		{ "dynnp_eg" "dynn_Myrrhinouttes" }
+		"dynn_Oathen"
+		"dynn_Oethen"
+		"dynn_Oinaios"
+		{ "dynnp_ex" "dynn_Oiou" }
+		"dynn_Otryneus"
+		"dynn_Paianieus"
+		"dynn_Paionides"
+		"dynn_Palleneus"
+		"dynn_Pambotades"
+		"dynn_Peiraieus"
+		"dynn_Pelekes"
+		"dynn_Pergasethen"
+		"dynn_Perithoides"
+		"dynn_Phalereus"
+		"dynn_Phegaieus"
+		"dynn_Phegousios"
+		"dynn_Philaides"
+		"dynn_Phlyeus"
+		"dynn_Phrearrhios"
+		"dynn_Phylasios"
+		"dynn_Pitheus"
+		"dynn_Plotheus"
+		"dynn_Porios"
+		"dynn_Potamios"
+		"dynn_Prasieus"
+		"dynn_Probalisios"
+		"dynn_Prospaltios"
+		"dynn_Pteleasios"
+		"dynn_Rhamnousios"
+		"dynn_Semachides"
+		"dynn_Skambonides"
+		"dynn_Sounieus"
+		"dynn_Sphettios"
+		"dynn_Steirieus"
+		"dynn_Sybrides"
+		"dynn_Sypalettios"
+		"dynn_Teithrasios"
+		"dynn_Themakeus"
+		"dynn_Thoraieus"
+		"dynn_Thorikios"
+		"dynn_Thriasios"
+		"dynn_Thymaitades"
+		"dynn_Trikorysios"
+		"dynn_Trinemeeus"
+		"dynn_Tyrmeides"
+		"dynn_Xypetaion"
+		"dynn_Achniades"
+		"dynn_Aigeirotomos"
+		"dynn_Amynandrides"
+		"dynn_Apheidantides"
+		"dynn_Boutypos"
+		"dynn_Brytides"
+		"dynn_Charides"
+		"dynn_Chimarides"
+		"dynn_Daitros"
+		"dynn_Demokleides"
+		"dynn_Demotionides"
+		"dynn_Dipoliastes"
+		"dynn_Dyaleus"
+		"dynn_Eikadeus"
+		"dynn_Elasides"
+		"dynn_Epakreus"
+		"dynn_Epikleides"
+		"dynn_Erysichthonides"
+		"dynn_Eteoboutades"
+		"dynn_Etionides"
+		"dynn_Eudanemos"
+		"dynn_Euenorides"
+		"dynn_Euergides"
+		"dynn_Eumolpides"
+		"dynn_Euneides"
+		"dynn_Gephyraios"
+		"dynn_Glaukides"
+		"dynn_Gleontis"
+		"dynn_Hesychides"
+		"dynn_Kentriades"
+		"dynn_Kephalides"
+		"dynn_Keryx"
+		"dynn_Koironides"
+		"dynn_Kolieus"
+		"dynn_Komades"
+		"dynn_Konnides"
+		"dynn_Krokonides"
+		"dynn_Kynnides"
+		"dynn_Lykomides"
+		"dynn_Medontides"
+		"dynn_Mesogeios"
+		"dynn_Oikates"
+		"dynn_Pamphides"
+		"dynn_Philieus"
+		"dynn_Philleides"
+		"dynn_Phoinix"
+		"dynn_Phrasides"
+		"dynn_Phreoruchos"
+		"dynn_Phytalides"
+		"dynn_Poimenides"
+		"dynn_Praxiergides"
+		"dynn_Pyrrhakides"
+		"dynn_Salaminios"
+		"dynn_Tetrapolis"
+		"dynn_Thaulonides"
+		"dynn_Therrikleides"
+		"dynn_Thymaitidos"
+		"dynn_Thyrgonides"
+		"dynn_Titakides"
+		"dynn_Zakyades"
+		"dynn_Zeuxantides"
+		"dynn_Akrephieus"
+		"dynn_Alalkomeneus"
+		"dynn_Anthadonios"
+		"dynn_Cheroneus"
+		"dynn_Chorsieus"
+		"dynn_Erchomenios"
+		"dynn_Erythreos"
+		"dynn_Hariartios"
+		"dynn_Hyeittios"
+		"dynn_Hysios"
+		"dynn_Kopeos"
+		"dynn_Koroneus"
+		"dynn_Lebadeieos"
+		"dynn_Mykalessios"
+		"dynn_Oropios"
+		"dynn_Plateeus"
+		"dynn_Sipheieus"
+		"dynn_Skaphleus"
+		"dynn_Skolieus"
+		"dynn_Tanagreos"
+		"dynn_Theibeos"
+		"dynn_Theispieus"
+		"dynn_Thisbeus"
+		"dynn_Askreos"
+		"dynn_Aulideus"
+		"dynn_Glisantios"
+		"dynn_Hyrieus"
+		"dynn_Kreusios"
+		"dynn_Salganios"
+		"dynn_Aiginatas"
+		"dynn_Argeios"
+		"dynn_Belbinitas"
+		"dynn_Epidaurios"
+		"dynn_Halikos"
+		"dynn_Hermioneus"
+		"dynn_Kalaureatas"
+		"dynn_Kleonaios"
+		"dynn_Methanaios"
+		"dynn_Orneatas"
+		"dynn_Trozanios"
+		"dynn_Arachnas"
+		"dynn_Arkois"
+		"dynn_Asina"
+		"dynn_Elaiwon"
+		"dynn_Eryneion"
+		"dynn_Hysea_ano"
+		"dynn_Keramis"
+		"dynn_Kerkas"
+		"dynn_Kleonai"
+		"dynn_Koila"
+		"dynn_Kolouris"
+		"dynn_Lagaria"
+		"dynn_Lyrkeion"
+		"dynn_Mansetos"
+		"dynn_Mykana"
+		"dynn_Paionis"
+		"dynn_Pallas"
+		"dynn_Pedion"
+		"dynn_Pholygas"
+		"dynn_Poimonis"
+		"dynn_Posidaon"
+		"dynn_Prosymna"
+		"dynn_Skleris"
+		"dynn_Sticheleion"
+		"dynn_Achaios"
+		"dynn_Aithalieus"
+		"dynn_Aithonidas"
+		"dynn_Amphisseus"
+		"dynn_Arachnidas"
+		"dynn_Arkeidas"
+		"dynn_Damoitadas"
+		"dynn_Dymmadas"
+		"dynn_Hyadas"
+		"dynn_Kerkadas"
+		"dynn_Kleodaidas"
+		"dynn_Kolonos"
+		"dynn_Kylarabos"
+		"dynn_Leukyridas"
+		"dynn_Lykophronidas"
+		"dynn_Moklas"
+		"dynn_Ophellokleidas"
+		"dynn_Paionidas"
+		"dynn_Pholygadas"
+		"dynn_Polatheus"
+		"dynn_Smireidas"
+		"dynn_Sphyreidas"
+		"dynn_Wanidas"
+		"dynn_Amphiareteidas"
+		"dynn_Arkoidas"
+		"dynn_Dorieus"
+		"dynn_Daiphonteus"
+		"dynn_Diwonysios"
+		"dynn_Dmaihippidas"
+		"dynn_Eualkidas"
+		"dynn_Heraieus"
+		"dynn_Lykotadas"
+		"dynn_Melanippidas"
+		"dynn_Naupliadas"
+		"dynn_Temenidas"
+		"dynn_Aischiadas"
+		"dynn_Olisseidas"
+		"dynn_Hyrnathios"
+		"dynn_Pamphylas"
+		"dynn_Dymans"
+		"dynn_Hylleus"
+		"dynn_Agrias"
+		"dynn_Alamais"
+		"dynn_Alekmeis"
+		"dynn_Bounoias"
+		"dynn_Dorimachis"
+		"dynn_Erilais"
+		"dynn_Hysidrias"
+		"dynn_Koleis"
+		"dynn_Lasieis"
+		"dynn_Melkidon"
+		"dynn_Mesogais"
+		"dynn_Miltiados"
+		"dynn_Mysias"
+		"dynn_Naupheis"
+		"dynn_Nauplias"
+		"dynn_Nymphaidos"
+		"dynn_Phragias"
+		"dynn_Pieriados"
+		"dynn_Politados"
+		"dynn_Rhopitais"
+		"dynn_Selegeis"
+		"dynn_Sinias"
+		"dynn_Stratitis"
+		"dynn_Tantalis"
+		"dynn_Teichias"
+		"dynn_Tenias"
+		"dynn_Anaias"
+		"dynn_Aphylonias"
+		"dynn_Bryantinas"
+		"dynn_Dexelias"
+		"dynn_Hysminaias"
+		"dynn_Isarnias"
+		"dynn_Kolonaias"
+		"dynn_enerthen_Oiseiathen"
+		"dynn_enerthen_Teikhiathen"
+		"dynn_Oiseias_hyperthen"
+		"dynn_Azantios"
+		"dynn_Hysminatas"
+		"dynn_Agraios"
+		"dynn_Agrinieus"
+		"dynn_Aperantos"
+		"dynn_Apodotos"
+		"dynn_Arakyneus"
+		"dynn_Arsinoeus"
+		"dynn_Chalkideus"
+		"dynn_Daian"
+		"dynn_Dexieus"
+		"dynn_Eidaios"
+		"dynn_Eoitan"
+		"dynn_Eurytan"
+		"dynn_Halikyrnaios"
+		"dynn_Hyposeirios"
+		"dynn_Kallieus"
+		"dynn_Kallipolitas"
+		"dynn_Kalydonios"
+		"dynn_Kasilios"
+		"dynn_Lysimacheus"
+		"dynn_Makyneus"
+		"dynn_Molykreus"
+		"dynn_Mystakeus"
+		"dynn_Ophieus"
+		"dynn_Ophioneus"
+		"dynn_Pamphanos"
+		"dynn_Pamphieus"
+		"dynn_Pellotios"
+		"dynn_Philotaieus"
+		"dynn_Phistyos"
+		"dynn_Pholantios"
+		"dynn_Phytaieus"
+		"dynn_Pleuronios"
+		"dynn_Poteidanieus"
+		"dynn_Proscheios"
+		"dynn_Tapheieus"
+		"dynn_Thermios"
+		"dynn_Thestieus"
+		"dynn_Trichoneus"
+		"dynn_Apteraios"
+		"dynn_Eleuthernaios"
+		"dynn_Gortynios"
+		"dynn_Itanios"
+		"dynn_Knosios"
+		"dynn_Koronaeus"
+		"dynn_Kydoniatas"
+		"dynn_Kyparisseus"
+		"dynn_Lisios"
+		"dynn_Lyttios"
+		"dynn_Malios"
+		"dynn_Mallaios"
+		"dynn_Messenios"
+		"dynn_Polyrhenios"
+		"dynn_Praisios"
+		"dynn_Pylios"
+		"dynn_Theraios"
+		"dynn_Thourios"
+		"dynn_Antigoneus"
+		"dynn_Argethieus"
+		"dynn_Athaman"
+		"dynn_Atintan"
+		"dynn_Chaon"
+		"dynn_Ethnestos"
+		"dynn_Genoaios"
+		"dynn_Kassopaios"
+		"dynn_Keletronios"
+		"dynn_Kyestos"
+		"dynn_Omphals"
+		"dynn_Opatos"
+		"dynn_Orestos"
+		"dynn_Paroros"
+		"dynn_Peukestos"
+		"dynn_Thesprotos"
+		"dynn_Trampyeus"
+		"dynn_Triphylas"
+		"dynn_Abderites"
+		"dynn_Abydenos"
+		"dynn_Akanthios"
+		"dynn_Alabandeus"
+		"dynn_Apolloniates"
+		"dynn_Bisanthenos"
+		"dynn_Chios"
+		"dynn_Erythraios"
+		"dynn_Histiaieus"
+		"dynn_Karthaieus"
+		"dynn_Karystios"
+		"dynn_Kassandreus"
+		"dynn_Kianos"
+		"dynn_Klazomenios"
+		"dynn_Kyzikenos"
+		"dynn_Lampsakenos"
+		"dynn_Maronites"
+		"dynn_Milesios"
+		"dynn_Miletopolites"
+		"dynn_Mylaseus"
+		"dynn_Myrleanos"
+		"dynn_Naxios"
+		"dynn_Oinoaios"
+		"dynn_Olynthios"
+		"dynn_Parianos"
+		"dynn_Parios"
+		"dynn_Peparethios"
+		"dynn_Perinthios"
+		"dynn_Philippeus"
+		"dynn_Phokaieus"
+		"dynn_Samios"
+		"dynn_Teios"
+		"dynn_Thasios"
+		"dynn_Theopropides"
+		"dynn_Amphipolites"
+		"dynn_Arethousios"
+		"dynn_Arkynieus"
+		"dynn_Beroiaios"
+		"dynn_Bragylios"
+		"dynn_Dieus"
+		"dynn_Edessaios"
+		"dynn_Elemiotes"
+		"dynn_Eordaios"
+		"dynn_Euiestes"
+		"dynn_Herakleotes"
+		"dynn_Letaios"
+		"dynn_Lynkestas"
+		"dynn_Morrylios"
+		{ "dynnp_ek" "dynn_Orestidos" }
+		"dynn_Pellaios"
+		"dynn_Pydnaios"
+		"dynn_Thessalonikeus"
+		"dynn_Thyateirenos"
+		"dynn_Dolops"
+		"dynn_Gonneus"
+		"dynn_Larisaios"
+		"dynn_Matropolitas"
+		"dynn_Meliboieus"
+		"dynn_Melitaieus"
+		"dynn_Menondas"
+		"dynn_Phalannaios"
+		"dynn_Phaloriastas"
+		"dynn_Pharsalios"
+		"dynn_Proernios"
+		"dynn_Pythoiastas"
+		"dynn_Theibaios"
+		"dynn_Trikkaios"
 	}
 
 	male_names = {
-		Adrianos Akakios Alexandros Alexios Anastasios Anatolios Andreas Andronikos Anthemios Anthimos Antiochos Antonios Apollonios Arsenios Artemios Athanasios Bardas
-		Bartholomaios Basileios Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos Damianos Daniel David Demetrios Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
-		Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios Gerasimos Germanos Gregoras Gregorios Hektorios Helias Herakleios Hierotheos Himerios
-		Hippolytos Hypatios Iakobos Ignatios Innokentios Ioannes Ioannikios Iordanes Ioseph Isaakios Isaias Isidoros Ioulianos Ioustinianos Ioustinos Kaisarios
-		Kallinikos Kallistos Komitas Konstantinos Konstantios Konstas Kosmas Kyriakos Kyrillos Kyros Laurentios Lazaros Leon Leontios Loukas Makarios Manuel Markos
-		Matthaios Maurikios Maximos Megistos Meletios Methodios Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
-		Pavlos Pelagios Petros Philaretos Philippos Philotheos Phokas Photios Polykarpos Porphyrios Prokopios Pyrros Raphail Romanos Sabas Samuel Serapion Sebastianos Sergios Stephanos
-		Staurakios Symeon Symmachos Theocharistos Theodoros Theodosios Theodotos Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas Tiberios Traianos
-		Timotheos Tryphon Valerios Zacharias Zenobios Zenon
-		Aristarchus Aristarchos
+		Dionysios Nikias Aischrion Aristodamos Philon Damon Kleon Onasimos Xenon Asklapiadas
+		Leon Lykon Nikostratos Satyros Sosikrates Thrason Agias Archelaos Aristokrates Ariston
+		Damatrios Dion Philokrates Sokrates Sostratos Theodoros Achaios Alexandros Antandros Apollodoros
+		Aristeas Asklapon Athanadas Damokles Damokritos Eukrates Hagesilaos Herakleitos Kallikrates Lykos
+		Nikokrates Nikon Philippos Philokles Simias Simos Soteridas Theoxenos Timokrates Timon
+		Xenarchos Agathon Ageas Andrikos Andron Aristeidas Aristoboulos Aristokles Damasias Dameas
+		Deinias Diodoros Diokles Drakon Herakleidas Kallias Kleomachos Leptinas Lykiskos Lysias
+		Nikanor Nikarchos Peisias Philodamos Praxion Pythion Satyrion Sosas Sosibios Sosistratos
+		Sotion Straton Symmachos Theon Theoxis Timanoridas Xenotimos Zopyros Aigialeus Aischinas
+		Aleximachos Alkimachos Andromenes Antiochos Apollonios Archedamos Archias Archikrates Archippos Archon
+		Aristainos Aristandros Aristarchos Aristeus Aristogenes Aristomachos Aristomenes Aristoxenos Arkadion Bromios
+		Chresimos Damochares Damokrates Damoxenos Dexilaos Diopompos Diphilos Dorotheos Echesthenes Erasippos
+		Euagoras Euandros Euboulos Eunous Euphanes Euryleon Euthydamos Hagesias Hyperbatas Iason
+		Kallistratos Kleonymos Kosmos Kratinos Kritolaos Kteson Kyllanios Leontichos Lykinos Lysippos
+		Lysixenos Lyson Megakles Memnon Menandros Mikkos Moscholaos Nikadas Nikaios Nikandros
+		Olympiadas Olympichos Onasion Ophelion Orpheus Pantias Philostratos Pistias Polemarchos Polyxenos
+		Praxias Pyron Seleukos Sosias Sosippos Sosos Stratios Stratokles Teison Telekles
+		Termonios Theodotos Theokritos Thrasyboulos Timaios Timokles Timosthenes Timoxenos Xenophantos Xenophilos
+		Xenophon Adeimantos Agamestor Aganoridas Agasias Agatharchos Agathokles Agemos Agesilaos Agion
+		Agyllos Agys Aimostratos Aineias Ainesidamos Aisanoridas Aischrias Aischylos Aischytos Akeratos
+		Alexanor Alexarchos Alexikles Alexion Alexon Alkainetos Alkamenes Alkias Alkidamos Alkimos
+		Alkisthenes Alkithoos Alkithos Alkon Ameinias Ammonios Amphias Amphilochos Amphistratos Anaxidamos
+		Anaxilaos Andreas Andrias Andrion Andrios Andronidas Andronikos Androtimos Anthropidas Antigenes
+		Antinomos Antiphatas Apelles Aphrodisios Apollas Apollonidas Apollophanes Apsephes Archemachidas Archimedes
+		Archinos Architeles Archylos Areios Argeios Arianthos Arion Aristainetos Aristanax Aristion
+		Aristokleas Aristolaidas Aristonymos Aristopamon Aristophanes Aristoteles Aristotimos Aristratos Aristys Armenios
+		Arsenidas Artemidoros Asklapiodoros Asklepiades Astorides Athanion Athanippos Athanokles Athenagoras Autesion
+		Autodamos Autokrates Autosthenes Boton Botrys Bouthyon Bryson Chaireas Chairon Chares
+		Charixenos Charopos Chrysogonos Damainetos Damarchos Damion Damodokos Damokades Damonidas Damotimos
+		Dareios Deinon Demetrios Dexikles Dexikrates Dexilas Dexion Dexippidas Dikaiarchos Diophantos
+		Dioskouridas Dorkias Dorkion Dorkon Drakas Drakontios Dromas Dromon Echekrates Echellos
+		Ekphantos Eperatos Epeuktos Ephebos Epigethes Epikrates Epiphaneas Epiteles Eredamos Ergasion
+		Eros Erotianos Eualkes Euameros Euanor Euaptos Euarchos Eubolleus Eudikos Eudotos
+		Eudoxos Eugeiton Eugnotos Eumaios Eumelos Eunomidas Eunomos Euochos Euphamos Euphatas
+		Euphranor Eupolemos Euporos Eureas Euryas Euryphaon Eustratos Euthykrates Euthynion Eutychidas
+		Eutychos Euxenos Galatas Gnaios Gorgis Gorgos Hagemon Hagemonidas Hagesandros Hagesarchos
+		Hagesiphon Hagesipolis Hagesippos Halikos Haniochos Haphaistion Haphaistos Heniochos Herakleios Hermaios
+		Hermes Hermodoros Hermogenes Hermon Hesychion Hieron Hipparchos Hyakinthos Iseas Kallidamos
+		Kallippos Kampsias Kanachos Kanopos Kaphis Karpodoros Kephalion Kephisodoros Kerdon Kleaphanes
+		Kleidikos Kleodoros Kleogenes Kleombrotos Kleomenes Kleopatros Kleophanes Kleosthenes Kleoxenos Kletaios
+		Konon Kratesilochos Kratesinikos Krithon Kritoboulos Ktesikles Kykliadas Kyllis Ladas Lagenes
+		Lagios Lakleidas Lakon Laphyradas Lapompidas Leonidas Leontomenes Lykios Lykomedes Lysimachos
+		Machatas Manidas Mantiadas Margos Matrochares Menandridas Menarchos Menedamos Menekles Menestratos
+		Menodoros Methikon Metrodoros Mikillos Mikylos Mnaistratos Mnasikles Mnasippidas Mnason Moschion
+		Moschos Moutios Mynnion Myron Neagenes Neokles Neokrates Neolaidas Neon Neopatros
+		Neumenios Nikandridas Nikatas Nikeas Nikephoros Nikeratos Nikodamos Nikodromos Nikokles Nikolaos
+		Nikomachos Nikomedes Nikomenes Nikophilos Nouios Oikis Oikles Oineus Oinobios Olympion
+		Omphalion Onasikles Onesiphoros Ophelon Paionios Pamphaes Pamphilos Pankles Pannikos Pantaleon
+		Pantares Pasiadas Pasigenes Pasiteles Pasixenos Patron Pausanias Pausimachos Perigenes Petalos
+		Phanokles Pherembrotos Philagoras Philagros Philarchidas Phileas Phileios Phileros Philistos Philitas
+		Phillis Phillyros Philokleidas Philomelos Philonautes Philotheros Philotimos Philoxenos Phinton Phoinikidas
+		Phormiskos Phrastoridas Phyllaros Pleisteas Polemokrates Polyarchos Polygnotos Polykastos Polykles Polykrates
+		Polymedes Polyxenidas Pompias Pratias Pratis Praxitas Prokritos Protomachos Proxenidas Psamonios
+		Pyrbalion Pyrrhos Pytheas Pythias Pythokritos Pythonikos Samias Samidas Samophanes Samos
+		Sarapion Sarapophilos Simon Skamandros Skopas Skylon Sopatros Sophanes Sophon Sosandros
+		Sosimos Soteles Soterichos Soterion Spintharos Sposianos Stephanos Stratolaos Stratonikos Strombichidas
+		Stymphalos Talthybios Taurias Tauromenes Teisamenos Teisias Telesarchos Telesias Telokritos Tereus
+		Theantos Theodektes Theokles Theopompos Theoteles Theryon Theudion Theudoros Theugenes Theukles
+		Theupropidas Theuxenos Thoas Thorsylochos Thraikion Thrasios Thrasymachos Thrasymedes Thrasyxenos Thyion
+		Timandros Timanthes Timarchos Timasion Timasos Timeas Timodamos Timokades Timolochos Timomachos
+		Timophanes Timotheos Troilos Tryphon Xenaios Xenares Xenias Xenochares Xenodokos Xenoitas
+		Xenokles Xenomenes Xenopeithes Xenytas Zenon Zephyros Ainesidemos Aischines Aisopos Akron
+		Alexis Alkaios Alkiphron Ambrosios Amyntas Anaxagoras Anaxilas Anaximenes Androkles Antiphon
+		Aristeides Aristogeiton Arkesilas Bion Chariton Demokritos Demosthenes Dexippos Diodotos Diogenes
+		Dionysodoros Eirenaios Epaminondas Epaphroditos Epikouros Epiktetos Epilykos Eratosthenes Euaristos Eukleides
+		Euktemon Eumenes Euphemios Euripides Gelon Glaukon Harmodios Heliodoros Hermias Hermokrates
+		Hermolaos Heron Hiketas Hieronymos Hippokrates Homeros Hypsikles Hypatos Ion Iphikrates
+		Isidoros Isokrates Kallisthenes Kallistos Karneades Kassandros Kephalos Kleisthenes Kleitos Kylon
+		Kyros Laomedon Leukon Lykourgos Lysandros Mantitheos Menexenos Menon Miltiades Nikokreon
+		Olympiodoros Pankratios Parmenion Periandros Perikles Pheidias Philandros Phokion Platon Ploutarchos
+		Praxiteles Solon Sosigenes Stilpon Themistokles Theodosios Theophanes Theron Tychon Kallimachos
+		Polias Bathykles Hippon Agathias Archeas Eudamos Gorgippos Nikasias Peithias Theotimos
+		Theris Timostratos Aristaios Aristippos Aristolas Damis Damostratos Dexias Kallikretes Melankomas
+		Mikion Nikolas Pachon Philonidas Python Saotas Simidas Thraseas Timokretes Agemachos
+		Aisagenes Alexias Archagoras Aristomedes Damonikos Damophilos Damosthenes Deinarchos Diainetos Episthenes
+		Ergippos Etearchos Euareidas Eumelidas Eurydikos Eurytimos Gorgon Inaisimos Ischomachos Isodamos
+		Kallipatas Kerkidas Kleainetos Kleandros Kleas Kleomantis Megalias Nikasippos Pantisthenes Pantokles
+		Pedaritos Philombrotos Phlegon Polychares Praxidamos Pyrrhanthos Sakles Saonidas Sthenolaos Teisimachos
+		Teleas Telestas Thersias Thrasippos Xenokrates Agallias Agaseas Agepolis Agestratos Agis
+		Agonippos Agreas Aigypios Ainesandros Aischron Akragas Aleios Aleos Alexiadas Alexilochos
+		Alketas Alkithoidas Amissos Amphalkes Amphianax Amphidamos Amphitheos Anakos Anaxibios Anaxippos
+		Androbios Androsthenes Antagoros Antias Antimachos Antiphaes Antiphanes Apellichos Archandros Archepolis
+		Archiphaes Arexion Ariaithos Ariodos Aristagoras Aristaichmos Aristeias Aristis Aristobios Aristokretes
+		Aristomachidas Aristonikos Aristophilos Aristopolis Arketos Asphalios Asteas Astophanes Astyochos Atrestidas
+		Autokles Autokretes Autopas Bakchios Biaios Biton Botrichos Chareas Charikles Charmion
+		Chilios Choreas Chremon Daithrases Damagetos Damagidas Damaretos Damaristos Damopeithes Damophantos
+		Damotages Damoteles Daolkos Daon Deinobios Deinoleon Dexiphanes Diophanes Diyllos Dokimos
+		Dromeus Dyaios Dyokles Echemenes Echephylos Echippos Epainetos Epalkes Epikretes Erasidamos
+		Eraton Ergoitas Ergonikos Eriaspidas Esphantos Eteokles Euainetos Euanthes Euanthidas Euantos
+		Euaretos Euateas Euchanor Eudoxidas Euenor Eueres Euidos Eukleon Eumachidas Eumathes
+		Eumedes Eunostos Eupraktas Eurykretes Eurymachidas Eurymenes Eutelidas Euthrases Euthydikos Euthylaos
+		Euthymachos Euthymenes Euxenidas Exainetos Exakes Gnoseas Gorgippidas Gyllias Hagesidamos Hagesilochos
+		Hagesimachos Hagesion Hagesisthenes Hagesistratos Hagnagoras Hekataon Hermaxoos Heroidas Hieraios Hierokles
+		Hippeas Hippias Hippichos Hipposthenes Histiaios Hodaios Hylaios Hyperanthes Impedis Impedokles
+		Impedokritos Kallieros Kallikles Kallimbrotos Kallinos Kalliphanes Kallippidas Kallis Kallon Kampas
+		Karanios Killon Killos Kleaios Klearchos Klearitos Kleinomachos Kleis Kleixenos Klenias
+		Kleodamos Kleodikos Kleoitas Kleokritos Kleomedes Kleonikos Kleonomos Kleophaes Kleostratos Kleubotos
+		Kleukritos Korydon Kratidas Kratyios Kydas Kymbalos Laarchos Lachares Lagoridas Lakrates
+		Lakritos Lamedon Lamichos Lampos Landros Lattypos Lison Lysidamos Lysikles Lysinikos
+		Lysistratos Medokos Meilichon Melission Menalkes Meneas Menekrates Menekretes Menetos Menippos
+		Miltiadas Minaichmos Mnaseas Mnasidamos Mnasilaos Mnasistratos Moiseas Myllon Neodamos Nikaratos
+		Nikes Nikis Nikodromas Nomippos Oikios Oikoteles Olympios Onatoridas Oxytion Panandrios
+		Pantainetos Pantiadas Pantichos Pantinos Pantodamos Patrokleidas Pausias Peisandros Peithiadas Pelopidas
+		Perilaos Perilas Perimedes Petalios Phaidimidas Phaidros Phalaros Phanostratos Pharos Phauidas
+		Phaullos Phereas Pheris Philaios Philios Philiskos Philistidas Phillias Philokas Philonikos
+		Phytios Pistokles Pleistias Plestarchos Plestieros Poleas Pollias Pollichos Polos Polyainetos
+		Polyainos Polymnastos Polystratos Pragoros Pratolaos Praxikrates Proarchos Proxenos Pylades Pythangelos
+		Pythodoros Pytiarchos Rhesos Saandros Saithion Saittos Sakon Saon Saos Sastratos
+		Seanthos Seuthas Sikon Sipompos Soilos Sokleidas Sokles Sokretes Sosikles Sotades
+		Sotelidas Sphodrion Sphodrokles Stasias Stasilas Stilpion Stilpyros Strateas Stratippos Tauriskos
+		Teisandros Teisimos Teisis Telephanes Telesas Tetartos Thallos Tharsyas Theochares Theoitas
+		Theokleidas Theoktas Theopeithes Thereas Therinas Theudotos Thibron Thrasonidas Thrasymenes Tileias
+		Timasidas Timeias Timias Timion Timogenes Timokres Tolmidas Toxotas Triteas Tychanidas
+		Tyteas Xanthias Xenippos Xenodikos Xenokrateas Xenokritos Xenophanes Zeuxippos Zopyrion Zosimos
+		Herakleides Theophilos Zoilos Eukles Dioskourides Athenodoros Philistides Epigenes Philonides Philinos
+		Aristodemos Charias Theogenes Antipatros Apollonides Poseidonios Noumenios Artemon Archestratos Demostratos
+		Demeas Demokrates Leukios Demokles Eudemos Nikodemos Kalliades Diotimos Mnesitheos Polyeuktos
+		Eubios Epichares Kephisodotos Philemon Prokles Smikythos Charidemos Demophilos Diognetos Euboulides
+		Lysanias Protogenes Diopeithes Attalos Hegesias Laches Charinos Leonides Chairestratos Euthydemos
+		Antikrates Gorgias Kephisophon Kriton Paramonos Theomnestos Ktesias Onesimos Poseidippos Aristophon
+		Demochares Menedemos Menophilos Phanias Philodemos Sophokles Archikles Euphiletos Hephaistion Theophrastos
+		Antiphilos Asklepiodoros Epikles Euphronios Glaukias Lysikrates Niketes Pythokles Sophilos Antikles
+		Glaukos Hestiaios Krates Lykophron Meniskos Polemon Sogenes Athenaios Dositheos Eunikos
+		Euthykles Hipponikos Menodotos Philion Philotheos Antigonos Gaios Habron Hagnotheos Kalliphon
+		Anaxikrates Antidoros Chairippos Demophon Lenaios Pantakles Philippides Phrynichos Prokleides Athenion
+		Chairedemos Demainetos Epameinon Euthykritos Manes Ptolemaios Thrasykles Timodemos Antisthenes Archedemos
+		Boethos Eutychides Kalliteles Kittos Lysitheos Meidon Mnesikles Nausistratos Polykleitos Protarchos
+		Soterides Theoros Biottos Chairion Charmides Dios Epinikos Ergochares Herakon Meidias
+		Menemachos Poplios Ameinokles Anthesterios Basileides Euergetes Eumachos Euthias Herodotos Heroides
+		Leokrates Lysiades Menestheus Nausikrates Nikoboulos Nikogenes Philochares Polymnestos Simonides Apollodotos
+		Demophanes Echedemos Epigonos Euphemos Hermippos Isidotos Kleitophon Lysis Mnesarchos Mousaios
+		Nikophon Oinophilos Olympos Philokydes Philotas Theodorides Apolexis Aristokritos Chairephanes Charisandros
+		Demarchos Demokleides Demoteles Dikaios Hegemon Herakleon Kleophon Lysimachides Maarkos Naukrates
+		Parmenon Phaidrias Philoxenides Phormion Thrasyllos Alketes Aphthonetos Aropos Asopokles Chariades
+		Hegesippos Hermokles Hierokleides Leostratos Menelaos Nikippos Pammenes Phanomachos Pheidippos Philistion
+		Philotades Sosthenes Sotas Telestes Theaitetos Theangelos Theoboulos Andromachos Antichares Antiphates
+		Argaios Athenokles Chairephon Dionysogenes Euangelos Euphraios Euthydomos Hermagoras Herodoros Kointos
+		Ktesiphon Leptines Melanopos Mnesimachos Nikagoras Philoktemon Polynikos Spoudias Theagenes Theainetos
+		Theogeiton Theophantos Theophemos Zenodotos Aristos Athenogenes Chairigenes Demon Demotion Diogeiton
+		Diomedon Dromokles Eurykleides Euxitheos Glauketes Hedylos Hegemachos Hegias Herakleodoros Hieromnemon
+		Kallikratides Kallippides Kallixenos Kephisios Kephisokles Kleochares Metrophanes Nausias Nausikles Onetor
+		Pasion Philokedes Phrynion Phyromachos Polycharmos Smikros Syros Telesinos Telesippos Thymochares
+		Timarchides Timokleides Xanthippos Aiantides Archebios Aresias Arkesas Athenades Boulon Dekmos
+		Epiphanes Eucharistos Euphantos Euphron Euthyphron Hagnon Isigenes Kimon Kleodorides Kritodemos
+		Kydippos Lysikleides Melanthios Menes Mnesistratos Moiragenes Mys Nikodoros Ophelas Parmeniskos
+		Pasikles Pedieus Phainippos Pheidon Pheidostratos Polyaratos Polykritos Polyzelos Pyrrhias Pythogenes
+		Rhodon Sonikos Sositheos Sthenelos Xanthos Zenodoros Agelaos Aischraios Amphikles Anthemion
+		Antikleides Aristokleides Arkephon Chaireleides Charisios Deinokrates Demonikos Dikaiides Diphilides Doros
+		Eualkos Euarchides Eukritos Euktimenos Eustrophos Euthoinos Exekestos Glaukippos Hagnias Hagnodemos
+		Hagnonides Hegelochos Hekataios Hephaistodoros Hermaiskos Kallaischros Kichesias Kineas Kleidemos Kleinias
+		Kleomedon Komos Kratippos Kraton Ktesarchos Kydias Lyandros Lysinos Lysitheides Medeios
+		Melas Melesias Menaichmos Menneas Midas Mnesias Naukles Nearchos Nymphodoros Patrokles
+		Peithon Phaidimos Phrynon Pythodelos Simylos Telemachos Theaios Theramenes Thoukritos Zenion
+		Agathaios Agathippos Aineas Alkibiades Amphichares Anacharsis Antidotos Antimenes Apatourios Archagathos
+		Archeneos Aristonous Asopodoros Athenippos Autolykos Boularchos Chairias Charmantides Chionides Daos
+		Demokedes Dexandros Dexitheos Diagoras Diokleides Dorion Drakontides Dromeas Epicharides Epimachos
+		Epistratos Epizelos Ergokles Euagion Eubiotos Euboios Eudoros Euphrosynos Eupolis Euthippos
+		Exekias Gerostratos Hermaphilos Hikesios Iatrokles Kleidamos Kleitomachos Ktesikrates Ktesippos Leonteus
+		Leontios Lysimenes Mantias Markos Maron Marsyas Melesippos Meliton Mikon Mnesiergos
+		Mnesigenes Mnesiphilos Mnesippos Nausimachos Nikophemos Nikoxenos Olbios Onesandros Pantenor Phanos
+		Pherekles Philochoros Phoinix Phoryskos Phyleus Pistos Potamon Promachos Proteas Pyrrhinos
+		Pythagoras Pythippos Simalos Smikythion Sosipatros Sphairos Stratophon Thaliarchos Themison Themistios
+		Theomedes Theoxenides Therson Thoinos Agon Aischeas Aischronides Aischylides Amphikrates Andropeithes
+		Anthippos Antilochos Apellas Archedikos Archemachos Archephon Archeptolemos Archidamos Architimos Ariarathes
+		Arimnestos Aristolochos Aristyllos Arkesilaos Asklepiodotos Astias Astynomos Athenobios Athenodotos Autoboulos
+		Batrachos Boiotos Boulos Byttakos Chabrias Chairemon Chairokles Charikleides Charmylos Chrysippos
+		Damas Deinostratos Demanthes Demaretos Demylos Diaitos Didymos Dieuches Diochares Diomedes
+		Elpias Elpines Epicharinos Epithetes Ergophilos Eucharides Euetion Euktaios Eumelides Eumnestos
+		Gniphon Hegesandros Hegetor Heortios Hermonax Hierophon Hippokles Hippomachos Iophon Kalaides
+		Kallenikos Kallimedes Kallimedon Kallistratides Kleoboulos Krateros Lamachos Lamprias Lamprokles Leosthenes
+		Lydos Lykeas Menis Menoites Menophon Mentor Mnasagoras Mnesiboulos Neoptolemos Nestor
+		Nikasion Nikesias Nikosthenes Nikoteles Onasos Paramythos Pataikos Phalakros Phalanthos Phanokritos
+		Philanthes Philetairos Phokos Pindaros Polemaios Pollis Polyphilos Promenes Silanion Silanos
+		Smikrias Sokratides Sopolis Sosidemos Technon Telokles Theognetos Theognis Theomenes Theophrastides
+		Thersilochos Thoudosios Thrasonides Tibeios Timagoras Zenobios Abas Achilleus Agasikles Agathodoros
+		Agenor Aion Aleximenes Ameiniades Amoibichos Amphiteles Amyklas Amynomachos Andriskos Androkleides
+		Apemon Attas Attis Aulos Bathyllos Boukattes Chairephilos Chairimenes Demaratos Derkylos
+		Dexios Dionysokles Dromokleides Dropides Eikadios Ekphantides Elpinikos Embios Endios Epikydes
+		Erastos Euchares Eumareides Eupeithes Euphreas Eurymedon Eusthenes Harmoxenos Harpalos Hegestratos
+		Heraios Hermeias Hestiodoros Hieroptes Hippolochos Ischyrias Isiphilos Isodemos Kallitheos Kallonides
+		Karpos Kleagoras Kleippos Kleophantos Koroibos Kreon Lampon Lysandrides Makareus Mnesagoras
+		Mnesiades Mnesidemos Mnesikleides Mnesitheides Nausikydes Neandros Nikion Nikonymos Onesikritos Ouliades
+		Panaitios Panther Pasikrates Phaennos Phanodemos Phanokrates Pheidyllos Philarchides Philokomos Philomachos
+		Philoneos Philophron Philopolis Phokiades Phoxias Phrasias Phryniskos Pistokrates Polykleides Polyphron
+		Protimos Protion Proxenides Pyrikles Pytharatos Pytharchos Pythionikos Rhadamanthys Rhodippos Serambos
+		Silenos Smikrines Sochares Sodamos Sokleides Sosimachos Sosinomos Sosiphanes Sosis Spinther
+		Stesias Strombichos Syndromos Tachyllos Teisippos Telesidemos Telon Theobios Theokleides Therippides
+		Thrasyphon Thymoteles Timanax Timanor Timasitheos Timesianax Timesion Timokritos Timouchos Tolmaios
+		Xenokleides Zobios Adrastos Agroites Ainesias Ainiades Aischetades Aison Akrotimos Alexiades
+		Ampelides Amphikleides Amphimachos Amyntor Androkydes Andronides Annon Antallos Antenor Anthemokritos
+		Antibios Apollothemis Archebiades Archeboulos Archenautes Archenikos Archiades Archonides Arestos Aristodikos
+		Arnaios Artimas Asandros Asklapion Asphales Asphalion Astragalos Attinas Automenes Bioteles
+		Boon Boulostratos Chairondes Chairontides Charimedes Charitaios Charmiades Chremonides Daimenes Demades
+		Demodokos Demogenes Demophantos Dexon Dieitrephes Diomnestos Dionysikles Dorkeus Echekles Echestratos
+		Epaineas Epainos Epimenides Epitynchanon Eratokles Eretymenes Ethelandros Eucheir Euchthonios Eudaimon
+		Eudemides Eudidaktos Eugenides Euippos Eukleitos Eunostides Euodos Euphraos Euthymos Euthynomos
+		Euthynos Exakon Exekestides Euremon Geiton Glykon Gnathios Gniphonides Hagnokrates Hegesimachos
+		Helenos Helixos Hellen Hephaistodotos Heragoras Heraiskos Hereas Hermesikrates Hermolykos Hieropoios
+		Hygiainon Hyllos Iolaos Isegoros Isokles Kadous Kalchedon Kallidemos Kantharos Karaichos
+		Kephisoboulos Kephisokleides Kerkion Kleinos Kleokrates Kleomelos Kratermos Kratios Kratistoleos Kroisos
+		Kromachos Ktesibios Ktesonides Kybernis Kydenor Leontiskos Libys Lysiphanes Lysippides Maes
+		Magas Manios Medon Megakleides Melanippos Melanopides Melanthos Menekleides Menestas Menyllos
+		Mikalion Mnasias Mnasippos Mneson Moirokles Molon Mousagenes Myronides Myrtilos Nausichares
+		Neokleides Neostratos Nikokleides Noemon Nothippos Nouphrades Okymenes Onetorides Pandios Pankalos
+		Pankrates Paralos Parthenokles Pasinikos Peisianax Peison Peithidemos Pelops Persaios Phaidragoras
+		Phanodikos Pheidestratos Pherenikos Philainetos Philitos Philodromos Philonymos Philophanes Philourgos Phormisios
+		Physkion Pleistainos Polydamas Polyoktos Praxikles Protokles Protos Pyrgion Semiades Serapion
+		Skamandrios Soinautes Sokratinos Sophron Sosiades Sostron Sotadas Souniades Speusippos Staseas
+		Stesagoras Stesichoros Stratonides Strombylion Syriskos Teisanor Teleson Tharsytas Thasios Theagenides
+		Thearion Therikles Thersandros Thersippos Thoukleides Thrasylochos Timagenes Timolaos Timonides Timyllos
+		Titos Tleson Xanthippides Xenodemos Zenis Abous Adamas Agapaios Agasippos Agathemeros
+		Agathostratos Agron Agyrrhios Aichmaios Aischias Aischylion Aisimides Akademos Aktor Alkimenes
+		Alkman Alypos Amarantos Ameinokrates Ameinoteles Ameipsias Amphiktyon Andokides Andragathos Andrares
+		Andropheles Androteles Ankylion Ankylos Antaios Anthedon Anthos Anticharmos Antidemos Antignotos
+		Antileon Antinous Antochos Antyllos Anytos Apellikon Apemantos Aphobetos Apollonymos Apsephion
+		Archedamas Archekrates Archelas Archestratides Archetimos Archibios Archilochos Aresippos Areus Arignotos
+		Aristodamas Aristodoros Aristoleides Aristophantos Arizelos Astychares Astygenes Astylochos Astylos Athenophanes
+		Attabos Attikos Autias Autodikos Autokleides Autonous Axiochos Axionikos Bakchon Bakchylos
+		Balakros Barnaios Batakes Blepes Boutes Boutheros Brachyllos Bryon Chairebotos Chairepolis
+		Chairetios Chairites Chalinos Chalkideus Charikrates Charileos Charinautes Charippos Charisandrides Charisos
+		Charmos Charmostratos Charonides Charopides Charopios Chion Chionis Choregos Chremes Daileon
+		Daisiades Daisias Damippos Damokleas Daphnis Deikrates Deimachos Deinides Deippos Deisitheos
+		Demagenes Demagoras Demalkes Demodoros Demodotos Demopeithides Demos Demotimos Derkippos Dersippos
+		Dies Dikaiogenes Diogeitos Diomenes Dionysiphanes Dioxippos Dioxis Diozotos Donax Dorippos
+		Echembrotos Elpinos Elpistos Emmenides Empedion Endemos Epandros Ephesios Epicharmos Epikerdes
+		Epikleides Epimenes Epipeithes Epistemon Epixenos Eponymos Eratostratos Eratoxenos Ergokleides Ergokrates
+		Ergokritos Euagides Eudramon Eudraon Euegetes Euemeros Euethides Eukadmides Eukadmos Eukarpos
+		Eukolos Eumachides Eumoiros Eunikides Eunomides Euphemides Eupheros Euphorion Euphroniades Euphylides
+		Eurymachos Euteles Euthetos Euthoinides Euthyboulos Euthygenes Euthykartes Euthymichos Euthymides Euxenides
+		Euxenippos Gastron Gmaphys Gnathon Gnosias Gorgilos Gorgosthenes Gryllos Hedyphilos Hegesikrates
+		Heniochides Hephaistokles Hermophantos Hermophilos Hermotimos Heroskamandros Herostratos Hesandros Hierophanes Himeraios
+		Hippakos Hippeus Hippiskos Hippodromos Hippolochides Hippotherses Homoloichos Hoplon Hypereides Iras
+		Isandros Isarchos Ismenios Isophilos Ithykles Kados Kairimos Kalligenes Kallistomachos Kannonos
+		Karion Kephision Kephisodemos Kerkis Killes Kiron Kleadas Kleagoros Kleanor Klearatos
+		Klearetos Klearistos Kleippides Kleitias Kleodemos Kleonostos Kleotimos Knoithon Komaios Komarchos
+		Komeas Kranaos Krataimenes Kritias Kritophantos Kritos Krobylos Kteatos Kteon Kydimachos
+		Kydimos Lachon Laines Lakrateides Lamios Lampytos Laossos Laphaes Leandros Leodamas
+		Leokritos Leukaios Leukippos Lonikos Lysidemos Lysileos Lysimedes Lysiphilos Machinos Makedonios
+		Makron Meidogenes Meidokritos Meilichos Meixiades Meixonides Melantes Meleagros Meletos Melon
+		Menephron Menetimos Menios Menophantos Metrobios Mikinas Mikines Mikrion Milon Mimnias
+		Mneseides Mnesides Mnesiphon Mnesiptolemos Mnesis Molottos Myiskos Mynniskos Myrmex Myrmidon
+		Naukritos Naukydes Nautes Neilos Nemerios Nemones Nesiotes Nikenor Nikiades Nisaios
+		Nous Nymphokles Oinanthias Oineides Oiniades Oinokles Oinokrates Olbiades Olympiades Onomakles
+		Opsiades Orthagoras Orthokles Pandaites Pandion Parmenides Parnasos Pasiphanes Peisikles Peisikrates
+		Peisistratos Peitholaos Petraios Petron Phaiax Phaidon Phalaikos Phalakrion Phaniades Phanokleides
+		Pharadas Pharnakes Pheidylos Philaretos Philesios Philiades Philikos Philleas Philokleides Philos
+		Philoumenos Philtades Philyllos Phokides Phormos Phoryskides Phrasmon Phylotimos Physteus Pithon
+		Pleistarchos Pollion Polydoros Polykon Polyktemon Polymelos Polytimos Pompides Posideos Potammes
+		Praximenes Promethion Prophanes Protagoras Protomenes Protophanes Pyrrhichion Pythodorides Pythomenes Rhesimachos
+		Rhinon Rhyndax Salaminios Selon Semon Semonides Sibyrtios Simalion Simaristos Sindes
+		Skythes Sodas Somenes Sophroniskos Sosaretos Sosidamos Sosikleides Sosinikos Sostratinos Sotairos
+		Sounieus Speusandros Spoudides Spoudokrates Stesileos Stesippos Sthennis Sthenokrates Strepheneos Stroibos
+		Strombichides Tarantinos Tauridas Teisarchos Telegnotos Telephos Telesegoros Tellias Thalinides Thamyris
+		Thargelios Tharrhynon Tharsytos Theocharides Theocharis Theophiliskos Theophron Theopropos Theorikos Theotimides
+		Theozotos Thespis Thomyrion Thoucharmos Thoudes Thoudippos Thoukles Thoukydides Thoutimos Thraikides
+		Thrasydemos Thrasys Thymokles Thyrsos Timandrides Timaratos Timesitheos Timobios Timodoros Timokreon
+		Timoros Tiribazos Tolmides Tydeus Xenneas Zeneas Zeuxis Zotikos Abaiokritos Acharnos
+		Achyrion Adaios Admetos Adousios Aetes Aganophron Agasikrates Agasilaos Agasion Agasistratos
+		Agathanax Agathandros Agathanor Agathinos Agathion Agathokrates Agathokritos Agathonides Agathopous Agathos
+		Agathosthenes Agathymos Ageleos Ageteas Agiadas Agorakritos Agreanos Aiantodoros Aias Aichmeas
+		Aigialos Aigion Aigipyros Aiglates Aimon Ainesilaos Ainetos Aischrondes Aischytides Aision
+		Akademios Akamas Akesas Akestor Akestothemis Akrisios Akrobilos Akropous Aktaios Alexenor
+		Alexidemos Alexikrates Alexippos Alexos Alkandros Alkenor Alkiades Alkidamas Alkides Alkimedon
+		Alkinous Alkios Alkippos Alkistratos Alkmeon Alkyoneus Almeon Alphinous Alypetos Amarikos
+		Ameinichos Ameinokleides Ameipsarchos Amelesagoras Amoibeus Amphainetos Amphedes Amphereides Amphidemos Amphietides
+		Amphigenes Amphikedes Amphikratides Amphimachides Amphinous Amphion Amphipolis Amphitekton Amynokles Anakon
+		Ananias Anaschetos Anaxamenes Anaxandrides Anaxandros Anaxenor Anaxikles Anaxillos Anaxion Anaxiphon
+		Anchias Androkritos Androlaos Androthales Angeles Antamenes Antaxios Anthias Anthylos Antiandros
+		Antidorides Antidorippos Antidotes Antigenides Antimedes Antinoos Antiochides Antiphantos Antiphemos Antistheneides
+		Apellaios Apelleas Aphidnaios Aphroditos Apollogenes Apollokrates Apollonianos Apollonodotos Aration Aratogenes
+		Aratos Archamenes Archedemides Archeides Archenomides Archephron Archidemos Archidikos Architekton Archomachos
+		Archytas Ardeas Aretaios Argas Aribazos Ariphrades Ariphron Aristeon Aristias Aristippides
+		Aristokydes Aristolaos Aristoleon Aristonautes Aristopeithes Aristouchides Arkesidemos Arnikos Arogos Arrheneides
+		Arrhileos Arsakes Artastis Artemas Arxias Arymbas Asiagenes Asketos Asklapos Asklepiogenes
+		Askondas Asopios Asopon Aspasios Astinos Astyanax Astydamas Astykrates Astyphilos Astytimos
+		Atarbion Atarbos Atheneas Athenichos Athenodaios Athenophantos Athenopolis Atrides Atrometos Augeas
+		Autagetos Autandros Autonomos Autophrades Axaios Axios Azaratos Bakchides Bakchos Bakchylides
+		Bassos Baton Baukideus Bebaios Beltion Bianorides Bias Bilias Bios Biotes
+		Bithys Blastos Blepaios Blepios Blepsion Blepyros Boidas Boidion Boiskos Boubalos
+		Boulekrates Boulis Bouselos Boutalos Bremon Breton Broukos Brysonides Chaireneos Chairephilides
+		Chairetides Chairikles Chairinos Chairistos Chairondas Charax Chareides Chareleides Charetides Charidemides
+		Charion Charisiades Charistratos Charitades Chariteles Charitimos Charixenides Charmikos Charminos Charmokrates
+		Charoiades Charon Charonidas Charopinos Charops Cheilon Chenion Chloros Choirilos Choronikos
+		Chrestos Chromon Chrysochoos Chryson Daidalos Daippos Daiskos Daitarchos Daliketes Damasikles
+		Damasos Dameias Damichos Damonax Damonomos Damylos Daphnaios Dardanos Deidas Deiniades
+		Deinippos Deinobates Deinokles Deinomachos Deinomenes Deinopos Deliades Demiourgos Democharides Demokratides
+		Demokydes Demomeles Demonas Demonomos Demonothos Demopythos Demoxenos Derketes Derketos Derkylides
+		Dexicharis Dexidemos Deximbrotos Deximenes Dexinikos Dexinomos Dexiochos Dexiphon Diallos Didymias
+		Dierxis Dieuktos Dikaiokrates Dikaiomenes Dikaiopolis Diochthonides Diodorides Diognis Diokrates Diokreon
+		Dionysas Dionysigenes Dionysophilos Dionysophon Dionytas Diophaes Diophantides Dioteles Diotheides Diskos
+		Dorieus Dorkinas Dorkos Doromenes Doron Dosiades Drilos Dromippos Dromiskos Dryon
+		Dymas Dynatos Dynniketos Ebenos Echenikos Echephron Echetos Echoitas Echos Eidas
+		Eidon Eirenion Eirenogenes Eirenokles Eleios Eleutherinos Eleutheros Elis Empedos Epagelas
+		Epameinondes Epaphras Eperatides Epeusthenes Ephesos Ephestios Ephialtes Ephippes Ephoros Ephoudion
+		Epidauros Epimedeides Epimedes Epistenes Epithallos Epitimides Epitropos Eporos Erasiphon Eretrieus
+		Ergophon Ergosthenes Erikothos Eriphos Erotion Ersigenes Erxigenes Erxis Eschation Eteagoras
+		Euages Euagon Euagros Euainos Euaion Eualkides Euanorides Euaratos Eubaion Eubion
+		Euboule Eucheres Eucheros Eudaimokrates Eudios Eudorides Eudromos Euegoros Euekes Euelthon
+		Euempolos Euenios Euenorides Euenos Euergos Euestes Euetes Eugeitonides Eugeitos Eugethes
+		Eukairos Eukelados Eukleinos Eukolion Eukomion Eukosmides Euktites Eulogos Eulypos Eumachion
+		Eumares Eumaron Eumedippos Eumedon Euolbios Euonymides Eupalinos Eupator Euphradion Euphragoras
+		Euphranorides Eupraxis Eupsychios Eurektes Eurybios Eurymedes Eurynomos Euryptolemos Eurystratos Eusebes
+		Eusous Eutages Eutelon Eutheios Euthios Euthykleides Euthylochos Euthymidas Euthyneides Euthynikos
+		Euthynous Euthyphanes Eutyches Euxippos Exakestos Exopios Euphris Gales Geisias Geitonides
+		Gennaios Geraios Geraithos Gerontides Gerys Glykeros Gnathis Gnesitheos Gnotades Gorgathos
+		Gorgoinos Granikos Graphikos Grypon Gyles Habrokomas Habronichos Habronides Hagesis Hagetor
+		Hagnokles Hagnostratos Hagnoteles Halios Halis Hebesarchos Hebros Hedeia Hegeas Hegesagoras
+		Hegesikles Hegesileos Hegesilochos Hegesinikos Hegesis Hegesisthenes Hegesistratos Hegesiteles Helianax Helix
+		Hellandros Hephaistiades Hephaistios Hephaistodemos Heraippos Herakleodromos Herakles Heraklon Heras Hermapias
+		Hermattios Hermesion Hermiades Hermion Hermokleitos Hermos Hermosthenes Hermotheos Herodikos Herogeiton
+		Herogeitos Heroiskos Herophilos Hetairion Hierasimos Himeros Hippakides Hipparchides Hipparinos Hipparmion
+		Hippoklos Hippomenes Hipponoides Hippostratos Hippothon Hippyllos Hippylos Hodoiteles Homilos Hybristes
+		Hymenaios Hymnos Hypsimos Iamnos Iatron Idiotes Idomeneus Iesimachos Inaros Inopos
+		Iollas Iphemythanes Isaios Ischyon Ision Isiphas Isochrysos Isolochos Istros Ithaimenes
+		Ithmonikos Ithygeitonides Kabeirichos Kaikosthenes Kaineus Kairios Kairos Kalchas Kallianax Kalliboulos
+		Kallidamas Kallides Kallikleides Kalliktetos Kallinomos Kalliochos Kallion Kalliphantos Kallisthenides Kallithemis
+		Kalos Kantharion Kaphisios Karaios Karneiskos Karpiades Kasiodoros Kassandrides Kastor Katagogios
+		Kedeides Kedon Kelainos Keleusios Kenchramos Kephisippos Kephisogenes Kephisostratos Keragos Kerrhinos
+		Keton Kichonides Kichos Kilikas Kilix Killaios Kimortion Kinesias Kintos Kleemporos
+		Kleiandros Kleigenes Kleinippos Kleitarchos Kleites Kleitor Kleochos Kleoleos Kleonides Kleophemos
+		Kleophrades Kleopompos Kleostratides Kleotekton Kleoxenides Klonikos Knemon Kobios Koiranos Kokkos
+		Kolchos Kolianos Kolotes Komallos Komides Komion Komnos Komon Konopion Kormos
+		Koronion Korrhagos Koryzon Kotys Kouadratos Krateas Krathis Kratiades Kratides Krattidas
+		Kratys Krinolaos Kronios Kteiskles Ktematios Ktemon Ktesiades Ktesichares Ktesikleides Ktesion
+		Kychraios Kydikrates Kydistratos Kyknos Kynegeiros Kyniskos Lachippides Ladamas Ladokos Lakles
+		Lampichos Lampsikrates Lanikos Lanomos Laon Leaios Lechidemos Leippos Leokydes Leonnatos
+		Leontophanes Leophanes Leopheides Leukaspis Leukinos Leukis Libotes Likymnios Limenios Lindos
+		Liparaios Liparon Logios Logos Lokros Lykinides Lykis Lysagoras Lysanor Lysarchides
+		Lysarchos Lysaretos Lysibios Lysichares Lysidikos Lysimedon Lysiphon Lysiponos Lytides Machaon
+		Madakes Magnos Maiades Maikios Malakon Malekos Mandion Mandrogenes Mantikles Manton
+		Manykos Mardonios Marnakes Mastakos Matreas Matris Medestos Megallos Megalokles Megaristos
+		Meidonikos Meidylides Meidylos Meilichios Meixias Meixidemos Meixigenes Meixippos Meixon Melampodoros
+		Melanthas Melanthyros Meleton Melias Melittides Melpon Memphades Menalippos Menas Meneboulos
+		Menecharmos Menekydes Menephilos Menepsophos Menesaichmos Menesthides Menestratides Menethales Menias Menites
+		Menogenes Menoitas Menoitios Menokritos Menomanes Metagenes Metalexis Metigenes Metrodotos Metron
+		Metronax Metrophon Metros Mikalos Mikias Mikkeas Mikkion Mikkon Mikrias Mikros
+		Mikylion Mikylios Mikythos Mimnokles Mimnokrates Mimnomachos Minon Misthodikos Mithras Mitradates
+		Mitris Mitrobates Mnasigeiton Mnemon Mnesarchides Mnesibios Mnesichares Mnesiergides Mnesigeiton Mnesikrates
+		Mnesilochos Mnesinos Mnesios Mnesiphanes Mnesochos Mnichon Moiriades Moirias Moiris Moirogenes
+		Moirophanes Molotos Mondos Monimos Mormias Morsimos Morychides Moryxias Moschianos Mylothros
+		Myrsylos Myrtalion Myrton Mystichides Namertios Nannakos Nastas Nation Nauarchos Naubates
+		Nausigenes Nausimedon Nausimenes Nausinikos Nausiphanes Nausiphilos Nausiporos Nausiteles Nauson Naustratos
+		Nauthikos Neaichmos Neaithos Neandrides Neanthes Neilobios Neleus Neolaos Neomenes Neopeithes
+		Neophron Nereides Nestos Nikanon Nikesiphon Nikochares Nikolbios Nikolochos Nikonides Nikonomos
+		Nikopeithes Nikophantos Nikoxenides Nikylos Nokis Nomios Noumenias Nymphis Oiax Oikogenes
+		Oinoklephes Oinostratos Olianthides Olympikos Onesicharis Onesimides Onesiphilos Onesiphon Onomantos Onomarchos
+		Onomastos Ophelandros Opis Opsios Oros Orthagores Oulias Ourias Paideias Paidikos
+		Paillos Paion Paisimachos Pamphaios Pamphanes Panages Panaisches Panaitos Panandros Panarchos
+		Panchares Pancharion Pantaretos Panter Pantheros Pantiades Pantodoros Papias Papylos Parbaxgrys
+		Paris Parmon Parmonides Parpakides Parthenion Parthenios Pasiades Pasias Pasiphon Pasiphron
+		Patriskos Patrokleides Patrophon Pausiades Pausides Pausilypos Pausistratos Pauson Pediarchos Pediokles
+		Peiraikos Peirantides Peiron Peisidemos Peisitheos Peisthetairos Peithagoras Peithandros Peitharchos Peitheas
+		Peithenous Peithikles Peithippos Peithodemos Pemptios Perikleides Periphas Peritheides Phaidriades Phaidrides
+		Phaidrippos Phaidron Phaidronides Phainestios Phainnos Phainylos Phaleas Phanagoras Phanarchides Phanippos
+		Phanneides Phanobios Phanoleos Phanopompos Phanoteles Phanotheos Phanteas Phantokritos Phaon Pheidantides
+		Pheidiades Phelys Phengos Phengothemis Pherekleides Pherekrates Pherekritos Phertatos Philades Philainis
+		Philarchos Phileriphos Philetos Phileus Philias Philistes Philitios Philobotos Philogeiton Philogenes
+		Philoitios Philokletos Philokomides Philokratides Philokritos Philomeleidas Philomenes Philomnestos Philomousos Philonichos
+		Philopoimen Philostephanos Philosthenes Philostratides Philotios Philton Philytes Phoiboteles Phokeus Phontides
+		Phoxinos Phrasikles Phrasilaos Phrasisthenes Phrodamos Phrourarchos Phrourides Phrourion Phrouros Phrynichides
+		Phrynos Phylakos Phylarchides Phylarchos Phylaxias Phylonikos Phyrtaios Physkon Physkos Phytaios
+		Pisthetairos Piston Pithekodemios Pittalos Pittheus Planetios Plator Pleistos Plouomos Plousios
+		Ploutogenes Pnytagoras Poimandrides Poimon Poithikos Polemachos Polianthes Polites Polliades Polon
+		Polyanthes Polyarkes Polycharmides Polydeukes Polydikos Polyeuches Polykarpos Polykratides Polylaios Polyllides
+		Polyllos Polyochos Polyokos Polyon Polyphanes Polyphantos Polyretos Polysthenes Polyzalos Pompylos
+		Porilaos Poros Poses Posikos Potamos Potheinos Potitos Pramnates Praxeas Praxiboulos
+		Praxikydes Praxinos Presbychares Promathion Promethides Pronapes Pronous Prophetes Proteros Prothymos
+		Protias Protolaos Protoleides Protomedes Protophaes Pykneas Pylagoras Pyrilampes Pyrrhaleus Pyrrhandros
+		Pyrrhanthes Pyrrhichos Pyrrhion Pystilos Pytheides Pythes Pythikos Pythilaos Pythilas Pythis
+		Pythodotos Pythokrates Pythonax Pythostratos Pythoteles Rhaukios Rhexion Rhianos Rhikon Rhodaios
+		Rhodion Rhodios Rhodokles Rhombos Rhouphion Rhouphos Rhythmos Sakadas Salaipios Salios
+		Samiades Sangarios Sanniades Satyrinos Satyriskos Saurias Scholarchos Semias Semion Sextos
+		Sidetes Sikinos Silon Simmias Simykas Sinon Sintor Skipion Skiros Skirpalos
+		Skopos Skylax Skymnos Skythikos Skythios Skython Smikrion Smikronides Smikrophon Smikylion
+		Socharmos Sokos Sokritos Sokydes Somatale Somelos Sonautes Sondrides Sopatrides Sosidikos
+		Sosimenes Sosion Sosipolis Sosisthenes Sosistratides Sositeles Sosylos Sotaretos Soter Soterios
+		Soteros Sotes Sotimos Spartokion Sparton Spercheios Speuseades Speusikles Speuson Speusonides
+		Sphettios Sphodrias Sporos Spoudas Spoudonides Stadieus Stasioikos Stemphylios Stesandros Stesikleides
+		Stesikrates Sthenedemos Sthenios Sthennides Stolos Stratodamos Stratophanes Strobilos Strongylion Strouthias
+		Strymon Sybarites Sylion Syllas Synnon Syrakosios Tacheas Tachydemos Tachykles Tantalos
+		Taureas Teberis Teisarchides Teiseas Teisiades Teisikles Teisikrates Teisilas Teisonides Telas
+		Teledemos Telenikos Telephonos Telesanor Telesikles Telesimbrotos Teleskopos Telesphoros Telestratos Telios
+		Telonides Telourgos Teutis Thales Thalesigenes Thalles Thamyros Thargelion Tharios Tharrhiades
+		Tharrhikos Tharrhinos Tharrhyphilles Tharsandros Tharseas Tharsias Tharsion Tharsippos Tharsos Thaumias
+		Thaumon Theangelides Thearitos Thebaios Theios Theogonos Theokedes Theokrates Theokrines Theokrisios
+		Theokydes Theolaos Theolytos Theomnemon Theonichos Theopheides Theophon Theophrasmon Theopistos Theopropides
+		Theosophos Theoteiches Thereus Therikleides Theromachos Thersiteles Therylos Thesbion Thesippos Thesmogenes
+		Thespios Thestios Theudas Theudosios Theumenes Thorax Thorykion Thouas Thouchares Thoudiades
+		Thoudotos Thoukritides Thoumorios Thouphrastos Thoutimides Thrasylas Thrasyleon Thrasymeus Thrasynon Thrixas
+		Thymades Thyrbaios Timaretos Timariskos Timenor Timesios Timiades Timides Timochares Timocharis
+		Timodemides Timodotos Timokedes Timonax Timophon Timothales Tithymallos Tityras Tlamonos Tlempolemos
+		Tlesias Tmoleides Trempon Trepheleos Triballos Tritias Trityllos Trochilos Tychandros Tyren
+		Tyrios Tyron Xeinis Xenandros Xenodotos Xenolaos Xenoleos Xenonides Xouthos Zakoros
+		Zaleukos Zenomenes Zenothemis Zeuxiades Zoandros Zontikos Zophytides Zosimianos Zotichos Kaphisodoros
+		Kaphisias Athanias Athanodoros Antigeneis Aristokleis Aristogiton Kallikrateis Thiodoros Aminias Kapion
+		Pouthon Pouthodoros Dionousios Samichos Sokrateis Agathokleis Antigon Klion Thiogiton Eumeilos
+		Kapon Ptoion Antikrateis Mnasion Damatrichos Hiaron Empedon Hismeinias Kallikleis Stroton
+		Timokleis Mnasikleis Phaeinos Timokrateis Aminokleis Diokleis Dioniousodoros Melantichos Euarchidas Kaphision
+		Dioniousios Hageisias Mnasarchos Philokleis Polykleis Pouthias Thiotimos Thiozotos Xenokrateis Damokleis
+		Dionousodoros Kalligiton Philomeilos Sokleis Aristokrateis Epichareis Euklidas Kaphisodotos Philokrateis Potamodoros
+		Thion Wanaxion Eubolos Heraklidas Kalliklidas Pouthion Tharson Thedoros Aglaon Aristichos
+		Charikleis Damoklidas Epenetos Epiteleis Hiarokleis Hismeinodoros Kallistrotos Nikokleis Opheleimos Poutheas
+		Aminichos Amphikleis Asopichos Dioskoridas Eiron Lousias Myrichos Xeneas Aminonikos Antigenidas
+		Dasyos Diogeneis Dioklidas Epikrateis Eugiton Eukleis Eirodotos Hageisilaos Hageisippos Kaloklidas
+		Melissos Mnasinos Phrouniskos Poliouklidas Polystrotos Pourrhichos Ptoiokleis Soton Symphoros Thiomnastos
+		Thiopompos Amounias Antigeneidas Aristomeneis Damostheneis Diogiton Empedokleis Enpedon Epicharidas Eschinas
+		Euchoros Hismenias Kalligeiton Kaphisotimos Menekrateis Menestrotos Mnasigeneis Mnasistrotos Moirichos Nion
+		Olioumpichos Oloumpichos Philleis Pouthangelos Pouthodotos Pouthokleis Ptoiodoros Sostrotos Theogiton Theomnastos
+		Thiodotos Thiokritos Triax Xenoklidas Zopouros Amphikritos Athanichos Autobolos Charilaos Charondas
+		Cherippos Damagathos Damocharidas Damoteleis Dorothios Echestheneis Epikoudeis Epitimos Euareis Eubolidas
+		Eumaridas Haphestion Hermaiondas Lakrateis Liouson Mnasimachos Mnasithios Pedageneis Phenias Poliouxenos
+		Saosias Thebangelos Thynarchos Timasithios Timenetos Wastias Xenokleis Amphinikos Anchiaros Aristobolos
+		Aristokleidas Aristoklidas Aristophaneis Asklapinos Damenetos Damophaon Dason Diophaneis Doilos Dorkylos
+		Epagathos Eunostidas Euphamidas Gorgion Hageisandros Hermas Hismeiniketas Hypatodoros Kalleas Kallikon
+		Kallikritos Kallistonikos Kalliteleis Kallitimos Kalonikos Kereisichos Leukodoros Louson Megakleis Mourton
+		Nikaretos Olynpichos Oncheistion Pasitimos Phenomachos Phidon Phouskion Phrounichos Phrounon Phrounos
+		Polyklidas Pouthinas Praxon Proppidas Saondas Sosikleis Soteleis Themistion Thioteleis Thoinarchos
+		Warmichos Agassidamos Amphiklidas Antanor Antion Antiphaneis Antiphaon Aristonoos Aristoteleis Asopodotos
+		Autokrateis Boukatteis Chareis Charmon Cherias Cherondas Dalion Damokrateis Deuxias Dexikleis
+		Dikeos Dinomachos Dionysichos Dionysophanes Dorimachos Emmonos Epikleis Ergoteles Eschrion Eucharidas
+		Eumareidas Eumnastos Euonymodoros Eutouchos Homoloion Kabirichos Kallistheneis Kephon Klioxenos Lileis
+		Lousippos Matron Melanippidas Meneis Mition Mnasaretos Mnasikleidas Mnasinikos Mondon Moson
+		Mouron Myrias Nikostrotos Nioumeinios Onasichos Onasimidas Oropodoros Orselaos Pankleis Pantareis
+		Pasikleis Pedakleis Pisias Polioukritos Polioustrotos Polykrateis Pourrhos Pouthonikos Praxiteleis Prokleis
+		Ptoillei Satouros Theokleis Theophaneis Thiogneitidas Thiophaneis Thoinon Thrasoulaos Timogiton Timoklidas
+		Torteas Wasandros Achelon Agatharchidas Alexidamos Alexinos Aminokrateis Amphikrateis Anaxidotos Androkleis
+		Antichareis Anticharidas Archelaidas Archiklidas Asklapichos Asopos Athanogiton Automeneis Bachchios Chabas
+		Chareitidas Charidamos Chreisimos Chrousippos Daphneos Deuxippos Dexithios Dinias Diogenidas Dionousichos
+		Dropoulos Echthatios Empediondas Epiktas Epopheleis Ergoteleis Eschoulos Eschriondas Eschylos Euankritos
+		Euanoridas Eucheiridas Euenetos Eukrateis Eukratidas Euphrastos Euphroniskos Eupompos Eurouphaon Eurylochos
+		Euxithios Glaukinos Glaukion Hageisinikos Haniochidas Hermogeneis Hippokleis Hippokritos Hippomenidas Hipposthenidas
+		Hismenodoros Homoloiodoros Iranichos Kallichareis Kallikron Klearchidas Kleistheneis Kliarchos Krateis Lakratidas
+		Lakron Learchos Leukinas Limnaios Liousias Liousithios Lyranias Mantixenos Matrodoros Meilias
+		Melambios Meleis Menekleis Mikrinas Mnasarchidas Mnasiklidas Mnasiphilos Mnasitheos Mnasixenos Nikobios
+		Nikokrateis Nikoteleis Nymeinios Orsimachos Panarmostos Panton Patrokleis Peileklidas Phaneis Phenandros
+		Phidias Phidolaos Philoklidas Philomeilidas Philomnastos Philondas Poimendas Poloukrateis Polouxenos Polychareis
+		Polysaon Polytimidas Pourrhias Pouthillei Praxilleis Promathidas Pteron Ptoiophestos Ptoiotimos Samokleis
+		Samon Saumeilos Smikron Sophronidas Soteirichos Souros Sthenon Strotinos Tharsomachos Tharsoumachos
+		Theibangelos Themistokleis Themon Thiogeneis Thioklidas Thioxenos Thrasondas Timolas Timolleis Tiron
+		Triakadion Wanaxandros Wartalos Wergon Wisodikos Woikon Xenantichos Xennias Xenodamos Xenophaneis
+		Abaiodoros Abeodoros Acheos Agameideis Agasandros Agasikleis Agathophaneis Agestrotos Akastidas Akousilaos
+		Alentichos Aleuas Alkinoos Ameinokleis Ameusippos Aminadas Amineas Amonias Amphenetos Ancheroidas
+		Andrition Androklidas Anthemon Antheus Antidikos Antikleis Antinikos Antippidas Archeias Archelochos
+		Archippides Argeilias Aristagoros Aristarchidas Artamon Asopoklidas Asopokritos Athanon Athyros Auteas
+		Automedes Biotos Boukon Bouris Boutheiros Braton Brochas Chabon Chairidas Chairis
+		Chareinadas Charigeneis Charigiton Charillos Charimon Charipitheis Chariteleis Charmichos Chionnidas Chrousilaos
+		Daimachos Daliodoros Damatrogiton Damoitas Damostrotos Daton Detolaos Deton Deuxilaos Dexiaros
+		Didymmei Dikearchos Diogitondas Dioidotos Dioukleis Diydotos Dopouros Dorinas Dorkeidas Dorkilleis
+		Dorkylion Dropidas Echekleis Echemeideis Egias Eirichos Elasippos Enchormas Epameinondas Epaphrion
+		Epigeneis Epigenidas Epikratidas Euagoros Euboiskos Eukleidas Eukteimon Eulaides Eumareis Euormidas
+		Eupharios Euphrainon Eupompidas Euporion Euroulochos Euroumachos Euroutimos Eurymeilos Euthioumidas Euthoumokleis
+		Euthoumos Eirodamos Eirodoros Eiroillei Galaisos Gorgidas Gorgouthos Hageison Hekaton Herakleiodoros
+		Hermaichos Hermaiiskos Hermokrateis Hiaridas Hiaronymos Hiaroteleis Hippinos Hippokrateis Hippolaos Hippotion
+		Hisminias Histieos Hypatias Hypermeneis Iphidamos Iranos Isias Ithioulleis Ithydamos Ithyllias
+		Ithyphron Kalliadas Kallimeilos Kallimeneis Kallinas Kalliondas Kalliphaon Kallisstratos Kalykinos Kaphisiadas
+		Kaphisinos Kaphisokritos Karaillei Karaion Karon Kephalleis Kleiton Klenetos Kleoichos Kleondas
+		Klimachidas Klimeilos Kliondas Klionikos Klionymos Komaddos Koryphios Koskoulos Koudias Kratistolaos
+		Kratyllos Krekilas Krinon Krisadas Kritodamos Laippos Lammos Lamprinidas Lamprokleis Lanprias
+		Laonikos Lapitheis Lepton Liontichos Lioukiskos Loukon Lousandros Lousinos Lykeion Lysillei
+		Lysistrotos Machon Megon Mekgas Meleision Melissidas Mennidas Mikolos Mikoulos Mikouthos
+		Mikyllos Milleis Mimnon Mnasichareis Mnasidikos Mnasigenes Mnasikon Mnasikrateis Mnasilleis Mnastichidas
+		Molorkos Moschas Moschinos Moukrinos Mouson Mynnichos Myton Nauphilos Neumeinichos Nikaristos
+		Nikobolos Niomeinios Niron Nomeinios Noneis Nonnos Noumenichos Nymon Odysseidas Oinondes
+		Oloumpiodoros Olynpion Onasikrateis Opheileimos Opheltas Opheltoridas Ornias Orobis Oroites Oupermenidas
+		Pandaros Pandon Paneas Panklidas Pantakleis Pantaklidas Pantenetos Parebatas Pasicharidas Pasikon
+		Pasondas Patroklidas Patrondas Pelopides Peribotadas Permasichos Permon Phallinos Phanonikos Pharsalios
+		Pheidolaos Phenichos Phenidas Phereis Pheres Phileteros Phillei Philokoudeis Philowergidas Phrasaridas
+		Phrasillos Phrynidas Pirges Pisandros Pision Pisis Pistoxenos Pithioullos Pitholaos Piton
+		Plistos Ploutinas Polioureitos Politas Polykratidas Polyreitos Pompidas Potammei Potammeis Potidaichos
+		Pourrhinas Pouthikon Pouthogeneis Pouthokles Proklidas Prosdokimos Pyrias Pythilles Rhynchon Sagythinos
+		Sathon Sauxenos Silas Sillei Simakon Skouthrion Skythrion Sophaneis Sosikrateis Soteiros
+		Sounnomos Sphodris Spintheir Teileas Teilephaneis Telesion Terpsias Theogeitos Theogeneis Thetimos
+		Thezotos Thiobolos Thiodorichos Thiokleis Thiokoudeis Thioppastos Thoineas Thomon Thorakidas Thrasoulaidas
+		Thrasybolos Thrymondes Thymagathos Timandridas Timaristos Timogeiton Timogeneis Touchon Trochinidas Tynnichidas
+		Tyrannias Wanaxidamos Wasias Wasteas Wergoteleis Wikadion Willon Wiphiadas Wisokleis Wisolaos
+		Xenaristos Xenios Xennei Xenokleas Acheloichos Acheloiodoros Aeimnastos Agameistor Aganor Agasidamos
+		Agasistrotos Agassigiton Agathonikos Agelarchos Aglaodoros Aglaophaidas Aglaos Agonichos Agrionios Aichmondas
+		Aidaknos Aiklidas Aimmeis Aineseas Aiolion Aiolos Aischriondas Akastos Akestimos Akrephillei
+		Akrotatos Alexikrateis Alkenetos Alkidemos Alkinos Alkippidas Alkistheneis Alphiades Ameinadas Ameineas
+		Ameiniadas Ameinokrateis Ameinonikos Ameusias Ameusion Amiadas Aminion Aminodoros Aminokles Aminokrates
+		Aminon Amintion Amomos Amontas Amoumodoros Amountas Ampharichos Ampharidas Amphidikos Amphidoros
+		Amphigeneis Amphikoudeis Amphiktion Amphiktiouon Amphiktouon Amphilaidas Amphilytos Amphimedes Amphimnastos Amphistheneis
+		Amphitimos Amphoteridas Amphoterinos Amphottei Anaxikrateis Andropitheis Androteleis Aneristos Angelinos Ankmidas
+		Ankoulos Anphikrateis Anphinikos Antalxidas Antandrichos Antandridas Antandrides Anteios Anthemas Anthippidas
+		Anticharinos Antichos Antigone Antikratinos Antimedon Antimenon Antison Antistheneis Apheliskos Aphrodion
+		Aphroditios Aphthoneitos Aphthonidas Apollokoudeis Apollophaneis Archandridas Archesilas Archestrotos Archilaos Archillos
+		Archippidas Archondes Areiiphilos Areikos Areskondas Argelaos Argiklidas Argilias Argilidas Argilios
+		Argion Argounion Ariamnes Arisstion Arisstoklidas Arisstokrateis Arisstokritos Arisstolas Arisstomeneis Arisstomenes
+		Arisston Arisstonikos Arisstophanes Aristanor Aristeis Aristeodoros Aristidas Aristochos Aristoklaros Aristonoumos
+		Aristophaon Aristotheos Arkeon Arkeson Armenidas Arnias Arnokleis Arsias Arsinous Arsiphrondas
+		Artioulaos Artixidas Arxilaidas Aschalapichos Aschalapon Aschlapion Asios Asopion Asopogiton Asopokleis
+		Asopotimos Aspasiondas Assklapichos Astioukleis Aston Astydemos Athambos Athanikkei Athanis Athanogetis
+		Athanokritos Athemmon Athenais Athenias Autenetos Autokleis Automeideis Autonoos Autophilos Autostheneis
+		Bachchon Bakcheios Bakchis Balanion Bembakidas Betidas Biophelemos Biotteis Bioutes Bithous
+		Blepontidas Bochidas Bombos Bothinas Botylos Bouiskos Boukation Boukattei Boukeras Bouphantos
+		Bouphenos Bouphonas Bousporos Brachoulleis Brachyllei Brachylleis Branidas Breikidas Brochchos Brochoullos
+		Bromias Bromidas Brychon Chalkis Chariadas Chariklies Charipion Charitianos Charmas Charmidas
+		Charmippos Charmis Charmouchos Charmoulidas Charylaos Charyllos Cheirias Cherandros Cherion Cherippidas
+		Cheron Chersias Cherson Cherylos Chetippos Chioneis Chiones Chionnes Choragion Choragos
+		Chorarchos Chorophilos Chreistimidas Chremaios Chromades Chrousos Chyrax Dadon Daikrateis Daikratidas
+		Dailleis Dailochos Daios Daiton Daitondas Dalarchos Dalaretos Daliadas Dalichos Daloxenos
+		Damageitos Damasippos Damastes Damatrias Damatrinos Damenidas Damias Damnichos Damochareis Damogenes
+		Damokleidas Damothoidas Damothoinos Damothynos Damotion Damotthidas Daotimos Daphnon Dasairios Daseas
+		Datynnos Demylides Derkon Detichos Detondas Deuxidotos Deuxis Dexamenos Dexarion Dexiadas
+		Dexiades Dexidamas Dexidamos Dexigiton Dexikrateis Dexikritos Dexisthenes Dexondas Diaigenes Dichon
+		Didymarchos Didymon Diketas Dinon Dinostrotos Diogeitondes Diogitos Diokleidas Diokreneis Diolaides
+		Diomnastos Dioniousichos Dioniousiodoros Dionousophaeis Dionysidas Diopitheis Dioszotos Dioteleis Dioxandros Dithyrambos
+		Dolichos Domestichos Dorkillei Doton Dounatos Drimyworas Dysopos Echanthos Echeisias Echeklidas
+		Echekrateis Echelaos Echesias Echetimos Echmon Egon Eioureitos Elephas Eleutherokleis Empeddeis
+		Empedoklidas Emporos Eneias Eneisias Enesidamos Enetos Ennomidas Epagathon Epamon Epharmostos
+		Ephippos Epicharmidas Epiddalidas Epidromos Epikraton Epiktes Epikydeis Epimachanos Epimeles Epimeniskos
+		Epipitheis Epistasichos Epistrotos Epitelidas Epiterpeidas Epiterpidas Epiwauseis Epophanes Epopheles Ergobios
+		Ergon Erotomachos Erouxilaos Eryon Eschines Ethon Etiarchos Euaethlos Eualkidas Eualkidiskos
+		Euandridas Euanthos Euaridas Eucharis Euchetos Eudamichos Eudoridas Eueithidas Euergias Euergichos
+		Eueschros Euetairos Eueteiros Eugeneidas Euistios Eukarpidas Eukarpion Eukleion Eukolinos Eukomos
+		Eukraton Eukrines Eukrinnei Eulachon Eumeithidas Eumeneis Eumenidas Eumenios Eumethides Eumolpos
+		Eumyros Eunommei Euondas Euonoumos Euonymidas Euophelinos Eupalamos Euphaias Euphaneis Euphasis
+		Euphileitos Euphorbos Euphreos Euphrondas Euphrosounos Eupinon Eupiros Eupisias Eupnytos Eupraxides
+		Eupteros Euptoes Eureimon Euroudikos Euroumei Euroution Eurytimidas Eurytion Eustrotos Eusytos
+		Eutageis Eutaktos Euteleis Eutheimon Euthermon Euthioudamos Euthioumos Euthoumidas Euthynidas Euwagoros
+		Euwarchidas Euwergon Euxilaos Euxiphantos Euxis Exakos Eirias Eiroidas Eiroiodotos Eirolaos
+		Eironichos Eistion Eureisias Euresias Galeis Galeitos Galesion Gallatis Gela Gerenichos
+		Glaphoridas Glykinos Gneison Gonthon Gouris Grechas Gripos Gryllion Grytas Gynoppastos
+		Habromachos Hadon Hageimon Hageisis Hageisixenos Hagemondas Halippos Haniokrates Hapheistion Haphestodoros
+		Harmodamos Harpalion Hedybios Hegippos Helikonichos Hellanikos Hellanion Hephestichos Heraklas Heraklitos
+		Heraondas Hermageneis Hermaiadas Hermaias Hermaiketas Hermaion Hermaiondes Hermaisskos Hermaulos Hermeas
+		Herodamos Herotimos Herpondas Herpondes Hiararchos Hiaredas Hiareiadas Hiarokles Hiaroteles Hierax
+		Hieromnastos Hilaros Himerokleis Hipnias Hippostheneis Hippoxenos Hismeinichos Hismeinoteleis Hismenichos Hismeniketas
+		Hismenokles Hismenon Homolophantos Hypattei Hyperbolos Iakchos Ialmenos Iamiskos Iatrokleis Idylos
+		Ikaros Iraneos Iranion Isouchios Isschinas Isthmonikos Italos Ithioudamos Ithioudikos Ithoudamos
+		Ithykleis Ithykrateis Ithykrates Ithyllichos Ithymachos Ithytreitos Itouphron Kabeiras Kabirinos Kabirios
+		Kabiros Kaboias Kairichos Kalikritos Kalimeleis Kalion Kalliaros Kallicharis Kallichoros Kalligeitos
+		Kalligitos Kallikleios Kallimeideis Kallimeleis Kallimelos Kallimenes Kallinaos Kallinikos Kalliphaneis Kallippon
+		Kallistides Kallistokleis Kallistonax Kallition Kallyros Kalodikos Kalotas Kalynthos Kaphisandros Kaphisianos
+		Kaphisogeneis Kaphisokleis Kaphisoklidas Kaphisophilos Kaphisottei Kaphissei Kaphon Kapillei Kapinos Karaiageitos
+		Karaiogitos Karanos Karmon Karoukidas Karous Karpiadas Karykidas Kebrinos Keisinos Keleitieis
+		Kelenos Kephonichos Kereisiadas Kereisias Kerinos Keteus Kironides Kisseus Kiton Kleainos
+		Kleanthes Klearchides Kleax Kleenetos Kleestheneis Kleimedes Kleinatas Kleinikos Kleitenos Kleitidas
+		Kleokrateis Kleolas Kleomnastos Kleonoumos Kleophaneis Kleophanidas Kleopolemos Kleostheneis Klesippos Kleusippos
+		Kliagoros Kliaretos Kliaristidas Kliaristos Klidamos Klienetos Klimachos Klimnastos Klinikos Kliogiton
+		Kliophaneis Kliostrotos Klistheneis Klymenos Klytomachos Koiratadas Kokkoubias Kolon Komaithos Komethos
+		Kominas Kondon Kopon Kordondas Koreiadas Korinthos Kornelios Koropidas Korouthon Korrhinadas
+		Kosmippos Koson Kossidamos Kouannei Kouchedas Koudippida Koudippos Koulon Kounon Kourambos
+		Kragalos Kratesippos Krateuas Kratteidas Kraxios Krinion Krinippos Krisyllos Kritonikos Kteisias
+		Kteision Ktesikleis Kynagos Kyrambos Lagoas Laikles Lakoon Lamprinos Lamproklidas Laphilos
+		Lapoustion Lases Lasippos Lausoos Lebouros Lebyros Leontiadas Leontisios Leptargos Leukidas
+		Leukilos Leukippidas Liontidas Liontiskos Liontomeneis Lioukinos Lioukodoros Lioukon Liousidamos Liousikleis
+		Liousiphantos Liousippos Liparos Liranos Lithax Lochagos Lochos Lokrion Lombax Loukidas
+		Loukinos Loukiskos Lousanias Lousatas Lousikrateis Lousilaos Lousimachos Lousimnastos Lousistratos Lousistrotos
+		Lousithios Lykaon Lykomeideis Lykopos Lysiadas Lysichos Lysiklias Lysikon Lysion Lysitheidas
+		Maidatas Malchion Mantidotos Matas Mation Matrichos Matroklidas Matrophaneis Megakleidas Megalinos
+		Megondas Megonidas Megoulos Meilichidas Meilion Meilotimos Meinis Meixilaos Meixis Melanbichos
+		Melannei Melanneis Melantas Melanthidas Melikleidas Melistichos Melistion Menalkeis Menarchidas Menebolos
+		Menegeiton Menekleidas Meneklidas Menesstrotos Menestheneis Menesthos Menneidas Methon Metias Metopos
+		Midias Mikinnas Mikkinas Mikkylos Mikrylidas Mikythion Mileisios Millei Miltias Mimon
+		Mineis Minias Miron Mitalon Mithridates Mitos Mitrichos Mixidamos Mixinoos Mnamochartos
+		Mnamon Mnapias Mnasiadas Mnasiklias Mnasillei Mnasillos Mnasilochos Mnasimeilos Mnasiorgos Mnasithaleis
+		Moirageneis Molioutos Molokros Molynthos Monarchos Morouchos Mottylos Moukon Mourtas Mousas
+		Mousikos Mynnichides Myris Myrondas Myrson Myson Myssos Nakos Nauton Nearetos
+		Neas Nemeas Nemesios Neomeideis Neomeinichos Neomeinios Neomenios Neophaneis Neos Nerikon
+		Neron Nestidas Nikagoros Nikangelos Nikasaretos Nikasichares Nikasichos Nikeias Nikeos Nikeros
+		Nikesichos Nikinos Nikoklidas Nikolaidas Nikolaides Nikomeideis Nikophaneis Nikophanes Nikopheles Nikopolis
+		Ninas Niominios Nioptolemos Nioumeinichos Nioumenichos Nioumphodoros Niymeinios Nomon Nonneias Nonos
+		Noron Noumphodoros Nymeinichos Nymphon Ochateis Oinadas Oinanthes Oinion Oinochidas Oiston
+		Okibas Olioumpion Oliounpion Ollympichos Olompiodoros Olompis Olonpion Oloumpion Olounpichos Olynpiades
+		Onasandros Onasidamos Onasides Onasimbrotos Onasiphilos Onatichos Onatidas Onator Oncheistichos Oncheistodoros
+		Onchestodoros Onymastos Opheilemos Ophelemidas Ophelleis Opoentios Orselas Orsias Orsilaos Orsimas
+		Ortalleis Orteidas Orthris Ortidas Oxoumachos Oulimos Oulion Oupatos Paelliadas Pagon
+		Pagondas Pailos Pamphaeis Pampiras Panarmos Panon Panphilos Panpirichos Pantaretidas Panteas
+		Pantheir Panthippos Panthymion Pantoios Pappotimos Paraibatas Paramonion Parmenias Parnattios Paroitas
+		Pasaretos Pasiboios Pasichareis Pasichoros Pasimachos Pason Pastrophos Paton Patreas Patrinas
+		Patroklas Pausinneis Paxamos Pedagenes Pedakon Pedallos Peilekleidas Peilemachos Peilestrotidas Pelekates
+		Pemptides Perigeneis Perikleis Peripoltas Permichos Perses Petageneis Petreos Phainias Phainos
+		Phanes Phanion Phanodoros Phanokleis Phanolochos Phanondas Phanosthenes Phanteios Phantias Phastakinos
+		Phausas Phaustos Phedimos Phedrias Pheidomelos Pheidotimos Pheiradas Phenantidas Pherekleis Pherekrateis
+		Phestias Phettalos Phibos Phidippos Phidomeilos Philainides Philegos Phileis Philekos Philenetos
+		Philenidas Philippidas Philleos Philoadas Philochareis Philogiton Philokreon Philoktetos Philolaos Philomeides
+		Philomeillos Philopheiras Philopompos Philoson Philosstrotos Philostrotos Philotos Philowergos Philoxeinos Phoidokidas
+		Phoinikides Phoisias Phorystas Phosounos Phossinas Phoullinas Phoxon Phoxos Phrasidas Phrounidas
+		Phthongos Phylleis Phyros Physeas Pimphakos Pinax Pinytos Pirpis Pisas Pisidamos
+		Pisidas Pisidikos Pisikrates Pisimeilos Pistidas Pistokleis Pistolaos Pithakos Pithallei Pithalleis
+		Pithalos Pithinos Pithondas Pithoullos Piththei Pittakos Pitthiadas Pleistandros Pliston Ploutarchides
+		Ploutinos Podareus Poidikos Poimanor Poimnichos Polemeos Polemokleis Poliadas Polion Poliouchareis
+		Polioudoros Poliougathidas Polioukleis Polioukon Polioukrateis Polioumeilos Polioumnastidas Polioumnastos Polioumon Pollinas
+		Polouarchos Polouchareis Poloucharmos Poloudoros Polouklidas Poloukratidas Poloukritos Poloulaidas Poloureitos Poltias
+		Polyas Polybion Polybios Polyenetos Polykleidas Polylaos Polymachos Polymatidas Polymeilos Polymnasstidas
+		Polythytas Porrhinos Poseideas Poseideos Poseidonax Posidonios Posthion Potalleis Pothiadas Poureinidas
+		Pourichos Pourinas Pourippos Pourrhandros Pourrhichidas Pouthagoras Poutharmos Pouthichos Pouthilleis Pouthinos
+		Pouthodoridas Pouthogitos Pouthophaneis Pratarchos Pratinas Praxagoras Praxas Praxilles Praxiphaneis Preigion
+		Preskos Proitos Prokleidas Pronomos Prosodos Prostateros Prothoos Protippos Protoboulos Psaon
+		Ptamos Ptoilleis Ptoinos Ptoios Pymendas Pyralos Pyrichos Pyrides Pyrinas Pyrippos
+		Pyrokleides Pyrrhalion Pyrrhalos Pyrrhax Pyrrhiadas Pyrrhichidas Pyrrhidas Pyrrhidemos Pyrrhilos Pyrrhinas
+		Pythiketas Pythinas Pythiogeiton Pythormos Rhadeis Rhenkias Rhinkon Rhinkos Rhomeis Rhonkon
+		Rhyiskos Sabyktas Saistrotos Samion Samolas Sandridas Saosichos Sarpingion Satheias Satourion
+		Saukleas Sauklias Saukrateis Seberianos Semnos Simalios Simichidas Simondas Simonidas Simoulos
+		Simyrtios Sion Siphion Sittaron Skamon Skapsias Skapsis Skirton Skittoulos Skourion
+		Skouron Skythron Soandros Soitimos Soixippos Sokaleis Soklidas Sokratidas Someneis Somphoros
+		Sophainetos Sophillos Sosiadas Sosiboulos Sosichos Sosigiton Sosilos Sosimeneis Sosinas Sosiphaneis
+		Sosiphilos Sosstratos Sosstrotos Soteas Soukrateis Soxenos Spendon Sperchon Stasichoros Stasilaos
+		Stasimbrotos Stasinos Stenidas Stilbondas Stolippos Stratarchos Stratinos Stratonidas Stratyllos Strepsippidas
+		Strombon Strombos Strosias Strotas Stybrax Sylanos Symphorion Targelios Taurinos Teisikon
+		Teledamos Teledikos Telegonos Teleklidas Telesagoras Telessistrotos Telestidas Telleas Tellei Tenon
+		Teukros Teumasigeneis Thallei Thalleis Thalonidas Thambos Tharops Tharsinos Tharsymenes Tharsynon
+		Thauminas Thaumis Theageneis Theareis Thearidas Thearinos Thebadas Thebades Thebagenes Thebon
+		Thedoridas Theibadas Theibagoras Theibas Theibichos Theibon Theinarchidas Theiomnastos Theioteles Theirarchos
+		Theispion Theochareis Theodorichos Theodoridas Theodoron Theogeitondas Theogitonidas Theogitos Theoklidas Theomeideis
+		Theondas Theopheidas Theophestos Theopompides Theoteleis Theotimidas Theowergos Thepompos Therarchos Thersandrichos
+		Therseas Thespigeneis Thespillei Thiageneis Thiangelos Thiochareis Thiodamidas Thiogeiton Thionidas Thiopeithes
+		Thiophantos Thiophestidas Thiophestos Thiophilos Thiotimidas Thioutimos Thoinias Thoinion Thorakides Thorikos
+		Thoron Thouelaos Thouellei Thoumias Thouos Thrasydaios Thrasykleidas Thrasykleis Thrasyklidas Thrasylaos
+		Throsioustrotos Thyemachos Thymias Thynarchidas Thyneias Thynidas Thynnon Thynnos Thynoklidas Thynon
+		Thyrrhon Thyzotos Timageneis Timagoros Timarchidas Timasenetos Timiadas Timinas Timogeitos Timoleon
+		Timollei Timomeilos Timondas Timostheneis Timothios Tiouchon Tioudeus Tisandros Titouros Tmolos
+		Tollos Tolmon Touchanor Trephonichos Tripoulos Trocheis Trokches Trophimos Tychanor Tychios
+		Tylarchos Tynon Tyrmidas Wadioulogos Wadon Wadosios Wanakon Wanaxandridas Wanaxidotos Warneias
+		Warnon Waskondas Wastinos Wastioullei Waston Wastoukritos Wastoulleis Wastymeidon Weliangelos Welixion
+		Wergonikos Wergophilos Wergotion Wimmpidas Wiphikratidas Wisandros Wisippos Wisodamos Wisonidas Wisophelidas
+		Woikidas Woikostheneis Xanthikleis Xanthon Xeinon Xenantidas Xenarchidas Xenareitos Xenaretos Xeniadas
+		Xennaretos Xenneis Xenoklias Xenondas Xenopitheis Xenoteleis Xenotimidas Xenyllos Xidon Xiphon
+		Zeuxon Zmikrion Zoippos Zopourion Zopyrinos Zotos Astylaidas Damophanes Phaenos Ergilos
+		Euklippos Kleaichmidas Soikrates Timainetos Anteros Aristomedon Damarmenos Drymos Hiketinos Kalliphaes
+		Kelados Kleinagoras Lakris Skythinos Soibios Stheneidas Thessalos Thiodektas Aetos Agaios
+		Aischenas Aischis Akryptidas Anaktor Ananthos Anaxidoros Aristas Athaumantos Bolagoras Damagoras
+		Daminos Damochartos Damos Demonax Dexistratos Eritimos Euarestos Euktos Eunoos Eurytidas
+		Gorgasos Hippos Kallen Kitos Kleokratinos Kretheus Ladamidas Lyseas Nikasilas Nikeus
+		Onymakles Pasichares Pasimelos Peisinoos Peithilas Periklytos Philandridas Poimarchos Poseidaios Praxidamas
+		Simakos Sotimidas Taroutinos Teleippos Theares Theokosmos Thiares Thiophanes Thioteles Timagathos
+		Timasikrates Treuthos Tyrbis Zeuxias Abiantos Adeistidas Agalidas Agathameros Agatholas Ageus
+		Agieus Aglaophamos Aglokrates Aglophanes Agoraisos Aichmagoras Aichmis Ainestratos Aiolaos Aipolos
+		Aischion Aischylidas Aischylios Alexeus Alexibios Alexidas Alexilas Alkades Alketos Alkiadas
+		Alkis Alpheiodoros Amphilinos Anaxidamidas Andromedes Aniketos Anippos Antallidas Antheas Anthestion
+		Anthiadas Antonios Apellion Aphrikanos Aptaraios Archagetas Archemandros Archenous Archikleidas Archileon
+		Archilos Aregon Arisamidas Aristinos Aristophron Aristouchos Arkesillos Asiatikos Asklepon Asmenos
+		Asteios Astochos Athlos Atimetos Atis Augeias Augis Baris Biippos Bippos
+		Bitos Boukoleon Boulekritos Brachas Brephylos Bromiokles Bryas Chairemachos Charimenes Charmantidas
+		Chelias Cherrhias Chersikleidas Chilonidas Chlidon Chorokles Daikrates Damaistratos Damaratos Damastichos
+		Damen Damokydes Damolas Damophon Damoson Datos Delphion Derkas Detos Dexeus
+		Diondas Dorkis Dropylos Dylyporis Einalios Ekesthenes Empedokles Empedosthenes Empylos Epidoxos
+		Epikratinos Epinomos Eratogenes Erianthos Erpeas Erymanthos Eteoklos Euboulidas Eucharmos Eucheridas
+		Eudamidas Eudraios Euergidas Euethidas Eumarichos Euopis Eupamon Eupastos Euplous Eurybatos
+		Eurybiotos Eurydamos Euryphon Euthymedes Euxidamos Gapsias Gerion Geryllos Gnikon Hageidamos
+		Hagesikles Hagesikrates Hageandros Hagnothemis Halieios Halikeus Hekatodoros Hektoridas Helikon Hellotios
+		Hermadion Hermarchos Herophanes Hieronas Hieronikos Hormasilas Hosios Hyperanor Hypernikos Iatrokleidas
+		Idaios Ikadion Ilaikos Inachidas Iolaidas Ischemachos Isomentor Isyllos Kaikalos Kalles
+		Kallibios Kallimachidas Kardamion Karneadas Kasiles Kephalidas Keras Klaros Klaudianos Kleeratos
+		Klegoras Kleimenes Kleiphanes Kleitagoras Kleitandros Kleiteas Kleiteles Kleonidas Kleopolis Kleosthenios
+		Kletion Kleudamos Kleukrates Komas Komastas Kopris Kotion Kouidas Kratisthenes Kressa
+		Krios Kritheas Kryton Kydimenes Kydon Kyklias Kyllias Kyloias Labreas Lachias
+		Laidas Laietion Lakrateus Lakridas Lakrines Lampis Laophon Laphanes Lapheides Larchidas
+		Latropos Leaithos Leitos Leochares Leontidas Lobon Logismos Longos Loukios Lydiadas
+		Lydias Lykaithos Lysikleidas Lysikydes Lysilochos Makias Martialis Melandrys Melaneios Meleteus
+		Melitherios Menaios Menalkidas Menelaidas Menetios Menostratos Mithon Mnaimachos Mnaitimos Mnamachos
+		Mnasalkes Mnasiphanes Mnasiphon Mnasis Mnasiteles Mnasitimos Moiras Mommios Monas Myllos
+		Neilodoros Nikagidas Nikailas Nikaithos Nikephas Nikodamans Nikophaes Nikotheos Nithon Nomeus
+		Oionichos Oitas Olympis Onasikrates Onasikritos Onason Onesas Orestadas Oryas Oxymenes
+		Pagasidas Palaimachos Pancharinos Pannis Pantadas Pantis Parmenitas Paros Parthemidas Pasinomos
+		Paskalas Pedakritos Peisiteles Peithanoridas Pelasgos Perillos Phaenikes Phainagoras Phainandros Phainemachos
+		Phalakrios Phanton Pheidas Pheidonidas Philagathos Philaos Philetadas Philistas Philliadas Philokration
+		Phokylos Phradmon Phrouridas Pityas Ploutias Poinos Polliadas Polymnis Possitos Pothos
+		Poudes Prateas Pratokles Praton Praximias Praulos Proklianos Pronoos Pyladas Pyraimenes
+		Pyrrhon Pyrwalion Pythainetos Rhetorikos Samagoras Sambateus Saphis Sareas Schyros Sikyonios
+		Silasimos Skylakidas Smikon Sophantos Sophronion Sophronios Sosidas Sosikleidas Sotakon Sprithios
+		Stasikles Stasippos Stichos Stomas Stratolas Styrax Syrtonikos Taurion Teisen Telaithos
+		Telearchos Teleseas Telesikrates Telesis Telleus Thallinos Thaumeas Thearichos Theason Theocharmidas
+		Theonostos Theoris Thersagoras Thersas Thersidamos Thersimenes Thersion Thessalion Theston Theunostos
+		Theupompos Thiochares Thiokleidas Thiokles Thiokydes Thiophamos Thoropidas Thraullos Tiberios Timagetos
+		Timaidas Timakleidas Timas Timeios Timokleidas Timopolis Timylos Tlepolemos Toron Tropos
+		Trypis Wikadeon Xenolaidas Xenostratos Xenoteles Zeloumenos Hageson Nikiadas Stratagos Alexomenos
+		Arkison Skorpion Ladikos Boutheras Hagetas Hybrilaos Kydrion Agelochos Amynandros Ladames
+		Lykidas Nikoleon Orthaios Phaineas Trichas Bittos Melanis Panaitolos Phillakos Phylax
+		Agrios Aiakidas Alexamenos Aristophylos Chlaineas Daitas Diokleas Dorymenes Dropinas Euripidas
+		Hybristas Kleumenes Laistas Mynnos Phalausias Phillidas Philopoinos Phrikon Proandros Sotylos
+		Thopias Agestos Agoraios Agroitas Agroleon Aigeus Aimos Ainelaos Ainichos Aisimos
+		Aitolion Alathion Alexes Alkesippos Amphonymos Anchemachos Androbolos Androboulos Androsthenidas Antagros
+		Antibolos Antidotas Apokias Arkion Arkisas Astydos Babyrtas Bathys Battanos Boudorka
+		Charimortos Charmios Chartas Damisias Deinylos Deon Diakritos Dikon Doreus Dropakos
+		Dropina Echetarmos Eiranion Elpinas Emautos Eminautos Empedichon Erymnion Erymnon Euanthios
+		Euarmidas Eurydamon Eurykleidas Gaiomachos Gausos Gennadas Glaukeas Glauketas Hagesagoras Harpagion
+		Hegion Hellanias Homaros Ikadios Kagpsias Kallichares Kleisias Kleolaos Kleotas Kleupatros
+		Koiseas Kompsis Korinthios Korymbios Kratiadas Kreuthon Kydoros Kypselos Laiarchos Lamprion
+		Laos Lattabos Lattamos Leonikos Leukias Logistas Lykolas Lykortas Lysimbos Malousios
+		Mattyxidas Menesandros Menophanes Mikkias Mikos Mimneas Molis Molossos Molyschrios Nikolos
+		Nikonidas Oikiadas Oiniadas Oinokleas Paipalos Pamphaidas Pantarkes Pantauchos Patroklos Peithimenes
+		Petalias Phainon Phaneas Pharykos Philanbrotos Phrikos Physkidas Pittias Polemitas Pollaitios
+		Polydaitas Polyouchos Polyperchon Porrhoitas Pramios Protobios Psyllion Pyrrhaithos Pyrrhanoidas Pyrrhanthidas
+		Pyrrhisas Rhysiadas Seirakos Simargos Simiadas Sinneas Skytas Sotakos Sphakias Sthenneus
+		Stomios Straten Syagros Talouras Teledas Telemmos Thaumandros Theuphrastos Thorion Tityrmos
+		Tybroitas Tyrtaios Xenagos Xenion
 	}
 	
 	female_names = {
-		Adriane Agathe Agne Aikaterine Alexandra Alexeia Anastasia Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
-		Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
-		Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Hypatia Ioanna Ioulia Iouliana Ioustina Kale Konstantia Konstantine Kyra Kyriake
-		Leontia Margarita Maria Markia Martha Melissa Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronia Philippa Philomena Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla
-		Simonis Sophia Stephania Thekla Theochariste Theodora Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
+		Phila Sotericha Aspasia Diokleia Epiktesis Sostrata Alka Aristareta Aristo Aristonika
+		Artemin Charis Damareta Damasia Eirena Elpis Erotis Euandris Habrosyna Hageso
+		Helene Herais Hermiona Hermione Ithmonika Kallo Klenis Kleodika Kleonike Kleopolis
+		Kleupatra Lampra Leaina Lykiska Myrrhine Neollis Nika Nikagora Nikaia Nike
+		Nikostrata Nikylla Nostia Pamphila Philista Philostrata Polystrate Prepousa Satyra Sophia
+		Sosibia Soso Stolis Stratonika Theuxena Timarchis Xenis Xeno Xenoklea Xenokrateia
+		Agathe Aglaia Alexandra Alkippe Antigone Aphrodisia Apollonia Aristomache Arsinoe Artemisia
+		Athenais Charmion Demetria Demostrate Eirene Eugeneia Eunike Eurydike Eutychia Galene
+		Isidora Kallisto Kallistrate Korinna Laodike Lysandra Lysistrate Melissa Metrodora Olympias
+		Rhode Sostrate Stratonike Thais Theodora Theodosia Theokleia Theophania Timo Timothea
+		Tryphaina Xanthippe Zosime Agaso Agapeta Ago Antibia Aristomeda Erasippa Erato
+		Eremena Kalliera Kleariste Kleina Lamiska Lampron Megisto Myro Nomonia Philainis
+		Phileia Sastrata Simale Thallo Thearis Thersis Timareta Xenagis Philoumene Dionysia
+		Nikostrate Archestrate Archippe Eukoline Phile Chairestrate Hediste Malthake Glykera Theophile
+		Demo Melitta Hedyle Soteris Aristagora Eukleia Hedeia Plangon Aristonike Eutychis
+		Kleo Nikarete Theodote Kallistomache Kleopatra Mnesistrate Chrysis Pamphile Philia Philippe
+		Philotera Zopyra Agathokleia Demonike Doris Euporia Nikomache Aristokleia Biote Diodora
+		Euphrosyne Hierokleia Kallistion Lysimache Mania Mika Phanagora Phanostrate Chrysion Kleagora
+		Menestrate Nausistrate Phainarete Philition Timarete Timostrate Chairippe Gorgo Megiste Mnesarete
+		Nikeso Niko Oinanthe Patrokleia Theano Timokleia Aigyptia Antiochis Choirine Hedytion
+		Hiero Hilara Kosmia Krateia Lamidion Leontion Lyde Mammaron Nikoboule Peisikrateia
+		Philinna Philostrate Thraitta Timagora Aristaichme Aristonoe Aristylla Artemis Asklepias Dorkas
+		Euthydike Herakleia Hippostrate Kallimache Kleostrate Lysippe Mammia Menekrateia Nannion Nikopolis
+		Onesime Philokleia Philotion Plathane Titthe Ameinokleia Apollodora Archedike Archilla Arete
+		Aristokrateia Asia Chairelea Demainete Demarete Epainete Euagora Hedyline Kalliope Kallippe
+		Kordype Kratesion Lamia Magadis Meneia Menophila Mnesikleia Moschine Mysta Nausikrite
+		Nausinike Phano Phanokleia Pheidostrate Philiste Philylla Philyra Ploutarche Praxagora Soteira
+		Synete Thaleia Timokrateia Tryphe Ammia Antigona Archo Ariste Aristokrite Artemidora
+		Chairylla Charite Chrysilla Chrysothemis Demokrateia Demophile Diphila Diphile Dorothea Epikrateia
+		Euboula Eukolon Eunois Euterpe Glykanthis Glyke Glykerion Gnome Hagnothea Hellas
+		Hesychia Hippokleia Ias Italia Itame Kallinike Kallistarete Kleino Korone Kratisto
+		Lakaina Makaria Mammarion Melite Mneso Mydion Nikariste Nikidion Nikippe Nikoptoleme
+		Phainippe Phaino Pheidylla Philistis Polykrateia Sophrone Strybele Syra Thallis Themistodike
+		Timokrite Xenostrate Zosarion Ada Agallis Aitherion Ammonia Amphainete Amphikrateia Antheme
+		Antikleia Areskousa Aristippe Aristoboule Aristodike Aristopolis Arkesasa Arkeso Axioma Bako
+		Bation Dameion Delias Delphis Demokleia Dikaiosyne Diodote Diognete Dosis Doxa
+		Elpinike Epiphaneia Eunomia Eupolis Eutaxia Euthion Euthykrite Eurippe Glauke Gnathaina
+		Habro Habrosyne Hedistion Hedylion Hedyto Hegesilla Helike Heliko Hermais Hilaron
+		Hipparche Hipparete Historia Hymnis Iphidike Kallistheneia Kantharis Kephisodora Kerkope Kleio
+		Kleitopolis Kleokrateia Komike Kompse Konope Korallion Ktesikleia Kteso Laodameia Laudike
+		Lysilla Lyso Ma Maia Meidion Melaina Melainis Melisto Melita Melitine
+		Menippe Metro Minako Mnesagora Mnesikrite Mnesimache Mnesiptoleme Myllion Mynnia Myrte
+		Nikokleia Onaso Onychion Opora Panarista Paramona Paregoris Parion Pausimache Penteteris
+		Peristera Persis Petale Phaidra Phaidrylla Phanodike Phanokrite Phanomache Phanylla Philemation
+		Philino Philitia Philonike Philoxena Philoxene Philtate Philte Phyllis Piste Polykleia
+		Polyxene Potheine Praxo Pyrrha Pythippe Pythostrate Rhodanthis Rhodokleia Sardion Selino
+		Simaitha Sosinike Sosipatra Sosipolis Sphragis Stagonion Stratokleia Synesis Synoris Thallousa
+		Thebageneia Themisto Theomneste Theudosia Thrasyboule Xenariste Abiatha Agakleia Agapion Agapis
+		Agariste Agathemeris Agathia Agathoboule Agathylla Agonis Aiantis Ainesa Ainesion Airesis
+		Akademeia Akestion Akte Aktine Alexippa Alkestis Ambrakis Ambrosia Ameinariste Ameino
+		Ameinokrateia Ameinonike Ampharete Amphigonis Amphinike Amphiptoleme Amymone Anassa Anaxilla Andraphile
+		Anemone Anniche Antallis Anteia Anthea Anthema Anthemia Anthemilla Anthera Anthis
+		Anthylla Antidosis Antikyra Antipatra Antipatris Antiphile Antixene Anyta Aphrodo Apistia
+		Apolla Apollonie Apollonis Aratis Archagora Archarete Arche Archebia Archegete Archekrateia
+		Archianassa Archibia Archikleia Archion Archis Arethousa Ariadne Arimnis Aristainete Aristarche
+		Aristarete Aristeido Aristodemeia Aristodora Aristolea Aristophanta Aristophora Aristotime Arkas Armenia
+		Artemonis Arxilla Asklapis Asklepia Astra Athenagora Athenaion Atheno Athenodora Ato
+		Atthis Autonoe Axiothea Babyle Babylia Bargathe Basileia Basilike Basilinna Bathylla
+		Batylon Bebaion Bendidora Biotis Bithynis Bitias Bitis Bitto Blaste Boubale
+		Boubalion Boubalis Brisis Bryousa Chairyle Chariessa Charippe Charition Charito Charitopolis
+		Charixo Charopon Chersippe Chimaira Chione Chlidane Choiris Chrotarion Chroto Chrysippe
+		Dakia Damagora Damasion Damo Damoxena Danae Danais Deikrateia Deino Deinylla
+		Dekelea Delia Demagora Demarchia Demarion Demokrite Demostheneia Dexikrateia Dexithea Dexo
+		Dione Diophante Diotima Dosithea Dromokleia Drosis Earon Echo Eirenis Elephantis
+		Epigone Epikarpia Epinike Epiphile Epistheneia Epiteugma Epitychia Eratonassa Euamera Euandria
+		Euantis Euarchis Euardis Euarete Euariste Euaxis Eubois Euboule Eudama Eudia
+		Euelpis Eueteria Eueteris Euion Eukarpia Eukleite Eukole Eumache Eumeneia Eumorphia
+		Eupatra Eupeithe Euphaina Euphaneia Euphragora Euphrante Euphro Euphronis Euphylla Euporon
+		Europe Eurygone Eurynoe Eustrate Eusychis Eutakton Euteleia Euthete Euthylla Euxene
+		Euxippe Galateia Gaua Geisylla Glaukinna Glaukis Gnathainion Gorge Gorgona Graphis
+		Grymea Habronis Habrylla Habryllis Hagnodike Hagnokleia Hagnokrite Hagnostrate Hagnylla Haline
+		Harmonia Harmoxena Harpalea Hegesion Hegesippe Hegesipyle Hellanis Herakleite Hermaia Hermionis
+		Hermo Herpyllis Hiera Hierothea Himerope Hippaphesis Hipponike Homonoia Horaia Iaspis
+		Iassa Idion Ilione Indon Iole Ionike Ipnetion Iris Ischas Isidike
+		Isidote Isigeneia Isodike Isthmionike Isthmonike Ithake Kaikie Kalletima Kallikleia Kallikrite
+		Kallino Kallinoe Kallistagora Kalliste Kallisthena Kallixena Kalyke Kalykion Karystia Kephisia
+		Killo Kition Kladion Kleanthis Kleinopolis Kleiostrate Kleito Kleitomache Kleitorion Kleoboule
+		Kleognete Kleokratis Kleophanis Kleoxene Kleullis Kodo Kolaphidion Komallis Konalis Konnion
+		Konnys Korinno Kosmo Kossyphion Kotale Krano Kratista Kratistoleia Krete Kretta
+		Krino Krinylla Krita Kritolea Krobyle Ktesarete Kydonis Lagiska Lais Lampas
+		Lampris Lampyris Lanike Lastheneia Lenais Leokrite Leomedousa Leonike Leostrate Leothemis
+		Leuke Leukippe Lonchis Lopadion Lotine Lysagora Lysarete Lysicha Lysidike Lysikleia
+		Lysithea Malicha Mallion Malthakion Manyka Maratha Mata Medeia Medontis Megakleia
+		Megallis Melinna Melis Melito Mene Menekleia Menestho Menilla Menodora Menodote
+		Menokrita Meso Methe Methike Metiche Metriche Metrophile Midaia Mikotera Mikoteron
+		Milakon Mnemodike Mnemosyne Mnesikrateia Mnesilla Mnesippe Mnesithea Morphion Moscharion Moschis
+		Mousis Myidion Myleton Myllaron Mymaikyle Mynnesis Mynnine Mynno Myrta Myrtale
+		Myrtaso Myrtia Myrtile Myrtis Mystile Mystion Naidion Nais Nakion Nanas
+		Nannarion Nauarche Nausilla Nausion Nausippe Nautilia Neara Nearchis Neariste Nemeias
+		Nenemon Neopolis Neostrate Nephele Nikagis Nikandra Nikanthe Nikesarete Nikodike Nikostratis
+		Nikothea Ninnion Noema Noumenis Nympho Oinanthis Okimon Olbia Olympiche Olympiodora
+		Onasa Onesako Onesicha Oneso Ophelime Orthagora Paian Pangaion Pankration Pantheris
+		Paramone Pardalis Parthenis Pasarete Pasilea Pataika Pataikion Patro Patrophila Pausilla
+		Pausistrate Peithis Peitho Phaidrion Phanodika Pheidippe Pheme Philakion Philako Philantho
+		Philarche Phileko Philesia Phileto Philikon Philippa Phillino Philokalon Philokrateia Philonis
+		Philothea Philoumeno Philtation Philtera Philto Phlegousa Phrasilla Phronesis Phronimon Phryne
+		Phylakion Phylarche Phylo Physis Phyton Pisa Pistarete Pithane Pithion Pithis
+		Pithyllis Plathaine Pleistis Plinna Politis Polla Polynike Polyxena Pontike Porphyro
+		Posis Praxilla Prianthe Prosodion Prosodon Prosousia Protogeneia Proxena Psamathe Pyrrhiche
+		Pyrrhonike Pythais Pythilla Pythionike Pythodike Pythodora Pythokrite Pythonike Rhodia Rhodilla
+		Rhodo Rhysis Salaminion Sallion Samakion Samia Sanno Sao Sarapias Sarmatis
+		Sibilla Siga Sige Sikelia Sima Simakion Simalon Sime Simiche Sinope
+		Sipe Sisymbris Smikke Smikra Smikythe Sokleia Sokrateia Sopatra Sophronis Sosandra
+		Sosia Sosikleia Sosikrateia Sosilla Sosippe Sounion Sparte Strateia Stration Stratola
+		Strophe Synarchia Syrion Syryla Tachiste Tation Taxis Techne Teisikrateia Teiso
+		Telesippe Telestagora Temene Thalassis Thaumarion Thea Thebe Theo Theogenis Theognetis
+		Theokrite Theolyte Theophante Theopompe Theopropis Theoria Theosebeia Theoteleia Theotime Theoxena
+		Thermo Thesmonike Thesmothetia Thettale Thettalia Theudote Thoa Thopion Thraittis Thrasyllis
+		Threpte Thryallis Tibitis Timandra Timesarete Timodeme Timodike Trypheron Tyrrhenis Xenarete
+		Xenno Xenodike Xenokleia Xenokrite Xenophaneia Xenophile Xenylla Zeuxion Zeuxo Zoila
+		Zois Homolois Parthena Nikareta Phillo Zopyrina Damatria Sosicha Athanodora Epicharis
+		Philotis Thiodora Aristoklia Damokrita Irana Kaphisodora Lousis Melanthis Onasima Prostateris
+		Thioklia Thiomnasta Antigenis Aristogeita Matro Phalakra Philoklia Saosis Syrina Theomnasta
+		Thiotima Xenoklia Zopoura Amino Ammoa Archelaa Asopicha Biota Boukatia Damoklia
+		Damotima Euameris Eugita Eutycha Kabeiro Kallikrita Kallinika Kallippa Kallityche Kaphisa
+		Mnasareta Mnasikleia Mnasiklia Onasicha Philareta Philisto Philotima Pouthis Ptoiodora Rhoda
+		Sophrona Sotero Symphoron Thiozota Xenokko Zopourina Zosima Achelois Agameida Agatharchis
+		Agathoklia Aminoklia Antigo Archenika Archestrota Aristodama Aristogita Aristogitis Aristonoa Asopis
+		Athanicha Athano Bachchis Biottis Chariklia Charita Charopis Dexippa Dioklia Dionousodora
+		Elpinika Epinika Eratylla Erotine Eubola Eukeron Eumaricha Eunoia Eunoma Eunosta
+		Euphama Euphania Euphrosyna Euthoina Glaphoura Glauka Heraklea Hiaro Hippareta Hippokrita
+		Kabiricha Kallen Kalliboula Kallicha Kalliklia Kallista Kallistrata Kleareta Klia Kollyra
+		Komikon Koritho Kota Ligyron Melantho Melittis Mikka Mita Mnasagora Mnasarcha
+		Mnasistrota Mourto Nikasis Nikaso Nikobola Oloumpicha Olympicha Panarmo Pankratis Phaeina
+		Phenareta Philomela Philonika Phrounicha Phrygia Pistis Polemmo Pourrhis Poutho Pouthodora
+		Pouthoklia Ptois Samicha Satyrina Sobaron Sosinika Spoudaia Strotonika Telesippa Themistis
+		Theodota Theokrita Theotima Thespias Thiogita Timoklia Timokrita Timoxena Wisoklia Xanthis
+		Xenokrita Xenopithis Zoso Abeicha Abein Agatha Agathestrate Agathina Agatho Agathonike
+		Agaththo Aglao Agonoklea Aichmareta Aimnasta Aimno Aisthesis Akestodora Akidalia Akribeia
+		Akrotalis Alkinoa Ampelis Amphia Amphikleia Amphinoa Amphoteris Amphottis Anankippa Anasiphoron
+		Anaxareta Anaxis Andro Androkko Androkleia Androklia Anero Annaiia Anphareta Anphotto
+		Antandricha Antheira Anthia Antidota Antidotis Antigeneia Antigenia Antimacha Antiocha Antiphila
+		Antippa Aphrodisa Aphrodisias Aphthonno Apollo Apollophaneia Archandris Archeagatha Archeboule Archelais
+		Archinia Archippa Argyris Arisstiche Arisstogita Aristenetis Aristicha Aristogenia Aristokis Aristoklea
+		Aristoko Aristokratia Aristokrita Aristomenia Arkadia Arkesila Arkesilaa Artamis Artamisia Artemo
+		Artemoklia Asklepo Asopodora Astophila Atalanta Athanodota Athanogeita Athanogita Athenada Autarxia
+		Autobola Autokrateia Battis Bernike Bio Bouiska Boukolis Boularche Boutheinis Chariklea
+		Charilaa Charisia Cherippa Chetippa Chresima Chromippa Chrotarin Chrousis Daidiche Daikrateia
+		Daimmein Dalikko Dalis Damaro Damatra Dameia Damocharia Damodika Damokleia Damonika
+		Damonoa Damotheinis Damothoinis Damothynis Damotis Daphne Darda Deinophila Demoklea Deta
+		Deuxippa Dexinika Dexis Dinophila Diogenis Diokko Dioniousia Dioniousodora Dionousia Dionousicha
+		Dionysis Diophania Dioskoris Dora Dorias Doribola Dorko Doro Dorothia Doulis
+		Dropyla Drosina Echekrateia Echenika Egeiricha Eirana Eiritima Eleutheris Empeddicha Empedia
+		Empedoklia Empedonika Empedottis Emporis Epaminis Epaphro Epeneta Epeuktis Epichareia Epicharia
+		Epigeneia Epigenis Epitima Erata Eriphila Erotticha Erottis Erpis Esopicha Ethelippa
+		Euaineta Euanthis Euarcha Eudameia Eudika Eudora Euergeita Eueteiris Eueteron Euklea
+		Euklia Eukolia Eumeilis Eumnasta Eunapion Eunika Eunikis Eupatris Euphantis Eupharia
+		Euphasia Euphranta Euphronilla Euphronita Eupithis Euponpa Euposia Euroudika Eutelia Euthiouma
+		Eutioucha Eutouchia Eutouchina Eutouchis Eutychina Euwandra Euweteiris Euweteris Euxena Eirais
+		Eirogita Gaonis Glaphyron Gnoma Gnomicha Goumnasion Grylis Hadista Hageisippa Hageiso
+		Halonis Haniocha Haphestia Harmatika Harmatina Harmodia Harmotta Hegeso Heniocha Herako
+		Hermaiia Hermaio Hero Hiararcha Hiarokleia Hiaroklia Hieroklea Hiketis Hippo Hippodameia
+		Hippoklia Hippolaa Hismeinia Hismeino Hismena Hismene Homoloiodora Horikon Hypothema Hypsagora
+		Isamo Ischolaa Iso Isotima Ithippina Ithoulaa Kabeiricha Kabiro Kalio Kalioukion
+		Kalippa Kalistarcha Kalligitis Kalliroa Kallistaretis Kallisthenia Kallistona Kallistonika Kaloklea Kalone
+		Kaloto Kalynthis Kanthis Kaphisis Kapilla Karais Kardame Katathymion Keraio Kereisis
+		Keule Klea Klemnis Kleois Kleomacha Kleome Kleomnasta Kleonis Kleonoe Klestrota
+		Kleuwedra Kliarcha Klio Kliomeila Kliopatra Klioxenis Klito Klitoxena Kobis Koinktia
+		Kordoupa Korecha Korethis Koreto Korilla Korina Koripho Korypho Kosmopolis Kothopa
+		Kotila Koudippa Kratylis Krinolaa Kritis Kritolaa Krokine Ktesiklea Ktesiklia Kydima
+		Labra Lakratis Lampricha Lanicha Leonis Lepta Leukaste Leuktris Ligouron Likytha
+		Liousiklia Liousis Logion Loukina Lykkaia Lysikrateia Lysimacha Lysimnasta Lysippa Malo
+		Mantithia Matricha Megaklia Melota Melotima Meneklea Meneklia Menestrotis Menias Meniska
+		Metabole Metrodoxa Mikkis Mikola Mikytha Minnias Mnamicha Mnasigita Mnasilais Mnasillo
+		Mnasilocha Mnasimeilis Mnasiphila Mnasippa Mnasiroa Mnasithea Mnasithia Mnasixena Mnasoulla Moneka
+		Moschina Mourticha Myia Nemea Niarchis Nikarchis Nikasia Nikea Nikippa Nikodama
+		Nikoi Nikoklea Nikolaa Nikostrota Nikotelis Nikotto Nikoxena Nioumenis Nioumphea Nomeinis
+		Nommo Nomokratia Nora Nymphe Nymphilla Nyphothena Okea Okythoa Olioumpicha Olounpicha
+		Onesiphoron Opheleimis Ophelema Ophelima Orrhippa Paiania Palonion Panphila Pantaklia Pantheiris
+		Paralois Paraskeue Parmeno Pasiklia Pasikrita Pausicha Peilekrita Pelekrita Periklia Petrata
+		Phagris Phanokrita Phattion Phedricha Phelikla Phenicha Pheno Phenoulla Phereklia Pherenika
+		Pheretima Phileneta Philis Philistiche Philo Philokko Philoklea Philokoudis Philokrate Philokratia
+		Philomeila Philomnasta Philottis Philoxenis Phousis Phrouna Phryna Phylotia Phyloto Pisandra
+		Pista Pisto Pistoklia Pistoxena Pithanon Pitticha Ploutarcha Ploutis Poimena Pokka
+		Poliarchis Poloklia Polouklia Poloukrita Polygnota Polykaste Polykleis Polyklia Polyttis Pothousa
+		Pouthogita Pouthonika Praoula Prokratia Promathis Prostateiris Protomacha Proxenis Ptoilleia Pyrallis
+		Pyrrhippa Pythoklea Rhadine Rhodanon Rhodopa Sandyle Sarpinapa Sarpingis Satoura Saudama
+		Saumeila Sekonda Seleukis Silana Simaka Simako Simoulina Simylis Siounesis Sokilla
+		Sokratia Sopatris Sosidama Sosiklea Sosiklia Sosippa Sostrota Souneta Sounnastada Sourina
+		Sozousa Spheris Spouda Stouria Strato Stratoion Stratylla Stropha Strotia Strotto
+		Strotyllis Syana Symmache Symposis Syntrophis Syriska Telemachis Telessis Telexena Telia
+		Tello Theibagena Theogeita Theogita Theokko Theoklea Theokrine Theomnaste Theophila Theozota
+		Theraiis Thiokouda Thiokrita Thionicha Thioxena Thoinarche Thrasyboula Thrasykko Thyro Thytleia
+		Timarcha Timasithia Timeneta Timodika Timomacha Timonika Timossa Timoxene Tourannis Trieteris
+		Trochis Trouphera Tryphera Tycharo Tynnicha Wadosia Wanaxis Wanaxo Wasto Wergo
+		Wisotima Woikosthenia Xanthippa Xenareta Xenarista Xeneneta Xenophanta Xenostrota Xenyllis Zeuxippa
+		Zmourna Zobia Zopouro Zoudippa Eukrateia Chariko Kallikrateia Leontis Damoklea Damostheneia
+		Nikarista Aristola Asklapias Dameon Euareta Eurydika Isias Kalleon Klearista Klegora
+		Kleophanta Kleuandra Laphanta Myrto Nikoboula Onasikratis Peisidika Timokratis Achaike Admata
+		Agallomene Agapatis Agasigratis Agathoklea Agathonika Alexandreia Alexila Alkibia Alphesido Androklis
+		Antandra Anthedo Anthippa Apate Aphrodita Aphroditia Apia Arapia Archaioi Archestrata
+		Aristippa Aristoboula Aristoi Aristonyma Arkesa Astyocheia Beltis Charikleia Damagoris Damokratis
+		Damola Damonois Damostrate Demasis Dexiklea Dinia Dionysion Epaphroditon Erateia Eratoklea
+		Euamero Euchora Eukratea Eukratis Eunoa Euphroi Eurykleia Eutyche Gorgoi Gymnasion
+		Hageippa Hagesilla Helena Hemero Hermoxena Hippolyte Hipponika Homilia Hyperbole Kalliko
+		Kallikratis Kallitima Kalyka Kasia Kleaineta Kleidika Kleinoxena Kleiphantis Kleistainete Kleitaro
+		Kleonika Klereta Klinoso Korinthia Kratea Kritola Kritylla Ladama Lako Lamaga
+		Laodika Lathemeia Laudika Leneon Loukia Lyka Lykymnis Lysidika Lysikratis Markia
+		Maschalia Matero Megalla Melissis Mnais Neanthis Neareta Nene Nesias Nikaretis
+		Nikaro Nikeon Nikokratea Nikokrateia Nikokratis Nysa Panike Parrhesia Pege Peisagora
+		Phaena Phanta Phillicha Philokratea Philoumena Philousa Phoinissa Polystrata Posilla Praxio
+		Praxitima Prima Psamatha Pythia Rhodoklea Rhomaia Satornila Sekoundilla Simia Simon
+		Smyrna Smyrnaia Sosareta Sosikrate Sotido Sotimeia Syneta Syria Tais Thaeis
+		Thaliarchis Thebais Thermoxena Thionis Thomanta Tima Timaia Timanthis Timarche Timarista
+		Timostrata Timostratis Tlano Trita Tritylla Xenagora Xeneia Zeuxagora Zeuxila Zopyris
+		Damokrateia Agemacha Agonippa Aischris Anthemo Antikrateia Archareta Archepolis Aristaineta Aristarchis
+		Arkisa Asto Berenika Damaina Damippa Danaa Didyma Dikaia Dikaiopolis Drakontis
+		Euandra Eurynome Kallimacha Kalonika Klearchis Kletagora Lamicha Lanassa Lao Lena
+		Megarista Mnaso Neopatra Satyro Skylla Thraiko Timola Troias
 	}
 
 	dynasty_of_location_prefix = "dynnp_of"
@@ -1104,7 +1992,6 @@ name_list_nars = {
 	pat_grm_name_chance = 50
 	mat_grm_name_chance = 50
 	mother_name_chance = 0
-	
 	
 
 	mercenary_names = {
