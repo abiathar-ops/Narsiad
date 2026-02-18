@@ -2,7 +2,7 @@
 
   # Culture Innovation
   innovation_narsid_identity: "Narsid's Banner"
-  innovation_narsid_identity_desc: "The Narsid identity is a tapestry woven from the threads of our history, values, and aspirations. From the tales of our ancestors to the ideals we hold dear, it is a collective consciousness that binds us together as a people, shaping our worldview and guiding our actions.."
+  innovation_narsid_identity_desc: "The Narsid identity is a tapestry woven from the threads of our history, values, and aspirations. From the tales of our ancestors to the ideals we hold dear, it is a collective consciousness that binds us together as a people, shaping our worldview and guiding our actions."
 
   # MAA Innovations
   innovation_narsid_maa_01: "Synaspismós"
@@ -23,12 +23,13 @@
   # Note: Matches the keys 'innovation_narsid_...' and 'innovation_narsid_...' from your file
   innovation_narsid_architecture_01: "Kyklōpeía"
   innovation_narsid_architecture_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants (*Kýklōpes*). These walls do not crumble."
-  innovation_narsid_architecture_01_tooltip: "Can construct [buildings|E] [GetBuilding('alkastron_01').GetName]
+  innovation_narsid_architecture_01_tooltip: "Can construct [buildings|E] [GetBuilding('building_type_alkastron_01').GetName] and [GetBuilding('building_type_brothel_01').GetName]"
+
 
   innovation_narsid_architecture_02: "Aisódomon"
   innovation_narsid_architecture_02_desc: "Moving beyond rough stone, we adopt the *isódomon* style—cutting blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
-  innovation_narsid_architecture_02_tooltip: "Can construct [buildings|E] [GetBuilding('alkastron_02').GetName]
+  innovation_narsid_architecture_02_tooltip: "Can construct [buildings|E] [GetBuilding('building_type_alkastron_02').GetName]
 
   innovation_narsid_architecture_03: "Hippodámeios"
   innovation_narsid_architecture_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
-  innovation_narsid_architecture_03_tooltip: "Can construct [buildings|E] [GetBuilding('alkastron_03').GetName]"
+  innovation_narsid_architecture_03_tooltip: "Can construct [buildings|E] [GetBuilding('building_type_alkastron_03').GetName]"

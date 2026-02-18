@@ -4,11 +4,18 @@ alkastron_01 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		AND = {
-			building_requirement_castle_city_church = { LEVEL = 01 }
-			building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
 			culture = { 
 				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
 				has_innovation = innovation_narsid_architecture_01 
 			}
 		}
@@ -16,14 +23,14 @@ alkastron_01 = {
 
 	can_construct_showing_failures_only = {
 		culture = {
-			has_innovation = innovation_manorialism
+			has_innovation = innovation_narsid_architecture_01
 		}
 	}
+
 
 	is_enabled = {
 		county.holder = { has_title = prev.duchy }
 	}
-	show_disabled = yes
 
 	cost_gold = expensive_building_tier_3_cost
 
@@ -45,7 +52,7 @@ alkastron_01 = {
 
 	next_building = alkastron_02
 
-	type_icon = "icon_building_military_academy.dds" # Or use a custom icon path if you have one
+	type_icon = "icon_citadel.dds" # Or use a custom icon path if you have one
 
 	type = duchy_capital
 
@@ -77,16 +84,15 @@ alkastron_02 = {
 
 	can_construct_showing_failures_only = {
 		culture = {
-			has_innovation = innovation_battlements
+			has_innovation = innovation_narsid_architecture_02
 		}
 	}
 
 	is_enabled = {
 		county.holder = { has_title = prev.duchy }
 	}
-	show_disabled = yes
 
-	cost_gold = expensive_building_tier_3_cost
+	cost_gold = expensive_building_tier_4_cost
 
 	# Stratēgion - The Officer's College
 	character_modifier = {
@@ -107,7 +113,7 @@ alkastron_02 = {
 
 	next_building = alkastron_03
 
-	type_icon = "icon_building_military_academy.dds"
+	type_icon = "icon_citadel.dds"
 
 	type = duchy_capital
 
@@ -140,16 +146,15 @@ alkastron_03 = {
 
 	can_construct_showing_failures_only = {
 		culture = {
-			has_innovation = innovation_royal_armory
+			has_innovation = innovation_narsid_architecture_03
 		}
 	}
 
 	is_enabled = {
 		county.holder = { has_title = prev.duchy }
 	}
-	show_disabled = yes
 
-	cost_gold = expensive_building_tier_3_cost
+	cost_gold = expensive_building_tier_5_cost
 
 	# Hēgemonion - The High Command
 	character_modifier = {
@@ -170,7 +175,7 @@ alkastron_03 = {
 		monthly_county_control_growth_factor = 0.5
 	}
 
-	type_icon = "icon_building_military_academy.dds"
+	type_icon = "icon_citadel.dds"
 
 	type = duchy_capital
 

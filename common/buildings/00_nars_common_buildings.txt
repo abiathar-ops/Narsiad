@@ -1,0 +1,543 @@
+## Brothels
+
+brothel_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.05
+		monthly_prestige_gain_mult = -0.02
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_1
+		build_speed = good_building_build_speed_tier_1
+		supply_limit = 100
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_1
+	}
+
+	next_building = brothel_02
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.10
+		monthly_prestige_gain_mult = -0.04
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_2
+		build_speed = good_building_build_speed_tier_2
+		supply_limit = 200
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_2
+	}
+
+	next_building = brothel_03
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_3_cost
+
+	character_modifier = {
+		stress_gain_mult = -0.15
+		monthly_prestige_gain_mult = -0.06
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_3
+		build_speed = good_building_build_speed_tier_3
+		supply_limit = 300
+	}
+	province_culture_modifier = {
+		county_opinion_add = 5
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_3
+		development_growth_factor = good_building_development_growth_factor_tier_3
+	}
+
+	next_building = brothel_04
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_04 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.20
+		monthly_prestige_gain_mult = -0.08
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_4
+		build_speed = good_building_build_speed_tier_4
+		supply_limit = 400
+	}
+	province_culture_modifier = {
+		county_opinion_add = 10
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_4
+		development_growth_factor = good_building_development_growth_factor_tier_4
+	}
+
+	next_building = brothel_05
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_05 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_5_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.23
+		monthly_prestige_gain_mult = -0.09
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_5
+		build_speed = good_building_build_speed_tier_5
+		supply_limit = 550
+	}
+	province_culture_modifier = {
+		county_opinion_add = 15
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_5
+		development_growth_factor = good_building_development_growth_factor_tier_5
+	}
+
+	next_building = brothel_06
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_06 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_6_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.25
+		monthly_prestige_gain_mult = -0.10
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_6
+		build_speed = good_building_build_speed_tier_6
+		supply_limit = 700
+		tax_mult = 0.05
+	}
+	province_culture_modifier = {
+		county_opinion_add = 20
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_6
+		development_growth_factor = good_building_development_growth_factor_tier_6
+	}
+
+	next_building = brothel_07
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_07 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_7_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.27
+		monthly_prestige_gain_mult = -0.10
+		monthly_prestige = -0.1
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_7
+		build_speed = good_building_build_speed_tier_7
+		supply_limit = 1000
+		tax_mult = 0.10
+	}
+	province_culture_modifier = {
+		county_opinion_add = 25
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_7
+		development_growth_factor = good_building_development_growth_factor_tier_7
+
+	}
+
+	next_building = brothel_08
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+brothel_08 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_8_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.30
+		monthly_prestige_gain_mult = -0.10
+		monthly_prestige = -0.2
+	}
+	province_modifier = {
+		monthly_income = 5
+		build_speed = good_building_build_speed_tier_8
+		supply_limit = 1500
+		tax_mult = 0.15
+	}
+	province_culture_modifier = {
+		county_opinion_add = 30
+	}
+	county_modifier = {
+		development_growth = 0.34
+		development_growth_factor = good_building_development_growth_factor_tier_8
+	}
+
+	type_icon = "icon_brothel.dds"
+
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+# Library of Wisdom
