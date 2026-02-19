@@ -26,19 +26,19 @@
  building_brothel_03_desc:0 "A hall devoted to wine, dance, and ecstatic performance. The air here is thick with incense and the scent of unmixed wine, blurring the line between actor and audience until the celebrations dissolve into uninhibited revelry long after the curtain falls."
 
  building_brothel_04:0 "Kēposion"
- building_brothel_04_desc:0 "The 'Little Garden'—a sponsors' hall filled with exotic flora and secluded alcoves. Wealthy patrons fund troupes of dancers here, securing not just their loyalty on stage, but the exclusive right to their company behind gilded doors away from prying eyes."
+ building_brothel_04_desc:0 "A sponsors' hall filled with exotic flora and secluded alcoves. Wealthy patrons fund troupes of dancers here, securing not just their loyalty on stage, but the exclusive right to their company behind gilded doors away from prying eyes."
 
  building_brothel_05:0 "Symposion"
  building_brothel_05_desc:0 "A private banquet hall reserved for the aristocracy. In these secluded chambers, reclining on plush couches, the city's power brokers forge political alliances amidst flowing vintage wine, philosophical debate, and the caress of skilled companions."
 
  building_brothel_06:0 "Tryphēsion"
- building_brothel_06_desc:0 "A sanctuary dedicated to beauty and desire, where the concept of 'Tryphé'—magnificence—is worshipped physically. The companions here are trained in the highest arts of conversation and seduction, their time reserved for those who can afford the most divine of experiences."
+ building_brothel_06_desc:0 "A sanctuary dedicated to beauty and desire, where the concept of magnificence is worshipped physically. The companions here are trained in the highest arts of conversation and seduction, their time reserved for those who can afford the most divine of experiences."
 
  building_brothel_07:0 "Erotikon"
  building_brothel_07_desc:0 "A walled estate of softness and excess, completely isolated from the common world. Here, the ruling class retreats to indulge in a life of absolute, languid luxury, served by silent attendants who ensure that no desire, however obscure, goes unsatisfied."
 
  building_brothel_08:0 "Hedonēion"
- building_brothel_08_desc:0 "The temple of pleasure. The pinnacle of elite decadence, where the masquerade of art is finally dropped. In these marble halls, morality is left at the threshold, and power and desire become the only laws that remain for those who rule."
+ building_brothel_08_desc:0 "A sanctum of pleasure. The pinnacle of elite decadence, where the masquerade of art is finally dropped. In these marble halls, morality is left at the threshold, and power and desire become the only laws that remain for those who rule."
 
  NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsid or consider this a [holy_site|E]"
  alkastron_effect_desc:1 ""
