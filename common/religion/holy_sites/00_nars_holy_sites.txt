@@ -1,0 +1,257 @@
+#Sicily
+cagliari = {
+	county = c_cagliari
+	barony = b_cagliari
+
+	character_modifier = {
+		name = holy_site_cagliari_effect_name
+		tax_mult = 0.05
+		development_growth_factor = 0.1
+	}
+}
+
+ajaccio = {
+	county = c_ajaccio
+	barony = b_ajaccio
+
+	character_modifier = {
+		name = holy_site_ajaccio_effect_name
+		monthly_county_control_growth_factor = 0.1
+		development_growth_factor = 0.1
+	}
+}
+
+arborea = {
+	county = c_arborea
+
+	character_modifier = {
+		name = holy_site_ajaccio_effect_name
+		monthly_county_control_growth_factor = 0.1
+	}
+	flag = kerala_conversion_bonus
+}
+
+gallura = {
+	county = c_gallura
+
+	character_modifier = {
+		name = holy_site_ajaccio_effect_name
+		monthly_county_control_growth_factor = 0.1
+	}
+	flag = kerala_conversion_bonus
+}
+
+tortoli = {
+	county = c_tortoli
+
+	character_modifier = {
+		name = holy_site_ajaccio_effect_name
+		monthly_county_control_growth_factor = 0.1
+		development_growth_factor = 0.1
+	}
+}
+
+logudoro = {
+	county = c_logudoro
+
+	character_modifier = {
+		name = holy_site_ajaccio_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+##Chinese
+jingzhao = {
+	county = c_jingzhao
+	barony = b_changan
+
+	character_modifier = {
+		name = holy_site_jingzhao_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+guozhou = {
+	county = c_guozhou
+	barony = b_hongnong
+
+	character_modifier = {
+		name = holy_site_guozhou_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+tongzhou = {
+	county = c_tongzhou
+	barony = b_pingyi
+
+	character_modifier = {
+		name = holy_site_tongzhou_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+shanzou = {
+	county = c_shanzhou_2
+	barony = b_shan
+
+	character_modifier = {
+		name = holy_site_shanzhou_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+dongdu = {
+	county = c_henan
+	barony = b_luoyang
+
+	character_modifier = {
+	name = holy_site_dongdu_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+kaifeng = {
+	county = c_bianzhou
+	barony = b_kaifeng
+
+	character_modifier = {
+	name = holy_site_kaifeng_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+xingyang = {
+	county = c_zhengzhou
+	barony = b_xingyang
+
+	character_modifier = {
+		name = holy_site_xingyang_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+guancheng = {
+	county = c_zhengzhou
+	barony = b_guancheng
+
+	character_modifier = {
+		name = holy_site_guancheng_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+zheng = {
+	county = c_huayin
+	barony = b_zheng
+
+	character_modifier = {
+		name = holy_site_zheng_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+
+##Javanese
+
+sunda = {
+	county = c_JAV_sunda
+
+	character_modifier = {
+		name = holy_site_c_JAV_sunda_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+cimanuk = {
+	county = c_JAV_cimanuk
+
+	character_modifier = {
+		name = holy_site_c_JAV_cimanuk_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+galuh = {
+	county = c_JAV_galuh
+
+	character_modifier = {
+		name = holy_site_c_JAV_galuh_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+mataram = {
+	county = c_JAV_mataram
+
+	character_modifier = {
+		name = holy_site_mataram_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+keling = {
+	county = c_JAV_kalingga
+	barony = b_jav_keling
+
+	character_modifier = {
+		name = holy_site_b_jav_keling_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+dieng = {
+	county = c_JAV_kalingga
+	barony = b_dieng
+
+	character_modifier = {
+		name = holy_site_b_dieng_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+janggala = {
+	county = c_JAV_janggala
+
+	character_modifier = {
+		name = holy_site_c_JAV_janggala_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+lumajang = {
+	county = c_JAV_lumajang
+
+	character_modifier = {
+		name = holy_site_c_JAV_lumajang_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}
+
+bali = {
+	county = c_ido_bali
+
+	character_modifier = {
+		name = holy_site_c_ido_bali_effect_name
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+}

@@ -2,6 +2,7 @@
 @maa_buy_cost = 150
 @maa_low_maintenance_cost = 1.0
 @maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 80 # Equivalent to having 8 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
 # Must be synced between files with the values located at "# Provisions Costs #".
 @provisions_cost_infantry_cheap = 3
@@ -81,6 +82,9 @@ nars_athanatoi = {
     pursuit = 10
     screen = 15
 
+    siege_tier = 4
+	siege_value = 2
+
     terrain_bonus = {
         plains = { damage = 21 toughness = 9 }
         farmlands = { damage = 6 toughness = 4 }
@@ -138,6 +142,9 @@ nars_mastiges = {
         archers = 2
         skirmishers = 2
     }
+
+    siege_tier = 5
+	siege_value = 5
 
     buy_cost = { gold = 195 }
     low_maintenance_cost = { gold = 1.0 }
