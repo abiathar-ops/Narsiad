@@ -40,8 +40,6 @@ innovation_narsid_maa_01 = {
 	}
 	
 	custom = unlock_hoplitai
-	custom = unlock_toxotai
-	custom = unlock_hetairoi
 
 	flag = global_maa
 	flag = culture_era_early_medieval

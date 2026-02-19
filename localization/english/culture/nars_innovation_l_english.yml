@@ -2,21 +2,19 @@
 
   # Culture Innovation
   innovation_narsid_identity: "Narsid's Banner"
-  innovation_narsid_identity_desc: "The Narsid identity is a tapestry woven from the threads of our history, values, and aspirations. From the tales of our ancestors to the ideals we hold dear, it is a collective consciousness that binds us together as a people, shaping our worldview and guiding our actions."
+  innovation_narsid_identity_desc: "Our identity is a tapestry woven from the threads of our history, values, and aspirations. From the tales of our ancestors to the ideals we hold dear, it is a collective consciousness that binds us together as a people, shaping our worldview and guiding our actions."
 
   # MAA Innovations
   innovation_narsid_maa_01: "Synaspismós"
-  innovation_narsid_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields (*synaspismós*) and move as a single organism, we create an impenetrable wall of bronze and iron."
+  innovation_narsid_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields and move as a single organism, we create an impenetrable wall of bronze and iron."
   unlock_hoplitai: "Can recruit [GetMaA('nars_hoplitai').GetName] as [men_at_arms|E]"
-  unlock_toxotai: "Can recruit [GetMaA('nars_toxotai').GetName] as [men_at_arms|E]"
-  unlock_hetairoi: "Can recruit [GetMaA('nars_hetairoi').GetName] as [men_at_arms|E]"
   
   innovation_narsid_maa_02: "Kataphraía"
   innovation_narsid_maa_02_desc: "We have established a corps of elite guards whose number is never allowed to drop below ten thousand. If one falls, another instantly takes his place, creating the illusion of immortality."
   unlock_athanatoi: "Can recruit [GetMaA('nars_athanatoi').GetName] as [men_at_arms|E]"
 
   innovation_narsid_maa_03: "Petharchía"
-  innovation_narsid_maa_03_desc: "Through the strictest discipline (*peitharchía*), we forge soldiers who fear their officers more than the enemy. The 'Scourges' are the embodiment of this ruthless order."
+  innovation_narsid_maa_03_desc: "Through the strictest discipline (*peitharchía*), we forge soldiers who fear their officers more than the enemy. These scourges are the embodiment of this ruthless order."
   unlock_mastiges: "Can recruit [GetMaA('nars_mastiges').GetName] as [men_at_arms|E]"
 
   # Architecture

@@ -1,13 +1,10 @@
 ﻿l_english:
  
- nars_hoplitai: "Hoplītai"
- nars_hoplitai_desc: "To be a Hoplītes is to be a single link in an iron chain; to be the bronze-clad wall upon which empires break."
- nars_toxotai: "Toxótai"
- nars_toxotai_desc: "These mobile veterans haunt the flanks, striking with a cold, surgical precision that turns a retreat into a rout."
- nars_hetairoi: "Hētairoi"
- nars_hetairoi_desc: "Clad in heavy plate and mounted on the finest stallions, the Hētairoi's thunderous charge is less a tactical maneuver and more a decree of absolute victory."
+ nars_hoplitai: "Hoplîtes"
+ nars_hoplitai_desc: "To be a hoplite is to be a single link in an iron chain; to be the bronze-clad wall upon which empires break."
 
  nars_athanatoi: "Athanatoí"
  nars_athanatoi_desc: "When a line must not break, the Athanatoí are sent to hold it. They are trained to view death as a mere secondary concern to their orders."
+
  nars_mastiges: "Mástiges"
  nars_mastiges_desc: "These shock troops thrive in the red ruin of the breach. The Mástiges are armed for the most intimate and brutal forms of slaughter, with blood and gunpowder."

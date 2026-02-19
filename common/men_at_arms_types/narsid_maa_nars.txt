@@ -21,124 +21,50 @@
 
 # Narsid Cultural MAA Units
 nars_hoplitai = {
-    type = pikemen
+    type = heavy_infantry
 
     can_recruit = {
 	    can_recruit_maa_01_trigger = yes
     }
 
-    damage = 52
-    toughness = 88
-    pursuit = 0
+    damage = 45
+    toughness = 30
+    pursuit = 10
     screen = 15
 
     terrain_bonus = {
-        plains = { damage = 21 toughness = 9 }
-        mountains = { damage = -6 }
-        forest = { damage = -6 }
-        hills = { toughness = -3 damage = -3 }
-        wetlands = { toughness = -3 damage = -3 }
-    }
-
-    counters = {
-        heavy_infantry = 0.5
-        pikemen = 0.5
+		farmlands = { damage = 6 toughness = 4 }
+		plains = { damage = 6 toughness = 4 }
+		hills = { damage = 6 toughness = 4 }
+        mountains = { damage = 6 toughness = 4 }
+	}
+	
+	counters = {
+		pikemen = 1
+		peasant_militia = 2
+		heavy_cavalry = 1
         archers = 0.5
-    }
+	}
 
-    buy_cost = { gold = 140 }
-    low_maintenance_cost = { gold = 1.1 }
-    high_maintenance_cost = { gold = 3.3 }
-    
+	winter_bonus = {
+		normal_winter = { toughness = 6 screen = 6 }
+		harsh_winter = { toughness = 6 screen = 6 }
+	}
+
+    buy_cost = { gold = 157.5 }
+    low_maintenance_cost = { gold = 0.7 }
+    high_maintenance_cost = { gold = 2.1 }
+    provision_cost = @provisions_cost_infantry_cheap
+
     mercenary_fallback = no
     holy_order_fallback = yes
     
-    stack = 50
+    stack = 100
     ai_quality = {
         value = culture_ai_weight_heavy_infantry
 		add = counter_synergy_ai_weight_heavy_infantry
     }
-    icon = hoplitai
-}
-
-nars_toxotai = { #Veteran Narsid hoplitai
-    type = archers
-
-    can_recruit = {
-	    can_recruit_maa_01_trigger = yes
-    }
-
-    damage = 65
-    toughness = 45
-    pursuit = 0
-    screen = 10
-
-    terrain_bonus = {
-        plains = { damage = 21 toughness = 9 }
-        mountains = { damage = -6 }
-        forest = { damage = -6 }
-        hills = { toughness = -3 damage = -3 }
-        wetlands = { toughness = -3 damage = -3 }
-    }
-
-    counters = {
-        heavy_infantry = 0.5
-        pikemen = 0.5
-        archers = 0.5
-    }
-
-    buy_cost = { gold = 140 }
-    low_maintenance_cost = { gold = 1.1 }
-    high_maintenance_cost = { gold = 3.3 }
-    
-    mercenary_fallback = no
-    holy_order_fallback = yes
-    
-    stack = 50
-    ai_quality = {
-        value = cultural_maa_extra_ai_score
-    }
-    icon = varangian_guard 
-}
-
-nars_hetairoi = { #Narsid Heavy Cav
-    type = heavy_cavalry
-
-    can_recruit = {
-	    can_recruit_maa_01_trigger = yes
-    }
-
-    damage = 175
-	toughness = 125
-	pursuit = 35
-	screen = 35
-
-    terrain_bonus = {
-        plains = { damage = 21 toughness = 9 }
-        mountains = { damage = -6 }
-        forest = { damage = -6 }
-        hills = { toughness = -3 damage = -3 }
-        wetlands = { toughness = -3 damage = -3 }
-    }
-
-    counters = {
-		archers = 2
-		skirmishers = 1
-		light_cavalry = 1
-	}	
-
-    buy_cost = { gold = 250 }
-    low_maintenance_cost = { gold = 0.35 }
-	high_maintenance_cost = { gold = 0.9 }
-    
-    mercenary_fallback = no
-    holy_order_fallback = yes
-    
-    stack = 50
-    ai_quality = {
-        value = cultural_maa_extra_ai_score
-    }
-    icon = tarkhan 
+    icon = hoplites
 }
 
 #Unlockable via Decision
@@ -150,17 +76,20 @@ nars_athanatoi = {
 	    can_recruit_maa_02_trigger = yes
     }
 
-    damage = 40
-    toughness = 20
+    damage = 60
+    toughness = 45
     pursuit = 10
-    screen = 6
+    screen = 15
 
     terrain_bonus = {
         plains = { damage = 21 toughness = 9 }
-        mountains = { damage = -6 }
-        forest = { damage = -6 }
-        hills = { toughness = -3 damage = -3 }
-        wetlands = { toughness = -3 damage = -3 }
+        farmlands = { damage = 6 toughness = 4 }
+		hills = { damage = 6 toughness = 4 }
+        mountains = { damage = 6 toughness = 4 }
+        forest = { damage = 6 toughness = 4 }
+        wetlands = { toughness = 6 damage = 4 }
+        desert_mountains = { damage = -6 toughness = -4 }
+        drylands = { damage = -6 toughness = -4 }
     }
 
     counters = {
@@ -169,18 +98,18 @@ nars_athanatoi = {
         archers = 0.5
     }
 
-    buy_cost = { gold = 140 }
-    low_maintenance_cost = { gold = 1.1 }
-    high_maintenance_cost = { gold = 3.3 }
+    buy_cost = { gold = 175 }
+    low_maintenance_cost = { gold = 0.85 }
+    high_maintenance_cost = { gold = 2.55 }
     
     mercenary_fallback = no
     holy_order_fallback = yes
     
-    stack = 50
+    stack = 65
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = handgonne
+    icon = hoplites
 }
 
 nars_mastiges = {
@@ -189,35 +118,37 @@ nars_mastiges = {
 	    can_recruit_maa_02_trigger = yes
     }
 
-    damage = 40
-    toughness = 20
-    pursuit = 10
-    screen = 6
+    damage = 235
+	toughness = 65
+	pursuit = 35
+	screen = 0
 
     terrain_bonus = {
-        plains = { damage = 21 toughness = 9 }
-        mountains = { damage = -6 }
-        forest = { damage = -6 }
-        hills = { toughness = -3 damage = -3 }
-        wetlands = { toughness = -3 damage = -3 }
+        plains = { damage = 21 }
+        mountains = { damage = -100 }
+        forest = { damage = 50 }
+        jungle = { damage = 50 }
+        terraced_hills = { damage = 25 }
+        hills = { damage = -50 }
+        wetlands = { damage = -150 toughness = -20 }
     }
 
     counters = {
-        heavy_infantry = 0.5
-        pikemen = 0.5
-        archers = 0.5
+        heavy_infantry = 2
+        archers = 2
+        skirmishers = 2
     }
 
-    buy_cost = { gold = 140 }
-    low_maintenance_cost = { gold = 1.1 }
-    high_maintenance_cost = { gold = 3.3 }
-    
+    buy_cost = { gold = 195 }
+    low_maintenance_cost = { gold = 1.0 }
+    high_maintenance_cost = { gold = 3.0 }
     mercenary_fallback = no
     holy_order_fallback = yes
     
     stack = 50
+	hired_stack_size = 10    
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = bombard
+    icon = hoplites
 }
