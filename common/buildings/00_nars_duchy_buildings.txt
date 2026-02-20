@@ -36,6 +36,7 @@ alkastron_01 = {
 		diplomatic_range_mult = 0.25
 		monthly_dynasty_prestige = 1.25
 		owned_legend_spread_mult = 0.25
+		character_capital_county_monthly_development_growth_add = 0.2
 	}
 	
 	province_modifier = {
@@ -100,6 +101,7 @@ alkastron_02 = {
 		army_maintenance_mult = -0.10
 		monthly_dynasty_prestige = 2.5
 		owned_legend_spread_mult = 0.35
+		character_capital_county_monthly_development_growth_add = 0.4
 	}
 	
 	province_modifier = {
@@ -167,6 +169,7 @@ alkastron_03 = {
 		monthly_dynasty_prestige = 5
 		court_grandeur_baseline_add = 15
 		owned_legend_spread_mult = 0.5
+		character_capital_county_monthly_development_growth_add = 0.6
 	}
 	
 	province_modifier = {

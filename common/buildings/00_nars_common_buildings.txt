@@ -542,4 +542,517 @@ brothel_08 = {
 	}
 }
 
+# War Barracks
+
+canton_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}	
+		}
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+	
+	show_disabled = yes
+
+	cost_gold = normal_building_tier_1_cost
+	
+	character_modifier = {
+		army_maintenance_mult = -0.01
+		men_at_arms_maintenance = normal_building_maa_maintenance_tier_1
+		martial = 1
+	}
+	province_modifier = {
+		stationed_maa_damage_mult = very_high_maa_damage_tier_1
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_1
+		stationed_maa_pursuit_mult = very_high_maa_pursuit_tier_1
+		stationed_maa_screen_mult = very_high_maa_screen_tier_1
+		stationed_siege_weapon_siege_value_mult = very_high_maa_siege_value_tier_1
+		travel_danger = -6
+	}
+
+	county_modifier = {
+		monthly_county_control_growth_add = 0.1
+	}
+	character_culture_modifier = {
+		parameter = strength_in_numbers_maa_limit_bonus 
+		men_at_arms_limit = 1
+	}
+
+	next_building = canton_02
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	character_modifier = {
+		
+	}
+	province_modifier = {
+
+	}
+	county_modifier = {
+		
+	}
+
+	next_building = canton_03
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_3_cost
+
+	character_modifier = {
+		
+	}
+	province_modifier = {
+
+	}
+	county_modifier = {
+		
+	}
+
+	next_building = canton_04
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_04 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	character_modifier = {
+		
+	}
+	province_modifier = {
+
+	}
+	county_modifier = {
+		
+	}
+
+	next_building = canton_05
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_05 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_5_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.23
+		monthly_prestige_gain_mult = -0.09
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_5
+		build_speed = good_building_build_speed_tier_5
+		supply_limit = 550
+	}
+	province_culture_modifier = {
+		county_opinion_add = 15
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_5
+		development_growth_factor = good_building_development_growth_factor_tier_5
+	}
+
+	next_building = canton_06
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_06 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_6_cost
+	
+	character_modifier = {
+		stress_gain_mult = -0.25
+		monthly_prestige_gain_mult = -0.10
+	}
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_6
+		build_speed = good_building_build_speed_tier_6
+		supply_limit = 700
+		tax_mult = 0.05
+	}
+	province_culture_modifier = {
+		county_opinion_add = 20
+	}
+	county_modifier = {
+		development_growth = good_building_development_growth_tier_6
+		development_growth_factor = good_building_development_growth_factor_tier_6
+	}
+
+	next_building = canton_07
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_07 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_7_cost
+	
+	
+	character_modifier = {
+		
+	}
+	province_modifier = {
+
+	}
+	county_modifier = {
+		
+	}
+
+
+	next_building = canton_08
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+canton_08 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		building_requirement_tribal = no
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	can_construct = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
+	}
+
+	cost_gold = normal_building_tier_8_cost
+	
+	
+	character_modifier = {
+		
+	}
+	province_modifier = {
+
+	}
+	county_modifier = {
+		
+	}
+
+
+	type_icon = "icon_farmland.dds"
+
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
 # Library of Wisdom
