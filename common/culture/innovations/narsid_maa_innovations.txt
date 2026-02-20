@@ -55,12 +55,12 @@ innovation_narsid_maa_02 = {
 	}
 
 	maa_upgrade = {
-		men_at_arms = nars_hoplitai
+		men_at_arms = maa_hoplitai
 		damage = 20
 		toughness = 5
 	}
 
-	custom = unlock_athanatoi
+	custom = unlock_optimates
 
 	flag = global_maa
 	flag = culture_era_high_medieval
@@ -77,7 +77,7 @@ innovation_narsid_maa_03 = {
 	}
 
 	maa_upgrade = {
-		men_at_arms = nars_hoplitai
+		men_at_arms = maa_hoplitai
 		damage = 20
 		toughness = 5
 	}

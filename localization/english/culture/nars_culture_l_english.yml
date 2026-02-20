@@ -9,5 +9,9 @@
  nars_karian_collective_noun:1 "Kāresi"
 
  narsid:0 "Narsid"
- #Clothing GFX
+
  narsid_clothing_gfx:0 "Narsid"
+ nars_narsid_opinion:0 "$nars_narsid$ Opinion"
+ nars_patrosi_opinion:0 "$nars_patrosi$ Opinion"
+ nars_ionioi_opinion:0 "$nars_ionioi$ Opinion"
+ nars_karian_opinion:0 "$nars_karian$ Opinion"

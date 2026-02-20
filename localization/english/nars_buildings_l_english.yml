@@ -11,7 +11,7 @@
 
  building_type_brothel_01:0 "Brothels"
  building_type_brothel_01_desc:0 "These clandestine institutions are ostensibly dedicated to the high dramatic arts and culture. However, beneath the veneer of sophistication, they increasingly serve as exclusive venues for the nobility's private indulgences, political intrigue, and concealed vices."
- building_brothel_01:0 "Odēion"
+ building_brothel_01:2 "Odēion"
  building_brothel_01_desc:0 "A covered recital hall known for its acoustic perfection, hosting musical contests and poetry recitals. While the public gathers to enjoy the art, the performers—often chosen for beauty as much as talent—are frequently available for private, curtained audiences after the show."
  building_brothel_02:0 "Thēatron"
  building_brothel_02_desc:0 "A grand venue for tragedy and comedy where the city's elite gather to see and be seen. The true drama, however, occurs in the shadowed private boxes, where patrons mingle with the realm's most desirable talents and reputations are traded as currency."

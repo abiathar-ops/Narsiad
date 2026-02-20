@@ -21,7 +21,7 @@
 @provisions_cost_special_bankrupting = 24
 
 # Narsid Cultural MAA Units
-nars_hoplitai = {
+maa_hoplitai = {
     type = heavy_infantry
 
     can_recruit = {
@@ -70,7 +70,7 @@ nars_hoplitai = {
 
 #Unlockable via Decision
 
-nars_athanatoi = {
+maa_optimates = {
     type = heavy_infantry
 
     can_recruit = {
@@ -116,7 +116,7 @@ nars_athanatoi = {
     icon = hoplites
 }
 
-nars_mastiges = {
+maa_mastiges = {
     type = heavy_infantry
     can_recruit = {
 	    can_recruit_maa_02_trigger = yes
