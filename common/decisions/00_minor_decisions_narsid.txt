@@ -1,4 +1,4 @@
-decision_self_care = { # Groom that beard! ~ by Xenephulon
+decision_libation = { # Pour a Private Libation
 	picture = {
 		reference ="gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
 	}
@@ -24,27 +24,26 @@ decision_self_care = { # Groom that beard! ~ by Xenephulon
 			is_narsid = yes
 		}
 		age >= 18
-		NOT = { has_trait = beardless }
 	}
 
 	is_valid_showing_failures_only = { # Gotta be able to get to the barber
 		is_imprisoned = no
-		NOT = { has_trait = incapable }
-		
+		NOT = { has_trait = chaste }
+		NOT = { has_trait = zealous }
 	}
 
 	effect = {
-		custom_tooltip = decision_self_care_effect_tooltip
+		custom_tooltip = decision_libation_effect_tooltip
 
 		show_as_tooltip = {
 			add_character_modifier = {
-				modifier = self_care_standard_modifier
+				modifier = libation_standard_modifier
 				years = 2
 			}
 		}
 
 		trigger_event = {
-			on_action = stress_loss_narsid_self_care
+			on_action = stress_loss_narsid_libation
 		}
 	}
 
@@ -59,81 +58,6 @@ decision_self_care = { # Groom that beard! ~ by Xenephulon
 			add = 100
 			stress > 10
 		}
-	}
-}
-
-decision_try_for_a_child = {
-	title = decision_try_for_a_child
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds" #correct
-	}
-
-	ai_goal = yes
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 100
-	}
-	selection_tooltip = decision_try_for_a_child_tooltip
-	desc = decision_try_for_a_child_desc
-	confirm_text = decision_try_for_a_child_confirm
-
-	decision_group_type = narsid_minor
-
-	is_shown = {
-		is_narsid = yes
-		trigger_if = {
-			limit = { is_married = no }
-			always = no
-		}
-		trigger_else_if = {
-			limit = { is_married = yes }
-			sex_opposite_of = primary_spouse
-			NOR = {
-				has_trait = pregnant
-				primary_spouse = { has_trait = pregnant }
-			}
-			OR = {
-				is_ai = no
-				AND = {
-					is_ai = yes
-					primary_spouse = { is_ai = yes }
-				}
-			}
-		}
-		trigger_else = {
-			always = no
-		}
-	}
-
-	is_valid = {
-		trigger_if = {
-			limit = { is_married = no }
-			always = no
-		}
-		trigger_else_if = {
-			limit = { is_married = yes }
-			stress_level < 1
-			is_at_war = no
-			NOR = {
-				has_trait = pregnant
-				primary_spouse = { 	has_trait = pregnant }
-			}
-		}
-		trigger_else = {
-			always = no
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_imprisoned = no
-		is_available_adult = yes
-	}
-
-	effect = {
-		trigger_event = narsid_racial.0001
-		custom_tooltip = decision_try_for_a_child_effect
 	}
 }
 
@@ -156,15 +80,10 @@ decision_develop_industry = {
 	
 	is_shown = {
 		is_narsid = yes
-		any_sub_realm_duchy = {
-			OR = {
-				culture = { has_cultural_pillar = heritage_nars }
-				title = { has_title_flag = narsid_group }
-			}
-		}
 	}
 	is_valid = {
-		
+		is_landed = yes
+		is_narsid = yes
 	}
 
 	is_valid_showing_failures_only = {
@@ -203,7 +122,7 @@ decision_develop_industry = {
 				}
 		}
 		trigger_event = {
-			id = mordor.1005
+			id = narsid_realm.1001
 			days = 1
 		}
 		add_to_global_variable_list = {

@@ -85,3 +85,20 @@ scripted_effect body_care_bad_effect = {
 			years = 2
 		}
 }
+
+narsid_realm.1001 = {
+	content_source = realms_dlc
+	type = character_event
+	title = narsid_realm.1005.t
+	desc = narsid_realm.1005.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = marshal_mace
+	}
+
+	option = { # We still have work to do...
+		name = narsid_realm.1005.a
+		
+	}
+}

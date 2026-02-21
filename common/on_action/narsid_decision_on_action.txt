@@ -1,4 +1,4 @@
-stress_loss_narsid_self_care = {
+stress_loss_narsid_libation = {
 	random_events = {
 		70 = narsid_racial.1001 # It's nice
 		15 = narsid_racial.1002 # You now have the best beard ever
