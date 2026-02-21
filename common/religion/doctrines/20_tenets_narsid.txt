@@ -107,7 +107,6 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 			better_artifacts = yes
 			mendicant_preachers_conversion_active = yes
 			pilgrimage_decision_active = yes
-			unlock_voluntary_laampdom_faith = yes
 			fervor_per_holy_site = 1
 			tenet_unlocks_t3_withdraw_from_view = yes
 			reduced_vassal_religion_discontent = yes

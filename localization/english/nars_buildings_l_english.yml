@@ -69,4 +69,4 @@
  building_foundry_08_desc:0 "The supreme pinnacle of metallurgy, blending divine devotion with absolute industrial mastery. Dedicated to the Smith God, this legendary forge-complex produces masterwork armaments whose quality approaches the mythic."
 
  NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsid or consider this a [holy_site|E]"
- alkastron_effect_desc:1 ""
+ alkastron_effect_desc:1 "Enables further #V Narsid Decisions#! for your [realm|E]"

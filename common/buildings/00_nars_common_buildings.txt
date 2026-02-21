@@ -39,20 +39,22 @@ brothel_01 = {
 	
 	show_disabled = yes
 
-	cost_gold = normal_building_tier_1_cost
+	cost = {
+		gold = expensive_building_tier_1_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.05
-		monthly_prestige_gain_mult = -0.02
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_1
-		build_speed = good_building_build_speed_tier_1
-		tax_mult = good_building_tax_mult_tier_1
-		supply_limit = 100
+		diplomatic_range_mult = 0.1
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+		owned_legend_spread_mult = 0.1
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_1
+		county_opinion_add = 5
+		popular_opinion = 5
+		development_growth = 0.2
+		development_growth_factor = good_building_development_growth_factor_tier_1
 	}
 
 	next_building = brothel_02
@@ -104,19 +106,22 @@ brothel_02 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_2_cost
+	cost = {
+		gold = expensive_building_tier_2_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.10
-		monthly_prestige_gain_mult = -0.04
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_2
-		build_speed = good_building_build_speed_tier_2
-		supply_limit = 200
+		diplomatic_range_mult = 0.2
+		owned_hostile_scheme_success_chance_add = 10
+		owned_personal_scheme_success_chance_add = 10
+		owned_legend_spread_mult = 0.2
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_2
+		county_opinion_add = 10
+		popular_opinion = 10
+		development_growth = 0.5
+		development_growth_factor = good_building_development_growth_factor_tier_2
 	}
 
 	next_building = brothel_03
@@ -168,22 +173,21 @@ brothel_03 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_3_cost
+	cost = {
+		gold = expensive_building_tier_3_cost
+	}
 
 	character_modifier = {
 		stress_gain_mult = -0.15
-		monthly_prestige_gain_mult = -0.06
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_3
-		build_speed = good_building_build_speed_tier_3
-		supply_limit = 300
-	}
-	province_culture_modifier = {
-		county_opinion_add = 5
+		diplomatic_range_mult = 0.3
+		owned_hostile_scheme_success_chance_add = 15
+		owned_personal_scheme_success_chance_add = 15
+		owned_legend_spread_mult = 0.3
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_3
+		county_opinion_add = 15
+		popular_opinion = 15
+		development_growth = 0.8
 		development_growth_factor = good_building_development_growth_factor_tier_3
 	}
 
@@ -236,22 +240,21 @@ brothel_04 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_4_cost
+	cost = {
+		gold = expensive_building_tier_4_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.20
-		monthly_prestige_gain_mult = -0.08
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_4
-		build_speed = good_building_build_speed_tier_4
-		supply_limit = 400
-	}
-	province_culture_modifier = {
-		county_opinion_add = 10
+		diplomatic_range_mult = 0.4
+		owned_hostile_scheme_success_chance_add = 20
+		owned_personal_scheme_success_chance_add = 20
+		owned_legend_spread_mult = 0.4
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_4
+		county_opinion_add = 20
+		popular_opinion = 20
+		development_growth = 1.2
 		development_growth_factor = good_building_development_growth_factor_tier_4
 	}
 
@@ -304,22 +307,21 @@ brothel_05 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_5_cost
+	cost = {
+		gold = expensive_building_tier_5_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.23
-		monthly_prestige_gain_mult = -0.09
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_5
-		build_speed = good_building_build_speed_tier_5
-		supply_limit = 550
-	}
-	province_culture_modifier = {
-		county_opinion_add = 15
+		diplomatic_range_mult = 0.5
+		owned_hostile_scheme_success_chance_add = 24
+		owned_personal_scheme_success_chance_add = 24
+		owned_legend_spread_mult = 0.5
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_5
+		county_opinion_add = 25
+		popular_opinion = 25
+		development_growth = 2.0
 		development_growth_factor = good_building_development_growth_factor_tier_5
 	}
 
@@ -372,24 +374,21 @@ brothel_06 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_6_cost
+	cost = {
+		gold = expensive_building_tier_6_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.25
-		monthly_prestige_gain_mult = -0.10
-		diplomatic_range_mult = 0.15
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_6
-		build_speed = good_building_build_speed_tier_6
-		supply_limit = 700
-		tax_mult = 0.05
-	}
-	province_culture_modifier = {
-		county_opinion_add = 20
+		diplomatic_range_mult = 0.6
+		owned_hostile_scheme_success_chance_add = 28
+		owned_personal_scheme_success_chance_add = 28
+		owned_legend_spread_mult = 0.6
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_6
+		county_opinion_add = 30
+		popular_opinion = 30
+		development_growth = 3.0
 		development_growth_factor = good_building_development_growth_factor_tier_6
 	}
 
@@ -442,27 +441,22 @@ brothel_07 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_7_cost
+	cost = {
+		gold = expensive_building_tier_7_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.27
-		monthly_prestige_gain_mult = -0.10
-		monthly_prestige = -0.1
-		diplomatic_range_mult = 0.3
-	}
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_7
-		build_speed = good_building_build_speed_tier_7
-		supply_limit = 1000
-		tax_mult = 0.10
-	}
-	province_culture_modifier = {
-		county_opinion_add = 25
+		diplomatic_range_mult = 0.7
+		owned_hostile_scheme_success_chance_add = 31
+		owned_personal_scheme_success_chance_add = 31
+		owned_legend_spread_mult = 0.7
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_7
+		county_opinion_add = 35
+		popular_opinion = 35
+		development_growth = 4.0
 		development_growth_factor = good_building_development_growth_factor_tier_7
-
 	}
 
 	next_building = brothel_08
@@ -514,25 +508,21 @@ brothel_08 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_8_cost
+	cost = {
+		gold = expensive_building_tier_8_cost
+	}
 	
 	character_modifier = {
 		stress_gain_mult = -0.30
-		monthly_prestige_gain_mult = -0.10
-		monthly_prestige = -0.2
-		diplomatic_range_mult = 0.6
-	}
-	province_modifier = {
-		monthly_income = 5
-		build_speed = good_building_build_speed_tier_8
-		supply_limit = 1500
-		tax_mult = 0.15
-	}
-	province_culture_modifier = {
-		county_opinion_add = 30
+		diplomatic_range_mult = 0.8
+		owned_hostile_scheme_success_chance_add = 35
+		owned_personal_scheme_success_chance_add = 35
+		owned_legend_spread_mult = 0.8
 	}
 	county_modifier = {
-		development_growth = 0.34
+		county_opinion_add = 40
+		popular_opinion = 40
+		development_growth = 5.0
 		development_growth_factor = good_building_development_growth_factor_tier_8
 	}
 
@@ -587,24 +577,21 @@ canton_01 = {
 	
 	show_disabled = yes
 
-	cost_gold = normal_building_tier_1_cost
+	cost = {
+		gold = expensive_building_tier_1_cost
+	}
 	
 	character_modifier = {
-		army_maintenance_mult = -0.01
-		men_at_arms_maintenance = normal_building_maa_maintenance_tier_1
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_1
 		martial = 1
 	}
 	province_modifier = {
 		stationed_maa_damage_mult = very_high_maa_damage_tier_1
 		stationed_maa_toughness_mult = very_high_maa_toughness_tier_1
-		stationed_siege_weapon_siege_value_mult = very_high_maa_siege_value_tier_1
 	}
-
 	county_modifier = {
-		monthly_county_control_growth_add = 0.1
-	}
-	character_culture_modifier = {
-		men_at_arms_limit = 1
+		monthly_county_control_growth_add = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 
 	next_building = canton_02
@@ -655,16 +642,21 @@ canton_02 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_2_cost
+	cost = {
+		gold = expensive_building_tier_2_cost
+	}
 	
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_2
+		martial = 1
 	}
 	province_modifier = {
-
+		stationed_maa_damage_mult = very_high_maa_damage_tier_2
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_2
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.1
+		monthly_county_control_growth_factor = 0.10
 	}
 
 	next_building = canton_03
@@ -715,16 +707,21 @@ canton_03 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_3_cost
+	cost = {
+		gold = expensive_building_tier_3_cost
+	}
 
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_3
+		martial = 2
 	}
 	province_modifier = {
-
+		stationed_maa_damage_mult = very_high_maa_damage_tier_3
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_3
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.15
+		monthly_county_control_growth_factor = 0.15
 	}
 
 	next_building = canton_04
@@ -775,16 +772,21 @@ canton_04 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_4_cost
+	cost = {
+		gold = expensive_building_tier_4_cost
+	}
 	
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_4
+		martial = 2
 	}
 	province_modifier = {
-
+		stationed_maa_damage_mult = very_high_maa_damage_tier_4
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_4
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.2
+		monthly_county_control_growth_factor = 0.20
 	}
 
 	next_building = canton_05
@@ -835,18 +837,21 @@ canton_05 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_5_cost
+	cost = {
+		gold = expensive_building_tier_5_cost
+	}
 	
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_5
+		martial = 3
 	}
 	province_modifier = {
-		
-	}
-	province_culture_modifier = {
+		stationed_maa_damage_mult = very_high_maa_damage_tier_5
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_5
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.25
+		monthly_county_control_growth_factor = 0.25
 	}
 
 	next_building = canton_06
@@ -897,24 +902,21 @@ canton_06 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_6_cost
+	cost = {
+		gold = expensive_building_tier_6_cost
+	}
 	
 	character_modifier = {
-		stress_gain_mult = -0.25
-		monthly_prestige_gain_mult = -0.10
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_6
+		martial = 3
 	}
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_6
-		build_speed = good_building_build_speed_tier_6
-		supply_limit = 700
-		tax_mult = 0.05
-	}
-	province_culture_modifier = {
-		county_opinion_add = 20
+		stationed_maa_damage_mult = very_high_maa_damage_tier_6
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_6
 	}
 	county_modifier = {
-		development_growth = good_building_development_growth_tier_6
-		development_growth_factor = good_building_development_growth_factor_tier_6
+		monthly_county_control_growth_add = 0.3
+		monthly_county_control_growth_factor = 0.30
 	}
 
 	next_building = canton_07
@@ -965,19 +967,22 @@ canton_07 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_7_cost
-	
+	cost = {
+		gold = expensive_building_tier_7_cost
+	}
 	
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_7
+		martial = 4
 	}
 	province_modifier = {
-
+		stationed_maa_damage_mult = very_high_maa_damage_tier_7
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_7
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.35
+		monthly_county_control_growth_factor = 0.35
 	}
-
 
 	next_building = canton_08
 
@@ -1027,19 +1032,22 @@ canton_08 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_8_cost
-	
+	cost = {
+		gold = expensive_building_tier_8_cost
+	}
 	
 	character_modifier = {
-		
+		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_8
+		martial = 5
 	}
 	province_modifier = {
-
+		stationed_maa_damage_mult = very_high_maa_damage_tier_8
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_8
 	}
 	county_modifier = {
-		
+		monthly_county_control_growth_add = 0.4
+		monthly_county_control_growth_factor = 0.40
 	}
-
 
 	type_icon = "icon_manor.dds"
 
@@ -1050,7 +1058,8 @@ canton_08 = {
 	}
 }
 
-# Library of Wisdom
+
+# Foundries
 
 foundry_01 = {
 	construction_time = slow_construction_time
@@ -1091,28 +1100,21 @@ foundry_01 = {
 	
 	show_disabled = yes
 
-	cost_gold = normal_building_tier_1_cost
-	
-	character_modifier = {
-		army_maintenance_mult = -0.01
-		men_at_arms_maintenance = normal_building_maa_maintenance_tier_1
-		martial = 1
-	}
-	province_modifier = {
-		stationed_maa_damage_mult = very_high_maa_damage_tier_1
-		stationed_maa_toughness_mult = very_high_maa_toughness_tier_1
-		stationed_maa_pursuit_mult = very_high_maa_pursuit_tier_1
-		stationed_maa_screen_mult = very_high_maa_screen_tier_1
-		stationed_siege_weapon_siege_value_mult = very_high_maa_siege_value_tier_1
-		travel_danger = -6
+	cost = {
+		gold = expensive_building_tier_1_cost
 	}
 
-	county_modifier = {
-		monthly_county_control_growth_add = 0.1
+	character_modifier = {
+		monthly_lifestyle_xp_gain_mult = 0.05
 	}
-	character_culture_modifier = {
-		parameter = strength_in_numbers_maa_limit_bonus 
-		men_at_arms_limit = 1
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_1
+		tax_mult = good_building_tax_mult_tier_1
+		build_speed = good_building_build_speed_tier_1
+		build_gold_cost = -0.02
+	}
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 5
 	}
 
 	next_building = foundry_02
@@ -1122,7 +1124,8 @@ foundry_01 = {
 	ai_value = {
 		base = 10
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1163,16 +1166,21 @@ foundry_02 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_2_cost
-	
+	cost = {
+		gold = expensive_building_tier_2_cost
+	}
+
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.10
 	}
 	province_modifier = {
-
+		monthly_income = excellent_building_tax_tier_2
+		tax_mult = good_building_tax_mult_tier_2
+		build_speed = good_building_build_speed_tier_2
+		build_gold_cost = -0.05
 	}
-	county_modifier = {
-		
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 10
 	}
 
 	next_building = foundry_03
@@ -1182,7 +1190,8 @@ foundry_02 = {
 	ai_value = {
 		base = 9
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1223,16 +1232,21 @@ foundry_03 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_3_cost
+	cost = {
+		gold = expensive_building_tier_3_cost
+	}
 
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.15
 	}
 	province_modifier = {
-
+		monthly_income = excellent_building_tax_tier_3
+		tax_mult = good_building_tax_mult_tier_3
+		build_speed = good_building_build_speed_tier_3
+		build_gold_cost = -0.07
 	}
-	county_modifier = {
-		
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 15
 	}
 
 	next_building = foundry_04
@@ -1242,7 +1256,8 @@ foundry_03 = {
 	ai_value = {
 		base = 8
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1283,16 +1298,21 @@ foundry_04 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_4_cost
-	
+	cost = {
+		gold = expensive_building_tier_4_cost
+	}
+
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.20
 	}
 	province_modifier = {
-
+		monthly_income = excellent_building_tax_tier_4
+		tax_mult = good_building_tax_mult_tier_4
+		build_speed = good_building_build_speed_tier_4
+		build_gold_cost = -0.10
 	}
-	county_modifier = {
-		
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 20
 	}
 
 	next_building = foundry_05
@@ -1302,7 +1322,8 @@ foundry_04 = {
 	ai_value = {
 		base = 7
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1343,18 +1364,21 @@ foundry_05 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_5_cost
-	
+	cost = {
+		gold = expensive_building_tier_5_cost
+	}
+
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.25
 	}
 	province_modifier = {
-		
+		monthly_income = excellent_building_tax_tier_5
+		tax_mult = good_building_tax_mult_tier_5
+		build_speed = good_building_build_speed_tier_5
+		build_gold_cost = -0.12
 	}
-	province_culture_modifier = {
-	}
-	county_modifier = {
-		
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 25
 	}
 
 	next_building = foundry_06
@@ -1364,7 +1388,8 @@ foundry_05 = {
 	ai_value = {
 		base = 6
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1405,24 +1430,21 @@ foundry_06 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_6_cost
-	
+	cost = {
+		gold = expensive_building_tier_6_cost
+	}
+
 	character_modifier = {
-		stress_gain_mult = -0.25
-		monthly_prestige_gain_mult = -0.10
+		monthly_lifestyle_xp_gain_mult = 0.30
 	}
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_6
+		tax_mult = good_building_tax_mult_tier_6
 		build_speed = good_building_build_speed_tier_6
-		supply_limit = 700
-		tax_mult = 0.05
+		build_gold_cost = -0.15
 	}
-	province_culture_modifier = {
-		county_opinion_add = 20
-	}
-	county_modifier = {
-		development_growth = good_building_development_growth_tier_6
-		development_growth_factor = good_building_development_growth_factor_tier_6
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 30
 	}
 
 	next_building = foundry_07
@@ -1432,7 +1454,8 @@ foundry_06 = {
 	ai_value = {
 		base = 5
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1473,19 +1496,22 @@ foundry_07 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_7_cost
-	
-	
+	cost = {
+		gold = expensive_building_tier_7_cost
+	}
+
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.35
 	}
 	province_modifier = {
-
+		monthly_income = excellent_building_tax_tier_7
+		tax_mult = good_building_tax_mult_tier_7
+		build_speed = good_building_build_speed_tier_7
+		build_gold_cost = -0.17
 	}
-	county_modifier = {
-		
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 35
 	}
-
 
 	next_building = foundry_08
 
@@ -1494,7 +1520,8 @@ foundry_07 = {
 	ai_value = {
 		base = 4
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
 
@@ -1535,25 +1562,32 @@ foundry_08 = {
 		}	
 	}
 
-	cost_gold = normal_building_tier_8_cost
-	
-	
+	cost = {
+		gold = expensive_building_tier_8_cost
+	}
+
 	character_modifier = {
-		
+		monthly_lifestyle_xp_gain_mult = 0.40
 	}
 	province_modifier = {
-
-	}
-	county_modifier = {
+		monthly_income = 5
+		tax_mult = good_building_tax_mult_tier_8
+		build_speed = good_building_build_speed_tier_8
+		build_gold_cost = -0.2
 		
 	}
-
+	duchy_capital_county_modifier = {
+		epidemic_resistance = 40
+	}
 
 	type_icon = "icon_foundry.dds"
 
 	ai_value = {
 		base = 3
 		ai_general_building_modifier = yes
-		directive_to_build_military_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
 	}
 }
+
+# Library of Wisdom

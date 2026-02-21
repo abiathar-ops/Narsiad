@@ -2,6 +2,11 @@
 
 alkastron_01 = {
 	construction_time = slow_construction_time
+	
+	effect_desc = {
+		desc = unlocks_building_desc
+		desc = alkastron_effect_desc
+	}
 
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
@@ -29,28 +34,26 @@ alkastron_01 = {
 
 	cost_gold = expensive_building_tier_3_cost
 
-	# Archēgion - The Cadet Hall
 	character_modifier = {
 		knight_limit = 2
-		knight_effectiveness_mult = 0.10
+		knight_effectiveness_mult = 0.15
 		monthly_dynasty_prestige = 1.25
-		owned_legend_spread_mult = 0.25
-		character_capital_county_monthly_development_growth_add = 0.2
+		monthly_prestige = 0.30
+		monthly_piety = 0.30
 	}
 	
 	province_modifier = {
 		defender_advantage = 10
 	}
-	
+
 	duchy_capital_county_modifier = {
-		monthly_county_control_growth_factor = 0.1
-		monthly_county_control_growth_add = 0.1
-		additional_fort_level = normal_building_fort_level_tier_2
+		additional_fort_level = great_building_fort_level_tier_4
 	}
+	
 
 	next_building = alkastron_02
 
-	type_icon = "icon_fortress.dds" # Or use a custom icon path if you have one
+	type_icon = "icon_structure_grand_library_of_baghdad.dds" # Or use a custom icon path if you have one
 
 	type = duchy_capital
 
@@ -70,19 +73,26 @@ alkastron_01 = {
 alkastron_02 = {
 	construction_time = slow_construction_time
 
+	effect_desc = {
+		desc = unlocks_building_desc
+		desc = alkastron_effect_desc
+	}
+
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
-		# Replace with your actual culture check
-		culture = { 
-			has_cultural_pillar = heritage_nars 
-			has_innovation = innovation_narsid_architecture_02
-		}
+		scope:holder = {
+			culture = { 
+				has_cultural_pillar = heritage_nars
+			}			
+		}	
 	}
 
 	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_narsid_architecture_02
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
 		}
 	}
 
@@ -92,14 +102,12 @@ alkastron_02 = {
 
 	cost_gold = expensive_building_tier_4_cost
 
-	# Stratēgion - The Officer's College
 	character_modifier = {
 		knight_limit = 4
-		knight_effectiveness_mult = 0.20
-		army_maintenance_mult = -0.10
+		knight_effectiveness_mult = 0.30
 		monthly_dynasty_prestige = 2.5
-		owned_legend_spread_mult = 0.35
-		character_capital_county_monthly_development_growth_add = 0.4
+		monthly_prestige = 0.625
+		monthly_piety = 0.625
 	}
 	
 	province_modifier = {
@@ -107,15 +115,13 @@ alkastron_02 = {
 	}
 
 	duchy_capital_county_modifier = {
-		monthly_county_control_growth_factor = 0.25
-		monthly_county_control_growth_add = 0.25
-		additional_fort_level = normal_building_fort_level_tier_4
+		additional_fort_level = great_building_fort_level_tier_6
 	}
 	
 	show_disabled = yes
 	next_building = alkastron_03
 
-	type_icon = "icon_fortress.dds"
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	type = duchy_capital
 
@@ -135,20 +141,26 @@ alkastron_02 = {
 alkastron_03 = {
 	construction_time = slow_construction_time
 
+	effect_desc = {
+		desc = unlocks_building_desc
+		desc = alkastron_effect_desc
+	}
+
 	can_construct_potential = {
-		AND = {
-			building_requirement_castle_city_church = { LEVEL = 01 }
-			building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+		scope:holder = {
 			culture = { 
 				has_cultural_pillar = heritage_nars
-				has_innovation = innovation_narsid_architecture_03 
-			}
-		}
+			}			
+		}	
 	}
 
 	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_narsid_architecture_03
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_narsid_architecture_01 
+			}
 		}
 	}
 
@@ -162,25 +174,20 @@ alkastron_03 = {
 	character_modifier = {
 		knight_limit = 6
 		knight_effectiveness_mult = 0.45
-		army_maintenance_mult = -0.15
 		monthly_dynasty_prestige = 5
-		court_grandeur_baseline_add = 15
-		owned_legend_spread_mult = 0.5
-		character_capital_county_monthly_development_growth_add = 0.6
+		monthly_prestige = 1.25
+		monthly_piety = 1.25
 	}
 	
 	province_modifier = {
 		defender_advantage = 30
-		army_maintenance_mult = -0.10
 	}
 
 	duchy_capital_county_modifier = {
-		monthly_county_control_growth_factor = 0.5
-		monthly_county_control_growth_add = 0.5
-		additional_fort_level = normal_building_fort_level_tier_6
+		additional_fort_level = great_building_fort_level_tier_8
 	}
 
-	type_icon = "icon_fortress.dds"
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 	show_disabled = yes
 	type = duchy_capital
 

@@ -227,7 +227,7 @@ narsid_group = {
 		GHWNamePlural = ghw_crusades
 	}
 	
-	faiths {
+	faiths = {
 			nars_religion = {
 				color = { 230 228 216 }
 				icon = narsid_0 #custom_faith_dove
