@@ -48,6 +48,7 @@ brothel_01 = {
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_1
 		build_speed = good_building_build_speed_tier_1
+		tax_mult = good_building_tax_mult_tier_1
 		supply_limit = 100
 	}
 	county_modifier = {
@@ -596,17 +597,13 @@ canton_01 = {
 	province_modifier = {
 		stationed_maa_damage_mult = very_high_maa_damage_tier_1
 		stationed_maa_toughness_mult = very_high_maa_toughness_tier_1
-		stationed_maa_pursuit_mult = very_high_maa_pursuit_tier_1
-		stationed_maa_screen_mult = very_high_maa_screen_tier_1
 		stationed_siege_weapon_siege_value_mult = very_high_maa_siege_value_tier_1
-		travel_danger = -6
 	}
 
 	county_modifier = {
 		monthly_county_control_growth_add = 0.1
 	}
 	character_culture_modifier = {
-		parameter = strength_in_numbers_maa_limit_bonus 
 		men_at_arms_limit = 1
 	}
 
