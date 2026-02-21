@@ -51,6 +51,8 @@ castle_holding = {
 
 		#Narsiad-added
 		brothel_01
+		canton_01
+		foundry_01
 	}
 }
 
@@ -133,6 +135,8 @@ city_holding = {
 
 		#Narsiad-added
 		brothel_01
+		canton_01
+		foundry_01
 	}
 
 	can_be_inherited = yes
@@ -184,6 +188,10 @@ church_holding = {
 		oath_warriors_building_01
 		oath_faithful_building_01
 		oath_poor_building_01
+
+		brothel_01
+		canton_01
+		foundry_01
 	}
 
 	can_be_inherited = yes
