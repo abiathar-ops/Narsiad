@@ -1,15 +1,7 @@
 ### Narsid Events ###
-#			dwarven.0100-0101 	Widow events
-#			dwarven.0205-031	Mirrormere events
-#			dwarven.1000		Dwarven intro event
-#			dwarven.5000-5103	Dwarven Reincarnation Events
-#			dwarven.6001-6002	Durin's Folk Unifier events
-#			dwarven.6200-6203   Unite the Blue Mountains decision events
-#			dwarven.9000-9002	Dwarven Shaving Events
-#			dwarven.9000		I shave someone
-#			dwarven.9001		I am shaved
-#			dwarven.9002		Bearded again !
-# 			dwarven.9500		Dwarven Marriage Choice
-# 			dwarven.9600		Random Dwarven events adapted from RICE Pamir
-# 			dwarven.9700  		Dwarven Enter/Leave Realm Events
-# 			dwarven.9800-9801  	Dwarven Titular Kingdom Title management
+#			narsid.1000		narsid intro event
+#			narsid.5000-5103	narsid Reincarnation Events
+#			narsid.6001-6002	Durin's Folk Unifier events
+# 			narsid.9500		narsid Marriage Choice
+# 			narsid.9700  		narsid Enter/Leave Realm Events
+# 			narsid.9800-9801  	narsid Titular Kingdom Title management
