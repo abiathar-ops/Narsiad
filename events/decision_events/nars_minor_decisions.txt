@@ -1,0 +1,87 @@
+narsid_racial.1001 = { # It goes fine
+	type = character_event
+
+	title = narsid_racial.1001.t
+	desc = narsid_racial.1001.desc
+	theme = physical_health
+	override_background = { reference = relaxing_room }
+	
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	
+	immediate = {
+		body_care_standard_effect = yes
+	}
+
+	option = { # It's good, maybe not perfect, but good.
+		name = narsid_racial.1001.a
+	}
+}
+
+narsid_racial.1002 = { # It goes great
+	type = character_event
+
+	title = narsid_racial.1002.t
+	desc = narsid_racial.1002.desc
+	theme = physical_health
+	override_background = { reference = relaxing_room }
+	
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	
+	immediate = {
+		body_care_good_effect = yes
+	}
+
+	option = { # It's amazing
+		name = narsid_racial.1002.a
+	}
+}
+
+narsid_racial.1003 = { # It goes terrible
+	type = character_event
+
+	title = narsid_racial.1003.t
+	desc = narsid_racial.1003.desc
+	theme = physical_health
+	override_background = { reference = relaxing_room }
+	
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+	
+	immediate = {
+		body_care_bad_effect = yes
+	}
+
+	option = { # You've ruined it
+		name = narsid_racial.1003.a
+	}
+}
+
+scripted_effect body_care_standard_effect = { 
+		add_stress = medium_stress_loss
+		add_character_modifier = {
+			modifier = body_care_standard_modifier
+			years = 2
+		}
+}
+scripted_effect body_care_good_effect = {
+		add_stress = major_stress_loss
+		add_character_modifier = {
+			modifier = body_care_good_modifier
+			years = 2
+		}
+}
+scripted_effect body_care_bad_effect = {
+		add_stress = medium_stress_gain
+		add_character_modifier = {
+			modifier = body_care_bad_modifier
+			years = 2
+		}
+}

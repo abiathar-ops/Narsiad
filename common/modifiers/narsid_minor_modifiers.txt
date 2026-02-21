@@ -1,0 +1,4 @@
+industrial_boom_province_modifier = {
+	icon = martial_positive
+	stationed_maa_toughness_mult = 0.1
+}

@@ -1,0 +1,19 @@
+﻿l_english:
+  #Narsid Race
+ game_concept_narsid: "Narsid"
+ game_concept_narsids: "Narsids"
+ game_concept_menofnars: "Men of Narsēs"
+ game_concept_narsids_desc: "The Narsids, also known as the Nāresids or 'Men of Narsēs'. A long thought to be extinct people, they are blessed with inhuman beauty and grace the same way they are also known for their chauvinistic pride and arrogant hubris, often looking down upon other [culture|e] and [heritage|e] with disdain."
+
+ #Narsid MAA
+ game_concept_hoplite: "Hoplîte"
+ game_concept_hoplites: "Hoplîtes"
+ game_concept_menofnars: "Men of Narsēs"
+ game_concept_narsids_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments. Some Narsid states of antiquity maintained a small elite professional unit, known as the [optimates|E]."
+
+ game_concept_optimates: "Optimátēs"
+ game_concept_optimates_desc: "The Optimátēs were an elite class of professional soldiers in Ancient Narsid city-states. They were typically recruited from the wealthier classees or from distinguised [hoplites|E] and were known for their exceptional iron discipline."
+
+ game_concept_mastiges: "Mástiges" 
+ game_concept_mastiges_desc: "The Mástiges are a new innovation of the new Narsid revival. Armed with newly discovered and utilized black powders, the Mástiges are the penultimate [hoplites|E] of the current era, feared and formidable force on the battlefield and known for their ruthlessness and effectiveness in combat."
+

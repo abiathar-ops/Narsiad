@@ -1,0 +1,26 @@
+narsids = {
+	alias = { narsid menofnars }
+	texture = "gfx/interface/icons/icon_culture.dds"
+}
+
+hoplites = {
+	parent = narsids
+	alias = { hoplite }
+	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
+}
+
+optimates = {
+	parent = hoplites
+	texture = "gfx/interface/icons/regimenttypes/optimates.dds"
+}
+
+mastiges = {
+	parent = hoplites
+	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
+}
+
+sophes = {
+	parent = narsid
+	alias = { sophesos }
+}
+

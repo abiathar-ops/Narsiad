@@ -1,0 +1,16 @@
+is_narsid = {
+	OR = {
+		has_cultural_pillar = heritage_nars
+		trigger_if = { #Check to ensure it's a character
+			limit = { exists = primary_title }
+		}
+	}
+}
+
+is_narses_scion = {
+	OR = {
+		has_trait = nars_trait
+		is_narsid = yes
+	}
+}
+

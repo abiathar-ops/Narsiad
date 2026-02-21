@@ -1,0 +1,14 @@
+﻿############################################
+# Decisions roughly at the top
+# (201-400 )
+
+narsid_major = { # Try to keep this one at the top, as they are unique and rare
+	sort_order = 350
+	gui_tags = { big_button }
+	#important_decision_group = yes
+}
+
+narsid_minor = { # Try to keep this one at the top, as they are unique and rare
+	sort_order = 340
+	gui_tags = { big_button }
+}
