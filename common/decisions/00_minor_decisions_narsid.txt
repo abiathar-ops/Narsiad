@@ -1,6 +1,6 @@
 decision_libation = { # Pour a Private Libation
 	picture = {
-		reference ="gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
+		reference ="gfx/interface/illustrations/decisions/libation.dds"
 	}
 
 	ai_check_interval_by_tier = {
@@ -20,16 +20,11 @@ decision_libation = { # Pour a Private Libation
 
 	is_shown = {
 		is_ruler = yes 
-		OR = {
-			is_narsid = yes
-		}
-		age >= 18
+		is_narsid = yes
 	}
 
-	is_valid_showing_failures_only = { # Gotta be able to get to the barber
+	is_valid_showing_failures_only = { 
 		is_imprisoned = no
-		NOT = { has_trait = chaste }
-		NOT = { has_trait = zealous }
 	}
 
 	effect = {
@@ -53,7 +48,6 @@ decision_libation = { # Pour a Private Libation
 
 	ai_will_do = {
 		base = 10 # It's nice to do even if you don't have stress
-
 		modifier = {
 			add = 100
 			stress > 10
@@ -62,15 +56,15 @@ decision_libation = { # Pour a Private Libation
 }
 
 decision_develop_industry = {
-	title = decision_develop_industry
+	#title = decision_develop_industry
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
 	
 	ai_goal = yes
-	selection_tooltip = decision_develop_industry_tooltip
-	desc = decision_develop_industry_desc
-	confirm_text = decision_develop_industy_confirm
+	#selection_tooltip = decision_develop_industry_tooltip
+	#desc = decision_develop_industry_desc
+	#confirm_text = decision_develop_industy_confirm
 	
 	cost = {
 		gold = 400
@@ -93,9 +87,17 @@ decision_develop_industry = {
 	}
 	
 	effect = {
-		add_character_modifier = {
-			modifier = industrial_boom_character_modifier
-			years = 10
+		show_as_tooltip = {
+			add_character_modifier = {
+				modifier = industrial_boom_character_modifier
+				years = 10
+			}
+		}
+		hidden_effect = {
+			add_character_modifier = {
+				modifier = industrial_boom_character_modifier
+				years = 10
+			}
 		}
 		custom_tooltip = decision_develop_industry_tt
 		every_de_jure_county = {
@@ -106,7 +108,6 @@ decision_develop_industry = {
 					modifier = industrial_boom
 					years = 10
 				}
-				
 		}
 		hidden_effect = { #To make the effect screen cleane
 			every_de_jure_county = {

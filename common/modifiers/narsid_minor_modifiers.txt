@@ -1,4 +1,28 @@
+industrial_boom_character_modifier = {
+	icon = martial_positive
+	men_at_arms_recruitment_cost = -0.1
+	knight_effectiveness_mult = 0.1
+}
+
 industrial_boom_province_modifier = {
 	icon = martial_positive
 	stationed_maa_toughness_mult = 0.1
+}
+
+libation_standard_modifier = {
+	icon = stewardship_positive # Shaved is stewardship_negative, so for consistency.
+	stress_loss_mult = 0.1
+}
+
+libation_good_modifier = {
+	icon = stewardship_positive
+	stress_loss_mult = 0.1
+	stress_gain_mult = -0.1
+	monthly_dynasty_prestige = 0.1 # Quite rare, lost in two years, so let's make it fun.
+}
+
+libation_bad_modifier = {
+	icon = stewardship_negative
+	stress_loss_mult = -0.1
+	stress_gain_mult = 0.1
 }

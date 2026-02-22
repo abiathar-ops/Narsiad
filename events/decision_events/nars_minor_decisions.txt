@@ -4,7 +4,7 @@ narsid_racial.1001 = { # It goes great
 	title = narsid_racial.1001.t
 	desc = narsid_racial.1001.desc
 	theme = administrative
-	override_background = b1_relaxing_room_mena
+	override_background = relaxing_room_scope
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -15,7 +15,7 @@ narsid_racial.1001 = { # It goes great
 	
 	
 	immediate = {
-		body_care_good_effect = yes
+		libation_good_effect = yes
 	}
 
 	option = { # It's Amazing!
@@ -29,7 +29,7 @@ narsid_racial.1002 = { # It goes fine
 	title = narsid_racial.1002.t
 	desc = narsid_racial.1002.desc
 	theme = administrative
-	override_background = b1_relaxing_room_mena
+	override_background = relaxing_room_scope
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -39,7 +39,7 @@ narsid_racial.1002 = { # It goes fine
 	}
 	
 	immediate = {
-		body_care_standard_effect = yes
+		libation_standard_effect = yes
 	}
 
 	option = { #It's It's good, maybe not perfect, but good.
@@ -53,7 +53,7 @@ narsid_racial.1003 = { # It goes terrible
 	title = narsid_racial.1003.t
 	desc = narsid_racial.1003.desc
 	theme = administrative
-	override_background = b1_relaxing_room_mena
+	override_background = relaxing_room_scope
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -63,7 +63,7 @@ narsid_racial.1003 = { # It goes terrible
 	}
 	
 	immediate = {
-		body_care_bad_effect = yes
+		libation_bad_effect = yes
 	}
 
 	option = { # You've ruined it
@@ -71,33 +71,33 @@ narsid_racial.1003 = { # It goes terrible
 	}
 }
 
-scripted_effect body_care_standard_effect = { 
+scripted_effect libation_standard_effect = { 
 		add_stress = medium_stress_loss
 		add_character_modifier = {
-			modifier = body_care_standard_modifier
+			modifier = libation_standard_modifier
 			years = 2
 		}
 }
-scripted_effect body_care_good_effect = {
+scripted_effect libation_good_effect = {
 		add_stress = major_stress_loss
 		add_character_modifier = {
-			modifier = body_care_good_modifier
+			modifier = libation_good_modifier
 			years = 2
 		}
 }
-scripted_effect body_care_bad_effect = {
+scripted_effect libation_bad_effect = {
 		add_stress = medium_stress_gain
 		add_character_modifier = {
-			modifier = body_care_bad_modifier
+			modifier = libation_bad_modifier
 			years = 2
 		}
 }
 
 narsid_realm.1001 = {
-	content_source = realms_dlc
 	type = character_event
-	title = narsid_realm.1005.t
-	desc = narsid_realm.1005.desc
+	
+	title = narsid_realm.1001.t
+	desc = narsid_realm.1001.desc
 	theme = administrative
 	override_background = activity_witch_ritual
 	override_effect_2d = { reference = smoke }
@@ -109,6 +109,6 @@ narsid_realm.1001 = {
 	}
 
 	option = { # We still have work to do...
-		name = narsid_realm.1005.a
+		name = narsid_realm.1001.a
 	}
 }
