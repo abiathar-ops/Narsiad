@@ -1,10 +1,10 @@
 ﻿l_english: 
  decision_group_type_narsid_major: "Narsid Major Decisions"
- decision_group_type_narsid_minor: "Narsiad Minor Decisions"
+ decision_group_type_narsid_minor: "Narsid Minor Decisions"
 
  decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
- decision_develop_industry_desc: "Now, as our [narsid|e] polity's grows, it is time to turn it into the most prosperous [realm|E] in the world. This world has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived nation!" 
+ decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to turn it into the most prosperous [realm|E] in the world. This world has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived nation!" 
  decision_develop_industry_confirm: "Let the forges roar!"
  industrial_boom_province_modifier: "Industrial Boom"
  industrial_boom_character_modifier: "Industrial Boom"

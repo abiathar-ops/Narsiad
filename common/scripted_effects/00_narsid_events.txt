@@ -2,7 +2,7 @@ libation_standard_effect = {
 		add_stress = medium_stress_loss
 		add_character_modifier = {
 			modifier = libation_standard_modifier
-			years = 2
+			years = 1
 		}
 }
 
@@ -10,7 +10,7 @@ libation_good_effect = {
 		add_stress = major_stress_loss
 		add_character_modifier = {
 			modifier = libation_good_modifier
-			years = 2
+			years = 1
 		}
 }
 
@@ -18,6 +18,6 @@ libation_bad_effect = {
 		add_stress = medium_stress_loss
 		add_character_modifier = {
 			modifier = libation_bad_modifier
-			years = 2
+			years = 1
 		}
 }
