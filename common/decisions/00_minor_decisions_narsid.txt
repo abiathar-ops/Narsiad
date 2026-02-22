@@ -12,7 +12,7 @@ decision_libation = { # Pour a Private Libation
 		hegemony = 120
 	}
 
-	cooldown = { days = 1825 }
+	cooldown = { days = 2 }
 
 	decision_group_type = narsid_minor
 

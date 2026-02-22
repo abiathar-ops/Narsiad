@@ -166,9 +166,9 @@ narsid_group = {
 		DevilHerselfHimself = CHARACTER_HIMSELF
 		EvilGodNames = {
 			nars_devil_name
-			nars_evil_god_lucifer
-			nars_evil_god_beelzebub
-			nars_evil_god_mephistopheles
+			nars_evil_god_agares
+			nars_evil_god_vasago
+			nars_evil_god_samiga
 		}
 		HouseOfWorship = nars_house_of_worship
 		HouseOfWorship2 = nars_house_of_worship_2
@@ -215,8 +215,8 @@ narsid_group = {
 		DeathDeitySheHe = CHARACTER_SHEHE_HE
 		DeathDeityHerHis = CHARACTER_HERHIS_HIS
 		DeathDeityHerHim = CHARACTER_HERHIM_HIM
-		WitchGodName = nars_witchgodname_the_horned_god
-		WitchGodNamePossessive = nars_witchgodname_the_horned_god_possessive
+		WitchGodName = nars_witchgodname
+		WitchGodNamePossessive = nars_witchgodname_possessive
 		WitchGodHerHis = CHARACTER_HERHIS_HIS
 		WitchGodSheHe = CHARACTER_SHEHE_HE
 		WitchGodHerHim = CHARACTER_HERHIM_HIM

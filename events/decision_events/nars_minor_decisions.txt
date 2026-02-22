@@ -1,43 +1,48 @@
-narsid_racial.1001 = { # It goes fine
+narsid_racial.1001 = { # It goes great
 	type = character_event
 
 	title = narsid_racial.1001.t
 	desc = narsid_racial.1001.desc
-	theme = physical_health
-	override_background = { reference = relaxing_room }
+	theme = administrative
+	override_background = b1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
 		character = root
-		animation = personality_content
+		animation = prayer
+		camera = camera_center_large
+	}
+	
+	
+	immediate = {
+		body_care_good_effect = yes
+	}
+
+	option = { # It's Amazing!
+		name = narsid_racial.1001.a
+	}
+}
+
+narsid_racial.1002 = { # It goes fine
+	type = character_event
+
+	title = narsid_racial.1002.t
+	desc = narsid_racial.1002.desc
+	theme = administrative
+	override_background = b1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = frontend_center_idle
+		camera = camera_center_large
 	}
 	
 	immediate = {
 		body_care_standard_effect = yes
 	}
 
-	option = { # It's good, maybe not perfect, but good.
-		name = narsid_racial.1001.a
-	}
-}
-
-narsid_racial.1002 = { # It goes great
-	type = character_event
-
-	title = narsid_racial.1002.t
-	desc = narsid_racial.1002.desc
-	theme = physical_health
-	override_background = { reference = relaxing_room }
-	
-	left_portrait = {
-		character = root
-		animation = happiness
-	}
-	
-	immediate = {
-		body_care_good_effect = yes
-	}
-
-	option = { # It's amazing
+	option = { #It's It's good, maybe not perfect, but good.
 		name = narsid_racial.1002.a
 	}
 }
@@ -47,12 +52,14 @@ narsid_racial.1003 = { # It goes terrible
 
 	title = narsid_racial.1003.t
 	desc = narsid_racial.1003.desc
-	theme = physical_health
-	override_background = { reference = relaxing_room }
+	theme = administrative
+	override_background = b1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
 		character = root
-		animation = shock
+		animation = drink_goblet
+		camera = camera_center_large
 	}
 	
 	immediate = {
@@ -91,14 +98,17 @@ narsid_realm.1001 = {
 	type = character_event
 	title = narsid_realm.1005.t
 	desc = narsid_realm.1005.desc
-	theme = realm
+	theme = administrative
+	override_background = activity_witch_ritual
+	override_effect_2d = { reference = smoke }
+
 	left_portrait = {
 		character = root
-		animation = marshal_mace
+		camera = camera_body_right
+		animation = map_dismissal
 	}
 
 	option = { # We still have work to do...
 		name = narsid_realm.1005.a
-		
 	}
 }

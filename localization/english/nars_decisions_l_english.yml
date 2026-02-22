@@ -9,11 +9,7 @@
  industrial_boom_character_modifier: "Industrial Boom"
  
  decision_libation: "Pour a Libation"
- decision_libation_desc: "I pour some of my vintage, luscious wine unto my altar. \n\nA quiet, domestic religious observance done in the privacy of the ruler's own chambers before a meal or before bed, rather than a grand public ceremony. It represents the everyday, habitual comfort of [faith|E] as a [menofnars|E]."
+ decision_libation_desc: "A quiet, domestic religious observance done in the privacy of the ruler's own chambers before a meal or before bed, rather than a grand public ceremony. It represents the everyday, habitual comfort of [faith|E] as a [menofnars|E]. I pour some of my vintage, luscious wine unto my altar and recite the sacred prayers to the [ROOT.Char.GetFaith.HouseholdGodName]."
  decision_libation_tooltip: "Settle in to pour a libation and reflect on the day."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_confirm: "It saddens to offer rather than drink.."
-
- narsid_realm.1005.t: "The Gears of Industry"
- narsid_realm.1005.desc: "[Narsids|E] may have once been lost and desolate, but no more! It now burns with countless fires of ambition, and buildings, holds, and settlements spring up across the plains. Forges and armouries stockpile weapons for the host of [hoplites|E], while smithies and workshops construct ever stronger walls and towers to house the growing legions. [menofnars|E] are restless, and such might must soon spill over.."
- narsid_realm.1005.a: "Let the forges roar!"
