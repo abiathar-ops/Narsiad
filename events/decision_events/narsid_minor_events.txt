@@ -1,3 +1,5 @@
+namespace = narsid_racial
+
 narsid_racial.1001 = { # It goes wonderfully
 	type = character_event
 
@@ -33,7 +35,7 @@ narsid_racial.1002 = { # It goes fine
 	
 	left_portrait = {
 		character = root
-		animation = frontend_center_idle
+		animation = personality_bold
 		camera = camera_center_large
 	}
 	
