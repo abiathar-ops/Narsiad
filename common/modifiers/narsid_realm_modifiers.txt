@@ -1,0 +1,10 @@
+industrial_boom_character_modifier = {
+	icon = martial_positive
+	men_at_arms_recruitment_cost = -0.1
+	knight_effectiveness_mult = 0.1
+}
+
+industrial_boom_province_modifier = {
+	icon = martial_positive
+	stationed_maa_toughness_mult = 0.1
+}

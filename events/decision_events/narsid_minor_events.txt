@@ -1,4 +1,4 @@
-narsid_racial.1001 = { # It goes great
+narsid_racial.1001 = { # It goes wonderfully
 	type = character_event
 
 	title = narsid_racial.1001.t
@@ -12,7 +12,6 @@ narsid_racial.1001 = { # It goes great
 		animation = prayer
 		camera = camera_center_large
 	}
-	
 	
 	immediate = {
 		libation_good_effect = yes
@@ -68,25 +67,5 @@ narsid_racial.1003 = { # It goes terrible
 
 	option = { # You've ruined it
 		name = narsid_racial.1003.a
-	}
-}
-
-narsid_realm.1001 = {
-	type = character_event
-	
-	title = narsid_realm.1001.t
-	desc = narsid_realm.1001.desc
-	theme = administrative
-	override_background = activity_witch_ritual
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_body_right
-		animation = map_dismissal
-	}
-
-	option = { # We still have work to do...
-		name = narsid_realm.1001.a
 	}
 }

@@ -3,6 +3,10 @@ decision_libation = { # Pour a Private Libation
 		reference ="gfx/interface/illustrations/decisions/libation.dds"
 	}
 
+	cost = {
+		gold = 25
+	}
+
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 120
@@ -12,7 +16,7 @@ decision_libation = { # Pour a Private Libation
 		hegemony = 120
 	}
 
-	cooldown = { days = 2 }
+	cooldown = { days = 2 } #730 
 
 	decision_group_type = narsid_minor
 
@@ -20,11 +24,23 @@ decision_libation = { # Pour a Private Libation
 
 	is_shown = {
 		is_ruler = yes 
-		is_narsid = yes
+		culture = { has_cultural_pillar = heritage_nars }	
 	}
 
+	is_valid = {
+		AND = {
+			faith.religion = {
+				is_in_family = rf_narsid
+			}
+			is_at_war = no
+			culture = { has_cultural_pillar = heritage_nars }	
+			
+		}
+	}
+	
 	is_valid_showing_failures_only = { 
 		is_imprisoned = no
+		
 	}
 
 	effect = {
@@ -36,9 +52,18 @@ decision_libation = { # Pour a Private Libation
 				years = 2
 			}
 		}
-
-		trigger_event = {
-			on_action = stress_loss_narsid_libation
+		hidden_effect = {
+			random_list = {
+				25 = {
+					trigger_event = { id = narsid_racial.1001 }
+				}
+				50 = {
+					trigger_event = { id = narsid_racial.1002 }
+				}
+				25 = {
+					trigger_event = { id = narsid_racial.1003 }
+				}
+			}
 		}
 	}
 
@@ -56,28 +81,28 @@ decision_libation = { # Pour a Private Libation
 }
 
 decision_develop_industry = {
-	#title = decision_develop_industry
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
-	
 	ai_goal = yes
-	#selection_tooltip = decision_develop_industry_tooltip
-	#desc = decision_develop_industry_desc
-	#confirm_text = decision_develop_industy_confirm
-	
 	cost = {
-		gold = 400
+		gold = 425
 	}
 
 	decision_group_type = narsid_minor
 	
 	is_shown = {
 		is_narsid = yes
+		is_ruler = yes
 	}
+
 	is_valid = {
-		is_landed = yes
-		is_narsid = yes
+		AND = {
+			is_ruler = yes
+			is_at_war = no
+			culture = { has_cultural_pillar = heritage_nars }	
+			highest_held_title_tier >= tier_duchy
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -87,6 +112,7 @@ decision_develop_industry = {
 	}
 	
 	effect = {
+		custom_tooltip = decision_develop_industry_tt
 		show_as_tooltip = {
 			add_character_modifier = {
 				modifier = industrial_boom_character_modifier
@@ -99,7 +125,6 @@ decision_develop_industry = {
 				years = 10
 			}
 		}
-		custom_tooltip = decision_develop_industry_tt
 		every_de_jure_county = {
 				limit = {
 					development_level >= 6
@@ -125,11 +150,7 @@ decision_develop_industry = {
 		trigger_event = {
 			id = narsid_realm.1001
 			days = 1
-		}
-		add_to_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:develop_industry
-		}			
+		}	
 	}
 	
 	ai_potential = {
