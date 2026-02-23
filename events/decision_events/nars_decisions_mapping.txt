@@ -1,2 +1,0 @@
-### Narsid Events ###
-#			narsid.1000		Narsid intro event

@@ -1,3 +1,11 @@
+intro_standard_effect = {
+		add_stress = major_stress_loss
+		add_character_modifier = {
+			modifier = intro_standard_modifier
+			days = 30
+		}
+}
+
 libation_standard_effect = { 
 		add_stress = medium_stress_loss
 		add_character_modifier = {

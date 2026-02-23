@@ -24,3 +24,8 @@ sophes = {
 	alias = { sophesos }
 }
 
+narsokratia = {
+	parent = narsid
+	alias = { narsokratia narsidrealm }
+}
+

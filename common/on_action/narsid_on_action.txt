@@ -1,0 +1,10 @@
+on_game_start = {
+	effect = {
+		every_player = {
+			limit = {
+					culture = { has_cultural_pillar = heritage_nars }	 
+			}
+			trigger_event = narsid_intro.1001
+		}
+	}
+}

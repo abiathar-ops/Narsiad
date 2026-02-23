@@ -1,4 +1,12 @@
 ﻿l_english:
+ narsid_intro.1001.t:0 "Our Cataclysm"
+ narsid_intro.1001.desc:0 "In antiquity, the unrivaled [hegemony|E] of the [narsid|E] [realm|E] stood as the absolute pinnacle of human civilization. When envious nomads and rebellious subjects swarmed our borders, they deluded themselves into believing they had bested us. They were fools. Our last [hegemon|E] [ruler|E] did not deign to be the last; with brilliance, he relocated the worthiest of our aristocracy to an impenetrable mountain refuge. \n\nIn our absence, the lesser [cultures|E] of the world surrendered to their inferiority. In a desperate, cowardly ethnocide, they attempted to scrub the [menofnars|E] from history. They celebrated our [faith|E]'s obliteration and made extinct of the [narsid|E] [culture|E] on the outside world."
+ narsid_intro.1001.a:0 "Shameful!"
+
+ narsid_intro.1002.t:0 "The World is Our Birthright"
+ narsid_intro.1002.desc:0 "On this day, we have returned. As I gaze upon our ancestral lands, I know that the road ahead will be long and difficult, but we shall rebuild and prosper once more. The [menofnars|E] have not merely survived; we have already won by virtue of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
+ narsid_intro.1002.a:0 "Hark for our return!"
+
  narsid_racial.1001.t: "Masterful Offering!"
  narsid_racial.1001.desc: "The keep is finally quiet. I stand before the household altar to [ROOT.Char.GetFaith.HouseholdGodName], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the court was not here to witness such spiritual perfection."
  narsid_racial.1001.a: "I am a true gift to the divine."
