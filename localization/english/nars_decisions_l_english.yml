@@ -3,7 +3,7 @@
  decision_group_type_narsid_minor: "Narsid Minor Decisions"
 
  intro_standard_modifier: "Narsid Revival"
- intro_standard_modifier_desc: "The [narsid|E] [realm|E] has now returned, and the revival of the [menofnars|E] is only a matter of time!"
+ intro_standard_modifier_desc: "The [narsids|E] have now returned, and the revival of [narsokratia|E] is only a matter of time!"
 
  decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"

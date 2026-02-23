@@ -5,9 +5,13 @@
  game_concept_menofnars: "Men of Narsēs"
  game_concept_narsids_desc: "The Narsids, also known as 'Nāresids' or 'Men of Narsēs', are a long thought to be extinct people. They are blessed with inhuman beauty and grace the same way they are also known for their chauvinistic pride and arrogant hubris."
 
- game_concept_narsokratia: "Narsokratia"
- game_concept_narsokratia_desc: "The Narsokratia is the current incarnation of the Narsid realm, a rebirth of the ancient Narsid civilization. It is a realm of ambition and industry, where the Narsids seek to reclaim their lost glory and establish themselves as the dominant power in the world once again."
+ 
+ game_concept_narsokratia: "Nārsokratía"
+ game_concept_narsokratia_desc: "The Nārsokratía, or the Rule of Narsēs, are an ancient and enduring political system that has defined the governance of the [narsid|E] [realm|E] for centuries. Rooted in the principles of aristocratic rule and divine right, the Nārsokratía is characterized by a hierarchical structure where power is concentrated in the hands of a select few, often justified by their lineage and perceived connection to the divine. This system has allowed the Narsids to maintain a stable and prosperous society, albeit one that is often criticized for its hubristic exclusivity and chauvinism."
  game_concept_narsidrealm: "Narsid Realm"
+
+
+
  #Narsid MAA
  game_concept_hoplite: "Hoplîte"
  game_concept_hoplites: "Hoplîtes"

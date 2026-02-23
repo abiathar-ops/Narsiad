@@ -23,11 +23,11 @@ narsid_intro.1001 = { # Background
 	}
 	option = { # Hark
 		name = narsid_intro.1001.a
-		trigger_event = narsid_racial.1002
+		trigger_event = narsid_intro.1002
 	}
 }
 
-narsid_racial.1002 = { 
+narsid_intro.1002 = { 
 	type = character_event
 	window = big_event_window
 	title = narsid_intro.1002.t
