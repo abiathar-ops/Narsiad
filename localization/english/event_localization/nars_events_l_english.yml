@@ -20,7 +20,16 @@
  narsid_racial.1003.a: "The gods work in mysterious, delicious ways."
 
  narsid_realm.1001.t: "The Gears of Industry"
- narsid_realm.1001.desc: "Our people may have once been lost and desolate, but no more! It now burns with countless fires of ambition, and buildings, holds, and settlements spring up across the plains. \n\nForges and armouries stockpile weapons for the growing hosts of our [hoplites|E], while smithies and workshops construct ever stronger walls and towers to house the growing legions. \n\nThe [menofnars|E] of our [realm|E] are restless, and such reckless might must soon spill over or be wasted forevermore!"
+ narsid_realm.1001.desc: "Our people may have once been lost and desolate, but no more! It now burns with countless fires of ambition. [buildings|E], [holdings|E], and settlements spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [hoplites|E], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [menofnars|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [narsid|E] [realm|E] of antiquity. The [narsokratia|E] will almost be reborn and the hour is nigh!"
  narsid_realm.1001.a: "Let the forges roar!"
 
+ narsid_realm.1011.t:0 "An All-Seeing Eye"
+ narsid_realm.1011.desc:0 "To maintain rule, the [narsokratia|E] must possess total truth. The flaw of lesser [cultures|E] is that they wait for treason to strike before acting. The [menofnars|E] do not wait. \n\nBy placing our own operatives among the shadows, we turn the weaknesses of the populace into our greatest asset. Every whispered [scheme|E], every illicit [gold|E] traded in the dark, will be cataloged and delivered to the throne before a single blade is drawn. We shall commandeer and establish a sprawling, invisible web beneath the capital. \n\n We will hear every [secret|E], record every sin, and extinguish every [revolt|E] before it ever draws breath!"
+ narsid_realm.1011.a:0 "An eye in every wall!"
+
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
+ decision_spy_network_tt:0 "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
+
+
+
+ 

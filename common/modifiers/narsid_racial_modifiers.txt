@@ -21,6 +21,5 @@ libation_good_modifier = {
 
 libation_bad_modifier = {
 	icon = stewardship_negative
-	piety_loss_mult = 0.1
-	piety_gain_mult = -0.1
+	monthly_piety_gain_mult = -0.1
 }

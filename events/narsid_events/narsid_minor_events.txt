@@ -7,7 +7,7 @@ narsid_racial.1001 = { # It goes wonderfully
 	title = narsid_racial.1001.t
 	desc = narsid_racial.1001.desc
 	theme = administrative
-	override_background = relaxing_room_scope
+	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -31,7 +31,7 @@ narsid_racial.1002 = { # It goes fine
 	title = narsid_racial.1002.t
 	desc = narsid_racial.1002.desc
 	theme = administrative
-	override_background = relaxing_room_scope
+	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -55,7 +55,7 @@ narsid_racial.1003 = { # It goes terrible
 	title = narsid_racial.1003.t
 	desc = narsid_racial.1003.desc
 	theme = administrative
-	override_background = relaxing_room_scope
+	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -75,22 +75,3 @@ narsid_racial.1003 = { # It goes terrible
 
 namespace = narsid_realm
 
-narsid_realm.1001 = {
-	type = character_event
-
-	title = narsid_realm.1001.t
-	desc = narsid_realm.1001.desc
-	theme = administrative
-	override_background = activity_witch_ritual
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_body_right
-		animation = map_dismissal
-	}
-
-	option = { # We still have work to do...
-		name = narsid_realm.1001.a
-	}
-}

@@ -7,4 +7,15 @@ industrial_boom_character_modifier = {
 industrial_boom_province_modifier = {
 	icon = martial_positive
 	stationed_maa_toughness_mult = 0.1
+	development_growth_factor = 0.1
+}
+
+spy_network_character_modifier = {
+	icon = intrigue_positive
+	enemy_hostile_scheme_success_chance_max_add = -15
+}
+
+spy_network_province_modifier = {
+	icon = intrigue_positive
+	monthly_county_control_growth_add = 0.5
 }

@@ -1,5 +1,7 @@
 ### Narsid Events ###
-#			narsid.1000		Narsid intro event
+#			narsid_realm.1000-1100	Narsid building event
+#			narsid_racial.1000-1100		Narsid race events
+#			narsid.1200-1299		Narsid racial events
 
 namespace = narsid_intro
 
