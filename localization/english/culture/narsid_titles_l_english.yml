@@ -26,13 +26,13 @@
  king_administrative_independent_female_nars_group: "Despōtissa"
  kingdom_administrative_nars_group: "Katepanate"
  kingdom_administrative_independent_nars_group: "Despōtate"
- emperor_administrative_male_nars:0 "Autarkhēs"
- emperor_administrative_female_nars:0 "Autarkhēssa"
+ emperor_administrative_male_nars:0 "Ōtarkhēs"
+ emperor_administrative_female_nars:0 "Ōtarkhēssa"
  hegemon_administrative_male_nars: "Monarkhēs"
  hegemon_administrative_female_nars: "Monarkhēssa"
 #Nars
  empire_administrative_nars:"Provēnkiōs"
- empire_administrative_independent_nars: "Autōkratōs"
+ empire_administrative_independent_nars: "Ōtokratōs"
 ### Princes (Children) ### 
  prince_male_nars:1 "Prinkipēs"
  prince_female_nars:1 "Prinkipēssa"

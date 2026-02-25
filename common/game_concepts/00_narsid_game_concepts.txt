@@ -22,10 +22,23 @@ mastiges = {
 sophes = {
 	parent = narsid
 	alias = { sophesos }
+	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
 }
 
 narsokratia = {
 	parent = narsid
 	alias = { narsokratia narsidrealm }
+	texture = "gfx/interface/icons/icon_culture.dds"
+}
+
+naresid = {
+	parent = narsid
+	alias = { orphic orphists }
+	texture = "gfx/interface/icons/event_types/type_faith.dds"
+}
+
+narses = {
+	parent = naresid
+	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 

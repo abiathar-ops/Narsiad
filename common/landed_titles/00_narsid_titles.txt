@@ -1,0 +1,57 @@
+h_narsokratia = {
+	color = { 0.98 0.92 0.84 }
+	definite_form = yes
+	#ruler_uses_title_name = no
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+	can_be_named_after_dynasty = no
+	can_use_nomadic_naming = no
+	
+	can_create = {
+		has_global_variable = created_h_narsokratia
+	}
+	can_destroy = {
+	}
+	on_create = {
+		set_global_variable = {
+			name = created_h_narsokratia
+			value = yes
+		}
+	}
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
+	e_narsokratia = {
+		color = { 0.98 0.92 0.84 }
+
+		can_create = {
+			rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+		}
+
+		k_narsokratia = {
+			color = { 0.98 0.92 0.84 }
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = { has_cultural_pillar = heritage_nars }
+					}
+					add = @correct_culture_primary_score
+					add = @better_than_the_alternatives_score
+				}
+			}
+		}
+	}
+}
+
+d_narsokratia = {
+	color = { 0.98 0.92 0.84 }
+	ruler_uses_title_name = no
+	definite_form = yes
+	
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+}

@@ -81,3 +81,206 @@ decision_libation = { # Pour a Private Libation
 	}
 }
 
+decision_develop_industry = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+	}
+	ai_goal = yes
+	cost = {
+		gold = 425
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 130
+		duchy = 130
+		kingdom = 130
+		empire = 130
+		hegemony = 130
+	}
+
+	decision_group_type = narsid_minor
+	
+	is_shown = {
+		is_narsid = yes
+		is_ruler = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_develop_industry
+			}
+		}
+		#has_innovation = innovation_narsid_architecture_01
+	}
+
+	is_valid = {
+		AND = {
+			is_ruler = yes
+			is_at_war = no
+			culture = { has_cultural_pillar = heritage_nars }	
+			highest_held_title_tier >= tier_duchy
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_at_war = no
+	}
+	
+	effect = {
+		custom_tooltip = decision_develop_industry_tt
+		show_as_tooltip = {
+			add_character_modifier = {
+				modifier = industrial_boom_character_modifier
+				years = 10
+			}
+		}
+		hidden_effect = {
+			add_character_modifier = {
+				modifier = industrial_boom_character_modifier
+				years = 10
+			}
+		}
+		every_de_jure_county = {
+				limit = {
+					development_level >= 6
+				}
+				add_county_modifier = {
+					modifier = industrial_boom
+					years = 10
+				}
+		}
+		hidden_effect = { #To make the effect screen cleane
+			every_de_jure_county = {
+					limit = {
+						development_level >= 6
+					}
+					title_province = {
+						add_province_modifier = {
+							modifier = industrial_boom_province_modifier
+							years = 10
+						}
+					}
+				}
+		}
+		trigger_event = {
+			id = narsid_realm.1001
+			days = 1
+		}	
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_develop_industry
+			}
+			set_global_variable = {
+				name = flag_created_develop_industry
+				value = scope:founder
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+}
+
+decision_spy_network = {
+	picture = { reference = "gfx/interface/illustrations/decisions/innovation.dds" }
+	ai_goal = yes
+	cost = {
+		gold = 125
+	}
+
+	decision_group_type = narsid_minor
+	
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 130
+		duchy = 130
+		kingdom = 130
+		empire = 130
+		hegemony = 130
+	}
+
+	is_shown = {
+		is_narsid = yes
+		is_ruler = yes
+		is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_develop_industry
+			}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_spy_network
+			}
+		}
+		#has_innovation = innovation_narsid_architecture_01
+	}
+
+	is_valid = {
+		AND = {
+			is_ruler = yes
+			is_at_war = no
+			culture = { has_cultural_pillar = heritage_nars }	
+			highest_held_title_tier >= tier_duchy
+			
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_at_war = no
+	}
+	
+	effect = {
+		custom_tooltip = decision_spy_network_effect_tooltip
+		show_as_tooltip = {
+			add_character_modifier = {
+				modifier = spy_network_character_modifier
+				years = 10
+			}
+		}
+		hidden_effect = {
+			add_character_modifier = {
+				modifier = spy_network_character_modifier
+				years = 10
+			}
+		}
+		every_de_jure_county = {
+				limit = {
+					development_level >= 6
+				}
+				add_county_modifier = {
+					modifier = spy_network_province_modifier
+					years = 10
+				}
+		}
+		trigger_event = {
+			id = narsid_realm.1011
+			days = 1
+		}	
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_spy_network
+			}
+			set_global_variable = {
+				name = flag_created_spy_network
+				value = scope:founder
+			}
+		}
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 50
+	}
+}

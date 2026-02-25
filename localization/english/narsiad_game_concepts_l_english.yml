@@ -1,16 +1,21 @@
 ﻿l_english:
-  #Narsid Race
+  #Narsid Flavours
  game_concept_narsid: "Narsid"
  game_concept_narsids: "Narsids"
  game_concept_menofnars: "Men of Narsēs"
  game_concept_narsids_desc: "The Narsids, also known as 'Nāresids' or 'Men of Narsēs', are a long thought to be extinct people. They are blessed with inhuman beauty and grace the same way they are also known for their chauvinistic pride and arrogant hubris."
 
- 
  game_concept_narsokratia: "Nārsokratía"
- game_concept_narsokratia_desc: "The Nārsokratía, or the Rule of Narsēs, are an ancient and enduring political system that has defined the governance of the [narsid|E] [realm|E] for centuries. Rooted in the principles of aristocratic rule and divine right, the Nārsokratía is characterized by a hierarchical structure where power is concentrated in the hands of a select few, often justified by their lineage and perceived connection to the divine. This system has allowed the Narsids to maintain a stable and prosperous society, albeit one that is often criticized for its hubristic exclusivity and chauvinism."
+ game_concept_narsokratia_desc: "The Nārsokratía, or the Rule of Narsēs, are an ancient and enduring political system that has defined the governance of the [narsid|E] [realm|E] for centuries. Rooted in the principles of aristocratic rule and divine right, the Nārsokratía is characterized by a hierarchical structure where power is concentrated in the hands of a select few, justified by their lineage and perceived connection to the divine. This system has allowed the [narsids|E] to maintain a stable and prosperous [realm|E], albeit one of hubristic exclusivity and chauvinism."
  game_concept_narsidrealm: "Narsid Realm"
 
+ game_concept_narses: "Narsēs"
+ game_concept_narses_desc: "Narsēs, the God worshipped by the [narsid|E] [faith|E], is often depicted as the embodiment of fated and fickle fortune, embodying the ideals of unstoppable pursuit of ambition while also accepting its unavoidable nihilistic destruction. Narsēs is revered as the predominant deity of the [menofnars|E], and his teachings form the foundation of their [religious|E] beliefs and [cultural|E] values."
 
+ game_concept_naresid: "Nāresid"
+ game_concept_orphists: "Orphists"
+ game_concept_orphic: "Orphists"
+ game_concept_narsid_faith_desc: "Narēsids, dedicate their [faith|E] to [narses|E], the [narsid|E] deity of fated fortune and progress. [narsid|E] adherents often partake in a [religious|E] custom to $decision_libation$, dedicating and giving [narses|E] his due. [head_of_faith] of this [religion|E] oftentimes are called the $Prophētēs$"
 
  #Narsid MAA
  game_concept_hoplite: "Hoplîte"
