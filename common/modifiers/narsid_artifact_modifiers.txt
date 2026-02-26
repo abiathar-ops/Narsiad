@@ -1,0 +1,8 @@
+artifact_narsil_modifier = {
+	domain_limit = 2
+	monthly_dynasty_prestige = 0.2
+	knight_effectiveness_mult = 0.4
+	movement_speed = 0.4
+	dread_baseline_add = 16
+	knight_limit = 2
+}

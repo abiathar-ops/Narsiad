@@ -30,13 +30,13 @@
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
 
- narsid_realm.2001.t: "Ode to the Men of Narsēs!"
+ narsid_realm.2001.t: "An Ode to Narsēs!"
  narsid_realm.2001.desc: "Today, I call all [menofnars|E] to declare the realization of our [cultural|E] [hegemony|E], the legitimate absolution of [narsokratia|E]. We no longer view ourselves as a mere nation competing on the world stage. Blessed with inhuman grace and unquestionable superiority, we are the world.\n\nFrom this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolting|E] [domain|E] resisting the inevitable march of our perfect [government|E]. Under the rule of the [menofnars|E], every [region|E] will finally know true, universal pacification." 
  narsid_realm.2001.a: "One Law, One People, One Hegemony!"
  
  narsid_realm.2002.t:0 "A Step from Old Nārsokratía"
  narsid_realm.2002.desc: "For centuries, lesser [cultures|E] have called their rulers [emperors|E], believing that [soldiers|E] grants them the mandate to [usurp|E] our sovereignty. Today, I elevate our [realm|E] to an absolute $Ōtarkhia$. My [legitimacy|E] does not come from mere conquest, but from the divine right from [narses|E] for the revival of the [narsokratia|E]. We, the [menofnars|E], stand above them, blessed with a grace and perfection they can only ever envy.\n\nThe true [narsid|E] [realm|E] is awake. The pretender [empires|E] will soon realize that they are nothing more than temporary [stewards|E] of our historical [domains|E], simply keeping the throne warm for their rightful [rulers|E]." 
- narsid_realm.2002.a: "One More Step to the Red Apple!"
+ narsid_realm.2002.a: "God and My Rights!"
 
  narsid_realm.2003.t: "Proclaiming the Despotēia"
  narsid_realm.2003.desc: "While we preserved the flame of our civilized [culture|E], the world below fractured into petty [realms|E]. The squabbling [rulers|E] of this [era|E] mistake their disorganized [domains|E] for true [realms|E]. \n\nToday, as a new [ROOT.Char.GetTitleAsNameNoTooltip], I formalize our [narsid|E] rule, enacting our [cultural|E] [tradition|E] and proclaiming the foundation of a new Despotēia of [narsokratia|E]. When the neighboring lords sent their envoys in their crude fabrics, they looked upon our radiant, terrifying beauty with a mix of absolute awe and [dread|E]. The dark age of this [region|E] has ended. The [narsokratia|E] returns to bring unyielding order to this chaotic earth." 

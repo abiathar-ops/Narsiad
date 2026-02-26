@@ -1,0 +1,23 @@
+narsil_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_narsid = yes
+	}
+	can_reforge = {
+		always = yes
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		prowess = 5
+		monthly_prestige = 0.5
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}

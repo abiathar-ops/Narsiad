@@ -1,0 +1,8 @@
+narsil = {
+	slot = primary_arnament
+	required_features = { blade_metal }
+	optional_features = {
+		blade_decoration hilt_decoration
+		decoration_pattern decoration_material_inlay decoration_material_wire
+	}
+}

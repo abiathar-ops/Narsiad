@@ -1,0 +1,28 @@
+create_narsil_effect = {
+	$OWNER$ = { save_scope_as = owner}
+	
+	set_artifact_rarity_illustrious = yes
+
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = narsil_name
+			description = narsil_desc
+			modifier = artifact_narsil_modifier
+			template = narsil_template
+			type = narsil
+			visuals = narsil
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = newly_created_artifact
+			history = {					
+				location = scope:location
+				actor = root
+				recipient = root
+				type = created_before_history
+			}
+		}
+	}
+}

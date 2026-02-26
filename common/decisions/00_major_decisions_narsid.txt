@@ -2,8 +2,8 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 		}
-		desc = found_h_narsokratia_decision_desc
-		selection_tooltip = found_h_narsokratia_decision_tooltip
+		desc = decision_h_narsokratia_desc
+		selection_tooltip = decision_h_narsokratia_tooltip
 		decision_group_type = narsid_major
 
 		ai_check_interval_by_tier = {
@@ -47,6 +47,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				}
 				sub_realm_size >= 200
 			}
+			
 		}
 
 		is_valid_showing_failures_only = {
@@ -92,17 +93,9 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 		}
 	}
 		effect = {
-			custom_tooltip = found_h_narsokratia_decision_effect_tooltip
-			if = {
-				limit = {
-					has_ep3_dlc_trigger = yes
-				}
-				create_h_narsokratia_effect = yes
-
-			}
-			else = {
-				create_h_narsokratia_effect = yes
-			}
+			custom_tooltip = decision_h_narsokratia_effect_tooltip
+			create_h_narsokratia_effect = yes
+			change_government = celestial_government
 			hidden_effect = {
 				add_to_global_variable_list = {
 					name = unavailable_unique_decisions
@@ -137,11 +130,11 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		empire = 0
 		hegemony = 0
 	}
-	desc = found_e_narsokratia_decision_desc
+	desc = decision_e_narsokratia_desc
 
 	is_shown = {
 		is_narsid = yes
-		#highest_held_title_tier = tier_kingdom
+		highest_held_title_tier = tier_kingdom
 		OR = {
 			top_liege = this
 			any_held_title = {
@@ -238,16 +231,9 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 	}
 
 	effect = {
-		if = {
-			limit = {
-				NOT = { government_has_flag = government_is_nomadic }
-			}
-			custom_tooltip = found_e_narsokratia_decision_effect_tooltip
-			create_narsid_empire_effect = yess
-		}
-		else = {
-			create_narsid_empire_effect = yes
-		}
+		change_government = meritocratic_government
+		custom_tooltip = decision_e_narsokratia_effect_tooltip
+		create_narsid_empire_effect = yess
 		if = {
 			limit = {
 				is_ai = no
@@ -263,7 +249,7 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 			}
 		}
 	}
-
+	
 	ai_potential = {
 		always = yes
 	}
@@ -286,7 +272,7 @@ decision_k_narsokratia = {
 		empire = 0
 		hegemony = 0
 	}
-	desc = found_k_narsokratia_decision_desc
+	desc = decision_k_narsokratia_desc
 
 	is_shown = {
 		highest_held_title_tier = tier_duchy
@@ -359,7 +345,7 @@ decision_k_narsokratia = {
 	}
 
 	effect = {
-		custom_tooltip = found_k_narsokratia_decision_effect_tooltip
+		custom_tooltip = decision_k_narsokratia_effect_tooltip
 		create_narsid_kingdom_effect = yes
 		if = {
 			limit = {
@@ -383,5 +369,29 @@ decision_k_narsokratia = {
 
 	ai_will_do = {
 		base = 100
+	}
+}
+
+##Narsil and required decision
+
+decision_mend_narsil = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
+	desc = decision_mend_narsil_desc
+	decision_group_type = narsid_major
+	selection_tooltip = decision_mend_narsil_tooltip
+
+	is_shown = {
+		always = yes
+	}
+
+	cost = {
+		gold = 125
+	}
+
+	effect = {
+		create_narsil_effect = yes
+		#trigger_event = narsid_artifact.0001
 	}
 }

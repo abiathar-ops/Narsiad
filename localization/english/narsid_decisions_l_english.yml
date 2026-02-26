@@ -41,29 +41,30 @@
 
  #Main
  decision_k_narsokratia: "Proclaim a Despotēia"
- found_k_narsokratia_decision_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
+ decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
  decision_k_narsokratia_tooltip: "Found an entirely new Despotēia title"
- create_k_narsokratia: "You establish a Despotēia"
+ decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E].\N$EFFECT_LIST_BULLET$Unlocks option to form [GetTitleByKey('e_narsokratia').GetName].
  create_title_every_held_duchy: "Every [duchy|E] title you [hold|E] or [completely_control|E]"
  create_narsid_kingdom_de_jure_changes: "Becomes [de_jure|E] [duchies|E] of your new Despotēia"
- found_k_narsokratia_decision_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E].\N$EFFECT_LIST_BULLET$Unlocks option to form [GetTitleByKey('e_narsokratia').GetName].
 
  decision_e_narsokratia: "Form an Ōtarkhia"
- found_e_narsokratia_decision_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself."
- found_e_narsokratia_decision_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Unlocks option to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
+ decision_e_narsokratia_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself."
+ decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Unlocks option to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
  decision_e_narsokratia_confirm: "The State is Absolute"
  decision_e_narsokratia_tooltip: "Found an entirely new Ōtarkhia title"
- create_e_narsokratia: "You reestablish an Ōtarkhia"
  create_title_every_held_kingdom: "Every [kingdom|E] title you [hold|E] or [completely_control|E]"
  create_narsid_empire_de_jure_changes: "Becomes [de_jure|E] [kingdoms|E] of your new Ōtarkhia"
 
  decision_h_narsokratia: "Restore the Old Nārsokratía"
  decision_h_narsokratia_confirm: "I will restore the Hegemony of yore!"
- found_h_narsokratia_decision_tooltip: "The old [narsidrealm|E] will be restored!"
- found_h_narsokratia_decision_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
-
- found_h_narsokratia_decision_tt: "Either your Religion is Orphists or your Culture is Narsid"
- found_h_narsokratia_decision_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
+ decision_h_narsokratia_tooltip: "The old [narsidrealm|E] will be restored!"
+ decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
  h_narsokratia_modifier: "The Glorious"
- h_narsokratia_modifier_desc: "This [ruler|E] has restored the glory of the [hegemony|E] of old[narsokratia|E]"
+ h_narsokratia_modifier_desc: "This [ruler|E] has restored the glory of the old[narsokratia|E] [hegemony|E]"
+
+ #Artifact
+ decision_mend_narsil: "Restore the Heirloom"
+ decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [Narsokratia], the emblem and symbol of [legitimacy|E] to rule, the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a once-lost line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a virtuous undertaking but a necessary one. For only with the heirloom [artifact|E] of the ancient [rulers|E] of the [menofnars|E] would a new [hegemony|E] of [narsids|E] be born."
+ decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"

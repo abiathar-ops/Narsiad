@@ -93,7 +93,7 @@ narsid_realm.2002 = {
 	desc = narsid_realm.2002.desc
 	theme = emperor
 	
-	override_background = battlefield
+	override_background = throne_room_india
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
