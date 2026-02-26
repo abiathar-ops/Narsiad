@@ -6,3 +6,17 @@ narsil = {
 		decoration_pattern decoration_material_inlay decoration_material_wire
 	}
 }
+
+anduril = {
+	slot = regalia
+	required_features = {
+		# Core regalia components:
+		regalia_scepter regalia_clothes regalia_accessory
+
+		# Necessary regalia materials:	
+		decoration_material_wire # Base material for the scepter and accessory
+		decoration_material_gem # Gems decorating the scepter and accessory
+		generic_material_cloth # Base textile for the robe/cape.
+		decoration_material_embroidery # Thread for embroidering the robe/cape.
+	}
+}

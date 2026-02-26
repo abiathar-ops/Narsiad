@@ -384,6 +384,17 @@ decision_mend_narsil = {
 
 	is_shown = {
 		always = yes
+		is_narsid = yes
+		has_title = title:e_narsokratia
+	}
+
+	is_valid = {
+		prestige_level >= 4
+		has_title = title:e_narsokratia
+		is_capable_adult = yes
+		is_imprisoned = no
+		top_liege = this
+		is_at_war = no
 	}
 
 	cost = {
@@ -393,5 +404,13 @@ decision_mend_narsil = {
 	effect = {
 		create_narsil_effect = yes
 		#trigger_event = narsid_artifact.0001
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
 	}
 }

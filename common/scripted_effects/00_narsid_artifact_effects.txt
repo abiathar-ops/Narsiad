@@ -1,6 +1,6 @@
 create_narsil_effect = {
 	$OWNER$ = { save_scope_as = owner}
-	
+
 	set_artifact_rarity_illustrious = yes
 
 	if = {
@@ -14,6 +14,35 @@ create_narsil_effect = {
 			template = narsil_template
 			type = narsil
 			visuals = narsil
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = newly_created_artifact
+			history = {					
+				location = scope:location
+				actor = root
+				recipient = root
+				type = created_before_history
+			}
+		}
+	}
+}
+
+create_anduril_effect = {
+	$OWNER$ = { save_scope_as = owner}
+	
+	set_artifact_rarity_illustrious = yes
+
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = anduril_name
+			description = anduril_desc
+			modifier = artifact_anduril_modifier
+			template = narsil_template
+			type = andruril
+			visuals = anduril
 			wealth = scope:wealth
 			quality = scope:quality
 			save_scope_as = newly_created_artifact

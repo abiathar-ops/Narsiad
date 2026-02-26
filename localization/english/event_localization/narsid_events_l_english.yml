@@ -42,5 +42,17 @@
  narsid_realm.2003.desc: "While we preserved the flame of our civilized [culture|E], the world below fractured into petty [realms|E]. The squabbling [rulers|E] of this [era|E] mistake their disorganized [domains|E] for true [realms|E]. \n\nToday, as a new [ROOT.Char.GetTitleAsNameNoTooltip], I formalize our [narsid|E] rule, enacting our [cultural|E] [tradition|E] and proclaiming the foundation of a new Despotēia of [narsokratia|E]. When the neighboring lords sent their envoys in their crude fabrics, they looked upon our radiant, terrifying beauty with a mix of absolute awe and [dread|E]. The dark age of this [region|E] has ended. The [narsokratia|E] returns to bring unyielding order to this chaotic earth." 
  narsid_realm.2003.a: "Order Above All!"
 
+ narsid_artifact.1001.t: "A Horrifying Dilemma.."
+ narsid_artifact.1001.desc: ""
+ narsid_artifact.1001.a: "They will be martyrs for our cause!"
+ narsid_artifact.1001.b: "Find another way, anything other than this!"
 
- #I have united the lands of [duchy_1.GetNameNoTierNoTooltip] with those of [duchy_2.GetNameNoTierNoTooltip] and [duchy_3.GetNameNoTierNoTooltip]All my life I have worked for this. To call my vassals and make them swear fealty anew.\n\nNow and forever, they will pay homage to me not only as their liege, but as [ROOT.Char.GetTitleAsNameNoTooltip]! [ROOT.Char.GetTitleAsNameNoTooltip] of [new_title.GetNameNoTier]!You have become [founder.GetTitleAsNameNoTooltip] of [new_title.GetNameNoTier]
+ narsid_artifact.1002.t: ""
+ narsid_artifact.1002.desc: ""
+ narsid_artifact.1002.a: ""
+ narsid_artifact.1002.b: ""
+
+ narsid_artifact.1003.t: ""
+ narsid_artifact.1003.desc: ""
+ narsid_artifact.1003.a: ""
+ narsid_artifact.1002.b: ""

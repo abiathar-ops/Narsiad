@@ -21,3 +21,27 @@ narsil_template = {
 
 	unique = yes
 }
+
+anduril_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_narsid = yes
+	}
+	can_reforge = {
+		always = yes
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		stewardship = 5
+		monthly_piety = 0.5
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}

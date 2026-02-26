@@ -2,3 +2,8 @@ narsil = {
 	icon = { reference = artefact_icons_unique_artifact_excalibur.dds }
 	asset = { reference = ep1_western_sword_01_a_entity }
 }
+
+anduril = {
+	icon = "artifact_regalia.dds"
+	asset = ep1_generic_jewelry_01_a_entity
+}
