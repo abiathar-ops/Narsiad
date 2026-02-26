@@ -24,8 +24,17 @@ libation_good_effect = {
 
 libation_bad_effect = {
 		add_stress = medium_stress_loss
+		remove_gold = 25
 		add_character_modifier = {
 			modifier = libation_bad_modifier
 			years = 1
 		}
+}
+
+h_narsokratia_effect = {
+	add_character_modifier = {
+			modifier = h_narsokratia_modifier
+			years = 15
+		}
+	give_nickname = nick_the_glorious 
 }

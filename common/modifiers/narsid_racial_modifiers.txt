@@ -23,3 +23,9 @@ libation_bad_modifier = {
 	icon = stewardship_negative
 	monthly_piety_gain_mult = -0.1
 }
+
+h_narsokratia_modifier = {
+	icon = martial_positive
+	monthly_dynasty_prestige = 2.5
+	zealot_opinion = 75
+}

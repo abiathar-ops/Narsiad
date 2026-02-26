@@ -42,3 +42,7 @@ narses = {
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
+narsil = {
+	parent = narsokratia
+	texture = "gfx/interface/icons/icon_prowess.dds"
+}

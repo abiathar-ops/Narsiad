@@ -1,0 +1,129 @@
+namespace = narsid_realm
+
+# Building-based events
+narsid_realm.1001 = { #Develop Industry
+	type = character_event
+
+	title = narsid_realm.1001.t
+	desc = narsid_realm.1001.desc
+	theme = administrative
+	override_background = armory
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		camera = camera_body_right
+		animation = map_dismissal
+	}
+	immediate = {
+		every_held_title = {
+			title_tier = county
+			add_county_modifier = {
+				modifier = industrial_boom_province_modifier
+				years = 10
+			}
+		}
+	}
+	option = { # We still have work to do...
+		name = narsid_realm.1001.a
+	}
+}
+
+narsid_realm.1011 = { #Spy Network
+	type = character_event
+
+	title = narsid_realm.1011.t
+	desc = narsid_realm.1011.desc
+	theme = administrative
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = writing
+	}
+
+	immediate = {
+		every_held_title = {
+			title_tier = county
+			add_county_modifier = {
+				modifier = spy_network_province_modifier
+				years = 5
+			}
+		}
+	}
+
+	option = { # We still have work to do...
+		name = narsid_realm.1011.a
+	}
+}
+
+# Narsokratia-based events
+
+narsid_realm.2001 = {
+	type = character_event
+	window = big_event_window
+	title = narsid_realm.2001.t
+	desc = narsid_realm.2001.desc
+	theme = emperor
+	
+	override_background = ce1_fullscreen_legitimizing_legend
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = personality_callous
+		camera = camera_center_large
+	}
+	
+	immediate = {
+		h_narsokratia_effect = yes
+	}
+
+	option = { 
+		name = narsid_realm.2001.a
+	}
+}
+
+narsid_realm.2002 = {
+	type = character_event
+	window = big_event_window
+	title = narsid_realm.2002.t
+	desc = narsid_realm.2002.desc
+	theme = emperor
+	
+	override_background = battlefield
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = frontend_center_idle
+		camera = camera_center_large
+	}
+
+	option = { 
+		name = narsid_realm.2002.a
+	}
+}
+
+narsid_realm.2003 = {
+	type = character_event
+	window = big_event_window
+	title = narsid_realm.2003.t
+	desc = narsid_realm.2003.desc
+	theme = emperor
+	
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = chancellor
+		camera = camera_center_large
+	}
+
+	option = { 
+		name = narsid_realm.2003.a
+	}
+}

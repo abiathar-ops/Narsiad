@@ -246,6 +246,13 @@ decision_spy_network = {
 				modifier = spy_network_character_modifier
 				years = 10
 			}
+			every_held_title = {
+				title_tier = county
+				add_county_modifier = {
+					modifier = spy_network_province_modifier
+					years = 5
+			}
+		}
 		}
 		hidden_effect = {
 			add_character_modifier = {

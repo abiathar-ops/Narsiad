@@ -10,12 +10,15 @@
  game_concept_narsidrealm: "Narsid Realm"
 
  game_concept_narses: "Narsēs"
- game_concept_narses_desc: "Narsēs, the God worshipped by the [narsid|E] [faith|E], is often depicted as the embodiment of fated and fickle fortune, embodying the ideals of unstoppable pursuit of ambition while also accepting its unavoidable nihilistic destruction. Narsēs is revered as the predominant deity of the [menofnars|E], and his teachings form the foundation of their [religious|E] beliefs and [cultural|E] values."
+ game_concept_narses_desc: "Narsēs, the God worshipped by the [orphic|E], is often depicted as the embodiment of fated fortune, embodying the ideals of unstoppable [faith|E] in ambition and its fickle endings. Narsēs is revered as the predominant deity of the [menofnars|E] and his teachings through the $Prophētēs$ form the foundation of their [tradition|E] and [cultural|E] values."
 
  game_concept_naresid: "Nāresid"
  game_concept_orphists: "Orphists"
  game_concept_orphic: "Orphists"
- game_concept_narsid_faith_desc: "Narēsids, dedicate their [faith|E] to [narses|E], the [narsid|E] deity of fated fortune and progress. [narsid|E] adherents often partake in a [religious|E] custom to $decision_libation$, dedicating and giving [narses|E] his due. [head_of_faith] of this [religion|E] oftentimes are called the $Prophētēs$"
+ game_concept_naresid_desc: "Narēsids dedicate their [faith|E] to [narses|E], the [narsid|E] deity of fated fortune and progress. [head_of_faith] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [narsid|E] [culture|E] and [traditions|E]"
+
+ game_concept_narsil: "Narsíl"
+ game_concept_narsil_desc: "Narsíl, is an heirloom [artifact|E] of the [dynasty|E] of [narsid|E] [hegemons|E]. Shattered in the [wars|E] during [civil_wars|E] of the [narsids], its fragments now lay waiting for the day it is mended once more to rally the fragmented [menofnars|E]."
 
  #Narsid MAA
  game_concept_hoplite: "Hoplîte"
