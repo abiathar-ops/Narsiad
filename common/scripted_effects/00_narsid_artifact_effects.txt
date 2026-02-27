@@ -29,7 +29,6 @@ create_narsil_effect = {
 
 create_anduril_effect = {
 	$OWNER$ = { save_scope_as = owner}
-	
 	set_artifact_rarity_illustrious = yes
 
 	if = {

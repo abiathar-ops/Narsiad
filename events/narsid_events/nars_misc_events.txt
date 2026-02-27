@@ -84,7 +84,7 @@ narsid_artifact.1001 = {
 
 	title = narsid_artifact.1001.t
 	desc = narsid_artifact.1001.desc
-	theme = administrative
+	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
 
@@ -96,7 +96,14 @@ narsid_artifact.1001 = {
 
 	option = { # We still have work to do...
 		name = narsid_artifact.1001.a #Sacrifice Courtiers
+		give_nickname = nick_the_bloody
+
+	}
+
+	option = {
 		name = narsid_artifact.1001.b #Buy Blood and Wait
+		give_nickname = nick_the_blessed
+		add_gold = major_gold_loss
 	}
 }
 
@@ -105,7 +112,7 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 
 	title = narsid_artifact.1002.t
 	desc = narsid_artifact.1002.desc
-	theme = administrative
+	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
 
@@ -115,10 +122,18 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 		animation = writing
 	}
 
+	immediate = {
+		add_dread = 25
+		add_stress = medium_stress_gain
+	}
+
 	option = { 
 		name = narsid_artifact.1002.a #Weapon artifact
+		create_narsil_effect = yes
+	}
+	option = { 
 		name = narsid_artifact.1002.b #Mounted court
-
+		create_anduril_effect = yes
 	}
 }
 
@@ -127,7 +142,7 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 
 	title = narsid_artifact.1003.t
 	desc = narsid_artifact.1003.desc
-	theme = administrative
+	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
 
@@ -135,72 +150,18 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 		character = root
 		camera = camera_center_large
 		animation = writing
+	}
+
+	immediate = {
+		add_piety = 250
 	}
 
 	option = { 
 		name = narsid_artifact.1003.a #Weapon artifact
+		create_narsil_effect = yes
+	}
+	option = { 
 		name = narsid_artifact.1003.b #Mounted court
-	}
-}
-
-#Anduril
-narsid_artifact.1101 = {
-	type = character_event
-
-	title = narsid_artifact.1101.t
-	desc = narsid_artifact.1101.desc
-	theme = administrative
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = writing
-	}
-
-	option = { 
-		name = narsid_artifact.1101.a 
-		name = narsid_artifact.1101.b 
-	}
-}
-
-narsid_artifact.1102 = { 
-	type = character_event
-
-	title = narsid_artifact.1102.t
-	desc = narsid_artifact.1102.desc
-	theme = administrative
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = writing
-	}
-
-	option = { 
-		name = narsid_artifact.1102.a
-	}
-}
-
-narsid_artifact.1103 = { 
-	type = character_event
-
-	title = narsid_artifact.1103.t
-	desc = narsid_artifact.1103.desc
-	theme = administrative
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = writing
-	}
-
-	option = { 
-		name = narsid_artifact.1103.a
+		create_anduril_effect = yes
 	}
 }
