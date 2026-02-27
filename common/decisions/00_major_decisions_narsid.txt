@@ -1,66 +1,68 @@
 decision_h_narsokratia = { #Narsil and e_narsokratia
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-		}
-		desc = decision_h_narsokratia_desc
-		selection_tooltip = decision_h_narsokratia_tooltip
-		decision_group_type = narsid_major
+	}
+	desc = decision_h_narsokratia_desc
+	selection_tooltip = decision_h_narsokratia_tooltip
+	decision_group_type = narsid_major
 
-		ai_check_interval_by_tier = {
-			barony = 0
-			county = 0
-			duchy = 0
-			kingdom = 0
-			empire = 120
-			hegemony = 0
-		}
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 120
+		hegemony = 0
+	}
 
-		is_shown = {
-			is_ruler = yes
-			is_playable_character = yes
-			is_narsid = yes
-			#highest_held_title_tier = tier_empire
-			NOT = {  #Can only do it once.
-				is_target_in_global_variable_list = {
-					name = unavailable_unique_decisions
-					target = flag:flag_h_narsokratia_decision
-				}
-			}
-			OR = {
-				government_has_flag = government_is_feudal
-				government_has_flag = government_is_republic
-				government_has_flag = government_is_clan
-				government_allows = administrative
+	is_shown = {
+		is_ruler = yes
+		is_playable_character = yes
+		is_narsid = yes
+		has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
+		NOT = { has_title = title:h_narsokratia }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_h_narsokratia_decision
 			}
 		}
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_republic
+			government_has_flag = government_is_clan
+			government_allows = administrative
+		}
+	}
 
-		is_valid = {
-			prestige_level >= max_prestige_level
-			top_liege = this
-			OR = {
-				custom_description = {
-					text = found_hegemony_decision_eight_kingdoms_held
-					any_held_title = {
+	is_valid = {
+		prestige_level >= max_prestige_level
+		top_liege = this
+		has_title = title:e_narsokratia # Required to get H_Narsokratia
+		OR = {
+			custom_description = {
+				text = found_hegemony_decision_eight_kingdoms_held
+				any_held_title = {
 					count >= 7
 					title_tier = kingdom
-					}
 				}
-				sub_realm_size >= 200
 			}
-			
+			sub_realm_size >= 200
 		}
+	}
 
-		is_valid_showing_failures_only = {
-			is_landed = yes
-			is_capable_adult = yes
-			is_imprisoned = no
-			top_liege = this
-			OR = {
-				religion = { is_in_family = rf_narsid }
-				culture = { has_cultural_pillar = heritage_nars }
-			}
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		top_liege = this
+		OR = {
+			religion = { is_in_family = rf_narsid }
+			culture = { has_cultural_pillar = heritage_nars }
 		}
-			cost = {
+	}
+	
+	cost = {
 		gold = {
 			value = 2500
 			if = {
@@ -92,28 +94,29 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 			}
 		}
 	}
-		effect = {
-			custom_tooltip = decision_h_narsokratia_effect_tooltip
-			create_h_narsokratia_effect = yes
-			change_government = celestial_government
-			hidden_effect = {
-				add_to_global_variable_list = {
-					name = unavailable_unique_decisions
-					target = flag:flag_h_narsokratia_decision
-				}
-				set_global_variable = {
-					name = flag_h_narsokratia_decision
-					value = root
-				}
+	
+	effect = {
+		custom_tooltip = decision_h_narsokratia_effect_tooltip
+		create_h_narsokratia_effect = yes
+		change_government = administrative_government
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_h_narsokratia_decision
+			}
+			set_global_variable = {
+				name = flag_h_narsokratia_decision
+				value = root
 			}
 		}
+	}
 		
 	ai_potential = {
 		always = yes
 	}
 
 	ai_will_do = {
-			base = 100
+		base = 100
 	}
 }
 
@@ -134,21 +137,23 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 
 	is_shown = {
 		is_narsid = yes
-		highest_held_title_tier = tier_kingdom
-		OR = {
-			top_liege = this
-			any_held_title = {
-				count >= 3
-				title_tier = kingdom
-			}
-		}
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
+		NOT = { has_title = title:e_narsokratia }
+		NOT = { has_title = title:h_narsokratia }
+		OR = {
+			has_title = title:k_narsokratia # Narsid Kingdoms can see it
+			highest_held_title_tier = tier_empire # Generic Empires can see it
+		}
 	}
 
 	is_valid = {
 		prestige_level >= 4
 		top_liege = this
+		OR = {
+			has_title = title:k_narsokratia # Required if upgrading from Kingdom
+			highest_held_title_tier = tier_empire # Generic Empires bypass the K requirement
+		}
 		trigger_if = {
 			limit = {
 				government_has_flag = government_is_nomadic
@@ -175,6 +180,11 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 					}
 				}
 				sub_realm_size >= 40
+			}
+		}
+		trigger_if = {
+			limit = {
+				highest_held_title_tier = tier_empire
 			}
 		}
 		trigger_else = {
@@ -231,9 +241,9 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 	}
 
 	effect = {
-		change_government = meritocratic_government
+		change_government = administrative_government
 		custom_tooltip = decision_e_narsokratia_effect_tooltip
-		create_narsid_empire_effect = yess
+		create_narsid_empire_effect = yes
 		if = {
 			limit = {
 				is_ai = no
@@ -275,10 +285,13 @@ decision_k_narsokratia = {
 	desc = decision_k_narsokratia_desc
 
 	is_shown = {
-		highest_held_title_tier = tier_duchy
+		is_narsid = yes
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
-		is_narsid = yes
+		highest_held_title_tier <= tier_kingdom # Only generic Kingdoms & Duchies can see this
+		NOT = { has_title = title:k_narsokratia }
+		NOT = { has_title = title:e_narsokratia }
+		NOT = { has_title = title:h_narsokratia }
 	}
 
 	is_valid = {
@@ -383,19 +396,19 @@ decision_mend_narsil = {
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
-		always = yes
 		is_narsid = yes
-		#has_title = title:e_narsokratia
+		has_title = title:e_narsokratia # Only the Narsid Empire can see it
 		top_liege = this
 		is_capable_adult = yes
+		is_landed = yes
 	}
 
 	is_valid = {
-		prestige_level >= 4
+		is_imprisoned = no
 		has_title = title:e_narsokratia
-		AND = {
-			is_imprisoned = no
-			is_at_war = no
+		OR = {
+			prestige_level >= 4
+			piety_level >= 4
 		}
 	}
 
@@ -404,7 +417,8 @@ decision_mend_narsil = {
 	}
 
 	effect = {
-		add_prestige = 250	
+		custom_tooltip = decision_mend_narsil_effect_tooltip
+		add_prestige = 250 	
 		hidden_effect = {
 			trigger_event = { id = narsid_artifact.1001 }
 		}

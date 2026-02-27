@@ -8,7 +8,6 @@ on_game_start_after_lobby = {
 				}
 				trigger_event = {
 					id = narsid_intro.1001
-					days = 1
 				}
 			}
 		}

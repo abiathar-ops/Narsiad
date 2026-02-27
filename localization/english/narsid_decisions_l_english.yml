@@ -55,6 +55,8 @@
  decision_e_narsokratia_tooltip: "Found an entirely new Ōtarkhia title"
  create_title_every_held_kingdom: "Every [kingdom|E] title you [hold|E] or [completely_control|E]"
  create_narsid_empire_de_jure_changes: "Becomes [de_jure|E] [kingdoms|E] of your new Ōtarkhia"
+ found_e_narsokratia_decision_three_kingdoms_held: "You must control at least three kingdom titles"
+
 
  decision_h_narsokratia: "Restore the Old Nārsokratía"
  decision_h_narsokratia_confirm: "I will restore our hegemony of yore!"
@@ -67,5 +69,6 @@
  #Artifact
  decision_mend_narsil: "Restore the Heirloom"
  decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a [virtuous|E] undertaking but a necessity."
+ decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"

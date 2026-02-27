@@ -50,9 +50,7 @@
  narsid_artifact.1002.t: "The Sinful Quench"
  narsid_artifact.1002.desc: "The screams echo off the stone walls of the forge, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking blood. As the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy.\n\n[narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E]. Now, a choice remains: how shall this blood-bound legacy be displayed to the [realm|E]?"
  narsid_artifact.1002.a: "I shall wield it in battle to strike fear into our foes!"
- narsid_artifact.1002.b: "It shall rest in the court, a testament to our ruthless resolve."
 
  narsid_artifact.1003.t: "A Costly Restoration"
- narsid_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood [ritual|E], but it gleams with a pure, untainted [virtue|E]. [narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
- narsid_artifact.1003.a: "A longsword fit for a true ruler. I will bear it into battle."
- narsid_artifact.1003.b: "Mount it upon a pedestal for all the realm to admire."
+ narsid_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood [ritual|E], but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
+ narsid_artifact.1003.a: "I will bear it into battle."

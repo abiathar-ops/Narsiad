@@ -51,6 +51,7 @@ narsid_intro.1002 = {
 
 	option = { # Hark
 		name = narsid_intro.1002.a
+		create_anduril_effect = yes
 	}
 }
 
@@ -130,16 +131,12 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = writing
+		animation = schadenfreude
 	}
 
 	option = { 
 		name = narsid_artifact.1002.a #Weapon artifact
 		create_narsil_effect = yes
-	}
-	option = { 
-		name = narsid_artifact.1002.b #Mounted court
-		create_anduril_effect = yes
 	}
 }
 
@@ -155,15 +152,11 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = writing
+		animation = personality_compassionate
 	}
 
 	option = { 
 		name = narsid_artifact.1003.a #Weapon artifact
 		create_narsil_effect = yes
-	}
-	option = { 
-		name = narsid_artifact.1003.b #Mounted court
-		create_anduril_effect = yes
 	}
 }

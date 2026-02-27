@@ -4,6 +4,6 @@ narsil = {
 }
 
 anduril = {
-	icon = "artifact_regalia.dds"
-	asset = ep1_generic_jewelry_01_a_entity
+	icon = "artifact_leaf_book.dds"
+	asset = ep1_indian_book_big_01_a_entity
 }

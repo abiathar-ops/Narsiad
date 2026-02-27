@@ -1,8 +1,4 @@
 create_narsil_effect = {
-	$OWNER$ = { save_scope_as = owner}
-
-	set_artifact_rarity_illustrious = yes
-
 	if = {
 		limit = {
 			has_dlc_feature = royal_court
@@ -14,23 +10,28 @@ create_narsil_effect = {
 			template = narsil_template
 			type = narsil
 			visuals = narsil
-			wealth = scope:wealth
-			quality = scope:quality
+            
+            # Use raw values or valid scopes instead of undefined ones
+			owner = root
+			wealth = 3000 
+			quality = 100 
+			
 			save_scope_as = newly_created_artifact
 			history = {					
-				location = scope:location
 				actor = root
 				recipient = root
-				type = created_before_history
+				type = created # Fixed history type
 			}
 		}
+        
+        # Correctly apply the rarity to the newly created artifact
+        scope:newly_created_artifact = {
+            set_artifact_rarity_illustrious = yes
+        }
 	}
 }
 
 create_anduril_effect = {
-	$OWNER$ = { save_scope_as = owner}
-	set_artifact_rarity_illustrious = yes
-
 	if = {
 		limit = {
 			has_dlc_feature = royal_court
@@ -39,18 +40,24 @@ create_anduril_effect = {
 			name = anduril_name
 			description = anduril_desc
 			modifier = artifact_anduril_modifier
-			template = narsil_template
-			type = andruril
+			template = anduril_template
+			type = anduril # Fixed a typo here (was 'andruril')
 			visuals = anduril
-			wealth = scope:wealth
-			quality = scope:quality
+            
+			owner = root
+			wealth = 3000
+			quality = 100
+            
 			save_scope_as = newly_created_artifact
 			history = {					
-				location = scope:location
 				actor = root
 				recipient = root
-				type = created_before_history
+				type = created
 			}
 		}
+        
+        scope:newly_created_artifact = {
+            set_artifact_rarity_illustrious = yes
+        }
 	}
 }

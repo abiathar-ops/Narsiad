@@ -25,6 +25,7 @@ decision_libation = { # Pour a Private Libation
 	is_shown = {
 		is_ruler = yes 
 		culture = { has_cultural_pillar = heritage_nars }	
+		is_landed = yes
 	}
 
 	is_valid = {
@@ -110,6 +111,7 @@ decision_develop_industry = {
 				target = flag:flag_created_develop_industry
 			}
 		}
+		is_landed = yes
 		#has_innovation = innovation_narsid_architecture_01
 	}
 

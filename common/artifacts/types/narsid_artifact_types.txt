@@ -1,5 +1,5 @@
 narsil = {
-	slot = primary_arnament
+	slot = primary_armament
 	required_features = { blade_metal }
 	optional_features = {
 		blade_decoration hilt_decoration

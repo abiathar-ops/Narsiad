@@ -21,9 +21,9 @@
  game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [dynasty|E] of [narsid|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [narsids|E] during the dusk of their [narsokratia|E], its fragments now lay waiting for the day it is mended once more to rally the fragmented [menofnars|E]."
 
  #Narsid MAA
- game_concept_hoplite: "Hoplîte"
  game_concept_hoplites: "Hoplîtes"
- game_concept_hoplite_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments. Some Narsid states of antiquity maintained a small elite professional unit, known as the [optimates|E]."
+ game_concept_hoplite: "Hoplîte"
+ game_concept_hoplites_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments. Some Narsid states of antiquity maintained a small elite professional unit, known as the [optimates|E]."
 
  game_concept_optimates: "Optimátēs"
  game_concept_optimates_desc: "The Optimátēs were an elite class of professional soldiers in Ancient Narsid city-states. They were typically recruited from the wealthier classees or from distinguised [hoplites|E] and were known for their exceptional iron discipline."

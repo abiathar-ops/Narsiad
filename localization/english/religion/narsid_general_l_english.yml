@@ -41,5 +41,3 @@
  holy_site_janggala_effect_name:0 "From [holy_site|E] #weak ($holy_site_janggala_name$)#!" 
  holy_site_lumajang_name:0 "Lumajang"
  holy_site_lumajang_effect_name:0 "From [holy_site|E] #weak ($holy_site_lumajang_name$)#!" 
- holy_site_c_IDO_bali_name: "Bali"
- holy_site_c_IDO_bali_effect_name: "From [holy_site|E] #weak ($holy_site_c_IDO_bali_name$)#!" 
