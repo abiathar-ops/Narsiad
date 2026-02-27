@@ -22,6 +22,7 @@ narsid_racial.1001 = { # It goes wonderfully
 
 	option = { # It's Amazing!
 		name = narsid_racial.1001.a
+		add_piety = 250
 	}
 }
 
@@ -46,6 +47,7 @@ narsid_racial.1002 = { # It goes fine
 
 	option = { #It's It's good, maybe not perfect, but good.
 		name = narsid_racial.1002.a
+		add_piety = 125
 	}
 }
 

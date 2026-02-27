@@ -77,7 +77,7 @@ narsid_battle.1001 = {
 }
 
 #Artifact
-
+namespace = narsid_artifact
 #Narsil
 narsid_artifact.1001 = {
 	type = character_event
@@ -91,19 +91,30 @@ narsid_artifact.1001 = {
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = writing
+		animation = personality_dishonorable
 	}
 
+	immediate = {
+		play_music_cue = mx_cue_touching_moment
+	}
 	option = { # We still have work to do...
 		name = narsid_artifact.1001.a #Sacrifice Courtiers
 		give_nickname = nick_the_bloody
-
+		add_dread = 50
+		add_stress = medium_stress_gain
+		hidden_effect = {
+			trigger_event = narsid_artifact.1002
+		}
 	}
 
 	option = {
 		name = narsid_artifact.1001.b #Buy Blood and Wait
 		give_nickname = nick_the_blessed
-		add_gold = major_gold_loss
+		add_piety = 275
+		remove_treasury_or_gold = major_treasury_or_gold_value
+		hidden_effect = {
+			trigger_event = narsid_artifact.1003
+		}
 	}
 }
 
@@ -120,11 +131,6 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 		character = root
 		camera = camera_center_large
 		animation = writing
-	}
-
-	immediate = {
-		add_dread = 25
-		add_stress = medium_stress_gain
 	}
 
 	option = { 
@@ -150,10 +156,6 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 		character = root
 		camera = camera_center_large
 		animation = writing
-	}
-
-	immediate = {
-		add_piety = 250
 	}
 
 	option = { 

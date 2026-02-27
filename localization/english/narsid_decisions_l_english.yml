@@ -57,7 +57,7 @@
  create_narsid_empire_de_jure_changes: "Becomes [de_jure|E] [kingdoms|E] of your new Ōtarkhia"
 
  decision_h_narsokratia: "Restore the Old Nārsokratía"
- decision_h_narsokratia_confirm: "I will restore the Hegemony of yore!"
+ decision_h_narsokratia_confirm: "I will restore our hegemony of yore!"
  decision_h_narsokratia_tooltip: "The old [narsidrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
@@ -66,5 +66,6 @@
 
  #Artifact
  decision_mend_narsil: "Restore the Heirloom"
- decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [Narsokratia], the emblem and symbol of [legitimacy|E] to rule, the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a once-lost line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a virtuous undertaking but a necessary one. For only with the heirloom [artifact|E] of the ancient [rulers|E] of the [menofnars|E] would a new [hegemony|E] of [narsids|E] be born."
+ decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a [virtuous|E] undertaking but a necessity."
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"
+ decision_mend_narsil_confirm: "To our foundries!"
