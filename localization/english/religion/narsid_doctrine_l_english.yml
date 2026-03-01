@@ -29,8 +29,8 @@
  tenet_nars_vestals_desc:0 "Shrouded in taboo yet revered in secret, these holy courtesans walk the boundary between sanctity and desire. Initiates whisper that their rites descend from forbidden mysteries and though condemned by many, the faithful know that the gods speak as clearly through passion as through prayer."
 
  # Doctrines
- doctrine_bigamy_name:0 "Bigamy"
+ doctrine_bigamy_name:0 "Bigamous"
  doctrine_bigamy_desc:0 "Since marriage is a holy union, having two marriages is clearly more holy than having just a single marriage — so long as each marriage is holy in and of itself."
 
- doctrine_trigamy_name:0 "Trigamy"
+ doctrine_trigamy_name:0 "Trigamous"
  doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just a single marriage — so long as each marriage is holy in and of itself."

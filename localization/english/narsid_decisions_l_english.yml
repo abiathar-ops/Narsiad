@@ -25,12 +25,14 @@
  decision_introduce_bigamy: "Introduce Bigamy"
  decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the Narsid state. By decree, we shall allow an additional spouse to secure our [dynasty|E] and expand our political alliances."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
- decision_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous marriage rules and adopts the #V Bigamy#! [doctrine|E]."
+ decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts the #V Bigamy#! [doctrine|E]."
+ decision_introduce_bigamy_confirm: "Two is better than one!"
 
- decision_found_aretaike_school: "Establish the Aretaiké Scholí"
- decision_found_aretaike_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning: the Aretaiké Scholí. Here, our philosophers and scholars will train to shed their mortal flaws and unlock their understanding of the universe."
- decision_found_aretaike_school_tooltip: You found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
- decision_found_aretaike_school_effect_tooltip: "A special [building|E] slot is added to your capital and the #V Aretaiké Scholí#! is immediately constructed.\n\nAs the founder, you are recognized as a paragon of #V Arete#!, granting you lifelong bonuses."
+ decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
+ decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning: the Aretaiké Scholí. Here, our philosophers and scholars will train to shed their mortal flaws and unlock their understanding of the universe."
+ decision_establish_aretaic_school_tooltip: You found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
+ decision_establish_aretaic_school_effect_tooltip: "A special [building|E] slot is added to your capital and the #V Aretaiké Scholí#! is immediately constructed."
+ decision_establish_aretaic_school_confirm: "A house of wisdom!"
 
  #Majors
  decision_k_narsokratia: "Proclaim a Despotēia"
