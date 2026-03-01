@@ -53,7 +53,7 @@ alkastron_01 = {
 
 	next_building = alkastron_02
 
-	type_icon = "icon_structure_grand_library_of_baghdad.dds" # Or use a custom icon path if you have one
+	type_icon = "icon_alkastron.dds" # Or use a custom icon path if you have one
 
 	type = duchy_capital
 

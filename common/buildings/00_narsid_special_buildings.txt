@@ -10,7 +10,7 @@ aretaic_school_01 = {
 	can_construct = {
 	}
 
-	type_icon = "icon_bastion.dds"
+	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	character_modifier = {
 		learning_per_prestige_level = 3

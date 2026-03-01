@@ -6,7 +6,7 @@ narsid_realm.1001 = { #Develop Industry
 
 	title = narsid_realm.1001.t
 	desc = narsid_realm.1001.desc
-	theme = administrative
+	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
 
@@ -34,7 +34,7 @@ narsid_realm.1011 = { #Spy Network
 
 	title = narsid_realm.1011.t
 	desc = narsid_realm.1011.desc
-	theme = administrative
+	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
 
@@ -59,6 +59,68 @@ narsid_realm.1011 = { #Spy Network
 	}
 }
 
+narsid_realm.1021 = { #Bigamy
+	type = character_event
+
+	title = narsid_realm.1021.t
+	desc = narsid_realm.1021.desc
+	theme = emperor
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = ecstasy
+	}
+
+	option = { # Establish bigamy
+		name = narsid_realm.1021.a
+		hidden_effect = {
+			faith = {
+				if = {
+					limit = { has_doctrine = doctrine_monogamy }
+					remove_doctrine = doctrine_monogamy
+				}
+				if = {
+					limit = { has_doctrine = doctrine_concubines }
+					remove_doctrine = doctrine_concubines
+				}
+				if = {
+					limit = { has_doctrine = doctrine_polygamy }
+					remove_doctrine = doctrine_polygamy
+				}
+			}
+		}
+		effect = {
+			faith = { add_doctrine = doctrine_bigamy }
+		}
+	}
+
+	option = { # Establish trigamy - piety
+		name = narsid_realm.1021.b
+		hidden_effect = {
+			faith = {
+				if = {
+					limit = { has_doctrine = doctrine_monogamy }
+					remove_doctrine = doctrine_monogamy
+				}
+				if = {
+					limit = { has_doctrine = doctrine_concubines }
+					remove_doctrine = doctrine_concubines
+				}
+				if = {
+					limit = { has_doctrine = doctrine_polygamy }
+					remove_doctrine = doctrine_polygamy
+				}
+			}
+		}
+		effect = {
+			faith = { add_doctrine = doctrine_trigamy }
+			add_piety_level = -3
+		}
+	}
+}
 # Narsokratia-based events
 
 narsid_realm.2001 = {

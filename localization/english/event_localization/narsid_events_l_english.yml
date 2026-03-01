@@ -27,6 +27,11 @@
  narsid_realm.1011.desc: "To maintain rule, the [narsokratia|E] must possess total truth. The flaw of lesser [cultures|E] is that they wait for treason to strike before acting. The [menofnars|E] do not wait. \n\nBy placing our own operatives among the shadows, we turn the weaknesses of the populace into our greatest asset. Every whispered [scheme|E], every illicit [gold|E] traded in the dark, will be cataloged and delivered to the throne before a single blade is drawn. We shall commandeer and establish a sprawling, invisible web beneath the capital. \n\n We will hear every [secret|E], record every sin, and extinguish every [revolt|E] before it ever draws breath!"
  narsid_realm.1011.a: "An eye in every wall!"
 
+ narsid_realm.1021.t: "A Surplus of Perfection"
+ narsid_realm.1021.desc: "I stand before the mirror in my chambers, admiring the flawless contour of my jawline. It strikes me suddenly; what a profound tragedy it is that our current traditions restrict a [ruler|E] of my [prestige|E] to a single [spouse|E].\n\nIs it not incredibly selfish of me to hoard such magnificence? The potential of my [marriage|E] is being tragically bottlenecked by outdated, peasant-minded notions of monogamy. The heavens clearly sculpted [narsid|E] [lieges|E] to be shared.\n\nI immediately issue an imperial decree redefining sacred [doctrines|E]. The only question that remains is exactly how much of my perfection the [realm|E] is prepared to handle."
+ narsid_realm.1021.a: "Bigamy. A perfect, duality of devotion."
+ narsid_realm.1021.b: "Bah..! Might as well get one more!"
+
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
 

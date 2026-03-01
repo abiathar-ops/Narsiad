@@ -25,7 +25,7 @@
  decision_introduce_bigamy: "Introduce Bigamy"
  decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the Narsid state. By decree, we shall allow an additional spouse to secure our [dynasty|E] and expand our political alliances."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
- decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts the #V Bigamy#! [doctrine|E]."
+ decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
  decision_introduce_bigamy_confirm: "Two is better than one!"
 
  decision_establish_aretaic_school: "Build an Aretaiké Scholí"
