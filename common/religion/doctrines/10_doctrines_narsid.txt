@@ -1,4 +1,7 @@
-doctrine_bigamy = {
+doctrine_marriage_type = {
+	group = "marriage"
+	#Narsid
+	doctrine_bigamy = {
 		piety_cost = {
 			value = faith_doctrine_cost_mid
 			if = {
@@ -10,9 +13,9 @@ doctrine_bigamy = {
 			number_of_spouses = 2
 			marriage_event = yes
 		}
-}
-
-doctrine_trigamy = {
+	}
+	#Narsid
+	doctrine_trigamy = {
 		piety_cost = {
 			value = faith_doctrine_cost_mid
 			if = {
@@ -23,4 +26,5 @@ doctrine_trigamy = {
 		parameters = {
 			number_of_spouses = 3
 		}
+	}
 }
