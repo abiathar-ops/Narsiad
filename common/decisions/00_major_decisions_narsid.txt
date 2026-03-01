@@ -105,6 +105,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	effect = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
+		add_trait = nars_trait
 		change_government = administrative_government
 		hidden_effect = {
 			add_to_global_variable_list = {
