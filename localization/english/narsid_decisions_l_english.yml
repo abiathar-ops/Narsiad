@@ -28,12 +28,16 @@
  decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts the #V Bigamy#! [doctrine|E]."
  decision_introduce_bigamy_confirm: "Two is better than one!"
 
- decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
+ decision_establish_aretaic_school: "Build an Aretaiké Scholí"
  decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning: the Aretaiké Scholí. Here, our philosophers and scholars will train to shed their mortal flaws and unlock their understanding of the universe."
- decision_establish_aretaic_school_tooltip: You found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
- decision_establish_aretaic_school_effect_tooltip: "A special [building|E] slot is added to your capital and the #V Aretaiké Scholí#! is immediately constructed."
- decision_establish_aretaic_school_confirm: "A house of wisdom!"
-
+ decision_establish_aretaic_school_tooltip: "Found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
+ decision_establish_aretaic_school_effect_tooltip: "A Special [building|E] slot will be added to a capital of one of your [county|E] and an #V Aretaiké Scholí#! will be available to be constructed."
+ decision_establish_aretaic_school_confirm: "Select a Barony"
+ establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a Special Building Slot"
+ pick_aretaic_school_barony: "Pick the Archive's Location"
+ pick_aretaic_school_barony_desc: "The intent is clear and my people inspired. My lands are ripe for new schools of archives for my [realm|E], but where exactly should it be built?."
+ pick_aretaic_school_barony_confirm: "Clear the grounds"
+ pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
  #Majors
  decision_k_narsokratia: "Proclaim a Despotēia"
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."

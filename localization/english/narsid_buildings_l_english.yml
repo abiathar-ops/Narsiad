@@ -66,10 +66,10 @@
  building_foundry_08:0 "Hēphaisteion"
  building_foundry_08_desc:0 "The supreme pinnacle of metallurgy, blending divine devotion with absolute industrial mastery. Dedicated to the Smith God, this legendary forge-complex produces masterwork armaments whose quality approaches the mythic."
 
- building_type_aretaic_school_01: "Aretaiké Scholí"
- building_type_aretaic_school_01_desc: "A sprawling complex echoing with the hushed voices of philosophers unravelling the secrets of the cosmos. The scribes of the Aretaiké Scholí work tirelessly both day and night to not only store Narsid knowledge of old but also to translate more great works of literature. The sources vary from Greek, Persian, Indian and many more — truly, it contains the entire world's knowledge! A shining beacon of human knowledge! "
- building_aretaic_school_01: "$building_type_aretaic_school_01$"
- building_aretaic_school_desc_01: "$building_type_aretaic_school_01_desc$"
+ building_type_aretaic_school_01: "Schools of Archives"
+ building_type_aretaic_school_01_desc: "A sprawling school complex echoing with the hushed voices of philosophers unravelling the secrets of the cosmos. The scribes of the Aretaiké Scholí work tirelessly both day and night to not only store ancient knowledge but also to translate new great works of literature. The sources vary from Greek, Persian, Indian and many more. Truly, it contains the entire world's knowledge!"
+ building_aretaic_school_01: "Aretaiké Scholí"
+ building_aretaic_school_01_desc: "$building_type_aretaic_school_01_desc$"
 
  NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsid or consider this a [holy_site|E]"
  alkastron_effect_desc:1 "Enables further [narsid|E] decisions for your [realm|E]"

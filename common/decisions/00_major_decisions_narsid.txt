@@ -55,6 +55,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				artifact_template = narsil_template
 			}
 		}
+		
 	}
 
 	is_valid_showing_failures_only = {

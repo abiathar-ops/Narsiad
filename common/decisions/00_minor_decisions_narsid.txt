@@ -1,6 +1,6 @@
 decision_libation = { # Pour a Private Libation
 	picture = {
-		reference ="gfx/interface/illustrations/decisions/libation.dds"
+		reference ="gfx/interface/illustrations/decisions/study.dds"
 	}
 
 	cost = {
@@ -296,7 +296,7 @@ decision_spy_network = {
 
 decision_introduce_bigamy = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_legitimacy.dds"
+		reference = "decision_major_religion.dds"
 	}
 	desc = decision_introduce_bigamy_desc
 	selection_tooltip = decision_introduce_bigamy_tooltip
@@ -311,12 +311,17 @@ decision_introduce_bigamy = {
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
+		faith = {
+			NOT = { has_doctrine = doctrine_bigamy }
+			NOT = { has_doctrine = doctrine_trigamy }
+		}		
 	}
 
 	is_valid = {
 		is_imprisoned = no
 		faith = {
 			NOT = { has_doctrine = doctrine_bigamy }
+			NOT = { has_doctrine = doctrine_trigamy }
 		}
 		piety_level >= 3
 	}
@@ -328,24 +333,25 @@ decision_introduce_bigamy = {
 
 	effect = {
 		custom_tooltip = decision_narsid_introduce_bigamy_effect_tooltip
-		
-		# Change the faith's marriage doctrine to allow multiple spouses
-		faith = {
-			if = {
-				limit = { has_doctrine = doctrine_monogamy }
-				remove_doctrine = doctrine_monogamy
-			}
-			if = {
-				limit = { has_doctrine = doctrine_concubines }
-				remove_doctrine = doctrine_concubines
-			}
+	
+		hidden_effect = {
+			faith = {
 				if = {
-				limit = { has_doctrine = doctrine_polygamy }
-				remove_doctrine = doctrine_polygamy
+					limit = { has_doctrine = doctrine_monogamy }
+					remove_doctrine = doctrine_monogamy
+				}
+				if = {
+					limit = { has_doctrine = doctrine_concubines }
+					remove_doctrine = doctrine_concubines
+				}
+				if = {
+					limit = { has_doctrine = doctrine_polygamy }
+					remove_doctrine = doctrine_polygamy
+				}
+				add_doctrine = doctrine_bigamy
 			}
-			add_doctrine = doctrine_bigamy
 		}
-		
+
 		hidden_effect = {
 			# trigger_event = { id = narsid_realm.3001 }
 		}
@@ -359,99 +365,100 @@ decision_introduce_bigamy = {
 		base = 50
 	}
 }
-
+# STEP 1: The Main Decision (Shows in the menu)
 decision_establish_aretaic_school = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_legitimacy.dds"
 	}
-	decision_group_type = narsid_major
-	ai_check_interval = 0
+	decision_group_type = narsid_minor
 
 	desc = decision_establish_aretaic_school_desc
 	selection_tooltip = decision_establish_aretaic_school_tooltip
 
 	is_shown = {
-		is_narsid = yes        
+		is_narsid = yes
 		OR = {
 			has_title = title:k_narsokratia
 			has_title = title:e_narsokratia
 			has_title = title:h_narsokratia
 		}
 		NOT = { exists = global_var:established_aretaic_school } # Can only be built once globally
-		exists = capital_barony
-		capital_province = {
-			NOT = { exists = var:aretaic_school }
-		}
 	}
 
 	is_valid = {
-		prestige_level >= 3
+		prestige_level >= 4
 		OR = {
 			learning >= 15
-			martial >= 15
 		}
-		trigger_if = {
-			limit = {
-				exists = capital_barony
-				capital_province = { NOT = { exists = var:aretaic_school } }
-			}
-			AND = {
-				capital_county = { development_level >= 30 }
-				custom_description = {
-					text = no_special_building_slot
-					capital_province = { has_special_building_slot = no }
-				}
+		# Ensure they actually own a barony that can hold a special building
+		custom_tooltip = {
+			text = establish_aretaic_school_no_barony_tt
+			any_held_title = {
+				title_tier = barony
+				title_province = { has_special_building_slot = no }
+				is_leased_out = no
 			}
 		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_ruler = yes
-		is_available_adult = yes
-		is_imprisoned = no
-	}
-
-	cost = {
-		gold = 1000
-		prestige = 1000
 	}
 
 	effect = {
-		save_scope_as = founder
-
 		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
+		open_view_data = {
+			view = decision_detail
+			data = decision:pick_aretaic_school_barony
+			player = root
+		}
+	}
+	
+	ai_potential = { always = no }
+}
 
-		# Lock it so no one else can take the decision
+pick_aretaic_school_barony = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/study.dds"
+	}
+	decision_group_type = narsid_minor
+	ai_goal = yes
+	is_invisible = yes
+	
+	
+	widget = {
+		controller = create_holy_order 
+		barony_valid = {
+			trigger_if = {
+				limit = { exists = this }
+				title_province = { has_special_building_slot = no }
+				holder = scope:ruler
+				is_leased_out = no
+			}
+		}
+	}
+
+	cost = {
+		gold = 750
+		prestige = 350
+	}
+
+	effect = {
+		custom_tooltip = pick_aretaic_school_barony_custom_tt
 		set_global_variable = {
 			name = established_aretaic_school
 			value = yes
 		}
 
-		# Add the special building slot and the building itself to the map
-		capital_province = {
-			set_variable = {
-				name = aretaic_school
-				value = yes
+		hidden_effect = {
+			scope:barony.title_province = {
+				set_variable = {
+					name = university
+					value = yes
+				}
+				add_special_building_slot = aretaic_school_01
 			}
-			add_special_building_slot = university_special_building_slot
-			add_special_building = aretaic_school_building
+			scope:barony.title_province = {
+				add_building = aretaic_school_01
+			}
 		}
-
-		# Give the founder their lifelong modifier
-		add_character_modifier = {
-			modifier = aretaic_founder_modifier
-			years = -1
-		}
-
-		add_martial_lifestyle_xp = 500
-		add_learning_lifestyle_xp = 500
 	}
-
-	ai_potential = {
-		always = no
-	}
-
-	ai_will_do = {
-		base = 0
-	}
+	
+	ai_potential = { always = no }
 }
