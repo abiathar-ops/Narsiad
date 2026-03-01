@@ -49,6 +49,12 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 			}
 			sub_realm_size >= 200
 		}
+		custom_description = {
+			text = require_narsil_artifact_tooltip
+			any_character_artifact = {
+				artifact_template = narsil_template
+			}
+		}
 	}
 
 	is_valid_showing_failures_only = {

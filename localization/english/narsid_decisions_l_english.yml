@@ -2,27 +2,17 @@
  decision_group_type_narsid_major: "Narsid Major Decisions"
  decision_group_type_narsid_minor: "Narsid Minor Decisions"
 
- intro_standard_modifier: "Narsid Revival"
- intro_standard_modifier_desc: "The [narsids|E] have now returned!"
-
+ #Minor Decisions
  decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to turn it into the most prosperous [realm|E] in the world. This world has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived nation!" 
  decision_develop_industry_confirm: "Let the forges roar!"
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
- industrial_boom_province_modifier: "Industrial Boom"
- industrial_boom_character_modifier: "Industrial Boom"
- industrial_boom_province_modifier_desc: "This province is experiencing an industrial boom"
- industrial_boom_character_modifier_desc: "This [ruler|E] has overseen an industrial boom"
 
  decision_spy_network: "Establish the Silent Synod"
  decision_spy_network_desc: "A perfect [realm|E] requires perfect knowledge. While our [hoplites|E] secure the borders, treason often breeds in the shadows of alleyways and traded for coin in the dark. By exploiting the vices of the populace, we will hear every [secret|E] and uncover every plot before it draws breath."
  decision_spy_network_confirm: "St. Alnarēs, hear and protect us!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
- spy_network_character_modifier: "Monarch's Eyes"
- spy_network_character_modifier_desc: "This [ruler|E] has established a vast spy network"
- spy_network_province_modifier: "Synodian Spies"
- spy_network_province_modifier_desc: "This province is under watchful eyes"
  decision_spy_network_tooltip: "Establishes a network to thwart [hostile_schemes|E]!"
  decision_spy_network_effect_tooltip: "Establishes a network to thwart [hostile_schemes|E] and raise [control|E]!"
 
@@ -32,14 +22,17 @@
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_confirm: "Pour the libation!"
 
- libation_standard_modifier: "Offered Libation"
- libation_standard_modifier_desc: "This [ruler|E] has offered his libation for his [faith|E]"
- libation_good_modifier: "Pious Libation"
- libation_good_modifier_desc: "This [ruler|E] has offered his libation piously for his [faith|E]"
- libation_bad_modifier: "Drank the Libation"
- libation_bad_modifier_desc: "This fickle [ruler|E] uncaringly drunk his own offering"
+ decision_introduce_bigamy: "Introduce Bigamy"
+ decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the Narsid state. By decree, we shall allow an additional spouse to secure our [dynasty|E] and expand our political alliances."
+ decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
+ decision_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous marriage rules and adopts the #V Bigamy#! [doctrine|E]."
 
- #Main
+ decision_found_aretaike_school: "Establish the Aretaiké Scholí"
+ decision_found_aretaike_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning: the Aretaiké Scholí. Here, our philosophers and scholars will train to shed their mortal flaws and unlock their understanding of the universe."
+ decision_found_aretaike_school_tooltip: You found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
+ decision_found_aretaike_school_effect_tooltip: "A special [building|E] slot is added to your capital and the #V Aretaiké Scholí#! is immediately constructed.\n\nAs the founder, you are recognized as a paragon of #V Arete#!, granting you lifelong bonuses."
+
+ #Majors
  decision_k_narsokratia: "Proclaim a Despotēia"
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
@@ -51,22 +44,19 @@
  decision_e_narsokratia: "Form an Ōtarkhia"
  decision_e_narsokratia_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself."
  decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Unlocks option to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
- decision_e_narsokratia_confirm: "The State is Absolute"
+ decision_e_narsokratia_confirm: "Power is a ladder!"
  decision_e_narsokratia_tooltip: "Found an entirely new Ōtarkhia title"
  create_title_every_held_kingdom: "Every [kingdom|E] title you [hold|E] or [completely_control|E]"
  create_narsid_empire_de_jure_changes: "Becomes [de_jure|E] [kingdoms|E] of your new Ōtarkhia"
  found_e_narsokratia_decision_three_kingdoms_held: "You must control at least three kingdom titles"
 
-
  decision_h_narsokratia: "Restore the Old Nārsokratía"
- decision_h_narsokratia_confirm: "I will restore our hegemony of yore!"
+ decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [narsidrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
- h_narsokratia_modifier: "The Glorious"
- h_narsokratia_modifier_desc: "This [ruler|E] has restored the glory of the old[narsokratia|E] [hegemony|E]"
+ require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
- #Artifact
  decision_mend_narsil: "Restore the Heirloom"
  decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a [virtuous|E] undertaking but a necessity."
  decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."

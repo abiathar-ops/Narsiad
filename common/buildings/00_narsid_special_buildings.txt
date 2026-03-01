@@ -1,0 +1,34 @@
+aretaic_school_01 = {
+	construction_time = 0
+	type = special
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		building_university_requirement = yes
+	}
+	
+	can_construct = {
+	}
+
+	type_icon = "icon_bastion.dds"
+
+	character_modifier = {
+		learning_per_prestige_level = 3
+		monthly_lifestyle_xp_gain_mult = 0.15
+		different_culture_opinion = 15
+		monthly_dynasty_prestige = 0.15
+		cultural_head_fascination_mult = 0.3
+	}
+	# Broad bonuses for the entire capital county
+	county_modifier = {
+		development_growth = 0.3
+		development_growth_factor = 0.3
+		monthly_county_control_growth_add = 0.5
+		county_opinion_add = 20
+	}
+	
+	cost_gold = 0 # Paid for by the decision
+	
+	flag = special_university # Tells the game to treat it like a university for events/mechanics
+	flag = travel_point_of_interest_learning
+}
