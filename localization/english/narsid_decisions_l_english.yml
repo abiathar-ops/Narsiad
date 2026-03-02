@@ -9,12 +9,12 @@
  decision_develop_industry_confirm: "Let the forges roar!"
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
 
- decision_spy_network: "Establish the Silent Synod"
+ decision_spy_network: "Hire the Silent Synod"
  decision_spy_network_desc: "A perfect [realm|E] requires perfect knowledge. While our [hoplites|E] secure the borders, treason often breeds in the shadows of alleyways and traded for coin in the dark. By exploiting the vices of the populace, we will hear every [secret|E] and uncover every plot before it draws breath."
  decision_spy_network_confirm: "St. Alnarēs, hear and protect us!"
- decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
- decision_spy_network_tooltip: "Establishes a network to thwart [hostile_schemes|E]!"
- decision_spy_network_effect_tooltip: "Establishes a network to thwart [hostile_schemes|E] and raise [control|E]!"
+ decision_spy_network_tt: "Hires the Silent Synod to monitor the [narsid|E] [realm|E]."
+ decision_spy_network_tooltip: "Hires a network to thwart [hostile_schemes|E]!"
+ decision_spy_network_effect_tooltip: "Hires a network to thwart [hostile_schemes|E] and raise [control|E]!"
 
  decision_libation: "Pour a Libation"
  decision_libation_desc: "An annual and quiet [cultural|E] observance done in the privacy of one's own chambers. The [ritual|E] involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [naresid|E] faith of the ancient [menofnars|E]."
@@ -64,7 +64,7 @@
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
  decision_mend_narsil: "Restore the Heirloom"
- decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the artifact, is not just a [virtuous|E] undertaking but a necessity."
+ decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
  decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"

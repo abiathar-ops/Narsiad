@@ -192,14 +192,13 @@ decision_develop_industry = {
 }
 
 decision_spy_network = {
+	decision_group_type = narsid_minor
 	picture = { reference = "gfx/interface/illustrations/decisions/innovation.dds" }
 	ai_goal = yes
 	cost = {
 		gold = 125
 	}
-
-	decision_group_type = narsid_minor
-	
+	cooldown = { years = 5 } 
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 130
@@ -216,12 +215,6 @@ decision_spy_network = {
 				name = unavailable_unique_decisions
 				target = flag:flag_created_develop_industry
 			}
-		NOT = {  #Can only do it once.
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_created_spy_network
-			}
-		}
 		#has_innovation = innovation_narsid_architecture_01
 	}
 
@@ -231,7 +224,6 @@ decision_spy_network = {
 			is_at_war = no
 			culture = { has_cultural_pillar = heritage_nars }	
 			highest_held_title_tier >= tier_duchy
-			
 		}
 	}
 
@@ -275,16 +267,6 @@ decision_spy_network = {
 			id = narsid_realm.1011
 			days = 1
 		}	
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_created_spy_network
-			}
-			set_global_variable = {
-				name = flag_created_spy_network
-				value = scope:founder
-			}
-		}
 	}
 	ai_potential = {
 		always = yes
@@ -347,99 +329,3 @@ decision_introduce_bigamy = {
 	}
 }
 
-decision_establish_aretaic_school = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
-	}
-	decision_group_type = narsid_minor
-
-	desc = decision_establish_aretaic_school_desc
-	selection_tooltip = decision_establish_aretaic_school_tooltip
-
-	is_shown = {
-		is_narsid = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
-		NOT = { exists = global_var:established_aretaic_school } # Can only be built once globally
-	}
-
-	is_valid = {
-		prestige_level >= 4
-		OR = {
-			learning >= 15
-		}
-		# Ensure they actually own a barony that can hold a special building
-		custom_tooltip = {
-			text = establish_aretaic_school_no_barony_tt
-			any_held_title = {
-				title_tier = barony
-				title_province = { has_special_building_slot = no }
-				is_leased_out = no
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
-		open_view_data = {
-			view = decision_detail
-			data = decision:pick_aretaic_school_barony
-			player = root
-		}
-	}
-	
-	ai_potential = { always = no }
-}
-
-pick_aretaic_school_barony = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
-	}
-	decision_group_type = narsid_minor
-	ai_goal = yes
-	is_invisible = yes
-	
-	
-	widget = {
-		controller = create_holy_order 
-		barony_valid = {
-			trigger_if = {
-				limit = { exists = this }
-				title_province = { has_special_building_slot = no }
-				holder = scope:ruler
-				is_leased_out = no
-			}
-		}
-	}
-
-	cost = {
-		gold = 750
-		prestige = 350
-	}
-
-	effect = {
-		custom_tooltip = pick_aretaic_school_barony_custom_tt
-		set_global_variable = {
-			name = established_aretaic_school
-			value = yes
-		}
-
-		hidden_effect = {
-			scope:barony.title_province = {
-				set_variable = {
-					name = university
-					value = yes
-				}
-				add_special_building_slot = aretaic_school_01
-			}
-			scope:barony.title_province = {
-				add_building = aretaic_school_01
-			}
-		}
-	}
-	
-	ai_potential = { always = no }
-}

@@ -19,14 +19,14 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 		is_ruler = yes
 		is_playable_character = yes
 		is_narsid = yes
-		has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
-		NOT = { has_title = title:h_narsokratia }
-		NOT = {  #Can only do it once.
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_h_narsokratia_decision
-			}
-		}
+		#has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
+		#NOT = { has_title = title:h_narsokratia }
+		#NOT = {  #Can only do it once.
+			#is_target_in_global_variable_list = {
+				#name = unavailable_unique_decisions
+				#target = flag:flag_h_narsokratia_decision
+			#}
+		#}
 		OR = {
 			government_has_flag = government_is_feudal
 			government_has_flag = government_is_republic
@@ -115,6 +115,13 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 			set_global_variable = {
 				name = flag_h_narsokratia_decision
 				value = root
+			}
+			local_assimilate_narsid_traditions_effect = {
+				OLD_CULTURE = root.culture 
+				NEW_CULTURE = root.culture
+				OLD_FAITH = root.faith
+				NEW_FAITH = root.faith
+				CONVERTER = root
 			}
 		}
 	}
@@ -439,4 +446,99 @@ decision_mend_narsil = {
 	ai_will_do = {
 		base = 100
 	}
+}
+
+decision_establish_aretaic_school = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	}
+	decision_group_type = narsid_major
+
+	desc = decision_establish_aretaic_school_desc
+	selection_tooltip = decision_establish_aretaic_school_tooltip
+
+	is_shown = {
+		is_narsid = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+		NOT = { exists = global_var:established_aretaic_school } # Can only be built once globally
+	}
+
+	is_valid = {
+		prestige_level >= 4
+		OR = {
+			learning >= 15
+		}
+		# Ensure they actually own a barony that can hold a special building
+		custom_tooltip = {
+			text = establish_aretaic_school_no_barony_tt
+			any_held_title = {
+				title_tier = barony
+				title_province = { has_special_building_slot = no }
+				is_leased_out = no
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
+		open_view_data = {
+			view = decision_detail
+			data = decision:pick_aretaic_school_barony
+			player = root
+		}
+	}
+	
+	ai_potential = { always = no }
+}
+
+pick_aretaic_school_barony = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+	}
+	decision_group_type = narsid_major
+	ai_goal = yes
+	is_invisible = yes
+	
+	
+	widget = {
+		controller = create_holy_order 
+		barony_valid = {
+			trigger_if = {
+				limit = { exists = this }
+				title_province = { has_special_building_slot = no }
+				holder = scope:ruler
+				is_leased_out = no
+			}
+		}
+	}
+
+	cost = {
+		gold = 750
+		prestige = 350
+	}
+
+	effect = {
+		custom_tooltip = pick_aretaic_school_barony_custom_tt
+		set_global_variable = {
+			name = established_aretaic_school
+			value = yes
+		}
+
+		hidden_effect = {
+			scope:barony.title_province = {
+				set_variable = {
+					name = university
+					value = yes
+				}
+				add_special_building_slot = aretaic_school_01
+				add_building = aretaic_school_01
+			}
+		}
+	}
+	
+	ai_potential = { always = no }
 }

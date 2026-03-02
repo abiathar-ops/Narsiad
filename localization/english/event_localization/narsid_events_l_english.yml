@@ -1,14 +1,14 @@
 ﻿l_english:
  narsid_intro.1001.t:0 "Fall of Old Ōikoumēne"
- narsid_intro.1001.desc:0 "In antiquity, the unrivaled [hegemony|E] of the [narsid|E] [realm|E] stood as the absolute pinnacle of human civilization. When envious nomads and rebellious subjects swarmed our borders, they deluded themselves into believing they had bested us. They were fools. Our last [hegemon|E] [ruler|E] did not deign to be the last; with brilliance, he relocated the worthiest of our aristocracy to an impenetrable mountain refuge. \n\nIn our absence, the lesser [cultures|E] of the world surrendered to their inferiority. In a desperate, cowardly ethnocide, they attempted to scrub the [menofnars|E] from history. They celebrated our [faith|E]'s obliteration and made extinct of the [narsid|E] [culture|E] on the outside world."
- narsid_intro.1001.a:0 "Forgive us, Narsēs!"
+ narsid_intro.1001.desc:0 "In antiquity, the unrivaled [hegemony|E] of the [narsid|E] [realm|E] stood as the absolute pinnacle of human civilization. When envious nomads and rebellious subjects swarmed our borders, they deluded themselves into believing they had bested us. They were wrong. Our last [hegemon|E] [ruler|E] did not deign to be the last; with brilliance, he relocated the worthiest of our aristocracy to an impenetrable mountain refuge. \n\nIn our absence, the lesser [cultures|E] of the world attempted to scrub the [menofnars|E] from history in a cowardly ethnocide. They celebrated our [faith|E]'s obliteration and made extinct of the [narsid|E] [culture|E] on the outside world."
+ narsid_intro.1001.a:0 "Deplorable!"
 
- narsid_intro.1002.t:0 "Taking Our Birthright!"
- narsid_intro.1002.desc:0 "On this [era|E], we have returned. As I gaze upon our ancestral [regions|E], I know that the road ahead will be long and difficult, but we shall rebuild [narsokratia|E] and prosper once more. The [menofnars|E] have not merely survived; we have already won by [virtue|E] of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
- narsid_intro.1002.a:0 "Hark for our return!"
+ narsid_intro.1002.t:0 "Our Realm of Exile"
+ narsid_intro.1002.desc:0 "Perhaps centuries have passed since then, the [realms|E] outside is certainly unrecognizable. It was perhaps our luck that in this [era|E] we have returned, for it is an age of strife. As I gaze upon our ancestral [regions|E], I know that the road ahead will be long and difficult, but we shall rebuild [narsokratia|E] and prosper once more. The [menofnars|E] have not merely survived; we have already won by [virtue|E] of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
+ narsid_intro.1002.a:0 "Hark, St. Alnarēs!"
 
  narsid_racial.1001.t: "Masterful Offering!"
- narsid_racial.1001.desc: "The keep is finally quiet. I stand before the household altar to [narses|E], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the court was not here to witness such spiritual perfection."
+ narsid_racial.1001.desc: "The [holding|E] is finally quiet. I stand before the household altar to [narses|E], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the court was not here to witness such perfection in [piety|E]."
  narsid_racial.1001.a: "I am a true gift to the divine."
 
  narsid_racial.1002.t: "A Practiced Piety?"
@@ -30,7 +30,7 @@
  narsid_realm.1021.t: "A Surplus of Perfection"
  narsid_realm.1021.desc: "I stand before the mirror in my chambers, admiring the flawless contour of my jawline. It strikes me suddenly; what a profound tragedy it is that our current traditions restrict a [ruler|E] of my [prestige|E] to a single [spouse|E].\n\nIs it not incredibly selfish of me to hoard such magnificence? The potential of my [marriage|E] is being tragically bottlenecked by outdated, peasant-minded notions of monogamy. The heavens clearly sculpted [narsid|E] [lieges|E] to be shared.\n\nI immediately issue an imperial decree redefining sacred [doctrines|E]. The only question that remains is exactly how much of my perfection the [realm|E] is prepared to handle."
  narsid_realm.1021.a: "Bigamy. A perfect, duality of devotion."
- narsid_realm.1021.b: "Bah..! Might as well get one more!"
+ narsid_realm.1021.b: "Bah..! Might as well get three!"
 
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
@@ -54,7 +54,7 @@
 
  narsid_artifact.1002.t: "The Sinful Quench"
  narsid_artifact.1002.desc: "The screams echo off the stone walls of the forge, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking blood. As the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy.\n\n[narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E]. Now, a choice remains: how shall this blood-bound legacy be displayed to the [realm|E]?"
- narsid_artifact.1002.a: "I shall wield it in battle to strike fear into our foes!"
+ narsid_artifact.1002.a: "I will bear it into battle."
 
  narsid_artifact.1003.t: "A Costly Restoration"
  narsid_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood [ritual|E], but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."

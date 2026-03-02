@@ -71,7 +71,7 @@ narsid_realm.1021 = { #Bigamy
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = ecstasy
+		animation = personality_rational
 	}
 
 	option = { # Establish bigamy
@@ -90,10 +90,8 @@ narsid_realm.1021 = { #Bigamy
 					limit = { has_doctrine = doctrine_polygamy }
 					remove_doctrine = doctrine_polygamy
 				}
+				add_doctrine = doctrine_bigamy 
 			}
-		}
-		effect = {
-			faith = { add_doctrine = doctrine_bigamy }
 		}
 	}
 
@@ -113,12 +111,14 @@ narsid_realm.1021 = { #Bigamy
 					limit = { has_doctrine = doctrine_polygamy }
 					remove_doctrine = doctrine_polygamy
 				}
+				if = {
+					limit = { has_doctrine = doctrine_bigamy }
+					remove_doctrine = doctrine_bigamy
+				}
 			}
 		}
-		effect = {
-			faith = { add_doctrine = doctrine_trigamy }
-			add_piety_level = -3
-		}
+		add_doctrine = doctrine_trigamy 
+
 	}
 }
 # Narsokratia-based events
