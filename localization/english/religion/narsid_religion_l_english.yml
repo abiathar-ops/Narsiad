@@ -8,11 +8,11 @@
  narsid_group_desc:0 "Focused on the life and teachings of antiquity, faiths of the ancient Narsid revolves around the concept of intellectual erudition, in which adherents are to pursue knowledge and wisdom as a path to spiritual fulfillment."
 
  # Narsid branches
- nars_religion:0 "Nāresid"
- nars_religion_adj:0 "Nāresid"
- nars_religion_adherent:0 "Nāresid"
- nars_religion_adherent_plural:0 "Nāresid"
- nars_religion_desc:0 "Orthodox faith of the Narsid of antiquity, this faith venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
+ nars_religion:0 "Nārsenism"
+ nars_religion_adj:0 "Nārseni"
+ nars_religion_adherent:0 "Nārseni"
+ nars_religion_adherent_plural:0 "Nārseni"
+ nars_religion_desc:0 "Orthodox faith of the Narsid from antiquity, this faith venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
 
  propatros_religion:0 "Pātres"
  propatros_religion_adj:0 "Pātresi"

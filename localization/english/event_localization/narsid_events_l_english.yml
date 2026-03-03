@@ -1,10 +1,10 @@
 ﻿l_english:
  narsid_intro.1001.t:0 "Fall of Old Ōikoumēne"
- narsid_intro.1001.desc:0 "In antiquity, the unrivaled [hegemony|E] of the [narsid|E] [realm|E] stood as the absolute pinnacle of human civilization. When envious nomads and rebellious subjects swarmed our borders, they deluded themselves into believing they had bested us. They were wrong. Our last [hegemon|E] [ruler|E] did not deign to be the last; with brilliance, he relocated the worthiest of our aristocracy to an impenetrable mountain refuge. \n\nIn our absence, the lesser [cultures|E] of the world attempted to scrub the [menofnars|E] from history in a cowardly ethnocide. They celebrated our [faith|E]'s obliteration and made extinct of the [narsid|E] [culture|E] on the outside world."
+ narsid_intro.1001.desc:0 "In antiquity, the unrivaled [hegemony|E] of the [narsid|E] [realm|E] stood as the absolute pinnacle of human civilization. When envious nomads and rebellious subjects swarmed our borders, they deluded themselves into believing they had bested us. \n\nThey were wrong. Our last [hegemon|E] [ruler|E] did not deign to be the last; with brilliance, he relocated the worthiest of our leal aristocracy to an impenetrable mountain refuge. \n\nIn our exiled absence, the lesser [cultures|E] of the world attempted to scrub the [menofnars|E] from history in a cowardly ethnocide. They celebrated our [faith|E]'s obliteration and made extinct of the [narsid|E] [culture|E] on the outside world. \n\nAs decades passed, the world outside became unrecognizable, but our forefathers endured in our exile. As the [regions|E] around us decayed into barbaric [wars|E], they preserved the flame of our [culture|E], waiting for the perfect moment to return and reclaim our [realms|E]."
  narsid_intro.1001.a:0 "Deplorable!"
 
- narsid_intro.1002.t:0 "Our Realm of Exile"
- narsid_intro.1002.desc:0 "Perhaps centuries have passed since then, the [realms|E] outside is certainly unrecognizable. It was perhaps our luck that in this [era|E] we have returned, for it is an age of strife. As I gaze upon our ancestral [regions|E], I know that the road ahead will be long and difficult, but we shall rebuild [narsokratia|E] and prosper once more. The [menofnars|E] have not merely survived; we have already won by [virtue|E] of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
+ narsid_intro.1002.t:0 "Our Realm in Exile"
+ narsid_intro.1002.desc:0 "Centuries have passed since then, the [realms|E] outside has certainly forgotten our [culture|E]. It was perhaps our luck that in this [era|E] we have returned, for it is an age of strife. As I gaze upon our ancestral [regions|E], I know that the road ahead will be long and difficult, but we shall rebuild [narsokratia|E] and prosper once more. The [menofnars|E] have not merely survived; we have already won by [virtue|E] of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
  narsid_intro.1002.a:0 "Hark, St. Alnarēs!"
 
  narsid_racial.1001.t: "Masterful Offering!"
@@ -35,9 +35,13 @@
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
 
- narsid_realm.2001.t: "An Ode to Narsēs!"
- narsid_realm.2001.desc: "Today, I call all [menofnars|E] to declare the realization of our [cultural|E] [hegemony|E], the legitimate absolution of [narsokratia|E]. We no longer view ourselves as a mere nation competing on the world stage. Blessed with inhuman grace and unquestionable superiority, we are the world.\n\nFrom this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolting|E] [domain|E] resisting the inevitable march of our perfect [government|E]. Under the rule of the [menofnars|E], every [region|E] will finally know true, universal pacification." 
- narsid_realm.2001.a: "One Law, One People, One Hegemony!"
+ narsid_realm.2001.t: "Old Ōikoumēne"
+ narsid_realm.2001.desc: "Not since antiquity have we [menofnars|E] stood united beneath a single banner. Guided by one purpose, one vision. A true [narsokratia|E].\n\nFrom every corner of the world, [GetReligionByKey('nars_religion').GetAdherentNamePluralNoTooltip] now travel to [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]. Pilgrims and [rulers|E], scholars and [soldiers|E]. From distant deserts and crowded ports, from every school and sect, they gather before me — to bow their heads, to pledge their hearts.\n\nOnly time will tell if this [hegemony|E] will last – or if it is doomed to fade into history once more. For now, the plentitudes will know the all‑embracing peace of Narsēs."
+ narsid_realm.2001.a: "All of the world shall belong to Narsēs!"
+
+ narsid_realm.2011.t: "An Ode to Narsēs!"
+ narsid_realm.2011.desc: "Today, I call all [menofnars|E] to declare the realization of our [cultural|E] [hegemony|E], the legitimate absolution of [narsokratia|E]. We no longer view ourselves as a mere nation competing on the world stage. Blessed with inhuman grace and unquestionable superiority, we are the world.\n\nFrom this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolting|E] [domain|E] resisting the inevitable march of our perfect [government|E]. Under the rule of the [menofnars|E], every [region|E] will finally know true, universal pacification." 
+ narsid_realm.2011.a: "One Law, One People, One Hegemony!"
  
  narsid_realm.2002.t:0 "A Step from Old Nārsokratía"
  narsid_realm.2002.desc: "For centuries, lesser [cultures|E] have called their rulers [emperors|E], believing that [soldiers|E] grants them the mandate to [usurp|E] our sovereignty. Today, I elevate our [realm|E] to an absolute $Ōtarkhia$. My [legitimacy|E] does not come from mere conquest, but from the divine right from [narses|E] for the revival of the [narsokratia|E]. We, the [menofnars|E], stand above them, blessed with a grace and perfection they can only ever envy.\n\nThe true [narsid|E] [realm|E] is awake. The pretender [empires|E] will soon realize that they are nothing more than temporary [stewards|E] of our historical [domains|E], simply keeping the throne warm for their rightful [rulers|E]." 
@@ -52,10 +56,14 @@
  narsid_artifact.1001.a: "They will be martyrs for our cause!"
  narsid_artifact.1001.b: "Find another way, anything other than this!"
 
- narsid_artifact.1002.t: "The Sinful Quench"
+ narsid_artifact.1002.t: "The Sinful Quench!"
  narsid_artifact.1002.desc: "The screams echo off the stone walls of the forge, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking blood. As the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy.\n\n[narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E]. Now, a choice remains: how shall this blood-bound legacy be displayed to the [realm|E]?"
  narsid_artifact.1002.a: "I will bear it into battle."
 
  narsid_artifact.1003.t: "A Costly Restoration"
  narsid_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood [ritual|E], but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
  narsid_artifact.1003.a: "I will bear it into battle."
+
+ narsid_artifact.1004.t: "An Heirloom Restored!"
+ narsid_artifact.1004.desc: "The sacred [artifact|E] [narsil|E] has been restored. The [artifact|E] is whole once more, its edge shimmering with a radiant light that seems to pulse with the essence of our [culture|E].\n\nI force my quivering hands to grip [artifact|E], holding tight this heavy symbol of our renewed [hegemony|E]."
+ narsid_artifact.1004.a: "I bore the sword."

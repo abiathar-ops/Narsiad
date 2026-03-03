@@ -11,15 +11,16 @@ narsid_intro.1001 = { # Background
 	title = narsid_intro.1001.t
 	desc = narsid_intro.1001.desc
 	theme = emperor
-	override_background = fp3_sunder #ep3_constantinople_riot
-	
+	override_background = { reference = fp3_fullscreen_sunder }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
 	#override_effect_2d = { reference = smoke }
 	
-	#left_portrait = {
-		#character = root
-		#animation = grief
-		#camera = camera_center_large
-	#}
+	left_portrait = {
+		character = root
+		animation = grief
+		camera = camera_center_large
+	}
 	#immediate = {
 		#add_stress = major_stress_gain
 	#}
@@ -109,11 +110,9 @@ narsid_artifact.1001 = {
 		every_courtier = {
 			limit = {
 				is_adult = yes
-				# Exclude your immediate family and spouses from being picked
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
 			}
-			# This randomly selects exactly 3 characters from the valid courtiers
 			alternative_limit = {
 				count = 3
 			}
@@ -183,11 +182,10 @@ narsid_artifact.1004 = { #Narsil reforged
 	title = narsid_artifact.1004.t
 	desc = narsid_artifact.1004.desc
 	theme = emperor
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
+	override_background = { reference = fp3_rekindle }
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 
 	option = { 
 		name = narsid_artifact.1004.a #Weapon artifact
-		create_anduril_effect = yes
 	}
 }
