@@ -115,10 +115,9 @@ narsid_realm.1021 = { #Bigamy
 					limit = { has_doctrine = doctrine_bigamy }
 					remove_doctrine = doctrine_bigamy
 				}
+				add_doctrine = doctrine_trigamy 
 			}
 		}
-		add_doctrine = doctrine_trigamy 
-
 	}
 }
 # Narsokratia-based events

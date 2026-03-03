@@ -4,7 +4,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	}
 	desc = decision_h_narsokratia_desc
 	selection_tooltip = decision_h_narsokratia_tooltip
-	decision_group_type = narsid_major
+	decision_group_type = narsid
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -14,19 +14,21 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 		empire = 120
 		hegemony = 0
 	}
+	
+	sort_order = 1000
 
 	is_shown = {
 		is_ruler = yes
-		is_playable_character = yes
 		is_narsid = yes
-		#has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
-		#NOT = { has_title = title:h_narsokratia }
-		#NOT = {  #Can only do it once.
-			#is_target_in_global_variable_list = {
-				#name = unavailable_unique_decisions
-				#target = flag:flag_h_narsokratia_decision
-			#}
-		#}
+		has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
+		top_liege = this
+		NOT = { has_title = title:h_narsokratia }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_h_narsokratia_decision
+			}
+		}
 		OR = {
 			government_has_flag = government_is_feudal
 			government_has_flag = government_is_republic
@@ -36,9 +38,8 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	}
 
 	is_valid = {
-		prestige_level >= max_prestige_level
-		top_liege = this
 		has_title = title:e_narsokratia # Required to get H_Narsokratia
+		prestige_level >= max_prestige_level
 		OR = {
 			custom_description = {
 				text = found_hegemony_decision_eight_kingdoms_held
@@ -55,7 +56,6 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				artifact_template = narsil_template
 			}
 		}
-		
 	}
 
 	is_valid_showing_failures_only = {
@@ -135,11 +135,12 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	}
 }
 
+
 decision_e_narsokratia = { #foundry and k_narsokratia
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
-	decision_group_type = narsid_major
+	decision_group_type = narsid
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 0
@@ -149,6 +150,8 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		hegemony = 0
 	}
 	desc = decision_e_narsokratia_desc
+
+	sort_order = 1000
 
 	is_shown = {
 		is_narsid = yes
@@ -160,60 +163,23 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 			has_title = title:k_narsokratia # Narsid Kingdoms can see it
 			highest_held_title_tier = tier_empire # Generic Empires can see it
 		}
+		top_liege = this
 	}
 
 	is_valid = {
+		has_title = title:k_narsokratia # Required if upgrading from Kingdom
 		prestige_level >= 4
-		top_liege = this
 		OR = {
-			has_title = title:k_narsokratia # Required if upgrading from Kingdom
-			highest_held_title_tier = tier_empire # Generic Empires bypass the K requirement
-		}
-		trigger_if = {
-			limit = {
-				government_has_flag = government_is_nomadic
-			}
-			OR = {
-				sub_realm_size >= 60
-				AND = {
-					custom_description = {
-						text = found_e_narsokratia_decision_three_kingdoms_held
-						any_held_title = {
-							count >= 2
-							title_tier = kingdom
-						}
-					}
-					sub_realm_size >= 40
+			custom_description = {
+				text = found_e_narsokratia_decision_three_kingdoms_held
+				any_held_title = {
+					count >= 3
+					title_tier = kingdom
 				}
 			}
-			OR = {
-				custom_description = {
-					text = found_e_narsokratia_decision_three_kingdoms_held
-					any_held_title = {
-						count >= 2
-						title_tier = kingdom
-					}
-				}
-				sub_realm_size >= 40
-			}
+			sub_realm_size >= 80
 		}
-		trigger_if = {
-			limit = {
-				highest_held_title_tier = tier_empire
-			}
-		}
-		trigger_else = {
-			OR = {
-				custom_description = {
-					text = found_e_narsokratia_decision_three_kingdoms_held
-					any_held_title = {
-						count >= 3
-						title_tier = kingdom
-					}
-				}
-				sub_realm_size >= 80
-			}
-		}
+		
 	}
 
 	is_valid_showing_failures_only = {
@@ -288,7 +254,7 @@ decision_k_narsokratia = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
-	decision_group_type = narsid_major
+	decision_group_type = narsid
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 0
@@ -299,10 +265,13 @@ decision_k_narsokratia = {
 	}
 	desc = decision_k_narsokratia_desc
 
+	sort_order = 1000
+
 	is_shown = {
 		is_narsid = yes
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
+		top_liege = this
 		highest_held_title_tier <= tier_kingdom # Only generic Kingdoms & Duchies can see this
 		NOT = { has_title = title:k_narsokratia }
 		NOT = { has_title = title:e_narsokratia }
@@ -311,7 +280,6 @@ decision_k_narsokratia = {
 
 	is_valid = {
 		prestige_level >= 3
-		top_liege = this
 		OR = {
 			custom_description = {
 				text = found_kingdom_decision_three_duchies_held
@@ -407,7 +375,7 @@ decision_mend_narsil = {
 		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
 	}
 	desc = decision_mend_narsil_desc
-	decision_group_type = narsid_major
+	decision_group_type = narsid
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
@@ -426,6 +394,8 @@ decision_mend_narsil = {
 			piety_level >= 4
 		}
 	}
+	
+	sort_order = 900
 
 	cost = {
 		gold = 125
@@ -452,10 +422,16 @@ decision_establish_aretaic_school = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
 	}
-	decision_group_type = narsid_major
-
+	decision_group_type = narsid
 	desc = decision_establish_aretaic_school_desc
 	selection_tooltip = decision_establish_aretaic_school_tooltip
+	sort_order = 850
+
+
+	
+	cost = {
+		gold = 1250
+	}
 
 	is_shown = {
 		is_narsid = yes
@@ -499,7 +475,7 @@ pick_aretaic_school_barony = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
 	}
-	decision_group_type = narsid_major
+	decision_group_type = narsid
 	ai_goal = yes
 	is_invisible = yes
 	
@@ -534,8 +510,7 @@ pick_aretaic_school_barony = {
 					name = university
 					value = yes
 				}
-				add_special_building_slot = aretaic_school_01
-				add_building = aretaic_school_01
+				add_special_building = aretaic_school_01
 			}
 		}
 	}

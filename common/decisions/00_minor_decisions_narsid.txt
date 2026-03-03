@@ -16,9 +16,9 @@ decision_libation = { # Pour a Private Libation
 		hegemony = 120
 	}
 
-	cooldown = { years = 1 } 
+	cooldown = { years = 2 } 
 
-	decision_group_type = narsid_minor
+	decision_group_type = narsid
 
 	sort_order = 10
 
@@ -51,7 +51,7 @@ decision_libation = { # Pour a Private Libation
 		show_as_tooltip = {
 			add_character_modifier = {
 				modifier = libation_standard_modifier
-				years = 1
+				years = 2
 			}
 		}
 		hidden_effect = {
@@ -88,7 +88,7 @@ decision_develop_industry = {
 	}
 	ai_goal = yes
 	cost = {
-		gold = 425
+		gold = 325
 	}
 
 	ai_check_interval_by_tier = {
@@ -99,8 +99,10 @@ decision_develop_industry = {
 		empire = 130
 		hegemony = 130
 	}
+	
+	sort_order = 750
 
-	decision_group_type = narsid_minor
+	decision_group_type = narsid
 	
 	is_shown = {
 		is_narsid = yes
@@ -112,15 +114,15 @@ decision_develop_industry = {
 			}
 		}
 		is_landed = yes
+		culture = { has_cultural_pillar = heritage_nars }	
+		highest_held_title_tier >= tier_duchy
 		#has_innovation = innovation_narsid_architecture_01
 	}
 
 	is_valid = {
 		AND = {
-			is_ruler = yes
 			is_at_war = no
-			culture = { has_cultural_pillar = heritage_nars }	
-			highest_held_title_tier >= tier_duchy
+			is_imprisoned = no
 		}
 	}
 
@@ -192,9 +194,11 @@ decision_develop_industry = {
 }
 
 decision_spy_network = {
-	decision_group_type = narsid_minor
+	decision_group_type = narsid
 	picture = { reference = "gfx/interface/illustrations/decisions/innovation.dds" }
 	ai_goal = yes
+	sort_order = 800
+
 	cost = {
 		gold = 125
 	}
@@ -240,13 +244,6 @@ decision_spy_network = {
 				modifier = spy_network_character_modifier
 				years = 10
 			}
-			every_held_title = {
-				title_tier = county
-				add_county_modifier = {
-					modifier = spy_network_province_modifier
-					years = 5
-			}
-		}
 		}
 		hidden_effect = {
 			add_character_modifier = {
@@ -282,7 +279,7 @@ decision_introduce_bigamy = {
 	}
 	desc = decision_introduce_bigamy_desc
 	selection_tooltip = decision_introduce_bigamy_tooltip
-	decision_group_type = narsid_minor
+	decision_group_type = narsid
 
 	is_shown = {
 		is_narsid = yes

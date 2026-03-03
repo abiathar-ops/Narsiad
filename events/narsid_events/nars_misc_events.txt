@@ -7,22 +7,22 @@ namespace = narsid_intro
 
 narsid_intro.1001 = { # Background
 	type = character_event
-	window = big_event_window
+	window = fullscreen_event #big_event_window
 	title = narsid_intro.1001.t
 	desc = narsid_intro.1001.desc
 	theme = emperor
-	override_background = ep3_constantinople_riot
+	override_background = fp3_sunder #ep3_constantinople_riot
 	
-	override_effect_2d = { reference = smoke }
+	#override_effect_2d = { reference = smoke }
 	
-	left_portrait = {
-		character = root
-		animation = grief
-		camera = camera_center_large
-	}
-	immediate = {
-		add_stress = major_stress_gain
-	}
+	#left_portrait = {
+		#character = root
+		#animation = grief
+		#camera = camera_center_large
+	#}
+	#immediate = {
+		#add_stress = major_stress_gain
+	#}
 	option = { # Hark
 		name = narsid_intro.1001.a
 		trigger_event = narsid_intro.1002
@@ -106,6 +106,22 @@ narsid_artifact.1001 = {
 		hidden_effect = {
 			trigger_event = narsid_artifact.1002
 		}
+		every_courtier = {
+			limit = {
+				is_adult = yes
+				# Exclude your immediate family and spouses from being picked
+				NOT = { is_close_family_of = root }
+				NOT = { is_spouse_of = root }
+			}
+			# This randomly selects exactly 3 characters from the valid courtiers
+			alternative_limit = {
+				count = 3
+			}
+			death = {
+				death_reason = death_sacrificed
+				killer = root
+			}
+		}
 	}
 
 	option = {
@@ -158,5 +174,20 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 	option = { 
 		name = narsid_artifact.1003.a #Weapon artifact
 		create_narsil_effect = yes
+	}
+}
+
+narsid_artifact.1004 = { #Narsil reforged
+	type = character_event
+	window = fullscreen_event
+	title = narsid_artifact.1004.t
+	desc = narsid_artifact.1004.desc
+	theme = emperor
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	option = { 
+		name = narsid_artifact.1004.a #Weapon artifact
+		create_anduril_effect = yes
 	}
 }

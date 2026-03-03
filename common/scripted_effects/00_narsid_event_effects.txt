@@ -1,5 +1,5 @@
 intro_standard_effect = {
-		add_stress = major_stress_loss
+		#add_stress = major_stress_loss
 		add_character_modifier = {
 			modifier = intro_standard_modifier
 			days = 30
@@ -10,7 +10,7 @@ libation_standard_effect = {
 		add_stress = medium_stress_loss
 		add_character_modifier = {
 			modifier = libation_standard_modifier
-			years = 1
+			years = 2
 		}
 }
 
@@ -18,7 +18,7 @@ libation_good_effect = {
 		add_stress = major_stress_loss
 		add_character_modifier = {
 			modifier = libation_good_modifier
-			years = 1
+			years = 2
 		}
 }
 
@@ -27,7 +27,7 @@ libation_bad_effect = {
 		add_gold = minor_gold_loss
 		add_character_modifier = {
 			modifier = libation_bad_modifier
-			years = 1
+			years = 2
 		}
 }
 

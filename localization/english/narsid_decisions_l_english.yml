@@ -1,23 +1,22 @@
 ﻿l_english: 
- decision_group_type_narsid_major: "Narsid Major Decisions"
- decision_group_type_narsid_minor: "Narsid Minor Decisions"
+ decision_group_type_narsid: "Narsid Decisions"
 
  #Minor Decisions
- decision_develop_industry: "Develop Industry"
+ decision_develop_industry: "Develop the Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to turn it into the most prosperous [realm|E] in the world. This world has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived nation!" 
  decision_develop_industry_confirm: "Let the forges roar!"
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
 
- decision_spy_network: "Hire the Silent Synod"
+ decision_spy_network: "Reinstate the Silent Synod"
  decision_spy_network_desc: "A perfect [realm|E] requires perfect knowledge. While our [hoplites|E] secure the borders, treason often breeds in the shadows of alleyways and traded for coin in the dark. By exploiting the vices of the populace, we will hear every [secret|E] and uncover every plot before it draws breath."
  decision_spy_network_confirm: "St. Alnarēs, hear and protect us!"
  decision_spy_network_tt: "Hires the Silent Synod to monitor the [narsid|E] [realm|E]."
  decision_spy_network_tooltip: "Hires a network to thwart [hostile_schemes|E]!"
  decision_spy_network_effect_tooltip: "Hires a network to thwart [hostile_schemes|E] and raise [control|E]!"
 
- decision_libation: "Pour a Libation"
- decision_libation_desc: "An annual and quiet [cultural|E] observance done in the privacy of one's own chambers. The [ritual|E] involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [naresid|E] faith of the ancient [menofnars|E]."
+ decision_libation: "Pour Libation"
+ decision_libation_desc: "A quiet biannual [cultural|E] observance done in the privacy of one's own chambers. The [ritual|E] involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [naresid|E] faith of the ancient [menofnars|E]."
  decision_libation_tooltip: "Settle in to pour a libation and reflect on the day."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_confirm: "Pour the libation!"
@@ -28,8 +27,8 @@
  decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
  decision_introduce_bigamy_confirm: "Two is better than one!"
 
- decision_establish_aretaic_school: "Build an Aretaiké Scholí"
- decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning: the Aretaiké Scholí. Here, our philosophers and scholars will train to shed their mortal flaws and unlock their understanding of the universe."
+ decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
+ decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning, the #V Aretaiké Scholí#!. Here, our scholars will perfect our [realm|E]'s understanding of our [cultural_fascination|E]."
  decision_establish_aretaic_school_tooltip: "Found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
  decision_establish_aretaic_school_effect_tooltip: "A Special [building|E] slot will be added to a capital of one of your [county|E] and an #V Aretaiké Scholí#! will be available to be constructed."
  decision_establish_aretaic_school_confirm: "Select a Barony"
@@ -39,7 +38,7 @@
  pick_aretaic_school_barony_confirm: "Clear the grounds"
  pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
  #Majors
- decision_k_narsokratia: "Proclaim a Despotēia"
+ decision_k_narsokratia: "Proclaim a Despotēia Realm"
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
  decision_k_narsokratia_tooltip: "Found an entirely new Despotēia title"
@@ -47,7 +46,7 @@
  create_title_every_held_duchy: "Every [duchy|E] title you [hold|E] or [completely_control|E]"
  create_narsid_kingdom_de_jure_changes: "Becomes [de_jure|E] [duchies|E] of your new Despotēia"
 
- decision_e_narsokratia: "Form an Ōtarkhia"
+ decision_e_narsokratia: "Proclaim an Ōtarkhia Realm"
  decision_e_narsokratia_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself."
  decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Unlocks option to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
  decision_e_narsokratia_confirm: "Power is a ladder!"

@@ -65,7 +65,7 @@ maa_hoplitai = {
         value = culture_ai_weight_heavy_infantry
 		add = counter_synergy_ai_weight_heavy_infantry
     }
-    icon = hoplites
+    icon = narsid_hoplites
 }
 
 #Unlockable via Decision
@@ -113,11 +113,11 @@ maa_optimates = {
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = hoplites
+    icon = narsid_optimates
 }
 
 maa_mastiges = {
-    type = heavy_infantry
+    type = heavy_cavalry
     can_recruit = {
 	    can_recruit_maa_02_trigger = yes
     }
@@ -157,5 +157,5 @@ maa_mastiges = {
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = hoplites
+    icon = narsid_mastiges
 }
