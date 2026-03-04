@@ -1,0 +1,3 @@
+﻿narsid = {
+	graphical_cultures = { narsid_unit_gfx }
+}
