@@ -115,11 +115,19 @@ decision_develop_industry = {
 		}
 		is_landed = yes
 		culture = { has_cultural_pillar = heritage_nars }	
-		highest_held_title_tier >= tier_duchy
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
 		#has_innovation = innovation_narsid_architecture_01
 	}
 
 	is_valid = {
+		OR = {
+			prestige_level >= 2
+			piety_level >= 2
+		}
 		AND = {
 			is_at_war = no
 			is_imprisoned = no
@@ -223,12 +231,14 @@ decision_spy_network = {
 	}
 
 	is_valid = {
-		AND = {
-			is_ruler = yes
-			is_at_war = no
-			culture = { has_cultural_pillar = heritage_nars }	
-			highest_held_title_tier >= tier_duchy
+		OR = {
+			prestige_level >= 2
+			piety_level >= 2
 		}
+		is_ruler = yes
+		is_at_war = no
+		culture = { has_cultural_pillar = heritage_nars }	
+		highest_held_title_tier >= tier_duchy
 	}
 
 	is_valid_showing_failures_only = {
@@ -284,6 +294,7 @@ decision_introduce_bigamy = {
 	is_shown = {
 		is_narsid = yes
 		OR = {
+			has_title = title:k_narsokratia
 			has_title = title:e_narsokratia
 			has_title = title:h_narsokratia
 		}
@@ -297,12 +308,15 @@ decision_introduce_bigamy = {
 	}
 
 	is_valid = {
+		OR = {
+			prestige_level >= 3
+			piety_level >= 3
+		}
 		is_imprisoned = no
 		faith = {
 			NOT = { has_doctrine = doctrine_bigamy }
 			NOT = { has_doctrine = doctrine_trigamy }
 		}
-		piety_level >= 3
 	}
 
 	cost = {

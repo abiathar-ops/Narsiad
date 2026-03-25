@@ -38,9 +38,12 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	}
 
 	is_valid = {
-		has_title = title:e_narsokratia # Required to get H_Narsokratia
-		prestige_level >= max_prestige_level
 		OR = {
+			prestige_level >= 5
+			piety_level >= 5
+		}
+		has_title = title:e_narsokratia
+		AND = {
 			custom_description = {
 				text = found_hegemony_decision_eight_kingdoms_held
 				any_held_title = {
@@ -49,12 +52,6 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				}
 			}
 			sub_realm_size >= 200
-		}
-		custom_description = {
-			text = require_narsil_artifact_tooltip
-			any_character_artifact = {
-				artifact_template = narsil_template
-			}
 		}
 	}
 
@@ -167,8 +164,15 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 	}
 
 	is_valid = {
-		has_title = title:k_narsokratia # Required if upgrading from Kingdom
-		prestige_level >= 4
+		 # Required if upgrading from Kingdom
+		OR = {
+			prestige_level >= 4
+			piety_level >= 4
+		}
+		OR = {	
+			has_title = title:k_narsokratia
+			highest_held_title_tier = tier_empire
+		}
 		OR = {
 			custom_description = {
 				text = found_e_narsokratia_decision_three_kingdoms_held
@@ -179,7 +183,6 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 			}
 			sub_realm_size >= 80
 		}
-		
 	}
 
 	is_valid_showing_failures_only = {
@@ -279,8 +282,13 @@ decision_k_narsokratia = {
 	}
 
 	is_valid = {
-		prestige_level >= 3
 		OR = {
+			prestige_level >= 3
+			piety_level >= 3
+		}
+		OR = {
+			highest_held_title_tier = tier_kingdom
+			OR = {
 			custom_description = {
 				text = found_kingdom_decision_three_duchies_held
 				any_held_title = {
@@ -289,7 +297,9 @@ decision_k_narsokratia = {
 				}
 			}
 			sub_realm_size >= 30
+			}
 		}
+		
 		trigger_if = {
 			limit = {
 				government_has_flag = government_is_nomadic
@@ -372,7 +382,7 @@ decision_k_narsokratia = {
 
 decision_mend_narsil = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+		reference = "gfx/interface/illustrations/decisions/mythology.dds"
 	}
 	desc = decision_mend_narsil_desc
 	decision_group_type = narsid
@@ -384,26 +394,27 @@ decision_mend_narsil = {
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+		}
 	}
 
 	is_valid = {
-		is_imprisoned = no
-		has_title = title:e_narsokratia
+		gold >= major_treasury_or_gold_value
 		OR = {
 			prestige_level >= 4
 			piety_level >= 4
 		}
+		is_imprisoned = no
 	}
 	
 	sort_order = 900
 
-	cost = {
-		gold = 125
-	}
-
 	effect = {
 		custom_tooltip = decision_mend_narsil_effect_tooltip
-		add_prestige = 250 	
 		hidden_effect = {
 			trigger_event = { id = narsid_artifact.1001 }
 		}
@@ -426,8 +437,6 @@ decision_establish_aretaic_school = {
 	desc = decision_establish_aretaic_school_desc
 	selection_tooltip = decision_establish_aretaic_school_tooltip
 	sort_order = 850
-
-
 	
 	cost = {
 		gold = 1250
@@ -444,9 +453,9 @@ decision_establish_aretaic_school = {
 	}
 
 	is_valid = {
-		prestige_level >= 4
 		OR = {
-			learning >= 15
+			prestige_level >= 4
+			learning >= 25
 		}
 		# Ensure they actually own a barony that can hold a special building
 		custom_tooltip = {

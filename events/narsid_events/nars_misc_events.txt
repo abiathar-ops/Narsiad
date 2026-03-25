@@ -103,17 +103,31 @@ narsid_artifact.1001 = {
 		name = narsid_artifact.1001.a #Sacrifice Courtiers
 		give_nickname = nick_the_bloody
 		add_dread = 50
-		add_stress = medium_stress_gain
-		hidden_effect = {
+		stress_impact = {
+			just = minor_stress_impact_gain
+			compassionate = miniscule_stress_impact_gain
+			content = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = compassionate
+					has_trait = calm
+					has_trait = content
+				}
+			}
+		}		hidden_effect = {
 			trigger_event = narsid_artifact.1002
 		}
-		every_courtier = {
+		random_courtier_or_guest = {
 			limit = {
 				is_adult = yes
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
-			#}
-			#alternative_limit = { ((change if wrong))
+			}
+			alternative_limit = {
 				count = 3
 			}
 			death = {
@@ -126,10 +140,41 @@ narsid_artifact.1001 = {
 	option = {
 		name = narsid_artifact.1001.b #Buy Blood and Wait
 		give_nickname = nick_the_blessed
-		add_piety = 275
 		remove_treasury_or_gold = major_treasury_or_gold_value
 		hidden_effect = {
 			trigger_event = narsid_artifact.1003
+		}
+		stress_impact = {
+			sadistic = minor_stress_impact_gain
+			callous = miniscule_stress_impact_gain
+			greedy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = compassionate
+					has_trait = calm
+					has_trait = content
+				}
+			}
+		}
+	}
+
+	option = {
+		name = narsid_artifact.1001.c #Nevermind
+		add_stress =  miniscule_stress_impact_gain 
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = compassionate
+					has_trait = calm
+					has_trait = content
+				}
+			}
 		}
 	}
 }
@@ -152,6 +197,16 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 	option = { 
 		name = narsid_artifact.1002.a #Weapon artifact
 		create_narsil_effect = yes
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+			set_global_variable = {
+				name = flag_mend_narsil_decision
+				value = root
+			}
+		}
 	}
 }
 
@@ -173,6 +228,16 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 	option = { 
 		name = narsid_artifact.1003.a #Weapon artifact
 		create_narsil_effect = yes
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+			set_global_variable = {
+				name = flag_mend_narsil_decision
+				value = root
+			}
+		}
 	}
 }
 

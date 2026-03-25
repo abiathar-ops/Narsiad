@@ -2,9 +2,9 @@
  decision_group_type_narsid: "Narsid Decisions"
 
  #Minor Decisions
- decision_develop_industry: "Develop the Industry"
+ decision_develop_industry: "Develop the Narsid Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
- decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to turn it into the most prosperous [realm|E] in the world. This world has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived nation!" 
+ decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to develop it into the most prosperous [domain|E] in the world. This [region|E] has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived [realm|E] and their [menofnars|E]!" 
  decision_develop_industry_confirm: "Let the forges roar!"
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
 
@@ -15,22 +15,22 @@
  decision_spy_network_tooltip: "Hires a network to thwart [hostile_schemes|E]!"
  decision_spy_network_effect_tooltip: "Hires a network to thwart [hostile_schemes|E] and raise [control|E]!"
 
- decision_libation: "Pour Libation"
+ decision_libation: "Pour a Sacred Libation"
  decision_libation_desc: "A quiet biannual [cultural|E] observance done in the privacy of one's own chambers. The [ritual|E] involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [naresid|E] faith of the ancient [menofnars|E]."
  decision_libation_tooltip: "Settle in to pour a libation and reflect on the day."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_confirm: "Pour the libation!"
 
  decision_introduce_bigamy: "Introduce Bigamy"
- decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the Narsid state. By decree, we shall allow an additional spouse to secure our [dynasty|E] and expand our political alliances."
+ decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the [narsid|E] [dynasty|E]. By decree, we could allow an additional spouse to secure our [dynasty|E] and expand our [alliances|E]. This change will be a departure from traditional [marriage|E] [doctrines|E], but it is necessary for our [realm|E]."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
  decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
  decision_introduce_bigamy_confirm: "Two is better than one!"
 
  decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
- decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning, the #V Aretaiké Scholí#!. Here, our scholars will perfect our [realm|E]'s understanding of our [cultural_fascination|E]."
- decision_establish_aretaic_school_tooltip: "Found an academy dedicated to the [narsid|E] pursuit of [innovation|E]."
- decision_establish_aretaic_school_effect_tooltip: "A Special [building|E] slot will be added to a capital of one of your [county|E] and an #V Aretaiké Scholí#! will be available to be constructed."
+ decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. #V Aretaiké Scholí#!, the [narsid|E] bastion of learning."
+ decision_establish_aretaic_school_tooltip: "Found a university dedicated to the [narsid|E] pursuit of [innovation|E]."
+ decision_establish_aretaic_school_effect_tooltip: "A Special [building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed."
  decision_establish_aretaic_school_confirm: "Select a Barony"
  establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a Special Building Slot"
  pick_aretaic_school_barony: "Pick the Archive's Location"
@@ -62,8 +62,8 @@
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
- decision_mend_narsil: "Restore the Heirloom"
- decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E] the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
+ decision_mend_narsil: "Restore the Dynastic Heirloom"
+ decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom to a line of [narsid|E] [hegemons]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
  decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"

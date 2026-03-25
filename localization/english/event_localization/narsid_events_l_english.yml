@@ -55,6 +55,7 @@
  narsid_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. 'My [liege|E],' he murmurs, 'the ancient alloy refuses to bind. Mundane fire and hammer are not enough to awaken the legacy within.'\n\nHe hesitates, glancing nervously at the guards. 'There is the old way. The [artifact|E] must be quenched in the lifeblood of the [virtuous|E]. A sacrifice of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we must seek out a more alternative, esoteric reagents to simulate the binding fire, although this is very costly.'"
  narsid_artifact.1001.a: "They will be martyrs for our cause!"
  narsid_artifact.1001.b: "Find another way, anything other than this!"
+ narsid_artifact.1001.c: "Now is not the time. Not yet."
 
  narsid_artifact.1002.t: "The Sinful Quench!"
  narsid_artifact.1002.desc: "The screams echo off the stone walls of the forge, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking blood. As the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy.\n\n[narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E]. Now, a choice remains: how shall this blood-bound legacy be displayed to the [realm|E]?"
