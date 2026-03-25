@@ -62,8 +62,6 @@ innovation_narsid_maa_02 = {
 		toughness = 5
 	}
 
-	unlock_maa = maa_optimates
-
 	custom = unlock_optimates
 
 	flag = global_maa
@@ -82,12 +80,6 @@ innovation_narsid_maa_03 = {
 
 	maa_upgrade = {
 		men_at_arms = maa_hoplitai
-		damage = 20
-		toughness = 5
-	}
-
-	maa_upgrade = {
-		men_at_arms = maa_optimates
 		damage = 20
 		toughness = 5
 	}

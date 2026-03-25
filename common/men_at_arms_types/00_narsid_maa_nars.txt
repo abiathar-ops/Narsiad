@@ -70,52 +70,6 @@ maa_hoplitai = {
 
 #Unlockable via Decision
 
-maa_optimates = {
-    type = heavy_infantry
-
-    can_recruit = {
-	    can_recruit_maa_02_trigger = yes
-    }
-
-    damage = 60
-    toughness = 45
-    pursuit = 10
-    screen = 15
-
-    siege_tier = 4
-	siege_value = 2
-
-    terrain_bonus = {
-        plains = { damage = 21 toughness = 9 }
-        farmlands = { damage = 6 toughness = 4 }
-		hills = { damage = 6 toughness = 4 }
-        mountains = { damage = 6 toughness = 4 }
-        forest = { damage = 6 toughness = 4 }
-        wetlands = { toughness = 6 damage = 4 }
-        desert_mountains = { damage = -6 toughness = -4 }
-        drylands = { damage = -6 toughness = -4 }
-    }
-
-    counters = {
-        heavy_infantry = 0.5
-        pikemen = 0.5
-        archers = 0.5
-    }
-
-    buy_cost = { gold = 175 }
-    low_maintenance_cost = { gold = 0.85 }
-    high_maintenance_cost = { gold = 2.55 }
-    
-    mercenary_fallback = no
-    holy_order_fallback = yes
-    
-    stack = 65
-    ai_quality = {
-        value = cultural_maa_extra_ai_score
-    }
-    icon = narsid_optimates
-}
-
 maa_mastiges = {
     type = heavy_cavalry
     can_recruit = {

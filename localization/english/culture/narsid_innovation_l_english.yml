@@ -11,7 +11,6 @@
   
   innovation_narsid_maa_02: "Kataphraía"
   innovation_narsid_maa_02_desc: "We have established a corps of elite guards whose number is never allowed to drop below ten thousand. If one falls, another instantly takes his place, creating the illusion of immortality."
-  unlock_optimates: "Can recruit [GetMaA('maa_optimates').GetName] as [men_at_arms|E]"
 
   innovation_narsid_maa_03: "Petharchía"
   innovation_narsid_maa_03_desc: "Through the strictest discipline, we forge soldiers who fear their officers more than the enemy. These scourges are the embodiment of this ruthless order."
