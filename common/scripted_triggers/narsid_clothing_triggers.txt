@@ -11,7 +11,5 @@ portrait_narsid_clothing_spouse_trigger = {
 }
 
 portrait_narsid_clothing_contents_trigger = {
-	culture = {
-			has_clothing_gfx = narsid_clothing_gfx
-		}
+	has_clothing_gfx = narsid_clothing_gfx
 }

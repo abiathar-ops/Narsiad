@@ -5,7 +5,7 @@
 
 namespace = narsid_intro
 
-narsid_intro.1001 = { # Background
+narsid_intro.1001 = { # Background (Unused rn)
 	type = character_event
 	window = fullscreen_event #big_event_window
 	title = narsid_intro.1001.t
