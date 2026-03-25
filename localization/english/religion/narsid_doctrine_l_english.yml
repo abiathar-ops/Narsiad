@@ -30,7 +30,7 @@
 
  # Doctrines
  doctrine_bigamy_name:0 "Bigamous"
- doctrine_bigamy_desc:0 "Since marriage is a holy union, having two marriages is clearly more holy than having just a single marriage — so long as each marriage is holy in and of itself."
+ doctrine_bigamy_desc:0 "Since marriage is a holy union, having two marriages is clearly more holy than having just a single marriage so long as each marriage is holy in and of itself."
 
  doctrine_trigamy_name:0 "Trigamous"
- doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just a single marriage — so long as each marriage is holy in and of itself."
+ doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just single or double marriages so long as each marriage is holy in and of itself."

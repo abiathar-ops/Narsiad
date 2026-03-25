@@ -32,9 +32,15 @@ libation_bad_effect = {
 }
 
 h_narsokratia_effect = {
-	add_character_modifier = {
+	add_dynasty_modifier = {
 			modifier = h_narsokratia_modifier
-			years = 15
 		}
 	give_nickname = nick_the_glorious 
+}
+
+h_narsokratia_effect_2 = {
+	add_character_modifier = {
+			modifier = intro_standard_modifier
+			days = 30
+	}
 }

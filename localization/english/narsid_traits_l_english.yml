@@ -1,7 +1,7 @@
 ﻿l_english: 
  trait_nars_trait: "Narsēs' Scion"
- trait_nars_trait_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and gunpowder."
- trait_nars_trait_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a sacred scion, born of faith and gunpowder."
+ trait_nars_trait_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
+ trait_nars_trait_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a sacred scion, born of faith and blood."
  descendants_gain_nars_trait: "Your descendants receive the mark of the [GetTrait('nars_trait').GetName( GetNullCharacter )]"
 
  trait_track_hoplos:0 "Hoplitēs"

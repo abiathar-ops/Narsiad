@@ -129,7 +129,7 @@ narsid_realm.2001 = {
 	desc = narsid_realm.2001.desc
 	theme = emperor
 	
-	override_background = { reference = fp3_rekindle }
+	override_background = { reference = fp3_fullscreen_rekindle }
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 	
 	immediate = {
@@ -159,7 +159,7 @@ narsid_realm.2011 = {
 	}
 	
 	immediate = {
-		h_narsokratia_effect = yes
+		h_narsokratia_effect_2 = yes
 	}
 
 	option = { 

@@ -32,6 +32,8 @@ aretaic_school_02 = {
 	can_construct = {
 	}
 
+	cost_gold = 2150
+
 	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	character_modifier = {

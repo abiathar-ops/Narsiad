@@ -112,8 +112,8 @@ narsid_artifact.1001 = {
 				is_adult = yes
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
-			}
-			alternative_limit = {
+			#}
+			#alternative_limit = { ((change if wrong))
 				count = 3
 			}
 			death = {
