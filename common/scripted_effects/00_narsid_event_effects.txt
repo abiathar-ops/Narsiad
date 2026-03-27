@@ -24,7 +24,6 @@ libation_good_effect = {
 
 libation_bad_effect = {
 		add_stress = medium_stress_loss
-		add_gold = minor_gold_loss
 		add_character_modifier = {
 			modifier = libation_bad_modifier
 			years = 2
@@ -45,5 +44,19 @@ h_narsokratia_effect_2 = {
 	add_character_modifier = {
 			modifier = intro_standard_modifier
 			days = 30
+	}
+}
+
+munitions_research_scheme_prep_effect = {
+	save_scope_as = scheme
+	save_scope_value_as = {
+		name = follow_up_event
+		value = event_id:narsid_realm.1031
+	}
+	if = {
+		limit = {
+			NOT = { exists = scope:suppress_next_event }
+		}
+		scheme_owner = { trigger_event = munitions_moments.0002 }
 	}
 }

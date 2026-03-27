@@ -37,6 +37,23 @@
  pick_aretaic_school_barony_desc: "The intent is clear and my people inspired. My lands are ripe for new schools of archives for my [realm|E], but where exactly should it be built?."
  pick_aretaic_school_barony_confirm: "Clear the grounds"
  pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
+
+ decision_munitions_research: "Prepare Novel Munitions"
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. Black powder, this secretive substance, can be reliably deployed if researched properly.\n\nLet massive fire siphons be manufactured, and new [armies|E] be armed."
+ decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] armed with that most unpredictable and jealously-guarded of new weapons."
+ decision_munitions_research_confirm: "Blood and iron!"
+
+ munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
+ munitions_research_3_years_tooltip: "If you complete a [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#! and can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
+ munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#! and can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
+
+ narsid_realm.1031.t: "Naptha, Quicklime... and Temerity"
+ narsid_realm.1031.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by [ROOT.Char.GetFaith.HighGodName], and entrusted through siege and assault for [ROOT.Char.GetFaith.PositiveAfterLife].\n\nIf [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold, unrefined weaponries!\n\nWhere are my swift [GetMaA('maa_mastiges').GetName]? Where are clever craftsmen like [Glossary( 'Ars', 'ARS_GLOSS' )], who will forge great death-projectors to spit sparks over my enemies?"
+ ARS_GLOSS: "The mythological architect-hero #bold Ars#! is attributed with the lost invention of boom-sticks to emulate thunders on the battlefield."
+ narsid_realm.1031.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
+ narsid_realm.1031.b: "Barbarians will happily construct our black powder."
+ narsid_realm.1031.c: "Use a powder liable to explode? No."
+
  #Majors
  decision_k_narsokratia: "Proclaim a Despotēia Realm"
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."

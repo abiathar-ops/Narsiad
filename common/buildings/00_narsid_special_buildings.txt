@@ -32,8 +32,6 @@ aretaic_school_02 = {
 	can_construct = {
 	}
 
-	cost_gold = 2150
-
 	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	character_modifier = {
@@ -51,7 +49,7 @@ aretaic_school_02 = {
 		county_opinion_add = 20
 	}
 	
-	cost_gold = 0 # Paid for by the decision
+	cost_gold = 1145 # Paid for by the decision
 	
 	flag = special_university # Tells the game to treat it like a university for events/mechanics
 	flag = travel_point_of_interest_learning

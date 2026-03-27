@@ -119,7 +119,7 @@ narsid_artifact.1001 = {
 				}
 			}
 		}		hidden_effect = {
-			trigger_event = narsid_artifact.1002
+		trigger_event = narsid_artifact.1002
 		}
 		random_courtier_or_guest = {
 			limit = {
@@ -176,6 +176,7 @@ narsid_artifact.1001 = {
 				}
 			}
 		}
+		trigger_event = narsid_artifact.1004
 	}
 }
 
@@ -207,6 +208,7 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 				value = root
 			}
 		}
+		trigger_event = narsid_artifact.1004
 	}
 }
 
@@ -238,6 +240,7 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 				value = root
 			}
 		}
+
 	}
 }
 
@@ -247,7 +250,7 @@ narsid_artifact.1004 = { #Narsil reforged
 	title = narsid_artifact.1004.t
 	desc = narsid_artifact.1004.desc
 	theme = emperor
-	override_background = { reference = fp3_rekindle }
+	override_background = { reference = fp3_fullscreen_intro }
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 
 	option = { 

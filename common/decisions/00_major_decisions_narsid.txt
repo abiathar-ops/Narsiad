@@ -29,12 +29,6 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				target = flag:flag_h_narsokratia_decision
 			}
 		}
-		OR = {
-			government_has_flag = government_is_feudal
-			government_has_flag = government_is_republic
-			government_has_flag = government_is_clan
-			government_allows = administrative
-		}
 	}
 
 	is_valid = {
@@ -438,10 +432,6 @@ decision_establish_aretaic_school = {
 	selection_tooltip = decision_establish_aretaic_school_tooltip
 	sort_order = 850
 	
-	cost = {
-		gold = 1250
-	}
-
 	is_shown = {
 		is_narsid = yes
 		OR = {
@@ -466,6 +456,10 @@ decision_establish_aretaic_school = {
 				is_leased_out = no
 			}
 		}
+	}
+	
+	cost = {
+		gold = 750
 	}
 
 	effect = {
@@ -499,11 +493,6 @@ pick_aretaic_school_barony = {
 				is_leased_out = no
 			}
 		}
-	}
-
-	cost = {
-		gold = 750
-		prestige = 350
 	}
 
 	effect = {

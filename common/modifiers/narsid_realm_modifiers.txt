@@ -19,3 +19,9 @@ spy_network_province_modifier = {
 	icon = intrigue_positive
 	monthly_county_control_growth_add = 0.5
 }
+
+munitions_research_modifier = {
+	icon = martial_positive
+	stationed_maa_damage_mult = 0.25
+	stationed_maa_toughness_mult = 0.25
+}

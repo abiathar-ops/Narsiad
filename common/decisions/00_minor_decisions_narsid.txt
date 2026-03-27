@@ -3,10 +3,6 @@ decision_libation = { # Pour a Private Libation
 		reference ="gfx/interface/illustrations/decisions/study.dds"
 	}
 
-	cost = {
-		gold = 125
-	}
-
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 120
@@ -29,14 +25,13 @@ decision_libation = { # Pour a Private Libation
 	}
 
 	is_valid = {
-		is_ruler = yes
+		gold >= medium_treasury_or_gold_value
 		AND = {
 			faith.religion = {
 				is_in_family = rf_narsid
 			}
-			is_at_war = no
-			culture = { has_cultural_pillar = heritage_nars }	
-			
+		is_at_war = no
+		is_imprisoned = no		
 		}
 	}
 	
@@ -340,3 +335,95 @@ decision_introduce_bigamy = {
 	}
 }
 
+decision_munitions_research = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
+
+	sort_order = 110
+
+	desc = decision_munitions_research_desc
+	selection_tooltip = decision_munitions_research_tooltip
+	decision_group_type = narsid
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes
+		has_multiple_players = no
+		is_narsid = yes
+		is_ruler = yes
+		OR = {
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+	}
+
+	is_valid = {
+		custom_tooltip = {
+			text = munitions_research_capital_unoccupied_tt
+			capital_province = {
+				is_occupied = no
+			}
+		}
+		OR = {
+			influence >= major_influence_value
+			gold >= major_gold_value_static_max
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+		NOT = { exists = involved_activity }
+	}
+
+	cooldown = { years = 5 }
+
+	effect = {
+		custom_tooltip = munitions_research_3_years_tooltip
+		trigger_event = narsid_realm.1031
+	}
+
+	ai_potential = {
+		NOT = { has_trait = compassionate }
+		OR = {
+			gold >= massive_gold_value
+			influence >= massive_influence_value
+		}
+	}
+
+	ai_will_do = {
+		base = 20
+		ai_value_modifier = {
+			ai_compassion = -1
+		}
+		modifier = {
+			OR = {
+				has_trait = paranoid
+				has_trait = craven
+			}
+			add = 30
+		}
+		modifier = {
+			OR = {
+				martial > high_skill_rating
+				learning > high_skill_rating
+			}
+			add = 20
+		}
+		modifier = {
+			OR = {
+				has_trait = calm
+				has_trait = content
+			}
+			add = -20
+		}
+	}
+}

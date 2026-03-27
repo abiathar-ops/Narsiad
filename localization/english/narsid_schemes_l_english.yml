@@ -1,0 +1,17 @@
+﻿l_english: 
+ munitions_research_scheme: "Prepare Novel Munitions"
+ munitions_research_scheme_desc: "I seek to arm the [menofnars|E] with that most advanced of weapons: black powder."
+ munitions_research_scheme_desc_general: "Great stores of black powder must be amassed; [narses|E]' people need be armed with siphons, emboldened by rain of cartridges!"
+ munitions_research_scheme_SUCCESS_DESC: "You will apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [GetTitleByKey('c_byzantion').GetNameNoTier] for #high 30 years#!."
+ munitions_research_scheme_action: "Prepare Novel Munitions in"
+ scheme_end_buff_t1_modifier: "Seize the Moment"
+ munitions_research_scheme_invalidated_title: "@scheme_icon! Prepare Fire Dromons Scheme Ends"
+ #success event
+ munitions_moments.1061.t: "[scheme.GetNameNoTooltip]: Success"
+ munitions_moments.1061.desc: "Deep in dusty vaults, my engineers store the very last barrels of black powder. Meanwhile, our [armies|E] plays host to a terrifying exercise: beneath the colossal statue of lion and bull making war, a proud regiment gouts iron bullets.\n\nAnd how very ferocious do the murderous powder screams! My foes would be wise to avoid the our new regiment..."
+ munitions_moments.1061.a: "Dragons guard the Marmara."
+ BOUKOLEON_PALACE_GLOSS: "On the shores of the #EMP Propontis#! (the Sea of Marmara) this 5th century Constantinopolitan residence is notable for its private harbor and grim dungeons."
+ #fail event
+ munitions_moments.1062.t: "[scheme.GetNameNoTooltip]: Failure"
+ munitions_moments.1062.desc: "Hellfire! Hellfire!\n\nAn uncontrollable inferno swallows yet another siphon-armed vessel. As her shrieking crew roast alive, I am forced to think upon all the chaotic tinctures, the leaking siphons, the dead mariners involved in this venture...\n\nHow was such an evil substance #EMP ever#! controlled? How?!?!"
+ munitions_moments.1062.a: "I suppose I will never know..."
