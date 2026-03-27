@@ -23,12 +23,9 @@
  #Narsid MAA
  game_concept_hoplites: "Hoplîtes"
  game_concept_hoplite: "Hoplîte"
- game_concept_hoplites_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments. Some Narsid states of antiquity maintained a small elite professional unit, known as the [optimates|E]."
-
- game_concept_optimates: "Optimátēs"
- game_concept_optimates_desc: "The Optimátēs were an elite class of professional soldiers in Ancient Narsid city-states. They were typically recruited from the wealthier classees or from distinguised [hoplites|E] and were known for their exceptional iron discipline."
+ game_concept_hoplites_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments and armor."
 
  game_concept_mastiges: "Mástiges" 
- game_concept_mastiges_desc: "The Mástiges are a new innovation of the new Narsid revival. Armed with newly discovered and utilized black powders, the Mástiges are the penultimate [hoplites|E] of the current era, feared and formidable force on the battlefield and known for their ruthlessness and effectiveness in combat."
+ game_concept_mastiges_desc: "The Mástiges are a new innovation of the new Narsid revival. Armed with newly discovered and utilized black powders, the Mástiges are the penultimate [hoplites|E] of the current era, feared and formidable force on the battlefield and known for their ruthlessness and effectiveness in combat"
 
 

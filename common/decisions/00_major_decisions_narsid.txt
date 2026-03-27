@@ -159,12 +159,11 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 
 	is_valid = {
 		 # Required if upgrading from Kingdom
-		OR = {
-			prestige_level >= 4
-			piety_level >= 4
-		}
 		OR = {	
-			has_title = title:k_narsokratia
+			AND = {
+				prestige_level >= 4
+				has_title = title:k_narsokratia
+			}
 			highest_held_title_tier = tier_empire
 		}
 		OR = {

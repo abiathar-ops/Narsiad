@@ -119,14 +119,8 @@ decision_develop_industry = {
 	}
 
 	is_valid = {
-		OR = {
-			prestige_level >= 2
-			piety_level >= 2
-		}
-		AND = {
-			is_at_war = no
-			is_imprisoned = no
-		}
+		is_at_war = no
+		is_imprisoned = no
 	}
 
 	is_valid_showing_failures_only = {
@@ -226,14 +220,8 @@ decision_spy_network = {
 	}
 
 	is_valid = {
-		OR = {
-			prestige_level >= 2
-			piety_level >= 2
-		}
-		is_ruler = yes
 		is_at_war = no
-		culture = { has_cultural_pillar = heritage_nars }	
-		highest_held_title_tier >= tier_duchy
+		is_imprisoned = no
 	}
 
 	is_valid_showing_failures_only = {

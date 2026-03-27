@@ -62,8 +62,6 @@ innovation_narsid_maa_02 = {
 		toughness = 5
 	}
 
-	custom = unlock_optimates
-
 	flag = global_maa
 	flag = culture_era_high_medieval
 }

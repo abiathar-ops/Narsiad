@@ -176,7 +176,6 @@ narsid_artifact.1001 = {
 				}
 			}
 		}
-		trigger_event = narsid_artifact.1004
 	}
 }
 
@@ -240,7 +239,7 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 				value = root
 			}
 		}
-
+		trigger_event = narsid_artifact.1004
 	}
 }
 

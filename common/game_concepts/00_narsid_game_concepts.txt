@@ -9,11 +9,6 @@ hoplites = {
 	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
 }
 
-optimates = {
-	parent = hoplites
-	texture = "gfx/interface/icons/regimenttypes/optimates.dds"
-}
-
 mastiges = {
 	parent = hoplites
 	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
