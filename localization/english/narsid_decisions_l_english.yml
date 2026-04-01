@@ -2,7 +2,7 @@
  decision_group_type_narsid: "Narsid Decisions"
 
  #Minor Decisions
- decision_develop_industry: "Develop the Narsid Industry"
+ decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to develop it into the most prosperous [domain|E] in the world. This [region|E] has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived [realm|E] and their [menofnars|E]!" 
  decision_develop_industry_confirm: "Let the forges roar!"
@@ -38,14 +38,15 @@
  pick_aretaic_school_barony_confirm: "Clear the grounds"
  pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 
- decision_munitions_research: "Prepare Novel Munitions"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A blackish hue, this secretive powder could be reliably deployed if researched properly. Perhaps we may sponsor alchemical miracles to be manufactured, and in their wake new [armies|E] be armed for [war|E]."
+ decision_munitions_research: "Prepare Novel Armaments"
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A powder of blackish hue that is known to be volatile and dangerous, this secretive essence could be reliably deployed if researched properly. Perhaps we may sponsor alchemical miracles to be manufactured, and in their wake new [armies|E] be armed for [war|E]."
  decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] armed with that most unpredictable and jealously-guarded of new weapons."
- decision_munitions_research_confirm: "Blood and iron!"
+ decision_munitions_research_confirm: "Blood and iron"
 
  munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
- munitions_research_3_years_tooltip: "If you complete a [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#! and can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
- munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#! and can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
+ munitions_research_3_years_tooltip: "If you complete a [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
+ munitions_research_mastiges_tooltip: "Gain a loyal [army|E] of [GetMaA('maa_mastiges').GetName] as [special_troops|E]"
+ munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
 
  narsid_realm.1031.t: "Naptha, Quicklime... and Temerity"
  narsid_realm.1031.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by [ROOT.Char.GetFaith.HighGodName], and entrusted through siege and assault for [ROOT.Char.GetFaith.PositiveAfterLife].\n\nIf [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold, unrefined weaponries!\n\nWhere are my swift [GetMaA('maa_mastiges').GetName]? Where are clever craftsmen like [Glossary( 'Ars', 'ARS_GLOSS' )], who will forge great death-projectors to spit sparks over my enemies?"

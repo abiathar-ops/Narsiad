@@ -345,6 +345,15 @@ scripted_effect munitions_research_success_effect = {
 			years = 30
 		}
 	}
+	spawn_army = {
+		levies = 125
+		men_at_arms = {
+			type = maa_mastiges
+			men = 250
+		}
+		location = root.capital_province
+		name = mastiges
+	}
 }
 
 # Success

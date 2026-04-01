@@ -376,6 +376,7 @@ decision_munitions_research = {
 
 	effect = {
 		custom_tooltip = munitions_research_3_years_tooltip
+		custom_tooltip = munitions_research_mastiges_tooltip
 		trigger_event = narsid_realm.1031
 	}
 

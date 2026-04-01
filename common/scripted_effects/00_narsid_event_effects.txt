@@ -57,6 +57,6 @@ munitions_research_scheme_prep_effect = {
 		limit = {
 			NOT = { exists = scope:suppress_next_event }
 		}
-		scheme_owner = { trigger_event = munitions_moments.0002 }
+		scheme_owner = { trigger_event = munitions_moments.1060 }
 	}
 }
