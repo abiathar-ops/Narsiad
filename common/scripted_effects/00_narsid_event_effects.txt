@@ -1,33 +1,32 @@
 intro_standard_effect = {
-		#add_stress = major_stress_loss
-		add_character_modifier = {
-			modifier = intro_standard_modifier
-			days = 30
-		}
+	add_character_modifier = {
+		modifier = intro_standard_modifier
+		days = 30
+	}
 }
 
 libation_standard_effect = { 
-		add_stress = medium_stress_loss
-		add_character_modifier = {
-			modifier = libation_standard_modifier
-			years = 2
-		}
+	add_stress = medium_stress_loss
+	add_character_modifier = {
+		modifier = libation_standard_modifier
+		years = 2
+	}
 }
 
 libation_good_effect = {
-		add_stress = major_stress_loss
-		add_character_modifier = {
-			modifier = libation_good_modifier
-			years = 2
-		}
+	add_stress = major_stress_loss
+	add_character_modifier = {
+		modifier = libation_good_modifier
+		years = 2
+	}
 }
 
 libation_bad_effect = {
-		add_stress = medium_stress_loss
-		add_character_modifier = {
-			modifier = libation_bad_modifier
-			years = 2
-		}
+	add_stress = medium_stress_loss
+	add_character_modifier = {
+		modifier = libation_bad_modifier
+		years = 2
+	}
 }
 
 h_narsokratia_effect = {
@@ -42,8 +41,8 @@ h_narsokratia_effect = {
 
 h_narsokratia_effect_2 = {
 	add_character_modifier = {
-			modifier = intro_standard_modifier
-			days = 30
+		modifier = intro_standard_modifier
+		days = 30
 	}
 }
 
@@ -51,12 +50,88 @@ munitions_research_scheme_prep_effect = {
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
-		value = event_id:narsid_realm.1031
+		value = event_id:munitions_moments.1060
 	}
 	if = {
 		limit = {
 			NOT = { exists = scope:suppress_next_event }
 		}
-		scheme_owner = { trigger_event = munitions_moments.1060 }
+		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
+	}
+}
+
+# ── FIXED: scope:capital is now saved before calling this effect ──
+munitions_research_success_effect = {
+	scope:capital = {
+		add_county_modifier = {
+			modifier = munitions_research_modifier
+			desc = munitions_research_modifier_desc
+			years = 30
+		}
+	}
+	spawn_army = {
+		men_at_arms = {
+			type = maa_mastiges
+			men = 735
+		}
+		location = root.capital_province
+		name = mastiges
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  TIERED VASSAL CONVERSION EFFECTS
+#  Called by the three title-creation scripted effects.
+#  Each tier converts more vassals and does more to their government.
+# ─────────────────────────────────────────────────────────────────
+
+# Kingdom tier: ~30 % chance per AI vassal ruler converts faith.
+narsid_kingdom_vassal_conversion_effect = {
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 30
+			set_character_faith = root.faith
+		}
+	}
+}
+
+# Empire tier: ~60 % faith conversion + ALL vassals get administrative government.
+narsid_empire_vassal_conversion_effect = {
+	every_vassal = {
+		# Faith: majority converts
+		limit = { is_ai = yes }
+		random = {
+			chance = 60
+			set_character_faith = root.faith
+		}
+	}
+	# Government: all vassals flipped to administrative
+	every_vassal = {
+		limit = {
+			NOT = { government_has_flag = government_is_administrative }
+		}
+		change_government = administrative_government
+	}
+}
+
+# Hegemony tier: FULL government conversion + direct vassals' faith converted.
+# Full culture/faith conversion of sub-vassals is handled by the
+# separate decision_great_conversion decision.
+narsid_hegemony_vassal_conversion_effect = {
+	# Government: every vassal in the realm
+	every_vassal = {
+		limit = {
+			NOT = { government_has_flag = government_is_administrative }
+		}
+		change_government = administrative_government
+	}
+	# Faith: direct vassals only (liege = root)
+	every_vassal = {
+		limit = {
+			liege = root
+			is_ai = yes
+		}
+		set_character_faith = root.faith
 	}
 }

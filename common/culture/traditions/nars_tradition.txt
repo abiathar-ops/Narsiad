@@ -77,7 +77,6 @@ tradition_nars_science = {
     category = societal
     layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
     parameters = {
-        can_author_books = yes
         innovation_from_learning_traits = yes
         tells_stories = yes
         can_recruit_prisoners_easily = yes

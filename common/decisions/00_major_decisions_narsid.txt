@@ -1,4 +1,4 @@
-decision_h_narsokratia = { #Narsil and e_narsokratia
+decision_h_narsokratia = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
@@ -20,10 +20,10 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	is_shown = {
 		is_ruler = yes
 		is_narsid = yes
-		has_title = title:e_narsokratia # Only the Narsid Empire can see the Hegemony decision
+		has_title = title:e_narsokratia
 		top_liege = this
 		NOT = { has_title = title:h_narsokratia }
-		NOT = {  #Can only do it once.
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_h_narsokratia_decision
@@ -32,10 +32,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 	}
 
 	is_valid = {
-		OR = {
-			prestige_level >= 5
-			piety_level >= 5
-		}
+		prestige_level >= 5
 		has_title = title:e_narsokratia
 		AND = {
 			custom_description = {
@@ -76,18 +73,14 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 		treasury = {
 			value = 2500
 			if = {
-				limit = {
-					has_treasury = no
-				}
+				limit = { has_treasury = no }
 				multiply = 0
 			}
 		}
 		piety = {
 			value = 1250
 			if = {
-				limit = {
-					government_has_flag = government_is_nomadic
-				}
+				limit = { government_has_flag = government_is_nomadic }
 				multiply = 0
 			}
 		}
@@ -97,8 +90,9 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
 		add_trait = nars_trait
-		change_government = administrative_government
+		# ── REMOVED: local_assimilate_narsid_traditions_effect moved to decision_great_conversion ──
 		hidden_effect = {
+			change_government = administrative_government
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_h_narsokratia_decision
@@ -107,19 +101,10 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 				name = flag_h_narsokratia_decision
 				value = root
 			}
-			local_assimilate_narsid_traditions_effect = {
-				OLD_CULTURE = root.culture 
-				NEW_CULTURE = root.culture
-				OLD_FAITH = root.faith
-				NEW_FAITH = root.faith
-				CONVERTER = root
-			}
 		}
 	}
 		
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 100
@@ -127,7 +112,7 @@ decision_h_narsokratia = { #Narsil and e_narsokratia
 }
 
 
-decision_e_narsokratia = { #foundry and k_narsokratia
+decision_e_narsokratia = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
@@ -151,30 +136,29 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		NOT = { has_title = title:e_narsokratia }
 		NOT = { has_title = title:h_narsokratia }
 		OR = {
-			has_title = title:k_narsokratia # Narsid Kingdoms can see it
-			highest_held_title_tier = tier_empire # Generic Empires can see it
+			has_title = title:k_narsokratia
+			highest_held_title_tier = tier_empire
 		}
 		top_liege = this
 	}
 
 	is_valid = {
-		 # Required if upgrading from Kingdom
+		prestige_level >= 4
 		OR = {	
 			AND = {
-				prestige_level >= 4
 				has_title = title:k_narsokratia
-			}
-			highest_held_title_tier = tier_empire
-		}
-		OR = {
-			custom_description = {
-				text = found_e_narsokratia_decision_three_kingdoms_held
-				any_held_title = {
-					count >= 3
-					title_tier = kingdom
+				OR = {
+					custom_description = {
+						text = found_e_narsokratia_decision_three_kingdoms_held
+						any_held_title = {
+							count >= 3
+							title_tier = kingdom
+						}
+					}
+					sub_realm_size >= 80
 				}
 			}
-			sub_realm_size >= 80
+			highest_held_title_tier = tier_empire
 		}
 	}
 
@@ -200,18 +184,14 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		treasury = {
 			value = 1250
 			if = {
-				limit = {
-					has_treasury = no
-				}
+				limit = { has_treasury = no }
 				multiply = 0
 			}
 		}
 		piety = {
 			value = 625
 			if = {
-				limit = {
-					government_has_flag = government_is_nomadic
-				}
+				limit = { government_has_flag = government_is_nomadic }
 				multiply = 0
 			}
 		}
@@ -221,6 +201,7 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		change_government = administrative_government
 		custom_tooltip = decision_e_narsokratia_effect_tooltip
 		create_narsid_empire_effect = yes
+		# ── NOTE: ~60% faith conversion + administrative govt handled inside create_narsid_empire_effect ──
 		if = {
 			limit = {
 				is_ai = no
@@ -237,9 +218,7 @@ decision_e_narsokratia = { #foundry and k_narsokratia
 		}
 	}
 	
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 100
@@ -268,35 +247,29 @@ decision_k_narsokratia = {
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
 		top_liege = this
-		highest_held_title_tier <= tier_kingdom # Only generic Kingdoms & Duchies can see this
+		highest_held_title_tier <= tier_kingdom
 		NOT = { has_title = title:k_narsokratia }
 		NOT = { has_title = title:e_narsokratia }
 		NOT = { has_title = title:h_narsokratia }
 	}
 
 	is_valid = {
-		OR = {
-			prestige_level >= 3
-			piety_level >= 3
-		}
+		prestige_level >= 3
 		OR = {
 			highest_held_title_tier = tier_kingdom
 			OR = {
-			custom_description = {
-				text = found_kingdom_decision_three_duchies_held
-				any_held_title = {
-					count > 2
-					title_tier = duchy
+				custom_description = {
+					text = found_kingdom_decision_three_duchies_held
+					any_held_title = {
+						count > 2
+						title_tier = duchy
+					}
 				}
-			}
-			sub_realm_size >= 30
+				sub_realm_size >= 30
 			}
 		}
-		
 		trigger_if = {
-			limit = {
-				government_has_flag = government_is_nomadic
-			}
+			limit = { government_has_flag = government_is_nomadic }
 			OR = {
 				has_realm_law = nomadic_authority_5
 				has_realm_law = nomadic_authority_4
@@ -326,18 +299,14 @@ decision_k_narsokratia = {
 		treasury = {
 			value = 350
 			if = {
-				limit = {
-					has_treasury = no
-				}
+				limit = { has_treasury = no }
 				multiply = 0
 			}
 		}
 		piety = {
 			value = 125
 			if = {
-				limit = {
-					government_has_flag = government_is_nomadic
-				}
+				limit = { government_has_flag = government_is_nomadic }
 				multiply = 0
 			}
 		}
@@ -346,6 +315,7 @@ decision_k_narsokratia = {
 	effect = {
 		custom_tooltip = decision_k_narsokratia_effect_tooltip
 		create_narsid_kingdom_effect = yes
+		# ── NOTE: ~30% faith conversion handled inside create_narsid_kingdom_effect ──
 		if = {
 			limit = {
 				is_ai = no
@@ -362,17 +332,113 @@ decision_k_narsokratia = {
 		}
 	}
 
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 100
 	}
 }
 
-##Narsil and required decision
+# ─────────────────────────────────────────────────────────────────
+#  GREAT CONVERSION  —  post-hegemony full culture+faith sweep
+#  Replaces the conversion that was previously baked into decision_h_narsokratia.
+#  Can only be done once globally.
+# ─────────────────────────────────────────────────────────────────
+decision_great_conversion = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+	}
+	desc = decision_great_conversion_desc
+	selection_tooltip = decision_great_conversion_tooltip
+	decision_group_type = narsid
+	sort_order = 975
 
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 0
+		hegemony = 180
+	}
+
+	is_shown = {
+		is_narsid = yes
+		has_title = title:h_narsokratia
+		top_liege = this
+		is_capable_adult = yes
+		is_landed = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_great_conversion_decision
+			}
+		}
+	}
+
+	is_valid = {
+		piety_level >= 4
+		prestige_level >= 4
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	cost = {
+		piety = 2000
+		prestige = 1000
+		gold = {
+			value = 1500
+			if = {
+				limit = { has_treasury = yes }
+				multiply = 0
+			}
+		}
+		treasury = {
+			value = 1500
+			if = {
+				limit = { has_treasury = no }
+				multiply = 0
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_great_conversion_effect_tooltip
+		hidden_effect = {
+			# Full culture AND faith sweep of the entire realm
+			local_assimilate_narsid_traditions_effect = {
+				OLD_CULTURE = root.culture
+				NEW_CULTURE = root.culture
+				OLD_FAITH = root.faith
+				NEW_FAITH = root.faith
+				CONVERTER = root
+			}
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_great_conversion_decision
+			}
+			set_global_variable = {
+				name = flag_great_conversion_decision
+				value = root
+			}
+		}
+		trigger_event = { id = narsid_realm.2021 days = 1 }
+	}
+
+	ai_potential = { always = yes }
+
+	ai_will_do = {
+		base = 50
+		modifier = {
+			add = 50
+			piety_level >= 5
+		}
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  NARSIL + ARETAIC SCHOOL (unchanged)
+# ─────────────────────────────────────────────────────────────────
 decision_mend_narsil = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/mythology.dds"
@@ -383,11 +449,11 @@ decision_mend_narsil = {
 
 	is_shown = {
 		is_narsid = yes
-		has_title = title:e_narsokratia # Only the Narsid Empire can see it
+		has_title = title:e_narsokratia
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
-		NOT = {  #Can only do it once.
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_mend_narsil_decision
@@ -397,11 +463,14 @@ decision_mend_narsil = {
 
 	is_valid = {
 		gold >= major_treasury_or_gold_value
-		OR = {
-			prestige_level >= 4
-			piety_level >= 4
-		}
 		is_imprisoned = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		top_liege = this
+		is_available_adult = yes
+		is_at_war = no
 	}
 	
 	sort_order = 900
@@ -413,18 +482,106 @@ decision_mend_narsil = {
 		}
 	}
 
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 100
 	}
 }
 
+decision_munitions_research = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/mythology.dds"
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
+
+	sort_order = 860
+
+	desc = decision_munitions_research_desc
+	selection_tooltip = decision_munitions_research_tooltip
+	decision_group_type = narsid
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes
+		has_multiple_players = no
+		is_narsid = yes
+		is_ruler = yes
+		OR = {
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+	}
+
+	is_valid = {
+		custom_tooltip = {
+			text = munitions_research_capital_unoccupied_tt
+			capital_province = { is_occupied = no }
+		}
+		OR = {
+			influence >= major_influence_value
+			gold >= major_gold_value_static_max
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+		NOT = { exists = involved_activity }
+	}
+
+	cooldown = { years = 10 }
+
+	effect = {
+		custom_tooltip = munitions_research_3_years_tooltip
+		custom_tooltip = munitions_research_mastiges_tooltip
+		trigger_event = narsid_realm.1031
+	}
+
+	ai_potential = {
+		NOT = { has_trait = compassionate }
+		OR = {
+			gold >= massive_gold_value
+			influence >= massive_influence_value
+		}
+	}
+
+	ai_will_do = {
+		base = 20
+		ai_value_modifier = { ai_compassion = -1 }
+		modifier = {
+			OR = {
+				has_trait = paranoid
+				has_trait = craven
+			}
+			add = 30
+		}
+		modifier = {
+			OR = {
+				martial > high_skill_rating
+				learning > high_skill_rating
+			}
+			add = 20
+		}
+		modifier = {
+			OR = {
+				has_trait = calm
+				has_trait = content
+			}
+			add = -20
+		}
+	}
+}
+
 decision_establish_aretaic_school = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
 	decision_group_type = narsid
 	desc = decision_establish_aretaic_school_desc
@@ -438,7 +595,7 @@ decision_establish_aretaic_school = {
 			has_title = title:e_narsokratia
 			has_title = title:h_narsokratia
 		}
-		NOT = { exists = global_var:established_aretaic_school } # Can only be built once globally
+		NOT = { exists = global_var:established_aretaic_school }
 	}
 
 	is_valid = {
@@ -446,7 +603,6 @@ decision_establish_aretaic_school = {
 			prestige_level >= 4
 			learning >= 25
 		}
-		# Ensure they actually own a barony that can hold a special building
 		custom_tooltip = {
 			text = establish_aretaic_school_no_barony_tt
 			any_held_title = {
@@ -475,12 +631,11 @@ decision_establish_aretaic_school = {
 
 pick_aretaic_school_barony = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_golden_age.dds"
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
 	decision_group_type = narsid
 	ai_goal = yes
 	is_invisible = yes
-	
 	
 	widget = {
 		controller = create_holy_order 
@@ -500,7 +655,6 @@ pick_aretaic_school_barony = {
 			name = established_aretaic_school
 			value = yes
 		}
-
 		hidden_effect = {
 			scope:barony.title_province = {
 				set_variable = {
@@ -513,4 +667,52 @@ pick_aretaic_school_barony = {
 	}
 	
 	ai_potential = { always = no }
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  EVANGELIZE THE STATE FAITH
+#  Repeatable decision for Kingdom/Empire tiers.
+# ─────────────────────────────────────────────────────────────────
+decision_narsid_evangelize_vassals = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = narsid_2
+	sort_order = 650
+	cooldown = { years = 10 }
+
+	is_shown = {
+		is_narsid = yes
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+		}
+	}
+
+	is_valid = {
+		piety_level >= 2
+		is_imprisoned = no
+	}
+
+	cost = {
+		piety = 250
+		gold = 100
+	}
+
+	effect = {
+		custom_tooltip = decision_narsid_evangelize_vassals_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = { has_title = title:e_narsokratia }
+				narsid_empire_vassal_conversion_effect = yes
+			}
+			else_if = {
+				limit = { has_title = title:k_narsokratia }
+				narsid_kingdom_vassal_conversion_effect = yes
+			}
+		}
+	}
+	
 }

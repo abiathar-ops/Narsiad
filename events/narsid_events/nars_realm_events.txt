@@ -1,7 +1,7 @@
 namespace = narsid_realm
+namespace = munitions_moments
 
-# Building-based events
-narsid_realm.1001 = { #Develop Industry
+narsid_realm.1001 = {
 	type = character_event
 
 	title = narsid_realm.1001.t
@@ -24,12 +24,12 @@ narsid_realm.1001 = { #Develop Industry
 			}
 		}
 	}
-	option = { # We still have work to do...
+	option = {
 		name = narsid_realm.1001.a
 	}
 }
 
-narsid_realm.1011 = { #Spy Network
+narsid_realm.1011 = {
 	type = character_event
 
 	title = narsid_realm.1011.t
@@ -49,17 +49,17 @@ narsid_realm.1011 = { #Spy Network
 			title_tier = county
 			add_county_modifier = {
 				modifier = spy_network_province_modifier
-				years = 5
+				years = 10
 			}
 		}
 	}
 
-	option = { # We still have work to do...
+	option = {
 		name = narsid_realm.1011.a
 	}
 }
 
-narsid_realm.1021 = { #Bigamy
+narsid_realm.1021 = {
 	type = character_event
 
 	title = narsid_realm.1021.t
@@ -74,7 +74,7 @@ narsid_realm.1021 = { #Bigamy
 		animation = personality_rational
 	}
 
-	option = { # Establish bigamy
+	option = {
 		name = narsid_realm.1021.a
 		hidden_effect = {
 			faith = {
@@ -95,7 +95,7 @@ narsid_realm.1021 = { #Bigamy
 		}
 	}
 
-	option = { # Establish trigamy - piety
+	option = {
 		name = narsid_realm.1021.b
 		hidden_effect = {
 			faith = {
@@ -121,12 +121,17 @@ narsid_realm.1021 = { #Bigamy
 	}
 }
 
-narsid_realm.1031 = { #Munitions Research (Empire)
+# ─────────────────────────────────────────────────────────────────
+#  MUNITIONS RESEARCH  –  FIXED
+#  - Replaced begin_scheme_with_agents_effect with start_scheme
+#  - Removed broken save_scope_as = actor calls
+# ─────────────────────────────────────────────────────────────────
+narsid_realm.1031 = {
 	type = character_event
 	title = narsid_realm.1031.t
 	desc = narsid_realm.1031.desc
 	theme = emperor
-	override_background = { reference = docks }
+	override_background = { reference = army_camp }
 	
 	left_portrait = {
 		character = root
@@ -138,7 +143,6 @@ narsid_realm.1031 = { #Munitions Research (Empire)
 	}
 
 	immediate = {
-		# Find an interlocutor
 		if = {
 			limit = { exists = cp:councillor_marshal }
 			cp:councillor_steward = { save_scope_as = aide }
@@ -148,28 +152,18 @@ narsid_realm.1031 = { #Munitions Research (Empire)
 			cp:councillor_chancellor = { save_scope_as = aide }
 		}
 		else_if = {
-			limit = {
-				any_councillor = { } 
-			}
-			random_councillor = {
-				save_scope_as = aide
-			}
+			limit = { any_councillor = { } }
+			random_councillor = { save_scope_as = aide }
 		}
 		else_if = {
-			limit = {
-				vassal_count >= 1
-			}
+			limit = { vassal_count >= 1 }
 			ordered_vassal = {
 				order_by = martial
 				save_scope_as = aide
 			}
 		}
 		else_if = {
-			limit = {
-				any_courtier = {
-					is_alive = yes
-				}
-			}
+			limit = { any_courtier = { is_alive = yes } }
 			ordered_courtier = {
 				order_by = martial
 				save_scope_as = aide
@@ -178,9 +172,7 @@ narsid_realm.1031 = { #Munitions Research (Empire)
 		else = {
 			random_pool_character = {
 				province = root.capital_province
-				limit = {
-					is_adult = yes
-				}
+				limit = { is_adult = yes }
 				save_scope_as = aide
 			}
 		}
@@ -310,7 +302,6 @@ munitions_moments.1060 = {
 		scope:scheme = {
 			scheme_owner = {
 				save_scope_as = owner
-				#SUCCESS ROLL
 				random = {
 					chance = scope:scheme.scheme_success_chance
 					save_scope_value_as = {
@@ -337,46 +328,25 @@ munitions_moments.1060 = {
 	}
 }
 
-scripted_effect munitions_research_success_effect = {
-	scope:capital = {
-		add_county_modifier = {
-			modifier = munitions_research_modifier
-			desc = munitions_research_modifier_desc
-			years = 30
-		}
-	}
-	spawn_army = {
-		levies = 125
-		men_at_arms = {
-			type = maa_mastiges
-			men = 250
-		}
-		location = root.capital_province
-		name = mastiges
-	}
-}
-
-# Success
+# ── FIXED: scope:capital saved before calling munitions_research_success_effect ──
 munitions_moments.1061 = {
 	type = character_event
 	title = munitions_moments.1061.t
 	desc = munitions_moments.1061.desc
 	theme = emperor
-	override_background = {
-		reference = docks
-	}
+	override_background = { reference = army_camp }
 	widget = {
 		gui = "event_window_widget_vfx_heavy_smoke"
 		container = "foreground_shader_vfx_container"
 	}
 	left_portrait = {
 		character = root
-		animation = eccentric
+		animation = schadenfreude
 	}
 
 	immediate = {
-		title:c_byzantion = {
-			save_scope_as = byzantion
+		root.capital_county = {
+			save_scope_as = capital
 		}
 		munitions_research_success_effect = yes
 	}
@@ -387,15 +357,12 @@ munitions_moments.1061 = {
 	}
 }
 
-# Failure
 munitions_moments.1062 = {
 	type = character_event
 	title = munitions_moments.1062.t
 	desc = munitions_moments.1062.desc
 	theme = emperor
-	override_background = {
-		reference = docks
-	}
+	override_background = { reference = army_camp }
 	widget = {
 		gui = "event_window_widget_vfx_heavy_smoke"
 		container = "foreground_shader_vfx_container"
@@ -417,14 +384,13 @@ munitions_moments.1062 = {
 		}
 	}
 
-	#Option A: Too bad
 	option = {
 		name = munitions_moments.1062.a
 		scope:scheme = { end_scheme = yes }
 	}
 }
 
-# Narsokratia-based events
+# ── NARSOKRATIA TITLE EVENTS ──
 
 narsid_realm.2001 = {
 	type = character_event
@@ -432,7 +398,6 @@ narsid_realm.2001 = {
 	title = narsid_realm.2001.t
 	desc = narsid_realm.2001.desc
 	theme = emperor
-	
 	override_background = { reference = fp3_fullscreen_rekindle }
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 	
@@ -452,20 +417,16 @@ narsid_realm.2011 = {
 	title = narsid_realm.2011.t
 	desc = narsid_realm.2011.desc
 	theme = emperor
-	
 	override_background = ce1_fullscreen_legitimizing_legend
 	override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = personality_callous
 		camera = camera_center_large
 	}
-	
 	immediate = {
 		h_narsokratia_effect_2 = yes
 	}
-
 	option = { 
 		name = narsid_realm.2011.a
 	}
@@ -477,16 +438,13 @@ narsid_realm.2002 = {
 	title = narsid_realm.2002.t
 	desc = narsid_realm.2002.desc
 	theme = emperor
-	
 	override_background = throne_room_india
 	override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = frontend_center_idle
 		camera = camera_center_large
 	}
-
 	option = { 
 		name = narsid_realm.2002.a
 	}
@@ -498,18 +456,35 @@ narsid_realm.2003 = {
 	title = narsid_realm.2003.t
 	desc = narsid_realm.2003.desc
 	theme = emperor
-	
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = chancellor
 		camera = camera_center_large
 	}
-
 	option = { 
 		name = narsid_realm.2003.a
 	}
 }
 
+# ── GREAT CONVERSION celebration event ──
+narsid_realm.2021 = {
+	type = character_event
+	window = fullscreen_event
+	title = narsid_realm.2021.t
+	desc = narsid_realm.2021.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_sunder }
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+		camera = camera_center_large
+	}
+
+	option = {
+		name = narsid_realm.2021.a
+	}
+}

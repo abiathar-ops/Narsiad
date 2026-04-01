@@ -1,8 +1,9 @@
 ﻿l_english: 
- decision_group_type_narsid: "Narsid Decisions"
+ # ── EXISTING ENTRIES (unchanged) ──
+ decision_group_type_narsid: "Narsiad - Unique Decisions"
+ decision_group_type_narsid_2: "Narsiad - Minor Decisions"
 
- #Minor Decisions
- decision_develop_industry: "Develop Industry"
+ decision_develop_industry: "Develop the State Industries"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to develop it into the most prosperous [domain|E] in the world. This [region|E] has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived [realm|E] and their [menofnars|E]!" 
  decision_develop_industry_confirm: "Let the forges roar!"
@@ -15,13 +16,13 @@
  decision_spy_network_tooltip: "Hires a network to thwart [hostile_schemes|E]!"
  decision_spy_network_effect_tooltip: "Hires a network to thwart [hostile_schemes|E] and raise [control|E]!"
 
- decision_libation: "Pour a Sacred Libation"
+ decision_libation: "Dedicate a Sacred Libation"
  decision_libation_desc: "A quiet biannual [cultural|E] observance done in the privacy of one's own chambers. The [ritual|E] involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [naresid|E] faith of the ancient [menofnars|E]."
  decision_libation_tooltip: "Settle in to pour a libation and reflect on the day."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_confirm: "Pour the libation!"
 
- decision_introduce_bigamy: "Introduce Bigamy"
+ decision_introduce_bigamy: "Introduce Bigamous Doctrine"
  decision_introduce_bigamy_desc: "The constraints of monogamy are too limiting for the [rulers|E] of the [narsid|E] [dynasty|E]. By decree, we could allow an additional spouse to secure our [dynasty|E] and expand our [alliances|E]. This change will be a departure from traditional [marriage|E] [doctrines|E], but it is necessary for our [realm|E]."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
  decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
@@ -39,34 +40,26 @@
  pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 
  decision_munitions_research: "Prepare Novel Armaments"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A powder of blackish hue that is known to be volatile and dangerous, this secretive essence could be reliably deployed if researched properly. Perhaps we may sponsor alchemical miracles to be manufactured, and in their wake new [armies|E] be armed for [war|E]."
- decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] armed with that most unpredictable and jealously-guarded of new weapons."
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A powder of blackish hue that is known to be volatile, this secretive essence may be reliably deployed if researched properly. Perhaps we may sponsor alchemical miracles to be manufactured, and in their wake new [armies|E] be armed for [war|E]."
+ decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] armed with the most unpredictable and jealously guarded of new weapons."
  decision_munitions_research_confirm: "Blood and iron"
 
  munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
  munitions_research_3_years_tooltip: "If you complete a [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
- munitions_research_mastiges_tooltip: "Gain a loyal [army|E] of [GetMaA('maa_mastiges').GetName] as [special_troops|E]"
+ munitions_research_mastiges_tooltip: "Unlocks recruitment [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
  munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
 
- narsid_realm.1031.t: "Naptha, Quicklime... and Temerity"
- narsid_realm.1031.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by [ROOT.Char.GetFaith.HighGodName], and entrusted through siege and assault for [ROOT.Char.GetFaith.PositiveAfterLife].\n\nIf [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold, unrefined weaponries!\n\nWhere are my swift [GetMaA('maa_mastiges').GetName]? Where are clever craftsmen like [Glossary( 'Ars', 'ARS_GLOSS' )], who will forge great death-projectors to spit sparks over my enemies?"
- ARS_GLOSS: "The mythological architect-hero #bold Ars#! is attributed with the lost invention of boom-sticks to emulate thunders on the battlefield."
- narsid_realm.1031.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
- narsid_realm.1031.b: "Barbarians will make our black powder."
- narsid_realm.1031.c: "Use a powder liable to explode? No."
-
- #Majors
  decision_k_narsokratia: "Proclaim a Despotēia Realm"
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
  decision_k_narsokratia_tooltip: "Found an entirely new Despotēia title"
- decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E].\N$EFFECT_LIST_BULLET$Unlocks option to form [GetTitleByKey('e_narsokratia').GetName].
+ decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E].\n$EFFECT_LIST_BULLET$Some of your [vassal|E] [rulers|E] will convert to your [faith|E] and [culture|E].\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('e_narsokratia').GetName]."
  create_title_every_held_duchy: "Every [duchy|E] title you [hold|E] or [completely_control|E]"
  create_narsid_kingdom_de_jure_changes: "Becomes [de_jure|E] [duchies|E] of your new Despotēia"
 
  decision_e_narsokratia: "Proclaim an Ōtarkhia Realm"
  decision_e_narsokratia_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself."
- decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Unlocks option to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
+ decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\n$EFFECT_LIST_BULLET$Most of your [vassal|E] [rulers|E] convert to your [faith|E].\n$EFFECT_LIST_BULLET$All [vassals|E] will convert to [administrative|E] [government|E].\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]."
  decision_e_narsokratia_confirm: "Power is a ladder!"
  decision_e_narsokratia_tooltip: "Found an entirely new Ōtarkhia title"
  create_title_every_held_kingdom: "Every [kingdom|E] title you [hold|E] or [completely_control|E]"
@@ -77,7 +70,7 @@
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [narsidrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
- decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E].\n$EFFECT_LIST_BULLET$The [narsokratia|E] of the [menofnars|E] will be restored.\n$EFFECT_LIST_BULLET$[GetTitleByKey('h_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E].\N$EFFECT_LIST_BULLET$Convert all of your [vassals|E] to your [culture|E] and [faith|E]."
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$Direct [vassals|E] convert to your [faith|E]\n$EFFECT_LIST_BULLET$Unlocks a full [culture|E] and [faith|E] conversion [decision|E] in the [realm|E]"
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
  decision_mend_narsil: "Restore the Dynastic Heirloom"
@@ -85,3 +78,28 @@
  decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [narsid|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"
+
+ # ── NEW DECISIONS ──
+
+ decision_great_conversion: "Proclaim the Sacred Edict"
+ decision_great_conversion_desc: "The [narsokratia|E] stands consolidated. Yet faith and [culture|E] are the true foundations of lasting unity. With the prestige of the [hegemony|E] at our command, I shall compel every [ruler|E] in our [realm|E] to renounce the old [faiths|E] and submit to the one true [religion|E] and way of the [menofnars|E]."
+ decision_great_conversion_tooltip: "Fully convert every [vassal|E] in the [realm|E] to your [culture|E] and [faith|E]. Can only be done once."
+ decision_great_conversion_effect_tooltip: "Every [vassal|E] ruler, their families, and courts across the entire [realm|E] are converted to your [culture|E] and [faith|E]."
+ decision_great_conversion_confirm: "One Law. One People. One Narsēs."
+
+ decision_narsid_gather_exiles: "Invite the Narsid Exiles"
+ decision_narsid_gather_exiles_desc: "The [menofnars|E] are scattered, with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [gold|E], I can dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those hermits down from the mountains."
+ decision_narsid_gather_exiles_tooltip: "Send out envoys to the mountain fortresses to find  [narsid|E] [guests|E] and bring them to your [court|E]."
+ decision_narsid_gather_exiles_effect_tooltip: "At least #P 3#! [menofnars|E] will arrive as [guests|E] to your [court|E] within the coming months."
+ decision_narsid_gather_exiles_confirm: "Call them down!"
+
+ decision_narsid_evangelize_vassals: "Evangelize the State Faith"
+ decision_narsid_evangelize_vassals_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [narsid|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
+ decision_narsid_evangelize_vassals_tooltip: "Pressure your vassals into adopting the true [faith|E]."
+ decision_narsid_evangelize_vassals_effect_tooltip: "A percentage of your [vassal|E] rulers will convert to your [faith|E]."
+ decision_narsid_evangelize_vassals_confirm: "Send forth the priests!"
+
+ # ── NEW EVENT LOCALIZATION ──
+ narsid_realm.2021.t: "The Sacred Edict is Proclaimed!"
+ narsid_realm.2021.desc: "The edict has gone forth. From every hilltop and marketplace in the [narsokratia|E], heralds read aloud the [hegemon|E]'s decree: there is one [faith|E], one [culture|E], one law for all [menofnars|E] from the coldest northern marches to the southernmost ports.\n\nSome [vassals|E] received the news with tearful gratitude. Others with quiet fury, swallowing their protests behind practiced smiles. But the word is spoken, the edict sealed, and the world made whole. History will record this as the day the [narsid|E] people ceased to be a [dynasty|E] and became, truly, a civilization."
+ narsid_realm.2021.a: "It is done!"

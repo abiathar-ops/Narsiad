@@ -1,30 +1,22 @@
 ### Narsid Events ###
-#			narsid_realm.1000-1100	Narsid building event
-#			narsid_racial.1000-1100		Narsid race events
-#			narsid.1200-1299		Narsid racial events
-
 namespace = narsid_intro
 
-narsid_intro.1001 = { # Background (Unused rn)
+narsid_intro.1001 = {
 	type = character_event
-	window = fullscreen_event #big_event_window
+	window = fullscreen_event
 	title = narsid_intro.1001.t
 	desc = narsid_intro.1001.desc
 	theme = emperor
 	override_background = { reference = fp3_fullscreen_sunder }
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
-	#override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = grief
 		camera = camera_center_large
 	}
-	#immediate = {
-		#add_stress = major_stress_gain
-	#}
-	option = { # Hark
+
+	option = {
 		name = narsid_intro.1001.a
 		trigger_event = narsid_intro.1002
 	}
@@ -36,21 +28,17 @@ narsid_intro.1002 = {
 	title = narsid_intro.1002.t
 	desc = narsid_intro.1002.desc
 	theme = emperor
-	
 	override_background = ce1_fullscreen_legitimizing_legend
 	override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = personality_bold
 		camera = camera_center_large
 	}
-	
 	immediate = {
 		intro_standard_effect = yes
 	}
-
-	option = { # Hark
+	option = {
 		name = narsid_intro.1002.a
 		create_anduril_effect = yes
 	}
@@ -63,24 +51,27 @@ narsid_battle.1001 = {
 	title = narsid_battle.1001.t
 	desc = narsid_battle.1001.desc
 	theme = emperor
-	
 	override_background = battlefield
 	override_effect_2d = { reference = smoke }
-	
 	left_portrait = {
 		character = root
 		animation = horse_surveying
 		camera = camera_center_large
 	}
-
 	option = { 
 		name = narsid_battle.1001.a
 	}
 }
 
-#Artifact
+# ─────────────────────────────────────────────────────────────────
+#  NARSIL REFORGING EVENTS
+#  1001 → choice (sacrifice or gold)
+#  1002 → blood ritual result  (DELAY: 30 days — faster, brutal)
+#  1003 → gold ritual result   (DELAY: 180 days — slower, costly)
+#  1004 → Narsíl reforged (fanfare)
+# ─────────────────────────────────────────────────────────────────
 namespace = narsid_artifact
-#Narsil
+
 narsid_artifact.1001 = {
 	type = character_event
 
@@ -99,8 +90,10 @@ narsid_artifact.1001 = {
 	immediate = {
 		play_music_cue = mx_cue_touching_moment
 	}
-	option = { # We still have work to do...
-		name = narsid_artifact.1001.a #Sacrifice Courtiers
+
+	option = {
+		# Sacrifice courtiers — brutal but FAST (30 days)
+		name = narsid_artifact.1001.a
 		give_nickname = nick_the_bloody
 		add_dread = 50
 		stress_impact = {
@@ -108,18 +101,12 @@ narsid_artifact.1001 = {
 			compassionate = miniscule_stress_impact_gain
 			content = miniscule_stress_impact_gain
 		}
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				OR = {
-					has_trait = compassionate
-					has_trait = calm
-					has_trait = content
-				}
+		hidden_effect = {
+			# ── DELAY ADDED: 30 days ──
+			trigger_event = {
+				id = narsid_artifact.1002
+				days = 30
 			}
-		}		hidden_effect = {
-		trigger_event = narsid_artifact.1002
 		}
 		random_courtier_or_guest = {
 			limit = {
@@ -135,14 +122,30 @@ narsid_artifact.1001 = {
 				killer = root
 			}
 		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = compassionate
+					has_trait = calm
+					has_trait = content
+				}
+			}
+		}
 	}
 
 	option = {
-		name = narsid_artifact.1001.b #Buy Blood and Wait
+		# Spend gold & rare materials — measured but SLOW (120 days)
+		name = narsid_artifact.1001.b
 		give_nickname = nick_the_blessed
 		remove_treasury_or_gold = major_treasury_or_gold_value
 		hidden_effect = {
-			trigger_event = narsid_artifact.1003
+			# ── DELAY ADDED: 120 days ──
+			trigger_event = {
+				id = narsid_artifact.1003
+				days = 120
+			}
 		}
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
@@ -163,8 +166,8 @@ narsid_artifact.1001 = {
 	}
 
 	option = {
-		name = narsid_artifact.1001.c #Nevermind
-		add_stress =  miniscule_stress_impact_gain 
+		name = narsid_artifact.1001.c
+		add_stress = miniscule_stress_impact_gain
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -179,7 +182,7 @@ narsid_artifact.1001 = {
 	}
 }
 
-narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
+narsid_artifact.1002 = {
 	type = character_event
 
 	title = narsid_artifact.1002.t
@@ -195,7 +198,7 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 	}
 
 	option = { 
-		name = narsid_artifact.1002.a #Weapon artifact
+		name = narsid_artifact.1002.a
 		create_narsil_effect = yes
 		hidden_effect = {
 			add_to_global_variable_list = {
@@ -211,7 +214,7 @@ narsid_artifact.1002 = { #Blood sacrifice (+stress, + dread)
 	}
 }
 
-narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
+narsid_artifact.1003 = {
 	type = character_event
 
 	title = narsid_artifact.1003.t
@@ -227,7 +230,7 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 	}
 
 	option = { 
-		name = narsid_artifact.1003.a #Weapon artifact
+		name = narsid_artifact.1003.a
 		create_narsil_effect = yes
 		hidden_effect = {
 			add_to_global_variable_list = {
@@ -243,7 +246,7 @@ narsid_artifact.1003 = { #Alternative blood ritual (-gold + piety)
 	}
 }
 
-narsid_artifact.1004 = { #Narsil reforged
+narsid_artifact.1004 = {
 	type = character_event
 	window = fullscreen_event
 	title = narsid_artifact.1004.t
@@ -253,6 +256,76 @@ narsid_artifact.1004 = { #Narsil reforged
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 
 	option = { 
-		name = narsid_artifact.1004.a #Weapon artifact
+		name = narsid_artifact.1004.a
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  RACIAL (LIBATION) EVENTS
+# ─────────────────────────────────────────────────────────────────
+namespace = narsid_racial
+
+narsid_racial.1001 = {
+	type = character_event
+	title = narsid_racial.1001.t
+	desc = narsid_racial.1001.desc
+	theme = administrative
+	override_background = bp1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = prayer
+		camera = camera_center_large
+	}
+	immediate = {
+		libation_good_effect = yes
+	}
+	option = {
+		name = narsid_racial.1001.a
+		add_piety = 250
+		remove_treasury_or_gold = minor_treasury_or_gold_value
+	}
+}
+
+narsid_racial.1002 = {
+	type = character_event
+	title = narsid_racial.1002.t
+	desc = narsid_racial.1002.desc
+	theme = administrative
+	override_background = bp1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = personality_bold
+		camera = camera_center_large
+	}
+	immediate = {
+		libation_standard_effect = yes
+	}
+	option = {
+		name = narsid_racial.1002.a
+		add_piety = 125
+		remove_treasury_or_gold = minor_treasury_or_gold_value
+	}
+}
+
+narsid_racial.1003 = {
+	type = character_event
+	title = narsid_racial.1003.t
+	desc = narsid_racial.1003.desc
+	theme = administrative
+	override_background = bp1_relaxing_room_mena
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = drink_goblet
+		camera = camera_center_large
+	}
+	immediate = {
+		libation_bad_effect = yes
+	}
+	option = {
+		name = narsid_racial.1003.a
+		remove_treasury_or_gold = medium_treasury_or_gold_value
 	}
 }

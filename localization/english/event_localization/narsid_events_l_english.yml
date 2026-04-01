@@ -49,7 +49,7 @@
 
  narsid_realm.2003.t: "Proclaiming the Despotēia"
  narsid_realm.2003.desc: "While we preserved the flame of our civilized [culture|E], the world below fractured into petty [realms|E]. The squabbling [rulers|E] of this [era|E] mistake their disorganized [domains|E] for true [realms|E]. \n\nToday, as a new [ROOT.Char.GetTitleAsNameNoTooltip], I formalize our [narsid|E] rule, enacting our [cultural|E] [tradition|E] and proclaiming the foundation of a new Despotēia of [narsokratia|E]. When the neighboring lords sent their envoys in their crude fabrics, they looked upon our radiant, terrifying beauty with a mix of absolute awe and [dread|E]. The dark age of this [region|E] has ended. The [narsokratia|E] returns to bring unyielding order to this chaotic earth." 
- narsid_realm.2003.a: "Order Above All!"
+ narsid_realm.2003.a: "Order above all"
 
  narsid_artifact.1001.t: "A Horrifying Dilemma..?"
  narsid_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. 'My [liege|E],' he murmurs, 'the ancient alloy refuses to bind. Mundane fire and hammer are not enough to awaken the legacy within.'\n\nHe hesitates, glancing nervously at the guards. 'There is the old way. The [artifact|E] must be quenched in the lifeblood of the [virtuous|E]. A sacrifice of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we must seek out a more alternative, esoteric reagents to simulate the binding fire, although this is very costly.'"
@@ -68,3 +68,10 @@
  narsid_artifact.1004.t: "An Heirloom Restored!"
  narsid_artifact.1004.desc: "The sacred [artifact|E] [narsil|E] has been restored. The [artifact|E] is whole once more, its edge shimmering with a radiant light that seems to pulse with the essence of our [culture|E].\n\nI force my quivering hands to grip [artifact|E], holding tight this heavy symbol of our renewed [hegemony|E]. As I lift it, a surge of power courses through me, filling me with a sense of invincibility and divine favor. The [artifact|E] is not just a weapon; it is a beacon of hope and a testament to the resilience of our [realm|E].\n\nWith [narsil|E] in hand, I am ready to lead our [menofnars|E] into a new era of glory and conquest. The world will tremble before the might of the [narsid|E] [realm|E], and our [rivals|E] will know the true meaning of [dread|E] when they see our unity. Most importantly, however, the wider [narsid|E] [realm|E] now unequivocally considers me the true heir of our forefather [hegemons|E]!\n\nThe notion towards the restoration of the [narsokratia|E] of old is growing ever stronger, and with it, the promise of a glorious [hegemony|E] for all [menofnars|E]!"
  narsid_artifact.1004.a: "I bear the sword!"
+
+ narsid_realm.1031.t: "Naptha, Quicklime... and Temerity"
+ narsid_realm.1031.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by [ROOT.Char.GetFaith.HighGodName], and entrusted through siege and assault for [ROOT.Char.GetFaith.PositiveAfterLife].\n\nIf [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold, unrefined weaponries!\n\nWhere are my swift [GetMaA('maa_mastiges').GetName]? Where are clever craftsmen like [Glossary( 'Ars', 'ARS_GLOSS' )], who will forge great death-projectors to spit sparks over my enemies?"
+ ARS_GLOSS: "The mythological architect-hero #bold Ars#! is attributed with the lost invention of boom-sticks to emulate thunders on the battlefield."
+ narsid_realm.1031.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
+ narsid_realm.1031.b: "Barbarians will make our black powder."
+ narsid_realm.1031.c: "Use a powder liable to explode? No."

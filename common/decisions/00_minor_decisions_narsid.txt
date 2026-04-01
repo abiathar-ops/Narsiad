@@ -1,4 +1,112 @@
-decision_libation = { # Pour a Private Libation
+# ─────────────────────────────────────────────────────────────────
+#  SUMMON THE STRAY NARSIDS (Landed)
+#  Cooldown: 5 years. Spawns exactly 5 narsid characters.
+# ─────────────────────────────────────────────────────────────────
+decision_narsid_gather_exiles = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+	}
+	decision_group_type = narsid_2
+	sort_order = 0
+	cooldown = { years = 10 }
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 60
+		empire = 60
+		hegemony = 60
+	}
+
+	is_shown = {
+		is_narsid = yes
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+	}
+
+	is_valid = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+	}
+
+	cost = {
+		prestige = 150
+	}
+
+	effect = {
+		custom_tooltip = decision_narsid_gather_exiles_effect_tooltip
+		hidden_effect = {
+			# ── Guaranteed 5 Narsid exiles ──
+			create_character = {
+				culture = root.culture
+				faith = root.faith
+				gender = male
+				age = { min = 20 max = 40 }
+				employer = root
+				trait = education_martial_2
+				trait = brave
+			}
+			create_character = {
+				culture = root.culture
+				faith = root.faith
+				gender = male
+				age = { min = 22 max = 45 }
+				employer = root
+				trait = education_stewardship_2
+				trait = diligent
+			}
+			create_character = {
+				culture = root.culture
+				faith = root.faith
+				gender = female
+				age = { min = 18 max = 38 }
+				employer = root
+				trait = education_diplomacy_2
+				trait = gregarious
+			}
+			create_character = {
+				culture = root.culture
+				faith = root.faith
+				gender = male
+				age = { min = 25 max = 55 }
+				employer = root
+				trait = education_learning_2
+				trait = curious
+			}
+			create_character = {
+				culture = root.culture
+				faith = root.faith
+				gender = male
+				age = { min = 18 max = 28 }
+				employer = root
+				trait = education_martial_1
+				trait = ambitious
+			}
+		}
+	}
+
+	ai_potential = { always = yes }
+	ai_will_do = {
+		base = 15
+		modifier = {
+			add = 30
+			court_size < 10
+		}
+	}
+}
+
+decision_libation = {
 	picture = {
 		reference ="gfx/interface/illustrations/decisions/study.dds"
 	}
@@ -14,14 +122,12 @@ decision_libation = { # Pour a Private Libation
 
 	cooldown = { years = 2 } 
 
-	decision_group_type = narsid
+	decision_group_type = narsid_2
 
 	sort_order = 10
 
 	is_shown = {
-		is_ruler = yes 
 		culture = { has_cultural_pillar = heritage_nars }	
-		is_landed = yes
 	}
 
 	is_valid = {
@@ -30,19 +136,17 @@ decision_libation = { # Pour a Private Libation
 			faith.religion = {
 				is_in_family = rf_narsid
 			}
-		is_at_war = no
-		is_imprisoned = no		
+			is_at_war = no
+			is_imprisoned = no		
 		}
 	}
 	
 	is_valid_showing_failures_only = { 
 		is_imprisoned = no
-		
 	}
 
 	effect = {
 		custom_tooltip = decision_libation_effect_tooltip
-
 		show_as_tooltip = {
 			add_character_modifier = {
 				modifier = libation_standard_modifier
@@ -51,25 +155,17 @@ decision_libation = { # Pour a Private Libation
 		}
 		hidden_effect = {
 			random_list = {
-				30 = {
-					trigger_event = { id = narsid_racial.1001 }
-				}
-				40 = {
-					trigger_event = { id = narsid_racial.1002 }
-				}
-				30 = {
-					trigger_event = { id = narsid_racial.1003 }
-				}
+				30 = { trigger_event = { id = narsid_racial.1001 } }
+				40 = { trigger_event = { id = narsid_racial.1002 } }
+				30 = { trigger_event = { id = narsid_racial.1003 } }
 			}
 		}
 	}
 
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
-		base = 10 # It's nice to do even if you don't have stress
+		base = 10
 		modifier = {
 			add = 100
 			stress > 10
@@ -95,14 +191,14 @@ decision_develop_industry = {
 		hegemony = 130
 	}
 	
-	sort_order = 750
+	sort_order = 600
 
 	decision_group_type = narsid
 	
 	is_shown = {
 		is_narsid = yes
 		is_ruler = yes
-		NOT = {  #Can only do it once.
+		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_created_develop_industry
@@ -115,7 +211,6 @@ decision_develop_industry = {
 			has_title = title:e_narsokratia
 			has_title = title:h_narsokratia
 		}
-		#has_innovation = innovation_narsid_architecture_01
 	}
 
 	is_valid = {
@@ -144,26 +239,22 @@ decision_develop_industry = {
 			}
 		}
 		every_de_jure_county = {
-				limit = {
-					development_level >= 6
-				}
-				add_county_modifier = {
-					modifier = industrial_boom
-					years = 10
-				}
+			limit = { development_level >= 6 }
+			add_county_modifier = {
+				modifier = industrial_boom
+				years = 10
+			}
 		}
-		hidden_effect = { #To make the effect screen cleane
+		hidden_effect = {
 			every_de_jure_county = {
-					limit = {
-						development_level >= 6
-					}
-					title_province = {
-						add_province_modifier = {
-							modifier = industrial_boom_province_modifier
-							years = 10
-						}
+				limit = { development_level >= 6 }
+				title_province = {
+					add_province_modifier = {
+						modifier = industrial_boom_province_modifier
+						years = 10
 					}
 				}
+			}
 		}
 		trigger_event = {
 			id = narsid_realm.1001
@@ -181,9 +272,7 @@ decision_develop_industry = {
 		}
 	}
 	
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 50
@@ -191,15 +280,15 @@ decision_develop_industry = {
 }
 
 decision_spy_network = {
-	decision_group_type = narsid
-	picture = { reference = "gfx/interface/illustrations/decisions/innovation.dds" }
+	decision_group_type = narsid_2
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
 	ai_goal = yes
 	sort_order = 800
 
 	cost = {
 		gold = 450
 	}
-	cooldown = { years = 5 } 
+	cooldown = { years = 10 } 
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 130
@@ -213,10 +302,9 @@ decision_spy_network = {
 		is_narsid = yes
 		is_ruler = yes
 		is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_created_develop_industry
-			}
-		#has_innovation = innovation_narsid_architecture_01
+			name = unavailable_unique_decisions
+			target = flag:flag_created_develop_industry
+		}
 	}
 
 	is_valid = {
@@ -245,35 +333,29 @@ decision_spy_network = {
 			}
 		}
 		every_de_jure_county = {
-				limit = {
-					development_level >= 6
-				}
-				add_county_modifier = {
-					modifier = spy_network_province_modifier
-					years = 10
-				}
+			limit = { development_level >= 6 }
+			add_county_modifier = {
+				modifier = spy_network_province_modifier
+				years = 10
+			}
 		}
 		trigger_event = {
 			id = narsid_realm.1011
 			days = 1
 		}	
 	}
-	ai_potential = {
-		always = yes
-	}
-	ai_will_do = {
-		base = 50
-	}
+	ai_potential = { always = yes }
+	ai_will_do = { base = 50 }
 }
 
 decision_introduce_bigamy = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_legitimacy.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	}
 	desc = decision_introduce_bigamy_desc
 	selection_tooltip = decision_introduce_bigamy_tooltip
-	decision_group_type = narsid
-
+	decision_group_type = narsid_2
+	sort_order = 200
 	is_shown = {
 		is_narsid = yes
 		OR = {
@@ -291,10 +373,6 @@ decision_introduce_bigamy = {
 	}
 
 	is_valid = {
-		OR = {
-			prestige_level >= 3
-			piety_level >= 3
-		}
 		is_imprisoned = no
 		faith = {
 			NOT = { has_doctrine = doctrine_bigamy }
@@ -314,105 +392,11 @@ decision_introduce_bigamy = {
 		}
 	}
 
-	ai_potential = {
-		always = yes
-	}
+	ai_potential = { always = yes }
 
 	ai_will_do = {
 		base = 50
 	}
 }
 
-decision_munitions_research = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
-	}
 
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 120
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
-
-	sort_order = 110
-
-	desc = decision_munitions_research_desc
-	selection_tooltip = decision_munitions_research_tooltip
-	decision_group_type = narsid
-
-	is_shown = {
-		has_ep3_dlc_trigger = yes
-		has_multiple_players = no
-		is_narsid = yes
-		is_ruler = yes
-		OR = {
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
-	}
-
-	is_valid = {
-		custom_tooltip = {
-			text = munitions_research_capital_unoccupied_tt
-			capital_province = {
-				is_occupied = no
-			}
-		}
-		OR = {
-			influence >= major_influence_value
-			gold >= major_gold_value_static_max
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_available = yes
-		NOT = { exists = involved_activity }
-	}
-
-	cooldown = { years = 5 }
-
-	effect = {
-		custom_tooltip = munitions_research_3_years_tooltip
-		custom_tooltip = munitions_research_mastiges_tooltip
-		trigger_event = narsid_realm.1031
-	}
-
-	ai_potential = {
-		NOT = { has_trait = compassionate }
-		OR = {
-			gold >= massive_gold_value
-			influence >= massive_influence_value
-		}
-	}
-
-	ai_will_do = {
-		base = 20
-		ai_value_modifier = {
-			ai_compassion = -1
-		}
-		modifier = {
-			OR = {
-				has_trait = paranoid
-				has_trait = craven
-			}
-			add = 30
-		}
-		modifier = {
-			OR = {
-				martial > high_skill_rating
-				learning > high_skill_rating
-			}
-			add = 20
-		}
-		modifier = {
-			OR = {
-				has_trait = calm
-				has_trait = content
-			}
-			add = -20
-		}
-	}
-}

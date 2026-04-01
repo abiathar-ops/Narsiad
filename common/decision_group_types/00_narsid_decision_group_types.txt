@@ -7,3 +7,8 @@ narsid = { # Try to keep this one at the top, as they are unique and rare
 	gui_tags = { big_button }
 	#important_decision_group = yes
 }
+narsid_2 = { # Try to keep this one at the top, as they are unique and rare
+	sort_order = 340
+	gui_tags = { big_button }
+	#important_decision_group = yes
+}

@@ -59,15 +59,11 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 			great_holy_wars_active = yes
             warmonger = yes
 			conquest_cb_enabled = yes
-			invasion_cb_enabled = yes
 			fervor_per_holy_site = 1.5
 			mendicant_preachers_conversion_active = yes
-			parents_get_hooks_on_children = yes
 			better_artifacts = yes
 			reincarnation_events_active = yes
-			tenet_unlocks_t3_withdraw_from_view = yes
 			reduced_vassal_religion_discontent = yes
-			#nars_get_maa_1 = yes (MAA could be mastiges)
 		}
 
 		character_modifier = {
@@ -213,7 +209,6 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 			tenet_esotericism_mystic_education = yes
 			reforging_artifacts_costs_piety = yes
 			destroying_artifacts_is_pious = yes
-			divine_the_stars_active = yes
 			parents_get_hooks_on_children = yes
 		}
 		character_modifier = {
