@@ -102,10 +102,9 @@ narsid_artifact.1001 = {
 			content = miniscule_stress_impact_gain
 		}
 		hidden_effect = {
-			# ── DELAY ADDED: 30 days ──
 			trigger_event = {
 				id = narsid_artifact.1002
-				days = 30
+				days = 60
 			}
 		}
 		random_courtier_or_guest = {
