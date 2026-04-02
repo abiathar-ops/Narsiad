@@ -335,10 +335,6 @@ munitions_moments.1061 = {
 	desc = munitions_moments.1061.desc
 	theme = emperor
 	override_background = { reference = army_camp }
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
 	left_portrait = {
 		character = root
 		animation = schadenfreude
@@ -363,10 +359,6 @@ munitions_moments.1062 = {
 	desc = munitions_moments.1062.desc
 	theme = emperor
 	override_background = { reference = army_camp }
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
 	left_portrait = {
 		character = root
 		animation = fear

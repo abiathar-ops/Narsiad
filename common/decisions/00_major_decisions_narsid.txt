@@ -188,13 +188,6 @@ decision_e_narsokratia = {
 				multiply = 0
 			}
 		}
-		piety = {
-			value = 625
-			if = {
-				limit = { government_has_flag = government_is_nomadic }
-				multiply = 0
-			}
-		}
 	}
 
 	effect = {
@@ -300,13 +293,6 @@ decision_k_narsokratia = {
 			value = 350
 			if = {
 				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-		piety = {
-			value = 125
-			if = {
-				limit = { government_has_flag = government_is_nomadic }
 				multiply = 0
 			}
 		}
@@ -539,8 +525,8 @@ decision_munitions_research = {
 	cooldown = { years = 10 }
 
 	effect = {
-		custom_tooltip = munitions_research_3_years_tooltip
 		custom_tooltip = munitions_research_mastiges_tooltip
+		custom_tooltip = munitions_research_3_years_tooltip
 		trigger_event = narsid_realm.1031
 	}
 

@@ -1,18 +1,21 @@
 ﻿l_english: 
- munitions_research_scheme: "Prepare Novel Munitions"
- munitions_research_scheme_desc: "I seek to arm the [menofnars|E] with that most advanced of weapons: black powder."
- munitions_research_scheme_desc_general: "Great stores of black powder must be amassed; [narses|E]' people need be armed with siphons, emboldened by rain of cartridges!"
- munitions_research_scheme_SUCCESS_DESC: "You will apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [GetTitleByKey('c_byzantion').GetNameNoTier] for #high 30 years#!."
- munitions_research_scheme_action: "Prepare Novel Munitions in"
+ munitions_research_scheme: "Harness Black Powder"
+ munitions_research_scheme_desc: "I seek to arm my forces with that most advanced and terrifying of weapons: the handgonne."
+ munitions_research_scheme_desc_general: "Great stores of black powder must be amassed; our armies must be armed with the thunderous arquebus, emboldening them with a rain of lead cartridges!"
+ munitions_research_scheme_SUCCESS_DESC: "You will unlock the #V Mástiges#! [men_at_arms|E] regiment and apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [GetTitleByKey('c_byzantion').GetNameNoTier] for #high 30 years#!."
+ munitions_research_scheme_action: "Harness Black Powder in"
  scheme_end_buff_t1_modifier: "Seize the Moment"
- munitions_research_scheme_invalidated_title: "@scheme_icon! Prepare Novel Munitions Scheme Ends"
- #success event
+ munitions_research_scheme_invalidated_title: "@scheme_icon! Harness Black Powder Ends"
+ 
+ # Success Event
  munitions_moments.1061.t: "[scheme.GetNameNoTooltip]: Success"
- munitions_moments.1061.desc: "Deep in dusty vaults, my engineers store the very last barrels of black powder. Meanwhile, our [armies|E] plays host to a terrifying exercise: beneath the colossal statue of lion and bull making war, a proud regiment gouts iron bullets.\n\nAnd how very ferocious do the murderous powder screams! My foes would be wise to avoid the our new regiment..."
- munitions_moments.1061.a: "Dragons guard the Marmara."
- BOUKOLEON_PALACE_GLOSS: "On the shores of the #EMP Propontis#! (the Sea of Marmara) this 5th century Constantinopolitan residence is notable for its private harbor and grim dungeons."
- #fail event
+ munitions_moments.1061.desc: "Deep in the dusty vaults of my armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise.\n\nLining up in disciplined ranks, my experimental regiment—the #V Mástiges#!—level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood.\n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E]!"
+ munitions_moments.1061.a: "The age of the sword gives way to the arquebus!"
+ 
+ # Fail Event
  munitions_moments.1062.t: "[scheme.GetNameNoTooltip]: Failure"
- munitions_moments.1062.desc: "Hellfire! Hellfire!\n\nAn uncontrollable inferno swallows yet another siphon-armed vessel. As her shrieking crew roast alive, I am forced to think upon all the chaotic tinctures, the leaking siphons, the dead mariners involved in this venture...\n\nHow was such an evil substance #EMP ever#! controlled? How?!?!"
- munitions_moments.1062.a: "I suppose I will never know..."
+ munitions_moments.1062.desc: "Hellfire! Hellfire!\n\nAn uncontrollable, roaring inferno swallows the laboratory wing. As shrieking alchemists flee the collapsing masonry, I am forced to think upon all the chaotic tinctures, the volatile powders, and the lives lost in this doomed venture...\n\nHow could such a demonic substance #EMP ever#! be safely contained within an iron tube? It seems the hand-cannon is nothing but a deadly fantasy."
+ munitions_moments.1062.a: "I suppose we will have to stick to bows and spears..."
+ 
+ # Unit Name
  mastiges: "Mástiges"

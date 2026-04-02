@@ -71,7 +71,7 @@ maa_hoplitai = {
 #Unlockable via Decision
 
 maa_mastiges = {
-    type = heavy_cavalry
+    type = gunpowder
     can_recruit = {
 	    can_recruit_maa_02_trigger = yes
     }
