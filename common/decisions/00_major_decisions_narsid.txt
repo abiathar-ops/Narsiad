@@ -90,9 +90,15 @@ decision_h_narsokratia = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
 		add_trait = nars_trait
-		# ── REMOVED: local_assimilate_narsid_traditions_effect moved to decision_great_conversion ──
 		hidden_effect = {
 			change_government = administrative_government
+			local_assimilate_narsid_traditions_effect = {
+				OLD_CULTURE = root.culture
+				NEW_CULTURE = root.culture
+				OLD_FAITH = root.faith
+				NEW_FAITH = root.faith
+				CONVERTER = root
+			}
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_h_narsokratia_decision
@@ -324,107 +330,6 @@ decision_k_narsokratia = {
 		base = 100
 	}
 }
-
-# ─────────────────────────────────────────────────────────────────
-#  GREAT CONVERSION  —  post-hegemony full culture+faith sweep
-#  Replaces the conversion that was previously baked into decision_h_narsokratia.
-#  Can only be done once globally.
-# ─────────────────────────────────────────────────────────────────
-decision_great_conversion = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-	}
-	desc = decision_great_conversion_desc
-	selection_tooltip = decision_great_conversion_tooltip
-	decision_group_type = narsid
-	sort_order = 975
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 0
-		empire = 0
-		hegemony = 180
-	}
-
-	is_shown = {
-		is_narsid = yes
-		has_title = title:h_narsokratia
-		top_liege = this
-		is_capable_adult = yes
-		is_landed = yes
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_great_conversion_decision
-			}
-		}
-	}
-
-	is_valid = {
-		piety_level >= 4
-		prestige_level >= 4
-		is_imprisoned = no
-		is_at_war = no
-	}
-
-	cost = {
-		piety = 2000
-		prestige = 1000
-		gold = {
-			value = 1500
-			if = {
-				limit = { has_treasury = yes }
-				multiply = 0
-			}
-		}
-		treasury = {
-			value = 1500
-			if = {
-				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = decision_great_conversion_effect_tooltip
-		hidden_effect = {
-			# Full culture AND faith sweep of the entire realm
-			local_assimilate_narsid_traditions_effect = {
-				OLD_CULTURE = root.culture
-				NEW_CULTURE = root.culture
-				OLD_FAITH = root.faith
-				NEW_FAITH = root.faith
-				CONVERTER = root
-			}
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_great_conversion_decision
-			}
-			set_global_variable = {
-				name = flag_great_conversion_decision
-				value = root
-			}
-		}
-		trigger_event = { id = narsid_realm.2021 days = 1 }
-	}
-
-	ai_potential = { always = yes }
-
-	ai_will_do = {
-		base = 50
-		modifier = {
-			add = 50
-			piety_level >= 5
-		}
-	}
-}
-
-# ─────────────────────────────────────────────────────────────────
-#  NARSIL + ARETAIC SCHOOL (unchanged)
-# ─────────────────────────────────────────────────────────────────
 decision_mend_narsil = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/mythology.dds"
@@ -504,6 +409,13 @@ decision_munitions_research = {
 			has_title = title:e_narsokratia
 			has_title = title:h_narsokratia
 		}
+		# One-time: removed once the scheme has been initiated
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_munitions_research_done
+			}
+		}
 	}
 
 	is_valid = {
@@ -522,11 +434,20 @@ decision_munitions_research = {
 		NOT = { exists = involved_activity }
 	}
 
-	cooldown = { years = 10 }
-
 	effect = {
 		custom_tooltip = munitions_research_mastiges_tooltip
 		custom_tooltip = munitions_research_3_years_tooltip
+		# Lock the decision permanently on first use
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_munitions_research_done
+			}
+			set_global_variable = {
+				name = flag_munitions_research_done
+				value = root
+			}
+		}
 		trigger_event = narsid_realm.1031
 	}
 
@@ -653,52 +574,4 @@ pick_aretaic_school_barony = {
 	}
 	
 	ai_potential = { always = no }
-}
-
-# ─────────────────────────────────────────────────────────────────
-#  EVANGELIZE THE STATE FAITH
-#  Repeatable decision for Kingdom/Empire tiers.
-# ─────────────────────────────────────────────────────────────────
-decision_narsid_evangelize_vassals = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-	}
-	decision_group_type = narsid_2
-	sort_order = 650
-	cooldown = { years = 10 }
-
-	is_shown = {
-		is_narsid = yes
-		is_ruler = yes
-		is_landed = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-		}
-	}
-
-	is_valid = {
-		piety_level >= 2
-		is_imprisoned = no
-	}
-
-	cost = {
-		piety = 250
-		gold = 100
-	}
-
-	effect = {
-		custom_tooltip = decision_narsid_evangelize_vassals_effect_tooltip
-		hidden_effect = {
-			if = {
-				limit = { has_title = title:e_narsokratia }
-				narsid_empire_vassal_conversion_effect = yes
-			}
-			else_if = {
-				limit = { has_title = title:k_narsokratia }
-				narsid_kingdom_vassal_conversion_effect = yes
-			}
-		}
-	}
-	
 }

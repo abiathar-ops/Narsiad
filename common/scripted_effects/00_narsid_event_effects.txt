@@ -60,7 +60,12 @@ munitions_research_scheme_prep_effect = {
 	}
 }
 
-# ── FIXED: scope:capital is now saved before calling this effect ──
+# ─────────────────────────────────────────────────────────────────
+#  MUNITIONS RESEARCH SUCCESS
+#  Applies a 30-year modifier to the capital county AND unlocks
+#  Mástiges recruitment globally via a persistent global variable.
+#  The army spawn has been removed — players recruit Mástiges manually.
+# ─────────────────────────────────────────────────────────────────
 munitions_research_success_effect = {
 	scope:capital = {
 		add_county_modifier = {
@@ -69,23 +74,19 @@ munitions_research_success_effect = {
 			years = 30
 		}
 	}
-	spawn_army = {
-		men_at_arms = {
-			type = maa_mastiges
-			men = 735
-		}
-		location = root.capital_province
-		name = mastiges
+	# Unlock Mástiges recruitment globally (checked in can_recruit_maa_02_trigger)
+	set_global_variable = {
+		name = mastiges_research_complete
+		value = yes
 	}
 }
 
 # ─────────────────────────────────────────────────────────────────
 #  TIERED VASSAL CONVERSION EFFECTS
-#  Called by the three title-creation scripted effects.
-#  Each tier converts more vassals and does more to their government.
+#  Now include culture conversion alongside faith conversion.
 # ─────────────────────────────────────────────────────────────────
 
-# Kingdom tier: ~30 % chance per AI vassal ruler converts faith.
+# Kingdom tier: ~30% chance per AI vassal converts faith AND culture.
 narsid_kingdom_vassal_conversion_effect = {
 	every_vassal = {
 		limit = { is_ai = yes }
@@ -94,16 +95,29 @@ narsid_kingdom_vassal_conversion_effect = {
 			set_character_faith = root.faith
 		}
 	}
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 30
+			set_culture = root.culture
+		}
+	}
 }
 
-# Empire tier: ~60 % faith conversion + ALL vassals get administrative government.
+# Empire tier: ~60% faith + culture conversion + ALL vassals get administrative government.
 narsid_empire_vassal_conversion_effect = {
 	every_vassal = {
-		# Faith: majority converts
 		limit = { is_ai = yes }
 		random = {
 			chance = 60
 			set_character_faith = root.faith
+		}
+	}
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 60
+			set_culture = root.culture
 		}
 	}
 	# Government: all vassals flipped to administrative
@@ -115,9 +129,7 @@ narsid_empire_vassal_conversion_effect = {
 	}
 }
 
-# Hegemony tier: FULL government conversion + direct vassals' faith converted.
-# Full culture/faith conversion of sub-vassals is handled by the
-# separate decision_great_conversion decision.
+# Hegemony tier: FULL government conversion + direct vassals' faith AND culture converted.
 narsid_hegemony_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
@@ -126,12 +138,82 @@ narsid_hegemony_vassal_conversion_effect = {
 		}
 		change_government = administrative_government
 	}
-	# Faith: direct vassals only (liege = root)
+	# Faith + culture: direct vassals only (liege = root)
 	every_vassal = {
 		limit = {
 			liege = root
 			is_ai = yes
 		}
 		set_character_faith = root.faith
+		set_culture = root.culture
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  EVANGELIZE COUNTY CONVERSION EFFECT
+#  Called by decision_narsid_evangelize_realm.
+#  Converts a portion of realm counties to the ruler's culture and faith.
+#  Kingdom tier: ~30% of counties. Empire tier: ~50% of counties.
+# ─────────────────────────────────────────────────────────────────
+narsid_evangelize_kingdom_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 10
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 10
+			set_county_culture = root.culture
+		}
+	}
+}
+
+narsid_evangelize_empire_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 30
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 30
+			set_county_culture = root.culture
+		}
+	}
+}
+
+narsid_evangelize_hegemony_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 50
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 50
+			set_county_culture = root.culture
+		}
 	}
 }

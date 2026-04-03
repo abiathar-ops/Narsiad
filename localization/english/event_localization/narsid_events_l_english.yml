@@ -32,6 +32,10 @@
  narsid_realm.1021.a: "Bigamy. A perfect, duality of devotion."
  narsid_realm.1021.b: "Bah..! Might as well get three!"
 
+ narsid_realm.1051.t: "The Faith Spreads!"
+ narsid_realm.1051.desc: "The priests and heralds we dispatched have returned with glowing reports. Across the [realm|E], shrines to [narses|E] have been erected where foreign temples once stood. The chants of the [naresid|E] faith now echo in village squares that spoke only in foreign tongues last season.\n\nIt is not total — the deep roots of old beliefs do not wither overnight. But the tide has turned. The [menofnars|E] are no longer an isolated flame; they are a spreading fire, and the [narsokratia|E] grows more unified with every passing year."
+ narsid_realm.1051.a: "One faith, one [realm|E]!"
+
  decision_develop_industry_tt: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_spy_network_tt: "Establish the Silent Synod to monitor the [narsid|E] [realm|E]."
 

@@ -1,6 +1,6 @@
 
 namespace = narsid_racial
-
+namespace = narsid_courtiers
 narsid_racial.1001 = { # It goes wonderfully
 	type = character_event
 
@@ -78,5 +78,129 @@ narsid_racial.1003 = { # It goes terrible
 	}
 }
 
+narsid_courtiers.0001 = {
+	hidden = yes
 
+	trigger = {
+		exists = var:number_of_invite_narsid_countdown
+	}
+
+	immediate = {
+		save_temporary_scope_as = host
+
+		# Build a list of one province per duchy in the realm
+		every_realm_province = {
+			if = {
+				limit = {
+					save_temporary_scope_as = potential_province
+					NOT = {
+						any_in_list = {
+							list = pool_provinces
+							county.duchy = scope:potential_province.county.duchy
+						}
+					}
+				}
+				add_to_temporary_list = pool_provinces
+			}
+		}
+
+		# Gather Narsid pool characters with suitable prowess
+		every_in_list = {
+			list = pool_provinces
+			save_temporary_scope_as = pool_province
+
+			every_pool_character = {
+				province = scope:pool_province
+				limit = {
+					prowess >= invite_narsid_courtiers_standard_value
+					OR = {
+						culture = { has_cultural_pillar = heritage_nars }
+						has_trait = nars_trait
+					}
+					guest_knight_candidate_trigger = { HOST = root }
+				}
+				add_to_temporary_list = potential_narsid_courtiers
+			}
+		}
+
+		# Pick the best candidate (weighted by how far above minimum prowess they are)
+		random_in_list = {
+			list = potential_narsid_courtiers
+			limit = { is_alive = yes }
+			weight = {
+				base = 1
+				modifier = {
+					add = {
+						value = prowess
+						subtract = invite_narsid_courtiers_standard_value
+						multiply = 5
+					}
+				}
+				modifier = {
+					add = {
+						value = learning
+						subtract = invite_narsid_courtiers_standard_value
+						multiply = 5
+					}
+				}
+			}
+			save_scope_as = narsid_courtier
+		}
+
+		# If no suitable pool character exists, create a fresh Narsid warrior
+		if = {
+			limit = { NOT = { exists = scope:narsid_courtier } }
+			create_character = {
+				location = root.capital_province
+				culture = root.culture
+				faith = root.faith
+				prowess = { invite_narsid_courtiers_standard_value invite_narsid_courtiers_upper_value }
+				save_scope_as = narsid_courtier
+			}
+		}
+
+		# Apply tradition bonus if culture has better_knights_from_decision
+		if = {
+			limit = {
+				root.culture = {
+					has_cultural_parameter = better_knights_from_decision
+				}
+			}
+			hidden_effect = {
+				scope:narsid_courtier = {
+					blademaster_lifestyle_rank_up_effect = yes
+					knight_increase_prowess_chance_effect = yes
+					knight_increase_prowess_chance_effect = yes
+				}
+			}
+		}
+
+		# Bring the courtier to court and notify the player
+		add_courtier = scope:narsid_courtier
+		send_interface_message = {
+			title = narsid_courtiers.0001.t
+			desc = narsid_courtiers.0001.desc
+			type = event_prowess_good_desc
+			left_icon = scope:narsid_courtier
+		}
+
+		# Count down and either end the chain or schedule the next arrival
+		change_variable = {
+			name = number_of_invite_narsid_countdown
+			subtract = 1
+		}
+
+		if = {
+			limit = { var:number_of_invite_narsid_countdown = 0 }
+			remove_variable = number_of_invite_narsid_countdown
+		}
+		else = {
+			clear_saved_scope = narsid_courtier
+			trigger_event = {
+				id = narsid_courtiers.0001
+				days = { 100 200 }
+			}
+		}
+	}
+}
 

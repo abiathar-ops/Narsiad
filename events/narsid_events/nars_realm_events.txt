@@ -15,7 +15,8 @@ narsid_realm.1001 = {
 		camera = camera_body_right
 		animation = map_dismissal
 	}
-	immediate = {
+	option = {
+		name = narsid_realm.1001.a
 		every_held_title = {
 			title_tier = county
 			add_county_modifier = {
@@ -23,9 +24,6 @@ narsid_realm.1001 = {
 				years = 10
 			}
 		}
-	}
-	option = {
-		name = narsid_realm.1001.a
 	}
 }
 
@@ -44,7 +42,8 @@ narsid_realm.1011 = {
 		animation = writing
 	}
 
-	immediate = {
+	option = {
+		name = narsid_realm.1011.a
 		every_held_title = {
 			title_tier = county
 			add_county_modifier = {
@@ -53,12 +52,12 @@ narsid_realm.1011 = {
 			}
 		}
 	}
-
-	option = {
-		name = narsid_realm.1011.a
-	}
 }
 
+# ─────────────────────────────────────────────────────────────────
+#  BIGAMY / TRIGAMY DOCTRINE EVENT
+#  Options now clearly state what doctrine each choice introduces.
+# ─────────────────────────────────────────────────────────────────
 narsid_realm.1021 = {
 	type = character_event
 
@@ -75,7 +74,9 @@ narsid_realm.1021 = {
 	}
 
 	option = {
+		# Bigamy: allows exactly TWO spouses simultaneously
 		name = narsid_realm.1021.a
+		custom_tooltip = narsid_realm.1021.a.bigamy_tt
 		hidden_effect = {
 			faith = {
 				if = {
@@ -96,7 +97,9 @@ narsid_realm.1021 = {
 	}
 
 	option = {
+		# Trigamy: allows exactly THREE spouses simultaneously
 		name = narsid_realm.1021.b
+		custom_tooltip = narsid_realm.1021.b.trigamy_tt
 		hidden_effect = {
 			faith = {
 				if = {
@@ -122,9 +125,7 @@ narsid_realm.1021 = {
 }
 
 # ─────────────────────────────────────────────────────────────────
-#  MUNITIONS RESEARCH  –  FIXED
-#  - Replaced begin_scheme_with_agents_effect with start_scheme
-#  - Removed broken save_scope_as = actor calls
+#  MUNITIONS RESEARCH SCHEME EVENTS
 # ─────────────────────────────────────────────────────────────────
 narsid_realm.1031 = {
 	type = character_event
@@ -178,7 +179,7 @@ narsid_realm.1031 = {
 		}
 	}
 
-	option = { #Use the city's native capabilities to produce what's needed
+	option = { #Use the city's native capabilities
 		name = narsid_realm.1031.a
 		trigger = {
 			influence >= major_influence_value
@@ -193,10 +194,8 @@ narsid_realm.1031 = {
 			SCHEME_TYPE = munitions_research_scheme
 			TARGET_TYPE = target_title
 			TARGET_SCOPE = root.capital_county
-			# Success.
 			AGENT_1 = agent_alchemist
 			AGENT_2 = agent_draughtsman
-			# Speed.
 			AGENT_3 = agent_drillmaster
 			AGENT_4 = agent_supplier
 			AGENT_5 = agent_bureaucrat_title
@@ -218,12 +217,9 @@ narsid_realm.1031 = {
 				factor = 0
 				influence < massive_influence_value
 			}
-			modifier = {
-				factor = 0
-			}
 		}
 	}
-	option = { #Have the latins manufacture ships
+	option = { #Hire foreign craftsmen to manufacture it
 		name = narsid_realm.1031.b
 		trigger = {
 			treasury >= major_gold_value_static_max
@@ -238,10 +234,8 @@ narsid_realm.1031 = {
 			SCHEME_TYPE = munitions_research_scheme
 			TARGET_TYPE = target_title
 			TARGET_SCOPE = root.capital_county
-			# Success.
 			AGENT_1 = agent_alchemist
 			AGENT_2 = agent_draughtsman
-			# Speed.
 			AGENT_3 = agent_drillmaster
 			AGENT_4 = agent_supplier
 			AGENT_5 = agent_bureaucrat_title
@@ -264,18 +258,18 @@ narsid_realm.1031 = {
 				factor = 0
 				treasury < massive_gold_value_static_max
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = compassionate
-					has_trait = paranoid
-				}
-			}
 		}
 	}
 	option = { #Actually... never mind
 		name = narsid_realm.1031.c
-		remove_decision_cooldown = decision_munitions_research
+		# Refund the one-time lock since the player backed out
+		hidden_effect = {
+			remove_global_variable = flag_munitions_research_done
+			remove_from_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_munitions_research_done
+			}
+		}
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
 			callous = miniscule_stress_impact_gain
@@ -328,7 +322,10 @@ munitions_moments.1060 = {
 	}
 }
 
-# ── FIXED: scope:capital saved before calling munitions_research_success_effect ──
+# ─────────────────────────────────────────────────────────────────
+#  MUNITIONS SUCCESS: applies capital modifier and unlocks Mástiges.
+#  No army is spawned — players recruit Mástiges at their leisure.
+# ─────────────────────────────────────────────────────────────────
 munitions_moments.1061 = {
 	type = character_event
 	title = munitions_moments.1061.t
@@ -478,5 +475,30 @@ narsid_realm.2021 = {
 
 	option = {
 		name = narsid_realm.2021.a
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  EVANGELIZE STATE FAITH — completion event
+#  Fires after decision_narsid_evangelize_realm converts counties.
+# ─────────────────────────────────────────────────────────────────
+narsid_realm.1051 = {
+	type = character_event
+	window = big_event_window
+	title = narsid_realm.1051.t
+	desc = narsid_realm.1051.desc
+	theme = administrative
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		animation = prayer
+		camera = camera_center_large
+	}
+
+	option = {
+		name = narsid_realm.1051.a
+		add_piety = 150
 	}
 }

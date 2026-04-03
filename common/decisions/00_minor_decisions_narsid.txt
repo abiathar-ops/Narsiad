@@ -1,14 +1,11 @@
-# ─────────────────────────────────────────────────────────────────
-#  SUMMON THE STRAY NARSIDS (Landed)
-#  Cooldown: 5 years. Spawns exactly 5 narsid characters.
-# ─────────────────────────────────────────────────────────────────
-decision_narsid_gather_exiles = {
+invite_narsid_courtiers_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+		reference = "gfx/interface/illustrations/decisions/study.dds"
 	}
+	desc = invite_narsid_courtiers_decision_desc
 	decision_group_type = narsid_2
-	sort_order = 0
 	cooldown = { years = 10 }
+	sort_order = 10
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -18,7 +15,10 @@ decision_narsid_gather_exiles = {
 		empire = 60
 		hegemony = 60
 	}
-
+	
+	cost = {
+		prestige = 50
+	}
 	is_shown = {
 		is_narsid = yes
 		is_ruler = yes
@@ -40,68 +40,41 @@ decision_narsid_gather_exiles = {
 		is_available = yes
 	}
 
-	cost = {
-		prestige = 150
+	effect = {
+		add_character_flag = {
+			flag = invite_narsid_courtiers_decision_active
+			years = 3
+		}
+		set_variable = {
+			name = number_of_invite_narsid_countdown
+			value = 3
+			days = 1000
+		}
+		trigger_event = {
+			id = narsid_courtiers.0001
+			days = { 20 40 }
+		}
+		custom_tooltip = invite_narsid_courtiers_decision.tt
 	}
 
-	effect = {
-		custom_tooltip = decision_narsid_gather_exiles_effect_tooltip
-		hidden_effect = {
-			# ── Guaranteed 5 Narsid exiles ──
-			create_character = {
-				culture = root.culture
-				faith = root.faith
-				gender = male
-				age = { min = 20 max = 40 }
-				employer = root
-				trait = education_martial_2
-				trait = brave
-			}
-			create_character = {
-				culture = root.culture
-				faith = root.faith
-				gender = male
-				age = { min = 22 max = 45 }
-				employer = root
-				trait = education_stewardship_2
-				trait = diligent
-			}
-			create_character = {
-				culture = root.culture
-				faith = root.faith
-				gender = female
-				age = { min = 18 max = 38 }
-				employer = root
-				trait = education_diplomacy_2
-				trait = gregarious
-			}
-			create_character = {
-				culture = root.culture
-				faith = root.faith
-				gender = male
-				age = { min = 25 max = 55 }
-				employer = root
-				trait = education_learning_2
-				trait = curious
-			}
-			create_character = {
-				culture = root.culture
-				faith = root.faith
-				gender = male
-				age = { min = 18 max = 28 }
-				employer = root
-				trait = education_martial_1
-				trait = ambitious
-			}
+	cost = {
+		prestige = {
+			value = invite_narsid_courtiers_standard_value
 		}
 	}
 
 	ai_potential = { always = yes }
+
 	ai_will_do = {
 		base = 15
 		modifier = {
 			add = 30
 			court_size < 10
+		}
+		modifier = {
+			add = 20
+			has_character_flag = invite_narsid_courtiers_decision_active
+			NOT = { has_character_flag = invite_narsid_courtiers_decision_active }
 		}
 	}
 }
@@ -382,7 +355,6 @@ decision_introduce_bigamy = {
 
 	cost = {
 		piety = 1250
-		prestige = 625
 	}
 
 	effect = {
@@ -399,4 +371,51 @@ decision_introduce_bigamy = {
 	}
 }
 
+decision_narsid_evangelize_realm = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = narsid_2
+	sort_order = 650
+	cooldown = { years = 10 }
+
+	is_shown = {
+		is_narsid = yes
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+	}
+
+	is_valid = {
+		piety_level >= 2
+		is_imprisoned = no
+	}
+
+	cost = {
+		piety = 1750
+	}
+
+	effect = {
+		custom_tooltip = decision_narsid_evangelize_realm_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = { has_title = title:e_narsokratia }
+				narsid_evangelize_empire_county_effect = yes
+			}
+			if = {
+				limit = { has_title = title:k_narsokratia }
+				narsid_evangelize_kingdom_county_effect = yes
+			}
+			else_if = {
+				limit = { has_title = title:h_narsokratia }
+				narsid_evangelize_hegemony_county_effect = yes
+			}
+			trigger_event = { id = narsid_realm.1051 days = 1 }
+		}
+	}
+}
 

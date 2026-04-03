@@ -69,6 +69,11 @@ narsid_battle.1001 = {
 #  1002 → blood ritual result  (DELAY: 30 days — faster, brutal)
 #  1003 → gold ritual result   (DELAY: 180 days — slower, costly)
 #  1004 → Narsíl reforged (fanfare)
+#
+#  IMPORTANT: As soon as the player chooses option A (blood) or
+#  option B (gold), the Reforge decision is immediately removed from
+#  the decisions tab via unavailable_unique_decisions. Option C
+#  (not yet) leaves the decision available.
 # ─────────────────────────────────────────────────────────────────
 namespace = narsid_artifact
 
@@ -101,12 +106,6 @@ narsid_artifact.1001 = {
 			compassionate = miniscule_stress_impact_gain
 			content = miniscule_stress_impact_gain
 		}
-		hidden_effect = {
-			trigger_event = {
-				id = narsid_artifact.1002
-				days = 60
-			}
-		}
 		random_courtier_or_guest = {
 			limit = {
 				is_adult = yes
@@ -121,10 +120,25 @@ narsid_artifact.1001 = {
 				killer = root
 			}
 		}
+		hidden_effect = {
+			# Lock the decision immediately — the forge is committed
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+			set_global_variable = {
+				name = flag_mend_narsil_decision
+				value = root
+			}
+			trigger_event = {
+				id = narsid_artifact.1002
+				days = 30
+			}
+		}
 		ai_chance = {
-			base = 0
+			base = 100
 			modifier = {
-				add = 100
+				factor = 0
 				OR = {
 					has_trait = compassionate
 					has_trait = calm
@@ -139,32 +153,37 @@ narsid_artifact.1001 = {
 		name = narsid_artifact.1001.b
 		give_nickname = nick_the_blessed
 		remove_treasury_or_gold = major_treasury_or_gold_value
-		hidden_effect = {
-			# ── DELAY ADDED: 120 days ──
-			trigger_event = {
-				id = narsid_artifact.1003
-				days = 120
-			}
-		}
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
 			callous = miniscule_stress_impact_gain
 			greedy = miniscule_stress_impact_gain
 		}
+		hidden_effect = {
+			# Lock the decision immediately — the forge is committed
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+			set_global_variable = {
+				name = flag_mend_narsil_decision
+				value = root
+			}
+			trigger_event = {
+				id = narsid_artifact.1003
+				days = 120
+			}
+		}
 		ai_chance = {
-			base = 0
+			base = 100
 			modifier = {
-				add = 100
-				OR = {
-					has_trait = compassionate
-					has_trait = calm
-					has_trait = content
-				}
+				factor = 0
+				has_trait = greedy
 			}
 		}
 	}
 
 	option = {
+		# Not yet — decision remains available
 		name = narsid_artifact.1001.c
 		add_stress = miniscule_stress_impact_gain
 		ai_chance = {
@@ -199,16 +218,6 @@ narsid_artifact.1002 = {
 	option = { 
 		name = narsid_artifact.1002.a
 		create_narsil_effect = yes
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-			set_global_variable = {
-				name = flag_mend_narsil_decision
-				value = root
-			}
-		}
 		trigger_event = narsid_artifact.1004
 	}
 }
@@ -231,16 +240,6 @@ narsid_artifact.1003 = {
 	option = { 
 		name = narsid_artifact.1003.a
 		create_narsil_effect = yes
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-			set_global_variable = {
-				name = flag_mend_narsil_decision
-				value = root
-			}
-		}
 		trigger_event = narsid_artifact.1004
 	}
 }

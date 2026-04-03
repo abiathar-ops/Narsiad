@@ -3,7 +3,7 @@
  decision_group_type_narsid: "Narsiad - Unique Decisions"
  decision_group_type_narsid_2: "Narsiad - Minor Decisions"
 
- decision_develop_industry: "Develop Industries"
+ decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [narsid|E] [realm|E]!"
  decision_develop_industry_desc: "Now as our [narsid|e] polity's grows, it is time to develop it into the most prosperous [domain|E] in the world. This [region|E] has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived [realm|E] and their [menofnars|E]!" 
  decision_develop_industry_confirm: "Let the forges roar!"
@@ -25,8 +25,10 @@
  decision_introduce_bigamy: "Decree Bigamous Doctrine"
  decision_introduce_bigamy_desc: "The constraints of #V Monogamy#! are too limiting for the [rulers|E] of the [narsid|E] [dynasty|E]. By decree, we could allow an additional spouse to secure our [dynasty|E] and expand our [alliances|E]. This change will be a departure from traditional [marriage|E] [doctrines|E], but it is necessary for our [realm|E]."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
- decision_narsid_introduce_bigamy_effect_tooltip: "Your [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
+ decision_narsid_introduce_bigamy_effect_tooltip: "Your [narsid|E] [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
  decision_introduce_bigamy_confirm: "Two is better than one!"
+ narsid_realm.1021.a.bigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold two spouses#! simultaneously."
+ narsid_realm.1021.b.trigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold three spouses#! simultaneously."
 
  decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
  decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. #V Aretaiké Scholí#!, the [narsid|E] bastion of learning."
@@ -80,26 +82,19 @@
  decision_mend_narsil_confirm: "To our foundries!"
 
  # ── NEW DECISIONS ──
+ 
+ invite_narsid_courtiers_decision: "Summon Narsids to Court"
+ invite_narsid_courtiers_decision_desc: "The [menofnars|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn hermits down!"
+ invite_narsid_courtiers_decision_tooltip: "Send out heralds to find [narsid|E] [guests|E] and bring them to your [court|E]"
+ invite_narsid_courtiers_decision.tt: "At least #P 3#! [menofnars|E] will arrive as [guests|E] to your [court|E] within the coming months"
+ invite_narsid_courtiers_decision_confirm: "Send the heralds!"
 
- decision_great_conversion: "Proclaim the Sacred Edict"
- decision_great_conversion_desc: "The [narsokratia|E] stands consolidated. Yet faith and [culture|E] are the true foundations of lasting unity. With the prestige of the [hegemony|E] at our command, I shall compel every [ruler|E] in our [realm|E] to renounce the old [faiths|E] and submit to the one true [religion|E] and way of the [menofnars|E]."
- decision_great_conversion_tooltip: "Fully convert every [vassal|E] in the [realm|E] to your [culture|E] and [faith|E]. Can only be done once."
- decision_great_conversion_effect_tooltip: "Every [vassal|E] ruler, their families, and courts across the entire [realm|E] are converted to your [culture|E] and [faith|E]."
- decision_great_conversion_confirm: "One Law. One People. One Narsēs."
+ # Arrival notification message
+ narsid_courtiers.0001.t: "A Narsid Arrives"
+ narsid_courtiers.0001.desc: "Answering our herald's call, an exiled [narsid|E] has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
 
- decision_narsid_gather_exiles: "Invite the Narsid Exiles"
- decision_narsid_gather_exiles_desc: "The [menofnars|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those hermits down!"
- decision_narsid_gather_exiles_tooltip: "Send out envoys to the mountain fortresses to find [narsid|E] [guests|E] and bring them to your [court|E]."
- decision_narsid_gather_exiles_effect_tooltip: "At least #P 3#! [menofnars|E] will arrive as [guests|E] to your [court|E] within the coming months."
- decision_narsid_gather_exiles_confirm: "Call them down!"
-
- decision_narsid_evangelize_vassals: "Evangelize State Faith"
- decision_narsid_evangelize_vassals_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [narsid|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
- decision_narsid_evangelize_vassals_tooltip: "Pressure your vassals into adopting the true [faith|E]."
- decision_narsid_evangelize_vassals_effect_tooltip: "A percentage of your [vassal|E] rulers will convert to your [faith|E]."
- decision_narsid_evangelize_vassals_confirm: "Send forth the priests!"
-
- # ── NEW EVENT LOCALIZATION ──
- narsid_realm.2021.t: "The Sacred Edict is Proclaimed!"
- narsid_realm.2021.desc: "The edict has gone forth. From every hilltop and marketplace in the [narsokratia|E], heralds read aloud the [hegemon|E]'s decree: there is one [faith|E], one [culture|E], one law for all [menofnars|E] from the coldest northern marches to the southernmost ports.\n\nSome [vassals|E] received the news with tearful gratitude. Others with quiet fury, swallowing their protests behind practiced smiles. But the word is spoken, the edict sealed, and the world made whole. History will record this as the day the [narsid|E] people ceased to be a [dynasty|E] and became, truly, a civilization."
- narsid_realm.2021.a: "It is done!"
+ decision_narsid_evangelize_realm: "Enforce Culture and Faith"
+ decision_narsid_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [narsid|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
+ decision_narsid_evangelize_realm_tooltip: "Pressure your [realm|E] into adopting the [narsid] [culture|E] and [faith|E]"
+ decision_narsid_evangelize_realm_confirm: "Send the flamens!"
+ decision_narsid_evangelize_realm_effect_tooltip: "Portions of your [realm|E]'s counties will have a chance to convert to the [narsid|E] [faith|E] and [culture|E]"
