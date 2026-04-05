@@ -91,7 +91,7 @@
 
  # Arrival notification message
  narsid_courtiers.0001.t: "A Narsid Arrives"
- narsid_courtiers.0001.desc: "Answering our herald's call, an exiled [narsid|E] [courtier|E] has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
+ narsid_courtiers.0001.desc: "Answering our herald's call, a new exiled Narsid Courtier has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
 
  decision_narsid_evangelize_realm: "Enforce Culture and Faith"
  decision_narsid_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [narsid|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."

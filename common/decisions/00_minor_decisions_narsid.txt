@@ -17,7 +17,7 @@ invite_narsid_courtiers_decision = {
 	}
 	
 	cost = {
-		prestige = 50
+		prestige = 120
 	}
 	is_shown = {
 		is_narsid = yes
@@ -55,12 +55,6 @@ invite_narsid_courtiers_decision = {
 			days = { 20 40 }
 		}
 		custom_tooltip = invite_narsid_courtiers_decision.tt
-	}
-
-	cost = {
-		prestige = {
-			value = invite_narsid_courtiers_standard_value
-		}
 	}
 
 	ai_potential = { always = yes }
@@ -421,7 +415,7 @@ decision_narsid_evangelize_realm = {
 				limit = { has_title = title:h_narsokratia }
 				narsid_evangelize_hegemony_county_effect = yes
 			}
-			trigger_event = { id = narsid_realm.1051 days = 1 }
+			trigger_event = { id = narsid_realm.1031 days = 1 }
 		}
 	}
 }

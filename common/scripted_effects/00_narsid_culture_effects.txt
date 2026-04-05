@@ -274,9 +274,6 @@ create_narsid_kingdom_effect = {
 		
 		scope:new_title = { set_capital_county = scope:old_title.title_capital_county }
 		set_primary_title_to = scope:new_title
-		
-		trigger_event = narsid_realm.2003
-
 		# ── KINGDOM CONVERSION: ~30 % faith conversion per vassal ──
 		narsid_kingdom_vassal_conversion_effect = yes
 		
@@ -402,8 +399,6 @@ create_narsid_empire_effect = {
 
 		scope:new_title = { set_capital_county = scope:old_title.title_capital_county }
 		set_primary_title_to = scope:new_title
-
-		trigger_event = narsid_realm.2002
 
 		# ── EMPIRE CONVERSION: ~60 % faith + administrative government ──
 		narsid_empire_vassal_conversion_effect = yes

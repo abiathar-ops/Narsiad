@@ -16,18 +16,10 @@ can_recruit_guard_maa = {
   }
 }
 
-# Culture Triggers
-
-narsid_maa_trigger = { # Handles access to Narsid units
-	culture = { has_cultural_pillar = heritage_nars }
-}
-
 can_recruit_maa_01_trigger = {
-	AND = {
-		narsid_maa_trigger = yes
-		culture = { 
-			has_innovation = innovation_narsid_maa_01
-		}
+	narsid_maa_trigger = yes
+	culture = { 
+		has_innovation = innovation_narsid_maa_01
 	}
 }
 
@@ -37,13 +29,8 @@ can_recruit_maa_01_trigger = {
 #  (which sets the global variable mastiges_research_complete).
 # ─────────────────────────────────────────────────────────────────
 can_recruit_maa_02_trigger = {
-	AND = {
-		narsid_maa_trigger = yes
-		OR = {
-			culture = { has_innovation = innovation_narsid_maa_03 }
-			exists = global_var:mastiges_research_complete
-		}
-	}
+	narsid_maa_trigger = yes
+	exists = global_var:mastiges_research_complete
 }
 
 #### MAA ART TRIGGERS ####

@@ -70,7 +70,6 @@ munitions_research_success_effect = {
 	scope:capital = {
 		add_county_modifier = {
 			modifier = munitions_research_modifier
-			desc = munitions_research_modifier_desc
 			years = 30
 		}
 	}

@@ -90,6 +90,7 @@ decision_h_narsokratia = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
 		add_trait = nars_trait
+		trigger_event = narsid_realm.2001
 		hidden_effect = {
 			change_government = administrative_government
 			local_assimilate_narsid_traditions_effect = {
@@ -198,7 +199,7 @@ decision_e_narsokratia = {
 		change_government = administrative_government
 		custom_tooltip = decision_e_narsokratia_effect_tooltip
 		create_narsid_empire_effect = yes
-		# ── NOTE: ~60% faith conversion + administrative govt handled inside create_narsid_empire_effect ──
+		trigger_event = narsid_realm.2002
 		if = {
 			limit = {
 				is_ai = no
@@ -305,7 +306,7 @@ decision_k_narsokratia = {
 	effect = {
 		custom_tooltip = decision_k_narsokratia_effect_tooltip
 		create_narsid_kingdom_effect = yes
-		# ── NOTE: ~30% faith conversion handled inside create_narsid_kingdom_effect ──
+		trigger_event = narsid_realm.2003
 		if = {
 			limit = {
 				is_ai = no
@@ -320,6 +321,7 @@ decision_k_narsokratia = {
 				value = root.primary_title
 			}
 		}
+		
 	}
 
 	ai_potential = { always = yes }
@@ -446,7 +448,7 @@ decision_munitions_research = {
 				value = root
 			}
 		}
-		trigger_event = narsid_realm.1031
+		trigger_event = munitions_moments.1001
 	}
 
 	ai_potential = {
