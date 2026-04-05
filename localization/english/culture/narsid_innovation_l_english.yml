@@ -9,24 +9,23 @@
   innovation_narsid_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields and move as a single organism, we create an impenetrable wall of bronze and iron."
   unlock_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] as [men_at_arms|E]"
   
-  innovation_narsid_maa_02: "Kataphraía"
-  innovation_narsid_maa_02_desc: "We have established a corps of elite guards whose number is never allowed to drop below ten thousand. If one falls, another instantly takes his place, creating the illusion of immortality."
+  innovation_narsid_maa_02: "Xataphraía"
+  innovation_narsid_maa_02_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
 
   innovation_narsid_maa_03: "Petharchía"
   innovation_narsid_maa_03_desc: "Through the strictest discipline, we forge soldiers who fear their officers more than the enemy. These scourges are the embodiment of this ruthless order."
+
+  innovation_narsid_maa_04: "Orthotélēs"
+  innovation_narsid_maa_04_desc: "The Orthotélēs are the elite shock troops of our army, trained to break through enemy lines with devastating charges."
   unlock_mastiges: "Can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
 
   # Architecture
   # Note: Matches the keys 'innovation_narsid_...' and 'innovation_narsid_...' from your file
   innovation_narsid_architecture_01: "Kyklōpeía"
   innovation_narsid_architecture_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
-  innovation_narsid_architecture_01_tooltip: "Unlocks the [GetBuilding('brothel_01').GetTypeName|V], [GetBuilding('canton_01').GetTypeName|V], and [GetBuilding('foundry_01').GetTypeName|V] line of [buildings|E] and the [GetBuilding('alkastron_01').GetTypeName|V] line of [duchy_buildings|E]."
-
 
   innovation_narsid_architecture_02: "Aisódomon"
   innovation_narsid_architecture_02_desc: "Moving beyond rough stone, we adopt the cutting of blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
-  innovation_narsid_architecture_02_tooltip: "Can construct [buildings|E] [GetBuilding('building_type_alkastron_02').GetName]
 
   innovation_narsid_architecture_03: "Hippodámeios"
   innovation_narsid_architecture_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
-  innovation_narsid_architecture_03_tooltip: "Can construct [buildings|E] [GetBuilding('building_type_alkastron_03').GetName]"

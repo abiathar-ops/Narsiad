@@ -41,8 +41,6 @@ innovation_narsid_maa_01 = {
 
 	unlock_maa = maa_hoplitai
 
-	custom = unlock_hoplitai
-
 	flag = global_maa
 	flag = culture_era_tribal
 }
@@ -58,8 +56,14 @@ innovation_narsid_maa_02 = {
 
 	maa_upgrade = {
 		men_at_arms = maa_hoplitai
-		damage = 20
+		damage = 10
 		toughness = 5
+	}
+
+	maa_upgrade = {
+		men_at_arms = maa_mastiges
+		damage = 5
+		toughness = 10
 	}
 
 	flag = global_maa
@@ -78,8 +82,14 @@ innovation_narsid_maa_03 = {
 
 	maa_upgrade = {
 		men_at_arms = maa_hoplitai
-		damage = 20
-		toughness = 5
+		damage = 15
+		toughness = 10
+	}
+
+	maa_upgrade = {
+		men_at_arms = maa_mastiges
+		damage = 10
+		toughness = 15
 	}
 	
 	flag = global_maa
@@ -89,7 +99,7 @@ innovation_narsid_maa_03 = {
 innovation_narsid_maa_04 = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
-	icon = @gunpowder_02
+	icon = @maa_02
 
 	potential = {
 		has_cultural_pillar = heritage_nars
@@ -97,10 +107,18 @@ innovation_narsid_maa_04 = {
 
 	maa_upgrade = {
 		men_at_arms = maa_hoplitai
-		damage = 20
-		toughness = 25
+		damage = 30
+		toughness = 15
+	}
+
+	maa_upgrade = {
+		men_at_arms = maa_mastiges
+		damage = 15
+		toughness = 30
 	}
 	
+	unlock_maa = maa_mastiges
+
 	flag = global_maa
 	flag = culture_era_late_medieval
 }

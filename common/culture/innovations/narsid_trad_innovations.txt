@@ -37,8 +37,6 @@ innovation_narsid_architecture_01 = {
 	unlock_building = canton_duchy_01
 	unlock_building = foundry_duchy_01
 
-	custom = innovation_narsid_architecture_01_tooltip
-
 	flag = global_regional
 	flag = culture_era_early_medieval
 }
@@ -58,8 +56,6 @@ innovation_narsid_architecture_02 = {
 	unlock_building = canton_duchy_02
 	unlock_building = foundry_duchy_02
 
-	custom = innovation_narsid_architecture_02_tooltip
-
 	flag = global_regional
 	flag = culture_era_high_medieval
 }
@@ -76,8 +72,6 @@ innovation_narsid_architecture_03 = {
 	unlock_building = brothel_duchy_03
 	unlock_building = canton_duchy_03
 	unlock_building = foundry_duchy_03
-
-	custom = innovation_narsid_architecture_03_tooltip
 
 	flag = global_regional
 	flag = culture_era_late_medieval

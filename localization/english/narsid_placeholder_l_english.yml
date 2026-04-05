@@ -1,0 +1,10 @@
+﻿l_english:
+ invite_narsid_courtiers_decision: "Summon Narsids to Court"
+ invite_narsid_courtiers_decision_desc: "The [menofnars|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn hermits down!"
+ invite_narsid_courtiers_decision_tooltip: "Send out heralds to find [narsid|E] [guests|E] and bring them to your [court|E]."
+ invite_narsid_courtiers_decision.tt: "At least #P 3#! [menofnars|E] will arrive as [guests|E] to your [court|E] within the coming months"
+ invite_narsid_courtiers_decision_confirm: "Send the heralds!"
+
+ # Arrival notification message
+ narsid_courtiers.0001.t: "A Narsid Arrives"
+ narsid_courtiers.0001.desc: "Answering our herald's call, an exiled [narsid|E] has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
