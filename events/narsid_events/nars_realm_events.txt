@@ -386,7 +386,8 @@ namespace = munitions_moments
 
 munitions_moments.1060 = {
 	hidden = yes
-
+ 	type = character_event
+	
 	immediate = {
 		scope:scheme = {
 			scheme_owner = {
