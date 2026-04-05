@@ -44,25 +44,6 @@ narsid_intro.1002 = {
 	}
 }
 
-##Battlefield
-narsid_battle.1001 = {
-	type = character_event
-	window = big_event_window
-	title = narsid_battle.1001.t
-	desc = narsid_battle.1001.desc
-	theme = emperor
-	override_background = battlefield
-	override_effect_2d = { reference = smoke }
-	left_portrait = {
-		character = root
-		animation = horse_surveying
-		camera = camera_center_large
-	}
-	option = { 
-		name = narsid_battle.1001.a
-	}
-}
-
 # ─────────────────────────────────────────────────────────────────
 #  NARSIL REFORGING EVENTS
 #  1001 → choice (sacrifice or gold)
@@ -258,9 +239,6 @@ narsid_artifact.1004 = {
 	}
 }
 
-# ─────────────────────────────────────────────────────────────────
-#  RACIAL (LIBATION) EVENTS
-# ─────────────────────────────────────────────────────────────────
 namespace = narsid_racial
 
 narsid_racial.1001 = {
@@ -325,5 +303,94 @@ narsid_racial.1003 = {
 	option = {
 		name = narsid_racial.1003.a
 		remove_treasury_or_gold = medium_treasury_or_gold_value
+	}
+}
+
+
+namespace = munitions_moments
+
+munitions_moments.1060 = {
+	hidden = yes
+	
+	immediate = {
+		scope:scheme = {
+			scheme_owner = {
+				save_scope_as = owner
+				random = {
+					chance = scope:scheme.scheme_success_chance
+					save_scope_value_as = {
+						name = scheme_successful
+						value = yes
+					}
+					mandala_trickster_increment_successful_schemes_effect = yes
+				}
+				if = {
+					limit = { exists = scope:scheme_successful }
+					trigger_event = {
+						id = munitions_moments.1061
+						days = 1
+					}
+				}
+				else = {
+					trigger_event = {
+						id = munitions_moments.1062
+						days = 1
+					}	
+				}
+			}
+		}
+	}
+}
+
+munitions_moments.1061 = {
+	type = character_event
+	title = munitions_moments.1061.t
+	desc = munitions_moments.1061.desc
+	theme = emperor
+	override_background = { reference = army_camp }
+	left_portrait = {
+		character = root
+		animation = schadenfreude
+	}
+
+	immediate = {
+		root.capital_county = {
+			save_scope_as = capital
+		}
+		munitions_research_success_effect = yes
+	}
+
+	option = {
+		name = munitions_moments.1061.a
+		scope:scheme = { end_scheme = yes }
+	}
+}
+
+munitions_moments.1062 = {
+	type = character_event
+	title = munitions_moments.1062.t
+	desc = munitions_moments.1062.desc
+	theme = emperor
+	override_background = { reference = army_camp }
+	left_portrait = {
+		character = root
+		animation = fear
+		camera = camera_event_left_forward
+	}
+
+	immediate = {
+		stress_impact = {
+			base = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+		title:c_byzantion = {
+			save_scope_as = byzantion
+		}
+	}
+
+	option = {
+		name = munitions_moments.1062.a
+		scope:scheme = { end_scheme = yes }
 	}
 }

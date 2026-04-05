@@ -1,5 +1,9 @@
 namespace = narsid_realm
 
+# ─────────────────────────────────────────────────────────────────
+# DEVELOP INDUSTRY EVENT
+# ─────────────────────────────────────────────────────────────────
+
 narsid_realm.1001 = {
 	type = character_event
 
@@ -25,6 +29,10 @@ narsid_realm.1001 = {
 		}
 	}
 }
+
+# ─────────────────────────────────────────────────────────────────
+#  SYNODIAN SPY EVENT
+# ─────────────────────────────────────────────────────────────────
 
 narsid_realm.1011 = {
 	type = character_event
@@ -55,8 +63,8 @@ narsid_realm.1011 = {
 
 # ─────────────────────────────────────────────────────────────────
 #  BIGAMY / TRIGAMY DOCTRINE EVENT
-#  Options now clearly state what doctrine each choice introduces.
 # ─────────────────────────────────────────────────────────────────
+
 narsid_realm.1021 = {
 	type = character_event
 
@@ -122,6 +130,10 @@ narsid_realm.1021 = {
 		}
 	}
 }
+
+# ─────────────────────────────────────────────────────────────────
+#  HARNESS BLACK POWDER EVENT
+# ─────────────────────────────────────────────────────────────────
 
 narsid_realm.1031 = {
 	type = character_event
@@ -285,6 +297,34 @@ narsid_realm.1031 = {
 	}
 }
 
+# ─────────────────────────────────────────────────────────────────
+#  EVANGELIZE EVENT
+# ─────────────────────────────────────────────────────────────────
+
+narsid_realm.1051 = {
+	type = character_event
+	title = narsid_realm.1051.t
+	desc = narsid_realm.1051.desc
+	theme = administrative
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		animation = prayer
+		camera = camera_center_large
+	}
+
+	option = {
+		name = narsid_realm.1051.a
+		add_piety = 150
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  NARSOKRATIA EVENT
+# ─────────────────────────────────────────────────────────────────
+
 narsid_realm.2001 = {
 	type = character_event
 	window = fullscreen_event
@@ -309,7 +349,7 @@ narsid_realm.2011 = {
 	title = narsid_realm.2011.t
 	desc = narsid_realm.2011.desc
 	theme = emperor
-	override_background = { reference = ce1_fullscreen_legitimizing_legend }
+	override_background = ce1_fullscreen_legitimizing_legend
 	override_effect_2d = { reference = smoke }
 	
 	left_portrait = {
@@ -358,115 +398,5 @@ narsid_realm.2003 = {
 	}
 	option = { 
 		name = narsid_realm.2003.a
-	}
-}
-
-
-narsid_realm.1051 = {
-	type = character_event
-	title = narsid_realm.1051.t
-	desc = narsid_realm.1051.desc
-	theme = administrative
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		animation = prayer
-		camera = camera_center_large
-	}
-
-	option = {
-		name = narsid_realm.1051.a
-		add_piety = 150
-	}
-}
-
-namespace = munitions_moments
-
-munitions_moments.1060 = {
-	hidden = yes
- 	type = character_event
-	
-	immediate = {
-		scope:scheme = {
-			scheme_owner = {
-				save_scope_as = owner
-				random = {
-					chance = scope:scheme.scheme_success_chance
-					save_scope_value_as = {
-						name = scheme_successful
-						value = yes
-					}
-					mandala_trickster_increment_successful_schemes_effect = yes
-				}
-				if = {
-					limit = { exists = scope:scheme_successful }
-					trigger_event = {
-						id = munitions_moments.1061
-						days = 1
-					}
-				}
-				else = {
-					trigger_event = {
-						id = munitions_moments.1062
-						days = 1
-					}	
-				}
-			}
-		}
-	}
-}
-
-munitions_moments.1061 = {
-	type = character_event
-	title = munitions_moments.1061.t
-	desc = munitions_moments.1061.desc
-	theme = emperor
-	override_background = { reference = army_camp }
-	left_portrait = {
-		character = root
-		animation = schadenfreude
-	}
-
-	immediate = {
-		root.capital_county = {
-			save_scope_as = capital
-		}
-		munitions_research_success_effect = yes
-	}
-
-	option = {
-		name = munitions_moments.1061.a
-		scope:scheme = { end_scheme = yes }
-	}
-}
-
-munitions_moments.1062 = {
-	type = character_event
-	title = munitions_moments.1062.t
-	desc = munitions_moments.1062.desc
-	theme = emperor
-	override_background = { reference = army_camp }
-	left_portrait = {
-		character = root
-		animation = fear
-		camera = camera_event_left_forward
-	}
-
-	immediate = {
-		stress_impact = {
-			base = minor_stress_impact_gain
-			ambitious = minor_stress_impact_gain
-			paranoid = minor_stress_impact_gain
-		}
-		title:c_byzantion = {
-			save_scope_as = byzantion
-		}
-	}
-
-	option = {
-		name = munitions_moments.1062.a
-		scope:scheme = { end_scheme = yes }
 	}
 }
