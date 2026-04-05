@@ -342,11 +342,15 @@ decision_introduce_bigamy = {
 		faith = {
 			NOT = { has_doctrine = doctrine_bigamy }
 			NOT = { has_doctrine = doctrine_trigamy }
-		}		
+		}
 	}
 
 	is_valid = {
-		is_imprisoned = no
+		faith.religion = {
+			is_in_family = rf_narsid
+		}
+		is_at_war = no
+		is_imprisoned = no	
 		faith = {
 			NOT = { has_doctrine = doctrine_bigamy }
 			NOT = { has_doctrine = doctrine_trigamy }
@@ -391,7 +395,10 @@ decision_narsid_evangelize_realm = {
 	}
 
 	is_valid = {
-		piety_level >= 2
+		faith.religion = {
+			is_in_family = rf_narsid
+		}
+		is_at_war = no
 		is_imprisoned = no
 	}
 

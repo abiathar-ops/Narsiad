@@ -23,12 +23,12 @@
  decision_libation_confirm: "Pour the libation!"
 
  decision_introduce_bigamy: "Decree Bigamous Doctrine"
- decision_introduce_bigamy_desc: "The constraints of #V Monogamy#! are too limiting for the [rulers|E] of the [narsid|E] [dynasty|E]. By decree, we could allow an additional spouse to secure our [dynasty|E] and expand our [alliances|E]. This change will be a departure from traditional [marriage|E] [doctrines|E], but it is necessary for our [realm|E]."
+ decision_introduce_bigamy_desc: "The constraints of [narsid|E] #V Monogamy#! are too limiting for the [rulers|E] of the [narsid|E] [dynasty|E]. By decree, we could allow an additional spouse to secure our [realm|E] and expand our [alliances|E]. This change is a departure from traditional [marriage|E] [doctrines|E], but it is necessary for our [realm|E]."
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]."
- decision_narsid_introduce_bigamy_effect_tooltip: "Your [narsid|E] [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]."
+ decision_narsid_introduce_bigamy_effect_tooltip: "Your [narsid|E] [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]"
  decision_introduce_bigamy_confirm: "Two is better than one!"
- narsid_realm.1021.a.bigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold two spouses#! simultaneously."
- narsid_realm.1021.b.trigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold three spouses#! simultaneously."
+ narsid_realm.1021.a.bigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold two spouses#! simultaneously"
+ narsid_realm.1021.b.trigamy_tt: "Your [narsid|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold three spouses#! simultaneously"
 
  decision_establish_aretaic_school: "Establish the Aretaiké Scholí"
  decision_establish_aretaic_school_desc: "The [narsids|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [menofnars|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. #V Aretaiké Scholí#!, the [narsid|E] bastion of learning."
@@ -55,13 +55,13 @@
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
  decision_k_narsokratia_tooltip: "Found an entirely new Despotēia title"
- decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E]\n$EFFECT_LIST_BULLET$Some of your [vassal|E] [rulers|E] will convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('e_narsokratia').GetName]"
+ decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('e_narsokratia').GetName]"
  create_title_every_held_duchy: "Every [duchy|E] title you [hold|E] or [completely_control|E]"
  create_narsid_kingdom_de_jure_changes: "Becomes [de_jure|E] [duchies|E] of your new Despotēia"
 
  decision_e_narsokratia: "Proclaim an Ōtarkhia Realm"
  decision_e_narsokratia_desc: "The pretender [rulers|E] who currently call themselves [emperors|E] are merely [nomadic|E] [stewards|E] occupying our [narsid|E] [domains|E]. I shall create an [empire|E] of the [menofnars|E] to outshine their mockery of a [realm|E] and outlast history itself!"
- decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E]\n$EFFECT_LIST_BULLET$Most of your [vassal|E] [rulers|E] convert to your [faith|E]\n$EFFECT_LIST_BULLET$All [vassals|E] will convert to [administrative|E] [government|E].\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to mend [narsil|E] and form [GetTitleByKey('h_narsokratia').GetName]"
+ decision_e_narsokratia_effect_tooltip: "Establish [GetTitleByKey('e_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('e_narsokratia').GetName] will have the [de_jure|E] of held [kingdoms|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$All [vassals|E] will convert to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('h_narsokratia').GetName]"
  decision_e_narsokratia_confirm: "Power is a ladder!"
  decision_e_narsokratia_tooltip: "Found an entirely new Ōtarkhia title"
  create_title_every_held_kingdom: "Every [kingdom|E] title you [hold|E] or [completely_control|E]"
@@ -72,7 +72,7 @@
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [narsidrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [menofnars|E] and the other barbaric [cultures|E] as the undisputed continuation of the [narsidrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
- decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$Direct [vassals|E] convert to your [faith|E]\n$EFFECT_LIST_BULLET$Unlocks a full [culture|E] and [faith|E] conversion [decision|E] in the [realm|E]"
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks a full [culture|E] and [faith|E] conversion [decision|E] in the [realm|E]"
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
  decision_mend_narsil: "Reforge the Dynastic Heirloom"
@@ -91,7 +91,7 @@
 
  # Arrival notification message
  narsid_courtiers.0001.t: "A Narsid Arrives"
- narsid_courtiers.0001.desc: "Answering our herald's call, an exiled [narsid|E] has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
+ narsid_courtiers.0001.desc: "Answering our herald's call, an exiled [narsid|E] [courtier|E] has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
 
  decision_narsid_evangelize_realm: "Enforce Culture and Faith"
  decision_narsid_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [narsid|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."

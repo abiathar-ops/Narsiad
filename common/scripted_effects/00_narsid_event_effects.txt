@@ -145,6 +145,12 @@ narsid_hegemony_vassal_conversion_effect = {
 			is_ai = yes
 		}
 		set_character_faith = root.faith
+	}
+	every_vassal = {
+		limit = {
+			liege = root
+			is_ai = yes
+		}
 		set_culture = root.culture
 	}
 }

@@ -1,5 +1,4 @@
 namespace = narsid_realm
-namespace = munitions_moments
 
 narsid_realm.1001 = {
 	type = character_event
@@ -124,9 +123,6 @@ narsid_realm.1021 = {
 	}
 }
 
-# ─────────────────────────────────────────────────────────────────
-#  MUNITIONS RESEARCH SCHEME EVENTS
-# ─────────────────────────────────────────────────────────────────
 narsid_realm.1031 = {
 	type = character_event
 	title = narsid_realm.1031.t
@@ -289,6 +285,105 @@ narsid_realm.1031 = {
 	}
 }
 
+narsid_realm.2001 = {
+	type = character_event
+	window = fullscreen_event
+	title = narsid_realm.2001.t
+	desc = narsid_realm.2001.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_rekindle }
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+
+	immediate = {
+		h_narsokratia_effect = yes
+	}
+
+	option = { 
+		name = narsid_realm.2001.a
+		trigger_event = narsid_realm.2011
+	}
+}
+
+narsid_realm.2011 = {
+	type = character_event
+	title = narsid_realm.2011.t
+	desc = narsid_realm.2011.desc
+	theme = emperor
+	override_background = { reference = ce1_fullscreen_legitimizing_legend }
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = personality_callous
+		camera = camera_center_large
+	}
+
+	immediate = {
+		h_narsokratia_effect_2 = yes
+	}
+	option = { 
+		name = narsid_realm.2011.a
+	}
+	
+}
+
+narsid_realm.2002 = {
+	type = character_event
+	title = narsid_realm.2002.t
+	desc = narsid_realm.2002.desc
+	theme = emperor
+	override_background = throne_room_india
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = frontend_center_idle
+		camera = camera_center_large
+	}
+	option = { 
+		name = narsid_realm.2002.a
+	}
+}
+
+narsid_realm.2003 = {
+	type = character_event
+	title = narsid_realm.2003.t
+	desc = narsid_realm.2003.desc
+	theme = emperor
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = chancellor
+		camera = camera_center_large
+	}
+	option = { 
+		name = narsid_realm.2003.a
+	}
+}
+
+
+narsid_realm.1051 = {
+	type = character_event
+	title = narsid_realm.1051.t
+	desc = narsid_realm.1051.desc
+	theme = administrative
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+
+	left_portrait = {
+		character = root
+		animation = prayer
+		camera = camera_center_large
+	}
+
+	option = {
+		name = narsid_realm.1051.a
+		add_piety = 150
+	}
+}
+
+namespace = munitions_moments
+
 munitions_moments.1060 = {
 	hidden = yes
 
@@ -322,10 +417,6 @@ munitions_moments.1060 = {
 	}
 }
 
-# ─────────────────────────────────────────────────────────────────
-#  MUNITIONS SUCCESS: applies capital modifier and unlocks Mástiges.
-#  No army is spawned — players recruit Mástiges at their leisure.
-# ─────────────────────────────────────────────────────────────────
 munitions_moments.1061 = {
 	type = character_event
 	title = munitions_moments.1061.t
@@ -376,129 +467,5 @@ munitions_moments.1062 = {
 	option = {
 		name = munitions_moments.1062.a
 		scope:scheme = { end_scheme = yes }
-	}
-}
-
-# ── NARSOKRATIA TITLE EVENTS ──
-
-narsid_realm.2001 = {
-	type = character_event
-	window = fullscreen_event
-	title = narsid_realm.2001.t
-	desc = narsid_realm.2001.desc
-	theme = emperor
-	override_background = { reference = fp3_fullscreen_rekindle }
-	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-	
-	immediate = {
-		h_narsokratia_effect = yes
-	}
-
-	option = { 
-		name = narsid_realm.2001.a
-		trigger_event = narsid_realm.2011
-	}
-}
-
-narsid_realm.2011 = {
-	type = character_event
-	window = big_event_window
-	title = narsid_realm.2011.t
-	desc = narsid_realm.2011.desc
-	theme = emperor
-	override_background = ce1_fullscreen_legitimizing_legend
-	override_effect_2d = { reference = smoke }
-	left_portrait = {
-		character = root
-		animation = personality_callous
-		camera = camera_center_large
-	}
-	immediate = {
-		h_narsokratia_effect_2 = yes
-	}
-	option = { 
-		name = narsid_realm.2011.a
-	}
-}
-
-narsid_realm.2002 = {
-	type = character_event
-	window = big_event_window
-	title = narsid_realm.2002.t
-	desc = narsid_realm.2002.desc
-	theme = emperor
-	override_background = throne_room_india
-	override_effect_2d = { reference = smoke }
-	left_portrait = {
-		character = root
-		animation = frontend_center_idle
-		camera = camera_center_large
-	}
-	option = { 
-		name = narsid_realm.2002.a
-	}
-}
-
-narsid_realm.2003 = {
-	type = character_event
-	window = big_event_window
-	title = narsid_realm.2003.t
-	desc = narsid_realm.2003.desc
-	theme = emperor
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-	left_portrait = {
-		character = root
-		animation = chancellor
-		camera = camera_center_large
-	}
-	option = { 
-		name = narsid_realm.2003.a
-	}
-}
-
-# ── GREAT CONVERSION celebration event ──
-narsid_realm.2021 = {
-	type = character_event
-	window = fullscreen_event
-	title = narsid_realm.2021.t
-	desc = narsid_realm.2021.desc
-	theme = emperor
-	override_background = { reference = fp3_fullscreen_sunder }
-	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-
-	left_portrait = {
-		character = root
-		animation = personality_bold
-		camera = camera_center_large
-	}
-
-	option = {
-		name = narsid_realm.2021.a
-	}
-}
-
-# ─────────────────────────────────────────────────────────────────
-#  EVANGELIZE STATE FAITH — completion event
-#  Fires after decision_narsid_evangelize_realm converts counties.
-# ─────────────────────────────────────────────────────────────────
-narsid_realm.1051 = {
-	type = character_event
-	window = big_event_window
-	title = narsid_realm.1051.t
-	desc = narsid_realm.1051.desc
-	theme = administrative
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		animation = prayer
-		camera = camera_center_large
-	}
-
-	option = {
-		name = narsid_realm.1051.a
-		add_piety = 150
 	}
 }

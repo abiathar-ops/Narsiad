@@ -153,16 +153,14 @@ decision_e_narsokratia = {
 		OR = {	
 			AND = {
 				has_title = title:k_narsokratia
-				OR = {
-					custom_description = {
-						text = found_e_narsokratia_decision_three_kingdoms_held
-						any_held_title = {
-							count >= 3
-							title_tier = kingdom
-						}
+				custom_description = {
+					text = found_e_narsokratia_decision_three_kingdoms_held
+				any_held_title = {
+					count >= 3
+					title_tier = kingdom
 					}
-					sub_realm_size >= 80
 				}
+				sub_realm_size >= 80
 			}
 			highest_held_title_tier = tier_empire
 		}

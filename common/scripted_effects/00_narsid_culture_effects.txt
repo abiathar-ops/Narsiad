@@ -150,7 +150,6 @@ local_assimilate_narsid_traditions_effect = {
 #  Adds: limited faith conversion (~30 % per vassal)
 # ─────────────────────────────────────────────────────────────────
 create_narsid_kingdom_effect = {
-
 	hidden_effect = {
 		every_held_title = {
 			custom = create_title_every_held_duchy
