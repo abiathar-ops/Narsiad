@@ -32,7 +32,7 @@
 
 innovation_narsid_maa_01 = {
 	group = culture_group_regional
-	culture_era = culture_era_early_medieval
+	culture_era = culture_era_tribal
 	icon = @leadership_1
 
 	potential = {
@@ -44,12 +44,12 @@ innovation_narsid_maa_01 = {
 	custom = unlock_hoplitai
 
 	flag = global_maa
-	flag = culture_era_early_medieval
+	flag = culture_era_tribal
 }
 
 innovation_narsid_maa_02 = {
 	group = culture_group_regional
-	culture_era = culture_era_high_medieval
+	culture_era = culture_era_early_medieval
 	icon = @leadership_2
 
 	potential = {
@@ -63,13 +63,13 @@ innovation_narsid_maa_02 = {
 	}
 
 	flag = global_maa
-	flag = culture_era_high_medieval
+	flag = culture_era_early_medieval
 }
 
 
 innovation_narsid_maa_03 = {
 	group = culture_group_regional
-	culture_era = culture_era_late_medieval
+	culture_era = culture_era_high_medieval
 	icon = @gunpowder_02
 
 	potential = {
@@ -81,10 +81,25 @@ innovation_narsid_maa_03 = {
 		damage = 20
 		toughness = 5
 	}
+	
+	flag = global_maa
+	flag = culture_era_high_medieval
+}
 
-	unlock_maa = maa_mastiges
+innovation_narsid_maa_04 = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @gunpowder_02
 
-	custom = unlock_mastiges
+	potential = {
+		has_cultural_pillar = heritage_nars
+	}
+
+	maa_upgrade = {
+		men_at_arms = maa_hoplitai
+		damage = 20
+		toughness = 25
+	}
 	
 	flag = global_maa
 	flag = culture_era_late_medieval

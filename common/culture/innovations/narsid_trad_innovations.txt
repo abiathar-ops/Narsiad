@@ -24,20 +24,6 @@
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 
-innovation_narsid_identity = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @raised_banner
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
-
-	custom = innovation_narsid_identity_tooltip
-
-	flag = global_regional
-	flag = culture_era_early_tribal
-}
-
 innovation_narsid_architecture_01 = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
