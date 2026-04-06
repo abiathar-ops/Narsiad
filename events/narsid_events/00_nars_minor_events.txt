@@ -1,4 +1,4 @@
-namespace = narsid_courtiers
+﻿namespace = narsid_courtiers
 
 narsid_courtiers.0001 = {
 	hidden = yes

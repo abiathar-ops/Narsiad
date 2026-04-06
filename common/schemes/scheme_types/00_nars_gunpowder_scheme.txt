@@ -106,7 +106,7 @@ munitions_research_scheme = {
 	on_phase_completed = {
 		suppress_scheme_follow_up_event_till_input_given_effect = yes
 		munitions_research_scheme_prep_effect = yes
-		cap_schemes_and_fire_reminders_effect = yes
+		nars_cap_schemes_and_fire_reminders_effect = yes
 	}
 
 	on_hud_click = { munitions_research_scheme_prep_effect = yes }

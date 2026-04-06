@@ -143,7 +143,6 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 		parameters = {
 			great_holy_wars_active = yes
             warmonger = yes
-			conquest_cb_enabled = yes
 			invasion_cb_enabled = yes
 			sanctioned_assassinations = yes
 			killing_bestows_heads = yes

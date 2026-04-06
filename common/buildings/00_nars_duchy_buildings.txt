@@ -15,7 +15,7 @@ brothel_duchy_01 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = brothel_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {
@@ -86,7 +86,7 @@ brothel_duchy_02 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = brothel_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {
@@ -157,7 +157,7 @@ brothel_duchy_03 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = brothel_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {
@@ -234,7 +234,7 @@ canton_duchy_01 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = canton_duchy_effect_desc
+		
 	}
 
 	can_construct_potential = {
@@ -305,7 +305,7 @@ canton_duchy_02 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = canton_duchy_effect_desc
+		
 	}
 
 	can_construct_potential = {
@@ -376,7 +376,7 @@ canton_duchy_03 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = canton_duchy_effect_desc
+		
 	}
 
 	can_construct_potential = {
@@ -453,7 +453,7 @@ foundry_duchy_01 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = foundry_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {
@@ -522,7 +522,7 @@ foundry_duchy_02 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = foundry_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {
@@ -591,7 +591,7 @@ foundry_duchy_03 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-		desc = foundry_duchy_effect_desc
+	
 	}
 
 	can_construct_potential = {

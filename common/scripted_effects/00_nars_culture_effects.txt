@@ -324,7 +324,7 @@ create_narsid_kingdom_effect = {
 #  EMPIRE CREATION
 #  Adds: ~60 % faith conversion per vassal + administrative government
 # ─────────────────────────────────────────────────────────────────
-create_narsid_empire_effect = {    
+create_narsid_empire_effect = {
 	hidden_effect = {
 		every_held_title = {
 			custom = create_title_every_held_kingdom
@@ -444,7 +444,7 @@ create_narsid_empire_effect = {
 				}
 			}
 		}
-	}   
+	}
 }
 
 create_h_narsokratia_effect = {

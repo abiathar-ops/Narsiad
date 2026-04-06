@@ -1,6 +1,6 @@
 ﻿l_english: 
  munitions_research_scheme: "Harness Gunpowder"
- munitions_research_scheme_desc: "I seek to arm my forces with that most advanced and terrifying of weapons: the handgonne."
+ munitions_research_scheme_desc: "I seek to arm my forces with that most advanced and terrifying of weapons: arquebusiers."
  munitions_research_scheme_desc_general: "Great stores of black powder must be amassed; our armies must be armed with the thunderous arquebus, emboldening them with a rain of lead cartridges!"
  munitions_research_scheme_SUCCESS_DESC: "You will unlock the #V Mástiges#! [men_at_arms|E] regiment and apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [GetTitleByKey('c_byzantion').GetNameNoTier] for #high 30 years#!."
  munitions_research_scheme_action: "Harness Gunpowder in"
@@ -8,14 +8,14 @@
  munitions_research_scheme_invalidated_title: "@scheme_icon! Harness Gunpowder Ends"
  
  # Success Event
- munitions_moments.1061.t: "[scheme.GetNameNoTooltip]: Success"
- munitions_moments.1061.desc: "Deep in the dusty vaults of my armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise.\n\nLining up in disciplined ranks, my experimental regiment—the #V Mástiges#!—level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood.\n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E]!"
- munitions_moments.1061.a: "The age of the sword gives way to the arquebus!"
+ narsid_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
+ narsid_gunpowder.1021.desc: "Deep in the dusty vaults of my armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise.\n\nLining up in disciplined ranks, my experimental regiment—the #V Mástiges#!—level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood.\n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E]!"
+ narsid_gunpowder.1021.a: "A new era dawns!"
  
  # Fail Event
- munitions_moments.1062.t: "[scheme.GetNameNoTooltip]: Failure"
- munitions_moments.1062.desc: "Hellfire! Hellfire!\n\nAn uncontrollable, roaring inferno swallows the laboratory wing. As shrieking alchemists flee the collapsing masonry, I am forced to think upon all the chaotic tinctures, the volatile powders, and the lives lost in this doomed venture...\n\nHow could such a demonic substance #EMP ever#! be safely contained within an iron tube? It seems the hand-cannon is nothing but a deadly fantasy."
- munitions_moments.1062.a: "I suppose we will have to stick to bows and spears..."
+ narsid_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"
+ narsid_gunpowder.1022.desc: "Hellfire! Hellfire!\n\nAn uncontrollable, roaring inferno swallows the laboratory wing. As shrieking alchemists flee the collapsing masonry, I am forced to think upon all the chaotic tinctures, the volatile powders, and the lives lost in this doomed venture...\n\nHow could such a demonic substance #EMP ever#! be safely contained within an iron tube? It seems arquebusiers is nothing but a deadly fantasy."
+ narsid_gunpowder.1022.a: "I suppose we will have to stick to bows and spears..."
  
  # Unit Name
  mastiges: "Mástiges"

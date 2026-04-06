@@ -1,4 +1,4 @@
-namespace = narsid_realm
+﻿namespace = narsid_realm
 
 # ─────────────────────────────────────────────────────────────────
 # DEVELOP INDUSTRY EVENT

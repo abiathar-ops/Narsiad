@@ -15,7 +15,7 @@ name_of_culture_innovation = {
 	culture_era = key			
 
 	# Innovation group. Can be: culture_group_military, culture_group_civic or culture_group_regional.
-	group =  group_name
+	group = group_name
 
 	# Path to the default icon to show. If not set will use the default icon defined in NGameIcons::DEFAULT_CULTURE_INNOVATION_TYPE_ICON_PATH
 	icon = path		

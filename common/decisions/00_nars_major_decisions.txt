@@ -410,12 +410,12 @@ decision_munitions_research = {
 			has_title = title:h_narsokratia
 		}
 		# One-time: removed once the scheme has been initiated
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-			}
-		}
+		#NOT = {
+		#	is_target_in_global_variable_list = {
+		#		name = unavailable_unique_decisions
+		#		target = flag:flag_munitions_research_done
+		#	}
+	#	}
 	}
 
 	is_valid = {
@@ -438,17 +438,8 @@ decision_munitions_research = {
 		custom_tooltip = munitions_research_mastiges_tooltip
 		custom_tooltip = munitions_research_3_years_tooltip
 		# Lock the decision permanently on first use
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-			}
-			set_global_variable = {
-				name = flag_munitions_research_done
-				value = root
-			}
-		}
-		trigger_event = munitions_moments.1001
+		
+		trigger_event = narsid_gunpowder.1001
 	}
 
 	ai_potential = {

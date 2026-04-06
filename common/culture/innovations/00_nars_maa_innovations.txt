@@ -117,8 +117,6 @@ innovation_narsid_maa_04 = {
 		toughness = 30
 	}
 	
-	unlock_maa = maa_mastiges
-
 	flag = global_maa
 	flag = culture_era_late_medieval
 }

@@ -1,6 +1,6 @@
 narsid_group = {
 	family = rf_narsid
-	graphical_faith = pagan.gfx  
+	graphical_faith = pagan.gfx
 	doctrine = narsid_hostility_doctrine
 	doctrine = divine_destiny_doctrine
 
