@@ -1,8 +1,8 @@
 invite_narsid_courtiers_standard_value = {
-	value = 12
+	value = 15
 }
 
 invite_narsid_courtiers_upper_value = {
 	value = invite_narsid_courtiers_standard_value
-	add = 9  
+	add = 10
 }

@@ -34,11 +34,13 @@ maa_hoplitai = {
     screen = 15
 
     terrain_bonus = {
-		farmlands = { damage = 6 toughness = 4 }
-		plains = { damage = 6 toughness = 4 }
-		hills = { damage = 6 toughness = 4 }
-        mountains = { damage = 6 toughness = 4 }
-	}
+        plains = { damage = 25 toughness = 10 }
+        mountains = { damage = 25 toughness = 10 }
+        terraced_hills = { damage = 25 toughness = 10 }
+        hills = { damage = 50 toughness = 20 }
+        forest = { damage = -25 toughness = -10 }
+        wetlands = { damage = -25 toughness = -10 }
+    }
 	
 	counters = {
 		pikemen = 1
@@ -48,8 +50,8 @@ maa_hoplitai = {
 	}
 
 	winter_bonus = {
-		normal_winter = { toughness = 6 screen = 6 }
-		harsh_winter = { toughness = 6 screen = 6 }
+		normal_winter = { toughness = 5 screen = 5 }
+		harsh_winter = { toughness = 5 screen = 5 }
 	}
 
     buy_cost = { gold = 157.5 }
@@ -82,23 +84,25 @@ maa_mastiges = {
 	screen = 0
 
     terrain_bonus = {
-        plains = { damage = 21 }
-        mountains = { damage = -100 }
-        forest = { damage = 50 }
-        jungle = { damage = 50 }
-        terraced_hills = { damage = 25 }
-        hills = { damage = -50 }
-        wetlands = { damage = -150 toughness = -20 }
+        plains = { damage = 25 toughness = 10 }
+        mountains = { damage = 25 toughness = 10 }
+        terraced_hills = { damage = 25 toughness = 10 }
+        hills = { damage = 50 toughness = 20 }
+        forest = { damage = -25 toughness = -10 }
+        wetlands = { damage = -25 toughness = -10 }
     }
+
+    winter_bonus = {
+		normal_winter = { toughness = 5 screen = 5 }
+		harsh_winter = { toughness = 5 screen = 5 }
+	}
 
     counters = {
         heavy_infantry = 2
+        heavy_cavalry = 3
         archers = 2
         skirmishers = 2
     }
-
-    siege_tier = 5
-	siege_value = 5
 
     buy_cost = { gold = 195 }
     low_maintenance_cost = { gold = 1.0 }

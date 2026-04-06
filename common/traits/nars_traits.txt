@@ -7,6 +7,7 @@ nars_trait = {
 	inherit_from_real_father = yes
 	parent_inheritance_sex = all
 	no_prowess_loss_from_age = yes
+	set_immortal_age = 20
 	health = 1
 	old_age = -5
 	prowess = 15
