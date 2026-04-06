@@ -16,6 +16,10 @@ can_recruit_guard_maa = {
   }
 }
 
+narsid_maa_trigger = {
+  culture = { has_cultural_pillar = heritage_nars }
+}
+
 can_recruit_maa_01_trigger = {
 	narsid_maa_trigger = yes
 	culture = { 

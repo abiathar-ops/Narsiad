@@ -74,6 +74,7 @@ maa_hoplitai = {
 
 maa_mastiges = {
     type = gunpowder
+    
     can_recruit = {
 	    can_recruit_maa_02_trigger = yes
     }
