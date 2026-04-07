@@ -137,15 +137,13 @@ narsid_gunpowder.1001 = {
 			}
 		}
 	}
+
 	option = { #Actually... never mind
 		name = narsid_gunpowder.1001.c
-		# Refund the one-time lock since the player backed out
-		hidden_effect = {
-			remove_global_variable = flag_munitions_research_done
-			remove_from_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-			}
+		remove_global_variable = flag_munitions_research_done
+		remove_from_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_munitions_research_done
 		}
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
@@ -160,39 +158,6 @@ narsid_gunpowder.1001 = {
 					has_trait = compassionate
 					has_trait = calm
 					has_trait = content
-				}
-			}
-		}
-	}
-}
-
-narsid_gunpowder.1011 = {
-	hidden = yes
-
-	immediate = {
-		scope:scheme = {
-			scheme_owner = {
-				save_scope_as = owner
-				random = {
-					chance = scope:scheme.scheme_success_chance
-					save_scope_value_as = {
-						name = scheme_successful
-						value = yes
-					}
-					mandala_trickster_increment_successful_schemes_effect = yes
-				}
-				if = {
-					limit = { exists = scope:scheme_successful }
-					trigger_event = {
-						id = narsid_gunpowder.1021
-						days = 1
-					}
-				}
-				else = {
-					trigger_event = {
-						id = narsid_gunpowder.1022
-						days = 1
-					}	
 				}
 			}
 		}
@@ -265,4 +230,4 @@ narsid_gunpowder.1022 = {
 		name = narsid_gunpowder.1022.a
 		scope:scheme = { end_scheme = yes }
 	}
-}
+}	
