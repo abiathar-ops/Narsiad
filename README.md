@@ -1,5 +1,5 @@
-﻿## A 1.18.2 CK3 Mod | Cultures, Ethnicities, Religions, Storyline, and more.
-Narsiad details the series of conflicts fought between three generals over who would rule following their leader's assasination.
+﻿## The Narsiad
+A cultures et cetera mod for Crusader Kings III, designed to be as compatible as possible with other mods.
 
 To do:
 1. New decision for deviant virtue -> Revise State Doctrine
