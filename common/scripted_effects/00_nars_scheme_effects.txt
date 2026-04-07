@@ -1,0 +1,73 @@
+nars_cap_schemes_and_fire_reminders_effect = {
+	if = {
+		limit = {
+			scheme_agent_charges >= opportunity_cap_value
+			scheme_success_chance >= max_scheme_success_chance
+		}
+		if = {
+			limit = {
+				scheme_owner = {
+					is_ai = no
+					NOR = {
+						has_character_flag = scheme_critical_moments.0011
+						has_variable = opportunities_reminder
+					}
+				}
+			}
+			scheme_owner = {
+				add_character_flag = currently_in_scheme_reminder
+				# supress the 'variable is used but is never set' error, the flag is set through code with the cooldown effect on the event, smh!
+				if = {
+					limit = {
+						always = no
+					}
+					add_character_flag = scheme_critical_moments.0011
+				}
+			}
+			switch = {
+				trigger = scheme_type
+				munitions_research_scheme = {
+					munitions_research_scheme_prep_effect = yes
+				}
+			}
+		}
+		# If the player hasn't been reminded once, tell them that their scheme has hit max opportunities.
+		scheme_owner = {
+			if = {
+				limit = {
+					is_ai = no
+					NOT = { has_variable = opportunities_reminder }
+				}
+				trigger_event = scheme_critical_moments.0011
+			}
+		}
+	}
+}
+
+munitions_research_scheme_prep_effect = {
+	save_scope_as = scheme
+	save_scope_value_as = {
+		name = follow_up_event
+		value = event_id:narsid_gunpowder.1011
+	}
+	if = {
+		limit = {
+			NOT = { exists = scope:suppress_next_event }
+		}
+		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
+	}
+}
+
+munitions_research_success_effect = {
+	scope:capital = {
+		add_county_modifier = {
+			modifier = munitions_research_modifier
+			years = 30
+		}
+	}
+	# Unlock Mástiges recruitment globally (checked in can_recruit_maa_02_trigger)
+	set_global_variable = {
+		name = mastiges_research_complete
+		value = yes
+	}
+}

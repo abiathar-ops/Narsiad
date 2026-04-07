@@ -1,0 +1,142 @@
+# ─────────────────────────────────────────────────────────────────
+#  TIERED VASSAL CONVERSION EFFECTS
+#  Now include culture conversion alongside faith conversion.
+# ─────────────────────────────────────────────────────────────────
+
+# Kingdom tier: ~30% chance per AI vassal converts faith AND culture.
+narsid_kingdom_vassal_conversion_effect = {
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 30
+			set_character_faith = root.faith
+		}
+	}
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 30
+			set_culture = root.culture
+		}
+	}
+}
+
+# Empire tier: ~60% faith + culture conversion + ALL vassals get administrative government.
+narsid_empire_vassal_conversion_effect = {
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 60
+			set_character_faith = root.faith
+		}
+	}
+	every_vassal = {
+		limit = { is_ai = yes }
+		random = {
+			chance = 60
+			set_culture = root.culture
+		}
+	}
+	# Government: all vassals flipped to administrative
+	every_vassal = {
+		limit = {
+			NOT = { government_has_flag = government_is_administrative }
+		}
+		change_government = administrative_government
+	}
+}
+
+# Hegemony tier: FULL government conversion + direct vassals' faith AND culture converted.
+narsid_hegemony_vassal_conversion_effect = {
+	# Government: every vassal in the realm
+	every_vassal = {
+		limit = {
+			NOT = { government_has_flag = government_is_administrative }
+		}
+		change_government = administrative_government
+	}
+	# Faith + culture: direct vassals only (liege = root)
+	every_vassal = {
+		limit = {
+			liege = root
+			is_ai = yes
+		}
+		set_character_faith = root.faith
+	}
+	every_vassal = {
+		limit = {
+			liege = root
+			is_ai = yes
+		}
+		set_culture = root.culture
+	}
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  EVANGELIZE COUNTY CONVERSION EFFECT
+#  Called by decision_narsid_evangelize_realm.
+#  Converts a portion of realm counties to the ruler's culture and faith.
+#  Kingdom tier: ~30% of counties. Empire tier: ~50% of counties.
+# ─────────────────────────────────────────────────────────────────
+narsid_evangelize_kingdom_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 10
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 10
+			set_county_culture = root.culture
+		}
+	}
+}
+
+narsid_evangelize_empire_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 30
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 30
+			set_county_culture = root.culture
+		}
+	}
+}
+
+narsid_evangelize_hegemony_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 50
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 50
+			set_county_culture = root.culture
+		}
+	}
+}

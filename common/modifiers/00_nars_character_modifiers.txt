@@ -1,4 +1,4 @@
-#Intro modifier
+﻿#Intro modifier
 
 intro_standard_modifier = {
 	icon = diplomacy_positive

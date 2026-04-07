@@ -1,0 +1,81 @@
+namespace = narsid_titles
+
+# ─────────────────────────────────────────────────────────────────
+#  NARSOKRATIA EVENT
+# ─────────────────────────────────────────────────────────────────
+
+narsid_titles.2021 = {
+	type = character_event
+	window = fullscreen_event
+	title = narsid_titles.2021.t
+	desc = narsid_titles.2021.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_rekindle }
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+
+	immediate = {
+		h_narsokratia_effect = yes
+	}
+
+	option = { 
+		name = narsid_titles.2021.a
+		trigger_event = narsid_titles.2022
+	}
+}
+
+narsid_titles.2022 = {
+	type = character_event
+	title = narsid_titles.2022.t
+	desc = narsid_titles.2022.desc
+	theme = emperor
+	override_background = ce1_fullscreen_legitimizing_legend
+	override_effect_2d = { reference = smoke }
+	
+	left_portrait = {
+		character = root
+		animation = personality_callous
+		camera = camera_center_large
+	}
+
+	immediate = {
+		h_narsokratia_effect_2 = yes
+	}
+	option = { 
+		name = narsid_titles.2022.a
+	}
+	
+}
+
+narsid_titles.2011 = {
+	type = character_event
+	title = narsid_titles.2011.t
+	desc = narsid_titles.2011.desc
+	theme = emperor
+	override_background = throne_room_india
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = frontend_center_idle
+		camera = camera_center_large
+	}
+	option = { 
+		name = narsid_titles.2011.a
+	}
+}
+
+narsid_titles.2001 = {
+	type = character_event
+	title = narsid_titles.2001.t
+	desc = narsid_titles.2001.desc
+	theme = emperor
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = chancellor
+		camera = camera_center_large
+	}
+	option = { 
+		name = narsid_titles.2001.a
+	}
+}
