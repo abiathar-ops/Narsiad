@@ -60,7 +60,7 @@ maa_hoplitai = {
     provision_cost = @provisions_cost_infantry_cheap
 
     mercenary_fallback = no
-    holy_order_fallback = yes
+    holy_order_fallback = no
     
     stack = 100
     ai_quality = {
@@ -83,6 +83,9 @@ maa_mastiges = {
 	toughness = 65
 	pursuit = 35
 	screen = 0
+
+    mercenary_fallback = no
+    holy_order_fallback = no
 
     terrain_bonus = {
         plains = { damage = 25 toughness = 10 }

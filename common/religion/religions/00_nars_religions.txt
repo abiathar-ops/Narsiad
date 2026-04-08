@@ -50,15 +50,15 @@ narsid_group = {
 	}
 
 	holy_order_names = {
-		{ name = "holy_order_knights_of_the_chalice" }
-		{ name = "holy_order_order_of_the_holy_communion" }
-		{ name = "holy_order_knights_of_the_first_gospel" }
-		{ name = "holy_order_guardians_of_the_shroud" }
-		{ name = "holy_order_knights_of_the_reliquary" }
-		{ name = "holy_order_warriors_of_the_cross" }
+		{ name = "holy_order_host_of_place" }
+		{ name = "holy_order_lambs_of_highgod" }
+		{ name = "holy_order_order_of_alnares" }
+		{ name = "holy_order_ekuites_of_faith" }
+		{ name = "holy_order_zealots_of_place_1" }
+		{ name = "holy_order_warriors_of_the_symbol" }
 	}
 
-	holy_order_maa = { teutonic_knights }
+	holy_order_maa = { maa_hoplitai }
 
 	localization = {
 		#HighGod

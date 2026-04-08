@@ -5,7 +5,7 @@
  narsid_group_adj:0 "Nāresid"
  narsid_group_adherent:0 "Narsid"
  narsid_group_adherent_plural:0 "Narsids"
- narsid_group_desc:0 "Focused on the life and teachings of antiquity, faiths of the ancient Narsid revolves around the concept of intellectual erudition, in which adherents are to pursue knowledge and wisdom as a path to spiritual fulfillment."
+ narsid_group_desc:0 "Focused on the life and teachings of antiquity, Narsid theocracy revolves around the concept of intellectual erudition, in which adherents are to pursue knowledge and wisdom as a path to spiritual salvation."
 
  # Narsid branches
  nars_religion:0 "Nāresi"
@@ -46,7 +46,7 @@
  nars_death_deity_name_possessive:0 "Death's"
  nars_house_of_worship:0 "temple"
  nars_house_of_worship_plural:0 "temples"
- nars_religious_symbol:0 "cross"
+ nars_religious_symbol:0 "dove"
  nars_religious_text:0 "scriptures"
  nars_religious_head_title:0 "Prophētēs"
  nars_religious_head_title_name:0 "Panteiōn"
@@ -63,8 +63,8 @@
  nars_priest_alternate_plural:0 "clergy"
  nars_bishop:0 "fetial"
  nars_bishop_plural:0 "fetials"
- nars_positive_afterlife:0 "heaven"
- nars_positive_afterlife_2:1 "paradise" # Optional translation alt
+ nars_positive_afterlife:0 "haivēn"
+ nars_positive_afterlife_2:1 "vardais" # Optional translation alt
  nars_negative_afterlife:0 "hell"
  nars_negative_afterlife_2:1 "the Pit" # Optional translation alt
  nars_negative_afterlife_3:1 "Gehenna" # Optional translation alt
@@ -92,3 +92,5 @@
  nars_night_god_name_possessive:0 "$nars_high_god_name_possessive$"
  nars_water_god_name:0 "$nars_health_god_name$"
  nars_water_god_name_possessive:0 "$nars_health_god_name_possessive$"
+ nars_sun_god_name:0 "$nars_high_god_name$"
+nars_sun_god_name_possessive:0 "$nars_high_god_name_possessive$"
