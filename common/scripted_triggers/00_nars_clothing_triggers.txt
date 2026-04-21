@@ -1,15 +1,15 @@
-portrait_narsid_clothing_trigger = {
+portrait_nikean_clothing_trigger = {
 	scope:culture = {
-		portrait_narsid_clothing_contents_trigger = yes
+		portrait_nikean_clothing_contents_trigger = yes
 	}
 }
 
-portrait_narsid_clothing_spouse_trigger = {
+portrait_nikean_clothing_spouse_trigger = {
 	culture = {
-		portrait_narsid_clothing_contents_trigger = yes
+		portrait_nikean_clothing_contents_trigger = yes
 	}
 }
 
-portrait_narsid_clothing_contents_trigger = {
-	has_clothing_gfx = narsid_clothing_gfx
+portrait_nikean_clothing_contents_trigger = {
+	has_clothing_gfx = nikean_clothing_gfx
 }

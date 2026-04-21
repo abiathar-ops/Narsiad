@@ -1,18 +1,18 @@
 ﻿l_english:
- # Narsid religion group
- rf_narsid:0 "Orphists"
- narsid_group:0 "Narsid"
- narsid_group_adj:0 "Nāresid"
- narsid_group_adherent:0 "Narsid"
- narsid_group_adherent_plural:0 "Narsids"
- narsid_group_desc:0 "Focused on the life and teachings of antiquity, Narsid theocracy revolves around the concept of intellectual erudition, in which adherents are to pursue knowledge and wisdom as a path to spiritual salvation."
+ # Nikean religion group
+ rf_nikean:0 "Orphic"
+ nikean_group:0 "Nikean"
+ nikean_group_adj:0 "Nikean"
+ nikean_group_adherent:0 "Nikean"
+ nikean_group_adherent_plural:0 "Nikeans"
+ nikean_group_desc:0 "Focused on the life and teachings of antiquity, Nikean beliefs revolves around the concept of intellectual erudition, in which adherents are to pursue knowledge and wisdom as a path to salvation."
 
- # Narsid branches
- nars_religion:0 "Nāresi"
- nars_religion_adj:0 "Nāresi"
- nars_religion_adherent:0 "Nāresi"
- nars_religion_adherent_plural:0 "Nāresi"
- nars_religion_desc:0 "Orthodox faith of the Narsid from antiquity, this faith venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
+ # Nikean branches
+ nars_religion:0 "Nīkes"
+ nars_religion_adj:0 "Nīkesi"
+ nars_religion_adherent:0 "Nīkes"
+ nars_religion_adherent_plural:0 "Nīkesi"
+ nars_religion_desc:0 "Orthodox faith of the Nikeans from antiquity, this faith venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
 
  propatros_religion:0 "Pātres"
  propatros_religion_adj:0 "Pātresi"
@@ -20,17 +20,11 @@
  propatros_religion_adherent_plural:0 "Pātresi"
  propatros_religion_desc:0 "Founded by the Restorer, this faith now is headed by the Pious. In truth, this faith has diverged significantly to the Restorer's vision and is orthodox in name only. It's well known that this faith's adherents view both the Nikatores and Liberatores faith as a heresy."
 
- nikatores_religion:0 "Nīkes"
- nikatores_religion_adj:0 "Nīkesi"
- nikatores_religion_adherent:0 "Nīkes"
- nikatores_religion_adherent_plural:0 "Nīkesi"
- nikatores_religion_desc:0 "Heresy headed by the Apostate, this faith venerates the Restorer's line and worships his family as a divine lineage. Adherents are expected to uphold the values of battle and conquest, seeing the world as a stage for sacred struggle."
-
  liberatores_religion:0 "Lysēs"
  liberatores_religion_adj:0 "Lysēsi"
  liberatores_religion_adherent:0 "Lysēs"
  liberatores_religion_adherent_plural:0 "Lysēsi"
- liberatores_religion_desc:0 "Heresy headed by the Liberator, this faith has a noted animosity towards those who venerate imperial cults believing it to be a corruption of the true faith to the lost Narsid pantheon of old, long forgotten and nameless now."
+ liberatores_religion_desc:0 "Heresy headed by the Liberator, this faith has a noted animosity towards those who venerate imperial cults believing it to be a corruption of the true faith to the lost Nikean pantheon of old, long forgotten and nameless now."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"

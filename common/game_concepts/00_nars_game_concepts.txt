@@ -1,37 +1,49 @@
-narsids = {
-	alias = { narsid menofnars }
+nikeans = {
+	alias = { nikean nikeis }
+	texture = "gfx/interface/icons/icon_culture.dds"
+}
+
+sophes = {
+	parent = nikeans
+	alias = { sophist sophists }
+	texture = "gfx/interface/icons/icon_game_concept_innovation_spread.dds"
+}
+
+narsic = {
+	parent = nikeans
+	alias = { narsic_short }
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
 hoplites = {
-	parent = narsids
+	parent = nikeans
 	alias = { hoplite }
-	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
+	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
 
 mastiges = {
 	parent = hoplites
-	texture = "gfx/interface/icons/regimenttypes/hoplites.dds"
+	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
 
 narsokratia = {
-	parent = narsid
-	alias = { narsidrealm }
-	texture = "gfx/interface/icons/icon_culture.dds"
+	parent = nikean
+	alias = { nikeanrealm }
+	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 
-naresid = {
-	parent = narsid
-	alias = { orphic orphists }
+orphic = {
+	parent = nikean
+	alias = { orphists }
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
 narses = {
-	parent = naresid
+	parent = orphic
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
 narsil = {
-	parent = narsid
+	parent = nikean
 	texture = "gfx/interface/icons/icon_prowess.dds"
 }

@@ -4,7 +4,7 @@
 # ─────────────────────────────────────────────────────────────────
 
 # Kingdom tier: ~30% chance per AI vassal converts faith AND culture.
-narsid_kingdom_vassal_conversion_effect = {
+nikean_kingdom_vassal_conversion_effect = {
 	every_vassal = {
 		limit = { is_ai = yes }
 		random = {
@@ -22,7 +22,7 @@ narsid_kingdom_vassal_conversion_effect = {
 }
 
 # Empire tier: ~60% faith + culture conversion + ALL vassals get administrative government.
-narsid_empire_vassal_conversion_effect = {
+nikean_empire_vassal_conversion_effect = {
 	every_vassal = {
 		limit = { is_ai = yes }
 		random = {
@@ -47,7 +47,7 @@ narsid_empire_vassal_conversion_effect = {
 }
 
 # Hegemony tier: FULL government conversion + direct vassals' faith AND culture converted.
-narsid_hegemony_vassal_conversion_effect = {
+nikean_hegemony_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
 		limit = {
@@ -74,11 +74,11 @@ narsid_hegemony_vassal_conversion_effect = {
 
 # ─────────────────────────────────────────────────────────────────
 #  EVANGELIZE COUNTY CONVERSION EFFECT
-#  Called by decision_narsid_evangelize_realm.
+#  Called by decision_nikean_evangelize_realm.
 #  Converts a portion of realm counties to the ruler's culture and faith.
 #  Kingdom tier: ~30% of counties. Empire tier: ~50% of counties.
 # ─────────────────────────────────────────────────────────────────
-narsid_evangelize_kingdom_county_effect = {
+nikean_evangelize_kingdom_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = root.faith }
@@ -99,7 +99,7 @@ narsid_evangelize_kingdom_county_effect = {
 	}
 }
 
-narsid_evangelize_empire_county_effect = {
+nikean_evangelize_empire_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = root.faith }
@@ -120,7 +120,7 @@ narsid_evangelize_empire_county_effect = {
 	}
 }
 
-narsid_evangelize_hegemony_county_effect = {
+nikean_evangelize_hegemony_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = root.faith }

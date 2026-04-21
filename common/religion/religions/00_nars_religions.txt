@@ -1,7 +1,7 @@
-narsid_group = {
-	family = rf_narsid
+nikean_group = {
+	family = rf_nikean
 	graphical_faith = pagan.gfx
-	doctrine = narsid_hostility_doctrine
+	doctrine = nikean_hostility_doctrine
 	doctrine = divine_destiny_doctrine
 
 	#Main Group
@@ -41,8 +41,8 @@ narsid_group = {
 	doctrine = doctrine_imperial_anointment
 
 	traits = {
-		virtues = { diligent just gregarious patient temperate stubborn lustful }
-		sins = { lazy arbitrary shy impatient gluttonous fickle chaste }
+		virtues = { diligent just gregarious temperate stubborn }
+		sins = { lazy arbitrary shy impatient fickle  }
 	}
 
 	custom_faith_icons = {
@@ -54,8 +54,6 @@ narsid_group = {
 		{ name = "holy_order_lambs_of_highgod" }
 		{ name = "holy_order_order_of_alnares" }
 		{ name = "holy_order_ekuites_of_faith" }
-		{ name = "holy_order_zealots_of_place_1" }
-		{ name = "holy_order_warriors_of_the_symbol" }
 	}
 
 	holy_order_maa = { maa_hoplitai }
@@ -230,14 +228,15 @@ narsid_group = {
 	faiths = {
 			nars_religion = {
 				color = { 230 228 216 }
-				icon = narsid_0 #custom_faith_dove
+				icon = custom_tamska_veryana.dds #custom_faith_dove
 				#icon = dhyana
 
-				holy_site = rome
-				holy_site = athens
-				holy_site = alexandria
-				holy_site = carthage
-				holy_site = olympus
+				holy_site = cagliari
+				holy_site = ajaccio
+				holy_site = arborea
+				holy_site = gallura
+				holy_site = tortoli
+				holy_site = logudoro
 
 				doctrine = tenet_nars_sanguine
 				doctrine = tenet_nars_pantheon
@@ -245,41 +244,29 @@ narsid_group = {
 			}
 			propatros_religion = {
 				color = { 230 228 216 }
-				icon = narsid_1 #custom_faith_dove
+				icon = custom_faith_dove
 
-				holy_site = rome
-				holy_site = athens
-				holy_site = alexandria
-				holy_site = carthage
-				holy_site = olympus
+				holy_site = cagliari
+				holy_site = ajaccio
+				holy_site = arborea
+				holy_site = gallura
+				holy_site = tortoli
+				holy_site = logudoro
 
 				doctrine = tenet_nars_banking
 				doctrine = tenet_nars_pantheon
 				doctrine = tenet_nars_erudition
 			}
-			nikatores_religion = {
-				color = { 230 228 216 }
-				icon = narsid_2 #custom_faith_1
-
-				holy_site = rome
-				holy_site = athens
-				holy_site = alexandria
-				holy_site = carthage
-				holy_site = olympus
-
-				doctrine = tenet_nars_crusade
-				doctrine = tenet_nars_pantheon
-				doctrine = tenet_nars_erudition
-			}
 			liberatores_religion = {
 				color = { 230 228 216 }
-				icon = narsid_3 #custom_faith_9
+				icon = custom_faith_1
 
-				holy_site = rome
-				holy_site = athens
-				holy_site = alexandria
-				holy_site = carthage
-				holy_site = olympus
+				holy_site = cagliari
+				holy_site = ajaccio
+				holy_site = arborea
+				holy_site = gallura
+				holy_site = tortoli
+				holy_site = logudoro
 
 				doctrine = tenet_nars_vestals
 				doctrine = tenet_nars_pantheon

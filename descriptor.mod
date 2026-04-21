@@ -1,6 +1,6 @@
-version="1.18.1"
 tags={
-	"1.18 'Crane'"
+	"Gameplay"
 }
 name="Narsiad"
-supported_version="1.18.0"
+supported_version="1.18.*"
+remote_file_id="2291024375"

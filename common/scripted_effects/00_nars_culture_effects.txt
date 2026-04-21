@@ -1,4 +1,4 @@
-local_assimilate_narsid_traditions_effect = {
+local_assimilate_nikean_traditions_effect = {
 	save_scope_as = converting_character
 	
 	$OLD_CULTURE$ = { save_scope_as = old_culture }
@@ -8,17 +8,17 @@ local_assimilate_narsid_traditions_effect = {
 	$CONVERTER$ = { save_scope_as = converter }
 
 	add_character_modifier = {
-		modifier = embraced_narsid_traditions_modifier
+		modifier = embraced_nikean_traditions_modifier
 	}
 	
 	if = {
 		limit = {
 			dynasty ?= {
-				NOT = { has_dynasty_modifier = settled_narsid_dynasty_modifier }
+				NOT = { has_dynasty_modifier = settled_nikean_dynasty_modifier }
 			}
 		}
 		dynasty = {
-			add_dynasty_modifier = { modifier = settled_narsid_dynasty_modifier years = 80 }
+			add_dynasty_modifier = { modifier = settled_nikean_dynasty_modifier years = 80 }
 		}
 	}
 	
@@ -75,11 +75,11 @@ local_assimilate_narsid_traditions_effect = {
 			if = {
 				limit = {
 					dynasty ?= {
-						NOT = { has_dynasty_modifier = settled_narsid_dynasty_modifier }
+						NOT = { has_dynasty_modifier = settled_nikean_dynasty_modifier }
 					}
 				}
 				dynasty = {
-					add_dynasty_modifier = { modifier = settled_narsid_dynasty_modifier years = 80 }
+					add_dynasty_modifier = { modifier = settled_nikean_dynasty_modifier years = 80 }
 				}
 			}
 		}
@@ -149,12 +149,12 @@ local_assimilate_narsid_traditions_effect = {
 #  KINGDOM CREATION
 #  Adds: limited faith conversion (~30 % per vassal)
 # ─────────────────────────────────────────────────────────────────
-create_narsid_kingdom_effect = {
+create_nikean_kingdom_effect = {
 	hidden_effect = {
 		every_held_title = {
 			custom = create_title_every_held_duchy
 			title_tier = duchy
-			custom_tooltip = create_narsid_kingdom_de_jure_changes
+			custom_tooltip = create_nikean_kingdom_de_jure_changes
 		}
 	}
 	dynasty ?= { add_dynasty_prestige = 750 }
@@ -275,7 +275,7 @@ create_narsid_kingdom_effect = {
 		scope:new_title = { set_capital_county = scope:old_title.title_capital_county }
 		set_primary_title_to = scope:new_title
 		# ── KINGDOM CONVERSION: ~30 % faith conversion per vassal ──
-		narsid_kingdom_vassal_conversion_effect = yes
+		nikean_kingdom_vassal_conversion_effect = yes
 		
 		every_player = {
 			if = {
@@ -324,12 +324,12 @@ create_narsid_kingdom_effect = {
 #  EMPIRE CREATION
 #  Adds: ~60 % faith conversion per vassal + administrative government
 # ─────────────────────────────────────────────────────────────────
-create_narsid_empire_effect = {
+create_nikean_empire_effect = {
 	hidden_effect = {
 		every_held_title = {
 			custom = create_title_every_held_kingdom
 			title_tier = kingdom
-			custom_tooltip = create_narsid_empire_de_jure_changes
+			custom_tooltip = create_nikean_empire_de_jure_changes
 		}
 	}
  
@@ -401,7 +401,7 @@ create_narsid_empire_effect = {
 		set_primary_title_to = scope:new_title
 
 		# ── EMPIRE CONVERSION: ~60 % faith + administrative government ──
-		narsid_empire_vassal_conversion_effect = yes
+		nikean_empire_vassal_conversion_effect = yes
 
 		every_player = {
 			if = {
@@ -465,11 +465,29 @@ create_h_narsokratia_effect = {
 			}
 		}
 	}
-	trigger_event = narsid_titles.2021
 	resolve_title_and_vassal_change = scope:change
 	
 	hidden_effect = {
 		set_primary_title_to = scope:new_title
+	}
+
+	custom_tooltip = decision_h_narsokratia_troop_effect_tooltip
+	
+	hidden_effect = {
+		spawn_army = {
+			name = event_troop_default_name
+			men_at_arms = {
+				type = maa_mastiges
+				stacks = 5
+			}
+			men_at_arms = {
+				type = maa_hoplitai
+				stacks = 10
+			}
+			location = this.capital_province
+			uses_supply = yes
+			inheritable = yes
+		}
 	}
 
 	scope:new_hegemon = {
@@ -500,7 +518,7 @@ create_h_narsokratia_effect = {
 			set_de_jure_liege_title = title:h_narsokratia
 		}
         # ── HEGEMONY CONVERSION: all govts + direct-vassal faith ──
-        narsid_hegemony_vassal_conversion_effect = yes
+        nikean_hegemony_vassal_conversion_effect = yes
 	}
 
 	set_global_variable = {

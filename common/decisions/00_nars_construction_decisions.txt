@@ -1,0 +1,89 @@
+decision_establish_aretaic_school = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+	}
+	decision_group_type = nikean
+	desc = decision_establish_aretaic_school_desc
+	selection_tooltip = decision_establish_aretaic_school_tooltip
+	sort_order = 850
+	
+	is_shown = {
+		is_nikean = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+		NOT = { exists = global_var:established_aretaic_school }
+	}
+
+	is_valid = {
+		OR = {
+			prestige_level >= 4
+			learning >= 25
+		}
+		custom_tooltip = {
+			text = establish_aretaic_school_no_barony_tt
+			any_held_title = {
+				title_tier = barony
+				title_province = { has_special_building_slot = no }
+				is_leased_out = no
+			}
+		}
+	}
+	
+	cost = {
+		gold = 750
+	}
+
+	effect = {
+		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
+		open_view_data = {
+			view = decision_detail
+			data = decision:pick_aretaic_school_barony
+			player = root
+		}
+	}
+	
+	ai_potential = { always = no }
+}
+
+pick_aretaic_school_barony = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+	}
+	decision_group_type = nikean
+	ai_goal = yes
+	is_invisible = yes
+	
+	widget = {
+		controller = create_holy_order 
+		barony_valid = {
+			trigger_if = {
+				limit = { exists = this }
+				title_province = { has_special_building_slot = no }
+				holder = scope:ruler
+				is_leased_out = no
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pick_aretaic_school_barony_custom_tt
+		set_global_variable = {
+			name = established_aretaic_school
+			value = yes
+		}
+		hidden_effect = {
+			scope:barony.title_province = {
+				set_variable = {
+					name = university
+					value = yes
+				}
+				add_special_building = aretaic_school_01
+			}
+		}
+	}
+	
+	ai_potential = { always = no }
+}

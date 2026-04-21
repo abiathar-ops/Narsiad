@@ -1,4 +1,4 @@
-settled_narsid_dynasty_modifier = {
+settled_nikean_dynasty_modifier = {
 	icon = martial_positive
 	monthly_prestige = 0.25
 }

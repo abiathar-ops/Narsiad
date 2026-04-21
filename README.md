@@ -2,19 +2,34 @@
 A cultures et cetera mod for Crusader Kings III, designed to be as compatible as possible with other mods.
 
 To do:
-1. New decision for deviant virtue -> Revise State Doctrine
+1. Balance MAA
 2. Narsopolis special building 
 3. DNA making
 4. Spawn legendary characters
 5. Polish decision rewards -> see Iranian Resurgence
-6. Custom casus belli for narsid hegemony (submission or ruin maybe?)
+6. Custom casus belli for nikean hegemony (submission or ruin maybe?)
 7. Gunpowder decision-esque to industry and to synods
-8. Link narsid_intro.1001 to the intro decision
+8. Link nikean_intro.1001 to the intro decision
 9. 'Mend Narsil' could be a starter decision and a prerequisite to the Narsokratia decisions 
 9.1 Could be scheme based, and if adventurer, have to pay a renowned blacksmith
 10. More events to Evangelizing and other ones
-11. Decision for Narsid culture characters to convert to Narsid faith
-12. Events for Narsid scholar/knight characters gained from Aretaic School
+11. Decision for Nikean culture characters to convert to Nikean faith
+12. Events for Nikean scholar/knight characters gained from Aretaic School
 14. Innovation should give Siege Damage to Hoplites? (Too OP..?)
+15. Custom Special Doctrine (e.g. Rightful Rulers of the World) to the Nikeans.
+16. Sponsor Expedition -> Finance with gold and influence, an adventurer band that gets a claim on a nearby realm (kingdom/empire) and them declaring war on them. Endgoal is creating another Nikean State
+17. Scout Talents -> From Aretaike Scholi, find a good nikean courtier and legendary characters.
+18. New decision for deviant virtue -> Revise State Doctrine that has bigamy, deviant-to-virtuous, and perhaps soon gaining tradition
+19. Narsil + Gunpowder + Develop Industry -> Foundry-based decision (all scheme based)
+20. Develop industry (Arms: Develop Industry"MAA + development?), spies (Civil: maa + control?)
+20.1 Choose Career Path (Civil and Military, gives perma modifications)
+21. Prosyletize Dogma (Vassal + Lands + Both)
+22. Cultural Reformation (Marital Revision, Tradition decision, Deviant Virtue)
+23. Culture Decision (Libation, Study the Narsian Classics)
+24. Study the Narsian Classics is a simple decision like libation but has a chance to get a trait but deals stress (need to know nikean language, maybe make an ancient dialect of nikean (Old Nikean)?)
+25. Libation gives pious trait
+26. Search for a Champion
+27. Rename sophes, refactor nikean to nikean
+28. Delete Synodian Spies, develop industry becomes a scheme and became a foundry-based decision (or make it into inquisitor (religion based) and put it on another dropdown)
 
 Assets are gained from other mods such as Realm of the Exile and Apotheosis: The Hellenic Age

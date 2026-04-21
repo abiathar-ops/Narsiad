@@ -1,0 +1,15 @@
+theologic_resurgence = {
+	group = "special"
+	is_available_on_create = {
+		has_doctrine = theocratic_resurgence_doctrine
+	}
+	theocratic_resurgence_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_high
+		}
+		parameters = {
+			divine_destiny_holy_war_cost_reduction = yes
+			faith_can_raid = yes
+		}
+	}
+}

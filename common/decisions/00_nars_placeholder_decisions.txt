@@ -1,0 +1,116 @@
+decision_choose_discipline = { 
+	decision_group_type = nikean
+	title = decision_choose_discipline
+	desc = decision_choose_discipline_desc
+	selection_tooltip = decision_choose_discipline_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/study.dds"
+	}
+	sort_order = 90
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		is_nikean = yes
+	}
+	
+	is_valid = {
+		is_at_war = no
+		is_imprisoned = no	
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_adult = yes
+	}
+	
+	widget = {
+		gui = "decision_view_widget_generic_multichoice_with_effects"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "SELECT_ACTION"
+		show_from_start = yes
+
+		item = { # Choose a civilian career
+			value = scholar_career
+			is_valid = {
+				custom_tooltip = {
+					text = you_have_a_scholar_career_desc
+					trigger_if = {
+						limit = {
+							has_variable = appointment_trait_override
+						}
+						var:appointment_trait_override != trait:education_stewardship_1
+					}
+					trigger_else = {
+						NOT = { has_trait_with_flag = scholar_province }
+					}
+				}
+			}
+			current_description = decision_choose_discipline_scholar_desc
+			localization = decision_choose_discipline_scholar_name
+			icon = "gfx/interface/icons/celestial_administration_types/icon_game_concept_celestial_standard_administration.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+		item = { # Choose a military career
+			value = martial_career
+			is_valid = {
+				custom_tooltip = {
+					text = you_have_a_martial_career_desc
+					trigger_if = {
+						limit = {
+							has_variable = appointment_trait_override
+						}
+						var:appointment_trait_override != trait:education_martial_1
+					}
+					trigger_else = {
+						NOT = { has_trait_with_flag = martial_province }
+					}
+				}
+			}
+			current_description = decision_choose_discipline_martial_desc
+			localization = decision_choose_discipline_martial_name
+			icon = "gfx/interface/icons/celestial_administration_types/icon_game_concept_celestial_military_administration.dds"
+			ai_chance = {
+				value = 0
+			}
+		}
+	}
+
+	cost = {
+		influence = {
+			value = 50
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				scope:martial_career = yes
+			}
+			custom_tooltip = {
+				text = change_to_martial_career_desc
+				set_variable = {
+					name = appointment_trait_override
+					value = trait:education_martial_1
+				}
+			}
+		}
+		open_view_data = {
+			view = decision_detail
+			data = decision:decision_mend_narsil
+			player = root
+		}
+		else = {
+			custom_tooltip = {
+				text = change_to_scholar_career_desc
+				set_variable = {
+					name = appointment_trait_override
+					value = trait:education_stewardship_1
+				}
+			}
+		}
+	}
+	
+	ai_check_interval = 0
+}

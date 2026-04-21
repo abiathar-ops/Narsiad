@@ -4,7 +4,7 @@
  trait_nars_trait_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a sacred scion, born of faith and blood."
  descendants_gain_nars_trait: "Your descendants receive the mark of the [GetTrait('nars_trait').GetName( GetNullCharacter )]"
 
- trait_track_hoplos:0 "Hoplitēs"
+ trait_track_hoplos:0 "Hoplîtes"
  trait_track_hoplos_desc:0 "Bloody prayers are his language; blood and iron his words. In ordered ranks he does not waver; in the smoke of chaos he restores command."
  trait_track_sophes:0 "Sophóses"
  trait_track_sophes_desc:0 "He rules himself first; knowledge is his power, quiet and feared by all. Through wisdom and discipline, he bends the world to his will."

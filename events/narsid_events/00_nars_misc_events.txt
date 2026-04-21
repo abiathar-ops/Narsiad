@@ -1,11 +1,11 @@
-﻿### Narsid Events ###
-namespace = narsid_intro
+﻿### Nikean Events ###
+namespace = nikean_intro
 
-narsid_intro.1001 = {
+nikean_intro.1001 = {
 	type = character_event
 	window = fullscreen_event
-	title = narsid_intro.1001.t
-	desc = narsid_intro.1001.desc
+	title = nikean_intro.1001.t
+	desc = nikean_intro.1001.desc
 	theme = emperor
 	override_background = { reference = fp3_fullscreen_sunder }
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
@@ -17,16 +17,16 @@ narsid_intro.1001 = {
 	}
 
 	option = {
-		name = narsid_intro.1001.a
-		trigger_event = narsid_intro.1002
+		name = nikean_intro.1001.a
+		trigger_event = nikean_intro.1002
 	}
 }
 
-narsid_intro.1002 = { 
+nikean_intro.1002 = { 
 	type = character_event
 	window = big_event_window
-	title = narsid_intro.1002.t
-	desc = narsid_intro.1002.desc
+	title = nikean_intro.1002.t
+	desc = nikean_intro.1002.desc
 	theme = emperor
 	override_background = ce1_fullscreen_legitimizing_legend
 	override_effect_2d = { reference = smoke }
@@ -39,7 +39,7 @@ narsid_intro.1002 = {
 		intro_standard_effect = yes
 	}
 	option = {
-		name = narsid_intro.1002.a
+		name = nikean_intro.1002.a
 		create_anduril_effect = yes
 	}
 }
@@ -56,13 +56,13 @@ narsid_intro.1002 = {
 #  the decisions tab via unavailable_unique_decisions. Option C
 #  (not yet) leaves the decision available.
 # ─────────────────────────────────────────────────────────────────
-namespace = narsid_artifact
+namespace = nikean_artifact
 
-narsid_artifact.1001 = {
+nikean_artifact.1001 = {
 	type = character_event
 
-	title = narsid_artifact.1001.t
-	desc = narsid_artifact.1001.desc
+	title = nikean_artifact.1001.t
+	desc = nikean_artifact.1001.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -79,7 +79,7 @@ narsid_artifact.1001 = {
 
 	option = {
 		# Sacrifice courtiers — brutal but FAST (30 days)
-		name = narsid_artifact.1001.a
+		name = nikean_artifact.1001.a
 		give_nickname = nick_the_bloody
 		add_dread = 50
 		stress_impact = {
@@ -112,7 +112,7 @@ narsid_artifact.1001 = {
 				value = root
 			}
 			trigger_event = {
-				id = narsid_artifact.1002
+				id = nikean_artifact.1002
 				days = 30
 			}
 		}
@@ -131,7 +131,7 @@ narsid_artifact.1001 = {
 
 	option = {
 		# Spend gold & rare materials — measured but SLOW (120 days)
-		name = narsid_artifact.1001.b
+		name = nikean_artifact.1001.b
 		give_nickname = nick_the_blessed
 		remove_treasury_or_gold = major_treasury_or_gold_value
 		stress_impact = {
@@ -150,7 +150,7 @@ narsid_artifact.1001 = {
 				value = root
 			}
 			trigger_event = {
-				id = narsid_artifact.1003
+				id = nikean_artifact.1003
 				days = 120
 			}
 		}
@@ -165,7 +165,7 @@ narsid_artifact.1001 = {
 
 	option = {
 		# Not yet — decision remains available
-		name = narsid_artifact.1001.c
+		name = nikean_artifact.1001.c
 		add_stress = miniscule_stress_impact_gain
 		ai_chance = {
 			base = 0
@@ -181,11 +181,11 @@ narsid_artifact.1001 = {
 	}
 }
 
-narsid_artifact.1002 = {
+nikean_artifact.1002 = {
 	type = character_event
 
-	title = narsid_artifact.1002.t
-	desc = narsid_artifact.1002.desc
+	title = nikean_artifact.1002.t
+	desc = nikean_artifact.1002.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -197,17 +197,17 @@ narsid_artifact.1002 = {
 	}
 
 	option = { 
-		name = narsid_artifact.1002.a
+		name = nikean_artifact.1002.a
 		create_narsil_effect = yes
-		trigger_event = narsid_artifact.1004
+		trigger_event = nikean_artifact.1004
 	}
 }
 
-narsid_artifact.1003 = {
+nikean_artifact.1003 = {
 	type = character_event
 
-	title = narsid_artifact.1003.t
-	desc = narsid_artifact.1003.desc
+	title = nikean_artifact.1003.t
+	desc = nikean_artifact.1003.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -219,32 +219,32 @@ narsid_artifact.1003 = {
 	}
 
 	option = { 
-		name = narsid_artifact.1003.a
+		name = nikean_artifact.1003.a
 		create_narsil_effect = yes
-		trigger_event = narsid_artifact.1004
+		trigger_event = nikean_artifact.1004
 	}
 }
 
-narsid_artifact.1004 = {
+nikean_artifact.1004 = {
 	type = character_event
 	window = fullscreen_event
-	title = narsid_artifact.1004.t
-	desc = narsid_artifact.1004.desc
+	title = nikean_artifact.1004.t
+	desc = nikean_artifact.1004.desc
 	theme = emperor
 	override_background = { reference = fp3_fullscreen_intro }
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 
 	option = { 
-		name = narsid_artifact.1004.a
+		name = nikean_artifact.1004.a
 	}
 }
 
-namespace = narsid_racial
+namespace = nikean_racial
 
-narsid_racial.1001 = {
+nikean_racial.1001 = {
 	type = character_event
-	title = narsid_racial.1001.t
-	desc = narsid_racial.1001.desc
+	title = nikean_racial.1001.t
+	desc = nikean_racial.1001.desc
 	theme = administrative
 	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
@@ -257,16 +257,16 @@ narsid_racial.1001 = {
 		libation_good_effect = yes
 	}
 	option = {
-		name = narsid_racial.1001.a
+		name = nikean_racial.1001.a
 		add_piety = 250
 		remove_treasury_or_gold = minor_treasury_or_gold_value
 	}
 }
 
-narsid_racial.1002 = {
+nikean_racial.1002 = {
 	type = character_event
-	title = narsid_racial.1002.t
-	desc = narsid_racial.1002.desc
+	title = nikean_racial.1002.t
+	desc = nikean_racial.1002.desc
 	theme = administrative
 	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
@@ -279,16 +279,16 @@ narsid_racial.1002 = {
 		libation_standard_effect = yes
 	}
 	option = {
-		name = narsid_racial.1002.a
+		name = nikean_racial.1002.a
 		add_piety = 125
 		remove_treasury_or_gold = minor_treasury_or_gold_value
 	}
 }
 
-narsid_racial.1003 = {
+nikean_racial.1003 = {
 	type = character_event
-	title = narsid_racial.1003.t
-	desc = narsid_racial.1003.desc
+	title = nikean_racial.1003.t
+	desc = nikean_racial.1003.desc
 	theme = administrative
 	override_background = bp1_relaxing_room_mena
 	override_effect_2d = { reference = smoke }
@@ -301,7 +301,7 @@ narsid_racial.1003 = {
 		libation_bad_effect = yes
 	}
 	option = {
-		name = narsid_racial.1003.a
+		name = nikean_racial.1003.a
 		remove_treasury_or_gold = medium_treasury_or_gold_value
 	}
 }

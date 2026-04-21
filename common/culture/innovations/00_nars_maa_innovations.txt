@@ -30,7 +30,7 @@
 @gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
 
 
-innovation_narsid_maa_01 = {
+innovation_nikean_maa_01 = {
 	group = culture_group_regional
 	culture_era = culture_era_tribal
 	icon = @leadership_1
@@ -45,7 +45,7 @@ innovation_narsid_maa_01 = {
 	flag = culture_era_tribal
 }
 
-innovation_narsid_maa_02 = {
+innovation_nikean_maa_02 = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @leadership_2
@@ -71,7 +71,7 @@ innovation_narsid_maa_02 = {
 }
 
 
-innovation_narsid_maa_03 = {
+innovation_nikean_maa_03 = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @gunpowder_02
@@ -96,7 +96,7 @@ innovation_narsid_maa_03 = {
 	flag = culture_era_high_medieval
 }
 
-innovation_narsid_maa_04 = {
+innovation_nikean_maa_04 = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @maa_02

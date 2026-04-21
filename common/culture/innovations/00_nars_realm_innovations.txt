@@ -24,7 +24,7 @@
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 
-innovation_narsid_architecture_01 = {
+innovation_nikean_architecture_01 = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval
 	icon = @levy_building
@@ -41,7 +41,7 @@ innovation_narsid_architecture_01 = {
 	flag = culture_era_early_medieval
 }
 
-innovation_narsid_architecture_02 = {
+innovation_nikean_architecture_02 = {
 	group = culture_group_regional
 	culture_era = culture_era_high_medieval
 	icon = @civil_construction_2
@@ -60,7 +60,7 @@ innovation_narsid_architecture_02 = {
 	flag = culture_era_high_medieval
 }
 
-innovation_narsid_architecture_03 = {
+innovation_nikean_architecture_03 = {
 	group = culture_group_regional
 	culture_era = culture_era_late_medieval
 	icon = @misc_inventions

@@ -1,13 +1,24 @@
-is_narsid = {
+is_nikean = {
     culture = {
         has_cultural_pillar = heritage_nars
     }
 }
 
+is_narsocratic = {
+   culture = {
+        has_cultural_pillar = heritage_nars
+   }
+   or = {
+       has_title = title:k_narsokratia
+       has_title = title:e_narsokratia
+       has_title = title:h_narsokratia
+   }
+}
+
 is_narses_scion = {
 	OR = {
 		has_trait = nars_trait
-		is_narsid = yes
+		is_nikean = yes
 	}
 }
 

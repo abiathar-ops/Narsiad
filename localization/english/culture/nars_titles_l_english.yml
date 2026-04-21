@@ -1,5 +1,5 @@
 ﻿l_english:
-### Narsic ###
+### Nikean ###
 # Feudal / Imperial
  count_feudal_male_nars:0 "Kōmes"
  count_feudal_female_nars:0 "Kōmitissa"
@@ -30,7 +30,7 @@
  emperor_administrative_female_nars:0 "Ōtarkhēssa"
  hegemon_administrative_male_nars: "Mōnarkhēs"
  hegemon_administrative_female_nars: "Mōnarkhēssa"
-#Nars
+#s
  empire_administrative_nars:"Ōtokratōs"
  empire_administrative_independent_nars: "Ōtokratōs"
 ### Princes (Children) ### 

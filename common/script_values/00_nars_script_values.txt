@@ -1,8 +1,8 @@
-invite_narsid_courtiers_standard_value = {
+invite_nikean_courtiers_standard_value = {
 	value = 15
 }
 
-invite_narsid_courtiers_upper_value = {
-	value = invite_narsid_courtiers_standard_value
+invite_nikean_courtiers_upper_value = {
+	value = invite_nikean_courtiers_standard_value
 	add = 10
 }

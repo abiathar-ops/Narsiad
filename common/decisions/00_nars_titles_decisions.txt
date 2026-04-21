@@ -4,7 +4,7 @@ decision_h_narsokratia = {
 	}
 	desc = decision_h_narsokratia_desc
 	selection_tooltip = decision_h_narsokratia_tooltip
-	decision_group_type = narsid
+	decision_group_type = nikean
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -19,7 +19,7 @@ decision_h_narsokratia = {
 
 	is_shown = {
 		is_ruler = yes
-		is_narsid = yes
+		is_nikean = yes
 		has_title = title:e_narsokratia
 		top_liege = this
 		NOT = { has_title = title:h_narsokratia }
@@ -52,7 +52,7 @@ decision_h_narsokratia = {
 		is_imprisoned = no
 		top_liege = this
 		OR = {
-			religion = { is_in_family = rf_narsid }
+			religion = { is_in_family = rf_nikean }
 			culture = { has_cultural_pillar = heritage_nars }
 		}
 	}
@@ -90,10 +90,11 @@ decision_h_narsokratia = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
 		add_trait = nars_trait
-		trigger_event = narsid_titles.2021
+		trigger_event = nikean_titles.2021
+		gain_heroic_legend_seed_tooltip_effect = yes
 		hidden_effect = {
 			change_government = administrative_government
-			local_assimilate_narsid_traditions_effect = {
+			local_assimilate_nikean_traditions_effect = {
 				OLD_CULTURE = root.culture
 				NEW_CULTURE = root.culture
 				OLD_FAITH = root.faith
@@ -109,6 +110,7 @@ decision_h_narsokratia = {
 				value = root
 			}
 		}
+	
 	}
 		
 	ai_potential = { always = yes }
@@ -118,12 +120,11 @@ decision_h_narsokratia = {
 	}
 }
 
-
 decision_e_narsokratia = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
-	decision_group_type = narsid
+	decision_group_type = nikean
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 0
@@ -137,7 +138,7 @@ decision_e_narsokratia = {
 	sort_order = 1000
 
 	is_shown = {
-		is_narsid = yes
+		is_nikean = yes
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
 		NOT = { has_title = title:e_narsokratia }
@@ -198,8 +199,9 @@ decision_e_narsokratia = {
 	effect = {
 		change_government = administrative_government
 		custom_tooltip = decision_e_narsokratia_effect_tooltip
-		create_narsid_empire_effect = yes
-		trigger_event = narsid_titles.2011
+		gain_heroic_legend_seed_tooltip_effect = yes
+		create_nikean_empire_effect = yes
+		trigger_event = nikean_titles.2011
 		if = {
 			limit = {
 				is_ai = no
@@ -227,7 +229,7 @@ decision_k_narsokratia = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
 	}
-	decision_group_type = narsid
+	decision_group_type = nikean
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 0
@@ -241,7 +243,7 @@ decision_k_narsokratia = {
 	sort_order = 1000
 
 	is_shown = {
-		is_narsid = yes
+		is_nikean = yes
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
 		top_liege = this
@@ -305,8 +307,9 @@ decision_k_narsokratia = {
 
 	effect = {
 		custom_tooltip = decision_k_narsokratia_effect_tooltip
-		create_narsid_kingdom_effect = yes
-		trigger_event = narsid_titles.2001
+		create_nikean_kingdom_effect = yes
+		gain_heroic_legend_seed_tooltip_effect = yes
+		trigger_event = nikean_titles.2001
 		if = {
 			limit = {
 				is_ai = no
@@ -329,240 +332,4 @@ decision_k_narsokratia = {
 	ai_will_do = {
 		base = 100
 	}
-}
-decision_mend_narsil = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mythology.dds"
-	}
-	desc = decision_mend_narsil_desc
-	decision_group_type = narsid
-	selection_tooltip = decision_mend_narsil_tooltip
-
-	is_shown = {
-		is_narsid = yes
-		has_title = title:e_narsokratia
-		top_liege = this
-		is_capable_adult = yes
-		is_landed = yes
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-		}
-	}
-
-	is_valid = {
-		gold >= major_treasury_or_gold_value
-		is_imprisoned = no
-		is_at_war = no
-	}
-
-	is_valid_showing_failures_only = {
-		top_liege = this
-		is_available_adult = yes
-		is_at_war = no
-	}
-	
-	sort_order = 900
-
-	effect = {
-		custom_tooltip = decision_mend_narsil_effect_tooltip
-		hidden_effect = {
-			trigger_event = { id = narsid_artifact.1001 }
-		}
-	}
-
-	ai_potential = { always = yes }
-
-	ai_will_do = {
-		base = 100
-	}
-}
-
-decision_munitions_research = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mythology.dds"
-	}
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 120
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
-
-	sort_order = 860
-
-	desc = decision_munitions_research_desc
-	selection_tooltip = decision_munitions_research_tooltip
-	decision_group_type = narsid
-
-	is_shown = {
-		has_ep3_dlc_trigger = yes
-		has_multiple_players = no
-		is_narsid = yes
-		is_ruler = yes
-		OR = {
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
-		# One-time: removed once the scheme has been initiated
-		#NOT = {
-		#	is_target_in_global_variable_list = {
-		#		name = unavailable_unique_decisions
-		#		target = flag:flag_munitions_research_done
-		#	}
-	#	}
-	}
-
-	is_valid = {
-		custom_tooltip = {
-			text = munitions_research_capital_unoccupied_tt
-			capital_province = { is_occupied = no }
-		}
-		OR = {
-			influence >= major_influence_value
-			gold >= major_gold_value_static_max
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_available = yes
-		NOT = { exists = involved_activity }
-	}
-
-	effect = {
-		custom_tooltip = munitions_research_mastiges_tooltip
-		custom_tooltip = munitions_research_3_years_tooltip
-		# Lock the decision permanently on first use
-		
-		trigger_event = narsid_gunpowder.1001
-	}
-
-	ai_potential = {
-		NOT = { has_trait = compassionate }
-		OR = {
-			gold >= massive_gold_value
-			influence >= massive_influence_value
-		}
-	}
-
-	ai_will_do = {
-		base = 20
-		ai_value_modifier = { ai_compassion = -1 }
-		modifier = {
-			OR = {
-				has_trait = paranoid
-				has_trait = craven
-			}
-			add = 30
-		}
-		modifier = {
-			OR = {
-				martial > high_skill_rating
-				learning > high_skill_rating
-			}
-			add = 20
-		}
-		modifier = {
-			OR = {
-				has_trait = calm
-				has_trait = content
-			}
-			add = -20
-		}
-	}
-}
-
-decision_establish_aretaic_school = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
-	}
-	decision_group_type = narsid
-	desc = decision_establish_aretaic_school_desc
-	selection_tooltip = decision_establish_aretaic_school_tooltip
-	sort_order = 850
-	
-	is_shown = {
-		is_narsid = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
-		NOT = { exists = global_var:established_aretaic_school }
-	}
-
-	is_valid = {
-		OR = {
-			prestige_level >= 4
-			learning >= 25
-		}
-		custom_tooltip = {
-			text = establish_aretaic_school_no_barony_tt
-			any_held_title = {
-				title_tier = barony
-				title_province = { has_special_building_slot = no }
-				is_leased_out = no
-			}
-		}
-	}
-	
-	cost = {
-		gold = 750
-	}
-
-	effect = {
-		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
-		open_view_data = {
-			view = decision_detail
-			data = decision:pick_aretaic_school_barony
-			player = root
-		}
-	}
-	
-	ai_potential = { always = no }
-}
-
-pick_aretaic_school_barony = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
-	}
-	decision_group_type = narsid
-	ai_goal = yes
-	is_invisible = yes
-	
-	widget = {
-		controller = create_holy_order 
-		barony_valid = {
-			trigger_if = {
-				limit = { exists = this }
-				title_province = { has_special_building_slot = no }
-				holder = scope:ruler
-				is_leased_out = no
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = pick_aretaic_school_barony_custom_tt
-		set_global_variable = {
-			name = established_aretaic_school
-			value = yes
-		}
-		hidden_effect = {
-			scope:barony.title_province = {
-				set_variable = {
-					name = university
-					value = yes
-				}
-				add_special_building = aretaic_school_01
-			}
-		}
-	}
-	
-	ai_potential = { always = no }
 }

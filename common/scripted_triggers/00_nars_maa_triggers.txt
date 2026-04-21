@@ -16,14 +16,14 @@ can_recruit_guard_maa = {
   }
 }
 
-narsid_maa_trigger = {
+nikean_maa_trigger = {
   culture = { has_cultural_pillar = heritage_nars }
 }
 
 can_recruit_maa_01_trigger = {
-	narsid_maa_trigger = yes
+	nikean_maa_trigger = yes
 	culture = { 
-		has_innovation = innovation_narsid_maa_01
+		has_innovation = innovation_nikean_maa_01
 	}
 }
 
@@ -33,11 +33,11 @@ can_recruit_maa_01_trigger = {
 #  (which sets the global variable mastiges_research_complete).
 # ─────────────────────────────────────────────────────────────────
 can_recruit_maa_02_trigger = {
-	narsid_maa_trigger = yes
+	nikean_maa_trigger = yes
 	exists = global_var:mastiges_research_complete
 }
 
 #### MAA ART TRIGGERS ####
-narsid_maa_art_trigger = {
+nikean_maa_art_trigger = {
 	culture = { has_cultural_pillar = heritage_nars }
 }

@@ -42,7 +42,7 @@ doctrine_marriage_type = {
 		}
 	}
 
-	#Narsid
+	#Nikean
 	doctrine_bigamy = {
 		piety_cost = {
 			value = 99999
@@ -57,7 +57,7 @@ doctrine_marriage_type = {
 		}
 	}
 	
-	#Narsid
+	#Nikean
 	doctrine_trigamy = {
 		piety_cost = {
 			value = 99999

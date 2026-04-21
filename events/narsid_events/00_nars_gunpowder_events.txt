@@ -1,13 +1,13 @@
-﻿namespace = narsid_gunpowder
+﻿namespace = nikean_gunpowder
 
 # ─────────────────────────────────────────────────────────────────
 # HARNESS BLACK POWDER EVENT
 # ─────────────────────────────────────────────────────────────────
 
-narsid_gunpowder.1001 = {
+nikean_gunpowder.1001 = {
 	type = character_event
-	title = narsid_gunpowder.1001.t
-	desc = narsid_gunpowder.1001.desc
+	title = nikean_gunpowder.1001.t
+	desc = nikean_gunpowder.1001.desc
 	theme = emperor
 	override_background = bp1_courtyard_mena
 	
@@ -57,7 +57,7 @@ narsid_gunpowder.1001 = {
 	}
 
 	option = { #Use the city's native capabilities
-		name = narsid_gunpowder.1001.a
+		name = nikean_gunpowder.1001.a
 		trigger = {
 			influence >= major_influence_value
 		}
@@ -97,7 +97,7 @@ narsid_gunpowder.1001 = {
 		}
 	}
 	option = { #Hire foreign craftsmen to manufacture it
-		name = narsid_gunpowder.1001.b
+		name = nikean_gunpowder.1001.b
 		trigger = {
 			treasury >= major_gold_value_static_max
 		}
@@ -139,7 +139,7 @@ narsid_gunpowder.1001 = {
 	}
 
 	option = { #Actually... never mind
-		name = narsid_gunpowder.1001.c
+		name = nikean_gunpowder.1001.c
 		remove_global_variable = flag_munitions_research_done
 		remove_from_global_variable_list = {
 			name = unavailable_unique_decisions
@@ -163,71 +163,3 @@ narsid_gunpowder.1001 = {
 		}
 	}
 }
-
-narsid_gunpowder.1021 = {
-	type = character_event
-	title = narsid_gunpowder.1021.t
-	desc = narsid_gunpowder.1021.desc
-	theme = emperor
-	override_background = bp1_courtyard_mena
-
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
-	left_portrait = {
-		character = root
-		animation = celebrate_sword
-	}
-	immediate = {
-		play_music_cue = mx_cue_positive_effect
-		root.capital_county = {
-			save_scope_as = capital
-		}
-		munitions_research_success_effect = yes
-	}
-	
-	option = {
-		name = narsid_gunpowder.1021.a
-		scope:scheme = { end_scheme = yes }
-		add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-		}
-		set_global_variable = {
-			name = flag_munitions_research_done
-			value = root
-		}
-	}
-}
-
-narsid_gunpowder.1022 = {
-	type = character_event
-	title = narsid_gunpowder.1022.t
-	desc = narsid_gunpowder.1022.desc
-	theme = emperor
-	override_background = bp1_courtyard_mena
-
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
-	left_portrait = {
-		character = root
-		animation = fear
-		camera = camera_event_left_forward
-	}	
-	immediate = {
-		play_music_cue = mx_cue_negative_effect
-		stress_impact = {
-			base = minor_stress_impact_gain
-			ambitious = minor_stress_impact_gain
-			paranoid = minor_stress_impact_gain
-		}
-	}
-
-	option = {
-		name = narsid_gunpowder.1022.a
-		scope:scheme = { end_scheme = yes }
-	}
-}	

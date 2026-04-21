@@ -1,0 +1,146 @@
+decision_mend_narsil = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/mythology.dds"
+	}
+	desc = decision_mend_narsil_desc
+	decision_group_type = nikean
+	selection_tooltip = decision_mend_narsil_tooltip
+
+	is_shown = {
+		is_nikean = yes
+		has_title = title:e_narsokratia
+		top_liege = this
+		is_capable_adult = yes
+		is_landed = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+		}
+	}
+
+	is_valid = {
+		gold >= major_treasury_or_gold_value
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		top_liege = this
+		is_available_adult = yes
+		is_at_war = no
+	}
+	
+	sort_order = 900
+
+	effect = {
+		custom_tooltip = decision_mend_narsil_effect_tooltip
+		hidden_effect = {
+			trigger_event = { id = nikean_artifact.1001 }
+		}
+	}
+
+	ai_potential = { always = yes }
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_munitions_research = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/mythology.dds"
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
+
+	sort_order = 860
+
+	desc = decision_munitions_research_desc
+	selection_tooltip = decision_munitions_research_tooltip
+	decision_group_type = nikean
+
+	is_shown = {
+		has_ep3_dlc_trigger = yes
+		has_multiple_players = no
+		is_nikean = yes
+		is_ruler = yes
+		OR = {
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+		# One-time: removed once the scheme has been initiated
+		#NOT = {
+		#	is_target_in_global_variable_list = {
+		#		name = unavailable_unique_decisions
+		#		target = flag:flag_munitions_research_done
+		#	}
+	#	}
+	}
+
+	is_valid = {
+		custom_tooltip = {
+			text = munitions_research_capital_unoccupied_tt
+			capital_province = { is_occupied = no }
+		}
+		OR = {
+			influence >= major_influence_value
+			gold >= major_gold_value_static_max
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+		NOT = { exists = involved_activity }
+	}
+
+	effect = {
+		custom_tooltip = munitions_research_mastiges_tooltip
+		custom_tooltip = munitions_research_3_years_tooltip
+		# Lock the decision permanently on first use
+		
+		trigger_event = nikean_gunpowder.1001
+	}
+
+	ai_potential = {
+		NOT = { has_trait = compassionate }
+		OR = {
+			gold >= massive_gold_value
+			influence >= massive_influence_value
+		}
+	}
+
+	ai_will_do = {
+		base = 20
+		ai_value_modifier = { ai_compassion = -1 }
+		modifier = {
+			OR = {
+				has_trait = paranoid
+				has_trait = craven
+			}
+			add = 30
+		}
+		modifier = {
+			OR = {
+				martial > high_skill_rating
+				learning > high_skill_rating
+			}
+			add = 20
+		}
+		modifier = {
+			OR = {
+				has_trait = calm
+				has_trait = content
+			}
+			add = -20
+		}
+	}
+}

@@ -20,7 +20,7 @@
 @provisions_cost_special_expensive = 18
 @provisions_cost_special_bankrupting = 24
 
-# Narsid Cultural MAA Units
+# Nikean Cultural MAA Units
 maa_hoplitai = {
     type = heavy_infantry
 
@@ -114,10 +114,9 @@ maa_mastiges = {
     mercenary_fallback = no
     holy_order_fallback = yes
     
-    stack = 50
-	hired_stack_size = 10    
+    stack = 100
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = narsid_mastiges
+    icon = narsid_hoplites
 }

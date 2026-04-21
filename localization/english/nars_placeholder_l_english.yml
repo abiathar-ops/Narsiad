@@ -1,0 +1,17 @@
+﻿l_english:
+ decision_choose_discipline:0 "Determine Panteiōn"
+ decision_choose_discipline_desc:0 "Education, examination, and suitability; these decide the future of any given individual in the Nikean academies. But who says that fate is etched entirely in stone? By patronizing the right tutors and shifting my studies, I can forge a new path for myself."
+ decision_choose_discipline_tooltip:0 "Change your designated educational discipline"
+ decision_choose_discipline_confirm:0 "Change Discipline"
+ 
+ decision_choose_discipline_scholar_name:0 "Study as a #bold Sophomátis#!"
+ decision_choose_discipline_scholar_desc:0 "Hone your studies on the path of the Sophomátis."
+ scholar_career_tooltip:0 "Change your career path to the discipline of the Sophomátis, mastering statecraft, hidden knowledge, and the administration of the realm."
+ you_have_a_scholar_career_desc:0 "You are trained as a Sophomátis"
+ change_to_scholar_career_desc:0 "You shift your focus to the Sophomátis discipline, prioritizing intellect, state management, and the shadows."
+
+ decision_choose_discipline_martial_name:0 "Train as a [hoplite|E]"
+ decision_choose_discipline_martial_desc:0 "Hone your studies on the path of the Hoplîte."
+ martial_career_tooltip:0 "Change your career path to the discipline of the Hoplîtes, mastering tactical theory, personal prowess, and military history."
+ you_have_a_martial_career_desc:0 "You are trained as a Hoplîte"
+ change_to_martial_career_desc:0 "You shift your focus to the Hoplîte discipline, prioritizing military academies, battlefield tactics, and martial prowess."

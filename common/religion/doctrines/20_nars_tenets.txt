@@ -2,7 +2,7 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 	group = "core_tenets"
     number_of_picks = 3
     
-	# Default Narsid tenets
+	# Default Nikean tenets
 
 	tenet_nars_pantheon = {
         name = tenet_nars_pantheon_name
@@ -10,10 +10,10 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 		icon = core_tenet_adorcism #core_tenet_bhakti
 
 		is_shown = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		can_pick = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 
 		piety_cost = faith_tenet_cost_mid
@@ -40,17 +40,17 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
     }
 
 
-	# Branch Narsid tenets 
+	# Branch Nikean tenets 
 	tenet_nars_sanguine = {
 		name = tenet_nars_sanguine_name
 		desc = tenet_nars_sanguine_desc
 		icon = core_tenet_household_gods #core_tenet_pentarchy #core_tenet_warrior_monks
 
 		is_shown = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		can_pick = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 
 		piety_cost = faith_tenet_cost_massive
@@ -88,10 +88,10 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 		#icon = core_tenet_gruesome_festivals
 
 		is_shown = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		can_pick = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 
 		piety_cost = {
@@ -130,10 +130,10 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 		#icon = core_tenet_gruesome_festivals
 
 		is_shown = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		can_pick = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 
 		piety_cost = {
@@ -192,10 +192,10 @@ doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
 		#icon = core_tenet_bhakti
 
 		is_shown = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		can_pick = {
-			religion_tag = narsid_group
+			religion_tag = nikean_group
 		}
 		piety_cost = {
 			value = faith_tenet_cost_massive

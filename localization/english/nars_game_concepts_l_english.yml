@@ -1,31 +1,47 @@
 ﻿l_english:
-  #Narsid Flavours
- game_concept_narsid: "Narsid"
- game_concept_narsids: "Narsids"
- game_concept_menofnars: "Men of Narsēs"
- game_concept_narsids_desc: "The Narsids, also known as 'Nāresids' or 'Men of Narsēs', are a long thought to be extinct people. They are blessed with inhuman beauty and grace the same way they are also known for their chauvinistic pride and arrogant hubris."
+  #Nikean Flavours
+ game_concept_nikean: "Nikean"
+ game_concept_nikeans: "Nikeans"
+ game_concept_nikeis: "Nikēís"
+ game_concept_nikeans_desc: "The [Glossary( 'Nikēís', 'NIKEAN_GLOSS' )] are a long thought to be extinct [culture|E]. While having a [tradition|E] of [innovation|E], they are abhorred for their chauvinistic pride and hubris. The [nikeans|E] are known for their contributions to [learning|E] and [martial|E] pursuits, the same way they are famed for their inhuman [attraction|E]."
+
+ game_concept_narsic: "Old Nikean"
+ game_concept_narsic_short: "O.N."
+ game_concept_narsic_desc: "#bold Old Nikean#! was originally the language of the ancient [nikeans|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, often reflecting the [nikean|E] values of [martial|E] ambition and the pursuit of [learning|E]."
+
+ game_concept_sophes: "Sophēs"
+ game_concept_sophes_desc: "The [Glossary( 'Sophēs', 'SOPHES_GLOSS' )] are [nikeans|E] who are known for their contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They play a crucial role in shaping the [narsokratia|E] not uncommonly serving as [courtiers|E], [councillors|E] and [commanders|E] to the [realm|e]."
+ game_concept_sophist: "Sophist"
+ game_concept_sophists: "Sophist"
 
  game_concept_narsokratia: "Nārsokratía"
- game_concept_narsokratia_desc: "The Nārsokratía, or the Rule of Narsēs, are an ancient and enduring political system that has defined the governance of the [narsid|E] [realm|E] for centuries. Rooted in the principles of aristocratic rule and divine right, the Nārsokratía is characterized by a hierarchical structure where power is concentrated in the hands of a select few, justified by their lineage and perceived connection to the divine. This system has allowed the [narsids|E] to maintain a stable and prosperous [realm|E], albeit one of hubristic exclusivity and chauvinism."
- game_concept_narsidrealm: "Narsid Realm"
+ game_concept_narsokratia_desc: "The [Glossary( 'Nārsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient and enduring political system that has defined the governance of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a [ruler|E], justified by their [house_possessive|E] perceived [legitimacy|E] from the divine. This [government_form|E] has allowed the [nikeans|E] to maintain a stable and prosperous [region|E], albeit one of hubristic exclusivity and chauvinism."
+ game_concept_nikeanrealm: "Nikean Realm"
 
  game_concept_narses: "Narsēs"
- game_concept_narses_desc: "Narsēs, the God worshipped by the [orphic|E], is often depicted as the embodiment of fated fortune, embodying the ideals of unstoppable [faith|E] in ambition and its fickle endings. Narsēs is revered as the predominant deity of the [menofnars|E] and his teachings through the $Prophētēs$ form the foundation of their [tradition|E] and [cultural|E] values."
+ game_concept_narses_desc: "Narsēs, the God worshipped by the [orphic|E], is often depicted as the embodiment of fated fortune, embodying the ideals of unstoppable [faith|E] in ambition and its fickle endings. Narsēs is revered as the predominant deity of the [nikeis|E] and his teachings through the $Prophētēs$ form the foundation of their [tradition|E] and [cultural|E] values."
 
- game_concept_naresid: "Nāresid"
+ game_concept_orphic: "Orphic"
  game_concept_orphists: "Orphists"
- game_concept_orphic: "Orphists"
- game_concept_naresid_desc: "Narēsids dedicate their [faith|E] to [narses|E], the [narsid|E] deity of fated fortune and progress. [head_of_faith] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [narsid|E] [culture|E] and [traditions|E]"
+ game_concept_orphic_desc: "The [Glossary( 'Orphic', 'ORPHIC_GLOSS' )] are followers of the [narses|E], the [nikean|E] deity of fated fortune and progress. [head_of_faith] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [nikean|E] [culture|E] and [traditions|E]"
 
  game_concept_narsil: "Narsíl"
- game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [narsid|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [narsids|E] during the dusk of their [narsokratia|E], its shards now lay waiting for the day it is mended once more to rally the fragmented [menofnars|E]."
+ game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [nikean|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [nikeans|E] during the dusk of their [narsokratia|E], its shards now lay waiting for the day it is mended once more to rally the fragmented [nikeis|E]."
 
- #Narsid MAA
+ #Nikean MAA
  game_concept_hoplites: "Hoplîtes"
  game_concept_hoplite: "Hoplîte"
- game_concept_hoplites_desc: "The Hoplîtes were citizen-soldiers of Ancient Narsid city-states. Hoplîte soldiers were primarily represented by free citizens who were able to afford armaments and armor."
+ game_concept_hoplites_desc: "The [Glossary( 'Hoplîtes', 'HOPLITES_GLOSS' )] were citizen-soldiers of the old [nikean|E] city-states. These [men_at_arms|E] were primarily represented by free citizens who were able to afford armaments and armor. Now revived, they live to serve [narsokratia|E] once more."
 
  game_concept_mastiges: "Mástiges" 
- game_concept_mastiges_desc: "The Mástiges are a new innovation of the new Narsid revival. Armed with newly discovered and utilized black powders, the Mástiges are the penultimate [hoplites|E] of the current era, feared and formidable force on the battlefield and known for their ruthlessness and effectiveness in combat"
+ game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [nikeis|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
 
 
+ NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."
+ SOPHES_GLOSS: "[narsic_short|E] #bold Sophēs #! means 'Scholar'."
+ NIKEAN_GLOSS: "[narsic_short|E] #bold Nikēís #! means 'Those Born of Victory'."
+ MASTIGES_GLOSS: "[narsic_short|E] #bold Mástiges #! means 'Ravagers'."
+ HOPLITES_GLOSS: "[narsic_short|E] #bold Hoplîtes #! means 'Shield-Bearers'."
+ ORPHIC_GLOSS: "[narsic_short|E] #bold Orphic #! means 'Those of the Orphic Tradition'."
+
+ ARS_GLOSS: "The mythological hero #bold Ars#! is attributed with folktales of his wonder weapons."

@@ -1,14 +1,14 @@
-﻿namespace = narsid_realm
+﻿namespace = nikean_realm
 
 # ─────────────────────────────────────────────────────────────────
 # DEVELOP INDUSTRY EVENT
 # ─────────────────────────────────────────────────────────────────
 
-narsid_realm.1001 = {
+nikean_realm.1001 = {
 	type = character_event
 
-	title = narsid_realm.1001.t
-	desc = narsid_realm.1001.desc
+	title = nikean_realm.1001.t
+	desc = nikean_realm.1001.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -19,7 +19,7 @@ narsid_realm.1001 = {
 		animation = map_dismissal
 	}
 	option = {
-		name = narsid_realm.1001.a
+		name = nikean_realm.1001.a
 		every_held_title = {
 			title_tier = county
 			add_county_modifier = {
@@ -34,11 +34,11 @@ narsid_realm.1001 = {
 #  SYNODIAN SPY EVENT
 # ─────────────────────────────────────────────────────────────────
 
-narsid_realm.1011 = {
+nikean_realm.1011 = {
 	type = character_event
 
-	title = narsid_realm.1011.t
-	desc = narsid_realm.1011.desc
+	title = nikean_realm.1011.t
+	desc = nikean_realm.1011.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -50,7 +50,7 @@ narsid_realm.1011 = {
 	}
 
 	option = {
-		name = narsid_realm.1011.a
+		name = nikean_realm.1011.a
 		every_held_title = {
 			title_tier = county
 			add_county_modifier = {
@@ -65,10 +65,10 @@ narsid_realm.1011 = {
 #  BIGAMY / TRIGAMY DOCTRINE EVENT
 # ─────────────────────────────────────────────────────────────────
 
-narsid_realm.1021 = {
+nikean_realm.1021 = {
 	type = character_event
-	title = narsid_realm.1021.t
-	desc = narsid_realm.1021.desc
+	title = nikean_realm.1021.t
+	desc = nikean_realm.1021.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -81,8 +81,8 @@ narsid_realm.1021 = {
 
 	option = {
 		# Bigamy: allows exactly TWO spouses simultaneously
-		name = narsid_realm.1021.a
-		custom_tooltip = narsid_realm.1021.a.bigamy_tt
+		name = nikean_realm.1021.a
+		custom_tooltip = nikean_realm.1021.a.bigamy_tt
 		hidden_effect = {
 			faith = {
 				if = {
@@ -104,8 +104,8 @@ narsid_realm.1021 = {
 
 	option = {
 		# Trigamy: allows exactly THREE spouses simultaneously
-		name = narsid_realm.1021.b
-		custom_tooltip = narsid_realm.1021.b.trigamy_tt
+		name = nikean_realm.1021.b
+		custom_tooltip = nikean_realm.1021.b.trigamy_tt
 		hidden_effect = {
 			faith = {
 				if = {
@@ -134,10 +134,10 @@ narsid_realm.1021 = {
 #  EVANGELIZE EVENT
 # ─────────────────────────────────────────────────────────────────
 
-narsid_realm.1031 = {
+nikean_realm.1031 = {
 	type = character_event
-	title = narsid_realm.1031.t
-	desc = narsid_realm.1031.desc
+	title = nikean_realm.1031.t
+	desc = nikean_realm.1031.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -149,7 +149,7 @@ narsid_realm.1031 = {
 	}
 
 	option = {
-		name = narsid_realm.1031.a
+		name = nikean_realm.1031.a
 		add_piety = 150
 	}
 }

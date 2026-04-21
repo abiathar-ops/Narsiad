@@ -1,5 +1,5 @@
 # 00_nars_duchy_buildings.txt
-# All duchy capital buildings for Narsid culture.
+# All duchy capital buildings for Nikean culture.
 # Alkastron bonuses have been redistributed:
 #   - knight_limit / knight_effectiveness / defender_advantage  →  canton_duchy
 #   - monthly_dynasty_prestige / monthly_prestige / monthly_piety  →  brothel_duchy
@@ -31,7 +31,7 @@ brothel_duchy_01 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -102,7 +102,7 @@ brothel_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -173,7 +173,7 @@ brothel_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -250,7 +250,7 @@ canton_duchy_01 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -321,7 +321,7 @@ canton_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -392,7 +392,7 @@ canton_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -469,7 +469,7 @@ foundry_duchy_01 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -538,7 +538,7 @@ foundry_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}
@@ -607,7 +607,7 @@ foundry_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_narsid_architecture_01
+				has_innovation = innovation_nikean_architecture_01
 			}
 		}
 	}

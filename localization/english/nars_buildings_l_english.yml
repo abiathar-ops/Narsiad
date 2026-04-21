@@ -29,11 +29,11 @@
  building_foundry_duchy_03:0 "Hēphaisteion"
  building_foundry_duchy_03_desc:0 "The supreme pinnacle of metallurgy, blending divine devotion with absolute industrial mastery. Dedicated to the Smith God, this legendary forge-complex produces masterwork armaments whose quality approaches the mythic."
 
- building_type_aretaic_school_01: "Archiving Citadels"
+ building_type_aretaic_school_01: "Archiving Citadel"
  building_type_aretaic_school_01_desc: "A sprawling complex echoing with the hushed voices of philosophers unravelling the secrets of the cosmos, working tirelessly both day and night to not only store ancient knowledge but also to translate new great works of literature from across the world!"
  building_aretaic_school_01: "Constructing Cranes"
  building_aretaic_school_01_desc: "Cranes are erected to build the towering library halls, while the clatter of gears and the hum of machinery fill the air. The construction of the Aretaiké Scholí has begun."
  building_aretaic_school_02: "Aretaiké Scholí"
  building_aretaic_school_02_desc: "$building_type_aretaic_school_01_desc$"
 
- NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Narsid or consider this a [holy_site|E]"
+ NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Nikean or consider this a [holy_site|E]"

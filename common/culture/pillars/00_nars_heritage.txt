@@ -5,5 +5,5 @@ heritage_nars = {
 			HERITAGE = heritage_nars
 		}
 	}
-	audio_parameter = narsid
+	audio_parameter = nikean
 }

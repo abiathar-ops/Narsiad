@@ -48,7 +48,7 @@ munitions_research_scheme_prep_effect = {
 	save_scope_as = scheme
 	save_scope_value_as = {
 		name = follow_up_event
-		value = event_id:narsid_gunpowder.1011
+		value = event_id:nikean_gunpowder.1011
 	}
 	if = {
 		limit = {

@@ -1,7 +1,7 @@
 # Defined early so tenets / other doctrines can override these
 hostility_group = {
 	group = "not_creatable"
-	narsid_hostility_doctrine = {
+	nikean_hostility_doctrine = {
 		parameters = {
 			hostility_same_religion = 0
 			hostility_same_family = 1

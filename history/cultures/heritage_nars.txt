@@ -10,7 +10,7 @@
 	discover_innovation = innovation_currency_01
 	discover_innovation = innovation_crop_rotation
 	discover_innovation = innovation_ledger
-	discover_innovation = innovation_narsid_maa_01
+	discover_innovation = innovation_nikean_maa_01
 }
 
 950.1.1 = {
@@ -19,7 +19,7 @@
 	#
 	discover_innovation = innovation_city_planning
 	discover_innovation = innovation_casus_belli
-	discover_innovation = innovation_narsid_maa_02
+	discover_innovation = innovation_nikean_maa_02
 	#
 	join_era = culture_era_early_medieval
 }
@@ -57,5 +57,5 @@
 	discover_innovation = innovation_burhs
 	discover_innovation = innovation_baliffs
 	discover_innovation = innovation_manorialism
-	discover_innovation = innovation_narsid_maa_03
+	discover_innovation = innovation_nikean_maa_03
 }
