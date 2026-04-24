@@ -20,6 +20,7 @@
  decision_libation_desc: "A quiet biannual [cultural|E] observance done in the privacy of one's own chambers. The ritual involves a dedication of wine, representing the blood of the [dead_soldiers|E] of our [wars|E] that sacrificed themselves for [narsokratia|E]. Perhaps it's time that I pour my own vintage, luscious wine unto the altar and recite the sacred prayers to [narses|E] in accordance with the old [orphic|E] faith of the ancient [nikeis|E]."
  decision_libation_tooltip: "Settle in to pour a libation and reflect on the day."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
+ decision_libation_effect_desc: "You offer a libation to the [nikeis|E] [panteion|E] and reflect on your [faith|E]"
  decision_libation_confirm: "Pour the libation!"
 
  decision_introduce_bigamy: "Decree Marital Revisions"
@@ -95,7 +96,7 @@
  decision_nikean_evangelize_realm_effect_tooltip: "Portions of your [realm|E]'s counties will have a chance to convert to the [nikean|E] [faith|E] and [culture|E]"
 
  recruit_nikean_courtier_decision: "Muster Your Kins"
- recruit_nikean_courtier_decision_desc: "Our [nikeis|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn hermits down!"
+ recruit_nikean_courtier_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
  recruit_nikean_courtier_decision_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
  recruit_nikean_courtier_decision_confirm:0 "Send the heralds!"
 
@@ -112,4 +113,6 @@
 
  recruit_nikean_1_cooldown_tt: "Search for [nikeis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_1_cooldown' ))]"
  recruit_nikean_2_cooldown_tt: "Scout for a [sophes|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_2_cooldown' ))]"
+
+
 

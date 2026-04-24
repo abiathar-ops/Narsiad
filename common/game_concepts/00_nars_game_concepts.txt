@@ -1,5 +1,5 @@
 nikeans = {
-	alias = { nikean nikeis }
+	alias = { nikean nikeis nikeis_adj }
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
@@ -12,7 +12,6 @@ sophes = {
 narsic = {
 	parent = nikeans
 	alias = { narsic_short }
-	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
 hoplites = {
@@ -32,15 +31,18 @@ narsokratia = {
 	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 
-orphic = {
+orphists = {
 	parent = nikean
-	alias = { orphists }
+	alias = { orphic nikean_faith orphic_adj }
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
 narses = {
+	parent = panteion
+}
+
+panteion = {
 	parent = orphic
-	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
 narsil = {

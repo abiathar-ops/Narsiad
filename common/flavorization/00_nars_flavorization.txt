@@ -85,6 +85,17 @@ kingdom_administrative_independent_nars_group = {
 	}
 }
 
+hegemony_nars_group = {
+	type = title
+	tier = hegemony
+	priority = 300
+	governments = { feudal_government administrative_government mandala_government}
+	name_lists = { name_list_nars }
+	flavourization_rules = { 
+		only_independent = yes
+	}
+}
+
 duchy_administrative_nars_group = {
     type = title
     tier = duchy

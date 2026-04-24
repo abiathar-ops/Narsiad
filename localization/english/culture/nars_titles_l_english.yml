@@ -33,6 +33,7 @@
 #s
  empire_administrative_nars:"Ōtokratōs"
  empire_administrative_independent_nars: "Ōtokratōs"
+ hegemony_nars_group: "Mōnarkhía"
 ### Princes (Children) ### 
  prince_male_nars:1 "Prinkipēs"
  prince_female_nars:1 "Prinkipēssa"

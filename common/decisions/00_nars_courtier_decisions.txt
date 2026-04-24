@@ -30,6 +30,8 @@ recruit_nikean_courtier_decision = {
 	}
 
 	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_adult = yes
 		is_imprisoned = no
 	}
 
@@ -132,7 +134,7 @@ recruit_nikean_courtier_decision = {
 					days = { 20 40 }
 				}
 			}
-			else_if = { # Travel Leader
+			else_if = { # 2 Sophes
 				limit = { scope:hire_nikean_2_decision = yes }
 				add_character_flag = {
 					flag = recruit_nikean_2_cooldown
