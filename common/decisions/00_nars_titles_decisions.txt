@@ -52,8 +52,8 @@ decision_h_narsokratia = {
 		is_imprisoned = no
 		top_liege = this
 		OR = {
-			religion = { is_in_family = rf_nikean }
-			culture = { has_cultural_pillar = heritage_nars }
+			is_orphic = yes
+			is_nikean = yes
 		}
 	}
 	

@@ -31,5 +31,7 @@ To do:
 26. Search for a Champion
 27. Rename sophes, refactor nikean to nikean
 28. Delete Synodian Spies, develop industry becomes a scheme and became a foundry-based decision (or make it into inquisitor (religion based) and put it on another dropdown)
+29. Courtier to 4 but nerf it
+30. Fix Bigamy and Tenets
 
 Assets are gained from other mods such as Realm of the Exile and Apotheosis: The Hellenic Age

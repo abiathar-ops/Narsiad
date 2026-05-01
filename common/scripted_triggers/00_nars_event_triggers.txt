@@ -1,0 +1,10 @@
+valid_for_nikean_conversion_trigger = {
+	NOT = {
+        faith.religion = { is_in_family = rf_nikean }
+    }
+	is_at_war = no
+	NOR = {
+		has_character_flag = do_not_disturb_preachers
+		primary_title = { has_variable = do_not_disturb_preachers }
+	}
+}

@@ -9,12 +9,11 @@ intro_standard_modifier = {
 #Libation modifiers
 libation_standard_modifier = {
 	icon = stewardship_positive # Shaved is stewardship_negative, so for consistency.
-	stress_loss_mult = 0.1
+	stress_gain_mult = -0.1
 }
 
 libation_good_modifier = {
 	icon = stewardship_positive
-	stress_loss_mult = 0.1
 	stress_gain_mult = -0.1
 	monthly_dynasty_prestige = 0.1 # Quite rare, lost in two years, so let's make it fun.
 }
@@ -28,4 +27,9 @@ h_narsokratia_modifier = {
 	icon = martial_positive
 	monthly_dynasty_prestige = 2.5
 	zealot_opinion = 75
+}
+
+settled_nikean_dynasty_modifier = {
+	icon = martial_positive
+	monthly_prestige = 0.25
 }

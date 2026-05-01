@@ -118,5 +118,5 @@ maa_mastiges = {
     ai_quality = {
         value = cultural_maa_extra_ai_score
     }
-    icon = narsid_hoplites
+    icon = narsid_mastiges
 }

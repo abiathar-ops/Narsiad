@@ -45,6 +45,7 @@ nikean_titles.2022 = {
 	}
 	option = { 
 		name = nikean_titles.2022.a
+		flavor = narsokratia_event.flavor
 	}
 	
 }
@@ -68,6 +69,7 @@ nikean_titles.2011 = {
 	}
 	option = { 
 		name = nikean_titles.2011.a
+		flavor = narsokratia_event.flavor
 	}
 }
 
@@ -90,5 +92,6 @@ nikean_titles.2001 = {
 	}
 	option = { 
 		name = nikean_titles.2001.a
+		flavor = narsokratia_event.flavor
 	}
 }

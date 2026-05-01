@@ -4,7 +4,7 @@
  game_concept_nikeans: "Nikeans"
  game_concept_nikeis: "Nikēís"
  game_concept_nikeis_adj: "Nikēís'"
- game_concept_nikeans_desc: "The [Glossary( 'Nikēís', 'NIKEAN_GLOSS' )] are a long thought to be extinct [culture|E]. While having a [tradition|E] of [innovation|E], they are abhorred for their chauvinistic pride and hubris. The [orphists|E] are known for their contributions to [learning|E] and [martial|E] pursuits, the same way they are famed for their inhuman [attraction|E]."
+ game_concept_nikeans_desc: "The [Glossary( 'Nikēís', 'NIKEAN_GLOSS' )] are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Nikean [orphists|E] are known for their contributions to [learning|E] and [martial|E] pursuits, writing records of their findings with [narsic|E]. The Nikēís are famed for their inhuman [attraction|E] and beauty."
 
  game_concept_narsic: "Old Nikean"
  game_concept_narsic_short: "O.N."
@@ -16,11 +16,17 @@
  game_concept_sophists: "Sophist"
 
  game_concept_narsokratia: "Nārsokratía"
- game_concept_narsokratia_desc: "The [Glossary( 'Nārsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient and enduring political system that has defined the governance of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a [ruler|E], justified by their [house_possessive|E] perceived [legitimacy|E] from the divine. This [government_form|E] has allowed the [nikeans|E] to maintain a stable and prosperous [region|E], albeit one of hubristic exclusivity and chauvinism."
+ game_concept_narsokratia_desc: "The [Glossary( 'Nārsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient and enduring political system that has defined the governance of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a [ruler|E], justified by their [house_possessive|E] perceived [legitimacy|E] from the divine [panteion|E]. This [government_form|E] has allowed the [nikeans|E] to maintain a stable and prosperous [region|E], albeit one of hubristic exclusivity and chauvinism."
  game_concept_nikeanrealm: "Nikean Realm"
 
  game_concept_narses: "Narsēs"
  game_concept_narses_desc: "Narsēs, the ancient [nikeis|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [nikeis|E] [panteion|E] by its adherents."
+
+ game_concept_phokas: "Phōkās"
+ game_concept_phokas_desc: "Phōkās, the ancient [nikeis|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [nikeis|E] [panteion|E] by its adherents."
+
+ game_concept_enuo: "Enuō"
+ game_concept_enuo_desc: "Enuō, the ancient [nikeis|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [nikeis|E] [panteion|E] by its adherents."
 
  game_concept_orphists: "Orphists"
  game_concept_orphic: "Orphic"
@@ -28,8 +34,9 @@
  game_concept_nikean_faith: "Nikean Faith"
  game_concept_orphists_desc: "Orphists are followers of the [nikeis_adj|E] [panteion|E], the conglomeration of [nikean|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [nikean|E] [traditions|E] and by proxy, their [narsokratia|E]."
 
- game_concept_panteion: "Panteiōn"
- game_concept_panteion_desc: "The [Glossary( 'Panteiōn', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nikean_faith|E]. They serve as a central pillar of the [nikeis|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [nikeis|E] worship [narses|E], the personification of [learning|E] and [innovation|E]."
+ game_concept_panteion: "Panteíon"
+ game_concept_panteion_possessive: "Panteíon's"
+ game_concept_panteion_desc: "The [Glossary( 'Panteíon', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nikean_faith|E]. They serve as a central pillar of the [nikeis|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [nikeis|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [nikeis|E] also revere other deities such as [phokas|E] and [enuo|E]."
 
  game_concept_narsil: "Narsíl"
  game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [nikean|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [nikeans|E] during the dusk of their [narsokratia|E], its shards now lay waiting for the day it is mended once more to rally the fragmented [nikeis|E]."
@@ -42,9 +49,9 @@
  game_concept_mastiges: "Mástiges" 
  game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [nikeis|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
 
- PANTEION_GLOSS: "[narsic_short|E] #bold Panteiōn#! means '(A Temple) of All the Gods'."
+ PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."
- SOPHES_GLOSS: "[narsic_short|E] #bold Sophēs #! means 'Scholar'."
+ SOPHES_GLOSS: "[narsic_short|E] #bold Sophēs #! means 'Wise-Scholars'."
  NIKEAN_GLOSS: "[narsic_short|E] #bold Nikēís #! means 'Those Born of Victory'."
  MASTIGES_GLOSS: "[narsic_short|E] #bold Mástiges #! means 'Ravagers'."
  HOPLITES_GLOSS: "[narsic_short|E] #bold Hoplîtes #! means 'Shield-Bearers'."

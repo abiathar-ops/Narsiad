@@ -1,4 +1,50 @@
 ﻿namespace = nikean_realm
+namespace = nikean_intro
+
+# Narsiad Intro
+
+nikean_intro.1001 = {
+	type = character_event
+	window = fullscreen_event
+	title = nikean_intro.1001.t
+	desc = nikean_intro.1001.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_sunder }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	left_portrait = {
+		character = root
+		animation = grief
+		camera = camera_center_large
+	}
+
+	option = {
+		name = nikean_intro.1001.a
+		trigger_event = nikean_intro.1002
+	}
+}
+
+nikean_intro.1002 = { 
+	type = character_event
+	window = big_event_window
+	title = nikean_intro.1002.t
+	desc = nikean_intro.1002.desc
+	theme = emperor
+	override_background = ce1_fullscreen_legitimizing_legend
+	override_effect_2d = { reference = smoke }
+	left_portrait = {
+		character = root
+		animation = personality_bold
+		camera = camera_center_large
+	}
+	immediate = {
+		intro_standard_effect = yes
+	}
+	option = {
+		name = nikean_intro.1002.a
+		create_anduril_effect = yes
+	}
+}
 
 # ─────────────────────────────────────────────────────────────────
 # DEVELOP INDUSTRY EVENT
@@ -60,97 +106,3 @@ nikean_realm.1011 = {
 		}
 	}
 }
-
-# ─────────────────────────────────────────────────────────────────
-#  BIGAMY / TRIGAMY DOCTRINE EVENT
-# ─────────────────────────────────────────────────────────────────
-
-nikean_realm.1021 = {
-	type = character_event
-	title = nikean_realm.1021.t
-	desc = nikean_realm.1021.desc
-	theme = emperor
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = personality_rational
-	}
-
-	option = {
-		# Bigamy: allows exactly TWO spouses simultaneously
-		name = nikean_realm.1021.a
-		custom_tooltip = nikean_realm.1021.a.bigamy_tt
-		hidden_effect = {
-			faith = {
-				if = {
-					limit = { has_doctrine = doctrine_monogamy }
-					remove_doctrine = doctrine_monogamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_concubines }
-					remove_doctrine = doctrine_concubines
-				}
-				if = {
-					limit = { has_doctrine = doctrine_polygamy }
-					remove_doctrine = doctrine_polygamy
-				}
-				add_doctrine = doctrine_bigamy 
-			}
-		}
-	}
-
-	option = {
-		# Trigamy: allows exactly THREE spouses simultaneously
-		name = nikean_realm.1021.b
-		custom_tooltip = nikean_realm.1021.b.trigamy_tt
-		hidden_effect = {
-			faith = {
-				if = {
-					limit = { has_doctrine = doctrine_monogamy }
-					remove_doctrine = doctrine_monogamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_concubines }
-					remove_doctrine = doctrine_concubines
-				}
-				if = {
-					limit = { has_doctrine = doctrine_polygamy }
-					remove_doctrine = doctrine_polygamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_bigamy }
-					remove_doctrine = doctrine_bigamy
-				}
-				add_doctrine = doctrine_trigamy 
-			}
-		}
-	}
-}
-
-# ─────────────────────────────────────────────────────────────────
-#  EVANGELIZE EVENT
-# ─────────────────────────────────────────────────────────────────
-
-nikean_realm.1031 = {
-	type = character_event
-	title = nikean_realm.1031.t
-	desc = nikean_realm.1031.desc
-	theme = emperor
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		animation = prayer
-		camera = camera_center_large
-	}
-
-	option = {
-		name = nikean_realm.1031.a
-		add_piety = 150
-	}
-}
-

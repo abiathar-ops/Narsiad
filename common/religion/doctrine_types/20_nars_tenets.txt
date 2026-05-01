@@ -1,220 +1,213 @@
-doctrine_core_tenets = { #ALERTshouldchangetodoctrine_nars_tenetsifbreak
-	group = "core_tenets"
-    number_of_picks = 3
-    
-	# Default Nikean tenets
+tenet_nars_pantheon = {
+    name = tenet_nars_pantheon_name
+    desc = tenet_nars_pantheon_desc
+	icon = core_tenet_adorcism #core_tenet_panteion
 
-	tenet_nars_pantheon = {
-        name = tenet_nars_pantheon_name
-        desc = tenet_nars_pantheon_desc
-		icon = core_tenet_adorcism #core_tenet_bhakti
+	is_shown = {
+		religion_tag = nikean_religion
+	}
+	can_pick = {
+		religion_tag = nikean_religion
+	}
 
-		is_shown = {
-			religion_tag = nikean_group
-		}
-		can_pick = {
-			religion_tag = nikean_group
-		}
+	piety_cost = faith_tenet_cost_mid
 
-		piety_cost = faith_tenet_cost_mid
+	character_modifier = {
+		church_holding_build_speed = -0.5
+		church_holding_holding_build_speed = -0.5
+        monthly_influence = 0.5
+		ignore_opinion_of_different_faith = yes
+		different_faith_county_opinion_mult = -0.1
+	}
 
-
-		character_modifier = {
-			church_holding_build_speed = -0.5
-			church_holding_holding_build_speed = -0.5
-            monthly_influence = 0.5
-			ignore_opinion_of_different_faith = yes
-			different_faith_county_opinion_mult = -0.1
-		}
-
-		parameters = {
-			reincarnation_events_active = yes
-			building_temples_gives_development = yes
-			monastic_schools_allowed_in_every_holding_type = yes
-			clergy_can_fight = yes
-			legalism_reduced_faction_virtues = yes
-			legalism_increased_faction_sins = yes
-			seek_indulgences_active = yes
-			seek_indulgences_active_2 = yes
-		}
-    }
-
+	parameters = {
+		reincarnation_events_active = yes
+		building_temples_gives_development = yes
+		monastic_schools_allowed_in_every_holding_type = yes
+		clergy_can_fight = yes
+		legalism_reduced_faction_virtues = yes
+		legalism_increased_faction_sins = yes
+		seek_indulgences_active = yes
+		seek_indulgences_active_2 = yes
+	}
+}
 
 	# Branch Nikean tenets 
-	tenet_nars_sanguine = {
-		name = tenet_nars_sanguine_name
-		desc = tenet_nars_sanguine_desc
-		icon = core_tenet_household_gods #core_tenet_pentarchy #core_tenet_warrior_monks
+tenet_nars_sanguine = {
+	name = tenet_nars_sanguine_name
+	desc = tenet_nars_sanguine_desc
+	icon = core_tenet_household_gods #core_tenet_pentarchy #core_tenet_warrior_monks
 
-		is_shown = {
-			religion_tag = nikean_group
-		}
-		can_pick = {
-			religion_tag = nikean_group
-		}
+	is_shown = {
+		religion_tag = nikean_religion
+	}
+	can_pick = {
+		religion_tag = nikean_religion
+	}
 
-		piety_cost = faith_tenet_cost_massive
+	piety_cost = faith_tenet_cost_massive
 
-		parameters = {
-			great_holy_wars_active = yes
-            warmonger = yes
-			conquest_cb_enabled = yes
-			fervor_per_holy_site = 1.5
-			mendicant_preachers_conversion_active = yes
-			better_artifacts = yes
-			reincarnation_events_active = yes
-			reduced_vassal_religion_discontent = yes
-		}
+	parameters = {
+		great_holy_wars_active = yes
+        warmonger = yes
+		conquest_cb_enabled = yes
+		fervor_per_holy_site = 1.5
+		mendicant_preachers_conversion_active = yes
+		better_artifacts = yes
+		reincarnation_events_active = yes
+		reduced_vassal_religion_discontent = yes
+	}
 
-		character_modifier = {
-			domain_tax_different_faith_mult = 0.5
-			domain_tax_same_faith_mult = 0.5
-            ai_war_chance = 0.5
-			ai_war_cooldown = -0.25
-			accolade_glory_gain_mult = 0.25
-			holding_build_gold_cost = -0.5
-			holding_build_speed = -0.5
-			development_growth_factor = 0.5
-			domain_limit = 2
-		}
+	character_modifier = {
+		domain_tax_different_faith_mult = 0.5
+		domain_tax_same_faith_mult = 0.5
+        ai_war_chance = 0.5
+		ai_war_cooldown = -0.25
+		accolade_glory_gain_mult = 0.25
+		holding_build_gold_cost = -0.5
+		holding_build_speed = -0.5
+		development_growth_factor = 0.5
+		domain_limit = 2
+	}
 		
+}
+
+tenet_nars_banking = {
+    name = tenet_nars_banking_name
+    desc = tenet_nars_banking_desc
+	#icon = core_tenet_tax_nonbelievers
+	icon = core_tenet_astrology
+	#icon = core_tenet_armed_pilgrimages
+	#icon = core_tenet_gruesome_festivals
+
+	is_shown = {
+		religion_tag = nikean_religion
 	}
-	tenet_nars_banking = {
-        name = tenet_nars_banking_name
-        desc = tenet_nars_banking_desc
-		#icon = core_tenet_tax_nonbelievers
-		icon = core_tenet_astrology
-		#icon = core_tenet_armed_pilgrimages
-		#icon = core_tenet_gruesome_festivals
-
-		is_shown = {
-			religion_tag = nikean_group
-		}
-		can_pick = {
-			religion_tag = nikean_group
-		}
-
-		piety_cost = {
-			value = faith_tenet_cost_massive
-			multiply = 10
-        }
-		parameters = {
-			unlock_jizya_contract = yes
-			better_artifacts = yes
-			mendicant_preachers_conversion_active = yes
-			pilgrimage_decision_active = yes
-			fervor_per_holy_site = 1
-			tenet_unlocks_t3_withdraw_from_view = yes
-			reduced_vassal_religion_discontent = yes
-			legalism_trust_just_leader_active = yes
-		}
-
-        character_modifier = {
-			domain_tax_different_faith_mult = 0.25
-			domain_tax_same_faith_mult = 0.25
-            ai_war_chance = 0.5
-			ai_war_cooldown = -0.25
-			accolade_glory_gain_mult = 0.2
-			holding_build_gold_cost = -0.25
-			holding_build_speed = -0.25
-			development_growth_factor = 0.25
-			domain_limit = 2
-		}
+	can_pick = {
+		religion_tag = nikean_religion
 	}
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+    }
+	parameters = {
+		unlock_jizya_contract = yes
+		better_artifacts = yes
+		mendicant_preachers_conversion_active = yes
+		pilgrimage_decision_active = yes
+		fervor_per_holy_site = 1
+		tenet_unlocks_t3_withdraw_from_view = yes
+		reduced_vassal_religion_discontent = yes
+		legalism_trust_just_leader_active = yes
+	}
+
+    character_modifier = {
+		domain_tax_different_faith_mult = 0.25
+		domain_tax_same_faith_mult = 0.25
+        ai_war_chance = 0.5
+		ai_war_cooldown = -0.25
+		accolade_glory_gain_mult = 0.2
+		holding_build_gold_cost = -0.25
+		holding_build_speed = -0.25
+		development_growth_factor = 0.25
+		domain_limit = 2
+	}
+}
 	
-	tenet_nars_crusade = {
-        name = tenet_nars_crusade_name
-        desc = tenet_nars_crusade_desc
-		icon = core_tenet_cranial_trophies
-		#icon = core_tenet_armed_pilgrimages
-		#icon = core_tenet_gruesome_festivals
+tenet_nars_crusade = {
+    name = tenet_nars_crusade_name
+    desc = tenet_nars_crusade_desc
+	icon = core_tenet_cranial_trophies
+	#icon = core_tenet_armed_pilgrimages
+	#icon = core_tenet_gruesome_festivals
 
-		is_shown = {
-			religion_tag = nikean_group
-		}
-		can_pick = {
-			religion_tag = nikean_group
-		}
-
-		piety_cost = {
-			value = faith_tenet_cost_massive
-			multiply = 10
-        }
-		parameters = {
-			great_holy_wars_active = yes
-            warmonger = yes
-			invasion_cb_enabled = yes
-			sanctioned_assassinations = yes
-			killing_bestows_heads = yes
-			decapitation_steals_prestige_as_piety = yes
-		}
-
-        character_modifier = {
-			domain_tax_same_faith_mult = 0.15
-            ai_war_chance = 0.3
-			ai_war_cooldown = -0.15
-			accolade_glory_gain_mult = 0.15
-			domain_limit = 1
-			development_growth_factor = 0.15
-		}
+	is_shown = {
+		religion_tag = nikean_religion
+	}
+	can_pick = {
+		religion_tag = nikean_religion
 	}
 
-	tenet_nars_vestals = {
-		icon = core_tenet_polyamory
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+    }
+
+	parameters = {
+		great_holy_wars_active = yes
+        warmonger = yes
+		invasion_cb_enabled = yes
+		sanctioned_assassinations = yes
+		killing_bestows_heads = yes
+		decapitation_steals_prestige_as_piety = yes
+		}
+
+    character_modifier = {
+		domain_tax_same_faith_mult = 0.15
+        ai_war_chance = 0.3
+		ai_war_cooldown = -0.15
+		accolade_glory_gain_mult = 0.15
+		domain_limit = 1
+		development_growth_factor = 0.15
+		}
+}
+
+tenet_nars_vestals = {
+	icon = core_tenet_polyamory
 		
-		parameters = {
-			no_unfaithfulness_penalty_active = yes
-			safer_childbirths_active = yes
-			healthier_children_active = yes
-			piety_from_childbirth_active = yes
-			divine_marriage_opinion = 10
-			divine_marriage_piety_gain_active = yes
-			reincarnation_resistance_to_conversion = yes
-			literalist_debate_enabled = yes
+	parameters = {
+		no_unfaithfulness_penalty_active = yes
+		safer_childbirths_active = yes
+		healthier_children_active = yes
+		piety_from_childbirth_active = yes
+		divine_marriage_opinion = 10
+		divine_marriage_piety_gain_active = yes
+		reincarnation_resistance_to_conversion = yes
+		literalist_debate_enabled = yes
+	}
+	character_modifier = {
+		fertility = 0.25
+		stress_gain_mult = -0.25
+		stress_loss_mult = 0.25
+		development_growth_factor = 0.25
+		domain_limit = 2
+	}
+	virtues = {
+		pure_blooded 
+		incestuous 
 		}
-		character_modifier = {
-			fertility = 0.25
-			stress_gain_mult = -0.25
-			stress_loss_mult = 0.25
-			development_growth_factor = 0.25
-			domain_limit = 2
-		}
-		virtues = {
-				pure_blooded 
-				incestuous 
-			}
 	}
 
-	tenet_nars_erudition = {
-        name = tenet_nars_erudition_name
-        desc = tenet_nars_erudition_desc
-		icon = core_tenet_alexandrian_catechism
-		#icon = core_tenet_bhakti
+tenet_nars_erudition = {
+    name = tenet_nars_erudition_name
+    desc = tenet_nars_erudition_desc
+	icon = core_tenet_alexandrian_catechism
+	#icon = core_tenet_panteion
 
-		is_shown = {
-			religion_tag = nikean_group
-		}
-		can_pick = {
-			religion_tag = nikean_group
-		}
-		piety_cost = {
-			value = faith_tenet_cost_massive
-			multiply = 10
-		}
-		parameters = {
-			inspections_unlocked_and_costs_piety = yes
-			inspection_gives_devotion = yes
-			children_less_likely_to_be_burdened = yes
-			tenet_esotericism_mystic_education = yes
-			reforging_artifacts_costs_piety = yes
-			destroying_artifacts_is_pious = yes
-			parents_get_hooks_on_children = yes
-		}
-		character_modifier = {
-			monthly_learning_lifestyle_xp_gain_mult = 0.25
-			learning_per_piety_level = 2
-			martial_per_piety_level = 2
-		}
+	is_shown = {
+		religion_tag = nikean_religion
+	}
+	can_pick = {
+		religion_tag = nikean_religion
+	}
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+	}
+	parameters = {
+		inspections_unlocked_and_costs_piety = yes
+		inspection_gives_devotion = yes
+		children_less_likely_to_be_burdened = yes
+		tenet_esotericism_mystic_education = yes
+		reforging_artifacts_costs_piety = yes
+		destroying_artifacts_is_pious = yes
+		parents_get_hooks_on_children = yes
+	}
+	character_modifier = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.25
+		learning_per_piety_level = 2
+		martial_per_piety_level = 2
 	}
 }
 

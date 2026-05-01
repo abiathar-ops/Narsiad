@@ -1,0 +1,14 @@
+﻿doctrine_nikean_tenets = {
+	category = "core_tenets"
+
+	number_of_picks = 3
+
+    doctrine_types = {
+        tenet_nars_sanguine
+        tenet_nars_pantheon
+        tenet_nars_erudition
+        tenet_nars_banking
+        tenet_nars_vestals
+        tenet_nars_crusade
+    }
+}

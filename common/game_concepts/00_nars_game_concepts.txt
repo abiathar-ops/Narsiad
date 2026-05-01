@@ -41,7 +41,16 @@ narses = {
 	parent = panteion
 }
 
+phokas = {
+	parent = panteion
+}
+
+enuo = {
+	parent = panteion
+}
+
 panteion = {
+	alias = { panteion_possessive }
 	parent = orphic
 }
 

@@ -4,6 +4,12 @@ is_nikean = {
     }
 }
 
+is_orphic = {
+   faith.religion = {
+		is_in_family = rf_nikean
+	}
+}
+
 is_narsocratic = {
    culture = {
         has_cultural_pillar = heritage_nars
@@ -15,10 +21,18 @@ is_narsocratic = {
    }
 }
 
+is_narsocratic_e_h = {
+    or = {
+       has_title = title:e_narsokratia
+       has_title = title:h_narsokratia
+    }
+}
+
 is_narses_scion = {
-	OR = {
+	AND = {
 		has_trait = nars_trait
 		is_nikean = yes
+        is_orphic = yes
 	}
 }
 

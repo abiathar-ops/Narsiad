@@ -1,64 +1,110 @@
 #Sicily
+#Sicily
 cagliari = {
-	county = c_cagliari
-	barony = b_cagliari
+    county = c_cagliari
+    barony = b_cagliari
 
-	character_modifier = {
-		name = holy_site_cagliari_effect_name
-		tax_mult = 0.05
-		development_growth_factor = 0.1
-	}
+    character_modifier = {
+        name = holy_site_cagliari_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+iglesias = {
+    county = c_cagliari
+    barony = b_iglesias
+
+    character_modifier = {
+        name = holy_site_iglesias_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
 }
 
 ajaccio = {
-	county = c_ajaccio
-	barony = b_ajaccio
+    county = c_ajaccio
+    barony = b_ajaccio
 
-	character_modifier = {
-		name = holy_site_ajaccio_effect_name
-		monthly_county_control_growth_factor = 0.1
-		development_growth_factor = 0.1
-	}
+    character_modifier = {
+        name = holy_site_ajaccio_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
 }
 
 arborea = {
-	county = c_arborea
+    county = c_arborea
 
-	character_modifier = {
-		name = holy_site_ajaccio_effect_name
-		monthly_county_control_growth_factor = 0.1
-	}
-	flag = kerala_conversion_bonus
+    character_modifier = {
+        name = holy_site_arborea_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+    flag = kerala_conversion_bonus
 }
 
 gallura = {
-	county = c_gallura
+    county = c_gallura
 
-	character_modifier = {
-		name = holy_site_ajaccio_effect_name
-		monthly_county_control_growth_factor = 0.1
-	}
-	flag = kerala_conversion_bonus
+    character_modifier = {
+        name = holy_site_gallura_effect_name
+    	monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+    flag = kerala_conversion_bonus
 }
 
 tortoli = {
-	county = c_tortoli
+    county = c_tortoli
 
-	character_modifier = {
-		name = holy_site_ajaccio_effect_name
-		monthly_county_control_growth_factor = 0.1
-		development_growth_factor = 0.1
-	}
+    character_modifier = {
+        name = holy_site_tortoli_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+carbonara = {
+    county = c_tortoli
+    barony = b_carbonara
+    character_modifier = {
+        name = holy_site_carbonara_effect_name
+      	monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
 }
 
 logudoro = {
-	county = c_logudoro
+    county = c_logudoro
 
-	character_modifier = {
-		name = holy_site_ajaccio_effect_name
-		development_growth_factor = 0.1
-		monthly_county_control_growth_factor = 0.1
-	}
+    character_modifier = {
+        name = holy_site_logudoro_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+galtelli = {
+    county = c_gallura
+    barony = b_galtelli
+
+    character_modifier = {
+        name = holy_site_galtelli_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+alghero = {
+    county = c_logudoro
+    barony = b_alghero
+
+    character_modifier = {
+        name = holy_site_alghero_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
 }
 
 ##Chinese

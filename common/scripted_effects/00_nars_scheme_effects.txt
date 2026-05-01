@@ -71,3 +71,67 @@ munitions_research_success_effect = {
 		value = yes
 	}
 }
+
+create_narsil_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = narsil_name
+			description = narsil_desc
+			modifier = artifact_narsil_modifier
+			template = narsil_template
+			type = narsil
+			visuals = narsil
+            
+            # Use raw values or valid scopes instead of undefined ones
+			owner = root
+			wealth = 3000 
+			quality = 100 
+			
+			save_scope_as = newly_created_artifact
+			history = {					
+				actor = root
+				recipient = root
+				type = created # Fixed history type
+			}
+		}
+        
+        # Correctly apply the rarity to the newly created artifact
+        scope:newly_created_artifact = {
+            set_artifact_rarity_illustrious = yes
+        }
+	}
+}
+
+create_anduril_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = anduril_name
+			description = anduril_desc
+			modifier = artifact_anduril_modifier
+			template = anduril_template
+			type = anduril # Fixed a typo here (was 'andruril')
+			visuals = anduril
+            
+			owner = root
+			wealth = 3000
+			quality = 100
+            
+			save_scope_as = newly_created_artifact
+			history = {					
+				actor = root
+				recipient = root
+				type = created
+			}
+		}
+        
+        scope:newly_created_artifact = {
+            set_artifact_rarity_illustrious = yes
+        }
+	}
+}

@@ -1,4 +1,4 @@
-nikean_group = {
+nikean_religion = {
 	family = rf_nikean
 	graphical_faith = pagan.gfx
 	doctrine = nikean_hostility_doctrine
@@ -213,64 +213,37 @@ nikean_group = {
 		DeathDeitySheHe = CHARACTER_SHEHE_HE
 		DeathDeityHerHis = CHARACTER_HERHIS_HIS
 		DeathDeityHerHim = CHARACTER_HERHIM_HIM
-		WitchGodName = nars_witchgodname
-		WitchGodNamePossessive = nars_witchgodname_possessive
+		WitchGodName = nars_witch_god_name
+		WitchGodNamePossessive = nars_witch_god_name_possessive
 		WitchGodHerHis = CHARACTER_HERHIS_HIS
 		WitchGodSheHe = CHARACTER_SHEHE_HE
 		WitchGodHerHim = CHARACTER_HERHIM_HIM
 		WitchGodMistressMaster = master
 		WitchGodMotherFather = father
 
-		GHWName = ghw_crusade
-		GHWNamePlural = ghw_crusades
+		GHWName = ghw_purification
+		GHWNamePlural = ghw_purifications
 	}
 	
 	faiths = {
-			nars_religion = {
-				color = { 230 228 216 }
-				icon = custom_tamska_veryana.dds #custom_faith_dove
-				#icon = dhyana
+		nars_religion = {
+			color = { 230 228 216 }
+			icon = custom_tamska_veryana.dds #custom_faith_dove
+			#icon = dhyana
 
-				holy_site = cagliari
-				holy_site = ajaccio
-				holy_site = arborea
-				holy_site = gallura
-				holy_site = tortoli
-				holy_site = logudoro
+			holy_site = cagliari
+    		holy_site = iglesias
+    		holy_site = arborea
+    		holy_site = gallura
+   		 	holy_site = tortoli
+    		holy_site = carbonara
+  			holy_site = logudoro
+    		holy_site = galtelli
+    		holy_site = alghero
 
-				doctrine = tenet_nars_sanguine
-				doctrine = tenet_nars_pantheon
-				doctrine = tenet_nars_erudition
-			}
-			propatros_religion = {
-				color = { 230 228 216 }
-				icon = custom_faith_dove
-
-				holy_site = cagliari
-				holy_site = ajaccio
-				holy_site = arborea
-				holy_site = gallura
-				holy_site = tortoli
-				holy_site = logudoro
-
-				doctrine = tenet_nars_banking
-				doctrine = tenet_nars_pantheon
-				doctrine = tenet_nars_erudition
-			}
-			liberatores_religion = {
-				color = { 230 228 216 }
-				icon = custom_faith_1
-
-				holy_site = cagliari
-				holy_site = ajaccio
-				holy_site = arborea
-				holy_site = gallura
-				holy_site = tortoli
-				holy_site = logudoro
-
-				doctrine = tenet_nars_vestals
-				doctrine = tenet_nars_pantheon
-				doctrine = tenet_nars_erudition
-			}
+			doctrine = tenet_nars_pantheon
+			doctrine = tenet_household_gods
+			doctrine = tenet_mendicant_preachers
 		}
+	}
 }

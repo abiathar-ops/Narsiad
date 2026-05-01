@@ -7,10 +7,6 @@ h_narsokratia = {
 		has_global_variable = created_h_narsokratia
 	}
 
-	can_create = {
-		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
-	}
-
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -24,9 +20,6 @@ h_narsokratia = {
 
 e_narsokratia = {
 	color = { 0.98 0.92 0.84 }
-	can_create = {
-		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
-	}
 	ai_primary_priority = {
 		if = {
 			limit = {

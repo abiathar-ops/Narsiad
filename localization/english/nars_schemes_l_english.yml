@@ -9,7 +9,7 @@
  
  # Success Event
  nikean_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
- nikean_gunpowder.1021.desc: "Deep in the dusty vaults of my armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise.\n\nLining up in disciplined ranks, my experimental regiment—the #V Mástiges#!—level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood.\n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E]!"
+ nikean_gunpowder.1021.desc: "Deep in the dusty vaults of my armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise.\n\nLining up in disciplined ranks, my experimental regiment, the #V Mástiges#!, level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood.\n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E]!"
  nikean_gunpowder.1021.a: "A new era dawns!"
  nikean_gunpowder.1021.a.mastiges_tt: "#v You#! unlock the recruitment of the [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
  

@@ -1,7 +1,9 @@
 ﻿l_english: 
  # ── EXISTING ENTRIES (unchanged) ──
- decision_group_type_nikean: "Narsiad - Unique Decisions"
+ decision_group_type_nikean: "Nikean Decisions"
  decision_group_type_nikean_2: "Narsiad - Minor Decisions"
+
+ narsokratia_empire_above: "You require a [narsokratia|E] [rank|E] of [empire|E] or above!"
 
  decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [nikeanrealm|E]!"
@@ -11,7 +13,7 @@
 
  decision_spy_network: "Recruit the Synodian Spies"
  decision_spy_network_desc: "A perfect [realm|E] requires perfect [intrigue|E]. While our [hoplites|E] secure the borders, treason often breeds in the shadows of alleyways and traded for coin in the dark. By exploiting the vices of the populace, we will hear every [secret|E] and uncover every plot before it draws breath."
- decision_spy_network_confirm: "St. Alnarēs, protect us!"
+ decision_spy_network_confirm: "[enuo|E], protect us!"
  decision_spy_network_tt: "Hires the Silent Synod to monitor the [nikeanrealm|E]."
  decision_spy_network_tooltip: "Hires a network to thwart [hostile_schemes|E]!"
  decision_spy_network_effect_tooltip: "Hires a network to thwart [hostile_schemes|E] and raise [control|E]!"
@@ -28,8 +30,8 @@
  decision_introduce_bigamy_tooltip: "You decree that [rulers|E] of your [faith|E] may take an additional [spouse|E]"
  decision_nikean_introduce_bigamy_effect_tooltip: "Your [nikean|E] [faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E]"
  decision_introduce_bigamy_confirm: "Two is better than one!"
- nikean_realm.1021.a.bigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold two spouses#! simultaneously"
- nikean_realm.1021.b.trigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #bold three spouses#! simultaneously"
+ nikean_faith.1021.a.bigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #P 2#! spouses simultaneously"
+ nikean_faith.1021.b.trigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #P 3#! spouses simultaneously"
 
  decision_establish_aretaic_school: "Establish the Scholí"
  decision_establish_aretaic_school_desc: "The [nikeans|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [nikeis|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. #V Aretaiké Scholí#!, the [nikean|E] bastion of learning."
@@ -92,10 +94,10 @@
  decision_nikean_evangelize_realm: "Proselytize Dogma"
  decision_nikean_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [nikean|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
  decision_nikean_evangelize_realm_tooltip: "Pressure [realm|E] to adopt [nikean] [culture|E] and [faith|E]"
- decision_nikean_evangelize_realm_confirm: "Send the flamens!"
+ decision_nikean_evangelize_realm_confirm: "Send the vestals!"
  decision_nikean_evangelize_realm_effect_tooltip: "Portions of your [realm|E]'s counties will have a chance to convert to the [nikean|E] [faith|E] and [culture|E]"
 
- recruit_nikean_courtier_decision: "Muster Your Kins"
+ recruit_nikean_courtier_decision: "Muster the Nikēís"
  recruit_nikean_courtier_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
  recruit_nikean_courtier_decision_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
  recruit_nikean_courtier_decision_confirm:0 "Send the heralds!"
