@@ -15,7 +15,9 @@ panteion_nikean_phokas = { # God of Riches, Commerce, and Trade
 
 panteion_nikean_enuo = { # Goddess of War, Strength, and Protection
 	icon = prowess_positive
-	tolerance_advantage_mod = 4
-	prowess = 4
-	attraction_opinion = 20
+	prowess_per_piety_level = 5
+	knight_effectiveness_mult = 0.25
+	attraction_opinion = 25
+	men_at_arms_maintenance = -0.125
+	years_of_fertility = 25
 }

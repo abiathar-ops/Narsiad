@@ -4,10 +4,27 @@ is_nikean = {
     }
 }
 
+is_ethnically_nikean = {
+	has_ethnicity = nikean
+}
+
+has_nikeis_blood = {
+    has_trait = nars_naturalis
+}
+
 is_orphic = {
    faith.religion = {
 		is_in_family = rf_nikean
 	}
+}
+
+is_considered_orphic = {
+    custom_tooltip = {
+        text = is_considered_orphic
+        faith.religion = {
+	       	is_in_family = rf_nikean
+	    }
+    }
 }
 
 is_narsocratic = {
@@ -30,7 +47,7 @@ is_narsocratic_e_h = {
 
 is_narses_scion = {
 	AND = {
-		has_trait = nars_trait
+		has_trait = nars_scion
 		is_nikean = yes
         is_orphic = yes
 	}

@@ -242,8 +242,8 @@ nikean_religion = {
     		holy_site = alghero
 
 			doctrine = tenet_nars_pantheon
-			doctrine = tenet_household_gods
-			doctrine = tenet_mendicant_preachers
+			doctrine = tenet_nars_sanguine
+			doctrine = tenet_nars_erudition
 		}
 	}
 }

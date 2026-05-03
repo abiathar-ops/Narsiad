@@ -1,29 +1,32 @@
 set_panteion_effect = {
-	# Remove any previous personal god relation.
-	add_character_modifier = $PANTEION$
-	
+	# Remove any previous personal god relation
+
 	if = {
 		limit = { is_orphic = yes }
 		if = {	
 			limit = {
 				has_character_modifier = panteion_nikean_narses
 			}
+			add_piety = massive_piety_loss
 			remove_character_modifier = panteion_nikean_narses
 		}
 		else_if = {	
 			limit = {
 				has_character_modifier = panteion_nikean_phokas
 			}
+			add_piety = massive_piety_loss
 			remove_character_modifier = panteion_nikean_phokas
 		}
 		else_if = {	
 			limit = {
 				has_character_modifier = panteion_nikean_enuo
 			}
+			add_piety = massive_piety_loss
 			remove_character_modifier = panteion_nikean_enuo
 		}
 		else = {
 			add_piety = massive_piety_loss
 		}
 	}
+	add_character_modifier = $PANTEION$
 }

@@ -11,7 +11,7 @@
  decision_develop_industry_confirm: "Let the forges roar!"
  decision_develop_industry_tt: "Unleash the industrial power of the [nikeanrealm|E]!"
 
- decision_spy_network: "Recruit the Synodian Spies"
+ decision_spy_network: "Hire Synods"
  decision_spy_network_desc: "A perfect [realm|E] requires perfect [intrigue|E]. While our [hoplites|E] secure the borders, treason often breeds in the shadows of alleyways and traded for coin in the dark. By exploiting the vices of the populace, we will hear every [secret|E] and uncover every plot before it draws breath."
  decision_spy_network_confirm: "[enuo|E], protect us!"
  decision_spy_network_tt: "Hires the Silent Synod to monitor the [nikeanrealm|E]."
@@ -44,8 +44,8 @@
  pick_aretaic_school_barony_confirm: "Clear the grounds!"
  pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 
- decision_munitions_research: "Harness Gunpowder"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A powder of blackish hue that is known to be volatile, this secretive essence may be reliably deployed if researched. Perhaps we may sponsor alchemical [prestige|E] to be manufactured, a marvel of [innovation|E]."
+ decision_munitions_research: "Found the Mástiges"
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [hoplites|E] with them."
  decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] [men_at_arms|E] armed with new armaments!"
  decision_munitions_research_confirm: "Blood and iron!"
 
@@ -76,7 +76,7 @@
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [nikeis|E] and the other barbaric [cultures|E] as the undisputed continuation of the [nikeanrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks a full [culture|E] and [faith|E] conversion [decision|E] in the [realm|E]"
- decision_h_narsokratia_troop_effect_tooltip: "You get an #bold undyingly loyal#! [army|E] of [nikean|E] [soldiers|E]:\n$BULLET_WITH_TAB$#V 500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 1000#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
+ decision_h_narsokratia_troop_effect_tooltip: "You get an #bold undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 1000#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
  decision_mend_narsil: "Reforge the Longsword Narsíl"
@@ -104,7 +104,7 @@
 
  CHOOSE_NARSID_COURTIERS_DECISION_NEXT_STEP_BUTTON: "Proceed!"
  hire_nikean_1_decision:0 "Search for [nikeis|E]"
- hire_nikean_1_decision_tooltip:3 "At least #P 3#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
+ hire_nikean_1_decision_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
  hire_nikean_1_decision_desc: "A $nikean_1_court_position$ is essential to care for the sick and wounded at my [ROOT.Char.Custom('GetCourtLower')]. I will ask my servants to bring forth a number of suitable candidates."
  hire_nikean_1_decision_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"
 

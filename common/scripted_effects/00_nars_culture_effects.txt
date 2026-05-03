@@ -44,7 +44,7 @@ local_assimilate_nikean_traditions_effect = {
 			set_character_faith = scope:new_faith
 		}
 		hidden_effect = {
-			add_character_modifier = { modifier = embraced_local_traditions_modifier }
+			add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
 		}
 		add_to_temporary_list = notified_of_culture_change
 	}
@@ -61,7 +61,7 @@ local_assimilate_nikean_traditions_effect = {
 			set_character_faith = scope:new_faith
 		}
 		hidden_effect = {
-			add_character_modifier = { modifier = embraced_local_traditions_modifier }
+			add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
 		}
 		add_to_temporary_list = notified_of_culture_change
 	}
@@ -69,7 +69,7 @@ local_assimilate_nikean_traditions_effect = {
 	every_vassal = {
 		limit = { NOT = { is_in_list = notified_of_culture_change } }
 		
-		add_character_modifier = { modifier = embraced_local_traditions_modifier }
+		add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
 		
 		hidden_effect = {
 			if = {
@@ -100,7 +100,7 @@ local_assimilate_nikean_traditions_effect = {
 					hidden_effect = { bastard_to_wild_oat_conversion_assimilation_effect = yes }
 					set_character_faith = scope:new_faith
 				}
-				hidden_effect = { add_character_modifier = { modifier = embraced_local_traditions_modifier } }
+				hidden_effect = { add_character_modifier = { modifier = embraced_nikean_traditions_modifier } }
 				add_to_temporary_list = notified_of_culture_change
 			}
 			every_consort = {
@@ -114,7 +114,7 @@ local_assimilate_nikean_traditions_effect = {
 					hidden_effect = { bastard_to_wild_oat_conversion_assimilation_effect = yes }
 					set_character_faith = scope:new_faith
 				}
-				hidden_effect = { add_character_modifier = { modifier = embraced_local_traditions_modifier } }
+				hidden_effect = { add_character_modifier = { modifier = embraced_nikean_traditions_modifier } }
 				add_to_temporary_list = notified_of_culture_change
 			}
 		}

@@ -1,7 +1,6 @@
 intro_standard_effect = {
 	add_character_modifier = {
-		modifier = intro_standard_modifier
-		days = 30
+		modifier = endgame_modifier
 	}
 }
 
@@ -40,7 +39,6 @@ h_narsokratia_effect = {
 
 h_narsokratia_effect_2 = {
 	add_character_modifier = {
-		modifier = intro_standard_modifier
-		days = 30
+		modifier = endgame_modifier
 	}
 }

@@ -54,19 +54,16 @@ maa_hoplitai = {
 		harsh_winter = { toughness = 5 screen = 5 }
 	}
 
-    buy_cost = { gold = 157.5 }
-    low_maintenance_cost = { gold = 0.7 }
-    high_maintenance_cost = { gold = 2.1 }
-    provision_cost = @provisions_cost_infantry_cheap
+    buy_cost = { gold = landsknecht_recruitment_cost }
+	low_maintenance_cost = { gold = landsknecht_low_maint_cost }
+	high_maintenance_cost = { gold = landsknecht_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_cheap
 
     mercenary_fallback = no
     holy_order_fallback = no
     
     stack = 100
-    ai_quality = {
-        value = culture_ai_weight_heavy_infantry
-		add = counter_synergy_ai_weight_heavy_infantry
-    }
+   	ai_quality = { value = @cultural_maa_extra_ai_score }
     icon = narsid_hoplites
 }
 
@@ -108,15 +105,15 @@ maa_mastiges = {
         skirmishers = 2
     }
 
-    buy_cost = { gold = 195 }
-    low_maintenance_cost = { gold = 1.0 }
-    high_maintenance_cost = { gold = 3.0 }
+    buy_cost = { gold = schiltron_recruitment_cost }
+	low_maintenance_cost = { gold = schiltron_low_maint_cost }
+	high_maintenance_cost = { gold = schiltron_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_moderate
+
     mercenary_fallback = no
     holy_order_fallback = yes
     
     stack = 100
-    ai_quality = {
-        value = cultural_maa_extra_ai_score
-    }
+   	ai_quality = { value = @cultural_maa_extra_ai_score }
     icon = narsid_mastiges
 }

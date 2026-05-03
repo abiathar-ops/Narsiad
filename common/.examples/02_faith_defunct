@@ -1,0 +1,31 @@
+propatros_religion = {
+	color = { 230 228 216 }
+	icon = custom_faith_dove
+	holy_site = cagliari
+	holy_site = ajaccio
+	holy_site = arborea
+	holy_site = gallura
+	holy_site = tortoli
+	holy_site = logudoro
+
+	doctrine = tenet_nars_banking
+	doctrine = tenet_nars_pantheon
+	doctrine = tenet_nars_erudition
+	}
+
+			liberatores_religion = {
+				color = { 230 228 216 }
+				icon = custom_faith_1
+
+				holy_site = cagliari
+				holy_site = ajaccio
+				holy_site = arborea
+				holy_site = gallura
+				holy_site = tortoli
+				holy_site = logudoro
+
+				doctrine = tenet_nars_vestals
+				doctrine = tenet_nars_pantheon
+				doctrine = tenet_nars_erudition
+			}
+		}

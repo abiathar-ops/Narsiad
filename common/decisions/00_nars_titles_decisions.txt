@@ -21,7 +21,6 @@ decision_h_narsokratia = {
 		is_ruler = yes
 		is_nikean = yes
 		has_title = title:e_narsokratia
-		top_liege = this
 		NOT = { has_title = title:h_narsokratia }
 		NOT = {
 			is_target_in_global_variable_list = {
@@ -32,6 +31,7 @@ decision_h_narsokratia = {
 	}
 
 	is_valid = {
+		top_liege = this
 		prestige_level >= 5
 		has_title = title:e_narsokratia
 		AND = {
@@ -89,7 +89,7 @@ decision_h_narsokratia = {
 	effect = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
-		add_trait = nars_trait
+		add_trait = nars_scion
 		trigger_event = nikean_titles.2021
 		gain_heroic_legend_seed_tooltip_effect = yes
 		hidden_effect = {
@@ -147,10 +147,10 @@ decision_e_narsokratia = {
 			has_title = title:k_narsokratia
 			highest_held_title_tier = tier_empire
 		}
-		top_liege = this
 	}
 
 	is_valid = {
+		top_liege = this
 		prestige_level >= 4
 		OR = {	
 			AND = {
@@ -197,8 +197,8 @@ decision_e_narsokratia = {
 	}
 
 	effect = {
-		change_government = administrative_government
 		custom_tooltip = decision_e_narsokratia_effect_tooltip
+		change_government = administrative_government
 		gain_heroic_legend_seed_tooltip_effect = yes
 		create_nikean_empire_effect = yes
 		trigger_event = nikean_titles.2011
@@ -246,7 +246,6 @@ decision_k_narsokratia = {
 		is_nikean = yes
 		is_landed_or_landless_administrative = yes
 		is_confederation_member = no
-		top_liege = this
 		highest_held_title_tier <= tier_kingdom
 		NOT = { has_title = title:k_narsokratia }
 		NOT = { has_title = title:e_narsokratia }
@@ -254,6 +253,7 @@ decision_k_narsokratia = {
 	}
 
 	is_valid = {
+		top_liege = this
 		prestige_level >= 3
 		OR = {
 			highest_held_title_tier = tier_kingdom

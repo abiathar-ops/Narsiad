@@ -1,20 +1,13 @@
-nars_trait = {
+nars_scion = {
 	icon = nars_lineage.dds
 	category = fame
 
-	general_opinion = 75
 	inherit_chance = 100
-	inherit_from_real_father = yes
 	parent_inheritance_sex = all
 	no_prowess_loss_from_age = yes
 	set_immortal_age = 20
 	health = 1
-	old_age = -5
-	prowess = 15
 	inbreeding_chance = -0.5
-	years_of_fertility = 5
-	fertility = 0.5
-	life_expectancy = 15
 	monthly_lifestyle_xp_gain_mult = 0.5
 	good = yes
 	physical = yes
@@ -42,11 +35,12 @@ nars_trait = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_nars_trait_desc
+				desc = trait_nars_scion_desc
 			}
-			desc = trait_nars_trait_character_desc
+			desc = trait_nars_scion_character_desc
 		}
 	}
+
 	tracks = {
 		hoplos = {
 			25 = {
@@ -104,8 +98,36 @@ nars_trait = {
 		}
     }
 	compatibility = {
-		nars_trait = @pos_compat_medium
+		nars_scion = @pos_compat_medium
 	}
 
 	ai_energy = 15
+}
+
+nars_naturalis = {
+	level = 2
+	icon = nars_lineage.dds
+	desc = trait_nars_naturalis_desc		
+	physical = yes
+	#shown_in_ruler_designer =no
+
+	ignore_negative_culture_opinion = yes
+ 	name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = nars_naturalis.no_actor
+			}
+            desc = nars_naturalis.name
+        }
+    }
+
+	health = 0.5
+ 	years_of_fertility = 25
+	life_expectancy = 25
+	attraction_opinion = 25
+
+	compatibility = {
+		nars_scion = @pos_compat_medium
+	}
 }

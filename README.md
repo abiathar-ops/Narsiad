@@ -19,17 +19,14 @@ To do:
 15. Custom Special Doctrine (e.g. Rightful Rulers of the World) to the Nikeans.
 16. Sponsor Expedition -> Finance with gold and influence, an adventurer band that gets a claim on a nearby realm (kingdom/empire) and them declaring war on them. Endgoal is creating another Nikean State
 17. Scout Talents -> From Aretaike Scholi, find a good nikean courtier and legendary characters.
-18. New decision for deviant virtue -> Revise State Doctrine that has bigamy, deviant-to-virtuous, and perhaps soon gaining tradition
 19. Narsil + Gunpowder + Develop Industry -> Foundry-based decision (all scheme based)
 20. Develop industry (Arms: Develop Industry"MAA + development?), spies (Civil: maa + control?)
 20.1 Choose Career Path (Civil and Military, gives perma modifications)
-21. Prosyletize Dogma (Vassal + Lands + Both)
 22. Cultural Reformation (Marital Revision, Tradition decision, Deviant Virtue)
 23. Culture Decision (Libation, Study the Narsian Classics)
 24. Study the Narsian Classics is a simple decision like libation but has a chance to get a trait but deals stress (need to know nikean language, maybe make an ancient dialect of nikean (Old Nikean)?)
 25. Libation gives pious trait
 26. Search for a Champion
-27. Rename sophes, refactor nikean to nikean
 28. Delete Synodian Spies, develop industry becomes a scheme and became a foundry-based decision (or make it into inquisitor (religion based) and put it on another dropdown)
 29. Courtier to 4 but nerf it
 30. Fix Bigamy and Tenets

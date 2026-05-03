@@ -15,7 +15,7 @@
 
  faith_nikean_2_decision_name:0 "Ponder the [panteion|E]"
  faith_nikean_2_decision_desc:0 "Decide your favored patron god of the [panteion|E]."
- change_to_faith_nikean_2_decision_desc_1:0 "You decide which patron God of the [panteion|E] calls to you the most"
+ change_to_faith_nikean_2_decision_desc_1:0 "You [decide|E] which patron God of the [panteion|E] calls to you the most"
  change_to_faith_nikean_2_decision_desc_2:0 "You gain a [modifier|E] that reflects the values of your chosen patron God!"
 
  faith_nikean_3_decision_name:0 "Impose [nikean_faith|E]"

@@ -10,7 +10,7 @@ nikean_titles.2021 = {
 	title = nikean_titles.2021.t
 	desc = nikean_titles.2021.desc
 	theme = emperor
-	override_background = { reference = fp3_fullscreen_rekindle }
+	override_background = { reference = fp2_fullscreen_conciliation }
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
 
 	immediate = {
@@ -28,13 +28,12 @@ nikean_titles.2022 = {
 	title = nikean_titles.2022.t
 	desc = nikean_titles.2022.desc
 	theme = emperor
-	override_background = ce1_fullscreen_legitimizing_legend
-	override_effect_2d = { reference = smoke }
-	
+	override_background = ep3_hippodrome
+	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 	left_portrait = {
 		character = root
-		animation = personality_callous
-		camera = camera_center_large
+		animation = throne_room_two_handed_passive_1
+		camera = camera_event_right_fully_away
 	}
 
 	immediate = {

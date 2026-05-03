@@ -1,7 +1,7 @@
 recruit_nikean_courtier_decision = {
 	ai_check_interval = 0
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/study.dds"
+		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
 	sort_order = 10
 	decision_group_type = nikean
@@ -126,7 +126,7 @@ recruit_nikean_courtier_decision = {
 				}
 				set_variable = {
 					name = number_of_invite_nikean_countdown
-					value = 3
+					value = 4
 					days = 1000
 					}
 				trigger_event = {
