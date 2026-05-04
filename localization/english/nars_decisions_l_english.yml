@@ -51,7 +51,7 @@
 
  munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
  munitions_research_3_years_tooltip: "If you complete the [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
- munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
+ munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
  munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
 
  decision_k_narsokratia: "Proclaim a Despotēia Realm"
@@ -71,12 +71,12 @@
  create_nikean_empire_de_jure_changes: "Becomes [de_jure|E] [kingdoms|E] of your new Ōtarkhia"
  found_e_narsokratia_decision_three_kingdoms_held: "You must control at least three kingdom titles"
 
- decision_h_narsokratia: "Restore the Old Nārsokratía"
+ decision_h_narsokratia: "Restore the Mōnarkhía"
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [nikeis|E] and the other barbaric [cultures|E] as the undisputed continuation of the [nikeanrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
- decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks a full [culture|E] and [faith|E] conversion [decision|E] in the [realm|E]"
- decision_h_narsokratia_troop_effect_tooltip: "You get an #bold undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 1000#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]"
+ decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 4500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
  require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
 
  decision_mend_narsil: "Reforge the Longsword Narsíl"
@@ -89,7 +89,7 @@
 
  # Arrival notification message
  nikean_courtiers.0001.t: "A Nikean Arrives"
- nikean_courtiers.0001.desc: "Answering our herald's call, a new exiled Nikean Courtier has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
+ nikean_courtiers.0001.desc: "Answering our herald's call, a newfound exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
 
  decision_nikean_evangelize_realm: "Proselytize Dogma"
  decision_nikean_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [nikean|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
@@ -101,11 +101,14 @@
  recruit_nikean_courtier_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
  recruit_nikean_courtier_decision_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
  recruit_nikean_courtier_decision_confirm:0 "Send the heralds!"
+ recruit_nikean_adventurer_decision: "Muster the Nikēís"
+ recruit_nikean_adventurer_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch scouts to scale those miserable peaks and drag them down to my [camp|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
+ recruit_nikean_adventurer_decision_tooltip: "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [camp|E] within the coming months"
+ recruit_nikean_adventurer_decision_confirm:0 "Send the scouts!"
 
  CHOOSE_NARSID_COURTIERS_DECISION_NEXT_STEP_BUTTON: "Proceed!"
  hire_nikean_1_decision:0 "Search for [nikeis|E]"
  hire_nikean_1_decision_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
- hire_nikean_1_decision_desc: "A $nikean_1_court_position$ is essential to care for the sick and wounded at my [ROOT.Char.Custom('GetCourtLower')]. I will ask my servants to bring forth a number of suitable candidates."
  hire_nikean_1_decision_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"
 
  hire_nikean_2_decision:0 "Scout for a [sophes|E]"

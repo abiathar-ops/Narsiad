@@ -1,13 +1,13 @@
 ﻿l_english: 
  trait_nars_scion: "Narsēs' Scion"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
- trait_nars_scion_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a sacred scion, born of faith and blood."
+ trait_nars_scion_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion, born of faith and blood."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
 
- trait_track_hoplos:0 "Hoplîtes"
- trait_track_hoplos_desc:0 "Bloody prayers are his language; blood and iron his words. In ordered ranks he does not waver; in the smoke of chaos he restores command."
- trait_track_sophes:0 "Sophóses"
- trait_track_sophes_desc:0 "He rules himself first; knowledge is his power, quiet and feared by all. Through wisdom and discipline, he bends the world to his will."
+ trait_track_hoplos:0 "Oplît"
+ trait_track_hoplos_desc:0 "Bloody prayers are his language; blood and iron his words. In ordered ranks he does not waver; in the smoke of turmoil he restores command."
+ trait_track_sophes:0 "Sophós"
+ trait_track_sophes_desc:0 "He rules himself first; knowledge is his power. Through wisdom and wit, he bends the world to his will."
 
  nars_ageless_appearance_tt:0 "This character does not visually age, though they remain bounded by mortal coil and the vicissitudes of time."
 
@@ -15,4 +15,4 @@
 
  nars_naturalis.no_actor: "Nikean-Blooded"
  nars_naturalis.name: "Nikēis"
- trait_nars_naturalis_desc: "The blood of the Nikēis courses through your veins."
+ trait_nars_naturalis_desc: "The blood of the Nikēis courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins."

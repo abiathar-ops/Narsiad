@@ -1,6 +1,6 @@
 decision_establish_aretaic_school = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
 	decision_group_type = nikean
 	desc = decision_establish_aretaic_school_desc
@@ -50,7 +50,7 @@ decision_establish_aretaic_school = {
 
 pick_aretaic_school_barony = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
 	decision_group_type = nikean
 	ai_goal = yes

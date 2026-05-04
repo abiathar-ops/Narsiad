@@ -1,0 +1,41 @@
+﻿# Hook into the vanilla on_actions
+on_game_start_after_lobby = {
+    on_actions = { 
+        nars_seed_nikean_trait_on_start 
+    }
+}
+
+on_birth_child = {
+    on_actions = { 
+        nars_add_nikean_trait_on_birth 
+    }
+}
+
+# Define the custom actions triggered by the hooks above
+
+nars_seed_nikean_trait_on_start = {
+    effect = {
+        every_living_character = {
+            limit = { 
+                # Target the specific culture. 
+                # Alternatively, use 'has_cultural_heritage = heritage_nars' if it should apply to diverged cultures too.
+                is_ethnically_nikean = yes
+                NOT = { has_nikean_blood = yes }
+            }
+            add_trait = nars_naturalis
+        }
+    }
+}
+
+nars_add_nikean_trait_on_birth = {
+    effect = {
+        # In the 'on_birth_child' on_action, the ROOT scope is the newborn child.
+        if = {
+            limit = {
+                is_ethnically_nikean = yes
+                NOT = { has_nikean_blood = yes }
+            }
+            add_trait = nars_naturalis
+        }
+    }
+}

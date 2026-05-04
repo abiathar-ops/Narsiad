@@ -8,15 +8,15 @@
  nikean_intro.1002.desc:0 "Centuries have passed since then, the [realms|E] outside has certainly forgotten our [culture|E]. It was perhaps our luck that in this [era|E] we have returned, for it is an age of strife. As I gaze upon our ancestral [regions|E], I know that the road ahead will be long and difficult, but we shall rebuild [narsokratia|E] and prosper once more. The [nikeis|E] have not merely survived; we have already won by [virtue|E] of our existence. The world is ours to conquer, and we shall do so as it is our birthright from the ashes of our ancestors!"
  nikean_intro.1002.a:0 "Hark, [narses|E]!"
 
- nikean_faith.1001.t: "Masterful Offering!"
+ nikean_faith.1001.t: "Psukhês Iatreîon"
  nikean_faith.1001.desc: "The [temple|E] is finally quiet. I stand before the [nikeis|E] altar to the [panteion|E], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the [court|E] was not here to witness such perfection in [piety|E]."
  nikean_faith.1001.a: "I am a true gift to the [panteion|E]."
 
- nikean_faith.1002.t: "A Practiced Piety?"
+ nikean_faith.1002.t: "Psukhês Iatreîon"
  nikean_faith.1002.desc: "I approach the sacred [temple|E] shrine, exhaustion weighing heavily on my bones. I am supposed to find inner peace in pouring the evening libation to the [panteion|E], but all I can think about is the impending grain shortage and the dreadful smell of my [spymaster|E].\n\nI mechanically unstopper the wine, dump an unceremonious splash into the bowl, and rattle off the prayers of [nikean|E] [tradition|E] at a speed that would make an auctioneer blush.\n\nWell, my [cultural|E] obligation is technically fulfilled. Am I relaxed? Not in the slightest. My shoulders are still as tight as bowstrings. But the heavens cannot say I skipped my chores."
  nikean_faith.1002.a: "Right, next item on the agenda!"
 
- nikean_faith.1003.t: "A Libation for.. Me!"
+ nikean_faith.1003.t: "Psukhês Iatreîon"
  nikean_faith.1003.desc: "Seeking a moment of respite from [stress|E], I retreat to the nearest [temple|E] offer a solemn libation to the [panteion|E]. I reach for a highly prized amphora of sweet, spiced wine from the southern [regions|E] famed for their vineyards, intending to pour a modest measure into the offering bowl.\n\nBefore I can second-guess my own [sinful|E] blasphemy, I tip the heavy clay jug back and down half of it in one glorious, unbroken swig. It is exquisite. I wipe my mouth with my sleeve, letting out a highly undignified belch. \n\nThe crushing [stress|E] of the day vanishes entirely until I realize I will have to pay the [steward|E] to quietly replace this incredibly expensive vintage before my [court_chaplain|E] notices."
  nikean_faith.1003.a: "The [panteion|E] work in mysterious, delicious ways."
 
@@ -44,7 +44,7 @@
  nikean_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
  nikean_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [mastiges|E]!"
  nikean_gunpowder.1021.a: "A new era dawns!"
- nikean_gunpowder.1021.a.mastiges_tt: "#v You#! unlock the recruitment of the [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
+ nikean_gunpowder.1021.a.mastiges_tt: "#v You#! unlock the recruitment of the [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
  
  # Fail Event
  nikean_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"

@@ -1,6 +1,6 @@
 decision_mend_narsil = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/mythology.dds"
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
 	desc = decision_mend_narsil_desc
 	decision_group_type = nikean
@@ -50,7 +50,7 @@ decision_mend_narsil = {
 
 decision_munitions_research = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/mythology.dds"
+		reference = "gfx/interface/illustrations/decisions/innovation.dds"
 	}
 
 	ai_check_interval_by_tier = {

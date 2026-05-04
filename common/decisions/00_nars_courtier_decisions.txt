@@ -112,10 +112,6 @@ recruit_nikean_courtier_decision = {
 			limit = { scope:hire_nikean_2_decision = yes }
 			custom_tooltip = hire_nikean_2_decision_tooltip
 		}
-		add_character_flag = {
-			flag = recruit_nikean_ai_cooldown
-			years = 15
-		}
 		hidden_effect = {
 			custom_tooltip = recruit_nikean_courtier_decision_tooltip
 			if = { # 3 men of narses 
@@ -151,6 +147,69 @@ recruit_nikean_courtier_decision = {
 	ai_potential = {
 		is_nikean = yes
 		is_landed_or_landless_administrative = yes
+		modifier = {
+			add = 30
+			court_size < 10
+		}
+	}
+}
+
+recruit_nikean_adventurer_decision = {
+	ai_check_interval = 0
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
+	}
+	sort_order = 10
+	decision_group_type = nikean
+	desc = recruit_nikean_adventurer_decision_desc
+
+	cooldown = { years = 2 }
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 60
+		empire = 60
+		hegemony = 60
+	}
+	
+	cost = {
+		prestige = 120
+	}
+
+	is_shown = {
+		is_landless_adventurer = yes
+		is_nikean = yes
+	}
+
+	is_valid = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_adult = yes
+		is_imprisoned = no
+	}
+
+	effect = {
+		custom_tooltip = recruit_nikean_adventurer_decision_tooltip
+		set_variable = {
+			name = number_of_invite_nikean_countdown
+			value = 4
+			days = 1000
+			}
+		trigger_event = {
+			id = nikean_courtiers.0001
+			days = { 20 40 }
+		}
+	}
+	
+	ai_potential = {
+		is_nikean = yes
+		is_landless_adventurer = yes
 		modifier = {
 			add = 30
 			court_size < 10

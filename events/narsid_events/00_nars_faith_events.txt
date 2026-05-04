@@ -205,6 +205,7 @@ nikean_faith.1031 = {
 				has_character_modifier = panteion_nikean_narses
 			}
 		}
+		show_as_unavailable = { has_character_modifier = panteion_nikean_narses }
 		set_panteion_effect = { PANTEION = panteion_nikean_narses }
 	}
 
@@ -215,6 +216,7 @@ nikean_faith.1031 = {
 				has_character_modifier = panteion_nikean_phokas
 			}
 		}
+		show_as_unavailable = { has_character_modifier = panteion_nikean_phokas }
 		set_panteion_effect = { PANTEION = panteion_nikean_phokas }
 	}
 
@@ -225,6 +227,7 @@ nikean_faith.1031 = {
 				has_character_modifier = panteion_nikean_enuo
 			}
 		}
+		show_as_unavailable = { has_character_modifier = panteion_nikean_enuo }
 		set_panteion_effect = { PANTEION = panteion_nikean_enuo }
 	}
 

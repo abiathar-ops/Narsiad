@@ -8,7 +8,7 @@ is_ethnically_nikean = {
 	has_ethnicity = nikean
 }
 
-has_nikeis_blood = {
+has_nikean_blood = {
     has_trait = nars_naturalis
 }
 

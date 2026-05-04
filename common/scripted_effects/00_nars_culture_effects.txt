@@ -478,11 +478,11 @@ create_h_narsokratia_effect = {
 			name = event_troop_default_name
 			men_at_arms = {
 				type = maa_mastiges
-				stacks = 5
+				stacks = 15
 			}
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 10
+				stacks = 45
 			}
 			location = this.capital_province
 			uses_supply = yes

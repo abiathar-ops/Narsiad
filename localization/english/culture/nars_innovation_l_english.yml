@@ -7,7 +7,7 @@
   # MAA Innovations
   innovation_nikean_maa_01: "Synaspismós"
   innovation_nikean_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields and move as a single organism, we create an impenetrable wall of bronze and iron."
-  unlock_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] as [men_at_arms|E]"
+  unlock_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] [men_at_arms|E]"
   
   innovation_nikean_maa_02: "Xataphraía"
   innovation_nikean_maa_02_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
@@ -17,7 +17,6 @@
 
   innovation_nikean_maa_04: "Orthotélēs"
   innovation_nikean_maa_04_desc: "The Orthotélēs are the elite shock troops of our army, trained to break through enemy lines with devastating charges."
-  unlock_mastiges: "Can recruit [GetMaA('maa_mastiges').GetName] as [men_at_arms|E]"
 
   # Architecture
   # Note: Matches the keys 'innovation_nikean_...' and 'innovation_nikean_...' from your file
