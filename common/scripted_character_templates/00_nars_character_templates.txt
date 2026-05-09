@@ -1,0 +1,108 @@
+#Average Nikean Nobody
+nikean_template.1001 = {
+    age = { 18 30 }
+    gender = male
+	gender_female_change = 50
+    dynasty = generate
+    faith = faith:nars_religion
+	culture = culture:nars_nikean
+    #Traits
+    random_traits = yes
+    #Skills
+    after_creation = {
+		add_gold = minor_gold_value
+		add_trait = nars_naturalis
+	}
+}
+
+#Average Nikean Noble
+nikean_template.1002 = {
+    age = { 18 30 }
+    dynasty = generate
+    faith = faith:nars_religion
+	culture = culture:nars_nikean
+    random_traits_list = {
+		count = { 0 1 }
+		athletic = {}
+		strong = {}
+		physique_good_1 = {}
+		physique_good_2 = {}
+		physique_good_3 = {}
+	}
+	random_traits_list = {
+		count = { 0 1 }
+		august = {}
+		diplomat = {}
+	}
+	learning = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+    after_creation = {
+		remove_bad_traits = yes
+		add_gold = minor_gold_value
+		add_trait = nars_naturalis
+	}
+}
+
+#Evangelist
+nikean_template.1011 = {
+	age = { 30 48 }
+	gender_female_change = 100
+    faith = faith:nars_religion
+	culture = culture:nars_nikean
+    random_traits = yes
+	trait = devoted
+	random_traits_list = {
+		count = 1
+		education_learning_3 = {}
+		education_learning_4 = {}
+		education_learning_5 = {}
+	}
+	learning = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+    after_creation = {
+		remove_bad_traits = yes
+		add_gold = minor_gold_value
+		add_trait = nars_naturalis
+	}
+}
+
+#Mercenary Leader
+nikean_template.1012 = {
+	age = { 27 43 }
+	gender_female_chance = 50
+	culture = culture:nars_nikean
+	faith = faith:nars_religion
+	random_traits_list = {
+		count = 1
+		education_martial_5 = {}
+		education_martial_4 = {}
+		education_martial_3 = {}
+	}
+	random_traits_list = {
+		count = 2
+		lustful = {}
+		diligent = {}
+		deceitful = {}
+		zealous = {}
+		brave = {}
+		stubborn = {}
+		ambitious = {}
+	}
+	random_traits_list = {
+		count = { 0 1 }
+		athletic = {}
+		strong = {}
+		physique_good_1 = {}
+		physique_good_2 = {}
+		physique_good_3 = {}
+	}
+	martial  = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+	prowess = extremely_high_skill_rating
+}

@@ -1,6 +1,6 @@
 intro_standard_effect = {
 	add_character_modifier = {
-		modifier = endgame_modifier
+		modifier = intro_modifier
 	}
 }
 

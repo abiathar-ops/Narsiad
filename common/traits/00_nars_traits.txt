@@ -12,6 +12,16 @@ nars_scion = {
 	enemy_hostile_scheme_success_chance_growth_add = -50
 	same_faith_opinion = 50
 
+	name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = nars_scion.no_actor
+			}
+            desc = nars_scion.name
+        }
+    }
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -35,7 +45,7 @@ nars_naturalis = {
 	icon = nikeis.dds
 	desc = trait_nars_naturalis_desc		
 	physical = yes
-	#shown_in_ruler_designer =no
+	shown_in_ruler_designer =no
 
  	name = {
         first_valid = {

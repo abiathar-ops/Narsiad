@@ -33,7 +33,6 @@ innovation_nikean_architecture_01 = {
 		has_cultural_pillar = heritage_nars
 	}
 
-	unlock_building = brothel_duchy_01
 	unlock_building = canton_duchy_01
 	unlock_building = foundry_duchy_01
 
@@ -52,7 +51,6 @@ innovation_nikean_architecture_02 = {
 		}
 	}
 
-	unlock_building = brothel_duchy_02
 	unlock_building = canton_duchy_02
 	unlock_building = foundry_duchy_02
 
@@ -69,7 +67,6 @@ innovation_nikean_architecture_03 = {
 		has_cultural_pillar = heritage_nars
 	}
 
-	unlock_building = brothel_duchy_03
 	unlock_building = canton_duchy_03
 	unlock_building = foundry_duchy_03
 

@@ -12,5 +12,5 @@ artifact_anduril_modifier = {
 	monthly_dynasty_prestige = 0.2
 	monthly_prestige = 0.4
 	monthly_piety = 0.4
-	monthly_lifestyle_xp_gain_mult = 0.8
+	character_capital_county_monthly_development_growth_add = 0.4
 }

@@ -33,16 +33,31 @@
  nikean_faith.1021.a.bigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #P 2#! spouses simultaneously"
  nikean_faith.1021.b.trigamy_tt: "Your [nikean|E] [faith|E] will permit [rulers|E] of your [faith|E] to take #P 3#! spouses simultaneously"
 
- decision_establish_aretaic_school: "Establish the Scholí"
- decision_establish_aretaic_school_desc: "The [nikeans|E] are a [culture|E] that espouses [innovation|E], yet it's undeniable that other barbaric [realms|E] have closen the gap while the [nikeis|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. #V Aretaiké Scholí#!, the [nikean|E] bastion of learning."
- decision_establish_aretaic_school_tooltip: "Found a university dedicated to the [nikean|E] pursuit of [innovation|E]."
- decision_establish_aretaic_school_effect_tooltip: "A Special [building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed."
+  # ── Construction ──
+
+ decision_establish_aretaic_school: "Establish a Scholar-Citadel"
+ decision_establish_aretaic_school_desc: "The [nikeans|E] possess a [culture|E] that espouses [innovation|E], and yet it's undeniable that other barbaric [realms|E] have closen the gap while the [nikeis|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. A new [GetBuilding('aretaic_school_02').GetName] for [education|E]."
+ decision_establish_aretaic_school_tooltip: "Found a [university|E] for the pursuit of [innovation|E]"
+ decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed."
  decision_establish_aretaic_school_confirm: "Select a Barony!"
- establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a Special Building Slot"
+ establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
  pick_aretaic_school_barony: "Pick the Archive's Location"
  pick_aretaic_school_barony_desc: "The intent is clear and my people inspired. My lands are ripe for new schools of archives for my [realm|E], but where exactly should it be built?"
  pick_aretaic_school_barony_confirm: "Clear the grounds!"
- pick_aretaic_school_barony_custom_tt: "You will now choose a held [barony|E] for your Special [building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
+
+ decision_establish_brothel: "Open a Brothel-Complex"
+ decision_establish_brothel_desc: "It is undeniable that ethnic [nikeans|E] are few in numbers. I shall expend our [gold|E] to establish a [building|E] of hedonism to cultivate a [breeding|E] programme. A [GetBuilding('brothel_complex_02').GetName], brothel-complexes fit to espouse certain necessary ideas. I shall dedicate this [building|E] of [fertility|E] to [enuo|E]."
+ decision_establish_brothel_tooltip: "Found a [building|E] dedicated to the pursuit of [fertility|E]"
+ decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Hedonēion#! will be available to be constructed."
+ decision_establish_brothel_confirm: "Select a Barony!"
+ establish_brothel_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
+ pick_brothel_barony: "Pick the Brothel's Location"
+ pick_brothel_barony_desc: "The intent is clear and my people inspired. My lands are ripe for new schools of archives for my [realm|E], but where exactly should it be built?"
+ pick_brothel_barony_confirm: "Clear the grounds!"
+
+ pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
+
+ # ── Foundries (added) ──
 
  decision_munitions_research: "Found the Mástiges"
  decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [hoplites|E] with them."
@@ -100,13 +115,12 @@
  recruit_nikean_courtier_decision: "Muster the Nikēís"
  recruit_nikean_courtier_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
  recruit_nikean_courtier_decision_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
- recruit_nikean_courtier_decision_confirm:0 "Send the heralds!"
+ recruit_nikean_courtier_decision_confirm:0 "Proceed!"
  recruit_nikean_adventurer_decision: "Muster the Nikēís"
  recruit_nikean_adventurer_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch scouts to scale those miserable peaks and drag them down to my [camp|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
  recruit_nikean_adventurer_decision_tooltip: "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [camp|E] within the coming months"
- recruit_nikean_adventurer_decision_confirm:0 "Send the scouts!"
+ recruit_nikean_adventurer_decision_confirm:0 "Proceed!"
 
- CHOOSE_NARSID_COURTIERS_DECISION_NEXT_STEP_BUTTON: "Proceed!"
  hire_nikean_1_decision:0 "Search for [nikeis|E]"
  hire_nikean_1_decision_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
  hire_nikean_1_decision_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"

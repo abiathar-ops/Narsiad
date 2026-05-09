@@ -114,7 +114,7 @@ decision_nikean_faith_choice = {
 				is_nikean = yes
 			}
 			is_valid = {
-				gold >= medium_treasury_or_gold_value
+				piety >= massive_piety_value
 				is_nikean = yes
 				is_orphic = yes
 				is_at_war = no
@@ -177,7 +177,7 @@ decision_nikean_faith_choice = {
 				is_nikean = yes
 			}
 			is_valid = {
-				gold >= medium_treasury_or_gold_value
+				gold >= massive_treasury_or_gold_value
 				is_nikean = yes
 				is_orphic = yes
 				is_at_war = no

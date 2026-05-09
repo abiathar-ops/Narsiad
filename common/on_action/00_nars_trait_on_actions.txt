@@ -2,8 +2,11 @@
 on_game_start_after_lobby = {
     on_actions = { 
         nars_seed_nikean_trait_on_start 
+        nars_intro_on_start
+        nars_laaamp_on_start
     }
 }
+
 
 on_birth_child = {
     on_actions = { 
@@ -12,6 +15,20 @@ on_birth_child = {
 }
 
 # Define the custom actions triggered by the hooks above
+
+nars_intro_on_start = {
+    effect = {
+        every_player = {
+            if = {
+                limit = { 
+                    is_ethnically_nikean = yes 
+                    is_alive = yes
+                }
+			    trigger_event = nikean_intro.1001
+		    }
+        }
+    } 
+}
 
 nars_seed_nikean_trait_on_start = {
     effect = {
@@ -36,6 +53,30 @@ nars_add_nikean_trait_on_birth = {
                 NOT = { has_nikean_blood = yes }
             }
             add_trait = nars_naturalis
+        }
+    }
+}
+
+nars_laaamp_on_start = {
+    effect = {
+        if = {
+            limit = { has_ep3_dlc_trigger = yes }
+            character:70000011 = {
+                if = {
+                    limit = { is_alive = yes }
+                    is_landless_adventurer = yes
+                    #trigger_event = laamp_intro.1001
+                }
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+            }
+            character:70000012 = {
+                 if = {
+                    limit = { is_alive = yes }
+                    is_landless_adventurer = yes
+                    #trigger_event = laamp_intro.1001
+                }
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+            }
         }
     }
 }

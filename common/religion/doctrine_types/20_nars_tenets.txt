@@ -20,11 +20,9 @@ tenet_nars_pantheon = {
 	character_modifier = {
 		church_holding_build_speed = -0.5
 		church_holding_holding_build_speed = -0.5
-		different_faith_county_opinion_mult = -0.5
 	}
 
 	parameters = {
-		mendicant_preachers_conversion_active = yes
 		building_temples_gives_development = yes
 		monastic_schools_allowed_in_every_holding_type = yes
 		seek_indulgences_active = yes
@@ -33,7 +31,15 @@ tenet_nars_pantheon = {
 }
 
 tenet_nars_erudition = {
-    name = tenet_nars_erudition_name
+    name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = tenet_nars_erudition_no_actor
+			}
+            desc = tenet_nars_erudition_name
+        }
+    }
     desc = tenet_nars_erudition_desc
 	#icon = core_tenet_alexandrian_catechism
 	icon = core_tenet_household_gods
@@ -50,19 +56,16 @@ tenet_nars_erudition = {
 		is_considered_orphic = yes
 	}
 
+	character_modifier = {
+		different_faith_county_opinion_mult = -0.2
+		development_growth_factor = 0.2
+	}
 	parameters = {
-		inspections_unlocked_and_costs_piety = yes
-		inspection_gives_devotion = yes
 		legalism_reduced_faction_virtues = yes
 		children_less_likely_to_be_burdened = yes
-		tenet_esotericism_mystic_education = yes
 		reforging_artifacts_costs_piety = yes
 		destroying_artifacts_is_pious = yes
 		parents_get_hooks_on_children = yes
-	}
-	character_modifier = {
-		monthly_learning_lifestyle_xp_gain_mult = 0.25
-		learning_per_piety_level = 2
 	}
 }
 
@@ -88,14 +91,13 @@ tenet_nars_sanguine = {
 		great_holy_wars_active = yes
         warmonger = yes
 		conquest_cb_enabled = yes		
-		better_artifacts = yes
 		reincarnation_events_active = yes
+		mendicant_preachers_conversion_active = yes
 	}
 
 	character_modifier = {
 		domain_tax_same_faith_mult = 0.25
 		development_growth_factor = 0.25
-		domain_limit = 2
 	}
 		
 }

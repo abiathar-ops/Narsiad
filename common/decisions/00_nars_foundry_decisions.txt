@@ -1,14 +1,15 @@
 decision_mend_narsil = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
+	
 	desc = decision_mend_narsil_desc
 	decision_group_type = nikean
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
 		is_nikean = yes
-		has_title = title:e_narsokratia
+		is_narsocratic = yes
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
@@ -21,7 +22,7 @@ decision_mend_narsil = {
 	}
 
 	is_valid = {
-		gold >= major_treasury_or_gold_value
+		gold >= massive_treasury_or_gold_value
 		is_imprisoned = no
 		is_at_war = no
 	}
@@ -41,16 +42,13 @@ decision_mend_narsil = {
 		}
 	}
 
-	ai_potential = { always = yes }
+	ai_potential = { always = no }
 
-	ai_will_do = {
-		base = 100
-	}
 }
 
 decision_munitions_research = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/innovation.dds"
+		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
 
 	ai_check_interval_by_tier = {

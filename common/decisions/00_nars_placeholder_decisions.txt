@@ -1,0 +1,92 @@
+﻿decision_mercenary_spawn = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
+	}
+	desc = decision_mercenary_spawn_desc
+	decision_group_type = nikean
+	selection_tooltip = decision_mercenary_spawn_tooltip
+
+	is_shown = {
+		is_nikean = yes
+		is_narsocratic = yes
+		top_liege = this
+		is_capable_adult = yes
+		is_landed = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+			}
+		}
+	}
+
+	is_valid = {
+		gold >= massive_treasury_or_gold_value
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	is_valid_showing_failures_only = {
+		top_liege = this
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = decision_mercenary_spawn_effect_tooltip
+    	hidden_effect = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					highest_held_title_tier >= tier_kingdom
+				}
+				save_scope_as = expedition_target
+				primary_title = {
+					save_scope_as = target_title
+				}
+			}
+			create_character = {
+				age = { 25 35 }
+				gender_female_change = 50
+				culture = culture:nikean
+				faith = faith:nars_religion
+				traits = {
+					nars_naturalis
+				}
+				template = open_commander_character
+				location = root.capital_province
+				save_scope_as = expedition_leader
+			}
+			scope:expedition_leader = {
+				# Give a personal claim on the target's primary title
+				add_pressed_claim = scope:target_title
+				
+				# Grant them some starting gold so they don't immediately go bankrupt
+				add_gold = 500
+				
+				# Spawn the expeditionary army
+				spawn_army = {
+					name = "Nikean Expedition"
+					location = root.capital_province # Spawns in your capital
+					levies = 2000
+					men_at_arms = {
+						type = maa_hoplitai
+						stacks = 5
+					}
+					men_at_arms = {
+						type = maa_mastiges
+						stacks = 2
+					}
+				}
+				start_war = {
+					casus_belli = claimant_cb 
+					target = scope:expedition_target
+				}
+			}
+		}
+	}
+	ai_potential = { always = yes }
+
+	ai_will_do = {
+		base = 100
+	}
+}

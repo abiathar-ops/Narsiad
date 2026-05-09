@@ -5,34 +5,37 @@
  special_doctrine_is_nars_faith_desc:0 "We should show compassion to these misguided souls who haven't yet experienced the worship of the [panteion|E]. Their minds may be clouded by ignorance today, but they will come to worship at our altar, begging for the sweet ascension of enlightenment."
 
  doctrine_nikean_tenets_name:0 "Tenets" 
+ doctrine_nikean_marriages_name:0 "Marriage Type"
+ 
+ doctrine_bigamy_name:0 "Bigamous"
+ doctrine_bigamy_desc:0 "Since marriage is a holy union, having two marriages is clearly more holy than having just a single marriage so long as each marriage is holy in and of itself."
+
+ doctrine_trigamy_name:0 "Trigamous"
+ doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just single or double marriages so long as each marriage is holy in and of itself."
 
  # Tenet: Nikean Jihad (Theōmachē)
  tenet_nars_crusade_name:0 "Theōmachē"
- tenet_nars_crusade_desc:0 "Through fervent prayer and holy conquest, we shall spread the glory of us across the land! No border, no throne, and no false creed shall withstand the march of divine truth."
+ tenet_nars_crusade_desc:0 "Through fervent prayer and holy conquest, we shall spread the glory of us across the land!"
 
  # Tenet: Oriental Gods (Ēchōnes)
  tenet_nars_pantheon_name:0 "Ēchōnes"  
- tenet_nars_pantheon_desc:0 "Every creed of the living world recoils before us. They see only blasphemy in our worship, only ruin in our cities, only shame in our dominion over their lands. Yet their hatred is powerless; their gods fall silent as ours ascends. For even in their scorn, they know our rise cannot be halted."
+ tenet_nars_pantheon_desc:0 "For even in their scorn, they know our rise cannot be halted."
 
 # Tenet: Antique Traditions (Palaiā-Pātria)
  tenet_nars_sanguine_name:0 "Palaiā-Pātria"
- tenet_nars_sanguine_desc:0 "Traditions of antiquity, long forgotten by the world, are preserved within our faith. Through reverence for the old ways and veneration of our ancestral heritage, we draw strength from the past to guide us into the future." 
+ tenet_nars_sanguine_desc:0 "Traditions of antiquity, long forgotten by the world, are preserved within our faith." 
 
 # Tenet: Storehouses (Thēmaurós)
  tenet_nars_banking_name:0 "Thēmaurós"
  tenet_nars_banking_desc:0 "Wealth is a divine gift, a blessing from us to be used wisely. Through prudent management and sacred investment, we honor and respect the medium of life and ensure prosperity for our people."
 
  # Tenet: Enlightened Bastion (Prōtoplasía)
- tenet_nars_erudition_name:0 "Prōtoplasía"  
- tenet_nars_erudition_desc:0 "A sanctuary-fortress where scholars, ascetics, and mystics gather to study divine truths. Its illuminated halls echo with debates on sacred law, cosmic order, and the nature of the soul. Pilgrims who spend time within its walls leave with sharpened insight and deeper spiritual understanding."
+ tenet_nars_erudition_name: "Prōtoplasía" 
+ tenet_nars_erudition_no_actor: "Sage-Scholars"  
+ tenet_nars_erudition_desc:0 "Scholars who spend time in meditation leave with sharpened insight and spiritual understanding."
+
 
  # Tenet: Courtesan Saints (Aporētoi)
  tenet_nars_vestals_name:0 "Aporētoi"
  tenet_nars_vestals_desc:0 "Shrouded in taboo yet revered in secret, these holy courtesans walk the boundary between sanctity and desire. Initiates whisper that their rites descend from forbidden mysteries and though condemned by many, the faithful know that the gods speak as clearly through passion as through prayer."
 
- # Doctrines
- doctrine_bigamy_name:0 "Bigamous"
- doctrine_bigamy_desc:0 "Since marriage is a holy union, having two marriages is clearly more holy than having just a single marriage so long as each marriage is holy in and of itself."
-
- doctrine_trigamy_name:0 "Trigamous"
- doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just single or double marriages so long as each marriage is holy in and of itself."

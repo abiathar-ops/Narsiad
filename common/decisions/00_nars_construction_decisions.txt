@@ -18,6 +18,7 @@ decision_establish_aretaic_school = {
 	}
 
 	is_valid = {
+		gold >= 750
 		OR = {
 			prestige_level >= 4
 			learning >= 25
@@ -30,10 +31,6 @@ decision_establish_aretaic_school = {
 				is_leased_out = no
 			}
 		}
-	}
-	
-	cost = {
-		gold = 750
 	}
 
 	effect = {
@@ -56,6 +53,8 @@ pick_aretaic_school_barony = {
 	ai_goal = yes
 	is_invisible = yes
 	
+	cost = { gold = 750 }
+
 	widget = {
 		controller = create_holy_order 
 		barony_valid = {
@@ -69,7 +68,7 @@ pick_aretaic_school_barony = {
 	}
 
 	effect = {
-		custom_tooltip = pick_aretaic_school_barony_custom_tt
+		custom_tooltip = pick_special_building_barony_custom_tt
 		set_global_variable = {
 			name = established_aretaic_school
 			value = yes
@@ -81,6 +80,92 @@ pick_aretaic_school_barony = {
 					value = yes
 				}
 				add_special_building = aretaic_school_01
+			}
+		}
+	}
+	
+	ai_potential = { always = no }
+}
+
+decision_establish_brothel = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+	}
+	decision_group_type = nikean
+	desc = decision_establish_brothel_desc
+	selection_tooltip = decision_establish_brothel_tooltip
+	sort_order = 850
+	
+	is_shown = {
+		is_nikean = yes
+		OR = {
+			has_title = title:k_narsokratia
+			has_title = title:e_narsokratia
+			has_title = title:h_narsokratia
+		}
+		exists = global_var:established_aretaic_school
+	}
+
+	is_valid = {
+		gold >= 500
+		OR = {
+			prestige_level >= 4
+			intrigue >= 25
+		}
+		custom_tooltip = {
+			text = establish_brothel_no_barony_tt
+			any_held_title = {
+				title_tier = barony
+				title_province = { has_special_building_slot = no }
+				is_leased_out = no
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_establish_brothel_effect_tooltip
+		open_view_data = {
+			view = decision_detail
+			data = decision:pick_brothel_barony
+			player = root
+		}
+	}
+	
+	ai_potential = { always = no }
+}
+
+pick_brothel_barony = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+	}
+	decision_group_type = nikean
+	ai_goal = yes
+	is_invisible = yes
+	
+	cost = {
+		gold = 500
+	}
+	widget = {
+		controller = create_holy_order 
+		barony_valid = {
+			trigger_if = {
+				limit = { exists = this }
+				title_province = { has_special_building_slot = no }
+				holder = scope:ruler
+				is_leased_out = no
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = pick_special_building_barony_custom_tt
+		set_global_variable = {
+			name = established_brothel
+			value = yes
+		}
+		hidden_effect = {
+			scope:barony.title_province = {
+				add_special_building = brothel_complex_01
 			}
 		}
 	}

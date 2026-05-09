@@ -75,7 +75,7 @@ nikean_artifact.1001 = {
 		# Spend gold & rare materials — measured but SLOW (120 days)
 		name = nikean_artifact.1001.b
 		give_nickname = nick_the_blessed
-		remove_treasury_or_gold = major_treasury_or_gold_value
+		remove_treasury_or_gold = massive_treasury_or_gold_value
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
 			callous = miniscule_stress_impact_gain

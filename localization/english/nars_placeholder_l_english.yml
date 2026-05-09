@@ -6,7 +6,7 @@
 
  decision_nikean_faith_choice:0 "Enact Panteíon Rites"
  decision_nikean_faith_choice_desc:0 "Only by [faith|E] could we [nikeis|E] come to understand the roots of our old [culture|E]. My [legitimacy|E] is only a favor bestowed by the [panteion|E] and to neglect our [traditions|E] is to invite ruin on my [house|E]. Besides, while walking to a [temple|E] is tiring, arguing with my [council|E] is even worse!"
- decision_nikean_faith_choice_tooltip:0 "Change your designated educational discipline"
+ decision_nikean_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [panteion|E]."
  decision_nikean_faith_choice_confirm:0 "Proceed!"
  
  faith_nikean_1_decision_name:0 "Dedicate a Libation"
@@ -43,8 +43,8 @@
  faith_nikean_4_cooldown_tt: "Sponsor [orphic|E] Missionaries is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_nikean_4_cooldown' ))]"
 
  nikean_faith.1041.t: "Evangelizing the [pagan.GetCulture.GetCollectiveNounNoTooltip]"
- nikean_faith.1041.desc: "The Kingdom of Heaven belongs to the faithful, but our neighbor, [pagan.GetTitledFirstName], is blissfully unaware of it, and persists in believing in [pagan.GetHerHis] superstitions and false gods.\n\nSaving [pagan.GetHerHis] soul and those of [pagan.GetHerHis] people is a noble endeavor in itself, but there also #EMP earthly#! advantages to their conversion. For starters, reducing their hostility towards us and bringing them into our own sphere of influence.\n\nMy chosen missionary, [evangelizer.GetFirstName], is ready to go."
- nikean_faith.1041.a: "May [ROOT.Char.GetFaith.HighGodName] guide you!"
+ nikean_faith.1041.desc: "Haivēn's serenity belongs to the faithful scholars, but our neighbor, [pagan.GetTitledFirstName], is blissfully unaware of it, and persists in believing in [pagan.GetHerHis] superstitions and false [religions|E].\n\nSaving [pagan.GetHerHis] soul and those of [pagan.GetHerHis] [realm_possessive|E] people is a [virtuous|E] endeavor in itself, but there also #EMP earthly#! advantages to their conversion. For starters, reducing their hostility towards us and bringing them into our own sphere of influence.\n\nMy chosen missionary, [evangelizer.GetFirstName], is ready to go."
+ nikean_faith.1041.a: "May the [panteion|E] guide you!"
  nikean_faith.1041.a.tt: "[evangelizer.GetFirstNameNoTooltip] departs for [pagan.GetTitledFirstNamePossessiveNoTooltip] capital."
  nikean_faith.1043.desc: "Emissaries from our neighbors come and go frequently enough that they all mix together in my mind. However, today's envoy from [GetTitleByKey('e_byzantium').GetName] sticks out like none before.\n\n[evangelizer.GetSheHe|U] seems to be some sort of holy [evangelizer.GetWomanMan], for starters, and instead of advancing political demands, this [evangelizer.GetFirstName] preaches of an omnipotent God, honored in temples of gold and silver that always smell of incense."
  nikean_faith.1043.a: "Please, tell me more."
@@ -53,9 +53,9 @@
  nikean_faith.1043.c: "Ridiculous blasphemy!"
  nikean_faith.1043.c.tt: "This is sure to send a message: your preachers are not welcome here! But we should be ready for retaliation..."
  nikean_faith.1046.desc_new: "My predecessor [sender.GetFirstName] had invested into the evangelism of the [pagan.GetCulture.GetCollectiveNounNoTooltip] but, unfortunately for [sender.GetHerHim], it is I who will reap the benefits of [sender.GetHerHis] efforts. [sender.GetHerHis|U] missionary [evangelizer.GetFirstName], in fact, has just returned."
- nikean_faith.1046.desc_old: "Months ago, I sent my trusted [evangelizer.GetFirstName] to bring the knowledge of God to the [pagan.GetCulture.GetCollectiveNounNoTooltip]. It is with great joy that I welcome [sender.GetHerHim] back today, as I've been eagerly waiting for [evangelizer.GetHerHis] report."
- nikean_faith.1046.desc_success: "\n\n"I bring great news, my liege! [pagan.GetTitledFirstName|U] was eager to hear the Glad Tidings, and converted to [evangelizer.GetFaith.GetName], accompanied by many of [pagan.GetHerHis] people.""
- nikean_faith.1046.desc_failure: "\n\n"I bring somber news, my liege. Unfortunately, [pagan.GetTitledFirstName] was most unresponsive to the Word of God, and sent me away empty-handed.""
+ nikean_faith.1046.desc_old: "Months ago, I sent my trusted [evangelizer.GetFirstName] to bring the knowledge of God to the [pagan.GetCulture.GetCollectiveNounNoTooltip]. It is with great joy that I welcome [sender.GetHerHim] back to [court|E] today, as I've been eagerly waiting for [evangelizer.GetHerHis] report.\n\nThe success of this mission could mean a great expansion of our [faith|E] and influence, but failure would be a great blow to our [realm_possessive|E] [relations|E] and the [panteion|E]'s reputation."
+ nikean_faith.1046.desc_success: "\n\n"I bring great news, my liege! [pagan.GetTitledFirstName|U] was eager to hear the Glad Tidings, and converted to [evangelizer.GetFaith.GetName], accompanied by many of [pagan.GetHerHis] people.", [evangelizer.GetFirstName] said with a triumphant smile on [evangelizer.GetHerHis] face."
+ nikean_faith.1046.desc_failure: "\n\n"I bring somber news, my liege. Unfortunately, [pagan.GetTitledFirstName] was most unresponsive to the Word of God, and sent me away empty-handed.", [evangelizer.GetFirstName] said with a forced smile on [evangelizer.GetHerHis] face."
  nikean_faith.1046.a: "Excellent!"
  nikean_faith.1046.b: "It's only a temporary setback."
  nikean_faith.1047.desc: "Terrible tidings!\n\nNews has come from the land of [pagan.GetCulture.GetCollectiveNounNoTooltip] and, apparently, my missionary [evangelizer.GetFirstName] was killed but the barbarian [pagan.GetTitledFirstName], who wasn't satisfied with rebuking any conversion attempts, but went as far as committing the final desecration and murder a [evangelizer.GetWomanMan] of God!"

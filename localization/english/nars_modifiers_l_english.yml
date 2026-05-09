@@ -1,5 +1,7 @@
 ﻿l_english: 
- endgame_modifier: "Restorer of the World"
+ intro_modifier: "Pródromos"
+ intro_modifier_desc: "This [ruler|E] is the forerunner of the [nikean|E] restoration!"
+ endgame_modifier: "Pankrátes"
  endgame_modifier_desc: "This [hegemon|E] have revived his [heritage|E]!"
  industrial_boom_province_modifier: "Industrial Boom"
  industrial_boom_character_modifier: "Industrial Boom"

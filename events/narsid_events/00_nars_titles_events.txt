@@ -28,6 +28,7 @@ nikean_titles.2022 = {
 	title = nikean_titles.2022.t
 	desc = nikean_titles.2022.desc
 	theme = emperor
+	window = big_event_window
 	override_background = ep3_hippodrome
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 	left_portrait = {
@@ -53,9 +54,11 @@ nikean_titles.2011 = {
 	type = character_event
 	title = nikean_titles.2011.t
 	desc = nikean_titles.2011.desc
+	window = big_event_window
 	theme = emperor
-	override_background = throne_room_india
+	override_background = ce1_legendary_battlefield
 	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
 	immediate = {
 		legend_seed_great_deed_title_effect = {
 			TITLE = root.primary_title
@@ -63,7 +66,7 @@ nikean_titles.2011 = {
 	}
 	left_portrait = {
 		character = root
-		animation = frontend_center_idle
+		animation = throne_room_two_handed_passive_1
 		camera = camera_center_large
 	}
 	option = { 
@@ -77,7 +80,9 @@ nikean_titles.2001 = {
 	title = nikean_titles.2001.t
 	desc = nikean_titles.2001.desc
 	theme = emperor
+	window = big_event_window
 	override_background = bp2_study_indian
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
 	override_effect_2d = { reference = smoke }
 	left_portrait = {
 		character = root

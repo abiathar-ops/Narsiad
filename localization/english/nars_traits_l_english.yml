@@ -1,5 +1,6 @@
 ﻿l_english: 
- trait_nars_scion: "Narsēs' Scion"
+ nars_scion.name: "Mōnarkhíad"
+ nars_scion.no_actor: "Panteíon-Blessed"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
  trait_nars_scion_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion, born of faith and blood."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
@@ -13,6 +14,6 @@
 
  TRAIT_FLAG_DESC_nars_visuals: "[character|E] will remain youthful"
 
- nars_naturalis.no_actor: "Nikean-Blooded"
  nars_naturalis.name: "Nikēis"
+ nars_naturalis.no_actor: "Nikean-Blooded"
  trait_nars_naturalis_desc: "The blood of the Nikēis courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins."

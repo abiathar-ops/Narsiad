@@ -282,9 +282,14 @@ nikean_faith.1041 = {
 				save_scope_as = pagan
 				create_character = {
 					location = root.location
-					template = ep3_evangelizer_template
+					template = nikean_template.1011
+					culture = root.culture
+					faith = root.faith
 					gender_female_chance = 100
 					save_scope_as = evangelizer
+					after_creation = {
+						add_trait = nars_naturalis
+					}
 				}				
 			}
 		}
@@ -303,9 +308,14 @@ nikean_faith.1041 = {
 			}
 			create_character = {
 				location = root.location
-				template = ep3_evangelizer_template
+				culture = root.culture
+				faith = root.faith
+				template = nikean_template.1011
 				gender_female_chance = 100
 				save_scope_as = evangelizer
+				after_creation = {
+					add_trait = nars_naturalis
+				}
 			}
 		}
 		add_courtier = scope:evangelizer
@@ -324,7 +334,7 @@ nikean_faith.1041 = {
 				return_trip = no # One way
 			}
 		}
-		remove_treasury_or_gold = medium_treasury_or_gold_value
+		remove_treasury_or_gold = massive_treasury_or_gold_value
 	}
 }
 

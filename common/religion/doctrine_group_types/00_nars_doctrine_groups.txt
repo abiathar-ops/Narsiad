@@ -12,3 +12,12 @@
         tenet_nars_crusade
     }
 }
+
+doctrine_nikean_marriages = {
+   category = "marriage"
+
+    doctrine_types = {
+		doctrine_bigamy
+		doctrine_trigamy
+	}
+}

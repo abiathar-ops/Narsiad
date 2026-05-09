@@ -1,0 +1,74 @@
+﻿historical_characters_accessories = {
+	usage = game
+	selection_behaviour = max
+	priority = 2
+
+	70000011_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = western_hairstyles_wavy
+				accessory = male_hair_western_02
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
+			}
+		} 
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:70000011
+				this = character:70000011
+			}
+		}
+	}
+	70000012_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = pol_common_legwear
+				accessory = f_legwear_sec_pol_common_01
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = pol_war_nobility_clothes
+				accessory = f_clothes_sec_pol_war_nob_01
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = mpo_mongol_commoner
+				accessory = f_headgear_sec_mpo_mongol_com_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = sp4_mena_hairstyles
+				accessory = f_hair_sp4_mena_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = fp1_cloak
+				accessory = female_furs_secular_fp1_nobility_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:70000012
+				this = character:70000012
+			}
+		}
+	}
+}

@@ -74,6 +74,9 @@ nikean_courtiers.0001 = {
 				faith = root.faith
 				gender_female_chance = 50
 				save_scope_as = nikean_courtier
+				after_creation = {
+						add_trait = nars_naturalis
+				}
 			}
 		}
 
@@ -170,6 +173,9 @@ nikean_courtiers.0011 = {
 					learning = { 10 16 }
 					age = { 25 50 }
 					save_scope_as = pugilist
+					after_creation = {
+						add_trait = nars_naturalis
+						}
 				}
 			}
 			scope:pugilist ?= {
@@ -244,6 +250,9 @@ nikean_courtiers.0011 = {
 					intrigue = { 15 30 }
 					age = { 25 50 }
 					save_scope_as = savant
+					after_creation = {
+						add_trait = nars_naturalis
+						}
 				}
 			}
 			scope:savant ?= {	

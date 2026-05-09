@@ -32,6 +32,7 @@ nikean_intro.1002 = {
 	theme = emperor
 	override_background = ce1_fullscreen_legitimizing_legend
 	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
 	left_portrait = {
 		character = root
 		animation = personality_bold
@@ -42,7 +43,9 @@ nikean_intro.1002 = {
 	}
 	option = {
 		name = nikean_intro.1002.a
-		create_anduril_effect = yes
+		hidden_effect = {
+			create_anduril_effect = yes
+		}
 	}
 }
 

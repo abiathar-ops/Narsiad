@@ -1,0 +1,4 @@
+﻿dyn_nars_1001 = {
+	name = name_dyn_nars
+	culture = nars_nikean
+}

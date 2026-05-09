@@ -5,6 +5,11 @@ endgame_modifier = {
 	monthly_dynasty_prestige = 0.5
 }
 
+intro_modifier = {
+	icon = martial_positive
+	monthly_lifestyle_xp_gain_mult = 0.15
+}
+
 h_narsokratia_modifier = {
 	icon = martial_positive
 	monthly_dynasty_prestige = 2.5
