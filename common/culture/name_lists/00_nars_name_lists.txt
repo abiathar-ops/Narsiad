@@ -224,397 +224,397 @@ name_list_nars = {
 	}
 
 	male_names = {
-		Abeicha Abein Abiatha Achaios Acharnos Achelois Achyrion Ada
-		Agaios Agallis Agapeta Agapion Agariste Agasigratis Agaso Agatharchis
-		Agathemeris Agathestrate Agathina Agathion Agatho Agathokrates Agathos Agaththo
-		Agathylla Agathymos Agemacha Agemachos Agestos Aglaon Aglaophaidas Ago
+		Abeicha Abein Abiatha Achaios_2 Acharnos Achelois Achyrion Ada_2
+		Agaios_2 Agallis Agapeta Agapion Agariste Agasigratis Agaso Agatharchis
+		Agathemeris Agathestrate Agathina Agathion Agatho_2 Agathokrates Agathos_2 Agaththo
+		Agathylla Agathymos Agemacha Agemachos Agestos Aglaon Aglaophaidas Ago_2
 		Agonippa Agreas Agroleon Aiantides Aiantodoros Aichmareta Aichmondas Aigypios
-		Aimno Aineias Ainesa Aineseas Ainesidemos Ainesion Ainetos Ainiades
-		Airesis Aischeas Aischines Aischris Aischron Aischylidas Aisthesis Aitherion
+		Aimno Aineias_2 Ainesa Aineseas Ainesidemos Ainesion Ainetos Ainiades
+		Airesis Aischeas Aischines_2 Aischris Aischron Aischylidas Aisthesis Aitherion
 		Akademeia Akamas Akestion Akestodora Akousilaos Akragas Akribeia Akte
-		Aktine Aleios Alexandreia Alexanor Alexila Alexilas Alexippa Alka
+		Aktine Aleios Alexandreia Alexanor Alexila Alexilas Alexippa Alka_2
 		Alkainetos Alkibia Alkinoos Alkinous Alkippe Alkisthenes Alkithos Alphesido
-		Ambrosia Ameinariste Ameiniades Ameino Ameinokleia Ameinokrateia Ameinonike Amelesagoras
+		Ambrosia_2 Ameinariste Ameiniades Ameino Ameinokleia Ameinokrateia Ameinonike Amelesagoras
 		Ameusias Amino Amissos Ammoa Amontas Amoumodoros Ampelis Amphainete
 		Ampharete Amphenetos Amphereides Amphia Amphikoudeis Amphikrateia Amphiktiouon Amphiktouon
 		Amphinike Amphipolis Amphiptoleme Amphitekton Amphoteridas Amphoteris Amphottis Amymone
-		Anankippa Anasiphoron Anassa Anaxagoras Anaxamenes Anaxareta Anaxikrates Anaxilla
+		Anankippa Anasiphoron Anassa Anaxagoras Anaxamenes Anaxareta Anaxikrates_2 Anaxilla
 		Anaxis Andraphile Andrikos Androkleia Androkleides Androklia Androkydes Androteles
-		Anemone Aniketos Ankmidas Annaiia Anniche Anphareta Anphikrateis Antallis
+		Anemone Aniketos_2 Ankmidas Annaiia Anniche Anphareta Anphikrateis Antallis
 		Antandricha Antandrichos Antaxios Anthea Antheme Anthemia Anthemilla Anthemion
 		Anthemo Anthia Anthippa Antibia Antichares Antidikos Antidorippos Antidosis
-		Antidota Antidotis Antigeneis Antigenia Antigenis Antigo Antigona Antigonos
+		Antidota Antidotis Antigeneis Antigenia Antigenis Antigo Antigona_2 Antigonos_2
 		Antikleia Antilochos Antimacha Antimedon Antimenes Antiochides Antion Antipatris
-		Anytos Apelleas Apelles Aphrodisa Aphrodisia Aphrodisias Aphroditios Aphthonetos
-		Aphthonno Apia Apistia Apolla Apollodora Apollodoros Apollonia Apollonis
+		Anytos Apelleas Apelles Aphrodisa Aphrodisia_2 Aphrodisias Aphroditios Aphthonetos
+		Aphthonno Apia_2 Apistia Apolla Apollodora Apollodoros_2 Apollonia_2 Apollonis
 		Arapia Archagora Archandridas Archareta Arche Archeagatha Archedikos Archegete
-		Archeias Archekrateia Archelaa Archenomides Archenous Archephron Archestrate Archianassa
+		Archeias Archekrateia Archelaa Archenomides Archenous Archephron Archestrate_2 Archianassa
 		Archibia Archidemos Archikleia Archikrates Archilaos Archinia Archion Archiphaes
 		Archis Architekton Archomachos Areikos Areios Areskondas Argeios Argiklidas
-		Argilidas Argion Ariadne Ariaithos Arisstogita Aristagoros Aristaineta Aristainete
-		Aristainos Aristanax Aristanor Aristarche Aristarchis Aristareta Ariste Aristeidas
-		Aristeido Aristenetis Aristichos Aristippides Aristobios Aristoboule Aristodemeia Aristodora
-		Aristogeiton Aristokis Aristoklea Aristokleia Aristoklia Aristoko Aristokrates Aristokratia
-		Aristokrita Aristola Aristolea Aristomenia Aristonike Aristonoa Aristonyma Aristophon
-		Aristophora Aristoteles Aristotheos Aristotime Aristoxenos Aristylla Aristys Arkas
-		Arkesa Arkesilaa Arkeso Arkeson Arogos Arrhileos Arsenidas Artemis
-		Artemo Arxilla Asandros Aschalapon Asiatikos Asklapiadas Asklapias Asklapiodoros
+		Argilidas Argion Ariadne_2 Ariaithos Arisstogita Aristagoros Aristaineta Aristainete
+		Aristainos Aristanax Aristanor Aristarche Aristarchis Aristareta Ariste_2 Aristeidas
+		Aristeido Aristenetis Aristichos Aristippides Aristobios Aristoboule_2 Aristodemeia Aristodora
+		Aristogeiton_2 Aristokis Aristoklea Aristokleia_2 Aristoklia Aristoko Aristokrates Aristokratia
+		Aristokrita Aristola Aristolea Aristomenia Aristonike_2 Aristonoa Aristonyma Aristophon_2
+		Aristophora Aristoteles_2 Aristotheos Aristotime Aristoxenos Aristylla_2 Aristys Arkas
+		Arkesa Arkesilaa Arkeso Arkeson Arogos Arrhileos Arsenidas Artemis_2
+		Artemo Arxilla Asandros_2 Aschalapon Asiatikos Asklapiadas Asklapias Asklapiodoros
 		Asklapion Asklapis Asklepias Asklepo Asopis Asopodora Asphalion Astioukleis
 		Astophanes Astygenes Astykrates Atalanta Athanicha Athanion Athanis Athanodoros
 		Athanodota Athanogita Athanon Athenada Athenagora Athenaion Athenichos Atheno
-		Athenophanes Athenophantos Athenopolis Athlos Ato Atrides Attalos Atthis
+		Athenophanes Athenophantos Athenopolis Athlos Ato Atrides Attalos_2 Atthis
 		Autarxia Autobola Autokleides Autokrateia Autolykos Automeneis Autonoe Autopas
-		Axaios Axiothea Bachchis Bakchis Bakchylides Balakros Basilike Bathylla
+		Axaios Axiothea Bachchis Bakchis Bakchylides Balakros_2 Basilike Bathylla
 		Bathys Bation Battanos Bebaion Bendidora Berenika Bilias Biota
 		Biotis Bithous Bithynis Bitias Bitos Bitto Blepios Blepsion
 		Boidas Boiskos Boon Botylos Boubalion Boubalis Boudorka Bouiska
 		Bouiskos Boukatia Boularche Boutes Boutheiros Bouthyon Branidas Brephylos
-		Brisis Brochoullos Chaireas Chairebotos Chairedemos Chairelea Chairestrate Chairippe
-		Chairokles Chairondas Chairontides Chalkideus Charikleia Charikles Charilaa Charippe
-		Charis Charisia Charisios Charisos Charita Charito Charixenides Charixo
+		Brisis Brochoullos Chaireas Chairebotos Chairedemos Chairelea Chairestrate_2 Chairippe_2
+		Chairokles Chairondas_2 Chairontides Chalkideus Charikleia Charikles_2 Charilaa Charippe
+		Charis_2 Charisia Charisios Charisos Charita Charito Charixenides Charixo
 		Charmantidas Charmoulidas Charopis Charopon Charylaos Chelias Cherippa Cherondas
-		Chersias Chersippe Chetippa Chionis Chlaineas Chlidane Choirilos Choirine
+		Chersias Chersippe Chetippa Chionis Chlaineas Chlidane Choirilos Choirine_2
 		Choiris Chorarchos Chromades Chromippa Chrotarion Chroto Chrousis Chrysothemis
 		Daidiche Daikrateia Daimachos Daisias Daitarchos Dalarchos Dalis Damagora
 		Damagoris Damaina Damaistratos Damareta Damaro Damatria Daminos Damippos
-		Damo Damodika Damokleia Damoklia Damokratis Damonikos Damopeithes Damos
+		Damo_2 Damodika Damokleia Damoklia Damokratis Damonikos Damopeithes Damos
 		Damostheneia Damotheinis Damothoinis Damothynis Damotima Damotis Damoxena Danae
 		Danais Daphnaios Daphnis Darda Deikrateia Deinobios Deinokrates Deinomachos
-		Deinylla Deisitheos Demagenes Demagora Demagoras Demarete Demaretos Demo
-		Demogenes Demokratides Demokrite Demonas Demonike Demophanes Demophile Demostrate
+		Deinylla Deisitheos Demagenes Demagora Demagoras Demarete Demaretos Demo_2
+		Demogenes_2 Demokratides Demokrite Demonas Demonike Demophanes_2 Demophile Demostrate_2
 		Derkas Derketos Derkylos Dersippos Deta Deuxippa Dexias Dexigiton
 		Dexiklea Dexikrateia Dexikritos Dexilas Dexinika Dexinomos Dexiochos Dexippa
-		Dexis Dexo Diaitos Didymmei Dieitrephes Dies Dikaios Dikaiosyne
-		Dinia Dinophila Diochthonides Diodote Diogenes Dioidotos Diokko Diokleia
+		Dexis Dexo Diaitos Didymmei Dieitrephes Dies Dikaios_2 Dikaiosyne
+		Dinia Dinophila Diochthonides Diodote Diogenes_2 Dioidotos Diokko Diokleia_2
 		Diokleides Diokles Diomedon Dioniousia Dioniousodora Dionousia Dionousicha Dionousodora
 		Dionysas Dionysion Dionysiphanes Diophaneis Diophania Diophante Diophantides Dioskoris
-		Diphile Donax Dora Doribola Doris Dorkas Dorkinas Dorkion
-		Dorkon Doros Dosis Dosithea Doton Drakontios Drakontis Dromas
+		Diphile Donax Dora_2 Doribola Doris_2 Dorkas_2 Dorkinas Dorkion
+		Dorkon Doros Dosis Dosithea Doton Drakontios_2 Drakontis Dromas
 		Dromeas Dromokleides Drosis Drymos Dyaios Dysopos Earon Echellos
-		Echemenes Echestratos Echo Egon Eirena Eirenis Eiritima Eirodoros
+		Echemenes Echestratos Echo Egon_2 Eirena_2 Eirenis Eiritima Eirodoros
 		Elasippos Eleios Elephas Eleutheris Elpias Elpines Elpinika Elpinike
-		Empeddicha Eneisias Enpedon Epaineas Epainete Epainetos Epameinondas Epeneta
+		Empeddicha Eneisias Enpedon Epaineas Epainete Epainetos Epameinondas_2 Epeneta
 		Epenetos Epeuktis Epharmostos Ephialtes Epicharmos Epigeneia Epigenidas Epikleides
-		Epikouros Epiktesis Epikydes Epimeles Epimenes Epinike Epiphile Epipitheis
+		Epikouros Epiktesis Epikydes_2 Epimeles Epimenes_2 Epinike Epiphile Epipitheis
 		Epistheneia Epithetes Epitima Epitychia Epixenos Erasidamos Erasippa Erato
-		Eraton Eratonassa Eratosthenes Eratylla Eremena Ergophilos Ergoteles Erotion
+		Eraton Eratonassa Eratosthenes_2 Eratylla Eremena Ergophilos Ergoteles Erotion
 		Erotis Erotticha Erottis Erymanthos Eryon Esopicha Ethelippa Euagon
-		Euagoras Euagros Euainetos Euainos Euameris Euamero Euandria Euandridas
+		Euagoras Euagros Euainetos_2 Euainos Euameris Euamero Euandria Euandridas
 		Euanorides Euanthis Euareta Euarete Euariste Eubolidas Eucheir Euchetos
 		Euchora Eudaimokrates Eudaimon Eudia Eudraios Eudraon Euekes Euelpis
 		Euenios Euergeita Euergias Euergidas Eueschros Eueteron Euion Eukarpia
-		Eukeron Eukleia Eukleidas Eukleite Eukleitos Eukles Euklia Euklippos
-		Eukoline Eukolon Eukolos Eukratea Eukratis Eulachon Eumaricha Eumedes
+		Eukeron Eukleia_2 Eukleidas Eukleite Eukleitos Eukles Euklia Euklippos
+		Eukoline_2 Eukolon Eukolos Eukratea Eukratis Eulachon Eumaricha Eumedes
 		Eumeilis Eumeneia Eumoiros Eumolpos Eumorphia Eunika Eunikis Eunoa
 		Eunoia Eunois Eunomia Eunomos Eunostidas Eupamon Eupatra Eupeithes
 		Euphaina Euphantis Eupharia Euphasia Euphraios Euphranta Euphrastos Euphro
-		Euphroi Euphronis Euphronita Euphylla Eupithis Eupnytos Euponpa Euporia
+		Euphroi Euphronis Euphronita Euphylla Eupithis Eupnytos Euponpa Euporia_2
 		Euposia Eupteros Euresias Eurippe Europe Euroulochos Euroumachos Euroutimos
 		Eurydika Euryptolemos Eusebes Eusous Eustrate Eustrotos Eutages Eutaktos
 		Euteleia Eutelia Euthete Euthetos Euthion Euthios Euthioudamos Euthoinides
 		Euthydamos Euthydikos Euthygenes Euthylaos Euthylla Euthymidas Euthynos Euthyphron
-		Eutouchia Eutychia Eutychides Eutychina Eutychis Euwergon Euxenidas Euxenos
-		Exekestides Gaios Galateia Galene Galesion Gaua Geiton Glaphoura
-		Glaphyron Glauka Glaukinna Glykera Gnathainion Gnesitheos Gnoma Gnomicha
+		Eutouchia Eutychia Eutychides_2 Eutychina Eutychis_2 Euwergon Euxenidas Euxenos
+		Exekestides Gaios Galateia Galene_2 Galesion Gaua Geiton Glaphoura
+		Glaphyron Glauka Glaukinna Glykera_2 Gnathainion Gnesitheos Gnoma Gnomicha
 		Gorge Gorgidas Gorgion Gorgo Gorgoi Gorgona Gouris Gripos
 		Grylis Grypon Habromachos Habrosyne Habrylla Hageandros Hageippa Hageisippa
 		Hagemon Hagesikrates Hagesimachos Hagesippos Hageso Hagnagoras Hagnodike Hagnostrate
 		Halikos Halios Haniokrates Harmodia Harmotta Harmoxena Harpalion Hedistion
-		Hedyle Hedyline Hegesilla Hegesippe Hegeso Hegestratos Hektoridas Helene
+		Hedyle_2 Hedyline_2 Hegesilla Hegesippe Hegeso Hegestratos Hektoridas Helene_2
 		Heliko Hellanis Heniocha Heniochides Heniochos Hephaistodoros Hephaistodotos Heragoras
 		Heraios Herakleia Herakleon Herako Hermaiiskos Hermaion Hermaiondes Hermapias
-		Hermeias Hermiades Hermias Hermione Hermionis Hermippos Hermo Hermotimos
+		Hermeias Hermiades Hermias_2 Hermione Hermionis Hermippos Hermo_2 Hermotimos
 		Herodotos Herogeiton Heroides Herostratos Hesychion Hiaredas Hiaronymos Hierasimos
-		Hiero Hierokleia Hilara Hilaron Himeraios Himerope Hippaphesis Hipparche
+		Hiero_2 Hierokleia_2 Hilara_2 Hilaron Himeraios Himerope Hippaphesis Hipparche
 		Hipparchides Hippias Hippo Hippodameia Hippokleia Hippoklia Hippolochos Hippolyte
-		Hipponika Hipponike Hipposthenidas Hippostrate Hippostratos Hismeinias Hismena Hismene
-		Histiaios Hodoiteles Homilia Homoloichos Homoloiodora Homolois Homolophantos Homonoia
-		Hoplon Hybristas Hyllos Hymenaios Hymnis Hypatias Hyperbatas Hyperbole
-		Hypereides Hypothema Hypsagora Iamiskos Ias Iatron Ikaros Ilaikos
+		Hipponika Hipponike Hipposthenidas Hippostrate_2 Hippostratos_2 Hismeinias Hismena Hismene
+		Histiaios Hodoiteles Homilia Homoloichos Homoloiodora Homolois_2 Homolophantos Homonoia
+		Hoplon Hybristas Hyllos Hymenaios Hymnis Hypatias Hyperbatas_2 Hyperbole
+		Hypereides_2 Hypothema Hypsagora Iamiskos Ias Iatron Ikaros Ilaikos
 		Ilione Ion Iphidamos Iranichos Isandros Isarchos Ischolaa Iseas
 		Isidike Isidote Isidotos Isigeneia Isochrysos Isodemos Isolochos Isomentor
 		Isthmionike Italia Ithake Ithippina Ithydamos Ithykles Ithyllichos Ithytreitos
 		Kabeiro Kabirichos Kabiro Kaikie Kairichos Kalchedon Kalio Kalioukion
 		Kalistarcha Kalletima Kalliaros Kalliboula Kallicha Kalliera Kalligenes Kalliko
-		Kallikrates Kallikratis Kallimache Kallimeilos Kallinika Kallinike Kalliope Kalliphanes
-		Kalliroa Kallisto Kallistomache Kallistona Kallistonika Kallistrate Kallityche Kallixena
+		Kallikrates Kallikratis Kallimache_2 Kallimeilos Kallinika Kallinike Kalliope_2 Kalliphanes
+		Kalliroa Kallisto_2 Kallistomache_2 Kallistona Kallistonika Kallistrate_2 Kallityche Kallixena
 		Kallo Kallonides Kalodikos Kalonika Kalonikos Kaloto Kalyka Kalyke
 		Kalynthos Kampas Kaphisa Kaphisoklidas Kapillei Kapon Karaichos Karaillei
 		Karais Kardame Karneadas Karoukidas Karystia Katagogios Katathymion Kebrinos
 		Kenchramos Kephalos Kephisoboulos Kereisias Kerkope Keule Kichonides Killaios
-		Klea Klearchis Kleareta Kleeratos Kleestheneis Kleinopolis Kleio Kleiostrate
-		Kleippides Kleitorion Klenetos Klenis Kleo Kleochares Kleodoros Kleoichos
+		Klea Klearchis Kleareta Kleeratos Kleestheneis Kleinopolis Kleio_2 Kleiostrate
+		Kleippides Kleitorion Klenetos Klenis Kleo_2 Kleochares Kleodoros Kleoichos
 		Kleois Kleokrateia Kleolaos Kleomacha Kleomachos Kleome Kleomelos Kleondas
-		Kleonike Kleonoe Kleopatra Kleophantos Kleophon Kleostheneis Kleostrate Klereta
+		Kleonike Kleonoe Kleopatra_2 Kleophantos Kleophon Kleostheneis Kleostrate_2 Klereta
 		Klestrota Kletaios Kleuandra Kleukritos Kleupatra Klia Kliaristidas Kliaristos
 		Klinikos Klio Kliogiton Kliomeila Kliopatra Kobis Koinktia Kolaphidion
 		Kollyra Komaios Komaithos Komallis Komeas Komike Komikon Kominas
 		Kompse Kompsis Konalis Konnion Konon Konope Korallion Koreiadas
-		Koreto Korinno Koripho Koritho Kormos Koroibos Korone Korydon
-		Kosmippos Kossidamos Kossyphion Kota Kotale Kothopa Kourambos Kragalos
-		Kratea Krateia Kratesippos Kratios Kratippos Kratista Kratyios Kratyllos
+		Koreto Korinno Koripho Koritho Kormos Koroibos_2 Korone Korydon
+		Kosmippos Kossidamos Kossyphion Kota_2 Kotale Kothopa Kourambos Kragalos
+		Kratea Krateia_2 Kratesippos Kratios Kratippos Kratista Kratyios Kratyllos
 		Kraxios Krekilas Krete Kritis Kritolaa Kritophantos Kromachos Kteatos
 		Ktesikleia Kteso Kydenor Kydikrates Kydima Kydimenes Kydimos Kydistratos
-		Kydonis Lachares Lachon Ladama Lagiska Laidas Lais Lakaina
+		Kydonis Lachares_2 Lachon Ladama Lagiska Laidas Lais Lakaina
 		Lakleidas Lakles Lakoon Lakrateus Lakratis Lamaga Lamichos Lamidion
-		Lamiska Lampas Lamprias Lanassa Landros Lao Laodameia Laodike
-		Laomedon Laphaes Laphanta Lapompidas Larchidas Latropos Lattamos Learchos
+		Lamiska Lampas Lamprias Lanassa_2 Landros Lao Laodameia Laodike_2
+		Laomedon_2 Laphaes Laphanta Lapompidas Larchidas Latropos Lattamos Learchos
 		Lebyros Leneon Leomedousa Leonis Leontichos Leontion Leontomenes Lepta
 		Leptargos Lepton Leukaste Leuke Leukinos Leukodoros Leuktris Likymnios
 		Limenios Limnaios Lioukinos Liousiklia Liousiphantos Liousis Liparon Liranos
 		Lithax Logistas Logos Lonchis Lotine Loukia Lousandros Lousatas
 		Lousilaos Lousimnastos Lousippos Lyde Lykkaia Lykomeideis Lykourgos Lyranias
-		Lysandra Lysandros Lysanias Lysarchides Lysarchos Lysarete Lysaretos Lyseas
-		Lysicha Lysidika Lysidike Lysimache Lysiphilos Lysis Lysithea Lytides
-		Maarkos Machatas Madakes Maia Malicha Mammarion Mandrogenes Mania
+		Lysandra_2 Lysandros_2 Lysanias Lysarchides Lysarchos Lysarete Lysaretos Lyseas
+		Lysicha Lysidika Lysidike Lysimache_2 Lysiphilos Lysis_2 Lysithea Lytides
+		Maarkos Machatas_2 Madakes Maia Malicha Mammarion Mandrogenes Mania_2
 		Manyka Maschalia Mastakos Mata Matas Matero Matrichos Matro
 		Matrophaneis Medontis Megaklia Megarista Megisto Meidon Meilichidas Meinis
-		Meixis Melaina Melainis Melanippos Melantes Melanthis Melanthos Melanthyros
-		Melinna Melis Melissidas Melistion Melisto Melita Melite Melitherios
-		Melito Melitta Melittis Melotima Melpon Mene Meneboulos Menegeiton
-		Meneia Menepsophos Menestheus Menestho Menestrotis Menites Menogenes Menon
+		Meixis Melaina_2 Melainis Melanippos Melantes Melanthis Melanthos Melanthyros
+		Melinna Melis Melissidas Melistion Melisto Melita_2 Melite Melitherios
+		Melito Melitta_2 Melittis Melotima Melpon Mene Meneboulos Menegeiton
+		Meneia Menepsophos Menestheus Menestho Menestrotis Menites Menogenes Menon_2
 		Menophantos Menophila Menyllos Meso Methike Metiche Metopos Metro
-		Metrodoxa Midias Mika Mikka Mikkias Mikola Mikotera Mikoteron
+		Metrodoxa Midias Mika_2 Mikka Mikkias Mikola Mikotera Mikoteron
 		Mikouthos Mikylios Mikytha Mileisios Miltias Misthodikos Mixinoos Mnaimachos
 		Mnais Mnasagora Mnasarcha Mnasigeiton Mnasiklias Mnasillo Mnasilochos Mnasithea
-		Mnasixena Mnasoulla Mnastichidas Mnemodike Mnemosyne Mnesagoras Mnesarchos Mnesarete
-		Mnesigenes Mnesiphilos Mnesippos Mnesiptoleme Mnesiptolemos Mnesistrate Moirichos Moirogenes
-		Molon Molotos Mondon Moscharion Moschina Moschine Mourticha Mousis
+		Mnasixena Mnasoulla Mnastichidas Mnemodike Mnemosyne Mnesagoras Mnesarchos Mnesarete_2
+		Mnesigenes Mnesiphilos Mnesippos Mnesiptoleme Mnesiptolemos Mnesistrate_2 Moirichos Moirogenes
+		Molon_2 Molotos Mondon Moscharion Moschina Moschine Mourticha Mousis
 		Myia Myidion Myllaron Mylothros Mymaikyle Mynnia Mynnine Mynno
 		Myro Myron Myronides Myrtaso Myrte Myrtia Myrtilos Myrtis
 		Myrto Mysta Mystichides Mystion Nais Nakion Nakos Nannarion
 		Nannion Nauarche Nausikrite Nausilla Nausinike Nausion Nausippe Neandros
 		Nearchis Neilobios Neilodoros Nemea Nemeias Nemesios Nenemon Neokleides
 		Neokrates Neolaidas Neollis Neomeideis Neopatra Neopeithes Neophron Neopolis
-		Neos Neostrate Nephele Neron Niarchis Nikagidas Nikagoras Nikandra
-		Nikandros Nikanon Nikanthe Nikaratos Nikareta Nikarete Nikarista Nikariste
+		Neos Neostrate Nephele Neron Niarchis Nikagidas Nikagoras_2 Nikandra
+		Nikandros_2 Nikanon Nikanthe Nikaratos Nikareta_2 Nikarete_2 Nikarista Nikariste
 		Nikasaretos Nikasippos Nike Nikea Nikeas Nikenor Nikeos Nikesarete
-		Nikesichos Nikeso Nikidion Nikippe Niko Nikoboule Nikochares Nikodama
-		Nikoklea Nikokleides Nikokratea Nikolaos Nikomache Nikophaes Nikophantos Nikopolis
-		Nikostrata Nikostrate Nikostratis Nikoteleis Nikothea Nikotheos Nikoxenos Nikylla
+		Nikesichos Nikeso_2 Nikidion Nikippe Niko_2 Nikoboule Nikochares Nikodama
+		Nikoklea Nikokleides Nikokratea Nikolaos_2 Nikomache_2 Nikophaes Nikophantos Nikopolis
+		Nikostrata Nikostrate_2 Nikostratis Nikoteleis Nikothea Nikotheos Nikoxenos Nikylla
 		Nion Nioumphodoros Noema Nokis Nomeinios Nommo Nomokratia Nomonia
-		Nonnos Noron Nostia Nymphe Nymphis Nympho Nyphothena Nysa
+		Nonnos Noron Nostia Nymphe Nymphis Nympho Nyphothena Nysa_2
 		Odysseidas Oinanthis Oineides Oineus Oinion Oinondes Okea Okimon
-		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros Olympion Olympios
+		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
 		Onasicha Onasides Onasima Onasiphilos Onchestodoros Onesiphilos Onesiphoron Onesiphoros
 		Oneso Onomantos Opheleimis Ophelema Ophelima Ophelime Ophelleis Opis
 		Opora Oropodoros Orrhippa Orsimachos Orthokles Oupatos Oupermenidas Oxytion
 		Paidikos Paillos Palonion Pamphila Panaitos Pangaion Pankration Pankratis
 		Panter Pantiadas Pantichos Paramona Paraskeue Pardalis Parmenides Parmonides
-		Parthemidas Parthena Parthenios Parthenis Pasarete Pasaretos Pasiades Pasichareis
-		Pasigenes Pasilea Patrokleia Patrophila Pausias Pausicha Pausilla Pedageneis
-		Pedieus Peilemachos Peiraikos Peisidika Peisikrates Peison Peithagoras Peithenous
-		Peithis Peitho Pelekrita Pelops Pemptios Penteteris Periklia Peristera
+		Parthemidas Parthena_2 Parthenios Parthenis_2 Pasarete Pasaretos Pasiades Pasichareis
+		Pasigenes Pasilea Patrokleia_2 Patrophila Pausias Pausicha Pausilla Pedageneis
+		Pedieus Peilemachos Peiraikos Peisidika Peisikrates Peison Peithagoras_2 Peithenous
+		Peithis Peitho Pelekrita Pelops_2 Pemptios Penteteris Periklia Peristera
 		Permichos Persis Petale Phaenikes Phaidra Phaidragoras Phaidrylla Phainippe
-		Phaino Phalakra Phanagoras Phano Phanodika Phanodike Phanodoros Phanokleia
-		Phanokles Phanokrates Phanokrita Phanokrite Phanomache Phanostrate Phanta Phanylla
+		Phaino Phalakra Phanagoras Phano_2 Phanodika Phanodike Phanodoros Phanokleia
+		Phanokles Phanokrates Phanokrita Phanokrite Phanomache Phanostrate_2 Phanta Phanylla
 		Pharadas Pharykos Phedricha Pheidippos Pheidostratos Pheidylla Pheidyllos Pheidylos
 		Phelikla Phelys Pheme Phenandros Phenantidas Phenareta Phenicha Phenoulla
-		Phereklia Pherekrates Phila Philagros Philainetos Philako Philantho Phileia
-		Phileko Philenidas Philesia Philetos Phileus Philia Philiades Philinna
-		Philippa Philis Philistas Philistion Philistis Philisto Philistos Philleas
-		Phillicha Phillino Phillo Philobotos Philogeiton Philogenes Philokalon Philokleis
-		Philoklia Philokrate Philokratea Philomela Philomnasta Philomnestos Philon Philonichos
-		Philonika Philophanes Philopoinos Philotheros Philotima Philotimos Philotis Philottis
-		Philoumeno Philowergos Philoxena Philoxenis Philtate Philtation Philte Philto
+		Phereklia Pherekrates Phila_2 Philagros Philainetos Philako Philantho Phileia_2
+		Phileko Philenidas Philesia Philetos_2 Phileus Philia Philiades Philinna_2
+		Philippa_2 Philis Philistas Philistion Philistis Philisto Philistos Philleas
+		Phillicha Phillino Phillo_2 Philobotos Philogeiton Philogenes Philokalon Philokleis
+		Philoklia Philokrate Philokratea Philomela Philomnasta Philomnestos Philon_2 Philonichos
+		Philonika Philophanes Philopoinos Philotheros Philotima Philotimos Philotis_2 Philottis
+		Philoumeno Philowergos Philoxena_2 Philoxenis Philtate Philtation Philte Philto
 		Philton Phinton Phlegon Phoinissa Phontides Phorystas Phouskion Phradmon
 		Phrasilla Phrasillos Phrikon Phronesis Phronimon Phrounicha Phrounon Phryna
 		Phryne Phrynichides Phylarche Phylax Phylo Phylotia Phylotimos Phyloto
 		Phyros Physeas Physis Physkos Pisandra Pisas Pista Piste
 		Pisthetairos Pisto Pistokles Pistokrates Piston Pistoxena Pithekodemios Pithion
-		Pithon Pitthiadas Pityas Plathane Pleistis Plestieros Plinna Pliston
+		Pithon Pitthiadas Pityas Plathane_2 Pleistis Plestieros Plinna Pliston
 		Plouomos Ploutarche Ploutarchides Ploutias Ploutis Podareus Poimarchos Poimena
 		Pokka Polemokleis Poliadas Poliarchis Polias Polioudoros Polioukleis Polioumeilos
-		Polla Pollias Pollis Polouarchos Polouklia Polouklidas Polydikos Polyeuktos
-		Polygnota Polygnotos Polykaste Polykleia Polykleidas Polykleides Polykleitos Polykon
+		Polla Pollias Pollis Polouarchos Polouklia Polouklidas Polydikos Polyeuktos_2
+		Polygnota Polygnotos_2 Polykaste Polykleia Polykleidas Polykleides Polykleitos Polykon
 		Polykratidas Polylaos Polymedes Polymelos Polynike Polyreitos Polystrata Pontike
 		Porrhinos Posideos Posilla Posis Potammeis Potamodoros Potheine Pothiadas
 		Pourippos Pourrhis Pouthillei Pouthis Pouthokles Pouthoklia Pouthonika Pragoros
 		Pramnates Praoula Pratis Praxagora Praxiboulos Praxidamos Praxikles Praxikrates
 		Praxitima Prokleides Proklianos Prokritos Promachos Pronapes Prosodos Prosousia
-		Prostateiris Prostateris Protagoras Protarchos Proteas Protimos Protion Protomacha
+		Prostateiris Prostateris Protagoras Protarchos Proteas_2 Protimos Protion Protomacha
 		Protophaes Psamatha Ptoilleia Ptoiophestos Ptois Pymendas Pyrgion Pyrilampes
 		Pyrrha Pyrrhaleus Pyrrhichidas Pyrrhippa Pyrrhonike Pyrwalion Pystilos Pythais
 		Pythiketas Pythilla Pythilles Pythionikos Pythodike Pythodora Pythokrite Python
 		Pythostrate Pythostratos Pytiarchos Rhadamanthys Rhadeis Rhadine Rhaukios Rhenkias
-		Rhetorikos Rhexion Rhoda Rhodanon Rhodanthis Rhode Rhodia Rhodilla
+		Rhetorikos Rhexion Rhoda Rhodanon Rhodanthis Rhode_2 Rhodia Rhodilla
 		Rhodo Rhodokles Rhodopa Rhombos Saistrotos Saithion Sakon Sallion
-		Samagoras Samia Samicha Samichos Samolas Samon Sandyle Sao
-		Saosias Saosichos Saosis Sathon Satornila Satoura Satyra Satyrion
+		Samagoras Samia Samicha Samichos Samolas Samon Sandyle Sao_2
+		Saosias Saosichos Saosis Sathon Satornila Satoura Satyra_2 Satyrion
 		Satyriskos Saudama Sauxenos Sekoundilla Seleukis Selino Selon Semnos
-		Sextos Sibilla Siga Sige Sikon Silana Simaitha Simaka
-		Simako Simale Simiadas Simoulina Simyrtios Sinon Skamandrios Skorpion
+		Sextos Sibilla_2 Siga Sige Sikon Silana Simaitha Simaka
+		Simako Simale_2 Simiadas Simoulina Simyrtios Sinon Skamandrios Skorpion
 		Skylla Smikke Smikrias Smikythe Sobaron Socharmos Sodas Sokleia
 		Sokrates Sokratia Sokratidas Sokritos Somatale Sophrone Sophroniskos Sosandra
 		Sosandros Sosareta Sosiadas Sosibia Sosiboulos Sosicha Sosidama Sosidikos
 		Sosiklea Sosilla Sosimachos Sosimeneis Sosipatra Sosipatros Sosistratides Sostrata
 		Sostron Sostrota Sotericha Soterides Soteris Sotero Soukrateis Sounion
 		Sourina Souros Sparte Spercheios Speusonides Sphettios Spintharos Spoudokrates
-		Stagonion Stephanos Stesagoras Stesileos Stolis Stouria Stration Strato
+		Stagonion Stephanos_2 Stesagoras Stesileos Stolis Stouria Stration Strato
 		Stratoion Stratokleia Stratola Stratolaos Stratophanes Stratophon Stratylla Strobilos
 		Strongylion Strophe Strotia Stroton Strotto Strotyllis Strybele Styrax
-		Syana Sylion Symmache Synete Synoris Syntrophis Syra Syryla
+		Syana Sylion Symmache Synete Synoris Syntrophis Syra_2 Syryla
 		Taurias Techne Teileas Teisandros Teisarchos Teiseas Teisikles Teisimos
 		Telaithos Telas Telearchos Teleippos Teleklidas Telemachos Telephonos Telesagoras
-		Telesarchos Telesion Telesphoros Telessis Telessistrotos Telexena Tellei Tellias
-		Telon Telourgos Temene Terpsias Teumasigeneis Thais Thaleia Thalesigenes
+		Telesarchos_2 Telesion Telesphoros_2 Telessis Telessistrotos Telexena Tellei Tellias
+		Telon Telourgos Temene Terpsias Teumasigeneis Thais_2 Thaleia Thalesigenes
 		Thalinides Thallei Thalles Thallo Thallousa Thargelion Thasios Thauminas
 		Thea Theaios Thearichos Thebades Thebon Theibagena Theibangelos Theioteles
-		Themisto Theoboulos Theodora Theodota Theogeita Theogenis Theogita Theognetis
-		Theogonos Theokedes Theokleia Theokrine Theokrisios Theokrite Theokritos Theokydes
-		Theomnasta Theomneste Theophantos Theopheidas Theophila Theophile Theophiliskos Theophrasmon
-		Theophrastos Theopompos Theopropis Theoteleia Theotima Theotime Theozotos Thereus
+		Themisto Theoboulos Theodora_2 Theodota_2 Theogeita Theogenis Theogita Theognetis
+		Theogonos Theokedes Theokleia Theokrine Theokrisios Theokrite Theokritos_2 Theokydes
+		Theomnasta Theomneste Theophantos Theopheidas Theophila_2 Theophile Theophiliskos Theophrasmon
+		Theophrastos_2 Theopompos Theopropis Theoteleia Theotima Theotime Theozotos Thereus
 		Therikles Thermo Thermoxena Thersandrichos Thesmogenes Thettalia Theudas Theudosia
 		Theukles Theumenes Theuxenos Thiochareis Thiodora Thiodoros Thiogeiton Thiogeneis
 		Thiogneitidas Thiokleis Thioklia Thiokrita Thiopeithes Thiophestidas Thiotima Thoinarche
-		Thomanta Thorikos Thorsylochos Thoudiades Thoukydides Thraikion Thraitta Thrasoulaidas
+		Thomanta Thorikos Thorsylochos Thoudiades Thoukydides Thraikion Thraitta_2 Thrasoulaidas
 		Thrasoulaos Thrasyboula Thrasyboule Thrasymenes Thrasynon Threpte Thynnon Thyro
 		Thyzotos Tileias Tima Timaia Timakleidas Timandra Timandros Timanor
 		Timarche Timarchis Timasikrates Timasitheos Timasithia Timasithios Timasos Timodike
 		Timokades Timokratis Timokreon Timokres Timokrita Timokrite Timola Timomacha
 		Timomeilos Timonides Timossa Timostrata Timostratis Timostratos Timyllos Tiouchon
 		Tiron Tisandros Titthe Tityrmos Tmoleides Tmolos Tollos Torteas
-		Touchanor Tourannis Trieteris Trocheis Trochis Troias Trouphera Tryphe
+		Touchanor Tourannis Trieteris Trocheis Trochis Troias_2 Trouphera Tryphe
 		Tryphera Trypheron Tycharo Tydeus Tynnicha Tyrmidas Wadosia Wanaxandros
 		Wanaxis Warnon Wartalos Wasandros Wasias Wastinos Wastioullei Wastymeidon
 		Wergo Wergotion Wisodamos Wisodikos Wisoklia Woikidas Woikon Woikosthenia
-		Xanthias Xanthippa Xanthis Xanthon Xenagis Xenaios Xenares Xenaristos
+		Xanthias Xanthippa Xanthis Xanthon Xenagis Xenaios Xenares_2 Xenaristos
 		Xeneneta Xenias Xennaretos Xenno Xenodamos Xenodike Xenoklea Xenoklia
-		Xenoklidas Xenokrateia Xenokrateis Xenokrite Xenonides Xenopithis Xenostrota Xenoteles
+		Xenoklidas Xenokrateia_2 Xenokrateis Xenokrite Xenonides Xenopithis Xenostrota Xenoteles
 		Xenyllis Xenyllos Zeuxagora Zeuxila Zeuxion Zeuxo Zobios Zoila
-		Zontikos Zophytides Zopourina Zopouro Zopyra Zopyris Zosarion Zosima
-		Zosime Zoso
+		Zontikos Zophytides Zopourina Zopouro Zopyra_2 Zopyris_2 Zosarion Zosima_2
+		Zosime_2 Zoso
 	}
 	female_names = {
-		Abeicha Abein Abiatha Achelois Ada Agallis Agapeta Agapion
-		Agariste Agasigratis Agaso Agatharchis Agathemeris Agathestrate Agathina Agatho
-		Agaththo Agathylla Agemacha Ago Agonippa Aichmareta Aimno Ainesa
+		Abeicha Abein Abiatha Achelois Ada_2 Agallis Agapeta Agapion
+		Agariste Agasigratis Agaso Agatharchis Agathemeris Agathestrate Agathina Agatho_2
+		Agaththo Agathylla Agemacha Ago_2 Agonippa Aichmareta Aimno Ainesa
 		Ainesion Airesis Aischris Aisthesis Aitherion Akademeia Akestion Akestodora
-		Akribeia Akte Aktine Alexandreia Alexila Alexippa Alka Alkibia
-		Alkippe Alphesido Ambrosia Ameinariste Ameino Ameinokleia Ameinokrateia Ameinonike
+		Akribeia Akte Aktine Alexandreia Alexila Alexippa Alka_2 Alkibia
+		Alkippe Alphesido Ambrosia_2 Ameinariste Ameino Ameinokleia Ameinokrateia Ameinonike
 		Amino Ammoa Ampelis Amphainete Ampharete Amphia Amphikrateia Amphinike
 		Amphiptoleme Amphoteris Amphottis Amymone Anankippa Anasiphoron Anassa Anaxareta
 		Anaxilla Anaxis Andraphile Androkleia Androklia Anemone Annaiia Anniche
 		Anphareta Antallis Antandricha Anthea Antheme Anthemia Anthemilla Anthemo
 		Anthia Anthippa Antibia Antidosis Antidota Antidotis Antigenia Antigenis
-		Antigo Antigona Antikleia Antimacha Antipatris Aphrodisa Aphrodisia Aphrodisias
-		Aphthonno Apia Apistia Apolla Apollodora Apollonia Apollonis Arapia
-		Archagora Archareta Arche Archeagatha Archegete Archekrateia Archelaa Archestrate
-		Archianassa Archibia Archikleia Archinia Archion Archis Ariadne Arisstogita
-		Aristaineta Aristainete Aristarche Aristarchis Aristareta Ariste Aristeido Aristenetis
-		Aristoboule Aristodemeia Aristodora Aristokis Aristoklea Aristokleia Aristoklia Aristoko
-		Aristokratia Aristokrita Aristola Aristolea Aristomenia Aristonike Aristonoa Aristonyma
-		Aristophora Aristotime Aristylla Arkas Arkesa Arkesilaa Arkeso Artemis
+		Antigo Antigona_2 Antikleia Antimacha Antipatris Aphrodisa Aphrodisia_2 Aphrodisias
+		Aphthonno Apia_2 Apistia Apolla Apollodora Apollonia_2 Apollonis Arapia
+		Archagora Archareta Arche Archeagatha Archegete Archekrateia Archelaa Archestrate_2
+		Archianassa Archibia Archikleia Archinia Archion Archis Ariadne_2 Arisstogita
+		Aristaineta Aristainete Aristarche Aristarchis Aristareta Ariste_2 Aristeido Aristenetis
+		Aristoboule_2 Aristodemeia Aristodora Aristokis Aristoklea Aristokleia_2 Aristoklia Aristoko
+		Aristokratia Aristokrita Aristola Aristolea Aristomenia Aristonike_2 Aristonoa Aristonyma
+		Aristophora Aristotime Aristylla_2 Arkas Arkesa Arkesilaa Arkeso Artemis_2
 		Artemo Arxilla Asklapias Asklapis Asklepias Asklepo Asopis Asopodora
 		Atalanta Athanicha Athanodota Athanogita Athenada Athenagora Athenaion Atheno
 		Ato Atthis Autarxia Autobola Autokrateia Autonoe Axiothea Bachchis
 		Basilike Bathylla Bation Bebaion Bendidora Berenika Biota Biotis
 		Bithynis Bitias Bitto Boubalion Boubalis Bouiska Boukatia Boularche
-		Brisis Chairelea Chairestrate Chairippe Charikleia Charilaa Charippe Charis
+		Brisis Chairelea Chairestrate_2 Chairippe_2 Charikleia Charilaa Charippe Charis_2
 		Charisia Charita Charito Charixo Charopis Charopon Cherippa Chersippe
-		Chetippa Chlidane Choirine Choiris Chromippa Chrotarion Chroto Chrousis
+		Chetippa Chlidane Choirine_2 Choiris Chromippa Chrotarion Chroto Chrousis
 		Chrysothemis Daidiche Daikrateia Dalis Damagora Damagoris Damaina Damareta
-		Damaro Damatria Damo Damodika Damokleia Damoklia Damokratis Damostheneia
+		Damaro Damatria Damo_2 Damodika Damokleia Damoklia Damokratis Damostheneia
 		Damotheinis Damothoinis Damothynis Damotima Damotis Damoxena Danae Danais
-		Darda Deikrateia Deinylla Demagora Demarete Demo Demokrite Demonike
-		Demophile Demostrate Deta Deuxippa Dexiklea Dexikrateia Dexinika Dexippa
-		Dexis Dexo Dikaiosyne Dinia Dinophila Diodote Diokko Diokleia
+		Darda Deikrateia Deinylla Demagora Demarete Demo_2 Demokrite Demonike
+		Demophile Demostrate_2 Deta Deuxippa Dexiklea Dexikrateia Dexinika Dexippa
+		Dexis Dexo Dikaiosyne Dinia Dinophila Diodote Diokko Diokleia_2
 		Dioniousia Dioniousodora Dionousia Dionousicha Dionousodora Dionysion Diophania Diophante
-		Dioskoris Diphile Dora Doribola Doris Dorkas Dosis Dosithea
-		Drakontis Drosis Earon Echo Eirena Eirenis Eiritima Eleutheris
+		Dioskoris Diphile Dora_2 Doribola Doris_2 Dorkas_2 Dosis Dosithea
+		Drakontis Drosis Earon Echo Eirena_2 Eirenis Eiritima Eleutheris
 		Elpinika Elpinike Empeddicha Epainete Epeneta Epeuktis Epigeneia Epiktesis
 		Epinike Epiphile Epistheneia Epitima Epitychia Erasippa Erato Eratonassa
 		Eratylla Eremena Erotis Erotticha Erottis Esopicha Ethelippa Euameris
 		Euamero Euandria Euanthis Euareta Euarete Euariste Euchora Eudia
-		Euelpis Euergeita Eueteron Euion Eukarpia Eukeron Eukleia Eukleite
-		Euklia Eukoline Eukolon Eukratea Eukratis Eumaricha Eumeilis Eumeneia
+		Euelpis Euergeita Eueteron Euion Eukarpia Eukeron Eukleia_2 Eukleite
+		Euklia Eukoline_2 Eukolon Eukratea Eukratis Eumaricha Eumeilis Eumeneia
 		Eumorphia Eunika Eunikis Eunoa Eunoia Eunois Eunomia Eupatra
 		Euphaina Euphantis Eupharia Euphasia Euphranta Euphro Euphroi Euphronis
-		Euphronita Euphylla Eupithis Euponpa Euporia Euposia Eurippe Europe
+		Euphronita Euphylla Eupithis Euponpa Euporia_2 Euposia Eurippe Europe
 		Eurydika Eustrate Euteleia Eutelia Euthete Euthion Euthylla Eutouchia
-		Eutychia Eutychina Eutychis Galateia Galene Gaua Glaphoura Glaphyron
-		Glauka Glaukinna Glykera Gnathainion Gnoma Gnomicha Gorge Gorgo
+		Eutychia Eutychina Eutychis_2 Galateia Galene_2 Gaua Glaphoura Glaphyron
+		Glauka Glaukinna Glykera_2 Gnathainion Gnoma Gnomicha Gorge Gorgo
 		Gorgoi Gorgona Grylis Habrosyne Habrylla Hageippa Hageisippa Hageso
-		Hagnodike Hagnostrate Harmodia Harmotta Harmoxena Hedistion Hedyle Hedyline
-		Hegesilla Hegesippe Hegeso Helene Heliko Hellanis Heniocha Herakleia
-		Herako Hermione Hermionis Hermo Hiero Hierokleia Hilara Hilaron
+		Hagnodike Hagnostrate Harmodia Harmotta Harmoxena Hedistion Hedyle_2 Hedyline_2
+		Hegesilla Hegesippe Hegeso Helene_2 Heliko Hellanis Heniocha Herakleia
+		Herako Hermione Hermionis Hermo_2 Hiero_2 Hierokleia_2 Hilara_2 Hilaron
 		Himerope Hippaphesis Hipparche Hippo Hippodameia Hippokleia Hippoklia Hippolyte
-		Hipponika Hipponike Hippostrate Hismena Hismene Homilia Homoloiodora Homolois
+		Hipponika Hipponike Hippostrate_2 Hismena Hismene Homilia Homoloiodora Homolois_2
 		Homonoia Hymnis Hyperbole Hypothema Hypsagora Ias Ilione Ischolaa
 		Isidike Isidote Isigeneia Isthmionike Italia Ithake Ithippina Kabeiro
 		Kabiro Kaikie Kalio Kalioukion Kalistarcha Kalletima Kalliboula Kallicha
-		Kalliera Kalliko Kallikratis Kallimache Kallinika Kallinike Kalliope Kalliroa
-		Kallisto Kallistomache Kallistona Kallistonika Kallistrate Kallityche Kallixena Kallo
+		Kalliera Kalliko Kallikratis Kallimache_2 Kallinika Kallinike Kalliope_2 Kalliroa
+		Kallisto_2 Kallistomache_2 Kallistona Kallistonika Kallistrate_2 Kallityche Kallixena Kallo
 		Kalonika Kaloto Kalyka Kalyke Kaphisa Karais Kardame Karystia
-		Katathymion Kerkope Keule Klea Klearchis Kleareta Kleinopolis Kleio
-		Kleiostrate Kleitorion Klenis Kleo Kleois Kleokrateia Kleomacha Kleome
-		Kleonike Kleonoe Kleopatra Kleostrate Klereta Klestrota Kleuandra Kleupatra
+		Katathymion Kerkope Keule Klea Klearchis Kleareta Kleinopolis Kleio_2
+		Kleiostrate Kleitorion Klenis Kleo_2 Kleois Kleokrateia Kleomacha Kleome
+		Kleonike Kleonoe Kleopatra_2 Kleostrate_2 Klereta Klestrota Kleuandra Kleupatra
 		Klia Klio Kliomeila Kliopatra Kobis Koinktia Kolaphidion Kollyra
 		Komallis Komike Komikon Kompse Konalis Konnion Konope Korallion
-		Koreto Korinno Koripho Koritho Korone Kossyphion Kota Kotale
-		Kothopa Kratea Krateia Kratista Krete Kritis Kritolaa Ktesikleia
+		Koreto Korinno Koripho Koritho Korone Kossyphion Kota_2 Kotale
+		Kothopa Kratea Krateia_2 Kratista Krete Kritis Kritolaa Ktesikleia
 		Kteso Kydima Kydonis Ladama Lagiska Lais Lakaina Lakratis
-		Lamaga Lamidion Lamiska Lampas Lanassa Lao Laodameia Laodike
+		Lamaga Lamidion Lamiska Lampas Lanassa_2 Lao Laodameia Laodike_2
 		Laphanta Leneon Leomedousa Leonis Leontion Lepta Leukaste Leuke
 		Leuktris Liousiklia Liousis Lonchis Lotine Loukia Lyde Lykkaia
-		Lysandra Lysarete Lysicha Lysidika Lysidike Lysimache Lysithea Maia
-		Malicha Mammarion Mania Manyka Maschalia Mata Matero Matro
-		Medontis Megaklia Megarista Megisto Melaina Melainis Melanthis Melinna
-		Melis Melisto Melita Melite Melito Melitta Melittis Melotima
+		Lysandra_2 Lysarete Lysicha Lysidika Lysidike Lysimache_2 Lysithea Maia
+		Malicha Mammarion Mania_2 Manyka Maschalia Mata Matero Matro
+		Medontis Megaklia Megarista Megisto Melaina_2 Melainis Melanthis Melinna
+		Melis Melisto Melita_2 Melite Melito Melitta_2 Melittis Melotima
 		Mene Meneia Menestho Menestrotis Menophila Meso Methike Metiche
-		Metro Metrodoxa Mika Mikka Mikola Mikotera Mikoteron Mikytha
+		Metro Metrodoxa Mika_2 Mikka Mikola Mikotera Mikoteron Mikytha
 		Mnais Mnasagora Mnasarcha Mnasillo Mnasithea Mnasixena Mnasoulla Mnemodike
-		Mnemosyne Mnesarete Mnesiptoleme Mnesistrate Moscharion Moschina Moschine Mourticha
+		Mnemosyne Mnesarete_2 Mnesiptoleme Mnesistrate_2 Moscharion Moschina Moschine Mourticha
 		Mousis Myia Myidion Myllaron Mymaikyle Mynnia Mynnine Mynno
 		Myro Myrtaso Myrte Myrtia Myrtis Myrto Mysta Mystion
 		Nais Nakion Nannarion Nannion Nauarche Nausikrite Nausilla Nausinike
 		Nausion Nausippe Nearchis Nemea Nemeias Nenemon Neollis Neopatra
-		Neopolis Neostrate Nephele Niarchis Nikandra Nikanthe Nikareta Nikarete
-		Nikarista Nikariste Nike Nikea Nikesarete Nikeso Nikidion Nikippe
-		Niko Nikoboule Nikodama Nikoklea Nikokratea Nikomache Nikopolis Nikostrata
-		Nikostrate Nikostratis Nikothea Nikylla Noema Nommo Nomokratia Nomonia
-		Nostia Nymphe Nympho Nyphothena Nysa Oinanthis Okea Okimon
+		Neopolis Neostrate Nephele Niarchis Nikandra Nikanthe Nikareta_2 Nikarete_2
+		Nikarista Nikariste Nike Nikea Nikesarete Nikeso_2 Nikidion Nikippe
+		Niko_2 Nikoboule Nikodama Nikoklea Nikokratea Nikomache_2 Nikopolis Nikostrata
+		Nikostrate_2 Nikostratis Nikothea Nikylla Noema Nommo Nomokratia Nomonia
+		Nostia Nymphe Nympho Nyphothena Nysa_2 Oinanthis Okea Okimon
 		Okythoa Olbia Oloumpicha Onasicha Onasima Onesiphoron Oneso Opheleimis
 		Ophelema Ophelima Ophelime Opora Orrhippa Palonion Pamphila Pangaion
-		Pankration Pankratis Paramona Paraskeue Pardalis Parthena Parthenis Pasarete
-		Pasilea Patrokleia Patrophila Pausicha Pausilla Peisidika Peithis Peitho
+		Pankration Pankratis Paramona Paraskeue Pardalis Parthena_2 Parthenis_2 Pasarete
+		Pasilea Patrokleia_2 Patrophila Pausicha Pausilla Peisidika Peithis Peitho
 		Pelekrita Penteteris Periklia Peristera Persis Petale Phaidra Phaidrylla
-		Phainippe Phaino Phalakra Phano Phanodika Phanodike Phanokleia Phanokrita
-		Phanokrite Phanomache Phanostrate Phanta Phanylla Phedricha Pheidylla Phelikla
-		Pheme Phenareta Phenicha Phenoulla Phereklia Phila Philako Philantho
-		Phileia Phileko Philesia Philia Philinna Philippa Philis Philistis
-		Philisto Phillicha Phillino Phillo Philokalon Philoklia Philokrate Philokratea
-		Philomela Philomnasta Philonika Philotima Philotis Philottis Philoumeno Philoxena
+		Phainippe Phaino Phalakra Phano_2 Phanodika Phanodike Phanokleia Phanokrita
+		Phanokrite Phanomache Phanostrate_2 Phanta Phanylla Phedricha Pheidylla Phelikla
+		Pheme Phenareta Phenicha Phenoulla Phereklia Phila_2 Philako Philantho
+		Phileia_2 Phileko Philesia Philia Philinna_2 Philippa_2 Philis Philistis
+		Philisto Phillicha Phillino Phillo_2 Philokalon Philoklia Philokrate Philokratea
+		Philomela Philomnasta Philonika Philotima Philotis_2 Philottis Philoumeno Philoxena_2
 		Philoxenis Philtate Philtation Philte Philto Phoinissa Phrasilla Phronesis
 		Phronimon Phrounicha Phryna Phryne Phylarche Phylo Phylotia Phyloto
-		Physis Pisandra Pista Piste Pisto Pistoxena Pithion Plathane
+		Physis Pisandra Pista Piste Pisto Pistoxena Pithion Plathane_2
 		Pleistis Plinna Ploutarche Ploutis Poimena Pokka Poliarchis Polla
 		Polouklia Polygnota Polykaste Polykleia Polynike Polystrata Pontike Posilla
 		Posis Potheine Pourrhis Pouthis Pouthoklia Pouthonika Praoula Praxagora
 		Praxitima Prosousia Prostateiris Prostateris Protomacha Psamatha Ptoilleia Ptois
 		Pyrrha Pyrrhippa Pyrrhonike Pythais Pythilla Pythodike Pythodora Pythokrite
-		Pythostrate Rhadine Rhoda Rhodanon Rhodanthis Rhode Rhodia Rhodilla
-		Rhodo Rhodopa Sallion Samia Samicha Sandyle Sao Saosis
-		Satornila Satoura Satyra Saudama Sekoundilla Seleukis Selino Sibilla
-		Siga Sige Silana Simaitha Simaka Simako Simale Simoulina
+		Pythostrate Rhadine Rhoda Rhodanon Rhodanthis Rhode_2 Rhodia Rhodilla
+		Rhodo Rhodopa Sallion Samia Samicha Sandyle Sao_2 Saosis
+		Satornila Satoura Satyra_2 Saudama Sekoundilla Seleukis Selino Sibilla_2
+		Siga Sige Silana Simaitha Simaka Simako Simale_2 Simoulina
 		Skylla Smikke Smikythe Sobaron Sokleia Sokratia Sophrone Sosandra
 		Sosareta Sosibia Sosicha Sosidama Sosiklea Sosilla Sosipatra Sostrata
 		Sostrota Sotericha Soteris Sotero Sounion Sourina Sparte Stagonion
 		Stolis Stouria Stration Strato Stratoion Stratokleia Stratola Stratylla
 		Strophe Strotia Strotto Strotyllis Strybele Syana Symmache Synete
-		Synoris Syntrophis Syra Syryla Techne Telessis Telexena Temene
-		Thais Thaleia Thallo Thallousa Thea Theibagena Themisto Theodora
-		Theodota Theogeita Theogenis Theogita Theognetis Theokleia Theokrine Theokrite
-		Theomnasta Theomneste Theophila Theophile Theopropis Theoteleia Theotima Theotime
+		Synoris Syntrophis Syra_2 Syryla Techne Telessis Telexena Temene
+		Thais_2 Thaleia Thallo Thallousa Thea Theibagena Themisto Theodora_2
+		Theodota_2 Theogeita Theogenis Theogita Theognetis Theokleia Theokrine Theokrite
+		Theomnasta Theomneste Theophila_2 Theophile Theopropis Theoteleia Theotima Theotime
 		Thermo Thermoxena Thettalia Theudosia Thiodora Thioklia Thiokrita Thiotima
-		Thoinarche Thomanta Thraitta Thrasyboula Thrasyboule Threpte Thyro Tima
+		Thoinarche Thomanta Thraitta_2 Thrasyboula Thrasyboule Threpte Thyro Tima
 		Timaia Timandra Timarche Timarchis Timasithia Timodike Timokratis Timokrita
 		Timokrite Timola Timomacha Timossa Timostrata Timostratis Titthe Tourannis
-		Trieteris Trochis Troias Trouphera Tryphe Tryphera Trypheron Tycharo
+		Trieteris Trochis Troias_2 Trouphera Tryphe Tryphera Trypheron Tycharo
 		Tynnicha Wadosia Wanaxis Wergo Wisoklia Woikosthenia Xanthippa Xanthis
-		Xenagis Xeneneta Xenno Xenodike Xenoklea Xenoklia Xenokrateia Xenokrite
+		Xenagis Xeneneta Xenno Xenodike Xenoklea Xenoklia Xenokrateia_2 Xenokrite
 		Xenopithis Xenostrota Xenyllis Zeuxagora Zeuxila Zeuxion Zeuxo Zoila
-		Zopourina Zopouro Zopyra Zopyris Zosarion Zosima Zosime Zoso
+		Zopourina Zopouro Zopyra_2 Zopyris_2 Zosarion Zosima_2 Zosime_2 Zoso
 	}
 
 	dynasty_of_location_prefix = "dynnp_of"
