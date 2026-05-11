@@ -1,4 +1,4 @@
-decision_establish_aretaic_school = {
+﻿decision_establish_aretaic_school = {
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}

@@ -1,4 +1,4 @@
-narsil = {
+﻿narsil = {
 	slot = primary_armament
 	required_features = { blade_metal }
 	optional_features = {

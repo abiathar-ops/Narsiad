@@ -1,4 +1,4 @@
-found_hegemony_decision_eight_kingdoms_held = {
+﻿found_hegemony_decision_eight_kingdoms_held = {
 	global = HOLDS_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER
 	first = I_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER
 	third = THEY_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER

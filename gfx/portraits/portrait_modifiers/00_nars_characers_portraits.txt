@@ -3,6 +3,37 @@
 	selection_behaviour = max
 	priority = 2
 
+	70000010_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = tgp_southeast_hairstyles
+				accessory = male_hair_indian_03
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = ep3_beards_curly
+				accessory = m_beard_ep3_byzantine_03
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:nars_0000
+				this = character:nars_0000
+			}
+		}
+	}
 	70000011_nikean = {
 		dna_modifiers = {
 			accessory = {
@@ -17,17 +48,18 @@
 				template = ep2_religious_muslim_ihram_clothes
 				accessory = m_clothes_religious_ep2_muslim_hajj_02
 			}
-		} 
+		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 2000
 				exists = this
-				exists = character:70000011
-				this = character:70000011
+				exists = character:nars_0001
+				this = character:nars_0001
 			}
 		}
 	}
+
 	70000012_nikean = {
 		dna_modifiers = {
 			accessory = {
@@ -66,8 +98,46 @@
 			modifier = {
 				add = 2000
 				exists = this
-				exists = character:70000012
-				this = character:70000012
+				exists = character:nars_0002
+				this = character:nars_0002
+			}
+		}
+	}
+	
+	70000013_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = ccp7_nivkh_com_legwear
+				accessory = m_legwear_sec_ccp_nivkh_com_02
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = fp3_iranian_high_nobility_clothes
+				accessory = m_clothes_sec_fp3_iranian_nob_03_hi
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep3_byzantine_hairstyle
+				accessory = m_hair_ep3_byzantine_01
+			}
+			accessory = {
+				mode = add
+				gene = special_headgear_face_mask
+				template = fp3_iranian_face_mask_open
+				accessory = m_headgear_fp3_iranian_face_mask_closed_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:nars_0003
+				this = character:nars_0003
 			}
 		}
 	}

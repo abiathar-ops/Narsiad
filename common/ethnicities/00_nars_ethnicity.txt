@@ -434,7 +434,7 @@ nikean = {
 	}
 
 	gene_age = {
-		10 = { name = old_1 range = { 0.80 1.00 } }
+		10 = { name = old_beauty_1 range = { 0.80 1.00 } }
 	} #old_3
 
 	gene_eyebrows_shape = {

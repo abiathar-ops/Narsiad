@@ -61,7 +61,7 @@ nars_laaamp_on_start = {
     effect = {
         if = {
             limit = { has_ep3_dlc_trigger = yes }
-            character:70000011 = {
+            character:nars_0001 = {
                 if = {
                     limit = { is_alive = yes }
                     is_landless_adventurer = yes
@@ -69,7 +69,7 @@ nars_laaamp_on_start = {
                 }
                 add_realm_law_skip_effects = camp_purpose_mercenaries
             }
-            character:70000012 = {
+            character:nars_0002 = {
                  if = {
                     limit = { is_alive = yes }
                     is_landless_adventurer = yes

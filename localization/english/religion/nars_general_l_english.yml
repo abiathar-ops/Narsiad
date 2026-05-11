@@ -20,7 +20,6 @@
  holy_site_galtelli_effect_name:0 "From [holy_site|E] #weak ($holy_site_galtelli_name$)#!"
  holy_site_alghero_name:0 "Alghero"
  holy_site_alghero_effect_name:0 "From [holy_site|E] #weak ($holy_site_alghero_name$)#!"
-
  holy_site_jingzhao_name:0 "Jingzhao"
  holy_site_jingzhao_effect_name:0 "From [holy_site|E] #weak ($holy_site_jingzhao_name$)#!"
  holy_site_guozhou_name:0 "Guozhou"
@@ -39,9 +38,6 @@
  holy_site_guancheng_effect_name:0 "From [holy_site|E] #weak ($holy_site_guancheng_name$)#!" 
  holy_site_zheng_name:0 "Zheng"
  holy_site_zheng_effect_name:0 "From [holy_site|E] #weak ($holy_site_zheng_name$)#!"
- 
- holy_site_xingyang_name:0 "Xingyang"
- holy_site_xingyang_effect_name:0 "From [holy_site|E] #weak ($holy_site_xingyang_name$)#!" 
  holy_site_sunda_name:0 "Sunda"
  holy_site_sunda_effect_name:0 "From [holy_site|E] #weak  ($holy_site_sunda_name$)#!" 
  holy_site_cimanuk_name:0 "Cimanuk"
