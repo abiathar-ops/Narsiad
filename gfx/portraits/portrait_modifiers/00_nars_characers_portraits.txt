@@ -122,4 +122,35 @@
 			}
 		}
 	}
+	nikean_portrait = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = no_legwear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				accessory = empty
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				is_nikean = yes
+				is_female = no
+				highest_held_title_tier > tier_county
+			}
+		}
+	}		
 }
