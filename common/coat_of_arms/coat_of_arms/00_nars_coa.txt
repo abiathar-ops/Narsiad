@@ -207,10 +207,6 @@ house_nars_1002 = {
 
 }
 
-d_laamp_nars_1001 = house_nars_1001
-d_laamp_nars_1002 = house_nars_1002
-dyn_nars_1001 = h_narsokratia
-
 dyn_nars_1002 ={
 	pattern="pattern_solid.dds"
 	color1=white
@@ -303,5 +299,9 @@ dyn_nars_1004 = {
 		}
 
 	}
-
 }
+
+d_laamp_nars_1001 = house_nars_1001
+d_laamp_nars_1002 = house_nars_1002
+dyn_nars_1001 = h_narsokratia
+

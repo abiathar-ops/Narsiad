@@ -1,5 +1,6 @@
 ﻿nars_0000 = {
 	name = "Alnars"
+	dna = 70000010_nikean
 	dynasty = dyn_nars_1001
 	sexuality = heterosexual
 	diplomacy = 50
@@ -21,7 +22,7 @@
 	trait = physique_good_3
 	trait = nars_naturalis
 
-	796.1.1 = {
+	782.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = no_headgear
@@ -103,7 +104,7 @@ nars_0002 = {
 		}
 	}
 	855.1.1 = {
-		add_spouse = nars_0005
+		add_matrilineal_spouse = nars_0005
 	}
 	902.1.1 = {
 		death = {

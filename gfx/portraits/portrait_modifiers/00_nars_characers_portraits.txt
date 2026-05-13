@@ -3,6 +3,49 @@
 	selection_behaviour = max
 	priority = 50
 
+	70000010_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = no_legwear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = tgp_southeast_hairstyles
+				accessory = male_hair_indian_03
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp3_iranian_beards_straight
+				accessory = m_beard_fp3_iranian_01
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				accessory = empty
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:nars_0000
+				this = character:nars_0000
+			}
+		}
+	}
 	70000011_nikean = {
 		dna_modifiers = {
 			accessory = {
@@ -27,6 +70,12 @@
 				mode = add
 				gene = beards
 				template = no_beard
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
 				accessory = empty
 			}
 		}
@@ -70,8 +119,8 @@
 			accessory = {
 				mode = add
 				gene = cloaks
-				template = no_cloaks
-				accessory = empty
+				template = fp1_cloak
+				accessory = male_furs_secular_fp1_nobility_01
 			}
 		}
 		weight = {
@@ -138,8 +187,8 @@
 			}
 			accessory = {
 				mode = add
-				gene = beards
-				template = no_beard
+				gene = headgear
+				template = no_headgear
 				accessory = empty
 			}
 		}
