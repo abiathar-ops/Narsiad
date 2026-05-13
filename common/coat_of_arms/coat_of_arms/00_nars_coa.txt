@@ -207,6 +207,9 @@ house_nars_1002 = {
 
 }
 
-d_laamp_1001 = house_nars_1001
-d_laamp_1002 = house_nars_1002
+d_laamp_nars_1001 = house_nars_1001
+d_laamp_nars_1002 = house_nars_1002
 dyn_nars_1001 = h_narsokratia
+dyn_nars_1002 = e_narsokratia
+dyn_nars_1003 = e_narsokratia
+dyn_nars_1004 = e_narsokratia

@@ -54,7 +54,7 @@ d_narsokratia = {
 	}
 }
 
-d_laamp_1001 = {
+d_laamp_nars_1001 = {
 	color = { 100 100 100 }
 	capital = c_cairo
 
@@ -68,7 +68,7 @@ d_laamp_1001 = {
 	ai_primary_priority = { add = @never_primary_score }
 }
 
-d_laamp_1002 = {
+d_laamp_nars_1002 = {
 	color = { 100 100 100 }
 	capital = c_cairo
 
