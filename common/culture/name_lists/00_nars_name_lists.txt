@@ -395,7 +395,7 @@ name_list_nars = {
 		Nion Nioumphodoros Noema Nokis Nomeinios Nommo Nomokratia Nomonia
 		Nonnos Noron Nostia Nymphe Nymphis Nympho Nyphothena Nysa_2
 		Odysseidas Oinanthis Oineides Oineus Oinion Oinondes Okea Okimon
-		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
+		Okymenes Okenaos Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
 		Onasicha Onasides Onasima Onasiphilos Onchestodoros Onesiphilos Onesiphoron Onesiphoros
 		Oneso Onomantos Opheleimis Ophelema Ophelima Ophelime Ophelleis Opis
 		Opora Oropodoros Orrhippa Orsimachos Orthokles Oupatos Oupermenidas Oxytion

@@ -1,0 +1,12 @@
+﻿nick_nicator = {}
+nick_eupator = {}
+nick_soter = {}
+nick_nikephoros = {}
+nick_ho_poietes = {}
+nick_keraunos = {}
+nick_ho_philosophos = {}
+nick_ho_megas = {}
+nick_ho_chrestos = {}
+nick_aetos = {}
+nick_ktistes = {}
+nick_neos = {}

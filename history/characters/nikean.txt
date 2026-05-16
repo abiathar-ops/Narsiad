@@ -1,198 +1,287 @@
 ﻿nars_0000 = {
-	name = "Alnars"
-	dna = 70000010_nikean
-	dynasty = dyn_nars_1001
-	sexuality = heterosexual
-	diplomacy = 50
-	martial = 10
-	stewardship = 15
-	intrigue = 10
-	learning = 10
-	prowess = 25
-	religion = "nars_religion"
-	culture = "nars_nikean"
-	female = no
-	trait = patient
-	trait = calm
-	trait = gregarious
-	trait = education_diplomacy_5
-	trait = lifestyle_poet
-	trait = lifestyle_scholar
-	trait = beauty_good_3
-	trait = physique_good_3
-	trait = nars_naturalis
+    name = "Alnars"
+    dna = 70000010_nikean
+    dynasty = dyn_nars_1001
+    sexuality = heterosexual
+    diplomacy = 50
+    martial = 10
+    stewardship = 15
+    intrigue = 10
+    learning = 10
+    prowess = 25
+    religion = "nars_religion"
+    culture = "nars_nikean"
+    female = no
+    trait = patient
+    trait = calm
+    trait = gregarious
+    trait = education_diplomacy_5
+    trait = lifestyle_poet
+    trait = lifestyle_scholar
+    trait = beauty_good_3
+    trait = physique_good_3
+    trait = nars_naturalis
 
-	782.1.1 = {
-		birth = yes
-		effect = {
-			add_character_flag = no_headgear
-		}
-	}
-	854.12.12 = {
-		death = {
-			death_reason = death_murder
-		}	
-	}
+    1128.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = no_headgear
+        }
+    }
+    1178.1.1 = {
+		give_nickname = nick_soter
+        death = {
+            death_reason = death_murder
+        }   
+    }
 }
 
 nars_0001 = {
-	name = "Ēleîos"
-	dna = 70000011_nikean
-	dynasty = dyn_nars_1001
-	sexuality = heterosexual
-	religion = "nars_religion"
-	culture = "nars_nikean"
-	female = no
-	father = nars_0000
-	diplomacy = 10
-	martial = 10
-	stewardship = 55
-	intrigue = 30
-	learning = 30
-	prowess = 15
-	trait = greedy
-	trait = temperate
-	trait = stubborn
-	trait = education_stewardship_5
-	trait = journaller
-	trait = shrewd
-	trait = intellect_good_3
-	disallow_random_traits = yes
-	841.1.1 = {
-		birth = yes
-		effect = {
-			add_character_flag = do_not_generate_starting_family
-			add_character_flag = no_headgear
-		}
-	}
-	855.1.1 = {
-		add_spouse = nars_0004
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Ēleîos"
+    dna = 70000011_nikean
+    dynasty = dyn_nars_1001
+    sexuality = heterosexual
+    religion = "nars_religion"
+    culture = "nars_nikean"
+    female = no
+    father = nars_0000
+    diplomacy = 10
+    martial = 10
+    stewardship = 40
+    intrigue = 10
+    learning = 40
+    prowess = 40
+    trait = greedy
+    trait = temperate
+    trait = stubborn
+    trait = education_stewardship_5
+    trait = shrewd
+    trait = intellect_good_3
+    disallow_random_traits = yes
+    1158.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+            add_character_flag = no_headgear
+        }
+    }
+     1176.1.1 = {
+        add_spouse = nars_0004
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_murder
+        }   
+    }
 }
 
 nars_0002 = {
-	name = "Iliónē"
-	dna = 70000012_nikean
-	religion = nars_religion
-	culture = nars_nikean
-	dynasty_house = house_nars_1002
-	sexuality = bisexual
-	father = nars_0000
-	female = yes
-	trait = zealous
-	trait = diligent
-	trait = just
-	trait = education_martial_5
-	trait = strong
-	trait = physique_good_3
-	diplomacy = 10
-	martial = 35
-	stewardship = 15
-	intrigue = 15
-	learning = 15
-	prowess = 45
-	disallow_random_traits = yes
-	841.1.1 = {
-		birth = yes
-		effect = {
-			add_character_flag = do_not_generate_starting_family
-		}
-	}
-	855.1.1 = {
-		add_matrilineal_spouse = nars_0005
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Iliónē"
+    dna = 70000012_nikean
+    religion = nars_religion
+    culture = nars_nikean
+    dynasty_house = house_nars_1002
+    sexuality = bisexual
+    father = nars_0000
+    female = yes
+    trait = lustful
+    trait = diligent
+    trait = just
+    trait = education_martial_4
+    trait = strong
+    trait = physique_good_3
+    diplomacy = 10
+    martial = 35
+    stewardship = 15
+    intrigue = 15
+    learning = 15
+    prowess = 45
+    disallow_random_traits = yes
+    1158.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
+    }
+    1176.1.1 = {
+        effect = {
+            set_relation_rival = character:nars_0001 
+        }
+        add_matrilineal_spouse = nars_0005
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_execution
+        }   
+    }
 }
 
 nars_0003 = {
-	name = "Stratō"
-	dna = 70000013_nikean
-	dynasty_house = house_nars_1001
-	female = no
-	sexuality = bisexual
-	father = nars_0000
-	diplomacy = 10
-	martial = 10
-	stewardship = 15
-	intrigue = 50
-	learning = 10
-	prowess = 25
-	religion = nars_religion
-	culture = nars_nikean
-	trait = deceitful
-	trait = arbitrary
-	trait = callous
-	trait = education_intrigue_5
-	trait = witch
-	trait = fecund
-	trait = beauty_good_3
-	disallow_random_traits = yes
-	841.1.1 = {
-		birth = yes
-	}
-	855.1.1 = {
-		add_spouse = nars_0006
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Stratō"
+    dna = 70000013_nikean
+    dynasty_house = house_nars_1001
+    female = no
+    sexuality = bisexual
+    father = nars_0000
+    diplomacy = 10
+    martial = 10
+    stewardship = 15
+    intrigue = 50
+    learning = 10
+    prowess = 25
+    religion = nars_religion
+    culture = nars_nikean
+    trait = deceitful
+    trait = arbitrary
+    trait = callous
+    trait = education_intrigue_5
+    trait = witch
+    trait = beauty_good_3
+    disallow_random_traits = yes
+    1158.1.1 = {
+        birth = yes
+    }
+    1166.1.1 = {
+        add_spouse = nars_0006
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_execution
+        }   
+    }
 }
 
 nars_0004 = {
-	name = "Lánikē"
-	female = yes
-	religion = nars_religion
-	culture = nars_nikean
-	dynasty = dyn_nars_1002
-	841.1.1 = {
-		birth = yes
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Lánikē"
+    dna = 70000014_nikean
+    dynasty = dyn_nars_1002
+    female = yes
+    diplomacy = 35
+    martial = 10
+    stewardship = 40
+    intrigue = 10
+    learning = 10
+    prowess = 15
+    religion = nars_religion
+    culture = nars_nikean
+    trait = education_diplomacy_4
+    trait = calm
+    trait = gregarious
+    trait = forgiving
+    trait = fecund
+    trait = lifestyle_poet
+
+    1158.1.1 = {
+        birth = yes
+    }
+    1170.1.1 = {
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_execution
+        }   
+    }
 }
 
 nars_0005 = {
-	name = "Iás"
-	female = no
-	religion = nars_religion
-	culture = nars_nikean
-	dynasty = dyn_nars_1003
-	841.1.1 = {
-		birth = yes
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Olliás"
+    dna = 70000015_nikean
+    dynasty = dyn_nars_1003
+    female = no
+    employer = nars_0002
+    martial = 35
+    stewardship = 15
+    intrigue = 15
+    learning = 15
+    prowess = 45
+    religion = nars_religion
+    culture = nars_nikean
+    trait = education_martial_3
+    trait = sadistic
+    trait = vengeful
+    trait = wrathful
+    trait = raider
+    trait = lifestyle_blademaster
+    1148.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
+    }
+    1162.1.1 = {
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_execution
+        }   
+    }
 }
 
 nars_0006 = {
-	name = "Persís"
-	female = yes
-	religion = nars_religion
-	culture = nars_nikean
-	dynasty = dyn_nars_1004
-	841.1.1 = {
-		birth = yes
-	}
-	902.1.1 = {
-		death = {
-			death_reason = death_execution
-		}	
-	}
+    name = "Ōpelía"
+    dynasty = dyn_nars_1004
+    female = yes
+    religion = nars_religion
+    culture = nars_nikean
+    martial = 35
+    stewardship = 15
+    intrigue = 15
+    learning = 15
+    prowess = 45
+    religion = nars_religion
+    culture = nars_nikean
+    trait = education_learning_3
+    trait = humble
+    trait = chaste
+    trait = patient
+    trait = lifestyle_herbalist
+    trait = lifestyle_physician
+    1158.1.1 = {
+        birth = yes
+    }
+    1176.1.1 = {
+    }
+    1213.1.1 = {
+        death = {
+            death_reason = death_execution
+        }   
+    }
+}
+
+nars_0007 = {
+    name = "Okēnaós"
+    dna = 70000017_nikean
+    religion = nars_religion
+    culture = nars_nikean
+    dynasty = dyn_nars_1001
+    sexuality = heterosexual
+    father = nars_0001
+    employer = nars_0001
+    female = no
+    trait = ambitious
+    trait = diligent
+    trait = just
+    trait = education_martial_5
+    trait = intellect_good_3
+    trait = physique_good_3
+    diplomacy = 10
+    martial = 30
+    stewardship = 30
+    intrigue = 15
+    learning = 30
+    prowess = 45
+    disallow_random_traits = yes
+    1174.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
+    }
+    1177.1.1 = {
+    }
+    1256.1.1 = {
+        death = {
+            death_reason = death_murder
+        }   
+    }
 }

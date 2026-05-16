@@ -58,3 +58,8 @@ narsil = {
 	parent = nikean
 	texture = "gfx/interface/icons/icon_prowess.dds"
 }
+
+story_nikean = {
+	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
+	shown_in_encyclopedia = no
+}

@@ -34,6 +34,7 @@ aretaic_school_02 = {
 	character_modifier = {
 		monthly_lifestyle_xp_gain_mult = 0.25
 		cultural_head_fascination_mult = 0.25
+		stress_loss_mult = 0.2
 	}
 	# Broad bonuses for the entire capital county
 	county_modifier = {
@@ -44,9 +45,18 @@ aretaic_school_02 = {
 	}
 	
 	cost_gold = 1145 # Paid for by the decision
-	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+			gold >= 1145
+		}
+	}
+	type = special
 	flag = special_university # Tells the game to treat it like a university for events/mechanics
 	flag = travel_point_of_interest_learning
+	flag = religious_studies_location
 }
 
 brothel_complex_01 = {
@@ -115,14 +125,11 @@ brothel_complex_02 = {
 	type = special
 
 	ai_value = {
-		base = 20
-		modifier = {
-			factor = 2
-			scope:holder.capital_province = this
-		}
-		modifier = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
 			factor = 0
 			free_building_slots > 0
+			gold >= expensive_building_tier_5_cost
 		}
 	}
 }

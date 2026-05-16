@@ -49,6 +49,9 @@
  game_concept_mastiges: "Mástiges" 
  game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [nikeis|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
 
+ game_concept_story_nikean: "$game_concept_story_generic_prefix$ Narsiad"
+ game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nAs a progeny of $Alnars$, you will be guided down a path of the Nikean Restoration, fighting with or against the other siblings for the leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a newly reborn [narsokratia|E] as your [hegemony|E].\n\n$game_concept_story_generic_desc_boilerplate$"
+
  PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."
  SOPHES_GLOSS: "[narsic_short|E] #bold Sophēs #! means 'Wise-Scholars'."

@@ -43,9 +43,6 @@ nikean_intro.1002 = {
 	}
 	option = {
 		name = nikean_intro.1002.a
-		hidden_effect = {
-			create_anduril_effect = yes
-		}
 	}
 }
 

@@ -3,7 +3,7 @@ on_game_start_after_lobby = {
     on_actions = { 
         nars_seed_nikean_trait_on_start 
         nars_intro_on_start
-        nars_laaamp_on_start
+        nars_laamp_on_start
     }
 }
 
@@ -24,7 +24,7 @@ nars_intro_on_start = {
                     is_ethnically_nikean = yes 
                     is_alive = yes
                 }
-			    trigger_event = nikean_intro.1001
+			    trigger_event = { id = nikean_intro.1001 days = 1 }
 		    }
         }
     } 
@@ -57,25 +57,69 @@ nars_add_nikean_trait_on_birth = {
     }
 }
 
-nars_laaamp_on_start = {
+nars_laamp_on_start = {
     effect = {
         if = {
             limit = { has_ep3_dlc_trigger = yes }
-            character:nars_0001 = {
+            
+            # Ēleîos
+            character:nars_0001 ?= {
                 if = {
-                    limit = { is_alive = yes }
-                    is_landless_adventurer = yes
-                    #trigger_event = laamp_intro.1001
+                    limit = { 
+                        is_alive = yes 
+                        is_landless_adventurer = yes
+                    }
+                    # Everything below happens ONLY if the limits above are true
+                    set_variable = {
+                        name = number_of_invite_nikean_countdown
+                        value = 4
+                        days = 1000
+                    }
+                    trigger_event = { 
+                        id = nikean_courtiers.0001 
+                        days = { 15 30 } 
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
                 }
-                add_realm_law_skip_effects = camp_purpose_mercenaries
             }
-            character:nars_0002 = {
+            
+            # Iliónē
+            character:nars_0002 ?= {
                  if = {
-                    limit = { is_alive = yes }
-                    is_landless_adventurer = yes
-                    #trigger_event = laamp_intro.1001
+                    limit = { 
+                        is_alive = yes 
+                        is_landless_adventurer = yes
+                    }
+                    set_variable = {
+                        name = number_of_invite_nikean_countdown
+                        value = 4
+                        days = 1000
+                    }
+                    trigger_event = { 
+                        id = nikean_courtiers.0001 
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
                 }
-                add_realm_law_skip_effects = camp_purpose_mercenaries
+            }
+            
+            # Stratō
+            character:nars_0003 ?= {
+                if = {
+                    limit = { 
+                        is_alive = yes 
+                        is_landless_adventurer = yes
+                    }
+                    set_variable = {
+                        name = number_of_invite_nikean_countdown
+                        value = 4
+                        days = 1000
+                    }
+                    trigger_event = { 
+                        id = nikean_courtiers.0001 
+                        days = { 15 30 } 
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
+                }
             }
         }
     }
