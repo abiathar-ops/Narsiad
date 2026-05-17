@@ -65,8 +65,11 @@ nars_0001 = {
             add_character_flag = no_headgear
         }
     }
-     1176.1.1 = {
+    1176.1.1 = {
         add_spouse = nars_0004
+        effect = {
+            set_relation_rival = character:nars_0003 
+        }
     }
     1213.1.1 = {
         death = {
@@ -106,6 +109,7 @@ nars_0002 = {
     1176.1.1 = {
         effect = {
             set_relation_rival = character:nars_0001 
+            set_relation_rival = character:nars_0003 
         }
         add_matrilineal_spouse = nars_0005
     }

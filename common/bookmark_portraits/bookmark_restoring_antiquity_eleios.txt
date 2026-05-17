@@ -119,6 +119,7 @@
  		headgear={ "no_headgear" 0 "no_headgear" 0 }
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		hairstyles={ "western_hairstyles_wavy" 32 "all_hairstyles" 0 }
+		props_right={ "ep2_boar_spear_right" 255 "no_props" 0 }
  }
 	entity={ 1903276529 1903276529 }
 	tags={ {

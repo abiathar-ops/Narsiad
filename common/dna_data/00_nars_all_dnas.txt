@@ -246,7 +246,6 @@
 			cloaks={ "no_cloak" 255 "no_cloak" 0 }
 			special_headgear_spectacles={ "no_spectacles" 255 "no_spectacles" 0 }
 		}
-		entity={ 0 0 }
 	}
 	enabled=yes
 }

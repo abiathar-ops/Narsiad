@@ -49,8 +49,11 @@
  game_concept_mastiges: "Mástiges" 
  game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [nikeis|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
 
+ game_concept_alnars: "Alnárs"
+ game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [hoplites|E], Alnárs is considered to be the progenitor of the new [nikean|E] [mercenary|E] lifestyle. The forerunner of the Nikean Restoration, Alnárs had slowly restored the [nikeis|E] presence in his [region|E] piece by piece. Mysteriously murdered while on his way home from a [temple|E] dedicated to the [panteion|E], his life's work has opened the gates to the outside world for the [nikeans|E] once more, earning him the epithet of 'Sōtēr' or Savior."
+ 
  game_concept_story_nikean: "$game_concept_story_generic_prefix$ Narsiad"
- game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nAs a progeny of $Alnars$, you will be guided down a path of the Nikean Restoration, fighting with or against the other siblings for the leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a newly reborn [narsokratia|E] as your [hegemony|E].\n\n$game_concept_story_generic_desc_boilerplate$"
+ game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nAs a progeny of [alnars|E], you are guided down to the path of the [nikean|E] Restoration, competing against your other siblings' [house|E] for the leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a newly reborn [narsokratia|E] and you as the [hegemon|E] of your [region|E].\n\n$game_concept_story_generic_desc_boilerplate$"
 
  PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."

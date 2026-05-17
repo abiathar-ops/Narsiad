@@ -121,6 +121,7 @@
  		gene_balding_hair_effect={ "no_baldness" 255 "no_baldness" 0 }
  		hairstyles={ "sp4_mena_hairstyles" 0 "all_hairstyles" 0 }
  		cloaks={ "fp1_cloak" 168 "no_cloak" 0 }
+		props_right={ "marshal_swords" 255 "no_props" 0 }
  }
 	entity={ 3942081117 3942081117 }
 	tags={ {

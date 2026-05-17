@@ -72,7 +72,7 @@ nars_laamp_on_start = {
                     # Everything below happens ONLY if the limits above are true
                     set_variable = {
                         name = number_of_invite_nikean_countdown
-                        value = 4
+                        value = 7
                         days = 1000
                     }
                     trigger_event = { 
@@ -92,7 +92,7 @@ nars_laamp_on_start = {
                     }
                     set_variable = {
                         name = number_of_invite_nikean_countdown
-                        value = 4
+                        value = 7
                         days = 1000
                     }
                     trigger_event = { 
@@ -111,7 +111,7 @@ nars_laamp_on_start = {
                     }
                     set_variable = {
                         name = number_of_invite_nikean_countdown
-                        value = 4
+                        value = 7
                         days = 1000
                     }
                     trigger_event = { 

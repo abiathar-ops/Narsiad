@@ -21,7 +21,8 @@
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = nars_0001
 		position = { 1200 500 }
-		animation = war_over_win
+		animation = throne_room_two_handed_passive_1
+		#animation = war_over_win
 		
 		character = {
 			name = "bookmark_restoring_antiquity_okeanos"	
@@ -49,7 +50,7 @@
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = nars_0002
 		position = { 790 410 }
-		animation = war_over_win
+		animation = marshal
 
 		character = {
 			name = "bookmark_restoring_antiquity_ollias"	
@@ -60,7 +61,7 @@
             culture = nars_nikean
             religion = nars_religion
 			history_id = nars_0005
-			animation = personality_zealous
+			animation = map_schadenfreude
 		}
 	}
 	
@@ -77,7 +78,7 @@
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = nars_0003
 		position = { 1000 820 }
-		animation = war_over_win
+		animation = thinking
 
 		character = {
 			name = "bookmark_restoring_antiquity_opelia"	
