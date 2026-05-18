@@ -1,5 +1,4 @@
-﻿# Hook into the vanilla on_actions
-on_game_start_after_lobby = {
+﻿on_game_start_after_lobby = {
     on_actions = { 
         nars_seed_nikean_trait_on_start 
         nars_intro_on_start
@@ -14,11 +13,8 @@ on_birth_child = {
     }
 }
 
-# Define the custom actions triggered by the hooks above
-
 nars_intro_on_start = {
     effect = {
-        # 1. Any player who is Nikean gets the intro (Fires ONCE for the player)
         every_player = {
             limit = { 
                 is_ethnically_nikean = yes 
@@ -27,15 +23,10 @@ nars_intro_on_start = {
             trigger_event = { id = nikean_intro.1001 days = 1 }
         }
 
-        # 2. Ēleîos Setup
         character:nars_0001 ?= {
             if = {
-                limit = { is_alive = yes }
-                
-                # Everyone (Player or AI) gets the 5 free courtiers
+                limit = { is_alive = yes }              
                 trigger_event = nikean_courtiers.0002 
-                
-                # ONLY give the intro event here if they are AI (prevents player duplicate)
                 if = {
                     limit = { is_ai = yes }
                     trigger_event = { id = nikean_intro.1001 days = 1 }
@@ -43,7 +34,6 @@ nars_intro_on_start = {
             }
         }
 
-        # 3. Iliónē Setup
         character:nars_0002 ?= {
             if = {
                 limit = { is_alive = yes }
@@ -57,7 +47,6 @@ nars_intro_on_start = {
             }
         }
 
-        # 4. Stratō Setup
         character:nars_0003 ?= {
             if = {
                 limit = { is_alive = yes }
@@ -77,8 +66,6 @@ nars_seed_nikean_trait_on_start = {
     effect = {
         every_living_character = {
             limit = { 
-                # Target the specific culture. 
-                # Alternatively, use 'has_cultural_heritage = heritage_nars' if it should apply to diverged cultures too.
                 is_ethnically_nikean = yes
                 NOT = { has_nikean_blood = yes }
             }
@@ -89,7 +76,6 @@ nars_seed_nikean_trait_on_start = {
 
 nars_add_nikean_trait_on_birth = {
     effect = {
-        # In the 'on_birth_child' on_action, the ROOT scope is the newborn child.
         if = {
             limit = {
                 is_ethnically_nikean = yes
@@ -104,39 +90,138 @@ nars_laamp_on_start = {
     effect = {
         if = {
             limit = { has_ep3_dlc_trigger = yes }
-            
-            # Ēleîos
+            is_alive = yes 
+            is_landless_adventurer = yes
+            is_ethnically_nikean = yes
+            is_domicile_type = camp
+  
             character:nars_0001 ?= {
-                if = {
-                    limit = { 
-                        is_alive = yes 
-                        is_landless_adventurer = yes
-                    }
-                    add_realm_law_skip_effects = camp_purpose_mercenaries
-                }
+                add_realm_law_skip_effects = camp_purpose_mercenaries
             }
-            
-            # Iliónē
             character:nars_0002 ?= {
-                 if = {
-                    limit = { 
-                        is_alive = yes 
-                        is_landless_adventurer = yes
-                    }
-                    add_realm_law_skip_effects = camp_purpose_mercenaries
-                }
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+            }
+            character:nars_0003 ?= {
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+            
             }
             
-            # Stratō
-            character:nars_0003 ?= {
-                if = {
-                    limit = { 
-                        is_alive = yes 
-                        is_landless_adventurer = yes
-                    }
-                    add_realm_law_skip_effects = camp_purpose_mercenaries
-                }
-            }
-        }
-    }
+            every_domicile = {
+				add_domicile_building = camp_main_02
+				add_domicile_building = camp_main_03
+				random_list = {
+					10 = {
+						add_domicile_building = supply_tent_01
+						add_domicile_building = supply_tent_02
+						random_list = {
+							10 = {
+								add_domicile_building = supply_tent_sutler
+							}
+							10 = {
+								add_domicile_building = supply_tent_mender
+							}
+							10 = {
+								add_domicile_building = supply_tent_smithy
+							}
+							10 = {
+								add_domicile_building = supply_tent_arsenal
+							}
+						}
+					}
+					10 = {
+						add_domicile_building = barber_tent_01
+						add_domicile_building = barber_tent_02
+						random_list = {
+							10 = {
+								add_domicile_building = barber_tent_surgeons_tools
+							}
+							10 = {
+								add_domicile_building = barber_tent_dentists_tools
+							}
+							10 = {
+								add_domicile_building = barber_tent_torturers_tools
+							}
+						}
+					}
+					10 = {
+						add_domicile_building = baggage_train_01
+						add_domicile_building = baggage_train_02
+						random_list = {
+							10 = {
+								add_domicile_building = baggage_train_ample_steeds
+							}
+							10 = {
+								add_domicile_building = baggage_train_porters
+							}
+							10 = {
+								add_domicile_building = baggage_train_trackers
+							}
+							10 = {
+								add_domicile_building = baggage_train_kennel
+							}
+						}
+					}
+				}
+				random_list = {
+					10 = {
+						add_domicile_building = mess_tent_01
+						add_domicile_building = mess_tent_02
+						random_list = {
+							10 = {
+								add_domicile_building = mess_tent_herbalists
+							}
+							10 = {
+								add_domicile_building = mess_tent_brewers
+							}
+							10 = {
+								add_domicile_building = mess_tent_curers
+							}
+							10 = {
+								add_domicile_building = mess_tent_bakers
+							}
+							10 = {
+								add_domicile_building = mess_tent_cooks
+							}
+						}
+					}
+					10 = {
+						add_domicile_building = camp_fire_01
+						add_domicile_building = camp_fire_02
+						random_list = {
+							10 = {
+								add_domicile_building = camp_fire_trailing_musicians
+							}
+							10 = {
+								add_domicile_building = camp_fire_wandering_poets
+							}
+							10 = {
+								add_domicile_building = camp_fire_capering_fools
+							}
+							10 = {
+								add_domicile_building = camp_fire_libations_for_the_lost
+							}
+						}
+					}
+				}
+				random_list = {
+					10 = {
+						add_domicile_building = camp_perimeter_01
+						add_domicile_building = camp_perimeter_02
+						random_list = {
+							10 = {
+								add_domicile_building = camp_perimeter_good_siting
+							}
+							10 = {
+								add_domicile_building = camp_perimeter_fixed_layout
+							}
+						}
+					}
+					10 = {
+						add_domicile_building = proving_grounds_01
+						add_domicile_building = proving_grounds_02
+					}
+				}
+			}
+		}
+    }    
 }

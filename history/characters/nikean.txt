@@ -61,9 +61,8 @@ nars_0001 = {
     1158.1.1 = {
         birth = yes
         effect = {
-            add_character_flag = do_not_generate_starting_family
+            # add_character_flag = do_not_generate_starting_family
             add_character_flag = no_headgear
-            add_character_modifier = hostile_scheme_immunity_modifier
         }
     }
     1176.1.1 = {
@@ -122,10 +121,9 @@ nars_0002 = {
     disallow_random_traits = yes
     1158.1.1 = {
         birth = yes
-        effect = {
-            add_character_flag = do_not_generate_starting_family
-            add_character_modifier = hostile_scheme_immunity_modifier
-        }
+        # effect = {
+        #     add_character_flag = do_not_generate_starting_family
+        # }
     }
     1176.1.1 = {
         effect = {
@@ -192,17 +190,17 @@ nars_0003 = {
 	 	}
         spawn_army = {
 			name = event_troop_default_name
-			men_at_arms = {
-				type = maa_hoplitai
-				stacks = 5
+            men_at_arms = {
+				type = crossbowmen
+				stacks = 10
 			}
             men_at_arms = {
 				type = crossbowmen
-				stacks = 5
+				stacks = 10
 			}
             men_at_arms = {
 				type = crossbowmen
-				stacks = 5
+				stacks = 10
 			}
 			location = root.location
 			uses_supply = yes
