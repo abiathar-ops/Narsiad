@@ -72,10 +72,49 @@ nikean_courtiers.0001 = {
 				location = root.capital_province
 				culture = root.culture
 				faith = root.faith
+				random_traits_list = {
+					count = 2
+					wrathful = {}
+					arrogant = {}
+					diligent = {}
+					humble = {}
+					calm = {}
+					impatient = {}
+					greedy = {}
+					temperate = {}
+					ambitious = {}
+					just = {}
+					stubborn = {}
+				}
+				random_traits_list = {
+					count = 1
+					lustful = {}
+					arrogant = {}
+					chaste = {}
+				}
+				random_traits_list = {
+					count = 1
+					education_martial_2 = {}
+					education_martial_3 = {}
+					education_martial_4 = {}
+					education_learning_2 = {}
+					education_learning_3 = {}
+					education_learning_4 = {}
+					education_stewardship_2 = {}
+					education_stewardship_3 = {}
+					education_stewardship_4 = {}
+				}
+				random_traits_list = {
+					count = { 0 1 }
+					lifestyle_blademaster = {}
+					lifestyle_herbalist = {}
+					lifestyle_scholar = {}
+					lifestyle_poet = {}
+				}
 				gender_female_chance = 50
 				save_scope_as = nikean_courtier
 				after_creation = {
-						add_trait = nars_naturalis
+					add_trait = nars_naturalis
 				}
 			}
 		}
@@ -107,6 +146,73 @@ nikean_courtiers.0001 = {
 			}
 		}
 	}
+}
+
+nikean_courtiers.0002 = {
+    hidden = yes
+
+    immediate = {
+        # Loops exactly the number of times specified
+        while = {
+            count = 5 
+            
+            create_character = {
+                employer = root # Automatically adds them directly to your landless camp/court
+                culture = root.culture
+				faith = root.faith
+                age = { 18 40 } # Prevents it from spawning babies or useless elderly characters
+                gender_female_chance = 50
+				random_traits_list = {
+					count = 2
+					wrathful = {}
+					arrogant = {}
+					diligent = {}
+					humble = {}
+					calm = {}
+					impatient = {}
+					greedy = {}
+					temperate = {}
+					ambitious = {}
+					just = {}
+					stubborn = {}
+				}
+				random_traits_list = {
+					count = 1
+					lustful = {}
+					arrogant = {}
+					chaste = {}
+				}
+				random_traits_list = {
+					count = 1
+					education_martial_2 = {}
+					education_martial_3 = {}
+					education_martial_4 = {}
+					education_learning_2 = {}
+					education_learning_3 = {}
+					education_learning_4 = {}
+					education_stewardship_2 = {}
+					education_stewardship_3 = {}
+					education_stewardship_4 = {}
+				}
+				random_traits_list = {
+					count = { 0 1 }
+					fecund = {}
+					physique_good_1 = {}
+					shrewd = {}
+					strong = {}
+				}
+                learning = { 10 25 }
+				intrigue = { 10 25 }
+				stewardship = { 10 25 }
+				diplomacy = { 10 25 }
+				martial = { 10 25 }
+				prowess = { 15 30 }
+                after_creation = {
+                    add_trait = nars_naturalis
+                }
+            }
+        }
+    }
 }
 
 nikean_courtiers.0011 = {

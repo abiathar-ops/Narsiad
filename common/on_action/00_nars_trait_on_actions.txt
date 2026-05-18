@@ -18,14 +18,57 @@ on_birth_child = {
 
 nars_intro_on_start = {
     effect = {
+        # 1. Any player who is Nikean gets the intro (Fires ONCE for the player)
         every_player = {
+            limit = { 
+                is_ethnically_nikean = yes 
+                is_alive = yes
+            }
+            trigger_event = { id = nikean_intro.1001 days = 1 }
+        }
+
+        # 2. Ēleîos Setup
+        character:nars_0001 ?= {
             if = {
-                limit = { 
-                    is_ethnically_nikean = yes 
-                    is_alive = yes
+                limit = { is_alive = yes }
+                
+                # Everyone (Player or AI) gets the 5 free courtiers
+                trigger_event = nikean_courtiers.0002 
+                
+                # ONLY give the intro event here if they are AI (prevents player duplicate)
+                if = {
+                    limit = { is_ai = yes }
+                    trigger_event = { id = nikean_intro.1001 days = 1 }
                 }
-			    trigger_event = { id = nikean_intro.1001 days = 1 }
-		    }
+            }
+        }
+
+        # 3. Iliónē Setup
+        character:nars_0002 ?= {
+            if = {
+                limit = { is_alive = yes }
+                
+                trigger_event = nikean_courtiers.0002 
+                
+                if = {
+                    limit = { is_ai = yes }
+                    trigger_event = { id = nikean_intro.1001 days = 1 }
+                }
+            }
+        }
+
+        # 4. Stratō Setup
+        character:nars_0003 ?= {
+            if = {
+                limit = { is_alive = yes }
+                
+                trigger_event = nikean_courtiers.0002 
+                
+                if = {
+                    limit = { is_ai = yes }
+                    trigger_event = { id = nikean_intro.1001 days = 1 }
+                }
+            }
         }
     } 
 }
@@ -69,16 +112,6 @@ nars_laamp_on_start = {
                         is_alive = yes 
                         is_landless_adventurer = yes
                     }
-                    # Everything below happens ONLY if the limits above are true
-                    set_variable = {
-                        name = number_of_invite_nikean_countdown
-                        value = 7
-                        days = 1000
-                    }
-                    trigger_event = { 
-                        id = nikean_courtiers.0001 
-                        days = { 15 30 } 
-                    }
                     add_realm_law_skip_effects = camp_purpose_mercenaries
                 }
             }
@@ -90,14 +123,6 @@ nars_laamp_on_start = {
                         is_alive = yes 
                         is_landless_adventurer = yes
                     }
-                    set_variable = {
-                        name = number_of_invite_nikean_countdown
-                        value = 7
-                        days = 1000
-                    }
-                    trigger_event = { 
-                        id = nikean_courtiers.0001 
-                    }
                     add_realm_law_skip_effects = camp_purpose_mercenaries
                 }
             }
@@ -108,15 +133,6 @@ nars_laamp_on_start = {
                     limit = { 
                         is_alive = yes 
                         is_landless_adventurer = yes
-                    }
-                    set_variable = {
-                        name = number_of_invite_nikean_countdown
-                        value = 7
-                        days = 1000
-                    }
-                    trigger_event = { 
-                        id = nikean_courtiers.0001 
-                        days = { 15 30 } 
                     }
                     add_realm_law_skip_effects = camp_purpose_mercenaries
                 }

@@ -63,6 +63,7 @@ nars_0001 = {
         effect = {
             add_character_flag = do_not_generate_starting_family
             add_character_flag = no_headgear
+            add_character_modifier = hostile_scheme_immunity_modifier
         }
     }
     1176.1.1 = {
@@ -70,6 +71,25 @@ nars_0001 = {
         effect = {
             set_relation_rival = character:nars_0003 
         }
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 5
+	 	}
+        spawn_army = {
+			name = event_troop_default_name
+			men_at_arms = {
+				type = maa_hoplitai
+				stacks = 5
+            }
+		}
     }
     1213.1.1 = {
         death = {
@@ -104,6 +124,7 @@ nars_0002 = {
         birth = yes
         effect = {
             add_character_flag = do_not_generate_starting_family
+            add_character_modifier = hostile_scheme_immunity_modifier
         }
     }
     1176.1.1 = {
@@ -112,6 +133,22 @@ nars_0002 = {
             set_relation_rival = character:nars_0003 
         }
         add_matrilineal_spouse = nars_0005
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0002
+	 		size = 10
+	 	}
+        spawn_army = {
+			name = event_troop_default_name
+			men_at_arms = {
+				type = maa_hoplitai
+				stacks = 10
+			}
+			location = root.location
+			uses_supply = yes
+			inheritable = yes
+		}
     }
     1213.1.1 = {
         death = {
@@ -147,6 +184,30 @@ nars_0003 = {
     }
     1166.1.1 = {
         add_spouse = nars_0006
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0003
+	 		size = 10
+	 	}
+        spawn_army = {
+			name = event_troop_default_name
+			men_at_arms = {
+				type = maa_hoplitai
+				stacks = 5
+			}
+            men_at_arms = {
+				type = crossbowmen
+				stacks = 5
+			}
+            men_at_arms = {
+				type = crossbowmen
+				stacks = 5
+			}
+			location = root.location
+			uses_supply = yes
+			inheritable = yes
+		}
     }
     1213.1.1 = {
         death = {
@@ -179,6 +240,7 @@ nars_0004 = {
         birth = yes
     }
     1170.1.1 = {
+        employer = nars_0001
     }
     1213.1.1 = {
         death = {
@@ -192,7 +254,6 @@ nars_0005 = {
     dna = 70000015_nikean
     dynasty = dyn_nars_1003
     female = no
-    employer = nars_0002
     martial = 35
     stewardship = 15
     intrigue = 15
@@ -213,6 +274,7 @@ nars_0005 = {
         }
     }
     1162.1.1 = {
+        employer = nars_0002
     }
     1213.1.1 = {
         death = {
@@ -244,6 +306,7 @@ nars_0006 = {
         birth = yes
     }
     1176.1.1 = {
+        employer = nars_0003
     }
     1213.1.1 = {
         death = {

@@ -1,4 +1,4 @@
-﻿historical_characters_accessories = {
+﻿nikean_characters_accessories = {
 	usage = game
 	selection_behaviour = max
 	priority = 50

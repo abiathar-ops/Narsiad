@@ -8,6 +8,7 @@ endgame_modifier = {
 intro_modifier = {
 	icon = martial_positive
 	monthly_lifestyle_xp_gain_mult = 0.15
+	enemy_hostile_scheme_success_chance_max_add = -100
 }
 
 h_narsokratia_modifier = {
