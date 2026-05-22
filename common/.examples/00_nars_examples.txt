@@ -1254,3 +1254,101 @@ character_40059_persistent_dna={
  }
 }
 
+#Ilione having her heir be naresios?
+bookmark.0300 = {
+	type = character_event
+	title = bookmark.0300.t
+	desc = bookmark.0300.desc
+
+	theme = family
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	lower_center_portrait = {
+		character = scope:dead_husband
+		animation = dead
+	}
+	right_portrait = {
+		character = scope:baby_baudouin
+	}
+
+	trigger = {
+		is_ai = no
+		character:223541 = {
+			is_ai = yes
+			is_alive = yes
+		}
+	}
+
+	immediate = {
+		character:223541 = { save_scope_as = baby_baudouin }
+		character:223540 = { save_scope_as = dead_husband }
+	}
+
+	option = {
+		name = bookmark.0300.a
+
+		character:223541 = { set_house = root.house }
+
+		ai_chance = {
+			base = 0 # The AI shouldn't get this event, but should want to maintain the status quo if it did
+		}
+	}
+	
+	option = {
+		name = bookmark.0300.b
+		
+		ai_chance = {
+			base = 100	# AI doesn't get this event, but should always pick no.
+		}
+		custom_tooltip = bookmark.0300.b.tt
+	}
+}
+
+#Illione Conqueror
+option = {
+		name = bookmark.0500.b
+
+		trigger = {
+			is_landed = no
+		}
+
+		add_trait = conqueror
+
+		create_title_and_vassal_change = {
+  			type = usurped
+  			save_scope_as = change
+  		}
+  		title:c_caozhou = {
+	  		change_title_holder = {
+				holder = root
+				change = scope:change
+				take_baronies = yes
+			}
+  		}
+  		hidden_effect = {
+ 			becomes_independent = {
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		start_war = {
+			casus_belli = admin_barbarian_conquest_cb
+			target = title:d_biansong.holder
+		}
+
+		spawn_army = {
+			levies = 5000
+			location = root.capital_province
+			origin = root.capital_province
+			inheritable = no
+			uses_supply = yes
+			name = faithful_followers
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}

@@ -244,9 +244,6 @@ decision_k_narsokratia = {
 
 	is_shown = {
 		is_nikean = yes
-		is_landed_or_landless_administrative = yes
-		is_confederation_member = no
-		highest_held_title_tier <= tier_kingdom
 		NOT = { has_title = title:k_narsokratia }
 		NOT = { has_title = title:e_narsokratia }
 		NOT = { has_title = title:h_narsokratia }

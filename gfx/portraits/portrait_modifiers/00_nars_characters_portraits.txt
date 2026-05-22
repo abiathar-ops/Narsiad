@@ -287,4 +287,23 @@
 			}
 		}
 	}	
+	# bald_adhoc_fix = {
+	# 	dna_modifiers = {
+	# 		accessory = {
+	# 			mode = add
+	# 			gene = hairstyles
+	# 			template = fp3_hairstyles_iranian_straight
+	# 			accessory = f_hair_fp3_iranian_02
+	# 		}
+	# 	}
+	# 	weight = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 2000
+	# 			exists = this
+	# 			exists = character:nars_0006
+	# 			this = character:nars_0006
+	# 		}
+	# 	}
+	# }
 }

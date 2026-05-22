@@ -1,5 +1,7 @@
 ﻿namespace = nikean_realm
 namespace = nikean_intro
+namespace = nikean_storyline
+
 
 # Narsiad Intro
 
@@ -46,6 +48,281 @@ nikean_intro.1002 = {
 	}
 }
 
+nikean_storyline.1001 = {
+    type = character_event
+	title = nikean_storyline.1001.t
+	desc = {
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1001 } }
+            desc = nikean_storyline.1001.desc.0001
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1002 } }
+            desc = nikean_storyline.1001.desc.0002
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1003 } }
+            desc = nikean_storyline.1001.desc.0003
+        }
+    }
+    
+	theme = emperor
+    override_background = army_camp
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = chess_cocky
+	}
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal_random_weapon
+    }
+    # Lower left: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_random_weapon
+    }
+
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        # Dynamically find who leads the other two camps and save them as scopes
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+    }
+	option = {
+		name = nikean_storyline.1001.a
+	}
+    option = {
+		name = nikean_storyline.1001.b
+    }
+}
+
+nikean_storyline.1002 = {
+    type = character_event
+	title = nikean_storyline.1002.t
+	desc = {
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1001 } }
+            desc = nikean_storyline.1002.desc.0001
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1002 } }
+            desc = nikean_storyline.1002.desc.0002
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1003 } }
+            desc = nikean_storyline.1002.desc.0003
+        }
+    }
+	theme = emperor
+    override_background = battlefield
+    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    override_effect_2d = { reference = smoke }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		#animation = chess_cocky
+        animation = throne_room_one_handed_passive_1
+    }
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal_random_weapon
+    }
+    # Lower left: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_random_weapon
+    }
+
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        # Dynamically find who leads the other two camps and save them as scopes
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+    }
+    
+    
+	option = {
+		name = nikean_storyline.1002.a
+	}
+    option = {
+		name = nikean_storyline.1002.b
+    }
+}
+
+nikean_storyline.1003 = {
+    type = character_event
+    title = nikean_storyline.1003.t
+    
+    desc = {
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1001 } }
+            desc = nikean_storyline.1003.desc.0001
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1002 } }
+            desc = nikean_storyline.1003.desc.0002
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1003 } }
+            desc = nikean_storyline.1003.desc.0003
+        }
+    }
+    
+    theme = emperor
+    override_background = temple
+    
+    left_portrait = {
+        character = root
+        animation = war_defender
+        camera = camera_center_large
+    }
+    
+    right_portrait = {
+        character = scope:event_messenger
+        animation = throne_room_messenger_3
+        camera = camera_event_center_away_pointing_left_fov25
+    }
+    
+    # Lower right: The first rival faction head
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal
+    }
+    
+    # Lower center: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_dagger
+    }
+    
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+
+        # --- SCOPE THE MESSENGER ---
+        random_courtier = {
+            limit = {
+                is_adult = yes
+                is_imprisoned = no
+                is_capable = yes
+                NOT = { this = root }
+                NOT = { this = scope:rival_1 }
+                NOT = { this = scope:rival_2 }
+                NOT = { is_spouse_of = root }
+            }
+            save_scope_as = event_messenger
+        }
+        
+        # Fallback Messenger
+        if = {
+            limit = { 
+                NOT = { exists = scope:event_messenger } 
+            }
+            create_character = {
+                culture = root.culture
+                faith = root.faith
+                gender_female_chance = 50
+                age = { 18 25 }
+                save_scope_as = event_messenger
+                
+                after_creation = {
+                    add_trait = nars_naturalis
+                    # Flag them for cleanup
+                    add_character_flag = nars_temp_messenger_cleanup
+                }
+            }
+        }
+    }
+    
+    option = {
+        name = nikean_storyline.1003.a
+        if = {
+            limit = { has_title = title:d_laamp_nars_1001 }
+            add_prestige_level = 1
+        }   
+        if = {
+            limit = { has_title = title:d_laamp_nars_1002 }
+            add_prestige_level = 1
+        }   
+        if = {
+            limit = { has_title = title:d_laamp_nars_1003 }
+            custom_tooltip = intrigue_challenge
+            add_character_flag = intrigue_duel_on_attack
+            add_prestige_level = 1
+        }   
+    }
+
+    option = {
+        name = nikean_storyline.1003.b
+        spawn_army = {
+            men_at_arms = {
+                type = maa_hoplitai
+                stacks = 10
+            }
+            location = root.capital_province
+            name = event_troop_default_name
+        }
+    }
+
+    # --- DEATH VANISH ISOLATED CLEANUP ---
+    after = {
+        if = {
+            limit = { 
+                exists = scope:event_messenger
+                scope:event_messenger = { has_character_flag = nars_temp_messenger_cleanup } 
+            }
+            hidden_effect = {
+                scope:event_messenger = {
+                    death = { death_reason = death_vanished }
+                }
+            }
+        }
+    }
+}
 # ─────────────────────────────────────────────────────────────────
 # DEVELOP INDUSTRY EVENT
 # ─────────────────────────────────────────────────────────────────

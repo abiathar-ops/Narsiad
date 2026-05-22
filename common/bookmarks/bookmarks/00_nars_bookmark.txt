@@ -13,7 +13,7 @@
 		dynasty = dyn_nars_1001
 		dynasty_splendor_level = 3
 		type = male
-		birth = 1158.1.1
+		birth = 1157.1.1
 		title = d_laamp_nars_1001
 		government = landless_adventurer_government
 		culture = nars_nikean

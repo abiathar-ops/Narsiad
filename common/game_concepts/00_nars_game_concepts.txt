@@ -66,6 +66,7 @@ story_nikean = {
 
 alnars = {
 	parent = nikean
+	alias = { alnars_adj }
 	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 	shown_in_encyclopedia = no
 }

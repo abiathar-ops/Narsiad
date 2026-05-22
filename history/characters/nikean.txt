@@ -58,7 +58,7 @@ nars_0001 = {
     trait = shrewd
     trait = intellect_good_3
     disallow_random_traits = yes
-    1158.1.1 = {
+    1157.1.1 = {
         birth = yes
         effect = {
             # add_character_flag = do_not_generate_starting_family
@@ -67,9 +67,6 @@ nars_0001 = {
     }
     1176.1.1 = {
         add_spouse = nars_0004
-        effect = {
-            set_relation_rival = character:nars_0003 
-        }
         create_maa_regiment = {
 	 		type = maa_hoplitai
 	 		check_can_recruit = no
@@ -80,14 +77,17 @@ nars_0001 = {
 	 		type = maa_hoplitai
 	 		check_can_recruit = no
             title = title:d_laamp_nars_0001
-	 		size = 5
+	 		size = 10
 	 	}
         spawn_army = {
 			name = event_troop_default_name
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 5
+				stacks = 10
             }
+            location = root.location
+			uses_supply = yes
+			inheritable = yes
 		}
     }
     1213.1.1 = {
@@ -108,10 +108,11 @@ nars_0002 = {
     female = yes
     trait = lustful
     trait = diligent
-    trait = just
+    trait = vengeful
     trait = education_martial_4
     trait = strong
     trait = physique_good_3
+    trait = twin
     diplomacy = 10
     martial = 35
     stewardship = 15
@@ -126,16 +127,18 @@ nars_0002 = {
         # }
     }
     1176.1.1 = {
-        effect = {
-            set_relation_rival = character:nars_0001 
-            set_relation_rival = character:nars_0003 
-        }
         add_matrilineal_spouse = nars_0005
         create_maa_regiment = {
 	 		type = maa_hoplitai
 	 		check_can_recruit = no
             title = title:d_laamp_nars_0002
 	 		size = 10
+	 	}
+        create_maa_regiment = {
+	 		type = armored_horsemen
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0002
+	 		size = 5
 	 	}
         spawn_army = {
 			name = event_troop_default_name
@@ -176,9 +179,13 @@ nars_0003 = {
     trait = education_intrigue_5
     trait = witch
     trait = beauty_good_3
+    trait = twin
     disallow_random_traits = yes
     1158.1.1 = {
         birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
     }
     1166.1.1 = {
         add_spouse = nars_0006
@@ -190,10 +197,6 @@ nars_0003 = {
 	 	}
         spawn_army = {
 			name = event_troop_default_name
-            men_at_arms = {
-				type = crossbowmen
-				stacks = 10
-			}
             men_at_arms = {
 				type = crossbowmen
 				stacks = 10
@@ -237,7 +240,7 @@ nars_0004 = {
     1158.1.1 = {
         birth = yes
     }
-    1170.1.1 = {
+    1178.10.1 = {
         employer = nars_0001
     }
     1213.1.1 = {
@@ -271,7 +274,7 @@ nars_0005 = {
             add_character_flag = do_not_generate_starting_family
         }
     }
-    1162.1.1 = {
+    1178.1.1 = {
         employer = nars_0002
     }
     1213.1.1 = {
@@ -303,7 +306,7 @@ nars_0006 = {
     1158.1.1 = {
         birth = yes
     }
-    1176.1.1 = {
+    1178.10.1 = {
         employer = nars_0003
     }
     1213.1.1 = {
@@ -321,7 +324,6 @@ nars_0007 = {
     dynasty = dyn_nars_1001
     sexuality = heterosexual
     father = nars_0001
-    employer = nars_0001
     female = no
     trait = ambitious
     trait = diligent
@@ -342,7 +344,8 @@ nars_0007 = {
             add_character_flag = do_not_generate_starting_family
         }
     }
-    1177.1.1 = {
+    1178.10.1 = {
+        employer = nars_0001
     }
     1256.1.1 = {
         death = {
