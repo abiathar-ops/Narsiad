@@ -35,6 +35,12 @@
 				template = no_headgear
 				accessory = empty
 			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = no_cloaks
+				accessory = empty
+			}
 		}
 		weight = {
 			base = 0
@@ -76,6 +82,12 @@
 				mode = add
 				gene = headgear
 				template = no_headgear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = no_cloaks
 				accessory = empty
 			}
 		}
@@ -157,6 +169,18 @@
 				gene = special_headgear_face_mask
 				template = fp3_iranian_face_mask_open
 				accessory = m_headgear_fp3_iranian_face_mask_closed_01
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = no_cloaks
+				accessory = empty
 			}
 		}
 		weight = {
@@ -276,6 +300,12 @@
 				template = no_beard
 				accessory = empty
 			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = no_cloaks
+				accessory = empty
+			}
 		}
 		weight = {
 			base = 0
@@ -284,6 +314,37 @@
 				exists = this
 				exists = character:nars_0007
 				this = character:nars_0007
+			}
+		}
+	}
+	70000018_nikean = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep3_byzantine_hairstyle
+				accessory = m_hair_ep3_byzantine_01
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = no_cloaks
+				accessory = empty
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 2000
+				exists = this
+				exists = character:nars_0008
+				this = character:nars_0008
 			}
 		}
 	}	

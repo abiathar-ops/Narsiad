@@ -1,0 +1,461 @@
+namespace = nikean_intro
+namespace = nikean_bookmark
+
+
+# Narsiad Intro
+
+nikean_intro.1001 = {
+	type = character_event
+	window = fullscreen_event
+	title = nikean_intro.1001.t
+	desc = nikean_intro.1001.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_sunder }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	left_portrait = {
+		character = root
+		animation = grief
+		camera = camera_center_large
+	}
+
+	option = {
+		name = nikean_intro.1001.a
+		trigger_event = nikean_intro.1002
+	}
+}
+
+nikean_intro.1002 = { 
+	type = character_event
+	window = big_event_window
+	title = nikean_intro.1002.t
+	desc = nikean_intro.1002.desc
+	theme = emperor
+	override_background = ce1_fullscreen_legitimizing_legend
+	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+	left_portrait = {
+		character = root
+		animation = personality_bold
+		camera = camera_center_large
+	}
+	immediate = {
+		intro_standard_effect = yes
+	}
+	option = {
+		name = nikean_intro.1002.a
+	}
+}
+
+nikean_bookmark.0010 = {
+	type = character_event
+	title = nikean_bookmark.0010.t
+	desc = nikean_bookmark.0010.desc
+	theme = emperor
+    override_background = army_camp
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = chess_cocky
+	}
+
+	option = {
+		name = nikean_bookmark.0010.a
+        custom_tooltip = anduril_tooltip
+        hidden_effect = {
+            create_anduril_effect = yes
+        }
+        add_trait = scholar
+        ai_chance = {
+			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+    option = {
+		name = nikean_bookmark.0010.b
+        custom_tooltip = nikean_courtiers.tt
+        elios_intro_effect = yes
+        trigger_event = nikean_courtiers.0002
+        trigger_event = nikean_courtiers.0002
+        ai_chance = {
+			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+}
+
+nikean_bookmark.0020 = {
+	type = character_event
+	title = nikean_bookmark.0020.t
+	desc = nikean_bookmark.0020.desc
+	theme = emperor
+    override_background = army_camp
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = chess_cocky
+	}
+
+    immediate = {
+        save_scope_as = ilione
+    }
+
+	option = {
+		name = nikean_bookmark.0020.a #insta conqueror?
+        add_trait = conqueror
+        scope:ilione = {
+			start_travel_plan = {
+				destination = c_tana
+				on_arrival_event = mpo_decisions_events.0120
+				on_arrival_destinations = all
+				return_trip = no # One way
+			}
+		}
+        ai_chance = {
+			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+
+    option = {
+		name = nikean_bookmark.0020.b
+        ilione_intro_effect = yes
+        spawn_army = {
+			levies = 1250
+			men_at_arms = {
+				type = maa_hoplitai
+				stack = 10
+			}
+			location = root.capital_province
+			name = event_troop_default_name
+		}
+        ai_chance = {
+			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+}
+
+nikean_bookmark.0021 = {
+    type = character_event
+    title = nars_cuman.1001.t
+    desc = nars_cuman.1001.desc
+    theme = war
+    override_background = war_camp
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+    
+    right_portrait = {
+        character = scope:cuman_target
+        animation = fear
+    }
+
+    immediate = {
+        # Scope the Cuman ruler holding the Don Valley
+        title:d_don_valley.holder = { save_scope_as = cuman_target }
+    }
+
+    # Option A: Launch the Humiliation War
+    option = {
+        name = nars_cuman.1001.a
+        
+        if = {
+            limit = { exists = scope:cuman_target }
+            start_war = {
+                cb = nars_cuman_humiliation_cb
+                target = scope:cuman_target
+                target_title = title:d_don_valley
+            }
+        }
+    }
+}
+
+nikean_bookmark.0030 = {
+	type = character_event
+	title = nikean_bookmark.0030.t
+	desc = nikean_bookmark.0030.desc
+	theme = emperor
+    override_background = army_camp
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = chess_cocky
+	}
+
+	option = {
+		name = nikean_bookmark.0030.a
+        custom_tooltip = intrigue_challenge
+        add_character_modifier = bp2_tool_of_fate_modifier
+        add_trait = lifestyle_poet
+        add_character_flag = intrigue_duel_on_attack
+        ai_chance = {
+			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+    option = {
+		name = nikean_bookmark.0030.b
+        strato_intro_effect = yes
+        strato_procure_byzantine_estate_effect = yes
+        change_influence = 500
+        ai_chance = {
+			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+}
+
+nikean_bookmark.1001 = {
+    type = character_event
+	title = nikean_bookmark.1001.t
+	desc = {
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1001 } }
+            desc = nikean_bookmark.1001.desc.0001
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1002 } }
+            desc = nikean_bookmark.1001.desc.0002
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1003 } }
+            desc = nikean_bookmark.1001.desc.0003
+        }
+    }
+    
+	theme = emperor
+    override_background = army_camp
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = chess_cocky
+	}
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal_random_weapon
+    }
+    # Lower left: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_random_weapon
+    }
+
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        # Dynamically find who leads the other two camps and save them as scopes
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+    }
+	option = {
+		name = nikean_bookmark.1001.a
+	}
+    option = {
+		name = nikean_bookmark.1001.b
+    }
+}
+
+nikean_bookmark.1002 = {
+    type = character_event
+	title = nikean_bookmark.1002.t
+	desc = {
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1001 } }
+            desc = nikean_bookmark.1002.desc.0001
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1002 } }
+            desc = nikean_bookmark.1002.desc.0002
+        }
+        triggered_desc = {
+            trigger = { root = { has_title = title:d_laamp_nars_1003 } }
+            desc = nikean_bookmark.1002.desc.0003
+        }
+    }
+	theme = emperor
+    override_background = battlefield
+    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    override_effect_2d = { reference = smoke }
+    
+    left_portrait = {
+		character = root
+		camera = camera_center_large
+		#animation = chess_cocky
+        animation = throne_room_one_handed_passive_1
+    }
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal_random_weapon
+    }
+    # Lower left: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_random_weapon
+    }
+
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        # Dynamically find who leads the other two camps and save them as scopes
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+    }
+    
+    
+	option = {
+		name = nikean_bookmark.1002.a
+	}
+    option = {
+		name = nikean_bookmark.1002.b
+    }
+}
+
+nikean_bookmark.1003 = {
+    type = character_event
+    title = nikean_bookmark.1003.t   
+    desc = nikean_bookmark.1003.desc
+    
+    theme = emperor
+    override_background = temple
+    
+    left_portrait = {
+        character = root
+        animation = war_defender
+        camera = camera_center_large
+    }
+    
+    right_portrait = {
+        character = scope:event_messenger
+        animation = throne_room_messenger_3
+        camera = camera_event_center_away_pointing_left_fov25
+    }
+    
+    # Lower right: The first rival faction head
+    lower_right_portrait = {
+        character = scope:rival_1
+        animation = marshal
+    }
+    
+    # Lower center: The second rival faction head
+    lower_center_portrait = {
+        character = scope:rival_2
+        animation = marshal_dagger
+    }
+    
+    immediate = {
+        # --- SCOPE THE RIVALS ---
+        if = {
+            limit = { root = { has_title = title:d_laamp_nars_1001 } }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1002 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1003.holder = { save_scope_as = rival_2 }
+        }
+        else_if = {
+            limit = { root = { has_title = title:d_laamp_nars_1003 } }
+            title:d_laamp_nars_1001.holder = { save_scope_as = rival_1 }
+            title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
+        }
+
+        # --- SCOPE THE MESSENGER ---
+        random_courtier = {
+            limit = {
+                is_adult = yes
+                is_imprisoned = no
+                is_capable = yes
+                NOT = { this = root }
+                NOT = { this = scope:rival_1 }
+                NOT = { this = scope:rival_2 }
+                NOT = { is_spouse_of = root }
+            }
+            save_scope_as = event_messenger
+        }
+        
+        # Fallback Messenger
+        if = {
+            limit = { 
+                NOT = { exists = scope:event_messenger } 
+            }
+            create_character = {
+                culture = root.culture
+                faith = root.faith
+                gender_female_chance = 50
+                age = { 18 25 }
+                save_scope_as = event_messenger
+                
+                after_creation = {
+                    add_trait = nars_naturalis
+                    # Flag them for cleanup
+                    add_character_flag = nars_temp_messenger_cleanup
+                }
+            }
+        }
+    }
+    
+    option = {
+        name = nikean_bookmark.1003.a
+        if = {
+            limit = { has_title = title:d_laamp_nars_1001 }
+            add_prestige_level = 1
+        }   
+        if = {
+            limit = { has_title = title:d_laamp_nars_1002 }
+            add_prestige_level = 1
+        }   
+        if = {
+            limit = { has_title = title:d_laamp_nars_1003 }
+            add_prestige_level = 1
+        }   
+    }
+
+    option = {
+        name = nikean_bookmark.1003.b
+    }
+
+    # --- DEATH VANISH ISOLATED CLEANUP ---
+    after = {
+        if = {
+            limit = { 
+                exists = scope:event_messenger
+                scope:event_messenger = { has_character_flag = nars_temp_messenger_cleanup } 
+            }
+            hidden_effect = {
+                scope:event_messenger = {
+                    death = { death_reason = death_vanished }
+                }
+            }
+        }
+    }
+}

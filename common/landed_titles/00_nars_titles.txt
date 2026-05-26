@@ -70,7 +70,7 @@ d_laamp_nars_1001 = {
 
 d_laamp_nars_1002 = {
 	color = { 100 100 100 }
-	capital = c_byzantion
+	capital = c_marash
 
 	definite_form = yes
 	landless = yes
@@ -84,7 +84,7 @@ d_laamp_nars_1002 = {
 
 d_laamp_nars_1003 = {
 	color = { 100 100 100 }
-	capital = c_marash
+	capital = c_byzantion
 
 	definite_form = yes
 	landless = yes

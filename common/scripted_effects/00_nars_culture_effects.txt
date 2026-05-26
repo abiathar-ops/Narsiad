@@ -482,7 +482,7 @@ create_h_narsokratia_effect = {
 			}
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 45
+				stacks = 85
 			}
 			location = this.capital_province
 			uses_supply = yes

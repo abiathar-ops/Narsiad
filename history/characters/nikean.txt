@@ -79,11 +79,17 @@ nars_0001 = {
             title = title:d_laamp_nars_0001
 	 		size = 10
 	 	}
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
         spawn_army = {
-			name = event_troop_default_name
+			name = nikean_troop_intro_name
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 10
+				stacks = 20
             }
             location = root.location
 			uses_supply = yes
@@ -102,7 +108,7 @@ nars_0002 = {
     dna = 70000012_nikean
     religion = nars_religion
     culture = nars_nikean
-    dynasty_house = house_nars_1002
+    dynasty = dyn_nars_1001
     sexuality = bisexual
     father = nars_0000
     female = yes
@@ -112,7 +118,6 @@ nars_0002 = {
     trait = education_martial_4
     trait = strong
     trait = physique_good_3
-    trait = twin
     diplomacy = 10
     martial = 35
     stewardship = 15
@@ -135,16 +140,22 @@ nars_0002 = {
 	 		size = 10
 	 	}
         create_maa_regiment = {
-	 		type = armored_horsemen
+	 		type = maa_hoplitai
 	 		check_can_recruit = no
-            title = title:d_laamp_nars_0002
-	 		size = 5
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
 	 	}
         spawn_army = {
-			name = event_troop_default_name
+			name = nikean_troop_intro_name
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 10
+				stacks = 15
 			}
 			location = root.location
 			uses_supply = yes
@@ -161,7 +172,7 @@ nars_0002 = {
 nars_0003 = {
     name = "Stratō"
     dna = 70000013_nikean
-    dynasty_house = house_nars_1001
+    dynasty = dyn_nars_1001
     female = no
     sexuality = bisexual
     father = nars_0000
@@ -179,7 +190,6 @@ nars_0003 = {
     trait = education_intrigue_5
     trait = witch
     trait = beauty_good_3
-    trait = twin
     disallow_random_traits = yes
     1158.1.1 = {
         birth = yes
@@ -195,14 +205,22 @@ nars_0003 = {
             title = title:d_laamp_nars_0003
 	 		size = 10
 	 	}
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
+        create_maa_regiment = {
+	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
         spawn_army = {
-			name = event_troop_default_name
-            men_at_arms = {
-				type = crossbowmen
-				stacks = 10
-			}
-            men_at_arms = {
-				type = crossbowmen
+			name = nikean_troop_intro_name
+			men_at_arms = {
+				type = maa_hoplitai
 				stacks = 10
 			}
 			location = root.location
@@ -317,13 +335,14 @@ nars_0006 = {
 }
 
 nars_0007 = {
-    name = "Okēnaós"
+    name = "Okēanós"
     dna = 70000017_nikean
     religion = nars_religion
     culture = nars_nikean
     dynasty = dyn_nars_1001
     sexuality = heterosexual
     father = nars_0001
+    mother = nars_0004
     female = no
     trait = ambitious
     trait = diligent
@@ -331,8 +350,50 @@ nars_0007 = {
     trait = education_martial_5
     trait = intellect_good_3
     trait = physique_good_3
+    trait = twin
     diplomacy = 10
     martial = 30
+    stewardship = 15
+    intrigue = 30
+    learning = 15
+    prowess = 45
+    disallow_random_traits = yes
+    1174.1.1 = {
+        birth = yes
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
+    }
+    1178.10.1 = {
+        employer = nars_0001
+    }
+    1256.1.1 = {
+        death = {
+            death_reason = death_murder
+        }   
+    }
+}
+
+nars_0008 = {
+    name = "Níkēos"
+    dna = 70000017_nikean
+    religion = nars_religion
+    culture = nars_nikean
+    dynasty = dyn_nars_1001
+    sexuality = heterosexual
+    father = nars_0001
+    mother = nars_0004
+    is_twin_of = nars_0007
+    female = no
+    trait = patient
+    trait = humble
+    trait = gregarious
+    trait = education_learning_5
+    trait = intellect_good_3
+    trait = physique_good_3
+    trait = twin
+    diplomacy = 10
+    martial = 15
     stewardship = 30
     intrigue = 15
     learning = 30

@@ -4,6 +4,24 @@ intro_standard_effect = {
 	}
 }
 
+elios_intro_effect = {
+	add_character_modifier = {
+		modifier = elios_intro_modifier
+	}
+}
+
+ilione_intro_effect = {
+	add_character_modifier = {
+		modifier = ilione_intro_modifier
+	}
+}
+
+strato_intro_effect = {
+	add_character_modifier = {
+		modifier = strato_intro_modifier
+	}
+}
+
 libation_standard_effect = { 
 	add_stress = medium_stress_loss
 	add_character_modifier = {

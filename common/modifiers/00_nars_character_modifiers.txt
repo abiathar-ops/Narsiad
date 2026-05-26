@@ -1,14 +1,38 @@
 ﻿#Narsokratia
 
 endgame_modifier = {
-	icon = martial_positive
+	icon = blood_positive
 	monthly_dynasty_prestige = 0.5
 }
 
 intro_modifier = {
-	icon = martial_positive
+	icon = blood_positive
 	monthly_lifestyle_xp_gain_mult = 0.15
 	enemy_hostile_scheme_success_chance_max_add = -1000
+}
+
+elios_intro_modifier = {
+	icon = stewardship_positive
+	domain_limit = 3
+	vassal_opinion = 30
+	health = 0.3
+}
+
+ilione_intro_modifier = {
+	icon = martial_positive
+	prowess_per_piety_level = 3
+	monthly_piety_gain_per_knight_add = 0.3
+	knight_effectiveness_mult = 0.3
+	knight_limit = 3
+}
+
+strato_intro_modifier = {
+	icon = intrigue_positive
+	max_political_schemes_add = 1
+	max_personal_schemes_add = 1
+	intrigue_per_influence_level = 0.15
+	monthly_influence = 0.15
+	monthly_influence_mult = 0.15
 }
 
 h_narsokratia_modifier = {

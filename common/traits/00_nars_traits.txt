@@ -61,6 +61,7 @@ nars_naturalis = {
 	life_expectancy = 30
 	inbreeding_chance = -0.30
 	ignore_negative_culture_opinion = yes
+	ignore_different_faith_opinion = yes
 
 	opposites = {
 		infertile
