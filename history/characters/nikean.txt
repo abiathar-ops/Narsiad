@@ -192,7 +192,7 @@ nars_0003 = {
     trait = arbitrary
     trait = callous
     trait = education_intrigue_5
-    trait = witch
+    trait = pure_blooded
     trait = beauty_good_3
     disallow_random_traits = yes
     1158.1.1 = {
@@ -339,7 +339,7 @@ nars_0006 = {
 }
 
 nars_0007 = {
-    name = "Okēanós"
+    name = "Nikéas"
     dna = 70000017_nikean
     religion = nars_religion
     culture = nars_nikean

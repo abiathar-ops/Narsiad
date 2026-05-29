@@ -18,14 +18,14 @@
 		government = landless_adventurer_government
 		culture = nars_nikean
 		religion = nars_religion
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = nars_0001
 		position = { 1200 500 }
 		animation = throne_room_two_handed_passive_1
 		#animation = war_over_win
 		
 		character = {
-			name = "bookmark_restoring_antiquity_okeanos"	
+			name = "bookmark_restoring_antiquity_nikeas"	
 			relation = "BOOKMARK_RELATION_SON"
 			dynasty = dyn_nars_1001
             type = male
@@ -58,7 +58,7 @@
 		government = landless_adventurer_government
 		culture = nars_nikean
 		religion = nars_religion
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = nars_0002
 		position = { 1000 820 }
 		animation = marshal
@@ -86,7 +86,7 @@
 		government = landless_adventurer_government
 		culture = nars_nikean
 		religion = nars_religion
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = nars_0003
 		position = { 790 410 }
 		animation = thinking

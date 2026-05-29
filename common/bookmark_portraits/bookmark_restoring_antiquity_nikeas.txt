@@ -1,4 +1,4 @@
-bookmark_restoring_antiquity_okeanos={
+bookmark_restoring_antiquity_nikeas={
 	type=boy
 	id=57242
 	random_seed=1747757323
