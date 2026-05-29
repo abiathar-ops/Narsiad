@@ -103,23 +103,24 @@ nikean_bookmark.0020 = {
     }
 
 	option = {
-		name = nikean_bookmark.0020.a #insta conqueror?
-        add_trait = conqueror
-        scope:ilione = {
-			start_travel_plan = {
-				destination = c_tana
-				on_arrival_event = mpo_decisions_events.0120
-				on_arrival_destinations = all
-				return_trip = no # One way
-			}
+		name = nikean_bookmark.0020.a #Khazars
+        custom_tooltip = nikean_bookmark.0020.a.tt
+		start_travel_plan = {
+			destination = title:c_tana.title_province
+			on_arrival_event = nikean_bookmark.0021
+            players_use_planner = no
+			on_arrival_destinations = all
+			return_trip = no # One way
 		}
         ai_chance = {
-			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
+			base = 33	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
+        add_prestige = 75
 	}
 
     option = {
 		name = nikean_bookmark.0020.b
+        custom_tooltip = nikean_adventurer_tooltip
         ilione_intro_effect = yes
         spawn_army = {
 			levies = 1250
@@ -131,46 +132,141 @@ nikean_bookmark.0020 = {
 			name = event_troop_default_name
 		}
         ai_chance = {
-			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
+			base = 67	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
 	}
 }
 
 nikean_bookmark.0021 = {
-    type = character_event
-    title = nars_cuman.1001.t
-    desc = nars_cuman.1001.desc
-    theme = war
-    override_background = war_camp
+	type = character_event
+	title = nikean_bookmark.0021.t
+	desc = {
+		desc = nikean_bookmark.0021.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:previous_holder = flag:subject
+				}
+				desc = nikean_bookmark.0021.desc.subject
+			}
+		}
+	}
+			
+	theme = nomads
+	left_portrait = {
+		character = root
+    	animation = jockey_idle
+  		camera = camera_event_horse_left
+	}
+	right_portrait = {
+		character = scope:herder
+		animation = obsequious_bow
+	}
+	lower_right_portrait = {
+		trigger = { exists = scope:nomad }
+		character = scope:nomad
+	}
+	
+	immediate = {
+		set_variable = adventurer_to_nomad_tributary_var
+		location.county.holder = { save_scope_as = herder }
+		if = {
+			limit = {
+				scope:herder = {
+					is_independent_ruler = yes
+					is_tributary = no
+				}
+			}
+			set_variable = {
+				name = previous_holder
+				value = flag:independent
+			}
+		}
+		else = {
+			set_variable = {
+				name = previous_holder
+				value = flag:subject
+			}
+			if = {
+				limit = { exists = scope:herder.suzerain }
+				scope:herder.suzerain = { save_scope_as = nomad }
+			}
+			else = {
+				scope:herder.liege = { save_scope_as = nomad }
+			}
+		}
+	}
+	
+	option = { # Insult
+		name = nikean_bookmark.0021.a
+        custom_tooltip = nikean_bookmark.0021.a.tt
+        add_prestige_level = 1
+        add_prestige = 75
+		stress_impact = {
+			craven = massive_stress_impact_gain
+		}
+        trigger_event = { id = nikean_bookmark.0022 days = 7 }
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_trait = craven
+				factor = 0
+			}
+		}
+	}
+	
+	option = { # Refuse to become Tributary
+		name = nikean_bookmark.0021.b
+        add_prestige = 25
+		stress_impact = {
+			craven = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_trait = craven
+				factor = 0
+			}
+		}
+	}
+	
+	after = {
+		bookmark_ilione_nomadic_event_effect = yes
+		remove_variable = previous_holder
+		remove_variable = previous_provisions
+		remove_variable = adventurer_to_nomad_tributary_var
+	}
+}
 
-    left_portrait = {
-        character = root
-        animation = personality_bold
-    }
-    
-    right_portrait = {
-        character = scope:cuman_target
-        animation = fear
-    }
+nikean_bookmark.0022 = {
+	type = character_event
+	title = nikean_bookmark.0022.t
+	desc = nikean_bookmark.0022.desc.intro
 
-    immediate = {
-        # Scope the Cuman ruler holding the Don Valley
-        title:d_don_valley.holder = { save_scope_as = cuman_target }
-    }
+	theme = nomads
+	left_portrait = {
+		character = root
+		animation = throne_room_one_handed_passive_1
+		camera = camera_center_large
+	}
+	right_portrait = {
+		character = scope:steppe_khan
+		animation = anger
+	}
 
-    # Option A: Launch the Humiliation War
-    option = {
-        name = nars_cuman.1001.a
-        
-        if = {
-            limit = { exists = scope:cuman_target }
-            start_war = {
-                cb = nars_cuman_humiliation_cb
-                target = scope:cuman_target
-                target_title = title:d_don_valley
-            }
-        }
-    }
+	immediate = {
+		title:e_caspian-pontic_steppe.holder = { save_scope_as = steppe_khan }
+	}
+
+	option = {
+		name = nikean_bookmark.0022.a
+		# Iliónē declares war preemptively on Khan
+		start_war = {
+			casus_belli = humiliation_cb
+			target = scope:steppe_khan
+		}
+		ai_chance = { base = 100 }
+	}
 }
 
 nikean_bookmark.0030 = {
@@ -187,23 +283,27 @@ nikean_bookmark.0030 = {
 		animation = chess_cocky
 	}
 
+    option = {
+		name = nikean_bookmark.0030.b
+        custom_tooltip = nikean_bookmark.0030.b.tt
+        hidden_effect = {
+            strato_intro_effect = yes
+            bookmark_strato_administrative_event_effect = yes
+        }
+        change_influence = 500
+        ai_chance = {
+			base = 33	#The AI should never get this event, but if they do, shouldn't opt in.
+		}
+	}
+
 	option = {
 		name = nikean_bookmark.0030.a
+        custom_tooltip = nikean_adventurer_tooltip
         custom_tooltip = intrigue_challenge
-        add_character_modifier = bp2_tool_of_fate_modifier
         add_trait = lifestyle_poet
         add_character_flag = intrigue_duel_on_attack
         ai_chance = {
-			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
-		}
-	}
-    option = {
-		name = nikean_bookmark.0030.b
-        strato_intro_effect = yes
-        strato_procure_byzantine_estate_effect = yes
-        change_influence = 500
-        ai_chance = {
-			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
+			base = 67	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
 	}
 }

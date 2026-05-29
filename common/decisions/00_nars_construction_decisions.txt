@@ -9,12 +9,11 @@
 	
 	is_shown = {
 		is_nikean = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
+		highest_held_title_tier >= tier_kingdom
+		NOT = { government_has_flag = government_is_tribal }
+		NOT = { government_has_flag = government_is_nomadic }
 		NOT = { exists = global_var:established_aretaic_school }
+		
 	}
 
 	is_valid = {
@@ -98,11 +97,7 @@ decision_establish_brothel = {
 	
 	is_shown = {
 		is_nikean = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
+		highest_held_title_tier >= tier_kingdom
 		exists = global_var:established_aretaic_school
 	}
 

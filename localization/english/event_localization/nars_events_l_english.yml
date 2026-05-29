@@ -63,11 +63,11 @@
 
  nikean_artifact.1002.t: "The Man with the Iron Heart"
  nikean_artifact.1002.desc: "The screams echo off the stone walls of my [capital_possessive|E] foremost foundry, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking the blood of my recent [courtier|E]. \n\nAs the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy. [narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E] to my hands. \n\nNow you ask yourself, how shall this blood-bound legacy be displayed to the [realm|E], to your [narsokratia|E] and fellow [nikeis|E]?"
- nikean_artifact.1002.a: "In [single_combat_duel|E], in [battle|E], in [war|E]!"
+ nikean_artifact.1002.a: "#emp "However I kraffing want, of course!"#!"
 
  nikean_artifact.1003.t: "A Costly Restoration"
  nikean_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood ritual, but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
- nikean_artifact.1003.a: "In [single_combat_duel|E], in [battle|E], in [war|E]!"
+ nikean_artifact.1003.a: "#emp "However I kraffing want, of course!"#!"
 
  nikean_artifact.1004.t: "An Heirloom Restored!"
  nikean_artifact.1004.desc: "The sacred [artifact|E] [narsil|E] has been restored. The [artifact|E] is whole once more, its edge shimmering with a radiant light that seems to pulse with the essence of our [culture|E].\n\nI force my quivering hands to grip [artifact|E], holding tight this heavy symbol of our renewed [hegemony|E]. As I lift it, a surge of [prowess|E] courses through me, filling me with the vision of our [panteion_possessive|E] favor. The [artifact|E] is not just a weapon; it is a beacon of hope and a testament to the resilience of our [realm|E].\n\nWith [narsil|E] in hand, I am ready to lead our [nikeis|E] into a new era of glory and conquest. The world will tremble before the might of the [nikeanrealm|E], and our [rivals|E] will know the true meaning of [dread|E] when they see our unity. Most importantly, however, the wider [nikeanrealm|E] now unequivocally considers me the true heir of our old [hegemons|E]!\n\nThe notion towards the restoration of the [narsokratia|E] of old is growing ever stronger, and with it, the promise of a glorious [hegemony|E] for all [nikeis|E]!"
@@ -134,16 +134,32 @@
  nikean_bookmark.0010.a: "$Alnars$' records are my birthright!"
  nikean_bookmark.0010.b: "I must expand our numbers.."
  nikean_courtiers.tt: "You recruit a significant number of [nikeans|E] under your [mercenary|E] [camp|E]"
+
  nikean_bookmark.0020.t: "Sautòn Isthí: $Ilione$"
  nikean_bookmark.0020.desc: "Some months ago, the death of my father, [alnars|E], shattered the unity of my people. He had kept us bound to his singular vision, but with him gone, my brothers scramble for power like dogs fighting over a bone. $Eleios$ dreams of tying us to the dirt with his settled [narsokratia|E], while $Strato$ cowers in the shadows of foreign courts. \n\nThey are fools. The true strength of a [nikean|E] lies not in only statecraft or [intrigue|E], but in the absolute might of the [soldiers|E] and the heavy weight of their [gold|E]. I will forge an untouchable [mercenary|E] empire. Kings will beg for our spears, and we will dictate the fate of realms through contracts, not crowns. \n\nWe are #EMP free#! swords, and we bow to no one!"
  nikean_bookmark.0020.a: "The world itself is our [kingdom|E] to shape!"
  nikean_bookmark.0020.b: "[wars|E] and battles can wait.."
+ nikean_bookmark.0020.a.tt: "This option will result in you founding a [nomadic|E] [realm|E] in the nearby Khazars"
+
+ nikean_bookmark.0021.t: "$Ilione$: Way of the Nomad"
+ nikean_bookmark.0021.desc.intro: "The time has come for me to turn my camp into something more: a moving settlement marching across the steppe with the turn of the seasons.\n\n"I hope that these lands serve you well," the shepherd that led people before us welcomes us into [herder.GetHerHis] tent."
+ nikean_bookmark.0021.desc.subject: "\n\n"[nomad.GetTitledFirstName] is my overlord," [herder.GetSheHe] continues in a warning tone, "And tribute is what [nomad.GetSheHe] demands.""
+ nikean_bookmark.0021.a: "#emp "His tribute will be my sword on his throat!"#!"
+ nikean_bookmark.0021.b: "#emp "I am not here to be subject to anyone."#!"
+ nikean_bookmark.0021.a.tt: "@alert_icon! #alert_trial You insult [nomad.GetTitledFirstName] for his demands. This #emp will#! have consequences."
+
+ nikean_bookmark.0022.t: "$Ilione$: First Blood"
+ nikean_bookmark.0022.desc.intro: "The morning mist has not yet lifted when my outriders return to the encampment, their mounts coated in sweat and frost. They bring urgent tidings from the plains: [steppe_khan.GetTitledFirstName] is marshaling a host. This is no border skirmish. The [steppe_khan.GetTitleAsNameNoTooltip] intends to sweep our [camp|E] from these lands entirely.\n\nLet [steppe_khan.GetHerHim] try. The horse-lords of the steppe believe they hold the monopoly on swift, decisive violence. They expect us to entrench and cower behind our wagons, waiting for the storm to hit.\n\nIf the Khan wishes to test our arms and spears, [steppe_khan.GetSheHe] will not have to come looking for us. We will march out and break their horde before they can even draw their bows."
+ nikean_bookmark.0022.a: ""This will be a humiliation.. for him!""
 
  nikean_bookmark.0030.t: "Sautòn Isthí: $Strato$"
  nikean_bookmark.0030.desc: "The passing of my father, [alnars|E], was the end of an [era|E], and the beginning of a schism. My siblings, blinded by hubris, took their [faction|E] in opposite directions. $Eleios$ marches openly, seeking a bloody [hegemony|E], while $Ilione$ sells our people's honor to the highest bidder for their wretched wars. \n\nThey do not see the truth: we are vastly outnumbered. A [nikean|E] spear can pierce armor, but a whispered secret can topple an [empire|E] without a single casualty of our own. I will not waste our people in open fields or meaningless [mercenary|E] contracts. We will weave ourselves into the fabric of these foreign [kingdoms|E] and forlorn, delicate husk of empires. \n\nThrough subversion, our bloodline #emp will#! rule from within."
  nikean_bookmark.0030.a: "Wars are won with words and well-placed knives!"
+ nikean_adventurer_tooltip: "This option will result in you remaining to be an [adventurer|E]"
+
  nikean_bookmark.0030.b: "Perhaps [GetTitleByKey('c_byzantion').GetNameNoTier] will be a den for our schemes.."
- 
+ nikean_bookmark.0030.b.tt: "This option will result in you becoming an [unlanded|E] [ruler|E] in [GetTitleByKey('e_byzantium').GetNameNoTier]"
+
  nikean_bookmark.1001.t: "Kakías Apékhou: Prologue" #Prologue?
  nikean_bookmark.1001.desc.0001: "" #Eleios gaining artifact heirloom from Alnars, perhaps the anduril scroll
  nikean_bookmark.1001.desc.0002: "" #Ilione gaining MAA bonuses or something

@@ -141,7 +141,6 @@ nikean_artifact.1002 = {
 	option = { 
 		name = nikean_artifact.1002.a
 		create_narsil_effect = yes
-		trigger_event = nikean_artifact.1004
 	}
 }
 
@@ -163,7 +162,6 @@ nikean_artifact.1003 = {
 	option = { 
 		name = nikean_artifact.1003.a
 		create_narsil_effect = yes
-		trigger_event = nikean_artifact.1004
 	}
 }
 

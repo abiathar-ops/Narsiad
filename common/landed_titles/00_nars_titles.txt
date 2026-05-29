@@ -2,6 +2,7 @@
 	color = { 0.98 0.92 0.84 }
 	#ruler_uses_title_name = no
 	can_be_named_after_dynasty = no
+	definite_form = yes
 	
 	can_create = {
 		has_global_variable = created_h_narsokratia

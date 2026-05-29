@@ -148,81 +148,156 @@ nikean_evangelize_hegemony_county_effect = {
 }
 
 # Custom script effect to instantly transition Stratō into a Byzantine Estate Owner
-strato_procure_byzantine_estate_effect = {
-	# --- RIG THE TARGETS ---
-	# The Emperor becomes the recipient, Stratō becomes the actor
-	title:e_byzantium.holder = { save_scope_as = recipient }
-	character:nars_0003 = { save_scope_as = actor }
+bookmark_strato_administrative_event_effect = {
+    # --- RIG THE TARGETS ---
+    # The Emperor becomes the recipient, Stratō becomes the actor
+    title:e_byzantium.holder = { save_scope_as = recipient }
+    character:nars_0003 = { save_scope_as = actor }
 
-	# --- STRATŌ TRANSITION ---
-	scope:actor = {
-		hidden_effect = {
-			# Liquidate the landless mercenary camp
-			laamp_clear_domicile_buildings_liquidator_effect = yes
-		}
-		
-		# Prevent his courtiers/assassins from scattering during the transition
-		every_courtier = { add_to_list = courtiers_list }
-		
-		# Destroy the Landless Adventurer Camp title
-		destroy_laamp_effect = { ADVENTURER = scope:actor }
-		
-		hidden_effect = {
-			# Force Stratō into the Byzantine Emperor's court temporarily
-			scope:recipient = {
-				add_courtier = scope:actor
-				return_to_court = yes
-			}
-		}
-		
-		# Grant Stratō his Noble Family and Estate
-		create_noble_family_effect = { GOVERNMENT_GIVER = scope:recipient }
-		
-		hidden_effect = {
-			# Return his loyal Narsid courtiers to his new estate
-			every_in_list = {
-				list = courtiers_list
-				limit = {
-					NOT = { liege_or_court_owner = scope:actor }
-				}
-				scope:actor = { add_courtier = prev }
-			}
-			# Boot any random lowborns the game auto-generated during the transition
-			every_courtier = {
-				limit = {
-					is_lowborn = yes
-					NOR = {
-						is_in_list = courtiers_list
-						is_close_or_extended_family_of = scope:actor
-						is_consort_of = scope:actor
-						has_important_relationship_trigger = { CHARACTER = scope:actor }
-					}
-				}
-				silent_disappearance_effect = yes
-			}
-		}
-		
-		# Swear Fealty to the Byzantine Emperor
-		create_title_and_vassal_change = {
-			type = swear_fealty
-			add_claim_on_loss = no
-			save_scope_as = title_change
-		}
-		change_liege = {
-			liege = scope:recipient
-			change = scope:title_change
-		}
-		resolve_title_and_vassal_change = scope:title_change
-		
-		# Force the physical Estate Domicile to spawn inside Constantinople
-		hidden_effect = {
-			domicile ?= {
-				move_domicile = title:c_byzantion.province
-			}
-		}
-	}
+    # --- STRATŌ TRANSITION ---
+    scope:actor = {
+        # Set Stratō to his specific Cadet Branch
+        set_house = house:house_nars_1001
+
+        hidden_effect = {
+            # Liquidate the landless mercenary camp
+            laamp_clear_domicile_buildings_liquidator_effect = yes
+        }
+        
+        # Prevent his courtiers/assassins from scattering during the transition
+        every_courtier = { add_to_list = courtiers_list }
+        
+        # Destroy the Landless Adventurer Camp title
+        destroy_laamp_effect = { ADVENTURER = scope:actor }
+        
+        hidden_effect = {
+            # Force Stratō into the Byzantine Emperor's court temporarily
+            scope:recipient = {
+                add_courtier = scope:actor
+                return_to_court = yes
+            }
+        }
+        
+        # Grant Stratō his Noble Family and Estate
+        create_noble_family_effect = { GOVERNMENT_GIVER = scope:recipient }
+        
+        hidden_effect = {
+            # Return his loyal Narsid courtiers to his new estate
+            every_in_list = {
+                list = courtiers_list
+                limit = {
+                    NOT = { liege_or_court_owner = scope:actor }
+                }
+                scope:actor = { add_courtier = prev }
+            }
+            # Boot any random lowborns the game auto-generated during the transition
+            every_courtier = {
+                limit = {
+                    is_lowborn = yes
+                    NOR = {
+                        is_in_list = courtiers_list
+                        is_close_or_extended_family_of = scope:actor
+                        is_consort_of = scope:actor
+                        has_important_relationship_trigger = { CHARACTER = scope:actor }
+                    }
+                }
+                silent_disappearance_effect = yes
+            }
+        }
+        
+        # Swear Fealty to the Byzantine Emperor
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            add_claim_on_loss = no
+            save_scope_as = title_change
+        }
+        change_liege = {
+            liege = scope:recipient
+            change = scope:title_change
+        }
+        resolve_title_and_vassal_change = scope:title_change
+        
+        # Force the physical Estate Domicile to spawn inside Constantinople
+        hidden_effect = {
+            domicile ?= {
+                move_domicile = title:c_byzantion.province
+            }
+        }
+    }
 }
 
-ilione_settle_tana_effect = {
-	
+bookmark_ilione_nomadic_event_effect = {
+    # Set Iliónē to her specific Cadet Branch
+    set_house = house:house_nars_1002
+
+    add_character_flag = {
+        flag = domicile_culture_and_faith_check
+        days = 1
+    }
+    set_variable = {
+        name = previous_provisions
+        value = root.domicile.provisions
+    }
+    change_government = nomad_government
+
+    # Take the two target counties
+    hidden_effect = {
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = change
+            add_claim_on_loss = no
+        }
+        title:c_tana = {
+            change_title_holder = {
+                holder = root
+                change = scope:change
+                take_baronies = yes
+            }
+        }
+        title:c_kuzeytorg = {
+            change_title_holder = {
+                holder = root
+                change = scope:change
+                take_baronies = yes
+            }
+        }
+        resolve_title_and_vassal_change = scope:change
+
+        create_title_and_vassal_change = {
+            type = granted
+            save_scope_as = duchy_change
+            add_claim_on_loss = no
+        }
+        title:d_tana = {
+            change_title_holder = {
+                holder = root
+                change = scope:duchy_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:duchy_change
+        
+        domicile = {
+            change_herd = {
+                value = root.var:previous_provisions
+                multiply = 0.25
+            }
+        }
+    }
+
+    # Grant the duchy and set it as primary
+    set_primary_title_to = title:d_tana
+
+    # Destroy the adventurer title
+    title:d_laamp_nars_1002 = {
+        if = {
+            limit = { exists = this }
+            destroy_title = this
+        }
+    }
+    
+    custom_tooltip = adopt_nomadic_ways_decision_herd_tt
+    if = {
+        limit = { NOT = { has_trait = nomadic_philosophy } }
+        add_trait = nomadic_philosophy
+    }
 }

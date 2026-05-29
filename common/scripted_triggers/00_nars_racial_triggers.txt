@@ -1,7 +1,5 @@
 is_nikean = {
-    culture = {
-        has_cultural_pillar = heritage_nars
-    }
+    culture = { has_cultural_pillar = heritage_nars }
 }
 
 is_ethnically_nikean = {

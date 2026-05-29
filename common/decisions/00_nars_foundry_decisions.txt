@@ -9,7 +9,7 @@ decision_mend_narsil = {
 
 	is_shown = {
 		is_nikean = yes
-		is_narsocratic = yes
+		highest_held_title_tier >= tier_kingdom
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
@@ -68,13 +68,9 @@ decision_munitions_research = {
 
 	is_shown = {
 		has_ep3_dlc_trigger = yes
-		has_multiple_players = no
 		is_nikean = yes
 		is_ruler = yes
-		OR = {
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
+		highest_held_title_tier >= tier_empire
 		# One-time: removed once the scheme has been initiated
 		#NOT = {
 		#	is_target_in_global_variable_list = {

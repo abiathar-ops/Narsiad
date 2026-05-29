@@ -46,9 +46,7 @@ innovation_nikean_architecture_02 = {
 	icon = @civil_construction_2
 
 	potential = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+		has_cultural_pillar = heritage_nars
 	}
 
 	unlock_building = canton_duchy_02

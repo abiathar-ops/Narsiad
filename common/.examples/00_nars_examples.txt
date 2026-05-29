@@ -1335,7 +1335,7 @@ option = {
 		resolve_title_and_vassal_change = scope:change
 
 		start_war = {
-			casus_belli = admin_barbarian_conquest_cb
+			casus_belli = humiliation_cb
 			target = title:d_biansong.holder
 		}
 

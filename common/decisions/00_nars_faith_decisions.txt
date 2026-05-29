@@ -11,12 +11,10 @@
 	sort_order = 90
 
 	is_shown = {
-		is_landed_or_landless_administrative = yes
 		is_nikean = yes
 	}
 	
 	is_valid = {
-		
 		is_at_war = no
 		is_imprisoned = no	
 	}
@@ -55,7 +53,6 @@ decision_nikean_faith_choice = {
 	sort_order = 90
 
 	is_shown = {
-		is_landed_or_landless_administrative = yes
 		is_nikean = yes
 		is_orphic = yes
 	}
@@ -82,7 +79,6 @@ decision_nikean_faith_choice = {
 			value = faith_nikean_1_decision
 			is_shown = {
 				is_ruler = yes
-				is_landless_adventurer = no
 				is_nikean = yes
 			}
 			is_valid = {
@@ -110,11 +106,11 @@ decision_nikean_faith_choice = {
 			value = faith_nikean_2_decision
 			is_shown = {
 				is_ruler = yes
-				is_landless_adventurer = no
 				is_nikean = yes
 			}
 			is_valid = {
 				piety >= massive_piety_value
+				is_landless_adventurer = no
 				is_nikean = yes
 				is_orphic = yes
 				is_at_war = no
@@ -138,17 +134,14 @@ decision_nikean_faith_choice = {
 			value = faith_nikean_3_decision
 			is_shown = {
 				is_ruler = yes
-				is_landless_adventurer = no
 				is_nikean = yes
 			}
 			is_valid = {
 				custom_tooltip = {
 					text = narsokratia_empire_above
-					or = {
-						has_title = title:e_narsokratia
-						has_title = title:e_narsokratia
-					}
+					highest_held_title_tier > tier_kingdom
 				}
+				is_landless_adventurer = no
 				gold >= massive_treasury_or_gold_value
 				is_nikean = yes
 				is_orphic = yes
@@ -173,7 +166,6 @@ decision_nikean_faith_choice = {
 			value = faith_nikean_4_decision
 			is_shown = {
 				is_ruler = yes
-				is_landless_adventurer = no
 				is_nikean = yes
 			}
 			is_valid = {
@@ -184,8 +176,9 @@ decision_nikean_faith_choice = {
 				is_imprisoned = no	
 				custom_tooltip = {
 					text = narsokratia_empire_above
-					is_narsocratic_e_h = yes
+					highest_held_title_tier > tier_kingdom
 				}
+				is_landless_adventurer = no
 				NOT = {
 					custom_tooltip = {
 						text = faith_nikean_4_cooldown_tt

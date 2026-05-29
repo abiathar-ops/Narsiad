@@ -95,6 +95,11 @@ nars_0001 = {
 			uses_supply = yes
 			inheritable = yes
 		}
+        add_prestige = 4750
+		add_piety = 1215
+		add_prestige_level = 3
+		add_piety_level = 2
+		add_gold = 400
     }
     1213.1.1 = {
         death = {
@@ -143,24 +148,23 @@ nars_0002 = {
 	 		type = maa_hoplitai
 	 		check_can_recruit = no
             title = title:d_laamp_nars_0001
-	 		size = 10
-	 	}
-        create_maa_regiment = {
-	 		type = maa_hoplitai
-	 		check_can_recruit = no
-            title = title:d_laamp_nars_0001
-	 		size = 10
+	 		size = 5
 	 	}
         spawn_army = {
 			name = nikean_troop_intro_name
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 15
+				stacks = 10
 			}
 			location = root.location
 			uses_supply = yes
 			inheritable = yes
 		}
+        add_prestige = 1500
+		add_piety = 750
+		add_prestige_level = 2
+		add_piety_level = 1
+		add_gold = 350
     }
     1213.1.1 = {
         death = {
@@ -211,12 +215,6 @@ nars_0003 = {
             title = title:d_laamp_nars_0001
 	 		size = 10
 	 	}
-        create_maa_regiment = {
-	 		type = maa_hoplitai
-	 		check_can_recruit = no
-            title = title:d_laamp_nars_0001
-	 		size = 10
-	 	}
         spawn_army = {
 			name = nikean_troop_intro_name
 			men_at_arms = {
@@ -227,6 +225,11 @@ nars_0003 = {
 			uses_supply = yes
 			inheritable = yes
 		}
+        add_prestige = 125
+		add_piety = 75
+		add_prestige_level = 2
+		add_piety_level = 1
+		add_gold = 650
     }
     1213.1.1 = {
         death = {
@@ -304,6 +307,7 @@ nars_0005 = {
 
 nars_0006 = {
     name = "Ōpelía"
+    dna = 70000016_nikean
     dynasty = dyn_nars_1004
     female = yes
     religion = nars_religion

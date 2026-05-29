@@ -20,8 +20,6 @@ decision_h_narsokratia = {
 	is_shown = {
 		is_ruler = yes
 		is_nikean = yes
-		has_title = title:e_narsokratia
-		NOT = { has_title = title:h_narsokratia }
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -32,8 +30,11 @@ decision_h_narsokratia = {
 
 	is_valid = {
 		top_liege = this
-		prestige_level >= 5
-		has_title = title:e_narsokratia
+		OR = {
+			prestige_level >= 5
+			piety_level >= 5
+		}
+		highest_held_title_tier = tier_empire
 		AND = {
 			custom_description = {
 				text = found_hegemony_decision_eight_kingdoms_held
@@ -120,213 +121,212 @@ decision_h_narsokratia = {
 	}
 }
 
-decision_e_narsokratia = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-	}
-	decision_group_type = nikean
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 60
-		empire = 0
-		hegemony = 0
-	}
-	desc = decision_e_narsokratia_desc
+# decision_e_narsokratia = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+# 	}
+# 	decision_group_type = nikean
+# 	ai_check_interval_by_tier = {
+# 		barony = 0
+# 		county = 0
+# 		duchy = 0
+# 		kingdom = 60
+# 		empire = 0
+# 		hegemony = 0
+# 	}
+# 	desc = decision_e_narsokratia_desc
 
-	sort_order = 1000
+# 	sort_order = 1000
 
-	is_shown = {
-		is_nikean = yes
-		is_landed_or_landless_administrative = yes
-		is_confederation_member = no
-		NOT = { has_title = title:e_narsokratia }
-		NOT = { has_title = title:h_narsokratia }
-		OR = {
-			has_title = title:k_narsokratia
-			highest_held_title_tier = tier_empire
-		}
-	}
+# 	is_shown = {
+# 		NOT = { government_type = nomadic_government }
+# 		is_nikean = yes
+# 		is_landed_or_landless_administrative = yes
+# 		is_confederation_member = no
+# 		NOT = { is_narsocratic_e_h = yes }
+# 		OR = {
+# 			has_title = title:k_narsokratia
+# 			highest_held_title_tier = tier_empire
+# 		}
+# 	}
 
-	is_valid = {
-		top_liege = this
-		prestige_level >= 4
-		OR = {	
-			AND = {
-				has_title = title:k_narsokratia
-				custom_description = {
-					text = found_e_narsokratia_decision_three_kingdoms_held
-				any_held_title = {
-					count >= 3
-					title_tier = kingdom
-					}
-				}
-				sub_realm_size >= 80
-			}
-			highest_held_title_tier = tier_empire
-		}
-	}
+# 	is_valid = {
+# 		top_liege = this
+# 		prestige_level >= 4
+# 		OR = {	
+# 			AND = {
+# 				has_title = title:k_narsokratia
+# 				custom_description = {
+# 					text = found_e_narsokratia_decision_three_kingdoms_held
+# 				any_held_title = {
+# 					count >= 3
+# 					title_tier = kingdom
+# 					}
+# 				}
+# 				sub_realm_size >= 80
+# 			}
+# 			highest_held_title_tier = tier_empire
+# 		}
+# 	}
 
-	is_valid_showing_failures_only = {
-		top_liege = this
-		is_available_adult = yes
-		is_at_war = no
-	}
+# 	is_valid_showing_failures_only = {
+# 		top_liege = this
+# 		is_available_adult = yes
+# 		is_at_war = no
+# 	}
 
-	cost = {
-		gold = {
-			value = 1250
-			if = {
-				limit = {
-					OR = {
-						government_has_flag = government_is_nomadic
-						has_treasury = yes
-					}
-				}
-				multiply = 0
-			}
-		}
-		treasury = {
-			value = 1250
-			if = {
-				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = 1250
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						government_has_flag = government_is_nomadic
+# 						has_treasury = yes
+# 					}
+# 				}
+# 				multiply = 0
+# 			}
+# 		}
+# 		treasury = {
+# 			value = 1250
+# 			if = {
+# 				limit = { has_treasury = no }
+# 				multiply = 0
+# 			}
+# 		}
+# 	}
 
-	effect = {
-		custom_tooltip = decision_e_narsokratia_effect_tooltip
-		change_government = administrative_government
-		gain_heroic_legend_seed_tooltip_effect = yes
-		create_nikean_empire_effect = yes
-		trigger_event = nikean_titles.2011
-		if = {
-			limit = {
-				is_ai = no
-				NOT = { exists = global_var:found_e_narsokratia_decision  }
-			}
-			set_global_variable = {
-				name = found_e_narsokratia_decision
-				value = root
-			}
-			set_global_variable = {
-				name = found_e_narsokratia_decision_empire
-				value = root.primary_title
-			}
-		}
-	}
+# 	effect = {
+# 		custom_tooltip = decision_e_narsokratia_effect_tooltip
+# 		change_government = administrative_government
+# 		gain_heroic_legend_seed_tooltip_effect = yes
+# 		create_nikean_empire_effect = yes
+# 		trigger_event = nikean_titles.2011
+# 		if = {
+# 			limit = {
+# 				is_ai = no
+# 				NOT = { exists = global_var:found_e_narsokratia_decision  }
+# 			}
+# 			set_global_variable = {
+# 				name = found_e_narsokratia_decision
+# 				value = root
+# 			}
+# 			set_global_variable = {
+# 				name = found_e_narsokratia_decision_empire
+# 				value = root.primary_title
+# 			}
+# 		}
+# 	}
 	
-	ai_potential = { always = yes }
+# 	ai_potential = { always = yes }
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
-decision_k_narsokratia = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-	}
-	decision_group_type = nikean
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 60
-		kingdom = 0
-		empire = 0
-		hegemony = 0
-	}
-	desc = decision_k_narsokratia_desc
+# decision_k_narsokratia = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+# 	}
+# 	decision_group_type = nikean
+# 	ai_check_interval_by_tier = {
+# 		barony = 0
+# 		county = 0
+# 		duchy = 60
+# 		kingdom = 0
+# 		empire = 0
+# 		hegemony = 0
+# 	}
+# 	desc = decision_k_narsokratia_desc
 
-	sort_order = 1000
+# 	sort_order = 1000
 
-	is_shown = {
-		is_nikean = yes
-		NOT = { has_title = title:k_narsokratia }
-		NOT = { has_title = title:e_narsokratia }
-		NOT = { has_title = title:h_narsokratia }
-	}
+# 	is_shown = {
+# 		is_nikean = yes
+# 		NOT = { is_narsocratic = yes }
+# 		NOT = { government_type = nomadic_government }
+# 	}
 
-	is_valid = {
-		top_liege = this
-		prestige_level >= 3
-		OR = {
-			highest_held_title_tier = tier_kingdom
-			OR = {
-				custom_description = {
-					text = found_kingdom_decision_three_duchies_held
-					any_held_title = {
-						count > 2
-						title_tier = duchy
-					}
-				}
-				sub_realm_size >= 30
-			}
-		}
-		trigger_if = {
-			limit = { government_has_flag = government_is_nomadic }
-			OR = {
-				has_realm_law = nomadic_authority_5
-				has_realm_law = nomadic_authority_4
-				has_realm_law = nomadic_authority_3
-			}
-		}
-	}
+# 	is_valid = {
+# 		top_liege = this
+# 		prestige_level >= 3
+# 		OR = {
+# 			highest_held_title_tier = tier_kingdom
+# 			OR = {
+# 				custom_description = {
+# 					text = found_kingdom_decision_three_duchies_held
+# 					any_held_title = {
+# 						count > 2
+# 						title_tier = duchy
+# 					}
+# 				}
+# 				sub_realm_size >= 30
+# 			}
+# 		}
+# 		trigger_if = {
+# 			limit = { government_has_flag = government_is_nomadic }
+# 			OR = {
+# 				has_realm_law = nomadic_authority_5
+# 				has_realm_law = nomadic_authority_4
+# 				has_realm_law = nomadic_authority_3
+# 			}
+# 		}
+# 	}
 
-	is_valid_showing_failures_only = {
-		is_available_adult = yes
-		is_at_war = no
-	}
+# 	is_valid_showing_failures_only = {
+# 		is_available_adult = yes
+# 		is_at_war = no
+# 	}
 
-	cost = {
-		gold = {
-			value = 350
-			if = {
-				limit = {
-					OR = {
-						government_has_flag = government_is_nomadic
-						has_treasury = yes
-					}
-				}
-				multiply = 0
-			}
-		}
-		treasury = {
-			value = 350
-			if = {
-				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-	}
+# 	cost = {
+# 		gold = {
+# 			value = 350
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						government_has_flag = government_is_nomadic
+# 						has_treasury = yes
+# 					}
+# 				}
+# 				multiply = 0
+# 			}
+# 		}
+# 		treasury = {
+# 			value = 350
+# 			if = {
+# 				limit = { has_treasury = no }
+# 				multiply = 0
+# 			}
+# 		}
+# 	}
 
-	effect = {
-		custom_tooltip = decision_k_narsokratia_effect_tooltip
-		create_nikean_kingdom_effect = yes
-		gain_heroic_legend_seed_tooltip_effect = yes
-		trigger_event = nikean_titles.2001
-		if = {
-			limit = {
-				is_ai = no
-				NOT = { exists = global_var:found_k_narsokratia_decision  }
-			}
-			set_global_variable = {
-				name = found_k_narsokratia_decision
-				value = root
-			}
-			set_global_variable = {
-				name = found_k_narsokratia_decision_kingdom
-				value = root.primary_title
-			}
-		}
+# 	effect = {
+# 		custom_tooltip = decision_k_narsokratia_effect_tooltip
+# 		create_nikean_kingdom_effect = yes
+# 		gain_heroic_legend_seed_tooltip_effect = yes
+# 		trigger_event = nikean_titles.2001
+# 		if = {
+# 			limit = {
+# 				is_ai = no
+# 				NOT = { exists = global_var:found_k_narsokratia_decision  }
+# 			}
+# 			set_global_variable = {
+# 				name = found_k_narsokratia_decision
+# 				value = root
+# 			}
+# 			set_global_variable = {
+# 				name = found_k_narsokratia_decision_kingdom
+# 				value = root.primary_title
+# 			}
+# 		}
 		
-	}
+# 	}
 
-	ai_potential = { always = yes }
+# 	ai_potential = { always = yes }
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }

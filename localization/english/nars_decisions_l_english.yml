@@ -3,7 +3,7 @@
  decision_group_type_nikean: "Nikean Decisions"
  decision_group_type_nikean_2: "Narsiad - Minor Decisions"
 
- narsokratia_empire_above: "You require a [narsokratia|E] [rank|E] of [empire|E] or above!"
+ narsokratia_empire_above: "Your [realm|E] requires a [rank|E] of [empire|E] or above!"
 
  # ── Faith ──
 
@@ -90,7 +90,7 @@
  decision_k_narsokratia_desc: "The squabbling [rulers|E] and warlords of this [era|E] mistake their disorganized [realms|E] for true nations. By uniting the pacified [provinces|E], I shall reintroduce the concept of [narsokratia|E] to these [land|E], forging a [kingdom|E] that will belong to my [dynasty|E] for all time."
  decision_k_narsokratia_confirm: "Gather the realm"
  decision_k_narsokratia_tooltip: "Found an entirely new Despotēia title"
- decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]\n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('e_narsokratia').GetName]"
+ decision_k_narsokratia_effect_tooltip: "Establish [GetTitleByKey('k_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey('k_narsokratia').GetName] will have the [de_jure|E] of held [duchies|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] \n$EFFECT_LIST_BULLET$Unlocks [decision|E] to form [GetTitleByKey('e_narsokratia').GetName]"
  create_nikean_kingdom_de_jure_changes: "Becomes [de_jure|E] [duchies|E] of your new Despotēia"
 
  decision_e_narsokratia: "Proclaim an Ōtarkhia"
@@ -104,10 +104,9 @@
  decision_h_narsokratia: "Restore the Mōnarkhía"
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
- decision_h_narsokratia_desc: "We have outgrown the confines of mere [empires|E]. If key territories of the present [realms|E] could be pacified, our [realm|E] would win [prestige|E] and [renown|E] in the eyes of all [nikeis|E] and the other barbaric [cultures|E] as the undisputed continuation of the [nikeanrealm|E] of antiquity. \n\nThe [narsokratia|E] of our [realm|E] will be the rightful inheritors of the world."
- decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] will have a chance to convert to your [faith|E] and [culture|E]"
- decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 4500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
- require_narsil_artifact_tooltip: "You possess the longsword #V Narsíl#!"
+ decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [nikeis|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
+ decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
 
  decision_mend_narsil: "Reforge the Longsword Narsíl"
  decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom from a line of [nikean|E] [hegemons|E]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
