@@ -131,22 +131,31 @@
 
  nikean_bookmark.0010.t: "Sautòn Isthí: $Eleios$"
  nikean_bookmark.0010.desc: "Some months ago, the death of my pious father, [alnars|E], had chipped off [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] into another two [mercenary|E] [camps|E] headed by my siblings. Alas, perhaps it was a hidden blessing that the schism happened for they ascribe to themselves to a new [tradition|E] wholly unfamiliar to us, [followers|E] of [alnars_adj|E] beliefs. \n\nNo matter however, the road to a [nikean|E] [hegemony|E] can be taken by other roads just as well. My position as [heir|E] to [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] however have given me a number of boons to aid in our road of struggle to proclaim a [narsokratia|E]. \n\nI #EMP must#! take any advantage I possess to safeguard the future of my people!"
- nikean_bookmark.0010.a: "$Alnars$' records are my birthright!"
+ nikean_bookmark.0010.a: "$Alnars$' heirlooms have always been my birthright!"
  nikean_bookmark.0010.b: "I must expand our numbers.."
- nikean_courtiers.tt: "You recruit a significant number of [nikeans|E] under your [mercenary|E] [camp|E]"
+ nikean_courtiers.tt: "You recruit a significant number of [nikeans|E] under your current [adventurer|E] [camp|E], bolstering your [followers|E]"
+ nikean_diplomacy.tt: "You send entreaties to $Ilione$'s and $Strato$'s [adventurer|E] [camps|E] to join yours as [followers|E]\n@alert_icon! #alert_trial They are able to refuse your demands!"
+ nikean_diplomacy_both_join_toast_t: "The $Naresios$ Reunited"
+ nikean_diplomacy_both_join_toast_tt: "Both $Ilione$ and $Strato$ have accepted your entreaties. Their camps will merge with yours."
+ nikean_diplomacy_ilione_joins_toast_t: "$Ilione$ Accepts"
+ nikean_diplomacy_ilione_joins_toast_tt: "$Ilione$ has agreed to follow your banner, but $Strato$ stubbornly refuses."
+ nikean_diplomacy_strato_joins_toast_t: "$Strato$ Accepts"
+ nikean_diplomacy_strato_joins_toast_tt: "$Strato$ has agreed to follow your banner, but $Ilione$ stubbornly refuses."
+ nikean_diplomacy_neither_join_toast_t: "Entreaties Rejected"
+ nikean_diplomacy_neither_join_toast_tt: "Both of your siblings have rejected your demands. They will remain independent."
 
  nikean_bookmark.0020.t: "Sautòn Isthí: $Ilione$"
  nikean_bookmark.0020.desc: "Some months ago, the death of my father, [alnars|E], shattered the unity of my people. He had kept us bound to his singular vision, but with him gone, my brothers scramble for power like dogs fighting over a bone. $Eleios$ dreams of tying us to the dirt with his settled [narsokratia|E], while $Strato$ cowers in the shadows of foreign courts. \n\nThey are fools. The true strength of a [nikean|E] lies not in only statecraft or [intrigue|E], but in the absolute might of the [soldiers|E] and the heavy weight of their [gold|E]. I will forge an untouchable [mercenary|E] empire. Kings will beg for our spears, and we will dictate the fate of realms through contracts, not crowns. \n\nWe are #EMP free#! swords, and we bow to no one!"
- nikean_bookmark.0020.a: "The world itself is our [kingdom|E] to shape!"
- nikean_bookmark.0020.b: "[wars|E] and battles can wait.."
- nikean_bookmark.0020.a.tt: "This option will result in you founding a [nomadic|E] [realm|E] in the nearby Khazars"
+ nikean_bookmark.0020.a: "[GetTitleByKey('e_caspian-pontic_steppe').GetNameNoTier] are first!"
+ nikean_bookmark.0020.b: "[wars|E] and battles can wait..."
+ nikean_bookmark.0020.a.tt: "This option will result in you founding a [nomadic|E] [realm|E] within [GetTitleByKey('d_tana').GetNameNoTier]"
 
  nikean_bookmark.0021.t: "$Ilione$: Way of the Nomad"
  nikean_bookmark.0021.desc.intro: "The time has come for me to turn my camp into something more: a moving settlement marching across the steppe with the turn of the seasons.\n\n"I hope that these lands serve you well," the shepherd that led people before us welcomes us into [herder.GetHerHis] tent."
  nikean_bookmark.0021.desc.subject: "\n\n"[nomad.GetTitledFirstName] is my overlord," [herder.GetSheHe] continues in a warning tone, "And tribute is what [nomad.GetSheHe] demands.""
  nikean_bookmark.0021.a: "#emp "His tribute will be my sword on his throat!"#!"
  nikean_bookmark.0021.b: "#emp "I am not here to be subject to anyone."#!"
- nikean_bookmark.0021.a.tt: "@alert_icon! #alert_trial You insult [nomad.GetTitledFirstName] for his demands. This #emp will#! have consequences."
+ nikean_bookmark.0021.a.tt: "@alert_icon! #alert_trial You insult [nomad.GetTitledFirstName] for his demands. This #emp will#! have consequences..."
 
  nikean_bookmark.0022.t: "$Ilione$: First Blood"
  nikean_bookmark.0022.desc.intro: "The morning mist has not yet lifted when my outriders return to the encampment, their mounts coated in sweat and frost. They bring urgent tidings from the plains: [steppe_khan.GetTitledFirstName] is marshaling a host. This is no border skirmish. The [steppe_khan.GetTitleAsNameNoTooltip] intends to sweep our [camp|E] from these lands entirely.\n\nLet [steppe_khan.GetHerHim] try. The horse-lords of the steppe believe they hold the monopoly on swift, decisive violence. They expect us to entrench and cower behind our wagons, waiting for the storm to hit.\n\nIf the Khan wishes to test our arms and spears, [steppe_khan.GetSheHe] will not have to come looking for us. We will march out and break their horde before they can even draw their bows."
@@ -154,10 +163,10 @@
 
  nikean_bookmark.0030.t: "Sautòn Isthí: $Strato$"
  nikean_bookmark.0030.desc: "The passing of my father, [alnars|E], was the end of an [era|E], and the beginning of a schism. My siblings, blinded by hubris, took their [faction|E] in opposite directions. $Eleios$ marches openly, seeking a bloody [hegemony|E], while $Ilione$ sells our people's honor to the highest bidder for their wretched wars. \n\nThey do not see the truth: we are vastly outnumbered. A [nikean|E] spear can pierce armor, but a whispered secret can topple an [empire|E] without a single casualty of our own. I will not waste our people in open fields or meaningless [mercenary|E] contracts. We will weave ourselves into the fabric of these foreign [kingdoms|E] and forlorn, delicate husk of empires. \n\nThrough subversion, our bloodline #emp will#! rule from within."
- nikean_bookmark.0030.a: "Wars are won with words and well-placed knives!"
+ nikean_bookmark.0030.a: "#emp "Wars are won with words and well-placed knives!"#!"
  nikean_adventurer_tooltip: "This option will result in you remaining to be an [adventurer|E]"
 
- nikean_bookmark.0030.b: "Perhaps [GetTitleByKey('c_byzantion').GetNameNoTier] will be a den for our schemes.."
+ nikean_bookmark.0030.b: "#emp "Perhaps [GetTitleByKey('c_byzantion').GetNameNoTier] will be a den for our schemes..?"#!"
  nikean_bookmark.0030.b.tt: "This option will result in you becoming an [unlanded|E] [ruler|E] in [GetTitleByKey('e_byzantium').GetNameNoTier]"
 
  nikean_bookmark.1001.t: "Kakías Apékhou: Prologue" #Prologue?

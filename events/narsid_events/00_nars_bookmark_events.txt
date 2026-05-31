@@ -68,6 +68,7 @@ nikean_bookmark.0010 = {
             create_anduril_effect = yes
         }
         add_trait = scholar
+        elios_intro_effect = yes
         ai_chance = {
 			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
@@ -75,7 +76,10 @@ nikean_bookmark.0010 = {
     option = {
 		name = nikean_bookmark.0010.b
         custom_tooltip = nikean_courtiers.tt
-        elios_intro_effect = yes
+        custom_tooltip = nikean_diplomacy.tt
+        hidden_effect = {
+            nikean_diplomacy_entreaty_effect = yes
+        }
         trigger_event = nikean_courtiers.0002
         trigger_event = nikean_courtiers.0002
         ai_chance = {
@@ -105,6 +109,7 @@ nikean_bookmark.0020 = {
 	option = {
 		name = nikean_bookmark.0020.a #Khazars
         custom_tooltip = nikean_bookmark.0020.a.tt
+        ilione_intro_effect = yes
 		start_travel_plan = {
 			destination = title:c_tana.title_province
 			on_arrival_event = nikean_bookmark.0021
@@ -121,7 +126,6 @@ nikean_bookmark.0020 = {
     option = {
 		name = nikean_bookmark.0020.b
         custom_tooltip = nikean_adventurer_tooltip
-        ilione_intro_effect = yes
         spawn_army = {
 			levies = 1250
 			men_at_arms = {
@@ -286,8 +290,9 @@ nikean_bookmark.0030 = {
     option = {
 		name = nikean_bookmark.0030.b
         custom_tooltip = nikean_bookmark.0030.b.tt
+        strato_intro_effect = yes
         hidden_effect = {
-            strato_intro_effect = yes
+           
             bookmark_strato_administrative_event_effect = yes
         }
         change_influence = 500

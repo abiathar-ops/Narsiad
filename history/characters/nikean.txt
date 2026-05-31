@@ -97,7 +97,7 @@ nars_0001 = {
 		}
         add_prestige = 4750
 		add_piety = 1215
-		add_prestige_level = 3
+		add_prestige_level = 2
 		add_piety_level = 2
 		add_gold = 400
     }
@@ -227,7 +227,7 @@ nars_0003 = {
 		}
         add_prestige = 125
 		add_piety = 75
-		add_prestige_level = 2
+		add_prestige_level = 1
 		add_piety_level = 1
 		add_gold = 650
     }

@@ -301,3 +301,170 @@ bookmark_ilione_nomadic_event_effect = {
         add_trait = nomadic_philosophy
     }
 }
+
+nikean_diplomacy_entreaty_effect = {
+    custom_tooltip = nikean_diplomacy.tt
+    # Save the siblings as scopes for the notification icons and effects
+    character:nars_0002 = { save_scope_as = ilione }
+    character:nars_0003 = { save_scope_as = strato }
+
+    hidden_effect = {
+        random_list = {
+            # ==========================================
+            # OUTCOME 1: BOTH JOIN (20% Chance)
+            # ==========================================
+            20 = {
+                # You can add dynamic weight modifiers here based on opinion/traits
+                modifier = {
+                    add = 10
+                    scope:ilione = { opinion: { target = root value >= 50 } }
+                    scope:strato = { opinion: { target = root value >= 50 } }
+                }
+                
+                scope:ilione = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = ilione_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    
+                    root = { 
+                        add_courtier = scope:ilione 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = ilione_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
+                
+                scope:strato = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = strato_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    
+                    root = { 
+                        add_courtier = scope:strato 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = strato_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
+                
+                send_interface_toast = {
+                    title = nikean_diplomacy_both_join_toast_t
+                    left_icon = scope:ilione
+                    right_icon = scope:strato
+                    custom_tooltip = nikean_diplomacy_both_join_toast_tt
+                }
+            }
+
+            # ==========================================
+            # OUTCOME 2: ONLY ILIÓNĒ JOINS (25% Chance)
+            # ==========================================
+            25 = {
+                scope:ilione = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = ilione_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    
+                    root = { 
+                        add_courtier = scope:ilione 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = ilione_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
+                scope:strato = {
+                    add_opinion = {
+                        target = root
+                        modifier = nars_refused_entreaty_opinion
+                    }
+                }
+                
+                send_interface_toast = {
+                    title = nikean_diplomacy_ilione_joins_toast_t
+                    left_icon = scope:ilione
+                    right_icon = scope:strato
+                    custom_tooltip = nikean_diplomacy_ilione_joins_toast_tt
+                }
+            }
+
+            # ==========================================
+            # OUTCOME 3: ONLY STRATŌ JOINS (25% Chance)
+            # ==========================================
+            25 = {
+                scope:ilione = {
+                    add_opinion = {
+                        target = root
+                        modifier = nars_refused_entreaty_opinion
+                    }
+                }
+                scope:strato = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = strato_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    
+                    root = { 
+                        add_courtier = scope:strato 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = strato_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
+                
+                send_interface_toast = {
+                    title = nikean_diplomacy_strato_joins_toast_t
+                    left_icon = scope:strato
+                    right_icon = scope:ilione
+                    custom_tooltip = nikean_diplomacy_strato_joins_toast_tt
+                }
+            }
+
+            # ==========================================
+            # OUTCOME 4: NEITHER JOINS (30% Chance)
+            # ==========================================
+            30 = {
+                scope:ilione = {
+                    add_opinion = {
+                        target = root
+                        modifier = nars_refused_entreaty_opinion
+                    }
+                }
+                scope:strato = {
+                    add_opinion = {
+                        target = root
+                        modifier = nars_refused_entreaty_opinion
+                    }
+                }
+                
+                send_interface_toast = {
+                    title = nikean_diplomacy_neither_join_toast_t
+                    left_icon = scope:ilione
+                    right_icon = scope:strato
+                    custom_tooltip = nikean_diplomacy_neither_join_toast_tt
+                }
+            }
+        }
+    }
+}
