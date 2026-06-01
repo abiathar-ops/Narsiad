@@ -134,11 +134,12 @@ nikean_evangelize_hegemony_county_effect = {
 }
 
 bookmark_strato_administrative_event_effect = {
+    # --- RIG THE TARGETS ---
     title:e_byzantium.holder = { save_scope_as = recipient }
     character:nars_0003 = { save_scope_as = actor }
 
+    # --- STRATŌ TRANSITION ---
     scope:actor = {
-        # Set Stratō to his specific Cadet Branch
         set_house = house:house_nars_1001
 
         hidden_effect = {
@@ -160,9 +161,7 @@ bookmark_strato_administrative_event_effect = {
         hidden_effect = {
             every_in_list = {
                 list = courtiers_list
-                limit = {
-                    NOT = { liege_or_court_owner = scope:actor }
-                }
+                limit = { NOT = { liege_or_court_owner = scope:actor } }
                 scope:actor = { add_courtier = prev }
             }
             every_courtier = {
@@ -188,16 +187,54 @@ bookmark_strato_administrative_event_effect = {
             liege = scope:recipient
             change = scope:title_change
         }
+
         resolve_title_and_vassal_change = scope:title_change
         
+        # Force Estate location and grant randomized starting buildings
         hidden_effect = {
             domicile ?= {
                 move_domicile = title:c_byzantion.province
+                
+                # Baseline Estate Upgrades[cite: 2]
+                add_domicile_building = estate_main_01
+                add_domicile_building = estate_main_02
+                add_domicile_building = estate_main_03
+                
+                # Roll for Internal Specialized Rooms[cite: 2]
+                random_list = {
+                    10 = {
+                        add_domicile_building = servants_quarters_01
+                        add_domicile_building = servants_quarters_02
+                    }
+                    10 = {
+                        add_domicile_building = office_01
+                        add_domicile_building = office_02
+                    }
+                    10 = {
+                        add_domicile_building = prison_01
+                        add_domicile_building = prison_02
+                    }
+                }
+                
+                # Roll for External Infrastructure[cite: 2]
+                random_list = {
+                    10 = {
+                        add_domicile_building = market_01
+                        add_domicile_building = market_02
+                    }
+                    10 = {
+                        add_domicile_building = workshop_01
+                        add_domicile_building = workshop_02
+                    }
+                    10 = {
+                        add_domicile_building = barracks_01
+                        add_domicile_building = barracks_02
+                    }
+                }
             }
         }
     }
 }
-
 bookmark_ilione_nomadic_event_effect = {
     set_house = house:house_nars_1002
 
@@ -246,10 +283,49 @@ bookmark_ilione_nomadic_event_effect = {
         }
         resolve_title_and_vassal_change = scope:duchy_change
         
-        domicile = {
+        # Herd mechanics and randomized starting yurt buildings
+        domicile ?= {
             change_herd = {
                 value = root.var:previous_provisions
                 multiply = 0.25
+            }
+            
+            # Baseline Yurt Upgrades[cite: 3]
+            add_domicile_building = yurt_main_01
+            add_domicile_building = yurt_main_02
+            add_domicile_building = yurt_main_03
+            add_domicile_building = yurt_main_04
+            
+            # Roll for External Warfare or Herd focus[cite: 3]
+            random_list = {
+                10 = {
+                    add_domicile_building = mass_warfare_yurt_01
+                    add_domicile_building = mass_warfare_yurt_02
+                }
+                10 = {
+                    add_domicile_building = character_warfare_yurt_01
+                    add_domicile_building = character_warfare_yurt_02
+                }
+                10 = {
+                    add_domicile_building = herd_welfare_yurt_01
+                    add_domicile_building = herd_welfare_yurt_02
+                }
+            }
+            
+            # Roll for Internal Main Yurt Upgrades[cite: 3]
+            random_list = {
+                10 = {
+                    add_domicile_building = raid_main_yurt_01
+                    add_domicile_building = raid_main_yurt_02
+                }
+                10 = {
+                    add_domicile_building = herd_main_yurt_01
+                    add_domicile_building = herd_main_yurt_02
+                }
+                10 = {
+                    add_domicile_building = kurultai_main_yurt_01
+                    add_domicile_building = kurultai_main_yurt_02
+                }
             }
         }
     }
