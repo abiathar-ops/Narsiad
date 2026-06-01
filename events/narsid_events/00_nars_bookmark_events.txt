@@ -351,8 +351,6 @@ nikean_bookmark.1001 = {
     }
 
     immediate = {
-        # --- SCOPE THE RIVALS ---
-        # Dynamically find who leads the other two camps and save them as scopes
         if = {
             limit = { root = { has_title = title:d_laamp_nars_1001 } }
             title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
@@ -416,8 +414,6 @@ nikean_bookmark.1002 = {
     }
 
     immediate = {
-        # --- SCOPE THE RIVALS ---
-        # Dynamically find who leads the other two camps and save them as scopes
         if = {
             limit = { root = { has_title = title:d_laamp_nars_1001 } }
             title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
@@ -464,20 +460,17 @@ nikean_bookmark.1003 = {
         camera = camera_event_center_away_pointing_left_fov25
     }
     
-    # Lower right: The first rival faction head
     lower_right_portrait = {
         character = scope:rival_1
         animation = marshal
     }
     
-    # Lower center: The second rival faction head
     lower_center_portrait = {
         character = scope:rival_2
         animation = marshal_dagger
     }
     
     immediate = {
-        # --- SCOPE THE RIVALS ---
         if = {
             limit = { root = { has_title = title:d_laamp_nars_1001 } }
             title:d_laamp_nars_1002.holder = { save_scope_as = rival_1 }
@@ -494,7 +487,6 @@ nikean_bookmark.1003 = {
             title:d_laamp_nars_1002.holder = { save_scope_as = rival_2 }
         }
 
-        # --- SCOPE THE MESSENGER ---
         random_courtier = {
             limit = {
                 is_adult = yes
@@ -549,7 +541,6 @@ nikean_bookmark.1003 = {
         name = nikean_bookmark.1003.b
     }
 
-    # --- DEATH VANISH ISOLATED CLEANUP ---
     after = {
         if = {
             limit = { 

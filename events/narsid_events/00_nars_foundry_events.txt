@@ -181,10 +181,6 @@ nikean_artifact.1004 = {
 
 namespace = nikean_gunpowder
 
-# ─────────────────────────────────────────────────────────────────
-# HARNESS BLACK POWDER EVENT
-# ─────────────────────────────────────────────────────────────────
-
 nikean_gunpowder.1021 = {
 	type = character_event
 	title = nikean_gunpowder.1021.t

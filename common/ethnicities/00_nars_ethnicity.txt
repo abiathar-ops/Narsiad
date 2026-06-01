@@ -50,7 +50,6 @@ nikean = {
 		10 = { 0.00 0.00 0.01 0.02 }
 	}
 	
-	# ---------------------------------------------------------
 	
 	gene_chin_forward = {
 		10 = { name = chin_forward_neg range = { 0.33 0.57 } }
@@ -179,10 +178,6 @@ nikean = {
 	gene_neck_width = {
 		10 = { name = neck_width_neg range = { 0.26 0.50 } }
 	}
-
-	# ---------------------------------------------------------
-	# 3. BLEND SHAPES (Nose, Ears, Cheeks)
-	# ---------------------------------------------------------
 
 	gene_bs_cheek_forward = {
 		10 = { name = cheek_forward_pos range = { 0.00 0.12 } }
@@ -349,10 +344,6 @@ nikean = {
 		10 = { name = nose_tip_width_neg range = { 0.07 0.31 } }
 	}
 
-	# ---------------------------------------------------------
-	# 4. FACE DETAILS
-	# ---------------------------------------------------------
-
 	face_detail_cheek_def = {
 		10 = { name = cheek_def_02 range = { 0.15 0.39 } }
 	}
@@ -392,10 +383,6 @@ nikean = {
 	face_detail_temple_def = {
 		10 = { name = temple_def range = { 0.02 0.26 } }
 	}
-
-	# ---------------------------------------------------------
-	# 5. EXPRESSIONS & MISC
-	# ---------------------------------------------------------
 
 	expression_brow_wrinkles = {
 		10 = { name = brow_wrinkles_01 range = { 0.00 0.14 } }

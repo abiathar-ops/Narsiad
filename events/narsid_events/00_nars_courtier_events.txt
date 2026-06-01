@@ -460,10 +460,6 @@ nikean_courtiers.0011 = {
 
 namespace = nikean_gunpowder
 
-# ─────────────────────────────────────────────────────────────────
-# HARNESS BLACK POWDER EVENT
-# ─────────────────────────────────────────────────────────────────
-
 nikean_gunpowder.1001 = {
 	type = character_event
 	title = nikean_gunpowder.1001.t

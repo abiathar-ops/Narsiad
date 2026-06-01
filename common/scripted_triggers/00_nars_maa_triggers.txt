@@ -27,11 +27,6 @@ can_recruit_maa_01_trigger = {
 	}
 }
 
-# ─────────────────────────────────────────────────────────────────
-#  Mástiges recruitment: available either via the late-medieval
-#  innovation OR after completing the Harness Black Powder decision
-#  (which sets the global variable mastiges_research_complete).
-# ─────────────────────────────────────────────────────────────────
 can_recruit_maa_02_trigger = {
 	nikean_maa_trigger = yes
 	exists = global_var:mastiges_research_complete

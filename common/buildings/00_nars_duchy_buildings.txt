@@ -1,7 +1,3 @@
- ────────────────────────────────────────────────────────────
-#  CANTON DUCHY  –  Phalanx Garrison  (martial / military)
-#  Alkastron knight and defender_advantage bonuses absorbed here.
-# ────────────────────────────────────────────────────────────
 
 canton_duchy_01 = {
 	construction_time = slow_construction_time
@@ -215,12 +211,6 @@ canton_duchy_03 = {
 		}
 	}
 }
-
-
-# ────────────────────────────────────────────────────────────
-#  FOUNDRY DUCHY  –  State Arsenal  (economic / fortification)
-#  Alkastron additional_fort_level bonuses absorbed here.
-# ────────────────────────────────────────────────────────────
 
 foundry_duchy_01 = {
 	construction_time = slow_construction_time

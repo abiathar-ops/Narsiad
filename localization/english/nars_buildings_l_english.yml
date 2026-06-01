@@ -1,7 +1,4 @@
 ﻿l_english:
- # ─────────────────────────────────────────────────────────
- #  BROTHEL DUCHY  –  Pleasure Quarter
- # ─────────────────────────────────────────────────────────
  building_type_canton_duchy_01:0 "Fortified Citadels"
  building_type_canton_duchy_01_desc:0 "These martial institutions are dedicated to the training, housing, and equipping of the heavy citizen-infantry. Through sweat and bronze, they forge a unified phalanx capable of breaking any enemy line. In the duchy capital, they double as the seat of knightly command and the bulwark of the realm's borders."
  building_canton_duchy_01:0 "Hoplothēkē"

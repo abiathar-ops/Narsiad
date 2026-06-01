@@ -87,7 +87,6 @@ nars_add_nikean_trait_on_birth = {
 
 nars_laamp_on_start = {
     effect = {
-        # --- PHASE 1: SIBLINGS & MAIN CAMP SETUP ---
         if = {
             limit = { has_ep3_dlc_trigger = yes }
             
@@ -102,7 +101,6 @@ nars_laamp_on_start = {
             }
         }
 
-        # --- PHASE 2: AUTOMATED CAMPS UPGRADE SEEDING ---
         every_domicile = {
             # Check the domicile's OWNER to see if they are a living Nikean adventurer
             limit = {
@@ -113,11 +111,9 @@ nars_laamp_on_start = {
                 }
             }
 
-            # Force basic Headquarters upgrades immediately
             add_domicile_building = camp_main_02
             add_domicile_building = camp_main_03
             
-            # --- TIER 1 ROLLS ---
             random_list = {
                 10 = {
                     # Roll for Supply Tent tree
@@ -153,7 +149,6 @@ nars_laamp_on_start = {
                 }
             }
             
-            # --- TIER 2 ROLLS ---
             random_list = {
                 10 = {
                     # Roll for Mess Tent tree
@@ -180,7 +175,6 @@ nars_laamp_on_start = {
                 }
             }
             
-            # --- TIER 3 ROLLS ---
             random_list = {
                 10 = {
                     # Roll for Security Perimeter
@@ -198,9 +192,7 @@ nars_laamp_on_start = {
                 }
             }
         }
-
-        # --- PHASE 3: SPOUSES FORCED RELOCATION ---
-        # Changed back to an independent IF block so it doesn't get skipped!
+        
         if = {
             limit = { has_ep3_dlc_trigger = yes }
             

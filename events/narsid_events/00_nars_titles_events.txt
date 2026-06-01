@@ -1,9 +1,5 @@
 namespace = nikean_titles
 
-# ─────────────────────────────────────────────────────────────────
-#  NARSOKRATIA EVENT
-# ─────────────────────────────────────────────────────────────────
-
 nikean_titles.2021 = {
 	type = character_event
 	window = fullscreen_event

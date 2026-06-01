@@ -1,52 +1,44 @@
-# ─────────────────────────────────────────────────────────────────
-#  TIERED VASSAL CONVERSION EFFECTS
-#  Now include culture conversion alongside faith conversion.
-# ─────────────────────────────────────────────────────────────────
+# nikean_kingdom_vassal_conversion_effect = {
+# 	every_vassal = {
+# 		limit = { is_ai = yes }
+# 		random = {
+# 			chance = 30
+# 			set_character_faith = root.faith
+# 		}
+# 	}
+# 	every_vassal = {
+# 		limit = { is_ai = yes }
+# 		random = {
+# 			chance = 30
+# 			set_culture = root.culture
+# 		}
+# 	}
+# }
 
-# Kingdom tier: ~30% chance per AI vassal converts faith AND culture.
-nikean_kingdom_vassal_conversion_effect = {
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 30
-			set_character_faith = root.faith
-		}
-	}
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 30
-			set_culture = root.culture
-		}
-	}
-}
+# nikean_empire_vassal_conversion_effect = {
+# 	every_vassal = {
+# 		limit = { is_ai = yes }
+# 		random = {
+# 			chance = 60
+# 			set_character_faith = root.faith
+# 		}
+# 	}
+# 	every_vassal = {
+# 		limit = { is_ai = yes }
+# 		random = {
+# 			chance = 60
+# 			set_culture = root.culture
+# 		}
+# 	}
+# 	# Government: all vassals flipped to administrative
+# 	every_vassal = {
+# 		limit = {
+# 			NOT = { government_has_flag = government_is_administrative }
+# 		}
+# 		change_government = administrative_government
+# 	}
+# }
 
-# Empire tier: ~60% faith + culture conversion + ALL vassals get administrative government.
-nikean_empire_vassal_conversion_effect = {
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 60
-			set_character_faith = root.faith
-		}
-	}
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 60
-			set_culture = root.culture
-		}
-	}
-	# Government: all vassals flipped to administrative
-	every_vassal = {
-		limit = {
-			NOT = { government_has_flag = government_is_administrative }
-		}
-		change_government = administrative_government
-	}
-}
-
-# Hegemony tier: FULL government conversion + direct vassals' faith AND culture converted.
 nikean_hegemony_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
@@ -72,57 +64,51 @@ nikean_hegemony_vassal_conversion_effect = {
 	}
 }
 
-# ─────────────────────────────────────────────────────────────────
-#  EVANGELIZE COUNTY CONVERSION EFFECT
-#  Called by decision_nikean_evangelize_realm.
-#  Converts a portion of realm counties to the ruler's culture and faith.
-#  Kingdom tier: ~30% of counties. Empire tier: ~50% of counties.
-# ─────────────────────────────────────────────────────────────────
-nikean_evangelize_kingdom_county_effect = {
-	every_realm_county = {
-		limit = {
-			NOT = { faith = root.faith }
-		}
-		random = {
-			chance = 10
-			set_county_faith = root.faith
-			change_county_control = minor_county_control_loss
-		}
-	}
-	every_realm_county = {
-		limit = {
-			NOT = { culture = root.culture }
-		}
-		random = {
-			chance = 10
-			set_county_culture = root.culture
-			change_county_control = minor_county_control_loss
-		}
-	}
-}
+# nikean_evangelize_kingdom_county_effect = {
+# 	every_realm_county = {
+# 		limit = {
+# 			NOT = { faith = root.faith }
+# 		}
+# 		random = {
+# 			chance = 10
+# 			set_county_faith = root.faith
+# 			change_county_control = minor_county_control_loss
+# 		}
+# 	}
+# 	every_realm_county = {
+# 		limit = {
+# 			NOT = { culture = root.culture }
+# 		}
+# 		random = {
+# 			chance = 10
+# 			set_county_culture = root.culture
+# 			change_county_control = minor_county_control_loss
+# 		}
+# 	}
+# }
 
-nikean_evangelize_empire_county_effect = {
-	every_realm_county = {
-		limit = {
-			NOT = { faith = root.faith }
-		}
-		random = {
-			chance = 30
-			set_county_faith = root.faith
-			change_county_control = minor_county_control_loss
-		}
-	}
-	every_realm_county = {
-		limit = {
-			NOT = { culture = root.culture }
-		}
-		random = {
-			chance = 30
-			set_county_culture = root.culture
-			change_county_control = minor_county_control_loss
-		}
-	}
-}
+# nikean_evangelize_empire_county_effect = {
+# 	every_realm_county = {
+# 		limit = {
+# 			NOT = { faith = root.faith }
+# 		}
+# 		random = {
+# 			chance = 30
+# 			set_county_faith = root.faith
+# 			change_county_control = minor_county_control_loss
+# 		}
+# 	}
+# 	every_realm_county = {
+# 		limit = {
+# 			NOT = { culture = root.culture }
+# 		}
+# 		random = {
+# 			chance = 30
+# 			set_county_culture = root.culture
+# 			change_county_control = minor_county_control_loss
+# 		}
+# 	}
+# }
 
 nikean_evangelize_hegemony_county_effect = {
 	every_realm_county = {
@@ -147,42 +133,31 @@ nikean_evangelize_hegemony_county_effect = {
 	}
 }
 
-# Custom script effect to instantly transition Stratō into a Byzantine Estate Owner
 bookmark_strato_administrative_event_effect = {
-    # --- RIG THE TARGETS ---
-    # The Emperor becomes the recipient, Stratō becomes the actor
     title:e_byzantium.holder = { save_scope_as = recipient }
     character:nars_0003 = { save_scope_as = actor }
 
-    # --- STRATŌ TRANSITION ---
     scope:actor = {
         # Set Stratō to his specific Cadet Branch
         set_house = house:house_nars_1001
 
         hidden_effect = {
-            # Liquidate the landless mercenary camp
             laamp_clear_domicile_buildings_liquidator_effect = yes
         }
         
-        # Prevent his courtiers/assassins from scattering during the transition
         every_courtier = { add_to_list = courtiers_list }
-        
-        # Destroy the Landless Adventurer Camp title
         destroy_laamp_effect = { ADVENTURER = scope:actor }
         
         hidden_effect = {
-            # Force Stratō into the Byzantine Emperor's court temporarily
             scope:recipient = {
                 add_courtier = scope:actor
                 return_to_court = yes
             }
         }
         
-        # Grant Stratō his Noble Family and Estate
         create_noble_family_effect = { GOVERNMENT_GIVER = scope:recipient }
         
         hidden_effect = {
-            # Return his loyal Narsid courtiers to his new estate
             every_in_list = {
                 list = courtiers_list
                 limit = {
@@ -190,7 +165,6 @@ bookmark_strato_administrative_event_effect = {
                 }
                 scope:actor = { add_courtier = prev }
             }
-            # Boot any random lowborns the game auto-generated during the transition
             every_courtier = {
                 limit = {
                     is_lowborn = yes
@@ -205,7 +179,6 @@ bookmark_strato_administrative_event_effect = {
             }
         }
         
-        # Swear Fealty to the Byzantine Emperor
         create_title_and_vassal_change = {
             type = swear_fealty
             add_claim_on_loss = no
@@ -217,7 +190,6 @@ bookmark_strato_administrative_event_effect = {
         }
         resolve_title_and_vassal_change = scope:title_change
         
-        # Force the physical Estate Domicile to spawn inside Constantinople
         hidden_effect = {
             domicile ?= {
                 move_domicile = title:c_byzantion.province
@@ -227,7 +199,6 @@ bookmark_strato_administrative_event_effect = {
 }
 
 bookmark_ilione_nomadic_event_effect = {
-    # Set Iliónē to her specific Cadet Branch
     set_house = house:house_nars_1002
 
     add_character_flag = {
@@ -240,7 +211,6 @@ bookmark_ilione_nomadic_event_effect = {
     }
     change_government = nomad_government
 
-    # Take the two target counties
     hidden_effect = {
         create_title_and_vassal_change = {
             type = conquest
@@ -284,10 +254,8 @@ bookmark_ilione_nomadic_event_effect = {
         }
     }
 
-    # Grant the duchy and set it as primary
     set_primary_title_to = title:d_tana
 
-    # Destroy the adventurer title
     title:d_laamp_nars_1002 = {
         if = {
             limit = { exists = this }
@@ -304,17 +272,12 @@ bookmark_ilione_nomadic_event_effect = {
 
 nikean_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt
-    # Save the siblings as scopes for the notification icons and effects
     character:nars_0002 = { save_scope_as = ilione }
     character:nars_0003 = { save_scope_as = strato }
 
     hidden_effect = {
         random_list = {
-            # ==========================================
-            # OUTCOME 1: BOTH JOIN (20% Chance)
-            # ==========================================
             20 = {
-                # You can add dynamic weight modifiers here based on opinion/traits
                 modifier = {
                     add = 10
                     scope:ilione = { opinion: { target = root value >= 50 } }
@@ -366,10 +329,6 @@ nikean_diplomacy_entreaty_effect = {
                     custom_tooltip = nikean_diplomacy_both_join_toast_tt
                 }
             }
-
-            # ==========================================
-            # OUTCOME 2: ONLY ILIÓNĒ JOINS (25% Chance)
-            # ==========================================
             25 = {
                 scope:ilione = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
@@ -403,10 +362,6 @@ nikean_diplomacy_entreaty_effect = {
                     custom_tooltip = nikean_diplomacy_ilione_joins_toast_tt
                 }
             }
-
-            # ==========================================
-            # OUTCOME 3: ONLY STRATŌ JOINS (25% Chance)
-            # ==========================================
             25 = {
                 scope:ilione = {
                     add_opinion = {
@@ -440,10 +395,6 @@ nikean_diplomacy_entreaty_effect = {
                     custom_tooltip = nikean_diplomacy_strato_joins_toast_tt
                 }
             }
-
-            # ==========================================
-            # OUTCOME 4: NEITHER JOINS (30% Chance)
-            # ==========================================
             30 = {
                 scope:ilione = {
                     add_opinion = {
