@@ -19,7 +19,9 @@ decision_h_narsokratia = {
 
 	is_shown = {
 		is_ruler = yes
+		is_independent_ruler = yes
 		is_nikean = yes
+		highest_held_title_tier = tier_empire
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions

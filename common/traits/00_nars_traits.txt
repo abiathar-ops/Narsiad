@@ -80,53 +80,37 @@ nars_naturalis = {
 			25 = {
 				martial = 3
 				prowess = 3
-				health = 0.10
-				stress_loss_mult = 0.03
 			}
 			50 = {
 				martial = 6
 				prowess = 6
-				health = 0.20
-				stress_loss_mult = 0.06
 			}
 			75 = {
 				martial = 9
 				prowess = 9
-				health = 0.30
-				stress_loss_mult = 0.9
 			}
 			100 = {
 				martial = 12
 				prowess = 12
 				health = 0.4
-				stress_loss_mult = 0.12
-				movement_speed = 0.4
 			}
 		}
 		sophes = {
 			25 = {
 				stewardship = 3
 				intrigue = 3
-				development_growth_factor = 0.03
-				monthly_county_control_growth_add = 0.3
 			}
 			50 = {
 				stewardship = 6
 				intrigue = 6
-				development_growth_factor = 0.06
-				monthly_county_control_growth_add = 0.6
 			}
 			75 = {
 				stewardship = 9
 				intrigue = 9
-				development_growth_factor = 0.09
-				monthly_county_control_growth_add = 0.9
 			}	
 			100 = {
 				stewardship = 12
 				intrigue = 12
-				development_growth_factor = 0.12
-				monthly_county_control_growth_add = 1.2
 				tax_mult = 0.12
 			}
 		}
@@ -134,5 +118,43 @@ nars_naturalis = {
 
 	compatibility = {
 		nars_scion = @pos_compat_medium
+	}
+}
+
+nars_nikead = {
+	icon = nikead.dds
+	category = fame
+	desc = trait_nars_nikead_desc		
+	#shown_in_ruler_designer = no
+
+	men_at_arms_maintenance = -0.2
+	monthly_income_mult = -0.05
+	men_at_arms_recruitment_cost = -0.05
+
+ 	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = nars_nikead.no_actor
+			}
+			desc = nars_nikead.name
+		}
+	}
+
+	tracks = {
+		restorationist = {
+			25 = {
+				health = 0.4
+			}
+			50 = {
+				health = 0.4
+			}
+			75 = {
+				health = 0.4
+			}
+			100 = {
+				health = 0.8
+			}
+		}
 	}
 }

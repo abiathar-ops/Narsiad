@@ -1,8 +1,6 @@
 ﻿l_english: 
  # ── EXISTING ENTRIES (unchanged) ──
- decision_group_type_nikean: "Nikean Decisions"
- decision_group_type_nikean_2: "Narsiad - Minor Decisions"
-
+ decision_group_type_nikean: "Nikead Decisions"
  narsokratia_empire_above: "Your [realm|E] requires a [rank|E] of [empire|E] or above!"
 
  # ── Faith ──
@@ -74,7 +72,7 @@
 
  pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 
- # ── Foundries (added) ──
+ # ── Foundries ──
 
  decision_munitions_research: "Found the Mástiges"
  decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [hoplites|E] with them."
@@ -86,6 +84,14 @@
  munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
  munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
 
+ decision_mend_narsil: "Reforge the Longsword Narsíl"
+ decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom from a line of [nikean|E] [hegemons|E]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
+ decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
+ decision_mend_narsil_tooltip: "Reforge the heirloom of the old [nikean|E] [hegemons|E]!"
+ decision_mend_narsil_confirm: "To our foundries!"
+
+ # ── Titles ──
+
  decision_h_narsokratia: "Restore the Mōnarkhía"
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
@@ -93,44 +99,34 @@
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
  decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
 
- decision_mend_narsil: "Reforge the Longsword Narsíl"
- decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom from a line of [nikean|E] [hegemons|E]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
- decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
- decision_mend_narsil_tooltip: "Reforge the heirloom of the old [nikean|E] [hegemons|E]!"
- decision_mend_narsil_confirm: "To our foundries!"
-
  # ── NEW DECISIONS ──
+
+ decision_intro_nikead: "Espouse the Nikean Restoration"
+ decision_start_cultivating_hoplites: "Cultivate the Hoplîtes"
+ decision_stop_cultivating_hoplites: "Cease Hoplîtes Cultivation"
+ decision_take_sobriquet: "Adopt a Sobriquet"
 
  # Arrival notification message
  nikean_courtiers.0001.t: "A Nikean Arrives"
  nikean_courtiers.0001.desc: "Answering our herald's call, a newfound exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
 
- decision_nikean_evangelize_realm: "Proselytize Dogma"
- decision_nikean_evangelize_realm_desc: "It is not enough to rule over our [vassals|E] with steel; we must ensure their [faith|E] as well. I shall sponsor a tidal wave of evangelism across the [realm|E], ensuring that the unwashed [vassals|E] of our [region|E] see reason of our [nikean|E] [faith|E] of yore, untainted from the fall of Old [narsokratia|E]."
- decision_nikean_evangelize_realm_tooltip: "Pressure [realm|E] to adopt [nikean] [culture|E] and [faith|E]"
- decision_nikean_evangelize_realm_confirm: "Send the vestals!"
- decision_nikean_evangelize_realm_effect_tooltip: "Portions of your [realm|E]'s counties will have a chance to convert to the [nikean|E] [faith|E] and [culture|E]"
+ decision_recruit_nikean_courtier: "Muster the Nikēís"
+ decision_recruit_nikean_courtier_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
+ decision_recruit_nikean_courtier_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
+ decision_recruit_nikean_courtier_confirm:0 "Proceed!"
+ decision_recruit_nikean_adventurer: "Muster the Nikēís"
+ decision_recruit_nikean_adventurer_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch scouts to scale those miserable peaks and drag them down to my [camp|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
+ decision_recruit_nikean_adventurer_tooltip: "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [camp|E] within the coming months"
+ decision_recruit_nikean_adventurer_confirm:0 "Proceed!"
 
- recruit_nikean_courtier_decision: "Muster the Nikēís"
- recruit_nikean_courtier_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
- recruit_nikean_courtier_decision_tooltip: "Send out heralds to find [nikeans|E] to your [court|E]" 
- recruit_nikean_courtier_decision_confirm:0 "Proceed!"
- recruit_nikean_adventurer_decision: "Muster the Nikēís"
- recruit_nikean_adventurer_decision_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch scouts to scale those miserable peaks and drag them down to my [camp|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
- recruit_nikean_adventurer_decision_tooltip: "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [camp|E] within the coming months"
- recruit_nikean_adventurer_decision_confirm:0 "Proceed!"
+ decision_hire_nikean_1:0 "Search for [nikeis|E]"
+ decision_hire_nikean_1_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
+ decision_hire_nikean_1_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"
 
- hire_nikean_1_decision:0 "Search for [nikeis|E]"
- hire_nikean_1_decision_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
- hire_nikean_1_decision_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"
-
- hire_nikean_2_decision:0 "Scout for a [sophes|E]"
- hire_nikean_2_decision_tooltip:0 "You will receive #P 2#! suitable [sophes|E] prospects for you to choose for your [court|E] as a [courtier|E]"
+ decision_hire_nikean_2:0 "Scout for a [sophes|E]"
+ decision_hire_nikean_2_tooltip:0 "You will receive #P 2#! suitable [sophes|E] prospects for you to choose for your [court|E] as a [courtier|E]"
  nikean_2_court_position_custom_desc: "$EFFECT_LIST_BULLET$Provides @travel_safety_icon![travel_safety|E] and @travel_speed_icon![travel_speed|E] during [travels|E]"
- hire_nikean_2_decision_desc:0 "A good $nikean_2_court_position$ is the key to a successful journey. I will request for a number of suitable candidates to be suggested."
+ decision_hire_nikean_2_desc:0 "A good $nikean_2_court_position$ is the key to a successful journey. I will request for a number of suitable candidates to be suggested."
 
  recruit_nikean_1_cooldown_tt: "Search for [nikeis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_1_cooldown' ))]"
  recruit_nikean_2_cooldown_tt: "Scout for a [sophes|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_2_cooldown' ))]"
-
-
-

@@ -1,4 +1,4 @@
-recruit_nikean_courtier_decision = {
+decision_recruit_nikean_courtier = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
@@ -42,7 +42,7 @@ recruit_nikean_courtier_decision = {
 		show_from_start = yes
 
 		item = { # 2 Normal Nikeans
-			value = hire_nikean_1_decision
+			value = decision_hire_nikean_1
 			is_shown = {
 				is_ruler = yes
 				is_landless_adventurer = no
@@ -59,13 +59,13 @@ recruit_nikean_courtier_decision = {
 					}
 				}
 			}
-			current_description = hire_nikean_1_decision_desc
-			localization = hire_nikean_1_decision
+			current_description = decision_hire_nikean_1_desc
+			localization = decision_hire_nikean_1
 			icon = "gfx/interface/icons/court_position_types/yeke_jarquchi_court_position.dds"
 			ai_chance = { value = 100 }
 		} 
 		item = { # Choice of 2 really good nikeans
-			value = hire_nikean_2_decision
+			value = decision_hire_nikean_2
 			is_shown = {
 				exists = primary_title 
 				is_landless_adventurer = no
@@ -83,8 +83,8 @@ recruit_nikean_courtier_decision = {
 					}
 				}
 			}
-			current_description = hire_nikean_2_decision_desc
-			localization = hire_nikean_2_decision
+			current_description = decision_hire_nikean_2_desc
+			localization = decision_hire_nikean_2
 			icon = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 			ai_chance = {
 				value = 100
@@ -105,17 +105,17 @@ recruit_nikean_courtier_decision = {
 
 	effect = {
 		if = {
-			limit = { scope:hire_nikean_1_decision = yes }
-			custom_tooltip = hire_nikean_1_decision_tooltip
+			limit = { scope:decision_hire_nikean_1 = yes }
+			custom_tooltip = decision_hire_nikean_1_tooltip
 		}
 		else_if = {
-			limit = { scope:hire_nikean_2_decision = yes }
-			custom_tooltip = hire_nikean_2_decision_tooltip
+			limit = { scope:decision_hire_nikean_2 = yes }
+			custom_tooltip = decision_hire_nikean_2_tooltip
 		}
 		hidden_effect = {
-			custom_tooltip = recruit_nikean_courtier_decision_tooltip
+			custom_tooltip = decision_recruit_nikean_courtier_tooltip
 			if = { # 3 men of narses 
-				limit = { scope:hire_nikean_1_decision = yes }
+				limit = { scope:decision_hire_nikean_1 = yes }
 				set_variable = {
 					name = recruit_nikean_1_cooldown
 					years = 10
@@ -131,7 +131,7 @@ recruit_nikean_courtier_decision = {
 				}
 			}
 			else_if = { # 2 Sophes
-				limit = { scope:hire_nikean_2_decision = yes }
+				limit = { scope:decision_hire_nikean_2 = yes }
 				add_character_flag = {
 					flag = recruit_nikean_2_cooldown
 					years = 5
@@ -154,14 +154,14 @@ recruit_nikean_courtier_decision = {
 	}
 }
 
-recruit_nikean_adventurer_decision = {
+decision_recruit_nikean_adventurer = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
 	sort_order = 10
 	decision_group_type = nikean
-	desc = recruit_nikean_adventurer_decision_desc
+	desc = decision_recruit_nikean_adventurer_desc
 
 	cooldown = { years = 2 }
 
@@ -195,7 +195,7 @@ recruit_nikean_adventurer_decision = {
 	}
 
 	effect = {
-		custom_tooltip = recruit_nikean_adventurer_decision_tooltip
+		custom_tooltip = decision_recruit_nikean_adventurer_tooltip
 		set_variable = {
 			name = number_of_invite_nikean_countdown
 			value = 4
