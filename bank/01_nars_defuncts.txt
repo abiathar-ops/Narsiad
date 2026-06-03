@@ -61,58 +61,6 @@ decision_libation = {
 	}
 }
 
-decision_introduce_bigamy = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
-	}
-	desc = decision_introduce_bigamy_desc
-	selection_tooltip = decision_introduce_bigamy_tooltip
-	decision_group_type = nikean
-	sort_order = 200
-	is_shown = {
-		is_nikean = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
-		top_liege = this
-		is_capable_adult = yes
-		is_landed = yes
-		faith = {
-			NOT = { has_doctrine = doctrine_bigamy }
-			NOT = { has_doctrine = doctrine_trigamy }
-		}
-	}
-
-	is_valid = {
-		is_orphic = yes
-		is_at_war = no
-		is_imprisoned = no	
-		faith = {
-			NOT = { has_doctrine = doctrine_bigamy }
-			NOT = { has_doctrine = doctrine_trigamy }
-		}
-	}
-
-	cost = {
-		piety = 1250
-	}
-
-	effect = {
-		custom_tooltip = decision_nikean_introduce_bigamy_effect_tooltip
-		hidden_effect = {
-			trigger_event = { id = nikean_faith.1021 }
-		}
-	}
-
-	ai_potential = { always = yes }
-
-	ai_will_do = {
-		base = 50
-	}
-}
-
 decision_nikean_evangelize_realm = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
@@ -141,18 +89,8 @@ decision_nikean_evangelize_realm = {
 	effect = {
 		custom_tooltip = decision_nikean_evangelize_realm_effect_tooltip
 		hidden_effect = {
-			if = {
-				limit = { has_title = title:e_narsokratia }
-				nikean_evangelize_empire_county_effect = yes
-			}
-			if = {
-				limit = { has_title = title:k_narsokratia }
-				nikean_evangelize_kingdom_county_effect = yes
-			}
-			else_if = {
-				limit = { has_title = title:h_narsokratia }
-				nikean_evangelize_hegemony_county_effect = yes
-			}
+			limit = { has_title = title:h_narsokratia }
+			nikean_evangelize_hegemony_county_effect = yes
 			trigger_event = { id = nikean_faith.1011 days = 1 }
 		}
 	}
@@ -286,11 +224,7 @@ decision_spy_network = {
 		is_nikean = yes
 		is_ruler = yes
 		is_landed = yes
-		OR = {
-			has_title = title:k_narsokratia
-			has_title = title:e_narsokratia
-			has_title = title:h_narsokratia
-		}
+		is_narsocratic = yes
 	}
 	is_valid = {
 		is_at_war = no

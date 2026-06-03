@@ -72,7 +72,6 @@ nikean_artifact.1001 = {
 	}
 
 	option = {
-		# Spend gold & rare materials — measured but SLOW (120 days)
 		name = nikean_artifact.1001.b
 		give_nickname = nick_the_blessed
 		remove_treasury_or_gold = massive_treasury_or_gold_value
@@ -82,7 +81,6 @@ nikean_artifact.1001 = {
 			greedy = miniscule_stress_impact_gain
 		}
 		hidden_effect = {
-			# Lock the decision immediately — the forge is committed
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_mend_narsil_decision

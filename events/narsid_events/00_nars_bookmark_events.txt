@@ -78,7 +78,7 @@ nikean_bookmark.0010 = {
         custom_tooltip = nikean_courtiers.tt
         custom_tooltip = nikean_diplomacy.tt
         hidden_effect = {
-            nikean_diplomacy_entreaty_effect = yes
+            bookmark_elios_diplomacy_entreaty_effect = yes
         }
         trigger_event = nikean_courtiers.0002
         trigger_event = nikean_courtiers.0002
@@ -130,7 +130,7 @@ nikean_bookmark.0020 = {
 			levies = 1250
 			men_at_arms = {
 				type = maa_hoplitai
-				stack = 10
+				stacks = 10
 			}
 			location = root.capital_province
 			name = event_troop_default_name

@@ -17,7 +17,7 @@ nars_intro_on_start = {
     effect = {
         every_player = {
             limit = { 
-                is_ethnically_nikean = yes 
+                is_nikean = yes 
                 is_alive = yes
             }
             trigger_event = { id = nikean_intro.1001 days = 1 }

@@ -61,7 +61,7 @@ nars_0001 = {
     1157.1.1 = {
         birth = yes
         effect = {
-            # add_character_flag = do_not_generate_starting_family
+            add_character_flag = do_not_generate_starting_family
             add_character_flag = no_headgear
         }
     }
@@ -80,7 +80,7 @@ nars_0001 = {
 	 		size = 10
 	 	}
         create_maa_regiment = {
-	 		type = maa_hoplitai
+	 		type = trebuchet
 	 		check_can_recruit = no
             title = title:d_laamp_nars_0001
 	 		size = 10
@@ -89,7 +89,7 @@ nars_0001 = {
 			name = nikean_troop_intro_name
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 20
+				stacks = 30
             }
             location = root.location
 			uses_supply = yes
@@ -132,9 +132,9 @@ nars_0002 = {
     disallow_random_traits = yes
     1158.1.1 = {
         birth = yes
-        # effect = {
-        #     add_character_flag = do_not_generate_starting_family
-        # }
+        effect = {
+            add_character_flag = do_not_generate_starting_family
+        }
     }
     1176.1.1 = {
         add_matrilineal_spouse = nars_0005
@@ -147,8 +147,14 @@ nars_0002 = {
         create_maa_regiment = {
 	 		type = maa_hoplitai
 	 		check_can_recruit = no
-            title = title:d_laamp_nars_0001
+            title = title:d_laamp_nars_0002
 	 		size = 5
+	 	}
+        create_maa_regiment = {
+	 		type = trebuchet
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
 	 	}
         spawn_army = {
 			name = nikean_troop_intro_name
@@ -211,6 +217,12 @@ nars_0003 = {
 	 	}
         create_maa_regiment = {
 	 		type = maa_hoplitai
+	 		check_can_recruit = no
+            title = title:d_laamp_nars_0001
+	 		size = 10
+	 	}
+        create_maa_regiment = {
+	 		type = trebuchet
 	 		check_can_recruit = no
             title = title:d_laamp_nars_0001
 	 		size = 10

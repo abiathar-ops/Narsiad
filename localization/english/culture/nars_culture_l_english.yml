@@ -1,17 +1,7 @@
 ﻿l_english:
  nars_nikean:0 "Nikean"
  nars_nikean_collective_noun:1 "Nikeans"
- nars_patrosi:0 "Pātres"
- nars_patrosi_collective_noun:1 "Pātresi"
- nars_ionioi:0 "Iōnes"
- nars_ionioi_collective_noun:1 "Iōnesi"
- nars_karian:0 "Kāres"
- nars_karian_collective_noun:1 "Kāresi"
-
  nikean:0 "Nikean"
 
  nikean_clothing_gfx:0 "Nikean"
  nars_nikean_opinion:0 "$nars_nikean$ Opinion"
- nars_patrosi_opinion:0 "$nars_patrosi$ Opinion"
- nars_ionioi_opinion:0 "$nars_ionioi$ Opinion"
- nars_karian_opinion:0 "$nars_karian$ Opinion"

@@ -1,5 +1,8 @@
 is_nikean = {
-    culture = { has_cultural_pillar = heritage_nars }
+    or = {
+        culture = { has_cultural_pillar = heritage_nars }
+        has_ethnicity = nikean
+    }
 }
 
 is_ethnically_nikean = {
@@ -30,17 +33,13 @@ is_narsocratic = {
         has_cultural_pillar = heritage_nars
    }
    or = {
-       has_title = title:k_narsokratia
-       has_title = title:e_narsokratia
-       has_title = title:h_narsokratia
+        highest_held_title_tier >= tier_kingdom
+        has_title = title:h_narsokratia
    }
 }
 
 is_narsocratic_e_h = {
-    or = {
-       has_title = title:e_narsokratia
-       has_title = title:h_narsokratia
-    }
+    highest_held_title_tier >= tier_empire
 }
 
 is_narses_scion = {

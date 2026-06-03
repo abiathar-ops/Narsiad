@@ -1,7 +1,7 @@
 ﻿l_english:
  narsokratia_event.flavor: "Our vision of [narsokratia|E] grows ever closer!"
  nikean_intro.1001.t:0 "Gnōthi Seauton"
- nikean_intro.1001.desc:0 "In antiquity, the unquestionable [hegemony|E] of the [nikeanrealm|E] stood at the forefront of civilization. When [nomads|e] and [civil_wars|E] torn our [realm|E] asunder, they believed we were truly destroyed. \n\nThey couldn't be more wrong. \n\nOur last [hegemon|E] did not deign to be the last; with brilliance, he relocated the worthiest of our [prestigious|E] [nobles|E] to dozens of hidden mountain refuges on the fringes of his wider [realm|E]. \n\nIn our absence, the other civilizations of the world scrubbed the [nikeis|E] from history in a brutal ethnocide. They had so soon celebrated our [faith|E]'s obliteration and made extinct of our [culture|E] on the wider world to realize their own hubristic delusions. \n\nAs time passed, the world outside became unrecognizable, but we of the [nikeis|E] endured in our exile. As the [regions|E] around us decayed into barbarism and [tribes|E], we preserved the flame of our [culture|E], waiting for the perfect moment to return and reclaim our [realms|E]."
+ nikean_intro.1001.desc:0 "In antiquity, the unquestionable [hegemony|E] of the [nikeanrealm|E] stood at the forefront of civilization. When [nomads|e] and [civil_wars|E] torn our [realm|E] asunder, they believed we were truly destroyed. \n\nThey couldn't be more wrong. \n\nOur last [hegemon|E] did not deign to be the last; with brilliance, he relocated the worthiest of our [prestigious|E] [nobles|E] to dozens of hidden mountain refuges on the fringes of his wider [realm|E]. \n\nIn our absence, the other civilizations of the world scrubbed the [nikeis|E] from history in a brutal ethnocide. Other [cultures|E] had so soon celebrated our obliteration on the wider world to realize their own hubristic delusions about our complete destruction. \n\nAs time passed, the world outside became unrecognizable, but we of the [nikeis|E] endured in our exile. As the [regions|E] around us decayed into barbarism and [tribes|E], we preserved the flame of our [tradition|E], waiting for the perfect moment to return and reclaim our [realms|E]."
  nikean_intro.1001.a:0 "And so time goes on.."
 
  nikean_intro.1002.t:0 "Gnōthi Seauton"
@@ -131,10 +131,10 @@
 
  nikean_bookmark.0010.t: "Sautòn Isthí: $Eleios$"
  nikean_bookmark.0010.desc: "Some months ago, the death of my pious father, [alnars|E], had chipped off [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] into another two [mercenary|E] [camps|E] headed by my siblings. Alas, perhaps it was a hidden blessing that the schism happened for they ascribe to themselves to a new [tradition|E] wholly unfamiliar to us, [followers|E] of [alnars_adj|E] beliefs. \n\nNo matter however, the road to a [nikean|E] [hegemony|E] can be taken by other roads just as well. My position as [heir|E] to [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] however have given me a number of boons to aid in our road of struggle to proclaim a [narsokratia|E]. \n\nI #EMP must#! take any advantage I possess to safeguard the future of my people!"
- nikean_bookmark.0010.a: "$Alnars$' heirlooms have always been my birthright!"
- nikean_bookmark.0010.b: "I must expand our numbers.."
+ nikean_bookmark.0010.a: "#emp "This [artifact|E] had always been my birthright!"#!"
+ nikean_bookmark.0010.b: "#emp "I must expand our numbers.."#!"
  nikean_courtiers.tt: "You recruit a significant number of [nikeans|E] under your current [adventurer|E] [camp|E], bolstering your [followers|E]"
- nikean_diplomacy.tt: "You send entreaties to $Ilione$'s and $Strato$'s [adventurer|E] [camps|E] to join yours as [followers|E]\n@alert_icon! #alert_trial They are able to refuse your demands!#!"
+ nikean_diplomacy.tt: "You send entreaties to $Ilione$'s and $Strato$'s [adventurer|E] [camps|E] to join yours as [followers|E]\n@alert_icon! #alert_trial They are able to refuse your request!#!"
  nikean_diplomacy_both_join_toast_t: "The $Naresios$ Reunited"
  nikean_diplomacy_both_join_toast_tt: "Both $Ilione$ and $Strato$ have accepted your entreaties. Their camps will merge with yours."
  nikean_diplomacy_ilione_joins_toast_t: "$Ilione$ Accepts"
@@ -166,7 +166,7 @@
  nikean_bookmark.0030.a: "#emp "Wars are won with words and well-placed knives!"#!"
  nikean_adventurer_tooltip: "This option will result in you remaining to be an [adventurer|E]"
 
- nikean_bookmark.0030.b: "#emp "Perhaps [GetTitleByKey('c_byzantion').GetNameNoTier] will be a den for our schemes..?"#!"
+ nikean_bookmark.0030.b: "#emp "Perhaps [GetTitleByKey('c_byzantion').GetNameNoTier] could be a den for our schemes..?"#!"
  nikean_bookmark.0030.b.tt: "This option will result in you becoming an [unlanded|E] [ruler|E] in [GetTitleByKey('e_byzantium').GetNameNoTier]"
 
  nikean_bookmark.1001.t: "Kakías Apékhou: Prologue" #Prologue?

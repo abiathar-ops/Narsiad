@@ -274,15 +274,15 @@ decision_nikean_faith_choice = {
 			}
 			hidden_effect = {
 			if = {
-				limit = { has_title = title:e_narsokratia }
+				limit = { highest_held_title_tier = tier_empire }
 				nikean_evangelize_empire_county_effect = yes
 			}
 			if = {
-				limit = { has_title = title:k_narsokratia }
+				limit = { highest_held_title_tier = tier_kingdom }
 				nikean_evangelize_kingdom_county_effect = yes
 			}
 			else_if = {
-				limit = { has_title = title:h_narsokratia }
+				limit = { highest_held_title_tier = tier_hegemony }
 				nikean_evangelize_hegemony_county_effect = yes
 			}
 			trigger_event = { 

@@ -14,18 +14,6 @@
  nars_religion_adherent_plural:0 "Nikēis"
  nars_religion_desc:0 "The faith of the Nikeans venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
 
- propatros_religion:0 "Pātres"
- propatros_religion_adj:0 "Pātresi"
- propatros_religion_adherent:0 "Pātres"
- propatros_religion_adherent_plural:0 "Pātresi"
- propatros_religion_desc:0 "Founded by the Restorer, this faith now is headed by the Pious. In truth, this faith has diverged significantly to the Restorer's vision and is orthodox in name only. It's well known that this faith's adherents view both the Nikatores and Liberatores faith as a heresy."
-
- liberatores_religion:0 "Lysēs"
- liberatores_religion_adj:0 "Lysēsi"
- liberatores_religion_adherent:0 "Lysēs"
- liberatores_religion_adherent_plural:0 "Lysēsi"
- liberatores_religion_desc:0 "Heresy headed by the Liberator, this faith has a noted animosity towards those who venerate imperial cults believing it to be a corruption of the true faith to the lost Nikean pantheon of old, long forgotten and nameless now."
-
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"
  nars_high_god_name_possessive:0 "Narsēs'"

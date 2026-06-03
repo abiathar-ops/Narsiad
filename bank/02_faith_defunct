@@ -1,34 +1,4 @@
-propatros_religion = {
-	color = { 230 228 216 }
-	icon = custom_faith_dove
-	holy_site = cagliari
-	holy_site = ajaccio
-	holy_site = arborea
-	holy_site = gallura
-	holy_site = tortoli
-	holy_site = logudoro
-
-	doctrine = tenet_nars_banking
-	doctrine = tenet_nars_pantheon
-	doctrine = tenet_nars_erudition
-	}
-
-liberatores_religion = {
-	color = { 230 228 216 }
-	icon = custom_faith_1
-	holy_site = cagliari
-	holy_site = ajaccio
-	holy_site = arborea
-	holy_site = gallura
-	holy_site = tortoli
-	holy_site = logudoro
-	doctrine = tenet_nars_vestals
-	doctrine = tenet_nars_pantheon
-	doctrine = tenet_nars_erudition
-	}
-}
-
-decision_develop_industry: "Develop Industry"
+ decision_develop_industry: "Develop Industry"
  decision_develop_industry_tooltip: "Unleash the industrial power of the [nikeanrealm|E]!"
  decision_develop_industry_desc: "Now as our [nikean|e] polity's grows, it is time to develop it into the most prosperous [domain|E] in the world. This [region|E] has too long lay empty and desolate. Let the wheels spin and the metal glow for the [development|e] of our revived [realm|E] and the [nikeis|E]!" 
  decision_develop_industry_confirm: "Let the forges roar!"

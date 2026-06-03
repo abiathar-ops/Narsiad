@@ -6,9 +6,7 @@ nikean_template.1001 = {
     dynasty = generate
     faith = faith:nars_religion
 	culture = culture:nars_nikean
-    #Traits
     random_traits = yes
-    #Skills
     after_creation = {
 		add_gold = minor_gold_value
 		add_trait = nars_naturalis
