@@ -4,7 +4,7 @@ decision_mend_narsil = {
 	}
 	
 	desc = decision_mend_narsil_desc
-	decision_group_type = nikean
+	decision_group_type = restorationist
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
@@ -64,7 +64,7 @@ decision_munitions_research = {
 
 	desc = decision_munitions_research_desc
 	selection_tooltip = decision_munitions_research_tooltip
-	decision_group_type = nikean
+	decision_group_type = restorationist
 
 	is_shown = {
 		has_ep3_dlc_trigger = yes

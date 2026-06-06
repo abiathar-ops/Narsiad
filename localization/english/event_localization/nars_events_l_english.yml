@@ -44,7 +44,7 @@
  nikean_titles.2021.a: "Ktêma es Aeí!"
 
  nikean_titles.2022.t: "Ánthrōpos Métron!"
- nikean_titles.2022.desc: "Today, I call all [nikeis|E] to declare the realization of our [cultural|E] [hegemony|E], the legitimate absolution of [narsokratia|E]. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E].\n\nFrom this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [government|E]. \n\nUnder the rule of the [nikeis|E], every [region|E] will finally know true, universal pacification. Under the rule of the [panteion|E], every [character|E] will finally know true, universal salvation." 
+ nikean_titles.2022.desc: "Today, I call all [nikeis|E] to declare the realization of our [cultural|E] [hegemony|E], the [narsokratia|E] remade. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E]. From this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [hegemony|E], our reborn realm of antiquity. \n\nUnder the rule of the [nikeis|E], every [region|E] will finally know true, universal pacification. Under the rule of the [panteion|E], every [character|E] will finally know true, universal salvation." 
  nikean_titles.2022.a: "One [law|E], One [hegemony|E]!"
  
  nikean_titles.2011.t:0 "Mēdèn Ága!"
@@ -129,9 +129,22 @@
  nikean_faith.1044.desc: "" #AI event, leave empty
  nikean_faith.1044.a: "" #AI event, leave empty
 
+ nikean_nickname.0010.t:0 "Êthos Dokímaze"
+ nikean_nickname.0010.desc:0 "To choose an epithet is to carve one's essence into the annals of our shared history. A name is more than a mere title; it is the crystallization of my deeds, my temperament, and my innermost character. How shall I be remembered by my peers, and what legacy shall I leave for posterity?"
+ nikean_nickname.0010.aa:0 "I shall shed my epithet."
+ nikean_nickname.0010.aa.tt:0 "Casting aside your current epithet, you choose to remain without one, for now."
+ nikean_nickname.0010.a:0 "I am defined by my pious devotion."
+ nikean_nickname.0010.a.tt:0 "Reflect on your faith, virtue, and enlightenment"
+ nikean_nickname.0010.b:0 "I am defined by my impervious glory."
+ nikean_nickname.0010.b.tt:0 "Reflect on war, conquest, and ambition"
+ nikean_nickname.0010.c:0 "I am defined by infamy and dread."
+ nikean_nickname.0010.c.tt:0 "Reflect on hubris, corruption, and infamy."
+ nikean_nickname.0010.x:0 "My current name suffices."
+ nikean_nickname.0010.x.tt:0 "You choose not to adopt a new epithet at this time."
+
  nikean_bookmark.0010.t: "Sautòn Isthí: $Eleios$"
  nikean_bookmark.0010.desc: "Some months ago, the death of my pious father, [alnars|E], had chipped off [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] into another two [mercenary|E] [camps|E] headed by my siblings. Alas, perhaps it was a hidden blessing that the schism happened for they ascribe to themselves to a new [tradition|E] wholly unfamiliar to us, [followers|E] of [alnars_adj|E] beliefs. \n\nNo matter however, the road to a [nikean|E] [hegemony|E] can be taken by other roads just as well. My position as [heir|E] to [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier] however have given me a number of boons to aid in our road of struggle to proclaim a [narsokratia|E]. \n\nI #EMP must#! take any advantage I possess to safeguard the future of my people!"
- nikean_bookmark.0010.a: "#emp "This [artifact|E] had always been my birthright!"#!"
+ nikean_bookmark.0010.a: "#emp "This [artifact|E] is my birthright!"#!"
  nikean_bookmark.0010.b: "#emp "I must expand our numbers.."#!"
  nikean_courtiers.tt: "You recruit a significant number of [nikeans|E] under your current [adventurer|E] [camp|E], bolstering your [followers|E]"
  nikean_diplomacy.tt: "You send entreaties to $Ilione$'s and $Strato$'s [adventurer|E] [camps|E] to join yours as [followers|E]\n@alert_icon! #alert_trial They are able to refuse your request!#!"

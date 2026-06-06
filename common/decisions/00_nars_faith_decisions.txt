@@ -1,46 +1,4 @@
-﻿decision_nikean_faith_entry = { 
-	decision_group_type = nikean
-	title = decision_nikean_faith_entry
-	desc = decision_nikean_faith_entry_desc
-	selection_tooltip = decision_nikean_faith_entry_tooltip
-	is_invisible = yes
-
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/study.dds"
-	}
-	sort_order = 90
-
-	is_shown = {
-		is_nikean = yes
-	}
-	
-	is_valid = {
-		is_at_war = no
-		is_imprisoned = no	
-	}
-
-	is_valid_showing_failures_only = {
-		is_at_war = no
-		is_adult = yes
-		is_imprisoned = no
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = decision_nikean_faith_entry_effect
-		}
-		hidden_effect = {		
-			open_view_data = {
-				view = decision_detail
-				data = decision:decision_nikean_faith_choice
-				player = root
-			}
-		}
-	}
-	ai_check_interval = 0
-}
-
-decision_nikean_faith_choice = { 
+﻿decision_nikean_faith_choice = { 
 	decision_group_type = nikean
 	title = decision_nikean_faith_choice
 	desc = decision_nikean_faith_choice_desc
@@ -48,7 +6,6 @@ decision_nikean_faith_choice = {
 
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
-		#"gfx/interface/illustrations/decisions/study.dds"
 	}
 	sort_order = 90
 
@@ -97,7 +54,6 @@ decision_nikean_faith_choice = {
 			current_description = faith_nikean_1_decision_desc
 			localization = faith_nikean_1_decision_name
 			icon = "gfx/interface/icons/court_position_types/court_physician_court_position.dds"
-			#icon = "gfx/interface/icons/celestial_administration_types/icon_game_concept_celestial_industrial_administration.dds"
 			ai_chance = {
 				value = 0
 			}
@@ -125,7 +81,6 @@ decision_nikean_faith_choice = {
 			current_description = faith_nikean_2_decision_desc
 			localization = faith_nikean_2_decision_name
 			icon = "gfx/interface/icons/court_position_types/cave_hermit_court_position.dds"
-			#icon = "gfx/interface/icons/court_position_types/cultural_emissary_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
@@ -156,7 +111,6 @@ decision_nikean_faith_choice = {
 			}
 			current_description = faith_nikean_3_decision_desc
 			localization = faith_nikean_3_decision_name
-			#icon = "gfx/interface/icons/icon_game_concept_innovation_fascination.dds"
 			icon = "gfx/interface/icons/court_position_types/executioner_court_position.dds"
 			ai_chance = {
 				value = 0
@@ -194,7 +148,6 @@ decision_nikean_faith_choice = {
 			}
 			current_description = faith_nikean_4_decision_desc
 			localization = faith_nikean_4_decision_name
-			#icon = "gfx/interface/icons/icon_game_concept_innovation_fascination.dds"
 			icon = "gfx/interface/icons/court_position_types/camp_priest_camp_officer.dds"
 			ai_chance = {
 				value = 0
@@ -227,7 +180,6 @@ decision_nikean_faith_choice = {
 			current_description = faith_nikean_5_decision_desc
 			localization = faith_nikean_5_decision_name
 			icon = "gfx/interface/icons/court_position_types/court_poet_court_position.dds"
-			#icon = "gfx/interface/icons/court_position_types/cultural_emissary_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
@@ -314,7 +266,7 @@ decision_nikean_faith_choice = {
 	}
 	ai_potential = {
 		is_nikean = yes
-		is_landed_or_landless_administrative = yes
+		is_ruler = yes
 		modifier = {
 			add = 30
 			court_size < 10

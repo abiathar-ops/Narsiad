@@ -173,7 +173,7 @@ create_h_narsokratia_effect = {
 	
 	hidden_effect = {
 		spawn_army = {
-			name = event_troop_default_name
+			name = nikean_troop_hegemony_name
 			men_at_arms = {
 				type = maa_mastiges
 				stacks = 15

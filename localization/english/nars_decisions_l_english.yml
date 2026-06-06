@@ -1,15 +1,10 @@
 ﻿l_english: 
  # ── EXISTING ENTRIES (unchanged) ──
  decision_group_type_nikean: "Nikead Decisions"
+ decision_group_type_restorationist: "Narsokratía Decisions"
  narsokratia_empire_above: "Your [realm|E] requires a [rank|E] of [empire|E] or above!"
 
  # ── Faith ──
-
- decision_nikean_faith_entry:0 "Ponder the Panteíon"
- decision_nikean_faith_entry_desc:0 "This is a placeholder decision. It does nothing and should be replaced with an actual decision before release."
- decision_nikean_faith_entry_tooltip:0 "This is a placeholder decision. It does nothing and should be replaced with an actual decision before release."
- decision_nikean_faith_entry_effect:0 "This is a placeholder decision. It does nothing and should be replaced with an actual decision before release."
-
  decision_nikean_faith_choice:0 "Enact Panteíon Rites"
  decision_nikean_faith_choice_desc:0 "Only by [faith|E] could we [nikeis|E] come to understand the roots of our old [culture|E]. My [legitimacy|E] is only a favor bestowed by the [panteion|E] and to neglect our [traditions|E] is to invite ruin on my [house|E]. Besides, while walking to a [temple|E] is tiring, arguing with my [council|E] is even worse!"
  decision_nikean_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [panteion|E]."
@@ -18,6 +13,9 @@
  faith_nikean_1_decision_name:0 "Dedicate a Libation"
  faith_nikean_1_decision_desc:0 "Enact [nikean|E] rites to dedicate yourself to your [culture|E]."
  change_to_faith_nikean_1_decision_desc:0 "You shift your focus to the Hoplîte discipline, prioritizing military academies, battlefield tactics, and martial prowess."
+ decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
+ decision_libation_effect_desc: "You offer a libation to the [nikeis|E] [panteion|E] and reflect on your [faith|E]"
+ decision_libation_confirm: "Pour the libation!"
 
  faith_nikean_2_decision_name:0 "Ponder the [panteion|E]"
  faith_nikean_2_decision_desc:0 "Decide your favored patron god of the [panteion|E]."
@@ -52,7 +50,7 @@
 
  decision_establish_aretaic_school: "Establish a Scholar-Citadel"
  decision_establish_aretaic_school_desc: "The [nikeans|E] possess a [culture|E] that espouses [innovation|E], and yet it's undeniable that other barbaric [realms|E] have closen the gap while the [nikeis|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. A new [GetBuilding('aretaic_school_02').GetName] for [education|E]."
- decision_establish_aretaic_school_tooltip: "Found a [university|E] for the pursuit of [innovation|E]"
+ decision_establish_aretaic_school_tooltip: "Found a university for the pursuit of [innovation|E]"
  decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed."
  decision_establish_aretaic_school_confirm: "Select a Barony!"
  establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
@@ -101,10 +99,10 @@
 
  # ── NEW DECISIONS ──
 
- decision_intro_nikead: "Espouse the Nikean Restoration"
- decision_start_cultivating_hoplites: "Cultivate the Hoplîtes"
- decision_stop_cultivating_hoplites: "Cease Hoplîtes Cultivation"
- decision_take_sobriquet: "Adopt a Sobriquet"
+ decision_take_epithet: "Adopt an Epithet"
+ decision_take_epithet_desc: "The [nikeans|E] have always had a tradition of adopting epithets that reflect the deeds, temperament and character of themselves. For one to adopt an epithet, the [character|E] in question solidifies their ideals into a name that will be remembered by other fellow [nikeis|E] and for posterity."
+ decision_take_epithet_tooltip: "Adopt an epithet or nickname that #emp may#! reflect your temperament, deeds, and character!"
+ decision_take_epithet_confirm: "My second name!"
 
  # Arrival notification message
  nikean_courtiers.0001.t: "A Nikean Arrives"

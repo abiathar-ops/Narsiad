@@ -1,5 +1,10 @@
-﻿nikean = { # Try to keep this one at the top, as they are unique and rare
+﻿restorationist = {
 	sort_order = 350
+	gui_tags = { big_button }
+}
+
+nikean = { # Try to keep this one at the top, as they are unique and rare
+	sort_order = 11
 	gui_tags = { big_button }
 	#important_decision_group = yes
 }

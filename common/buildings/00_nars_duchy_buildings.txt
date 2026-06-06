@@ -7,6 +7,12 @@ canton_duchy_01 = {
 		
 	}
 
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_01
+		}
+	}
+
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
@@ -20,7 +26,7 @@ canton_duchy_01 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_01
 			}
 		}
 	}
@@ -78,8 +84,14 @@ canton_duchy_02 = {
 		
 	}
 
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_02
+		}
+	}
+
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_castle_city_church = { LEVEL = 02 }
 		building_requirement_tribal = no
 		scope:holder = {
 			culture = {
@@ -91,7 +103,7 @@ canton_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_02
 			}
 		}
 	}
@@ -149,8 +161,14 @@ canton_duchy_03 = {
 		
 	}
 
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_03
+		}
+	}
+
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_castle_city_church = { LEVEL = 03 }
 		building_requirement_tribal = no
 		scope:holder = {
 			culture = {
@@ -162,7 +180,7 @@ canton_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_03
 			}
 		}
 	}
@@ -217,7 +235,12 @@ foundry_duchy_01 = {
 
 	effect_desc = {
 		desc = unlocks_building_desc
-	
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_01
+		}
 	}
 
 	can_construct_potential = {
@@ -233,7 +256,7 @@ foundry_duchy_01 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_01
 			}
 		}
 	}
@@ -286,8 +309,14 @@ foundry_duchy_02 = {
 	
 	}
 
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_02
+		}
+	}
+
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_castle_city_church = { LEVEL = 02 }
 		building_requirement_tribal = no
 		scope:holder = {
 			culture = {
@@ -299,7 +328,7 @@ foundry_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_02
 			}
 		}
 	}
@@ -352,8 +381,14 @@ foundry_duchy_03 = {
 	
 	}
 
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_nikean_building_03
+		}
+	}
+
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_castle_city_church = { LEVEL = 03 }
 		building_requirement_tribal = no
 		scope:holder = {
 			culture = {
@@ -365,7 +400,7 @@ foundry_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_nikean_architecture_01
+				has_innovation = innovation_nikean_building_03
 			}
 		}
 	}

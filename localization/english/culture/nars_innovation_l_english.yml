@@ -1,8 +1,6 @@
 ﻿l_english:
   # MAA Innovations
-  innovation_nikean_maa_01: "Synaspismós"
-  innovation_nikean_maa_01_desc: "The strength of the polis lies not in the solitary hero, but in the shield-wall. By drilling our men to lock shields and move as a single organism, we create an impenetrable wall of bronze and iron."
-  unlock_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] [men_at_arms|E]"
+  culture_parameter_unlock_maa_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] [men_at_arms|E]"
   
   innovation_nikean_maa_02: "Xataphraía"
   innovation_nikean_maa_02_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
@@ -15,11 +13,11 @@
 
   # Architecture
   # Note: Matches the keys 'innovation_nikean_...' and 'innovation_nikean_...' from your file
-  innovation_nikean_architecture_01: "Kyklōpeía"
-  innovation_nikean_architecture_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
+  innovation_nikean_building_01: "Kyklōpeía"
+  innovation_nikean_building_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
 
-  innovation_nikean_architecture_02: "Aisódomon"
-  innovation_nikean_architecture_02_desc: "Moving beyond rough stone, we adopt the cutting of blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
+  innovation_nikean_building_02: "Aisódomon"
+  innovation_nikean_building_02_desc: "Moving beyond rough stone, we adopt the cutting of blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
 
-  innovation_nikean_architecture_03: "Hippodámeios"
-  innovation_nikean_architecture_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
+  innovation_nikean_building_03: "Hippodámeios"
+  innovation_nikean_building_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."

@@ -52,7 +52,6 @@ h_narsokratia_effect = {
 			modifier = h_narsokratia_modifier
 		}		
 	}
-	give_nickname = nick_the_glorious 
 }
 
 h_narsokratia_effect_2 = {

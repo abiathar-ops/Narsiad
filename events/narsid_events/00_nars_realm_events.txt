@@ -52,3 +52,117 @@ nikean_realm.1011 = {
 		}
 	}
 }
+
+namespace = nikean_nickname
+
+nikean_nickname.0010 = { 
+    type = character_event
+    title = nikean_nickname.0010.t
+    desc = nikean_nickname.0010.desc
+    theme = emperor
+    override_background = { reference = study }
+    right_portrait = {
+        character = root
+        animation = thinking  
+    }
+    
+    option = {  
+        trigger = {
+            has_any_nickname = yes
+        }
+        name =  nikean_nickname.0010.aa
+        custom_tooltip = nikean_nickname.0010.aa.tt
+        hidden_effect = {
+            remove_nickname = yes
+        }
+    }   
+    
+    # Group A — Sacred & Devoted
+    option = {  
+        name =  nikean_nickname.0010.a
+        custom_tooltip = nikean_nickname.0010.a.tt
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_any_nickname = yes
+                }
+                remove_nickname = yes
+            }
+            random_list = {
+                10 = { set_nickname_effect = { NICKNAME = nick_philosophos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_chrestos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_eusebes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_dikaios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_isotheos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_daimonios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_euphyes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_philokales } }
+                10 = { set_nickname_effect = { NICKNAME = nick_agathos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_poietes } }
+            }
+        }
+        trigger_event = nikean_nickname.0010
+    }   
+
+    # Group B — Power & Conquest
+    option = {  
+        name =  nikean_nickname.0010.b
+        custom_tooltip = nikean_nickname.0010.b.tt
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_any_nickname = yes
+                }
+                remove_nickname = yes
+            }
+            hidden_effect = {
+                 random_list = {
+                    10 = { set_nickname_effect = { NICKNAME = nick_nicator } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_nikephoros } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_aetos } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_megas } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_ktistes } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_eupator } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_soter } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_andreios } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_trierarchos } }
+                }
+            }
+        }
+        trigger_event = nikean_nickname.0010
+    }   
+    
+    option = {  
+        name =  nikean_nickname.0010.c
+        custom_tooltip = nikean_nickname.0010.c.tt
+        
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_any_nickname = yes
+                }
+                remove_nickname = yes
+            }
+            random_list = {
+                10 = { set_nickname_effect = { NICKNAME = nick_keraunos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_nothos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_auletes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_kepuoros } }
+                10 = { set_nickname_effect = { NICKNAME = nick_erastes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_pleonektes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_dolios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_phoberos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_philodoxos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_kakergetes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_hybristes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_pheidolos } }
+            }
+        }
+        trigger_event = nikean_nickname.0010
+    }   
+    
+    option = {  
+        name =  nikean_nickname.0010.x
+        custom_tooltip = nikean_nickname.0010.x.tt
+    }
+}

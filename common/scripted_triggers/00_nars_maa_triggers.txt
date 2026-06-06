@@ -1,4 +1,4 @@
-# Basic Triggers
+﻿# Basic Triggers
 
 can_recruit_elite_maa = {
   OR = {
@@ -18,13 +18,6 @@ can_recruit_guard_maa = {
 
 nikean_maa_trigger = {
   culture = { has_cultural_pillar = heritage_nars }
-}
-
-can_recruit_maa_01_trigger = {
-	nikean_maa_trigger = yes
-	culture = { 
-		has_innovation = innovation_nikean_maa_01
-	}
 }
 
 can_recruit_maa_02_trigger = {

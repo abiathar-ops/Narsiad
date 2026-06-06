@@ -69,6 +69,7 @@ nars_seed_nikean_trait_on_start = {
                 NOT = { has_nikean_blood = yes }
             }
             add_trait = nars_naturalis
+            create_story = story_nars_naturalis
         }
     }
 }
@@ -81,6 +82,7 @@ nars_add_nikean_trait_on_birth = {
                 NOT = { has_nikean_blood = yes }
             }
             add_trait = nars_naturalis
+            create_story = story_nars_naturalis 
         }
     }
 }
@@ -98,6 +100,35 @@ nars_laamp_on_start = {
             }
             character:nars_0003 ?= {
                 add_realm_law_skip_effects = camp_purpose_mercenaries
+            }
+        }
+
+        every_independent_ruler = {
+            if = {
+                limit = {
+                    has_government = landless_adventurer_government
+                    is_ethnically_nikean = yes
+                    is_ai = no
+                }
+                add_gold = 705
+
+                create_maa_regiment = {
+                    type = maa_hoplitai
+                    check_can_recruit = no
+                    size = 10
+                }
+                create_maa_regiment = {
+                    type = maa_hoplitai
+                    check_can_recruit = no
+                    size = 5
+                }
+                create_maa_regiment = {
+                    type = trebuchet
+                    check_can_recruit = no
+                    title = title:d_laamp_nars_0001
+                    size = 10
+                }
+                trigger_event = nikean_courtiers.0002 
             }
         }
 

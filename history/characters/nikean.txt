@@ -64,6 +64,7 @@ nars_0001 = {
             add_character_flag = do_not_generate_starting_family
             add_character_flag = no_headgear
         }
+        give_nickname = nick_ktistes
     }
     1176.1.1 = {
         add_spouse = nars_0004
@@ -135,6 +136,7 @@ nars_0002 = {
         effect = {
             add_character_flag = do_not_generate_starting_family
         }
+        give_nickname = nick_keraunos
     }
     1176.1.1 = {
         add_matrilineal_spouse = nars_0005
@@ -206,6 +208,7 @@ nars_0003 = {
         effect = {
             add_character_flag = do_not_generate_starting_family
         }
+        give_nickname = nick_kryphios
     }
     1166.1.1 = {
         add_spouse = nars_0006
@@ -306,6 +309,7 @@ nars_0005 = {
         effect = {
             add_character_flag = do_not_generate_starting_family
         }
+        
     }
     1178.1.1 = {
         employer = nars_0002

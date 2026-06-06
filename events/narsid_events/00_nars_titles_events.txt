@@ -95,3 +95,105 @@ nikean_titles.2001 = {
 		flavor = narsokratia_event.flavor
 	}
 }
+
+namespace = nikean_gunpowder
+
+nikean_gunpowder.1011 = {
+	hidden = yes
+
+	immediate = {
+		scope:scheme = {
+			scheme_owner = {
+				save_scope_as = owner
+				random = {
+					chance = scope:scheme.scheme_success_chance
+					save_scope_value_as = {
+						name = scheme_successful
+						value = yes
+					}
+				}
+				if = {
+					limit = { exists = scope:scheme_successful }
+					trigger_event = {
+						id = nikean_gunpowder.1021
+					}
+				}
+				else = {
+					trigger_event = {
+						id = nikean_gunpowder.1022
+					}	
+				}
+			}
+		}
+	}
+}
+
+nikean_gunpowder.1021 = {
+	type = character_event
+	title = nikean_gunpowder.1021.t
+	desc = nikean_gunpowder.1021.desc
+	theme = emperor
+	override_background = bp1_courtyard_mena
+
+	widget = {
+		gui = "event_window_widget_vfx_heavy_smoke"
+		container = "foreground_shader_vfx_container"
+	}
+	left_portrait = {
+		character = root
+		animation = frontend_center_idle
+		camera = camera_body_left_slight
+	}
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
+		root.capital_county = {
+			save_scope_as = capital
+		}
+		munitions_research_success_effect = yes
+		custom_tooltip = nikean_gunpowder.1021.a.mastiges_tt
+	}
+	
+	option = {
+		name = nikean_gunpowder.1021.a
+		scope:scheme = { end_scheme = yes }
+		add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_munitions_research_done
+		}
+		set_global_variable = {
+			name = flag_munitions_research_done
+			value = root
+		}
+	}
+}
+
+nikean_gunpowder.1022 = {
+	type = character_event
+	title = nikean_gunpowder.1022.t
+	desc = nikean_gunpowder.1022.desc
+	theme = emperor
+	override_background = bp1_courtyard_mena
+
+	widget = {
+		gui = "event_window_widget_vfx_heavy_smoke"
+		container = "foreground_shader_vfx_container"
+	}
+	left_portrait = {
+		character = root
+		animation = map_fear
+		camera = camera_body_left_slight
+	}	
+	immediate = {
+		play_music_cue = mx_cue_negative_effect
+		stress_impact = {
+			base = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+	}
+
+	option = {
+		name = nikean_gunpowder.1022.a
+		scope:scheme = { end_scheme = yes }
+	}
+}	

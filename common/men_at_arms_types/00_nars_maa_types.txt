@@ -25,7 +25,7 @@ maa_hoplitai = {
     type = heavy_infantry
 
     can_recruit = {
-	    can_recruit_maa_01_trigger = yes
+	    valid_for_maa_trigger = { PARAMETER = unlock_maa_hoplitai }
     }
 
     damage = 45
@@ -76,7 +76,7 @@ maa_mastiges = {
 	    can_recruit_maa_02_trigger = yes
     }
 
-    damage = 235
+    damage = 135
 	toughness = 65
 	pursuit = 35
 	screen = 0

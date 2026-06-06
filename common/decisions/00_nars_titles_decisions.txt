@@ -4,7 +4,7 @@ decision_h_narsokratia = {
 	}
 	desc = decision_h_narsokratia_desc
 	selection_tooltip = decision_h_narsokratia_tooltip
-	decision_group_type = nikean
+	decision_group_type = restorationist
 
 	ai_check_interval_by_tier = {
 		barony = 0

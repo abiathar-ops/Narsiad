@@ -15,7 +15,7 @@
  trait_nars_naturalis_desc: "The blood of the Nikēis courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins."
 
  nars_nikead.name: "Episkeuastēs"
- nars_nikead.no_actor: "Nikean-Restorationist"
+ nars_nikead.no_actor: "Restorationist"
  trait_nars_nikead_desc: "The spirit of the Nikean Restoration seeps through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, spurring [CharYouHerHim(CHARACTER)] on to restore an ancient hegemony."
 
  trait_track_restorationist:0 "Mōnarkhía-Seeker"

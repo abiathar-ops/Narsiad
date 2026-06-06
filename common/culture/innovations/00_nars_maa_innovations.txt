@@ -28,22 +28,6 @@
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
 
-
-innovation_nikean_maa_01 = {
-	group = culture_group_regional
-	culture_era = culture_era_tribal
-	icon = @leadership_1
-
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
-
-	unlock_maa = maa_hoplitai
-
-	flag = global_maa
-	flag = culture_era_tribal
-}
-
 innovation_nikean_maa_02 = {
 	group = culture_group_regional
 	culture_era = culture_era_early_medieval

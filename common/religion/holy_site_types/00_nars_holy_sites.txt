@@ -291,3 +291,193 @@ lumajang = {
 		monthly_county_control_growth_factor = 0.1
 	}
 }
+
+baghdad = {
+    county = c_baghdad
+    barony = b_baghdad
+    character_modifier = {
+        name = holy_site_b_baghdad_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+ukbara = {
+    county = c_baghdad
+    barony = b_ukbara
+    character_modifier = {
+        name = holy_site_b_ukbara_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+an_nahrawan = {
+    county = c_baghdad
+    barony = b_an-nahrawan
+    character_modifier = {
+        name = holy_site_b_an-nahrawan_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+iskaf = {
+    county = c_iskaf
+    barony = b_iskaf
+    character_modifier = {
+        name = holy_site_b_iskaf_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+kaskar = {
+    county = c_wasit
+    barony = b_kaskar
+    character_modifier = {
+        name = holy_site_b_kaskar_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+wasit = {
+    county = c_wasit
+    barony = b_wasit
+    character_modifier = {
+        name = holy_site_b_wasit_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+ar_rusafa = {
+    county = c_rusafa
+    barony = b_ar-rusafa-iraq
+    character_modifier = {
+        name = holy_site_b_ar-rusafa-iraq_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+al_qatr = {
+    county = c_rusafa
+    barony = b_al-qatr
+    character_modifier = {
+        name = holy_site_b_al-qatr_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+nahr_simmara = {
+    county = c_rusafa
+    barony = b_nahr_simmara
+    character_modifier = {
+        name = holy_site_b_nahr_simmara_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+bayan = {
+    county = c_abbadan
+    barony = b_bayan
+    character_modifier = {
+        name = holy_site_b_bayan_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+abbadan = {
+    county = c_abbadan
+    barony = b_abbadan
+    character_modifier = {
+        name = holy_site_b_abbadan_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+sarsar = {
+    county = c_baghdad
+    barony = b_sarsar
+    character_modifier = {
+        name = holy_site_b_sarsar_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+al_farasa = {
+    county = c_baghdad
+    barony = b_al-farasa
+    character_modifier = {
+        name = holy_site_b_al-farasa_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+humaniya = {
+    county = c_iskaf
+    barony = b_humaniya
+    character_modifier = {
+        name = holy_site_b_humaniya_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+an_numaniya = {
+    county = c_wasit
+    barony = b_an-numaniya
+    character_modifier = {
+        name = holy_site_b_an-numaniya_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+as_saliq = {
+    county = c_batiha
+    barony = b_as-saliq
+    character_modifier = {
+        name = holy_site_b_as-saliq_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+matara = {
+    county = c_ubulla
+    barony = b_matara-iraq
+    character_modifier = {
+        name = holy_site_b_matara-iraq_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+al_ubulla = {
+    county = c_ubulla
+    barony = b_al-ubulla
+    character_modifier = {
+        name = holy_site_b_al-ubulla_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+bajlan = {
+    county = c_basra
+    barony = b_bajlan
+    character_modifier = {
+        name = holy_site_b_bajlan_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}

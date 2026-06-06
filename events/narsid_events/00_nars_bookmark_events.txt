@@ -297,7 +297,7 @@ nikean_bookmark.0030 = {
         }
         change_influence = 500
         ai_chance = {
-			base = 33	#The AI should never get this event, but if they do, shouldn't opt in.
+			base = 0	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
 	}
 
@@ -308,7 +308,7 @@ nikean_bookmark.0030 = {
         add_trait = lifestyle_poet
         add_character_flag = intrigue_duel_on_attack
         ai_chance = {
-			base = 67	#The AI should never get this event, but if they do, shouldn't opt in.
+			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
 	}
 }

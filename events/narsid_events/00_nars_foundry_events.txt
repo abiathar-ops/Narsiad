@@ -22,7 +22,6 @@ nikean_artifact.1001 = {
 	option = {
 		# Sacrifice courtiers — brutal but FAST (30 days)
 		name = nikean_artifact.1001.a
-		give_nickname = nick_the_bloody
 		add_dread = 50
 		stress_impact = {
 			just = minor_stress_impact_gain
@@ -73,7 +72,6 @@ nikean_artifact.1001 = {
 
 	option = {
 		name = nikean_artifact.1001.b
-		give_nickname = nick_the_blessed
 		remove_treasury_or_gold = massive_treasury_or_gold_value
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
@@ -176,75 +174,3 @@ nikean_artifact.1004 = {
 		name = nikean_artifact.1004.a
 	}
 }
-
-namespace = nikean_gunpowder
-
-nikean_gunpowder.1021 = {
-	type = character_event
-	title = nikean_gunpowder.1021.t
-	desc = nikean_gunpowder.1021.desc
-	theme = emperor
-	override_background = bp1_courtyard_mena
-
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
-	left_portrait = {
-		character = root
-		animation = frontend_center_idle
-		camera = camera_body_left_slight
-	}
-	immediate = {
-		play_music_cue = mx_cue_positive_effect
-		root.capital_county = {
-			save_scope_as = capital
-		}
-		munitions_research_success_effect = yes
-		custom_tooltip = nikean_gunpowder.1021.a.mastiges_tt
-	}
-	
-	option = {
-		name = nikean_gunpowder.1021.a
-		scope:scheme = { end_scheme = yes }
-		add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-		}
-		set_global_variable = {
-			name = flag_munitions_research_done
-			value = root
-		}
-	}
-}
-
-nikean_gunpowder.1022 = {
-	type = character_event
-	title = nikean_gunpowder.1022.t
-	desc = nikean_gunpowder.1022.desc
-	theme = emperor
-	override_background = bp1_courtyard_mena
-
-	widget = {
-		gui = "event_window_widget_vfx_heavy_smoke"
-		container = "foreground_shader_vfx_container"
-	}
-	left_portrait = {
-		character = root
-		animation = map_fear
-		camera = camera_body_left_slight
-	}	
-	immediate = {
-		play_music_cue = mx_cue_negative_effect
-		stress_impact = {
-			base = minor_stress_impact_gain
-			ambitious = minor_stress_impact_gain
-			paranoid = minor_stress_impact_gain
-		}
-	}
-
-	option = {
-		name = nikean_gunpowder.1022.a
-		scope:scheme = { end_scheme = yes }
-	}
-}	

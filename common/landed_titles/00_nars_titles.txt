@@ -36,7 +36,7 @@ d_laamp_nars_1001 = {
 	definite_form = yes
 	landless = yes
 	require_landless = yes
-	ruler_uses_title_name = no
+	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
 
@@ -50,7 +50,7 @@ d_laamp_nars_1002 = {
 	definite_form = yes
 	landless = yes
 	require_landless = yes
-	ruler_uses_title_name = no
+	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
 
@@ -64,7 +64,7 @@ d_laamp_nars_1003 = {
 	definite_form = yes
 	landless = yes
 	require_landless = yes
-	ruler_uses_title_name = no
+	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
 

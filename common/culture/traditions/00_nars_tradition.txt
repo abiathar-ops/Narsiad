@@ -3,10 +3,10 @@
 tradition_nars_war = {
     category = societal
     layers = { 0 = learning 1 = mena3 4 = indomitable_azatani.dds }
-     is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+        is_shown = {
+            OR = {
+                has_cultural_pillar = heritage_nars
+            }
 	}
 	can_pick = {
 		OR = {
@@ -15,13 +15,14 @@ tradition_nars_war = {
 		}
     }
     parameters = {
+        unlock_maa_hoplitai = yes
         strong_traits_more_valued = yes
         strong_traits_more_common = yes
         unlock_voluntary_laampdom = yes
         more_likely_to_be_laamps = yes
         no_limit_to_kingdom_level_holy_wars = yes
         cb_lower_piety_level_requirement = yes
-		better_knights_from_decision = yes
+        frontier_themes_borrow_neighbor_troops = yes
     }
     character_modifier = {
         siege_phase_time = -0.2
@@ -46,9 +47,7 @@ tradition_nars_agriculture = { # Agrarian & Artisan
 		}
     }
     parameters = { 
-        pastures_building_bonuses = yes
         farm_estates_pastures_unlock = yes
-        better_herders_pasturalists = yes
         better_disease_resistance = yes
         hard_working_traits_more_valued = yes
         diligent_trait_more_common = yes
@@ -105,6 +104,7 @@ tradition_nars_politics = { # Court & Diplomacy
     category = societal
     layers = { 0 = learning 1 = mena 4 = jirga.dds }
     parameters = { 
+        less_likely_to_culture_convert = yes
         can_appoint_court_scholar = yes
         can_appoint_court_gardener = yes
         can_recruit_gardeners = yes

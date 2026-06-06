@@ -1,181 +1,32 @@
-﻿#Decision to take an heirloom and go to the nikean cutscene? this will start story_cycle?
-decision_starting_nikean = {
+﻿#Nickname-based event
+decision_take_epithet = {
 	picture = {
- 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
+ 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
  	}
- 	desc = decision_mercenary_spawn_desc
+ 	desc = decision_take_epithet_desc
  	decision_group_type = nikean
- 	selection_tooltip = decision_mercenary_spawn_tooltip
+ 	selection_tooltip = decision_take_epithet_tooltip
 
  	is_shown = {
  		is_nikean = yes
- 		is_narsocratic = yes
-		is_independent_ruler = yes
- 		top_liege = this
- 		is_capable_adult = yes
- 		is_landed = yes
+ 		is_ruler = yes
  	}
 
  	is_valid = {
-		is_playable = yes
- 		is_nikean = yes
- 		is_imprisoned = no
- 		is_at_war = no
- 	}
+		is_at_war = no
+		is_imprisoned = no	
+	}
 
  	is_valid_showing_failures_only = {
- 		top_liege = this
- 		is_available_adult = yes
- 		is_at_war = no
- 	}
+		age >= 18
+		is_ai = no
+	}
 
  	effect = {
+		custom_tooltip = decision_take_epithet_tooltip
+		trigger_event = nikean_nickname.0010
  	}
 
- 	ai_potential = { always = yes }
-
- 	ai_will_do = {
- 		base = 100
- 	}
-}
-
-#Adds trait that gives events that boost MAA
-decision_start_cultivate_hoplites = {
-	picture = {
- 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
- 	}
- 	desc = decision_mercenary_spawn_desc
- 	decision_group_type = nikean
- 	selection_tooltip = decision_mercenary_spawn_tooltip
-
- 	is_shown = {
- 		is_nikean = yes
- 		top_liege = this
- 		is_capable_adult = yes
- 		is_landed = yes
- 		NOT = {
- 			is_target_in_global_variable_list = {
- 				name = unavailable_unique_decisions
- 				target = flag:flag_mend_narsil_decision
- 			}
- 		}
- 	}
-
- 	is_valid = {
-		is_playable = yes
- 		is_nikean = yes
- 		is_imprisoned = no
- 		is_at_war = no
- 	}
-
- 	is_valid_showing_failures_only = {
- 		top_liege = this
- 		is_available_adult = yes
- 		is_at_war = no
- 	}
-
- 	effect = {
- 	}
- 	ai_potential = { always = yes }
-
- 	ai_will_do = {
- 		base = 10
-		if = {
-			limit = { gold >= 500 }
-			modifier = {
-				factor = 5
-			}
-		}
- 	}
-}
-
-decision_quit_cultivating_hoplites = {
-	picture = {
- 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
- 	}
- 	desc = decision_mercenary_spawn_desc
- 	decision_group_type = nikean
- 	selection_tooltip = decision_mercenary_spawn_tooltip
-
- 	is_shown = {
- 		is_nikean = yes
- 		top_liege = this
- 		is_capable_adult = yes
- 		is_landed = yes
- 		NOT = {
- 			is_target_in_global_variable_list = {
- 				name = unavailable_unique_decisions
- 				target = flag:flag_mend_narsil_decision
- 			}
- 		}
- 	}
-
- 	is_valid = {
-		is_playable = yes
- 		is_nikean = yes
- 		is_imprisoned = no
- 		is_at_war = no
- 	}
-
- 	is_valid_showing_failures_only = {
- 		top_liege = this
- 		is_available_adult = yes
- 		is_at_war = no
- 	}
-
- 	effect = {
- 	}
- 	ai_potential = { always = yes }
-
- 	ai_will_do = {
- 		base = 10
-		if = {
-			limit = { gold >= 500 }
-			modifier = {
-				factor = 5
-			}
-		}
- 	}
-}
-
-#Nickname-based event
-decision_take_sobriquet = {
-	picture = {
- 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
- 	}
- 	desc = decision_mercenary_spawn_desc
- 	decision_group_type = nikean
- 	selection_tooltip = decision_mercenary_spawn_tooltip
-
- 	is_shown = {
- 		is_nikean = yes
- 		is_narsocratic = yes
- 		top_liege = this
- 		is_capable_adult = yes
- 		is_landed = yes
- 		NOT = {
- 			is_target_in_global_variable_list = {
- 				name = unavailable_unique_decisions
- 				target = flag:flag_mend_narsil_decision
- 			}
- 		}
- 	}
-
- 	is_valid = {
-		is_playable = yes
- 		is_nikean = yes
- 		is_imprisoned = no
- 		is_at_war = no
- 	}
-
- 	is_valid_showing_failures_only = {
- 		top_liege = this
- 		is_available_adult = yes
- 		is_at_war = no
- 	}
-
- 	effect = {
- 	}
  	ai_potential = { always = yes }
 
  	ai_will_do = {
