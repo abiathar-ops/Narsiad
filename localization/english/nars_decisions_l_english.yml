@@ -106,7 +106,7 @@
 
  # Arrival notification message
  nikean_courtiers.0001.t: "A Nikean Arrives"
- nikean_courtiers.0001.desc: "Answering our herald's call, a newfound exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]"
+ nikean_courtiers.0001.desc: "A newfound exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
  decision_recruit_nikean_courtier: "Muster the Nikēís"
  decision_recruit_nikean_courtier_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"
