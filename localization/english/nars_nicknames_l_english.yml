@@ -58,7 +58,7 @@
  nick_pleonektes: "Pleonéktēs"
  nick_pleonektes_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] notorious for an unending desire to accumulate wealth, often at the expense of [CharYourHerHis(CHARACTER)] subjects."
  nick_dolios: "Dólios"
- nick_dolios_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] distinguished by [CharYourHerHis(CHARACTER)] deceitful nature and a web of hidden machinations that ensnare all wcross [CharYouHerHim(CHARACTER)]."
+ nick_dolios_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] distinguished by [CharYourHerHis(CHARACTER)] deceitful nature and a web of hidden machinations that ensnare all across [CharYouHerHim(CHARACTER)]."
  nick_phoberos: "Phoberós"
  nick_phoberos_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] feared by the populace for the crushing weight of [CharYourHerHis(CHARACTER)] authority and the swift, terrible justice meted out to any wdissent."
  nick_philodoxos: "Philódoxos"

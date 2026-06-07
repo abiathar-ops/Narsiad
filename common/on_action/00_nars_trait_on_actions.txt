@@ -21,6 +21,7 @@ nars_intro_on_start = {
                 is_alive = yes
             }
             trigger_event = { id = nikean_intro.1001 days = 1 }
+            add_gold = 705
         }
 
         character:nars_0001 ?= {
@@ -109,9 +110,12 @@ nars_laamp_on_start = {
                     has_government = landless_adventurer_government
                     is_ethnically_nikean = yes
                     is_ai = no
+                    NOT = {
+                        this = character:nars_0001
+                        this = character:nars_0002
+                        this = character:nars_0003
+                    }
                 }
-                add_gold = 705
-
                 create_maa_regiment = {
                     type = maa_hoplitai
                     check_can_recruit = no
@@ -120,7 +124,7 @@ nars_laamp_on_start = {
                 create_maa_regiment = {
                     type = maa_hoplitai
                     check_can_recruit = no
-                    size = 5
+                    size = 10
                 }
                 create_maa_regiment = {
                     type = trebuchet

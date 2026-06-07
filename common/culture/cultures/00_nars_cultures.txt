@@ -6,7 +6,6 @@ nars_nikean = {
 	language = language_nars
 	martial_custom = martial_custom_equal
 	head_determination = head_determination_domain
-	shown_in_ruler_designer = no
 
 	traditions = {
 		tradition_nars_builder

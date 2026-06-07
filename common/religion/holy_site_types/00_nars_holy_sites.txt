@@ -481,3 +481,103 @@ bajlan = {
         development_growth_factor = 0.05
     }
 }
+
+niani = {
+    county = c_niani
+    barony = b_niani
+    character_modifier = {
+        name = holy_site_b_niani_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+jelibakoro = {
+    county = c_kankan
+    barony = b_jelibakoro
+    character_modifier = {
+        name = holy_site_b_jelibakoro_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+suguiri = {
+    county = c_bure
+    barony = b_suguiri
+    character_modifier = {
+        name = holy_site_b_suguiri_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+kangaba = {
+    county = c_tabon
+    barony = b_kangaba
+    character_modifier = {
+        name = holy_site_b_kangaba_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+figuira = {
+    county = c_niani
+    barony = b_figuira
+    character_modifier = {
+        name = holy_site_b_figuira_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+dakajalan = {
+    county = c_dakajalan
+    barony = b_dakajalan
+    character_modifier = {
+        name = holy_site_b_dakajalan_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+kirina = {
+    county = c_sibi_mali
+    barony = b_kirina
+    character_modifier = {
+        name = holy_site_b_kirina_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+tamani = {
+    county = c_dodugu
+    barony = b_tamani
+    character_modifier = {
+        name = holy_site_b_tamani_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+koulikoro = {
+    county = c_sibi_mali
+    barony = b_koulikoro
+    character_modifier = {
+        name = holy_site_b_koulikoro_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}
+
+niamina = {
+    county = c_dodugu
+    barony = b_niamina
+    character_modifier = {
+        name = holy_site_b_niamina_effect_name
+        monthly_county_control_growth_factor = 0.05
+        development_growth_factor = 0.05
+    }
+}

@@ -9,7 +9,6 @@
 	discover_innovation = innovation_currency_01
 	discover_innovation = innovation_crop_rotation
 	discover_innovation = innovation_ledger
-	discover_innovation = innovation_nikean_building_01
 }
 
 950.1.1 = {
@@ -31,7 +30,7 @@
 	discover_innovation = innovation_currency_02
 	discover_innovation = innovation_chronicle_writing
 	discover_innovation = innovation_nikean_maa_02
-	discover_innovation = innovation_nikean_building_02
+	discover_innovation = innovation_nikean_building_01
 }
 
 1150.1.1 = {
@@ -40,6 +39,7 @@
 
 1178.1.1 = {
 	discover_innovation = innovation_battlements
+	discover_innovation = innovation_nikean_building_02
 	discover_innovation = innovation_armilary_sphere
 	discover_innovation = innovation_heraldry
 	discover_innovation = innovation_trebuchet
@@ -54,5 +54,4 @@
 	discover_innovation = innovation_baliffs
 	discover_innovation = innovation_manorialism
 	discover_innovation = innovation_nikean_maa_03
-	discover_innovation = innovation_nikean_building_03
 }

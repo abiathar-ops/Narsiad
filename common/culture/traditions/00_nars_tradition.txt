@@ -26,7 +26,6 @@ tradition_nars_war = {
     }
     character_modifier = {
         siege_phase_time = -0.2
-        men_at_arms_title_limit = 2
         knight_effectiveness_mult = 0.2
         ai_zeal = 20
     }
@@ -55,9 +54,7 @@ tradition_nars_agriculture = { # Agrarian & Artisan
         rowdy_trait_less_common = yes
     }
     character_modifier = { 
-        wetlands_travel_danger = wetlands_medium_danger_reduction
-        floodplains_travel_danger = floodplains_medium_danger_reduction
-        character_travel_speed_mult = 0.2
+        character_travel_speed_mult = 0.15
     }
 }
 
@@ -84,8 +81,7 @@ tradition_nars_science = {
         harder_to_hybridize = yes
     }
     character_modifier = {
-        monthly_learning_lifestyle_xp_gain_mult = 0.2
-        learning_per_piety_level = 2
+        monthly_lifestyle_xp_gain_mult = 0.15
     }
 }
 
@@ -113,8 +109,6 @@ tradition_nars_politics = { # Court & Diplomacy
 		guardian_education_better_outcomes = yes
     }
     character_modifier = { 
-        hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
-        owned_legend_spread_mult = 0.25
         character_travel_safety_mult = 0.25
     }
     county_modifier = { 
@@ -147,9 +141,8 @@ tradition_nars_builder = {
         improved_weapon_inspiration = yes
     }
     character_modifier = {
-        build_speed = -0.3
+        build_speed = -0.15
         build_gold_cost = -0.15 # Note: In game code, positive cost usually increases cost. Changed to negative for discount.
-        monthly_piety_from_buildings_mult = 0.15
     }
 }
 
