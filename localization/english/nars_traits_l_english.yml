@@ -2,21 +2,15 @@
  nars_scion.name: "Mōnarkhíad"
  nars_scion.no_actor: "Panteíon-Blessed"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
- trait_nars_scion_character_desc: "The works [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are not given to forgetting. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion, born of faith and blood."
+ trait_nars_scion_character_desc: "The restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are etched in the fibers of history. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion of the Nikēis and their hegemony."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
 
- trait_track_hoplos:0 "Oplît"
- trait_track_hoplos_desc:0 "Bloody prayers are its language; blood and iron its words. In ordered ranks it does not waver; in the smoke of turmoil it restores command."
  trait_track_sophes:0 "Sophós"
  trait_track_sophes_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
 
  nars_naturalis.name: "Nikēis"
  nars_naturalis.no_actor: "Nikean-Blooded"
- trait_nars_naturalis_desc: "The blood of the Nikēis courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins."
-
- nars_nikead.name: "Episkeuastēs"
- nars_nikead.no_actor: "Restorationist"
- trait_nars_nikead_desc: "The spirit of the Nikean Restoration seeps through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, spurring [CharYouHerHim(CHARACTER)] on to restore an ancient hegemony."
+ trait_nars_naturalis_desc: "Nikēis blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education."
 
  trait_track_restorationist:0 "Mōnarkhía-Seeker"
  trait_track_restorationist_desc:0 "The old hegemony has been lost for times untold and it is [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] toil to restore it."

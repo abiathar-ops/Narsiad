@@ -1,0 +1,50 @@
+nars_naturalis_set_tier_xp_effect = {
+    # 1. Wipe the track clean so values do not stack
+    add_trait_xp = {
+        trait = nars_naturalis
+        track = sophes
+        value = -100
+    }
+
+    # 2. Apply the correct XP threshold based on Education Level
+    if = {
+        limit = { has_education_rank_5_trigger = yes } 
+        add_trait_xp = {
+            trait = nars_naturalis
+            track = sophes
+            value = 100
+        }
+    }
+    else_if = {
+        limit = { has_education_rank_4_trigger = yes }
+        add_trait_xp = {
+            trait = nars_naturalis
+            track = sophes
+            value = 80
+        }
+    }
+    else_if = {
+        limit = { has_education_rank_3_trigger = yes }
+        add_trait_xp = {
+            trait = nars_naturalis
+            track = sophes
+            value = 60
+        }
+    }
+    else_if = {
+        limit = { has_education_rank_2_trigger = yes }
+        add_trait_xp = {
+            trait = nars_naturalis
+            track = sophes
+            value = 40
+        }
+    }
+    else_if = {
+        limit = { has_education_rank_1_trigger = yes }
+        add_trait_xp = {
+            trait = nars_naturalis
+            track = sophes
+            value = 20
+        }
+    }
+}

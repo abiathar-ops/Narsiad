@@ -21,8 +21,7 @@
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = nars_0001
 		position = { 1200 500 }
-		animation = throne_room_two_handed_passive_1
-		#animation = war_over_win
+		animation = war_over_win
 		
 		character = {
 			name = "bookmark_restoring_antiquity_nikeas"	

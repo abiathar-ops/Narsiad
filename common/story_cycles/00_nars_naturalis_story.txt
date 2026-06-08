@@ -2,11 +2,23 @@
 	visible = yes
 
 	icon = {
+		trigger = {
+			always = yes
+		}
 		reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
 	}
 
 	visualization = {
+		# traits = {
+		# 	nars_naturalis
+		# }
 		custom_string_key = "NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING"
+		basic_counter = {
+			variable_name = "narsokratia_rank"
+			min = 0
+			max = 4
+			label = "NARSOKRATIA_VALUE"
+		}
 	}
 
 	on_setup = {
@@ -17,7 +29,7 @@
 	}
 
 	on_end = {
-		debug_log = "Nars Naturalis story cycle ended on:"
+		debug_log = "Nikead's story cycle ended on:"
 		debug_log_date = yes
 	}
 

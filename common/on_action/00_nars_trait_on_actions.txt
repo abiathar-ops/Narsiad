@@ -1,15 +1,48 @@
 ﻿on_game_start_after_lobby = {
     on_actions = { 
-        nars_seed_nikean_trait_on_start 
+        nars_add_nikean_trait_on_start 
         nars_intro_on_start
         nars_laamp_on_start
+        nars_naturalis_sync_all_on_start
     }
 }
 
+on_guest_arrived_from_pool = {
+	on_actions = {
+		nars_one_time_maintenance_on_action
+	}
+}
 
 on_birth_child = {
     on_actions = { 
         nars_add_nikean_trait_on_birth 
+    }
+}
+
+on_16th_birthday = {
+	on_actions = { nars_one_time_maintenance_on_action }
+}
+
+on_birthday = {
+	on_actions = { nars_one_time_maintenance_on_action }
+}
+
+on_join_court = {
+	on_actions = { nars_one_time_maintenance_on_action }
+}
+
+on_title_gain = {
+	on_actions = { nars_one_time_maintenance_on_action }
+}
+
+on_trait_added = {
+    effect = {
+        if = {
+            # This triggers when they get their education trait at age 16, 
+            # when they upgrade it at a university, OR when they first get nars_naturalis.
+            limit = { has_trait = nars_naturalis }
+            nars_naturalis_set_tier_xp_effect = yes
+        }
     }
 }
 
@@ -77,7 +110,7 @@ nars_intro_on_start = {
     } 
 }
 
-nars_seed_nikean_trait_on_start = {
+nars_add_nikean_trait_on_start = {
     effect = {
         every_living_character = {
             limit = { 
@@ -86,6 +119,7 @@ nars_seed_nikean_trait_on_start = {
             }
             add_trait = nars_naturalis
             create_story = story_nars_naturalis
+            nars_naturalis_set_tier_xp_effect = yes
         }
     }
 }
@@ -99,6 +133,7 @@ nars_add_nikean_trait_on_birth = {
             }
             add_trait = nars_naturalis
             create_story = story_nars_naturalis 
+            nars_naturalis_set_tier_xp_effect = yes
         }
     }
 }
@@ -234,4 +269,13 @@ nars_laamp_on_start = {
             }
         }
     }    
+}
+
+nars_naturalis_sync_all_on_start = {
+    effect = {
+        every_living_character = {
+            limit = { has_trait = nars_naturalis }
+            nars_naturalis_set_tier_xp_effect = yes
+        }
+    }
 }

@@ -1,4 +1,5 @@
 ﻿l_english:
  story_nars_naturalis: "$Nikeis$"
  story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
- NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "You are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. Blessed with white-silvery locks and a [trait|E] borne from your ethnicity, you carry the legacy of ancient [narsokratia|E] in pristine blood."
+ NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. The old hegemony has been lost for times untold and it is part of [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] toil to strive in restoring it."
+ NARSOKRATIA_VALUE: "$Narsokratia$ Rank"
