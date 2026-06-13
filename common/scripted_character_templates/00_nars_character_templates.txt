@@ -70,7 +70,7 @@ nikean_template.1011 = {
 
 #Mercenary Leader
 nikean_template.1012 = {
-	age = { 27 43 }
+	age = { 30 45 }
 	gender_female_chance = 50
 	culture = culture:nars_nikean
 	faith = faith:nars_religion
@@ -78,17 +78,18 @@ nikean_template.1012 = {
 		count = 1
 		education_martial_5 = {}
 		education_martial_4 = {}
-		education_martial_3 = {}
 	}
 	random_traits_list = {
-		count = 2
+		count = 3
 		lustful = {}
 		diligent = {}
-		deceitful = {}
+		arrogant = {}
 		zealous = {}
 		brave = {}
-		stubborn = {}
+		wrathful = {}
 		ambitious = {}
+		sadistic = {}
+		impatient = {}
 	}
 	random_traits_list = {
 		count = { 0 1 }
@@ -102,5 +103,6 @@ nikean_template.1012 = {
 		min_template_high_skill
 		max_template_high_skill
 	}
+	trait = nars_naturalis
 	prowess = extremely_high_skill_rating
 }

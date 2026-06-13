@@ -20,15 +20,35 @@
  nikean_faith.1003.desc: "Seeking a moment of respite from [stress|E], I retreat to the nearest [temple|E] offer a solemn libation to the [panteion|E]. I reach for a highly prized amphora of sweet, spiced wine from the southern [regions|E] famed for their vineyards, intending to pour a modest measure into the offering bowl.\n\nBefore I can second-guess my own [sinful|E] blasphemy, I tip the heavy clay jug back and down half of it in one glorious, unbroken swig. It is exquisite. I wipe my mouth with my sleeve, letting out a highly undignified belch. \n\nThe crushing [stress|E] of the day vanishes entirely until I realize I will have to pay the [steward|E] to quietly replace this incredibly expensive vintage before my [court_chaplain|E] notices."
  nikean_faith.1003.a: "The [panteion|E] work in mysterious, delicious ways."
 
- nikean_realm.1001.t: "The Gears of Industry"
- nikean_realm.1001.desc: "Our people may have once been lost and desolate, but no more! It now burns with countless fires of ambition. [buildings|E], [holdings|E], and settlements spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [hoplites|E], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [nikeis|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [nikeanrealm|E] of antiquity. The [narsokratia|E] will almost be reborn and the hour is nigh!"
- nikean_realm.1001.a: "Let the forges roar!"
+ nikean_realm.1001.t: "Philósophos Gínou: Industry"
+ nikean_realm.1001.desc: "Our people may have once been lost and desolate, exiled and damned, but no more! They now burn with countless fires of ambition and [virtuous|E] diligence. [buildings|E], [holdings|E], and [cities|E] spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [hoplites|E], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [nikeis|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [hegemony|E] of antiquity. Our blessed [narsokratia|E] is destined to be reborn and the hour is nigh for its restoration!"
+ nikean_realm.1001.a: "#emp "Let the forges roar!"#!"
+ industrial_boom_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [men_at_arms|E] and [development|E] growth!"
+ nikean_realm.1001.b: "#emp "Not yet."#!"
 
- nikean_realm.1011.t: "An All-Seeing Eye"
+ nikean_realm.1011.t: "Philósophos Gínou: Synods"
  nikean_realm.1011.desc: "To maintain rule, the [narsokratia|E] must possess total truth. The flaw of lesser [cultures|E] is that they wait for treason to strike before acting. The [nikeis|E] do not wait. \n\nBy placing our own operatives among the shadows, we turn the weaknesses of the populace into our greatest asset. Every whispered [scheme|E], every illicit [gold|E] traded in the dark, will be cataloged and delivered to the throne before a single blade is drawn. We shall commandeer and establish a sprawling, invisible web beneath the capital. \n\nWe will hear every [secret|E], record every sin, and extinguish every [revolt|E] before it ever draws breath!"
- nikean_realm.1011.a: "A thousand eyes and one!"
+ nikean_realm.1011.a: "#emp "Our thousand eyes and one!"#!"
+ spy_network_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [control|E] growth!"
+ nikean_realm.1011.b: "#emp "Not yet."#!"
 
- # Success Event
+ nikean_realm.1021.t: "Philósophos Gínou: Sellswords"
+ nikean_realm.1021.desc:0 "Rhythmic steps in cadence had long announced their arrival long before the unfamiliar band of [hoplites|E] reach my close vicinity. A company of [nikean|E] [men_at_arms|E], clad in arms that has seen better days, stands before me. Their leader, clearly a veteran of several [wars|E], approaches my figure awaiting them. \n\n"We are [mercenaries|E] looking for a permanent liege to serve," he declares, his posture perhaps a fraction too rigid for a man asking for potential employment on my doorsteps. \"With the right [gold|E] amount, we #emp could#! potentially help you against your enemies," the veteran said tersely with a glint on his eyes.\n\nIt is clear that he and his band of [hoplites|E] have ample experience. His offer #emp is#! quite tempting but I must think.."
+ nikean_realm.1021.a: ""Shut up and take my gold..!""
+ nikean_realm.1021.b: "I can surely persuade them to join.. free of cost?"
+ nikean_realm.1021.b.success_msg.t:0 "Persuasion: Success"
+ nikean_realm.1021.b.success_msg.desc:0 "[hoplite.GetTitledFirstName] and his men have sworn themselves wholeheartedly!"
+ nikean_realm.1021.b.failure_msg.t:0 "Persuasion: Fail"
+ nikean_realm.1021.b.failure_msg.desc:0 "[hoplite.GetTitledFirstName] and his mercenaries departed for other fortunes!" 
+ nikean_realm.1021.c: ""I have no need for you all. Begone!""
+ 
+ #Gunpowder
+ nikean_gunpowder.1001.t: "Khalepà tà Kalá"
+ nikean_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [panteion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('maa_mastiges').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [hoplites|E] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
+ nikean_gunpowder.1001.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
+ nikean_gunpowder.1001.b: "Barbarians will make our black powder."
+ nikean_gunpowder.1001.c: "Use a powder liable to explode? No."
+
  nikean_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
  nikean_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [mastiges|E]!"
  nikean_gunpowder.1021.a: "A new era dawns!"
@@ -37,7 +57,7 @@
  # Fail Event
  nikean_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"
  nikean_gunpowder.1022.desc: "Hellfire! Hellfire!\n\nAn uncontrollable, roaring inferno swallows my [capital_possessive|E] armory. As shrieking alchemists flee the collapsing masonry, I am forced to think upon all the chaotic tinctures, the volatile powders, and the [courtiers|E] lost in this doomed venture..\n\nHow could such a demonic substance #EMP ever#! be safely contained within an iron tube? It seems mastering this substance is nothing but a deadly fantasy for our [realm|E]. For now, at least."
- nikean_gunpowder.1022.a: "I suppose we will have to stick to [hoplites|E] now.."
+ nikean_gunpowder.1022.a: "#emp "Frakking hell..!"#!"
  
  nikean_titles.2021.t: "Nenikḗkamen..!"
  nikean_titles.2021.desc: "Not since antiquity have we [nikeis|E] stood united beneath a single banner. Guided by one purpose, one vision. A true [narsokratia|E].\n\nFrom every corner of the world, [GetReligionByKey('nikean_religion').GetAdherentNamePluralNoTooltip] now travel to [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]. Pilgrims and [rulers|E], scholars and [soldiers|E]. From distant deserts and crowded ports, from every school and [temples|E], they gather before me to bow their heads, to pledge their hearts.\n\nOnly time will tell if this [hegemony|E] will last or if it is doomed to fade into history once more. For now, the plentitudes no matter [noble|E] or [commoner|E] will know the peace of the [panteion|E]."
@@ -55,34 +75,27 @@
  nikean_titles.2001.desc: "The squabbling [rulers|E] of this [era|E] mistake their disorganized [domains|E] for true [realms|E]. \n\nToday, as a new [ROOT.Char.GetTitleAsNameNoTooltip], I formalize our [nikean|E] rule, enacting our [cultural|E] [tradition|E] and proclaiming the foundation of a new Despotēia of [narsokratia|E]. Perhaps when our neighbouring foreign [nobles|E] send their heralds in their crude fabrics, they'll look upon our radiant [court|E] with a mix of absolute awe and [dread|E]. \n\nIn our toils, we form our own [narsokratia|E], a [succession|E] from the ancient [nikeis|E] [hegemonies|E]. To bring our [legitimate|E] [claim|E] to this chaotic [region|E]. To be the epicenter of a new [nikean|E] [realm|E]." 
  nikean_titles.2001.a: "The first step; never the last!"
 
- nikean_artifact.1001.t: "A Horrifying Dilemma..?"
- nikean_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. 'My [liege|E],' he murmurs, 'the ancient alloy refuses to bind. Mundane fire and hammer are not enough to awaken the legacy within.'\n\nHe hesitates, glancing nervously at the guards. 'There is the old way. The [artifact|E] must be quenched in the lifeblood of the [virtuous|E]. A sacrifice of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we must seek out a more alternative, esoteric reagents to simulate the binding fire, although this is very costly.'"
- nikean_artifact.1001.a: "They will be martyrs for our cause!"
- nikean_artifact.1001.b: "Find another way, anything other than this!"
- nikean_artifact.1001.c: "Now is not the time. Not yet."
+ nikean_artifact.1001.t: "Kairòn Gnôthi: Dillema"
+ nikean_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "..the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [orphic|E] texts. The [artifact|E] must be quenched in the lifeblood of several [nikeans|E] gained from a ritual." \n\n"A sacrifice of three [nikeis|E] from your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
+ nikean_artifact.1001.a: "#emp "They will be martyrs for our cause!"#!"
+ nikean_artifact.1001.b: "#emp "Find another way, anything other than this!"#!"
+ nikean_artifact.1001.c: "#emp "Now is not the time. Not yet."#!"
 
- nikean_artifact.1002.t: "The Man with the Iron Heart"
- nikean_artifact.1002.desc: "The screams echo off the stone walls of my [capital_possessive|E] foremost foundry, quickly drowned out by the hissing, [sinful|E] roar of hot alloy drinking the blood of my recent [courtier|E]. \n\nAs the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy. [narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E] to my hands. \n\nNow you ask yourself, how shall this blood-bound legacy be displayed to the [realm|E], to your [narsokratia|E] and fellow [nikeis|E]?"
+ nikean_artifact.1002.t: "Kairòn Gnôthi: Cruelty"
+ nikean_artifact.1002.desc: "The screams of [courtiers|E] that used to admire me echoes off of the stone walls of my [capital_possessive|E] foremost foundry. The gurgles and moans of the meek victims are quickly drowned out by the hissing, [sinful|E] roar of hot alloy shards drinking the blood of my recent sacrifices, my own [courtiers|E]. \n\nAs the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy. [narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E] to my hands. \n\nNow you ask yourself, how shall this blood-bound legacy be displayed to the [realm|E], to your [narsokratia|E] and fellow [nikeis|E]?"
  nikean_artifact.1002.a: "#emp "However I kraffing want, of course!"#!"
 
- nikean_artifact.1003.t: "A Costly Restoration"
+ nikean_artifact.1003.t: "Kairòn Gnôthi: Mercy"
  nikean_artifact.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood ritual, but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
  nikean_artifact.1003.a: "#emp "However I kraffing want, of course!"#!"
-
- nikean_artifact.1004.t: "An Heirloom Restored!"
- nikean_artifact.1004.desc: "The sacred [artifact|E] [narsil|E] has been restored. The [artifact|E] is whole once more, its edge shimmering with a radiant light that seems to pulse with the essence of our [culture|E].\n\nI force my quivering hands to grip [artifact|E], holding tight this heavy symbol of our renewed [hegemony|E]. As I lift it, a surge of [prowess|E] courses through me, filling me with the vision of our [panteion_possessive|E] favor. The [artifact|E] is not just a weapon; it is a beacon of hope and a testament to the resilience of our [realm|E].\n\nWith [narsil|E] in hand, I am ready to lead our [nikeis|E] into a new era of glory and conquest. The world will tremble before the might of the [nikeanrealm|E], and our [rivals|E] will know the true meaning of [dread|E] when they see our unity. Most importantly, however, the wider [nikeanrealm|E] now unequivocally considers me the true heir of our old [hegemons|E]!\n\nThe notion towards the restoration of the [narsokratia|E] of old is growing ever stronger, and with it, the promise of a glorious [hegemony|E] for all [nikeis|E]!"
- nikean_artifact.1004.a: "I bear the sword!"
-
- nikean_gunpowder.1001.t: "Khalepà tà Kalá"
- nikean_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [panteion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('maa_mastiges').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [hoplites|E] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
- nikean_gunpowder.1001.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
- nikean_gunpowder.1001.b: "Barbarians will make our black powder."
- nikean_gunpowder.1001.c: "Use a powder liable to explode? No."
+ 
+ nikean_courtiers.0001.t: "A Nikean Arrives"
+ nikean_courtiers.0001.desc: "An exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
  nikean_courtiers.0011.t: "A New Sophēs..?"
- nikean_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [nikean|E] holds, two [nikeis|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [hoplite|E] and a scholar, both [sophes|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I can only choose one to join my [court|E]. I must choose wisely or choose none at all."
- nikean_courtiers.0011.a: "I will take [pugilist.GetFirstName] into my [court|E]."
- nikean_courtiers.0011.b: "Perhaps, I will take [savant.GetFirstName] instead."
+ nikean_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [nikean|E] holds, two [nikeis|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. \n\nThey both are two promising candidates, a former [hoplite|E] and a scholar, both [sophes|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I can only choose one to join my [court|E]. I must choose wisely or choose none at all."
+ nikean_courtiers.0011.a: "#emp I will take [pugilist.GetFirstName].#!"
+ nikean_courtiers.0011.b: "#emp Perhaps, I will take [savant.GetFirstName] instead.#!"
  nikean_courtiers.0011.d.decline: "None of them suit my needs."
  nikean_courtiers.0011.d.none: "There is no one suitable here."
  nikean_courtiers.0011.d.tt: "These [sophes|E] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
@@ -90,12 +103,7 @@
  # Nikean Faith
  nikean_faith.1011.t: "Aeì Ho Theòs Geōmetreî!"
  nikean_faith.1011.desc: "The heralds the [court|E] dispatched have finally returned with their exhaustingly detailed reports. To my surprise, it appears the [commoners|E] have actually been listening.\n\nAcross the [realm|E], brand new [temple|E] shrines to the [panteion|E] now echo with the chants of our [orphic|E] [faith|E], replacing whatever gibberish foreign [languages|E] they were shouting before. Granted, half the [lowborn|E] are mispronouncing the scriptures, and I am fairly certain they still pray to their old harvest spirits when my [tax_collectors|E] aren't looking. The deep roots of stubborn [traditions|E] do not wither overnight, after all. \n\nThe [nikeis|E] [faith|E] is spreading like a blazing flame or at least, the realization that worshipping the [panteion|E] is highly correlated with staying out of the [dungeon|E] is spreading. The best part? I finally only have to pretend to care about one set of [cultural|E] holidays."
- nikean_faith.1011.a: "One [realm|E], One [culture|E], One [faith|E]!"
-
- nikean_faith.1021.t: "A Surplus of Perfection"
- nikean_faith.1021.desc: "I stand before the mirror in my chambers, admiring the flawless contour of my jawline. It strikes me suddenly; what a profound tragedy it is that our current traditions restrict a [ruler|E] of my [prestige|E] to a single [spouse|E].\n\nIs it not incredibly selfish of me to hoard such magnificence? The potential of my [marriage|E] is being tragically bottlenecked by outdated, peasant-minded notions of monogamy. The heavens clearly sculpted [nikean|E] [lieges|E] to be shared.\n\nI immediately issue an imperial decree redefining sacred [doctrines|E]. The only question that remains is exactly how much of my perfection the [realm|E] is prepared to handle."
- nikean_faith.1021.a: "Bigamy. A perfect, duality of devotion."
- nikean_faith.1021.b: "Bah..! Might as well get three!"
+ nikean_faith.1011.a: "#emp One realm, One people, One faith#!!"
 
  nikean_faith.1031.t: "Mustérion tês Písteōs.."
  nikean_faith.1031.desc: "I am told by my [virtuous|E] vestal in front that if I ponder the [panteion|E] deeply enough, a profound burst of [piety|E] will reveal which patron God is meant to guide my [dynasty|E].\n\nThe choices are certainly imposing. Do I dedicate myself to [narses|E], whose dominion over [learning|E] sounds suspiciously like an invitation to do more paperwork? Do I seek the favor of [phokas|E] to ensure my coffers remain full enough to bribe my [rivals|E]? Or do I embrace [enuo|E], who promises glorious [wars|E] and boundless [fertility|E]; both of which sound like a dreadful amount of physical exertion. Well, perhaps I'll flip a coin to [decide|E]..? Wait, that #emp probably#! won't work, now would it?"

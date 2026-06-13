@@ -93,7 +93,7 @@ decision_recruit_nikean_courtier = {
 						NOR = {
 							highest_held_title_tier > tier_barony
 							is_landed_or_landless_administrative = yes
-							gold > low_skill_nikean_1_cost
+							gold > major_treasury_or_gold_value
 							is_at_war = no
 						}
 					}

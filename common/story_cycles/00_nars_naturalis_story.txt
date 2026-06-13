@@ -1,67 +1,51 @@
 ﻿story_nars_naturalis = {
-	visible = yes
+    visible = yes
 
-	icon = {
-		trigger = {
-			always = yes
-		}
-		reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
-	}
+    # Uses the Nikeis sword icon as a placeholder
+    icon = {
+        reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
+    }
+    # background = {
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+	# }
 
-	visualization = {
-		# traits = {
-		# 	nars_naturalis
-		# }
-		custom_string_key = "NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING"
+    visualization = {
+        character = {
+            variable_name = "nars_char"
+            label = "NARS_CHAR_LABEL"
+        }
 		basic_counter = {
-			variable_name = "narsokratia_rank"
+			variable_name = "narsokratia_value"
+			tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
 			min = 0
-			max = 4
-			label = "NARSOKRATIA_VALUE"
+			max = 5
+			label = "NARSOKRATIA_VALUE_LABEL"
+			min_label = "NARSOKRATIA_VALUE_MIN_LABEL"
+			max_label = "NARSOKRATIA_VALUE_MAX_LABEL"
 		}
-	}
-
-	on_setup = {
+        custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING 
+    }
+    
+    on_setup = {
+        # Bind the root character to the story variable
+        story_owner = { 
+            save_scope_as = nars_char
+        }
+        set_variable = {
+            name = nars_char
+            value = scope:nars_char
+        }
 		set_variable = {
-			name = nars_naturalis_active
-			value = story_owner
-		}
-	}
+            name = narsokratia_value
+            value = 0
+        }
+        # Run the rank check immediately upon creation
+        story_owner = {
+            nars_update_narsokratia_value = yes
+        }
+    }
 
-	on_end = {
-		debug_log = "Nikead's story cycle ended on:"
-		debug_log_date = yes
-	}
-
-	on_owner_death = {
-		end_story = yes
-		remove_variable = nars_naturalis_active
-	}
-
-	# Events for the Nars Naturalis Story Cycle
-	effect_group = {
-		days = { 100 200 }
-
-		trigger = {
-			story_owner = {
-				is_available = yes
-				is_alive = yes
-				is_adult = yes
-			}
-		}
-
-		first_valid = {
-			triggered_effect = {
-				trigger = { always = yes }
-				effect = {
-					save_scope_as = story_scope
-					story_owner = {
-						trigger_event = {
-							on_action = ongoing_nars_naturalis_owner_events
-						}
-					}
-				}
-			}
-		}
-	}
+    on_owner_death = {
+      end_story = yes
+    }
 }

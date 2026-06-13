@@ -1,7 +1,9 @@
 ﻿l_english:
  nars_nikean:0 "Nikean"
+ nars_nikean_prefix:0 "Nikeo"
  nars_nikean_collective_noun:1 "Nikeans"
  nikean:0 "Nikean"
+ nikean_collectiive_noun:0 "Nikeans"
 
  nikean_clothing_gfx:0 "Nikean"
  nars_nikean_opinion:0 "$nars_nikean$ Opinion"

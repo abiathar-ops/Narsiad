@@ -41,7 +41,30 @@
 		}
 	}
 	
-	ai_potential = { always = no }
+	ai_check_interval = 13
+	ai_potential = {
+		is_ruler = yes
+		any_held_county = {
+			any_in_de_jure_hierarchy = {
+                is_barony_valid_for_aretaic_school = {
+					HOLDER = root
+				}
+			}
+		}
+	}
+	ai_will_do = {
+        base = 100
+        modifier = {
+			add = -50
+			any_held_county = {
+				any_in_de_jure_hierarchy = {
+					title_province = {
+						has_building_or_higher = aretaic_school_01
+					}
+				}
+			}
+		}
+	}
 }
 
 pick_aretaic_school_barony = {
@@ -55,13 +78,13 @@ pick_aretaic_school_barony = {
 	cost = { gold = 750 }
 
 	widget = {
-		controller = create_holy_order 
+		controller = create_holy_order
 		barony_valid = {
 			trigger_if = {
 				limit = { exists = this }
-				title_province = { has_special_building_slot = no }
-				holder = scope:ruler
-				is_leased_out = no
+				is_barony_valid_for_aretaic_school = {
+					HOLDER = scope:ruler
+				}
 			}
 		}
 	}
@@ -83,7 +106,30 @@ pick_aretaic_school_barony = {
 		}
 	}
 	
-	ai_potential = { always = no }
+	ai_check_interval = 13
+	ai_potential = {
+		is_ruler = yes
+		any_held_county = {
+			any_in_de_jure_hierarchy = {
+                is_barony_valid_for_aretaic_school = {
+					HOLDER = root
+				}
+			}
+		}
+	}
+	ai_will_do = {
+        base = 100
+        modifier = {
+			add = -50
+			any_held_county = {
+				any_in_de_jure_hierarchy = {
+					title_province = {
+						has_building_or_higher = aretaic_school_01
+					}
+				}
+			}
+		}
+	}
 }
 
 decision_establish_brothel = {
@@ -109,10 +155,12 @@ decision_establish_brothel = {
 		}
 		custom_tooltip = {
 			text = establish_brothel_no_barony_tt
-			any_held_title = {
-				title_tier = barony
-				title_province = { has_special_building_slot = no }
-				is_leased_out = no
+			any_held_county = {
+				any_in_de_jure_hierarchy = {
+					is_barony_valid_for_brothel_complex = {
+						HOLDER = root
+					}
+				}
 			}
 		}
 	}
@@ -126,7 +174,30 @@ decision_establish_brothel = {
 		}
 	}
 	
-	ai_potential = { always = no }
+	ai_check_interval = 13
+	ai_potential = {
+		is_ruler = yes
+		any_held_county = {
+			any_in_de_jure_hierarchy = {
+                is_barony_valid_for_brothel_complex = {
+					HOLDER = root
+				}
+			}
+		}
+	}
+	ai_will_do = {
+        base = 100
+        modifier = {
+			add = -50
+			any_held_county = {
+				any_in_de_jure_hierarchy = {
+					title_province = {
+						has_building_or_higher = brothel_complex_01
+					}
+				}
+			}
+		}
+	}
 }
 
 pick_brothel_barony = {
@@ -141,17 +212,16 @@ pick_brothel_barony = {
 		gold = 500
 	}
 	widget = {
-		controller = create_holy_order 
+		controller = create_holy_order
 		barony_valid = {
 			trigger_if = {
 				limit = { exists = this }
-				title_province = { has_special_building_slot = no }
-				holder = scope:ruler
-				is_leased_out = no
+				is_barony_valid_for_brothel_complex = {
+					HOLDER = scope:ruler
+				}
 			}
 		}
 	}
-
 	effect = {
 		custom_tooltip = pick_special_building_barony_custom_tt
 		set_global_variable = {
@@ -165,5 +235,28 @@ pick_brothel_barony = {
 		}
 	}
 	
-	ai_potential = { always = no }
+	ai_check_interval = 13
+	ai_potential = {
+		is_ruler = yes
+		any_held_county = {
+			any_in_de_jure_hierarchy = {
+                is_barony_valid_for_brothel_complex = {
+					HOLDER = root
+				}
+			}
+		}
+	}
+	ai_will_do = {
+        base = 100
+        modifier = {
+			add = -50
+			any_held_county = {
+				any_in_de_jure_hierarchy = {
+					title_province = {
+						has_building_or_higher = brothel_complex_01
+					}
+				}
+			}
+		}
+	}
 }

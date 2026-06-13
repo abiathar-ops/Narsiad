@@ -8,3 +8,41 @@ valid_for_nikean_conversion_trigger = {
 		primary_title = { has_variable = do_not_disturb_preachers }
 	}
 }
+
+nars_is_ruler_scope_available = {
+	county = {
+		trigger_if = {
+			limit = { exists = scope:ruler }
+			holder = scope:ruler
+		}
+		trigger_else = {
+			holder = $HOLDER$
+		}
+	}
+}
+
+is_barony_valid_for_aretaic_school = {
+	nars_is_ruler_scope_available = {
+		HOLDER = $HOLDER$
+	}
+	title_province = {
+        has_special_building_slot = no
+    }
+	is_leased_out = no
+	title_province = {
+		NOT = { has_building_or_higher = aretaic_school_01 }
+	}
+}
+
+is_barony_valid_for_brothel_complex = {
+	nars_is_ruler_scope_available = {
+		HOLDER = $HOLDER$
+	}
+	title_province = {
+        has_special_building_slot = no
+    }
+	is_leased_out = no
+	title_province = {
+		NOT = { has_building_or_higher = brothel_complex_01 }
+	}
+}

@@ -12,7 +12,6 @@
  
  faith_nikean_1_decision_name:0 "Dedicate a Libation"
  faith_nikean_1_decision_desc:0 "Enact [nikean|E] rites to dedicate yourself to your [culture|E]."
- change_to_faith_nikean_1_decision_desc:0 "You shift your focus to the Hoplîte discipline, prioritizing military academies, battlefield tactics, and martial prowess."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
  decision_libation_effect_desc: "You offer a libation to the [nikeis|E] [panteion|E] and reflect on your [faith|E]"
  decision_libation_confirm: "Pour the libation!"
@@ -22,24 +21,19 @@
  change_to_faith_nikean_2_decision_desc_1:0 "You [decide|E] which patron God of the [panteion|E] calls to you the most"
  change_to_faith_nikean_2_decision_desc_2:0 "You gain a [modifier|E] that reflects the values of your chosen patron God!"
 
- faith_nikean_3_decision_name:0 "Impose [nikean_faith|E]"
- faith_nikean_3_decision_desc:0 "Evangelize your [realm|E] to the Panteíon of our [faith|E]."
- change_to_faith_nikean_3_decision_desc_1:0 "Every [province|E] of your [realm|E] has a chance to convert to your [faith|E]!\n$EFFECT_LIST_BULLET$This [decision|E] #emp will#! cause the lost of [control|E] in the converted [province|E]!"
+ faith_nikean_3_decision_name:0 "Impose [nikeis|E] Tradition"
+ faith_nikean_3_decision_desc:0 "Evangelize your [realm|E] to the Panteíon of our [tradition|E]."
+ change_to_faith_nikean_3_decision_desc_1:0 "Every [province|E] of your [realm|E] has a chance to convert to your [faith|E] and [culture|E]!\n$EFFECT_LIST_BULLET$This [decision|E] #emp will#! cause the lost of [control|E] in the converted [province|E]!"
  change_to_faith_nikean_3_decision_desc_2:0 "The efficacy of this [decision|E] scales with [narsokratia|E] [title_ranks|E]!"
 
  faith_nikean_4_decision_name:0 "Sponsor [orphic|E] Missionaries"
  faith_nikean_4_decision_desc:0 "Sponsor an [orphic|E] missionary to spread the teachings of the [nikean_faith|E] to neighbouring [realms|E]!"
  change_to_faith_nikean_4_decision_desc_1:0 "You will sponsor an [orphic|E] missionary to try to convert a neighboring [ruler|E] of a different [faith|E] religion than [GetReligionByKey('nikean_religion').GetName]!\n$EFFECT_LIST_BULLET$If successful, the [ruler|E] will convert to your [faith|E] and become an [ally|E]\n$EFFECT_LIST_BULLET$In addition, if successful, you will gain a [legend_seed|E]"
 
- faith_nikean_5_decision_name:0 "Revise [marriage|E] [laws|E]"
- faith_nikean_5_decision_desc:0 "Decree a change in marital laws in the [nikean_faith|E]."
- change_to_faith_nikean_5_decision_desc:0 "Your [nikean_faith|E] abandons its previous rules and adopts a different [marriage|E] [doctrine|E], either Bigamy or Trigamy \n$EFFECT_LIST_BULLET$Bigamy will permit [rulers|E] of your [faith|E] to take #P 2#! spouses\n$EFFECT_LIST_BULLET$Trigamy will permit [rulers|E] of your [faith|E] to take #P 3#! spouses"
-
  faith_nikean_1_decision_tooltip: "Settle in to pour a libation and reflect on your [faith|E]"
  faith_nikean_2_decision_tooltip: "Ponder the [panteion|E] and embody values of your patron God"
  faith_nikean_3_decision_tooltip: "Forcibly convert your [provinces|E] to the [orphic|E] [faith|E]"
  faith_nikean_4_decision_tooltip: "Sponsor an [orphic|E] missionary to spread the teachings of the [nikean_faith|E] to neighbouring [realms|E]"
- faith_nikean_5_decision_tooltip: "Decree a change in marital laws in the [nikean_faith|E]"
 
  faith_nikean_1_cooldown_tt: "Dedicate a Libation is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_nikean_1_cooldown' ))]"
  faith_nikean_2_cooldown_tt: "Ponder the [panteion|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_nikean_2_cooldown' ))]"
@@ -103,10 +97,6 @@
  decision_take_epithet_desc: "The [nikeans|E] have always had a tradition of adopting epithets that reflect the deeds, temperament and character of themselves. For one to adopt an epithet, the [character|E] in question solidifies their ideals into a name that will be remembered by other fellow [nikeis|E] and for posterity."
  decision_take_epithet_tooltip: "Adopt an epithet or nickname that #emp may#! reflect your temperament, deeds, and character!"
  decision_take_epithet_confirm: "My second name!"
-
- # Arrival notification message
- nikean_courtiers.0001.t: "A Nikean Arrives"
- nikean_courtiers.0001.desc: "A newfound exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
  decision_recruit_nikean_courtier: "Muster the Nikēís"
  decision_recruit_nikean_courtier_desc: "The [nikeans|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [nikeis|E] hermits down!"

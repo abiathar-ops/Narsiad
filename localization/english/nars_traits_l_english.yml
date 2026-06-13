@@ -10,7 +10,4 @@
 
  nars_naturalis.name: "Nikēis"
  nars_naturalis.no_actor: "Nikean-Blooded"
- trait_nars_naturalis_desc: "Nikēis blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education."
-
- trait_track_restorationist:0 "Mōnarkhía-Seeker"
- trait_track_restorationist_desc:0 "The old hegemony has been lost for times untold and it is [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] toil to restore it."
+ trait_nars_naturalis_desc: "Nikēis blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."

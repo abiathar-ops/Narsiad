@@ -1,5 +1,5 @@
 ﻿nikeans = {
-	alias = { nikean nikeis nikeis_adj }
+	alias = { nikean nikeis nikeis_adj nikeans_adj nikean_adj}
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 

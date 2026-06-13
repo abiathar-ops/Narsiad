@@ -1,7 +1,9 @@
 ﻿l_english:
   #Nikean Flavours
  game_concept_nikean: "Nikean"
+ game_concept_nikean_adj: "Nikean's"
  game_concept_nikeans: "Nikeans"
+ game_concept_nikeans_adj: "Nikeans'"
  game_concept_nikeis: "Nikēís"
  game_concept_nikeis_adj: "Nikēís'"
  game_concept_nikeans_desc: "The [Glossary( 'Nikēís', 'NIKEAN_GLOSS' )] are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Nikean [orphists|E] are known for their contributions to [learning|E] and [martial|E] pursuits, writing records of their findings with [narsic|E]. The Nikēís are famed for their inhuman [attraction|E] and beauty."
@@ -39,7 +41,7 @@
  game_concept_panteion_desc: "The [Glossary( 'Panteíon', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nikean_faith|E]. They serve as a central pillar of the [nikeis|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [nikeis|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [nikeis|E] also revere other deities such as [phokas|E] and [enuo|E]."
 
  game_concept_narsil: "Narsíl"
- game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [nikean|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [nikeans|E] during the dusk of their [narsokratia|E], its shards now lay waiting for the day it is mended once more to rally the fragmented [nikeis|E]."
+ game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [nikean|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [nikeans|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
 
  #Nikean MAA
  game_concept_hoplites: "Hoplîtes"

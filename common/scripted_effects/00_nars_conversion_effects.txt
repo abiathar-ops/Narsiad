@@ -125,12 +125,6 @@ bookmark_strato_administrative_event_effect = {
                 limit = { NOT = { liege_or_court_owner = scope:actor } }
                 scope:actor = { add_courtier = prev }
             }
-            # Transfer over any prisoners he was holding in the camp
-            every_in_list = {
-                list = strato_prisoners
-                limit = { NOT = { liege_or_court_owner = scope:actor } }
-                scope:actor = { imprison = prev }
-            }
         }
         
         # Swear Fealty to the Byzantine Emperor
@@ -148,7 +142,7 @@ bookmark_strato_administrative_event_effect = {
         # Force Estate location and grant randomized starting buildings
         hidden_effect = {
             domicile ?= {
-                move_domicile = title:c_byzantion.province
+                move_domicile = root.capital_province
                 
                 # Baseline Estate Upgrades
                 add_domicile_building = estate_main_01
@@ -306,7 +300,7 @@ bookmark_elios_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt
     character:nars_0002 = { save_scope_as = ilione }
     character:nars_0003 = { save_scope_as = strato }
-
+    
     hidden_effect = {
         random_list = {
             20 = {

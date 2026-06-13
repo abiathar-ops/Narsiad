@@ -6,7 +6,7 @@ nikean_artifact.1001 = {
 	title = nikean_artifact.1001.t
 	desc = nikean_artifact.1001.desc
 	theme = emperor
-	override_background = bp2_study_indian
+	override_background = armory
 	override_effect_2d = { reference = smoke }
 
 	left_portrait = {
@@ -31,14 +31,36 @@ nikean_artifact.1001 = {
 		random_courtier_or_guest = {
 			limit = {
 				is_adult = yes
+				is_ethnically_nikean = yes
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
 			}
-			alternative_limit = {
-				count = 3
+			death = {
+				death_reason = death_murder
+				killer = root
+			}
+		}
+		random_courtier_or_guest = {
+			limit = {
+				is_adult = yes
+				is_ethnically_nikean = yes
+				NOT = { is_close_family_of = root }
+				NOT = { is_spouse_of = root }
 			}
 			death = {
-				death_reason = death_sacrificed
+				death_reason = death_murder
+				killer = root
+			}
+		}
+		random_courtier_or_guest = {
+			limit = {
+				is_adult = yes
+				is_ethnically_nikean = yes
+				NOT = { is_close_family_of = root }
+				NOT = { is_spouse_of = root }
+			}
+			death = {
+				death_reason = death_murder
 				killer = root
 			}
 		}
@@ -72,7 +94,7 @@ nikean_artifact.1001 = {
 
 	option = {
 		name = nikean_artifact.1001.b
-		remove_treasury_or_gold = massive_treasury_or_gold_value
+		remove_treasury_or_gold = 750
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
 			callous = miniscule_stress_impact_gain
@@ -125,13 +147,13 @@ nikean_artifact.1002 = {
 	title = nikean_artifact.1002.t
 	desc = nikean_artifact.1002.desc
 	theme = emperor
-	override_background = bp2_study_indian
+	override_background = armory
 	override_effect_2d = { reference = smoke }
 
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = schadenfreude
+		animation = throne_room_one_handed_passive_1
 	}
 
 	option = { 
@@ -146,31 +168,17 @@ nikean_artifact.1003 = {
 	title = nikean_artifact.1003.t
 	desc = nikean_artifact.1003.desc
 	theme = emperor
-	override_background = bp2_study_indian
+	override_background = armory
 	override_effect_2d = { reference = smoke }
 
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = personality_compassionate
+		animation = throne_room_one_handed_passive_1
 	}
 
 	option = { 
 		name = nikean_artifact.1003.a
 		create_narsil_effect = yes
-	}
-}
-
-nikean_artifact.1004 = {
-	type = character_event
-	window = fullscreen_event
-	title = nikean_artifact.1004.t
-	desc = nikean_artifact.1004.desc
-	theme = emperor
-	override_background = { reference = fp3_fullscreen_intro }
-	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-
-	option = { 
-		name = nikean_artifact.1004.a
 	}
 }

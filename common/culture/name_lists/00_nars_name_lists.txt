@@ -92,7 +92,7 @@ name_list_nars = {
 		"dynn_Pronnos" "dynn_Proscheios" "dynn_Prospaltios" "dynn_Prosymna" "dynn_Psarelanos" "dynn_Psophidios" "dynn_Pteleasios" "dynn_Ptolemaion"
 		"dynn_Pydnaios" "dynn_Pylios" "dynn_Pyrogeros" "dynn_Pyrrhakides" "dynn_Pythoiastas" "dynn_Rhakelanos" "dynn_Rhamnousios" "dynn_Rhebaios"
 		"dynn_Rhizouragos" "dynn_Rhopitais" "dynn_Rhyps" "dynn_Rhysos" "dynn_Salaminios" "dynn_Salganios" "dynn_Salymbrianos" "dynn_Samaios"
-		"dynn_Samios" "dynn_Sapaios" "dynn_Saratokides" "dynn_Segestanos" "dynn_Seiraios" "dynn_Selegeis" "dynn_Selepitanos" "dynn_Seleukides"
+		"dynn_Samios" "dynn_Sapaios" "dynn_Saratokides" "dynn_Segestanos" "dynn_Seiraios" "dynn_Selegeis" "dynn_Selepitanos"
 		"dynn_Semachides" "dynn_Serdos" "dynn_Sesarethos" "dynn_Seuthopolites" "dynn_Sialetes" "dynn_Sikoulotas" "dynn_Sikyonios" "dynn_Silandeus"
 		"dynn_Simanaios" "dynn_Sinias" "dynn_Sintos" "dynn_Sipheieus" "dynn_Sirkanos" "dynn_Sitalkides" "dynn_Skaios" "dynn_Skambonides"
 		"dynn_Skaphleus" "dynn_Skarpheus" "dynn_Skaugdes" "dynn_Skeirtones" "dynn_Skirtaros" "dynn_Skleris" "dynn_Skyrmiades" "dynn_Smireidas"
@@ -204,7 +204,7 @@ name_list_nars = {
 		"dynn_Pronnos" "dynn_Proscheios" "dynn_Prospaltios" "dynn_Prosymna" "dynn_Psarelanos" "dynn_Psophidios" "dynn_Pteleasios" "dynn_Ptolemaion"
 		"dynn_Pydnaios" "dynn_Pylios" "dynn_Pyrogeros" "dynn_Pyrrhakides" "dynn_Pythoiastas" "dynn_Rhakelanos" "dynn_Rhamnousios" "dynn_Rhebaios"
 		"dynn_Rhizouragos" "dynn_Rhopitais" "dynn_Rhyps" "dynn_Rhysos" "dynn_Salaminios" "dynn_Salganios" "dynn_Salymbrianos" "dynn_Samaios"
-		"dynn_Samios" "dynn_Sapaios" "dynn_Saratokides" "dynn_Segestanos" "dynn_Seiraios" "dynn_Selegeis" "dynn_Selepitanos" "dynn_Seleukides"
+		"dynn_Samios" "dynn_Sapaios" "dynn_Saratokides" "dynn_Segestanos" "dynn_Seiraios" "dynn_Selegeis" "dynn_Selepitanos"
 		"dynn_Semachides" "dynn_Serdos" "dynn_Sesarethos" "dynn_Seuthopolites" "dynn_Sialetes" "dynn_Sikoulotas" "dynn_Sikyonios" "dynn_Silandeus"
 		"dynn_Simanaios" "dynn_Sinias" "dynn_Sintos" "dynn_Sipheieus" "dynn_Sirkanos" "dynn_Sitalkides" "dynn_Skaios" "dynn_Skambonides"
 		"dynn_Skaphleus" "dynn_Skarpheus" "dynn_Skaugdes" "dynn_Skeirtones" "dynn_Skirtaros" "dynn_Skleris" "dynn_Skyrmiades" "dynn_Smireidas"
@@ -395,7 +395,7 @@ name_list_nars = {
 		Nion Nioumphodoros Noema Nokis Nomeinios Nommo Nomokratia Nomonia
 		Nonnos Noron Nostia Nymphe Nymphis Nympho Nyphothena Nysa_2
 		Odysseidas Oinanthis Oineides Oineus Oinion Oinondes Okea Okimon
-		Okymenes Okenaos Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
+		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
 		Onasicha Onasides Onasima Onasiphilos Onchestodoros Onesiphilos Onesiphoron Onesiphoros
 		Oneso Onomantos Opheleimis Ophelema Ophelima Ophelime Ophelleis Opis
 		Opora Oropodoros Orrhippa Orsimachos Orthokles Oupatos Oupermenidas Oxytion

@@ -32,6 +32,7 @@ aretaic_school_02 = {
 	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	character_modifier = {
+		diplomatic_range_mult = 0.8
 		monthly_lifestyle_xp_gain_mult = 0.25
 		cultural_head_fascination_mult = 0.25
 		stress_loss_mult = 0.2
@@ -89,11 +90,6 @@ brothel_complex_02 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
-		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
-		}
 	}
 
 	show_disabled = yes
@@ -102,13 +98,15 @@ brothel_complex_02 = {
 
 	character_modifier = {
 		stress_gain_mult = -0.30
-		diplomatic_range_mult = 0.8
-		owned_hostile_scheme_success_chance_add = 35
-		owned_personal_scheme_success_chance_add = 35
 		owned_legend_spread_mult = 0.8
 		monthly_dynasty_prestige = 5
 		monthly_prestige = 1.25
 		monthly_piety = 1.25
+	}
+
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_8
+		tax_mult = 3.6
 	}
 
 	county_modifier = {

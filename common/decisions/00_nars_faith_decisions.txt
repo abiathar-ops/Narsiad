@@ -97,7 +97,7 @@
 					highest_held_title_tier > tier_kingdom
 				}
 				is_landless_adventurer = no
-				gold >= massive_treasury_or_gold_value
+				gold >= major_treasury_or_gold_value
 				is_nikean = yes
 				is_orphic = yes
 				is_at_war = no
@@ -123,7 +123,7 @@
 				is_nikean = yes
 			}
 			is_valid = {
-				gold >= massive_treasury_or_gold_value
+				gold >= major_treasury_or_gold_value
 				is_nikean = yes
 				is_orphic = yes
 				is_at_war = no
@@ -149,37 +149,6 @@
 			current_description = faith_nikean_4_decision_desc
 			localization = faith_nikean_4_decision_name
 			icon = "gfx/interface/icons/court_position_types/camp_priest_camp_officer.dds"
-			ai_chance = {
-				value = 0
-			}
-		}
-		item = { 
-			value = faith_nikean_5_decision
-			is_shown = {
-				is_ruler = yes
-				is_landless_adventurer = no
-				is_nikean = yes
-				faith = {
-					NOT = { has_doctrine = doctrine_bigamy }
-					NOT = { has_doctrine = doctrine_trigamy }
-				}
-				faith = {
-					has_doctrine = doctrine_bigamy 
-					has_doctrine = doctrine_trigamy 
-				}
-			}
-			is_valid = {
-				is_nikean = yes
-				is_at_war = no
-				is_imprisoned = no	
-				faith = {
-					NOT = { has_doctrine = doctrine_bigamy }
-					NOT = { has_doctrine = doctrine_trigamy }
-				}
-			}
-			current_description = faith_nikean_5_decision_desc
-			localization = faith_nikean_5_decision_name
-			icon = "gfx/interface/icons/court_position_types/court_poet_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
@@ -225,23 +194,12 @@
 				years = 6
 			}
 			hidden_effect = {
-			if = {
-				limit = { highest_held_title_tier = tier_empire }
-				nikean_evangelize_empire_county_effect = yes
-			}
-			if = {
-				limit = { highest_held_title_tier = tier_kingdom }
-				nikean_evangelize_kingdom_county_effect = yes
-			}
-			else_if = {
-				limit = { highest_held_title_tier = tier_hegemony }
 				nikean_evangelize_hegemony_county_effect = yes
 			}
 			trigger_event = { 
 				id = nikean_faith.1011 
 				days = { 2 4 } 
 			}
-		}
 		}
 		#Sponsor Missionaries
 		if = {
@@ -255,21 +213,6 @@
 				trigger_event = { id = nikean_faith.1041 }
 			}
 		}
-		#Marriage
-		if = {
-			limit = { scope:faith_nikean_5_decision = yes }
-			custom_tooltip = change_to_faith_nikean_5_decision_desc
-			hidden_effect = {
-				trigger_event = { id = nikean_faith.1021 }
-			}
-		}
 	}
-	ai_potential = {
-		is_nikean = yes
-		is_ruler = yes
-		modifier = {
-			add = 30
-			court_size < 10
-		}
-	}
+	ai_potential = 30
 }

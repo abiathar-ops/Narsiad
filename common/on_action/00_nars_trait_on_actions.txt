@@ -32,7 +32,22 @@ on_join_court = {
 }
 
 on_title_gain = {
-	on_actions = { nars_one_time_maintenance_on_action }
+    on_actions = { 
+        nars_one_time_maintenance_on_action
+    }
+    effect = {
+        nars_update_narsokratia_value = yes
+    }
+}
+
+random_yearly_everyone_pulse = {
+    on_actions = { nars_one_time_maintenance_on_action }
+}
+
+on_title_lost = {
+    effect = { 
+        nars_update_narsokratia_value = yes
+    }
 }
 
 on_trait_added = {
@@ -55,6 +70,7 @@ nars_intro_on_start = {
             }
             trigger_event = { id = nikean_intro.1001 days = 1 }
             trigger_event = { id = nikean_courtiers.0002 }
+            trigger_event = { id = nikean_courtiers.0002 }
             if = {
                 limit = {
                     NOT = {
@@ -68,7 +84,7 @@ nars_intro_on_start = {
                 add_prestige_level = 2
                 add_piety_level = 1
                 add_gold = 705
-                add_prestige = 350
+                add_prestige = 650
             }
         }
 
@@ -81,6 +97,10 @@ nars_intro_on_start = {
                     limit = { is_ai = yes }
                     trigger_event = { id = nikean_intro.1001 days = 1 }
                 }
+                dynasty = {
+					add_dynasty_prestige_level = 8
+                    add_dynasty_prestige = 1250
+				}
             }
         }
 
@@ -276,6 +296,7 @@ nars_naturalis_sync_all_on_start = {
         every_living_character = {
             limit = { has_trait = nars_naturalis }
             nars_naturalis_set_tier_xp_effect = yes
+            nars_update_narsokratia_value = yes
         }
     }
 }

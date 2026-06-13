@@ -7,5 +7,6 @@ nars_one_time_maintenance_on_action = {
     effect = {
         add_character_flag = nikean_initialized
 		nars_add_nikean_trait_on_start = yes
+		nars_naturalis_set_tier_xp_effect = yes
     }
 }

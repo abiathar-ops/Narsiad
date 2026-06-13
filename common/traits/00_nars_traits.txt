@@ -79,34 +79,34 @@ nars_naturalis = {
 	tracks = {
 		sophes = {
 			20 = {
+				martial = 1
+				learning = 1
+				stewardship = 1
+				intrigue = 1
+			}
+			40 = {
 				martial = 2
-				prowess = 2
+				learning = 2
 				stewardship = 2
 				intrigue = 2
 			}
-			40 = {
+			60 = {
+				martial = 3
+				learning = 3
+				stewardship = 3
+				intrigue = 3
+			}
+			80 = {
 				martial = 4
-				prowess = 4
+				learning = 4
 				stewardship = 4
 				intrigue = 4
 			}
-			60 = {
-				martial = 6
-				prowess = 6
-				stewardship = 6
-				intrigue = 6
-			}
-			80 = {
-				martial = 8
-				prowess = 8
-				stewardship = 8
-				intrigue = 8
-			}
 			100 = {
-				martial = 10
-				prowess = 10
-				stewardship = 10
-				intrigue = 10
+				martial = 5
+				learning = 5
+				stewardship = 5
+				intrigue = 5
 			}
 		}
     }

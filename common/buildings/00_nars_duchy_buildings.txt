@@ -17,9 +17,7 @@ canton_duchy_01 = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
 		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
+			is_nikean = yes
 		}
 	}
 
@@ -93,11 +91,6 @@ canton_duchy_02 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		building_requirement_tribal = no
-		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
-		}
 	}
 
 	can_construct_showing_failures_only = {
@@ -170,11 +163,6 @@ canton_duchy_03 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 03 }
 		building_requirement_tribal = no
-		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
-		}
 	}
 
 	can_construct_showing_failures_only = {
@@ -247,9 +235,7 @@ foundry_duchy_01 = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
 		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
+			is_nikean = yes
 		}
 	}
 
@@ -318,11 +304,6 @@ foundry_duchy_02 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 02 }
 		building_requirement_tribal = no
-		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
-		}
 	}
 
 	can_construct_showing_failures_only = {
@@ -390,11 +371,6 @@ foundry_duchy_03 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 03 }
 		building_requirement_tribal = no
-		scope:holder = {
-			culture = {
-				has_cultural_pillar = heritage_nars
-			}
-		}
 	}
 
 	can_construct_showing_failures_only = {

@@ -108,7 +108,7 @@ nikean_courtiers.0001 = {
 					count = { 0 1 }
 					lifestyle_blademaster = {}
 					lifestyle_herbalist = {}
-					lifestyle_scholar = {}
+					scholar = {}
 					lifestyle_poet = {}
 				}
 				gender_female_chance = 50
@@ -216,249 +216,298 @@ nikean_courtiers.0002 = {
 }
 
 nikean_courtiers.0011 = {
-	type = character_event
-	title = nikean_courtiers.0011.t
-	desc = nikean_courtiers.0011.desc
-	theme = emperor
-	override_background = bp2_study_indian
-	override_effect_2d = { reference = smoke }
+    type = character_event
+    title = nikean_courtiers.0011.t
+    desc = nikean_courtiers.0011.desc
+    theme = emperor
+    override_background = bp2_study_indian
+    override_effect_2d = { reference = smoke }
 
-	left_portrait = {
-		character = scope:pugilist
-		animation = map_dismissal
-		camera = camera_event_scheme_left
-	}
-	right_portrait = {
-		character = scope:savant
-		camera = camera_event_scheme_left
-		animation = thinking
-	}
+    left_portrait = {
+        character = scope:pugilist
+        animation = map_dismissal
+        camera = camera_event_scheme_left
+    }
+    right_portrait = {
+        character = scope:savant
+        camera = camera_event_scheme_left
+        animation = thinking
+    }
 
-	trigger = {
-		exists = capital_province
-	}
+    trigger = {
+        exists = capital_province
+    }
+	
+    immediate = {
+        hidden_effect = {
+            #────────────────────────────────────────────────
+            # FIRST CANDIDATE (Saved as 'pugilist' for UI)
+            #────────────────────────────────────────────────
+            create_character = {
+                employer = root 
+                culture = root.culture
+                faith = root.faith
+                age = { 21 45 } 
+                gender_female_chance = 50
+                
+                random_traits_list = {
+                    count = 2
+                    diligent = {}
+					just = {}
+                    calm = {}
+					patient = {}
+                    greedy = {}
+					stubborn = {}
+                    temperate = {}
+                    ambitious = {}
+                    vengeful = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    lustful = {}
+                    chaste = {}
+                    arrogant = {}
+                    humble = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    education_martial_5 = {}
+                    education_martial_4 = {}
+                    education_martial_3 = {}
+                    education_learning_5 = {}
+                    education_learning_4 = {}
+                    education_learning_3 = {}
+                    education_stewardship_5 = {}
+                    education_stewardship_4 = {}
+                    education_stewardship_3 = {}
+                    education_intrigue_5 = {}
+                    education_intrigue_4 = {}
+                    education_intrigue_3 = {}
+                }
+                random_traits_list = {
+                    count = { 0 1 }
+                    physique_good_2 = {}
+                    physique_good_3 = {}
+                    intellect_good_2 = {}
+                    intellect_good_3 = {}
+                    strong = {}
+                }
+                random_traits_list = {
+                    count = { 0 1 }
+                    beauty_good_2 = {}
+                    beauty_good_3 = {}
+                    shrewd = {}
+					fecund = {}
+                }
+                random_traits_list = {
+                    count = { 1 2 }
+                    lifestyle_blademaster = {}
+                    lifestyle_hunter = {}
+					journaller = {}
+                    athletic = {}
+					confider = {}
+                    logistician = {}
+                    flexible_leader = {}
+                    lifestyle_gardener = {}
+                    lifestyle_mystic = {}
+                    lifestyle_physician = {}
+                    lifestyle_herbalist = {}
+                    lifestyle_poet = {}
+                }
+                
+                learning = { 25 45 }
+                intrigue = { 25 45 }
+                stewardship = { 25 45 }
+                diplomacy = { 25 45 }
+                martial = { 25 45 }
+                prowess = { 35 50 }
+                
+                save_scope_as = pugilist
+                after_creation = {
+                    add_trait = nars_naturalis
+                }
+            }
 
-	immediate = {
+            #────────────────────────────────────────────────
+            # SECOND CANDIDATE (Saved as 'savant' for UI)
+            #────────────────────────────────────────────────
+            create_character = {
+                employer = root 
+                culture = root.culture
+                faith = root.faith
+                age = { 21 45 } 
+                gender_female_chance = 50
+                
+                random_traits_list = {
+                    count = 2
+                    diligent = {}
+					just = {}
+                    calm = {}
+					patient = {}
+                    greedy = {}
+					stubborn = {}
+                    temperate = {}
+                    ambitious = {}
+                    vengeful = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    lustful = {}
+                    chaste = {}
+                    arrogant = {}
+                    humble = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    education_martial_5 = {}
+                    education_martial_4 = {}
+                    education_martial_3 = {}
+                    education_learning_5 = {}
+                    education_learning_4 = {}
+                    education_learning_3 = {}
+                    education_stewardship_5 = {}
+                    education_stewardship_4 = {}
+                    education_stewardship_3 = {}
+                    education_intrigue_5 = {}
+                    education_intrigue_4 = {}
+                    education_intrigue_3 = {}
+                }
+                random_traits_list = {
+                    count = { 0 1 }
+                    physique_good_2 = {}
+                    physique_good_3 = {}
+                    intellect_good_2 = {}
+                    intellect_good_3 = {}
+                    strong = {}
+                }
+                random_traits_list = {
+                    count = { 0 1 }
+                    beauty_good_2 = {}
+                    beauty_good_3 = {}
+                    shrewd = {}
+					fecund = {}
+                }
+                random_traits_list = {
+                    count = { 1 2 }
+                    lifestyle_blademaster = {}
+                    lifestyle_hunter = {}
+					journaller = {}
+                    athletic = {}
+					confider = {}
+                    logistician = {}
+                    flexible_leader = {}
+                    lifestyle_gardener = {}
+                    lifestyle_mystic = {}
+                    lifestyle_physician = {}
+                    lifestyle_herbalist = {}
+                    lifestyle_poet = {}
+                }
+                
+                learning = { 25 45 }
+                intrigue = { 25 45 }
+                stewardship = { 25 45 }
+                diplomacy = { 25 45 }
+                martial = { 25 45 }
+                prowess = { 35 50 }
+                
+                save_scope_as = savant
+                after_creation = {
+                    add_trait = nars_naturalis
+                }
+            }
+        }
+    }
+
+    option = {
+        name = nikean_courtiers.0011.a
+        trigger = {
+            is_playable_character = yes
+            exists = scope:pugilist
+        }
+        pay_treasury_or_gold = {
+            target = scope:pugilist
+            value = major_treasury_or_gold_value
+        }
+        hidden_effect = {
+            if = {
+                limit = { exists = scope:savant }
+                scope:savant = { move_to_pool = yes }
+            }
+        }
+        ai_chance = {
+            factor = 100
+            modifier = {
+                short_term_gold < medium_gold_value
+                factor = 0
+            }
+        }
+    }
+
+    option = {
+        name = nikean_courtiers.0011.b
+        trigger = {
+            is_playable_character = yes
+            exists = scope:savant
+        }
+        pay_treasury_or_gold = {
+            target = scope:savant
+            value = major_treasury_or_gold_value
+        }
+        hidden_effect = {
+            if = {
+                limit = { exists = scope:pugilist }
+                scope:pugilist = { move_to_pool = yes }
+            }
+        }
+        ai_chance = {
+            factor = 100
+            modifier = {
+                short_term_gold < medium_gold_value
+                factor = 0
+            }
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                NOR = {
+                    exists = scope:pugilist
+                    exists = scope:savant
+                }
+            }
+            text = nikean_courtiers.0011.d.none
+        }
+        name = {
+            trigger = {
+                OR = {
+                    exists = scope:pugilist
+                    exists = scope:savant
+                }
+            }
+            text = nikean_courtiers.0011.d.decline
+        }
+        custom_tooltip = nikean_courtiers.0011.d.tt
+        
+        hidden_effect = {
+            if = {
+                limit = { exists = scope:pugilist }
+                scope:pugilist = { move_to_pool = yes }
+            }
+            if = {
+                limit = { exists = scope:savant }
+                scope:savant = { move_to_pool = yes }
+            }
+        }
+        ai_chance = { factor = 2 }
+    }
+
+	after = { 
 		hidden_effect = {
-			#────────────────────────────────────────────────
-			# PUGILIST 
-			#────────────────────────────────────────────────
-			random_pool_character = {
-				province = capital_province
-				limit = {
-					martial >= monumentally_high_skill_rating
-					prowess >= monumentally_high_skill_rating
-					learning >= monumentally_high_skill_rating
-					is_adult = yes
-					is_alive = yes
-					culture = { has_cultural_pillar = heritage_nars }
-				}
-				alternative_limit = {
-					martial >= extremely_high_skill_rating
-					prowess >= extremely_high_skill_rating
-					learning >= extremely_high_skill_rating
-					is_adult = yes
-					is_alive = yes
-					culture = { has_cultural_pillar = heritage_nars }
-				}
-				weight = {
-					base = 1
-					modifier = { faith = root.faith factor = 10 }
-				}
-				save_scope_as = pugilist
-			}
-			if = {
-				limit = { NOT = { exists = scope:pugilist } }
-				create_character = {
-					location = root.capital_province
-					culture = root.culture
-					faith = root.faith
-					gender_female_chance = 50
-					martial = { 25 50 }
-					prowess = { 25 50 }
-					learning = { 25 50 }
-					stewardship = { 15 40 }
-					intrigue = { 15 40 }
-					age = { 25 50 }
-					save_scope_as = pugilist
-					after_creation = {
-						add_trait = nars_naturalis
-						}
-				}
-			}
-			scope:pugilist ?= {
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = lifestyle_blademaster } }
-						add_trait = lifestyle_blademaster
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = strong } }
-						add_trait = strong
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = physique_good_3 } }
-						add_trait = physique_good_3
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = beauty_good_3 } }
-						add_trait = beauty_good_3
-					}
-				}
-			}
-
-			#────────────────────────────────────────────────
-			# SAVANT — high learning
-			#────────────────────────────────────────────────
-			random_pool_character = {
-				province = capital_province
-				limit = {
-					learning >= monumentally_high_skill_rating
-					stewardship >= monumentally_high_skill_rating
-					intrigue >= monumentally_high_skill_rating
-					is_adult = yes
-					is_alive = yes
-					NOT = { scope:pugilist ?= this }
-					culture = { has_cultural_pillar = heritage_nars }
-				}
-				alternative_limit = {
-					learning >= extremely_high_skill_rating
-					stewardship >= extremely_high_skill_rating
-					intrigue >= extremely_high_skill_rating
-					is_adult = yes
-					is_alive = yes
-					culture = { has_cultural_pillar = heritage_nars }
-					NOT = { scope:pugilist ?= this }
-				}
-				weight = {
-					base = 1
-					modifier = { faith = root.faith factor = 10 }
-				}
-				save_scope_as = savant
-			}
-			if = {
-				limit = { NOT = { exists = scope:savant } }
-				create_character = {
-					location = root.capital_province
-					culture = root.culture
-					faith = root.faith
-					gender_female_chance = 50
-					learning = { 25 50 }
-					stewardship = { 25 50 }
-					intrigue = { 25 50 }
-					martial = { 15 40 }
-					prowess = { 15 40 }
-					age = { 25 50 }
-					save_scope_as = savant
-					after_creation = {
-						add_trait = nars_naturalis
-						}
-				}
-			}
-			scope:savant ?= {	
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = scholar } }
-						add_trait = scholar
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = shrewd } }
-						add_trait = shrewd
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = intellect_good_3 } }
-						add_trait = intellect_good_3
-					}
-				}
-				random = {
-					chance = 15
-					if = {
-						limit = { NOT = { has_trait = beauty_good_3 } }
-						add_trait = beauty_good_3
-					}
-				}
+			every_courtier = {
+				nars_naturalis_set_tier_xp_effect = yes
 			}
 		}
-	}
-
-	option = {
-		name = nikean_courtiers.0011.a
-		trigger = {
-			is_playable_character = yes
-			exists = scope:pugilist
-		}
-		pay_treasury_or_gold = {
-			target = scope:pugilist
-			value = major_treasury_or_gold_value
-		}
-		add_courtier = scope:pugilist
-		ai_chance = {
-			factor = 100
-			modifier = {
-				short_term_gold < medium_gold_value
-				factor = 0
-			}
-		}
-	}
-
-	option = {
-		name = nikean_courtiers.0011.b
-		trigger = {
-			is_playable_character = yes
-			exists = scope:savant
-		}
-		pay_treasury_or_gold = {
-			target = scope:savant
-			value = major_treasury_or_gold_value
-		}
-		add_courtier = scope:savant
-		ai_chance = {
-			factor = 100
-			modifier = {
-				short_term_gold < medium_gold_value
-				factor = 0
-			}
-		}
-	}
-
-	option = {
-		name = {
-			trigger = {
-				NOR = {
-					exists = scope:pugilist
-					exists = scope:savant
-				}
-			}
-			text = nikean_courtiers.0011.d.none
-		}
-		name = {
-			trigger = {
-				OR = {
-					exists = scope:pugilist
-					exists = scope:savant
-				}
-			}
-			text = nikean_courtiers.0011.d.decline
-		}
-		custom_tooltip = nikean_courtiers.0011.d.tt
-		ai_chance = { factor = 2 }
 	}
 }
 

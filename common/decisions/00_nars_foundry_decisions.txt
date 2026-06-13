@@ -1,4 +1,4 @@
-decision_mend_narsil = {
+﻿decision_mend_narsil = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
@@ -22,7 +22,7 @@ decision_mend_narsil = {
 	}
 
 	is_valid = {
-		gold >= massive_treasury_or_gold_value
+		gold >= 750
 		is_imprisoned = no
 		is_at_war = no
 	}
@@ -41,9 +41,6 @@ decision_mend_narsil = {
 			trigger_event = { id = nikean_artifact.1001 }
 		}
 	}
-
-	ai_potential = { always = no }
-
 }
 
 decision_munitions_research = {
@@ -51,23 +48,22 @@ decision_munitions_research = {
 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
 
+	decision_group_type = restorationist
+	
 	ai_check_interval_by_tier = {
 		barony = 0
 		county = 0
 		duchy = 120
 		kingdom = 120
 		empire = 120
-		hegemony = 120
 	}
 
 	sort_order = 860
 
 	desc = decision_munitions_research_desc
 	selection_tooltip = decision_munitions_research_tooltip
-	decision_group_type = restorationist
 
 	is_shown = {
-		has_ep3_dlc_trigger = yes
 		is_nikean = yes
 		is_ruler = yes
 		highest_held_title_tier >= tier_empire

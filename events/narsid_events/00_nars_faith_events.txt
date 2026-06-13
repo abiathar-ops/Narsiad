@@ -68,7 +68,7 @@ nikean_faith.1003 = {
 	}
 }
 
-# Impose Nikeis Faith
+# Impose Nikeis Tradition
 
 nikean_faith.1011 = {
 	type = character_event
@@ -86,74 +86,7 @@ nikean_faith.1011 = {
 	option = {
 		name = nikean_faith.1011.a
 		flavor = narsokratia_event.flavor
-		remove_treasury_or_gold = massive_treasury_or_gold_value
-	}
-}
-
-# Revise Marriage Laws
-
-nikean_faith.1021 = {
-	type = character_event
-	title = nikean_faith.1021.t
-	desc = nikean_faith.1021.desc
-	override_background = fp3_zoroastrian_temple
-	theme = administrative
-	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
-	
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = personality_rational
-	}
-
-	option = {
-		# Bigamy: allows exactly TWO spouses simultaneously
-		name = nikean_faith.1021.a
-		custom_tooltip = nikean_faith.1021.a.bigamy_tt
-		hidden_effect = {
-			faith = {
-				if = {
-					limit = { has_doctrine = doctrine_monogamy }
-					remove_doctrine = doctrine_monogamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_concubines }
-					remove_doctrine = doctrine_concubines
-				}
-				if = {
-					limit = { has_doctrine = doctrine_polygamy }
-					remove_doctrine = doctrine_polygamy
-				}
-				add_doctrine = doctrine_bigamy 
-			}
-		}
-	}
-
-	option = {
-		# Trigamy: allows exactly THREE spouses simultaneously
-		name = nikean_faith.1021.b
-		custom_tooltip = nikean_faith.1021.b.trigamy_tt
-		hidden_effect = {
-			faith = {
-				if = {
-					limit = { has_doctrine = doctrine_monogamy }
-					remove_doctrine = doctrine_monogamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_concubines }
-					remove_doctrine = doctrine_concubines
-				}
-				if = {
-					limit = { has_doctrine = doctrine_polygamy }
-					remove_doctrine = doctrine_polygamy
-				}
-				if = {
-					limit = { has_doctrine = doctrine_bigamy }
-					remove_doctrine = doctrine_bigamy
-				}
-				add_doctrine = doctrine_trigamy 
-			}
-		}
+		remove_treasury_or_gold = major_treasury_or_gold_value
 	}
 }
 
@@ -334,7 +267,7 @@ nikean_faith.1041 = {
 				return_trip = no # One way
 			}
 		}
-		remove_treasury_or_gold = massive_treasury_or_gold_value
+		remove_treasury_or_gold = major_treasury_or_gold_value
 	}
 }
 

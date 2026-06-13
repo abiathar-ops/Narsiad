@@ -9,10 +9,10 @@ tenet_nars_pantheon = {
     }
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 
 	piety_cost = faith_tenet_cost_mid
@@ -49,10 +49,10 @@ tenet_nars_erudition = {
 	}
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 
 	character_modifier = {
@@ -80,10 +80,10 @@ tenet_nars_sanguine = {
     }
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	
 	parameters = {
@@ -112,10 +112,10 @@ tenet_nars_banking = {
     }
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 
 	parameters = {
@@ -153,10 +153,10 @@ tenet_nars_crusade = {
     }
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 
 	parameters = {
@@ -187,10 +187,10 @@ tenet_nars_vestals = {
     }
 
 	is_shown = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 	can_pick = {
-		is_considered_orphic = yes
+		religion_tag = nikean_religion
 	}
 
 	parameters = {

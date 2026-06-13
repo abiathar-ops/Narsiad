@@ -49,6 +49,28 @@ prince_female_nars_empire = {
 	}
 }
 
+landless_adventurer_holder_nars = {
+	type = character
+	special = domicile
+    domicile_type = camp
+	name_lists = { name_list_nars }
+	priority = 40
+	governments = { landless_adventurer_government }
+}
+
+landless_estate_holder_nars = {
+	type = character
+	gender = male
+	special = domicile
+    domicile_type = estate
+	name_lists = { name_list_nars }
+	priority = 41
+	governments = { administrative_government }
+
+	flavourization_rules = {
+		top_liege = no
+	}
+}
 
 duchy_administrative_nars_group = {
 	type = title

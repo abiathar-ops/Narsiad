@@ -6,8 +6,8 @@ industrial_boom_character_modifier = {
 
 industrial_boom_province_modifier = {
 	icon = martial_positive
-	stationed_maa_toughness_mult = 0.1
-	development_growth_factor = 0.1
+	stationed_maa_toughness_mult = 0.125
+	development_growth_factor = 0.125
 }
 
 spy_network_character_modifier = {

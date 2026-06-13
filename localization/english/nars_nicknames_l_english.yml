@@ -46,7 +46,7 @@
  nick_philokales:0 "Philokálēs"
  nick_philokales_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] famed for a profound love of beauty and the arts, turning [CharYourHerHis(CHARACTER)] court into a sanctuary of high culture."
  nick_agathos: "Agathós"
- nick_agathos_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] recognized as a man of noble character and excellence, living up to the highest standards of the Nikean ideal."
+ nick_agathos_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] recognized as an individual of noble character and excellence, living up to the highest standards of the Nikean ideal."
  nick_andreios: "Andreîos"
  nick_andreios_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] defined by singular courage and manliness, refusing to yield even when the tides of battle turn against [CharYouHerHim(CHARACTER)]."
  nick_panourgos: "Panoûrgos"
