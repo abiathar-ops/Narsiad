@@ -64,6 +64,12 @@ settled_nikean_dynasty_modifier = {
 	monthly_prestige_gain_mult = 0.25
 }
 
+pledge_restoration_dynasty_modifier = {
+	glory_hound_opinion = 10
+	men_at_arms_maintenance = -0.1
+	siege_phase_time = -0.1
+}
+
 embraced_nikean_traditions_modifier = {
 	icon = blood_positive
 	monthly_prestige = 0.25

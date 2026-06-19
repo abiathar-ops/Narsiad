@@ -7,7 +7,7 @@
  # ── Faith ──
  decision_nikean_faith_choice:0 "Enact Panteíon Rites"
  decision_nikean_faith_choice_desc:0 "Only by [faith|E] could we [nikeis|E] come to understand the roots of our old [culture|E]. My [legitimacy|E] is only a favor bestowed by the [panteion|E] and to neglect our [traditions|E] is to invite ruin on my [house|E]. Besides, while walking to a [temple|E] is tiring, arguing with my [council|E] is even worse!"
- decision_nikean_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [panteion|E]."
+ decision_nikean_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [panteion|E]"
  decision_nikean_faith_choice_confirm:0 "Proceed!"
  
  faith_nikean_1_decision_name:0 "Dedicate a Libation"
@@ -45,7 +45,7 @@
  decision_establish_aretaic_school: "Establish a Scholar-Citadel"
  decision_establish_aretaic_school_desc: "The [nikeans|E] possess a [culture|E] that espouses [innovation|E], and yet it's undeniable that other barbaric [realms|E] have closen the gap while the [nikeis|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. A new [GetBuilding('aretaic_school_02').GetName] for [education|E]."
  decision_establish_aretaic_school_tooltip: "Found a university for the pursuit of [innovation|E]"
- decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed."
+ decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed"
  decision_establish_aretaic_school_confirm: "Select a Barony!"
  establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
  pick_aretaic_school_barony: "Pick the Archive's Location"
@@ -55,7 +55,7 @@
  decision_establish_brothel: "Open a Brothel-Complex"
  decision_establish_brothel_desc: "It is undeniable that ethnic [nikeans|E] are few in numbers. I shall expend our [gold|E] to establish a [building|E] of hedonism to cultivate a [breeding|E] programme. A [GetBuilding('brothel_complex_02').GetName], brothel-complexes fit to espouse certain necessary ideas. I shall dedicate this [building|E] of [fertility|E] to [enuo|E]."
  decision_establish_brothel_tooltip: "Found a [building|E] dedicated to the pursuit of [fertility|E]"
- decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Hedonēion#! will be available to be constructed."
+ decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Hedonēion#! will be available to be constructed"
  decision_establish_brothel_confirm: "Select a Barony!"
  establish_brothel_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
  pick_brothel_barony: "Pick the Brothel's Location"
@@ -78,7 +78,7 @@
 
  decision_mend_narsil: "Reforge the Longsword Narsíl"
  decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of Ancient [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom from a line of [nikean|E] [hegemons|E]. Mending the shards and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity."
- decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]."
+ decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]"
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [nikean|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"
 
@@ -90,6 +90,12 @@
  decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [nikeis|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
  decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
+
+ decision_pledge_restoration: "Pledge Bloodline as Restorationists"
+ decision_pledge_restoration_confirm: "I pledge!"
+ decision_pledge_restoration_tooltip: "I pledge my bloodline, [narsokratia|E] will be restored!"
+ decision_pledge_restoration_desc: "If we are to outgrow the confines of our [region|E]. If we are to absorb territories of neighbouring [realms|E] for [narsokratia_possessive|E] restoration, then we shall do so with no hesitation. I pledge my bloodline to this toil, I bind my children and their children's children to this struggle! To our restoration!"
+ decision_pledge_restoration_tt: "Pledge your [dynasty|E] as [narsokratia|E] Restorationists, unlocking an inheritable [fame_trait|E] that unlocks a new [casus_belli] and bonuses"
 
  # ── NEW DECISIONS ──
 

@@ -1,7 +1,5 @@
 ﻿l_english:
   # MAA Innovations
-  culture_parameter_unlock_maa_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] [men_at_arms|E]"
-  
   innovation_nikean_maa_02: "Xataphraía"
   innovation_nikean_maa_02_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
 
@@ -12,7 +10,6 @@
   innovation_nikean_maa_04_desc: "The Orthotélēs are the elite shock troops of our army, trained to break through enemy lines with devastating charges."
 
   # Architecture
-  # Note: Matches the keys 'innovation_nikean_...' and 'innovation_nikean_...' from your file
   innovation_nikean_building_01: "Kyklōpeía"
   innovation_nikean_building_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
 

@@ -53,12 +53,13 @@ nikean_titles.2011 = {
 	window = big_event_window
 	theme = emperor
 	override_background = ce1_legendary_battlefield
-	override_effect_2d = { reference = smoke }
-	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+	override_effect_2d = { reference = legend_glow }
+	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 	immediate = {
-		legend_seed_great_deed_title_effect = {
+		legend_seed_great_deed_dynasty_effect = {
 			TITLE = root.primary_title
 		}
+		pledge_restoration_effect = yes
 	}
 	left_portrait = {
 		character = root
@@ -67,31 +68,6 @@ nikean_titles.2011 = {
 	}
 	option = { 
 		name = nikean_titles.2011.a
-		flavor = narsokratia_event.flavor
-	}
-}
-
-nikean_titles.2001 = {
-	type = character_event
-	title = nikean_titles.2001.t
-	desc = nikean_titles.2001.desc
-	theme = emperor
-	window = big_event_window
-	override_background = bp2_study_indian
-	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
-	override_effect_2d = { reference = smoke }
-	left_portrait = {
-		character = root
-		animation = chancellor
-		camera = camera_center_large
-	}
-	immediate = {
-		legend_seed_great_deed_title_effect = {
-			TITLE = root.primary_title
-		}
-	}
-	option = { 
-		name = nikean_titles.2001.a
 		flavor = narsokratia_event.flavor
 	}
 }

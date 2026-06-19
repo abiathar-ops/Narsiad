@@ -9,7 +9,6 @@ To do:
 9. 'Mend Narsil' could be a starter decision and a prerequisite to the Narsokratia decisions 
 9.1 Could be scheme based, and if adventurer, have to pay a renowned blacksmith
 10. More events to Evangelizing and other ones
-11. Decision for Nikean culture characters to convert to Nikean faith
 12. Events for Nikean scholar/knight characters gained from Aretaic School
 14. Innovation should give Siege Damage to Hoplites? (Too OP..?)
 15. Custom Special Doctrine (e.g. Rightful Rulers of the World) to the Nikeans.
@@ -17,7 +16,6 @@ To do:
 17. Scout Talents -> From Aretaike Scholi, find a good nikean courtier and legendary characters.
 19. Narsil + Gunpowder + Develop Industry -> Foundry-based decision (all scheme based)
 20. Develop industry (Arms: Develop Industry"MAA + development?), spies (Civil: maa + control?)
-20.1 Choose Career Path (Civil and Military, gives perma modifications)
 22. Cultural Reformation (Marital Revision, Tradition decision, Deviant Virtue)
 23. Culture Decision (Libation, Study the Narsian Classics)
 24. Study the Narsian Classics is a simple decision like libation but has a chance to get a trait but deals stress (need to know nikean language, maybe make an ancient dialect of nikean (Old Nikean)?)
@@ -31,3 +29,8 @@ To do:
 33. Empire decision, move mastiges to kingdom
 34. story_cycle for nars_scion
 35. polish the casus belli to have events
+36. Seize Lands for Nikeis Migration -> condition is <3 nikean province, result is 3 new nikean province (one-time decision)
+37. Echoes of History for Nikeans
+38. Faith Emmisary broken rn, 
+39. Nikean onslaught doesnt have the devastation or raze
+40. Pledge Ddynasty doesnt have the close family dynasty giving

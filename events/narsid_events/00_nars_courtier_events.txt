@@ -111,6 +111,12 @@ nikean_courtiers.0001 = {
 					scholar = {}
 					lifestyle_poet = {}
 				}
+				learning = { 10 25 }
+				intrigue = { 10 25 }
+				stewardship = { 10 25 }
+				diplomacy = { 10 25 }
+				martial = { 10 25 }
+				prowess = { 15 30 }
 				gender_female_chance = 50
 				save_scope_as = nikean_courtier
 				after_creation = {
@@ -273,16 +279,12 @@ nikean_courtiers.0011 = {
                     count = 1
                     education_martial_5 = {}
                     education_martial_4 = {}
-                    education_martial_3 = {}
                     education_learning_5 = {}
                     education_learning_4 = {}
-                    education_learning_3 = {}
                     education_stewardship_5 = {}
                     education_stewardship_4 = {}
-                    education_stewardship_3 = {}
                     education_intrigue_5 = {}
                     education_intrigue_4 = {}
-                    education_intrigue_3 = {}
                 }
                 random_traits_list = {
                     count = { 0 1 }
@@ -296,8 +298,9 @@ nikean_courtiers.0011 = {
                     count = { 0 1 }
                     beauty_good_2 = {}
                     beauty_good_3 = {}
-                    shrewd = {}
+					pure_blooded = {}
 					fecund = {}
+					shrewd = {}
                 }
                 random_traits_list = {
                     count = { 1 2 }
@@ -361,16 +364,12 @@ nikean_courtiers.0011 = {
                     count = 1
                     education_martial_5 = {}
                     education_martial_4 = {}
-                    education_martial_3 = {}
                     education_learning_5 = {}
                     education_learning_4 = {}
-                    education_learning_3 = {}
                     education_stewardship_5 = {}
                     education_stewardship_4 = {}
-                    education_stewardship_3 = {}
                     education_intrigue_5 = {}
                     education_intrigue_4 = {}
-                    education_intrigue_3 = {}
                 }
                 random_traits_list = {
                     count = { 0 1 }
@@ -384,8 +383,9 @@ nikean_courtiers.0011 = {
                     count = { 0 1 }
                     beauty_good_2 = {}
                     beauty_good_3 = {}
-                    shrewd = {}
+					pure_blooded = {}
 					fecund = {}
+					shrewd = {}
                 }
                 random_traits_list = {
                     count = { 1 2 }
@@ -418,6 +418,30 @@ nikean_courtiers.0011 = {
         }
     }
 
+	option = {
+        name = nikean_courtiers.0011.c
+        trigger = {
+            is_playable_character = yes
+			exists = scope:pugilist
+            exists = scope:savant
+        }
+        pay_treasury_or_gold = {
+            target = scope:pugilist
+            value = major_treasury_or_gold_value
+        }
+		pay_treasury_or_gold = {
+            target = scope:savant
+            value = major_treasury_or_gold_value
+        }
+        ai_chance = {
+            factor = 100
+            modifier = {
+                short_term_gold < medium_gold_value
+                factor = 0
+            }
+        }
+    }
+	
     option = {
         name = nikean_courtiers.0011.a
         trigger = {
@@ -467,7 +491,7 @@ nikean_courtiers.0011 = {
             }
         }
     }
-
+	
     option = {
         name = {
             trigger = {

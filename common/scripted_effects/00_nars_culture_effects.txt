@@ -1,4 +1,4 @@
-local_assimilate_nikean_traditions_effect = {
+﻿local_assimilate_nikean_traditions_effect = {
 	save_scope_as = converting_character
 	
 	$OLD_CULTURE$ = { save_scope_as = old_culture }
@@ -221,5 +221,28 @@ create_h_narsokratia_effect = {
 	set_global_variable = {
 		name = created_h_narsokratia
 		value = yes
+	}
+}
+
+pledge_restoration_effect = {
+	if = {
+		limit = {
+			dynasty ?= {
+				NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
+			}
+		}
+		dynasty = {
+			add_dynasty_modifier = { modifier = pledge_restoration_dynasty_modifier }
+		}
+	}
+	dynasty = {
+		every_dynasty_member = {
+			limit = {
+				is_alive = yes
+				is_nikean = yes
+				NOT = { has_trait = nars_scion }
+			}
+			add_trait = nars_scion
+		}
 	}
 }

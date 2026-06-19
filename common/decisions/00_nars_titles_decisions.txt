@@ -92,7 +92,6 @@ decision_h_narsokratia = {
 	effect = {
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
-		add_trait = nars_scion
 		trigger_event = nikean_titles.2021
 		gain_heroic_legend_seed_tooltip_effect = yes
 		hidden_effect = {
@@ -110,6 +109,112 @@ decision_h_narsokratia = {
 			}
 			set_global_variable = {
 				name = flag_h_narsokratia_decision
+				value = root
+			}
+		}
+	
+	}
+		
+	ai_potential = { always = yes }
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_pledge_restoration = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+	}
+	desc = decision_pledge_restoration_desc
+	selection_tooltip = decision_pledge_restoration_tooltip
+	decision_group_type = restorationist
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 100
+		empire = 120
+		hegemony = 0
+	}
+	
+	sort_order = 1000
+
+	is_shown = {
+		is_ruler = yes
+		is_independent_ruler = yes
+		is_ethnically_nikean = yes
+		is_nikean = yes
+		highest_held_title_tier >= tier_kingdom
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_decision_pledge_restoration
+			}
+		}
+	}
+
+	is_valid = {
+		is_dynast = yes
+		OR = {
+			prestige_level >= 4
+			piety_level >= 4
+		}
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		OR = {
+			is_orphic = yes
+			is_nikean = yes
+		}
+	}
+	
+	cost = {
+		gold = {
+			value = 1250
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_nomadic
+						has_treasury = yes
+					}
+				}
+				multiply = 0
+			}
+		}
+		treasury = {
+			value = 1250
+			if = {
+				limit = { has_treasury = no }
+				multiply = 0
+			}
+		}
+		piety = {
+			value = 5000
+			if = {
+				limit = { government_has_flag = government_is_nomadic }
+				multiply = 0
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_pledge_restoration_tt
+		add_trait = nars_scion
+		trigger_event = nikean_titles.2011
+		gain_legitimizing_legend_seed_tooltip_effect = yes
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_decision_pledge_restoration
+			}
+			set_global_variable = {
+				name = flag_decision_pledge_restoration
 				value = root
 			}
 		}

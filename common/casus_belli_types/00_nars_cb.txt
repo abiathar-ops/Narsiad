@@ -102,10 +102,10 @@
 	
 	on_victory = {
 		scope:attacker = {
-			save_scope_as = nars_scion
+			save_scope_as = gok
 		}
 		scope:defender = {
-			save_scope_as = nars_victim
+			save_scope_as = gok_victim
 			primary_title = {
 				save_scope_as = defender_primary
 			}

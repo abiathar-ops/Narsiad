@@ -1,5 +1,6 @@
 ﻿l_english:
   NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+  narsokratia_onslaught_cb: "[nikean|E] Onslaught for [narsokratia|E]"
   NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
   NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean|E] Onslaught for [narsokratia|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
   

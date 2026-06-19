@@ -19,6 +19,8 @@
  libation_bad_modifier_desc: "This fickle [ruler|E] uncaringly drunk his own offering"
  h_narsokratia_modifier: "The Glorious"
  h_narsokratia_modifier_desc: "This [dynasty|E] has restored the glory of the old [nikean|E] [hegemony|E]"
+ pledge_restoration_dynasty_modifier: "Restorationists"
+ pledge_restoration_dynasty_modifier_desc: "This [dynasty|E] has pledged itself for [narsokratia_possessive|E] restoration"
  settled_nikean_dynasty_modifier: "Nikean Dynasty"
  settled_nikean_dynasty_modifier_desc: "This [dynasty|E] has established itself among the [nikeans|E]"
  embraced_nikean_traditions_modifier: "Embraced Nikean Traditions"
