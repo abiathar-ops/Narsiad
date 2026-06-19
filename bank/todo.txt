@@ -4,7 +4,6 @@ To do:
 3. DNA making
 4. Spawn legendary characters
 5. Polish decision rewards -> see Iranian Resurgence
-6. Custom casus belli for nikean hegemony (submission or ruin maybe?)
 7. Gunpowder decision-esque to industry and to synods
 8. Link nikean_intro.1001 to the intro decision
 9. 'Mend Narsil' could be a starter decision and a prerequisite to the Narsokratia decisions 
@@ -28,3 +27,7 @@ To do:
 29. Courtier to 4 but nerf it
 30. Fix Bigamy and Tenets
 31. Delphic Maxims for Scroll Reading Activity (https://en.wikipedia.org/wiki/Delphic_maxims)
+32. Decision to get nars_scion in kingdom
+33. Empire decision, move mastiges to kingdom
+34. story_cycle for nars_scion
+35. polish the casus belli to have events

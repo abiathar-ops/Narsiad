@@ -18,6 +18,7 @@
  game_concept_sophists: "Sophist"
 
  game_concept_narsokratia: "Narsokratía"
+ game_concept_narsokratia_possessive: "Narsokratía's"
  game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E], justified by their [house_possessive|E] perceived [legitimacy|E] from the divine [panteion|E]. This [government_form|E] has allowed the [nikeans|E] to maintain a stable and prosperous [region|E], albeit one of hubristic exclusivity and chauvinistic class hierarchies."
  game_concept_nikeanrealm: "Nikean Realm"
 

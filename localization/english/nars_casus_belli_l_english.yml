@@ -1,19 +1,19 @@
 ﻿l_english:
- NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning upon [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning upon [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning"
+  NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+  NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+  NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean|E] Onslaught for [narsokratia|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+  
+  narsokratia_onslaught_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [defender.GetHerHis] stronger vassals."
+  narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands, as well as titles belonging to you and your stronger vassals!"
+  narsokratia_onslaught_victory: "[attacker.GetShortUIName|U] takes all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [defender.GetHerHis] stronger vassals!"
+  
+  narsokratia_onslaught_white_peace_defender: "[defender.GetShortUIName|U] remains an independent ruler, losing only occupied counties."
+  narsokratia_onslaught_white_peace: "You remain an independent ruler, losing only occupied counties."
 
- narsokratia_onslaught_victory_attacker: "You shatter [defender.GetShortUINamePossessive] realm and claim its lands for the rising [narsokratia|E]."
- narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] shatters your realm, claiming your lands for the rising [narsokratia|E]."
- narsokratia_onslaught_victory: "[attacker.GetShortUIName|U] shatters [defender.GetShortUINamePossessive] realm, claiming its lands for the rising [narsokratia|E]."
+  narsokratia_onslaught_defeat_attacker: "$narsokratia_onslaught_white_peace$ You are humiliated."
+  narsokratia_onslaught_defeat_defender: "$narsokratia_onslaught_white_peace_defender$ [attacker.GetShortUIName|U] is humiliated."
+  narsokratia_onslaught_defeat: "$narsokratia_onslaught_white_peace$ [attacker.GetShortUIName|U] is humiliated."
 
- narsokratia_onslaught_white_peace_defender: "You remain independent, though [attacker.GetShortUIName] keeps whatever lands [CharYourHerHis(attacker)] [hoplites|E] have already occupied."
- narsokratia_onslaught_white_peace: "[defender.GetShortUIName|U] remains independent, though [attacker.GetShortUIName] keeps whatever lands [CharYourHerHis(attacker)] [hoplites|E] have already occupied."
-
- narsokratia_onslaught_defeat_attacker: "$narsokratia_onslaught_white_peace$ Your hubris is punished, and the [nikeis|E] mock your failed restoration."
- narsokratia_onslaught_defeat_defender: "$narsokratia_onslaught_white_peace_defender$ [attacker.GetShortUIName|U] is humiliated before [CharYourHerHis(attacker)] fellow [nikeis|E]."
- narsokratia_onslaught_defeat: "$narsokratia_onslaught_white_peace$ [attacker.GetShortUIName|U] is humiliated before [CharYourHerHis(attacker)] fellow [nikeis|E]."
-
- narsokratia_onslaught_gain_titles_tt: "Gains all [landed|E] [titles|E] held by [defender.GetShortUINamePossessive] [realm|E] beneath [empire|E]-[title_tier|E]"
- narsokratia_onslaught_gain_dread_tt: "Gains @dread_icon![dread|E]"
- narsokratia_onslaught_gain_troops_tt: "Gains a triumphant [army|E] of [hoplites|E], raised from the spoils of [defender.GetShortUINamePossessive] [realm|E]"
+  narsokratia_onslaught_gain_dread_tt: "Gains @dread_icon![dread|E]"
+  narsokratia_devastation_tt: "The target realm suffers severe @control_icon![control|E] and @development_icon![development|E] loss as the [hoplites|E] exact their onslaught."
+  narsokratia_onslaught_gain_titles_tt: "Gains all [landed|E] [titles|E] held personally by [defender.GetShortUIName], and subjugates their [vassals|E]"

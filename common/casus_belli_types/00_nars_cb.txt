@@ -1,9 +1,8 @@
-narsokratia_onslaught_cb = {
-	icon = conquest_cb
+﻿narsokratia_onslaught_cb = {
+	icon = invasion
 	group = invasion
 
 	allow_hostages = no
-
 	allowed_for_character = {
 		has_trait = nars_scion
 	}
@@ -26,9 +25,6 @@ narsokratia_onslaught_cb = {
 				liege = scope:defender
 			}
 		}
-		NOT = {
-			scope:defender = { is_nikean = yes }
-		}
 	}
 
 	should_invalidate = {
@@ -41,7 +37,9 @@ narsokratia_onslaught_cb = {
 	}
 
 	on_invalidated_desc = msg_subjugation_war_invalidated_message
-	on_invalidated = { }
+	
+	on_invalidated = {
+	}
 
 	cost = {
 		piety = {
@@ -57,7 +55,9 @@ narsokratia_onslaught_cb = {
 				}
 			}
 			if = {
-				limit = { scope:attacker = { is_ai = yes } }
+				limit = {
+					scope:attacker = { is_ai = yes }
+				}
 				multiply = 0
 			}
 			add = common_cb_impious_piety_cost
@@ -68,20 +68,24 @@ narsokratia_onslaught_cb = {
 				value = 500
 				desc = CB_BASE_COST
 			}
+
 			multiply = common_cb_prestige_cost_multiplier
+
 			if = {
-				limit = { scope:attacker = { is_ai = yes } }
+				limit = {
+					scope:attacker = { is_ai = yes }
+				}
 				multiply = 0
 			}
 		}
 	}
-
+	
 	on_declaration = {
 		on_declared_war = yes
-	}
+	}	
 
 	on_victory_desc = {
-		desc = {
+		desc = {			
 			first_valid = {
 				triggered_desc = {
 					trigger = { scope:attacker = { is_local_player = yes } }
@@ -95,12 +99,78 @@ narsokratia_onslaught_cb = {
 			}
 		}
 	}
-
+	
 	on_victory = {
+		scope:attacker = {
+			save_scope_as = nars_scion
+		}
 		scope:defender = {
-			save_scope_as = nikean_victim
-			primary_title = { save_scope_as = defender_primary }
-
+			save_scope_as = nars_victim
+			primary_title = {
+				save_scope_as = defender_primary
+			}
+			
+			# Reorganize administrative vassals to prevent shattering the system
+			hidden_effect = {
+				every_vassal_or_below = {
+					limit = {
+						is_landed = yes
+						highest_held_title_tier >= main_administrative_tier
+						government_allows = administrative
+					}
+					add_to_list = protected_admin_vassals
+				}
+				every_vassal_or_below = {
+					limit = {
+						is_landed = yes
+						highest_held_title_tier < main_administrative_tier
+						government_allows = administrative
+						highest_held_title_tier > tier_barony
+						NOT = {
+							any_liege_or_above = {
+								is_in_list = protected_admin_vassals
+							}
+						}
+					}
+					add_to_list = vulnerable_admin_vassals
+				}
+				every_in_list = {
+					list = vulnerable_admin_vassals
+					limit = {
+						is_landless_administrative = yes
+						any_in_list = {
+							list = protected_admin_vassals
+							highest_held_title_tier > prev.highest_held_title_tier
+						}
+					}
+					ordered_in_list = {
+						list = protected_admin_vassals
+						order_by = highest_held_title_tier
+						save_scope_as = landless_admin_liege
+					}
+					create_title_and_vassal_change = {
+						type = swear_fealty
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					change_liege = {
+						liege = scope:landless_admin_liege
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+					remove_from_list = vulnerable_admin_vassals
+				}
+			}
+			
+			every_vassal_or_below = {
+				limit = {
+					is_ai = no
+					highest_held_title_tier > tier_barony
+				}
+				add_to_list = defender_player_vassals
+			}
+			
+			# Make list of defender's vassals eligible for transfer
 			every_vassal_or_below = {
 				limit = {
 					is_landed = yes
@@ -108,6 +178,8 @@ narsokratia_onslaught_cb = {
 				}
 				add_to_list = defender_vassals
 			}
+			
+			# Target ONLY the defender's personal titles to seize
 			every_held_title = {
 				limit = {
 					is_landless_type_title = no
@@ -116,79 +188,116 @@ narsokratia_onslaught_cb = {
 				}
 				add_to_list = target_titles
 			}
+
+			if = {
+				limit = {
+					scope:defender = {
+						OR = {
+							any_held_title = {
+								has_variable = refused_submission
+							}
+							any_vassal_or_below = {
+								any_held_title = {
+									has_variable = refused_submission
+								}
+							}
+						}
+					}
+				}
+				scope:defender = {
+					save_scope_as = khans_retribution_target
+				}
+			}
 		}
 
-		custom_tooltip = narsokratia_onslaught_gain_titles_tt
-		custom_tooltip = narsokratia_onslaught_gain_dread_tt
-		custom_tooltip = narsokratia_onslaught_gain_troops_tt
-
-		add_dread = major_dread_gain
-		add_prestige = massive_prestige_value
-
-		hidden_effect = {
+		scope:attacker = {
+			custom_tooltip = narsokratia_onslaught_gain_titles_tt
+		
 			scope:defender = {
 				pay_short_term_gold = {
 					target = scope:attacker
-					gold = massive_gold_value
+					gold = major_gold_value
 				}
+				# Utilize the standard Greatest of Khans devastation effect
+				gok_realm_devastation_effect = yes
 			}
 
-			random_list = {
-				50 = {
-					spawn_army = {
-						name = nikean_troop_intro_name
-						inheritable = yes
-						uses_supply = no
-						men_at_arms = {
-							type = maa_hoplitai
-							stacks = 12
-						}
-						location = scope:attacker.capital_province
-						origin = scope:nikean_victim.capital_province
-					}
-				}
-				50 = {
-					trigger = { exists = global_var:mastiges_research_complete }
-					spawn_army = {
-						name = nikean_troop_intro_name
-						inheritable = yes
-						uses_supply = no
-						men_at_arms = {
-							type = maa_hoplitai
-							stacks = 8
-						}
-						men_at_arms = {
-							type = maa_mastiges
-							stacks = 4
-						}
-						location = scope:attacker.capital_province
-						origin = scope:nikean_victim.capital_province
-					}
-				}
-			}
+			# Ensure the cleanup effect is applied
+			gok_retribution_cleanup_effect = yes
+			show_pow_release_message_effect = yes
 		}
-
+		
 		add_legitimacy_attacker_victory_effect = yes
 
+		if = {
+			limit = { scope:defender = { sub_realm_size >= 20 } }
+			scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+		}
+		else_if = {
+			limit = { scope:defender = { sub_realm_size >= 10 } }
+			scope:attacker = { accolade_attacker_war_end_glory_gain_med_effect = yes }
+		}
+		else = {
+			scope:attacker = { accolade_attacker_war_end_glory_gain_low_effect = yes }
+		}
+		
+		# Transfer vassals to Attacker
 		hidden_effect = {
 			scope:defender = {
-				every_held_title = {
-					limit = { tier >= tier_empire }
-					add_to_list = defender_empires
-				}
-				if = {
-					limit = {
-						any_in_list = {
-							list = defender_empires
-							count >= 1
-						}
+				every_vassal = {
+					limit = { highest_held_title_tier >= tier_empire }
+					every_held_title = {
+						limit = { tier >= tier_empire }
+						add_to_list = defender_vassal_empires
 					}
 					every_in_list = {
-						list = defender_empires
+						list = defender_vassal_empires
 						holder = { destroy_title = prev }
 					}
 				}
 
+				create_title_and_vassal_change = {
+					type = swear_fealty
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = defender_vassals
+					limit = {
+						OR = {
+							is_independent_ruler = yes
+							is_vassal_of = scope:defender
+						}
+					}
+					change_liege = {
+						liege = scope:attacker
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# Destroy defender empires
+		scope:defender = {
+			every_held_title = {
+				limit = { tier >= tier_empire }
+				add_to_list = defender_empires
+			}
+			if = {
+				limit = {
+					any_in_list = { list = defender_empires count >= 1 }
+				}
+				every_in_list = {
+					list = defender_empires
+					holder = { destroy_title = prev }
+				}
+			}
+		}
+
+		# Seize the primary defender's personal titles
+		hidden_effect = {
+			scope:defender = {
 				create_title_and_vassal_change = {
 					type = conquest
 					save_scope_as = change
@@ -204,12 +313,13 @@ narsokratia_onslaught_cb = {
 				}
 				resolve_title_and_vassal_change = scope:change
 			}
-
+			
+			# Fallback in case defender retains a stray landless/barony holding
 			if = {
 				limit = { scope:defender = { is_landed = yes } }
 				create_title_and_vassal_change = {
 					type = swear_fealty
-					save_scope_as = vassal_change
+					save_scope_as = change
 					add_claim_on_loss = yes
 				}
 				scope:defender = {
@@ -217,19 +327,29 @@ narsokratia_onslaught_cb = {
 						limit = { highest_held_title_tier >= tier_county }
 						change_liege = {
 							liege = scope:attacker
-							change = scope:vassal_change
+							change = scope:change
 						}
 					}
 					change_liege = {
 						liege = scope:attacker
-						change = scope:vassal_change
+						change = scope:change
 					}
-					resolve_title_and_vassal_change = scope:vassal_change
+					resolve_title_and_vassal_change = scope:change
 				}
 			}
+		}
 
-			scope:attacker = {
-				nikean_kingdom_vassal_conversion_effect = yes
+		modify_allies_of_participants_fame_values = {
+			WINNER = scope:attacker
+			FAME_BASE = mongol_invasion_cb_ally_prestige
+			IS_RELIGIOUS_WAR = no
+			WINNER_ALLY_FAME_SCALE = 1
+			LOSER_ALLY_FAME_SCALE = 3
+		}
+		
+		scope:attacker = {
+			add_prestige_experience = {
+				value = mongol_invasion_cb_prestige_experience_gain
 			}
 		}
 
@@ -239,10 +359,13 @@ narsokratia_onslaught_cb = {
 				multiply = -1.0
 			}
 		}
+
+		scope:attacker = { fp1_remember_recent_conquest_victory_effect = yes }
+		laamp_as_mercenary_payout_tooltip_effect = yes
 	}
 
 	on_white_peace_desc = {
-		desc = {
+		desc = {			
 			first_valid = {
 				triggered_desc = {
 					trigger = { scope:defender = { is_local_player = yes } }
@@ -252,7 +375,7 @@ narsokratia_onslaught_cb = {
 			}
 		}
 	}
-
+	
 	on_white_peace = {
 		scope:defender = {
 			every_sub_realm_county = {
@@ -274,6 +397,17 @@ narsokratia_onslaught_cb = {
 			resolve_title_and_vassal_change = scope:change
 		}
 
+		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:defender = { accolade_defender_war_end_glory_gain_med_effect = yes }
+
+		modify_allies_of_participants_fame_values = {
+			WINNER = scope:attacker 
+			FAME_BASE = mongol_invasion_cb_ally_prestige
+			IS_RELIGIOUS_WAR = no
+			WINNER_ALLY_FAME_SCALE = 1
+			LOSER_ALLY_FAME_SCALE = 5
+		}
+
 		add_truce_white_peace_effect = yes
 
 		scope:attacker = {
@@ -284,10 +418,13 @@ narsokratia_onslaught_cb = {
 				arrogant = minor_stress_impact_gain
 			}
 		}
+
+		laamp_as_mercenary_payout_tooltip_effect = yes
+		gok_retribution_cleanup_effect = yes
 	}
 
 	on_defeat_desc = {
-		desc = {
+		desc = {			
 			first_valid = {
 				triggered_desc = {
 					trigger = { scope:attacker = { is_local_player = yes } }
@@ -301,47 +438,79 @@ narsokratia_onslaught_cb = {
 			}
 		}
 	}
-
+	
 	on_defeat = {
-		add_truce_attacker_defeat_effect = yes
+		scope:attacker = { show_pow_release_message_effect = yes }
 
-		if = {
-			limit = {
-				OR = {
-					scope:defender = { is_ai = no }
-					scope:attacker = { is_ai = no }
+		scope:defender = { 
+			mandala_peacemaker_perk_serenity_effect = yes
+			accolade_defender_war_end_glory_gain_high_effect = yes
+		}
+
+		modify_allies_of_participants_fame_values = {
+			WINNER = scope:defender 
+			FAME_BASE = mongol_invasion_cb_ally_prestige
+			IS_RELIGIOUS_WAR = no
+			WINNER_ALLY_FAME_SCALE = 1
+			LOSER_ALLY_FAME_SCALE = 10
+		}
+	
+		add_truce_attacker_defeat_effect = yes
+			
+		scope:defender = {
+			if = {
+				limit = {
+					OR = {
+						is_ai = no 
+						scope:attacker = { is_ai = no } 
+					}
 				}
-			}
-			add_legitimacy_attacker_defeat_effect = yes
-			scope:attacker = {
-				add_prestige = massive_prestige_loss
-				add_legitimacy = major_legitimacy_loss
-				stress_impact = {
-					ambitious = medium_stress_impact_gain
-					arrogant = medium_stress_impact_gain
+				
+				add_legitimacy_attacker_defeat_effect = yes
+
+				scope:attacker = {
+					add_prestige = massive_prestige_loss
+					add_legitimacy = major_legitimacy_loss
+					stress_impact = {
+						ambitious = medium_stress_impact_gain
+						arrogant = medium_stress_impact_gain
+					}
+					pay_short_term_gold_reparations_effect = { GOLD_VALUE = 5 }
+					every_vassal = {
+						custom = custom.every_vassal
+						add_opinion = {
+							modifier = liege_lost_mongol_invasion_war
+							target = prev
+							opinion = -40
+						}
+					}
+					save_temporary_scope_as = loser
 				}
-			}
-			scope:defender = {
-				add_prestige = major_prestige_value
+				
+				add_prestige = mongol_invasion_cb_prestige_gain
+				on_lost_aggression_war_discontent_loss = yes
 			}
 		}
+
+		laamp_as_mercenary_payout_tooltip_effect = yes
+		gok_retribution_cleanup_effect = yes
 	}
-
+	
 	transfer_behavior = transfer
-
+	
 	on_primary_attacker_death = inherit
 	on_primary_defender_death = inherit
-
+	
 	attacker_allies_inherit = yes
 	defender_allies_inherit = yes
-
+	
 	war_name = "NARSOKRATIA_ONSLAUGHT_NAME"
 	my_war_name = "NARSOKRATIA_ONSLAUGHT_NAME_MY"
 	war_name_base = "NARSOKRATIA_ONSLAUGHT_NAME_BASE"
-	cb_name = "NARSOKRATIA_ONSLAUGHT_NAME"
-
-	interface_priority = 180
-
+	cb_name = "NARSOKRATIA_ONSLAUGHT_NAME_BASE"
+	
+	interface_priority = 200
+	
 	ticking_war_score_targets_entire_realm = yes
 	attacker_wargoal_percentage = 0.8
 	attacker_ticking_warscore = 0
@@ -349,10 +518,21 @@ narsokratia_onslaught_cb = {
 	max_attacker_score_from_occupation = 150
 	attacker_score_from_occupation_scale = 50
 	defender_score_from_occupation_scale = 50
-
+	
 	max_ai_diplo_distance_to_title = 500
 
 	ai_score_mult = {
 		value = 10
+		if = {
+			limit = {
+				scope:defender = {
+					any_owned_story = {
+						story_type = frankokratia_story
+						NOT = { has_variable = franko_war_complete }
+					}
+				}
+			}
+			multiply = 0
+		}
 	}
 }

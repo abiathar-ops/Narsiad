@@ -2,8 +2,9 @@
  nars_scion.name: "Mōnarkhíad"
  nars_scion.no_actor: "Panteíon-Blessed"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
- trait_nars_scion_character_desc: "The restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are etched in the fibers of history. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion of the Nikēis and their hegemony."
+ trait_nars_scion_character_desc: "The pledge for hegemonic restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the order of the world are etched in the fibers of history. [ROOT.GetCharacter.GetSheHe|U] stands as a living scion of the enduring Nikēis."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
+ TRAIT_FLAG_DESC_nars_scion_tt: "Unlocks the [nikean|E] Onslaught for [narsokratia|E] [casus_belli|E]"
 
  trait_track_sophes:0 "Sophós"
  trait_track_sophes_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."

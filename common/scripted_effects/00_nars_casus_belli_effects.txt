@@ -1,0 +1,87 @@
+# Reorganizes administrative vassals so the Nikean conqueror doesn't shatter the system entirely, 
+# modeling the GoK administrative preservation effect.
+narsokratia_onslaught_admin_vassal_reorganization = {
+	every_vassal_or_below = {
+		limit = {
+			is_landed = yes
+			highest_held_title_tier >= main_administrative_tier
+			government_allows = administrative
+		}
+		add_to_list = protected_admin_vassals
+	}
+	every_vassal_or_below = {
+		limit = {
+			is_landed = yes
+			highest_held_title_tier < main_administrative_tier
+			government_allows = administrative
+			highest_held_title_tier > tier_barony
+			NOT = {
+				any_liege_or_above = {
+					is_in_list = protected_admin_vassals
+				}
+			}
+		}
+		add_to_list = vulnerable_admin_vassals
+	}
+	
+	every_in_list = {
+		list = vulnerable_admin_vassals
+		limit = {
+			is_landless_administrative = yes
+			any_in_list = {
+				list = protected_admin_vassals
+				highest_held_title_tier > prev.highest_held_title_tier
+			}
+		}
+		ordered_in_list = {
+			list = protected_admin_vassals
+			order_by = highest_held_title_tier
+			save_scope_as = landless_admin_liege
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+			add_claim_on_loss = yes
+		}
+		change_liege = {
+			liege = scope:landless_admin_liege
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+		remove_from_list = vulnerable_admin_vassals
+	}
+}
+
+narsokratia_realm_devastation_effect = {
+	every_sub_realm_county = {
+		limit = {
+			NOT = { holder = scope:attacker }
+		}
+		change_county_control = massive_county_control_loss
+		change_development_level = {
+			subtract = development_level
+			multiply = 0.2
+			floor = yes
+		}
+	}
+	
+	# Sack the capital specifically
+	hidden_effect = {
+		capital_county = {
+			change_development_level = {
+				subtract = development_level
+				multiply = 0.5
+				floor = yes
+			}
+			every_county_province = {
+				limit = {
+					has_holding = yes
+					num_buildings >= 2
+				}
+				destroy_random_building_variable_effect = yes
+				destroy_random_building_effect = yes
+			}
+		}
+	}
+	scope:attacker = { add_dread = major_dread_gain }
+}

@@ -27,7 +27,7 @@ mastiges = {
 
 narsokratia = {
 	parent = nikean
-	alias = { nikeanrealm }
+	alias = { nikeanrealm narsokratia_possessive }
 	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 

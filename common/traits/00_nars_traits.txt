@@ -4,14 +4,23 @@ nars_scion = {
 
 	inherit_chance = 100
 	parent_inheritance_sex = all
+	inherit_from_real_father = no
 	set_immortal_age = 20
+	flag = nars_scion_tt
+	ai_war_chance = -100
+	ai_war_cooldown = -100
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
 	health = 4
 	no_prowess_loss_from_age = yes
+	monthly_income = 5
+	monthly_legitimacy_add = 5
 	life_expectancy = 50
 	monthly_lifestyle_xp_gain_mult = 0.5
 	enemy_hostile_scheme_success_chance_max_add = -50
 	enemy_hostile_scheme_success_chance_growth_add = -50
 	same_faith_opinion = 50
+	zealot_opinion = 20
 
 	name = {
         first_valid = {
