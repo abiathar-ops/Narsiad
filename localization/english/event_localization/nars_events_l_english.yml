@@ -120,7 +120,6 @@
  nikean_faith.1041.a.tt: "[evangelizer.GetFirstNameNoTooltip] departs for [pagan.GetTitledFirstNamePossessiveNoTooltip] capital."
  nikean_faith.1043.desc: "Emissaries from our neighbors come and go frequently enough that they all mix together in my mind. However, today's [nikean|E] envoy sticks out like none before.\n\n[evangelizer.GetSheHe|U] seems to be some sort of holy [evangelizer.GetWomanMan], for starters, and instead of advancing political demands, this [evangelizer.GetFirstName] preaches of an omnipotent God, honored in temples of gold and silver that always smell of incense."
  nikean_faith.1043.a: "Please, tell me more."
- nikean_faith.1043.a.tt: "You create an [alliance|E] with [evangelizer.GetTitledFirstNamePossessiveNoTooltip] liege, [sender.GetTitledFirstName]"
  nikean_faith.1043.b: "We don't need new gods."
  nikean_faith.1043.c: "Ridiculous blasphemy!"
  nikean_faith.1043.c.tt: "This is sure to send a message: your preachers are not welcome here! But we should be ready for retaliation..."
@@ -132,7 +131,6 @@
  nikean_faith.1046.b: "It's only a temporary setback."
  nikean_faith.1047.desc: "Terrible tidings!\n\nNews has come from the land of [pagan.GetCulture.GetCollectiveNounNoTooltip] and, apparently, my missionary [evangelizer.GetFirstName] was killed but the barbarian [pagan.GetTitledFirstName], who wasn't satisfied with rebuking any conversion attempts, but went as far as committing the final desecration and murder a [evangelizer.GetWomanMan] of God!"
  nikean_faith.1047.a: "Outrageous!"
- nikean_faith.1046.a.tt: "You create an [alliance|E] with the newly-converted [pagan.GetTitledFirstName]."
  nikean_faith.1044.t: "" #AI event, leave empty
  nikean_faith.1044.desc: "" #AI event, leave empty
  nikean_faith.1044.a: "" #AI event, leave empty

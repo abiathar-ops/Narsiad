@@ -28,6 +28,11 @@ is_considered_orphic = {
     }
 }
 
+is_ideal_nikean = {
+    is_nikean = yes
+    is_orphic = yes
+}
+
 is_narsocratic = {
    culture = {
         has_cultural_pillar = heritage_nars

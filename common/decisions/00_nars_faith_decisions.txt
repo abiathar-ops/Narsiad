@@ -93,8 +93,8 @@
 			}
 			is_valid = {
 				custom_tooltip = {
-					text = narsokratia_empire_above
-					highest_held_title_tier > tier_kingdom
+					text = narsokratia_kingdom_above
+					highest_held_title_tier >= tier_kingdom
 				}
 				is_landless_adventurer = no
 				gold >= major_treasury_or_gold_value
@@ -129,8 +129,8 @@
 				is_at_war = no
 				is_imprisoned = no	
 				custom_tooltip = {
-					text = narsokratia_empire_above
-					highest_held_title_tier > tier_kingdom
+					text = narsokratia_kingdom_above
+					highest_held_title_tier >= tier_kingdom
 				}
 				is_landless_adventurer = no
 				NOT = {
@@ -214,5 +214,11 @@
 			}
 		}
 	}
-	ai_potential = 30
+	ai_check_interval = 30
+	ai_potential = {
+		is_ruler = yes
+	}
+	ai_will_do = {
+        base = 20
+	}
 }

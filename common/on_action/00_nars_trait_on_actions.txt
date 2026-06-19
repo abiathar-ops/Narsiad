@@ -31,12 +31,59 @@ on_join_court = {
 	on_actions = { nars_one_time_maintenance_on_action }
 }
 
+on_character_created = {
+    effect = {
+        if = {
+            limit = {
+                is_ethnically_nikean = yes
+                NOT = { has_trait = nars_naturalis }
+            }
+            add_trait = nars_naturalis
+            create_story = story_nars_naturalis
+            nars_naturalis_set_tier_xp_effect = yes
+        }
+    }
+}
+
+on_ruler_designer_creation = {
+    effect = {
+        if = {
+            limit = {
+                is_ethnically_nikean = yes
+                NOT = { has_trait = nars_naturalis }
+            }
+            add_trait = nars_naturalis
+            create_story = story_nars_naturalis
+            nars_naturalis_set_tier_xp_effect = yes
+        }
+    }
+}
+
 on_title_gain = {
     on_actions = { 
-        nars_one_time_maintenance_on_action
+        nars_update_rank_on_action 
     }
+}
+
+on_title_lost = {
+    on_actions = { 
+        nars_update_rank_on_action 
+    }
+}
+
+on_title_destroyed = {
+    on_actions = { 
+        nars_update_rank_on_action 
+    }
+}
+
+nars_update_rank_on_action = {
     effect = {
-        nars_update_narsokratia_value = yes
+        # ROOT is the character. Scope to their story and fire the update!
+        every_owned_story = {
+            limit = { story_type = story_nars_naturalis }
+            nars_update_narsokratia_value = yes
+        }
     }
 }
 
@@ -44,17 +91,9 @@ random_yearly_everyone_pulse = {
     on_actions = { nars_one_time_maintenance_on_action }
 }
 
-on_title_lost = {
-    effect = { 
-        nars_update_narsokratia_value = yes
-    }
-}
-
 on_trait_added = {
     effect = {
         if = {
-            # This triggers when they get their education trait at age 16, 
-            # when they upgrade it at a university, OR when they first get nars_naturalis.
             limit = { has_trait = nars_naturalis }
             nars_naturalis_set_tier_xp_effect = yes
         }
@@ -292,11 +331,13 @@ nars_laamp_on_start = {
 }
 
 nars_naturalis_sync_all_on_start = {
+    on_actions = {
+        nars_update_rank_on_action
+    }
     effect = {
         every_living_character = {
             limit = { has_trait = nars_naturalis }
             nars_naturalis_set_tier_xp_effect = yes
-            nars_update_narsokratia_value = yes
         }
     }
 }

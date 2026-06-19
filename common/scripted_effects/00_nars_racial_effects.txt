@@ -1,4 +1,4 @@
-nars_naturalis_set_tier_xp_effect = {
+﻿nars_naturalis_set_tier_xp_effect = {
     # 1. Wipe the track clean so values do not stack
     add_trait_xp = {
         trait = nars_naturalis
@@ -49,31 +49,57 @@ nars_naturalis_set_tier_xp_effect = {
     }
 }
 
-nars_update_narsokratia_value = { 
+nars_update_narsokratia_value = {
+    # SCOPE: Story
+    
     if = {
-        limit = { has_trait = nars_naturalis }
-        if = {
-            limit = { highest_held_title_tier = tier_hegemony }
-            set_variable = { name = narsokratia_value value = 5 }
+        # Catch Landless Adventurers first
+        limit = { story_owner = { has_government = landless_adventurer_government } }
+        set_variable = { name = narsokratia_value value = 0 }
+    }
+    else_if = {
+        limit = { 
+            story_owner = { 
+                # Scoping to a title requires dropping the "tier_" prefix!
+                any_held_title = { title_tier = hegemony } 
+            } 
         }
-        else_if = {
-            limit = { highest_held_title_tier = tier_empire }
-            set_variable = { name = narsokratia_value value = 4 }
+        set_variable = { name = narsokratia_value value = 5 }
+    }
+    else_if = {
+        limit = { 
+            story_owner = { 
+                any_held_title = { title_tier = empire } 
+            } 
         }
-        else_if = {
-            limit = { highest_held_title_tier = tier_kingdom }
-            set_variable = { name = narsokratia_value value = 3 }
+        set_variable = { name = narsokratia_value value = 4 }
+    }
+    else_if = {
+        limit = { 
+            story_owner = { 
+                any_held_title = { title_tier = kingdom } 
+            } 
         }
-        else_if = {
-            limit = { highest_held_title_tier = tier_duchy }
-            set_variable = { name = narsokratia_value value = 2 }
+        set_variable = { name = narsokratia_value value = 3 }
+    }
+    else_if = {
+        limit = { 
+            story_owner = { 
+                any_held_title = { title_tier = duchy } 
+            } 
         }
-        else_if = {
-            limit = { highest_held_title_tier = tier_county }
-            set_variable = { name = narsokratia_value value = 1 }
+        set_variable = { name = narsokratia_value value = 2 }
+    }
+    else_if = {
+        limit = { 
+            story_owner = { 
+                any_held_title = { title_tier = county } 
+            } 
         }
-        else = {
-            set_variable = { name = narsokratia_value value = 0 }
-        }
+        set_variable = { name = narsokratia_value value = 1 }
+    }
+    else = {
+        # Catch-all for unlanded courtiers
+        set_variable = { name = narsokratia_value value = 0 }
     }
 }

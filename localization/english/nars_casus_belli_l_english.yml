@@ -1,0 +1,19 @@
+﻿l_english:
+ NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning upon [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+ NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning upon [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+ NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective] Reckoning"
+
+ narsokratia_onslaught_victory_attacker: "You shatter [defender.GetShortUINamePossessive] realm and claim its lands for the rising [narsokratia|E]."
+ narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] shatters your realm, claiming your lands for the rising [narsokratia|E]."
+ narsokratia_onslaught_victory: "[attacker.GetShortUIName|U] shatters [defender.GetShortUINamePossessive] realm, claiming its lands for the rising [narsokratia|E]."
+
+ narsokratia_onslaught_white_peace_defender: "You remain independent, though [attacker.GetShortUIName] keeps whatever lands [CharYourHerHis(attacker)] [hoplites|E] have already occupied."
+ narsokratia_onslaught_white_peace: "[defender.GetShortUIName|U] remains independent, though [attacker.GetShortUIName] keeps whatever lands [CharYourHerHis(attacker)] [hoplites|E] have already occupied."
+
+ narsokratia_onslaught_defeat_attacker: "$narsokratia_onslaught_white_peace$ Your hubris is punished, and the [nikeis|E] mock your failed restoration."
+ narsokratia_onslaught_defeat_defender: "$narsokratia_onslaught_white_peace_defender$ [attacker.GetShortUIName|U] is humiliated before [CharYourHerHis(attacker)] fellow [nikeis|E]."
+ narsokratia_onslaught_defeat: "$narsokratia_onslaught_white_peace$ [attacker.GetShortUIName|U] is humiliated before [CharYourHerHis(attacker)] fellow [nikeis|E]."
+
+ narsokratia_onslaught_gain_titles_tt: "Gains all [landed|E] [titles|E] held by [defender.GetShortUINamePossessive] [realm|E] beneath [empire|E]-[title_tier|E]"
+ narsokratia_onslaught_gain_dread_tt: "Gains @dread_icon![dread|E]"
+ narsokratia_onslaught_gain_troops_tt: "Gains a triumphant [army|E] of [hoplites|E], raised from the spoils of [defender.GetShortUINamePossessive] [realm|E]"

@@ -41,6 +41,8 @@
 			trigger_event = { id = nikean_artifact.1001 }
 		}
 	}
+
+	ai_check_interval = 0
 }
 
 decision_munitions_research = {

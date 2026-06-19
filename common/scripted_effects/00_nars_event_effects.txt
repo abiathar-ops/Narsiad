@@ -23,7 +23,7 @@ strato_intro_effect = {
 }
 
 libation_standard_effect = { 
-	add_stress = medium_stress_loss
+	add_stress = major_stress_loss
 	add_character_modifier = {
 		modifier = libation_standard_modifier
 		years = 2
@@ -31,7 +31,7 @@ libation_standard_effect = {
 }
 
 libation_good_effect = {
-	add_stress = major_stress_loss
+	add_stress = massive_stress_loss
 	add_character_modifier = {
 		modifier = libation_good_modifier
 		years = 2

@@ -1,8 +1,8 @@
 ﻿l_english: 
  # ── EXISTING ENTRIES (unchanged) ──
- decision_group_type_nikean: "Nikead Decisions"
+ decision_group_type_nikean: "Ethnic Decisions"
  decision_group_type_restorationist: "Narsokratía Decisions"
- narsokratia_empire_above: "Your [realm|E] requires a [rank|E] of [empire|E] or above!"
+ narsokratia_kingdom_above: "Your [realm|E] requires a [rank|E] of [kingdom|E] or above!"
 
  # ── Faith ──
  decision_nikean_faith_choice:0 "Enact Panteíon Rites"
@@ -21,14 +21,14 @@
  change_to_faith_nikean_2_decision_desc_1:0 "You [decide|E] which patron God of the [panteion|E] calls to you the most"
  change_to_faith_nikean_2_decision_desc_2:0 "You gain a [modifier|E] that reflects the values of your chosen patron God!"
 
- faith_nikean_3_decision_name:0 "Impose [nikeis|E] Tradition"
+ faith_nikean_3_decision_name:0 "Impose [nikeis|E] Heritage"
  faith_nikean_3_decision_desc:0 "Evangelize your [realm|E] to the Panteíon of our [tradition|E]."
  change_to_faith_nikean_3_decision_desc_1:0 "Every [province|E] of your [realm|E] has a chance to convert to your [faith|E] and [culture|E]!\n$EFFECT_LIST_BULLET$This [decision|E] #emp will#! cause the lost of [control|E] in the converted [province|E]!"
  change_to_faith_nikean_3_decision_desc_2:0 "The efficacy of this [decision|E] scales with [narsokratia|E] [title_ranks|E]!"
 
  faith_nikean_4_decision_name:0 "Sponsor [orphic|E] Missionaries"
  faith_nikean_4_decision_desc:0 "Sponsor an [orphic|E] missionary to spread the teachings of the [nikean_faith|E] to neighbouring [realms|E]!"
- change_to_faith_nikean_4_decision_desc_1:0 "You will sponsor an [orphic|E] missionary to try to convert a neighboring [ruler|E] of a different [faith|E] religion than [GetReligionByKey('nikean_religion').GetName]!\n$EFFECT_LIST_BULLET$If successful, the [ruler|E] will convert to your [faith|E] and become an [ally|E]\n$EFFECT_LIST_BULLET$In addition, if successful, you will gain a [legend_seed|E]"
+ change_to_faith_nikean_4_decision_desc_1:0 "You will sponsor an [orphic|E] missionary to try to convert a neighboring [ruler|E] of a different [faith|E] religion than [GetReligionByKey('nikean_religion').GetName]!\n$EFFECT_LIST_BULLET$If successful, the [ruler|E] will convert to your [faith|E]\n$EFFECT_LIST_BULLET$In addition, if successful, you will gain a [legend_seed|E]"
 
  faith_nikean_1_decision_tooltip: "Settle in to pour a libation and reflect on your [faith|E]"
  faith_nikean_2_decision_tooltip: "Ponder the [panteion|E] and embody values of your patron God"

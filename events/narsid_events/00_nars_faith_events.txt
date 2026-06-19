@@ -347,21 +347,6 @@ nikean_faith.1043 = {
 			}
 			custom_description_no_bullet = { text = mandala_monotheist_warning_tt }
 		}
-		custom_tooltip = nikean_faith.1043.a.tt
-		custom_tooltip = negotiated_alliance_delay_tt
-		show_as_tooltip = {
-			create_alliance = {
-				target = scope:sender
-				allied_through_owner = scope:pagan
-				allied_through_target = scope:sender
-			}
-			scope:sender = {
-				add_opinion = {
-					target = scope:pagan
-					modifier = event_negotiated_alliance_opinion
-				}
-			}
-		}
 		scope:evangelizer = {
 			add_character_flag = success_conversion
 		}
@@ -518,21 +503,6 @@ nikean_faith.1044 = {
 						create_character_memory = {
 							type = evangelized_memory
 							participants = { missionary = scope:evangelizer pagan = scope:pagan }
-						}
-					}
-					show_as_tooltip = {
-						scope:pagan = {
-							create_alliance = {
-								target = scope:sender
-								allied_through_owner = scope:pagan
-								allied_through_target = scope:sender
-							}
-						}
-						scope:sender = {
-							add_opinion = {
-								target = scope:pagan
-								modifier = event_negotiated_alliance_opinion
-							}
 						}
 					}
 					scope:evangelizer = {
@@ -750,7 +720,6 @@ nikean_faith.1046 = {
 					set_character_faith_with_conversion = scope:evangelizer.faith
 				}
 			}
-			custom_tooltip = nikean_faith.1046.a.tt
 			scope:pagan = {
 				create_alliance = {
 					target = scope:sender
@@ -781,7 +750,7 @@ nikean_faith.1046 = {
 				has_character_flag = success_conversion
 			}
 		}
-		change_influence = major_influence_gain
+		add_dynasty_prestige = 500
 		add_prestige = major_prestige_gain
 	}
 
@@ -792,7 +761,7 @@ nikean_faith.1046 = {
 				has_character_flag = failed_conversion
 			}
 		}
-		change_influence = medium_influence_gain
+		add_dynasty_prestige = 250
 		add_prestige = medium_prestige_gain
 	}
 }
@@ -824,7 +793,7 @@ nikean_faith.1047 = {
 	# Option A: they will pay!
 	option = {
 		name = nikean_faith.1047.a
-		change_influence = medium_influence_gain
+		add_dynasty_prestige = 250
 		add_prestige = medium_prestige_gain
 		if = {
 			limit = {

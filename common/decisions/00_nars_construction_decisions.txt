@@ -13,7 +13,11 @@
 		NOT = { government_has_flag = government_is_tribal }
 		NOT = { government_has_flag = government_is_nomadic }
 		NOT = { exists = global_var:established_aretaic_school }
-		
+		any_held_title = {
+			title_tier = barony
+			title_province = { has_special_building_slot = no }
+			is_leased_out = no
+		}
 	}
 
 	is_valid = {
@@ -72,7 +76,6 @@ pick_aretaic_school_barony = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
 	decision_group_type = restorationist
-	ai_goal = yes
 	is_invisible = yes
 	
 	cost = { gold = 750 }
@@ -145,6 +148,12 @@ decision_establish_brothel = {
 		is_nikean = yes
 		highest_held_title_tier >= tier_kingdom
 		exists = global_var:established_aretaic_school
+		any_held_title = {
+			tier = tier_barony
+			is_barony_valid_for_brothel_complex = {
+				HOLDER = root
+			}
+		}
 	}
 
 	is_valid = {

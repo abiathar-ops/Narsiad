@@ -1,29 +1,28 @@
 ﻿story_nars_naturalis = {
     visible = yes
 
-    # Uses the Nikeis sword icon as a placeholder
     icon = {
         reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
     }
-    # background = {
-	# 	reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
-	# }
 
     visualization = {
         character = {
             variable_name = "nars_char"
             label = "NARS_CHAR_LABEL"
         }
-		basic_counter = {
-			variable_name = "narsokratia_value"
-			tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
-			min = 0
-			max = 5
-			label = "NARSOKRATIA_VALUE_LABEL"
-			min_label = "NARSOKRATIA_VALUE_MIN_LABEL"
-			max_label = "NARSOKRATIA_VALUE_MAX_LABEL"
-		}
-        custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING 
+        
+        # This will now display correctly
+        custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING
+        
+        basic_counter = {
+            variable_name = "narsokratia_value"
+            tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
+            min = 0
+            max = 5
+            label = "NARSOKRATIA_VALUE_LABEL"
+            min_label = "NARSOKRATIA_VALUE_MIN_LABEL"
+            max_label = "NARSOKRATIA_VALUE_MAX_LABEL"
+        }
     }
     
     on_setup = {
@@ -35,17 +34,28 @@
             name = nars_char
             value = scope:nars_char
         }
-		set_variable = {
-            name = narsokratia_value
-            value = 0
-        }
-        # Run the rank check immediately upon creation
-        story_owner = {
-            nars_update_narsokratia_value = yes
-        }
+        set_variable = {
+			name = narsokratia_value
+			value = 0
+		}
+        # Calculate rank immediately directly on the story scope
+        nars_update_narsokratia_value_effect = yes
     }
 
+    # effect_group = {
+    #     months = 1
+    #     chance = 100
+    #     random_valid = { 
+    #         triggered_effect = {
+    #             trigger = { always = yes }
+    #             effect = {
+    #                 nars_update_narsokratia_value = yes
+    #             }
+    #         }
+    #     }
+    # }
+
     on_owner_death = {
-      end_story = yes
+        end_story = yes
     }
 }

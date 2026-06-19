@@ -1,0 +1,66 @@
+namespace = nikean_intro
+
+scripted_effect create_nars_naturalis_story = {
+	create_story = {
+		type = story_nars_naturalis
+		save_scope_as = story
+	}
+	random_owned_story = {
+		type = story_nars_naturalis
+		save_scope_as = story_nars_naturalis
+		set_variable = {
+            name = nars_char
+            value = scope:nars_char
+        }
+		set_variable = {
+			name = narsokratia_value
+			value = 0
+		}
+		story_owner = {
+			set_variable = ongoing_story_nars_naturalis_cycle
+		}
+	}
+}
+
+nikean_intro.1001 = {
+	type = character_event
+	window = fullscreen_event
+	title = nikean_intro.1001.t
+	desc = nikean_intro.1001.desc
+	theme = emperor
+	override_background = { reference = fp3_fullscreen_sunder }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	left_portrait = {
+		character = root
+		animation = grief
+		camera = camera_center_large
+	}
+
+	option = {
+		name = nikean_intro.1001.a
+		trigger_event = nikean_intro.1002
+	}
+}
+
+nikean_intro.1002 = { 
+	type = character_event
+	window = big_event_window
+	title = nikean_intro.1002.t
+	desc = nikean_intro.1002.desc
+	theme = emperor
+	override_background = ce1_fullscreen_legitimizing_legend
+	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+	left_portrait = {
+		character = root
+		animation = personality_bold
+		camera = camera_center_large
+	}
+	immediate = {
+		intro_standard_effect = yes
+	}
+	option = {
+		name = nikean_intro.1002.a
+	}
+}

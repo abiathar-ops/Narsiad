@@ -9,12 +9,6 @@
 	}
 }	
 
-d_narsokratia = {
-	color = { 0.98 0.92 0.84 }
-	ruler_uses_title_name = no
-	definite_form = yes
-}
-
 d_laamp_nars_1001 = {
 	color = { 100 100 100 }
 	capital = c_rayy

@@ -27,9 +27,12 @@ decision_take_epithet = {
 		trigger_event = nikean_nickname.0010
  	}
 
- 	ai_potential = { always = yes }
-
- 	ai_will_do = {
- 		base = 0
- 	}
+ 	ai_check_interval = 0
+	ai_potential = {
+		is_ruler = yes
+		highest_held_title_tier = duchy
+	}
+	ai_will_do = {
+        base = 0
+	}
 }
