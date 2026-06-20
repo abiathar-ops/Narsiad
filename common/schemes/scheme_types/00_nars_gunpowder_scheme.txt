@@ -5,7 +5,7 @@ munitions_research_scheme = {
 	success_desc = "munitions_research_scheme_SUCCESS_DESC"
 	icon = icon_raid_estate_scheme
 	illustration = "gfx/interface/illustrations/event_scenes/docks.dds"
-	category = political
+	category = personal
 	target_type = title
 	cooldown = { years = 3 }
 

@@ -50,14 +50,14 @@ nikean_courtiers.0001 = {
 				modifier = {
 					add = {
 						value = prowess
-						subtract = invite_nikean_courtiers_standard_value
+						subtract = 15
 						multiply = 5
 					}
 				}
 				modifier = {
 					add = {
 						value = learning
-						subtract = invite_nikean_courtiers_standard_value
+						subtract = 15
 						multiply = 5
 					}
 				}

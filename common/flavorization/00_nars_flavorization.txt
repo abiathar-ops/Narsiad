@@ -7,7 +7,7 @@ prince_male_nars = {
 	tier = kingdom
 	priority = 80
 	name_lists = { name_list_nars }
-	governments = { feudal_government administrative_government clan_government mandala_government }
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government }
 	flavourization_rules = { 
 		top_liege = no
 	}
@@ -19,7 +19,7 @@ prince_female_nars = {
 	tier = kingdom
 	priority = 80
 	name_lists = { name_list_nars }
-	governments = { feudal_government administrative_government clan_government mandala_government }
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government }
 	flavourization_rules = { 
 		top_liege = no
 	}
@@ -31,7 +31,7 @@ prince_male_nars_empire = {
 	tier = empire
 	priority = 90
 	name_lists = { name_list_nars }
-	governments = { feudal_government administrative_government clan_government mandala_government }
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government }
 	flavourization_rules = { 
 		top_liege = no
 	}
@@ -43,7 +43,7 @@ prince_female_nars_empire = {
 	tier = empire
 	priority = 90
 	name_lists = { name_list_nars }
-	governments = { feudal_government administrative_government clan_government mandala_government }
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government }
 	flavourization_rules = { 
 		top_liege = no
 	}
@@ -125,7 +125,7 @@ kingdom_administrative_independent_nars_group = {
 	type = title
 	tier = kingdom
 	priority = 109
-	governments = { feudal_government administrative_government clan_government mandala_government}
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government}
 	name_lists = { name_list_nars }
 	flavourization_rules = { 
 		only_independent = yes
@@ -136,45 +136,9 @@ hegemony_nars_group = {
 	type = title
 	tier = hegemony
 	priority = 300
-	governments = { feudal_government administrative_government clan_government mandala_government}
+	governments = { feudal_government administrative_government clan_government nomad_government mandala_government}
 	name_lists = { name_list_nars }
 	flavourization_rules = { 
 		only_independent = yes
 	}
-}
-
-prince_male_nars = {
-    type = character
-    gender = male
-    special = child
-    tier = kingdom
-    priority = 10
-    name_lists = { name_list_nars }
-}
-
-prince_female_nars = {
-    type = character
-    gender = female
-    special = child
-    tier = kingdom
-    priority = 10
-    name_lists = { name_list_nars }
-}
-
-prince_male_nars_empire = {
-    type = character
-    gender = male
-    special = child
-    tier = empire
-    priority = 12
-    name_lists = { name_list_nars }
-}
-
-prince_female_nars_empire = {
-    type = character
-    gender = female
-    special = child
-    tier = empire
-    priority = 12
-    name_lists = { name_list_nars }
 }

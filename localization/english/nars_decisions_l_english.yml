@@ -91,11 +91,11 @@
  decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
  decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
 
- decision_pledge_restoration: "Pledge Bloodline as Restorationists"
+ decision_pledge_restoration: "Pledge as Restorationists"
  decision_pledge_restoration_confirm: "I pledge!"
  decision_pledge_restoration_tooltip: "I pledge my bloodline, [narsokratia|E] will be restored!"
  decision_pledge_restoration_desc: "If we are to outgrow the confines of our [region|E]. If we are to absorb territories of neighbouring [realms|E] for [narsokratia_possessive|E] restoration, then we shall do so with no hesitation. I pledge my bloodline to this toil, I bind my children and their children's children to this struggle! To our restoration!"
- decision_pledge_restoration_tt: "Pledge your [dynasty|E] as [narsokratia|E] Restorationists, unlocking an inheritable [fame_trait|E] that unlocks a new [casus_belli] and bonuses"
+ decision_pledge_restoration_tt: "Pledge your [dynasty|E] as [narsokratia|E] Restorationists, blessing them with an inheritable [fame_trait|E] that unlocks a new [casus_belli] and bonuses"
 
  # ── NEW DECISIONS ──
 

@@ -70,3 +70,8 @@ alnars = {
 	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 	shown_in_encyclopedia = no
 }
+
+nikean_onslaught = {
+	texture = "gfx/interface/icons/casus_bellis/county_conquest_cb.dds"
+	parent = casus_belli
+}

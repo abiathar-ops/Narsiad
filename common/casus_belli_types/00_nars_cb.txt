@@ -25,6 +25,12 @@
 				liege = scope:defender
 			}
 		}
+		scope:defender = {
+			NOR = {
+				is_nikean = yes
+				is_orphic = yes
+			}	
+		}
 	}
 
 	should_invalidate = {

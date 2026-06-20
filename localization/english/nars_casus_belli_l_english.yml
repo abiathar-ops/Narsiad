@@ -1,8 +1,8 @@
 ﻿l_english:
   NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
-  narsokratia_onslaught_cb: "[nikean|E] Onslaught for [narsokratia|E]"
+  narsokratia_onslaught_cb: "[nikean_onslaught|E]"
   NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
-  NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean|E] Onslaught for [narsokratia|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+  NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean_onslaught|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
   
   narsokratia_onslaught_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [defender.GetHerHis] stronger vassals."
   narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands, as well as titles belonging to you and your stronger vassals!"

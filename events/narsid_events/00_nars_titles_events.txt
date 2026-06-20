@@ -56,9 +56,7 @@ nikean_titles.2011 = {
 	override_effect_2d = { reference = legend_glow }
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 	immediate = {
-		legend_seed_great_deed_dynasty_effect = {
-			TITLE = root.primary_title
-		}
+		legend_seed_great_deed_dynasty_effect = yes
 		pledge_restoration_effect = yes
 	}
 	left_portrait = {
