@@ -82,6 +82,31 @@
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [nikean|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"
 
+ # ── Imperial Decisions ──
+
+ decision_nikean_imperial_administration: "Issue Imperial Decrees"
+ decision_nikean_imperial_administration_desc: "As the [ruler|E] of an [empire|E] held by the [nikeis|E], the vast machinery of the [realm|E] rests solely in my hands. The old [narsokratia|E] of yore had thrived because it directed its boundless resources with calculated precision. It is precisely why I must issue decrees to secure our desired [hegemony|E]!"
+ decision_nikean_imperial_administration_tooltip: "Issue a grand decree to bolster the administration of your Empire"
+ decision_nikean_imperial_administration_confirm: "Send the edict!"
+  
+ nikean_realm_1_decision_name: "Develop Industry"
+ nikean_realm_1_decision_desc: "Invest heavily in the development of [buildings|E] of our great empire."
+ nikean_realm_1_decision_tooltip: "Invest in the [development|E] of [buildings|E] of the [realm|E]!"
+ nikean_realm_1_cooldown_tt: "Develop Industry is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nikean_realm_1_cooldown' ))]"
+ change_to_nikean_realm_1_decision_desc_1: "$industrial_boom_province_tt$"
+
+ nikean_realm_2_decision_name: "Hire Synods"
+ nikean_realm_2_decision_desc: "Establish a sprawling, invisible web of operatives to act as your yes and ears."
+ nikean_realm_2_decision_tooltip: "Establish an invisible web of intrigue for [control|E]!"
+ nikean_realm_2_cooldown_tt: "Hire Synods is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nikean_realm_2_cooldown' ))]"
+ change_to_nikean_realm_2_decision_desc_1: "$spy_network_province_tt$"
+
+ nikean_realm_3_decision_name: "Distribute Propaganda"
+ nikean_realm_3_decision_desc: "Dispatch orators to weave a narrative to gain [county_opinion|E]!"
+ nikean_realm_3_decision_tooltip: "Dispatch orators to weave a narrative to gain [county_opinion|E]!"
+ nikean_realm_3_cooldown_tt: "Distribute Propaganda is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nikean_realm_3_cooldown' ))]"
+ change_to_nikean_realm_3_decision_desc_1: "$nikean_propaganda_province_tt$"
+
  # ── Titles ──
 
  decision_h_narsokratia: "Restore the Mōnarkhía"

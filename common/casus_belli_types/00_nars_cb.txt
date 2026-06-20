@@ -3,6 +3,7 @@
 	group = invasion
 
 	allow_hostages = no
+	
 	allowed_for_character = {
 		has_trait = nars_scion
 	}

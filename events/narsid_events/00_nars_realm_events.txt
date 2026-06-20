@@ -1,5 +1,6 @@
 ﻿namespace = nikean_realm
 
+#Develop Industry - Development + MAA Bonus
 nikean_realm.1001 = {
 	type = character_event
 
@@ -16,24 +17,29 @@ nikean_realm.1001 = {
 	}
 	option = {
 		name = nikean_realm.1001.a
-        custom_tooltip = industrial_boom_province_tt
-        hidden_effect = {
-            every_held_title = {
-                title_tier = county
-                add_county_modifier = {
-                    modifier = industrial_boom_province_modifier
-                    years = 10
-                }
-            }
-        }
-        remove_treasury_or_gold = 125
+		custom_tooltip = industrial_boom_province_tt
+        add_character_modifier = {
+			modifier = industrial_boom_character_modifier
+			years = 10
+		}
+		hidden_effect = {
+			every_held_title = {
+				limit = { tier = tier_county } # Corrected filtering syntax
+				add_county_modifier = {
+					modifier = industrial_boom_province_modifier
+					years = 10
+				}
+			}
+		}
+		remove_treasury_or_gold = 275
 	}
-    option = {
+	option = {
 		name = nikean_realm.1001.b
-        add_stress = 25
+		remove_character_flag = nikean_realm_1_cooldown # Resets the decision cooldown
 	}
 }
 
+#Synodian Spies - Control + Hostile Scheme Reduction
 nikean_realm.1011 = {
 	type = character_event
 
@@ -42,7 +48,7 @@ nikean_realm.1011 = {
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
-    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
 
 	left_portrait = {
 		character = root
@@ -52,30 +58,77 @@ nikean_realm.1011 = {
 
 	option = {
 		name = nikean_realm.1011.a
-        custom_tooltip = spy_network_province_tt
-        hidden_effect = {
-            every_held_title = {
-                title_tier = county
-                add_county_modifier = {
-                    modifier = spy_network_province_modifier
-                    years = 10
-                }
-            }
-        }
-        remove_treasury_or_gold = 125
+		custom_tooltip = spy_network_province_tt
+		
+		# Added the character modifier application
+		add_character_modifier = {
+			modifier = spy_network_character_modifier
+			years = 10
+		}
+
+		hidden_effect = {
+			every_held_title = {
+				limit = { tier = tier_county } # Corrected filtering syntax
+				add_county_modifier = {
+					modifier = spy_network_province_modifier
+					years = 10
+				}
+			}
+		}
+		remove_treasury_or_gold = 275
 	}
-    
-    option = {
+	
+	option = {
 		name = nikean_realm.1011.b
-        add_stress = 25
+		remove_character_flag = nikean_realm_2_cooldown # Resets the decision cooldown
 	}
 }
 
+#Disburse Propaganda - General Opinion boost + levies
 nikean_realm.1021 = {
-    type = character_event
+	type = character_event
+	title = nikean_realm.1021.t
+	desc = nikean_realm.1021.desc
+	theme = emperor
+	override_background = bp2_study_indian
+	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
 
-    title = nikean_realm.1021.t
-    desc = nikean_realm.1021.desc
+	left_portrait = {
+		character = root
+		camera = camera_center_large
+		animation = hunting_falcon
+	}
+
+	option = {
+		name = nikean_realm.1021.a
+		custom_tooltip = nikean_propaganda_province_tt
+        add_character_modifier = {
+			modifier = distribute_propaganda_character_modifier
+			years = 10
+		}
+		hidden_effect = {
+			every_held_title = {
+				limit = { tier = tier_county } # Corrected filtering syntax
+				add_county_modifier = {
+					modifier = distribute_propaganda_province_modifier
+					years = 10
+				}
+			}
+		}
+		remove_treasury_or_gold = 275
+	}
+	
+	option = {
+		name = nikean_realm.1021.b # Corrected from 1011.b
+		remove_character_flag = nikean_realm_3_cooldown # Resets the decision cooldown
+	}
+}
+
+nikean_realm.1031 = {
+    type = character_event
+    title = nikean_realm.1031.t
+    desc = nikean_realm.1031.desc
     theme = emperor
     override_background = army_camp
     override_effect_2d = { reference = smoke }
@@ -117,7 +170,7 @@ nikean_realm.1021 = {
 
     # Option A: Pay gold for special soldiers
     option = {
-        name = nikean_realm.1021.a # "I will pay you handsomely for your spears."
+        name = nikean_realm.1031.a # "I will pay you handsomely for your spears."
         remove_treasury_or_gold = 1150
         
         spawn_army = {
@@ -136,7 +189,7 @@ nikean_realm.1021 = {
         }
     }
     option = {
-        name = nikean_realm.1021.b
+        name = nikean_realm.1031.b
         
         random_list = {
             50 = {
@@ -162,8 +215,8 @@ nikean_realm.1021 = {
                     set_employer = root
                 }
                 send_interface_message = {
-                    title = nikean_realm.1021.b.success_msg.t
-                    desc = nikean_realm.1021.b.success_msg.desc
+                    title = nikean_realm.1031.b.success_msg.t
+                    desc = nikean_realm.1031.b.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:hoplite
                 }
@@ -176,8 +229,8 @@ nikean_realm.1021 = {
                 add_prestige = medium_prestige_loss
                 add_stress = medium_stress_gain
                 send_interface_message = {
-                    title = nikean_realm.1021.b.failure_msg.t
-                    desc = nikean_realm.1021.b.failure_msg.desc
+                    title = nikean_realm.1031.b.failure_msg.t
+                    desc = nikean_realm.1031.b.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:hoplite
                 }
@@ -186,7 +239,7 @@ nikean_realm.1021 = {
     }
 
     option = {
-        name = nikean_realm.1021.c
+        name = nikean_realm.1031.c
         add_prestige = minor_prestige_loss
         add_stress = minor_stress_gain
     }

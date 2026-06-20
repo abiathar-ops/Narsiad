@@ -168,3 +168,6 @@
 # 	ai_potential = { always = yes }
 # 	ai_will_do = { base = 50 }
 # }
+
+# decision_disburse_propaganda = {
+#}

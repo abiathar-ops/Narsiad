@@ -31,16 +31,22 @@
  nikean_realm.1011.a: "#emp "Our thousand eyes and one!"#!"
  spy_network_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [control|E] growth!"
  nikean_realm.1011.b: "#emp "Not yet."#!"
+ 
+ nikean_realm.1021.t: "Philósophos Gínou: Propaganda"
+ nikean_realm.1021.desc: "A true [narsokratia|E] is not forged by the spear and the shadow alone; it requires the fervent devotion of the masses. The [commoners|E] are simple creatures, easily swayed by grand tales and gleaming marble.\n\nBy dispatching our most silver-tongued orators and poets to our [holdings|E], we shall weave a compelling narrative of [nikeis|E] supremacy. We will tell them of our holy mandate, of the golden age of antiquity that we bring back, and of the unmatched benevolence of their masters.\n\nLet the streets ring with fabricated glories and embellished histories. When the people believe our reign is ordained by the [panteion|E] itself, their loyalty will be unshakable, and their cheers will drown out any whisper of dissent!"
+ nikean_realm.1021.a: "#emp "Tell them a thousand lies and it will be truth!"#!"
+ nikean_propaganda_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [county_opinion|E]!"
+ nikean_realm.1021.b: "#emp "Not yet."#!"
 
- nikean_realm.1021.t: "Philósophos Gínou: Sellswords"
- nikean_realm.1021.desc:0 "Rhythmic steps in cadence had long announced their arrival long before the unfamiliar band of [hoplites|E] reach my close vicinity. A company of [nikean|E] [men_at_arms|E], clad in arms that has seen better days, stands before me. Their leader, clearly a veteran of several [wars|E], approaches my figure awaiting them. \n\n"We are [mercenaries|E] looking for a permanent liege to serve," he declares, his posture perhaps a fraction too rigid for a man asking for potential employment on my doorsteps. \"With the right [gold|E] amount, we #emp could#! potentially help you against your enemies," the veteran said tersely with a glint on his eyes.\n\nIt is clear that he and his band of [hoplites|E] have ample experience. His offer #emp is#! quite tempting but I must think..."
- nikean_realm.1021.a: ""Shut up and take my gold...!""
- nikean_realm.1021.b: "I can surely persuade them to join... free of cost?"
- nikean_realm.1021.b.success_msg.t:0 "Persuasion: Success"
- nikean_realm.1021.b.success_msg.desc:0 "[hoplite.GetTitledFirstName] and his men have sworn themselves wholeheartedly!"
- nikean_realm.1021.b.failure_msg.t:0 "Persuasion: Fail"
- nikean_realm.1021.b.failure_msg.desc:0 "[hoplite.GetTitledFirstName] and his mercenaries departed for other fortunes!" 
- nikean_realm.1021.c: ""I have no need for you all. Begone!""
+ nikean_realm.1031.t: "Philósophos Gínou: Sellswords"
+ nikean_realm.1031.desc:0 "Rhythmic steps in cadence had long announced their arrival long before the unfamiliar band of [hoplites|E] reach my close vicinity. A company of [nikean|E] [men_at_arms|E], clad in arms that has seen better days, stands before me. Their leader, clearly a veteran of several [wars|E], approaches my figure awaiting them. \n\n"We are [mercenaries|E] looking for a permanent liege to serve," he declares, his posture perhaps a fraction too rigid for a man asking for potential employment on my doorsteps. \"With the right [gold|E] amount, we #emp could#! potentially help you against your enemies," the veteran said tersely with a glint on his eyes.\n\nIt is clear that he and his band of [hoplites|E] have ample experience. His offer #emp is#! quite tempting but I must think..."
+ nikean_realm.1031.a: ""Shut up and take my gold...!""
+ nikean_realm.1031.b: "I can surely persuade them to join... free of cost?"
+ nikean_realm.1031.b.success_msg.t:0 "Persuasion: Success"
+ nikean_realm.1031.b.success_msg.desc:0 "[hoplite.GetTitledFirstName] and his men have sworn themselves wholeheartedly!"
+ nikean_realm.1031.b.failure_msg.t:0 "Persuasion: Fail"
+ nikean_realm.1031.b.failure_msg.desc:0 "[hoplite.GetTitledFirstName] and his mercenaries departed for other fortunes!" 
+ nikean_realm.1031.c: ""I have no need for you all. Begone!""
  
  #Gunpowder
  nikean_gunpowder.1001.t: "Khalepà tà Kalá"
@@ -58,19 +64,15 @@
  nikean_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"
  nikean_gunpowder.1022.desc: "Hellfire! Hellfire!\n\nAn uncontrollable, roaring inferno swallows my [capital_possessive|E] armory. As shrieking alchemists flee the collapsing masonry, I am forced to think upon all the chaotic tinctures, the volatile powders, and the [courtiers|E] lost in this doomed venture...\n\nHow could such a demonic substance #EMP ever#! be safely contained within an iron tube? It seems mastering this substance is nothing but a deadly fantasy for our [realm|E]. For now, at least."
  nikean_gunpowder.1022.a: "#emp "Frakking hell...!"#!"
- 
- nikean_titles.2021.t: "Nenikḗkamen...!"
- nikean_titles.2021.desc: "Not since antiquity have we [nikeis|E] stood united beneath a single banner. Guided by one purpose, one vision. A true [narsokratia|E].\n\nFrom every corner of the world, [GetReligionByKey('nikean_religion').GetAdherentNamePluralNoTooltip] now travel to [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]. Pilgrims and [rulers|E], scholars and [soldiers|E]. From distant deserts and crowded ports, from every school and [temples|E], they gather before me to bow their heads, to pledge their hearts.\n\nOnly time will tell if this [hegemony|E] will last or if it is doomed to fade into history once more. For now, the plentitudes no matter [noble|E] or [commoner|E] will know the peace of the [panteion|E]."
- nikean_titles.2021.a: "Ktêma es Aeí!"
 
- nikean_titles.2022.t: "Ánthrōpos Métron!"
- nikean_titles.2022.desc: "Today, I call all [nikeis|E] to declare the realization of our [cultural|E] [hegemony|E], the [narsokratia|E] remade. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E]. From this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [hegemony|E], our reborn realm of antiquity. \n\nUnder the rule of the [nikeis|E], every [region|E] will finally know true, universal pacification. Under the rule of the [panteion|E], every [character|E] will finally know true, universal salvation." 
- nikean_titles.2022.a: "One [law|E], One [hegemony|E]!"
- 
- nikean_titles.2011.t:0 "Mēdèn Ága!"
- nikean_titles.2011.desc: "For untold time after our exile from the known world, lesser [cultures|E] have called their rulers [emperors|E], believing that [soldiers|E] grants them the mandate to [usurp|E] our sovereign [hegemonies|E]. \n\nToday, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge my [dynasty|E] as [narsokratia_possessive|E] restorationists.\n\nThe pretender [rulers|E] will soon realize that they are nothing more than temporary [stewards|E] of our future [domains|E], simply sitting themselves to keep the throne warm for their rightful [rulers|E]. We, the [nikeis|E], stand above them, blessed with a grace and perfection they can only ever envy." 
- nikean_titles.2011.a: "#emp The first step; never the last!#!"
+ nikean_titles.0011.t:0 "Mēdèn Ága!"
+ nikean_titles.0011.desc: "For untold time after our exile from the known world, lesser [cultures|E] have called their rulers [emperors|E], believing that [soldiers|E] grants them the mandate to [usurp|E] our sovereign [hegemonies|E]. \n\nToday, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge my [dynasty|E] as [narsokratia_possessive|E] restorationists.\n\nThe pretender [rulers|E] will soon realize that they are nothing more than temporary [stewards|E] of our future [domains|E], simply sitting themselves to keep the throne warm for their rightful [rulers|E]. We, the [nikeis|E], stand above them, blessed with a grace and perfection they can only ever envy." 
+ nikean_titles.0011.a: "#emp The first step; never the last!#!"
 
+ nikean_titles.0021.t: "Ánthrōpos Métron!"
+ nikean_titles.0021.desc: "Today, I call all [nikeis|E] to declare the realization of our [cultural|E] [hegemony|E], the [narsokratia|E] remade. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E]. From this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [hegemony|E], our reborn realm of antiquity. \n\nUnder the rule of the [nikeis|E], every [region|E] will finally know true, universal pacification. Under the rule of the [panteion|E], every [character|E] will finally know true, universal salvation." 
+ nikean_titles.0021.a: "One [law|E], One [hegemony|E]!"
+ 
  nikean_artifact.1001.t: "Kairòn Gnôthi: Dillema"
  nikean_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [orphic|E] texts. The [artifact|E] must be quenched in the lifeblood of several [nikeans|E] gained from a ritual." \n\n"A sacrifice of three [nikeis|E] from your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
  nikean_artifact.1001.a: "#emp "They will be martyrs for our cause!"#!"

@@ -20,6 +20,16 @@ spy_network_province_modifier = {
 	monthly_county_control_growth_add = 0.5
 }
 
+distribute_propaganda_character_modifier = {
+	icon = diplomacy_positive
+	monthly_legitimacy_add = 10
+}
+
+distribute_propaganda_province_modifier = {
+	icon = diplomacy_positive
+	county_opinion_add = 35
+}
+
 munitions_research_modifier = {
 	icon = martial_positive
 	stationed_maa_damage_mult = 0.25

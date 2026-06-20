@@ -1,32 +1,15 @@
 namespace = nikean_titles
 
-nikean_titles.2021 = {
+nikean_titles.0021 = {
 	type = character_event
-	window = fullscreen_event
-	title = nikean_titles.2021.t
-	desc = nikean_titles.2021.desc
-	theme = emperor
-	override_background = { reference = fp2_fullscreen_conciliation }
-	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-
-	immediate = {
-		h_narsokratia_effect = yes
-	}
-
-	option = { 
-		name = nikean_titles.2021.a
-		trigger_event = nikean_titles.2022
-	}
-}
-
-nikean_titles.2022 = {
-	type = character_event
-	title = nikean_titles.2022.t
-	desc = nikean_titles.2022.desc
+	title = nikean_titles.0021.t
+	desc = nikean_titles.0021.desc
 	theme = emperor
 	window = big_event_window
 	override_background = ep3_hippodrome
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+
 	left_portrait = {
 		character = root
 		animation = throne_room_two_handed_passive_1
@@ -40,16 +23,17 @@ nikean_titles.2022 = {
 		}
 	}
 	option = { 
-		name = nikean_titles.2022.a
+		name = nikean_titles.0021.a
 		flavor = narsokratia_event.flavor
+		h_narsokratia_effect = yes
 	}
 	
 }
 
-nikean_titles.2011 = {
+nikean_titles.0011 = {
 	type = character_event
-	title = nikean_titles.2011.t
-	desc = nikean_titles.2011.desc
+	title = nikean_titles.0011.t
+	desc = nikean_titles.0011.desc
 	window = big_event_window
 	theme = emperor
 	override_background = ce1_legendary_battlefield
@@ -65,7 +49,7 @@ nikean_titles.2011 = {
 		camera = camera_center_large
 	}
 	option = { 
-		name = nikean_titles.2011.a
+		name = nikean_titles.0011.a
 		flavor = narsokratia_event.flavor
 	}
 }

@@ -4,9 +4,9 @@
   NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
   NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean_onslaught|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
   
-  narsokratia_onslaught_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [defender.GetHerHis] stronger vassals."
-  narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands, as well as titles belonging to you and your stronger vassals!"
-  narsokratia_onslaught_victory: "[attacker.GetShortUIName|U] takes all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [defender.GetHerHis] stronger vassals!"
+  narsokratia_onslaught_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [vassalize|E] [defender.GetHerHis] former vassals. The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] grows!"
+  narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands, as well as titles belonging to you and [vassalize|E] your former vassals. The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] grows!"
+  narsokratia_onslaught_victory: "[attacker.GetShortUIName|U] takes all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [vassalize|E] [defender.GetHerHis] former vassals. The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] grows!"
   
   narsokratia_onslaught_white_peace_defender: "[defender.GetShortUIName|U] remains an independent ruler, losing only occupied counties."
   narsokratia_onslaught_white_peace: "You remain an independent ruler, losing only occupied counties."
