@@ -60,7 +60,7 @@
  game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nYou are guided down to the path of the [nikean|E] Restoration, competing with and against your fellow siblings' [house|E] for the sole leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a reborn [narsokratia|E] and you as the [hegemon|E] of your [region|E].\n\n$game_concept_story_generic_desc_boilerplate$"
 
  game_concept_nikean_onslaught:0 "Nikean Onslaught for Narsokratía"
- game_concept_nikean_onslaught_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [vassalization|E] of an independent [rulerpossessive|E] [vassals|E] and gaining the [rulerpossessive|E] [landed|E] [titles|E]. Unlocked by the [GetTrait('nars_scion').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
+ game_concept_nikean_onslaught_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [vassalization|E] of an independent [rulerpossessive|E] [vassals|E] while gaining the [rulerpossessive|E] [landed|E] [titles|E]. Unlocked by the [GetTrait('nars_scion').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
 
  PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."

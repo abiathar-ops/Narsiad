@@ -205,10 +205,10 @@ decision_pledge_restoration = {
 	
 	effect = {
 		custom_tooltip = decision_pledge_restoration_tt
-		add_trait = nars_scion
-		trigger_event = nikean_titles.0011
+		custom_tooltip = gain_nars_scion_tt
+		trigger_event = nikean_scion.0001
 		gain_legitimizing_legend_seed_tooltip_effect = yes
-		hidden_effect = {
+		hidden_effect	 = {
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_decision_pledge_restoration

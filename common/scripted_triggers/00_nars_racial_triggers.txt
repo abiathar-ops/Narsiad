@@ -14,7 +14,7 @@ has_nikean_blood = {
 }
 
 is_orphic = {
-   faith.religion = {
+    faith.religion = {
 		is_in_family = rf_nikean
 	}
 }
@@ -29,8 +29,11 @@ is_considered_orphic = {
 }
 
 is_ideal_nikean = {
-    is_nikean = yes
-    is_orphic = yes
+    culture = { has_cultural_pillar = heritage_nars }
+    has_ethnicity = nikean
+    faith.religion = {
+		is_in_family = rf_nikean
+	}
 }
 
 is_narsocratic = {

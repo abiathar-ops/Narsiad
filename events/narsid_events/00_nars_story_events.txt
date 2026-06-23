@@ -1,27 +1,5 @@
 namespace = nikean_intro
 
-# scripted_effect create_nars_naturalis_story = {
-# 	create_story = {
-# 		type = story_nars_naturalis
-# 		save_scope_as = story
-# 	}
-# 	random_owned_story = {
-# 		type = story_nars_naturalis
-# 		save_scope_as = story_nars_naturalis
-# 		set_variable = {
-#             name = nars_char
-#             value = scope:nars_char
-#         }
-# 		set_variable = {
-# 			name = narsokratia_value
-# 			value = 0
-# 		}
-# 		story_owner = {
-# 			set_variable = ongoing_story_nars_naturalis_cycle
-# 		}
-# 	}
-# }
-
 nikean_intro.1001 = {
 	type = character_event
 	window = fullscreen_event

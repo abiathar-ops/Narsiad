@@ -13,7 +13,7 @@
         
         # This will now display correctly
         custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING
-        
+
         basic_counter = {
             variable_name = "narsokratia_value"
             tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
@@ -42,18 +42,32 @@
         nars_update_narsokratia_value_effect = yes
     }
 
-    # effect_group = {
-    #     months = 1
-    #     chance = 100
-    #     random_valid = { 
-    #         triggered_effect = {
-    #             trigger = { always = yes }
-    #             effect = {
-    #                 nars_update_narsokratia_value = yes
-    #             }
-    #         }
-    #     }
-    # }
+    effect_group = { #narsscion
+		days = { 100 200 }
+
+		trigger = {
+			story_owner = {
+				is_available = yes
+				is_alive = yes
+				is_adult = yes
+                top_liege = this
+                has_trait = nars_scion
+			}
+		}
+
+		first_valid = {
+			triggered_effect = {
+				trigger = { always = yes }
+				effect = {
+					story_owner = {
+						trigger_event = {
+							on_action = ongoing_nars_scion_events
+						}
+					}
+				}
+			}
+		}
+	}
 
     on_owner_death = {
         end_story = yes

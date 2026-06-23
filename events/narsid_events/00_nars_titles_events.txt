@@ -30,30 +30,6 @@ nikean_titles.0021 = {
 	
 }
 
-nikean_titles.0011 = {
-	type = character_event
-	title = nikean_titles.0011.t
-	desc = nikean_titles.0011.desc
-	window = big_event_window
-	theme = emperor
-	override_background = ce1_legendary_battlefield
-	override_effect_2d = { reference = legend_glow }
-	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
-	immediate = {
-		legend_seed_great_deed_dynasty_effect = yes
-		pledge_restoration_effect = yes
-	}
-	left_portrait = {
-		character = root
-		animation = throne_room_two_handed_passive_1
-		camera = camera_center_large
-	}
-	option = { 
-		name = nikean_titles.0011.a
-		flavor = narsokratia_event.flavor
-	}
-}
-
 namespace = nikean_gunpowder
 
 nikean_gunpowder.1011 = {
