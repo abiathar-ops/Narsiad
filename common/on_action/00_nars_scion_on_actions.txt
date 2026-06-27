@@ -1,11 +1,7 @@
 ongoing_nars_scion_events = {
 	random_events = {
 		50 = 0
-		200 = nikean_scion.1000 # Vassal Offers Gift
-		200 = nikean_scion.1100 # Vassal Offers Army
-		200 = nikean_scion.1200 # Glory Hounds are Happy
-		200 = nikean_scion.1300 # Peasants Send a Gift
-		200 = nikean_scion.1400 
+		100 = nikean_scion.1100 
 		
 		# Minor Feed Message Events
 		50 = nikean_scion.0100 # Small gift from County

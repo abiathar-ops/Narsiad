@@ -238,8 +238,8 @@ nikean_scion.0100 = {
 			}
 			send_interface_message = {
 				type = event_diplomacy_good_with_text
-				title = conqueror_feed_county_gift_herd
-				desc = conqueror_feed_county_gift_desc_herd
+				title = nikean_scion_feed_county_gift_herd
+				desc = nikean_scion_feed_county_gift_desc_herd
 				left_icon = scope:county_target
 				domicile = {
 					change_herd = medium_herd_gain
@@ -249,8 +249,8 @@ nikean_scion.0100 = {
 		else = {
 			send_interface_message = {
 				type = event_diplomacy_good_with_text
-				title = conqueror_feed_county_gift
-				desc = conqueror_feed_county_gift_desc
+				title = nikean_scion_feed_county_gift
+				desc = nikean_scion_feed_county_gift_desc
 				left_icon = scope:county_target
 				add_gold = scope:county_target.title_province.available_loot
 			}
@@ -327,11 +327,10 @@ nikean_scion.0200 = {
 
 			create_character = {
 				location = root.capital_province
-				template = pool_repopulate_prowess
+				template = nikean_template.1002
 				culture = root.culture
 				faith = root.faith
 				add_trait = nars_naturalis
-				prowess = { invite_knights_decision_standard_value invite_knights_decision_upper_value }
 				save_scope_as = knight
 			}
 		}
@@ -356,8 +355,8 @@ nikean_scion.0200 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = conqueror_feed_knight_joins
-			desc = conqueror_feed_knight_joins_desc
+			title = nikean_scion_feed_knight_joins
+			desc = nikean_scion_feed_knight_joins_desc
 			left_icon = scope:knight
 			add_courtier = scope:knight
 			add_hook = {
@@ -406,8 +405,8 @@ nikean_scion.0300 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = conqueror_feed_angry_vassal
-			desc = conqueror_feed_angry_vassal_desc
+			title = nikean_scion_feed_angry_vassal
+			desc = nikean_scion_feed_angry_vassal_desc
 			left_icon = scope:angry_vassal
 			reverse_add_opinion = {
 				modifier = impressed_opinion
@@ -448,8 +447,8 @@ nikean_scion.0400 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = conqueror_feed_generous_courtier
-			desc = conqueror_feed_generous_courtier_desc
+			title = nikean_scion_feed_generous_courtier
+			desc = nikean_scion_feed_generous_courtier_desc
 			left_icon = scope:generous_courtier
 			scope:generous_courtier = {
 				pay_short_term_gold = {
@@ -480,7 +479,7 @@ nikean_scion.0500 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = military_engineer
-			SPECIALIST_TEMPLATE_CHARACTER = open_commander_character
+			SPECIALIST_TEMPLATE_CHARACTER = nikean_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -494,8 +493,8 @@ nikean_scion.0500 = {
 		}
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = conqueror_feed_siege_engineer
-			desc = conqueror_feed_siege_engineer_desc
+			title = nikean_scion_feed_siege_engineer
+			desc = nikean_scion_feed_siege_engineer_desc
 			left_icon = scope:new_commander
 			show_as_tooltip = {
 				add_courtier = scope:new_commander
@@ -503,6 +502,47 @@ nikean_scion.0500 = {
 		}
 	}
 }
+
+#Gain Logistician
+nikean_scion.0600 = {
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			any_courtier = {
+				count > 2
+				has_trait = logistician
+			}
+		}
+	}
+
+	immediate = {
+		recruit_terrain_specialist_effect = {
+			SPECIALIST_TRAIT = logistician
+			SPECIALIST_TEMPLATE_CHARACTER = nikean_template.1002
+		}
+		scope:new_commander = {
+			if = {
+				limit = {
+					NOT = {
+						has_trait = logistician
+					}
+				}
+				add_trait = logistician
+			}
+		}
+		send_interface_message = {
+			type = event_diplomacy_good_with_text
+			title = nikean_scion_feed_logistician
+			desc = nikean_scion_feed_logistician_desc
+			left_icon = scope:new_commander
+			show_as_tooltip = {
+				add_courtier = scope:new_commander
+			}
+		}
+	}
+}
+
 
 # Proper Events
 scripted_trigger happy_vassal_trigger = {
@@ -526,642 +566,11 @@ scripted_trigger generous_vassal_trigger = {
 	ai_greed <= 0
 }
 
-# Vassal Offers Gift
-nikean_scion.1000 = {
-	type = character_event
-	title = nikean_scion.1000.t
-	desc = nikean_scion.1000.desc
-	theme = war
-	cooldown = { years = 2 }
-	override_background = ep3_hippodrome
-	left_portrait = {
-		character = root
-		animation = happiness
-	}
-	right_portrait = {
-		character = scope:generous_vassal
-		animation = steward
-	}
-	
-	trigger = {
-		any_vassal_or_below = {
-			generous_vassal_trigger = yes
-		}
-	}
-
-	immediate = {
-		save_scope_as = root_scope
-		random_vassal_or_below = {
-			limit = {
-				generous_vassal_trigger = yes
-			}
-			save_scope_as = generous_vassal
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1000.a
-		
-		scope:generous_vassal = {
-			pay_long_term_gold = {
-				target = root
-				gold = root.medium_gold_value
-			}
-			add_opinion = {
-				modifier = happy_opinion
-				opinion = 10
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1000.b
-		
-		trigger = {
-			NOT = {
-				has_character_modifier = mercenary_bolstering
-			}
-		}
-		
-		add_character_modifier = {
-			modifier = mercenary_bolstering
-			years = 20
-		}
-		
-		scope:generous_vassal = {
-			add_opinion = {
-				modifier = happy_opinion
-				opinion = 10
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 25
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1000.c
-		
-		scope:generous_vassal = {
-			add_opinion = {
-				modifier = impressed_opinion
-				opinion = 20
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 0 
-		}
-	}
-}
-
-# Vassal Offers Army
-nikean_scion.1100 = {
-	type = character_event
-	title = nikean_scion.1100.t
-	desc = nikean_scion.1100.desc
-	theme = war
-	cooldown = { years = 2 }
-	override_background = ep3_hippodrome
-	override_effect_2d = {
-		reference = smoke	
-	}
-	left_portrait = {
-		character = root
-		animation = eccentric
-	}
-	right_portrait = {
-		character = scope:maa_leader
-		animation = marshal
-	}
-	lower_right_portrait = scope:generous_vassal
-	
-	trigger = {
-		any_vassal_or_below = {
-			generous_vassal_trigger = yes
-			NOT = { has_vassal_stance = parochial }
-		}
-	}
-
-	immediate = {
-		save_scope_as = root_scope
-		random_vassal_or_below = {
-			limit = {
-				generous_vassal_trigger = yes
-				NOT = { has_vassal_stance = parochial }
-			}
-			save_scope_as = generous_vassal
-			save_scope_as = vassal
-		}
-		scope:generous_vassal = {
-			create_character = {
-				template = new_warrior_character
-				location = root.location
-				culture = scope:generous_vassal.culture
-				faith = scope:generous_vassal.faith
-				gender_female_chance = root_soldier_female_chance
-				save_scope_as = maa_leader
-			}
-		}
-		scope:maa_leader = { add_character_flag = wear_armor }
-	}
-
-	option = {
-		name = nikean_scion.1100.a
-		
-		add_courtier = scope:maa_leader
-		
-		if = {
-			limit = {
-				OR = {
-					scope:generous_vassal.culture = { culture_has_archer_cavalry_maa = yes }
-					scope:generous_vassal = {
-						mpo_can_recruit_nomad_maa_trigger = yes
-					}
-				}
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = horse_archers
-					men = event_troop_50_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else_if = {
-			limit = {
-				scope:generous_vassal.culture = { culture_has_heavy_cavalry_maa = yes }
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = armored_horsemen
-					men = event_troop_25_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else_if = {
-			limit = {
-				scope:generous_vassal.culture = { culture_has_light_cavalry_maa = yes }
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = light_horsemen
-					men = event_troop_50_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else_if = {
-			limit = {
-				scope:generous_vassal.culture = { culture_has_pikemen_maa = yes }
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = pikemen_unit
-					men = event_troop_50_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else_if = {
-			limit = {
-				scope:generous_vassal.culture = { culture_has_heavy_infantry_maa = yes }
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = armored_footmen
-					men = event_troop_50_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else_if = {
-			limit = {
-				scope:generous_vassal.culture = { culture_has_archer_maa = yes }
-			}
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = bowmen
-					men = event_troop_100_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		else = {
-			spawn_army = {
-				levies = event_troop_100_vassal_scale
-				men_at_arms = {
-					type = light_footmen
-					men = event_troop_100_vassal_scale
-				}
-				location = root.capital_province
-				name = event_troop_default_name
-			}
-		}
-		scope:generous_vassal = {
-			add_opinion = {
-				modifier = happy_opinion
-				opinion = 10
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1100.b
-		
-		trigger = {
-			NOT = {
-				has_character_modifier = maa_recruitment_boon
-			}
-		}
-		
-		add_courtier = scope:maa_leader
-		
-		add_character_modifier = {
-			modifier = maa_recruitment_boon
-			years = 20
-		}
-		
-		scope:generous_vassal = {
-			add_opinion = {
-				modifier = happy_opinion
-				opinion = 10
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1100.c
-		
-		scope:generous_vassal = {
-			add_opinion = {
-				modifier = impressed_opinion
-				opinion = 20
-				target = root
-			}
-		}
-		
-		ai_chance = {
-			base = 0 
-		}
-	}
-	after = {
-		scope:maa_leader = {
-			remove_character_flag = wear_armor
-		}
-	}
-}
-
-# Glory Hounds are Happy
-nikean_scion.1200 = {
-	type = character_event
-	title = nikean_scion.1200.t
-	desc = nikean_scion.1200.desc
-	theme = war
-	cooldown = { years = 2 }
-	override_background = ep3_hippodrome
-	left_portrait = {
-		character = scope:vassal_1
-		animation = celebrate_axe
-		camera = camera_event_right
-	}
-	right_portrait = {
-		character = scope:vassal_2
-		animation = throne_room_cheer_2
-	}
-	
-	trigger = {
-		any_vassal = {
-			is_physically_able_ai_adult = yes
-			vassal_stance = glory_hound
-		}
-		any_vassal = {
-			is_physically_able_ai_adult = yes
-			vassal_stance = belligerent
-		}
-		NOT = {
-			days_of_continuous_peace >= 730 # 2 years
-		}
-	}
-
-	immediate = {
-		save_scope_as = root_scope
-		random_vassal = {
-			vassal_stance = glory_hound
-			limit = {
-				is_physically_able_ai_adult = yes
-			}
-			save_scope_as = vassal_1
-		}
-		random_vassal = {
-			vassal_stance = glory_hound
-			limit = {
-				is_physically_able_ai_adult = yes
-				this != scope:vassal_1
-			}
-			save_scope_as = vassal_2
-		}
-	}
-
-	option = {
-		name = nikean_scion.1200.a
-		
-		every_vassal = {
-			vassal_stance = glory_hound
-			custom = every_glory_hound_vassal
-			add_opinion = {
-				modifier = war_war_war_opinion
-				target = root
-				opinion = 30
-			}
-		}
-		every_vassal = {
-			limit = { has_vassal_stance = belligerent }
-			custom = every_belligerent_vassal
-			add_opinion = {
-				modifier = war_war_war_opinion
-				target = root
-				opinion = 30
-			}
-		}
-		
-		ai_chance = {
-			base = 25
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1200.b
-		
-		trigger = {
-			NOT = {
-				has_character_modifier = glory_hound_contribution
-			}
-		}
-		
-		add_character_modifier = {
-			modifier = glory_hound_contribution
-			years = 20
-		}
-		
-		every_vassal = {
-			vassal_stance = glory_hound
-			custom = every_glory_hound_vassal
-			add_opinion = {
-				modifier = war_war_war_opinion
-				target = root
-				opinion = 10
-			}
-		}
-		every_vassal = {
-			limit = { has_vassal_stance = belligerent }
-			custom = every_belligerent_vassal
-			add_opinion = {
-				modifier = war_war_war_opinion
-				target = root
-				opinion = 10
-			}
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-}
-
-# Peasants Send a Gift
-nikean_scion.1300 = {
-	type = character_event
-	title = nikean_scion.1300.t
-	desc = nikean_scion.1300.desc
-	theme = war
-	cooldown = { years = 2 }
-	override_background = ep3_hippodrome
-	left_portrait = {
-		character = root
-		animation = ecstasy
-	}
-	right_portrait = {
-		character = scope:portrait_peasant
-		animation = hunting_carcass_start
-		hide_info = yes
-	}
-	
-	trigger = {
-		any_sub_realm_barony = {
-			exists = holder
-			county = {
-				county_control >= 100
-				county_opinion >= 0
-			}
-			title_province = {
-				available_loot >= 5
-			}
-		}
-	}
-
-	immediate = {
-		save_scope_as = root_scope
-		random_sub_realm_barony = {
-			limit = {
-				exists = holder
-				county = {
-					county_control >= 100
-					county_opinion >= 0
-				}
-				title_province = {
-					available_loot >= 5
-				}
-			}
-			save_scope_as = peasant_barony
-		}
-		if = {
-			limit = {
-				exists = scope:peasant_barony.title_province
-				any_pool_character = {
-					province = scope:peasant_barony.title_province
-					is_available_ai_adult = yes
-					has_no_particular_noble_roots_trigger = yes
-					culture = scope:peasant_barony.title_province.culture
-				}
-			}
-			random_pool_character = {
-				province = scope:peasant_barony.title_province
-				limit = {
-					is_available_ai_adult = yes
-					has_no_particular_noble_roots_trigger = yes
-					culture = scope:peasant_barony.title_province.culture
-				}
-				save_scope_as = portrait_peasant
-			}
-		}
-		else = {
-			scope:peasant_barony.holder = {
-				create_character = {
-					template = generic_peasant_character
-					location = scope:peasant_barony.title_province
-					culture = scope:peasant_barony.title_province.culture
-					faith = scope:peasant_barony.title_province.faith
-					gender_female_chance = root_soldier_female_chance
-					save_scope_as = portrait_peasant
-				}
-			}
-		}
-	}
-
-	option = {
-		name = nikean_scion.1300.a
-		
-		if = {
-			limit = {
-				scope:peasant_barony.title_province = {
-					has_holding_type = nomad_holding
-				}
-				government_has_flag = government_is_nomadic
-			}
-			add_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-				multiply = 1
-			}
-			domicile = {
-				change_herd = major_herd_gain
-			}
-		}
-		else = {
-			add_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-				multiply = 3
-			}
-		}
-		
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1300.b
-		
-		trigger = {
-			NOT = {
-				has_character_modifier = peasant_supplies
-			}
-		}
-		
-		if = {
-			limit = {
-				scope:peasant_barony.title_province = {
-					has_holding_type = nomad_holding
-				}
-				government_has_flag = government_is_nomadic
-			}
-			add_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-				multiply = 0.25
-			}
-			domicile = {
-				change_herd = medium_herd_gain
-			}
-		}
-		else = {
-			add_treasury_or_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-			}
-		}
-		
-		add_character_modifier = {
-			modifier = peasant_supplies
-			years = 20
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { 
-		name = nikean_scion.1300.c
-		
-		trigger = {
-			NOT = {
-				has_character_modifier = peasant_draft
-			}
-		}
-		
-		if = {
-			limit = {
-				scope:peasant_barony.title_province = {
-					has_holding_type = nomad_holding
-				}
-				government_has_flag = government_is_nomadic
-			}
-			add_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-				multiply = 0.25
-			}
-			domicile = {
-				change_herd = medium_herd_gain
-			}
-		}
-		else = {
-			add_treasury_or_gold = {
-				value = scope:peasant_barony.title_province.available_loot
-			}
-		}
-		
-		add_character_modifier = {
-			modifier = peasant_draft
-			years = 20
-		}
-		
-		ai_chance = {
-			base = 100
-		}
-	}
-	after = {
-		scope:portrait_peasant = {
-			silent_disappearance_ai_effect = yes
-		}
-	}
-}
-
 #Errant Hoplites Join
-nikean_scion.1400 = {
+nikean_scion.1100 = {
     type = character_event
-    title = nikean_scion.1400.t
-    desc = nikean_scion.1400.desc
+    title = nikean_scion.1100.t
+    desc = nikean_scion.1100.desc
     theme = emperor
     override_background = ep3_hippodrome
     override_effect_2d = { reference = smoke }
@@ -1203,7 +612,7 @@ nikean_scion.1400 = {
 
     # Option A: Pay gold for special soldiers
     option = {
-        name = nikean_scion.1400.a # "I will pay you handsomely for your spears."
+        name = nikean_scion.1100.a # "I will pay you handsomely for your spears."
         remove_treasury_or_gold = 1150
         
         spawn_army = {
@@ -1223,7 +632,7 @@ nikean_scion.1400 = {
         }
     }
     option = {
-        name = nikean_scion.1400.b
+        name = nikean_scion.1100.b
         
         random_list = {
             50 = {
@@ -1250,8 +659,8 @@ nikean_scion.1400 = {
                     set_employer = root
                 }
                 send_interface_message = {
-                    title = nikean_scion.1400.b.success_msg.t
-                    desc = nikean_scion.1400.b.success_msg.desc
+                    title = nikean_scion.1100.b.success_msg.t
+                    desc = nikean_scion.1100.b.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:hoplite
                 }
@@ -1264,8 +673,8 @@ nikean_scion.1400 = {
                 add_prestige = medium_prestige_loss
                 add_stress = medium_stress_gain
                 send_interface_message = {
-                    title = nikean_scion.1400.b.failure_msg.t
-                    desc = nikean_scion.1400.b.failure_msg.desc
+                    title = nikean_scion.1100.b.failure_msg.t
+                    desc = nikean_scion.1100.b.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:hoplite
                 }
@@ -1274,7 +683,7 @@ nikean_scion.1400 = {
     }
 
     option = {
-        name = nikean_scion.1400.c
+        name = nikean_scion.1100.c
         add_prestige = minor_prestige_loss
         add_stress = minor_stress_gain
     }

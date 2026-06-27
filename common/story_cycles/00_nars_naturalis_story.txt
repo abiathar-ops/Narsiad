@@ -57,7 +57,9 @@
 
 		first_valid = {
 			triggered_effect = {
-				trigger = { always = yes }
+				trigger = { 
+                    always = yes
+                }
 				effect = {
 					story_owner = {
 						trigger_event = {
