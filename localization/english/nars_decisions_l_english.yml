@@ -113,7 +113,7 @@
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [nikeis|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
- decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
+ decision_h_narsokratia_effect_tooltip: "Establish [GetTitleByKey('h_narsokratia').GetName] as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] converted to [narsokratia|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [nikean|E] [culture|E] and [faith|E] "
  decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [nikean|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
 
  decision_pledge_restoration: "Pledge as Restorationists"

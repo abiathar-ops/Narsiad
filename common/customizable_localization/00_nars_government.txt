@@ -1,0 +1,30 @@
+
+GetGovernmentIcon = {
+	type = character
+
+	text = { # Narsokratia
+		trigger = {
+			trigger_if = {
+				limit = {
+					is_alive = no
+				}
+				has_government = narsokratia_government
+			}
+			trigger_else = {
+				trigger_if = {
+					limit = { is_ruler = yes }
+					government_has_flag = government_is_narsokratia
+				}
+				trigger_else = {
+					liege ?= { government_has_flag = government_is_narsokratia }
+				}
+			}
+		}
+		localization_key = narsokratia_icon_concept
+	}
+	text = { # Feudal
+		trigger = { always = no }
+		localization_key = feudal_icon_concept
+		fallback = yes
+	}
+}

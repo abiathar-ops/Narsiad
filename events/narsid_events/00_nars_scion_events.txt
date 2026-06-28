@@ -1,10 +1,10 @@
-﻿namespace = nikean_scion
+﻿namespace = nars_scion
 
 #Get Mōnarkhíad Trait
-nikean_scion.0001 = {
+nars_scion.0001 = {
 	type = character_event
-	title = nikean_scion.0001.t
-	desc = nikean_scion.0001.desc
+	title = nars_scion.0001.t
+	desc = nars_scion.0001.desc
 	window = big_event_window
 	theme = emperor
 	override_background = ep3_hippodrome
@@ -17,7 +17,7 @@ nikean_scion.0001 = {
 		camera = camera_center_large
 	}
 	option = { 
-		name = nikean_scion.0001.a
+		name = nars_scion.0001.a
 		flavor = narsokratia_event.flavor
 		legend_seed_great_deed_dynasty_effect = yes
 		pledge_restoration_effect = yes
@@ -64,7 +64,7 @@ nikean_scion.0001 = {
 		}
 	}
 	option = { 
-		name = nikean_scion.0001.b
+		name = nars_scion.0001.b
 		flavor = delay_scion.flavor
 		remove_global_variable = {
 			name = flag_decision_pledge_restoration
@@ -121,17 +121,17 @@ nikean_scion.0001 = {
 }
 
 #Lose Mōnarkhíad Trait
-nikean_scion.0002 = {
+nars_scion.0002 = {
 	type = character_event
-	title = nikean_scion.0002.t
+	title = nars_scion.0002.t
 	desc = {
-		desc = nikean_scion.0002.intro
+		desc = nars_scion.0002.intro
 		random_valid = {
 			triggered_desc = {
 				trigger = {
 					days_of_continuous_peace >= 3650 # 10 years
 				}
-				desc = nikean_scion.0002.peace
+				desc = nars_scion.0002.peace
 			}
 			triggered_desc = {
 				trigger = {
@@ -140,16 +140,16 @@ nikean_scion.0002 = {
 						var:lost_wars >= 3
 					}
 				}
-				desc = nikean_scion.0002.lost_wars
+				desc = nars_scion.0002.lost_wars
 			}
 			triggered_desc = {
 				trigger = {
 					is_ideal_nikean = no
 				}
-				desc = nikean_scion.0002.traitor
+				desc = nars_scion.0002.traitor
 			}
 		}
-		desc = nikean_scion.0002.outro
+		desc = nars_scion.0002.outro
 	}
 	theme = emperor
 	window = big_event_window
@@ -160,7 +160,7 @@ nikean_scion.0002 = {
 	}
 	
 	option = {
-		name = nikean_scion.0002.a
+		name = nars_scion.0002.a
 		flavor = nikean_scion_end_flavor
 		remove_trait = nars_scion
 		add_prestige_level = -2
@@ -201,7 +201,7 @@ nikean_scion.0002 = {
 # Feed messages
 
 # Small gift from County
-nikean_scion.0100 = {
+nars_scion.0100 = {
 	hidden = yes
 
 	trigger = {
@@ -259,7 +259,7 @@ nikean_scion.0100 = {
 }
 
 # Good Knight Joins
-nikean_scion.0200 = {
+nars_scion.0200 = {
 	hidden = yes
 
 	trigger = {
@@ -368,7 +368,7 @@ nikean_scion.0200 = {
 }
 
 # Angry Vassal is Impressed
-nikean_scion.0300 = {
+nars_scion.0300 = {
 	hidden = yes
 
 	trigger = {
@@ -418,7 +418,7 @@ nikean_scion.0300 = {
 }
 
 # Courtier Gives you Gold
-nikean_scion.0400 = {
+nars_scion.0400 = {
 	hidden = yes
 
 	trigger = {
@@ -464,7 +464,7 @@ nikean_scion.0400 = {
 }
 
 # Gain Siege Engineer
-nikean_scion.0500 = {
+nars_scion.0500 = {
 	hidden = yes
 
 	trigger = {
@@ -504,7 +504,7 @@ nikean_scion.0500 = {
 }
 
 #Gain Logistician
-nikean_scion.0600 = {
+nars_scion.0600 = {
 	hidden = yes
 
 	trigger = {
@@ -567,10 +567,10 @@ scripted_trigger generous_vassal_trigger = {
 }
 
 #Errant Hoplites Join
-nikean_scion.1100 = {
+nars_scion.1100 = {
     type = character_event
-    title = nikean_scion.1100.t
-    desc = nikean_scion.1100.desc
+    title = nars_scion.1100.t
+    desc = nars_scion.1100.desc
     theme = emperor
     override_background = ep3_hippodrome
     override_effect_2d = { reference = smoke }
@@ -612,7 +612,7 @@ nikean_scion.1100 = {
 
     # Option A: Pay gold for special soldiers
     option = {
-        name = nikean_scion.1100.a # "I will pay you handsomely for your spears."
+        name = nars_scion.1100.a # "I will pay you handsomely for your spears."
         remove_treasury_or_gold = 1150
         
         spawn_army = {
@@ -632,7 +632,7 @@ nikean_scion.1100 = {
         }
     }
     option = {
-        name = nikean_scion.1100.b
+        name = nars_scion.1100.b
         
         random_list = {
             50 = {
@@ -659,8 +659,8 @@ nikean_scion.1100 = {
                     set_employer = root
                 }
                 send_interface_message = {
-                    title = nikean_scion.1100.b.success_msg.t
-                    desc = nikean_scion.1100.b.success_msg.desc
+                    title = nars_scion.1100.b.success_msg.t
+                    desc = nars_scion.1100.b.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:hoplite
                 }
@@ -673,8 +673,8 @@ nikean_scion.1100 = {
                 add_prestige = medium_prestige_loss
                 add_stress = medium_stress_gain
                 send_interface_message = {
-                    title = nikean_scion.1100.b.failure_msg.t
-                    desc = nikean_scion.1100.b.failure_msg.desc
+                    title = nars_scion.1100.b.failure_msg.t
+                    desc = nars_scion.1100.b.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:hoplite
                 }
@@ -683,7 +683,7 @@ nikean_scion.1100 = {
     }
 
     option = {
-        name = nikean_scion.1100.c
+        name = nars_scion.1100.c
         add_prestige = minor_prestige_loss
         add_stress = minor_stress_gain
     }

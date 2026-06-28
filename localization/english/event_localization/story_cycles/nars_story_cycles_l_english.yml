@@ -1,5 +1,5 @@
 ﻿l_english:
- story_nars_naturalis: "$Nikeis$"
+ story_nars_naturalis: "Nikēís"
  story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
  NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "#v You#! are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. The [hegemony|E] of the [nikeis|E] had been lost for centuries untold and it is part of every [nikean_adj|E] toil to strive in its restoration."
  nars_char: "[Story.GetOwner.GetTitledFirstName]"

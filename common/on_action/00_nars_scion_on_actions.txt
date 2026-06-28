@@ -1,13 +1,13 @@
 ongoing_nars_scion_events = {
 	random_events = {
 		50 = 0
-		100 = nikean_scion.1100 
+		100 = nars_scion.1100 
 		
 		# Minor Feed Message Events
-		50 = nikean_scion.0100 # Small gift from County
-		50 = nikean_scion.0200 # Good Knight Joins
-		50 = nikean_scion.0300 # Angry Vassal is Impressed
-		50 = nikean_scion.0400 # Courtier Gives you Gold
-		50 = nikean_scion.0500 # Gain Siege Engineer
+		50 = nars_scion.0100 # Small gift from County
+		50 = nars_scion.0200 # Good Knight Joins
+		50 = nars_scion.0300 # Angry Vassal is Impressed
+		50 = nars_scion.0400 # Courtier Gives you Gold
+		50 = nars_scion.0500 # Gain Siege Engineer
 	}
 }

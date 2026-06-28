@@ -1,0 +1,5 @@
+﻿NGovernment = {
+	GOVERNMENT_TYPES = {
+		"narsokratia_government"
+	}
+}

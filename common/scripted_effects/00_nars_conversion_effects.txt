@@ -31,20 +31,14 @@ nikean_empire_vassal_conversion_effect = {
  		}
  	}
 	every_vassal = {
-		limit = {
-			NOT = { government_has_flag = government_is_administrative }
-		}
-		change_government = administrative_government
+		change_government = narsokratia_government
 	}
 }
 
 nikean_hegemony_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
-		limit = {
-			NOT = { government_has_flag = government_is_administrative }
-		}
-		change_government = administrative_government
+		change_government = narsokratia_government
 	}
 	# Faith + culture: direct vassals only (liege = root)
 	every_vassal = {
