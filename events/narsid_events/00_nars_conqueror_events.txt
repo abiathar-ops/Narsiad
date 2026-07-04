@@ -1,10 +1,10 @@
-﻿namespace = nars_scion
+﻿namespace = nars_conqueror
 
 #Get Mōnarkhíad Trait
-nars_scion.0001 = {
+nars_conqueror.0001 = {
 	type = character_event
-	title = nars_scion.0001.t
-	desc = nars_scion.0001.desc
+	title = nars_conqueror.0001.t
+	desc = nars_conqueror.0001.desc
 	window = big_event_window
 	theme = emperor
 	override_background = ep3_hippodrome
@@ -17,10 +17,11 @@ nars_scion.0001 = {
 		camera = camera_center_large
 	}
 	option = { 
-		name = nars_scion.0001.a
+		name = nars_conqueror.0001.a
 		flavor = narsokratia_event.flavor
 		legend_seed_great_deed_dynasty_effect = yes
 		pledge_restoration_effect = yes
+		create_story = story_nars_conqueror
 		if = {
 			limit = {
 				any_vassal = { vassal_stance = belligerent }
@@ -64,14 +65,10 @@ nars_scion.0001 = {
 		}
 	}
 	option = { 
-		name = nars_scion.0001.b
+		name = nars_conqueror.0001.b
 		flavor = delay_scion.flavor
-		remove_global_variable = {
-			name = flag_decision_pledge_restoration
-			value = root
-		}
+		remove_global_variable = flag_decision_pledge_restoration
 		add_prestige = minor_prestige_loss
-		remove_trait = nars_scion
 		if = {
 			limit = {
 				any_vassal = { vassal_stance = belligerent }
@@ -121,17 +118,17 @@ nars_scion.0001 = {
 }
 
 #Lose Mōnarkhíad Trait
-nars_scion.0002 = {
+nars_conqueror.0002 = {
 	type = character_event
-	title = nars_scion.0002.t
+	title = nars_conqueror.0002.t
 	desc = {
-		desc = nars_scion.0002.intro
+		desc = nars_conqueror.0002.intro
 		random_valid = {
 			triggered_desc = {
 				trigger = {
 					days_of_continuous_peace >= 3650 # 10 years
 				}
-				desc = nars_scion.0002.peace
+				desc = nars_conqueror.0002.peace
 			}
 			triggered_desc = {
 				trigger = {
@@ -140,16 +137,16 @@ nars_scion.0002 = {
 						var:lost_wars >= 3
 					}
 				}
-				desc = nars_scion.0002.lost_wars
+				desc = nars_conqueror.0002.lost_wars
 			}
 			triggered_desc = {
 				trigger = {
 					is_ideal_nikean = no
 				}
-				desc = nars_scion.0002.traitor
+				desc = nars_conqueror.0002.traitor
 			}
 		}
-		desc = nars_scion.0002.outro
+		desc = nars_conqueror.0002.outro
 	}
 	theme = emperor
 	window = big_event_window
@@ -160,7 +157,7 @@ nars_scion.0002 = {
 	}
 	
 	option = {
-		name = nars_scion.0002.a
+		name = nars_conqueror.0002.a
 		flavor = nikean_scion_end_flavor
 		remove_trait = nars_scion
 		add_prestige_level = -2
@@ -201,7 +198,7 @@ nars_scion.0002 = {
 # Feed messages
 
 # Small gift from County
-nars_scion.0100 = {
+nars_conqueror.0100 = {
 	hidden = yes
 
 	trigger = {
@@ -259,7 +256,7 @@ nars_scion.0100 = {
 }
 
 # Good Knight Joins
-nars_scion.0200 = {
+nars_conqueror.0200 = {
 	hidden = yes
 
 	trigger = {
@@ -298,6 +295,7 @@ nars_scion.0200 = {
 				province = scope:pool_province
 				limit = {
 					prowess >= invite_knights_decision_standard_value
+					is_ideal_nikean = yes
 					guest_knight_candidate_trigger = { HOST = root }
 				}
 				add_to_temporary_list = potential_knights
@@ -368,7 +366,7 @@ nars_scion.0200 = {
 }
 
 # Angry Vassal is Impressed
-nars_scion.0300 = {
+nars_conqueror.0300 = {
 	hidden = yes
 
 	trigger = {
@@ -418,7 +416,7 @@ nars_scion.0300 = {
 }
 
 # Courtier Gives you Gold
-nars_scion.0400 = {
+nars_conqueror.0400 = {
 	hidden = yes
 
 	trigger = {
@@ -464,7 +462,7 @@ nars_scion.0400 = {
 }
 
 # Gain Siege Engineer
-nars_scion.0500 = {
+nars_conqueror.0500 = {
 	hidden = yes
 
 	trigger = {
@@ -504,7 +502,7 @@ nars_scion.0500 = {
 }
 
 #Gain Logistician
-nars_scion.0600 = {
+nars_conqueror.0600 = {
 	hidden = yes
 
 	trigger = {
@@ -567,10 +565,10 @@ scripted_trigger generous_vassal_trigger = {
 }
 
 #Errant Hoplites Join
-nars_scion.1100 = {
+nars_conqueror.1100 = {
     type = character_event
-    title = nars_scion.1100.t
-    desc = nars_scion.1100.desc
+    title = nars_conqueror.1100.t
+    desc = nars_conqueror.1100.desc
     theme = emperor
     override_background = ep3_hippodrome
     override_effect_2d = { reference = smoke }
@@ -612,15 +610,15 @@ nars_scion.1100 = {
 
     # Option A: Pay gold for special soldiers
     option = {
-        name = nars_scion.1100.a # "I will pay you handsomely for your spears."
+        name = nars_conqueror.1100.a # "I will pay you handsomely for your spears."
         remove_treasury_or_gold = 1150
         
         spawn_army = {
 			name = nikean_troop_event_name
-			levies = event_troop_100_vassal_scale
+			levies = 1250
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 30
+				stacks = 12
             }
             location = root.capital_province
 			uses_supply = yes
@@ -632,7 +630,7 @@ nars_scion.1100 = {
         }
     }
     option = {
-        name = nars_scion.1100.b
+        name = nars_conqueror.1100.b
         
         random_list = {
             50 = {
@@ -659,8 +657,8 @@ nars_scion.1100 = {
                     set_employer = root
                 }
                 send_interface_message = {
-                    title = nars_scion.1100.b.success_msg.t
-                    desc = nars_scion.1100.b.success_msg.desc
+                    title = nars_conqueror.1100.b.success_msg.t
+                    desc = nars_conqueror.1100.b.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:hoplite
                 }
@@ -673,8 +671,8 @@ nars_scion.1100 = {
                 add_prestige = medium_prestige_loss
                 add_stress = medium_stress_gain
                 send_interface_message = {
-                    title = nars_scion.1100.b.failure_msg.t
-                    desc = nars_scion.1100.b.failure_msg.desc
+                    title = nars_conqueror.1100.b.failure_msg.t
+                    desc = nars_conqueror.1100.b.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:hoplite
                 }
@@ -683,7 +681,7 @@ nars_scion.1100 = {
     }
 
     option = {
-        name = nars_scion.1100.c
+        name = nars_conqueror.1100.c
         add_prestige = minor_prestige_loss
         add_stress = minor_stress_gain
     }

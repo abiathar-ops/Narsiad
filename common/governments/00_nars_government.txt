@@ -74,7 +74,7 @@
 
 	top_liege_character_modifier = {
 		# 85% of vassal income goes to the treasury
-		monthly_treasury_from_vassals = 0.95
+		monthly_treasury_from_vassals = 0.85
 		men_at_arms_maintenance = 1.5
 		men_at_arms_recruitment_cost = 1
 	}
@@ -92,10 +92,8 @@
 		government_uses_domicile_but_not_adventurer
 		government_uses_domain_limit
 		government_uses_admin_province_obligations
+		government_has_house_blocs
 	}
-
-	mechanic_type = administrative
-	is_mechanic_type_default = yes
 
 	color = { 210 165 255 }
 	realm_mask_offset = { 0.0 0.01 }

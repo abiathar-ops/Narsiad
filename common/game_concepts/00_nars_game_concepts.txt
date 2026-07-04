@@ -3,7 +3,7 @@
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
-sophes = {
+polymetis = {
 	parent = nikeans
 	alias = { sophist sophists }
 	texture = "gfx/interface/icons/icon_game_concept_innovation_spread.dds"

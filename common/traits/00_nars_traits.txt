@@ -1,3 +1,50 @@
+nars_conqueror = {
+	icon = campeador.dds
+	category = fame
+
+	ai_war_chance = -100
+	ai_war_cooldown = -100
+	ai_amenity_spending = -0.25
+	ai_amenity_target_baseline = -0.4
+	title_creation_cost_mult = -0.75
+	title_creation_piety_cost_mult = -0.75
+	men_at_arms_maintenance = -0.50
+	monthly_income = 5
+	monthly_legitimacy_add = 5
+	same_faith_opinion = 50
+	zealot_opinion = 25
+	herd_capacity_mult = 0.5
+	flag = nars_conqueror_tt
+
+	name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = nars_conqueror.no_actor
+			}
+            desc = nars_conqueror.name
+        }
+    }
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_nars_conqueror_desc
+			}
+			desc = trait_nars_conqueror_character_desc
+		}
+	}
+
+	compatibility = {
+		nars_scion = @pos_compat_medium
+	}
+
+	ai_energy = 15
+}
+
 nars_scion = {
 	icon = scion.dds
 	category = fame
@@ -6,21 +53,16 @@ nars_scion = {
 	parent_inheritance_sex = all
 	inherit_from_real_father = no
 	set_immortal_age = 20
-	flag = nars_scion_tt
 	ai_war_chance = -100
 	ai_war_cooldown = -100
 	ai_amenity_spending = -0.25
 	ai_amenity_target_baseline = -0.4
 	health = 4
 	no_prowess_loss_from_age = yes
-	monthly_income = 5
-	monthly_legitimacy_add = 5
 	life_expectancy = 50
 	monthly_lifestyle_xp_gain_mult = 0.5
 	enemy_hostile_scheme_success_chance_max_add = -50
 	enemy_hostile_scheme_success_chance_growth_add = -50
-	same_faith_opinion = 50
-	zealot_opinion = 20
 
 	name = {
         first_valid = {
@@ -86,7 +128,7 @@ nars_naturalis = {
 	genetic_constraint_women = female_beauty_3
 
 	tracks = {
-		sophes = {
+		polymetis = {
 			20 = {
 				martial = 1
 				learning = 1

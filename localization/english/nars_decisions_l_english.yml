@@ -121,7 +121,7 @@
  decision_pledge_restoration_tooltip: "I pledge my bloodline, [narsokratia|E] will be restored!"
  decision_pledge_restoration_desc: "If we are to outgrow the confines of our [region|E]. If we are to absorb territories of neighbouring [realms|E] for [narsokratia_possessive|E] restoration, then we shall do so with no hesitation. I pledge my bloodline to this toil, I bind my children and their children's children to this struggle! To our restoration!"
  decision_pledge_restoration_tt: "Pledge your [dynasty|E] as [narsokratia|E] Restorationists, blessing them with an inheritable [fame_trait|E] that unlocks a new [casus_belli] and bonuses"
- gain_nars_scion_tt: "You will get the #V [GetTrait('nars_scion').GetName( GetNullCharacter )]#! [trait|E]"
+ gain_nars_conqueror_tt: "You will get the #V [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! [trait|E]"
 
  # ── NEW DECISIONS ──
 
@@ -143,10 +143,10 @@
  decision_hire_nikean_1_tooltip:3 "At least #P 4#! [nikeis|E] will arrive as [guests|E] to your [court|E] within the coming months"
  decision_hire_nikean_1_effect_tooltip:4 "Your servants will suggest a number of suitable [nikeis|E] for your court"
 
- decision_hire_nikean_2:0 "Scout for a [sophes|E]"
- decision_hire_nikean_2_tooltip:0 "You will receive #P 2#! suitable [sophes|E] prospects for you to choose for your [court|E] as a [courtier|E]"
+ decision_hire_nikean_2:0 "Scout for a [polymetis|E]"
+ decision_hire_nikean_2_tooltip:0 "You will receive #P 2#! suitable [polymetis|E] prospects for you to choose for your [court|E] as a [courtier|E]"
  nikean_2_court_position_custom_desc: "$EFFECT_LIST_BULLET$Provides @travel_safety_icon![travel_safety|E] and @travel_speed_icon![travel_speed|E] during [travels|E]"
  decision_hire_nikean_2_desc:0 "A good $nikean_2_court_position$ is the key to a successful journey. I will request for a number of suitable candidates to be suggested."
 
  recruit_nikean_1_cooldown_tt: "Search for [nikeis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_1_cooldown' ))]"
- recruit_nikean_2_cooldown_tt: "Scout for a [sophes|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_2_cooldown' ))]"
+ recruit_nikean_2_cooldown_tt: "Scout for a [polymetis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_nikean_2_cooldown' ))]"

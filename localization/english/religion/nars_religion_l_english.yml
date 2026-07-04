@@ -8,10 +8,10 @@
  nikean_religion_desc:0 "Revived from the records and teachings of [nikean|E] antiquity, [orphic|E] beliefs revolves around the concept of intellectual erudition, in which adherents are to pursue [learning|E] and [innovation|E] as a path to salvation."
 
  # Nikean branches
- nars_religion:0 "Nikēis"
- nars_religion_adj:0 "Nikēis"
- nars_religion_adherent:0 "Nikēis"
- nars_religion_adherent_plural:0 "Nikēis"
+ nars_religion:0 "Nikēís"
+ nars_religion_adj:0 "Nikēís"
+ nars_religion_adherent:0 "Nikēís"
+ nars_religion_adherent_plural:0 "Nikēís"
  nars_religion_desc:0 "The faith of the Nikeans venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
 
  # Gods and Flavorization 

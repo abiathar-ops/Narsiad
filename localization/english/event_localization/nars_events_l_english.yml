@@ -77,13 +77,13 @@
  nikean_courtiers.0001.desc: "An exiled Nikean has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
  nikean_courtiers.0011.t: "Engúa Pára d' Áta..."
- nikean_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [nikean|E] holds, two [nikeis|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [hoplite|E] and a scholar, both [sophes|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"
+ nikean_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [nikean|E] holds, two [nikeis|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [hoplite|E] and a scholar, both [polymetis|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"
  nikean_courtiers.0011.a: "#emp I will take [pugilist.GetFirstName].#!"
  nikean_courtiers.0011.b: "#emp Perhaps, I will take [savant.GetFirstName] instead.#!"
  nikean_courtiers.0011.d.decline: "None of them suit my needs."
  nikean_courtiers.0011.d.none: "There is no one suitable here."
  nikean_courtiers.0011.c: "#emp Perhaps I'll take both!#!"
- nikean_courtiers.0011.d.tt: "These [sophes|E] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
+ nikean_courtiers.0011.d.tt: "These [polymetis|E] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
 
  # Nikean Faith
  nikean_faith.1011.t: "Aeì Ho Theòs Geōmetreî!"

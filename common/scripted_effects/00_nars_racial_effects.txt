@@ -2,7 +2,7 @@
     # 1. Wipe the track clean so values do not stack
     add_trait_xp = {
         trait = nars_naturalis
-        track = sophes
+        track = polymetis
         value = -100
     }
 
@@ -11,7 +11,7 @@
         limit = { has_education_rank_5_trigger = yes } 
         add_trait_xp = {
             trait = nars_naturalis
-            track = sophes
+            track = polymetis
             value = 100
         }
     }
@@ -19,7 +19,7 @@
         limit = { has_education_rank_4_trigger = yes }
         add_trait_xp = {
             trait = nars_naturalis
-            track = sophes
+            track = polymetis
             value = 80
         }
     }
@@ -27,7 +27,7 @@
         limit = { has_education_rank_3_trigger = yes }
         add_trait_xp = {
             trait = nars_naturalis
-            track = sophes
+            track = polymetis
             value = 60
         }
     }
@@ -35,7 +35,7 @@
         limit = { has_education_rank_2_trigger = yes }
         add_trait_xp = {
             trait = nars_naturalis
-            track = sophes
+            track = polymetis
             value = 40
         }
     }
@@ -43,7 +43,7 @@
         limit = { has_education_rank_1_trigger = yes }
         add_trait_xp = {
             trait = nars_naturalis
-            track = sophes
+            track = polymetis
             value = 20
         }
     }

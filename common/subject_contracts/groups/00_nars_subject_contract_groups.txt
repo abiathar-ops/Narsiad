@@ -6,5 +6,6 @@
 		narsokratia_themes
 		narsokratia_salary_rank
 	}
+	
 	modify_contract_layout = admin
 }

@@ -12,10 +12,10 @@
  game_concept_narsic_short: "O.N."
  game_concept_narsic_desc: "Old [nikean|E] was originally the language of the ancient [nikeis|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [nikean|E] values of [martial|E] ambition and the pursuit of [learning|E]."
 
- game_concept_sophes: "Sophēs"
- game_concept_sophes_desc: "The [Glossary( 'Sophēs', 'SOPHES_GLOSS' )] are [nikeans|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to the [realm|e]."
- game_concept_sophist: "Sophist"
- game_concept_sophists: "Sophist"
+ game_concept_polymetis: "Polymêtis"
+ game_concept_polymetis_desc: "The [Glossary( 'Polymêtis', 'POLYMETIS_GLOSS' )] are [nikeans|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to the [realm|e]."
+ game_concept_sophist: "Polymêtis"
+ game_concept_sophists: "Polymêtides"
 
  game_concept_narsokratia: "Narsokratía"
  game_concept_narsokratia_i: "@government_type_narsokratia!"
@@ -23,7 +23,7 @@
  game_concept_narsokratia_government: "Narsokratía Government"
  game_concept_narsokratia_governments: "Narsokratía Governments"
  game_concept_nikeanrealm: "Nikean Realm"
- game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E]. \n\nThis [government_bureaucratic_type|E] [government_form|E] maintains a stable [region|E] through appointed [governors|E], to manage and preside over land, called [provinces|E], on behalf of their [liege|E].\n\n$game_concept_narsokratia$ [characters|E] have access to [influence|E] and some also have a personal [family_estate|E].\n\nOnly [independent|E] [rulers|E] of a $game_concept_narsokratia$ [realm|E] have [legitimacy|E], while [vassals|E] do not.\n\n$admin_cannot_declare_internal_wars$"
+ game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [nikean|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
 
  game_concept_narses: "Narsēs"
  game_concept_narses_desc: "Narsēs, the ancient [nikeis|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [nikeis|E] [panteion|E] by its adherents."
@@ -63,11 +63,11 @@
  game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nYou are guided down to the path of the [nikean|E] Restoration, competing with and against your fellow siblings' [house|E] for the sole leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a reborn [narsokratia|E] and you as the [hegemon|E] of your [region|E].\n\n$game_concept_story_generic_desc_boilerplate$"
 
  game_concept_nikean_onslaught:0 "Nikean Onslaught for Narsokratía"
- game_concept_nikean_onslaught_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [vassalization|E] of an independent [rulerpossessive|E] [vassals|E] while gaining the [rulerpossessive|E] [landed|E] [titles|E]. Unlocked by the [GetTrait('nars_scion').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
+ game_concept_nikean_onslaught_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [vassalization|E] of an independent [rulerpossessive|E] [vassals|E] while gaining the [rulerpossessive|E] [landed|E] [titles|E]. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
 
  PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."
- SOPHES_GLOSS: "[narsic_short|E] #bold Sophēs #! means 'Wise-Scholars'."
+ POLYMETIS_GLOSS: "[narsic_short|E] #bold Polymêtis #! means 'Many-Counsels'."
  NIKEAN_GLOSS: "[narsic_short|E] #bold Nikēís #! means 'Those Born of Victory'."
  MASTIGES_GLOSS: "[narsic_short|E] #bold Mástiges #! means 'Ravagers'."
  HOPLITES_GLOSS: "[narsic_short|E] #bold Hoplîtes #! means 'Shield-Bearers'."

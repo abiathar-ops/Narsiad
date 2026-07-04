@@ -13,16 +13,6 @@
         
         # This will now display correctly
         custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING
-
-        basic_counter = {
-            variable_name = "narsokratia_value"
-            tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
-            min = 0
-            max = 5
-            label = "NARSOKRATIA_VALUE_LABEL"
-            min_label = "NARSOKRATIA_VALUE_MIN_LABEL"
-            max_label = "NARSOKRATIA_VALUE_MAX_LABEL"
-        }
     }
     
     on_setup = {
@@ -34,16 +24,11 @@
             name = nars_char
             value = scope:nars_char
         }
-        set_variable = {
-			name = narsokratia_value
-			value = 0
-		}
         # Calculate rank immediately directly on the story scope
-        nars_update_narsokratia_value_effect = yes
     }
 
     effect_group = { #narsscion
-		days = { 100 200 }
+		days = { 100 150 }
 
 		trigger = {
 			story_owner = {
@@ -51,7 +36,7 @@
 				is_alive = yes
 				is_adult = yes
                 top_liege = this
-                has_trait = nars_scion
+                has_trait = nars_naturalis
 			}
 		}
 
@@ -63,7 +48,7 @@
 				effect = {
 					story_owner = {
 						trigger_event = {
-							on_action = ongoing_nars_scion_events
+							on_action = ongoing_nars_naturalis_events
 						}
 					}
 				}
@@ -74,4 +59,9 @@
     on_owner_death = {
         end_story = yes
     }
+
+    on_end = {
+		debug_log = "Nikēís story cycle ended on:"
+		debug_log_date = yes
+	}
 }
