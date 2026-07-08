@@ -1,0 +1,32 @@
+nars_vanguard_spoils_modifier = {
+	icon = martial_positive
+	enemy_hard_casualty_modifier = 0.1
+	siege_phase_time = -0.1
+}
+
+nars_veteran_settlement_modifier = {
+	icon = control_negative
+	county_opinion_add = -50
+	monthly_county_control_growth_add = 0.05
+	development_growth_factor = -0.25
+}
+
+nars_brutal_purges_modifier = {
+	icon = intrigue_negative
+	different_culture_opinion = -10
+	development_growth_factor = -0.01
+}
+
+nars_epic_of_nikator_modifier = {
+    icon = diplomacy_positive
+    county_opinion_add = 20
+    levy_size = 0.20
+    owned_legend_spread_mult = 0.15 # Hooks into the Legends of the Dead DLC mechanics
+}
+
+nars_mocked_nikator_modifier = {
+    icon = diplomacy_negative
+    county_opinion_add = -20
+    levy_size = -0.20
+    owned_legend_spread_mult = -0.15
+}

@@ -208,17 +208,12 @@ decision_pledge_restoration = {
 		custom_tooltip = gain_nars_conqueror_tt
 		trigger_event = nars_conqueror.0001
 		gain_legitimizing_legend_seed_tooltip_effect = yes
-		hidden_effect	 = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_decision_pledge_restoration
-			}
-			set_global_variable = {
-				name = flag_decision_pledge_restoration
-				value = root
+		hidden_effect = {
+			add_character_flag = {
+				flag = nikean_realm_2_cooldown
+				years = 5
 			}
 		}
-	
 	}
 		
 	ai_potential = { always = yes }

@@ -223,29 +223,3 @@ create_h_narsokratia_effect = {
 		value = yes
 	}
 }
-
-pledge_restoration_effect = {
-	if = {
-		limit = {
-			dynasty ?= {
-				NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
-			}
-		}
-		dynasty = {
-			add_dynasty_modifier = { modifier = pledge_restoration_dynasty_modifier }
-		}
-	}
-	add_trait = nars_conqueror
-	hidden_effect = { 
-		dynasty = {
-			every_dynasty_member = {
-				limit = {
-					is_alive = yes
-					is_nikean = yes
-					NOT = { has_trait = nars_scion }
-				}
-				add_trait = nars_scion
-			}
-		}
-	}
-}

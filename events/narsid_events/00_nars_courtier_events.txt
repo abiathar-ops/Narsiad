@@ -232,12 +232,12 @@ nikean_courtiers.0011 = {
     left_portrait = {
         character = scope:pugilist
         animation = map_dismissal
-        camera = camera_event_scheme_left
+		camera = camera_event_left
     }
     right_portrait = {
         character = scope:savant
-        camera = camera_event_scheme_left
         animation = thinking
+		camera = camera_event_center
     }
 
     trigger = {
@@ -427,11 +427,11 @@ nikean_courtiers.0011 = {
         }
         pay_treasury_or_gold = {
             target = scope:pugilist
-            value = major_treasury_or_gold_value
+            value = massive_treasury_or_gold_value
         }
 		pay_treasury_or_gold = {
             target = scope:savant
-            value = major_treasury_or_gold_value
+            value = massive_treasury_or_gold_value
         }
         ai_chance = {
             factor = 100
@@ -450,7 +450,7 @@ nikean_courtiers.0011 = {
         }
         pay_treasury_or_gold = {
             target = scope:pugilist
-            value = major_treasury_or_gold_value
+            value = massive_treasury_or_gold_value
         }
         hidden_effect = {
             if = {
@@ -475,7 +475,7 @@ nikean_courtiers.0011 = {
         }
         pay_treasury_or_gold = {
             target = scope:savant
-            value = major_treasury_or_gold_value
+            value = massive_treasury_or_gold_value
         }
         hidden_effect = {
             if = {

@@ -7,18 +7,21 @@ nars_conqueror.0001 = {
 	desc = nars_conqueror.0001.desc
 	window = big_event_window
 	theme = emperor
-	override_background = ep3_hippodrome
+	override_background = throne_room_east
 	override_effect_2d = { reference = legend_glow }
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 
-	left_portrait = {
+	center_portrait = {
 		character = root
-		animation = throne_room_two_handed_passive_1
-		camera = camera_center_large
+		animation = sword_coup_degrace
+		camera = camera_activity_horse
+		#camera = camera_event_center_away
 	}
+
 	option = { 
 		name = nars_conqueror.0001.a
 		flavor = narsokratia_event.flavor
+		add_trait = nars_conqueror
 		legend_seed_great_deed_dynasty_effect = yes
 		pledge_restoration_effect = yes
 		create_story = story_nars_conqueror
@@ -63,12 +66,26 @@ nars_conqueror.0001 = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				any_vassal = { vassal_stance = minority }
+			}
+			every_vassal = {
+				vassal_stance = minority
+				custom = every_minority_vassal
+				add_opinion = {
+					modifier = disapproving_opinion
+					target = root
+					opinion = -20
+				}
+			}
+		}
 	}
 	option = { 
 		name = nars_conqueror.0001.b
 		flavor = delay_scion.flavor
 		remove_global_variable = flag_decision_pledge_restoration
-		add_prestige = minor_prestige_loss
+		add_prestige = massive_prestige_loss
 		if = {
 			limit = {
 				any_vassal = { vassal_stance = belligerent }
@@ -99,12 +116,26 @@ nars_conqueror.0001 = {
 		}
 		if = {
 			limit = {
+				any_vassal = { vassal_stance = minority }
+			}
+			every_vassal = {
+				vassal_stance = minority
+				custom = every_minority_vassal
+				add_opinion = {
+					modifier = approving_opinion
+					target = root
+					opinion = 20
+				}
+			}
+		}
+		if = {
+			limit = {
 				any_vassal = { vassal_stance = parochial }
 			}
 			every_vassal = {
 				custom = every_parochial_vassal
 				add_opinion = {
-					modifier = approving_opinion
+					modifier = disapproving_opinion
 					opinion = 20
 					target = root
 				}
@@ -150,7 +181,7 @@ nars_conqueror.0002 = {
 	}
 	theme = emperor
 	window = big_event_window
-	override_background = ep3_hippodrome
+	override_background = throne_room_east
 	left_portrait = {
 		character = root
 		animation = sword_yield_start
@@ -158,7 +189,7 @@ nars_conqueror.0002 = {
 	
 	option = {
 		name = nars_conqueror.0002.a
-		flavor = nikean_scion_end_flavor
+		flavor = nars_conqueror_end_flavor
 		remove_trait = nars_scion
 		add_prestige_level = -2
 		if = {
@@ -235,8 +266,8 @@ nars_conqueror.0100 = {
 			}
 			send_interface_message = {
 				type = event_diplomacy_good_with_text
-				title = nikean_scion_feed_county_gift_herd
-				desc = nikean_scion_feed_county_gift_desc_herd
+				title = nars_conqueror_feed_county_gift_herd
+				desc = nars_conqueror_feed_county_gift_desc_herd
 				left_icon = scope:county_target
 				domicile = {
 					change_herd = medium_herd_gain
@@ -246,8 +277,8 @@ nars_conqueror.0100 = {
 		else = {
 			send_interface_message = {
 				type = event_diplomacy_good_with_text
-				title = nikean_scion_feed_county_gift
-				desc = nikean_scion_feed_county_gift_desc
+				title = nars_conqueror_feed_county_gift
+				desc = nars_conqueror_feed_county_gift_desc
 				left_icon = scope:county_target
 				add_gold = scope:county_target.title_province.available_loot
 			}
@@ -330,6 +361,7 @@ nars_conqueror.0200 = {
 				faith = root.faith
 				add_trait = nars_naturalis
 				save_scope_as = knight
+				prowess = { 15 45 }
 			}
 		}
 		if = {
@@ -353,8 +385,8 @@ nars_conqueror.0200 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nikean_scion_feed_knight_joins
-			desc = nikean_scion_feed_knight_joins_desc
+			title = nars_conqueror_feed_knight_joins
+			desc = nars_conqueror_feed_knight_joins_desc
 			left_icon = scope:knight
 			add_courtier = scope:knight
 			add_hook = {
@@ -403,8 +435,8 @@ nars_conqueror.0300 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nikean_scion_feed_angry_vassal
-			desc = nikean_scion_feed_angry_vassal_desc
+			title = nars_conqueror_feed_angry_vassal
+			desc = nars_conqueror_feed_angry_vassal_desc
 			left_icon = scope:angry_vassal
 			reverse_add_opinion = {
 				modifier = impressed_opinion
@@ -445,8 +477,8 @@ nars_conqueror.0400 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nikean_scion_feed_generous_courtier
-			desc = nikean_scion_feed_generous_courtier_desc
+			title = nars_conqueror_feed_generous_courtier
+			desc = nars_conqueror_feed_generous_courtier_desc
 			left_icon = scope:generous_courtier
 			scope:generous_courtier = {
 				pay_short_term_gold = {
@@ -491,8 +523,8 @@ nars_conqueror.0500 = {
 		}
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nikean_scion_feed_siege_engineer
-			desc = nikean_scion_feed_siege_engineer_desc
+			title = nars_conqueror_feed_siege_engineer
+			desc = nars_conqueror_feed_siege_engineer_desc
 			left_icon = scope:new_commander
 			show_as_tooltip = {
 				add_courtier = scope:new_commander
@@ -531,8 +563,8 @@ nars_conqueror.0600 = {
 		}
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nikean_scion_feed_logistician
-			desc = nikean_scion_feed_logistician_desc
+			title = nars_conqueror_feed_logistician
+			desc = nars_conqueror_feed_logistician_desc
 			left_icon = scope:new_commander
 			show_as_tooltip = {
 				add_courtier = scope:new_commander
@@ -570,9 +602,7 @@ nars_conqueror.1100 = {
     title = nars_conqueror.1100.t
     desc = nars_conqueror.1100.desc
     theme = emperor
-    override_background = ep3_hippodrome
-    override_effect_2d = { reference = smoke }
-    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    override_background = throne_room_east
 
     left_portrait = {
         character = root
@@ -611,14 +641,21 @@ nars_conqueror.1100 = {
     # Option A: Pay gold for special soldiers
     option = {
         name = nars_conqueror.1100.a # "I will pay you handsomely for your spears."
-        remove_treasury_or_gold = 1150
-        
+        remove_treasury_or_gold = massive_gold_value
+        stress_impact = {
+			zealous = medium_stress_impact_loss
+			brave = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			content = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+		}
         spawn_army = {
 			name = nikean_troop_event_name
-			levies = 1250
+			levies = 625
 			men_at_arms = {
 				type = maa_hoplitai
-				stacks = 12
+				stacks = 5
             }
             location = root.capital_province
 			uses_supply = yes
@@ -644,10 +681,10 @@ nars_conqueror.1100 = {
                 }                
                 spawn_army = {
 					name = nikean_troop_event_name
-					levies = event_troop_100_vassal_scale
+					levies = 625
 					men_at_arms = {
 						type = maa_hoplitai
-						stacks = 30
+						stacks = 5
 					}
 					location = root.capital_province
 					uses_supply = yes
@@ -683,11 +720,609 @@ nars_conqueror.1100 = {
     option = {
         name = nars_conqueror.1100.c
         add_prestige = minor_prestige_loss
+        stress_impact = {
+			zealous = medium_stress_impact_gain
+			brave = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+			content = medium_stress_impact_loss
+			cynical = medium_stress_impact_loss
+			greedy = medium_stress_impact_loss
+		}
+    }
+}
+
+#A zealot priest and a hoplite
+nars_conqueror.1200 = {
+	type = character_event
+	title = nars_conqueror.1200.t
+	desc = nars_conqueror.1200.desc
+	theme = emperor
+	override_background = throne_room_east
+
+	trigger = {
+		has_trait = nars_conqueror
+		any_vassal = {
+			faith = root.faith
+			has_vassal_stance = zealot
+		}
+	}
+
+	immediate = {
+		random_vassal = {
+			limit = {
+				faith = root.faith
+				has_vassal_stance = zealot
+			}
+			save_scope_as = zealous_speaker
+		}
+		random_vassal = {
+			limit = {
+				faith = root.faith
+				has_vassal_stance = glory_hound
+			}
+			save_scope_as = glory_hound_speaker
+		}
+	}
+	
+	left_portrait = {
+		character = scope:zealous_speaker
+		animation = reverence
+	}
+	right_portrait = {
+		character = scope:glory_hound_speaker
+		animation = marshal
+	}
+
+	# Option A: Assure them of continued Restorationist efforts
+	option = {
+		name = nars_conqueror.1200.a
+		custom_tooltip = nars_conqueror.1200.a.tt
+		remove_treasury_or_gold = 75
+		add_piety = 125
+		add_prestige = 75
+		every_vassal = {
+			limit = {
+				faith = root.faith
+				has_vassal_stance = zealot
+			}
+			add_opinion = {
+				target = root
+				modifier = pious_opinion
+				opinion = 20
+				years = 2
+			}
+		}
+		every_vassal = {
+			limit = {
+				has_vassal_stance = glory_hound
+			}
+			add_opinion = {
+				target = root
+				modifier = respect_opinion
+				opinion = 10
+				years = 1
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			brave = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			content = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+			craven = medium_stress_impact_gain
+		}
+	}
+	# Option B: Extort them lmao
+	option = {
+		name = nars_conqueror.1200.b
+		custom_tooltip = nars_conqueror.1200.b.tt
+		remove_treasury_or_gold = major_gold_value
+		add_prestige = major_prestige_value
+		every_vassal = {
+			limit = {
+				faith = root.faith
+				has_vassal_stance = zealot
+			}
+			add_opinion = {
+				target = root
+				modifier = impious_opinion
+				opinion = -20
+				years = 2
+			}
+		}
+		every_vassal = {
+			limit = {
+				has_vassal_stance = glory_hound
+			}
+			add_opinion = {
+				target = root
+				modifier = requested_money_opinion
+				opinion = -10
+				years = 1
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			brave = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+			content = medium_stress_impact_loss
+			cynical = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+		}
+	}
+}
+
+nars_conqueror.1300 = {
+    type = character_event
+    title = nars_conqueror.1300.t
+    desc = nars_conqueror.1300.desc
+    theme = emperor
+	override_background = throne_room_east
+
+    trigger = {
+        has_trait = nars_conqueror
+        any_sub_realm_county = {
+            NOT = { culture = root.culture }
+        }
+    }
+
+    left_portrait = {
+        character = root
+        camera = camera_event_left
+        animation = thinking
+    }
+    
+    right_portrait = {
+        character = scope:commander_1
+        camera = camera_event_right
+        animation = throne_room_one_handed_passive_1
+    }
+
+    lower_left_portrait = {
+        character = scope:commander_2
+        animation = anger
+    }
+
+    lower_center_portrait = {
+        character = scope:commander_3
+        animation = disapproval
+    }
+
+	lower_right_portrait = {
+		character = scope:commander_4
+        animation = disapproval
+	}
+
+    immediate = {
+        # Find a wrong-culture county to settle
+        random_sub_realm_county = {
+            limit = {
+                NOT = { culture = root.culture }
+            }
+            save_scope_as = settlement_county
+        }
+
+        # Spawn Vanguard Commander 1 (Right Portrait)
+        create_character = {
+            age = { 30 55 }
+            martial = { 16 26 }
+            trait = education_martial_4
+			template = nikean_template.1002
+            gender = male
+            culture = root.culture
+            faith = root.faith
+            save_scope_as = commander_1
+			prowess = { 15 30 }
+        }
+        scope:commander_1 = { add_to_list = vanguard_commanders_list }
+
+        # Spawn Vanguard Commander 2 (Lower Left Portrait)
+        create_character = {
+            age = { 30 55 }
+            martial = { 16 26 }
+            trait = education_martial_4
+			template = nikean_template.1002
+            gender = male
+            culture = root.culture
+            faith = root.faith
+            save_scope_as = commander_2
+			prowess = { 15 30 }
+        }
+        scope:commander_2 = { add_to_list = vanguard_commanders_list }
+
+        # Spawn Vanguard Commander 3 (Lower Center Portrait)
+        create_character = {
+            age = { 30 55 }
+            martial = { 16 26 }
+            trait = education_martial_3
+			template = nikean_template.1002
+            gender = male
+            culture = root.culture
+            faith = root.faith
+            save_scope_as = commander_3
+			prowess = { 15 30 }
+        }
+        scope:commander_3 = { add_to_list = vanguard_commanders_list }
+
+        # Spawn Vanguard Commander 4 (Off-screen)
+        create_character = {
+            age = { 30 55 }
+            martial = { 16 26 }
+            trait = education_martial_3
+			template = nikean_template.1002
+            gender = male
+            culture = root.culture
+            faith = root.faith
+            save_scope_as = commander_4
+			prowess = { 15 30 }
+        }
+        scope:commander_4 = { add_to_list = vanguard_commanders_list }
+    }
+
+    option = {
+        name = nars_conqueror.1300.a
+        remove_short_term_gold = major_gold_value
+        add_character_modifier = {
+            modifier = nars_vanguard_spoils_modifier
+            years = 3 
+        }
+		hidden_effect = {
+			every_in_list = {
+				list = vanguard_commanders_list
+				death = { death_reason = death_vanished }
+			}
+		}
+    }
+
+    option = {
+        name = nars_conqueror.1300.b
+        scope:settlement_county = {
+            add_county_modifier = {
+                modifier = nars_veteran_settlement_modifier
+                years = 3 # 10 years
+            }
+			set_county_culture = root.culture
+			set_county_faith = root.faith
+        }
+		hidden_effect = {
+			every_in_list = {
+				list = vanguard_commanders_list
+				death = { death_reason = death_vanished }
+			}
+		}
+    }
+
+    # Option C: Persuasion check to recruit them
+    option = {
+        name = nars_conqueror.1300.c
+        random_list = {
+            50 = {
+                modifier = {
+                    add = 10
+                    diplomacy >= 25
+                }
+                modifier = {
+                    add = 20
+                    diplomacy >= 35
+                }       
+                custom_tooltip = nars_conqueror.1300.c.tt
+                add_prestige = major_prestige_value
+				hidden_effect = {
+					every_in_list = {
+						list = vanguard_commanders_list
+						set_employer = root
+						add_opinion = {
+							target = root
+							modifier = grateful_opinion
+							opinion = 30
+							years = 10
+						}
+					}
+				}
+                send_interface_message = {
+                    title = nars_conqueror.1300.c.success_msg.t
+                    desc = nars_conqueror.1300.c.success_msg.desc
+                    type = event_prowess_good_desc
+                    left_icon = scope:commander_1
+                }
+            }
+            50 = {
+                modifier = {
+                    add = 30
+                    diplomacy < 15
+                }
+				add_stress = medium_stress_gain
+                add_prestige = major_prestige_loss
+                send_interface_message = {
+                    title = nars_conqueror.1300.c.failure_msg.t
+                    desc = nars_conqueror.1300.c.failure_msg.desc
+                    type = event_prowess_bad_desc
+                    left_icon = scope:commander_1
+                }
+				hidden_effect = {
+					every_in_list = {
+						list = vanguard_commanders_list
+						death = { death_reason = death_vanished }
+					}
+				} 
+            }
+        }
+    }
+}
+
+nars_conqueror.1400 = {
+    type = character_event
+    title = nars_conqueror.1400.t
+    desc = nars_conqueror.1400.desc
+    theme = emperor
+
+    trigger = {
+        has_trait = nars_conqueror
+        # Must have at least one foreign vassal who rules over a county of their own culture
+        any_vassal = {
+            NOT = { culture = root.culture }
+            any_held_county = { # FIXED: Valid CK3 syntax for domain
+                culture = prev.culture
+            }
+        }
+    }
+
+    override_background = throne_room_east
+
+    lower_left_portrait = {
+        character = root
+    }
+    left_portrait = {
+        character = scope:foreign_vassal_1
+        animation = map_dismissal
+		camera = camera_event_left_wedding
+    }
+    right_portrait = {
+        character = scope:foreign_vassal_2
+        camera = camera_event_right_away
+        animation = scheme
+    }
+
+    immediate = {
+        # 1. Grab the primary foreign vassal and their culture/county
+        random_vassal = {
+            limit = { 
+                NOT = { culture = root.culture }
+                any_held_county = { # FIXED
+                    culture = prev.culture 
+                }
+            }
+            save_scope_as = foreign_vassal_1
+            culture = { save_scope_as = foreign_culture }
+            
+            # Scope directly into their domain to guarantee a valid county
+            random_held_county = { # FIXED
+                limit = { culture = scope:foreign_culture }
+                save_scope_as = unrest_county
+            }
+        }
+        
+        # 2. Grab up to 2 other foreign vassals (if they exist) to flesh out the event
+        random_vassal = {
+            limit = { 
+                NOT = { culture = root.culture }
+                NOT = { this = scope:foreign_vassal_1 }
+            }
+            save_scope_as = foreign_vassal_2
+        }
+    }
+
+    # Option A: Mysterious deaths (County conversion up, control down)
+    option = {
+        name = nars_conqueror.1400.a
+        add_dread = 30
+        scope:unrest_county = {
+            change_county_control = -15
+            add_county_modifier = {
+                modifier = nars_brutal_purges_modifier
+                days = 3650 # 10 years
+            }
+			set_county_culture = root.culture
+			set_county_faith = root.faith
+        }
+        
+        # Mysterious deaths 
+        scope:foreign_vassal_1 = { death = { death_reason = death_court_intrigue } } 
+        if = {
+            limit = { exists = scope:foreign_vassal_2 }
+            scope:foreign_vassal_2 = { death = { death_reason = death_killed_by_harem_slave} } 
+        }
+    }
+
+    # Option B: Integration (Pay gold/prestige, gain acceptance/dev)
+    option = {
+        name = nars_conqueror.1400.b
+        remove_short_term_gold = 75
+        add_prestige = -150
+        
+        scope:foreign_culture = {
+            change_cultural_acceptance = { # FIXED: Valid CK3 syntax
+                target = root.culture
+                value = 15
+            }
+        }
+        scope:unrest_county = {
+            change_county_development = 1 # FIXED: Valid CK3 syntax
+			add_county_modifier = {
+				modifier = county_increased_opinion_modifier
+				years = 25
+			}
+        }
+        scope:foreign_vassal_1 = {
+            add_opinion = {
+                target = root
+                modifier = respect_opinion
+				opinion = 15
+            }
+        }
+		scope:foreign_vassal_2 = {
+            add_opinion = {
+                target = root
+                modifier = respect_opinion
+				opinion = 15
+            }
+        }
+    }
+
+    # Option C: Do nothing
+    option = {
+        name = nars_conqueror.1400.c
         add_stress = minor_stress_gain
     }
 }
 
-# Positive
-# Someone offers diplomatic assistance: Invite Claimant acceptance boon
+nars_conqueror.1500 = {
+    type = character_event
+    title = nars_conqueror.1500.t
+    desc = nars_conqueror.1500.desc
+    theme = emperor
 
-# Boon in long wars; gold, soldiers, joining vassal
+	override_background = throne_room_east
+
+    trigger = {
+        has_trait = nars_conqueror
+        any_sub_realm_county = {
+            count >= 1
+        }
+    }
+
+    left_portrait = {
+        character = root
+        animation = thinking
+		camera = camera_event_left
+    }
+    
+    right_portrait = {
+        character = scope:arrogant_bard
+       	animation = debating
+		camera = camera_event_far_right_very_right
+    }
+
+    immediate = {
+        # Create the arrogant bard
+        create_character = {
+            age = { 25 50 }
+            diplomacy = { 16 24 }
+            learning = { 12 18 }
+            education = diplomacy_education_4
+            trait = arrogant
+			trait = brave
+            trait = poet
+            gender = male
+            culture = root.culture
+            faith = root.faith
+            save_scope_as = arrogant_bard
+        }
+        
+        # Pick a random county in the realm to be the epicenter of the song/mockery
+        random_sub_realm_county = {
+            save_scope_as = epic_county
+        }
+    }
+
+    # Option A: Pay him off (Major Gold -> Legend Modifier)
+    option = {
+        name = nars_conqueror.1500.a
+        remove_short_term_gold = medium_gold_value
+        
+        scope:epic_county = {
+            add_county_modifier = {
+                modifier = nars_epic_of_nikator_modifier
+                years = 10
+            }
+        }
+		hidden_effect = {
+			scope:arrogant_bard = {
+				death = { death_reason = death_vanished }
+			}
+		}  
+
+		stress_impact = {
+            greedy = major_stress_gain
+            shy = medium_stress_gain
+            brave = minor_stress_gain
+            compassionate = medium_stress_loss
+			gregarious = medium_stress_loss
+			sadistic = medium_stress_gain
+        }
+    }
+
+    option = {
+        name = nars_conqueror.1500.b
+        
+        add_tyranny = 15
+		scope:arrogant_bard = {
+            death = {
+                death_reason = death_execution
+                killer = root
+            }
+        }
+        stress_impact = {
+            compassionate = major_stress_gain
+            just = medium_stress_gain
+            sadistic = medium_stress_loss
+            callous = medium_stress_loss
+			arrogant = medium_stress_loss
+			greedy = medium_stress_loss
+        }
+    }
+
+    # Option C: The Prose Duel (RNG Check)
+    option = {
+        name = nars_conqueror.1500.c
+        custom_tooltip = nars_conqueror.1500.c.tt
+        random_list = {
+            50 = {
+				custom_tooltip = nars_conqueror.1500.c.success_tt
+                modifier = {
+                    add = 15
+                    diplomacy >= 20
+                }
+                modifier = {
+                    add = 25
+                    has_trait = poet
+                }
+                
+                add_prestige = massive_prestige_value
+				hidden_effect = {
+					scope:arrogant_bard = {
+						death = { death_reason = death_vanished }
+					}
+				}
+                send_interface_message = {
+                    title = nars_conqueror.1500.c.success_msg.t
+                    desc = nars_conqueror.1500.c.success_msg.desc
+                    type = event_diplomacy_good_desc
+                }
+            }
+            50 = {
+                custom_tooltip = nars_conqueror.1500.c.failure_tt
+                modifier = {
+                    add = 25
+                    diplomacy < 12
+                }
+                scope:epic_county = {
+                    add_county_modifier = {
+                        modifier = nars_mocked_nikator_modifier
+                        years = 10
+                    }
+                }
+				hidden_effect = {
+					scope:arrogant_bard = {
+                    	death = { death_reason = death_vanished }
+                	}
+				}
+				send_interface_message = {
+                    title = nars_conqueror.1500.c.failure_msg.t
+                    desc = nars_conqueror.1500.c.failure_msg.desc
+                    type = event_diplomacy_bad_desc
+                }
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@
     }
 
     effect_group = { #narsscion
-		days = { 100 150 }
+		days = { 300 360 }
 
 		trigger = {
 			story_owner = {

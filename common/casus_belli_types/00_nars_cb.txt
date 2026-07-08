@@ -30,7 +30,8 @@
 			NOR = {
 				is_nikean = yes
 				is_orphic = yes
-			}	
+				is_ethnically_nikean = yes
+			}
 		}
 	}
 
@@ -261,7 +262,6 @@
 						holder = { destroy_title = prev }
 					}
 				}
-
 				create_title_and_vassal_change = {
 					type = swear_fealty
 					save_scope_as = change
@@ -284,7 +284,6 @@
 			}
 		}
 
-		# Destroy defender empires
 		scope:defender = {
 			every_held_title = {
 				limit = { tier >= tier_empire }
@@ -527,18 +526,4 @@
 	
 	max_ai_diplo_distance_to_title = 500
 
-	ai_score_mult = {
-		value = 10
-		if = {
-			limit = {
-				scope:defender = {
-					any_owned_story = {
-						story_type = frankokratia_story
-						NOT = { has_variable = franko_war_complete }
-					}
-				}
-			}
-			multiply = 0
-		}
-	}
 }

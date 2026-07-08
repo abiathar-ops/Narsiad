@@ -30,3 +30,29 @@ set_panteion_effect = {
 	}
 	add_character_modifier = $PANTEION$
 }
+
+pledge_restoration_effect = {
+	if = {
+		limit = {
+			dynasty ?= {
+				NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
+			}
+		}
+		dynasty = {
+			add_dynasty_modifier = { modifier = pledge_restoration_dynasty_modifier }
+		}
+	}
+	custom_tooltip = nars_dynasty_get_scion_tt
+	hidden_effect = { 
+		dynasty = {
+			every_dynasty_member = {
+				limit = {
+					is_alive = yes
+					is_nikean = yes
+					NOT = { has_trait = nars_scion }
+				}
+				add_trait = nars_scion
+			}
+		}
+	}
+}

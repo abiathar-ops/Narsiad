@@ -31,7 +31,7 @@ story_nars_conqueror = {
     }
 
     effect_group = { #narsscion
-		days = { 100 200 }
+		days = { 360 720 }
 
 		trigger = {
 			story_owner = {

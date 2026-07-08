@@ -16,7 +16,7 @@ decision_recruit_nikean_courtier = {
 	}
 	
 	cost = {
-		prestige = 120
+		prestige = major_prestige_value
 	}
 
 	is_shown = {
@@ -127,7 +127,7 @@ decision_recruit_nikean_courtier = {
 					}
 				trigger_event = {
 					id = nikean_courtiers.0001
-					days = { 15 30 }
+					days = { 5 15 }
 				}
 			}
 			else_if = { # 2 Sophes
@@ -175,7 +175,7 @@ decision_recruit_nikean_adventurer = {
 	}
 	
 	cost = {
-		prestige = 120
+		prestige = major_prestige_value
 	}
 
 	is_shown = {
@@ -203,7 +203,7 @@ decision_recruit_nikean_adventurer = {
 			}
 		trigger_event = {
 			id = nikean_courtiers.0001
-			days = { 15 30 }
+			days = { 5 15 }
 		}
 	}
 	

@@ -1,5 +1,5 @@
 portrait_nikean_clothing_trigger = {
-	scope:culture = {
+	culture = {
 		portrait_nikean_clothing_contents_trigger = yes
 	}
 }

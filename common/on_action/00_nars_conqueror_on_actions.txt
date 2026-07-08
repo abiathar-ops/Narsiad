@@ -2,6 +2,9 @@ ongoing_nars_conqueror_events = {
 	random_events = {
 		50 = 0
 		100 = nars_conqueror.1100 
+		100 = nars_conqueror.1300
+		100 = nars_conqueror.1400
+		100 = nars_conqueror.1500
 			
 		# Minor Feed Message Events
 		50 = nars_conqueror.0100 # Small gift from County

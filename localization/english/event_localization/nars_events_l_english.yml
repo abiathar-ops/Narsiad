@@ -1,5 +1,5 @@
 ﻿l_english:
- narsokratia_event.flavor: "Our vision of [narsokratia|E] grows ever closer!"
+ narsokratia_event.flavor: "The vision of Narsokratía grows ever closer!"
  nikean_intro.1001.t:0 "Gnōthi Seauton"
  nikean_intro.1001.desc:0 "In antiquity, the unquestionable [hegemony|E] of the [nikeanrealm|E] stood at the forefront of civilization. When [nomads|e] and [civil_wars|E] torn our [realm|E] asunder, they believed we were truly destroyed. \n\nThey couldn't be more wrong. \n\nOur last [hegemon|E] did not deign to be the last; with brilliance, he relocated the worthiest of our [prestigious|E] [nobles|E] to dozens of hidden mountain refuges on the fringes of his wider [realm|E]. \n\nIn our absence, the other civilizations of the world scrubbed the [nikeis|E] from history in a brutal ethnocide. Other [cultures|E] had so soon celebrated our obliteration on the wider world to realize their own hubristic delusions about our complete destruction. \n\nAs time passed, the world outside became unrecognizable, but we of the [nikeis|E] endured in our exile. As the [regions|E] around us decayed into barbarism and [tribes|E], we preserved the flame of our [tradition|E], waiting for the perfect moment to return and reclaim our [realms|E]."
  nikean_intro.1001.a:0 "And so time goes on..."
@@ -60,7 +60,7 @@
  nikean_titles.0021.a: "One [law|E], One [hegemony|E]!"
  
  nikean_artifact.1001.t: "Kairòn Gnôthi: Dillema"
- nikean_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [orphic|E] texts. The [artifact|E] must be quenched in the lifeblood of several [nikeans|E] gained from a ritual." \n\n"A sacrifice of three [nikeis|E] from your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
+ nikean_artifact.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [orphic|E] texts. The [artifact|E] must be quenched in the lifeblood of a [nikean|E] gained from a ritual." \n\n"A sacrifice of a [nikeis|E], one of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
  nikean_artifact.1001.a: "#emp "They will be martyrs for our cause!"#!"
  nikean_artifact.1001.b: "#emp "Find another way, anything other than this!"#!"
  nikean_artifact.1001.c: "#emp "Now is not the time. Not yet."#!"

@@ -22,35 +22,11 @@ nikean_artifact.1001 = {
 	option = {
 		# Sacrifice courtiers — brutal but FAST (30 days)
 		name = nikean_artifact.1001.a
-		add_dread = 50
+		add_tyranny = 15
 		stress_impact = {
 			just = minor_stress_impact_gain
 			compassionate = miniscule_stress_impact_gain
 			content = miniscule_stress_impact_gain
-		}
-		random_courtier_or_guest = {
-			limit = {
-				is_adult = yes
-				is_ethnically_nikean = yes
-				NOT = { is_close_family_of = root }
-				NOT = { is_spouse_of = root }
-			}
-			death = {
-				death_reason = death_murder
-				killer = root
-			}
-		}
-		random_courtier_or_guest = {
-			limit = {
-				is_adult = yes
-				is_ethnically_nikean = yes
-				NOT = { is_close_family_of = root }
-				NOT = { is_spouse_of = root }
-			}
-			death = {
-				death_reason = death_murder
-				killer = root
-			}
 		}
 		random_courtier_or_guest = {
 			limit = {
