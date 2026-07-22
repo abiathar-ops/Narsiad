@@ -25,10 +25,11 @@
  nars_conqueror.1100.b.failure_msg.desc:0 "[hoplite.GetTitledFirstName] and his mercenaries departed for other fortunes!" 
  nars_conqueror.1100.c: "I have no need for them"
 
- nars_conqueror.1200.t: "$nikator_prefix$ Faithful"
- nars_conqueror.1200.desc: ""
- nars_conqueror.1200.a: ""
- nars_conqueror.1200.b: ""
+ nars_conqueror.1200.t: "$nikator_prefix$ Pious"
+ nars_conqueror.1200.desc: "An audience is requested by [portrait_faithful.GetTitledFirstName], a fervent devotee from [zealot_barony.GetName]. Flanked by a stoic [soldier|E] in polished armor, [portrait_faithful.GetSheHe] kneels before my throne.\n\n"The people of [zealot_barony.GetName] are entirely devoted to your cause, my liege," [portrait_faithful.GetSheHe] proclaims, gesturing to chests of gathered wealth and tributes. "Our lands are now secure, our [cities|E] bountiful, and our [faith|E] in your rule is absolute. We now offer these boons to fuel your pledge."\n\nI must decide how best to utilize the unwavering devotion of these people for the [narsokratia|E] before they depart."
+ nars_conqueror.1200.a:0 "We shall claim this for the treasury!"
+ nars_conqueror.1200.b:0 "When you see my army, feed them."
+ nars_conqueror.1200.c:0 "Draft their youth into our vanguard!"
 
  nars_conqueror.1300.t: "$nikator_prefix$ Veterans"
  nars_conqueror.1300.desc: "Four seasoned and weary [commanders|E]—men whose armor bears the deep gouges of our recent onslaught—stand before me in the war room. The four represent a significant and substantial core of my veteran [hoplites|E] and fighting men.\n\n\"The restoration requires blood, Nikátōr, and we have bled,\" their spokesman rumbles, resting a calloused hand on the hilt of his longsword. \"But a man cannot eat glory, nor shelter his family beneath an oath. The men, #emp your#! men demand their share of the boons you have gained."\n\n"Coin from the treasury, or land from the conquered.\""
@@ -39,8 +40,7 @@
  nars_conqueror.1300.c.success_msg.t:0 "Successful Persuasion"
  nars_conqueror.1300.c.success_msg.desc:0 "The commanders have sworn themselves wholeheartedly!"
  nars_conqueror.1300.c.failure_msg.t:0 "Failed Persuasion"
- nars_conqueror.1300.c.failure_msg.desc:0 "The commanders deserted your cause!" 
- 
+ nars_conqueror.1300.c.failure_msg.desc:0 "The commanders deserted your cause!"
  nars_vanguard_spoils_modifier: "Invigorated Troops"
  nars_vanguard_spoils_modifier_desc: "This ruler's troops have been heavily compensated for their role in the restoration, fighting with unmatched ferocity."
  nars_veteran_settlement_modifier: "Veteran Estates"
@@ -51,9 +51,6 @@
  nars_conqueror.1400.a: "Shadows are easily dispelled by a blade in the dark."
  nars_conqueror.1400.b: "We must bring them to the fold. Spare no expense."
  nars_conqueror.1400.c: "They are beneath my notice."
- 
- nars_brutal_purges_modifier: "Brutal Purges"
- nars_brutal_purges_modifier_desc: "A string of mysterious 'accidents' among foreign elites has happened"
 
  nars_conqueror.1500.t: "$nikator_prefix$ Dilemma"
  nars_conqueror.1500.desc: ""A [ruler|E]'s name is only worth as the things sung about him."\n\nAn obvious and unremarkable notion—if not delivered from such tone. This is a veiled threat delivered by [arrogant_bard.GetTitledFirstName], a famed wandering bard who has sauntered into my [court|E], apparently in search of a patronage.\n\n\"The sword cuts flesh, Nikátōr, but my lyre could carve reputation... or mar them,\" he says, plucking a dissonant chord. \"I have drafted an epic of your conquests. Pay me my deserved [gold|E], and I shall sing it from the hippodromes to the deepest [cities|E], cementing your [legend|E] and mandate."\n\nIt is clear that the courageous bard is driving an ultimatum."
@@ -69,10 +66,10 @@
  nars_conqueror.1500.c.success_msg.desc: "The bard, thoroughly humiliated before the assembled court, fled in disgrace."
  nars_conqueror.1500.c.failure_msg.t: "Mocked by a Minstrel"
  nars_conqueror.1500.c.failure_msg.desc: "True to his threat, the bard has fled to [epic_county.GetNameNoTier], his glib verses mocking you." 
- nars_epic_of_nikator_modifier: "Nikátōr's Epic"
+ nars_epic_of_nikator_modifier: "Nikátōr's Verses"
  nars_epic_of_nikator_modifier_desc: "The locals are inspired by tales of the Nikátōr."
  
- nars_mocked_nikator_modifier: "Mocking Liege"
+ nars_mocked_nikator_modifier: "Defamations"
  nars_mocked_nikator_modifier_desc: "A humiliating satire regarding the ruler's lack of wit is spreading rapidly here."
  
  nars_conqueror_feed_county_gift: "[county_target.GetNameNoTooltip] Sends Gold"

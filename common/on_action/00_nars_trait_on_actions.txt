@@ -59,6 +59,20 @@ on_ruler_designer_creation = {
     }
 }
 
+on_character_creation = {
+    effect = {
+        if = {
+            limit = {
+                is_ethnically_nikean = yes
+                NOT = { has_trait = nars_naturalis }
+            }
+            add_trait = nars_naturalis
+            create_story = story_nars_naturalis
+            nars_naturalis_set_tier_xp_effect = yes
+        }
+    }
+}
+
 on_title_gain = {
     on_actions = { 
         nars_update_rank_on_action 
@@ -108,63 +122,14 @@ nars_intro_on_start = {
                 is_alive = yes
             }
             trigger_event = { id = nikean_intro.1001 days = 1 }
-            trigger_event = { id = nikean_courtiers.0002 }
-            trigger_event = { id = nikean_courtiers.0002 }
-            if = {
-                limit = {
-                    NOT = {
-                        OR = {
-                            this = character:nars_0001
-                            this = character:nars_0002
-                            this = character:nars_0003
-                        }
-                    }
-                }
-                add_prestige_level = 2
-                add_piety_level = 1
-                add_gold = 705
-                add_prestige = 650
+            while = {
+                count = 3
+                trigger_event = { id = nikean_courtiers.0002 }
             }
-        }
-
-        character:nars_0001 ?= {
-            if = {
-                limit = { is_alive = yes }              
-                trigger_event = nikean_courtiers.0002 
-                trigger_event = { id = nikean_bookmark.0010 days = 2 }
-                if = {
-                    limit = { is_ai = yes }
-                    trigger_event = { id = nikean_intro.1001 days = 1 }
-                }
-                dynasty = {
-					add_dynasty_prestige_level = 8
-                    add_dynasty_prestige = 1250
-				}
-            }
-        }
-
-        character:nars_0002 ?= {
-            if = {
-                limit = { is_alive = yes }
-                trigger_event = nikean_courtiers.0002 
-                trigger_event = { id = nikean_bookmark.0020 days = 2 }
-                if = {
-                    limit = { is_ai = yes }
-                    trigger_event = { id = nikean_intro.1001 days = 1 }
-                }
-            }
-        }
-
-        character:nars_0003 ?= {
-            if = {
-                limit = { is_alive = yes }
-                trigger_event = nikean_courtiers.0002 
-                trigger_event = { id = nikean_bookmark.0030 days = 2 }
-                if = {
-                    limit = { is_ai = yes }
-                    trigger_event = { id = nikean_intro.1001 days = 1 }
-                }
-            }
+            add_prestige_level = 2
+            add_piety_level = 1
+            add_gold = { 705 1000 }
+            add_prestige = { 705 1000 }
         }
     } 
 }
@@ -199,22 +164,7 @@ nars_add_nikean_trait_on_birth = {
 
 nars_laamp_on_start = {
     effect = {
-        if = {
-            limit = { has_ep3_dlc_trigger = yes }
-            
-            character:nars_0001 ?= {
-                add_realm_law_skip_effects = camp_purpose_mercenaries
-            }
-            character:nars_0002 ?= {
-                add_realm_law_skip_effects = camp_purpose_mercenaries
-            }
-            character:nars_0003 ?= {
-                add_realm_law_skip_effects = camp_purpose_mercenaries
-            }
-        }
-
         every_domicile = {
-            # Check the domicile's OWNER to see if they are a living Nikean adventurer
             limit = {
                 owner = {
                     is_alive = yes
@@ -222,110 +172,7 @@ nars_laamp_on_start = {
                     is_ethnically_nikean = yes
                 }
             }
-
-            add_domicile_building = camp_main_02
-            add_domicile_building = camp_main_03
-            
-            random_list = {
-                10 = {
-                    # Roll for Supply Tent tree
-                    add_domicile_building = supply_tent_01
-                    add_domicile_building = supply_tent_02
-                    random_list = {
-                        10 = { add_domicile_building = supply_tent_sutler }
-                        10 = { add_domicile_building = supply_tent_mender }
-                        10 = { add_domicile_building = supply_tent_smithy }
-                        10 = { add_domicile_building = supply_tent_arsenal }
-                    }
-                }
-                10 = {
-                    # Roll for Barber Tent tree
-                    add_domicile_building = barber_tent_01
-                    add_domicile_building = barber_tent_02
-                    random_list = {
-                        10 = { add_domicile_building = barber_tent_surgeons_tools }
-                        10 = { add_domicile_building = barber_tent_dentists_tools }
-                        10 = { add_domicile_building = barber_tent_torturers_tools }
-                    }
-                }
-                10 = {
-                    # Roll for Baggage Train tree
-                    add_domicile_building = baggage_train_01
-                    add_domicile_building = baggage_train_02
-                    random_list = {
-                        10 = { add_domicile_building = baggage_train_ample_steeds }
-                        10 = { add_domicile_building = baggage_train_porters }
-                        10 = { add_domicile_building = baggage_train_trackers }
-                        10 = { add_domicile_building = baggage_train_kennel }
-                    }
-                }
-            }
-            
-            random_list = {
-                10 = {
-                    # Roll for Mess Tent tree
-                    add_domicile_building = mess_tent_01
-                    add_domicile_building = mess_tent_02
-                    random_list = {
-                        10 = { add_domicile_building = mess_tent_herbalists }
-                        10 = { add_domicile_building = mess_tent_brewers }
-                        10 = { add_domicile_building = mess_tent_curers }
-                        10 = { add_domicile_building = mess_tent_bakers }
-                        10 = { add_domicile_building = mess_tent_cooks }
-                    }
-                }
-                10 = {
-                    # Roll for Camp Fire tree
-                    add_domicile_building = camp_fire_01
-                    add_domicile_building = camp_fire_02
-                    random_list = {
-                        10 = { add_domicile_building = camp_fire_trailing_musicians }
-                        10 = { add_domicile_building = camp_fire_wandering_poets }
-                        10 = { add_domicile_building = camp_fire_capering_fools }
-                        10 = { add_domicile_building = camp_fire_libations_for_the_lost }
-                    }
-                }
-            }
-            
-            random_list = {
-                10 = {
-                    # Roll for Security Perimeter
-                    add_domicile_building = camp_perimeter_01
-                    add_domicile_building = camp_perimeter_02
-                    random_list = {
-                        10 = { add_domicile_building = camp_perimeter_good_siting }
-                        10 = { add_domicile_building = camp_perimeter_fixed_layout }
-                    }
-                }
-                10 = {
-                    # Roll for Basic Proving Grounds
-                    add_domicile_building = proving_grounds_01
-                    add_domicile_building = proving_grounds_02
-                }
-            }
-        }
-        
-        if = {
-            limit = { has_ep3_dlc_trigger = yes }
-            
-            character:nars_0004 ?= {
-                if = {
-                    limit = { character:nars_0001 = { is_alive = yes } }
-                    character:nars_0001 = { add_courtier = character:nars_0004 }
-                }
-            }
-            character:nars_0005 ?= {
-                if = {
-                    limit = { character:nars_0002 = { is_alive = yes } }
-                    character:nars_0002 = { add_courtier = character:nars_0005 }
-                }
-            }
-            character:nars_0006 ?= {
-                if = {
-                    limit = { character:nars_0003 = { is_alive = yes } }
-                    character:nars_0003 = { add_courtier = character:nars_0006 }
-                }
-            }
+            nars_laamp_camp_setup_effect = yes
         }
     }    
 }

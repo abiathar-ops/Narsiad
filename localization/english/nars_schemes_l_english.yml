@@ -1,6 +1,6 @@
 ﻿l_english: 
  munitions_research_scheme: "Harness Gunpowder"
- munitions_research_scheme_desc: "I seek to arm my forces with that most sophisticated and terrifying of weapons: arquebusiers."
+ munitions_research_scheme_desc: "I seek to arm my forces with that most sophisticated and terrifying of weapons, gunpowder."
  munitions_research_scheme_desc_general: "Great stores of black powder must be amassed; our armies must be armed with the thunderous arquebus, emboldening them with a rain of lead cartridges!"
  munitions_research_scheme_SUCCESS_DESC: "You will unlock the #V Mástiges#! [men_at_arms|E] regiment and apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] for #high 30 years#!."
  munitions_research_scheme_action: "Harness Gunpowder in"

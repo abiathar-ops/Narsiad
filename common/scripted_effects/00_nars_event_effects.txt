@@ -4,21 +4,21 @@ intro_standard_effect = {
 	}
 }
 
-elios_intro_effect = {
+eleios_intro_effect = {
 	add_character_modifier = {
-		modifier = elios_intro_modifier
+		modifier = eleios_modifier
 	}
 }
 
 ilione_intro_effect = {
 	add_character_modifier = {
-		modifier = ilione_intro_modifier
+		modifier = ilione_modifier
 	}
 }
 
 strato_intro_effect = {
 	add_character_modifier = {
-		modifier = strato_intro_modifier
+		modifier = strato_modifier
 	}
 }
 

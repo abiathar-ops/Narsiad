@@ -28,6 +28,7 @@ decision_h_narsokratia = {
 				target = flag:flag_h_narsokratia_decision
 			}
 		}
+		NOT = { government_has_flag = government_is_nomadic }
 	}
 
 	is_valid = {
@@ -90,10 +91,8 @@ decision_h_narsokratia = {
 	}
 	
 	effect = {
-		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		create_h_narsokratia_effect = yes
 		trigger_event = nikean_titles.0021
-		gain_heroic_legend_seed_tooltip_effect = yes
 		hidden_effect = {
 			change_government = administrative_government
 			local_assimilate_nikean_traditions_effect = {
@@ -146,13 +145,11 @@ decision_pledge_restoration = {
 		is_independent_ruler = yes
 		is_ethnically_nikean = yes
 		is_nikean = yes
+		NOT = { government_has_flag = government_is_nomadic }
 		highest_held_title_tier >= tier_kingdom
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_decision_pledge_restoration
-			}
-		}
+		dynasty = {
+            NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
+        }
 	}
 
 	is_valid = {

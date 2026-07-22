@@ -154,6 +154,7 @@ decision_establish_brothel = {
 				HOLDER = root
 			}
 		}
+		NOT = { government_has_flag = government_is_nomadic }
 	}
 
 	is_valid = {

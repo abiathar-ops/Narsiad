@@ -1,51 +1,51 @@
-﻿d_laamp_nars_1001 = {
-	1168.1.1 = {
-		liege = 0
-		holder = nars_0001
-		government = landless_adventurer_government
-		succession_laws = { landless_adventurer_succession_law }
-		effect = {
-			create_landless_adventurer_title_history_effect = yes
-		set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
-		}
-	}
-	1179.1.1 = {
-		holder = 0
-	}
-}
+﻿# d_laamp_nars_1001 = {
+# 	1168.1.1 = {
+# 		liege = 0
+# 		holder = nars_0001
+# 		government = landless_adventurer_government
+# 		succession_laws = { landless_adventurer_succession_law }
+# 		effect = {
+# 			create_landless_adventurer_title_history_effect = yes
+# 		set_variable = { name = adventurer_creation_reason value = flag:historical }
+# 			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
+# 		}
+# 	}
+# 	1179.1.1 = {
+# 		holder = 0
+# 	}
+# }
 
-d_laamp_nars_1002 = {
-	1168.1.1 = {
-		liege = 0
-		holder = nars_0002
-		government = landless_adventurer_government
-		succession_laws = { landless_adventurer_succession_law }
-		effect = {
-			create_landless_adventurer_title_history_effect = yes
-			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
-		}
-	}
-	1179.1.1 = {
-		holder = 0
-	}
-}
+# d_laamp_nars_1002 = {
+# 	1168.1.1 = {
+# 		liege = 0
+# 		holder = nars_0002
+# 		government = landless_adventurer_government
+# 		succession_laws = { landless_adventurer_succession_law }
+# 		effect = {
+# 			create_landless_adventurer_title_history_effect = yes
+# 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+# 			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
+# 		}
+# 	}
+# 	1179.1.1 = {
+# 		holder = 0
+# 	}
+# }
 
-d_laamp_nars_1003 = {
-	1168.1.1 = {
-		liege = 0
-		holder = nars_0003
-		government = landless_adventurer_government
-		succession_laws = { landless_adventurer_succession_law }
-		effect = {
-			create_landless_adventurer_title_history_effect = yes
-			set_variable = { name = adventurer_creation_reason value = flag:historical }
-			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
-		}
-	}
-	1179.1.1 = {
-		holder = 0
-	}
-}
+# d_laamp_nars_1003 = {
+# 	1168.1.1 = {
+# 		liege = 0
+# 		holder = nars_0003
+# 		government = landless_adventurer_government
+# 		succession_laws = { landless_adventurer_succession_law }
+# 		effect = {
+# 			create_landless_adventurer_title_history_effect = yes
+# 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+# 			destroy_landless_title_no_dlc_effect = { DATE = 1178.1.1 }
+# 		}
+# 	}
+# 	1179.1.1 = {
+# 		holder = 0
+# 	}
+# }
 

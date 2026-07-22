@@ -78,13 +78,14 @@ decision_munitions_research = {
 	}
 
 	is_valid = {
+		government_has_flag = government_is_administrative
 		custom_tooltip = {
 			text = munitions_research_capital_unoccupied_tt
 			capital_province = { is_occupied = no }
 		}
 		OR = {
 			influence >= major_influence_value
-			gold >= major_gold_value_static_max
+			treasury >= major_gold_value_static_max
 		}
 	}
 

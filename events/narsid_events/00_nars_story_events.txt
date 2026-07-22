@@ -28,11 +28,10 @@ nikean_intro.1002 = {
 	desc = nikean_intro.1002.desc
 	theme = emperor
 	override_background = ce1_fullscreen_legitimizing_legend
-	override_effect_2d = { reference = smoke }
-	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 	left_portrait = {
 		character = root
-		animation = personality_bold
+		animation = personality_callous
 		camera = camera_center_large
 	}
 	immediate = {
@@ -40,5 +39,284 @@ nikean_intro.1002 = {
 	}
 	option = {
 		name = nikean_intro.1002.a
+	}
+}
+
+nikean_intro.0001 = {
+	type = character_event
+	window = big_event_window
+	title = nikean_intro.0001.t
+	desc = nikean_intro.0001.desc
+	theme = emperor
+	override_background = bp3_mountain_winter
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+	override_effect_2d = { reference = smoke }
+	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+
+	left_portrait = {
+		character = scope:eleios
+		animation = throne_room_two_handed_passive_1
+		camera = camera_event_left
+	}
+
+	center_portrait = {
+		character = scope:ilione
+		animation = throne_room_one_handed_passive_1
+		camera = camera_center_large
+	}
+
+	right_portrait = {
+		character = scope:strato
+		animation = scheme
+		camera = camera_event_right
+	}
+
+
+	immediate = {
+		create_character = {
+			name = "Alnars"
+            gender = male
+            age = 65
+			location = root.location
+			sexuality = heterosexual
+			faith = faith:nars_religion
+			culture = culture:nars_nikean
+			female = no
+			diplomacy = 10
+			martial = 10
+			stewardship = 40
+			intrigue = 10
+			learning = 40
+			prowess = 30
+			trait = greedy
+			trait = temperate
+			trait = stubborn
+			trait = education_stewardship_5
+			trait = shrewd
+			trait = intellect_good_3
+			disallow_random_traits = yes
+            save_scope_as = alnars
+			after_creation = {
+				remove_bad_traits = yes
+				add_gold = minor_gold_value
+				add_trait = nars_naturalis
+				set_house = house:house_nars_1001
+				add_character_flag = wear_armor
+				give_nickname = nick_soter
+				death = {
+					death_reason = death_murder
+				}
+			}
+        }
+		create_character = {
+			name = "Ēleîos"
+            gender = male
+            age = { 22 23 }
+			location = root.location
+			sexuality = heterosexual
+			faith = faith:nars_religion
+			culture = culture:nars_nikean
+			female = no
+			diplomacy = 10
+			martial = 10
+			stewardship = 40
+			intrigue = 10
+			learning = 40
+			prowess = 30
+			trait = greedy
+			trait = temperate
+			trait = stubborn
+			trait = education_stewardship_5
+			trait = shrewd
+			trait = intellect_good_3
+			disallow_random_traits = yes
+            save_scope_as = eleios
+			after_creation = {
+				remove_bad_traits = yes
+				add_gold = minor_gold_value
+				add_trait = nars_naturalis
+				set_house = house:house_nars_1001
+				give_nickname = nick_ktistes
+				add_character_modifier = eleios_modifier
+				set_father = scope:alnars
+			}
+        }
+		create_character = {
+			name = "Iliónē"
+			gender = female
+            age = { 20 21 }
+			location = root.location
+            faith = faith:nars_religion
+			culture = culture:nars_nikean
+			dynasty = dyn_nars_1001
+			sexuality = bisexual
+			father = nars_0000
+			female = yes
+			trait = lustful
+			trait = diligent
+			trait = vengeful
+			trait = education_martial_4
+			trait = strong
+			trait = physique_good_3
+			trait = scarred
+			trait = nars_naturalis
+			diplomacy = 10
+			martial = 35
+			stewardship = 15
+			intrigue = 15
+			learning = 15
+			prowess = 35
+			disallow_random_traits = yes
+            save_scope_as = ilione
+			after_creation = {
+				remove_bad_traits = yes
+				add_gold = minor_gold_value
+				add_trait = nars_naturalis
+				set_house = house:house_nars_1001
+				give_nickname = nick_keraunos
+				add_character_modifier = ilione_modifier
+				set_father = scope:alnars
+				dynasty = {
+		 			add_dynasty_prestige_level = 10
+                    add_dynasty_prestige = 2750
+		 		}
+			}
+		}
+		create_character = {
+			name = "Stratō"
+			gender = male
+            age = { 18 19 }
+			location = root.location
+            sexuality = bisexual
+			diplomacy = 10
+			martial = 10
+			stewardship = 15
+			intrigue = 40
+			learning = 10
+			prowess = 25
+			faith = faith:nars_religion
+			culture = culture:nars_nikean
+			dynasty = dyn_nars_1001
+			trait = deceitful
+			trait = arbitrary
+			trait = callous
+			trait = education_intrigue_5
+			trait = pure_blooded
+			trait = beauty_good_3
+			trait = nars_naturalis
+			disallow_random_traits = yes
+            save_scope_as = strato
+			after_creation = {
+				remove_bad_traits = yes
+				add_gold = minor_gold_value
+				add_trait = nars_naturalis
+				set_house = house:house_nars_1001
+				give_nickname = nick_kryphios
+				add_character_modifier = strato_modifier
+				set_father = scope:alnars
+			}
+		}
+		hidden_effect = {
+            scope:eleios = {
+                create_landless_adventurer_title_effect = {
+                    REASON = flag:voluntary
+                    FLAVOR_CHAR = scope:eleios
+                }       
+                scope:new_title = {
+                    set_title_name = d_laamp_nars_1001
+                }
+                nars_naturalis_set_tier_xp_effect = yes
+                while = {
+                    count = 3
+                    trigger_event = nikean_courtiers.0002
+                }
+                add_prestige_level = 2
+                add_piety_level = 1
+                add_gold = { 705 1000 }
+                add_prestige = { 705 1000 }
+                
+                domicile = {
+                    nars_laamp_camp_setup_effect = yes
+                }
+            }
+            scope:ilione = {
+                create_landless_adventurer_title_effect = {
+                    REASON = flag:voluntary
+                    FLAVOR_CHAR = scope:ilione
+                }       
+                scope:new_title = {
+                    set_title_name = d_laamp_nars_1002
+                }
+                nars_naturalis_set_tier_xp_effect = yes
+                while = {
+                    count = 3
+                    trigger_event = nikean_courtiers.0002
+                }
+                add_prestige_level = 2
+                add_piety_level = 1
+                add_gold = { 705 1000 }
+                add_prestige = { 705 1000 }
+                
+                domicile = {
+                    nars_laamp_camp_setup_effect = yes
+                }
+            }
+            scope:strato = {
+                create_landless_adventurer_title_effect = {
+                    REASON = flag:voluntary
+                    FLAVOR_CHAR = scope:strato
+                }       
+                scope:new_title = {
+                    set_title_name = d_laamp_nars_1003
+                }
+                nars_naturalis_set_tier_xp_effect = yes
+                while = {
+                    count = 3
+                    trigger_event = nikean_courtiers.0002
+                }
+                add_prestige_level = 2
+                add_piety_level = 1
+                add_gold = { 705 1000 }
+                add_prestige = { 705 1000 }
+                
+                domicile = {
+                    nars_laamp_camp_setup_effect = yes
+                }
+            }
+        }
+	}
+
+	option = {
+		name = nikean_intro.0001.a
+		flavor = danger_dynasty_abandon_tt
+		add_internal_flag = dangerous
+		set_player_character = scope:eleios
+		ai_chance = {
+			base = 0
+		}	
+	}
+	option = {
+		name = nikean_intro.0001.b
+		flavor = danger_dynasty_abandon_tt
+		add_internal_flag = dangerous
+		set_player_character = scope:ilione
+		ai_chance = {
+			base = 0
+		}	
+	}
+	option = {
+		name = nikean_intro.0001.c
+		flavor = danger_dynasty_abandon_tt
+		add_internal_flag = dangerous
+		set_player_character = scope:strato
+		ai_chance = {
+			base = 0
+		}	
+	}
+	option = {
+		name = nikean_intro.0001.d
+		ai_chance = {
+			base = 100
+		}	
 	}
 }

@@ -31,11 +31,6 @@ nikean_realm.1001 = {
 				}
 			}
 		}
-		remove_treasury_or_gold = 275
-	}
-	option = {
-		name = nikean_realm.1001.b
-		remove_character_flag = nikean_realm_1_cooldown # Resets the decision cooldown
 	}
 }
 
@@ -75,12 +70,6 @@ nikean_realm.1011 = {
 				}
 			}
 		}
-		remove_treasury_or_gold = 275
-	}
-	
-	option = {
-		name = nikean_realm.1011.b
-		remove_character_flag = nikean_realm_2_cooldown # Resets the decision cooldown
 	}
 }
 
@@ -116,12 +105,6 @@ nikean_realm.1021 = {
 				}
 			}
 		}
-		remove_treasury_or_gold = 275
-	}
-	
-	option = {
-		name = nikean_realm.1021.b # Corrected from 1011.b
-		remove_character_flag = nikean_realm_3_cooldown # Resets the decision cooldown
 	}
 }
 

@@ -180,7 +180,7 @@ bookmark_strato_administrative_event_effect = {
 }
 
 bookmark_ilione_nomadic_event_effect = {
-    set_house = house:house_nars_1002
+    set_house = house:house_nars_1001
 
     add_character_flag = {
         flag = domicile_culture_and_faith_check
@@ -290,7 +290,7 @@ bookmark_ilione_nomadic_event_effect = {
     }
 }
 
-bookmark_elios_diplomacy_entreaty_effect = {
+bookmark_eleios_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt
     character:nars_0002 = { save_scope_as = ilione }
     character:nars_0003 = { save_scope_as = strato }

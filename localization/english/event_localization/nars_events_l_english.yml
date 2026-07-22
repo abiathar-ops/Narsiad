@@ -1,5 +1,13 @@
 ﻿l_english:
  narsokratia_event.flavor: "The vision of Narsokratía grows ever closer!"
+
+ nikean_intro.0001.t: "Gnōthi Seauton"
+ nikean_intro.0001.desc: "Tales nearby tells of three [adventurers|E], all gleaming with silvery-locks with unusual features, rarely seen in this [region|E] or even anywhere for that matter. These... [nikeans|E] as they call themselves are: [eleios.GetFirstNameNicknamedNoTooltipRegnal], [ilione.GetFirstNameNicknamedNoTooltipRegnal], and [strato.GetFirstNameNicknamedNoTooltipRegnal]."
+ nikean_intro.0001.a: "I wonder what destiny lies before [eleios.GetFirstNamePossessive] path..."
+ nikean_intro.0001.b: "[ilione.GetFirstNamePossessive] bloodstained destiny compels me..."
+ nikean_intro.0001.c: "The spider weaves curtains for [strato.GetFirstNamePossessive] whims..."
+ nikean_intro.0001.d: "Intriguing... but alas, it is mere tall tales."
+
  nikean_intro.1001.t:0 "Gnōthi Seauton"
  nikean_intro.1001.desc:0 "In antiquity, the unquestionable [hegemony|E] of the [nikeanrealm|E] stood at the forefront of civilization. When [nomads|e] and [civil_wars|E] torn our [realm|E] asunder, they believed we were truly destroyed. \n\nThey couldn't be more wrong. \n\nOur last [hegemon|E] did not deign to be the last; with brilliance, he relocated the worthiest of our [prestigious|E] [nobles|E] to dozens of hidden mountain refuges on the fringes of his wider [realm|E]. \n\nIn our absence, the other civilizations of the world scrubbed the [nikeis|E] from history in a brutal ethnocide. Other [cultures|E] had so soon celebrated our obliteration on the wider world to realize their own hubristic delusions about our complete destruction. \n\nAs time passed, the world outside became unrecognizable, but we of the [nikeis|E] endured in our exile. As the [regions|E] around us decayed into barbarism and [tribes|E], we preserved the flame of our [tradition|E], waiting for the perfect moment to return and reclaim our [realms|E]."
  nikean_intro.1001.a:0 "And so time goes on..."

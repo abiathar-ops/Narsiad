@@ -2,7 +2,3 @@
 	name = name_house_nars_1001
 	dynasty = dyn_nars_1001
 }
-house_nars_1002 = {
-	name = name_house_nars_1002
-	dynasty = dyn_nars_1001
-}

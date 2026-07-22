@@ -9,13 +9,13 @@ munitions_research_scheme = {
 	target_type = title
 	cooldown = { years = 3 }
 
-	speed_per_skill_point = t3_spsp_owner_value
-	speed_per_target_skill_point = t3_spsp_target_value
-	spymaster_speed_per_skill_point = t3_spsp_owner_spy_value
+	speed_per_skill_point = t1_spsp_owner_value
+	speed_per_target_skill_point = t1_spsp_target_value
+	spymaster_speed_per_skill_point = t1_spsp_owner_spy_value
 	target_spymaster_speed_per_skill_point = 0
 	tier_speed = 1
-	base_progress_goal = t2_base_phase_length_value
-	base_maximum_success = t2_base_max_success_value
+	base_progress_goal = t1_base_phase_length_value
+	base_maximum_success = t1_base_max_success_value
 	phases_per_agent_charge = 1
 	success_chance_growth_per_skill_point = t2_scgpsp_value
 

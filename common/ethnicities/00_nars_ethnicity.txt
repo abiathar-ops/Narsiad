@@ -249,7 +249,7 @@ nikean = {
 
 	gene_bs_jaw_def = {
 		# Jaw definition is critical for this face, but we allow slight softening
-		10 = { name = jaw_def_pos range = { 0.88 1.00 } }
+		10 = { name = jaw_def_pos range = { 0.15 0.65 } }
 	}
 
 	gene_bs_mouth_lower_lip_def = {
@@ -417,7 +417,88 @@ nikean = {
 	}
 
 	gene_bs_bust = {
-		10 = { name = bust_shape_1_half range = { 0.00 0.22 } }
+        45 = { name = bust_shape_3_half    range = { 0.5 0.6 }    }
+        15 = { name = bust_shape_3_half    range = { 0.4 0.5 }    }
+	}
+
+	gene_bs_butt_size = {
+        # Roughly a bell curve (as can be seen credit to WaffleIron)
+        5 =  { name = butt_size      range = { 0.00 0.14 } }
+        11 = { name = butt_size      range = { 0.14 0.28 } }
+        13 = { name = butt_size      range = { 0.28 0.42 } }
+        11 = { name = butt_size      range = { 0.42 0.58 } }
+        5 = { name = butt_size      range = { 0.58 0.72 } }
+        2 = { name = butt_size      range = { 0.72 0.86 } }
+        1 =  { name = butt_size      range = { 0.86 1.00 } }
+    }
+
+	gene_bs_nipples = {
+        1 =  { name = nipples      range = { 0.00 0.14 } }
+        2 = { name = nipples      range = { 0.14 0.28 } }
+        10 = { name = nipples      range = { 0.28 0.42 } }
+        26 = { name = nipples      range = { 0.42 0.58 } }
+        10 = { name = nipples      range = { 0.58 0.72 } }
+        2 = { name = nipples      range = { 0.72 0.86 } }
+        1 =  { name = nipples      range = { 0.86 1.00 } }
+    }
+
+	gene_bs_hips = {
+        5 =  { name = hips      range = { 0.00 0.14 } }
+        11 = { name = hips      range = { 0.14 0.28 } }
+        13 = { name = hips      range = { 0.28 0.42 } }
+        11 = { name = hips      range = { 0.42 0.58 } }
+        5 = { name = hips      range = { 0.58 0.72 } }
+        2 = { name = hips      range = { 0.72 0.86 } }
+        1 =  { name = hips      range = { 0.86 1.00 } }
+    }
+
+	gene_bs_shoulders = {
+        1 =  { name = shoulders      range = { 0.00 0.14 } }
+        2 = { name = shoulders      range = { 0.14 0.28 } }
+        10 = { name = shoulders      range = { 0.28 0.42 } }
+        26 = { name = shoulders      range = { 0.42 0.58 } }
+        10 = { name = shoulders      range = { 0.58 0.72 } }
+        2 = { name = shoulders      range = { 0.72 0.86 } }
+        1 =  { name = shoulders      range = { 0.86 1.00 } }
+    }
+	
+	gene_bs_waist = {
+        1 =  { name = waist      range = { 0.00 0.14 } }
+        2 = { name = waist      range = { 0.14 0.28 } }
+        10 = { name = waist      range = { 0.28 0.42 } }
+        26 = { name = waist      range = { 0.42 0.58 } }
+        10 = { name = waist      range = { 0.58 0.72 } }
+        2 = { name = waist      range = { 0.72 0.86 } }
+        1 =  { name = waist      range = { 0.86 1.00 } }
+    }
+	
+	gene_areolas = {
+        16 = { name = areolas_0      range = { 0.00 0.00 } }
+        32 = { name = areolas_1      range = { 0.00 0.00 } }
+        16 = { name = areolas_2      range = { 0.00 0.00 } }
+        8 = { name = areolas_3      range = { 0.00 0.00 } }
+        4 = { name = areolas_4      range = { 0.00 0.00 } }
+        2 =  { name = areolas_5       range = { 0.00 0.00 } }
+    }
+	
+	gene_bs_body_fat_distribution = {
+		10 = { name = upper_body_high_full		range = { 0.5 0.5 } }
+		10 = { name = upper_body_high_half		range = { 0.5 0.5 } }
+		10 = { name = body_mid					range = { 0.5 0.5 } }
+		10 = { name = lower_body_high_half		range = { 0.5 0.5 } }
+		10 = { name = lower_body_high_full		range = { 0.5 0.5 } }
+	}
+	
+	gene_bs_upper_body_muscle = {
+		10 = { name = upper_body_muscle			range = { 0.0 0.0 } }
+	}
+	
+	gene_bs_lower_body_muscle = {
+		10 = { name = lower_body_muscle			range = { 0.0 0.0 } }
+	}
+	
+	gene_muscle_definition = {
+		10 = { name = body_muscle_definition	range = { 0.0 0.0 } }
 	}
 
 	gene_age = {

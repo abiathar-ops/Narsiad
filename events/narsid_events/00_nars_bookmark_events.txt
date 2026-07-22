@@ -21,7 +21,7 @@ nikean_bookmark.0010 = {
             create_anduril_effect = yes
         }
         add_trait = scholar
-        elios_intro_effect = yes
+        eleios_intro_effect = yes
         ai_chance = {
 			base = 100	#The AI should never get this event, but if they do, shouldn't opt in.
 		}
@@ -31,7 +31,7 @@ nikean_bookmark.0010 = {
         custom_tooltip = nikean_courtiers.tt
         custom_tooltip = nikean_diplomacy.tt
         hidden_effect = {
-            bookmark_elios_diplomacy_entreaty_effect = yes
+            bookmark_eleios_diplomacy_entreaty_effect = yes
         }
         trigger_event = nikean_courtiers.0002
         trigger_event = nikean_courtiers.0002
@@ -502,7 +502,7 @@ nikean_bookmark.1003 = {
             }
             hidden_effect = {
                 scope:event_messenger = {
-                    death = { death_reason = death_vanished }
+                    silent_disappearance_ai_effect = yes
                 }
             }
         }

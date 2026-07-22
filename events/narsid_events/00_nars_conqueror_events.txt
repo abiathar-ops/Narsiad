@@ -18,6 +18,10 @@ nars_conqueror.0001 = {
 		#camera = camera_event_center_away
 	}
 
+	immediate = {
+		play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+	}
+
 	option = { 
 		name = nars_conqueror.0001.a
 		flavor = narsokratia_event.flavor
@@ -635,7 +639,7 @@ nars_conqueror.1100 = {
             trait = adventurer
             save_scope_as = hoplite
         }
-
+		scope:hoplite = { add_character_flag = wear_armor }
     }
 
     # Option A: Pay gold for special soldiers
@@ -740,114 +744,192 @@ nars_conqueror.1200 = {
 	override_background = throne_room_east
 
 	trigger = {
-		has_trait = nars_conqueror
-		any_vassal = {
-			faith = root.faith
-			has_vassal_stance = zealot
+		any_sub_realm_barony = {
+			exists = holder
+			county = {
+				county_control >= 100
+				county_opinion >= 0
+			}
+			title_province = {
+				available_loot >= 5
+			}
 		}
 	}
 
-	immediate = {
-		random_vassal = {
-			limit = {
-				faith = root.faith
-				has_vassal_stance = zealot
-			}
-			save_scope_as = zealous_speaker
-		}
-		random_vassal = {
-			limit = {
-				faith = root.faith
-				has_vassal_stance = glory_hound
-			}
-			save_scope_as = glory_hound_speaker
-		}
-	}
-	
 	left_portrait = {
-		character = scope:zealous_speaker
-		animation = reverence
+		character = root
+		animation = ecstasy
 	}
 	right_portrait = {
-		character = scope:glory_hound_speaker
-		animation = marshal
+		character = scope:portrait_faithful
+		animation = hunting_carcass_start
+		hide_info = yes
+	}
+	
+	immediate = {
+		save_scope_as = root_scope
+		random_sub_realm_barony = {
+			limit = {
+				exists = holder
+				county = {
+					county_control >= 100
+					county_opinion >= 0
+				}
+				title_province = {
+					available_loot >= 5
+				}
+			}
+			save_scope_as = zealot_barony
+		}
+		if = {
+			limit = {
+				exists = scope:zealot_barony.title_province
+				any_pool_character = {
+					province = scope:zealot_barony.title_province
+					is_available_ai_adult = yes
+					has_no_particular_noble_roots_trigger = yes
+					culture = scope:zealot_barony.title_province.culture
+				}
+			}
+			random_pool_character = {
+				province = scope:zealot_barony.title_province
+				limit = {
+					is_available_ai_adult = yes
+					has_no_particular_noble_roots_trigger = yes
+					culture = scope:zealot_barony.title_province.culture
+				}
+				save_scope_as = portrait_faithful
+			}
+		}
+		else = {
+			scope:zealot_barony.holder = {
+				create_character = {
+					template = generic_peasant_character
+					location = scope:zealot_barony.title_province
+					culture = scope:zealot_barony.title_province.culture
+					faith = scope:zealot_barony.title_province.faith
+					gender_female_chance = root_soldier_female_chance
+					save_scope_as = portrait_faithful
+				}
+			}
+		}
 	}
 
-	# Option A: Assure them of continued Restorationist efforts
 	option = {
 		name = nars_conqueror.1200.a
-		custom_tooltip = nars_conqueror.1200.a.tt
-		remove_treasury_or_gold = 75
-		add_piety = 125
-		add_prestige = 75
-		every_vassal = {
+		
+		if = {
 			limit = {
-				faith = root.faith
-				has_vassal_stance = zealot
+				scope:zealot_barony.title_province = {
+					has_holding_type = nomad_holding
+				}
+				government_has_flag = government_is_nomadic
 			}
-			add_opinion = {
-				target = root
-				modifier = pious_opinion
-				opinion = 20
-				years = 2
+			add_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+				multiply = 1
+			}
+			domicile = {
+				change_herd = major_herd_gain
 			}
 		}
-		every_vassal = {
-			limit = {
-				has_vassal_stance = glory_hound
-			}
-			add_opinion = {
-				target = root
-				modifier = respect_opinion
-				opinion = 10
-				years = 1
+		else = {
+			add_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+				multiply = 3
 			}
 		}
-		stress_impact = {
-			zealous = medium_stress_impact_loss
-			brave = medium_stress_impact_loss
-			ambitious = medium_stress_impact_loss
-			content = medium_stress_impact_gain
-			cynical = medium_stress_impact_gain
-			craven = medium_stress_impact_gain
+		ai_chance = {
+			base = 100
 		}
 	}
-	# Option B: Extort them lmao
-	option = {
+
+	option = { 
 		name = nars_conqueror.1200.b
-		custom_tooltip = nars_conqueror.1200.b.tt
-		remove_treasury_or_gold = major_gold_value
-		add_prestige = major_prestige_value
-		every_vassal = {
-			limit = {
-				faith = root.faith
-				has_vassal_stance = zealot
-			}
-			add_opinion = {
-				target = root
-				modifier = impious_opinion
-				opinion = -20
-				years = 2
+		
+		trigger = {
+			NOT = {
+				has_character_modifier = nars_faithful_supplies_modifier
 			}
 		}
-		every_vassal = {
+		
+		if = {
 			limit = {
-				has_vassal_stance = glory_hound
+				scope:zealot_barony.title_province = {
+					has_holding_type = nomad_holding
+				}
+				government_has_flag = government_is_nomadic
 			}
-			add_opinion = {
-				target = root
-				modifier = requested_money_opinion
-				opinion = -10
-				years = 1
+			add_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+				multiply = 0.25
+			}
+			domicile = {
+				change_herd = medium_herd_gain
 			}
 		}
-		stress_impact = {
-			zealous = medium_stress_impact_gain
-			brave = medium_stress_impact_gain
-			ambitious = medium_stress_impact_gain
-			content = medium_stress_impact_loss
-			cynical = medium_stress_impact_loss
-			craven = medium_stress_impact_loss
+		else = {
+			add_treasury_or_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+			}
+		}
+		
+		add_character_modifier = {
+			modifier = nars_faithful_supplies_modifier
+			years = 20
+		}
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { 
+		name = nars_conqueror.1200.c
+		
+		trigger = {
+			NOT = {
+				has_character_modifier = nars_faithful_draft_modifier
+			}
+		}
+		
+		if = {
+			limit = {
+				scope:zealot_barony.title_province = {
+					has_holding_type = nomad_holding
+				}
+				government_has_flag = government_is_nomadic
+			}
+			add_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+				multiply = 0.25
+			}
+			domicile = {
+				change_herd = medium_herd_gain
+			}
+		}
+		else = {
+			add_treasury_or_gold = {
+				value = scope:zealot_barony.title_province.available_loot
+			}
+		}
+		
+		add_character_modifier = {
+			modifier = nars_faithful_draft_modifier
+			years = 20
+		}
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+	after = {
+		scope:portrait_faithful = {
+			hidden_effect = {
+				death = {
+					death_reason = death_disappearance
+				}
+			}
 		}
 	}
 }
@@ -914,7 +996,10 @@ nars_conqueror.1300 = {
             save_scope_as = commander_1
 			prowess = { 15 30 }
         }
-        scope:commander_1 = { add_to_list = vanguard_commanders_list }
+        scope:commander_1 = { 
+			add_to_list = vanguard_commanders_list
+			add_character_flag = wear_armor 
+		}
 
         # Spawn Vanguard Commander 2 (Lower Left Portrait)
         create_character = {
@@ -928,7 +1013,10 @@ nars_conqueror.1300 = {
             save_scope_as = commander_2
 			prowess = { 15 30 }
         }
-        scope:commander_2 = { add_to_list = vanguard_commanders_list }
+        scope:commander_2 = { 
+			add_to_list = vanguard_commanders_list
+			add_character_flag = wear_armor
+		} 
 
         # Spawn Vanguard Commander 3 (Lower Center Portrait)
         create_character = {
@@ -942,7 +1030,10 @@ nars_conqueror.1300 = {
             save_scope_as = commander_3
 			prowess = { 15 30 }
         }
-        scope:commander_3 = { add_to_list = vanguard_commanders_list }
+        scope:commander_3 = { 
+			add_to_list = vanguard_commanders_list
+			add_character_flag = wear_armor 
+		}
 
         # Spawn Vanguard Commander 4 (Off-screen)
         create_character = {
@@ -956,10 +1047,16 @@ nars_conqueror.1300 = {
             save_scope_as = commander_4
 			prowess = { 15 30 }
         }
-        scope:commander_4 = { add_to_list = vanguard_commanders_list }
+        scope:commander_4 = { 
+			add_to_list = vanguard_commanders_list 
+			add_character_flag = wear_armor
+		}
     }
 
     option = {
+		trigger = {
+			NOT = { has_character_modifier = nars_vanguard_spoils_modifier }
+		}
         name = nars_conqueror.1300.a
         remove_short_term_gold = major_gold_value
         add_character_modifier = {
@@ -969,13 +1066,20 @@ nars_conqueror.1300 = {
 		hidden_effect = {
 			every_in_list = {
 				list = vanguard_commanders_list
-				death = { death_reason = death_vanished }
+				death = {
+					death_reason = death_disappearance
+				}
 			}
 		}
     }
 
     option = {
         name = nars_conqueror.1300.b
+		trigger = {
+			scope:settlement_county = {
+				NOT = { has_county_modifier = nars_veteran_settlement_modifier }
+			}
+		}
         scope:settlement_county = {
             add_county_modifier = {
                 modifier = nars_veteran_settlement_modifier
@@ -987,7 +1091,9 @@ nars_conqueror.1300 = {
 		hidden_effect = {
 			every_in_list = {
 				list = vanguard_commanders_list
-				death = { death_reason = death_vanished }
+				death = {
+		 			death_reason = death_disappearance
+		 		}
 			}
 		}
     }
@@ -1042,7 +1148,9 @@ nars_conqueror.1300 = {
 				hidden_effect = {
 					every_in_list = {
 						list = vanguard_commanders_list
-						death = { death_reason = death_vanished }
+						death = {
+		 		death_reason = death_disappearance
+		 	}
 					}
 				} 
             }
@@ -1212,7 +1320,7 @@ nars_conqueror.1500 = {
             education = diplomacy_education_4
             trait = arrogant
 			trait = brave
-            trait = poet
+            trait = lifestyle_poet
             gender = male
             culture = root.culture
             faith = root.faith
@@ -1238,7 +1346,9 @@ nars_conqueror.1500 = {
         }
 		hidden_effect = {
 			scope:arrogant_bard = {
-				death = { death_reason = death_vanished }
+				death = {
+		 		death_reason = death_disappearance
+		 	}
 			}
 		}  
 
@@ -1291,13 +1401,16 @@ nars_conqueror.1500 = {
                 add_prestige = massive_prestige_value
 				hidden_effect = {
 					scope:arrogant_bard = {
-						death = { death_reason = death_vanished }
+						death = {
+		 		death_reason = death_disappearance
+		 	}
 					}
 				}
                 send_interface_message = {
                     title = nars_conqueror.1500.c.success_msg.t
                     desc = nars_conqueror.1500.c.success_msg.desc
-                    type = event_diplomacy_good_desc
+                    type = event_prowess_good_desc
+					left_icon = scope:arrogant_bard
                 }
             }
             50 = {
@@ -1312,15 +1425,16 @@ nars_conqueror.1500 = {
                         years = 10
                     }
                 }
-				hidden_effect = {
-					scope:arrogant_bard = {
-                    	death = { death_reason = death_vanished }
-                	}
-				}
+				scope:arrogant_bard = {
+					death = {
+		 		death_reason = death_disappearance
+		 	}
+                }
 				send_interface_message = {
                     title = nars_conqueror.1500.c.failure_msg.t
                     desc = nars_conqueror.1500.c.failure_msg.desc
-                    type = event_diplomacy_bad_desc
+                    type = event_prowess_good_desc
+					left_icon = scope:arrogant_bard
                 }
             }
         }

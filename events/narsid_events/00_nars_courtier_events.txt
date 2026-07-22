@@ -416,6 +416,8 @@ nikean_courtiers.0011 = {
                 }
             }
         }
+		scope:savant = { add_character_flag = wear_armor }
+		scope:pugilist = { add_character_flag = wear_armor }
     }
 
 	option = {

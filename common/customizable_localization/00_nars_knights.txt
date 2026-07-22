@@ -1,48 +1,48 @@
-KnightCulture = {
-	type = character
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = language_nars }
-		}
-		localization_key = knight_nars
-	}
-	text = {
-		localization_key = knight_default
-		fallback = yes
-	}
-}
+# KnightCulture = {
+# 	type = character
+# 	text = {
+# 		trigger = {
+# 			culture = { has_cultural_pillar = language_nars }
+# 		}
+# 		localization_key = knight_nars
+# 	}
+# 	text = {
+# 		localization_key = knight_default
+# 		fallback = yes
+# 	}
+# }
 
-KnightCulturePlural = {
-	parent = KnightCulture
-	suffix = "_plural"
-}
+# KnightCulturePlural = {
+# 	parent = KnightCulture
+# 	suffix = "_plural"
+# }
 
-KnightCultureNoTooltip = {
-	parent = KnightCulture
-	suffix = "_no_tooltip"
-}
+# KnightCultureNoTooltip = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip"
+# }
 
-KnightCulturePluralNoTooltip = {
-	parent = KnightCulture
-	suffix = "_no_tooltip_plural"
-}
+# KnightCulturePluralNoTooltip = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip_plural"
+# }
 
-KnightCultureNoTooltipLowercase = {
-	parent = KnightCulture
-	suffix = "_no_tooltip_lowercase"
-}
+# KnightCultureNoTooltipLowercase = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip_lowercase"
+# }
 
-KnightCulturePluralNoTooltipLowercase = {
-	parent = KnightCulture
-	suffix = "_no_tooltip_lowercase_plural"
-}
+# KnightCulturePluralNoTooltipLowercase = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip_lowercase_plural"
+# }
 
-KnightCulturePluralPossessiveNoTooltipLowercase = {
-	parent = KnightCulture
-	suffix = "_no_tooltip_lowercase_plural_possessive"
-}
+# KnightCulturePluralPossessiveNoTooltipLowercase = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip_lowercase_plural_possessive"
+# }
 
-KnightCultureAdjectiveNoTooltipLowercase = {
-	parent = KnightCulture
-	suffix = "_no_tooltip_lowercase_adjective"
-}
+# KnightCultureAdjectiveNoTooltipLowercase = {
+# 	parent = KnightCulture
+# 	suffix = "_no_tooltip_lowercase_adjective"
+# }

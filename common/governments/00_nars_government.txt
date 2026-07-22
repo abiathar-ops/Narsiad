@@ -23,7 +23,7 @@
 	}
 
 	primary_heritages = { heritage_nars }
-	preferred_religions = { nars_religion }
+	preferred_religions = { nikean_religion }
 
 	ai = {
 		use_legends = yes

@@ -27,34 +27,34 @@
         # Calculate rank immediately directly on the story scope
     }
 
-    effect_group = { #narsscion
-		days = { 300 360 }
+    # effect_group = { #narsscion
+	# 	days = { 300 360 }
 
-		trigger = {
-			story_owner = {
-				is_available = yes
-				is_alive = yes
-				is_adult = yes
-                top_liege = this
-                has_trait = nars_naturalis
-			}
-		}
+	# 	trigger = {
+	# 		story_owner = {
+	# 			is_available = yes
+	# 			is_alive = yes
+	# 			is_adult = yes
+    #             top_liege = this
+    #             has_trait = nars_naturalis
+	# 		}
+	# 	}
 
-		first_valid = {
-			triggered_effect = {
-				trigger = { 
-                    always = yes
-                }
-				effect = {
-					story_owner = {
-						trigger_event = {
-							on_action = ongoing_nars_naturalis_events
-						}
-					}
-				}
-			}
-		}
-	}
+	# 	first_valid = {
+	# 		triggered_effect = {
+	# 			trigger = { 
+    #                 always = yes
+    #             }
+	# 			effect = {
+	# 				story_owner = {
+	# 					trigger_event = {
+	# 						on_action = ongoing_nars_naturalis_events
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
     on_owner_death = {
         end_story = yes

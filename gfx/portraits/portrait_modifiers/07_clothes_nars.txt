@@ -1,9 +1,9 @@
-﻿nikean_characters_accessories = {
+﻿historical_nars_accessories = {
 	usage = game
 	selection_behaviour = max
 	priority = 50
 
-	70000010_nikean = {
+	70000011_nikean = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -19,67 +19,18 @@
 			}
 			accessory = {
 				mode = add
-				gene = clothes
-				template = ep2_religious_muslim_ihram_clothes
-				accessory = m_clothes_religious_ep2_muslim_hajj_02
-			}
-			accessory = {
-				mode = add
 				gene = beards
 				template = fp3_iranian_beards_straight
 				accessory = m_beard_fp3_iranian_01
 			}
 			accessory = {
 				mode = add
-				gene = headgear
-				template = no_headgear
-				accessory = empty
-			}
-			accessory = {
-				mode = add
-				gene = cloaks
-				template = no_cloaks
-				accessory = empty
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 2000
-				exists = this
-				exists = character:nars_0000
-				this = character:nars_0000
-			}
-		}
-	}
-	70000011_nikean = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = legwear
-				template = no_legwear
-				accessory = empty
-			}
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = western_hairstyles_wavy
-				accessory = male_hair_western_02
-			}
-			accessory = {
-				mode = add
 				gene = clothes
 				template = ep2_religious_muslim_ihram_clothes
 				accessory = m_clothes_religious_ep2_muslim_hajj_02
 			}
 			accessory = {
 				mode = add
-				gene = beards
-				template = no_beard
-				accessory = empty
-			}
-			accessory = {
-				mode = add
 				gene = headgear
 				template = no_headgear
 				accessory = empty
@@ -95,9 +46,7 @@
 			base = 0
 			modifier = {
 				add = 2000
-				exists = this
-				exists = character:nars_0001
-				this = character:nars_0001
+				has_character_modifier = eleios_modifier
 			}
 		}
 	}
@@ -106,8 +55,8 @@
 			accessory = {
 				mode = add
 				gene = legwear
-				template = pol_common_legwear
-				accessory = f_legwear_sec_pol_common_01
+				template = ccp7_nivkh_com_legwear
+				accessory = f_legwear_sec_ccp_nivkh_com_02
 			}
 			accessory = {
 				mode = add
@@ -138,9 +87,7 @@
 			base = 0
 			modifier = {
 				add = 2000
-				exists = this
-				exists = character:nars_0002
-				this = character:nars_0002
+				has_character_modifier = ilione_modifier
 			}
 		}
 	}
@@ -185,64 +132,28 @@
 		}
 		weight = {
 			base = 0
-			modifier = {
-				add = 2000
-				exists = this
-				exists = character:nars_0003
-				this = character:nars_0003
-			}
-		}
-	}
-	70000014_nikean = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = fp3_hairstyles_iranian_straight
-				accessory = f_hair_fp3_iranian_02
-			}
-		}
-		weight = {
+			weight = {
 			base = 0
 			modifier = {
 				add = 2000
-				exists = this
-				exists = character:nars_0004
-				this = character:nars_0004
+				has_character_modifier = strato_modifier
 			}
 		}
+		}
 	}
-	70000015_nikean = {
+	polymetis_clothes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = legwear
-				template = ccp7_nivkh_com_legwear
-				accessory = m_legwear_sec_ccp_nivkh_com_02
+				template = no_legwear
+				accessory = empty
 			}
 			accessory = {
 				mode = add
 				gene = clothes
-				template = pol_war_nobility_clothes
-				accessory = f_clothes_sec_pol_war_nob_01
-			}
-			accessory = {
-				mode = add
-				gene = beards
-				template = fp3_iranian_beards_straight
-				accessory = m_beard_fp3_iranian_01
-			}
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = tgp_southeast_hairstyles
-				accessory = male_hair_indian_02
-			}
-			accessory = {
-				mode = add
-				gene = special_headgear_spectacles
-				template = eyepatch
-				accessory = male_headgear_special_eyepatch_01
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
 			}
 			accessory = {
 				mode = add
@@ -253,56 +164,6 @@
 			accessory = {
 				mode = add
 				gene = cloaks
-				template = fp1_cloak
-				accessory = male_furs_secular_fp1_nobility_01
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 2000
-				exists = this
-				exists = character:nars_0005
-				this = character:nars_0005
-			}
-		}
-	}
-	70000016_nikean = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = fp3_hairstyles_iranian_straight
-				accessory = f_hair_fp3_iranian_02
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 2000
-				exists = this
-				exists = character:nars_0006
-				this = character:nars_0006
-			}
-		}
-	}
-	70000017_nikean = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = ep3_byzantine_hairstyle
-				accessory = m_hair_ep3_byzantine_01
-			}
-			accessory = {
-				mode = add
-				gene = beards
-				template = no_beard
-				accessory = empty
-			}
-			accessory = {
-				mode = add
-				gene = cloaks
 				template = no_cloaks
 				accessory = empty
 			}
@@ -311,40 +172,98 @@
 			base = 0
 			modifier = {
 				add = 2000
-				exists = this
-				exists = character:nars_0007
-				this = character:nars_0007
+				has_character_flag = polymetis_clothes
 			}
 		}
 	}
-	70000018_nikean = {
+	nars_beard = {
 		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = ep3_byzantine_hairstyle
-				accessory = m_hair_ep3_byzantine_01
-			}
 			accessory = {
 				mode = add
 				gene = beards
 				template = no_beard
 				accessory = empty
 			}
-			accessory = {
-				mode = add
-				gene = cloaks
-				template = no_cloaks
-				accessory = empty
-			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 2000
-				exists = this
-				exists = character:nars_0008
-				this = character:nars_0008
+				add = 1000
+				is_ethnically_nikean = yes
+				age <= 35
+				shown_in_ruler_designer = yes
+			}
+		}
+	}
+	nars_war_male = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = ccp7_nivkh_com_legwear
+				accessory = m_legwear_sec_ccp_nivkh_com_01
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = pol_war_nobility_clothes
+				accessory = m_clothes_sec_pol_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era1_war_nobility
+				accessory = m_headgear_sec_ep2_western_era1_war_nob_01
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 3000
+				is_nikean = yes
+				is_female = no
+				OR = {
+					portrait_wear_armor_currently_in_army_trigger = yes
+					portrait_wear_armor_trigger = yes
+					has_character_flag = need_military_outfit
+				}
+			}
+		}
+	}
+	nars_war_female = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = ccp7_nivkh_com_legwear
+				accessory = f_legwear_sec_ccp_nivkh_com_02
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = pol_war_nobility_clothes
+				accessory = f_clothes_sec_pol_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era1_war_nobility
+				accessory = f_headgear_sec_ep2_western_era1_war_nob_01
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 3000
+				is_nikean = yes
+				is_female = yes
+				OR = {
+					portrait_wear_armor_currently_in_army_trigger = yes
+					portrait_wear_armor_trigger = yes
+					has_character_flag = need_military_outfit
+				}
 			}
 		}
 	}
