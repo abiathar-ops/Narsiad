@@ -1,4 +1,4 @@
-namespace = nikean_intro
+﻿namespace = nikean_intro
 
 nikean_intro.1001 = {
 	type = character_event
@@ -16,8 +16,30 @@ nikean_intro.1001 = {
 	}
 
 	option = {
+		trigger = {
+			NOR = {
+				has_character_modifier = eleios_modifier
+				has_character_modifier = ilione_modifier
+				has_character_modifier = strato_modifier
+			}
+		}
 		name = nikean_intro.1001.a
 		trigger_event = nikean_intro.1002
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+
+	option = {
+		trigger = {
+			is_ai = no 
+			or = {
+				has_character_modifier = eleios_modifier
+				has_character_modifier = ilione_modifier
+				has_character_modifier = strato_modifier
+			}
+		}
+		name = nikean_intro.1001.b
+		trigger_event = nikean_intro.0002
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 }
 
@@ -42,13 +64,15 @@ nikean_intro.1002 = {
 	}
 }
 
+
+
 nikean_intro.0001 = {
 	type = character_event
 	window = big_event_window
 	title = nikean_intro.0001.t
 	desc = nikean_intro.0001.desc
 	theme = emperor
-	override_background = bp3_mountain_winter
+	override_background = fp3_zoroastrian_temple
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 	override_effect_2d = { reference = smoke }
 	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
@@ -71,7 +95,6 @@ nikean_intro.0001 = {
 		camera = camera_event_right
 	}
 
-
 	immediate = {
 		create_character = {
 			name = "Alnars"
@@ -82,30 +105,32 @@ nikean_intro.0001 = {
 			faith = faith:nars_religion
 			culture = culture:nars_nikean
 			female = no
-			diplomacy = 10
+			sexuality = heterosexual
+			diplomacy = 50
 			martial = 10
-			stewardship = 40
+			stewardship = 15
 			intrigue = 10
-			learning = 40
-			prowess = 30
-			trait = greedy
-			trait = temperate
-			trait = stubborn
-			trait = education_stewardship_5
-			trait = shrewd
-			trait = intellect_good_3
-			disallow_random_traits = yes
+			learning = 10
+			prowess = 25
+			trait = patient
+			trait = calm
+			trait = gregarious
+			trait = education_diplomacy_5
+			trait = lifestyle_poet
+			trait = scholar
+			trait = beauty_good_3
+			trait = physique_good_3
             save_scope_as = alnars
 			after_creation = {
-				remove_bad_traits = yes
 				add_gold = minor_gold_value
 				add_trait = nars_naturalis
 				set_house = house:house_nars_1001
-				add_character_flag = wear_armor
+				add_character_modifier = alnars_modifier
 				give_nickname = nick_soter
 				death = {
 					death_reason = death_murder
 				}
+				remove_bad_traits = yes
 			}
         }
 		create_character = {
@@ -129,16 +154,18 @@ nikean_intro.0001 = {
 			trait = education_stewardship_5
 			trait = shrewd
 			trait = intellect_good_3
-			disallow_random_traits = yes
+			trait = athletic
+			trait = lifestyle_mystic
             save_scope_as = eleios
 			after_creation = {
-				remove_bad_traits = yes
 				add_gold = minor_gold_value
 				add_trait = nars_naturalis
 				set_house = house:house_nars_1001
 				give_nickname = nick_ktistes
 				add_character_modifier = eleios_modifier
 				set_father = scope:alnars
+				remove_bad_traits = yes
+				create_story = story_nars_naturalis
 			}
         }
 		create_character = {
@@ -166,10 +193,8 @@ nikean_intro.0001 = {
 			intrigue = 15
 			learning = 15
 			prowess = 35
-			disallow_random_traits = yes
             save_scope_as = ilione
 			after_creation = {
-				remove_bad_traits = yes
 				add_gold = minor_gold_value
 				add_trait = nars_naturalis
 				set_house = house:house_nars_1001
@@ -178,8 +203,10 @@ nikean_intro.0001 = {
 				set_father = scope:alnars
 				dynasty = {
 		 			add_dynasty_prestige_level = 10
-                    add_dynasty_prestige = 2750
+                    add_dynasty_prestige = 4750
 		 		}
+				remove_bad_traits = yes
+				create_story = story_nars_naturalis
 			}
 		}
 		create_character = {
@@ -203,8 +230,9 @@ nikean_intro.0001 = {
 			trait = education_intrigue_5
 			trait = pure_blooded
 			trait = beauty_good_3
+			trait = witch
+			trait = journaller
 			trait = nars_naturalis
-			disallow_random_traits = yes
             save_scope_as = strato
 			after_creation = {
 				remove_bad_traits = yes
@@ -214,83 +242,287 @@ nikean_intro.0001 = {
 				give_nickname = nick_kryphios
 				add_character_modifier = strato_modifier
 				set_father = scope:alnars
+				create_story = story_nars_naturalis
 			}
 		}
 		hidden_effect = {
+            # ==========================================
+            # ELEIOS ADVENTURER SETUP
+            # ==========================================
             scope:eleios = {
-                create_landless_adventurer_title_effect = {
-                    REASON = flag:voluntary
-                    FLAVOR_CHAR = scope:eleios
-                }       
-                scope:new_title = {
+                save_scope_as = new_landless_adventurer
+                create_adventurer_title = {
+                    name = d_laamp_nars_1001
+                    holder = scope:new_landless_adventurer
+                    save_scope_as = new_title
+                }
+                save_scope_value_as = {
+                    name = adventurer_creation_reason
+                    value = flag:voluntary
+                }
+                
+                # Starter pack merged with original sibling wealth
+                add_gold = { 705 1000 }
+                add_prestige = { 705 1000 }
+                add_prestige_level = 2
+                add_piety_level = 1
+                
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = change
+                    add_claim_on_loss = no
+                }
+                scope:new_title ?= {
+                    create_landless_adventurer_title_history_effect = yes
+                    set_variable = {
+                        name = adventurer_creation_reason
+                        value = scope:adventurer_creation_reason
+                    }
+                    change_title_holder = {
+                        holder = scope:new_landless_adventurer
+                        change = scope:change
+                    }
                     set_title_name = d_laamp_nars_1001
+                    add_title_law = landless_adventurer_succession_law 
                 }
-                nars_naturalis_set_tier_xp_effect = yes
-                while = {
-                    count = 3
-                    trigger_event = nikean_courtiers.0002
-                }
-                add_prestige_level = 2
-                add_piety_level = 1
-                add_gold = { 705 1000 }
-                add_prestige = { 705 1000 }
+                resolve_title_and_vassal_change = scope:change
+                scope:new_title = { save_scope_as = new_landless_adventurer_title }
                 
-                domicile = {
-                    nars_laamp_camp_setup_effect = yes
+                scope:new_landless_adventurer = {
+                    if = {
+                        limit = {
+                            NOT = { has_government = landless_adventurer_government }
+                        }
+                        change_government = landless_adventurer_government
+                    }
+                    if = {
+                        limit = {
+                            NOT = { has_realm_law = landless_adventurer_succession_law }
+                        }
+                        add_realm_law = landless_adventurer_succession_law
+                    }
+                    if = {
+                        limit = {
+                            has_realm_law = crown_authority_0
+                        }
+                        remove_realm_law = crown_authority_0
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
+                    nars_naturalis_set_tier_xp_effect = yes
+                    
+                    domicile = { 
+                        nars_laamp_camp_setup_effect = yes
+                        change_provisions = starting_provisions_value 
+                    }
+                    
+                    while = {
+                        count = 3
+                        trigger_event = nikean_courtiers.0002
+                    }
+                }       
+                populate_location_with_contracts_effect = {
+                    AREA_CHAR = scope:new_landless_adventurer
+                    AMOUNT = 5
+                }                               
+                spawn_army = {
+                    name = nikean_troop_intro_name
+                    men_at_arms = {
+                        type = maa_hoplitai
+                        stacks = 35
+                    }
+                    location = root.location
+                    uses_supply = yes
+                    inheritable = yes
                 }
+                hidden_effect = {
+                    create_anduril_effect = yes
+                }
+                trigger_event = { id = nikean_intro.1001 days = 1 }
+                intro_standard_effect = yes
             }
+
+            # ==========================================
+            # ILIONE ADVENTURER SETUP
+            # ==========================================
             scope:ilione = {
-                create_landless_adventurer_title_effect = {
-                    REASON = flag:voluntary
-                    FLAVOR_CHAR = scope:ilione
-                }       
-                scope:new_title = {
+                save_scope_as = new_landless_adventurer
+                create_adventurer_title = {
+                    name = d_laamp_nars_1002
+                    holder = scope:new_landless_adventurer
+                    save_scope_as = new_title
+                }
+                save_scope_value_as = {
+                    name = adventurer_creation_reason
+                    value = flag:voluntary
+                }
+                
+                add_gold = { 705 1000 }
+                add_prestige = { 705 1000 }
+                add_prestige_level = 2
+                add_piety_level = 1
+                
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = change
+                    add_claim_on_loss = no
+                }
+                scope:new_title ?= {
+                    create_landless_adventurer_title_history_effect = yes
+                    set_variable = {
+                        name = adventurer_creation_reason
+                        value = scope:adventurer_creation_reason
+                    }
+                    change_title_holder = {
+                        holder = scope:new_landless_adventurer
+                        change = scope:change
+                    }
                     set_title_name = d_laamp_nars_1002
+                    add_title_law = landless_adventurer_succession_law 
                 }
-                nars_naturalis_set_tier_xp_effect = yes
-                while = {
-                    count = 3
-                    trigger_event = nikean_courtiers.0002
-                }
-                add_prestige_level = 2
-                add_piety_level = 1
-                add_gold = { 705 1000 }
-                add_prestige = { 705 1000 }
+                resolve_title_and_vassal_change = scope:change
+                scope:new_title = { save_scope_as = new_landless_adventurer_title }
                 
-                domicile = {
-                    nars_laamp_camp_setup_effect = yes
-                }
-            }
-            scope:strato = {
-                create_landless_adventurer_title_effect = {
-                    REASON = flag:voluntary
-                    FLAVOR_CHAR = scope:strato
+                scope:new_landless_adventurer = {
+                    if = {
+                        limit = { NOT = { has_government = landless_adventurer_government } }
+                        change_government = landless_adventurer_government
+                    }
+                    if = {
+                        limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
+                        add_realm_law = landless_adventurer_succession_law
+                    }
+                    if = {
+                        limit = { has_realm_law = crown_authority_0 }
+                        remove_realm_law = crown_authority_0
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
+                    nars_naturalis_set_tier_xp_effect = yes
+                    
+                    domicile = { 
+                        nars_laamp_camp_setup_effect = yes
+                        change_provisions = starting_provisions_value 
+                    }
+                    
+                    while = {
+                        count = 3
+                        trigger_event = nikean_courtiers.0002
+                    }
                 }       
-                scope:new_title = {
-                    set_title_name = d_laamp_nars_1003
+                populate_location_with_contracts_effect = {
+                    AREA_CHAR = scope:new_landless_adventurer
+                    AMOUNT = 5
+                }                               
+                spawn_army = {
+                    name = nikean_troop_intro_name
+                    men_at_arms = {
+                        type = maa_hoplitai
+                        stacks = 35
+                    }
+                    location = root.location
+                    uses_supply = yes
+                    inheritable = yes
                 }
-                nars_naturalis_set_tier_xp_effect = yes
-                while = {
-                    count = 3
-                    trigger_event = nikean_courtiers.0002
+                trigger_event = { id = nikean_intro.1001 days = 1 }
+                intro_standard_effect = yes
+            }
+
+            # ==========================================
+            # STRATO ADVENTURER SETUP
+            # ==========================================
+            scope:strato = {
+                save_scope_as = new_landless_adventurer
+                create_adventurer_title = {
+                    name = d_laamp_nars_1003
+                    holder = scope:new_landless_adventurer
+                    save_scope_as = new_title
                 }
-                add_prestige_level = 2
-                add_piety_level = 1
+                save_scope_value_as = {
+                    name = adventurer_creation_reason
+                    value = flag:voluntary
+                }
+                
                 add_gold = { 705 1000 }
                 add_prestige = { 705 1000 }
+                add_prestige_level = 2
+                add_piety_level = 1
                 
-                domicile = {
-                    nars_laamp_camp_setup_effect = yes
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = change
+                    add_claim_on_loss = no
                 }
+                scope:new_title ?= {
+                    create_landless_adventurer_title_history_effect = yes
+                    set_variable = {
+                        name = adventurer_creation_reason
+                        value = scope:adventurer_creation_reason
+                    }
+                    change_title_holder = {
+                        holder = scope:new_landless_adventurer
+                        change = scope:change
+                    }
+                    set_title_name = d_laamp_nars_1003
+                    add_title_law = landless_adventurer_succession_law 
+                }
+                resolve_title_and_vassal_change = scope:change
+                scope:new_title = { save_scope_as = new_landless_adventurer_title }
+                
+                scope:new_landless_adventurer = {
+                    if = {
+                        limit = { NOT = { has_government = landless_adventurer_government } }
+                        change_government = landless_adventurer_government
+                    }
+                    if = {
+                        limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
+                        add_realm_law = landless_adventurer_succession_law
+                    }
+                    if = {
+                        limit = { has_realm_law = crown_authority_0 }
+                        remove_realm_law = crown_authority_0
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
+                    nars_naturalis_set_tier_xp_effect = yes
+                    
+                    domicile = { 
+                        nars_laamp_camp_setup_effect = yes
+                        change_provisions = starting_provisions_value 
+                    }
+                    
+                    while = {
+                        count = 3
+                        trigger_event = nikean_courtiers.0002
+                    }
+                }       
+                populate_location_with_contracts_effect = {
+                    AREA_CHAR = scope:new_landless_adventurer
+                    AMOUNT = 5
+                }                               
+                spawn_army = {
+                    name = nikean_troop_intro_name
+                    men_at_arms = {
+                        type = maa_hoplitai
+                        stacks = 35
+                    }
+                    location = root.location
+                    uses_supply = yes
+                    inheritable = yes
+                }
+                trigger_event = { id = nikean_intro.1001 days = 1 }
+                intro_standard_effect = yes
             }
         }
 	}
-
 	option = {
 		name = nikean_intro.0001.a
 		flavor = danger_dynasty_abandon_tt
 		add_internal_flag = dangerous
 		set_player_character = scope:eleios
+		scope:ilione = {
+			save_scope_as = target_1
+		}
+		scope:strato = {
+			save_scope_as = target_2
+		}
 		ai_chance = {
 			base = 0
 		}	
@@ -300,6 +532,12 @@ nikean_intro.0001 = {
 		flavor = danger_dynasty_abandon_tt
 		add_internal_flag = dangerous
 		set_player_character = scope:ilione
+		scope:eleios = {
+			save_scope_as = target_1
+		}
+		scope:strato = {
+			save_scope_as = target_2
+		}
 		ai_chance = {
 			base = 0
 		}	
@@ -309,6 +547,12 @@ nikean_intro.0001 = {
 		flavor = danger_dynasty_abandon_tt
 		add_internal_flag = dangerous
 		set_player_character = scope:strato
+		scope:eleios = {
+			save_scope_as = target_1
+		}
+		scope:ilione = {
+			save_scope_as = target_2
+		}
 		ai_chance = {
 			base = 0
 		}	
@@ -319,4 +563,151 @@ nikean_intro.0001 = {
 			base = 100
 		}	
 	}
+}
+
+nikean_intro.0002 = { 
+    type = character_event
+    title = nikean_intro.0002.t
+    
+    desc = {
+        desc = nikean_intro.0002.desc        
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    has_character_modifier = eleios_modifier
+                }
+                desc = nikean_intro.0002.eleios
+            }
+            triggered_desc = {
+                trigger = {
+                    has_character_modifier = ilione_modifier
+                }
+                desc = nikean_intro.0002.ilione
+            }
+            # Strato used as fallback
+            desc = nikean_intro.0002.strato
+        }
+        
+        # 3. The concluding paragraph
+        desc = nikean_intro.0002.end
+    }
+
+    window = big_event_window
+    theme = emperor
+    override_background = fp3_zoroastrian_temple
+    override_effect_2d = { reference = smoke }
+    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    
+    left_portrait = {
+        character = root
+        animation = sadness
+        camera = camera_body_right
+    }
+    right_portrait = {
+        character = scope:diplomat
+        animation = throne_room_messenger_3
+        camera = camera_event_right
+    }
+    # right_portrait = {
+    #     character = scope:alnars
+    #     animation = dead_pose
+    #     camera = camera_event_right
+    # }
+    lower_center_portrait = {
+        character = scope:target_1
+    }
+    lower_right_portrait = {
+        character = scope:target_2
+    }
+    
+    immediate = {        
+        father = {
+            save_scope_as = alnars
+        }
+        random_sibling = {
+            save_scope_as = target_1
+        }
+        random_sibling = {
+            limit = {
+                NOT = { this = scope:target_1 }
+            }
+            save_scope_as = target_2
+        }
+        random_courtier = {
+            limit = {
+                is_adult = yes
+                # Ensure we don't accidentally pick one of the siblings if they ended up in the court
+                NOT = { this = scope:target_1 }
+                NOT = { this = scope:target_2 }
+            }
+            add_character_flag = need_priest_outfit
+            save_scope_as = diplomat
+        }
+    }
+    
+    option = {
+        name = nikean_intro.0002.a
+        custom_tooltip = nikean_diplomacy.tt
+        hidden_effect = {
+            nikean_diplomacy_entreaty_effect = yes
+        }
+    }
+    option = {
+        name = nikean_intro.0002.b
+        custom_tooltip = nikean_incivility.tt
+        if = {
+            limit = {
+                has_character_modifier = eleios_modifier
+            }
+            if = {
+				limit = {
+					exists = location.kingdom.holder
+				}
+				add_pressed_claim = location.kingdom
+			}
+			else_if = {
+				limit = {
+					exists = location.duchy.holder
+				}
+				add_pressed_claim = location.duchy
+			}
+			else_if = {
+				limit = {
+					exists = location.county.holder
+				}
+				add_pressed_claim = location.county
+			}
+        }
+        if = {
+            limit = {
+                has_character_modifier = ilione_modifier
+            }
+            spawn_army = {
+                levies = 1250
+                men_at_arms = {
+                    type = maa_hoplitai
+                    stacks = 10
+                }
+                location = root.location # Safer than capital_province for landless camps
+                name = event_troop_default_name
+            }
+        }
+		if = {
+            limit = {
+                has_character_modifier = strato_modifier
+            }
+            custom_tooltip = intrigue_challenge
+            add_character_flag = intrigue_duel_on_attack
+        }
+        set_relation_rival = {
+            reason = rival_claimant_fight
+            target = scope:target_1
+        } 
+        set_relation_rival = {
+            reason = rival_claimant_fight
+            target = scope:target_2
+        } 
+        add_prestige = { 1250 2132 }
+        add_gold = { 1250 2750 }
+    }
 }

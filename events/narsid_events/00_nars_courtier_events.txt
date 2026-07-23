@@ -121,6 +121,7 @@ nikean_courtiers.0001 = {
 				save_scope_as = nikean_courtier
 				after_creation = {
 					add_trait = nars_naturalis
+					nars_naturalis_set_tier_xp_effect = yes
 				}
 			}
 		}
@@ -215,6 +216,7 @@ nikean_courtiers.0002 = {
 				prowess = { 15 30 }
                 after_creation = {
                     add_trait = nars_naturalis
+					nars_naturalis_set_tier_xp_effect = yes
                 }
             }
         }
@@ -328,6 +330,7 @@ nikean_courtiers.0011 = {
                 save_scope_as = pugilist
                 after_creation = {
                     add_trait = nars_naturalis
+					nars_naturalis_set_tier_xp_effect = yes
                 }
             }
 
@@ -413,6 +416,7 @@ nikean_courtiers.0011 = {
                 save_scope_as = savant
                 after_creation = {
                     add_trait = nars_naturalis
+					nars_naturalis_set_tier_xp_effect = yes
                 }
             }
         }

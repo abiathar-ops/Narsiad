@@ -6,10 +6,12 @@
 	
 	allowed_for_character = {
 		has_trait = nars_conqueror
+		is_nikean = yes
+		is_orphic = yes
 	}
 
 	allowed_for_character_display_regardless = {
-		prestige_level >= 1
+		prestige_level >= 3
 	}
 
 	allowed_against_character_display_regardless = {
@@ -484,7 +486,7 @@
 					every_vassal = {
 						custom = custom.every_vassal
 						add_opinion = {
-							modifier = liege_lost_mongol_invasion_war
+							modifier = disapproval
 							target = prev
 							opinion = -40
 						}

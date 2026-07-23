@@ -214,7 +214,7 @@ create_h_narsokratia_effect = {
 				}
 				set_de_jure_liege_title = title:h_narsokratia
 			}
-			nikean_hegemony_vassal_conversion_effect = yes
+			nikean_vassal_conversion_effect = yes
 		}
 		
 	}

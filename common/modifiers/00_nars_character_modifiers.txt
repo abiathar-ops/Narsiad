@@ -11,6 +11,11 @@ intro_modifier = {
 	enemy_hostile_scheme_success_chance_max_add = -1000
 }
 
+alnars_modifier = {
+	icon = diplomacy_positive
+	monthly_dynasty_prestige = 0.5
+}
+
 eleios_modifier = {
 	icon = stewardship_positive
 	domain_limit = 3

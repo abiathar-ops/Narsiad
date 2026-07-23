@@ -11,7 +11,7 @@
 
 d_laamp_nars_1001 = {
 	color = { 100 100 100 }
-	capital = c_rayy
+	capital = c_byzantion
 
 	definite_form = yes
 	landless = yes
@@ -19,12 +19,11 @@ d_laamp_nars_1001 = {
 	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
-
 }
 
 d_laamp_nars_1002 = {
 	color = { 100 100 100 }
-	capital = c_marash
+	capital = c_byzantion
 
 	definite_form = yes
 	landless = yes
@@ -32,7 +31,6 @@ d_laamp_nars_1002 = {
 	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
-
 }
 
 d_laamp_nars_1003 = {
@@ -45,5 +43,4 @@ d_laamp_nars_1003 = {
 	ruler_uses_title_name = yes
 	no_automatic_claims = yes
 	destroy_if_invalid_heir = yes
-
 }

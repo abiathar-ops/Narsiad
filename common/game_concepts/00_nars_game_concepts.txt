@@ -75,3 +75,8 @@ nikean_onslaught = {
 	texture = "gfx/interface/icons/casus_bellis/county_conquest_cb.dds"
 	parent = casus_belli
 }
+
+nikean_migration = {
+	texture = "gfx/interface/icons/casus_bellis/county_conquest_cb.dds"
+	parent = casus_belli
+}

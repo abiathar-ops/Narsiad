@@ -1,5 +1,5 @@
-﻿NGovernment = {
-	GOVERNMENT_TYPES = {
-		"narsokratia_government"
-	}
-}
+﻿# NGovernment = {
+# 	GOVERNMENT_TYPES = {
+# 		"narsokratia_government"
+# 	}
+# }

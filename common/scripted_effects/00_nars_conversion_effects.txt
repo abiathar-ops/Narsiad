@@ -1,41 +1,4 @@
-nikean_kingdom_vassal_conversion_effect = {
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 30
-			set_character_faith = root.faith
-		}
-	}
-	every_vassal = {
-		limit = { is_ai = yes }
-		random = {
-			chance = 30
-			set_culture = root.culture
-		}
-	}
-}
-
-nikean_empire_vassal_conversion_effect = {
- 	every_vassal = {
- 		limit = { is_ai = yes }
- 		random = {
- 			chance = 60
- 			set_character_faith = root.faith
- 		}
- 	}
- 	every_vassal = {
- 		limit = { is_ai = yes }
- 		random = {
- 			chance = 60
- 			set_culture = root.culture
- 		}
- 	}
-	every_vassal = {
-		change_government = administrative_government
-	}
-}
-
-nikean_hegemony_vassal_conversion_effect = {
+nikean_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
 		change_government = administrative_government
@@ -46,14 +9,20 @@ nikean_hegemony_vassal_conversion_effect = {
 			liege = root
 			is_ai = yes
 		}
-		set_character_faith = root.faith
+		random = {
+			chance = 65
+			set_character_faith = root.faith
+		}
 	}
 	every_vassal = {
 		limit = {
 			liege = root
 			is_ai = yes
 		}
-		set_culture = root.culture
+		random = {
+			chance = 65
+			set_culture = root.culture
+		}
 	}
 }
 
@@ -80,262 +49,75 @@ nikean_evangelize_hegemony_county_effect = {
 	}
 }
 
-bookmark_strato_administrative_event_effect = {
-    # --- RIG THE TARGETS ---
-    title:e_byzantium.holder = { save_scope_as = recipient }
-    character:nars_0003 = { save_scope_as = actor }
-
-    # --- STRATŌ TRANSITION ---
-    scope:actor = {
-        set_house = house:house_nars_1001
-
-        # 1. SAVE ALL FOLLOWERS BEFORE LIQUIDATION
-        every_courtier = { add_to_list = strato_followers }
-        every_prisoner = { add_to_list = strato_prisoners }
-
-        hidden_effect = {
-            # Liquidate the landless mercenary camp
-            laamp_clear_domicile_buildings_liquidator_effect = yes
-        }
-        
-        # 2. DESTROY CAMP
-        destroy_laamp_effect = { ADVENTURER = scope:actor }
-        
-        hidden_effect = {
-            # 3. FORCE STRATŌ INTO THE BYZANTINE EMPEROR'S COURT TEMPORARILY
-            scope:recipient = {
-                add_courtier = scope:actor
-                return_to_court = yes
-            }
-        }
-        
-        # 4. GRANT STRATŌ HIS NOBLE FAMILY AND ESTATE
-        create_noble_family_effect = { GOVERNMENT_GIVER = scope:recipient }
-        
-        hidden_effect = {
-            # 5. RESTORE HIS ENTIRE CAMP OF FOLLOWERS TO HIS NEW ESTATE
-            every_in_list = {
-                list = strato_followers
-                limit = { NOT = { liege_or_court_owner = scope:actor } }
-                scope:actor = { add_courtier = prev }
-            }
-        }
-        
-        # Swear Fealty to the Byzantine Emperor
-        create_title_and_vassal_change = {
-            type = swear_fealty
-            add_claim_on_loss = no
-            save_scope_as = title_change
-        }
-        change_liege = {
-            liege = scope:recipient
-            change = scope:title_change
-        }
-        resolve_title_and_vassal_change = scope:title_change
-        
-        # Force Estate location and grant randomized starting buildings
-        hidden_effect = {
-            domicile ?= {
-                move_domicile = root.capital_province
-                
-                # Baseline Estate Upgrades
-                add_domicile_building = estate_main_01
-                add_domicile_building = estate_main_02
-                add_domicile_building = estate_main_03
-                
-                # Roll for Internal Specialized Rooms
-                random_list = {
-                    10 = {
-                        add_domicile_building = servants_quarters_01
-                        add_domicile_building = servants_quarters_02
-                    }
-                    10 = {
-                        add_domicile_building = office_01
-                        add_domicile_building = office_02
-                    }
-                    10 = {
-                        add_domicile_building = prison_01
-                        add_domicile_building = prison_02
-                    }
-                }
-                
-                # Roll for External Infrastructure
-                random_list = {
-                    10 = {
-                        add_domicile_building = market_01
-                        add_domicile_building = market_02
-                    }
-                    10 = {
-                        add_domicile_building = workshop_01
-                        add_domicile_building = workshop_02
-                    }
-                    10 = {
-                        add_domicile_building = barracks_01
-                        add_domicile_building = barracks_02
-                    }
-                }
-            }
-        }
-    }
-}
-
-bookmark_ilione_nomadic_event_effect = {
-    set_house = house:house_nars_1001
-
-    add_character_flag = {
-        flag = domicile_culture_and_faith_check
-        days = 1
-    }
-    set_variable = {
-        name = previous_provisions
-        value = root.domicile.provisions
-    }
-    change_government = nomad_government
-    add_trait = adventurer
-    hidden_effect = {
-        create_title_and_vassal_change = {
-            type = conquest
-            save_scope_as = change
-            add_claim_on_loss = no
-        }
-        title:c_tana = {
-            change_title_holder = {
-                holder = root
-                change = scope:change
-                take_baronies = yes
-            }
-        }
-        title:c_kuzeytorg = {
-            change_title_holder = {
-                holder = root
-                change = scope:change
-                take_baronies = yes
-            }
-        }
-        resolve_title_and_vassal_change = scope:change
-
-        create_title_and_vassal_change = {
-            type = granted
-            save_scope_as = duchy_change
-            add_claim_on_loss = no
-        }
-        title:d_tana = {
-            change_title_holder = {
-                holder = root
-                change = scope:duchy_change
-            }
-        }
-        resolve_title_and_vassal_change = scope:duchy_change
-        
-        # Herd mechanics and randomized starting yurt buildings
-        domicile ?= {
-            change_herd = {
-                value = root.var:previous_provisions
-                multiply = 0.25
-            }
-            
-            # Baseline Yurt Upgrades[cite: 3]
-            add_domicile_building = yurt_main_01
-            add_domicile_building = yurt_main_02
-            add_domicile_building = yurt_main_03
-            add_domicile_building = yurt_main_04
-            
-            # Roll for External Warfare or Herd focus[cite: 3]
-            random_list = {
-                10 = {
-                    add_domicile_building = mass_warfare_yurt_01
-                    add_domicile_building = mass_warfare_yurt_02
-                }
-                10 = {
-                    add_domicile_building = character_warfare_yurt_01
-                    add_domicile_building = character_warfare_yurt_02
-                }
-                10 = {
-                    add_domicile_building = herd_welfare_yurt_01
-                    add_domicile_building = herd_welfare_yurt_02
-                }
-            }
-            
-            # Roll for Internal Main Yurt Upgrades[cite: 3]
-            random_list = {
-                10 = {
-                    add_domicile_building = raid_main_yurt_01
-                    add_domicile_building = raid_main_yurt_02
-                }
-                10 = {
-                    add_domicile_building = herd_main_yurt_01
-                    add_domicile_building = herd_main_yurt_02
-                }
-                10 = {
-                    add_domicile_building = kurultai_main_yurt_01
-                    add_domicile_building = kurultai_main_yurt_02
-                }
-            }
-        }
-    }
-
-    set_primary_title_to = title:d_tana
-
-    title:d_laamp_nars_1002 = {
-        if = {
-            limit = { exists = this }
-            destroy_title = this
-        }
-    }
-    
-    custom_tooltip = adopt_nomadic_ways_decision_herd_tt
-    if = {
-        limit = { NOT = { has_trait = nomadic_philosophy } }
-        add_trait = nomadic_philosophy
-    }
-}
-
-bookmark_eleios_diplomacy_entreaty_effect = {
+nikean_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt
-    character:nars_0002 = { save_scope_as = ilione }
-    character:nars_0003 = { save_scope_as = strato }
     
     hidden_effect = {
+        # Dynamically identify the other two siblings based on the root character's modifier
+        if = {
+            limit = { has_character_modifier = eleios_modifier }
+            father = {
+                random_child = { limit = { has_character_modifier = ilione_modifier } save_scope_as = target_1 }
+                random_child = { limit = { has_character_modifier = strato_modifier } save_scope_as = target_2 }
+            }
+        }
+        else_if = {
+            limit = { has_character_modifier = ilione_modifier }
+            father = {
+                random_child = { limit = { has_character_modifier = eleios_modifier } save_scope_as = target_1 }
+                random_child = { limit = { has_character_modifier = strato_modifier } save_scope_as = target_2 }
+            }
+        }
+        else_if = {
+            limit = { has_character_modifier = strato_modifier }
+            father = {
+                random_child = { limit = { has_character_modifier = eleios_modifier } save_scope_as = target_1 }
+                random_child = { limit = { has_character_modifier = ilione_modifier } save_scope_as = target_2 }
+            }
+        }
+        
         random_list = {
             20 = {
                 modifier = {
                     add = 10
-                    scope:ilione = { opinion: { target = root value >= 50 } }
-                    scope:strato = { opinion: { target = root value >= 50 } }
+                    scope:target_1 = { opinion: { target = root value >= 50 } }
+                    scope:target_2 = { opinion: { target = root value >= 50 } }
                 }
                 
-                scope:ilione = {
+                scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = ilione_followers_list }
+                    every_courtier = { add_to_list = target_1_followers_list }
                     destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
                     
                     root = { 
-                        add_courtier = scope:ilione 
+                        add_courtier = scope:target_1 
                         return_to_court = yes 
                     }
                     
                     hidden_effect = {
                         every_in_list = {
-                            list = ilione_followers_list
+                            list = target_1_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
                         }
                     }
                 }
                 
-                scope:strato = {
+                scope:target_2 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = strato_followers_list }
+                    every_courtier = { add_to_list = target_2_followers_list }
                     destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
                     
                     root = { 
-                        add_courtier = scope:strato 
+                        add_courtier = scope:target_2 
                         return_to_court = yes 
                     }
                     
                     hidden_effect = {
                         every_in_list = {
-                            list = strato_followers_list
+                            list = target_2_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
                         }
@@ -344,64 +126,66 @@ bookmark_eleios_diplomacy_entreaty_effect = {
                 
                 send_interface_toast = {
                     title = nikean_diplomacy_both_join_toast_t
-                    left_icon = scope:ilione
-                    right_icon = scope:strato
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
                     custom_tooltip = nikean_diplomacy_both_join_toast_tt
                 }
             }
             25 = {
-                scope:ilione = {
+                scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = ilione_followers_list }
+                    every_courtier = { add_to_list = target_1_followers_list }
                     destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
                     
                     root = { 
-                        add_courtier = scope:ilione 
+                        add_courtier = scope:target_1 
                         return_to_court = yes 
                     }
                     
                     hidden_effect = {
                         every_in_list = {
-                            list = ilione_followers_list
+                            list = target_1_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
                         }
                     }
                 }
-                scope:strato = {
+                scope:target_2 = {
                     add_opinion = {
                         target = root
-                        modifier = nars_refused_entreaty_opinion
+                        modifier = disapproving_opinion
                     }
                 }
                 
                 send_interface_toast = {
-                    title = nikean_diplomacy_ilione_joins_toast_t
-                    left_icon = scope:ilione
-                    right_icon = scope:strato
-                    custom_tooltip = nikean_diplomacy_ilione_joins_toast_tt
+                    title = nikean_diplomacy_target_1_joins_toast_t
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
+                    custom_tooltip = nikean_diplomacy_target_1_joins_toast_tt
                 }
             }
             25 = {
-                scope:ilione = {
+                scope:target_1 = {
                     add_opinion = {
                         target = root
-                        modifier = nars_refused_entreaty_opinion
+                        modifier = disapproving_opinion
                     }
                 }
-                scope:strato = {
+                scope:target_2 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = strato_followers_list }
+                    every_courtier = { add_to_list = target_2_followers_list }
                     destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
                     
                     root = { 
-                        add_courtier = scope:strato 
+                        add_courtier = scope:target_2 
                         return_to_court = yes 
                     }
                     
                     hidden_effect = {
                         every_in_list = {
-                            list = strato_followers_list
+                            list = target_2_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
                         }
@@ -409,30 +193,30 @@ bookmark_eleios_diplomacy_entreaty_effect = {
                 }
                 
                 send_interface_toast = {
-                    title = nikean_diplomacy_strato_joins_toast_t
-                    left_icon = scope:strato
-                    right_icon = scope:ilione
-                    custom_tooltip = nikean_diplomacy_strato_joins_toast_tt
+                    title = nikean_diplomacy_target_2_joins_toast_t
+                    left_icon = scope:target_2
+                    right_icon = scope:target_1
+                    custom_tooltip = nikean_diplomacy_target_2_joins_toast_tt
                 }
             }
             30 = {
-                scope:ilione = {
+                scope:target_1 = {
                     add_opinion = {
                         target = root
-                        modifier = nars_refused_entreaty_opinion
+                        modifier = disapproving_opinion
                     }
                 }
-                scope:strato = {
+                scope:target_2 = {
                     add_opinion = {
                         target = root
-                        modifier = nars_refused_entreaty_opinion
+                        modifier = disapproving_opinion
                     }
                 }
                 
                 send_interface_toast = {
                     title = nikean_diplomacy_neither_join_toast_t
-                    left_icon = scope:ilione
-                    right_icon = scope:strato
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
                     custom_tooltip = nikean_diplomacy_neither_join_toast_tt
                 }
             }
