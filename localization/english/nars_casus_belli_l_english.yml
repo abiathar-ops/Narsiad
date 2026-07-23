@@ -19,7 +19,6 @@
  narsokratia_devastation_tt: "The target realm suffers severe @control_icon![control|E] and @development_icon![development|E] loss as the [hoplites|E] exact their onslaught."
  narsokratia_onslaught_gain_titles_tt: "Gains all [landed|E] [titles|E] held personally by [defender.GetShortUIName], and subjugates their [vassals|E]"
 
- NARSOKRATIA_MIGRATION_NAME: "[ATTACKER.GetNamePossessive] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  NARSOKRATIA_MIGRATION_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  narsokratia_migration_cb: "[nikean_migration|E]"
  NARSOKRATIA_MIGRATION_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')]Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
