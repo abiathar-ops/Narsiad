@@ -161,7 +161,7 @@ nikean_courtiers.0002 = {
     immediate = {
         # Loops exactly the number of times specified
         while = {
-            count = 5 
+            count = 5
             
             create_character = {
                 employer = root # Automatically adds them directly to your landless camp/court

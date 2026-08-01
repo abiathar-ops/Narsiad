@@ -331,7 +331,7 @@ name_list_nars = {
 		Histiaios Hodoiteles Homilia Homoloichos Homoloiodora Homolois_2 Homolophantos Homonoia
 		Hoplon Hybristas Hyllos Hymenaios Hymnis Hypatias Hyperbatas_2 Hyperbole
 		Hypereides_2 Hypothema Hypsagora Iamiskos Ias Iatron Ikaros Ilaikos
-		Ilione Ion Iphidamos Iranichos Isandros Isarchos Ischolaa Iseas
+		Ion Iphidamos Iranichos Isandros Isarchos Ischolaa Iseas
 		Isidike Isidote Isidotos Isigeneia Isochrysos Isodemos Isolochos Isomentor
 		Isthmionike Italia Ithake Ithippina Ithydamos Ithykles Ithyllichos Ithytreitos
 		Kabeiro Kabirichos Kabiro Kaikie Kairichos Kalchedon Kalio Kalioukion

@@ -17,3 +17,7 @@
  nars_naturalis.name: "Nikēís"
  nars_naturalis.no_actor: "Nikean-Blooded"
  trait_nars_naturalis_desc: "Nikēís blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
+
+ nars_alnars.name: "Sōtēr"
+ nars_alnars.no_actor: "Savior-Deliverer"
+ trait_nars_alnars_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] culture, that he rescued from the most dire of circumstances, honors him. Were it not for him, that culture could now have been extinguished"

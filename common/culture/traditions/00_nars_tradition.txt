@@ -34,10 +34,8 @@ tradition_nars_war = {
 tradition_nars_agriculture = { # Agrarian & Artisan
     category = societal
     layers = { 0 = learning 1 = mena3 4 = roman_ceremonies.dds }
-     is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+    is_shown = {
+		has_cultural_tradition = tradition_nars_war
 	}
 	can_pick = {
 		OR = {
@@ -47,7 +45,6 @@ tradition_nars_agriculture = { # Agrarian & Artisan
     }
     parameters = { 
         farm_estates_pastures_unlock = yes
-        better_disease_resistance = yes
         hard_working_traits_more_valued = yes
         diligent_trait_more_common = yes
         pensive_trait_more_common = yes
@@ -59,10 +56,8 @@ tradition_nars_agriculture = { # Agrarian & Artisan
 }
 
 tradition_nars_science = { 
-     is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+    is_shown = {
+		has_cultural_tradition = tradition_nars_war
 	}
 	can_pick = {
 		OR = {
@@ -87,9 +82,7 @@ tradition_nars_science = {
 
 tradition_nars_politics = { # Court & Diplomacy
     is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+		has_cultural_tradition = tradition_nars_war
 	}
 	can_pick = {
 		OR = {
@@ -150,9 +143,7 @@ tradition_nars_merchant = { # Maritime & Mercantile
     category = societal
     layers = { 0 = learning 1 = mena 4 = knight.dds } 
     is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
+		has_cultural_tradition = tradition_nars_war
 	}
 	can_pick = {
 		OR = {

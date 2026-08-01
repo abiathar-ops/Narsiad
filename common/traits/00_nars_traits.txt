@@ -1,6 +1,7 @@
 nars_conqueror = {
 	icon = campeador.dds
 	category = fame
+	shown_in_ruler_designer = no
 
 	vassal_limit = 50
 	dread_gain_mult = 0.05
@@ -51,6 +52,7 @@ nars_conqueror = {
 nars_scion = {
 	icon = scion.dds
 	category = fame
+	shown_in_ruler_designer = no
 
 	inherit_chance = 100
 	parent_inheritance_sex = all
@@ -102,7 +104,7 @@ nars_naturalis = {
 	icon = nikeis.dds
 	desc = trait_nars_naturalis_desc		
 	physical = yes
-	shown_in_ruler_designer =no
+	shown_in_ruler_designer = no
 
  	name = {
         first_valid = {
@@ -115,7 +117,7 @@ nars_naturalis = {
     }
 
 	health = 2
-	life_expectancy = 30
+	life_expectancy = 15
 	inbreeding_chance = -0.30
 	ignore_negative_culture_opinion = yes
 	ignore_different_faith_opinion = yes
@@ -170,4 +172,25 @@ nars_naturalis = {
 	compatibility = {
 		nars_scion = @pos_compat_medium
 	}
+}
+
+nars_alnars = {
+	icon = alnars.dds
+	desc = trait_nars_alnars_desc		
+	physical = yes
+	shown_in_ruler_designer = no
+
+ 	name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = nars_alnars.no_actor
+			}
+            desc = nars_alnars.name
+        }
+    }
+
+	health = 2
+	life_expectancy = 35
+	glory_hound_opinion = 25
 }

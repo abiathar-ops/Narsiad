@@ -86,7 +86,7 @@ nikean_faith.1011 = {
 	option = {
 		name = nikean_faith.1011.a
 		flavor = narsokratia_event.flavor
-		remove_treasury_or_gold = major_treasury_or_gold_value
+		remove_treasury_or_gold = massive_treasury_or_gold_value
 	}
 }
 
@@ -267,7 +267,7 @@ nikean_faith.1041 = {
 				return_trip = no # One way
 			}
 		}
-		remove_treasury_or_gold = major_treasury_or_gold_value
+		remove_treasury_or_gold = medium_treasury_or_gold_value
 	}
 }
 

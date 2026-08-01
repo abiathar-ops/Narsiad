@@ -45,7 +45,7 @@
 		weight = {
 			base = 0
 			modifier = {
-				add = 2000
+				add = 4000
 				has_character_modifier = eleios_modifier
 			}
 		}
@@ -86,7 +86,7 @@
 		weight = {
 			base = 0
 			modifier = {
-				add = 2000
+				add = 4000
 				has_character_modifier = ilione_modifier
 			}
 		}
@@ -132,13 +132,10 @@
 		}
 		weight = {
 			base = 0
-			weight = {
-			base = 0
 			modifier = {
-				add = 2000
+				add = 4000
 				has_character_modifier = strato_modifier
 			}
-		}
 		}
 	}
 	polymetis_clothes = {
@@ -167,15 +164,18 @@
 				template = no_cloaks
 				accessory = empty
 			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = sp5_western_beards
+				accessory = m_beard_sp5_western_01
+			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 2000
-				or = {
-					has_character_flag = polymetis_clothes
-					has_character_modifier = alnars_modifier
-				}
+				has_trait = nars_alnars
 			}
 		}
 	}
@@ -229,7 +229,7 @@
 			modifier = {
 				add = 1000
 				is_ethnically_nikean = yes
-				age <= 35
+				age <= 40
 				shown_in_ruler_designer = yes
 			}
 		}
@@ -253,6 +253,18 @@
 				gene = headgear
 				template = ep2_western_era1_war_nobility
 				accessory = m_headgear_sec_ep2_western_era1_war_nob_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = fp1_cloak
+				range = { 0 1 }
+			}
+			morph = {
+				mode = add
+				gene = gene_bs_cloak
+				template = cloak
+				value = 1.0
 			}
 		}
 		outfit_tags = { military_outfit }
@@ -289,6 +301,18 @@
 				gene = headgear
 				template = ep2_western_era1_war_nobility
 				accessory = f_headgear_sec_ep2_western_era1_war_nob_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = fp1_cloak
+				range = { 0 1 }
+			}
+			morph = {
+				mode = add
+				gene = gene_bs_cloak
+				template = cloak
+				value = 1.0
 			}
 		}
 		outfit_tags = { military_outfit }

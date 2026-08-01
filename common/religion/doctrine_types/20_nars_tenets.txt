@@ -25,8 +25,6 @@ tenet_nars_pantheon = {
 	parameters = {
 		building_temples_gives_development = yes
 		monastic_schools_allowed_in_every_holding_type = yes
-		seek_indulgences_active = yes
-		seek_indulgences_active_2 = yes
 	}
 }
 
@@ -204,7 +202,6 @@ tenet_nars_vestals = {
 		literalist_debate_enabled = yes
 	}
 	character_modifier = {
-		fertility = 0.25
 		stress_gain_mult = -0.25
 		stress_loss_mult = 0.25
 		development_growth_factor = 0.25

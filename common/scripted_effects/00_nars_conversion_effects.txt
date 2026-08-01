@@ -84,54 +84,60 @@ nikean_diplomacy_entreaty_effect = {
                     scope:target_2 = { opinion: { target = root value >= 50 } }
                 }
                 
-                scope:target_1 = {
-                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = target_1_followers_list }
-                    destroy_laamp_effect = { ADVENTURER = this }
-                    remove_trait = adventurer
-                    
-                    root = { 
-                        add_courtier = scope:target_1 
-                        return_to_court = yes 
-                    }
-                    
-                    hidden_effect = {
-                        every_in_list = {
-                            list = target_1_followers_list
-                            limit = { NOT = { liege_or_court_owner = root } }
-                            root = { add_courtier = prev }
-                        }
-                    }
-                }
-                
-                scope:target_2 = {
-                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = target_2_followers_list }
-                    destroy_laamp_effect = { ADVENTURER = this }
-                    remove_trait = adventurer
-                    
-                    root = { 
-                        add_courtier = scope:target_2 
-                        return_to_court = yes 
-                    }
-                    
-                    hidden_effect = {
-                        every_in_list = {
-                            list = target_2_followers_list
-                            limit = { NOT = { liege_or_court_owner = root } }
-                            root = { add_courtier = prev }
-                        }
-                    }
-                }
-                
                 send_interface_toast = {
                     title = nikean_diplomacy_both_join_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
                     custom_tooltip = nikean_diplomacy_both_join_toast_tt
                 }
+                
+                scope:target_1 = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = target_1_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
+                    
+                    root = { 
+                        add_courtier = scope:target_1 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = target_1_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
+                
+                scope:target_2 = {
+                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
+                    every_courtier = { add_to_list = target_2_followers_list }
+                    destroy_laamp_effect = { ADVENTURER = this }
+                    remove_trait = adventurer
+                    
+                    root = { 
+                        add_courtier = scope:target_2 
+                        return_to_court = yes 
+                    }
+                    
+                    hidden_effect = {
+                        every_in_list = {
+                            list = target_2_followers_list
+                            limit = { NOT = { liege_or_court_owner = root } }
+                            root = { add_courtier = prev }
+                        }
+                    }
+                }
             }
             25 = {
+                send_interface_toast = {
+                    title = nikean_diplomacy_target_1_joins_toast_t
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
+                    custom_tooltip = nikean_diplomacy_target_1_joins_toast_tt
+                }
                 scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
                     every_courtier = { add_to_list = target_1_followers_list }
@@ -156,21 +162,29 @@ nikean_diplomacy_entreaty_effect = {
                         target = root
                         modifier = disapproving_opinion
                     }
-                }
-                
-                send_interface_toast = {
-                    title = nikean_diplomacy_target_1_joins_toast_t
-                    left_icon = scope:target_1
-                    right_icon = scope:target_2
-                    custom_tooltip = nikean_diplomacy_target_1_joins_toast_tt
+                    set_relation_rival = {
+                        reason = rival_claimant_fight
+                        target = root
+                    } 
                 }
             }
             25 = {
+                send_interface_toast = {
+                    title = nikean_diplomacy_target_2_joins_toast_t
+                    left_icon = scope:target_2
+                    right_icon = scope:target_1
+                    custom_tooltip = nikean_diplomacy_target_2_joins_toast_tt
+                }
+
                 scope:target_1 = {
                     add_opinion = {
                         target = root
                         modifier = disapproving_opinion
                     }
+                    set_relation_rival = {
+                        reason = rival_claimant_fight
+                        target = root
+                    } 
                 }
                 scope:target_2 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
@@ -191,33 +205,33 @@ nikean_diplomacy_entreaty_effect = {
                         }
                     }
                 }
-                
-                send_interface_toast = {
-                    title = nikean_diplomacy_target_2_joins_toast_t
-                    left_icon = scope:target_2
-                    right_icon = scope:target_1
-                    custom_tooltip = nikean_diplomacy_target_2_joins_toast_tt
-                }
             }
             30 = {
+                send_interface_toast = {
+                    title = nikean_diplomacy_neither_join_toast_t
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
+                    custom_tooltip = nikean_diplomacy_neither_join_toast_tt
+                }
                 scope:target_1 = {
                     add_opinion = {
                         target = root
                         modifier = disapproving_opinion
+                        set_relation_rival = {
+                            reason = rival_claimant_fight
+                            target = root
+                        } 
                     }
                 }
                 scope:target_2 = {
                     add_opinion = {
                         target = root
                         modifier = disapproving_opinion
+                        set_relation_rival = {
+                            reason = rival_claimant_fight
+                            target = root
+                        } 
                     }
-                }
-                
-                send_interface_toast = {
-                    title = nikean_diplomacy_neither_join_toast_t
-                    left_icon = scope:target_1
-                    right_icon = scope:target_2
-                    custom_tooltip = nikean_diplomacy_neither_join_toast_tt
                 }
             }
         }

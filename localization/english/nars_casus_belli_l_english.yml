@@ -2,7 +2,12 @@
  NARSOKRATIA_ONSLAUGHT_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  narsokratia_onslaught_cb: "[nikean_onslaught|E] for [narsokratia|E]"
  NARSOKRATIA_ONSLAUGHT_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Onslaught into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean_onslaught|E] for [narsokratia|E] in [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+ NARSOKRATIA_ONSLAUGHT_NAME_BASE: "[nikean_onslaught|E] for [narsokratia|E]"
+
+ NARSOKRATIA_MIGRATION_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+ narsokratia_migration_cb: "[nikean_migration|E] for [narsokratia|E]"
+ NARSOKRATIA_MIGRATION_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
+ NARSOKRATIA_MIGRATION_NAME_BASE: "[nikean_migration|E] for [narsokratia|E]"
  
  narsokratia_onslaught_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands, as well as titles belonging to [defender.GetHerHim] and [vassalize|E] [defender.GetHerHis] former vassals. The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] grows!"
  narsokratia_onslaught_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands, as well as titles belonging to you and [vassalize|E] your former vassals. The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] grows!"
@@ -18,19 +23,16 @@
  narsokratia_onslaught_gain_dread_tt: "Gains @dread_icon![dread|E]"
  narsokratia_devastation_tt: "The target realm suffers severe @control_icon![control|E] and @development_icon![development|E] loss as the [hoplites|E] exact their onslaught."
  narsokratia_onslaught_gain_titles_tt: "Gains all [landed|E] [titles|E] held personally by [defender.GetShortUIName], and subjugates their [vassals|E]"
-
- NARSOKRATIA_MIGRATION_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- narsokratia_migration_cb: "[nikean_migration|E]"
- NARSOKRATIA_MIGRATION_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')]Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- NARSOKRATIA_MIGRATION_NAME_BASE: "[nikean_migration|E] for [narsokratia|E] into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  
- narsokratia_migration_victory_attacker: "You usurp the targeted kingdom, personally seizing the lands of [defender.GetShortUIName] and [vassalize|E] [defender.GetHerHis] remaining lords. If [defender.GetSheHe] holds an Empire, it is shattered!"
- narsokratia_migration_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and vassalizing your lords. If you hold an Empire, it is shattered entirely!"
- narsokratia_migration_victory: "[attacker.GetShortUIName|U] usurps the targeted kingdom, seizing the personal lands of [defender.GetShortUIName] and vassalizing [defender.GetHerHis] lords. If [defender.GetShortUIName] holds an Empire, it is completely shattered."
+ narsokratia_migration_victory_attacker: "You usurp the targeted kingdom, seizing the lands of [defender.GetShortUIName] and migrating into [defender.GetHerHis] lands."
+ narsokratia_migration_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and migrating there."
+ narsokratia_migration_victory: "[attacker.GetShortUIName|U] usurps the targeted kingdom, seizing the personal lands of [defender.GetShortUIName] and migrating there."
  
  narsokratia_migration_white_peace_defender: "You repel the migration. [attacker.GetShortUIName|U] keeps their camp but abandons their campaign for your lands."
  narsokratia_migration_white_peace: "You fail to conquer the kingdom and must abandon your campaign, though your camp remains intact."
 
- narsokratia_migration_defeat_attacker: "Your migration is a disaster. You are heavily penalized, humiliated, and forced to pay reparations."
- narsokratia_migration_defeat_defender: "You successfully crush the migrating host. [attacker.GetShortUIName|U] is humiliated and forced to pay you reparations."
- narsokratia_migration_defeat: "[attacker.GetShortUIName|U]'s migration is crushed by [defender.GetShortUIName]. [attacker.GetSheHe|U] is humiliated and forced to pay reparations."
+ narsokratia_migration_defeat_attacker: "Your migration is a disaster. You are forced to pay reparations."
+ narsokratia_migration_defeat_defender: "You successfully crush the migrating host. [attacker.GetShortUIName|U] is forced to pay you reparations."
+ narsokratia_migration_defeat: "[attacker.GetShortUIName|U]'s migration is crushed by [defender.GetShortUIName]. [attacker.GetSheHe|U] is forced to pay reparations."
+
+ narsokratia_migration_tt: "$EFFECT_LIST_BULLET$You personally take the [counties|E] within the Capital Duchy, distributing the rest to your family, followers, and Nikean courtiers. You usurp the contested [kingdom|E] and its Capital [duchy|E].\n$EFFECT_LIST_BULLET$Your [realm_capital|E] moves to the target's Capital County, and you establish a settled [government|E].\n$EFFECT_LIST_BULLET$You abandon your previous holdings and [vassals|E], granting them independence."

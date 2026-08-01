@@ -54,10 +54,10 @@ maa_hoplitai = {
 		harsh_winter = { toughness = 5 screen = 5 }
 	}
 
-    buy_cost = { gold = landsknecht_recruitment_cost }
-	low_maintenance_cost = { gold = landsknecht_low_maint_cost }
-	high_maintenance_cost = { gold = landsknecht_high_maint_cost }
-	provision_cost = @provisions_cost_infantry_cheap
+    buy_cost = { gold = schiltron_recruitment_cost }
+	low_maintenance_cost = { gold = schiltron_low_maint_cost }
+	high_maintenance_cost = { gold = schiltron_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_moderate
 
     mercenary_fallback = no
     holy_order_fallback = no
@@ -108,7 +108,7 @@ maa_mastiges = {
     buy_cost = { gold = schiltron_recruitment_cost }
 	low_maintenance_cost = { gold = schiltron_low_maint_cost }
 	high_maintenance_cost = { gold = schiltron_high_maint_cost }
-	provision_cost = @provisions_cost_infantry_moderate
+	provision_cost = @provisions_cost_infantry_expensive
 
     mercenary_fallback = no
     holy_order_fallback = yes

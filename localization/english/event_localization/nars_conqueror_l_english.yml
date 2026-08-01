@@ -1,7 +1,7 @@
 ﻿l_english:
- nars_conqueror.0001.t:0 "Mēdèn Ága! Nikátōr!"
+ nars_conqueror.0001.t:0 "Mēdèn Ága, Nikátōr!"
  nars_conqueror.0001.desc: "For untold time after our exile from the known world, lesser [cultures|E] have called their rulers [emperors|E], believing that [soldiers|E] grants them the mandate to [usurp|E] our sovereign [hegemony|E]. \n\nToday, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge my [dynasty|E] as [narsokratia_possessive|E] restorationists.\n\nThe pretender [rulers|E] will soon realize that they are nothing more than temporary [stewards|E] of our future [domains|E], simply sitting themselves to keep the throne warm for their rightful [rulers|E]. We, the [nikeis|E], stand above them, blessed with a grace and perfection they can only ever envy." 
- nars_conqueror.0001.a: "#emp The first step; never the last!#!"
+ nars_conqueror.0001.a: "The first step; never the last!"
  nars_conqueror.0001.b: "I would rather stay here and smell the [ROOT.Char.GetCapitalLocation.Custom('get_region_flower_type_plural')]..."
  nars_dynasty_get_scion_tt: "Your [dynasty_members|E] gain the [trait|E] [GetTrait('nars_scion').GetName( GetNullCharacter )]"
  

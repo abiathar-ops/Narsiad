@@ -289,7 +289,7 @@
 # nars_0005 = {
 #     name = "Olliás"
 #     dna = 70000015_nikean
-#     dynasty = dyn_nars_1003
+#     dynasty = dyn_nars_1001
 #     female = no
 #     martial = 35
 #     stewardship = 15
@@ -304,19 +304,16 @@
 #     trait = wrathful
 #     trait = lifestyle_blademaster
 #     trait = strong
-#     1148.1.1 = {
+#     1.1.1 = {
 #         birth = yes
 #         effect = {
 #             add_character_flag = do_not_generate_starting_family
 #         }
-        
+      
 #     }
-#     1178.1.1 = {
-#         employer = nars_0002
-#     }
-#     1213.1.1 = {
+#     72.1.1 = {
 #         death = {
-#             death_reason = death_execution
+#             death_reason = death_disappearance
 #         }   
 #     }
 # }

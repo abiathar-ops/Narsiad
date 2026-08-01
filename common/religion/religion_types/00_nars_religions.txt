@@ -1,4 +1,4 @@
-nikean_religion = {
+﻿nikean_religion = {
 	family = rf_nikean
 	graphical_faith = pagan.gfx
 	doctrine = nikean_hostility_doctrine
