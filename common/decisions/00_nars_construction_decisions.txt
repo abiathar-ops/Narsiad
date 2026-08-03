@@ -18,6 +18,7 @@
 			title_province = { has_special_building_slot = no }
 			is_leased_out = no
 		}
+		is_ai = no
 	}
 
 	is_valid = {
@@ -147,7 +148,11 @@ decision_establish_brothel = {
 	is_shown = {
 		is_nikean = yes
 		highest_held_title_tier >= tier_kingdom
-		exists = global_var:established_aretaic_school
+		or = {
+			exists = global_var:established_aretaic_school
+			is_ai = yes
+
+		}
 		any_held_title = {
 			tier = tier_barony
 			is_barony_valid_for_brothel_complex = {

@@ -26,6 +26,9 @@ maa_hoplitai = {
 
     can_recruit = {
 	    valid_for_maa_trigger = { PARAMETER = unlock_maa_hoplitai }
+        NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
     }
 
     damage = 45

@@ -944,7 +944,7 @@ nikean_intro.0002 = {
                 NOT = { this = scope:target_1 }
                 NOT = { this = scope:target_2 }
             }
-            add_character_flag = need_priest_outfit
+            add_character_flag = need_military_outfit
             save_scope_as = diplomat
         }
     }
@@ -952,6 +952,7 @@ nikean_intro.0002 = {
     option = {
         name = nikean_intro.0002.a
         custom_tooltip = nikean_diplomacy.tt
+        add_internal_flag = special
         hidden_effect = {
             nikean_diplomacy_entreaty_effect = yes
         }

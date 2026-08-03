@@ -513,10 +513,10 @@
 	attacker_allies_inherit = yes
 	defender_allies_inherit = yes
 	
-	war_name = "NARSOKRATIA_ONSLAUGHT_NAME"
-	my_war_name = "NARSOKRATIA_ONSLAUGHT_NAME_MY"
-	war_name_base = "NARSOKRATIA_ONSLAUGHT_NAME_BASE"
-	cb_name = "NARSOKRATIA_ONSLAUGHT_NAME_BASE"
+	war_name = "narsokratia_onslaught_NAME"
+	my_war_name = "narsokratia_onslaught_NAME_MY"
+	war_name_base = "narsokratia_onslaught_NAME_BASE"
+	cb_name = "narsokratia_onslaught_NAME_BASE"
 		
 	ticking_war_score_targets_entire_realm = yes
 	attacker_wargoal_percentage = 0.8
@@ -530,7 +530,7 @@
 
 }
 
-narsokratia_migration_cb = {
+narsokratia_laamp_migration_cb = {
     icon = migration_cb
     group = conquest
 
@@ -660,7 +660,7 @@ narsokratia_migration_cb = {
     }
 
     on_victory = {
-        custom_tooltip = narsokratia_migration_tt
+        custom_tooltip = narsokratia_laamp_migration_tt
         # Legitimacy & Glory
         add_legitimacy_attacker_victory_effect = yes
         scope:attacker = { accolade_attacker_war_end_glory_gain_med_effect = yes }
@@ -1010,15 +1010,7 @@ narsokratia_migration_cb = {
 
             ## --- 8. FINAL MECHANICS & CLEANUP ---
             scope:attacker = {
-                if = {
-                    limit = { capital_province = { has_holding_type = tribal_holding } NOT = { government_has_flag = government_is_tribal } }
-                    change_government = tribal_government
-                }
-                else_if = {
-                    limit = { NOT = { capital_province = { has_holding_type = tribal_holding } } government_has_flag = government_is_tribal }
-                    change_government = feudal_government
-                }
-
+                change_government = feudal_government
                 custom_tooltip = fp1_varangian_adventurer_conquest.summaries.control_rebate
                 trigger_event = fp1_varangian_adventures.0001
                 add_gold = varangian_adventures_bounty_amount_value
@@ -1119,10 +1111,10 @@ narsokratia_migration_cb = {
     attacker_allies_inherit = yes
     defender_allies_inherit = yes
 
-    war_name = "NARSOKRATIA_MIGRATION_NAME"
-    war_name_base = "NARSOKRATIA_MIGRATION_NAME_BASE"
-    my_war_name = "NARSOKRATIA_MIGRATION_NAME_MY"
-    cb_name = "NARSOKRATIA_MIGRATION_NAME_BASE"
+    war_name = "narsokratia_laamp_migration_NAME"
+    war_name_base = "narsokratia_laamp_migration_NAME_BASE"
+    my_war_name = "narsokratia_laamp_migration_NAME_MY"
+    cb_name = "narsokratia_laamp_migration_NAME_BASE"
 
     use_de_jure_wargoal_only = yes
     attacker_wargoal_percentage = 0.8
