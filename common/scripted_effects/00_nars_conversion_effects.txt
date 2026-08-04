@@ -26,6 +26,27 @@ nikean_vassal_conversion_effect = {
 	}
 }
 
+nikean_incursion_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = root.faith }
+		}
+		random = {
+			chance = 30
+			set_county_faith = root.faith
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = root.culture }
+		}
+		random = {
+			chance = 30
+			set_county_culture = root.culture
+		}
+	}
+}
+
 nikean_evangelize_hegemony_county_effect = {
 	every_realm_county = {
 		limit = {
@@ -48,6 +69,7 @@ nikean_evangelize_hegemony_county_effect = {
 		}
 	}
 }
+
 
 nikean_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt

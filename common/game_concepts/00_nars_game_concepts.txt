@@ -71,12 +71,12 @@ alnars = {
 	shown_in_encyclopedia = no
 }
 
-nikean_onslaught = {
-	texture = "gfx/interface/icons/casus_bellis/county_conquest_cb.dds"
+nikean_incursion = {
+	texture = "gfx/interface/icons/casus_bellis/undirected_great_holy_war.dds"
 	parent = casus_belli
 }
 
 nikean_migration = {
-	texture = "gfx/interface/icons/casus_bellis/county_conquest_cb.dds"
+	texture = "gfx/interface/icons/casus_bellis/migration_cb.dds"
 	parent = casus_belli
 }

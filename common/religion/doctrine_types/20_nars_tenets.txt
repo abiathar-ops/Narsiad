@@ -85,7 +85,6 @@ tenet_nars_sanguine = {
 	}
 	
 	parameters = {
-		great_holy_wars_active = yes
         warmonger = yes
 		conquest_cb_enabled = yes		
 		reincarnation_events_active = yes

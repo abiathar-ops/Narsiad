@@ -92,6 +92,7 @@ decision_h_narsokratia = {
 	
 	effect = {
 		create_h_narsokratia_effect = yes
+		give_nickname = nick_soter
 		trigger_event = nikean_titles.0021
 		hidden_effect = {
 			change_government = administrative_government

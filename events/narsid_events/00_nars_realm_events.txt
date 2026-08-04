@@ -178,7 +178,6 @@ nikean_nickname.0010 = {
                     10 = { set_nickname_effect = { NICKNAME = nick_megas } }
                     10 = { set_nickname_effect = { NICKNAME = nick_ktistes } }
                     10 = { set_nickname_effect = { NICKNAME = nick_eupator } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_soter } }
                     10 = { set_nickname_effect = { NICKNAME = nick_andreios } }
                     10 = { set_nickname_effect = { NICKNAME = nick_trierarchos } }
                 }

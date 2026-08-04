@@ -22,7 +22,7 @@
  change_to_faith_nikean_2_decision_desc_2:0 "You gain a [modifier|E] that reflects the values of your chosen patron God!"
 
  faith_nikean_3_decision_name:0 "Impose [nikeis|E] Heritage"
- faith_nikean_3_decision_desc:0 "Evangelize your [realm|E] to the Panteíon of our [tradition|E]."
+ faith_nikean_3_decision_desc:0 "Evangelize your [realm|E] to the Orphic Panteíon of our [tradition|E]."
  change_to_faith_nikean_3_decision_desc_1:0 "Every [province|E] of your [realm|E] has a chance to convert to your [faith|E] and [culture|E]!\n$EFFECT_LIST_BULLET$This [decision|E] #emp will#! cause the lost of [control|E] in the converted [province|E]!"
  change_to_faith_nikean_3_decision_desc_2:0 "The efficacy of this [decision|E] scales with [narsokratia|E] [title_ranks|E]!"
 
@@ -109,7 +109,7 @@
 
  # ── Titles ──
 
- decision_h_narsokratia: "Restore the Mōnarkhía"
+ decision_h_narsokratia: "Restore the Mōnarkía"
  decision_h_narsokratia_confirm: "Let us rejoice!"
  decision_h_narsokratia_tooltip: "The old [nikeanrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [nikeis|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."

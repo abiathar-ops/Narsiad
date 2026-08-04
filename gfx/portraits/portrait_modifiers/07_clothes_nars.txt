@@ -7,6 +7,12 @@
 		dna_modifiers = {
 			accessory = {
 				mode = add
+				gene = special_headgear_spectacles
+				template = no_spectacles
+	 			accessory = empty
+			}
+			accessory = {
+				mode = add
 				gene = legwear
 				template = no_legwear
 				accessory = empty
@@ -52,6 +58,12 @@
 	}
 	70000012_nikean = {
 		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = special_headgear_spectacles
+				template = no_spectacles
+	 			accessory = empty
+			}
 			accessory = {
 				mode = add
 				gene = legwear
@@ -190,14 +202,14 @@
 			accessory = {
 				mode = add
 				gene = clothes
-				template = ep2_religious_muslim_ihram_clothes
-				accessory = m_clothes_religious_ep2_muslim_hajj_02
+				template = religious_jain_high_clothes
+				accessory = female_clothes_religious_jain_devoted_01
 			}
 			accessory = {
 				mode = add
 				gene = headgear
-				template = no_headgear
-				accessory = empty
+				template = mpo_mongol_nobility
+				accessory = f_headgear_sec_mpo_mongol_nob_01
 			}
 			accessory = {
 				mode = add
@@ -210,7 +222,16 @@
 			base = 0
 			modifier = {
 				add = 4000
-				has_character_flag = need_priest_outfit
+				exists = this
+				OR = {
+					has_character_flag = need_priest_outfit
+					is_theocratic_lessee = yes
+					AND = { 
+						is_ruler = yes 
+						government_has_flag = government_is_theocracy 
+					}
+					has_council_position = councillor_court_chaplain
+				}
 				is_orphic = yes
 			}
 		}
@@ -223,7 +244,14 @@
 				template = no_beard
 				accessory = empty
 			}
+			accessory = {
+				mode = add
+				gene = special_headgear_spectacles
+				template = no_spectacles
+	 			accessory = empty
+			}
 		}
+		
 		weight = {
 			base = 0
 			modifier = {

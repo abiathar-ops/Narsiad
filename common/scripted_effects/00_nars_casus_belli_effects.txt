@@ -1,6 +1,6 @@
 # Reorganizes administrative vassals so the Nikean conqueror doesn't shatter the system entirely, 
 # modeling the GoK administrative preservation effect.
-narsokratia_onslaught_admin_vassal_reorganization = {
+nikean_incursion_admin_vassal_reorganization = {
 	every_vassal_or_below = {
 		limit = {
 			is_landed = yes

@@ -1,6 +1,6 @@
 ﻿namespace = nars_conqueror
 
-#Get Mōnarkhíad Trait
+#Get Mōnarkíad Trait
 nars_conqueror.0001 = {
 	type = character_event
 	title = nars_conqueror.0001.t
@@ -152,7 +152,7 @@ nars_conqueror.0001 = {
 	}
 }
 
-#Lose Mōnarkhíad Trait
+#Lose Mōnarkíad Trait
 nars_conqueror.0002 = {
 	type = character_event
 	title = nars_conqueror.0002.t

@@ -952,19 +952,13 @@ nikean_intro.0002 = {
     option = {
         name = nikean_intro.0002.a
         custom_tooltip = nikean_diplomacy.tt
-        add_internal_flag = special
         hidden_effect = {
             nikean_diplomacy_entreaty_effect = yes
         }
     }
     option = {
-        name = nikean_intro.0002.c
-        add_prestige = medium_prestige_loss
-    }
-    option = {
         name = nikean_intro.0002.b
         custom_tooltip = nikean_incivility.tt
-        add_internal_flag = dangerous
         if = {
             limit = {
                 has_character_modifier = eleios_modifier

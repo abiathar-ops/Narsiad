@@ -15,13 +15,11 @@ tradition_nars_war = {
 		}
     }
     parameters = {
+        consolidate_rule_decision = yes 
         unlock_maa_hoplitai = yes
         strong_traits_more_valued = yes
         strong_traits_more_common = yes
         unlock_voluntary_laampdom = yes
-        more_likely_to_be_laamps = yes
-        no_limit_to_kingdom_level_holy_wars = yes
-        cb_lower_piety_level_requirement = yes
         frontier_themes_borrow_neighbor_troops = yes
     }
     character_modifier = {
@@ -71,7 +69,6 @@ tradition_nars_science = {
         innovation_from_learning_traits = yes
         tells_stories = yes
         can_recruit_prisoners_easily = yes
-		consolidate_rule_decision = yes 
 		pardoning_gives_loyalty = yes
         harder_to_hybridize = yes
     }
@@ -94,12 +91,11 @@ tradition_nars_politics = { # Court & Diplomacy
     layers = { 0 = learning 1 = mena 4 = jirga.dds }
     parameters = { 
         less_likely_to_culture_convert = yes
-        can_appoint_court_scholar = yes
-        can_appoint_court_gardener = yes
-        can_recruit_gardeners = yes
-        can_appoint_chief_eunuch = yes
         allows_noble_family_adoption = yes
 		guardian_education_better_outcomes = yes
+        can_appoint_court_gardener = yes
+        can_recruit_gardeners = yes
+        
     }
     character_modifier = { 
         character_travel_safety_mult = 0.25
@@ -155,8 +151,8 @@ tradition_nars_merchant = { # Maritime & Mercantile
         trade_ports_stationed_maa_bonus = yes
         trade_ports_enabled_for_tribals = yes
         next_level_trade_ports = yes
-        maritime_mercantilism_avaricious_bonus = yes
         coastal_agriculture_building_bonuses = yes
+        maritime_mercantilism_avaricious_bonus = yes
     }
     character_modifier = {
         sea_travel_danger = medium_sea_danger_reduction

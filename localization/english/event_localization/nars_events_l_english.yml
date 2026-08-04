@@ -67,7 +67,7 @@
  nikean_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
  nikean_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [mastiges|E]!"
  nikean_gunpowder.1021.a: "A new era dawns!"
- nikean_gunpowder.1021.a.mastiges_tt: "#v You#! unlock the recruitment of the [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
+ nikean_gunpowder.1021.a.mastiges_tt: "#v You#! unlocked  [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
  
  # Fail Event
  nikean_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"

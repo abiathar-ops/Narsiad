@@ -40,9 +40,9 @@
  game_concept_nikean_faith: "Nikean Faith"
  game_concept_orphists_desc: "Orphists are followers of the [nikeis_adj|E] [panteion|E], the conglomeration of [nikean|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [nikean|E] [traditions|E] and by proxy, their [narsokratia|E]."
 
- game_concept_panteion: "Panteíon"
- game_concept_panteion_possessive: "Panteíon's"
- game_concept_panteion_desc: "The [Glossary( 'Panteíon', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nikean_faith|E]. They serve as a central pillar of the [nikeis|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [nikeis|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [nikeis|E] also revere other deities such as [phokas|E] and [enuo|E]."
+ game_concept_panteion: "Orphic Panteíon"
+ game_concept_panteion_possessive: "Orphic Panteíon's"
+ game_concept_panteion_desc: "The [orphic|E] [Glossary( 'Panteíon', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nikean_faith|E]. They serve as a central pillar of the [nikeis|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [nikeis|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [nikeis|E] also revere other deities such as [phokas|E] and [enuo|E]."
 
  game_concept_narsil: "Narsíl"
  game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [nikean|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [nikeans|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
@@ -62,11 +62,11 @@
  game_concept_story_nikean: "$game_concept_story_generic_prefix$ Narsiad"
  game_concept_story_nikean_desc: "#tooltip_heading Story Style: Moderate#!\n\nYou are guided down to the path of the [nikean|E] Restoration, competing with and against your fellow siblings' [house|E] for the sole leadership of the [nikeis|E] as its [cultural_head|E].\n\nEventually, your story will culminate with the formation of a reborn [narsokratia|E] and you as the [hegemon|E] of your [region|E].\n\n$game_concept_story_generic_desc_boilerplate$"
 
- game_concept_nikean_onslaught:0 "Nikean Onslaught"
- game_concept_nikean_onslaught_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [vassalization|E] of an independent [rulerpossessive|E] [vassals|E] while gaining the [rulerpossessive|E] [landed|E] [titles|E] below the [empire|E] [title_rank|E]—destroying higher ones. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
+ game_concept_nikean_incursion:0 "Nikean Incursion"
+ game_concept_nikean_incursion_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Nikean Culture#!\n$EFFECT_LIST_BULLET$#V Nikēís Ethnicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith#!"
 
  game_concept_nikean_migration:0 "Nikean Migration"
- game_concept_nikean_migration_desc:3 "A [nikean|E] [casus_belli|E] allowing for the forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E]. Unlocked by being a [nikean|E] and [orphic|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on any [top_liege|E] [ruler|E] that does not possess any of the following: \n$EFFECT_LIST_BULLET$#V Nikean Culture\n$EFFECT_LIST_BULLET$#V Nikēís Ethicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith "
+ game_concept_nikean_migration_desc:3 "A [nikean|E] [casus_belli|E] allowing for a forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E] and to distribute their former [counties|E] among your followers. Unlocked by being a [nikean|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Nikean Culture#!\n$EFFECT_LIST_BULLET$#V Nikēís Ethnicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith#!"
 
  PANTEION_GLOSS: "[narsic_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
  NARSOKRATIA_GLOSS: "[narsic_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."

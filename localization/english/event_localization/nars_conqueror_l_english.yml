@@ -32,7 +32,7 @@
  nars_conqueror.1200.c:0 "Draft their youth into our vanguard!"
 
  nars_conqueror.1300.t: "$nikator_prefix$ Veterans"
- nars_conqueror.1300.desc: "Four seasoned and weary [commanders|E]—men whose armor bears the deep gouges of our recent onslaught—stand before me in the war room. The four represent a significant and substantial core of my veteran [hoplites|E] and fighting men.\n\n\"The restoration requires blood, Nikátōr, and we have bled,\" their spokesman rumbles, resting a calloused hand on the hilt of his longsword. \"But a man cannot eat glory, nor shelter his family beneath an oath. The men, #emp your#! men demand their share of the boons you have gained."\n\n"Coin from the treasury, or land from the conquered.\""
+ nars_conqueror.1300.desc: "Four seasoned and weary [commanders|E]—men whose armor bears the deep gouges of our recent incursion—stand before me in the war room. The four represent a significant and substantial core of my veteran [hoplites|E] and fighting men.\n\n\"The restoration requires blood, Nikátōr, and we have bled,\" their spokesman rumbles, resting a calloused hand on the hilt of his longsword. \"But a man cannot eat glory, nor shelter his family beneath an oath. The men, #emp your#! men demand their share of the boons you have gained."\n\n"Coin from the treasury, or land from the conquered.\""
  nars_conqueror.1300.a: "Empty the vaults. Let their blades strike with gilded fury!"
  nars_conqueror.1300.b: "Settle them in [settlement_county.GetNameNoTier]. The locals must make way."
  nars_conqueror.1300.c: "You are my commanders! Your place is at my side."

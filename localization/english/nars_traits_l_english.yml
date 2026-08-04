@@ -3,9 +3,9 @@
  nars_conqueror.no_actor: "Ever-Victorious"
  trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Nikēís' toil, heralding an era of eternal, ever-victorious restoration."
  trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Nikēís' toil for restoration and their foremost scion of war and conquest!"
- TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [nikean_onslaught|E] [casus_belli|E]"
+ TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [nikean_incursion|E] [casus_belli|E]"
  
- nars_scion.name: "Mōnarkhíad"
+ nars_scion.name: "Mōnarkíad"
  nars_scion.no_actor: "Panteíon-Blessed"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
  trait_nars_scion_character_desc: "The pledge for hegemonic restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the world are etched in the fibers of history."
