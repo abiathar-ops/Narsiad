@@ -194,7 +194,7 @@
 				years = 6
 			}
 			hidden_effect = {
-				nikean_evangelize_hegemony_county_effect = yes
+				nikean_moderate_county_effect = yes
 			}
 			trigger_event = { 
 				id = nikean_faith.1011 

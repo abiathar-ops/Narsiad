@@ -1,5 +1,6 @@
 ﻿namespace = nikean_intro
 
+#OG Custom Characters
 nikean_intro.1001 = {
 	type = character_event
 	window = fullscreen_event
@@ -65,7 +66,7 @@ nikean_intro.1002 = {
 }
 
 
-
+#Eleios, Ilione, and Strato
 nikean_intro.0001 = {
     type = character_event
     window = big_event_window

@@ -118,18 +118,38 @@ nars_intro_on_start = {
     effect = {
         every_player = {
             limit = { 
-                is_nikean = yes 
-                is_alive = yes
+                is_alive = yes 
             }
-            trigger_event = { id = nikean_intro.1001 days = 1 }
-            while = {
-                count = 3
-                trigger_event = { id = nikean_courtiers.0002 }
+            if = {
+                limit = { 
+                    is_nikean = yes
+                }
+                # Trigger the Nikean intro for the player
+                trigger_event = { id = nikean_intro.1001 days = 1 }
+                
+                # Find a random character in the world to trigger intro.0001 on
+                random_character = {
+                    limit = {
+                        is_alive = yes
+                        NOT = { this = prev } # Ensures it doesn't accidentally pick the player
+                    }
+                    trigger_event = { id = nikean_intro.0001 days = 1 }
+                }
+                
+                while = {
+                    count = 3
+                    trigger_event = { id = nikean_courtiers.0002 }
+                }
+                add_prestige_level = 2
+                add_piety_level = 1
             }
-            add_prestige_level = 2
-            add_piety_level = 1
-            add_gold = { 705 1000 }
-            add_prestige = { 705 1000 }
+            # CONDITION 2: Is NOT Nikean
+            else_if = {
+                limit = { 
+                    is_nikean = no 
+                }
+                trigger_event = { id = nikean_intro.0001 days = 1 }
+            }
         }
     } 
 }

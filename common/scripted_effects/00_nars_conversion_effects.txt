@@ -11,7 +11,7 @@ nikean_vassal_conversion_effect = {
 		}
 		random = {
 			chance = 65
-			set_character_faith = root.faith
+			set_character_faith = faith:nars_religion
 		}
 	}
 	every_vassal = {
@@ -21,55 +21,96 @@ nikean_vassal_conversion_effect = {
 		}
 		random = {
 			chance = 65
-			set_culture = root.culture
+			set_culture = culture:nars_nikean
 		}
 	}
 }
 
-nikean_incursion_county_effect = {
+nikean_minor_county_effect = {
 	every_realm_county = {
 		limit = {
-			NOT = { faith = root.faith }
+			NOT = { faith = faith:nars_religion }
 		}
 		random = {
-			chance = 30
-			set_county_faith = root.faith
+			chance = 25
+			set_county_faith = faith:nars_religion
+            change_county_control = minor_county_control_loss
 		}
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = root.culture }
+			NOT = { culture = culture:nars_nikean }
 		}
 		random = {
-			chance = 30
-			set_county_culture = root.culture
+			chance = 25
+			set_county_culture = culture:nars_nikean
+            change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-nikean_evangelize_hegemony_county_effect = {
+nikean_moderate_county_effect = {
 	every_realm_county = {
 		limit = {
-			NOT = { faith = root.faith }
+			NOT = { faith = faith:nars_religion }
 		}
 		random = {
 			chance = 50
-			set_county_faith = root.faith
+			set_county_faith = faith:nars_religion
 			change_county_control = minor_county_control_loss
 		}
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = root.culture }
+			NOT = { culture = culture:nars_nikean }
 		}
 		random = {
 			chance = 50
-			set_county_culture = root.culture
+			set_county_culture = culture:nars_nikean
 			change_county_control = minor_county_control_loss
 		}
 	}
 }
 
+nikean_major_county_effect = {
+	every_realm_county = {
+		limit = {
+			NOT = { faith = faith:nars_religion }
+		}
+		random = {
+			chance = 75
+			set_county_faith = faith:nars_religion
+            change_county_control = minor_county_control_loss
+		}
+	}
+	every_realm_county = {
+		limit = {
+			NOT = { culture = culture:nars_nikean }
+		}
+		random = {
+			chance = 75
+			set_county_culture = culture:nars_nikean
+            change_county_control = minor_county_control_loss
+		}
+	}
+}
+
+nikean_settle_county_effect = {
+	every_sub_realm_county = {
+		limit = {
+			NOT = { faith = faith:nars_religion }
+		}
+		set_county_faith = faith:nars_religion
+        change_county_control = major_county_control_loss
+	}
+	every_sub_realm_county = {
+		limit = {
+			NOT = { culture = culture:nars_nikean }
+		}
+        set_county_culture = culture:nars_nikean
+        change_county_control = major_county_control_loss
+	}
+}
 
 nikean_diplomacy_entreaty_effect = {
     custom_tooltip = nikean_diplomacy.tt
