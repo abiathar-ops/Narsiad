@@ -94,8 +94,7 @@ tradition_nars_politics = { # Court & Diplomacy
         allows_noble_family_adoption = yes
 		guardian_education_better_outcomes = yes
         can_appoint_court_gardener = yes
-        can_recruit_gardeners = yes
-        
+        can_recruit_gardeners = yes    
     }
     character_modifier = { 
         character_travel_safety_mult = 0.25

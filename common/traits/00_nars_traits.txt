@@ -3,6 +3,7 @@ nars_conqueror = {
 	category = fame
 	shown_in_ruler_designer = no
 
+	flag = conqueror_bonuses_modifier
 	vassal_limit = 50
 	dread_gain_mult = 0.05
 	dread_baseline_add = 50
@@ -65,7 +66,6 @@ nars_scion = {
 	health = 4
 	same_culture_opinion = 25
 	same_faith_opinion = 25
-	no_prowess_loss_from_age = yes
 	life_expectancy = 50
 	monthly_lifestyle_xp_gain_mult = 0.5
 	enemy_hostile_scheme_success_chance_max_add = -50
@@ -121,6 +121,7 @@ nars_naturalis = {
 	inbreeding_chance = -0.30
 	ignore_negative_culture_opinion = yes
 	ignore_different_faith_opinion = yes
+	no_prowess_loss_from_age = yes
 
 	opposites = {
 		infertile
@@ -128,6 +129,10 @@ nars_naturalis = {
 		intellect_bad
 		beauty_bad
 		physique_bad
+		giant
+		hunchbacked
+		clubfooted
+		scaly
 	}
 
 	genetic_constraint_all = beauty_3

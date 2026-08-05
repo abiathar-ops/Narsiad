@@ -15,7 +15,6 @@ nars_conqueror.0001 = {
 		character = root
 		animation = sword_coup_degrace
 		camera = camera_activity_horse
-		#camera = camera_event_center_away
 	}
 
 	immediate = {
@@ -152,82 +151,91 @@ nars_conqueror.0001 = {
 	}
 }
 
-#Lose Mōnarkíad Trait
+#Lose Nikator Trait
 nars_conqueror.0002 = {
-	type = character_event
-	title = nars_conqueror.0002.t
-	desc = {
-		desc = nars_conqueror.0002.intro
-		random_valid = {
-			triggered_desc = {
-				trigger = {
-					days_of_continuous_peace >= 3650 # 10 years
-				}
-				desc = nars_conqueror.0002.peace
-			}
-			triggered_desc = {
-				trigger = {
-					AND = {
-						exists = var:lost_wars
-						var:lost_wars >= 3
-					}
-				}
-				desc = nars_conqueror.0002.lost_wars
-			}
-			triggered_desc = {
-				trigger = {
-					is_ideal_nikean = no
-				}
-				desc = nars_conqueror.0002.traitor
-			}
-		}
-		desc = nars_conqueror.0002.outro
-	}
-	theme = emperor
-	window = big_event_window
-	override_background = throne_room_east
-	left_portrait = {
-		character = root
-		animation = sword_yield_start
-	}
-	
-	option = {
-		name = nars_conqueror.0002.a
-		flavor = nars_conqueror_end_flavor
-		remove_trait = nars_scion
-		add_prestige_level = -2
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = glory_hound }
-			}
-			every_vassal = {
-				vassal_stance = glory_hound
-				custom = every_glory_hound_vassal
-				add_opinion = {
-					modifier = disappointed_opinion
-					target = root
-					opinion = -50
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { has_vassal_stance = belligerent }
-			}
-			every_vassal = {
-				limit = { has_vassal_stance = belligerent }
-				custom = every_belligerent_vassal
-				add_opinion = {
-					modifier = disappointed_opinion
-					target = root
-					opinion = -50
-				}
-			}
-		}
-		ai_chance = {
-			base = 100 
-		}
-	}
+    type = character_event
+    title = nars_conqueror.0002.t
+
+    desc = {
+        desc = nars_conqueror.0002.intro
+        random_valid = {
+            triggered_desc = {
+                trigger = { days_of_continuous_peace >= 3650 }
+                desc = nars_conqueror.0002.peace
+            }
+            triggered_desc = {
+                trigger = {
+                    AND = {
+                        exists = var:lost_wars
+                        var:lost_wars >= 3
+                    }
+                }
+                desc = nars_conqueror.0002.lost_wars
+            }
+            triggered_desc = {
+                trigger = { is_ideal_nikean = no }
+                desc = nars_conqueror.0002.traitor
+            }
+            triggered_desc = {
+                trigger = { is_independent_ruler = no }
+                desc = nars_conqueror.0002.subjugated
+            }
+            triggered_desc = {
+                trigger = { has_trait = incapable }
+                desc = nars_conqueror.0002.incapable
+            }
+            triggered_desc = {
+                trigger = { highest_held_title_tier <= tier_duchy }
+                desc = nars_conqueror.0002.demoted
+            }
+        }
+        desc = nars_conqueror.0002.outro
+    }
+    
+    theme = emperor
+    window = big_event_window
+    override_background = throne_room_east
+    left_portrait = {
+        character = root
+        animation = sword_yield_start
+    }
+    
+    option = {
+        name = nars_conqueror.0002.a
+        flavor = delay_scion.flavor
+        remove_trait = nars_scion
+        add_prestige_level = -2
+        
+        if = {
+            limit = {
+                any_vassal = { has_vassal_stance = glory_hound }
+            }
+            every_vassal = {
+                limit = { has_vassal_stance = glory_hound }
+                custom = every_glory_hound_vassal
+                add_opinion = {
+                    modifier = disappointed_opinion
+                    target = root
+                    opinion = -50
+                }
+            }
+        }
+        if = {
+            limit = {
+                any_vassal = { has_vassal_stance = belligerent }
+            }
+            every_vassal = {
+                limit = { has_vassal_stance = belligerent }
+                custom = every_belligerent_vassal
+                add_opinion = {
+                    modifier = disappointed_opinion
+                    target = root
+                    opinion = -50
+                }
+            }
+        }
+        ai_chance = { base = 100 }
+    }
 }
 
 # Feed messages

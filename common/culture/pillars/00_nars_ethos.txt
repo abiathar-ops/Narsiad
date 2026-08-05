@@ -3,7 +3,6 @@ ethos_archaic = {
 
 	parameters = {
 		better_disease_resistance = yes
-		can_adopt_administrative_government_as_kingdom_tier = yes
 	}
     
 	character_modifier = {

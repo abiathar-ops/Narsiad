@@ -1,8 +1,0 @@
-ongoing_nars_naturalis_events = {
-	random_events = {
-		50 = 0
-		100 = nikean_faith.1001
-		100 = nikean_faith.1002
-		100 = nikean_faith.1003
-	}
-}

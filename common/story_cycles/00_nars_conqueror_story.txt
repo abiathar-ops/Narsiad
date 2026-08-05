@@ -1,13 +1,13 @@
 story_nars_conqueror = {
-    visible = yes
+    visible = no
 
     icon = {
         reference = "gfx/interface/icons/artifact/artefact_icons_unique_artifact_excalibur.dds"
     }
 
     background = {
-		reference = "gfx/interface/illustrations/event_scenes/armory.dds"
-	}
+        reference = "gfx/interface/illustrations/event_scenes/armory.dds"
+    }
 
     visualization = {
         basic_counter = {
@@ -23,49 +23,116 @@ story_nars_conqueror = {
     
     on_setup = {
         set_variable = {
-			name = narsokratia_value
-			value = 0
-		}
-        # Calculate rank immediately directly on the story scope
+            name = narsokratia_value
+            value = 0
+        }
         nars_update_narsokratia_value = yes
     }
 
-    effect_group = { #narsscion
-		days = { 180 420 }
+    # 1. Ongoing Events
+    effect_group = { 
+        days = { 180 420 }
 
-		trigger = {
-			story_owner = {
-				is_available = yes
-				is_alive = yes
-				is_adult = yes
+        trigger = {
+            story_owner = {
+                is_available = yes
+                is_alive = yes
+                is_adult = yes
                 top_liege = this
                 has_trait = nars_conqueror
-			}
-		}
+            }
+        }
 
-		first_valid = {
-			triggered_effect = {
-				trigger = { 
-                    always = yes
+        first_valid = {
+            triggered_effect = {
+                trigger = { always = yes }
+                effect = {
+                    story_owner = {
+                        trigger_event = {
+                            on_action = ongoing_nars_conqueror_events
+                        }
+                    }
                 }
-				effect = {
-					story_owner = {
-						trigger_event = {
-							on_action = ongoing_nars_conqueror_events
-						}
-					}
-				}
-			}
-		}
-	}
+            }
+        }
+    }
+
+    # 2. AI Pacing Mechanics
+    effect_group = {
+        days = { 30 60 }
+
+        triggered_effect = {
+            trigger = {
+                story_owner = { is_ai = yes }
+            }
+            effect = {
+                story_owner = {
+                    save_scope_as = root
+                    ai_conqueror_yearly_effect = yes
+                    if = { 
+                        limit = {
+                            OR = {
+                                top_liege != this
+                                is_landed = no
+                                highest_held_title_tier <= tier_county
+                                is_tributary = yes
+                            }
+                            NOT = { this = character:140 }
+                            is_ai = yes
+                        }
+                        # FIXED: Triggers custom event, not vanilla
+                        trigger_event = nars_conqueror.0002
+                    }
+                }
+            }
+        }
+    }
+
+    # 3. Cycle End Conditions (The 6 Triggers)
+    effect_group = { 
+        days = { 900 1800 }
+    
+        triggered_effect = {
+            trigger = {
+                story_owner = {
+                    OR = {
+                        AND = {
+                            exists = var:lost_wars
+                            var:lost_wars >= 3
+                        }
+                        is_ideal_nikean = no
+                        days_of_continuous_peace >= 3650 
+                        is_independent_ruler = no
+                        has_trait = incapable
+                        highest_held_title_tier <= tier_duchy
+                    }
+                }
+            }
+            effect = {
+                story_owner = {
+                    trigger_event = nars_conqueror.0002
+                }
+                # Kill the story when the event is triggered
+                end_story = yes
+            }
+        }
+    }
 
     on_owner_death = {
         end_story = yes
     }
 
     on_end = {
-		debug_log = "Nikátōr story cycle ended on:"
-		debug_log_date = yes
-        trigger_event = nars_conqueror.0002 
-	}
+        debug_log = "Nikátōr story cycle ended on:"
+        debug_log_date = yes
+        # Removed event trigger here so it doesn't fire upon natural death
+        story_owner = {
+			if = {
+				limit = {
+					is_alive = yes
+				}
+				remove_trait = nars_conqueror
+			}
+		}
+    }
 }
