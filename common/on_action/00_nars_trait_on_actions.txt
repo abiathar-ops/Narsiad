@@ -128,7 +128,7 @@ nars_intro_on_start = {
                 trigger_event = { id = nikean_intro.1001 days = 1 }
                 
                 # Find a random character in the world to trigger intro.0001 on
-                random_character = {
+                random_ruler = {
                     limit = {
                         is_alive = yes
                         NOT = { this = prev } # Ensures it doesn't accidentally pick the player

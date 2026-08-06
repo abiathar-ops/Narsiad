@@ -30,7 +30,7 @@
 			story_owner = {
 				is_available = yes
 				is_alive = yes
-				age >= 25
+				age > 25
                 has_trait = nars_naturalis
 			}
 		}

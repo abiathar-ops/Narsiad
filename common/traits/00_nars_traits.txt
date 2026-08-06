@@ -58,7 +58,6 @@ nars_scion = {
 	inherit_chance = 100
 	parent_inheritance_sex = all
 	inherit_from_real_father = no
-	set_immortal_age = 20
 	ai_war_chance = -100
 	ai_war_cooldown = -100
 	ai_amenity_spending = -0.25
@@ -117,8 +116,8 @@ nars_naturalis = {
     }
 
 	health = 2
-	life_expectancy = 15
-	inbreeding_chance = -0.30
+	life_expectancy = 35
+	inbreeding_chance = -0.35
 	ignore_negative_culture_opinion = yes
 	ignore_different_faith_opinion = yes
 	no_prowess_loss_from_age = yes
