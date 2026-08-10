@@ -1,10 +1,10 @@
-﻿namespace = nikean_artifact
+﻿namespace = nars_artifacts
 
-nikean_artifact.1001 = {
+nars_artifacts.1001 = {
 	type = character_event
 
-	title = nikean_artifact.1001.t
-	desc = nikean_artifact.1001.desc
+	title = nars_artifacts.1001.t
+	desc = nars_artifacts.1001.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -21,7 +21,7 @@ nikean_artifact.1001 = {
 
 	option = {
 		# Sacrifice courtiers — brutal but FAST (30 days)
-		name = nikean_artifact.1001.a
+		name = nars_artifacts.1001.a
 		add_tyranny = 15
 		stress_impact = {
 			just = minor_stress_impact_gain
@@ -31,7 +31,7 @@ nikean_artifact.1001 = {
 		random_courtier_or_guest = {
 			limit = {
 				is_adult = yes
-				is_ethnically_nikean = yes
+				is_ethnically_arcadian = yes
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
 			}
@@ -51,7 +51,7 @@ nikean_artifact.1001 = {
 				value = root
 			}
 			trigger_event = {
-				id = nikean_artifact.1002
+				id = nars_artifacts.1002
 				days = 30
 			}
 		}
@@ -69,7 +69,7 @@ nikean_artifact.1001 = {
 	}
 
 	option = {
-		name = nikean_artifact.1001.b
+		name = nars_artifacts.1001.b
 		remove_treasury_or_gold = 750
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
@@ -86,7 +86,7 @@ nikean_artifact.1001 = {
 				value = root
 			}
 			trigger_event = {
-				id = nikean_artifact.1003
+				id = nars_artifacts.1003
 				days = 120
 			}
 		}
@@ -101,7 +101,7 @@ nikean_artifact.1001 = {
 
 	option = {
 		# Not yet — decision remains available
-		name = nikean_artifact.1001.c
+		name = nars_artifacts.1001.c
 		add_stress = miniscule_stress_impact_gain
 		ai_chance = {
 			base = 0
@@ -117,11 +117,11 @@ nikean_artifact.1001 = {
 	}
 }
 
-nikean_artifact.1002 = {
+nars_artifacts.1002 = {
 	type = character_event
 
-	title = nikean_artifact.1002.t
-	desc = nikean_artifact.1002.desc
+	title = nars_artifacts.1002.t
+	desc = nars_artifacts.1002.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -133,16 +133,16 @@ nikean_artifact.1002 = {
 	}
 
 	option = { 
-		name = nikean_artifact.1002.a
+		name = nars_artifacts.1002.a
 		create_narsil_effect = yes
 	}
 }
 
-nikean_artifact.1003 = {
+nars_artifacts.1003 = {
 	type = character_event
 
-	title = nikean_artifact.1003.t
-	desc = nikean_artifact.1003.desc
+	title = nars_artifacts.1003.t
+	desc = nars_artifacts.1003.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -154,7 +154,7 @@ nikean_artifact.1003 = {
 	}
 
 	option = { 
-		name = nikean_artifact.1003.a
+		name = nars_artifacts.1003.a
 		create_narsil_effect = yes
 	}
 }

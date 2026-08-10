@@ -1,11 +1,11 @@
-﻿namespace = nikean_realm
+﻿namespace = nars_realm
 
 #Develop Industry - Development + MAA Bonus
-nikean_realm.1001 = {
+nars_realm.1001 = {
 	type = character_event
 
-	title = nikean_realm.1001.t
-	desc = nikean_realm.1001.desc
+	title = nars_realm.1001.t
+	desc = nars_realm.1001.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -16,7 +16,7 @@ nikean_realm.1001 = {
 		animation = map_dismissal
 	}
 	option = {
-		name = nikean_realm.1001.a
+		name = nars_realm.1001.a
 		custom_tooltip = industrial_boom_province_tt
         add_character_modifier = {
 			modifier = industrial_boom_character_modifier
@@ -35,11 +35,11 @@ nikean_realm.1001 = {
 }
 
 #Synodian Spies - Control + Hostile Scheme Reduction
-nikean_realm.1011 = {
+nars_realm.1011 = {
 	type = character_event
 
-	title = nikean_realm.1011.t
-	desc = nikean_realm.1011.desc
+	title = nars_realm.1011.t
+	desc = nars_realm.1011.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -52,7 +52,7 @@ nikean_realm.1011 = {
 	}
 
 	option = {
-		name = nikean_realm.1011.a
+		name = nars_realm.1011.a
 		custom_tooltip = spy_network_province_tt
 		
 		# Added the character modifier application
@@ -74,10 +74,10 @@ nikean_realm.1011 = {
 }
 
 #Disburse Propaganda - General Opinion boost + levies
-nikean_realm.1021 = {
+nars_realm.1021 = {
 	type = character_event
-	title = nikean_realm.1021.t
-	desc = nikean_realm.1021.desc
+	title = nars_realm.1021.t
+	desc = nars_realm.1021.desc
 	theme = emperor
 	override_background = bp2_study_indian
 	override_effect_2d = { reference = smoke }
@@ -90,8 +90,8 @@ nikean_realm.1021 = {
 	}
 
 	option = {
-		name = nikean_realm.1021.a
-		custom_tooltip = nikean_propaganda_province_tt
+		name = nars_realm.1021.a
+		custom_tooltip = arcadian_propaganda_province_tt
         add_character_modifier = {
 			modifier = distribute_propaganda_character_modifier
 			years = 10
@@ -108,12 +108,12 @@ nikean_realm.1021 = {
 	}
 }
 
-namespace = nikean_nickname
+namespace = nars_nickname
 
-nikean_nickname.0010 = { 
+nars_nickname.0010 = { 
     type = character_event
-    title = nikean_nickname.0010.t
-    desc = nikean_nickname.0010.desc
+    title = nars_nickname.0010.t
+    desc = nars_nickname.0010.desc
     theme = emperor
     override_background = { reference = study }
     right_portrait = {
@@ -125,8 +125,8 @@ nikean_nickname.0010 = {
         trigger = {
             has_any_nickname = yes
         }
-        name =  nikean_nickname.0010.aa
-        custom_tooltip = nikean_nickname.0010.aa.tt
+        name =  nars_nickname.0010.aa
+        custom_tooltip = nars_nickname.0010.aa.tt
         hidden_effect = {
             remove_nickname = yes
         }
@@ -134,8 +134,8 @@ nikean_nickname.0010 = {
     
     # Group A — Sacred & Devoted
     option = {  
-        name =  nikean_nickname.0010.a
-        custom_tooltip = nikean_nickname.0010.a.tt
+        name =  nars_nickname.0010.a
+        custom_tooltip = nars_nickname.0010.a.tt
         hidden_effect = {
             if = {
                 limit = {
@@ -156,13 +156,13 @@ nikean_nickname.0010 = {
                 10 = { set_nickname_effect = { NICKNAME = nick_poietes } }
             }
         }
-        trigger_event = nikean_nickname.0010
+        trigger_event = nars_nickname.0010
     }   
 
     # Group B — Power & Conquest
     option = {  
-        name =  nikean_nickname.0010.b
-        custom_tooltip = nikean_nickname.0010.b.tt
+        name =  nars_nickname.0010.b
+        custom_tooltip = nars_nickname.0010.b.tt
         hidden_effect = {
             if = {
                 limit = {
@@ -183,12 +183,12 @@ nikean_nickname.0010 = {
                 }
             }
         }
-        trigger_event = nikean_nickname.0010
+        trigger_event = nars_nickname.0010
     }   
     
     option = {  
-        name =  nikean_nickname.0010.c
-        custom_tooltip = nikean_nickname.0010.c.tt
+        name =  nars_nickname.0010.c
+        custom_tooltip = nars_nickname.0010.c.tt
         
         hidden_effect = {
             if = {
@@ -212,11 +212,11 @@ nikean_nickname.0010 = {
                 10 = { set_nickname_effect = { NICKNAME = nick_pheidolos } }
             }
         }
-        trigger_event = nikean_nickname.0010
+        trigger_event = nars_nickname.0010
     }   
     
     option = {  
-        name =  nikean_nickname.0010.x
-        custom_tooltip = nikean_nickname.0010.x.tt
+        name =  nars_nickname.0010.x
+        custom_tooltip = nars_nickname.0010.x.tt
     }
 }

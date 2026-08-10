@@ -1,19 +1,19 @@
 ﻿dyn_nars_1001 = {
 	name = name_dyn_nars_1001
-	culture = nars_nikean
+	culture = arcadian
 }
 
 dyn_nars_1002 = {
 	name = name_dyn_nars_1002
-	culture = nars_nikean
+	culture = arcadian
 }
 
 dyn_nars_1003 = {
 	name = name_dyn_nars_1003
-	culture = nars_nikean
+	culture = arcadian
 }
 
 dyn_nars_1004 = {
 	name = name_dyn_nars_1004
-	culture = nars_nikean
+	culture = arcadian
 }

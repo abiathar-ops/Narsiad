@@ -1,4 +1,4 @@
-﻿local_assimilate_nikean_traditions_effect = {
+﻿local_assimilate_arcadian_traditions_effect = {
 	save_scope_as = converting_character
 	
 	$OLD_CULTURE$ = { save_scope_as = old_culture }
@@ -8,17 +8,17 @@
 	$CONVERTER$ = { save_scope_as = converter }
 
 	add_character_modifier = {
-		modifier = embraced_nikean_traditions_modifier
+		modifier = embraced_arcadian_traditions_modifier
 	}
 	
 	if = {
 		limit = {
 			dynasty ?= {
-				NOT = { has_dynasty_modifier = settled_nikean_dynasty_modifier }
+				NOT = { has_dynasty_modifier = settled_arcadian_dynasty_modifier }
 			}
 		}
 		dynasty = {
-			add_dynasty_modifier = { modifier = settled_nikean_dynasty_modifier years = 80 }
+			add_dynasty_modifier = { modifier = settled_arcadian_dynasty_modifier years = 80 }
 		}
 	}
 	
@@ -44,7 +44,7 @@
 			set_character_faith = scope:new_faith
 		}
 		hidden_effect = {
-			add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
+			add_character_modifier = { modifier = embraced_arcadian_traditions_modifier }
 		}
 		add_to_temporary_list = notified_of_culture_change
 	}
@@ -61,7 +61,7 @@
 			set_character_faith = scope:new_faith
 		}
 		hidden_effect = {
-			add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
+			add_character_modifier = { modifier = embraced_arcadian_traditions_modifier }
 		}
 		add_to_temporary_list = notified_of_culture_change
 	}
@@ -69,17 +69,17 @@
 	every_vassal = {
 		limit = { NOT = { is_in_list = notified_of_culture_change } }
 		
-		add_character_modifier = { modifier = embraced_nikean_traditions_modifier }
+		add_character_modifier = { modifier = embraced_arcadian_traditions_modifier }
 		
 		hidden_effect = {
 			if = {
 				limit = {
 					dynasty ?= {
-						NOT = { has_dynasty_modifier = settled_nikean_dynasty_modifier }
+						NOT = { has_dynasty_modifier = settled_arcadian_dynasty_modifier }
 					}
 				}
 				dynasty = {
-					add_dynasty_modifier = { modifier = settled_nikean_dynasty_modifier years = 80 }
+					add_dynasty_modifier = { modifier = settled_arcadian_dynasty_modifier years = 80 }
 				}
 			}
 		}
@@ -100,7 +100,7 @@
 					hidden_effect = { bastard_to_wild_oat_conversion_assimilation_effect = yes }
 					set_character_faith = scope:new_faith
 				}
-				hidden_effect = { add_character_modifier = { modifier = embraced_nikean_traditions_modifier } }
+				hidden_effect = { add_character_modifier = { modifier = embraced_arcadian_traditions_modifier } }
 				add_to_temporary_list = notified_of_culture_change
 			}
 			every_consort = {
@@ -114,7 +114,7 @@
 					hidden_effect = { bastard_to_wild_oat_conversion_assimilation_effect = yes }
 					set_character_faith = scope:new_faith
 				}
-				hidden_effect = { add_character_modifier = { modifier = embraced_nikean_traditions_modifier } }
+				hidden_effect = { add_character_modifier = { modifier = embraced_arcadian_traditions_modifier } }
 				add_to_temporary_list = notified_of_culture_change
 			}
 		}
@@ -149,7 +149,8 @@ create_h_narsokratia_effect = {
 	save_scope_as = new_hegemon
 
 	scope:new_hegemon = {
-		get_title = title:h_narsokratia
+		hidden_effect = { get_title = title:h_narsokratia }
+		give_nickname = nick_soter
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
 		title:h_narsokratia = { save_scope_as = new_title }
 		custom_tooltip = decision_h_narsokratia_troop_effect_tooltip
@@ -186,7 +187,7 @@ create_h_narsokratia_effect = {
 		
 		hidden_effect = {
 			spawn_army = {
-				name = nikean_troop_hegemony_name
+				name = arcadian_troop_hegemony_name
 				men_at_arms = {
 					type = maa_mastiges
 					stacks = 15
@@ -214,7 +215,7 @@ create_h_narsokratia_effect = {
 				}
 				set_de_jure_liege_title = title:h_narsokratia
 			}
-			nikean_vassal_conversion_effect = yes
+			arcadian_vassal_conversion_effect = yes
 		}
 		
 	}
@@ -222,6 +223,14 @@ create_h_narsokratia_effect = {
 	set_global_variable = {
 		name = created_h_narsokratia
 		value = yes
+	}
+}
+
+nars_maa_setup_effect = {
+	create_maa_regiment = {
+			type = maa_hoplitai
+			check_can_recruit = no
+			size = 3
 	}
 }
 

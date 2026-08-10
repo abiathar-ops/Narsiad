@@ -45,7 +45,7 @@ aretaic_school_02 = {
 		county_opinion_add = 20
 	}
 	
-	cost_gold = 1145 # Paid for by the decision
+	cost_gold = 0 # Paid for by the decision
 	ai_value = {
 		base = 100
 		modifier = { # Fill all building slots before going for special buildings
@@ -94,7 +94,7 @@ brothel_complex_02 = {
 
 	show_disabled = yes
 
-	cost_gold = expensive_building_tier_5_cost
+	cost_gold = 0
 
 	character_modifier = {
 		stress_gain_mult = -0.30

@@ -1,18 +1,18 @@
 ﻿l_english:
- # Nikean religion group
- rf_nikean:0 "Orphic"
- nikean_religion:0 "Nikean"
- nikean_religion_adj:0 "Nikean"
- nikean_religion_adherent:0 "Nikean"
- nikean_religion_adherent_plural:0 "Nikeans"
- nikean_religion_desc:0 "Revived from the records and teachings of [nikean|E] antiquity, [orphic|E] beliefs revolves around the concept of intellectual erudition, in which adherents are to pursue [learning|E] and [innovation|E] as a path to salvation."
+ # Arcadian religion group
+ rf_arcadian:0 "Orphic"
+ arcadian_religion:0 "Arcadian"
+ arcadian_religion_adj:0 "Arcadian"
+ arcadian_religion_adherent:0 "Arcadian"
+ arcadian_religion_adherent_plural:0 "Arcadians"
+ arcadian_religion_desc:0 "Derived from the records and teachings of Arkadés antiquity, the Orphic faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
 
- # Nikean branches
- nars_religion:0 "Nikēís"
- nars_religion_adj:0 "Nikēís"
- nars_religion_adherent:0 "Nikēís"
- nars_religion_adherent_plural:0 "Nikēís"
- nars_religion_desc:0 "The faith of the Nikeans venerates knowledge and wisdom as a path to spiritual fulfillment, with an emphasis on preserving ancient traditions and texts. Found by a wayward book in a ruined site of antiquity, this faith is a miracle of theocratic revival."
+ # Arcadian branches
+ nars_religion:0 "Arkadés"
+ nars_religion_adj:0 "Arkadés"
+ nars_religion_adherent:0 "Arkadés"
+ nars_religion_adherent_plural:0 "Arkadés"
+ nars_religion_desc:0 "The faith of the Arkadés venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"
@@ -50,12 +50,12 @@
  nars_negative_afterlife:0 "hell"
  nars_negative_afterlife_2:1 "the Pit" # Optional translation alt
  nars_negative_afterlife_3:1 "Gehenna" # Optional translation alt
- nars_witch_god_name:0 "Enuō"
- nars_witch_god_name_possessive:0 "Enuō's"
+ nars_witch_god_name:0 "$nars_high_god_name$"
+ nars_witch_god_name_possessive:0 "$nars_high_god_name_possessive$"
  nars_creator_god_name:0 "$nars_high_god_name$"
  nars_creator_god_name_possessive:0 "$nars_high_god_name_possessive$"
  nars_health_god_name:0 "$nars_high_god_name$"
- nars_health_god_name_possessive:0 "$nars_high_god_name$"
+ nars_health_god_name_possessive:0 "$nars_high_god_name_possessive$"
  nars_fertility_god_name:0 "$nars_witch_god_name$"
  nars_fertility_god_name_possessive:0 "$nars_witch_god_name_possessive$"
  nars_wealth_god_name:0 "$nars_high_god_name_alternate$"

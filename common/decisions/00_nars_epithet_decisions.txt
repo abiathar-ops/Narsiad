@@ -4,11 +4,11 @@ decision_take_epithet = {
  		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
  	}
  	desc = decision_take_epithet_desc
- 	decision_group_type = nikean
+ 	decision_group_type = arcadian
  	selection_tooltip = decision_take_epithet_tooltip
 
  	is_shown = {
- 		is_nikean = yes
+ 		is_arcadian = yes
  		is_ruler = yes
  	}
 
@@ -24,7 +24,7 @@ decision_take_epithet = {
 
  	effect = {
 		custom_tooltip = decision_take_epithet_tooltip
-		trigger_event = nikean_nickname.0010
+		trigger_event = nars_nickname.0010
  	}
 
  	ai_check_interval = 0

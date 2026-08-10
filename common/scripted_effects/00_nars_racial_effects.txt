@@ -103,3 +103,17 @@ nars_update_narsokratia_value = {
         set_variable = { name = narsokratia_value value = 0 }
     }
 }
+
+nars_apply_setup_effect = {
+    if = {
+        limit = {
+            OR = {
+                is_ethnically_arcadian = yes
+            }
+            NOT = { has_trait = nars_naturalis }
+        }
+        add_trait = nars_naturalis
+        create_story = story_nars_naturalis
+        nars_naturalis_set_tier_xp_effect = yes
+    }
+}

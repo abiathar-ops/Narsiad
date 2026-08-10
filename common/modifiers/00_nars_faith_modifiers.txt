@@ -1,19 +1,19 @@
 ﻿
-panteion_nikean_narses = { # God of Learning, Innovation, and Progress
+panteion_arcadian_narses = { # God of Learning, Innovation, and Progress
 	icon = learning_positive
 	learning = 2
 	monthly_learning_lifestyle_xp_gain_mult = 0.2
 	monthly_piety_gain_mult = 0.2
 }
 
-panteion_nikean_phokas = { # God of Riches, Commerce, and Trade
+panteion_arcadian_phokas = { # God of Riches, Commerce, and Trade
 	icon = stewardship_positive
 	stewardship = 2
 	stress_gain_mult = -0.2
 	domain_tax_mult = 0.2
 }
 
-panteion_nikean_enuo = { # Goddess of War, Strength, and Protection
+panteion_arcadian_enuo = { # Goddess of War, Strength, and Protection
 	icon = prowess_positive
 	prowess_per_piety_level = 5
 	knight_effectiveness_mult = 0.25

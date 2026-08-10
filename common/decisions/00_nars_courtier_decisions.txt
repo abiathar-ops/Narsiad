@@ -1,10 +1,10 @@
-decision_recruit_nikean_courtier = {
+decision_recruit_arcadian_courtier = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
 	sort_order = 10
-	decision_group_type = nikean
+	decision_group_type = arcadian
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -21,7 +21,7 @@ decision_recruit_nikean_courtier = {
 
 	is_shown = {
 		is_landed_or_landless_administrative = yes
-		is_nikean = yes
+		is_arcadian = yes
 	}
 
 	is_valid = {
@@ -41,35 +41,35 @@ decision_recruit_nikean_courtier = {
 		decision_to_second_step_button =  "SELECT_ACTION"
 		show_from_start = yes
 
-		item = { # 2 Normal Nikeans
-			value = decision_hire_nikean_1
+		item = { # 2 Normal Arcadians
+			value = decision_hire_arcadian_1
 			is_shown = {
 				is_ruler = yes
 				is_landless_adventurer = no
-				is_nikean = yes
+				is_arcadian = yes
 			}
 			is_valid = {
-				is_nikean = yes
+				is_arcadian = yes
 				is_at_war = no
 				is_imprisoned = no
 				NOR = {
 					custom_tooltip = {
-						text = recruit_nikean_1_cooldown_tt
-						has_character_flag = recruit_nikean_1_cooldown
+						text = recruit_arcadian_1_cooldown_tt
+						has_character_flag = recruit_arcadian_1_cooldown
 					}
 				}
 			}
-			current_description = decision_hire_nikean_1_desc
-			localization = decision_hire_nikean_1
+			current_description = decision_hire_arcadian_1_desc
+			localization = decision_hire_arcadian_1
 			icon = "gfx/interface/icons/court_position_types/yeke_jarquchi_court_position.dds"
 			ai_chance = { value = 100 }
 		} 
-		item = { # Choice of 2 really good nikeans
-			value = decision_hire_nikean_2
+		item = { # Choice of 2 really good arcadians
+			value = decision_hire_arcadian_2
 			is_shown = {
 				exists = primary_title 
 				is_landless_adventurer = no
-				is_nikean = yes
+				is_arcadian = yes
 			}
 			is_valid = {
 				is_at_war = no
@@ -78,13 +78,13 @@ decision_recruit_nikean_courtier = {
 				gold >= major_treasury_or_gold_value
 				NOR = {
 					custom_tooltip = {
-						text = recruit_nikean_2_cooldown_tt
-						has_character_flag = recruit_nikean_2_cooldown
+						text = recruit_arcadian_2_cooldown_tt
+						has_character_flag = recruit_arcadian_2_cooldown
 					}
 				}
 			}
-			current_description = decision_hire_nikean_2_desc
-			localization = decision_hire_nikean_2
+			current_description = decision_hire_arcadian_2_desc
+			localization = decision_hire_arcadian_2
 			icon = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 			ai_chance = {
 				value = 100
@@ -105,39 +105,39 @@ decision_recruit_nikean_courtier = {
 
 	effect = {
 		if = {
-			limit = { scope:decision_hire_nikean_1 = yes }
-			custom_tooltip = decision_hire_nikean_1_tooltip
+			limit = { scope:decision_hire_arcadian_1 = yes }
+			custom_tooltip = decision_hire_arcadian_1_tooltip
 		}
 		else_if = {
-			limit = { scope:decision_hire_nikean_2 = yes }
-			custom_tooltip = decision_hire_nikean_2_tooltip
+			limit = { scope:decision_hire_arcadian_2 = yes }
+			custom_tooltip = decision_hire_arcadian_2_tooltip
 		}
 		hidden_effect = {
-			custom_tooltip = decision_recruit_nikean_courtier_tooltip
+			custom_tooltip = decision_recruit_arcadian_courtier_tooltip
 			if = { # 3 men of narses 
-				limit = { scope:decision_hire_nikean_1 = yes }
+				limit = { scope:decision_hire_arcadian_1 = yes }
 				set_variable = {
-					name = recruit_nikean_1_cooldown
+					name = recruit_arcadian_1_cooldown
 					years = 10
 				}
 				set_variable = {
-					name = number_of_invite_nikean_countdown
+					name = number_of_invite_arcadian_countdown
 					value = 4
 					days = 1000
 					}
 				trigger_event = {
-					id = nikean_courtiers.0001
+					id = nars_courtiers.0001
 					days = { 5 15 }
 				}
 			}
 			else_if = { # 2 Sophes
-				limit = { scope:decision_hire_nikean_2 = yes }
+				limit = { scope:decision_hire_arcadian_2 = yes }
 				add_character_flag = {
-					flag = recruit_nikean_2_cooldown
+					flag = recruit_arcadian_2_cooldown
 					years = 5
 				}
 				trigger_event = {
-					id = nikean_courtiers.0011
+					id = nars_courtiers.0011
 					days = { 7 14 }
 				}
 			}
@@ -145,7 +145,7 @@ decision_recruit_nikean_courtier = {
 	}
 	
 	ai_potential = {
-		is_nikean = yes
+		is_arcadian = yes
 		is_landed_or_landless_administrative = yes
 		modifier = {
 			add = 30
@@ -154,14 +154,14 @@ decision_recruit_nikean_courtier = {
 	}
 }
 
-decision_recruit_nikean_adventurer = {
+decision_recruit_arcadian_adventurer = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
 	sort_order = 10
-	decision_group_type = nikean
-	desc = decision_recruit_nikean_adventurer_desc
+	decision_group_type = arcadian
+	desc = decision_recruit_arcadian_adventurer_desc
 
 	cooldown = { years = 2 }
 
@@ -180,7 +180,7 @@ decision_recruit_nikean_adventurer = {
 
 	is_shown = {
 		is_landless_adventurer = yes
-		is_nikean = yes
+		is_arcadian = yes
 	}
 
 	is_valid = {
@@ -195,14 +195,14 @@ decision_recruit_nikean_adventurer = {
 	}
 
 	effect = {
-		custom_tooltip = decision_recruit_nikean_adventurer_tooltip
+		custom_tooltip = decision_recruit_arcadian_adventurer_tooltip
 		set_variable = {
-			name = number_of_invite_nikean_countdown
+			name = number_of_invite_arcadian_countdown
 			value = 4
 			days = 1000
 			}
 		trigger_event = {
-			id = nikean_courtiers.0001
+			id = nars_courtiers.0001
 			days = { 5 15 }
 		}
 	}

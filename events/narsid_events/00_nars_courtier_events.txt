@@ -1,10 +1,10 @@
-﻿namespace = nikean_courtiers
+﻿namespace = nars_courtiers
 
-nikean_courtiers.0001 = {
+nars_courtiers.0001 = {
 	hidden = yes
 
 	trigger = {
-		exists = var:number_of_invite_nikean_countdown
+		exists = var:number_of_invite_arcadian_countdown
 	}
 
 	immediate = {
@@ -26,7 +26,7 @@ nikean_courtiers.0001 = {
 			}
 		}
 
-		# Gather Nikean pool characters with suitable prowess
+		# Gather Arcadian pool characters with suitable prowess
 		every_in_list = {
 			list = pool_provinces
 			save_temporary_scope_as = pool_province
@@ -37,13 +37,13 @@ nikean_courtiers.0001 = {
 					culture = { has_cultural_pillar = heritage_nars }
 					guest_knight_candidate_trigger = { HOST = root }
 				}
-				add_to_temporary_list = potential_nikean_courtiers
+				add_to_temporary_list = potential_nars_courtiers
 			}
 		}
 
 		# Pick the best candidate (weighted by how far above minimum prowess they are)
 		random_in_list = {
-			list = potential_nikean_courtiers
+			list = potential_nars_courtiers
 			limit = { is_alive = yes }
 			weight = {
 				base = 1
@@ -62,12 +62,12 @@ nikean_courtiers.0001 = {
 					}
 				}
 			}
-			save_scope_as = nikean_courtier
+			save_scope_as = arcadian_courtier
 		}
 
-		# If no suitable pool character exists, create a fresh Nikean warrior
+		# If no suitable pool character exists, create a fresh Arcadian warrior
 		if = {
-			limit = { NOT = { exists = scope:nikean_courtier } }
+			limit = { NOT = { exists = scope:arcadian_courtier } }
 			create_character = {
 				location = root.capital_province
 				culture = root.culture
@@ -118,7 +118,7 @@ nikean_courtiers.0001 = {
 				martial = { 10 25 }
 				prowess = { 15 30 }
 				gender_female_chance = 50
-				save_scope_as = nikean_courtier
+				save_scope_as = arcadian_courtier
 				after_creation = {
 					add_trait = nars_naturalis
 					nars_naturalis_set_tier_xp_effect = yes
@@ -127,35 +127,35 @@ nikean_courtiers.0001 = {
 		}
 
 		# Bring the courtier to court and notify the player
-		add_courtier = scope:nikean_courtier
+		add_courtier = scope:arcadian_courtier
 		send_interface_message = {
-			title = nikean_courtiers.0001.t
-			desc = nikean_courtiers.0001.desc
+			title = nars_courtiers.0001.t
+			desc = nars_courtiers.0001.desc
 			type = event_prowess_good_desc
-			left_icon = scope:nikean_courtier
+			left_icon = scope:arcadian_courtier
 		}
 
 		# Count down and either end the chain or schedule the next arrival
 		change_variable = {
-			name = number_of_invite_nikean_countdown
+			name = number_of_invite_arcadian_countdown
 			subtract = 1
 		}
 
 		if = {
-			limit = { var:number_of_invite_nikean_countdown = 0 }
-			remove_variable = number_of_invite_nikean_countdown
+			limit = { var:number_of_invite_arcadian_countdown = 0 }
+			remove_variable = number_of_invite_arcadian_countdown
 		}
 		else = {
-			clear_saved_scope = nikean_courtier
+			clear_saved_scope = arcadian_courtier
 			trigger_event = {
-				id = nikean_courtiers.0001
+				id = nars_courtiers.0001
 				days = { 100 200 }
 			}
 		}
 	}
 }
 
-nikean_courtiers.0002 = {
+nars_courtiers.0002 = {
     hidden = yes
 
     immediate = {
@@ -213,7 +213,7 @@ nikean_courtiers.0002 = {
 				stewardship = { 10 25 }
 				diplomacy = { 10 25 }
 				martial = { 10 25 }
-				prowess = { 15 30 }
+				prowess = { 10 30 }
                 after_creation = {
                     add_trait = nars_naturalis
 					nars_naturalis_set_tier_xp_effect = yes
@@ -223,10 +223,10 @@ nikean_courtiers.0002 = {
     }
 }
 
-nikean_courtiers.0011 = {
+nars_courtiers.0011 = {
     type = character_event
-    title = nikean_courtiers.0011.t
-    desc = nikean_courtiers.0011.desc
+    title = nars_courtiers.0011.t
+    desc = nars_courtiers.0011.desc
     theme = emperor
     override_background = bp2_study_indian
     override_effect_2d = { reference = smoke }
@@ -425,7 +425,7 @@ nikean_courtiers.0011 = {
     }
 
 	option = {
-        name = nikean_courtiers.0011.c
+        name = nars_courtiers.0011.c
         trigger = {
             is_playable_character = yes
 			exists = scope:pugilist
@@ -449,7 +449,7 @@ nikean_courtiers.0011 = {
     }
 	
     option = {
-        name = nikean_courtiers.0011.a
+        name = nars_courtiers.0011.a
         trigger = {
             is_playable_character = yes
             exists = scope:pugilist
@@ -474,7 +474,7 @@ nikean_courtiers.0011 = {
     }
 
     option = {
-        name = nikean_courtiers.0011.b
+        name = nars_courtiers.0011.b
         trigger = {
             is_playable_character = yes
             exists = scope:savant
@@ -506,7 +506,7 @@ nikean_courtiers.0011 = {
                     exists = scope:savant
                 }
             }
-            text = nikean_courtiers.0011.d.none
+            text = nars_courtiers.0011.d.none
         }
         name = {
             trigger = {
@@ -515,9 +515,9 @@ nikean_courtiers.0011 = {
                     exists = scope:savant
                 }
             }
-            text = nikean_courtiers.0011.d.decline
+            text = nars_courtiers.0011.d.decline
         }
-        custom_tooltip = nikean_courtiers.0011.d.tt
+        custom_tooltip = nars_courtiers.0011.d.tt
         
         hidden_effect = {
             if = {
@@ -541,12 +541,12 @@ nikean_courtiers.0011 = {
 	}
 }
 
-namespace = nikean_gunpowder
+namespace = nars_gunpowder
 
-nikean_gunpowder.1001 = {
+nars_gunpowder.1001 = {
 	type = character_event
-	title = nikean_gunpowder.1001.t
-	desc = nikean_gunpowder.1001.desc
+	title = nars_gunpowder.1001.t
+	desc = nars_gunpowder.1001.desc
 	theme = emperor
 	override_background = bp1_courtyard_mena
 	override_effect_2d = { reference = smoke }
@@ -563,11 +563,11 @@ nikean_gunpowder.1001 = {
 	immediate = {
 		if = {
 			limit = { exists = cp:councillor_marshal }
-			cp:councillor_steward = { save_scope_as = aide }
+			cp:councillor_marshal = { save_scope_as = aide }
 		}
 		else_if = {
 			limit = { exists = cp:councillor_steward }
-			cp:councillor_chancellor = { save_scope_as = aide }
+			cp:councillor_steward = { save_scope_as = aide }
 		}
 		else_if = {
 			limit = { any_councillor = { } }
@@ -597,7 +597,7 @@ nikean_gunpowder.1001 = {
 	}
 
 	option = { #Use the city's native capabilities
-		name = nikean_gunpowder.1001.a
+		name = nars_gunpowder.1001.a
 		trigger = {
 			influence >= major_influence_value
 		}
@@ -637,7 +637,7 @@ nikean_gunpowder.1001 = {
 		}
 	}
 	option = { #Hire foreign craftsmen to manufacture it
-		name = nikean_gunpowder.1001.b
+		name = nars_gunpowder.1001.b
 		trigger = {
 			treasury >= major_gold_value_static_max
 		}
@@ -679,7 +679,7 @@ nikean_gunpowder.1001 = {
 	}
 
 	option = { #Actually... never mind
-		name = nikean_gunpowder.1001.c
+		name = nars_gunpowder.1001.c
 		remove_global_variable = flag_munitions_research_done
 		remove_from_global_variable_list = {
 			name = unavailable_unique_decisions

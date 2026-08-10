@@ -1,6 +1,6 @@
-valid_for_nikean_conversion_trigger = {
+valid_for_arcadian_conversion_trigger = {
 	NOT = {
-        faith.religion = { is_in_family = rf_nikean }
+        faith.religion = { is_in_family = rf_arcadian }
     }
 	is_at_war = no
 	NOR = {

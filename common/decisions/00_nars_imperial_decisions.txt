@@ -1,8 +1,8 @@
-decision_nikean_imperial_administration = { 
+decision_arcadian_imperial_administration = { 
 	decision_group_type = restorationist
-	title = decision_nikean_imperial_administration
-	desc = decision_nikean_imperial_administration_desc
-	selection_tooltip = decision_nikean_imperial_administration_tooltip
+	title = decision_arcadian_imperial_administration
+	desc = decision_arcadian_imperial_administration_desc
+	selection_tooltip = decision_arcadian_imperial_administration_tooltip
 
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/ep3_decision_hold_triumph.dds"
@@ -10,7 +10,7 @@ decision_nikean_imperial_administration = {
 	sort_order = 95
 
 	is_shown = {
-		is_nikean = yes
+		is_arcadian = yes
 		highest_held_title_tier >= tier_empire
 	}
 	
@@ -32,7 +32,7 @@ decision_nikean_imperial_administration = {
 		show_from_start = yes
 
 		item = { 
-			value = nikean_realm_1_decision
+			value = nars_realm_1_decision
 			is_shown = {
 				is_ruler = yes
 			}
@@ -40,20 +40,20 @@ decision_nikean_imperial_administration = {
 				gold >= major_treasury_or_gold_value
 				NOR = {
 					custom_tooltip = {
-						text = nikean_realm_1_cooldown_tt
-						has_character_flag = nikean_realm_1_cooldown
+						text = nars_realm_1_cooldown_tt
+						has_character_flag = nars_realm_1_cooldown
 					}
 				}
 			}
-			current_description = nikean_realm_1_decision_desc
-			localization = nikean_realm_1_decision_name
+			current_description = nars_realm_1_decision_desc
+			localization = nars_realm_1_decision_name
 			icon = "gfx/interface/icons/court_position_types/armorer_camp_officer.dds"
 			ai_chance = {
 				value = 0
 			}
 		}
 		item = { 
-			value = nikean_realm_2_decision
+			value = nars_realm_2_decision
 			is_shown = {
 				is_ruler = yes
 			}
@@ -61,20 +61,20 @@ decision_nikean_imperial_administration = {
 				gold >= major_treasury_or_gold_value
 				NOR = {
 					custom_tooltip = {
-						text = nikean_realm_2_cooldown_tt
-						has_character_flag = nikean_realm_2_cooldown
+						text = nars_realm_2_cooldown_tt
+						has_character_flag = nars_realm_2_cooldown
 					}
 				}
 			}
-			current_description = nikean_realm_2_decision_desc
-			localization = nikean_realm_2_decision_name
+			current_description = nars_realm_2_decision_desc
+			localization = nars_realm_2_decision_name
 			icon = "gfx/interface/icons/court_position_types/chief_qadi_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
 		}
 		item = { 
-			value = nikean_realm_3_decision
+			value = nars_realm_3_decision
 			is_shown = {
 				is_ruler = yes
 			}
@@ -82,13 +82,13 @@ decision_nikean_imperial_administration = {
 				gold >= major_treasury_or_gold_value
 				NOR = {
 					custom_tooltip = {
-						text = nikean_realm_3_cooldown_tt
-						has_character_flag = nikean_realm_3_cooldown
+						text = nars_realm_3_cooldown_tt
+						has_character_flag = nars_realm_3_cooldown
 					}
 				}
 			}
-			current_description = nikean_realm_3_decision_desc
-			localization = nikean_realm_3_decision_name
+			current_description = nars_realm_3_decision_desc
+			localization = nars_realm_3_decision_name
 			icon = "gfx/interface/icons/court_position_types/court_musician_court_position.dds"
 			ai_chance = {
 				value = 0
@@ -99,50 +99,50 @@ decision_nikean_imperial_administration = {
 	effect = {
 		# Develop Industry
 		if = {
-			limit = { scope:nikean_realm_1_decision = yes }
+			limit = { scope:nars_realm_1_decision = yes }
 			pay_short_term_gold = {
 				target = scope:actor
 				gold = major_gold_value
 			}
-			custom_tooltip = change_to_nikean_realm_1_decision_desc_1 
+			custom_tooltip = change_to_nars_realm_1_decision_desc_1 
 			add_character_flag = {
-				flag = nikean_realm_1_cooldown
+				flag = nars_realm_1_cooldown
 				years = 5
 			}	
 			hidden_effect = {
-				trigger_event = { id = nikean_realm.1001 }
+				trigger_event = { id = nars_realm.1001 }
 			}
 		}
 		# Hire Synods
 		if = {
-			limit = { scope:nikean_realm_2_decision = yes }
+			limit = { scope:nars_realm_2_decision = yes }
 			pay_short_term_gold = {
 				target = scope:actor
 				gold = major_gold_value
 			}
-			custom_tooltip = change_to_nikean_realm_2_decision_desc_1
+			custom_tooltip = change_to_nars_realm_2_decision_desc_1
 			add_character_flag = {
-				flag = nikean_realm_2_cooldown
+				flag = nars_realm_2_cooldown
 				years = 5
 			}
 			hidden_effect = {
-				trigger_event = { id = nikean_realm.1011 }
+				trigger_event = { id = nars_realm.1011 }
 			}
 		}
 		# Distribute Propaganda
 		if = {
-			limit = { scope:nikean_realm_3_decision = yes }
+			limit = { scope:nars_realm_3_decision = yes }
 			pay_short_term_gold = {
 				target = scope:actor
 				gold = major_gold_value
 			}
-			custom_tooltip = change_to_nikean_realm_3_decision_desc_1
+			custom_tooltip = change_to_nars_realm_3_decision_desc_1
 			add_character_flag = {
-				flag = nikean_realm_3_cooldown
+				flag = nars_realm_3_cooldown
 				years = 5
 			}
 			hidden_effect = {
-				trigger_event = { id = nikean_realm.1021 }
+				trigger_event = { id = nars_realm.1021 }
 			}
 		}
 	}
@@ -150,7 +150,7 @@ decision_nikean_imperial_administration = {
 	ai_potential = {
 		is_ruler = yes
 		highest_held_title_tier >= tier_empire
-		is_nikean = yes
+		is_arcadian = yes
 	}
 	ai_will_do = {
 		base = 20

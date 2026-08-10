@@ -1,4 +1,4 @@
-nikean_vassal_conversion_effect = {
+arcadian_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
 		change_government = administrative_government
@@ -21,12 +21,12 @@ nikean_vassal_conversion_effect = {
 		}
 		random = {
 			chance = 65
-			set_culture = culture:nars_nikean
+			set_culture = culture:arcadian
 		}
 	}
 }
 
-nikean_minor_county_effect = {
+arcadian_minor_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -39,17 +39,17 @@ nikean_minor_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:nars_nikean }
+			NOT = { culture = culture:arcadian }
 		}
 		random = {
 			chance = 25
-			set_county_culture = culture:nars_nikean
+			set_county_culture = culture:arcadian
             change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-nikean_moderate_county_effect = {
+arcadian_moderate_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -62,17 +62,17 @@ nikean_moderate_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:nars_nikean }
+			NOT = { culture = culture:arcadian }
 		}
 		random = {
 			chance = 50
-			set_county_culture = culture:nars_nikean
+			set_county_culture = culture:arcadian
 			change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-nikean_major_county_effect = {
+arcadian_major_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -85,35 +85,61 @@ nikean_major_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:nars_nikean }
+			NOT = { culture = culture:arcadian }
 		}
 		random = {
 			chance = 75
-			set_county_culture = culture:nars_nikean
+			set_county_culture = culture:arcadian
             change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-nikean_settle_county_effect = {
-	every_sub_realm_county = {
-		limit = {
-			NOT = { faith = faith:nars_religion }
-		}
-		set_county_faith = faith:nars_religion
+arcadian_settle_county_effect = {
+    # Save the character triggering the effect so we can reference them safely
+    save_scope_as = arcadian_ruler
+    
+    every_sub_realm_county = {
+        limit = {
+            # Check if the county belongs to a Duchy held by the ruler, 
+            # OR if it belongs to the de jure Duchy of the ruler's capital.
+            duchy = {
+                OR = {
+                    holder = scope:arcadian_ruler
+                    this = scope:arcadian_ruler.capital_county.duchy
+                }
+            }
+            
+            # Only target the county if it actually needs a conversion
+            OR = {
+                NOT = { faith = faith:nars_religion }
+                NOT = { culture = culture:arcadian }
+            }
+        }
+        
+        # Convert Faith if needed
+        if = {
+            limit = {
+                NOT = { faith = faith:nars_religion }
+            }
+            set_county_faith = faith:nars_religion
+        }
+        
+        # Convert Culture if needed
+        if = {
+            limit = {
+                NOT = { culture = culture:arcadian }
+            }
+            set_county_culture = culture:arcadian
+        }
+        
+        # Apply the control loss once
         change_county_control = major_county_control_loss
-	}
-	every_sub_realm_county = {
-		limit = {
-			NOT = { culture = culture:nars_nikean }
-		}
-        set_county_culture = culture:nars_nikean
-        change_county_control = major_county_control_loss
-	}
+    }
 }
 
-nikean_diplomacy_entreaty_effect = {
-    custom_tooltip = nikean_diplomacy.tt
+arcadian_diplomacy_entreaty_effect = {
+    custom_tooltip = arcadian_diplomacy.tt
     
     hidden_effect = {
         # Dynamically identify the other two siblings based on the root character's modifier
@@ -148,10 +174,10 @@ nikean_diplomacy_entreaty_effect = {
                 }
                 
                 send_interface_toast = {
-                    title = nikean_diplomacy_both_join_toast_t
+                    title = arcadian_diplomacy_both_join_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = nikean_diplomacy_both_join_toast_tt
+                    custom_tooltip = arcadian_diplomacy_both_join_toast_tt
                 }
                 
                 scope:target_1 = {
@@ -170,6 +196,7 @@ nikean_diplomacy_entreaty_effect = {
                             list = target_1_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
+                            remove_trait = adventurer_follower
                         }
                     }
                 }
@@ -190,16 +217,17 @@ nikean_diplomacy_entreaty_effect = {
                             list = target_2_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
+                            remove_trait = adventurer_follower
                         }
                     }
                 }
             }
             25 = {
                 send_interface_toast = {
-                    title = nikean_diplomacy_target_1_joins_toast_t
+                    title = arcadian_diplomacy_target_1_joins_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = nikean_diplomacy_target_1_joins_toast_tt
+                    custom_tooltip = arcadian_diplomacy_target_1_joins_toast_tt
                 }
                 scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
@@ -217,6 +245,7 @@ nikean_diplomacy_entreaty_effect = {
                             list = target_1_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
+                            remove_trait = adventurer_follower
                         }
                     }
                 }
@@ -233,10 +262,10 @@ nikean_diplomacy_entreaty_effect = {
             }
             25 = {
                 send_interface_toast = {
-                    title = nikean_diplomacy_target_2_joins_toast_t
+                    title = arcadian_diplomacy_target_2_joins_toast_t
                     left_icon = scope:target_2
                     right_icon = scope:target_1
-                    custom_tooltip = nikean_diplomacy_target_2_joins_toast_tt
+                    custom_tooltip = arcadian_diplomacy_target_2_joins_toast_tt
                 }
 
                 scope:target_1 = {
@@ -265,16 +294,17 @@ nikean_diplomacy_entreaty_effect = {
                             list = target_2_followers_list
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
+                            remove_trait = adventurer_follower
                         }
                     }
                 }
             }
             30 = {
                 send_interface_toast = {
-                    title = nikean_diplomacy_neither_join_toast_t
+                    title = arcadian_diplomacy_neither_join_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = nikean_diplomacy_neither_join_toast_tt
+                    custom_tooltip = arcadian_diplomacy_neither_join_toast_tt
                 }
                 scope:target_1 = {
                     add_opinion = {

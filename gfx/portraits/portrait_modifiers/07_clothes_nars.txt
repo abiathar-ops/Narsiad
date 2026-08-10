@@ -3,13 +3,13 @@
 	selection_behaviour = max
 	priority = 50
 
-	70000011_nikean = {
+	70000011_arcadian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = special_headgear_spectacles
-				template = no_spectacles
-	 			accessory = empty
+				template = blindfold
+	 			accessory = blindfold
 			}
 			accessory = {
 				mode = add
@@ -17,17 +17,29 @@
 				template = no_legwear
 				accessory = empty
 			}
+			# accessory = {
+			# 	mode = add
+			# 	gene = hairstyles
+			# 	template = tgp_southeast_hairstyles
+			# 	accessory = male_hair_indian_03
+			# }
+			# accessory = {
+			# 	mode = add
+			# 	gene = beards
+			# 	template = fp3_iranian_beards_straight
+			# 	accessory = m_beard_fp3_iranian_01
+			# }
 			accessory = {
 				mode = add
 				gene = hairstyles
-				template = tgp_southeast_hairstyles
-				accessory = male_hair_indian_03
+				template = ep3_byzantine_hairstyle
+				accessory = m_hair_ep3_byzantine_01
 			}
 			accessory = {
 				mode = add
 				gene = beards
-				template = fp3_iranian_beards_straight
-				accessory = m_beard_fp3_iranian_01
+				template = no_beard
+				accessory = empty
 			}
 			accessory = {
 				mode = add
@@ -56,7 +68,7 @@
 			}
 		}
 	}
-	70000012_nikean = {
+	70000012_arcadian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -103,7 +115,7 @@
 			}
 		}
 	}
-	70000013_nikean = {
+	70000013_arcadian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -256,7 +268,7 @@
 			base = 0
 			modifier = {
 				add = 1000
-				is_ethnically_nikean = yes
+				is_ethnically_arcadian = yes
 				age <= 40
 				shown_in_ruler_designer = yes
 			}
@@ -282,12 +294,12 @@
 				template = ep2_western_era1_war_nobility
 				accessory = m_headgear_sec_ep2_western_era1_war_nob_01
 			}
-			accessory = {
-				mode = add
-				gene = cloaks
-				template = fp1_cloak
-				range = { 0 1 }
-			}
+			# accessory = {
+			# 	mode = add
+			# 	gene = cloaks
+			# 	template = fp1_cloak
+			# 	value = 0.5
+			# }
 			morph = {
 				mode = add
 				gene = gene_bs_cloak
@@ -300,7 +312,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_nikean = yes
+				is_arcadian = yes
 				is_female = no
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes
@@ -330,12 +342,12 @@
 				template = ep2_western_era1_war_nobility
 				accessory = f_headgear_sec_ep2_western_era1_war_nob_01
 			}
-			accessory = {
-				mode = add
-				gene = cloaks
-				template = fp1_cloak
-				range = { 0 1 }
-			}
+			# accessory = {
+			# 	mode = add
+			# 	gene = cloaks
+			# 	template = fp1_cloak
+			# 	range = { 0 1 }
+			# }
 			morph = {
 				mode = add
 				gene = gene_bs_cloak
@@ -348,7 +360,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_nikean = yes
+				is_arcadian = yes
 				is_female = yes
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes

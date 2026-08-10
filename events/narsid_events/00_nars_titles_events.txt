@@ -1,9 +1,9 @@
-namespace = nikean_titles
+namespace = nars_titles
 
-nikean_titles.0021 = {
+nars_titles.0001 = {
 	type = character_event
-	title = nikean_titles.0021.t
-	desc = nikean_titles.0021.desc
+	title = nars_titles.0001.t
+	desc = nars_titles.0001.desc
 	theme = emperor
 	window = big_event_window
 	override_background = ep3_hippodrome
@@ -23,16 +23,16 @@ nikean_titles.0021 = {
 		}
 	}
 	option = { 
-		name = nikean_titles.0021.a
+		name = nars_titles.0001.a
 		flavor = narsokratia_event.flavor
 		h_narsokratia_effect = yes
 	}
 	
 }
 
-namespace = nikean_gunpowder
+namespace = nars_gunpowder
 
-nikean_gunpowder.1011 = {
+nars_gunpowder.1011 = {
 	hidden = yes
 
 	immediate = {
@@ -49,12 +49,12 @@ nikean_gunpowder.1011 = {
 				if = {
 					limit = { exists = scope:scheme_successful }
 					trigger_event = {
-						id = nikean_gunpowder.1021
+						id = nars_gunpowder.1021
 					}
 				}
 				else = {
 					trigger_event = {
-						id = nikean_gunpowder.1022
+						id = nars_gunpowder.1022
 					}	
 				}
 			}
@@ -62,10 +62,10 @@ nikean_gunpowder.1011 = {
 	}
 }
 
-nikean_gunpowder.1021 = {
+nars_gunpowder.1021 = {
 	type = character_event
-	title = nikean_gunpowder.1021.t
-	desc = nikean_gunpowder.1021.desc
+	title = nars_gunpowder.1021.t
+	desc = nars_gunpowder.1021.desc
 	theme = emperor
 	override_background = bp1_courtyard_mena
 
@@ -84,11 +84,11 @@ nikean_gunpowder.1021 = {
 			save_scope_as = capital
 		}
 		munitions_research_success_effect = yes
-		custom_tooltip = nikean_gunpowder.1021.a.mastiges_tt
+		custom_tooltip = nars_gunpowder.1021.a.mastiges_tt
 	}
 	
 	option = {
-		name = nikean_gunpowder.1021.a
+		name = nars_gunpowder.1021.a
 		scope:scheme = { end_scheme = yes }
 		add_to_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -101,10 +101,10 @@ nikean_gunpowder.1021 = {
 	}
 }
 
-nikean_gunpowder.1022 = {
+nars_gunpowder.1022 = {
 	type = character_event
-	title = nikean_gunpowder.1022.t
-	desc = nikean_gunpowder.1022.desc
+	title = nars_gunpowder.1022.t
+	desc = nars_gunpowder.1022.desc
 	theme = emperor
 	override_background = bp1_courtyard_mena
 
@@ -127,7 +127,7 @@ nikean_gunpowder.1022 = {
 	}
 
 	option = {
-		name = nikean_gunpowder.1022.a
+		name = nars_gunpowder.1022.a
 		scope:scheme = { end_scheme = yes }
 	}
 }	

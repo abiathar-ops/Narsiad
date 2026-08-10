@@ -1,4 +1,4 @@
-﻿doctrine_nikean_tenets = {
+﻿doctrine_arcadian_tenets = {
 	category = "core_tenets"
 
 	number_of_picks = 3
@@ -7,8 +7,5 @@
         tenet_nars_sanguine
         tenet_nars_pantheon
         tenet_nars_erudition
-        tenet_nars_banking
-        tenet_nars_vestals
-        tenet_nars_crusade
     }
 }

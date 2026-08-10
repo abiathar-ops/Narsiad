@@ -1,4 +1,4 @@
-# 70000014_nikean = {
+# 70000014_arcadian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -17,7 +17,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000015_nikean = {
+	# 70000015_arcadian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -63,7 +63,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000016_nikean = {
+	# 70000016_arcadian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -82,7 +82,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000017_nikean = {
+	# 70000017_arcadian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -113,7 +113,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000018_nikean = {
+	# 70000018_arcadian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -157,7 +157,7 @@
 	# 		base = 0
 	# 		modifier = {
 	# 			add = 2000
-	# 			is_ethnically_nikean = yes
+	# 			is_ethnically_arcadian = yes
 	# 			has_education_rank_5_trigger = yes
 	# 		}
 	# 	}

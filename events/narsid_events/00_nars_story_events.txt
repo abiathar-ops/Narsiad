@@ -1,11 +1,11 @@
-﻿namespace = nikean_intro
+﻿namespace = nars_intro
 
 #OG Custom Characters
-nikean_intro.1001 = {
+nars_intro.1001 = {
 	type = character_event
 	window = fullscreen_event
-	title = nikean_intro.1001.t
-	desc = nikean_intro.1001.desc
+	title = nars_intro.1001.t
+	desc = nars_intro.1001.desc
 	theme = emperor
 	override_background = { reference = fp3_fullscreen_sunder }
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
@@ -24,8 +24,8 @@ nikean_intro.1001 = {
 				has_character_modifier = strato_modifier
 			}
 		}
-		name = nikean_intro.1001.a
-		trigger_event = nikean_intro.1002
+		name = nars_intro.1001.a
+		trigger_event = nars_intro.1002
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 
@@ -38,17 +38,17 @@ nikean_intro.1001 = {
 				has_character_modifier = strato_modifier
 			}
 		}
-		name = nikean_intro.1001.b
-		trigger_event = nikean_intro.0002
+		name = nars_intro.1001.b
+		trigger_event = nars_intro.0002
 		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 }
 
-nikean_intro.1002 = { 
+nars_intro.1002 = { 
 	type = character_event
 	window = big_event_window
-	title = nikean_intro.1002.t
-	desc = nikean_intro.1002.desc
+	title = nars_intro.1002.t
+	desc = nars_intro.1002.desc
 	theme = emperor
 	override_background = ce1_fullscreen_legitimizing_legend
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
@@ -59,19 +59,20 @@ nikean_intro.1002 = {
 	}
 	immediate = {
 		intro_standard_effect = yes
+        trigger_event = { id = nars_maintenance.0002 days = 1 }
 	}
 	option = {
-		name = nikean_intro.1002.a
+		name = nars_intro.1002.a
 	}
 }
 
 
 #Eleios, Ilione, and Strato
-nikean_intro.0001 = {
+nars_intro.0001 = {
     type = character_event
     window = big_event_window
-    title = nikean_intro.0001.t
-    desc = nikean_intro.0001.desc
+    title = nars_intro.0001.t
+    desc = nars_intro.0001.desc
     theme = emperor
     override_background = fp3_zoroastrian_temple
     override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
@@ -104,7 +105,7 @@ nikean_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:nars_nikean
+            culture = culture:arcadian
             female = no
             
             # Dynamic Dynasty Generation
@@ -150,7 +151,7 @@ nikean_intro.0001 = {
             set_coa = h_narsokratia
         }
         create_character = {
-            template = nikean_template.1002
+            template = arcadian_template.1002
             gender = female
             age = 64
             location = root.location
@@ -175,7 +176,7 @@ nikean_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:nars_nikean
+            culture = culture:arcadian
             female = no
             random_traits = no
             
@@ -215,7 +216,7 @@ nikean_intro.0001 = {
             age = { 33 34 }
             location = root.location
             faith = faith:nars_religion
-            culture = culture:nars_nikean
+            culture = culture:arcadian
             sexuality = bisexual
             female = yes
             random_traits = no
@@ -265,7 +266,7 @@ nikean_intro.0001 = {
             learning = 10
             prowess = 25
             faith = faith:nars_religion
-            culture = culture:nars_nikean
+            culture = culture:arcadian
             trait = deceitful
             trait = arbitrary
             trait = callous
@@ -328,9 +329,6 @@ nikean_intro.0001 = {
                     }
                     set_title_name = d_laamp_nars_1001
                     add_title_law = landless_adventurer_succession_law 
-                    
-                    # METHOD FIX: Add Eleios' title to a temporary list
-                    add_to_list = eleios_titles_to_pressed_claim
                 }
                 resolve_title_and_vassal_change = scope:change
                 scope:new_title = { save_scope_as = new_landless_adventurer_title }
@@ -358,7 +356,7 @@ nikean_intro.0001 = {
                     
                     while = {
                         count = 4
-                        trigger_event = nikean_courtiers.0002
+                        trigger_event = nars_courtiers.0002
                     }
                 }      
                 populate_location_with_contracts_effect = {
@@ -366,7 +364,7 @@ nikean_intro.0001 = {
                     AMOUNT = 5
                 }                          
                 spawn_army = {
-                    name = nikean_troop_intro_name
+                    name = arcadian_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -378,7 +376,7 @@ nikean_intro.0001 = {
                 hidden_effect = {
                     create_anduril_effect = yes
                 }
-                trigger_event = { id = nikean_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.1001 days = 1 }
                 intro_standard_effect = yes
             }
 
@@ -432,11 +430,11 @@ nikean_intro.0001 = {
                         change_provisions = starting_provisions_value 
                     }
                     
-                    while = { count = 4 trigger_event = nikean_courtiers.0002 }
+                    while = { count = 4 trigger_event = nars_courtiers.0002 }
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
-                    name = nikean_troop_intro_name
+                    name = arcadian_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -445,7 +443,7 @@ nikean_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nikean_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.1001 days = 1 }
                 intro_standard_effect = yes
             }
 
@@ -499,11 +497,11 @@ nikean_intro.0001 = {
                         change_provisions = starting_provisions_value 
                     }
                     
-                    while = { count = 4 trigger_event = nikean_courtiers.0002 }
+                    while = { count = 4 trigger_event = nars_courtiers.0002 }
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
-                    name = nikean_troop_intro_name
+                    name = arcadian_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -512,27 +510,14 @@ nikean_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nikean_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.1001 days = 1 }
                 intro_standard_effect = yes
-            }
-
-            # METHOD FIX: Iterate the list we created and apply claims safely after all setup
-            every_in_list = {
-                list = eleios_titles_to_pressed_claim
-                save_scope_as = title_to_claim
-                
-                scope:ilione = {
-                    add_pressed_claim = scope:title_to_claim
-                }
-                scope:strato = {
-                    add_pressed_claim = scope:title_to_claim
-                }
             }
         }
     }
     
     option = {
-        name = nikean_intro.0001.a
+        name = nars_intro.0001.a
         flavor = danger_dynasty_abandon_tt
         add_internal_flag = dangerous
         set_player_character = scope:eleios
@@ -546,7 +531,7 @@ nikean_intro.0001 = {
     }
     
     option = {
-        name = nikean_intro.0001.b
+        name = nars_intro.0001.b
         flavor = danger_dynasty_abandon_tt
         add_internal_flag = dangerous
         set_player_character = scope:ilione
@@ -560,7 +545,7 @@ nikean_intro.0001 = {
     }
     
     option = {
-        name = nikean_intro.0001.c
+        name = nars_intro.0001.c
         flavor = danger_dynasty_abandon_tt
         add_internal_flag = dangerous
         set_player_character = scope:strato
@@ -574,36 +559,36 @@ nikean_intro.0001 = {
     }
     
     option = {
-        name = nikean_intro.0001.d
+        name = nars_intro.0001.d
         ai_chance = { base = 100 }   
     }
 }
 
-nikean_intro.0002 = { 
+nars_intro.0002 = { 
     type = character_event
-    title = nikean_intro.0002.t
+    title = nars_intro.0002.t
     
     desc = {
-        desc = nikean_intro.0002.desc        
+        desc = nars_intro.0002.desc        
         first_valid = {
             triggered_desc = {
                 trigger = {
                     has_character_modifier = eleios_modifier
                 }
-                desc = nikean_intro.0002.eleios
+                desc = nars_intro.0002.eleios
             }
             triggered_desc = {
                 trigger = {
                     has_character_modifier = ilione_modifier
                 }
-                desc = nikean_intro.0002.ilione
+                desc = nars_intro.0002.ilione
             }
             # Strato used as fallback
-            desc = nikean_intro.0002.strato
+            desc = nars_intro.0002.strato
         }
         
         # 3. The concluding paragraph
-        desc = nikean_intro.0002.end
+        desc = nars_intro.0002.end
     }
 
     window = big_event_window
@@ -657,18 +642,19 @@ nikean_intro.0002 = {
             add_character_flag = need_military_outfit
             save_scope_as = diplomat
         }
+        trigger_event = { id = nars_maintenance.0002 days = 1 }
     }
     
     option = {
-        name = nikean_intro.0002.a
-        custom_tooltip = nikean_diplomacy.tt
+        name = nars_intro.0002.a
+        custom_tooltip = arcadian_diplomacy.tt
         hidden_effect = {
-            nikean_diplomacy_entreaty_effect = yes
+            arcadian_diplomacy_entreaty_effect = yes
         }
     }
     option = {
-        name = nikean_intro.0002.b
-        custom_tooltip = nikean_incivility.tt
+        name = nars_intro.0002.b
+        custom_tooltip = arcadian_incivility.tt
         if = {
             limit = {
                 has_character_modifier = eleios_modifier

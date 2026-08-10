@@ -1,18 +1,16 @@
-nars_nikean = {
+arcadian = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_bureaucratic
+	ethos = ethos_archaic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
 	head_determination = head_determination_domain
 
 	traditions = {
-		tradition_nars_builder
 		tradition_nars_agriculture
+		tradition_nars_builder
 		tradition_nars_science
-		tradition_nars_politics
-		tradition_nars_war
 		tradition_nars_merchant
 	}
 	
@@ -22,12 +20,12 @@ nars_nikean = {
 	building_gfx = { byzantine_building_gfx } 
 	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx } 
 	unit_gfx = { eastern_unit_gfx } 	
-	house_coa_frame = house_frame_02
+	house_coa_frame = house_frame_02 #020409
 	house_coa_mask_offset = { 0.0 0.055 }
 	house_coa_mask_scale = { 0.9 0.9 }
 
 	
 	ethnicities = {
-		10 = nikean #narsics
+		10 = arkades #arcadics
 	}
 }

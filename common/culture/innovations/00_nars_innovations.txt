@@ -1,150 +1,129 @@
-﻿@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
-@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
-@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+﻿@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
 @leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
-@raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
-@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
-@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
 @levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
-@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
 @maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
-@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
-@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
-@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
-@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
-@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
-@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
-@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
-@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
-@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
-@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
-@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
-@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
-@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 @gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
 
-innovation_nikean_maa_02 = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @leadership_2
+innovation_arcadian_maa_01 = {
+    group = culture_group_regional
+    culture_era = culture_era_tribal
+    icon = @leadership_2
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	maa_upgrade = {
-		men_at_arms = maa_hoplitai
-		damage = 10
-		toughness = 5
-	}
+    maa_upgrade = {
+        men_at_arms = maa_hoplitai
+        damage = 10
+        toughness = 5
+    }
 
-	maa_upgrade = {
-		men_at_arms = maa_mastiges
-		damage = 5
-		toughness = 10
-	}
+    maa_upgrade = {
+        men_at_arms = maa_mastiges
+        damage = 5
+        toughness = 10
+    }
 
-	flag = global_maa
-	flag = culture_era_early_medieval
+    flag = global_maa
+    flag = culture_era_tribal
 }
 
+innovation_arcadian_maa_02 = {
+    group = culture_group_regional
+    culture_era = culture_era_early_medieval
+    icon = @gunpowder_02
 
-innovation_nikean_maa_03 = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @gunpowder_02
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    maa_upgrade = {
+        men_at_arms = maa_hoplitai
+        damage = 15
+        toughness = 10
+    }
 
-	maa_upgrade = {
-		men_at_arms = maa_hoplitai
-		damage = 15
-		toughness = 10
-	}
-
-	maa_upgrade = {
-		men_at_arms = maa_mastiges
-		damage = 10
-		toughness = 15
-	}
-	
-	flag = global_maa
-	flag = culture_era_high_medieval
+    maa_upgrade = {
+        men_at_arms = maa_mastiges
+        damage = 10
+        toughness = 15
+    }
+    
+    flag = global_maa
+    flag = culture_era_early_medieval
 }
 
-innovation_nikean_maa_04 = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @maa_02
+innovation_arcadian_maa_03 = {
+    group = culture_group_regional
+    culture_era = culture_era_high_medieval
+    icon = @maa_02
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	maa_upgrade = {
-		men_at_arms = maa_hoplitai
-		damage = 30
-		toughness = 15
-	}
+    maa_upgrade = {
+        men_at_arms = maa_hoplitai
+        damage = 30
+        toughness = 15
+    }
 
-	maa_upgrade = {
-		men_at_arms = maa_mastiges
-		damage = 15
-		toughness = 30
-	}
-	
-	flag = global_maa
-	flag = culture_era_late_medieval
+    maa_upgrade = {
+        men_at_arms = maa_mastiges
+        damage = 15
+        toughness = 30
+    }
+    
+    flag = global_maa
+    flag = culture_era_high_medieval
 }
 
-innovation_nikean_building_01 = {
-	group = culture_group_regional
-	culture_era = culture_era_early_medieval
-	icon = @levy_building
+innovation_arcadian_building_01 = {
+    group = culture_group_regional
+    culture_era = culture_era_tribal
+    icon = @levy_building
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	unlock_building = canton_duchy_01
-	unlock_building = foundry_duchy_01
+    unlock_building = canton_duchy_01
+    unlock_building = foundry_duchy_01
 
-	flag = global_regional
-	flag = culture_era_early_medieval
+    flag = global_regional
+    flag = culture_era_tribal
 }
 
-innovation_nikean_building_02 = {
-	group = culture_group_regional
-	culture_era = culture_era_high_medieval
-	icon = @civil_construction_2
+innovation_arcadian_building_02 = {
+    group = culture_group_regional
+    culture_era = culture_era_early_medieval
+    icon = @civil_construction_2
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	unlock_building = canton_duchy_02
-	unlock_building = foundry_duchy_02
+    unlock_building = canton_duchy_02
+    unlock_building = foundry_duchy_02
 
-	flag = global_regional
-	flag = culture_era_high_medieval
+    flag = global_regional
+    flag = culture_era_early_medieval
 }
 
-innovation_nikean_building_03 = {
-	group = culture_group_regional
-	culture_era = culture_era_late_medieval
-	icon = @misc_inventions
+innovation_arcadian_building_03 = {
+    group = culture_group_regional
+    culture_era = culture_era_high_medieval
+    icon = @misc_inventions
 
-	potential = {
-		has_cultural_pillar = heritage_nars
-	}
+    potential = {
+        has_cultural_pillar = heritage_nars
+    }
 
-	unlock_building = canton_duchy_03
-	unlock_building = foundry_duchy_03
+    unlock_building = canton_duchy_03
+    unlock_building = foundry_duchy_03
 
-	flag = global_regional
-	flag = culture_era_late_medieval
+    flag = global_regional
+    flag = culture_era_high_medieval
 }

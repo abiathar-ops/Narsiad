@@ -2,7 +2,7 @@
 @maa_buy_cost = 150
 @maa_low_maintenance_cost = 1.0
 @maa_high_maintenance_cost = 5.0
-@cultural_maa_extra_ai_score = 80 # Equivalent to having 8 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
 # Must be synced between files with the values located at "# Provisions Costs #".
 @provisions_cost_infantry_cheap = 3
@@ -10,17 +10,11 @@
 @provisions_cost_infantry_expensive = 12
 @provisions_cost_infantry_bankrupting = 15
 
-@provisions_cost_cavalry_cheap = 7
-@provisions_cost_cavalry_moderate = 15
-@provisions_cost_cavalry_expensive = 21
-@provisions_cost_cavalry_bankrupting = 30
-
 @provisions_cost_special_cheap = 6
 @provisions_cost_special_moderate = 12
 @provisions_cost_special_expensive = 18
 @provisions_cost_special_bankrupting = 24
 
-# Nikean Cultural MAA Units
 maa_hoplitai = {
     type = heavy_infantry
 
@@ -53,20 +47,21 @@ maa_hoplitai = {
 	}
 
 	winter_bonus = {
-		normal_winter = { toughness = 5 screen = 5 }
-		harsh_winter = { toughness = 5 screen = 5 }
+		normal_winter = { toughness = -5 screen = -5 }
+		harsh_winter = { toughness = -5 screen = -5 }
 	}
 
     buy_cost = { gold = schiltron_recruitment_cost }
 	low_maintenance_cost = { gold = schiltron_low_maint_cost }
 	high_maintenance_cost = { gold = schiltron_high_maint_cost }
 	provision_cost = @provisions_cost_infantry_moderate
-
-    mercenary_fallback = no
-    holy_order_fallback = no
     
     stack = 100
-   	ai_quality = { value = @cultural_maa_extra_ai_score }
+   	ai_quality = {
+        value = culture_ai_weight_heavy_infantry
+        add = counter_synergy_ai_weight_heavy_infantry
+		add = 40
+    }
     icon = narsid_hoplites
 }
 
@@ -84,9 +79,6 @@ maa_mastiges = {
 	pursuit = 35
 	screen = 0
 
-    mercenary_fallback = no
-    holy_order_fallback = no
-
     terrain_bonus = {
         plains = { damage = 25 toughness = 10 }
         mountains = { damage = 25 toughness = 10 }
@@ -97,8 +89,8 @@ maa_mastiges = {
     }
 
     winter_bonus = {
-		normal_winter = { toughness = 5 screen = 5 }
-		harsh_winter = { toughness = 5 screen = 5 }
+		normal_winter = { toughness = -5 screen = -5 }
+		harsh_winter = { toughness = -5 screen = -5 }
 	}
 
     counters = {
@@ -112,9 +104,6 @@ maa_mastiges = {
 	low_maintenance_cost = { gold = schiltron_low_maint_cost }
 	high_maintenance_cost = { gold = schiltron_high_maint_cost }
 	provision_cost = @provisions_cost_infantry_expensive
-
-    mercenary_fallback = no
-    holy_order_fallback = yes
     
     stack = 100
    	ai_quality = { value = @cultural_maa_extra_ai_score }

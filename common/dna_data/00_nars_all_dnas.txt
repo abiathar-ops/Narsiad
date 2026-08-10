@@ -1,4 +1,4 @@
-﻿# 70000010_nikean={
+﻿# 70000010_arcadian={
 # 	portrait_info={
 # 		genes={ 		
 # 			hair_color={ 8 5 149 61 }
@@ -123,7 +123,7 @@
 # 	enabled = yes
 # }
 
-# 70000011_nikean = {
+# 70000011_arcadian = {
 # 	portrait_info = {
 # 		genes={
 # 			hair_color={ 8 5 149 61 }
@@ -250,7 +250,7 @@
 # 	enabled=yes
 # }
 
-# 70000012_nikean = {
+# 70000012_arcadian = {
 # 	portrait_info={
 # 		genes={
 # 			hair_color={ 4 2 193 242 }
@@ -376,7 +376,7 @@
 # 	enabled = yes
 # }
 
-# 70000013_nikean = {
+# 70000013_arcadian = {
 # 	portrait_info ={
 # 		genes={		
 # 			hair_color={ 8 5 149 61 }
@@ -502,7 +502,7 @@
 # 	enabled = yes
 # }
 
-# 70000014_nikean = {
+# 70000014_arcadian = {
 # 	portrait_info ={
 # 		genes={ 		
 # 			hair_color={ 1 0 234 70 }
@@ -627,7 +627,7 @@
 # 	enabled = yes
 # }
 
-# 70000015_nikean = {
+# 70000015_arcadian = {
 	portrait_info ={
  		genes={		
  			skin_color={ 52 28 52 28 }
@@ -757,7 +757,7 @@
  	enabled = yes
  }
 
-# 70000016_nikean = {
+# 70000016_arcadian = {
 # 	portrait_info ={
 # 		genes={		
 # 		hair_color={ 20 15 2 236 }
@@ -882,7 +882,7 @@
 # 	enabled = yes
 # }
 
-# 70000017_nikean = {
+# 70000017_arcadian = {
 # 	portrait_info ={
 # 		genes={
 # 			hair_color={ 8 5 149 61 }
@@ -1009,7 +1009,7 @@
 # 	enabled = yes
 # }
 
-# 70000018_nikean = {
+# 70000018_arcadian = {
 # 	portrait_info ={
 # 		genes={
 # 			hair_color={ 8 5 149 61 }

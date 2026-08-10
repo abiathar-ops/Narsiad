@@ -1,0 +1,24 @@
+namespace = nars_maintenance
+
+nars_maintenance.0001 = {
+    type = character_event
+    hidden = yes
+    
+    immediate = {
+        nars_apply_setup_effect = yes
+    }
+}
+
+nars_maintenance.0002 = {
+    type = character_event
+    hidden = yes
+    
+    immediate = {
+		every_courtier_or_guest = {
+			nars_apply_setup_effect = yes
+		}
+		every_vassal_or_below = {
+			nars_apply_setup_effect = yes
+		}
+    }
+}

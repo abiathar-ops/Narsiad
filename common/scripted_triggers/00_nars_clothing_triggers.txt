@@ -1,15 +1,15 @@
-portrait_nikean_clothing_trigger = {
+portrait_arcadian_clothing_trigger = {
 	culture = {
-		portrait_nikean_clothing_contents_trigger = yes
+		portrait_arcadian_clothing_contents_trigger = yes
 	}
 }
 
-portrait_nikean_clothing_spouse_trigger = {
+portrait_arcadian_clothing_spouse_trigger = {
 	culture = {
-		portrait_nikean_clothing_contents_trigger = yes
+		portrait_arcadian_clothing_contents_trigger = yes
 	}
 }
 
-portrait_nikean_clothing_contents_trigger = {
-	has_clothing_gfx = nikean_clothing_gfx
+portrait_arcadian_clothing_contents_trigger = {
+	has_clothing_gfx = arcadian_clothing_gfx
 }

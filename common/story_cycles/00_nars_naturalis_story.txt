@@ -42,7 +42,7 @@
                 }
 				effect = {
 					story_owner = {
-						set_immortal_age = 25
+                        #insert some shit
 					}
 				}
 			}
@@ -54,7 +54,7 @@
     }
 
     on_end = {
-		debug_log = "Nikēís story cycle ended on:"
+		debug_log = "Arkadés story cycle ended on:"
 		debug_log_date = yes
 	}
 }

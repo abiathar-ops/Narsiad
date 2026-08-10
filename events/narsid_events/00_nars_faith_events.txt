@@ -1,11 +1,11 @@
-namespace = nikean_faith
+namespace = nars_faith
 
 # Dedicate a Libation
 
-nikean_faith.1001 = {
+nars_faith.1001 = {
 	type = character_event
-	title = nikean_faith.1001.t
-	desc = nikean_faith.1001.desc
+	title = nars_faith.1001.t
+	desc = nars_faith.1001.desc
 	override_background = fp3_zoroastrian_temple
 	theme = administrative
 	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
@@ -19,16 +19,15 @@ nikean_faith.1001 = {
 		libation_good_effect = yes
 	}
 	option = {
-		name = nikean_faith.1001.a
-		add_piety = 250
-		remove_treasury_or_gold = minor_treasury_or_gold_value
+		name = nars_faith.1001.a
+		add_piety = medium_piety_gain
 	}
 }
 
-nikean_faith.1002 = {
+nars_faith.1002 = {
 	type = character_event
-	title = nikean_faith.1002.t
-	desc = nikean_faith.1002.desc
+	title = nars_faith.1002.t
+	desc = nars_faith.1002.desc
 	override_background = fp3_zoroastrian_temple
 	theme = administrative
 	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
@@ -41,16 +40,15 @@ nikean_faith.1002 = {
 		libation_standard_effect = yes
 	}
 	option = {
-		name = nikean_faith.1002.a
-		add_piety = 125
-		remove_treasury_or_gold = minor_treasury_or_gold_value
+		name = nars_faith.1002.a
+		add_piety = minor_piety_gain
 	}
 }
 
-nikean_faith.1003 = {
+nars_faith.1003 = {
 	type = character_event
-	title = nikean_faith.1003.t
-	desc = nikean_faith.1003.desc
+	title = nars_faith.1003.t
+	desc = nars_faith.1003.desc
 	override_background = fp3_zoroastrian_temple
 	theme = administrative
 	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
@@ -63,17 +61,16 @@ nikean_faith.1003 = {
 		libation_bad_effect = yes
 	}
 	option = {
-		name = nikean_faith.1003.a
-		remove_treasury_or_gold = minor_treasury_or_gold_value
+		name = nars_faith.1003.a
 	}
 }
 
-# Impose Nikeis Tradition
+# Impose Arkades Tradition
 
-nikean_faith.1011 = {
+nars_faith.1011 = {
 	type = character_event
-	title = nikean_faith.1011.t
-	desc = nikean_faith.1011.desc
+	title = nars_faith.1011.t
+	desc = nars_faith.1011.desc
 	theme = administrative
 	override_background = ep3_hippodrome
 	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
@@ -84,18 +81,16 @@ nikean_faith.1011 = {
 	}
 
 	option = {
-		name = nikean_faith.1011.a
-		flavor = narsokratia_event.flavor
-		remove_treasury_or_gold = massive_treasury_or_gold_value
+		name = nars_faith.1011.a
 	}
 }
 
 # Ponder the Panteion
 
-nikean_faith.1031 = {
+nars_faith.1031 = {
 	type = character_event
-	title = nikean_faith.1031.t
-	desc = nikean_faith.1031.desc
+	title = nars_faith.1031.t
+	desc = nars_faith.1031.desc
 	theme = administrative
 	override_background = fp3_zoroastrian_temple
 	override_effect_2d = { reference = smoke }
@@ -132,43 +127,43 @@ nikean_faith.1031 = {
 	}
 
 	option = {
-		name = nikean_faith.1031.a
+		name = nars_faith.1031.a
 		trigger = {
 			NOR = {	
-				has_character_modifier = panteion_nikean_narses
+				has_character_modifier = panteion_arcadian_narses
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_nikean_narses }
-		set_panteion_effect = { PANTEION = panteion_nikean_narses }
+		show_as_unavailable = { has_character_modifier = panteion_arcadian_narses }
+		set_panteion_effect = { PANTEION = panteion_arcadian_narses }
 	}
 
 	option = {
-		name = nikean_faith.1031.b
+		name = nars_faith.1031.b
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_nikean_phokas
+				has_character_modifier = panteion_arcadian_phokas
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_nikean_phokas }
-		set_panteion_effect = { PANTEION = panteion_nikean_phokas }
+		show_as_unavailable = { has_character_modifier = panteion_arcadian_phokas }
+		set_panteion_effect = { PANTEION = panteion_arcadian_phokas }
 	}
 
 	option = {
-		name = nikean_faith.1031.c
+		name = nars_faith.1031.c
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_nikean_enuo
+				has_character_modifier = panteion_arcadian_enuo
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_nikean_enuo }
-		set_panteion_effect = { PANTEION = panteion_nikean_enuo }
+		show_as_unavailable = { has_character_modifier = panteion_arcadian_enuo }
+		set_panteion_effect = { PANTEION = panteion_arcadian_enuo }
 	}
 
 	# Opt-Out
 	option = {
-		name = nikean_faith.1031.optout
-		flavor = nikean_faith.1031.flavor
-		remove_character_flag = faith_nikean_2_cooldown 
+		name = nars_faith.1031.optout
+		flavor = nars_faith.1031.flavor
+		remove_character_flag = faith_arcadian_2_cooldown 
 		ai_chance = {
 			base = 0
 		}
@@ -177,10 +172,10 @@ nikean_faith.1031 = {
 
 # Sponsor Missionaries
 
-nikean_faith.1041 = {
+nars_faith.1041 = {
 	type = character_event
-	title = nikean_faith.1041.t
-	desc = nikean_faith.1041.desc
+	title = nars_faith.1041.t
+	desc = nars_faith.1041.desc
 	theme = administrative
 	override_background = fp3_zoroastrian_temple
 	override_effect_2d = { reference = smoke }
@@ -202,7 +197,7 @@ nikean_faith.1041 = {
 			}
 			random_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
-					valid_for_nikean_conversion_trigger = yes
+					valid_for_arcadian_conversion_trigger = yes
 				}
 				save_scope_as = pagan
 			}
@@ -210,12 +205,12 @@ nikean_faith.1041 = {
 		else = {
 			random_neighboring_and_across_water_realm_same_rank_owner = {
 				limit = {
-					valid_for_nikean_conversion_trigger = yes
+					valid_for_arcadian_conversion_trigger = yes
 				}
 				save_scope_as = pagan
 				create_character = {
 					location = root.location
-					template = nikean_template.1011
+					template = arcadian_template.1011
 					culture = root.culture
 					faith = root.faith
 					gender_female_chance = 100
@@ -243,7 +238,7 @@ nikean_faith.1041 = {
 				location = root.location
 				culture = root.culture
 				faith = root.faith
-				template = nikean_template.1011
+				template = arcadian_template.1011
 				gender_female_chance = 100
 				save_scope_as = evangelizer
 				after_creation = {
@@ -257,21 +252,20 @@ nikean_faith.1041 = {
 	}
 
 	option = {
-		name = nikean_faith.1041.a
-		custom_tooltip = nikean_faith.1041.a.tt
+		name = nars_faith.1041.a
+		custom_tooltip = nars_faith.1041.a.tt
 		scope:evangelizer = {
 			start_travel_plan = {
 				destination = scope:pagan.capital_province
-				on_arrival_event = nikean_faith.1042
+				on_arrival_event = nars_faith.1042
 				on_arrival_destinations = all
 				return_trip = no # One way
 			}
 		}
-		remove_treasury_or_gold = medium_treasury_or_gold_value
 	}
 }
 
-nikean_faith.1042 = {
+nars_faith.1042 = {
 	hidden = yes
 
 	immediate = {
@@ -296,7 +290,7 @@ nikean_faith.1042 = {
 			}
 			scope:pagan = {
 				trigger_event = {
-					id = nikean_faith.1043
+					id = nars_faith.1043
 					days = 1
 				}
 			}
@@ -305,7 +299,7 @@ nikean_faith.1042 = {
 		else = {
 			scope:evangelizer = {
 				trigger_event = {
-					id = nikean_faith.1044
+					id = nars_faith.1044
 					days = 1
 				}
 			}
@@ -313,10 +307,10 @@ nikean_faith.1042 = {
 	}
 }
 
-nikean_faith.1043 = {
+nars_faith.1043 = {
 	type = character_event
-	title = nikean_faith.1041.t
-	desc = nikean_faith.1043.desc
+	title = nars_faith.1041.t
+	desc = nars_faith.1043.desc
 	theme = administrative
 	
 	trigger = {
@@ -335,7 +329,7 @@ nikean_faith.1043 = {
 
 	#Option A: hear them out
 	option = {
-		name = nikean_faith.1043.a
+		name = nars_faith.1043.a
 		create_character_memory = {
 			type = was_evangelized_memory
 			participants = { missionary = scope:evangelizer sender = scope:sender }
@@ -366,8 +360,8 @@ nikean_faith.1043 = {
 
 	#Option C: no thanks with stab
 	option = {
-		name = nikean_faith.1043.c
-		flavor = nikean_faith.1043.c.tt
+		name = nars_faith.1043.c
+		flavor = nars_faith.1043.c.tt
 		add_piety = major_piety_gain
 		scope:evangelizer = {
 			death = {
@@ -377,7 +371,7 @@ nikean_faith.1043 = {
 		}
 		scope:sender = {
 			trigger_event = {
-				id = nikean_faith.1047
+				id = nars_faith.1047
 				days = 3
 			}
 		}
@@ -397,7 +391,7 @@ nikean_faith.1043 = {
 
 	#Option B: no thanks
 	option = {
-		name = nikean_faith.1043.b
+		name = nars_faith.1043.b
 		add_piety = medium_piety_gain
 		scope:evangelizer = {
 			add_character_flag = failed_conversion
@@ -413,7 +407,7 @@ nikean_faith.1043 = {
 			scope:evangelizer = {
 				start_travel_plan = {
 					destination = scope:sender.location
-					on_arrival_event = nikean_faith.1045
+					on_arrival_event = nars_faith.1045
 					on_arrival_destinations = all
 					return_trip = no # One way
 				}
@@ -426,7 +420,7 @@ nikean_faith.1043 = {
 			scope:evangelizer = {
 				start_travel_plan = {
 					destination = scope:starting_point
-					on_arrival_event = nikean_faith.1045
+					on_arrival_event = nars_faith.1045
 					on_arrival_destinations = all
 					return_trip = no # One way
 				}
@@ -435,10 +429,10 @@ nikean_faith.1043 = {
 	}
 }
 
-nikean_faith.1044 = {
+nars_faith.1044 = {
 	type = character_event
-	title = nikean_faith.1044.t
-	desc = nikean_faith.1044.desc
+	title = nars_faith.1044.t
+	desc = nars_faith.1044.desc
 	theme = administrative
 	
 	trigger = {
@@ -581,7 +575,7 @@ nikean_faith.1044 = {
 					}
 					scope:sender = {
 						trigger_event = {
-							id = nikean_faith.1047
+							id = nars_faith.1047
 							days = 3
 						}
 					}
@@ -597,7 +591,7 @@ nikean_faith.1044 = {
 	}
 
 	option = {
-		name = nikean_faith.1044.a
+		name = nars_faith.1044.a
 	}
 
 	after = {
@@ -609,7 +603,7 @@ nikean_faith.1044 = {
 			scope:evangelizer = {
 				start_travel_plan = {
 					destination = scope:sender.location
-					on_arrival_event = nikean_faith.1045
+					on_arrival_event = nars_faith.1045
 					on_arrival_destinations = all
 					return_trip = no # One way
 				}
@@ -622,7 +616,7 @@ nikean_faith.1044 = {
 			scope:evangelizer = {
 				start_travel_plan = {
 					destination = scope:starting_point
-					on_arrival_event = nikean_faith.1045
+					on_arrival_event = nars_faith.1045
 					on_arrival_destinations = all
 					return_trip = no # One way
 				}
@@ -631,7 +625,7 @@ nikean_faith.1044 = {
 	}
 }
 
-nikean_faith.1045 = {
+nars_faith.1045 = {
 	hidden = yes
 
 	immediate = {
@@ -642,7 +636,7 @@ nikean_faith.1045 = {
 			scope:sender = {
 				save_scope_as = recipient
 				trigger_event = {
-					id = nikean_faith.1046
+					id = nars_faith.1046
 					days = 1
 				}
 			}
@@ -652,7 +646,7 @@ nikean_faith.1045 = {
 				save_scope_as = new_sender
 				save_scope_as = recipient
 				trigger_event = {
-					id = nikean_faith.1046
+					id = nars_faith.1046
 					days = 1
 				}
 			}
@@ -660,18 +654,18 @@ nikean_faith.1045 = {
 	}
 }
 
-nikean_faith.1046 = {
+nars_faith.1046 = {
 	type = character_event
-	title = nikean_faith.1041.t
+	title = nars_faith.1041.t
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					exists = scope:new_sender
 				}
-				desc = nikean_faith.1046.desc_new
+				desc = nars_faith.1046.desc_new
 			}
-			desc = nikean_faith.1046.desc_old
+			desc = nars_faith.1046.desc_old
 		}
 		first_valid = {
 			triggered_desc = {
@@ -680,9 +674,9 @@ nikean_faith.1046 = {
 						has_character_flag = success_conversion
 					}
 				}
-				desc = nikean_faith.1046.desc_success
+				desc = nars_faith.1046.desc_success
 			}
-			desc = nikean_faith.1046.desc_failure
+			desc = nars_faith.1046.desc_failure
 		}
 	}
 	theme = administrative
@@ -744,7 +738,7 @@ nikean_faith.1046 = {
 	}
 
 	option = {
-		name = nikean_faith.1046.a
+		name = nars_faith.1046.a
 		trigger = {
 			scope:evangelizer = {
 				has_character_flag = success_conversion
@@ -755,7 +749,7 @@ nikean_faith.1046 = {
 	}
 
 	option = {
-		name = nikean_faith.1046.b
+		name = nars_faith.1046.b
 		trigger = {
 			scope:evangelizer = {
 				has_character_flag = failed_conversion
@@ -766,10 +760,10 @@ nikean_faith.1046 = {
 	}
 }
 
-nikean_faith.1047 = {
+nars_faith.1047 = {
 	type = character_event
-	title = nikean_faith.1041.t
-	desc = nikean_faith.1047.desc
+	title = nars_faith.1041.t
+	desc = nars_faith.1047.desc
 	theme = administrative
 
 	left_portrait = {
@@ -792,7 +786,7 @@ nikean_faith.1047 = {
 
 	# Option A: they will pay!
 	option = {
-		name = nikean_faith.1047.a
+		name = nars_faith.1047.a
 		add_dynasty_prestige = 250
 		add_prestige = medium_prestige_gain
 		if = {

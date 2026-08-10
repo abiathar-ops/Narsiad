@@ -2,44 +2,23 @@ ethos_archaic = {
 	type = ethos
 
 	parameters = {
-		better_disease_resistance = yes
+		consolidate_rule_decision = yes 
+		innovation_from_learning_traits = yes
 	}
     
 	character_modifier = {
-		cultural_head_fascination_mult = 0.05
-		monthly_lifestyle_xp_gain_mult = 0.10
-		minority_different_culture_opinion = -15
+		cultural_head_fascination_mult = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.15
+		minority_different_culture_opinion = -25
         ai_sociability = medium_positive_ai_value
         ai_amenity_target_baseline = 0.1
 	}
 
 	county_modifier = {
-		development_growth_factor = 0.15
+		development_growth_factor = 0.125
 	}
 
 	ai_will_do = {
-		value = 1
-		if = {
-			limit = {
-				scope:character = {
-					or = {
-						NOT = { is_nikean = yes }
-						scope:character = { government_has_flag = government_is_nomadic }
-					}
-				}
-			}
-			multiply = 0
-		}
-		if = {
-			limit = {
-				scope:character = {
-					OR = {
-						is_nikean = yes
-						is_ethnically_nikean = yes
-					}
-				}
-			}
-			add = 1
-		}
+		base = 0
 	}
 }

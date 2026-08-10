@@ -1,21 +1,21 @@
-is_nikean = {
+is_arcadian = {
     or = {
         culture = { has_cultural_pillar = heritage_nars }
-        has_ethnicity = nikean
+        has_ethnicity = arkades
     }
 }
 
-is_ethnically_nikean = {
-	has_ethnicity = nikean
+is_ethnically_arcadian = {
+	has_ethnicity = arkades
 }
 
-has_nikean_blood = {
+has_arcadian_blood = {
     has_trait = nars_naturalis
 }
 
 is_orphic = {
     faith.religion = {
-		is_in_family = rf_nikean
+		is_in_family = rf_arcadian
 	}
 }
 
@@ -23,16 +23,16 @@ is_considered_orphic = {
     custom_tooltip = {
         text = is_considered_orphic
         faith.religion = {
-	       	is_in_family = rf_nikean
+	       	is_in_family = rf_arcadian
 	    }
     }
 }
 
-is_ideal_nikean = {
+is_ideal_arcadian = {
     culture = { has_cultural_pillar = heritage_nars }
-    has_ethnicity = nikean
+    has_ethnicity = arkades
     faith.religion = {
-		is_in_family = rf_nikean
+		is_in_family = rf_arcadian
 	}
 }
 
@@ -53,7 +53,7 @@ is_narsocratic_e_h = {
 is_narses_scion = {
 	AND = {
 		has_trait = nars_scion
-		is_nikean = yes
+		is_arcadian = yes
         is_orphic = yes
 	}
 }

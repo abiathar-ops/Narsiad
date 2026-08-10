@@ -1,24 +1,26 @@
-#Average Nikean Nobody
-nikean_template.1001 = {
+#Average Arcadian Nobody
+arcadian_template.1001 = {
     age = { 18 30 }
     gender = male
 	gender_female_change = 50
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:nars_nikean
+	culture = culture:arcadian
     random_traits = yes
+	trait = nars_naturalis
     after_creation = {
 		add_gold = minor_gold_value
-		add_trait = nars_naturalis
+		nars_apply_setup_effect = yes
 	}
 }
 
-#Average Nikean Noble
-nikean_template.1002 = {
+#Average Arcadian Noble
+arcadian_template.1002 = {
     age = { 18 30 }
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:nars_nikean
+	culture = culture:arcadian
+	trait = nars_naturalis
     random_traits_list = {
 		count = { 0 1 }
 		athletic = {}
@@ -39,16 +41,16 @@ nikean_template.1002 = {
     after_creation = {
 		remove_bad_traits = yes
 		add_gold = minor_gold_value
-		add_trait = nars_naturalis
+		nars_apply_setup_effect = yes
 	}
 }
 
 #Evangelist
-nikean_template.1011 = {
+arcadian_template.1011 = {
 	age = { 30 48 }
 	gender_female_change = 100
     faith = faith:nars_religion
-	culture = culture:nars_nikean
+	culture = culture:arcadian
     random_traits = yes
 	trait = devoted
 	random_traits_list = {
@@ -64,15 +66,15 @@ nikean_template.1011 = {
     after_creation = {
 		remove_bad_traits = yes
 		add_gold = minor_gold_value
-		add_trait = nars_naturalis
+		nars_apply_setup_effect = yes
 	}
 }
 
 #Mercenary Leader
-nikean_template.1012 = {
+arcadian_template.1012 = {
 	age = { 30 45 }
 	gender_female_chance = 50
-	culture = culture:nars_nikean
+	culture = culture:arcadian
 	faith = faith:nars_religion
 	random_traits_list = {
 		count = 1
@@ -105,4 +107,10 @@ nikean_template.1012 = {
 	}
 	trait = nars_naturalis
 	prowess = extremely_high_skill_rating
+	after_creation = {
+		remove_bad_traits = yes
+		add_gold = minor_gold_value
+		add_trait = nars_naturalis
+		nars_apply_setup_effect = yes
+	}
 }

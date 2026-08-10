@@ -1,9 +1,9 @@
 ﻿l_english: 
  nars_conqueror.name: "Nikátōr"
  nars_conqueror.no_actor: "Ever-Victorious"
- trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Nikēís' toil, heralding an era of eternal, ever-victorious restoration."
- trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Nikēís' toil for restoration and their foremost scion of war and conquest!"
- TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [nikean_incursion|E] [casus_belli|E]"
+ trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Arkadés' toil, heralding an era of eternal, ever-victorious restoration."
+ trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Arkadés' toil for restoration and their foremost scion of war and conquest!"
+ TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [arcadian_incursion|E] [casus_belli|E]"
  
  nars_scion.name: "Mōnarkíad"
  nars_scion.no_actor: "Panteíon-Blessed"
@@ -14,9 +14,9 @@
  trait_track_polymetis:0 "Metís"
  trait_track_polymetis_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
 
- nars_naturalis.name: "Nikēís"
- nars_naturalis.no_actor: "Nikean-Blooded"
- trait_nars_naturalis_desc: "Nikēís blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
+ nars_naturalis.name: "Arkadés"
+ nars_naturalis.no_actor: "Arcadian-Blooded"
+ trait_nars_naturalis_desc: "Arkadés blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
 
  nars_alnars.name: "Sōtēr"
  nars_alnars.no_actor: "Savior-Deliverer"

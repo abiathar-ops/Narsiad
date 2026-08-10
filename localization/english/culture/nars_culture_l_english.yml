@@ -1,12 +1,12 @@
 ﻿l_english:
- nars_nikean:0 "Nikean"
- nars_nikean_prefix:0 "Nikeo"
- nars_nikean_collective_noun:1 "Nikeans"
- nikean:0 "Nikean"
- nikean_collectiive_noun:0 "Nikeans"
+ arcadian:0 "Arcadian"
+ arcadian_prefix:0 "Arcado"
+ arcadian_collective_noun:1 "Arcadians"
 
- nikean_clothing_gfx:0 "Nikean"
- nars_nikean_opinion:0 "$nars_nikean$ Opinion"
+ name_list_nars:0 "Arcadian"
+ language_nars_name:0 "Arcadian"
+ arcadian_clothing_gfx:0 "Arcadian"
+ arcadian_opinion:0 "$arcadian$ Opinion"
 
- ethos_archaic:0 "Archaic"
+ ethos_archaic_name:0 "Archaic"
  ethos_archaic_desc:2 "This culture bears the memory of a bygone age, enduring only through its tightly-held customs and preserved traditions. Sands of time drip on their dream of restoration."

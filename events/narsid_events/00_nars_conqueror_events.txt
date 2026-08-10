@@ -2,153 +2,94 @@
 
 #Get Mōnarkíad Trait
 nars_conqueror.0001 = {
-	type = character_event
-	title = nars_conqueror.0001.t
-	desc = nars_conqueror.0001.desc
-	window = big_event_window
-	theme = emperor
-	override_background = throne_room_east
-	override_effect_2d = { reference = legend_glow }
-	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+    type = character_event
+    title = nars_conqueror.0001.t
+    desc = nars_conqueror.0001.desc
+    window = big_event_window
+    theme = emperor
+    override_background = throne_room_east
+    override_effect_2d = { reference = legend_glow }
+    widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 
-	center_portrait = {
-		character = root
-		animation = sword_coup_degrace
-		camera = camera_activity_horse
-	}
+    center_portrait = {
+        character = root
+        animation = sword_coup_degrace
+        camera = camera_activity_horse
+    }
 
-	immediate = {
-		play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-	}
+    immediate = {
+        play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+    }
 
-	option = { 
-		name = nars_conqueror.0001.a
-		flavor = narsokratia_event.flavor
-		add_trait = nars_conqueror
-		legend_seed_great_deed_dynasty_effect = yes
-		pledge_restoration_effect = yes
-		create_story = story_nars_conqueror
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = belligerent }
-			}
-			every_vassal = {
-				vassal_stance = belligerent
-				custom = every_belligerent_vassal
-				add_opinion = {
-					modifier = approving_opinion
-					target = root
-					opinion = 15
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = glory_hound }
-			}
-			every_vassal = {
-				vassal_stance = glory_hound
-				custom = every_glory_hound_vassal
-				add_opinion = {
-					modifier = approving_opinion
-					target = root
-					opinion = 15
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = parochial }
-			}
-			every_vassal = {
-				custom = every_parochial_vassal
-				add_opinion = {
-					modifier = disapproving_opinion
-					opinion = -20
-					target = root
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = minority }
-			}
-			every_vassal = {
-				vassal_stance = minority
-				custom = every_minority_vassal
-				add_opinion = {
-					modifier = disapproving_opinion
-					target = root
-					opinion = -20
-				}
-			}
-		}
-	}
-	option = { 
-		name = nars_conqueror.0001.b
-		flavor = delay_scion.flavor
-		remove_global_variable = flag_decision_pledge_restoration
-		add_prestige = massive_prestige_loss
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = belligerent }
-			}
-			every_vassal = {
-				vassal_stance = belligerent
-				custom = every_belligerent_vassal
-				add_opinion = {
-					modifier = approving_opinion
-					target = root
-					opinion = -15
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = glory_hound }
-			}
-			every_vassal = {
-				vassal_stance = glory_hound
-				custom = every_glory_hound_vassal
-				add_opinion = {
-					modifier = disapproving_opinion
-					target = root
-					opinion = -15
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = minority }
-			}
-			every_vassal = {
-				vassal_stance = minority
-				custom = every_minority_vassal
-				add_opinion = {
-					modifier = approving_opinion
-					target = root
-					opinion = 20
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_vassal = { vassal_stance = parochial }
-			}
-			every_vassal = {
-				custom = every_parochial_vassal
-				add_opinion = {
-					modifier = disapproving_opinion
-					opinion = 20
-					target = root
-				}
-			}
-		}
-		
-		ai_chance = {
-			base = 0 
-		}
-	}
+    option = { 
+        name = nars_conqueror.0001.a
+        flavor = narsokratia_event.flavor
+        
+        # --- 1. CORE TRAIT & VANILLA MECHANICS ---
+        add_trait = nars_conqueror
+        add_character_flag = had_laamp_conq_decision
+        
+        trigger_event = {
+            id = conqueror.0001
+            months = 4
+        }
+
+        # --- 3. LEGEND SEED ---
+        if = {
+            limit = { has_dlc_feature = legends }
+            create_legend_seed = {
+                type = heroic
+                quality = famed
+                chronicle = conqueror_chronicle
+            }
+        }
+
+        # --- 4. YOUR CUSTOM ARCADIAN EFFECTS ---
+        legend_seed_great_deed_dynasty_effect = yes
+        pledge_restoration_effect = yes
+        create_story = story_nars_conqueror
+        
+        # Cooldown flag
+        hidden_effect = {
+            add_character_flag = {
+                flag = nars_realm_2_cooldown
+                years = 5
+            }
+        }
+
+        # Vassal Opinions
+        if = {
+            limit = { any_vassal = { vassal_stance = belligerent } }
+            every_vassal = {
+                vassal_stance = belligerent
+                custom = every_belligerent_vassal
+                add_opinion = { modifier = approving_opinion target = root opinion = 15 }
+            }
+        }
+        if = {
+            limit = { any_vassal = { vassal_stance = glory_hound } }
+            every_vassal = {
+                vassal_stance = glory_hound
+                custom = every_glory_hound_vassal
+                add_opinion = { modifier = approving_opinion target = root opinion = 15 }
+            }
+        }
+        if = {
+            limit = { any_vassal = { vassal_stance = parochial } }
+            every_vassal = {
+                custom = every_parochial_vassal
+                add_opinion = { modifier = disapproving_opinion opinion = -20 target = root }
+            }
+        }
+        if = {
+            limit = { any_vassal = { vassal_stance = minority } }
+            every_vassal = {
+                vassal_stance = minority
+                custom = every_minority_vassal
+                add_opinion = { modifier = disapproving_opinion target = root opinion = -20 }
+            }
+        }
+    }
 }
 
 #Lose Nikator Trait
@@ -173,7 +114,7 @@ nars_conqueror.0002 = {
                 desc = nars_conqueror.0002.lost_wars
             }
             triggered_desc = {
-                trigger = { is_ideal_nikean = no }
+                trigger = { is_ideal_arcadian = no }
                 desc = nars_conqueror.0002.traitor
             }
             triggered_desc = {
@@ -199,11 +140,17 @@ nars_conqueror.0002 = {
         character = root
         animation = sword_yield_start
     }
-    
+    immediate = {
+		save_scope_as = root_scope
+		every_owned_story = {
+			type = story_nars_conqueror
+			end_story = yes
+		}
+	}
     option = {
         name = nars_conqueror.0002.a
-        flavor = delay_scion.flavor
-        remove_trait = nars_scion
+        flavor = nars_conqueror.0002.a.flavor
+        remove_trait = nars_conqueror
         add_prestige_level = -2
         
         if = {
@@ -338,7 +285,7 @@ nars_conqueror.0200 = {
 				province = scope:pool_province
 				limit = {
 					prowess >= invite_knights_decision_standard_value
-					is_ideal_nikean = yes
+					is_ideal_arcadian = yes
 					guest_knight_candidate_trigger = { HOST = root }
 				}
 				add_to_temporary_list = potential_knights
@@ -367,8 +314,9 @@ nars_conqueror.0200 = {
 			limit = { NOT = { exists = scope:knight } }
 
 			create_character = {
+				gender_female_chance = 50
 				location = root.capital_province
-				template = nikean_template.1002
+				template = arcadian_template.1002
 				culture = root.culture
 				faith = root.faith
 				add_trait = nars_naturalis
@@ -521,7 +469,7 @@ nars_conqueror.0500 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = military_engineer
-			SPECIALIST_TEMPLATE_CHARACTER = nikean_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = arcadian_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -561,7 +509,7 @@ nars_conqueror.0600 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = logistician
-			SPECIALIST_TEMPLATE_CHARACTER = nikean_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = arcadian_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -634,7 +582,7 @@ nars_conqueror.1100 = {
         create_character = {
             gender = male
             age = { 35 45 }
-            template = nikean_template.1012
+            template = arcadian_template.1012
             martial >= 35
             prowess >= 45
             learning = { 25 45 }
@@ -663,7 +611,7 @@ nars_conqueror.1100 = {
 			greedy = medium_stress_impact_gain
 		}
         spawn_army = {
-			name = nikean_troop_event_name
+			name = arcadian_troop_event_name
 			levies = 625
 			men_at_arms = {
 				type = maa_hoplitai
@@ -692,7 +640,7 @@ nars_conqueror.1100 = {
                     diplomacy >= 35
                 }                
                 spawn_army = {
-					name = nikean_troop_event_name
+					name = arcadian_troop_event_name
 					levies = 625
 					men_at_arms = {
 						type = maa_hoplitai
@@ -997,7 +945,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = nikean_template.1002
+			template = arcadian_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -1014,7 +962,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = nikean_template.1002
+			template = arcadian_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -1031,7 +979,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = nikean_template.1002
+			template = arcadian_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -1048,7 +996,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = nikean_template.1002
+			template = arcadian_template.1002
             gender = male
             culture = root.culture
             faith = root.faith

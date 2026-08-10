@@ -1,8 +1,8 @@
 # Nars Culture Traditions should have 3 default tradition and 1 unique to the culture.
 
-tradition_nars_war = {
+tradition_nars_merchant = {
     category = societal
-    layers = { 0 = learning 1 = mena3 4 = indomitable_azatani.dds }
+    layers = { 0 = learning 1 = mena3 4 = jirga.dds }
         is_shown = {
             OR = {
                 has_cultural_pillar = heritage_nars
@@ -14,144 +14,15 @@ tradition_nars_war = {
             #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
 		}
     }
-    parameters = {
-        consolidate_rule_decision = yes 
-        unlock_maa_hoplitai = yes
-        strong_traits_more_valued = yes
-        strong_traits_more_common = yes
-        unlock_voluntary_laampdom = yes
-        frontier_themes_borrow_neighbor_troops = yes
-    }
-    character_modifier = {
-        siege_phase_time = -0.2
-        knight_effectiveness_mult = 0.2
-        ai_zeal = 20
-    }
-}
-
-tradition_nars_agriculture = { # Agrarian & Artisan
-    category = societal
-    layers = { 0 = learning 1 = mena3 4 = roman_ceremonies.dds }
-    is_shown = {
-		has_cultural_tradition = tradition_nars_war
-	}
-	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
-		}
-    }
-    parameters = { 
-        farm_estates_pastures_unlock = yes
-        hard_working_traits_more_valued = yes
-        diligent_trait_more_common = yes
-        pensive_trait_more_common = yes
-        rowdy_trait_less_common = yes
-    }
-    character_modifier = { 
-        character_travel_speed_mult = 0.15
-    }
-}
-
-tradition_nars_science = { 
-    is_shown = {
-		has_cultural_tradition = tradition_nars_war
-	}
-	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
-		}
-    }
-    category = societal
-    layers = { 0 = learning 1 = mena 4 = beacon_of_learning.dds }
-    parameters = {
-        innovation_from_learning_traits = yes
-        tells_stories = yes
-        can_recruit_prisoners_easily = yes
-		pardoning_gives_loyalty = yes
-        harder_to_hybridize = yes
-    }
-    character_modifier = {
-        monthly_lifestyle_xp_gain_mult = 0.15
-    }
-}
-
-tradition_nars_politics = { # Court & Diplomacy
-    is_shown = {
-		has_cultural_tradition = tradition_nars_war
-	}
-	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
-		}
-    }
-    category = societal
-    layers = { 0 = learning 1 = mena 4 = jirga.dds }
-    parameters = { 
-        less_likely_to_culture_convert = yes
-        allows_noble_family_adoption = yes
-		guardian_education_better_outcomes = yes
-        can_appoint_court_gardener = yes
-        can_recruit_gardeners = yes    
-    }
-    character_modifier = { 
-        character_travel_safety_mult = 0.25
-    }
-    county_modifier = { 
-        development_growth_factor = 0.3
-    }
-}
-
-
-tradition_nars_builder = { 
-    category = societal
-    layers = { 0 = learning 1 = mena3 4 = imperial_tagmata.dds }
-    is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-		}
-	}
-	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
-		}
-    }
-    parameters = {
-        renown_from_temple_construction = yes
-        extra_piety_from_temple_construction = yes
-        development_gain_on_building_complete = yes
-        next_level_w_mills = yes
-		improved_artisan_inspiration = yes
-        improved_weaver_inspiration = yes
-        improved_weapon_inspiration = yes
-    }
-    character_modifier = {
-        build_speed = -0.15
-        build_gold_cost = -0.15 # Note: In game code, positive cost usually increases cost. Changed to negative for discount.
-    }
-}
-
-tradition_nars_merchant = { # Maritime & Mercantile
-    category = societal
-    layers = { 0 = learning 1 = mena 4 = knight.dds } 
-    is_shown = {
-		has_cultural_tradition = tradition_nars_war
-	}
-	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_nars
-            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
-		}
-	}
-    parameters = {
+   parameters = {
         trade_ports_stationed_maa_bonus = yes
-        trade_ports_enabled_for_tribals = yes
+        trade_ports_give_control_growth = yes
         next_level_trade_ports = yes
         coastal_agriculture_building_bonuses = yes
-        maritime_mercantilism_avaricious_bonus = yes
+        maritime_mercantilism_coastal_holdings = yes
+        culture_can_raid_over_land_even_if_feudal_no_restrictions = yes
+        culture_can_raid_at_sea_even_if_feudal_no_restrictions = yes
+        can_travel_along_rivers = yes
     }
     character_modifier = {
         sea_travel_danger = medium_sea_danger_reduction
@@ -161,4 +32,91 @@ tradition_nars_merchant = { # Maritime & Mercantile
     }
 }
 
+tradition_nars_agriculture = { # Agrarian & Artisan
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = fierce_independence.dds }
+    is_shown = {
+		has_cultural_tradition = tradition_nars_merchant
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
+    parameters = { 
+        unlock_maa_hoplitai = yes
+        martial_education_more_valued = yes
+        prowess_from_martial_education = yes
+        strong_traits_more_valued = yes
+        strong_traits_more_common = yes
+        diligent_trait_more_common = yes
+        hard_working_traits_more_valued = yes
+        gain_gold_from_battles = yes
+        has_access_to_trials_by_combat = yes
+        can_duel_rivals = yes
+    }
+    character_modifier = { 
+        character_travel_speed_mult = 0.125
+        knight_effectiveness_mult = 0.25
+    }
+}
+
+tradition_nars_science = { 
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = beacon_of_learning.dds }
+    is_shown = {
+		has_cultural_tradition = tradition_nars_merchant
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
+    parameters = {
+        pardoning_gives_loyalty = yes
+        less_likely_to_culture_convert = yes
+        harder_to_hybridize = yes
+        reduced_marriage_acceptance_outside_culture = yes
+		reduced_marriage_acceptance_distant_realms = yes
+		ai_doesnt_marry_outside_culture = yes
+        better_disease_resistance = yes
+        tells_stories = yes
+    }
+    character_modifier = {
+        monthly_lifestyle_xp_gain_mult = 0.15
+        opinion_of_different_culture = -30
+    }
+}
+
+
+tradition_nars_builder = { 
+    category = societal
+    layers = { 0 = learning 1 = mena3 4 = mountain.dds }
+    is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_nars
+            #make it so that the requirement is subsume the x faction, e.g. Subsume the Patres
+		}
+    }
+    parameters = {
+        next_level_w_mills = yes
+        rice_cultivators_can_construct_paddy_fields_in_hills_and_jungle = yes
+        farm_estates_pastures_unlock = yes
+        development_gain_on_building_complete = yes
+        renown_from_temple_construction = yes
+        landing_house_members_gives_renown = yes
+        can_recruit_prisoners_easily = yes
+    }
+    character_modifier = {
+        build_speed = -0.15
+        build_gold_cost = -0.15 # Note: In game code, positive cost usually increases cost. Changed to negative for discount.
+    }
+}
 

@@ -1,99 +1,19 @@
-﻿on_game_start_after_lobby = {
-    on_actions = { 
-        nars_add_nikean_trait_on_start 
-        nars_intro_on_start
-        nars_laamp_on_start
-        nars_naturalis_sync_all_on_start
+﻿# --- 1. CORE SETUP EFFECT ---
+nars_one_time_maintenance_on_action = {
+    trigger = {
+        NOT = { has_character_flag = arcadian_initialized }
+		is_alive = yes
+		is_ethnically_arcadian = yes
     }
-}
-
-on_guest_arrived_from_pool = {
-	on_actions = {
-		nars_one_time_maintenance_on_action
-	}
-}
-
-on_birth_child = {
-    on_actions = { 
-        nars_add_nikean_trait_on_birth 
-    }
-}
-
-on_16th_birthday = {
-	on_actions = { nars_one_time_maintenance_on_action }
-}
-
-on_birthday = {
-	on_actions = { nars_one_time_maintenance_on_action }
-}
-
-on_join_court = {
-	on_actions = { nars_one_time_maintenance_on_action }
-}
-
-on_character_created = {
     effect = {
-        if = {
-            limit = {
-                is_ethnically_nikean = yes
-                NOT = { has_trait = nars_naturalis }
-            }
-            add_trait = nars_naturalis
-            create_story = story_nars_naturalis
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
-}
-
-on_ruler_designer_creation = {
-    effect = {
-        if = {
-            limit = {
-                is_ethnically_nikean = yes
-                NOT = { has_trait = nars_naturalis }
-            }
-            add_trait = nars_naturalis
-            create_story = story_nars_naturalis
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
-}
-
-on_character_creation = {
-    effect = {
-        if = {
-            limit = {
-                is_ethnically_nikean = yes
-                NOT = { has_trait = nars_naturalis }
-            }
-            add_trait = nars_naturalis
-            create_story = story_nars_naturalis
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
-}
-
-on_title_gain = {
-    on_actions = { 
-        nars_update_rank_on_action 
-    }
-}
-
-on_title_lost = {
-    on_actions = { 
-        nars_update_rank_on_action 
-    }
-}
-
-on_title_destroyed = {
-    on_actions = { 
-        nars_update_rank_on_action 
+        add_character_flag = arcadian_initialized
+		nars_apply_setup_effect = yes
+		nars_naturalis_set_tier_xp_effect = yes
     }
 }
 
 nars_update_rank_on_action = {
     effect = {
-        # ROOT is the character. Scope to their story and fire the update!
         every_owned_story = {
             limit = { story_type = story_nars_naturalis }
             nars_update_narsokratia_value = yes
@@ -101,9 +21,86 @@ nars_update_rank_on_action = {
     }
 }
 
-random_yearly_everyone_pulse = {
-    on_actions = { nars_one_time_maintenance_on_action }
+# --- 2. STARTUP ON_ACTIONS ---
+on_game_start = {
+    on_actions = {
+        nars_global_world_setup_on_action
+    }
 }
+
+on_game_start_after_lobby = {
+    on_actions = { 
+        nars_intro_on_start
+    }
+}
+
+# --- 3. CHARACTER CREATION HOOKS ---
+# This covers every possible way a character can enter the game
+on_character_created = { 
+    effect = { nars_apply_setup_effect = yes } 
+}
+on_pool_character_created = { 
+    effect = { nars_apply_setup_effect = yes }
+}
+on_birth_child = { 
+    effect = { nars_apply_setup_effect = yes } 
+}
+on_ruler_designer_creation = { 
+    effect = { nars_apply_setup_effect = yes } 
+}
+
+# --- 4. GLOBAL SETUP ACTIONS ---
+nars_global_world_setup_on_action = {
+    effect = {
+        # One single loop for all character traits and XP syncing at game start
+        every_living_character = {
+            if = {
+                limit = { 
+                    OR = {
+                        is_ethnically_arcadian = yes
+                        has_culture = culture:arcadian
+                    }
+                    NOT = { has_trait = nars_naturalis }
+                }
+                add_trait = nars_naturalis
+                create_story = story_nars_naturalis
+                nars_naturalis_set_tier_xp_effect = yes
+            }
+            else_if = {
+                limit = { has_trait = nars_naturalis }
+                nars_naturalis_set_tier_xp_effect = yes
+            }
+        }
+        
+        every_domicile = {
+            limit = {
+                exists = owner
+                owner = {
+                    is_alive = yes
+                    is_landless_adventurer = yes
+                    is_ethnically_arcadian = yes
+                }
+            }
+            nars_laamp_camp_setup_effect = yes
+        }
+
+        every_owned_story = {
+            limit = { story_type = story_nars_naturalis }
+            nars_update_narsokratia_value = yes
+        }
+    }
+}
+
+
+# --- 5. MAINTENANCE HOOKS ---
+on_guest_arrived_from_pool = { on_actions = { nars_one_time_maintenance_on_action } }
+on_16th_birthday = { on_actions = { nars_one_time_maintenance_on_action } }
+on_birthday = { on_actions = { nars_one_time_maintenance_on_action } }
+on_join_court = { on_actions = { nars_one_time_maintenance_on_action } }
+random_yearly_everyone_pulse = { on_actions = { nars_one_time_maintenance_on_action } }
+on_title_gain = { on_actions = { nars_update_rank_on_action } events = { nars_maintenance.0002 } }
+on_title_lost = { on_actions = { nars_update_rank_on_action } }
+on_title_destroyed = { on_actions = { nars_update_rank_on_action } }
 
 on_trait_added = {
     effect = {
@@ -114,97 +111,56 @@ on_trait_added = {
     }
 }
 
+
+# --- 6. INTRO EVENTS ---
 nars_intro_on_start = {
     effect = {
+        # 1. Player-Specific Intro Events
         every_player = {
-            limit = { 
-                is_alive = yes 
-            }
+            limit = { is_alive = yes }
             if = {
-                limit = { 
-                    is_nikean = yes
-                }
-                # Trigger the Nikean intro for the player
-                trigger_event = { id = nikean_intro.1001 days = 1 }
+                limit = { is_arcadian = yes }
+                trigger_event = { id = nars_intro.1001 days = 1 }
                 
-                # Find a random character in the world to trigger intro.0001 on
                 random_ruler = {
                     limit = {
                         is_alive = yes
-                        NOT = { this = prev } # Ensures it doesn't accidentally pick the player
+                        NOT = { this = prev }
                     }
-                    trigger_event = { id = nikean_intro.0001 days = 1 }
+                    trigger_event = { id = nars_intro.0001 days = 1 }
                 }
                 
                 while = {
                     count = 3
-                    trigger_event = { id = nikean_courtiers.0002 }
+                    trigger_event = nars_courtiers.0002 
                 }
-                add_prestige_level = 2
-                add_piety_level = 1
             }
-            # CONDITION 2: Is NOT Nikean
             else_if = {
-                limit = { 
-                    is_nikean = no 
-                }
-                trigger_event = { id = nikean_intro.0001 days = 1 }
+                limit = { is_arcadian = no }
+                trigger_event = { id = nars_intro.0001 days = 1 }
+            }
+        }
+
+        # 2. Global Bonuses for All Rulers (Player + AI)
+        every_ruler = {
+            limit = {
+                is_alive = yes
+                is_arcadian = yes
+                is_independent_ruler = yes
+            }
+            
+            add_gold = { 400 1000 }
+            add_prestige = { 600 1200 }
+            add_piety = { 600 1200 }
+            add_prestige_level = 2
+            add_piety_level = 1
+            nars_maa_setup_effect = yes
+            
+            if = {
+                # Changed from is_ruler to is_landed, as landless adventurers shouldn't try to settle counties
+                limit = { is_landed = yes } 
+                arcadian_settle_county_effect = yes
             }
         }
     } 
-}
-
-nars_add_nikean_trait_on_start = {
-    effect = {
-        every_living_character = {
-            limit = { 
-                is_ethnically_nikean = yes
-                NOT = { has_nikean_blood = yes }
-            }
-            add_trait = nars_naturalis
-            create_story = story_nars_naturalis
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
-}
-
-nars_add_nikean_trait_on_birth = {
-    effect = {
-        if = {
-            limit = {
-                is_ethnically_nikean = yes
-                NOT = { has_nikean_blood = yes }
-            }
-            add_trait = nars_naturalis
-            create_story = story_nars_naturalis 
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
-}
-
-nars_laamp_on_start = {
-    effect = {
-        every_domicile = {
-            limit = {
-                owner = {
-                    is_alive = yes
-                    is_landless_adventurer = yes
-                    is_ethnically_nikean = yes
-                }
-            }
-            nars_laamp_camp_setup_effect = yes
-        }
-    }    
-}
-
-nars_naturalis_sync_all_on_start = {
-    on_actions = {
-        nars_update_rank_on_action
-    }
-    effect = {
-        every_living_character = {
-            limit = { has_trait = nars_naturalis }
-            nars_naturalis_set_tier_xp_effect = yes
-        }
-    }
 }

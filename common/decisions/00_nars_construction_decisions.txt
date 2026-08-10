@@ -8,7 +8,7 @@
 	sort_order = 850
 	
 	is_shown = {
-		is_nikean = yes
+		is_arcadian = yes
 		highest_held_title_tier >= tier_kingdom
 		NOT = { government_has_flag = government_is_tribal }
 		NOT = { government_has_flag = government_is_nomadic }
@@ -46,33 +46,15 @@
 		}
 	}
 	
-	ai_check_interval = 13
-	ai_potential = {
-		is_ruler = yes
-		any_held_county = {
-			any_in_de_jure_hierarchy = {
-                is_barony_valid_for_aretaic_school = {
-					HOLDER = root
-				}
-			}
-		}
-	}
 	ai_will_do = {
-        base = 100
-        modifier = {
-			add = -50
-			any_held_county = {
-				any_in_de_jure_hierarchy = {
-					title_province = {
-						has_building_or_higher = aretaic_school_01
-					}
-				}
-			}
-		}
+		base = 0
 	}
 }
 
 pick_aretaic_school_barony = {
+	is_shown = {
+		is_ai = no
+	}
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
@@ -110,29 +92,8 @@ pick_aretaic_school_barony = {
 		}
 	}
 	
-	ai_check_interval = 13
-	ai_potential = {
-		is_ruler = yes
-		any_held_county = {
-			any_in_de_jure_hierarchy = {
-                is_barony_valid_for_aretaic_school = {
-					HOLDER = root
-				}
-			}
-		}
-	}
 	ai_will_do = {
-        base = 100
-        modifier = {
-			add = -50
-			any_held_county = {
-				any_in_de_jure_hierarchy = {
-					title_province = {
-						has_building_or_higher = aretaic_school_01
-					}
-				}
-			}
-		}
+        base = 0
 	}
 }
 
@@ -146,9 +107,9 @@ decision_establish_brothel = {
 	sort_order = 850
 	
 	is_shown = {
-		is_nikean = yes
+		is_arcadian = yes
 		highest_held_title_tier >= tier_kingdom
-		or = {
+		OR = {
 			exists = global_var:established_aretaic_school
 			is_ai = yes
 
@@ -159,7 +120,10 @@ decision_establish_brothel = {
 				HOLDER = root
 			}
 		}
-		NOT = { government_has_flag = government_is_nomadic }
+		NOR = { 
+			government_has_flag = government_is_nomadic 
+			government_has_flag = government_is_tribal
+		}
 	}
 
 	is_valid = {

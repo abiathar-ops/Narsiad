@@ -5,7 +5,7 @@ heritage_nars = {
 			HERITAGE = heritage_nars
 		}
 	}
-	audio_parameter = nikean
+	audio_parameter = arcadian
 }
 
 language_nars = {
@@ -14,7 +14,7 @@ language_nars = {
 		language_is_shown_trigger = {
 			LANGUAGE = language_nars
 		}
-		scope:character = { is_nikean = yes }
+		scope:character = { is_arcadian = yes }
 	}
 	ai_will_do = {
 		value = 10

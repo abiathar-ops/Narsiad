@@ -1,6 +1,6 @@
-#############################################
+﻿#############################################
 
-## Nikean ##
+## Arcadian ##
 
 ## Feudal ##
 
@@ -10,7 +10,7 @@ count_feudal_male_nars = {
 	special = holder
 	tier = county
 	priority = 35
-	governments = { clan_government tribal_government mandala_government feudal_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
 	name_lists = { name_list_nars }
 	flavourization_rules = {
 		top_liege = no
@@ -23,7 +23,7 @@ count_feudal_female_nars = {
 	special = holder
 	tier = county
 	priority = 35
-	governments = { clan_government tribal_government mandala_government feudal_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
 	name_lists = { name_list_nars }
 	flavourization_rules = {
 		top_liege = no
@@ -49,7 +49,7 @@ duke_feudal_female_nars = {
 	special = holder
 	tier = duchy
 	priority = 37
-	governments = { clan_government tribal_government mandala_government feudal_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
 	name_lists = { name_list_nars }
 }
 
@@ -59,7 +59,7 @@ king_feudal_male_nars = {
 	special = holder
 	tier = kingdom
 	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government }
 	name_lists = { name_list_nars }
 }
 
@@ -69,7 +69,7 @@ king_feudal_female_nars = {
 	special = holder
 	tier = kingdom
 	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government }
 	name_lists = { name_list_nars }
 	flavourization_rules = {
 		top_liege = no
@@ -80,7 +80,7 @@ kingdom_feudal_nars = {
 	type = title
 	tier = kingdom
 	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government }
 	name_lists = { name_list_nars }
 	flavourization_rules = {
 		top_liege = no
@@ -104,7 +104,7 @@ empire_administrative_independent_nars = {
 	type = title
 	tier = empire
 	priority = 252
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government }
 	name_lists = { name_list_nars }
 	flavourization_rules = {
 		top_liege = no
@@ -118,7 +118,7 @@ baron_administrative_male_nars_group = {
 	special = holder
 	tier = barony
 	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 	
 	flavourization_rules = {
@@ -133,7 +133,7 @@ baron_administrative_female_nars_group = {
 	special = holder
 	tier = barony
 	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 	
 	flavourization_rules = {
@@ -148,7 +148,7 @@ count_administrative_male_nars_group = {
 	special = holder
 	tier = county
 	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 	
 	flavourization_rules = {
@@ -163,7 +163,7 @@ count_administrative_female_nars_group = {
 	special = holder
 	tier = county
 	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 	
 	flavourization_rules = {
@@ -176,7 +176,7 @@ county_administrative_nars_group = {
 	type = title
 	tier = county
 	priority = 51
-	governments = {clan_government tribal_government mandala_government feudal_government   administrative_government republic_government }
+	governments = {clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 
 	flavourization_rules = {
@@ -224,7 +224,7 @@ king_administrative_male_nars_group = {
 	special = holder
 	tier = kingdom
 	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government  mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 
 	flavourization_rules = {
@@ -239,7 +239,7 @@ king_administrative_female_nars_group = {
 	special = holder
 	tier = kingdom
 	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 
 	flavourization_rules = {
@@ -254,7 +254,7 @@ king_administrative_independent_male_nars_group = {
 	special = holder
 	tier = kingdom
 	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 
 	flavourization_rules = {
@@ -268,7 +268,7 @@ king_administrative_independent_female_nars_group = {
 	special = holder
 	tier = kingdom
 	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government  administrative_government republic_government }
+	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government republic_government }
 	name_lists = { name_list_nars }
 
 	flavourization_rules = {
@@ -282,7 +282,7 @@ emperor_administrative_male_nars = {
 	special = holder
 	tier = empire
 	priority = 252
-	governments = { celestial_government administrative_government feudal_government  clan_government tribal_government }
+	governments = { celestial_government administrative_government feudal_government nomadic_government clan_government tribal_government }
 	name_lists = { name_list_nars }
 }
 
@@ -292,7 +292,7 @@ emperor_administrative_female_nars = {
 	special = holder
 	tier = empire
 	priority = 252
-	governments = { celestial_government administrative_government feudal_government  clan_government tribal_government }
+	governments = { celestial_government administrative_government feudal_government nomadic_government clan_government tribal_government }
 	name_lists = { name_list_nars }
 }
 
@@ -302,7 +302,7 @@ emperor_male_nars = {
 	special = holder
 	tier = empire
 	priority = 252
-	governments = { celestial_government mandala_government administrative_government feudal_government  clan_government tribal_government }
+	governments = { celestial_government mandala_government administrative_government feudal_government nomadic_government clan_government tribal_government }
 	name_lists = { name_list_nars }
 }
 
@@ -312,7 +312,7 @@ emperor_female_nars = {
 	special = holder
 	tier = empire
 	priority = 252
-	governments = { celestial_government administrative_government feudal_government  clan_government tribal_government }
+	governments = { celestial_government administrative_government feudal_government nomadic_government clan_government tribal_government }
 	name_lists = { name_list_nars }
 }
 
@@ -325,6 +325,7 @@ hegemon_administrative_male_nars = {
 	governments = { celestial_government tribal_government administrative_government mandala_government }
 	name_lists = { name_list_nars }
 }
+
 hegemon_administrative_female_nars = {
 	type = character
 	gender = female

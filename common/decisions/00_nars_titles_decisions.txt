@@ -5,22 +5,13 @@ decision_h_narsokratia = {
 	desc = decision_h_narsokratia_desc
 	selection_tooltip = decision_h_narsokratia_tooltip
 	decision_group_type = restorationist
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 0
-		empire = 120
-		hegemony = 0
-	}
 	
 	sort_order = 1000
 
 	is_shown = {
 		is_ruler = yes
 		is_independent_ruler = yes
-		is_nikean = yes
+		is_arcadian = yes
 		highest_held_title_tier = tier_empire
 		NOT = {
 			is_target_in_global_variable_list = {
@@ -57,7 +48,7 @@ decision_h_narsokratia = {
 		top_liege = this
 		OR = {
 			is_orphic = yes
-			is_nikean = yes
+			is_arcadian = yes
 		}
 	}
 	
@@ -84,7 +75,10 @@ decision_h_narsokratia = {
 		piety = {
 			value = 1250
 			if = {
-				limit = { government_has_flag = government_is_nomadic }
+				limit = { 
+					government_has_flag = government_is_nomadic 
+					government_has_flag = government_is_tribal
+				}
 				multiply = 0
 			}
 		}
@@ -92,11 +86,11 @@ decision_h_narsokratia = {
 	
 	effect = {
 		create_h_narsokratia_effect = yes
-		give_nickname = nick_soter
-		trigger_event = nikean_titles.0021
+		
+		trigger_event = nars_titles.0001
 		hidden_effect = {
 			change_government = administrative_government
-			local_assimilate_nikean_traditions_effect = {
+			local_assimilate_arcadian_traditions_effect = {
 				OLD_CULTURE = root.culture
 				NEW_CULTURE = root.culture
 				OLD_FAITH = root.faith
@@ -123,100 +117,133 @@ decision_h_narsokratia = {
 }
 
 decision_pledge_restoration = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-	}
-	desc = decision_pledge_restoration_desc
-	selection_tooltip = decision_pledge_restoration_tooltip
-	decision_group_type = restorationist
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+    }
+    desc = decision_pledge_restoration_desc
+    selection_tooltip = decision_pledge_restoration_tooltip
+    decision_group_type = restorationist
+    sort_order = 1000
 
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 100
-		empire = 120
-		hegemony = 0
-	}
-	
-	sort_order = 1000
-
-	is_shown = {
-		is_ruler = yes
-		is_independent_ruler = yes
-		is_ethnically_nikean = yes
-		is_nikean = yes
-		NOT = { government_has_flag = government_is_nomadic }
-		highest_held_title_tier >= tier_kingdom
-		dynasty = {
+    is_shown = {
+        is_ruler = yes
+        is_independent_ruler = yes
+        is_ethnically_arcadian = yes
+        is_arcadian = yes
+        NOR = { 
+            government_has_flag = government_is_nomadic 
+            government_has_flag = government_is_tribal 
+        }
+        highest_held_title_tier >= tier_kingdom
+        dynasty = {
             NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
         }
-	}
+    }
 
-	is_valid = {
-		is_dynast = yes
-		OR = {
-			prestige_level >= 4
-			piety_level >= 4
-		}
-		highest_held_title_tier >= tier_kingdom
-	}
+    is_valid = {
+        # Keep your mirrored Conqueror requirements here as they were
+        highest_held_title_tier >= tier_kingdom
+        prestige_level >= 5
+        custom_tooltip = { text = become_conqueror_decision_war_participation any_memory = { count >= 20 OR = { has_memory_type = offensive_war has_memory_type = defensive_war has_memory_type = joined_allys_war } } }
+        custom_tooltip = { text = become_conqueror_decision_war_participation_kingdom any_memory = { count >= 5 OR = { has_memory_type = offensive_war has_memory_type = defensive_war has_memory_type = joined_allys_war } any_memory_participant = { primary_title.tier >= tier_kingdom } } }
+        custom_tooltip = { text = nars_conqueror_decision_enough_troops current_military_strength >= 3500 }
+        calc_true_if = { amount >= 1 custom_tooltip = { text = become_conqueror_decision_enough_high_level_knights any_knight = { count >= 6 prowess >= 18 } } custom_tooltip = { text = become_conqueror_decision_enough_mediocre_knights any_knight = { count >= 12 prowess >= 15 } } }
+    }
 
-	is_valid_showing_failures_only = {
-		is_landed = yes
-		is_capable_adult = yes
-		is_imprisoned = no
-		OR = {
-			is_orphic = yes
-			is_nikean = yes
-		}
-	}
-	
-	cost = {
-		gold = {
-			value = 1250
+    is_valid_showing_failures_only = {
+        is_landed = yes
+        is_capable_adult = yes
+        is_imprisoned = no
+        OR = { is_orphic = yes is_arcadian = yes }
+    }
+    
+    cost = { prestige = 5000 }
+    
+    effect = {
+        # UI Tooltips explaining what happens upon Victory
+        custom_tooltip = nars_conqueror_defensive_war_tt
+        custom_tooltip = gain_nars_conqueror_tt
+		custom_tooltip = decision_pledge_restoration_tt
+        custom_tooltip = nars_conqueror_decision_troops
+        if = { limit = { has_dlc_feature = legends } custom_tooltip = become_conqueror_decision_legend_seed }
+
+        add_character_flag = flag_decision_pledge_restoration
+
+		spawn_army = {
+            men_at_arms = { type = maa_hoplitai stacks = 15 }
+            levies = 2750
+            inheritable = no
+            uses_supply = no
+            location = root.capital_province
+            name = event_troop_default_name
+        }
+
+		every_neighboring_top_liege_realm_owner = {
+            limit = {
+                is_independent_ruler = yes
+                NOT = { has_alliance = root }
+                NOT = { has_truce = root }
+            }
+            show_as_tooltip = {
+                custom_description_no_bullet = {
+                    text = arcadian_coalition_member_name_tt
+                }
+            }
+        }
+
+		hidden_effect = {
+			# 1. Build a list of all strictly land-bordering independent neighbors
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					is_independent_ruler = yes
+					NOT = { has_alliance = root }
+					NOT = { has_truce = root }
+				}
+				add_to_list = arcadian_coalition_members
+			}
+
 			if = {
 				limit = {
-					OR = {
-						government_has_flag = government_is_nomadic
-						has_treasury = yes
+					any_in_list = { list = arcadian_coalition_members }
+				}
+				
+				# 2. Pick the strongest neighbor to lead the Coalition
+				ordered_in_list = {
+					list = arcadian_coalition_members
+					order_by = current_military_strength
+					save_scope_as = coalition_war_leader
+				}
+
+				# 3. The War Leader declares the war
+				scope:coalition_war_leader = {
+					start_war = {
+						target = root
+						target_title = root.primary_title
+						cb = arcadian_defiance_cb
 					}
 				}
-				multiply = 0
-			}
-		}
-		treasury = {
-			value = 1250
-			if = {
-				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-		piety = {
-			value = 5000
-			if = {
-				limit = { government_has_flag = government_is_nomadic }
-				multiply = 0
-			}
-		}
-	}
-	
-	effect = {
-		custom_tooltip = decision_pledge_restoration_tt
-		custom_tooltip = gain_nars_conqueror_tt
-		trigger_event = nars_conqueror.0001
-		gain_legitimizing_legend_seed_tooltip_effect = yes
-		hidden_effect = {
-			add_character_flag = {
-				flag = nikean_realm_2_cooldown
-				years = 5
-			}
-		}
-	}
-		
-	ai_potential = { always = yes }
 
-	ai_will_do = {
-		base = 100
-	}
+				# 4. Save the war, then forcefully drag the rest of the list into it
+				root = {
+					random_character_war = {
+						limit = { primary_attacker = scope:coalition_war_leader }
+						
+						every_in_list = {
+							list = arcadian_coalition_members
+							limit = {
+								NOT = { this = scope:coalition_war_leader }
+							}
+							# 'prev' scopes back to the war, adding the list character as an attacker
+							prev = {
+								add_attacker = prev
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+        
+    ai_potential = { always = yes }
+    ai_will_do = { base = 100 }
 }

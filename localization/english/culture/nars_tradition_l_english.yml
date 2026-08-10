@@ -1,14 +1,9 @@
 ﻿l_english:
- # Traditions
- tradition_nars_war_name: "Haîma"
- tradition_nars_war_desc: "This culture has embraced the pursuit of warfare as a defining social force based on the belief that greatness is earned only through conquest."
  tradition_nars_science_name: "Akadēmeia"
  tradition_nars_science_desc: "This culture has embraced the use of philosophy and scholarly discourse as a social method of regulating behavior and ideology."
  tradition_nars_builder_name: "Geotektōn"
  tradition_nars_builder_desc: "This culture has embraced the ways of using craftsmanship and industrious labor as a social method of regulating behavior."
- tradition_nars_agriculture_name: "Autárkeia"
+ tradition_nars_agriculture_name: "Otárkeia"
  tradition_nars_agriculture_desc: "This culture has embraced the rhythms of the earth as a social method of regulating behavior. Communal responsibility are prized."
- tradition_nars_merchant_name: "Plūtos"
+ tradition_nars_merchant_name: "Plūteia"
  tradition_nars_merchant_desc: "By dominating trade routes and mastering the tides, this culture accumulates vast wealth, turning every port into a thriving center of commerce."
- tradition_nars_politics_name: "Deinótēs"
- tradition_nars_politics_desc: "Life is a stage, and the court is its drama. These masters of rhetoric and intrigue value the subtle knife of diplomacy and the stabilizing power of a well-oiled bureaucracy."

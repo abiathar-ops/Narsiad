@@ -1,21 +1,21 @@
-﻿nikeans = {
-	alias = { nikean nikeis nikeis_adj nikeans_adj nikean_adj}
+﻿arcadians = {
+	alias = { arcadian arkades arkades_adj arcadians_adj arcadian_adj}
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
 polymetis = {
-	parent = nikeans
+	parent = arcadians
 	alias = { sophist sophists }
 	texture = "gfx/interface/icons/icon_game_concept_innovation_spread.dds"
 }
 
-narsic = {
-	parent = nikeans
-	alias = { narsic_short }
+arcadic = {
+	parent = arcadians
+	alias = { arcadic_short }
 }
 
 hoplites = {
-	parent = nikeans
+	parent = arcadians
 	alias = { hoplite }
 	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
@@ -26,14 +26,14 @@ mastiges = {
 }
 
 narsokratia = {
-	parent = nikean
-	alias = { nikeanrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
+	parent = arcadian
+	alias = { arcadianrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
 	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 
 orphists = {
-	parent = nikean
-	alias = { orphic nikean_faith orphic_adj }
+	parent = arcadian
+	alias = { orphic nars_faith orphic_adj }
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
 
@@ -55,28 +55,23 @@ panteion = {
 }
 
 narsil = {
-	parent = nikean
+	parent = arcadian
 	texture = "gfx/interface/icons/icon_prowess.dds"
 }
 
-story_nikean = {
-	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
-	shown_in_encyclopedia = no
-}
-
 alnars = {
-	parent = nikean
+	parent = arcadian
 	alias = { alnars_adj }
 	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 	shown_in_encyclopedia = no
 }
 
-nikean_incursion = {
+arcadian_incursion = {
 	texture = "gfx/interface/icons/casus_bellis/undirected_great_holy_war.dds"
 	parent = casus_belli
 }
 
-nikean_migration = {
+arcadian_migration = {
 	texture = "gfx/interface/icons/casus_bellis/migration_cb.dds"
 	parent = casus_belli
 }

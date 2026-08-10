@@ -1,22 +1,20 @@
 ﻿l_english:
   # MAA Innovations
-  
+  innovation_arcadian_maa_01: "Xataphraía"
+  innovation_arcadian_maa_01_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
 
-  innovation_nikean_maa_02: "Xataphraía"
-  innovation_nikean_maa_02_desc: "We have established a corps whose number is never allowed to drop. If one falls, another takes his place, creating the illusion of immortality."
+  innovation_arcadian_maa_02: "Petharchía"
+  innovation_arcadian_maa_02_desc: "Through the strictest discipline, we forge soldiers who fear their officers more than the enemy. These scourges are the embodiment of this ruthless order."
 
-  innovation_nikean_maa_03: "Petharchía"
-  innovation_nikean_maa_03_desc: "Through the strictest discipline, we forge soldiers who fear their officers more than the enemy. These scourges are the embodiment of this ruthless order."
-
-  innovation_nikean_maa_04: "Orthotélēs"
-  innovation_nikean_maa_04_desc: "The Orthotélēs are the elite shock troops of our army, trained to break through enemy lines with devastating charges."
+  innovation_arcadian_maa_03: "Orthotélēs"
+  innovation_arcadian_maa_03_desc: "The Orthotélēs are the elite shock troops of our army, trained to break through enemy lines with devastating charges."
 
   # Architecture
-  innovation_nikean_building_01: "Kyklōpeía"
-  innovation_nikean_building_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
+  innovation_arcadian_building_01: "Kyklōpeía"
+  innovation_arcadian_building_01_desc: "We lay foundations of unworked limestone boulders so massive that future generations will say they were placed by giants. These walls do not crumble."
 
-  innovation_nikean_building_02: "Aisódomon"
-  innovation_nikean_building_02_desc: "Moving beyond rough stone, we adopt the cutting of blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
+  innovation_arcadian_building_02: "Aisódomon"
+  innovation_arcadian_building_02_desc: "Moving beyond rough stone, we adopt the cutting of blocks to uniform height and setting them without mortar, clamped with iron and lead to withstand both siege and earthquake."
 
-  innovation_nikean_building_03: "Hippodámeios"
-  innovation_nikean_building_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
+  innovation_arcadian_building_03: "Hippodámeios"
+  innovation_arcadian_building_03_desc: "A city must be rational to be virtuous. We organize our settlements on strict Hippodamian grids, with wide streets and regular blocks, to promote order and facilitate defense."
