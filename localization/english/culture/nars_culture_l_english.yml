@@ -1,12 +1,11 @@
 ﻿l_english:
- arcadian:0 "Arcadian"
- arcadian_prefix:0 "Arcado"
- arcadian_collective_noun:1 "Arcadians"
+ minoan:0 "Minoan"
+ minoan_prefix:0 "Arcado"
+ minoan_collective_noun:1 "Minoans"
 
- name_list_nars:0 "Arcadian"
- language_nars_name:0 "Arcadian"
- arcadian_clothing_gfx:0 "Arcadian"
- arcadian_opinion:0 "$arcadian$ Opinion"
+ language_nars_name:0 "Minoan"
+ minoan_clothing_gfx:0 "Minoan"
+ minoan_opinion:0 "$minoan$ Opinion"
 
  ethos_archaic_name:0 "Archaic"
  ethos_archaic_desc:2 "This culture bears the memory of a bygone age, enduring only through its tightly-held customs and preserved traditions. Sands of time drip on their dream of restoration."

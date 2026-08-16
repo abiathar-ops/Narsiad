@@ -1,4 +1,4 @@
-arcadian = {
+minoan = {
 	color = { 0.98 0.92 0.84 }
 	
 	ethos = ethos_archaic
@@ -14,18 +14,15 @@ arcadian = {
 		tradition_nars_merchant
 	}
 	
-	name_list = name_list_nars
+	name_list = name_list_ancient_attic
 	
-	coa_gfx = { byzantine_group_coa_gfx }
-	building_gfx = { byzantine_building_gfx } 
-	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx } 
-	unit_gfx = { eastern_unit_gfx } 	
-	house_coa_frame = house_frame_02 #020409
-	house_coa_mask_offset = { 0.0 0.055 }
-	house_coa_mask_scale = { 0.9 0.9 }
-
+	coa_gfx = { attic_archaic_coa_gfx gre_archaic_coa_gfx }
+	building_gfx = { greek_building_gfx }
+	clothing_gfx = { greek_clothing_gfx }
+	unit_gfx = { geometric_unit_gfx tribe_ionian_flag }
+	house_coa_frame = house_frame_05
 	
 	ethnicities = {
-		10 = arkades #arcadics
+		10 = minoes 
 	}
 }

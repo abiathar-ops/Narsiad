@@ -1,11 +1,11 @@
-#Average Arcadian Nobody
-arcadian_template.1001 = {
+#Average Minoan Nobody
+minoan_template.1001 = {
     age = { 18 30 }
     gender = male
 	gender_female_change = 50
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:arcadian
+	culture = culture:minoan
     random_traits = yes
 	trait = nars_naturalis
     after_creation = {
@@ -14,12 +14,12 @@ arcadian_template.1001 = {
 	}
 }
 
-#Average Arcadian Noble
-arcadian_template.1002 = {
+#Average Minoan Noble
+minoan_template.1002 = {
     age = { 18 30 }
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:arcadian
+	culture = culture:minoan
 	trait = nars_naturalis
     random_traits_list = {
 		count = { 0 1 }
@@ -46,11 +46,11 @@ arcadian_template.1002 = {
 }
 
 #Evangelist
-arcadian_template.1011 = {
+minoan_template.1011 = {
 	age = { 30 48 }
 	gender_female_change = 100
     faith = faith:nars_religion
-	culture = culture:arcadian
+	culture = culture:minoan
     random_traits = yes
 	trait = devoted
 	random_traits_list = {
@@ -71,10 +71,10 @@ arcadian_template.1011 = {
 }
 
 #Mercenary Leader
-arcadian_template.1012 = {
+minoan_template.1012 = {
 	age = { 30 45 }
 	gender_female_chance = 50
-	culture = culture:arcadian
+	culture = culture:minoan
 	faith = faith:nars_religion
 	random_traits_list = {
 		count = 1

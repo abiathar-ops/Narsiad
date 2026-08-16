@@ -4,7 +4,7 @@ nars_courtiers.0001 = {
 	hidden = yes
 
 	trigger = {
-		exists = var:number_of_invite_arcadian_countdown
+		exists = var:number_of_invite_minoan_countdown
 	}
 
 	immediate = {
@@ -26,7 +26,7 @@ nars_courtiers.0001 = {
 			}
 		}
 
-		# Gather Arcadian pool characters with suitable prowess
+		# Gather Minoan pool characters with suitable prowess
 		every_in_list = {
 			list = pool_provinces
 			save_temporary_scope_as = pool_province
@@ -62,12 +62,12 @@ nars_courtiers.0001 = {
 					}
 				}
 			}
-			save_scope_as = arcadian_courtier
+			save_scope_as = minoan_courtier
 		}
 
-		# If no suitable pool character exists, create a fresh Arcadian warrior
+		# If no suitable pool character exists, create a fresh Minoan warrior
 		if = {
-			limit = { NOT = { exists = scope:arcadian_courtier } }
+			limit = { NOT = { exists = scope:minoan_courtier } }
 			create_character = {
 				location = root.capital_province
 				culture = root.culture
@@ -118,7 +118,7 @@ nars_courtiers.0001 = {
 				martial = { 10 25 }
 				prowess = { 15 30 }
 				gender_female_chance = 50
-				save_scope_as = arcadian_courtier
+				save_scope_as = minoan_courtier
 				after_creation = {
 					add_trait = nars_naturalis
 					nars_naturalis_set_tier_xp_effect = yes
@@ -127,26 +127,26 @@ nars_courtiers.0001 = {
 		}
 
 		# Bring the courtier to court and notify the player
-		add_courtier = scope:arcadian_courtier
+		add_courtier = scope:minoan_courtier
 		send_interface_message = {
 			title = nars_courtiers.0001.t
 			desc = nars_courtiers.0001.desc
 			type = event_prowess_good_desc
-			left_icon = scope:arcadian_courtier
+			left_icon = scope:minoan_courtier
 		}
 
 		# Count down and either end the chain or schedule the next arrival
 		change_variable = {
-			name = number_of_invite_arcadian_countdown
+			name = number_of_invite_minoan_countdown
 			subtract = 1
 		}
 
 		if = {
-			limit = { var:number_of_invite_arcadian_countdown = 0 }
-			remove_variable = number_of_invite_arcadian_countdown
+			limit = { var:number_of_invite_minoan_countdown = 0 }
+			remove_variable = number_of_invite_minoan_countdown
 		}
 		else = {
-			clear_saved_scope = arcadian_courtier
+			clear_saved_scope = minoan_courtier
 			trigger_event = {
 				id = nars_courtiers.0001
 				days = { 100 200 }

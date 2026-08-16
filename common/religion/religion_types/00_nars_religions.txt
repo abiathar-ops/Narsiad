@@ -1,8 +1,9 @@
-﻿arcadian_religion = {
-	family = rf_arcadian
-	graphical_faith = pagan.gfx
-	doctrine = arcadian_hostility_doctrine
-	doctrine = divine_destiny_doctrine
+﻿minoan_religion = {
+	family = rf_indo_european
+
+	doctrine = pagan_hostility_doctrine
+	
+	doctrine_background_icon = core_tenet_banner_hellenic.dds
 
 	#Main Group
 	doctrine = doctrine_polytheist
@@ -55,7 +56,7 @@
 		{ name = "holy_order_ekuites_of_faith" }
 	}
 
-	holy_order_maa = { maa_hoplitai }
+	holy_order_maa = { praetorian }
 
 	localization = {
 		#HighGod
@@ -228,68 +229,20 @@
 		nars_religion = {
 			color = { 230 228 216 }
 			icon = custom_faith_dove
-			#icon = custom_tamska_veryana.dds #custom_faith_dove
-			#icon = dhyana
-
-			holy_site = cagliari
-    		holy_site = iglesias
-    		holy_site = arborea
-    		holy_site = gallura
-   		 	holy_site = tortoli
-    		holy_site = carbonara
-  			holy_site = logudoro
-    		holy_site = galtelli
-    		holy_site = alghero
-			holy_site = jingzhao
-			holy_site = guozhou
-			holy_site = tongzhou
-			holy_site = shanzou
-			holy_site = dongdu
-			holy_site = kaifeng
-			holy_site = xingyang
-			holy_site = guancheng
-			holy_site = zheng
-			holy_site = sunda
-			holy_site = cimanuk
-			holy_site = galuh
-			holy_site = mataram
-			holy_site = keling
-			holy_site = dieng
-			holy_site = janggala
-			holy_site = lumajang
-			holy_site = baghdad
-			holy_site = ukbara
-			holy_site = an_nahrawan
-			holy_site = iskaf
-			holy_site = kaskar
-			holy_site = wasit
-			holy_site = ar_rusafa
-			holy_site = al_qatr
-			holy_site = nahr_simmara
-			holy_site = bayan
-			holy_site = abbadan
-			holy_site = sarsar
-			holy_site = al_farasa
-			holy_site = humaniya
-			holy_site = an_numaniya
-			holy_site = as_saliq
-			holy_site = matara
-			holy_site = al_ubulla
-			holy_site = bajlan
-			holy_site = niani
-			holy_site = jelibakoro
-			holy_site = suguiri
-			holy_site = kangaba
-			holy_site = figuira
-			holy_site = dakajalan
-			holy_site = kirina
-			holy_site = tamani
-			holy_site = koulikoro
-			holy_site = niamina
+			
+			holy_site = delos
+			holy_site = delphi
+			holy_site = mount_olympos
+			holy_site = olympia
+			holy_site = athena_itonia_thessaly
 
 			doctrine = tenet_nars_pantheon
 			doctrine = tenet_nars_sanguine
 			doctrine = tenet_nars_erudition
+
+			localization = {
+				LongName = pamboioitonist_long_name
+			}
 		}
 	}
 }

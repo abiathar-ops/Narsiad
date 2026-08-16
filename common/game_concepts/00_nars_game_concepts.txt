@@ -1,21 +1,21 @@
-﻿arcadians = {
-	alias = { arcadian arkades arkades_adj arcadians_adj arcadian_adj}
+﻿minoans = {
+	alias = { minoan minoes minoes_adj minoans_adj minoan_adj}
 	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
 polymetis = {
-	parent = arcadians
+	parent = minoans
 	alias = { sophist sophists }
 	texture = "gfx/interface/icons/icon_game_concept_innovation_spread.dds"
 }
 
-arcadic = {
-	parent = arcadians
-	alias = { arcadic_short }
+minoan_language = {
+	parent = minoans
+	alias = { minoan_language_short }
 }
 
 hoplites = {
-	parent = arcadians
+	parent = minoans
 	alias = { hoplite }
 	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
@@ -26,13 +26,13 @@ mastiges = {
 }
 
 narsokratia = {
-	parent = arcadian
-	alias = { arcadianrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
+	parent = minoan
+	alias = { minoanrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
 	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 
 orphists = {
-	parent = arcadian
+	parent = minoan
 	alias = { orphic nars_faith orphic_adj }
 	texture = "gfx/interface/icons/event_types/type_faith.dds"
 }
@@ -55,23 +55,23 @@ panteion = {
 }
 
 narsil = {
-	parent = arcadian
+	parent = minoan
 	texture = "gfx/interface/icons/icon_prowess.dds"
 }
 
 alnars = {
-	parent = arcadian
+	parent = minoan
 	alias = { alnars_adj }
 	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 	shown_in_encyclopedia = no
 }
 
-arcadian_incursion = {
+minoan_incursion = {
 	texture = "gfx/interface/icons/casus_bellis/undirected_great_holy_war.dds"
 	parent = casus_belli
 }
 
-arcadian_migration = {
+minoan_migration = {
 	texture = "gfx/interface/icons/casus_bellis/migration_cb.dds"
 	parent = casus_belli
 }

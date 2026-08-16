@@ -1,21 +1,21 @@
-is_arcadian = {
+is_minoan = {
     or = {
         culture = { has_cultural_pillar = heritage_nars }
-        has_ethnicity = arkades
+        has_ethnicity = minoes
     }
 }
 
-is_ethnically_arcadian = {
-	has_ethnicity = arkades
+is_ethnically_minoan = {
+	has_ethnicity = minoes
 }
 
-has_arcadian_blood = {
+has_minoan_blood = {
     has_trait = nars_naturalis
 }
 
 is_orphic = {
     faith.religion = {
-		is_in_family = rf_arcadian
+		is_in_family = rf_minoan
 	}
 }
 
@@ -23,16 +23,16 @@ is_considered_orphic = {
     custom_tooltip = {
         text = is_considered_orphic
         faith.religion = {
-	       	is_in_family = rf_arcadian
+	       	is_in_family = rf_minoan
 	    }
     }
 }
 
-is_ideal_arcadian = {
+is_ideal_minoan = {
     culture = { has_cultural_pillar = heritage_nars }
-    has_ethnicity = arkades
+    has_ethnicity = minoes
     faith.religion = {
-		is_in_family = rf_arcadian
+		is_in_family = rf_minoan
 	}
 }
 
@@ -53,7 +53,7 @@ is_narsocratic_e_h = {
 is_narses_scion = {
 	AND = {
 		has_trait = nars_scion
-		is_arcadian = yes
+		is_minoan = yes
         is_orphic = yes
 	}
 }

@@ -3,7 +3,7 @@ narsil_template = {
 		always = yes
 	}
 	can_benefit = {
-		is_arcadian = yes
+		is_minoan = yes
 	}
 	can_reforge = {
 		always = yes
@@ -27,7 +27,7 @@ anduril_template = {
 		always = yes
 	}
 	can_benefit = {
-		is_arcadian = yes
+		is_minoan = yes
 	}
 	can_reforge = {
 		always = yes

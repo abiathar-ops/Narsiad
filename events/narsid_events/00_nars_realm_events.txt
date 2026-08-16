@@ -91,7 +91,7 @@ nars_realm.1021 = {
 
 	option = {
 		name = nars_realm.1021.a
-		custom_tooltip = arcadian_propaganda_province_tt
+		custom_tooltip = minoan_propaganda_province_tt
         add_character_modifier = {
 			modifier = distribute_propaganda_character_modifier
 			years = 10
@@ -144,16 +144,16 @@ nars_nickname.0010 = {
                 remove_nickname = yes
             }
             random_list = {
-                10 = { set_nickname_effect = { NICKNAME = nick_philosophos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_chrestos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_eusebes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_dikaios } }
-                10 = { set_nickname_effect = { NICKNAME = nick_isotheos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_daimonios } }
-                10 = { set_nickname_effect = { NICKNAME = nick_euphyes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_philokales } }
-                10 = { set_nickname_effect = { NICKNAME = nick_agathos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_poietes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_philosophos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_chrestos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_eusebes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_dikaios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_isotheos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_daimonios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_euphyes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_philokales } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_agathos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_poietes } }
             }
         }
         trigger_event = nars_nickname.0010
@@ -172,14 +172,14 @@ nars_nickname.0010 = {
             }
             hidden_effect = {
                  random_list = {
-                    10 = { set_nickname_effect = { NICKNAME = nick_nicator } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_nikephoros } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_aetos } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_megas } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_ktistes } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_eupator } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_andreios } }
-                    10 = { set_nickname_effect = { NICKNAME = nick_trierarchos } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_nicator } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_nikephoros } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_aetos } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_megas } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_ktistes } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_eupator } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_andreios } }
+                    10 = { set_nickname_effect = { NICKNAME = nick_l_trierarchos } }
                 }
             }
         }
@@ -198,18 +198,18 @@ nars_nickname.0010 = {
                 remove_nickname = yes
             }
             random_list = {
-                10 = { set_nickname_effect = { NICKNAME = nick_keraunos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_nothos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_auletes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_kepuoros } }
-                10 = { set_nickname_effect = { NICKNAME = nick_erastes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_pleonektes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_dolios } }
-                10 = { set_nickname_effect = { NICKNAME = nick_phoberos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_philodoxos } }
-                10 = { set_nickname_effect = { NICKNAME = nick_kakergetes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_hybristes } }
-                10 = { set_nickname_effect = { NICKNAME = nick_pheidolos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_keraunos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_nothos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_auletes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_kepuoros } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_erastes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_pleonektes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_dolios } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_phoberos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_philodoxos } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_kakergetes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_hybristes } }
+                10 = { set_nickname_effect = { NICKNAME = nick_l_pheidolos } }
             }
         }
         trigger_event = nars_nickname.0010

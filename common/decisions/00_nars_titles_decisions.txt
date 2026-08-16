@@ -1,121 +1,3 @@
-decision_h_narsokratia = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
-	}
-	desc = decision_h_narsokratia_desc
-	selection_tooltip = decision_h_narsokratia_tooltip
-	decision_group_type = restorationist
-	
-	sort_order = 1000
-
-	is_shown = {
-		is_ruler = yes
-		is_independent_ruler = yes
-		is_arcadian = yes
-		highest_held_title_tier = tier_empire
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_h_narsokratia_decision
-			}
-		}
-		NOT = { government_has_flag = government_is_nomadic }
-	}
-
-	is_valid = {
-		top_liege = this
-		OR = {
-			prestige_level >= 5
-			piety_level >= 5
-		}
-		highest_held_title_tier = tier_empire
-		AND = {
-			custom_description = {
-				text = found_hegemony_decision_eight_kingdoms_held
-				any_held_title = {
-					count >= 7
-					title_tier = kingdom
-				}
-			}
-			sub_realm_size >= 200
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_landed = yes
-		is_capable_adult = yes
-		is_imprisoned = no
-		top_liege = this
-		OR = {
-			is_orphic = yes
-			is_arcadian = yes
-		}
-	}
-	
-	cost = {
-		gold = {
-			value = 2500
-			if = {
-				limit = {
-					OR = {
-						government_has_flag = government_is_nomadic
-						has_treasury = yes
-					}
-				}
-				multiply = 0
-			}
-		}
-		treasury = {
-			value = 2500
-			if = {
-				limit = { has_treasury = no }
-				multiply = 0
-			}
-		}
-		piety = {
-			value = 1250
-			if = {
-				limit = { 
-					government_has_flag = government_is_nomadic 
-					government_has_flag = government_is_tribal
-				}
-				multiply = 0
-			}
-		}
-	}
-	
-	effect = {
-		create_h_narsokratia_effect = yes
-		
-		trigger_event = nars_titles.0001
-		hidden_effect = {
-			change_government = administrative_government
-			local_assimilate_arcadian_traditions_effect = {
-				OLD_CULTURE = root.culture
-				NEW_CULTURE = root.culture
-				OLD_FAITH = root.faith
-				NEW_FAITH = root.faith
-				CONVERTER = root
-			}
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_h_narsokratia_decision
-			}
-			set_global_variable = {
-				name = flag_h_narsokratia_decision
-				value = root
-			}
-		}
-	
-	}
-		
-	ai_potential = { always = yes }
-
-	ai_will_do = {
-		base = 100
-	}
-}
-
 decision_pledge_restoration = {
     picture = {
         reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
@@ -128,12 +10,8 @@ decision_pledge_restoration = {
     is_shown = {
         is_ruler = yes
         is_independent_ruler = yes
-        is_ethnically_arcadian = yes
-        is_arcadian = yes
-        NOR = { 
-            government_has_flag = government_is_nomadic 
-            government_has_flag = government_is_tribal 
-        }
+        is_ethnically_minoan = yes
+        is_minoan = yes
         highest_held_title_tier >= tier_kingdom
         dynasty = {
             NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
@@ -154,7 +32,7 @@ decision_pledge_restoration = {
         is_landed = yes
         is_capable_adult = yes
         is_imprisoned = no
-        OR = { is_orphic = yes is_arcadian = yes }
+        OR = { is_orphic = yes is_minoan = yes }
     }
     
     cost = { prestige = 5000 }
@@ -169,15 +47,6 @@ decision_pledge_restoration = {
 
         add_character_flag = flag_decision_pledge_restoration
 
-		spawn_army = {
-            men_at_arms = { type = maa_hoplitai stacks = 15 }
-            levies = 2750
-            inheritable = no
-            uses_supply = no
-            location = root.capital_province
-            name = event_troop_default_name
-        }
-
 		every_neighboring_top_liege_realm_owner = {
             limit = {
                 is_independent_ruler = yes
@@ -186,7 +55,7 @@ decision_pledge_restoration = {
             }
             show_as_tooltip = {
                 custom_description_no_bullet = {
-                    text = arcadian_coalition_member_name_tt
+                    text = minoan_coalition_member_name_tt
                 }
             }
         }
@@ -199,17 +68,17 @@ decision_pledge_restoration = {
 					NOT = { has_alliance = root }
 					NOT = { has_truce = root }
 				}
-				add_to_list = arcadian_coalition_members
+				add_to_list = minoan_coalition_members
 			}
 
 			if = {
 				limit = {
-					any_in_list = { list = arcadian_coalition_members }
+					any_in_list = { list = minoan_coalition_members }
 				}
 				
 				# 2. Pick the strongest neighbor to lead the Coalition
 				ordered_in_list = {
-					list = arcadian_coalition_members
+					list = minoan_coalition_members
 					order_by = current_military_strength
 					save_scope_as = coalition_war_leader
 				}
@@ -219,7 +88,7 @@ decision_pledge_restoration = {
 					start_war = {
 						target = root
 						target_title = root.primary_title
-						cb = arcadian_defiance_cb
+						cb = minoan_defiance_cb
 					}
 				}
 
@@ -229,7 +98,7 @@ decision_pledge_restoration = {
 						limit = { primary_attacker = scope:coalition_war_leader }
 						
 						every_in_list = {
-							list = arcadian_coalition_members
+							list = minoan_coalition_members
 							limit = {
 								NOT = { this = scope:coalition_war_leader }
 							}

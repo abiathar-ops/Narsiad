@@ -105,7 +105,7 @@ nars_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:arcadian
+            culture = culture:minoan
             female = no
             
             # Dynamic Dynasty Generation
@@ -132,7 +132,7 @@ nars_intro.0001 = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
                 add_character_modifier = alnars_modifier
-                give_nickname = nick_soter
+                give_nickname = nick_l_soter
                 death = { death_reason = death_murder }
             }
         }
@@ -151,7 +151,7 @@ nars_intro.0001 = {
             set_coa = h_narsokratia
         }
         create_character = {
-            template = arcadian_template.1002
+            template = minoan_template.1002
             gender = female
             age = 64
             location = root.location
@@ -176,7 +176,7 @@ nars_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:arcadian
+            culture = culture:minoan
             female = no
             random_traits = no
             
@@ -199,7 +199,7 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_ktistes
+                give_nickname = nick_l_ktistes
                 add_character_modifier = eleios_modifier
                 
                 # Tie directly to Alnars, Mother, and newly generated house
@@ -216,7 +216,7 @@ nars_intro.0001 = {
             age = { 33 34 }
             location = root.location
             faith = faith:nars_religion
-            culture = culture:arcadian
+            culture = culture:minoan
             sexuality = bisexual
             female = yes
             random_traits = no
@@ -240,7 +240,7 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_keraunos
+                give_nickname = nick_l_keraunos
                 add_character_modifier = ilione_modifier
                 
                 # Tie directly to Alnars, Mother, and newly generated house
@@ -266,7 +266,7 @@ nars_intro.0001 = {
             learning = 10
             prowess = 25
             faith = faith:nars_religion
-            culture = culture:arcadian
+            culture = culture:minoan
             trait = deceitful
             trait = arbitrary
             trait = callous
@@ -281,7 +281,7 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_kryphios
+                give_nickname = nick_l_kryphios
                 add_character_modifier = strato_modifier
                 
                 # Tie directly to Alnars, Mother, and newly generated house
@@ -364,7 +364,7 @@ nars_intro.0001 = {
                     AMOUNT = 5
                 }                          
                 spawn_army = {
-                    name = arcadian_troop_intro_name
+                    name = minoan_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -434,7 +434,7 @@ nars_intro.0001 = {
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
-                    name = arcadian_troop_intro_name
+                    name = minoan_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -501,7 +501,7 @@ nars_intro.0001 = {
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
-                    name = arcadian_troop_intro_name
+                    name = minoan_troop_intro_name
                     levies = 975
                     men_at_arms = { type = maa_hoplitai stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
@@ -647,14 +647,14 @@ nars_intro.0002 = {
     
     option = {
         name = nars_intro.0002.a
-        custom_tooltip = arcadian_diplomacy.tt
+        custom_tooltip = minoan_diplomacy.tt
         hidden_effect = {
-            arcadian_diplomacy_entreaty_effect = yes
+            minoan_diplomacy_entreaty_effect = yes
         }
     }
     option = {
         name = nars_intro.0002.b
-        custom_tooltip = arcadian_incivility.tt
+        custom_tooltip = minoan_incivility.tt
         if = {
             limit = {
                 has_character_modifier = eleios_modifier

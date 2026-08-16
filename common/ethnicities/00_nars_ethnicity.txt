@@ -34,9 +34,9 @@
 @blend3min = 0.5
 @blend3max = 0.8
 
-arkades = {
+minoes = {
 	template = "ethnicity_template"
-	using = "arcadian"
+	using = "minoan"
 
 	skin_color = {
 		10 = { 0.10 0.11 0.50 0.28 }

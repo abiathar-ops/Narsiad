@@ -45,7 +45,6 @@ tradition_nars_agriculture = { # Agrarian & Artisan
 		}
     }
     parameters = { 
-        unlock_maa_hoplitai = yes
         martial_education_more_valued = yes
         prowess_from_martial_education = yes
         strong_traits_more_valued = yes

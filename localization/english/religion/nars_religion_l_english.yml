@@ -1,18 +1,18 @@
 ﻿l_english:
- # Arcadian religion group
- rf_arcadian:0 "Orphic"
- arcadian_religion:0 "Arcadian"
- arcadian_religion_adj:0 "Arcadian"
- arcadian_religion_adherent:0 "Arcadian"
- arcadian_religion_adherent_plural:0 "Arcadians"
- arcadian_religion_desc:0 "Derived from the records and teachings of Arkadés antiquity, the Orphic faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
+ # Minoan religion group
+ rf_minoan:0 "Orphic"
+ minoan_religion:0 "Minoan"
+ minoan_religion_adj:0 "Minoan"
+ minoan_religion_adherent:0 "Minoan"
+ minoan_religion_adherent_plural:0 "Minoans"
+ minoan_religion_desc:0 "Derived from the records and teachings of Minoés antiquity, the Orphic faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
 
- # Arcadian branches
- nars_religion:0 "Arkadés"
- nars_religion_adj:0 "Arkadés"
- nars_religion_adherent:0 "Arkadés"
- nars_religion_adherent_plural:0 "Arkadés"
- nars_religion_desc:0 "The faith of the Arkadés venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
+ # Minoan branches
+ nars_religion:0 "Minoés"
+ nars_religion_adj:0 "Minoés"
+ nars_religion_adherent:0 "Minoés"
+ nars_religion_adherent_plural:0 "Minoés"
+ nars_religion_desc:0 "The faith of the Minoés venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"

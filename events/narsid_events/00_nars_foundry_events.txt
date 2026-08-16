@@ -31,7 +31,7 @@ nars_artifacts.1001 = {
 		random_courtier_or_guest = {
 			limit = {
 				is_adult = yes
-				is_ethnically_arcadian = yes
+				is_ethnically_minoan = yes
 				NOT = { is_close_family_of = root }
 				NOT = { is_spouse_of = root }
 			}

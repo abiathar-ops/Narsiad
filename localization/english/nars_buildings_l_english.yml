@@ -32,4 +32,4 @@
  building_brothel_complex_02_desc:0 "$building_type_brothel_complex_01_desc$"
 
 
- NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Arcadian or consider this a [holy_site|E]"
+ NOT_holy_site_nars_or_holy_site_trigger:0 "The holder must be Minoan or consider this a [holy_site|E]"

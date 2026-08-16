@@ -1,64 +1,53 @@
-# Arcadian from the Arcadian group
-
-867.1.1 = {
-	discover_innovation = innovation_motte
-	discover_innovation = innovation_bannus
-	discover_innovation = innovation_catapult
-	discover_innovation = innovation_quilted_armor
-	#
-	discover_innovation = innovation_development_01
-	discover_innovation = innovation_gavelkind
-	discover_innovation = innovation_plenary_assemblies
-	discover_innovation = innovation_currency_01
-	discover_innovation = innovation_crop_rotation
-	discover_innovation = innovation_ledger
-	discover_innovation = innovation_arcadian_maa_01
- 	discover_innovation = innovation_arcadian_building_01
+700.1.1 = {
+	join_era = culture_era_bronze_age
 }
 
-950.1.1 = {
-	discover_innovation = innovation_barracks
-	discover_innovation = innovation_mustering_grounds
-	#
-	discover_innovation = innovation_city_planning
-	discover_innovation = innovation_casus_belli
-	#
-	join_era = culture_era_early_medieval
+2500.1.1 = {
+	discover_innovation = innovation_war_chariots
+	discover_innovation = innovation_bronze_casting
+	discover_innovation = innovation_bow_making
+	discover_innovation = innovation_early_formations
+	discover_innovation = innovation_early_fortifications
+	discover_innovation = innovation_banners
+	discover_innovation = innovation_commodity_money
+	discover_innovation = innovation_writing
+	discover_innovation = innovation_sewed_boats
+	discover_innovation = innovation_potter_wheel
+	discover_innovation = innovation_clay_pits
+	discover_innovation = innovation_synoecism
+	discover_innovation = innovation_regional_trade
+	discover_innovation = innovation_roads
+	discover_innovation = innovation_legislation
+	discover_innovation = innovation_irrigation
 }
 
-1066.1.1 = {
-	discover_innovation = innovation_horseshoes
-	discover_innovation = innovation_mangonel
-	discover_innovation = innovation_house_soldiers
-	discover_innovation = innovation_arched_saddle
-	#
-	discover_innovation = innovation_hereditary_rule
-	discover_innovation = innovation_development_02	
-	discover_innovation = innovation_royal_prerogative
-	discover_innovation = innovation_currency_02
-	discover_innovation = innovation_chronicle_writing
-	discover_innovation = innovation_arcadian_maa_02
-	discover_innovation = innovation_arcadian_building_02
-	#
+3000.1.1 = {
+	join_era = culture_era_iron_age
 }
 
-1150.1.1 = {
-	join_era = culture_era_high_medieval
+3100.1.1 = {
+	discover_innovation = innovation_cavalry
+	discover_innovation = innovation_iron_working
+	discover_innovation = innovation_fortifications
+	discover_innovation = innovation_symmachia
+	discover_innovation = innovation_battering_ram
+	discover_innovation = innovation_hero_warfare
+	discover_innovation = innovation_alphabet
+	discover_innovation = innovation_colonialism
+	discover_innovation = innovation_archives
+	discover_innovation = innovation_cisterns
+	discover_innovation = innovation_sanctuaries
+	discover_innovation = innovation_viviculture
+	discover_innovation = innovation_storage
+	discover_innovation = innovation_poetry
+	discover_innovation = innovation_communal_space
+	discover_innovation = innovation_distant_trade
 }
 
-1178.1.1 = {
-	discover_innovation = innovation_battlements
-	discover_innovation = innovation_armilary_sphere
-	discover_innovation = innovation_heraldry
-	discover_innovation = innovation_trebuchet
-	discover_innovation = innovation_hoardings
-	discover_innovation = innovation_land_grants
-	discover_innovation = innovation_development_03
-	discover_innovation = innovation_castle_baileys
-	discover_innovation = innovation_men_at_arms
-	discover_innovation = innovation_divine_right
-	discover_innovation = innovation_sanitation
-	discover_innovation = innovation_burhs
-	discover_innovation = innovation_baliffs
-	discover_innovation = innovation_manorialism
+3250.1.1 = {
+	join_era = culture_era_archaic # Hoplites
+}
+
+3251.1.1 = {
+	discover_innovation = innovation_formations
 }

@@ -100,7 +100,7 @@ story_nars_conqueror = {
                             exists = var:lost_wars
                             var:lost_wars >= 3
                         }
-                        is_ideal_arcadian = no
+                        is_ideal_minoan = no
                         days_of_continuous_peace >= 3650 
                         is_independent_ruler = no
                         has_trait = incapable

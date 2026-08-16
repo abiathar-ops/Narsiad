@@ -54,7 +54,7 @@
     }
 
     on_end = {
-		debug_log = "Arkadés story cycle ended on:"
+		debug_log = "Minoés story cycle ended on:"
 		debug_log_date = yes
 	}
 }

@@ -8,7 +8,7 @@
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
-		is_arcadian = yes
+		is_minoan = yes
 		highest_held_title_tier >= tier_kingdom
 		top_liege = this
 		is_capable_adult = yes
@@ -43,96 +43,4 @@
 	}
 
 	ai_check_interval = 0
-}
-
-decision_munitions_research = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
-	}
-
-	decision_group_type = restorationist
-	
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 120
-		kingdom = 120
-		empire = 120
-	}
-
-	sort_order = 860
-
-	desc = decision_munitions_research_desc
-	selection_tooltip = decision_munitions_research_tooltip
-
-	is_shown = {
-		is_arcadian = yes
-		is_ruler = yes
-		highest_held_title_tier >= tier_empire
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-			}
-		}
-	}
-
-	is_valid = {
-		government_has_flag = government_is_administrative
-		custom_tooltip = {
-			text = munitions_research_capital_unoccupied_tt
-			capital_province = { is_occupied = no }
-		}
-		OR = {
-			influence >= major_influence_value
-			treasury >= major_gold_value_static_max
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_available = yes
-		NOT = { exists = involved_activity }
-	}
-
-	effect = {
-		custom_tooltip = munitions_research_mastiges_tooltip
-		custom_tooltip = munitions_research_3_years_tooltip
-		# Lock the decision permanently on first use
-		
-		trigger_event = nars_gunpowder.1001
-	}
-
-	ai_potential = {
-		NOT = { has_trait = compassionate }
-		OR = {
-			gold >= massive_gold_value
-			influence >= massive_influence_value
-		}
-	}
-
-	ai_will_do = {
-		base = 20
-		ai_value_modifier = { ai_compassion = -1 }
-		modifier = {
-			OR = {
-				has_trait = paranoid
-				has_trait = craven
-			}
-			add = 30
-		}
-		modifier = {
-			OR = {
-				martial > high_skill_rating
-				learning > high_skill_rating
-			}
-			add = 20
-		}
-		modifier = {
-			OR = {
-				has_trait = calm
-				has_trait = content
-			}
-			add = -20
-		}
-	}
 }

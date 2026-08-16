@@ -1,8 +1,8 @@
-decision_arcadian_imperial_administration = { 
+decision_minoan_imperial_administration = { 
 	decision_group_type = restorationist
-	title = decision_arcadian_imperial_administration
-	desc = decision_arcadian_imperial_administration_desc
-	selection_tooltip = decision_arcadian_imperial_administration_tooltip
+	title = decision_minoan_imperial_administration
+	desc = decision_minoan_imperial_administration_desc
+	selection_tooltip = decision_minoan_imperial_administration_tooltip
 
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/ep3_decision_hold_triumph.dds"
@@ -10,7 +10,7 @@ decision_arcadian_imperial_administration = {
 	sort_order = 95
 
 	is_shown = {
-		is_arcadian = yes
+		is_minoan = yes
 		highest_held_title_tier >= tier_empire
 	}
 	
@@ -150,7 +150,7 @@ decision_arcadian_imperial_administration = {
 	ai_potential = {
 		is_ruler = yes
 		highest_held_title_tier >= tier_empire
-		is_arcadian = yes
+		is_minoan = yes
 	}
 	ai_will_do = {
 		base = 20

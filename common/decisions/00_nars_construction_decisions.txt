@@ -8,10 +8,8 @@
 	sort_order = 850
 	
 	is_shown = {
-		is_arcadian = yes
+		is_minoan = yes
 		highest_held_title_tier >= tier_kingdom
-		NOT = { government_has_flag = government_is_tribal }
-		NOT = { government_has_flag = government_is_nomadic }
 		NOT = { exists = global_var:established_aretaic_school }
 		any_held_title = {
 			title_tier = barony
@@ -107,7 +105,7 @@ decision_establish_brothel = {
 	sort_order = 850
 	
 	is_shown = {
-		is_arcadian = yes
+		is_minoan = yes
 		highest_held_title_tier >= tier_kingdom
 		OR = {
 			exists = global_var:established_aretaic_school
@@ -119,10 +117,6 @@ decision_establish_brothel = {
 			is_barony_valid_for_brothel_complex = {
 				HOLDER = root
 			}
-		}
-		NOR = { 
-			government_has_flag = government_is_nomadic 
-			government_has_flag = government_is_tribal
 		}
 	}
 

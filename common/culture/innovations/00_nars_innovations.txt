@@ -5,82 +5,7 @@
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
 @gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
 
-innovation_arcadian_maa_01 = {
-    group = culture_group_regional
-    culture_era = culture_era_tribal
-    icon = @leadership_2
-
-    potential = {
-        has_cultural_pillar = heritage_nars
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_hoplitai
-        damage = 10
-        toughness = 5
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_mastiges
-        damage = 5
-        toughness = 10
-    }
-
-    flag = global_maa
-    flag = culture_era_tribal
-}
-
-innovation_arcadian_maa_02 = {
-    group = culture_group_regional
-    culture_era = culture_era_early_medieval
-    icon = @gunpowder_02
-
-    potential = {
-        has_cultural_pillar = heritage_nars
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_hoplitai
-        damage = 15
-        toughness = 10
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_mastiges
-        damage = 10
-        toughness = 15
-    }
-    
-    flag = global_maa
-    flag = culture_era_early_medieval
-}
-
-innovation_arcadian_maa_03 = {
-    group = culture_group_regional
-    culture_era = culture_era_high_medieval
-    icon = @maa_02
-
-    potential = {
-        has_cultural_pillar = heritage_nars
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_hoplitai
-        damage = 30
-        toughness = 15
-    }
-
-    maa_upgrade = {
-        men_at_arms = maa_mastiges
-        damage = 15
-        toughness = 30
-    }
-    
-    flag = global_maa
-    flag = culture_era_high_medieval
-}
-
-innovation_arcadian_building_01 = {
+innovation_minoan_building_01 = {
     group = culture_group_regional
     culture_era = culture_era_tribal
     icon = @levy_building
@@ -96,7 +21,7 @@ innovation_arcadian_building_01 = {
     flag = culture_era_tribal
 }
 
-innovation_arcadian_building_02 = {
+innovation_minoan_building_02 = {
     group = culture_group_regional
     culture_era = culture_era_early_medieval
     icon = @civil_construction_2
@@ -112,7 +37,7 @@ innovation_arcadian_building_02 = {
     flag = culture_era_early_medieval
 }
 
-innovation_arcadian_building_03 = {
+innovation_minoan_building_03 = {
     group = culture_group_regional
     culture_era = culture_era_high_medieval
     icon = @misc_inventions

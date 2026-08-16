@@ -9,7 +9,7 @@ canton_duchy_01 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_01
+			has_innovation = innovation_minoan_building_01
 		}
 	}
 
@@ -17,14 +17,14 @@ canton_duchy_01 = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
 		scope:holder = {
-			is_arcadian = yes
+			is_minoan = yes
 		}
 	}
 
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_01
+				has_innovation = innovation_minoan_building_01
 			}
 		}
 	}
@@ -84,7 +84,7 @@ canton_duchy_02 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_02
+			has_innovation = innovation_minoan_building_02
 		}
 	}
 
@@ -96,7 +96,7 @@ canton_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_02
+				has_innovation = innovation_minoan_building_02
 			}
 		}
 	}
@@ -156,7 +156,7 @@ canton_duchy_03 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_03
+			has_innovation = innovation_minoan_building_03
 		}
 	}
 
@@ -168,7 +168,7 @@ canton_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_03
+				has_innovation = innovation_minoan_building_03
 			}
 		}
 	}
@@ -227,7 +227,7 @@ foundry_duchy_01 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_01
+			has_innovation = innovation_minoan_building_01
 		}
 	}
 
@@ -235,14 +235,14 @@ foundry_duchy_01 = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
 		scope:holder = {
-			is_arcadian = yes
+			is_minoan = yes
 		}
 	}
 
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_01
+				has_innovation = innovation_minoan_building_01
 			}
 		}
 	}
@@ -297,7 +297,7 @@ foundry_duchy_02 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_02
+			has_innovation = innovation_minoan_building_02
 		}
 	}
 
@@ -309,7 +309,7 @@ foundry_duchy_02 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_02
+				has_innovation = innovation_minoan_building_02
 			}
 		}
 	}
@@ -364,7 +364,7 @@ foundry_duchy_03 = {
 
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_arcadian_building_03
+			has_innovation = innovation_minoan_building_03
 		}
 	}
 
@@ -376,7 +376,7 @@ foundry_duchy_03 = {
 	can_construct_showing_failures_only = {
 		scope:holder = {
 			culture = {
-				has_innovation = innovation_arcadian_building_03
+				has_innovation = innovation_minoan_building_03
 			}
 		}
 	}

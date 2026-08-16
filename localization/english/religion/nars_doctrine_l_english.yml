@@ -1,16 +1,16 @@
 ﻿l_english:
  # Faith Specific Doctrine
- special_doctrine_is_nars_faith_name:0 "Arcadian"
+ special_doctrine_is_nars_faith_name:0 "Minoan"
  is_nars_faith_name:0 "$special_doctrine_is_nars_faith_name$"
  special_doctrine_is_nars_faith_desc:0 "We should show compassion to these misguided souls who haven't yet experienced the worship of the [panteion|E]. Their minds may be clouded by ignorance today, but they will come to worship at our altar, begging for the sweet ascension of enlightenment."
 
- doctrine_arcadian_tenets_name:0 "Tenets" 
- doctrine_arcadian_marriages_name:0 "Marriage Type"
+ doctrine_minoan_tenets_name:0 "Tenets" 
+ doctrine_minoan_marriages_name:0 "Marriage Type"
 
  doctrine_trigamy_name:0 "Trigamous"
  doctrine_trigamy_desc:0 "Since marriage is a holy union, having three marriages is clearly more holy than having just single or double marriages so long as each marriage is holy in and of itself."
 
- # Tenet: Arcadian Jihad (Theōmachē)
+ # Tenet: Minoan Jihad (Theōmachē)
  tenet_nars_crusade_name:0 "Theōmachē"
  tenet_nars_crusade_desc:0 "Through fervent prayer and holy conquest, we shall spread the glory of us across the land!"
 
