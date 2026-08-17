@@ -11,7 +11,7 @@ decision_h_narsokratia = {
 	is_shown = {
 		is_ruler = yes
 		is_independent_ruler = yes
-		is_arcadian = yes
+		is_knos = yes
 		highest_held_title_tier = tier_empire
 		NOT = {
 			is_target_in_global_variable_list = {
@@ -48,7 +48,7 @@ decision_h_narsokratia = {
 		top_liege = this
 		OR = {
 			is_orphic = yes
-			is_arcadian = yes
+			is_knos = yes
 		}
 	}
 	
@@ -90,7 +90,7 @@ decision_h_narsokratia = {
 		trigger_event = nars_titles.0001
 		hidden_effect = {
 			change_government = administrative_government
-			local_assimilate_arcadian_traditions_effect = {
+			local_assimilate_knos_traditions_effect = {
 				OLD_CULTURE = root.culture
 				NEW_CULTURE = root.culture
 				OLD_FAITH = root.faith
@@ -128,8 +128,8 @@ decision_pledge_restoration = {
     is_shown = {
         is_ruler = yes
         is_independent_ruler = yes
-        is_ethnically_arcadian = yes
-        is_arcadian = yes
+        is_ethnically_knos = yes
+        is_knos = yes
         NOR = { 
             government_has_flag = government_is_nomadic 
             government_has_flag = government_is_tribal 
@@ -154,7 +154,7 @@ decision_pledge_restoration = {
         is_landed = yes
         is_capable_adult = yes
         is_imprisoned = no
-        OR = { is_orphic = yes is_arcadian = yes }
+        OR = { is_orphic = yes is_knos = yes }
     }
     
     cost = { prestige = 5000 }
@@ -186,7 +186,7 @@ decision_pledge_restoration = {
             }
             show_as_tooltip = {
                 custom_description_no_bullet = {
-                    text = arcadian_coalition_member_name_tt
+                    text = knos_coalition_member_name_tt
                 }
             }
         }
@@ -199,17 +199,17 @@ decision_pledge_restoration = {
 					NOT = { has_alliance = root }
 					NOT = { has_truce = root }
 				}
-				add_to_list = arcadian_coalition_members
+				add_to_list = knos_coalition_members
 			}
 
 			if = {
 				limit = {
-					any_in_list = { list = arcadian_coalition_members }
+					any_in_list = { list = knos_coalition_members }
 				}
 				
 				# 2. Pick the strongest neighbor to lead the Coalition
 				ordered_in_list = {
-					list = arcadian_coalition_members
+					list = knos_coalition_members
 					order_by = current_military_strength
 					save_scope_as = coalition_war_leader
 				}
@@ -219,7 +219,7 @@ decision_pledge_restoration = {
 					start_war = {
 						target = root
 						target_title = root.primary_title
-						cb = arcadian_defiance_cb
+						cb = knos_defiance_cb
 					}
 				}
 
@@ -229,7 +229,7 @@ decision_pledge_restoration = {
 						limit = { primary_attacker = scope:coalition_war_leader }
 						
 						every_in_list = {
-							list = arcadian_coalition_members
+							list = knos_coalition_members
 							limit = {
 								NOT = { this = scope:coalition_war_leader }
 							}

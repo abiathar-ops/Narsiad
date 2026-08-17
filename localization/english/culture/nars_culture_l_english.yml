@@ -1,12 +1,12 @@
 ﻿l_english:
- arcadian:0 "Arcadian"
- arcadian_prefix:0 "Arcado"
- arcadian_collective_noun:1 "Arcadians"
+ knos:0 "Knosian"
+ knos_prefix:0 "Knosi"
+ knos_collective_noun:1 "Knosians"
 
- name_list_nars:0 "Arcadian"
- language_nars_name:0 "Arcadian"
- arcadian_clothing_gfx:0 "Arcadian"
- arcadian_opinion:0 "$arcadian$ Opinion"
+ name_list_nars:0 "Knōs"
+ language_nars_name:0 "Knōs"
+ knos_clothing_gfx:0 "Knōs"
+ knos_opinion:0 "$knos$ Opinion"
 
  ethos_archaic_name:0 "Archaic"
  ethos_archaic_desc:2 "This culture bears the memory of a bygone age, enduring only through its tightly-held customs and preserved traditions. Sands of time drip on their dream of restoration."

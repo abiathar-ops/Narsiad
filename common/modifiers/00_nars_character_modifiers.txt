@@ -63,19 +63,21 @@ libation_bad_modifier = {
 	monthly_piety_gain_mult = -0.1
 }
 
-settled_arcadian_dynasty_modifier = {
+settled_knos_dynasty_modifier = {
 	icon = blood_positive
 	stress_gain_mult = -0.25
 	monthly_prestige_gain_mult = 0.25
 }
 
 pledge_restoration_dynasty_modifier = {
+	icon = blood_positive
 	glory_hound_opinion = 10
 	men_at_arms_maintenance = -0.1
 	siege_phase_time = -0.1
 }
 
-embraced_arcadian_traditions_modifier = {
+embraced_knos_traditions_modifier = {
 	icon = blood_positive
 	monthly_prestige = 0.25
 }
+

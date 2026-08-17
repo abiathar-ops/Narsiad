@@ -1,7 +1,7 @@
-﻿arcadian_religion = {
-	family = rf_arcadian
+﻿knos_religion = {
+	family = rf_knos
 	graphical_faith = pagan.gfx
-	doctrine = arcadian_hostility_doctrine
+	doctrine = knos_hostility_doctrine
 	doctrine = divine_destiny_doctrine
 
 	#Main Group

@@ -471,7 +471,7 @@ name_list_nars = {
 		Thrasoulaos Thrasyboula Thrasyboule Thrasymenes Thrasynon Threpte Thynnon Thyro
 		Thyzotos Tileias Tima Timaia Timakleidas Timandra Timandros Timanor
 		Timarche Timarchis Timasikrates Timasitheos Timasithia Timasithios Timasos Timodike
-		Timokades Timokratis Timokreon Timokres Timokrita Timokrite Timola Timomacha
+		Timominoes Timokratis Timokreon Timokres Timokrita Timokrite Timola Timomacha
 		Timomeilos Timonides Timossa Timostrata Timostratis Timostratos Timyllos Tiouchon
 		Tiron Tisandros Titthe Tityrmos Tmoleides Tmolos Tollos Torteas
 		Touchanor Tourannis Trieteris Trocheis Trochis Troias_2 Trouphera Tryphe
@@ -631,7 +631,7 @@ name_list_nars = {
 	
 
 	mercenary_names = {
-		{ name = "mercenary_company_hoplites_of_arcadian" }
+		{ name = "mercenary_company_hoplites_of_knos" }
 		{ name = "mercenary_company_heruli" }
 		{ name = "mercenary_company_free_company" }
 		{ name = "mercenary_company_optimates" }

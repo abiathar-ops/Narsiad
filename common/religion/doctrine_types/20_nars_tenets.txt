@@ -9,10 +9,10 @@ tenet_nars_pantheon = {
     }
 
 	is_shown = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 	can_pick = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 
 	piety_cost = faith_tenet_cost_mid
@@ -47,10 +47,10 @@ tenet_nars_erudition = {
 	}
 
 	is_shown = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 	can_pick = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 
 	character_modifier = {
@@ -66,7 +66,7 @@ tenet_nars_erudition = {
 	}
 }
 
-	# Branch Arcadian tenets 
+	# Branch Knōs tenets 
 tenet_nars_sanguine = {
 	name = tenet_nars_sanguine_name
 	desc = tenet_nars_sanguine_desc
@@ -78,10 +78,10 @@ tenet_nars_sanguine = {
     }
 
 	is_shown = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 	can_pick = {
-		religion_tag = arcadian_religion
+		religion_tag = knos_religion
 	}
 	
 	parameters = {

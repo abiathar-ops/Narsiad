@@ -3,7 +3,7 @@
 	selection_behaviour = max
 	priority = 50
 
-	70000011_arcadian = {
+	70000011_knos = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -68,7 +68,7 @@
 			}
 		}
 	}
-	70000012_arcadian = {
+	70000012_knos = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -115,7 +115,7 @@
 			}
 		}
 	}
-	70000013_arcadian = {
+	70000013_knos = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -268,7 +268,7 @@
 			base = 0
 			modifier = {
 				add = 1000
-				is_ethnically_arcadian = yes
+				is_ethnically_knos = yes
 				age <= 40
 				shown_in_ruler_designer = yes
 			}
@@ -312,7 +312,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_arcadian = yes
+				is_knos = yes
 				is_female = no
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes
@@ -360,7 +360,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_arcadian = yes
+				is_knos = yes
 				is_female = yes
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes

@@ -20,5 +20,6 @@ nars_maintenance.0002 = {
 		every_vassal_or_below = {
 			nars_apply_setup_effect = yes
 		}
+        nars_laamp_camp_setup_effect = yes
     }
 }

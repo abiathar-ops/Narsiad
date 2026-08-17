@@ -5,24 +5,24 @@ set_panteion_effect = {
 		limit = { is_orphic = yes }
 		if = {	
 			limit = {
-				has_character_modifier = panteion_arcadian_narses
+				has_character_modifier = panteion_knos_narses
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_arcadian_narses
+			remove_character_modifier = panteion_knos_narses
 		}
 		else_if = {	
 			limit = {
-				has_character_modifier = panteion_arcadian_phokas
+				has_character_modifier = panteion_knos_phokas
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_arcadian_phokas
+			remove_character_modifier = panteion_knos_phokas
 		}
 		else_if = {	
 			limit = {
-				has_character_modifier = panteion_arcadian_enuo
+				has_character_modifier = panteion_knos_enuo
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_arcadian_enuo
+			remove_character_modifier = panteion_knos_enuo
 		}
 		else = {
 			add_piety = massive_piety_loss
@@ -48,7 +48,7 @@ pledge_restoration_effect = {
 			every_dynasty_member = {
 				limit = {
 					is_alive = yes
-					is_arcadian = yes
+					is_knos = yes
 					NOT = { has_trait = nars_scion }
 				}
 				add_trait = nars_scion

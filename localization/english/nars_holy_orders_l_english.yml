@@ -1,5 +1,5 @@
 ﻿l_english:
- holy_order_host_of_place:0 "Host of [TITLE.GetNameNoTierNoTooltip]"
- holy_order_lambs_of_highgod:0 "Lambs of [FAITH.HighGodName]"
- holy_order_order_of_alnares:0 "Order of St. Alnarēs"
- holy_order_ekuites_of_faith:0 "Ekuitēs of the [FAITH.GetAdjectiveNoTooltip]"
+ holy_order_host_of_place:0 "[CULTURE.GetNameNoTooltip] Host of [TITLE.GetNameNoTierNoTooltip]"
+ holy_order_lambs_of_highgod:0 "[CULTURE.GetNameNoTooltip] Lambs of [FAITH.HighGodName]"
+ holy_order_order_of_alnares:0 "[CULTURE.GetNameNoTooltip] Order of [TITLE.GetNameNoTierNoTooltip]"
+ holy_order_ekuites_of_faith:0 "[CULTURE.GetNameNoTooltip] Host of the [FAITH.GetAdjectiveNoTooltip]"

@@ -1,4 +1,4 @@
-arcadian = {
+knos = {
 	color = { 0.98 0.92 0.84 }
 	
 	ethos = ethos_archaic
@@ -26,6 +26,6 @@ arcadian = {
 
 	
 	ethnicities = {
-		10 = arkades #arcadics
+		10 = minoes #knos_languages
 	}
 }

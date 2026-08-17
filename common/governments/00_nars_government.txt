@@ -23,7 +23,7 @@
 # 	}
 
 # 	primary_heritages = { heritage_nars }
-# 	preferred_religions = { arcadian_religion }
+# 	preferred_religions = { knos_religion }
 
 # 	ai = {
 # 		use_legends = yes
@@ -53,7 +53,7 @@
 # 					has_variable = city_construction_is_castle
 # 				}
 # 			}
-# 			top_liege = { is_ideal_arcadian = yes }
+# 			top_liege = { is_ideal_knos = yes }
 # 			always = no
 # 		}
 # 	}

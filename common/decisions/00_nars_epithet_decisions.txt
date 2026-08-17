@@ -4,11 +4,11 @@ decision_take_epithet = {
  		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
  	}
  	desc = decision_take_epithet_desc
- 	decision_group_type = arcadian
+ 	decision_group_type = knos
  	selection_tooltip = decision_take_epithet_tooltip
 
  	is_shown = {
- 		is_arcadian = yes
+ 		is_knos = yes
  		is_ruler = yes
  	}
 

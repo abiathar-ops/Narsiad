@@ -16,16 +16,16 @@ can_recruit_guard_maa = {
   }
 }
 
-arcadian_maa_trigger = {
+knos_maa_trigger = {
   culture = { has_cultural_pillar = heritage_nars }
 }
 
 can_recruit_maa_02_trigger = {
-	arcadian_maa_trigger = yes
+	knos_maa_trigger = yes
 	exists = global_var:mastiges_research_complete
 }
 
 #### MAA ART TRIGGERS ####
-arcadian_maa_art_trigger = {
+knos_maa_art_trigger = {
 	culture = { has_cultural_pillar = heritage_nars }
 }

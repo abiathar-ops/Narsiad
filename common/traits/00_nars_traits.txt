@@ -115,7 +115,7 @@ nars_naturalis = {
         }
     }
 	health = 2
-	fertility = -0.75
+	fertility = -0.50
 	years_of_fertility = 75
 	life_expectancy = 75
 	inbreeding_chance = -0.75

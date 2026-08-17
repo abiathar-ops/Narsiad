@@ -44,7 +44,7 @@ nars_conqueror.0001 = {
             }
         }
 
-        # --- 4. YOUR CUSTOM ARCADIAN EFFECTS ---
+        # --- 4. YOUR CUSTOM MINOAN EFFECTS ---
         legend_seed_great_deed_dynasty_effect = yes
         pledge_restoration_effect = yes
         create_story = story_nars_conqueror
@@ -114,7 +114,7 @@ nars_conqueror.0002 = {
                 desc = nars_conqueror.0002.lost_wars
             }
             triggered_desc = {
-                trigger = { is_ideal_arcadian = no }
+                trigger = { is_ideal_knos = no }
                 desc = nars_conqueror.0002.traitor
             }
             triggered_desc = {
@@ -285,7 +285,7 @@ nars_conqueror.0200 = {
 				province = scope:pool_province
 				limit = {
 					prowess >= invite_knights_decision_standard_value
-					is_ideal_arcadian = yes
+					is_ideal_knos = yes
 					guest_knight_candidate_trigger = { HOST = root }
 				}
 				add_to_temporary_list = potential_knights
@@ -316,7 +316,7 @@ nars_conqueror.0200 = {
 			create_character = {
 				gender_female_chance = 50
 				location = root.capital_province
-				template = arcadian_template.1002
+				template = knos_template.1002
 				culture = root.culture
 				faith = root.faith
 				add_trait = nars_naturalis
@@ -469,7 +469,7 @@ nars_conqueror.0500 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = military_engineer
-			SPECIALIST_TEMPLATE_CHARACTER = arcadian_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = knos_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -509,7 +509,7 @@ nars_conqueror.0600 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = logistician
-			SPECIALIST_TEMPLATE_CHARACTER = arcadian_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = knos_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -582,7 +582,7 @@ nars_conqueror.1100 = {
         create_character = {
             gender = male
             age = { 35 45 }
-            template = arcadian_template.1012
+            template = knos_template.1012
             martial >= 35
             prowess >= 45
             learning = { 25 45 }
@@ -603,6 +603,7 @@ nars_conqueror.1100 = {
         name = nars_conqueror.1100.a # "I will pay you handsomely for your spears."
         remove_treasury_or_gold = massive_gold_value
         stress_impact = {
+			generous = medium_stress_impact_loss
 			zealous = medium_stress_impact_loss
 			brave = medium_stress_impact_loss
 			ambitious = medium_stress_impact_loss
@@ -611,7 +612,7 @@ nars_conqueror.1100 = {
 			greedy = medium_stress_impact_gain
 		}
         spawn_army = {
-			name = arcadian_troop_event_name
+			name = event_troop_default_name
 			levies = 625
 			men_at_arms = {
 				type = maa_hoplitai
@@ -640,7 +641,7 @@ nars_conqueror.1100 = {
                     diplomacy >= 35
                 }                
                 spawn_army = {
-					name = arcadian_troop_event_name
+					name = event_troop_default_name
 					levies = 625
 					men_at_arms = {
 						type = maa_hoplitai
@@ -945,7 +946,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = arcadian_template.1002
+			template = knos_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -962,7 +963,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = arcadian_template.1002
+			template = knos_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -979,7 +980,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = arcadian_template.1002
+			template = knos_template.1002
             gender = male
             culture = root.culture
             faith = root.faith
@@ -996,7 +997,7 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = arcadian_template.1002
+			template = knos_template.1002
             gender = male
             culture = root.culture
             faith = root.faith

@@ -91,7 +91,7 @@ nars_realm.1021 = {
 
 	option = {
 		name = nars_realm.1021.a
-		custom_tooltip = arcadian_propaganda_province_tt
+		custom_tooltip = knos_propaganda_province_tt
         add_character_modifier = {
 			modifier = distribute_propaganda_character_modifier
 			years = 10

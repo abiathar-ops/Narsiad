@@ -1,4 +1,4 @@
-﻿doctrine_arcadian_tenets = {
+﻿doctrine_knos_tenets = {
 	category = "core_tenets"
 
 	number_of_picks = 3

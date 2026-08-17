@@ -1,12 +1,8 @@
 ﻿l_english:
  maa_hoplitai: "Hoplîtes"
- maa_hoplitai_flavor: "#F The [hoplites|E] are a sacred and revered caste, raised from birth to fight and die for the [arcadian|E] polity.#!"
+ maa_hoplitai_flavor: "#F The [hoplites|E] are a sacred and revered caste, raised from birth to fight and die for the [knos|E] polity.#!"
 
  maa_mastiges: "Mástiges"
  maa_mastiges_flavor: "#F The [mastiges|E] are an ironclad square of swordsmen, pikemen, bombardiers and arquebusiers formed from the finest of armaments and soldiers.#!"
 
  culture_parameter_unlock_maa_hoplitai: "Can recruit [GetMaA('maa_hoplitai').GetName] as [men_at_arms|E]"
- 
- arcadian_troop_intro_name: "Alnárs' Myrioi"
- arcadian_troop_hegemony_name: "Myrioi"
- arcadian_troop_event_name: "Errant Hoplîtes"

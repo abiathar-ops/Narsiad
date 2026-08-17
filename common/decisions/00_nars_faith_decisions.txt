@@ -1,5 +1,5 @@
 ﻿decision_nars_faith_choice = { 
-	decision_group_type = arcadian
+	decision_group_type = knos
 	title = decision_nars_faith_choice
 	desc = decision_nars_faith_choice_desc
 	selection_tooltip = decision_nars_faith_choice_tooltip
@@ -10,7 +10,7 @@
 	sort_order = 90
 
 	is_shown = {
-		is_arcadian = yes
+		is_knos = yes
 		is_orphic = yes
 	}
 	
@@ -33,63 +33,63 @@
 		show_from_start = yes
 
 		item = { 
-			value = faith_arcadian_1_decision
+			value = faith_knos_1_decision
 			is_shown = {
 				is_ruler = yes
-				is_arcadian = yes
+				is_knos = yes
 			}
 			is_valid = {
 				gold >= minor_treasury_or_gold_value
-				is_arcadian = yes
+				is_knos = yes
 				is_orphic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
 					custom_tooltip = {
-						text = faith_arcadian_1_cooldown_tt
-						has_character_flag = faith_arcadian_1_cooldown
+						text = faith_knos_1_cooldown_tt
+						has_character_flag = faith_knos_1_cooldown
 					}
 				}
 			}
-			current_description = faith_arcadian_1_decision_desc
-			localization = faith_arcadian_1_decision_name
+			current_description = faith_knos_1_decision_desc
+			localization = faith_knos_1_decision_name
 			icon = "gfx/interface/icons/court_position_types/court_physician_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
 		}
 		item = { 
-			value = faith_arcadian_2_decision
+			value = faith_knos_2_decision
 			is_shown = {
 				is_ruler = yes
-				is_arcadian = yes
+				is_knos = yes
 			}
 			is_valid = {
 				piety >= massive_piety_value
 				is_landless_adventurer = no
-				is_arcadian = yes
+				is_knos = yes
 				is_orphic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
 					custom_tooltip = {
-						text = faith_arcadian_2_cooldown_tt
-						has_character_flag = faith_arcadian_2_cooldown
+						text = faith_knos_2_cooldown_tt
+						has_character_flag = faith_knos_2_cooldown
 					}
 				}
 			}
-			current_description = faith_arcadian_2_decision_desc
-			localization = faith_arcadian_2_decision_name
+			current_description = faith_knos_2_decision_desc
+			localization = faith_knos_2_decision_name
 			icon = "gfx/interface/icons/court_position_types/cave_hermit_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
 		}
 		item = { 
-			value = faith_arcadian_3_decision
+			value = faith_knos_3_decision
 			is_shown = {
 				is_ruler = yes
-				is_arcadian = yes
+				is_knos = yes
 			}
 			is_valid = {
 				custom_tooltip = {
@@ -98,33 +98,33 @@
 				}
 				is_landless_adventurer = no
 				gold >= major_treasury_or_gold_value
-				is_arcadian = yes
+				is_knos = yes
 				is_orphic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
 					custom_tooltip = {
-						text = faith_arcadian_3_cooldown_tt
-						has_character_flag = faith_arcadian_3_cooldown
+						text = faith_knos_3_cooldown_tt
+						has_character_flag = faith_knos_3_cooldown
 					}
 				}
 			}
-			current_description = faith_arcadian_3_decision_desc
-			localization = faith_arcadian_3_decision_name
+			current_description = faith_knos_3_decision_desc
+			localization = faith_knos_3_decision_name
 			icon = "gfx/interface/icons/court_position_types/executioner_court_position.dds"
 			ai_chance = {
 				value = 0
 			}
 		}
 		item = { 
-			value = faith_arcadian_4_decision
+			value = faith_knos_4_decision
 			is_shown = {
 				is_ruler = yes
-				is_arcadian = yes
+				is_knos = yes
 			}
 			is_valid = {
 				gold >= major_treasury_or_gold_value
-				is_arcadian = yes
+				is_knos = yes
 				is_orphic = yes
 				is_at_war = no
 				is_imprisoned = no	
@@ -135,19 +135,19 @@
 				is_landless_adventurer = no
 				NOT = {
 					custom_tooltip = {
-						text = faith_arcadian_4_cooldown_tt
-						has_character_flag = faith_arcadian_4_cooldown
+						text = faith_knos_4_cooldown_tt
+						has_character_flag = faith_knos_4_cooldown
 					}
 				}
 				custom_tooltip = {
 					any_neighboring_and_across_water_top_liege_realm_owner = {
-						valid_for_arcadian_conversion_trigger = yes
+						valid_for_knos_conversion_trigger = yes
 					}
 				text = valid_neighboring_and_across_water_top_liege
 				}	
 			}
-			current_description = faith_arcadian_4_decision_desc
-			localization = faith_arcadian_4_decision_name
+			current_description = faith_knos_4_decision_desc
+			localization = faith_knos_4_decision_name
 			icon = "gfx/interface/icons/court_position_types/camp_priest_camp_officer.dds"
 			ai_chance = {
 				value = 0
@@ -158,11 +158,11 @@
 	effect = {
 		#Libation
 		if = {
-			limit = { scope:faith_arcadian_1_decision = yes }
+			limit = { scope:faith_knos_1_decision = yes }
 			custom_tooltip = decision_libation_effect_desc 
 			custom_tooltip = decision_libation_effect_tooltip 
 			add_character_flag = {
-				flag = faith_arcadian_1_cooldown
+				flag = faith_knos_1_cooldown
 				years = 2
 			}	
 			hidden_effect = {
@@ -175,26 +175,26 @@
 		}
 		#Ponder
 		if = {
-			limit = { scope:faith_arcadian_2_decision = yes }
-			custom_tooltip = change_to_faith_arcadian_2_decision_desc_1
-			custom_tooltip = change_to_faith_arcadian_2_decision_desc_2
+			limit = { scope:faith_knos_2_decision = yes }
+			custom_tooltip = change_to_faith_knos_2_decision_desc_1
+			custom_tooltip = change_to_faith_knos_2_decision_desc_2
 			add_character_flag = {
-				flag = faith_arcadian_2_cooldown
+				flag = faith_knos_2_cooldown
 				years = 4
 			}
 			trigger_event = { id = nars_faith.1031 }
 		}
 		#Impose Faith
 		if = {
-			limit = { scope:faith_arcadian_3_decision = yes }
-			custom_tooltip = change_to_faith_arcadian_3_decision_desc_1
-			custom_tooltip = change_to_faith_arcadian_3_decision_desc_2
+			limit = { scope:faith_knos_3_decision = yes }
+			custom_tooltip = change_to_faith_knos_3_decision_desc_1
+			custom_tooltip = change_to_faith_knos_3_decision_desc_2
 			add_character_flag = {
-				flag = faith_arcadian_3_cooldown
+				flag = faith_knos_3_cooldown
 				years = 6
 			}
 			hidden_effect = {
-				arcadian_moderate_county_effect = yes
+				knos_moderate_county_effect = yes
 			}
 			trigger_event = { 
 				id = nars_faith.1011 
@@ -203,10 +203,10 @@
 		}
 		#Sponsor Missionaries
 		if = {
-			limit = { scope:faith_arcadian_4_decision = yes }
-			custom_tooltip = change_to_faith_arcadian_4_decision_desc_1
+			limit = { scope:faith_knos_4_decision = yes }
+			custom_tooltip = change_to_faith_knos_4_decision_desc_1
 			add_character_flag = {
-				flag = faith_arcadian_4_cooldown
+				flag = faith_knos_4_cooldown
 				years = 8
 			}
 			hidden_effect = {
