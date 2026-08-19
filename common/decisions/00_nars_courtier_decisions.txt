@@ -3,8 +3,8 @@ decision_recruit_knos_courtier = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
-	sort_order = 10
-	decision_group_type = knos
+	sort_order = 0
+	decision_group_type = courtier
 
 	ai_check_interval_by_tier = {
 		barony = 0
@@ -41,7 +41,7 @@ decision_recruit_knos_courtier = {
 		decision_to_second_step_button =  "SELECT_ACTION"
 		show_from_start = yes
 
-		item = { # 2 Normal Knōss
+		item = { # 2 Normal Knóss
 			value = decision_hire_knos_1
 			is_shown = {
 				is_ruler = yes
@@ -159,8 +159,8 @@ decision_recruit_knos_adventurer = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
-	sort_order = 10
-	decision_group_type = knos
+	sort_order = 0
+	decision_group_type = courtier
 	desc = decision_recruit_knos_adventurer_desc
 
 	cooldown = { years = 2 }

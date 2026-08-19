@@ -1,4 +1,4 @@
-# Knōs from the Knōs group
+# Knós from the Knós group
 
 867.1.1 = {
 	discover_innovation = innovation_motte

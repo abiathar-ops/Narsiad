@@ -1,11 +1,11 @@
 ﻿l_english:
- knos:0 "Knosian"
- knos_prefix:0 "Knosi"
- knos_collective_noun:1 "Knosians"
+ knos:0 "Knós"
+ knos_prefix:0 "Knósi"
+ knos_collective_noun:1 "Knósi"
 
- name_list_nars:0 "Knōs"
- language_nars_name:0 "Knōs"
- knos_clothing_gfx:0 "Knōs"
+ name_list_nars:0 "Knós"
+ language_nars_name:0 "Knós"
+ knos_clothing_gfx:0 "Knós"
  knos_opinion:0 "$knos$ Opinion"
 
  ethos_archaic_name:0 "Archaic"

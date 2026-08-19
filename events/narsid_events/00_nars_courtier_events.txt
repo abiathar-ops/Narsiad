@@ -26,7 +26,7 @@ nars_courtiers.0001 = {
 			}
 		}
 
-		# Gather Knōs pool characters with suitable prowess
+		# Gather Knós pool characters with suitable prowess
 		every_in_list = {
 			list = pool_provinces
 			save_temporary_scope_as = pool_province
@@ -65,7 +65,7 @@ nars_courtiers.0001 = {
 			save_scope_as = knos_courtier
 		}
 
-		# If no suitable pool character exists, create a fresh Knōs warrior
+		# If no suitable pool character exists, create a fresh Knós warrior
 		if = {
 			limit = { NOT = { exists = scope:knos_courtier } }
 			create_character = {

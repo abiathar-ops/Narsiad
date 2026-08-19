@@ -11,7 +11,7 @@
     allowed_for_character = {
         has_trait = nars_conqueror
         is_knos = yes
-        is_orphic = yes
+        is_archaic = yes
     }
 
     allowed_for_character_display_regardless = {
@@ -39,7 +39,7 @@
                 government_has_flag = government_is_mandala
                 government_has_flag = government_is_wanua
                 is_knos = yes
-                is_orphic = yes
+                is_archaic = yes
                 is_ethnically_knos = yes
             }
         }
@@ -275,7 +275,7 @@
                     limit = { any_in_list = { list = follower_pool NOT = { is_in_list = used_followers } } }
                     hidden_effect = { random_in_list = { list = follower_pool limit = { NOT = { is_in_list = used_followers } } save_temporary_scope_as = chosen_follower } }
                 }
-                # Priority 5: Generate New Character (Using Knōs Template)
+                # Priority 5: Generate New Character (Using Knós Template)
                 else = {
                     hidden_effect = {
                         create_character = { location = scope:attacker.capital_province template = knos_template.1001 save_temporary_scope_as = chosen_follower }
@@ -562,7 +562,7 @@ knos_migration_cb = {
             NOT = {  }
             NOR = {
                 is_knos = yes
-                is_orphic = yes
+                is_archaic = yes
                 is_ethnically_knos = yes
             }
         }
@@ -844,7 +844,7 @@ knos_migration_cb = {
                             limit = { any_in_list = { list = follower_pool NOT = { is_in_list = used_followers } } }
                             hidden_effect = { random_in_list = { list = follower_pool limit = { NOT = { is_in_list = used_followers } } save_temporary_scope_as = chosen_follower } }
                         }
-                        # Priority 5: Generate New Character (Using Knōs Template)
+                        # Priority 5: Generate New Character (Using Knós Template)
                         else = {
                             hidden_effect = {
                                 create_character = { location = scope:attacker.capital_province template = knos_template.1001 save_temporary_scope_as = chosen_follower }
@@ -1230,7 +1230,7 @@ knos_defiance_cb = {
 		}
 	}
 
-	# ATTACKERS WIN (Knōs Restoration Fails)
+	# ATTACKERS WIN (Knós Restoration Fails)
 	on_victory = {
 		# Legitimacy for attackers
 		add_legitimacy_attacker_victory_effect = yes
@@ -1302,7 +1302,7 @@ knos_defiance_cb = {
 		}
 	}
 
-	# DEFENDER WINS (Knōs Restoration Succeeds)
+	# DEFENDER WINS (Knós Restoration Succeeds)
 	on_defeat = {
 		scope:defender = {
 			# Massive Prestige & Legitimacy

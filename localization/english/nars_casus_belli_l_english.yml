@@ -44,12 +44,12 @@
  # Invalidated
  knos_defiance_war_invalidated_message: "The coalition against the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] has collapsed, and the war is invalidated."
 
- # Victory (Attackers Win / Knōs Defender Loses)
+ # Victory (Attackers Win / Knós Defender Loses)
  knos_defiance_loses_defender: "The world's defiance has crushed you. Your ambition to restore the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] ends in ruin as your vassals scatter and your realm is shattered."
  knos_defiance_loses_attacker: "You have crushed the arrogant ambitions of [defender.GetShortUIName]. The threat of a restored [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] is ended, and [defender.GetHerHis] realm lies in ruins."
  knos_defiance_loses_other: "[attacker.GetShortUIName|U] crushes the ambitions of [defender.GetShortUIName]. The threat of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] is ended."
 
- # Defeat (Attackers Lose / Knōs Defender Wins)
- knos_defiance_wins_defender: "You have defied the world! You shatter the coalition of your neighbors, securing the dawn of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] and your legacy as a Great Conqueror."
- knos_defiance_wins_attacker: "Your coalition failed to stop [defender.GetShortUIName]. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] rises, and a new Great Conqueror is born."
+ # Defeat (Attackers Lose / Knós Defender Wins)
+ knos_defiance_wins_defender: "You have defied the world! You shatter the coalition of your neighbors, securing the emergence of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] and your legacy as a hegemon potentate."
+ knos_defiance_wins_attacker: "Your coalition failed to stop [defender.GetShortUIName]. The emerging [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] rises, and a new hegemon potentate is born."
  knos_defiance_wins_other: "[defender.GetShortUIName|U] successfully defies the coalition against [defender.GetHerHim], securing the dawn of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"

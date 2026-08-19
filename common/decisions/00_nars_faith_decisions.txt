@@ -1,5 +1,5 @@
 ﻿decision_nars_faith_choice = { 
-	decision_group_type = knos
+	decision_group_type = minor
 	title = decision_nars_faith_choice
 	desc = decision_nars_faith_choice_desc
 	selection_tooltip = decision_nars_faith_choice_tooltip
@@ -7,15 +7,15 @@
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
-	sort_order = 90
+	sort_order = 1000
 
 	is_shown = {
 		is_knos = yes
-		is_orphic = yes
+		is_archaic = yes
 	}
 	
 	is_valid = {
-		is_orphic = yes
+		is_archaic = yes
 		is_at_war = no
 		is_imprisoned = no	
 	}
@@ -41,7 +41,7 @@
 			is_valid = {
 				gold >= minor_treasury_or_gold_value
 				is_knos = yes
-				is_orphic = yes
+				is_archaic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
@@ -68,7 +68,7 @@
 				piety >= massive_piety_value
 				is_landless_adventurer = no
 				is_knos = yes
-				is_orphic = yes
+				is_archaic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
@@ -99,7 +99,7 @@
 				is_landless_adventurer = no
 				gold >= major_treasury_or_gold_value
 				is_knos = yes
-				is_orphic = yes
+				is_archaic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				NOR = {
@@ -125,7 +125,7 @@
 			is_valid = {
 				gold >= major_treasury_or_gold_value
 				is_knos = yes
-				is_orphic = yes
+				is_archaic = yes
 				is_at_war = no
 				is_imprisoned = no	
 				custom_tooltip = {

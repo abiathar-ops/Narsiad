@@ -244,7 +244,7 @@
 					}
 					has_council_position = councillor_court_chaplain
 				}
-				is_orphic = yes
+				is_archaic = yes
 			}
 		}
 	}

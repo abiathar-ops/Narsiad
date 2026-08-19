@@ -2,7 +2,7 @@
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
-	decision_group_type = restorationist
+	decision_group_type = realm
 	desc = decision_establish_aretaic_school_desc
 	selection_tooltip = decision_establish_aretaic_school_tooltip
 	sort_order = 850
@@ -58,7 +58,7 @@ pick_aretaic_school_barony = {
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
-	decision_group_type = restorationist
+	decision_group_type = realm
 	is_invisible = yes
 	
 	cost = { gold = 750 }
@@ -101,7 +101,7 @@ decision_establish_brothel = {
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
-	decision_group_type = restorationist
+	decision_group_type = realm
 	desc = decision_establish_brothel_desc
 	selection_tooltip = decision_establish_brothel_tooltip
 	sort_order = 850
@@ -183,7 +183,7 @@ pick_brothel_barony = {
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
-	decision_group_type = restorationist
+	decision_group_type = realm
 	ai_goal = yes
 	is_invisible = yes
 	

@@ -50,9 +50,8 @@
 	}
 
 	holy_order_names = {
-		{ name = "holy_order_lambs_of_highgod" }
+		{ name = "holy_order_host_of_place" }
 		{ name = "holy_order_order_of_alnares" }
-		{ name = "holy_order_ekuites_of_faith" }
 	}
 
 	holy_order_maa = { maa_hoplitai }

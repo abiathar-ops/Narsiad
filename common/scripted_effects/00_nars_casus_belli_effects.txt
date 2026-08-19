@@ -1,4 +1,4 @@
-# Reorganizes administrative vassals so the Knōs conqueror doesn't shatter the system entirely, 
+# Reorganizes administrative vassals so the Knós conqueror doesn't shatter the system entirely, 
 # modeling the GoK administrative preservation effect.
 knos_incursion_admin_vassal_reorganization = {
 	every_vassal_or_below = {

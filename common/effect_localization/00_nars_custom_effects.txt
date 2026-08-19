@@ -1,0 +1,14 @@
+﻿nars_conqueror_defensive_war_tt = {
+	global = nars_conqueror_defensive_war_tt
+	first = nars_conqueror_defensive_war_tt
+}
+
+nars_conqueror_if_win_defiance_tt = {
+	global = nars_conqueror_if_win_defiance_tt
+	first = nars_conqueror_if_win_defiance_tt
+}
+
+nars_conqueror_if_lose_defiance_tt = {
+	global = nars_conqueror_if_lose_defiance_tt
+	first = nars_conqueror_if_lose_defiance_tt
+}

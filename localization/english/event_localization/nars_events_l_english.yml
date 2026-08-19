@@ -19,8 +19,8 @@
 
  nars_intro.0002.t:0 "Gnōthi Seauton"
  nars_intro.0002.desc:0 "The recent death of my pious father, [alnars|E], had chipped off [GetTitleByKey('d_laamp_nars_1001').GetNameNoTier]."
- nars_intro.0002.eleios:0 "\n\nMy siblings, blinded by arrogance, have thrown away our old ways and tradition. $Ilione$ would see our people bleed as mindless sellswords for foreign coin, while $Strato$ weaves craven webs in the shadows, forgetting the honor of our ancestors. The true destiny of an [knos|E] is not to wander as outcasts or hide as spies, but to claim lands and forge a lasting [narsokratia|E]."
- nars_intro.0002.ilione:0 "\n\nMy brothers scramble for power like dogs fighting over a bone. $Eleios$ dreams of tying us to the dirt with his settled [narsokratia|E], while $Strato$ cowers in the shadows of foreign courts. Fools, them both. The essence of an [knos|E] lies not in statecraft or [intrigue|E], but in [martial|E] [prowess|E]."
+ nars_intro.0002.eleios:0 "\n\nMy siblings, blinded by arrogance, have thrown away our old ways and tradition. $Ilione$ would see our people bleed as mindless sellswords for foreign coin, while $Strato$ weaves craven webs in the shadows, forgetting the honor of our ancestors. The true destiny of a [knos|E] is not to wander as outcasts or hide as spies, but to claim lands and forge a lasting [narsokratia|E]."
+ nars_intro.0002.ilione:0 "\n\nMy brothers scramble for power like dogs fighting over a bone. $Eleios$ dreams of tying us to the dirt with his settled [narsokratia|E], while $Strato$ cowers in the shadows of foreign courts. Fools, them both. The essence of a [knos|E] lies not in statecraft or [intrigue|E], but in [martial|E] [prowess|E]."
  nars_intro.0002.strato:0 "\n\nMy siblings, blinded by hubris, took their [faction|E] in opposite directions. $Eleios$ marches openly, seeking a bloody [hegemony|E], while $Ilione$ sells our people's honor to the highest bidder for their wretched wars. They do not see the truth: we are vastly outnumbered. A [knos|E] spear can pierce armor, but a whispered secret can topple an [empire|E] without a single casualty of our own."
  nars_intro.0002.end:0 "\n\nI must make a decision: convince them of my leadership, both [target_1.GetFirstName] and [target_2.GetFirstName], or... to break away completely, removing all pretense from our now fragmented [camp|E] built by [alnars.GetFirstNameNicknamedNoTooltipRegnal]."
  nars_intro.0002.a: "There is still hope yet for our unity..."
@@ -79,7 +79,7 @@
  nars_titles.0001.a: "Hépou theôi..."
  
  nars_artifacts.1001.t: "Kairòn Gnôthi: Dillema"
- nars_artifacts.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [orphic|E] texts. The [artifact|E] must be quenched in the lifeblood of an [knos|E] gained from a ritual." \n\n"A sacrifice of an [minoes|E], one of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
+ nars_artifacts.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [archaic|E] texts. The [artifact|E] must be quenched in the lifeblood of a [knos|E] gained from a ritual." \n\n"A sacrifice of an [minoes|E], one of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
  nars_artifacts.1001.a: "They will be martyrs for our cause..."
  nars_artifacts.1001.b: "Find another way, anything other than this!"
  nars_artifacts.1001.c: "Now is not the time."
@@ -92,8 +92,8 @@
  nars_artifacts.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood ritual, but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
  nars_artifacts.1003.a: "However I desire, of course!"
  
- nars_courtiers.0001.t: "An Knōs Arrives"
- nars_courtiers.0001.desc: "A new Knōs has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
+ nars_courtiers.0001.t: "An Knós Arrives"
+ nars_courtiers.0001.desc: "A new Knós has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
  nars_courtiers.0011.t: "Engúa Pára d' Áta"
  nars_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [knos|E] holds, two [minoes|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [hoplite|E] and a scholar, both [polymetis|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"
@@ -104,9 +104,9 @@
  nars_courtiers.0011.c: "Perhaps I'll take both!"
  nars_courtiers.0011.d.tt: "These [polymetis|E] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
 
- # Knōs Faith
+ # Knós Faith
  nars_faith.1011.t: "Aeì Ho Theòs Geōmetreî!"
- nars_faith.1011.desc: "The heralds the [court|E] dispatched have finally returned with their exhaustingly detailed reports. To my surprise, it appears the [commoners|E] have actually been listening.\n\nAcross the [realm|E], brand new [temple|E] shrines to the [panteion|E] now echo with the chants of our [orphic|E] [faith|E], replacing whatever gibberish foreign [languages|E] they were shouting before. Granted, half the [lowborn|E] are mispronouncing the scriptures, and I am fairly certain they still pray to their old harvest spirits when my [tax_collectors|E] aren't looking. The deep roots of stubborn [traditions|E] do not wither overnight, after all. \n\nThe [minoes|E] [faith|E] is spreading like a blazing flame or at least, the realization that worshipping the [panteion|E] is highly correlated with staying out of the [dungeon|E] is spreading. The best part? I finally only have to pretend to care about one set of [cultural|E] holidays."
+ nars_faith.1011.desc: "The heralds the [court|E] dispatched have finally returned with their exhaustingly detailed reports. To my surprise, it appears the [commoners|E] have actually been listening.\n\nAcross the [realm|E], brand new [temple|E] shrines to the [panteion|E] now echo with the chants of our [archaic|E] [faith|E], replacing whatever gibberish foreign [languages|E] they were shouting before. Granted, half the [lowborn|E] are mispronouncing the scriptures, and I am fairly certain they still pray to their old harvest spirits when my [tax_collectors|E] aren't looking. The deep roots of stubborn [traditions|E] do not wither overnight, after all. \n\nThe [minoes|E] [faith|E] is spreading like a blazing flame or at least, the realization that worshipping the [panteion|E] is highly correlated with staying out of the [dungeon|E] is spreading. The best part? I finally only have to pretend to care about one set of [cultural|E] holidays."
  nars_faith.1011.a: "One realm, One people, One faith!"
 
  nars_faith.1031.t: "Mustérion tês Písteōs..."

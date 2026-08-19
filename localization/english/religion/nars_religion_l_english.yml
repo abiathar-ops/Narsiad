@@ -1,18 +1,18 @@
 ﻿l_english:
- # Knōs religion group
- rf_knos:0 "Orphic"
- knos_religion:0 "Knōsia"
- knos_religion_adj:0 "Knōsic"
- knos_religion_adherent:0 "Knōsei"
- knos_religion_adherent_plural:0 "Knōsioi"
- knos_religion_desc:0 "Derived from the records and teachings of Knōsioi antiquity, the Orphic faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
+ # Knós religion group
+ rf_knos:0 "Archaic"
+ knos_religion:0 "Knóseia"
+ knos_religion_adj:0 "Knóseic"
+ knos_religion_adherent:0 "Knóseian"
+ knos_religion_adherent_plural:0 "Knóseians"
+ knos_religion_desc:0 "Derived from the records and teachings of Knós antiquity, this faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
 
- # Knōs branches
- nars_religion:0 "Knōsioi"
- nars_religion_adj:0 "Knōsioi"
- nars_religion_adherent:0 "Knōsioi"
- nars_religion_adherent_plural:0 "Knōsioi"
- nars_religion_desc:0 "The faith of the Knōsioi venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
+ # Knós branches
+ nars_religion:0 "Knóseia"
+ nars_religion_adj:0 "Knóseia"
+ nars_religion_adherent:0 "Knóseian"
+ nars_religion_adherent_plural:0 "Knóseians"
+ nars_religion_desc:0 "The faith of the Knós venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"

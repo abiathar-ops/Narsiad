@@ -1,10 +1,10 @@
-decision_h_narsokratia = {
+﻿decision_h_narsokratia = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+		reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
 	}
 	desc = decision_h_narsokratia_desc
 	selection_tooltip = decision_h_narsokratia_tooltip
-	decision_group_type = restorationist
+	decision_group_type = oaths
 	
 	sort_order = 1000
 
@@ -47,7 +47,7 @@ decision_h_narsokratia = {
 		is_imprisoned = no
 		top_liege = this
 		OR = {
-			is_orphic = yes
+			is_archaic = yes
 			is_knos = yes
 		}
 	}
@@ -118,11 +118,11 @@ decision_h_narsokratia = {
 
 decision_pledge_restoration = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/narsokratia.dds"
+        reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
     }
     desc = decision_pledge_restoration_desc
     selection_tooltip = decision_pledge_restoration_tooltip
-    decision_group_type = restorationist
+    decision_group_type = oaths
     sort_order = 1000
 
     is_shown = {
@@ -154,43 +154,51 @@ decision_pledge_restoration = {
         is_landed = yes
         is_capable_adult = yes
         is_imprisoned = no
-        OR = { is_orphic = yes is_knos = yes }
+        OR = { is_archaic = yes is_knos = yes }
     }
     
     cost = { prestige = 5000 }
     
     effect = {
-        # UI Tooltips explaining what happens upon Victory
-        custom_tooltip = nars_conqueror_defensive_war_tt
-        custom_tooltip = gain_nars_conqueror_tt
-		custom_tooltip = decision_pledge_restoration_tt
-        custom_tooltip = nars_conqueror_decision_troops
-        if = { limit = { has_dlc_feature = legends } custom_tooltip = become_conqueror_decision_legend_seed }
+        custom_description_no_bullet = {
+            text = nars_conqueror_defensive_war_tt
+        }
+		
+		custom_tooltip = {
+			text = nars_conqueror_rally_war_tt
+			spawn_army = {
+				men_at_arms = { type = maa_hoplitai stacks = 15 }
+				levies = 2750
+				inheritable = no
+				uses_supply = no
+				location = root.capital_province
+				name = event_troop_default_name
+			}
+		}
+        
 
         add_character_flag = flag_decision_pledge_restoration
 
-		spawn_army = {
-            men_at_arms = { type = maa_hoplitai stacks = 15 }
-            levies = 2750
-            inheritable = no
-            uses_supply = no
-            location = root.capital_province
-            name = event_troop_default_name
+        custom_description_no_bullet = {
+            text = nars_conqueror_if_win_defiance_tt
+        }
+        custom_tooltip = gain_nars_conqueror_tt
+        custom_tooltip = decision_pledge_restoration_tt
+        custom_tooltip = nars_conqueror_decision_troops
+        if = { 
+            limit = { has_dlc_feature = legends } 
+            custom_tooltip = become_conqueror_decision_legend_seed 
         }
 
-		every_neighboring_top_liege_realm_owner = {
-            limit = {
-                is_independent_ruler = yes
-                NOT = { has_alliance = root }
-                NOT = { has_truce = root }
-            }
-            show_as_tooltip = {
-                custom_description_no_bullet = {
-                    text = knos_coalition_member_name_tt
-                }
-            }
+        # 5. Lose Conditions (This is where the list used to be!)
+        custom_description_no_bullet = {
+            text = nars_conqueror_if_lose_defiance_tt
         }
-
+		custom_tooltip = nars_conqueror_if_lose_defiance_tt_1
+		custom_tooltip = nars_conqueror_if_lose_defiance_tt_2
+		custom_tooltip = nars_conqueror_if_lose_defiance_tt_3
+		custom_tooltip = nars_conqueror_if_lose_defiance_tt_4
+        # 6. Hidden Execution Block
 		hidden_effect = {
 			# 1. Build a list of all strictly land-bordering independent neighbors
 			every_neighboring_and_across_water_top_liege_realm_owner = {
@@ -242,8 +250,7 @@ decision_pledge_restoration = {
 				}
 			}
 		}
-    }
+    }e
         
-    ai_potential = { always = yes }
-    ai_will_do = { base = 100 }
+    ai_potential = { always = no }
 }

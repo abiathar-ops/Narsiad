@@ -4,9 +4,11 @@ decision_take_epithet = {
  		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds"
  	}
  	desc = decision_take_epithet_desc
- 	decision_group_type = knos
+ 	decision_group_type = minor
  	selection_tooltip = decision_take_epithet_tooltip
 
+	sort_order = 900
+	
  	is_shown = {
  		is_knos = yes
  		is_ruler = yes

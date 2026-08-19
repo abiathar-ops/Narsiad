@@ -13,15 +13,15 @@ has_knos_blood = {
     has_trait = nars_naturalis
 }
 
-is_orphic = {
+is_archaic = {
     faith.religion = {
 		is_in_family = rf_knos
 	}
 }
 
-is_considered_orphic = {
+is_considered_archaic = {
     custom_tooltip = {
-        text = is_considered_orphic
+        text = is_considered_archaic
         faith.religion = {
 	       	is_in_family = rf_knos
 	    }
@@ -54,7 +54,7 @@ is_narses_scion = {
 	AND = {
 		has_trait = nars_scion
 		is_knos = yes
-        is_orphic = yes
+        is_archaic = yes
 	}
 }
 

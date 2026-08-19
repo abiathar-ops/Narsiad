@@ -2,7 +2,7 @@ set_panteion_effect = {
 	# Remove any previous personal god relation
 
 	if = {
-		limit = { is_orphic = yes }
+		limit = { is_archaic = yes }
 		if = {	
 			limit = {
 				has_character_modifier = panteion_knos_narses

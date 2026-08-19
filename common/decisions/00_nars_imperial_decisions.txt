@@ -1,5 +1,5 @@
 decision_knos_imperial_administration = { 
-	decision_group_type = restorationist
+	decision_group_type = realm
 	title = decision_knos_imperial_administration
 	desc = decision_knos_imperial_administration_desc
 	selection_tooltip = decision_knos_imperial_administration_tooltip

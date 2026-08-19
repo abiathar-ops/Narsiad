@@ -1,5 +1,5 @@
 ﻿l_english:
- story_nars_naturalis: "Knōsioi"
+ story_nars_naturalis: "Knósioi"
  story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
  NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "#v You#! are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. The [hegemony|E] of the [minoes|E] had been lost for centuries untold and it is part of every [knos_adj|E] toil to strive in its restoration."
  nars_char: "[Story.GetOwner.GetTitledFirstName]"
@@ -9,4 +9,4 @@
  NARSOKRATIA_VALUE_MIN_LABEL: "[unlanded|E]"
  NARSOKRATIA_VALUE_MAX_LABEL: "[hegemony|E]"
  story_nars_conqueror: "Nikátōr"
- story_nars_conqueror_desc: "The living instrument of the Knōsioi' toil, heralding an era of eternal, ever-victorious restoration."
+ story_nars_conqueror_desc: "The living instrument of the Knósioi' toil, heralding an era of eternal, ever-victorious restoration."

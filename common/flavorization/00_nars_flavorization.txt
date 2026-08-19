@@ -1,4 +1,4 @@
-﻿#Knōs
+﻿#Knós
 
 prince_male_nars = {
 	type = character

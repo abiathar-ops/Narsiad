@@ -1,12 +1,10 @@
 ﻿knoss = {
 	alias = { knos minoes minoes_adj knoss_adj knos_adj}
-	texture = "gfx/interface/icons/icon_culture.dds"
 }
 
 polymetis = {
 	parent = knoss
 	alias = { sophist sophists }
-	texture = "gfx/interface/icons/icon_game_concept_innovation_spread.dds"
 }
 
 knos_language = {
@@ -17,24 +15,20 @@ knos_language = {
 hoplites = {
 	parent = knoss
 	alias = { hoplite }
-	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
 
 mastiges = {
 	parent = hoplites
-	texture = "gfx/interface/icons/icon_knight_acclaimed.dds"
 }
 
 narsokratia = {
 	parent = knos
 	alias = { knosrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
-	texture = "gfx/interface/icons/hegemony_crown.dds"
 }
 
 orphists = {
 	parent = knos
-	alias = { orphic nars_faith orphic_adj }
-	texture = "gfx/interface/icons/event_types/type_faith.dds"
+	alias = { archaic nars_faith archaic_adj }
 }
 
 narses = {
@@ -51,27 +45,23 @@ enuo = {
 
 panteion = {
 	alias = { panteion_possessive }
-	parent = orphic
+	parent = archaic
 }
 
 narsil = {
 	parent = knos
-	texture = "gfx/interface/icons/icon_prowess.dds"
 }
 
 alnars = {
 	parent = knos
 	alias = { alnars_adj }
-	texture = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 	shown_in_encyclopedia = no
 }
 
 knos_incursion = {
-	texture = "gfx/interface/icons/casus_bellis/undirected_great_holy_war.dds"
 	parent = casus_belli
 }
 
 knos_migration = {
-	texture = "gfx/interface/icons/casus_bellis/migration_cb.dds"
 	parent = casus_belli
 }

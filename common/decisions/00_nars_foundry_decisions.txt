@@ -4,7 +4,7 @@
 	}
 	
 	desc = decision_mend_narsil_desc
-	decision_group_type = restorationist
+	decision_group_type = oaths
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
@@ -50,7 +50,7 @@ decision_munitions_research = {
 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
 
-	decision_group_type = restorationist
+	decision_group_type = realm
 	
 	ai_check_interval_by_tier = {
 		barony = 0

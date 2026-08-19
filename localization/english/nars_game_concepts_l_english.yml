@@ -1,16 +1,16 @@
 ﻿l_english:
-  #Knōs Flavours
- game_concept_knos: "Knōs"
- game_concept_knos_adj: "Knōs's"
- game_concept_knoss: "Knōss"
- game_concept_knoss_adj: "Knōss'"
- game_concept_minoes: "Knōsioi"
- game_concept_minoes_adj: "Knōsioi'"
- game_concept_knoss_desc: "The [Glossary( 'Knōsioi', 'MINOAN_GLOSS' )] are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Adept to both martial and learning pursuits, the Knōsioi are also inhumanly youthful as they age slower."
+  #Knós Flavours
+ game_concept_knos: "Knós"
+ game_concept_knos_adj: "Knós'"
+ game_concept_knoss: "Knós"
+ game_concept_knoss_adj: "Knós'"
+ game_concept_minoes: "Knós"
+ game_concept_minoes_adj: "Knós'"
+ game_concept_knoss_desc: "The Knós are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Adept to martial and learning pursuits, the Knós are also youthful as they age slower."
 
- game_concept_knos_language: "Knōs"
- game_concept_knos_language_short: "M."
- game_concept_knos_language_desc: "Knōs is the language of the ancient [minoes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [knos|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
+ game_concept_knos_language: "Knós"
+ game_concept_knos_language_short: "K."
+ game_concept_knos_language_desc: "Knós is the language of the ancient [minoes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [knos|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
 
  game_concept_polymetis: "Polymêtis"
  game_concept_polymetis_desc: "The [Glossary( 'Polymêtis', 'POLYMETIS_GLOSS' )] are [knoss|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to their respective [realms|e]."
@@ -22,7 +22,7 @@
  game_concept_narsokratia_possessive: "Narsokratía's"
  game_concept_narsokratia_government: "Narsokratía Government"
  game_concept_narsokratia_governments: "Narsokratía Governments"
- game_concept_knosrealm: "Knōs Realm"
+ game_concept_knosrealm: "Knós Realm"
  game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [knos|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
 
  game_concept_narses: "Narsēs"
@@ -35,9 +35,9 @@
  game_concept_enuo_desc: "Enuō, the ancient [minoes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [panteion|E] by its adherents."
 
  game_concept_orphists: "Orphists"
- game_concept_orphic: "Orphic"
- game_concept_orphic_adj: "Orphic's"
- game_concept_nars_faith: "Knōs Faith"
+ game_concept_archaic: "Archaic"
+ game_concept_archaic_adj: "Archaic's"
+ game_concept_nars_faith: "Knós Faith"
  game_concept_orphists_desc: "Orphists are followers of the [minoes_adj|E] [panteion|E], the conglomeration of [knos|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [knos|E] [traditions|E] and by proxy, their [narsokratia|E]."
 
  game_concept_panteion: "Panteíon"
@@ -47,7 +47,7 @@
  game_concept_narsil: "Narsíl"
  game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [knos|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [knoss|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
 
- #Knōs MAA
+ #Knós MAA
  game_concept_hoplites: "Hoplîtes"
  game_concept_hoplite: "Hoplîte"
  game_concept_hoplites_desc: "The [Glossary( 'Hoplîtes', 'HOPLITES_GLOSS' )] were citizen-soldiers of the old [knos|E] city-states. These [men_at_arms|E] were primarily represented by free citizens who were able to afford armaments and armor. Now revived, they live to serve [narsokratia|E] once more."
@@ -59,15 +59,8 @@
  game_concept_alnars_adj: "Alnárs'"
  game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [hoplites|E] and a forerunner of the [knos|E] [mercenaries|E], Alnárs had slowly restored the [minoes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
 
- game_concept_knos_incursion:0 "Knōs Incursion"
- game_concept_knos_incursion_desc:3 "An [knos|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knōs Culture#!\n$EFFECT_LIST_BULLET$#V Knōsioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith#!"
+ game_concept_knos_incursion:0 "Knós Incursion"
+ game_concept_knos_incursion_desc:3 "a [knos|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knós Culture#!\n$EFFECT_LIST_BULLET$#V Knósioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"
 
- game_concept_knos_migration:0 "Knōs Migration"
- game_concept_knos_migration_desc:3 "An [knos|E] [casus_belli|E] allowing for a forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E] and to distribute their former [counties|E] among your followers. Unlocked by being an [knos|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knōs Culture#!\n$EFFECT_LIST_BULLET$#V Knōsioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Orphic Faith#!"
-
- PANTEION_GLOSS: "[knos_language_short|E] #bold Panteíon#! means '(A Temple) of All the Gods'."
- NARSOKRATIA_GLOSS: "[knos_language_short|E] #bold Narsokratía #! means 'Rule of Narsēs'."
- POLYMETIS_GLOSS: "[knos_language_short|E] #bold Polymêtis #! means 'Many-Counsels'."
- MINOAN_GLOSS: "[knos_language_short|E] #bold Knōsioi #! means 'Those Born of Minos'."
- MASTIGES_GLOSS: "[knos_language_short|E] #bold Mástiges #! means 'Ravagers'."
- HOPLITES_GLOSS: "[knos_language_short|E] #bold Hoplîtes #! means 'Shield-Bearers'."
+ game_concept_knos_migration:0 "Knós Migration"
+ game_concept_knos_migration_desc:3 "a [knos|E] [casus_belli|E] allowing for a forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E] and to distribute their former [counties|E] among your followers. Unlocked by being a [knos|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knós Culture#!\n$EFFECT_LIST_BULLET$#V Knósioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"

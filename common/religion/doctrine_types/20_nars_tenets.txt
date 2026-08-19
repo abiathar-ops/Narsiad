@@ -66,7 +66,7 @@ tenet_nars_erudition = {
 	}
 }
 
-	# Branch Knōs tenets 
+	# Branch Knós tenets 
 tenet_nars_sanguine = {
 	name = tenet_nars_sanguine_name
 	desc = tenet_nars_sanguine_desc

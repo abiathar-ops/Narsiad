@@ -1,4 +1,4 @@
-#Average Knōs Nobody
+#Average Knós Nobody
 knos_template.1001 = {
     age = { 18 30 }
     gender = male
@@ -14,7 +14,7 @@ knos_template.1001 = {
 	}
 }
 
-#Average Knōs Noble
+#Average Knós Noble
 knos_template.1002 = {
     age = { 18 30 }
     dynasty = generate
