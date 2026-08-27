@@ -1,8 +1,8 @@
-decision_knos_imperial_administration = { 
+decision_selian_imperial_administration = { 
 	decision_group_type = realm
-	title = decision_knos_imperial_administration
-	desc = decision_knos_imperial_administration_desc
-	selection_tooltip = decision_knos_imperial_administration_tooltip
+	title = decision_selian_imperial_administration
+	desc = decision_selian_imperial_administration_desc
+	selection_tooltip = decision_selian_imperial_administration_tooltip
 
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/ep3_decision_hold_triumph.dds"
@@ -10,7 +10,7 @@ decision_knos_imperial_administration = {
 	sort_order = 95
 
 	is_shown = {
-		is_knos = yes
+		is_selian = yes
 		highest_held_title_tier >= tier_empire
 	}
 	
@@ -150,7 +150,7 @@ decision_knos_imperial_administration = {
 	ai_potential = {
 		is_ruler = yes
 		highest_held_title_tier >= tier_empire
-		is_knos = yes
+		is_selian = yes
 	}
 	ai_will_do = {
 		base = 20

@@ -1,66 +1,63 @@
 ﻿l_english:
-  #Knós Flavours
- game_concept_knos: "Knós"
- game_concept_knos_adj: "Knós'"
- game_concept_knoss: "Knós"
- game_concept_knoss_adj: "Knós'"
- game_concept_minoes: "Knós"
- game_concept_minoes_adj: "Knós'"
- game_concept_knoss_desc: "The Knós are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Adept to martial and learning pursuits, the Knós are also youthful as they age slower."
+  #Selian Flavours
+ game_concept_selian: "Selian"
+ game_concept_selian_adj: "Selian'"
+ game_concept_selians: "Selians"
+ game_concept_selians_adj: "Selian's'"
+ game_concept_selianes: "Seliánēs"
+ game_concept_selianes_adj: "Seliánēs'"
+ game_concept_selians_desc: "The Selian are a long thought to be extinct [culture|E]. Despite having a [tradition|E] of [innovation|E], they are notorious for their chauvinistic pride and hubris. Adept to martial and learning pursuits, the Selian are also youthful as they age slower."
 
- game_concept_knos_language: "Knós"
- game_concept_knos_language_short: "K."
- game_concept_knos_language_desc: "Knós is the language of the ancient [minoes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [knos|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
+ game_concept_selian_language: "Selian"
+ game_concept_selian_language_short: "S."
+ game_concept_selian_language_desc: "Selian is the language of the ancient [selianes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [selian|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
 
  game_concept_polymetis: "Polymêtis"
- game_concept_polymetis_desc: "The [Glossary( 'Polymêtis', 'POLYMETIS_GLOSS' )] are [knoss|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to their respective [realms|e]."
+ game_concept_polymetis_desc: "The [Glossary( 'Polymêtis', 'POLYMETIS_GLOSS' )] are [selians|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to their respective [realms|e]."
  game_concept_sophist: "Polymêtis"
  game_concept_sophists: "Polymêtides"
 
  game_concept_narsokratia: "Narsokratía"
- game_concept_narsokratia_i: "@government_type_narsokratia!"
  game_concept_narsokratia_possessive: "Narsokratía's"
- game_concept_narsokratia_government: "Narsokratía Government"
- game_concept_narsokratia_governments: "Narsokratía Governments"
- game_concept_knosrealm: "Knós Realm"
- game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [knos|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
+ game_concept_selianrealm: "Selian Realm"
+ game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [selian|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
 
  game_concept_narses: "Narsēs"
- game_concept_narses_desc: "Narsēs, the ancient [minoes|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [panteion|E] by its adherents."
+ game_concept_narses_desc: "Narsēs, the ancient [selianes|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [panteion|E] by its adherents."
 
  game_concept_phokas: "Phōkās"
- game_concept_phokas_desc: "Phōkās, the ancient [minoes|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [panteion|E] by its adherents."
+ game_concept_phokas_desc: "Phōkās, the ancient [selianes|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [panteion|E] by its adherents."
 
  game_concept_enuo: "Enuō"
- game_concept_enuo_desc: "Enuō, the ancient [minoes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [panteion|E] by its adherents."
+ game_concept_enuo_desc: "Enuō, the ancient [selianes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [panteion|E] by its adherents."
 
  game_concept_orphists: "Orphists"
- game_concept_archaic: "Archaic"
- game_concept_archaic_adj: "Archaic's"
- game_concept_nars_faith: "Knós Faith"
- game_concept_orphists_desc: "Orphists are followers of the [minoes_adj|E] [panteion|E], the conglomeration of [knos|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [knos|E] [traditions|E] and by proxy, their [narsokratia|E]."
+ game_concept_archaic: "Orphic"
+ game_concept_archaic_adj: "Orphic's"
+ game_concept_nars_faith: "Selian Faith"
+ game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [panteion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [narsokratia|E]."
 
- game_concept_panteion: "Panteíon"
- game_concept_panteion_possessive: "Panteíon's"
- game_concept_panteion_desc: "The [minoes|E] [Glossary( 'Panteíon', 'PANTEION_GLOSS' )] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of the [minoes|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [minoes|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [minoes|E] also revere other deities such as [phokas|E] and [enuo|E]."
+ game_concept_panteion: "Politeíon"
+ game_concept_panteion_possessive: "Politeíon's"
+ game_concept_panteion_desc: "The [selianes|E] [Glossary('Politeíon', 'PANTEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of the [selianes|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [selianes|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [selianes|E] also revere other deities such as [phokas|E] and [enuo|E]."
 
  game_concept_narsil: "Narsíl"
- game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [knos|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [knoss|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
+ game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [selian|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [selians|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
 
- #Knós MAA
+ #Selian MAA
  game_concept_hoplites: "Hoplîtes"
  game_concept_hoplite: "Hoplîte"
- game_concept_hoplites_desc: "The [Glossary( 'Hoplîtes', 'HOPLITES_GLOSS' )] were citizen-soldiers of the old [knos|E] city-states. These [men_at_arms|E] were primarily represented by free citizens who were able to afford armaments and armor. Now revived, they live to serve [narsokratia|E] once more."
+ game_concept_hoplites_desc: "The [Glossary( 'Hoplîtes', 'HOPLITES_GLOSS' )] were citizen-soldiers of the old [selian|E] city-states. These [men_at_arms|E] were primarily represented by free citizens who were able to afford armaments and armor. Now revived, they live to serve [narsokratia|E] once more."
 
  game_concept_mastiges: "Mástiges" 
- game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [minoes|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
+ game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [selianes|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [hoplites|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
 
  game_concept_alnars: "Alnárs"
  game_concept_alnars_adj: "Alnárs'"
- game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [hoplites|E] and a forerunner of the [knos|E] [mercenaries|E], Alnárs had slowly restored the [minoes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
+ game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [hoplites|E] and a forerunner of the [selian|E] [mercenaries|E], Alnárs had slowly restored the [selianes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
 
- game_concept_knos_incursion:0 "Knós Incursion"
- game_concept_knos_incursion_desc:3 "a [knos|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knós Culture#!\n$EFFECT_LIST_BULLET$#V Knósioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"
+ game_concept_selian_incursion:0 "Selian Incursion"
+ game_concept_selian_incursion_desc:3 "a [selian|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Selian Culture#!\n$EFFECT_LIST_BULLET$#V Selian Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"
 
- game_concept_knos_migration:0 "Knós Migration"
- game_concept_knos_migration_desc:3 "a [knos|E] [casus_belli|E] allowing for a forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E] and to distribute their former [counties|E] among your followers. Unlocked by being a [knos|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Knós Culture#!\n$EFFECT_LIST_BULLET$#V Knósioi Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"
+ game_concept_selian_migration:0 "Selian Migration"
+ game_concept_selian_migration_desc:3 "a [selian|E] [casus_belli|E] allowing for a forceful [migration|E] into an independent [rulerpossessive|E] [kingdom|E] and to distribute their former [counties|E] among your followers. Unlocked by being a [selian|E] [adventurer|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Selian Culture#!\n$EFFECT_LIST_BULLET$#V Selian Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"

@@ -1,19 +1,19 @@
-﻿knoss = {
-	alias = { knos minoes minoes_adj knoss_adj knos_adj}
+﻿selians = {
+	alias = { selian selianes selianes_adj selians_adj selian_adj}
 }
 
 polymetis = {
-	parent = knoss
+	parent = selians
 	alias = { sophist sophists }
 }
 
-knos_language = {
-	parent = knoss
-	alias = { knos_language_short }
+selian_language = {
+	parent = selians
+	alias = { selian_language_short }
 }
 
 hoplites = {
-	parent = knoss
+	parent = selians
 	alias = { hoplite }
 }
 
@@ -22,12 +22,12 @@ mastiges = {
 }
 
 narsokratia = {
-	parent = knos
-	alias = { knosrealm narsokratia_i narsokratia_possessive narsokratia_government narsokratia_governments }
+	parent = selian
+	alias = { selianrealm narsokratia_possessive }
 }
 
 orphists = {
-	parent = knos
+	parent = selian
 	alias = { archaic nars_faith archaic_adj }
 }
 
@@ -49,19 +49,19 @@ panteion = {
 }
 
 narsil = {
-	parent = knos
+	parent = selian
 }
 
 alnars = {
-	parent = knos
+	parent = selian
 	alias = { alnars_adj }
 	shown_in_encyclopedia = no
 }
 
-knos_incursion = {
+selian_incursion = {
 	parent = casus_belli
 }
 
-knos_migration = {
+selian_migration = {
 	parent = casus_belli
 }

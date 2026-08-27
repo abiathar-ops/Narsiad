@@ -3,7 +3,7 @@
 	selection_behaviour = max
 	priority = 50
 
-	70000011_knos = {
+	70000011_selian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -68,7 +68,7 @@
 			}
 		}
 	}
-	70000012_knos = {
+	70000012_selian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -115,7 +115,7 @@
 			}
 		}
 	}
-	70000013_knos = {
+	70000013_selian = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -268,7 +268,7 @@
 			base = 0
 			modifier = {
 				add = 1000
-				is_ethnically_knos = yes
+				is_ethnically_selian = yes
 				age <= 40
 				shown_in_ruler_designer = yes
 			}
@@ -312,7 +312,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_knos = yes
+				is_selian = yes
 				is_female = no
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes
@@ -360,7 +360,7 @@
 			base = 0
 			modifier = {
 				add = 3000
-				is_knos = yes
+				is_selian = yes
 				is_female = yes
 				OR = {
 					portrait_wear_armor_currently_in_army_trigger = yes

@@ -1,4 +1,4 @@
-# Knós from the Knós group
+# Selian from the Selian group
 
 867.1.1 = {
 	discover_innovation = innovation_motte
@@ -12,8 +12,8 @@
 	discover_innovation = innovation_currency_01
 	discover_innovation = innovation_crop_rotation
 	discover_innovation = innovation_ledger
-	discover_innovation = innovation_knos_maa_01
- 	discover_innovation = innovation_knos_building_01
+	discover_innovation = innovation_selian_maa_01
+ 	discover_innovation = innovation_selian_building_01
 }
 
 950.1.1 = {
@@ -37,8 +37,8 @@
 	discover_innovation = innovation_royal_prerogative
 	discover_innovation = innovation_currency_02
 	discover_innovation = innovation_chronicle_writing
-	discover_innovation = innovation_knos_maa_02
-	discover_innovation = innovation_knos_building_02
+	discover_innovation = innovation_selian_maa_02
+	discover_innovation = innovation_selian_building_02
 	#
 }
 

@@ -1,6 +1,6 @@
-valid_for_knos_conversion_trigger = {
+valid_for_selian_conversion_trigger = {
 	NOT = {
-        faith.religion = { is_in_family = rf_knos }
+        faith.religion = { is_in_family = rf_selian }
     }
 	is_at_war = no
 	NOR = {

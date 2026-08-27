@@ -114,7 +114,7 @@ nars_conqueror.0002 = {
                 desc = nars_conqueror.0002.lost_wars
             }
             triggered_desc = {
-                trigger = { is_ideal_knos = no }
+                trigger = { is_ideal_selian = no }
                 desc = nars_conqueror.0002.traitor
             }
             triggered_desc = {
@@ -285,7 +285,7 @@ nars_conqueror.0200 = {
 				province = scope:pool_province
 				limit = {
 					prowess >= invite_knights_decision_standard_value
-					is_ideal_knos = yes
+					is_ideal_selian = yes
 					guest_knight_candidate_trigger = { HOST = root }
 				}
 				add_to_temporary_list = potential_knights
@@ -316,9 +316,9 @@ nars_conqueror.0200 = {
 			create_character = {
 				gender_female_chance = 50
 				location = root.capital_province
-				template = knos_template.1002
-				culture = root.culture
-				faith = root.faith
+				template = selian_template.1002
+				culture = culture:selian
+				faith = faith:nars_religion
 				add_trait = nars_naturalis
 				save_scope_as = knight
 				prowess = { 15 45 }
@@ -469,7 +469,7 @@ nars_conqueror.0500 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = military_engineer
-			SPECIALIST_TEMPLATE_CHARACTER = knos_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = selian_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -509,7 +509,7 @@ nars_conqueror.0600 = {
 	immediate = {
 		recruit_terrain_specialist_effect = {
 			SPECIALIST_TRAIT = logistician
-			SPECIALIST_TEMPLATE_CHARACTER = knos_template.1002
+			SPECIALIST_TEMPLATE_CHARACTER = selian_template.1002
 		}
 		scope:new_commander = {
 			if = {
@@ -582,7 +582,7 @@ nars_conqueror.1100 = {
         create_character = {
             gender = male
             age = { 35 45 }
-            template = knos_template.1012
+            template = selian_template.1012
             martial >= 35
             prowess >= 45
             learning = { 25 45 }
@@ -901,7 +901,7 @@ nars_conqueror.1300 = {
     trigger = {
         has_trait = nars_conqueror
         any_sub_realm_county = {
-            NOT = { culture = root.culture }
+            NOT = { culture = culture:selian }
         }
     }
 
@@ -936,7 +936,7 @@ nars_conqueror.1300 = {
         # Find a wrong-culture county to settle
         random_sub_realm_county = {
             limit = {
-                NOT = { culture = root.culture }
+                NOT = { culture = culture:selian }
             }
             save_scope_as = settlement_county
         }
@@ -946,10 +946,10 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = knos_template.1002
+			template = selian_template.1002
             gender = male
-            culture = root.culture
-            faith = root.faith
+            culture = culture:selian
+            faith = faith:nars_religion
             save_scope_as = commander_1
 			prowess = { 15 30 }
         }
@@ -963,10 +963,10 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_4
-			template = knos_template.1002
+			template = selian_template.1002
             gender = male
-            culture = root.culture
-            faith = root.faith
+            culture = culture:selian
+            faith = faith:nars_religion
             save_scope_as = commander_2
 			prowess = { 15 30 }
         }
@@ -980,10 +980,10 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = knos_template.1002
+			template = selian_template.1002
             gender = male
-            culture = root.culture
-            faith = root.faith
+            culture = culture:selian
+            faith = faith:nars_religion
             save_scope_as = commander_3
 			prowess = { 15 30 }
         }
@@ -997,10 +997,10 @@ nars_conqueror.1300 = {
             age = { 30 55 }
             martial = { 16 26 }
             trait = education_martial_3
-			template = knos_template.1002
+			template = selian_template.1002
             gender = male
-            culture = root.culture
-            faith = root.faith
+            culture = culture:selian
+            faith = faith:nars_religion
             save_scope_as = commander_4
 			prowess = { 15 30 }
         }
@@ -1042,8 +1042,8 @@ nars_conqueror.1300 = {
                 modifier = nars_veteran_settlement_modifier
                 years = 3 # 10 years
             }
-			set_county_culture = root.culture
-			set_county_faith = root.faith
+			set_county_culture = culture:selian
+			set_county_faith = faith:nars_religion
         }
 		hidden_effect = {
 			every_in_list = {
@@ -1125,7 +1125,7 @@ nars_conqueror.1400 = {
         has_trait = nars_conqueror
         # Must have at least one foreign vassal who rules over a county of their own culture
         any_vassal = {
-            NOT = { culture = root.culture }
+            NOT = { culture = culture:selian }
             any_held_county = { # FIXED: Valid CK3 syntax for domain
                 culture = prev.culture
             }
@@ -1152,7 +1152,7 @@ nars_conqueror.1400 = {
         # 1. Grab the primary foreign vassal and their culture/county
         random_vassal = {
             limit = { 
-                NOT = { culture = root.culture }
+                NOT = { culture = culture:selian }
                 any_held_county = { # FIXED
                     culture = prev.culture 
                 }
@@ -1170,7 +1170,7 @@ nars_conqueror.1400 = {
         # 2. Grab up to 2 other foreign vassals (if they exist) to flesh out the event
         random_vassal = {
             limit = { 
-                NOT = { culture = root.culture }
+                NOT = { culture = culture:selian }
                 NOT = { this = scope:foreign_vassal_1 }
             }
             save_scope_as = foreign_vassal_2
@@ -1187,8 +1187,8 @@ nars_conqueror.1400 = {
                 modifier = nars_brutal_purges_modifier
                 days = 3650 # 10 years
             }
-			set_county_culture = root.culture
-			set_county_faith = root.faith
+			set_county_culture = culture:selian
+			set_county_faith = faith:nars_religion
         }
         
         # Mysterious deaths 
@@ -1279,8 +1279,8 @@ nars_conqueror.1500 = {
 			trait = brave
             trait = lifestyle_poet
             gender = male
-            culture = root.culture
-            faith = root.faith
+            culture = culture:selian
+            faith = faith:nars_religion
             save_scope_as = arrogant_bard
         }
         

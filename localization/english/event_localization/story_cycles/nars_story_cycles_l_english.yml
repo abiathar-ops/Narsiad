@@ -1,12 +1,12 @@
 ﻿l_english:
- story_nars_naturalis: "Knósioi"
+ story_nars_naturalis: "Selian"
  story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
- NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "#v You#! are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. The [hegemony|E] of the [minoes|E] had been lost for centuries untold and it is part of every [knos_adj|E] toil to strive in its restoration."
+ NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING: "#v You#! are recognized as a living [character|E] of a once thought to be extinct [heritage|E]. The [hegemony|E] of the [selianes|E] had been lost for centuries untold and it is part of every [selian_adj|E] toil to strive in its restoration."
  nars_char: "[Story.GetOwner.GetTitledFirstName]"
- NARS_CHAR_LABEL: "#v You#! are of [knos|E] [heritage|E]!"
- NARSOKRATIA_COUNTER_TOOLTIP: "[narsokratia|E] [title_rank|E] determines the hierarchial position of your sovereign realm in the wider region. As you expand your [domain|E] and elevate your [realm|E] [title_tier|E], your legitimate authority over the scattered [minoes|E] solidifies, bringing you ever closer to the restoration of the ancient [hegemony|E].
+ NARS_CHAR_LABEL: "#v You#! are of [selian|E] [heritage|E]!"
+ NARSOKRATIA_COUNTER_TOOLTIP: "[narsokratia|E] [title_rank|E] determines the hierarchial position of your sovereign realm in the wider region. As you expand your [domain|E] and elevate your [realm|E] [title_tier|E], your legitimate authority over the scattered [selianes|E] solidifies, bringing you ever closer to the restoration of the ancient [hegemony|E].
  NARSOKRATIA_VALUE_LABEL: "[narsokratia|E] [title_rank|E]"
  NARSOKRATIA_VALUE_MIN_LABEL: "[unlanded|E]"
  NARSOKRATIA_VALUE_MAX_LABEL: "[hegemony|E]"
  story_nars_conqueror: "Nikátōr"
- story_nars_conqueror_desc: "The living instrument of the Knósioi' toil, heralding an era of eternal, ever-victorious restoration."
+ story_nars_conqueror_desc: "The living instrument of the Selian' toil, heralding an era of eternal, ever-victorious restoration."

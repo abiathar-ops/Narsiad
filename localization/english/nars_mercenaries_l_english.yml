@@ -1,6 +1,6 @@
 ﻿l_english: 
- mercenary_company_hoplites_of_knos:0 "Errant-Hoplitēs of [TITLE.GetNameNoTierNoTooltip]"
- mercenary_company_hoplites_of_knos_article:0 "the "
+ mercenary_company_hoplites_of_selian:0 "Errant-Hoplitēs of [TITLE.GetNameNoTierNoTooltip]"
+ mercenary_company_hoplites_of_selian_article:0 "the "
  mercenary_company_free_company:0 "Free Company of the [CULTURE.GetNameNoTooltip]"
  mercenary_company_free_company_article:0 "the "
  mercenary_company_optimates:0 "Optímātes of [TITLE.GetNameNoTierNoTooltip]"

@@ -1,4 +1,4 @@
-## Knosiad
+## Seliad
 
 A cultures et cetera mod for Crusader Kings III, designed to be as compatible as possible with other mods. Personal use.
 

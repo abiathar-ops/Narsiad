@@ -1,7 +1,7 @@
-knos = {
+selian = {
 	color = { 0.98 0.92 0.84 }
 	
-	ethos = ethos_archaic
+	ethos = ethos_bureaucratic
 	heritage = heritage_nars
 	language = language_nars
 	martial_custom = martial_custom_equal
@@ -26,6 +26,6 @@ knos = {
 
 	
 	ethnicities = {
-		10 = minoes #knos_languages
+		10 = selianes #selian_languages
 	}
 }

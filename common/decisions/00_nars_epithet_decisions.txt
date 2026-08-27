@@ -10,7 +10,7 @@ decision_take_epithet = {
 	sort_order = 900
 	
  	is_shown = {
- 		is_knos = yes
+ 		is_selian = yes
  		is_ruler = yes
  	}
 

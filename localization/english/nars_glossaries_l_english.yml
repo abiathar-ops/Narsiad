@@ -1,7 +1,10 @@
 ﻿l_english: 
- PANTEION_GLOSS: "#bold Panteíon#! means '(A Temple) of All the Gods'."
- ALNARS_GLOSS: "#bold Alnárs 'Sōtēr'#! is the first Knoseian who dared to venture back into the world. Through charisma, he forged the isolationist exiles of his people into a unified band of mercenaries, paving the way to the old $game_concept_knosei$ order."
- NARSOKRATIA_GLOSS: "#bold Narsokratía #! means 'Rule of Narsēs'."
- POLYMETIS_GLOSS: "#bold Polymêtis #! means 'Many-Counsels'."
- MASTIGES_GLOSS: "[knos_language_short|E] #bold Mástiges #! means 'Ravagers'."
- HOPLITES_GLOSS: "[knos_language_short|E] #bold Hoplîtes #! means 'Shield-Bearers'."
+ PANTEION_GLOSS: "[selian_language_short|E] #bold 'Politeíon'#! means '(A Temple) of All the Gods'."
+ ALNARS_GLOSS: "The first Selian who dared to venture back into the world. Through charisma, he forged the isolationist exiles of his people into a unified band of mercenaries, paving the way to the old $game_concept_selian$ order's restoration."
+ NARSOKRATIA_GLOSS: "[selian_language_short|E] #bold 'Narsokratía'#! means 'Rule of Narsēs'."
+ POLYMETIS_GLOSS: "[selian_language_short|E] #bold 'Polymêtis'#! means 'Many-Counsels'."
+ MASTIGES_GLOSS: "[selian_language_short|E] #bold 'Mástiges' #! means 'Ravagers'."
+ HOPLITES_GLOSS: "[selian_language_short|E] #bold 'Hoplîtes' #! means 'Shield-Bearers'."
+
+ #AI should use impose faith when there's a county that has diff cul/fai
+ #Expensivize brothels, put limit and cooldown, cheapen polymetis DRASTICALLY

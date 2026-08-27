@@ -11,7 +11,7 @@
 	is_shown = {
 		is_ruler = yes
 		is_independent_ruler = yes
-		is_knos = yes
+		is_selian = yes
 		highest_held_title_tier = tier_empire
 		NOT = {
 			is_target_in_global_variable_list = {
@@ -48,7 +48,7 @@
 		top_liege = this
 		OR = {
 			is_archaic = yes
-			is_knos = yes
+			is_selian = yes
 		}
 	}
 	
@@ -90,11 +90,11 @@
 		trigger_event = nars_titles.0001
 		hidden_effect = {
 			change_government = administrative_government
-			local_assimilate_knos_traditions_effect = {
-				OLD_CULTURE = root.culture
-				NEW_CULTURE = root.culture
-				OLD_FAITH = root.faith
-				NEW_FAITH = root.faith
+			local_assimilate_selian_traditions_effect = {
+				OLD_culture = culture:selian
+				NEW_culture = culture:selian
+				OLD_faith = faith:nars_religion
+				NEW_faith = faith:nars_religion
 				CONVERTER = root
 			}
 			add_to_global_variable_list = {
@@ -125,11 +125,13 @@ decision_pledge_restoration = {
     decision_group_type = oaths
     sort_order = 1000
 
+	cooldown = { months = 6 }
+
     is_shown = {
         is_ruler = yes
         is_independent_ruler = yes
-        is_ethnically_knos = yes
-        is_knos = yes
+        is_ethnically_selian = yes
+        is_selian = yes
         NOR = { 
             government_has_flag = government_is_nomadic 
             government_has_flag = government_is_tribal 
@@ -143,9 +145,8 @@ decision_pledge_restoration = {
     is_valid = {
         # Keep your mirrored Conqueror requirements here as they were
         highest_held_title_tier >= tier_kingdom
-        prestige_level >= 5
-        custom_tooltip = { text = become_conqueror_decision_war_participation any_memory = { count >= 20 OR = { has_memory_type = offensive_war has_memory_type = defensive_war has_memory_type = joined_allys_war } } }
-        custom_tooltip = { text = become_conqueror_decision_war_participation_kingdom any_memory = { count >= 5 OR = { has_memory_type = offensive_war has_memory_type = defensive_war has_memory_type = joined_allys_war } any_memory_participant = { primary_title.tier >= tier_kingdom } } }
+        prestige_level >= 4
+		piety_level >= 4
         custom_tooltip = { text = nars_conqueror_decision_enough_troops current_military_strength >= 3500 }
         calc_true_if = { amount >= 1 custom_tooltip = { text = become_conqueror_decision_enough_high_level_knights any_knight = { count >= 6 prowess >= 18 } } custom_tooltip = { text = become_conqueror_decision_enough_mediocre_knights any_knight = { count >= 12 prowess >= 15 } } }
     }
@@ -154,7 +155,7 @@ decision_pledge_restoration = {
         is_landed = yes
         is_capable_adult = yes
         is_imprisoned = no
-        OR = { is_archaic = yes is_knos = yes }
+        OR = { is_archaic = yes is_selian = yes }
     }
     
     cost = { prestige = 5000 }
@@ -207,17 +208,17 @@ decision_pledge_restoration = {
 					NOT = { has_alliance = root }
 					NOT = { has_truce = root }
 				}
-				add_to_list = knos_coalition_members
+				add_to_list = selian_coalition_members
 			}
 
 			if = {
 				limit = {
-					any_in_list = { list = knos_coalition_members }
+					any_in_list = { list = selian_coalition_members }
 				}
 				
 				# 2. Pick the strongest neighbor to lead the Coalition
 				ordered_in_list = {
-					list = knos_coalition_members
+					list = selian_coalition_members
 					order_by = current_military_strength
 					save_scope_as = coalition_war_leader
 				}
@@ -227,7 +228,7 @@ decision_pledge_restoration = {
 					start_war = {
 						target = root
 						target_title = root.primary_title
-						cb = knos_defiance_cb
+						cb = selian_defiance_cb
 					}
 				}
 
@@ -237,7 +238,7 @@ decision_pledge_restoration = {
 						limit = { primary_attacker = scope:coalition_war_leader }
 						
 						every_in_list = {
-							list = knos_coalition_members
+							list = selian_coalition_members
 							limit = {
 								NOT = { this = scope:coalition_war_leader }
 							}
@@ -250,7 +251,7 @@ decision_pledge_restoration = {
 				}
 			}
 		}
-    }e
+    }
         
     ai_potential = { always = no }
 }

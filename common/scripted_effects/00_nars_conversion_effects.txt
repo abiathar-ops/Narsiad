@@ -1,4 +1,4 @@
-knos_vassal_conversion_effect = {
+selian_vassal_conversion_effect = {
 	# Government: every vassal in the realm
 	every_vassal = {
 		change_government = administrative_government
@@ -21,12 +21,12 @@ knos_vassal_conversion_effect = {
 		}
 		random = {
 			chance = 65
-			set_culture = culture:knos
+			set_culture = culture:selian
 		}
 	}
 }
 
-knos_minor_county_effect = {
+selian_minor_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -39,17 +39,17 @@ knos_minor_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:knos }
+			NOT = { culture = culture:selian }
 		}
 		random = {
 			chance = 25
-			set_county_culture = culture:knos
+			set_county_culture = culture:selian
             change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-knos_moderate_county_effect = {
+selian_moderate_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -62,17 +62,17 @@ knos_moderate_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:knos }
+			NOT = { culture = culture:selian }
 		}
 		random = {
 			chance = 50
-			set_county_culture = culture:knos
+			set_county_culture = culture:selian
 			change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-knos_major_county_effect = {
+selian_major_county_effect = {
 	every_realm_county = {
 		limit = {
 			NOT = { faith = faith:nars_religion }
@@ -85,19 +85,19 @@ knos_major_county_effect = {
 	}
 	every_realm_county = {
 		limit = {
-			NOT = { culture = culture:knos }
+			NOT = { culture = culture:selian }
 		}
 		random = {
 			chance = 75
-			set_county_culture = culture:knos
+			set_county_culture = culture:selian
             change_county_control = minor_county_control_loss
 		}
 	}
 }
 
-knos_settle_county_effect = {
+selian_settle_county_effect = {
     # Save the character triggering the effect so we can reference them safely
-    save_scope_as = knos_ruler
+    save_scope_as = selian_ruler
     
     every_sub_realm_county = {
         limit = {
@@ -105,15 +105,15 @@ knos_settle_county_effect = {
             # OR if it belongs to the de jure Duchy of the ruler's capital.
             duchy = {
                 OR = {
-                    holder = scope:knos_ruler
-                    this = scope:knos_ruler.capital_county.duchy
+                    holder = scope:selian_ruler
+                    this = scope:selian_ruler.capital_county.duchy
                 }
             }
             
             # Only target the county if it actually needs a conversion
             OR = {
                 NOT = { faith = faith:nars_religion }
-                NOT = { culture = culture:knos }
+                NOT = { culture = culture:selian }
             }
         }
         
@@ -128,9 +128,9 @@ knos_settle_county_effect = {
         # Convert Culture if needed
         if = {
             limit = {
-                NOT = { culture = culture:knos }
+                NOT = { culture = culture:selian }
             }
-            set_county_culture = culture:knos
+            set_county_culture = culture:selian
         }
         
         # Apply the control loss once
@@ -138,8 +138,8 @@ knos_settle_county_effect = {
     }
 }
 
-knos_diplomacy_entreaty_effect = {
-    custom_tooltip = knos_diplomacy.tt
+selian_diplomacy_entreaty_effect = {
+    custom_tooltip = selian_diplomacy.tt
     
     hidden_effect = {
         # Dynamically identify the other two siblings based on the root character's modifier
@@ -174,10 +174,10 @@ knos_diplomacy_entreaty_effect = {
                 }
                 
                 send_interface_toast = {
-                    title = knos_diplomacy_both_join_toast_t
+                    title = selian_diplomacy_both_join_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = knos_diplomacy_both_join_toast_tt
+                    custom_tooltip = selian_diplomacy_both_join_toast_tt
                 }
                 
                 scope:target_1 = {
@@ -224,10 +224,10 @@ knos_diplomacy_entreaty_effect = {
             }
             25 = {
                 send_interface_toast = {
-                    title = knos_diplomacy_target_1_joins_toast_t
+                    title = selian_diplomacy_target_1_joins_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = knos_diplomacy_target_1_joins_toast_tt
+                    custom_tooltip = selian_diplomacy_target_1_joins_toast_tt
                 }
                 scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
@@ -262,10 +262,10 @@ knos_diplomacy_entreaty_effect = {
             }
             25 = {
                 send_interface_toast = {
-                    title = knos_diplomacy_target_2_joins_toast_t
+                    title = selian_diplomacy_target_2_joins_toast_t
                     left_icon = scope:target_2
                     right_icon = scope:target_1
-                    custom_tooltip = knos_diplomacy_target_2_joins_toast_tt
+                    custom_tooltip = selian_diplomacy_target_2_joins_toast_tt
                 }
 
                 scope:target_1 = {
@@ -301,10 +301,10 @@ knos_diplomacy_entreaty_effect = {
             }
             30 = {
                 send_interface_toast = {
-                    title = knos_diplomacy_neither_join_toast_t
+                    title = selian_diplomacy_neither_join_toast_t
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = knos_diplomacy_neither_join_toast_tt
+                    custom_tooltip = selian_diplomacy_neither_join_toast_tt
                 }
                 scope:target_1 = {
                     add_opinion = {

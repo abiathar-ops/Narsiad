@@ -1,15 +1,15 @@
-portrait_knos_clothing_trigger = {
+portrait_selian_clothing_trigger = {
 	culture = {
-		portrait_knos_clothing_contents_trigger = yes
+		portrait_selian_clothing_contents_trigger = yes
 	}
 }
 
-portrait_knos_clothing_spouse_trigger = {
+portrait_selian_clothing_spouse_trigger = {
 	culture = {
-		portrait_knos_clothing_contents_trigger = yes
+		portrait_selian_clothing_contents_trigger = yes
 	}
 }
 
-portrait_knos_clothing_contents_trigger = {
-	has_clothing_gfx = knos_clothing_gfx
+portrait_selian_clothing_contents_trigger = {
+	has_clothing_gfx = selian_clothing_gfx
 }

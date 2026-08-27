@@ -54,7 +54,7 @@
     }
 
     on_end = {
-		debug_log = "Knósioi story cycle ended on:"
+		debug_log = "Selian story cycle ended on:"
 		debug_log_date = yes
 	}
 }

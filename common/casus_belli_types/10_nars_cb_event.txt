@@ -1,0 +1,666 @@
+selian_expedition_cb = {
+    icon = undirected_great_holy_war
+    group = event
+
+    target_title_tier = all
+
+    interface_priority = 360
+
+    allow_hostages = no
+
+    allowed_for_character = {
+        has_trait = nars_conqueror
+        is_selian = yes
+        is_archaic = yes
+    }
+
+    allowed_for_character_display_regardless = {
+        prestige_level >= 3
+    }
+
+    allowed_against_character_display_regardless = {
+        scope:defender = {
+            is_independent_ruler = yes
+            is_landed = yes
+        }
+    }
+
+    allowed_against_character = {
+        scope:attacker = {
+            ALL_FALSE = {
+                top_liege = scope:defender.top_liege
+                liege = scope:defender
+            }
+        }
+        scope:defender = {
+            NOR = {
+                government_has_flag = government_is_tribal
+                government_has_flag = government_is_nomadic
+                government_has_flag = government_is_mandala
+                government_has_flag = government_is_wanua
+                is_selian = yes
+                is_archaic = yes
+                is_ethnically_selian = yes
+            }
+        }
+    }
+
+    should_invalidate = {
+        scope:defender = {
+            OR = {
+                is_independent_ruler = no
+                is_landed = no
+            }
+        }
+    }
+
+    on_invalidated_desc = msg_subjugation_war_invalidated_message
+
+    on_invalidated = {
+    }
+
+    cost = {
+        piety = {
+            value = 0
+            if = {
+                limit = {
+                    scope:attacker.faith.religious_head ?= scope:attacker
+                    scope:defender.faith = scope:attacker.faith
+                }
+                add = {
+                    value = 500
+                    desc = CB_BASE_COST
+                }
+            }
+            if = {
+                limit = {
+                    scope:attacker = { is_ai = yes }
+                }
+                multiply = 0
+            }
+            add = common_cb_impious_piety_cost
+            multiply = common_cb_piety_cost_multiplier
+        }
+        prestige = {
+            add = {
+                value = 500
+                desc = CB_BASE_COST
+            }
+
+            multiply = common_cb_prestige_cost_multiplier
+
+            if = {
+                limit = {
+                    scope:attacker = { is_ai = yes }
+                }
+                multiply = 0
+            }
+        }
+    }
+
+    on_declaration = {
+        on_declared_war = yes
+    }
+
+    on_victory_desc = {
+        desc = {
+            first_valid = {
+                triggered_desc = {
+                    trigger = { scope:attacker = { is_local_player = yes } }
+                    desc = selian_incursion_victory_attacker
+                }
+                triggered_desc = {
+                    trigger = { scope:defender = { is_local_player = yes } }
+                    desc = selian_incursion_victory_defender
+                }
+                desc = selian_incursion_victory
+            }
+        }
+    }
+
+    on_victory = {
+        scope:attacker = { save_scope_as = gok }
+        scope:defender = {
+            save_scope_as = gok_victim
+            primary_title = { save_scope_as = target_primary_title }
+            capital_county = {
+                save_scope_as = target_capital_county
+                duchy = { save_scope_as = target_capital_duchy }
+            }
+
+            if = {
+                limit = {
+                    OR = {
+                        any_held_title = { has_variable = refused_submission }
+                        any_vassal_or_below = { any_held_title = { has_variable = refused_submission } }
+                    }
+                }
+                save_scope_as = khans_retribution_target
+            }
+        }
+
+        ## --- 1. COMPILE HOLDINGS TO TAKE (Defender's entire sub-realm) ---
+        hidden_effect = {
+            # Save old family vassals for later use in follower pool
+            scope:attacker = {
+                every_vassal_or_below = {
+                    limit = { dynasty = scope:attacker.dynasty }
+                    add_to_list = vassalised_family_list
+                }
+            }
+
+            scope:defender = {
+                every_held_title = {
+                    limit = { tier >= tier_duchy }
+                    add_to_list = titles_to_take
+                }
+                every_vassal_or_below = {
+                    every_held_title = {
+                        limit = { tier >= tier_duchy }
+                        add_to_list = titles_to_take
+                    }
+                }
+                every_sub_realm_county = { add_to_list = counties_to_take }
+            }
+        }
+
+        # WRAPPED IN HIDDEN_EFFECT TO PREVENT UI SPAM
+        hidden_effect = {
+            ## --- 2. THE GREAT SWEEP (Usurp everything into attacker's hands) ---
+            create_title_and_vassal_change = {
+                type = conquest
+                save_scope_as = wipe_change
+                add_claim_on_loss = yes
+            }
+
+            # Take all upper titles (Empires, Kingdoms, Duchies)
+            every_in_list = {
+                list = titles_to_take
+                change_title_holder = { holder = scope:attacker change = scope:wipe_change }
+            }
+
+            # Take all counties
+            every_in_list = {
+                list = counties_to_take
+                change_title_holder = {
+                    holder = scope:attacker
+                    change = scope:wipe_change
+                    take_baronies = yes
+                }
+            }
+
+            resolve_title_and_vassal_change = scope:wipe_change
+
+            ## --- 3. ENSURE PRIMARY TITLE & CAPITAL DUCHY EXIST ---
+            if = {
+                limit = {
+                    exists = scope:target_primary_title
+                    scope:target_primary_title = { is_title_created = no }
+                }
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = create_prim_change
+                    add_claim_on_loss = no
+                }
+                scope:target_primary_title = {
+                    change_title_holder = { holder = scope:attacker change = scope:create_prim_change }
+                }
+                resolve_title_and_vassal_change = scope:create_prim_change
+            }
+            if = {
+                limit = {
+                    exists = scope:target_capital_duchy
+                    scope:target_capital_duchy = { is_title_created = no }
+                }
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = create_duchy_change
+                    add_claim_on_loss = no
+                }
+                scope:target_capital_duchy = {
+                    change_title_holder = { holder = scope:attacker change = scope:create_duchy_change }
+                }
+                resolve_title_and_vassal_change = scope:create_duchy_change
+            }
+        }
+
+        ## --- 4. SET NEW CAPITAL ---
+        if = {
+            limit = { exists = scope:target_capital_county }
+            scope:attacker = { set_realm_capital = scope:target_capital_county }
+        }
+
+        ## --- 5. DISTRIBUTION SETUP ---
+        hidden_effect = {
+            # Build duchy distribution list: every duchy from taken counties,
+            # excluding the capital duchy which the attacker keeps
+            every_in_list = {
+                list = counties_to_take
+                duchy = {
+                    if = {
+                        limit = {
+                            NOT = { is_in_list = duchies_to_distribute }
+                            NOT = { this = scope:target_capital_duchy }
+                        }
+                        add_to_list = duchies_to_distribute
+                    }
+                }
+            }
+
+            # Build follower pool: attacker's adult courtiers + pre-existing family vassals
+            scope:attacker = {
+                every_courtier = {
+                    limit = { is_adult = yes is_imprisoned = no }
+                    add_to_list = follower_pool
+                }
+            }
+            every_in_list = { list = vassalised_family_list add_to_list = follower_pool }
+        }
+
+        ## --- 6. DISTRIBUTE DUCHIES & COUNTIES to followers ---
+        hidden_effect = {
+            every_in_list = {
+                list = duchies_to_distribute
+                save_temporary_scope_as = duchy_to_give
+
+                # Generate the Duchy if it doesn't currently exist
+                if = {
+                    limit = { is_title_created = no }
+                    create_title_and_vassal_change = {
+                        type = created
+                        save_scope_as = create_d_change
+                        add_claim_on_loss = no
+                    }
+                    change_title_holder = { holder = scope:attacker change = scope:create_d_change }
+                    resolve_title_and_vassal_change = scope:create_d_change
+                }
+
+                # Setup fail-safe blank scope
+                hidden_effect = {
+                    random_in_list = {
+                        list = follower_pool
+                        limit = { always = no }
+                        save_temporary_scope_as = chosen_follower
+                    }
+                }
+
+                # Priority 1: Family members of the attacker's dynasty
+                if = {
+                    limit = {
+                        any_in_list = {
+                            list = follower_pool
+                            NOT = { is_in_list = used_followers }
+                            dynasty = scope:attacker.dynasty
+                        }
+                    }
+                    hidden_effect = {
+                        random_in_list = {
+                            list = follower_pool
+                            limit = {
+                                NOT = { is_in_list = used_followers }
+                                dynasty = scope:attacker.dynasty
+                            }
+                            save_temporary_scope_as = chosen_follower
+                        }
+                    }
+                }
+                # Priority 2: Characters with inheritable positive traits
+                else_if = {
+                    limit = {
+                        any_in_list = {
+                            list = follower_pool
+                            NOT = { is_in_list = used_followers }
+                            OR = {
+                                has_trait = beauty_good_1
+                                has_trait = beauty_good_2
+                                has_trait = beauty_good_3
+                                has_trait = intellect_good_1
+                                has_trait = intellect_good_2
+                                has_trait = intellect_good_3
+                                has_trait = physique_good_1
+                                has_trait = physique_good_2
+                                has_trait = physique_good_3
+                                has_trait = fecund
+                                has_trait = pure_blooded
+                            }
+                        }
+                    }
+                    hidden_effect = {
+                        random_in_list = {
+                            list = follower_pool
+                            limit = {
+                                NOT = { is_in_list = used_followers }
+                                OR = {
+                                    has_trait = beauty_good_1
+                                    has_trait = beauty_good_2
+                                    has_trait = beauty_good_3
+                                    has_trait = intellect_good_1
+                                    has_trait = intellect_good_2
+                                    has_trait = intellect_good_3
+                                    has_trait = physique_good_1
+                                    has_trait = physique_good_2
+                                    has_trait = physique_good_3
+                                    has_trait = fecund
+                                    has_trait = pure_blooded
+                                }
+                            }
+                            save_temporary_scope_as = chosen_follower
+                        }
+                    }
+                }
+                # Priority 3: Characters with good stats (12+)
+                else_if = {
+                    limit = {
+                        any_in_list = {
+                            list = follower_pool
+                            NOT = { is_in_list = used_followers }
+                            OR = {
+                                martial >= 12
+                                stewardship >= 12
+                                diplomacy >= 12
+                                intrigue >= 12
+                                learning >= 12
+                            }
+                        }
+                    }
+                    hidden_effect = {
+                        random_in_list = {
+                            list = follower_pool
+                            limit = {
+                                NOT = { is_in_list = used_followers }
+                                OR = {
+                                    martial >= 12
+                                    stewardship >= 12
+                                    diplomacy >= 12
+                                    intrigue >= 12
+                                    learning >= 12
+                                }
+                            }
+                            save_temporary_scope_as = chosen_follower
+                        }
+                    }
+                }
+                # Priority 4: Any remaining unused follower
+                else_if = {
+                    limit = {
+                        any_in_list = {
+                            list = follower_pool
+                            NOT = { is_in_list = used_followers }
+                        }
+                    }
+                    hidden_effect = {
+                        random_in_list = {
+                            list = follower_pool
+                            limit = { NOT = { is_in_list = used_followers } }
+                            save_temporary_scope_as = chosen_follower
+                        }
+                    }
+                }
+                # Priority 5: Generate a new Selian character from template
+                else = {
+                    hidden_effect = {
+                        create_character = {
+                            location = scope:attacker.capital_province
+                            template = selian_template.1001
+                            save_temporary_scope_as = chosen_follower
+                        }
+                        scope:chosen_follower = {
+                            set_employer = scope:attacker
+                            nars_apply_setup_effect = yes
+                        }
+                    }
+                }
+
+                # Execute grants — duchy title + all de jure counties within it
+                if = {
+                    limit = { exists = scope:chosen_follower }
+                    hidden_effect = {
+                        scope:chosen_follower = { add_to_list = used_followers }
+                    }
+
+                    create_title_and_vassal_change = {
+                        type = granted
+                        save_scope_as = duchy_grant_change
+                        add_claim_on_loss = no
+                    }
+
+                    scope:duchy_to_give = {
+                        change_title_holder = {
+                            holder = scope:chosen_follower
+                            change = scope:duchy_grant_change
+                        }
+                    }
+
+                    # Grant all de jure counties in this duchy that the attacker holds
+                    scope:duchy_to_give = {
+                        every_in_de_jure_hierarchy = {
+                            limit = {
+                                tier = tier_county
+                                holder = scope:attacker
+                                is_in_list = counties_to_take
+                            }
+                            change_title_holder = {
+                                holder = scope:chosen_follower
+                                change = scope:duchy_grant_change
+                                take_baronies = yes
+                            }
+                        }
+                    }
+
+                    resolve_title_and_vassal_change = scope:duchy_grant_change
+                }
+            }
+        }
+
+        ## --- 7. FINAL INCURSION MECHANICS ---
+        scope:attacker = {
+            custom_tooltip = selian_incursion_gain_titles_tt
+
+            scope:defender = {
+                pay_short_term_gold = {
+                    target = scope:attacker
+                    gold = major_gold_value
+                }
+                gok_realm_devastation_effect = yes
+            }
+
+            gok_retribution_cleanup_effect = yes
+            show_pow_release_message_effect = yes
+        }
+
+        add_legitimacy_attacker_victory_effect = yes
+
+        if = {
+            limit = { scope:defender = { sub_realm_size >= 20 } }
+            scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+        }
+        else_if = {
+            limit = { scope:defender = { sub_realm_size >= 10 } }
+            scope:attacker = { accolade_attacker_war_end_glory_gain_med_effect = yes }
+        }
+        else = {
+            scope:attacker = { accolade_attacker_war_end_glory_gain_low_effect = yes }
+        }
+
+        modify_allies_of_participants_fame_values = {
+            WINNER = scope:attacker
+            FAME_BASE = mongol_invasion_cb_ally_prestige
+            IS_RELIGIOUS_WAR = no
+            WINNER_ALLY_FAME_SCALE = 1
+            LOSER_ALLY_FAME_SCALE = 3
+        }
+
+        scope:attacker = {
+            add_prestige_experience = {
+                value = mongol_invasion_cb_prestige_experience_gain
+            }
+            trigger_event = nars_courtiers.0021
+        }
+
+        scope:defender = {
+            add_prestige = {
+                value = major_prestige_value
+                multiply = -1.0
+            }
+        }
+
+        scope:attacker = { fp1_remember_recent_conquest_victory_effect = yes }
+        laamp_as_mercenary_payout_tooltip_effect = yes
+    }
+
+    on_white_peace_desc = {
+        desc = {
+            first_valid = {
+                triggered_desc = {
+                    trigger = { scope:defender = { is_local_player = yes } }
+                    desc = selian_incursion_white_peace_defender
+                }
+                desc = selian_incursion_white_peace
+            }
+        }
+    }
+
+    on_white_peace = {
+        scope:defender = {
+            every_sub_realm_county = {
+                limit = { county_controller = scope:attacker }
+                add_to_list = occupied_counties
+            }
+            create_title_and_vassal_change = {
+                type = conquest
+                save_scope_as = change
+                add_claim_on_loss = yes
+            }
+            every_in_list = {
+                list = occupied_counties
+                change_title_holder = {
+                    holder = scope:attacker
+                    change = scope:change
+                }
+            }
+            resolve_title_and_vassal_change = scope:change
+        }
+
+        scope:attacker = { show_pow_release_message_effect = yes }
+        scope:defender = { accolade_defender_war_end_glory_gain_med_effect = yes }
+
+        modify_allies_of_participants_fame_values = {
+            WINNER = scope:attacker
+            FAME_BASE = mongol_invasion_cb_ally_prestige
+            IS_RELIGIOUS_WAR = no
+            WINNER_ALLY_FAME_SCALE = 1
+            LOSER_ALLY_FAME_SCALE = 5
+        }
+
+        add_truce_white_peace_effect = yes
+
+        scope:attacker = {
+            add_prestige = major_prestige_loss
+            add_legitimacy = minor_legitimacy_loss
+            stress_impact = {
+                ambitious = minor_stress_impact_gain
+                arrogant = minor_stress_impact_gain
+            }
+        }
+
+        laamp_as_mercenary_payout_tooltip_effect = yes
+        gok_retribution_cleanup_effect = yes
+    }
+
+    on_defeat_desc = {
+        desc = {
+            first_valid = {
+                triggered_desc = {
+                    trigger = { scope:attacker = { is_local_player = yes } }
+                    desc = selian_incursion_defeat_attacker
+                }
+                triggered_desc = {
+                    trigger = { scope:defender = { is_local_player = yes } }
+                    desc = selian_incursion_defeat_defender
+                }
+                desc = selian_incursion_defeat
+            }
+        }
+    }
+
+    on_defeat = {
+        scope:attacker = { show_pow_release_message_effect = yes }
+
+        scope:defender = {
+            mandala_peacemaker_perk_serenity_effect = yes
+            accolade_defender_war_end_glory_gain_high_effect = yes
+        }
+
+        modify_allies_of_participants_fame_values = {
+            WINNER = scope:defender
+            FAME_BASE = mongol_invasion_cb_ally_prestige
+            IS_RELIGIOUS_WAR = no
+            WINNER_ALLY_FAME_SCALE = 1
+            LOSER_ALLY_FAME_SCALE = 10
+        }
+
+        add_truce_attacker_defeat_effect = yes
+
+        scope:defender = {
+            if = {
+                limit = {
+                    OR = {
+                        is_ai = no
+                        scope:attacker = { is_ai = no }
+                    }
+                }
+
+                add_legitimacy_attacker_defeat_effect = yes
+
+                scope:attacker = {
+                    add_prestige = massive_prestige_loss
+                    add_legitimacy = major_legitimacy_loss
+                    stress_impact = {
+                        ambitious = medium_stress_impact_gain
+                        arrogant = medium_stress_impact_gain
+                    }
+                    pay_short_term_gold_reparations_effect = { GOLD_VALUE = 5 }
+                    every_vassal = {
+                        custom = custom.every_vassal
+                        add_opinion = {
+                            modifier = disapproval
+                            target = prev
+                            opinion = -40
+                            years = 4
+                        }
+                    }
+                    save_temporary_scope_as = loser
+                }
+
+                add_prestige = mongol_invasion_cb_prestige_gain
+                on_lost_aggression_war_discontent_loss = yes
+            }
+        }
+        selian_minor_county_effect = yes
+        laamp_as_mercenary_payout_tooltip_effect = yes
+        gok_retribution_cleanup_effect = yes
+    }
+
+    transfer_behavior = transfer
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    war_name = "selian_incursion_NAME"
+    my_war_name = "selian_incursion_NAME_MY"
+    war_name_base = "selian_incursion_NAME_BASE"
+    cb_name = "selian_incursion_NAME_BASE"
+
+    ticking_war_score_targets_entire_realm = yes
+    attacker_wargoal_percentage = 0.8
+    attacker_ticking_warscore = 0
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_occupation = 150
+    attacker_score_from_occupation_scale = 50
+    defender_score_from_occupation_scale = 50
+
+    max_ai_diplo_distance_to_title = 500
+}

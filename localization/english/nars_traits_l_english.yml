@@ -1,12 +1,12 @@
 ﻿l_english: 
  nars_conqueror.name: "Nikátōr"
  nars_conqueror.no_actor: "Ever-Victorious"
- trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Knósioi' toil, heralding an era of eternal, ever-victorious restoration."
- trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Knósioi' toil for restoration and their foremost scion of war and conquest!"
- TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [knos_incursion|E] [casus_belli|E]"
+ trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Selian' toil, heralding an era of eternal, ever-victorious restoration."
+ trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Selian' toil for restoration and their foremost scion of war and conquest!"
+ TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [selian_incursion|E] [casus_belli|E]"
  
  nars_scion.name: "Mōnarkíad"
- nars_scion.no_actor: "Panteíon-Blessed"
+ nars_scion.no_actor: "Politeíon-Blessed"
  trait_nars_scion_desc: "The works this bloodline has set into the order of the world are not given to forgetting. From it comes a sacred scion, born of faith and blood."
  trait_nars_scion_character_desc: "The pledge for hegemonic restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the world are etched in the fibers of history."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
@@ -14,9 +14,9 @@
  trait_track_polymetis:0 "Metís"
  trait_track_polymetis_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
 
- nars_naturalis.name: "Knósioi"
- nars_naturalis.no_actor: "Knós-Blooded"
- trait_nars_naturalis_desc: "Knósioi blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
+ nars_naturalis.name: "Selian"
+ nars_naturalis.no_actor: "Selian-Blooded"
+ trait_nars_naturalis_desc: "Selian blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
 
  nars_alnars.name: "Sōtēr"
  nars_alnars.no_actor: "Savior-Deliverer"

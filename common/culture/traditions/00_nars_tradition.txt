@@ -86,7 +86,7 @@ tradition_nars_science = {
     }
     character_modifier = {
         monthly_lifestyle_xp_gain_mult = 0.15
-        opinion_of_different_culture = -30
+        opinion_of_different_culture = -150
     }
 }
 

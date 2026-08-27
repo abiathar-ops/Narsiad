@@ -1,6 +1,6 @@
 # Defined early so tenets / other doctrines can override these
 
-knos_hostility_doctrine = {
+selian_hostility_doctrine = {
 	visible = no
 
 	parameters = {

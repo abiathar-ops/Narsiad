@@ -1,12 +1,12 @@
 ﻿# --- 1. CORE SETUP EFFECT ---
 nars_one_time_maintenance_on_action = {
     trigger = {
-        NOT = { has_character_flag = knos_initialized }
+        NOT = { has_character_flag = selian_initialized }
 		is_alive = yes
-		is_ethnically_knos = yes
+		is_ethnically_selian = yes
     }
     effect = {
-        add_character_flag = knos_initialized
+        add_character_flag = selian_initialized
 		nars_apply_setup_effect = yes
 		nars_naturalis_set_tier_xp_effect = yes
     }
@@ -59,8 +59,8 @@ nars_global_world_setup_on_action = {
             if = {
                 limit = { 
                     OR = {
-                        is_ethnically_knos = yes
-                        has_culture = culture:knos
+                        is_ethnically_selian = yes
+                        has_culture = culture:selian
                     }
                     NOT = { has_trait = nars_naturalis }
                 }
@@ -80,7 +80,7 @@ nars_global_world_setup_on_action = {
                 owner = {
                     is_alive = yes
                     is_landless_adventurer = yes
-                    is_ethnically_knos = yes
+                    is_ethnically_selian = yes
                 }
             }
             nars_laamp_camp_setup_effect = yes
@@ -121,7 +121,7 @@ nars_intro_on_start = {
         every_player = {
             limit = { is_alive = yes }
             if = {
-                limit = { is_knos = yes }
+                limit = { is_selian = yes }
                 trigger_event = { id = nars_intro.1001 days = 1 }
                 
                 random_ruler = {
@@ -138,7 +138,7 @@ nars_intro_on_start = {
                 }
             }
             else_if = {
-                limit = { is_knos = no }
+                limit = { is_selian = no }
                 trigger_event = { id = nars_intro.0001 days = 1 }
             }
         }
@@ -147,7 +147,7 @@ nars_intro_on_start = {
         every_ruler = {
             limit = {
                 is_alive = yes
-                is_knos = yes
+                is_selian = yes
                 is_independent_ruler = yes
             }
             
@@ -161,7 +161,7 @@ nars_intro_on_start = {
             if = {
                 # Changed from is_ruler to is_landed, as landless adventurers shouldn't try to settle counties
                 limit = { is_landed = yes } 
-                knos_settle_county_effect = yes
+                selian_settle_county_effect = yes
             }
         }
     } 

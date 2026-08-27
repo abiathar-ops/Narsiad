@@ -1,7 +1,7 @@
-﻿knos_religion = {
-	family = rf_knos
+﻿selian_religion = {
+	family = rf_selian
 	graphical_faith = pagan.gfx
-	doctrine = knos_hostility_doctrine
+	doctrine = selian_hostility_doctrine
 	doctrine = divine_destiny_doctrine
 
 	#Main Group
@@ -51,7 +51,7 @@
 
 	holy_order_names = {
 		{ name = "holy_order_host_of_place" }
-		{ name = "holy_order_order_of_alnares" }
+		{ name = "holy_order_order_of_place" }
 	}
 
 	holy_order_maa = { maa_hoplitai }

@@ -1,4 +1,4 @@
-# 70000014_knos = {
+# 70000014_selian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -17,7 +17,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000015_knos = {
+	# 70000015_selian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -63,7 +63,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000016_knos = {
+	# 70000016_selian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -82,7 +82,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000017_knos = {
+	# 70000017_selian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -113,7 +113,7 @@
 	# 		}
 	# 	}
 	# }
-	# 70000018_knos = {
+	# 70000018_selian = {
 	# 	dna_modifiers = {
 	# 		accessory = {
 	# 			mode = add
@@ -157,7 +157,7 @@
 	# 		base = 0
 	# 		modifier = {
 	# 			add = 2000
-	# 			is_ethnically_knos = yes
+	# 			is_ethnically_selian = yes
 	# 			has_education_rank_5_trigger = yes
 	# 		}
 	# 	}

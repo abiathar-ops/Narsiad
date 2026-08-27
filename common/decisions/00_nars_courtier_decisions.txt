@@ -1,9 +1,9 @@
-decision_recruit_knos_courtier = {
+﻿decision_recruit_selian_courtier = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
-	sort_order = 0
+	sort_order = 1000
 	decision_group_type = courtier
 
 	ai_check_interval_by_tier = {
@@ -21,7 +21,7 @@ decision_recruit_knos_courtier = {
 
 	is_shown = {
 		is_landed_or_landless_administrative = yes
-		is_knos = yes
+		is_selian = yes
 	}
 
 	is_valid = {
@@ -41,50 +41,50 @@ decision_recruit_knos_courtier = {
 		decision_to_second_step_button =  "SELECT_ACTION"
 		show_from_start = yes
 
-		item = { # 2 Normal Knóss
-			value = decision_hire_knos_1
+		item = { # 2 Normal Selians
+			value = decision_hire_selian_1
 			is_shown = {
 				is_ruler = yes
 				is_landless_adventurer = no
-				is_knos = yes
+				is_selian = yes
 			}
 			is_valid = {
-				is_knos = yes
+				is_selian = yes
 				is_at_war = no
 				is_imprisoned = no
 				NOR = {
 					custom_tooltip = {
-						text = recruit_knos_1_cooldown_tt
-						has_character_flag = recruit_knos_1_cooldown
+						text = recruit_selian_1_cooldown_tt
+						has_character_flag = recruit_selian_1_cooldown
 					}
 				}
 			}
-			current_description = decision_hire_knos_1_desc
-			localization = decision_hire_knos_1
+			current_description = decision_hire_selian_1_desc
+			localization = decision_hire_selian_1
 			icon = "gfx/interface/icons/court_position_types/yeke_jarquchi_court_position.dds"
 			ai_chance = { value = 100 }
 		} 
-		item = { # Choice of 2 really good knoss
-			value = decision_hire_knos_2
+		item = { # Choice of 2 really good selians
+			value = decision_hire_selian_2
 			is_shown = {
 				exists = primary_title 
 				is_landless_adventurer = no
-				is_knos = yes
+				is_selian = yes
 			}
 			is_valid = {
 				is_at_war = no
 				is_imprisoned = no
 				highest_held_title_tier >= tier_kingdom
-				gold >= major_treasury_or_gold_value
+				gold >= medium_treasury_or_gold_value
 				NOR = {
 					custom_tooltip = {
-						text = recruit_knos_2_cooldown_tt
-						has_character_flag = recruit_knos_2_cooldown
+						text = recruit_selian_2_cooldown_tt
+						has_character_flag = recruit_selian_2_cooldown
 					}
 				}
 			}
-			current_description = decision_hire_knos_2_desc
-			localization = decision_hire_knos_2
+			current_description = decision_hire_selian_2_desc
+			localization = decision_hire_selian_2
 			icon = "gfx/interface/icons/court_position_types/champion_court_position.dds"
 			ai_chance = {
 				value = 100
@@ -93,7 +93,7 @@ decision_recruit_knos_courtier = {
 						NOR = {
 							highest_held_title_tier > tier_barony
 							is_landed_or_landless_administrative = yes
-							gold > major_treasury_or_gold_value
+							gold > medium_treasury_or_gold_value
 							is_at_war = no
 						}
 					}
@@ -105,23 +105,23 @@ decision_recruit_knos_courtier = {
 
 	effect = {
 		if = {
-			limit = { scope:decision_hire_knos_1 = yes }
-			custom_tooltip = decision_hire_knos_1_tooltip
+			limit = { scope:decision_hire_selian_1 = yes }
+			custom_tooltip = decision_hire_selian_1_tooltip
 		}
 		else_if = {
-			limit = { scope:decision_hire_knos_2 = yes }
-			custom_tooltip = decision_hire_knos_2_tooltip
+			limit = { scope:decision_hire_selian_2 = yes }
+			custom_tooltip = decision_hire_selian_2_tooltip
 		}
 		hidden_effect = {
-			custom_tooltip = decision_recruit_knos_courtier_tooltip
+			custom_tooltip = decision_recruit_selian_courtier_tooltip
 			if = { # 3 men of narses 
-				limit = { scope:decision_hire_knos_1 = yes }
+				limit = { scope:decision_hire_selian_1 = yes }
 				set_variable = {
-					name = recruit_knos_1_cooldown
+					name = recruit_selian_1_cooldown
 					years = 10
 				}
 				set_variable = {
-					name = number_of_invite_knos_countdown
+					name = number_of_invite_selian_countdown
 					value = 4
 					days = 1000
 					}
@@ -131,9 +131,9 @@ decision_recruit_knos_courtier = {
 				}
 			}
 			else_if = { # 2 Sophes
-				limit = { scope:decision_hire_knos_2 = yes }
+				limit = { scope:decision_hire_selian_2 = yes }
 				add_character_flag = {
-					flag = recruit_knos_2_cooldown
+					flag = recruit_selian_2_cooldown
 					years = 5
 				}
 				trigger_event = {
@@ -145,7 +145,7 @@ decision_recruit_knos_courtier = {
 	}
 	
 	ai_potential = {
-		is_knos = yes
+		is_selian = yes
 		is_landed_or_landless_administrative = yes
 		modifier = {
 			add = 30
@@ -154,14 +154,14 @@ decision_recruit_knos_courtier = {
 	}
 }
 
-decision_recruit_knos_adventurer = {
+decision_recruit_selian_adventurer = {
 	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
-	sort_order = 0
+	sort_order = 1000
 	decision_group_type = courtier
-	desc = decision_recruit_knos_adventurer_desc
+	desc = decision_recruit_selian_adventurer_desc
 
 	cooldown = { years = 2 }
 
@@ -180,7 +180,7 @@ decision_recruit_knos_adventurer = {
 
 	is_shown = {
 		is_landless_adventurer = yes
-		is_knos = yes
+		is_selian = yes
 	}
 
 	is_valid = {
@@ -195,9 +195,9 @@ decision_recruit_knos_adventurer = {
 	}
 
 	effect = {
-		custom_tooltip = decision_recruit_knos_adventurer_tooltip
+		custom_tooltip = decision_recruit_selian_adventurer_tooltip
 		set_variable = {
-			name = number_of_invite_knos_countdown
+			name = number_of_invite_selian_countdown
 			value = 4
 			days = 1000
 			}

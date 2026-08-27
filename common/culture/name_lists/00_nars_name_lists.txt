@@ -51,7 +51,7 @@ name_list_nars = {
 		"dynn_Kedon" "dynn_Keiriades" "dynn_Keletronios" "dynn_Kentriades" "dynn_Kephalethen" "dynn_Kephalides" "dynn_Kephallan" "dynn_Kephisieus"
 		"dynn_Kerameon" "dynn_Keramis" "dynn_Keraunios" "dynn_Kerkadas" "dynn_Kerkas" "dynn_Keryx" "dynn_Kettios" "dynn_Kianos"
 		"dynn_Kidramenos" "dynn_Kikkyneus" "dynn_Kinambros" "dynn_Kisazenos" "dynn_Klaries" "dynn_Klazomenios" "dynn_Kleodaidas" "dynn_Kleonai"
-		"dynn_Kleonaios" "dynn_Kletorios" "dynn_Knidios" "dynn_Knosios" "dynn_Koila" "dynn_Koilaletes" "dynn_Koiles" "dynn_Koios"
+		"dynn_Kleonaios" "dynn_Kletorios" "dynn_Knidios" "dynn_Selianios" "dynn_Koila" "dynn_Koilaletes" "dynn_Koiles" "dynn_Koios"
 		"dynn_Koironides" "dynn_Kokeloneus" "dynn_Koleis" "dynn_Kolieus" "dynn_Kollyteus" "dynn_Koloenos" "dynn_Kolonaias" "dynn_Kolonethen"
 		"dynn_Kolonos" "dynn_Kolonou" "dynn_Kolouris" "dynn_Komades" "dynn_Konnides" "dynn_Konthylethen" "dynn_Kopeos" "dynn_Kopreios"
 		"dynn_Korallos" "dynn_Koronaeus" "dynn_Koroneus" "dynn_Korontaios" "dynn_Korpilos" "dynn_Kortynes" "dynn_Korydalleus" "dynn_Kothokides"
@@ -163,7 +163,7 @@ name_list_nars = {
 		"dynn_Kedon" "dynn_Keiriades" "dynn_Keletronios" "dynn_Kentriades" "dynn_Kephalethen" "dynn_Kephalides" "dynn_Kephallan" "dynn_Kephisieus"
 		"dynn_Kerameon" "dynn_Keramis" "dynn_Keraunios" "dynn_Kerkadas" "dynn_Kerkas" "dynn_Keryx" "dynn_Kettios" "dynn_Kianos"
 		"dynn_Kidramenos" "dynn_Kikkyneus" "dynn_Kinambros" "dynn_Kisazenos" "dynn_Klaries" "dynn_Klazomenios" "dynn_Kleodaidas" "dynn_Kleonai"
-		"dynn_Kleonaios" "dynn_Kletorios" "dynn_Knidios" "dynn_Knosios" "dynn_Koila" "dynn_Koilaletes" "dynn_Koiles" "dynn_Koios"
+		"dynn_Kleonaios" "dynn_Kletorios" "dynn_Knidios" "dynn_Selianios" "dynn_Koila" "dynn_Koilaletes" "dynn_Koiles" "dynn_Koios"
 		"dynn_Koironides" "dynn_Kokeloneus" "dynn_Koleis" "dynn_Kolieus" "dynn_Kollyteus" "dynn_Koloenos" "dynn_Kolonaias" "dynn_Kolonethen"
 		"dynn_Kolonos" "dynn_Kolonou" "dynn_Kolouris" "dynn_Komades" "dynn_Konnides" "dynn_Konthylethen" "dynn_Kopeos" "dynn_Kopreios"
 		"dynn_Korallos" "dynn_Koronaeus" "dynn_Koroneus" "dynn_Korontaios" "dynn_Korpilos" "dynn_Kortynes" "dynn_Korydalleus" "dynn_Kothokides"
@@ -471,7 +471,7 @@ name_list_nars = {
 		Thrasoulaos Thrasyboula Thrasyboule Thrasymenes Thrasynon Threpte Thynnon Thyro
 		Thyzotos Tileias Tima Timaia Timakleidas Timandra Timandros Timanor
 		Timarche Timarchis Timasikrates Timasitheos Timasithia Timasithios Timasos Timodike
-		Timominoes Timokratis Timokreon Timokres Timokrita Timokrite Timola Timomacha
+		Timoselianes Timokratis Timokreon Timokres Timokrita Timokrite Timola Timomacha
 		Timomeilos Timonides Timossa Timostrata Timostratis Timostratos Timyllos Tiouchon
 		Tiron Tisandros Titthe Tityrmos Tmoleides Tmolos Tollos Torteas
 		Touchanor Tourannis Trieteris Trocheis Trochis Troias_2 Trouphera Tryphe
@@ -631,7 +631,7 @@ name_list_nars = {
 	
 
 	mercenary_names = {
-		{ name = "mercenary_company_hoplites_of_knos" }
+		{ name = "mercenary_company_hoplites_of_selian" }
 		{ name = "mercenary_company_heruli" }
 		{ name = "mercenary_company_free_company" }
 		{ name = "mercenary_company_optimates" }

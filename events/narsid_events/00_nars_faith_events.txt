@@ -68,20 +68,27 @@ nars_faith.1003 = {
 # Impose Minoes Tradition
 
 nars_faith.1011 = {
+	hidden = yes
 	type = character_event
-	title = nars_faith.1011.t
-	desc = nars_faith.1011.desc
-	theme = administrative
-	override_background = ep3_hippodrome
-	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
-	left_portrait = {
-		character = root
-		animation = personality_zealous
-		camera = camera_event_right_fully_away
-	}
 
-	option = {
-		name = nars_faith.1011.a
+	immediate = {
+		if = {
+			limit = { highest_held_title_tier >= empire }
+			selian_major_county_effect = yes
+		}
+		else_if = {
+			limit = { highest_held_title_tier = kingdom }
+			selian_moderate_county_effect = yes
+		}
+		else = {
+			selian_minor_county_effect = yes
+		}
+
+		send_interface_message = {
+            title = nars_faith_1011_toast_title
+        	desc = nars_faith_1011_toast_desc
+			type = event_prowess_good_desc
+        }
 	}
 }
 
@@ -130,40 +137,40 @@ nars_faith.1031 = {
 		name = nars_faith.1031.a
 		trigger = {
 			NOR = {	
-				has_character_modifier = panteion_knos_narses
+				has_character_modifier = panteion_selian_narses
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_knos_narses }
-		set_panteion_effect = { PANTEION = panteion_knos_narses }
+		show_as_unavailable = { has_character_modifier = panteion_selian_narses }
+		set_panteion_effect = { PANTEION = panteion_selian_narses }
 	}
 
 	option = {
 		name = nars_faith.1031.b
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_knos_phokas
+				has_character_modifier = panteion_selian_phokas
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_knos_phokas }
-		set_panteion_effect = { PANTEION = panteion_knos_phokas }
+		show_as_unavailable = { has_character_modifier = panteion_selian_phokas }
+		set_panteion_effect = { PANTEION = panteion_selian_phokas }
 	}
 
 	option = {
 		name = nars_faith.1031.c
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_knos_enuo
+				has_character_modifier = panteion_selian_enuo
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_knos_enuo }
-		set_panteion_effect = { PANTEION = panteion_knos_enuo }
+		show_as_unavailable = { has_character_modifier = panteion_selian_enuo }
+		set_panteion_effect = { PANTEION = panteion_selian_enuo }
 	}
 
 	# Opt-Out
 	option = {
 		name = nars_faith.1031.optout
 		flavor = nars_faith.1031.flavor
-		remove_character_flag = faith_knos_2_cooldown 
+		remove_character_flag = faith_selian_2_cooldown 
 		ai_chance = {
 			base = 0
 		}
@@ -197,7 +204,7 @@ nars_faith.1041 = {
 			}
 			random_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
-					valid_for_knos_conversion_trigger = yes
+					valid_for_selian_conversion_trigger = yes
 				}
 				save_scope_as = pagan
 			}
@@ -205,14 +212,14 @@ nars_faith.1041 = {
 		else = {
 			random_neighboring_and_across_water_realm_same_rank_owner = {
 				limit = {
-					valid_for_knos_conversion_trigger = yes
+					valid_for_selian_conversion_trigger = yes
 				}
 				save_scope_as = pagan
 				create_character = {
 					location = root.location
-					template = knos_template.1011
-					culture = root.culture
-					faith = root.faith
+					template = selian_template.1011
+					culture = culture:selian
+					faith = faith:nars_religion
 					gender_female_chance = 100
 					save_scope_as = evangelizer
 					after_creation = {
@@ -225,7 +232,7 @@ nars_faith.1041 = {
 		random_pool_character = {
 			province = root.location
 			limit = {
-				faith = root.faith
+				faith = faith:nars_religion
 				learning >= decent_skill_rating
 			}
 			save_scope_as = evangelizer
@@ -236,9 +243,9 @@ nars_faith.1041 = {
 			}
 			create_character = {
 				location = root.location
-				culture = root.culture
-				faith = root.faith
-				template = knos_template.1011
+				culture = culture:selian
+				faith = faith:nars_religion
+				template = selian_template.1011
 				gender_female_chance = 100
 				save_scope_as = evangelizer
 				after_creation = {

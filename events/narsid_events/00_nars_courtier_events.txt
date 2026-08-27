@@ -4,7 +4,7 @@ nars_courtiers.0001 = {
 	hidden = yes
 
 	trigger = {
-		exists = var:number_of_invite_knos_countdown
+		exists = var:number_of_invite_selian_countdown
 	}
 
 	immediate = {
@@ -26,7 +26,7 @@ nars_courtiers.0001 = {
 			}
 		}
 
-		# Gather Knós pool characters with suitable prowess
+		# Gather Selian pool characters with suitable prowess
 		every_in_list = {
 			list = pool_provinces
 			save_temporary_scope_as = pool_province
@@ -62,16 +62,16 @@ nars_courtiers.0001 = {
 					}
 				}
 			}
-			save_scope_as = knos_courtier
+			save_scope_as = selian_courtier
 		}
 
-		# If no suitable pool character exists, create a fresh Knós warrior
+		# If no suitable pool character exists, create a fresh Selian warrior
 		if = {
-			limit = { NOT = { exists = scope:knos_courtier } }
+			limit = { NOT = { exists = scope:selian_courtier } }
 			create_character = {
 				location = root.capital_province
-				culture = root.culture
-				faith = root.faith
+				culture = culture:selian
+				faith = faith:nars_religion
 				random_traits_list = {
 					count = 2
 					wrathful = {}
@@ -118,7 +118,7 @@ nars_courtiers.0001 = {
 				martial = { 10 25 }
 				prowess = { 15 30 }
 				gender_female_chance = 50
-				save_scope_as = knos_courtier
+				save_scope_as = selian_courtier
 				after_creation = {
 					add_trait = nars_naturalis
 					nars_naturalis_set_tier_xp_effect = yes
@@ -127,26 +127,27 @@ nars_courtiers.0001 = {
 		}
 
 		# Bring the courtier to court and notify the player
-		add_courtier = scope:knos_courtier
+		add_courtier = scope:selian_courtier
+		
 		send_interface_message = {
 			title = nars_courtiers.0001.t
 			desc = nars_courtiers.0001.desc
 			type = event_prowess_good_desc
-			left_icon = scope:knos_courtier
+			left_icon = scope:selian_courtier
 		}
 
 		# Count down and either end the chain or schedule the next arrival
 		change_variable = {
-			name = number_of_invite_knos_countdown
+			name = number_of_invite_selian_countdown
 			subtract = 1
 		}
 
 		if = {
-			limit = { var:number_of_invite_knos_countdown = 0 }
-			remove_variable = number_of_invite_knos_countdown
+			limit = { var:number_of_invite_selian_countdown = 0 }
+			remove_variable = number_of_invite_selian_countdown
 		}
 		else = {
-			clear_saved_scope = knos_courtier
+			clear_saved_scope = selian_courtier
 			trigger_event = {
 				id = nars_courtiers.0001
 				days = { 100 200 }
@@ -165,8 +166,8 @@ nars_courtiers.0002 = {
             
             create_character = {
                 employer = root # Automatically adds them directly to your landless camp/court
-                culture = root.culture
-				faith = root.faith
+                culture = culture:selian
+				faith = faith:nars_religion
                 age = { 18 40 } # Prevents it from spawning babies or useless elderly characters
                 gender_female_chance = 50
 				random_traits_list = {
@@ -223,6 +224,93 @@ nars_courtiers.0002 = {
     }
 }
 
+nars_courtiers.0003 = {
+    hidden = yes
+
+    immediate = {
+        # Loops exactly the number of times specified
+        while = {
+            count = 5
+            
+            create_character = {
+                employer = root # Automatically adds them directly to your landless camp/court
+                culture = culture:selian
+				faith = faith:nars_religion
+                age = { 18 40 } # Prevents it from spawning babies or useless elderly characters
+                gender_female_chance = 0
+				random_traits_list = {
+					count = 2
+					wrathful = {}
+					arrogant = {}
+					diligent = {}
+					humble = {}
+					calm = {}
+					impatient = {}
+					greedy = {}
+					temperate = {}
+					ambitious = {}
+					just = {}
+					stubborn = {}
+				}
+				random_traits_list = {
+					count = 1
+					lustful = {}
+					arrogant = {}
+					chaste = {}
+				}
+				random_traits_list = {
+					count = 1
+					education_martial_2 = {}
+					education_martial_3 = {}
+					education_martial_4 = {}
+					education_learning_2 = {}
+					education_learning_3 = {}
+					education_learning_4 = {}
+					education_stewardship_2 = {}
+					education_stewardship_3 = {}
+					education_stewardship_4 = {}
+				}
+				random_traits_list = {
+					count = { 0 1 }
+					fecund = {}
+					physique_good_1 = {}
+					shrewd = {}
+					strong = {}
+				}
+                learning = { 10 25 }
+				intrigue = { 10 25 }
+				stewardship = { 10 25 }
+				diplomacy = { 10 25 }
+				martial = { 10 25 }
+				prowess = { 10 30 }
+                after_creation = {
+                    remove_bad_traits = yes
+                }
+            }
+        }
+    }
+}
+
+nars_courtiers.0004 = {
+	hidden = yes
+	immediate = {
+		while = {
+			count = 4
+			random_courtier_or_guest = {
+				limit = {
+					is_adult = yes
+					NOT = { is_close_family_of = root }
+					NOT = { is_spouse_of = root }
+				}
+				death = {
+					death_reason = death_murder
+					killer = root
+				}
+			}
+		}
+	}
+}
+
 nars_courtiers.0011 = {
     type = character_event
     title = nars_courtiers.0011.t
@@ -253,8 +341,8 @@ nars_courtiers.0011 = {
             #────────────────────────────────────────────────
             create_character = {
                 employer = root 
-                culture = root.culture
-                faith = root.faith
+                culture = culture:selian
+                faith = faith:nars_religion
                 age = { 21 45 } 
                 gender_female_chance = 50
                 
@@ -339,8 +427,8 @@ nars_courtiers.0011 = {
             #────────────────────────────────────────────────
             create_character = {
                 employer = root 
-                culture = root.culture
-                faith = root.faith
+                culture = culture:selian
+                faith = faith:nars_religion
                 age = { 21 45 } 
                 gender_female_chance = 50
                 
@@ -539,6 +627,209 @@ nars_courtiers.0011 = {
 			}
 		}
 	}
+}
+
+nars_courtiers.0020 = {
+    type = character_event
+    hidden = yes
+
+    immediate = {
+        # 1. FIND THE TARGET KINGDOM
+        random_neighboring_and_across_water_realm_owner = {
+            limit = {
+                highest_held_title_tier = tier_kingdom
+                NOR = { 
+					is_selian = yes
+					is_archaic = yes 
+				}
+            }
+            save_scope_as = target_kingdom_ruler
+        }
+
+        if = {
+            limit = {
+                any_courtier = {
+                    is_adult = yes
+                    is_imprisoned = no
+                    is_incapable = no
+                    is_councillor = no
+                    OR = {
+                        is_close_family_of = root
+                        is_extended_family_of = root
+                    }
+					has_court_position = no
+                }
+            }
+            ordered_courtier = {
+                limit = {
+                    is_adult = yes
+                    is_imprisoned = no
+                    is_incapable = no
+                    is_councillor = no
+                    OR = {
+                        is_close_family_of = root
+                        is_extended_family_of = root
+                    }
+					has_court_position = no
+                }
+                order_by = martial
+                save_scope_as = new_adventurer
+            }
+        }
+        else_if = {
+            limit = {
+                any_courtier = {
+                    is_adult = yes
+                    is_imprisoned = no
+                    is_incapable = no
+                    is_councillor = no
+                    NOR = {
+                        is_close_family_of = root
+                        is_extended_family_of = root
+                    }
+					has_court_position = no
+                }
+            }
+            ordered_courtier = {
+                limit = {
+                    is_adult = yes
+                    is_imprisoned = no
+                    is_incapable = no
+                    is_councillor = no
+                    NOR = {
+                        is_close_family_of = root
+                        is_extended_family_of = root
+                    }
+					has_court_position = no
+                }
+                order_by = martial
+                save_scope_as = new_adventurer
+            }
+        }
+        else = {
+            create_character = {
+                template = selian_template.1012
+                culture = culture:selian
+                faith = faith:nars_religion
+                gender = male
+                age = { 25 40 }
+                location = root.capital_province
+                save_scope_as = new_adventurer
+                after_creation = {
+                    add_trait = nars_naturalis
+                }
+            }
+        }
+
+        # 3. APPLY EFFECTS AND DECLARE WAR
+        scope:new_adventurer = {
+			set_variable = { name = selian_sponsor value = root }
+            # Turn them into a Landless Adventurer
+            create_landless_adventurer_title_effect = {
+				REASON = flag:voluntary
+				FLAVOR_CHAR = scope:new_adventurer
+			} 
+
+			while = {
+				count = 4
+				trigger_event = nars_courtiers.0002
+			}
+
+            spawn_army = {
+                men_at_arms = { type = maa_hoplitai stacks = 15 }
+				men_at_arms = { type = mangonel stacks = 10 }
+                levies = 2750
+                inheritable = no
+                uses_supply = no
+                location = root.capital_province
+                name = event_troop_default_name
+            }
+
+            if = {
+                limit = { exists = scope:target_kingdom_ruler }
+                start_war = {
+                    target = scope:target_kingdom_ruler
+					target_title = all
+                    cb = selian_expedition_cb
+                }
+            }
+        }
+
+		root = {
+            send_interface_message = {
+                title = nars_courtiers.0020.toast.t
+                left_icon = scope:new_adventurer
+				type = event_prowess_good_desc
+                right_icon = scope:target_kingdom_ruler
+                desc = nars_courtiers.0020.toast.desc
+            }
+        }
+    }
+}
+
+nars_courtiers.0021 = {
+    type = character_event
+    hidden = yes
+
+    immediate = {
+        save_scope_as = adventurer
+        
+        if = {
+            limit = {
+                exists = var:selian_sponsor
+            }
+            
+            var:selian_sponsor = {
+                save_scope_as = sponsor
+                
+                if = {
+                    limit = {
+                        highest_held_title_tier >= tier_empire
+                    }
+                    
+                    # Safely package the vassalization logic
+                    create_title_and_vassal_change = {
+                        type = swear_fealty
+                        save_scope_as = change
+                        add_claim_on_loss = no
+                    }
+                    
+                    # Apply and resolve the liege change on the adventurer
+                    scope:adventurer = {
+                        change_liege = {
+                            liege = scope:sponsor
+                            change = scope:change
+                        }
+                        resolve_title_and_vassal_change = scope:change
+                    }
+                    
+                    send_interface_message = {
+                        title = nars_courtiers.0021.vassal.t
+                        left_icon = scope:adventurer
+                        type = event_prowess_good_desc
+                        desc = nars_courtiers.0021.vassal.desc
+                    }
+                }
+                else_if = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+					}
+					start_tributary_interaction_effect = {
+						TRIBUTARY = scope:adventurer
+						SUZERAIN = scope:sponsor
+					}
+					send_interface_message = {
+						title = nars_courtiers.0021.tributary.t
+						left_icon = scope:adventurer
+						type = event_prowess_good_desc
+						desc = nars_courtiers.0021.tributary.desc
+					}
+				}
+            }
+        }
+        
+        remove_variable = selian_sponsor
+    }
 }
 
 namespace = nars_gunpowder

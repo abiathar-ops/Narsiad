@@ -105,7 +105,7 @@ nars_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:knos
+            culture = culture:selian
             female = no
             
             # Dynamic Dynasty Generation
@@ -151,7 +151,7 @@ nars_intro.0001 = {
             set_coa = h_narsokratia
         }
         create_character = {
-            template = knos_template.1002
+            template = selian_template.1002
             gender = female
             age = 64
             location = root.location
@@ -176,7 +176,7 @@ nars_intro.0001 = {
             location = root.location
             sexuality = heterosexual
             faith = faith:nars_religion
-            culture = culture:knos
+            culture = culture:selian
             female = no
             random_traits = no
             
@@ -216,7 +216,7 @@ nars_intro.0001 = {
             age = { 33 34 }
             location = root.location
             faith = faith:nars_religion
-            culture = culture:knos
+            culture = culture:selian
             sexuality = bisexual
             female = yes
             random_traits = no
@@ -266,7 +266,7 @@ nars_intro.0001 = {
             learning = 10
             prowess = 25
             faith = faith:nars_religion
-            culture = culture:knos
+            culture = culture:selian
             trait = deceitful
             trait = arbitrary
             trait = callous
@@ -298,6 +298,7 @@ nars_intro.0001 = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
                     name = d_laamp_nars_1001
+                    article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
                 }
@@ -384,6 +385,7 @@ nars_intro.0001 = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
                     name = d_laamp_nars_1002
+                    article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
                 }
@@ -451,6 +453,7 @@ nars_intro.0001 = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
                     name = d_laamp_nars_1003
+                    article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
                 }
@@ -647,14 +650,14 @@ nars_intro.0002 = {
     
     option = {
         name = nars_intro.0002.a
-        custom_tooltip = knos_diplomacy.tt
+        custom_tooltip = selian_diplomacy.tt
         hidden_effect = {
-            knos_diplomacy_entreaty_effect = yes
+            selian_diplomacy_entreaty_effect = yes
         }
     }
     option = {
         name = nars_intro.0002.b
-        custom_tooltip = knos_incivility.tt
+        custom_tooltip = selian_incivility.tt
         if = {
             limit = {
                 has_character_modifier = eleios_modifier

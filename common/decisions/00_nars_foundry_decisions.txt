@@ -8,7 +8,7 @@
 	selection_tooltip = decision_mend_narsil_tooltip
 
 	is_shown = {
-		is_knos = yes
+		is_selian = yes
 		highest_held_title_tier >= tier_kingdom
 		top_liege = this
 		is_capable_adult = yes
@@ -66,7 +66,7 @@ decision_munitions_research = {
 	selection_tooltip = decision_munitions_research_tooltip
 
 	is_shown = {
-		is_knos = yes
+		is_selian = yes
 		is_ruler = yes
 		highest_held_title_tier >= tier_empire
 		NOT = {

@@ -1,4 +1,4 @@
-﻿# 70000010_knos={
+﻿# 70000010_selian={
 # 	portrait_info={
 # 		genes={ 		
 # 			hair_color={ 8 5 149 61 }
@@ -123,7 +123,7 @@
 # 	enabled = yes
 # }
 
-# 70000011_knos = {
+# 70000011_selian = {
 # 	portrait_info = {
 # 		genes={
 # 			hair_color={ 8 5 149 61 }
@@ -250,7 +250,7 @@
 # 	enabled=yes
 # }
 
-# 70000012_knos = {
+# 70000012_selian = {
 # 	portrait_info={
 # 		genes={
 # 			hair_color={ 4 2 193 242 }
@@ -376,7 +376,7 @@
 # 	enabled = yes
 # }
 
-# 70000013_knos = {
+# 70000013_selian = {
 # 	portrait_info ={
 # 		genes={		
 # 			hair_color={ 8 5 149 61 }
@@ -502,7 +502,7 @@
 # 	enabled = yes
 # }
 
-# 70000014_knos = {
+# 70000014_selian = {
 # 	portrait_info ={
 # 		genes={ 		
 # 			hair_color={ 1 0 234 70 }
@@ -627,7 +627,7 @@
 # 	enabled = yes
 # }
 
-# 70000015_knos = {
+# 70000015_selian = {
 	portrait_info ={
  		genes={		
  			skin_color={ 52 28 52 28 }
@@ -757,7 +757,7 @@
  	enabled = yes
  }
 
-# 70000016_knos = {
+# 70000016_selian = {
 # 	portrait_info ={
 # 		genes={		
 # 		hair_color={ 20 15 2 236 }
@@ -882,7 +882,7 @@
 # 	enabled = yes
 # }
 
-# 70000017_knos = {
+# 70000017_selian = {
 # 	portrait_info ={
 # 		genes={
 # 			hair_color={ 8 5 149 61 }
@@ -1009,7 +1009,7 @@
 # 	enabled = yes
 # }
 
-# 70000018_knos = {
+# 70000018_selian = {
 # 	portrait_info ={
 # 		genes={
 # 			hair_color={ 8 5 149 61 }

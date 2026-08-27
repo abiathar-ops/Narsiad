@@ -1,18 +1,18 @@
 ﻿l_english:
- # Knós religion group
- rf_knos:0 "Archaic"
- knos_religion:0 "Knóseia"
- knos_religion_adj:0 "Knóseic"
- knos_religion_adherent:0 "Knóseian"
- knos_religion_adherent_plural:0 "Knóseians"
- knos_religion_desc:0 "Derived from the records and teachings of Knós antiquity, this faith revolves around the concept of intellectual erudition, in which adherents are to pursue martial and learning as a path to personal enlightenment."
+ # Selian religion group
+ rf_selian:0 "Archaic"
+ selian_religion:0 "Selian"
+ selian_religion_adj:0 "Selic"
+ selian_religion_adherent:0 "Selian"
+ selian_religion_adherent_plural:0 "Selians"
+ selian_religion_desc:0 "The faith of the Selian venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
- # Knós branches
- nars_religion:0 "Knóseia"
- nars_religion_adj:0 "Knóseia"
- nars_religion_adherent:0 "Knóseian"
- nars_religion_adherent_plural:0 "Knóseians"
- nars_religion_desc:0 "The faith of the Knós venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
+ # Selian branches
+ nars_religion:0 "Shel'ia"
+ nars_religion_adj:0 "Shel'ian"
+ nars_religion_adherent:0 "Shel'ian"
+ nars_religion_adherent_plural:0 "Shel'ians"
+ nars_religion_desc:0 "Derived from the records of Selian antiquity and the new teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')], Shel'ia revolves around the concept of vigorous erudition, in which adherents are to pursue martial and learning as a path to their personal enlightenment."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"
@@ -31,7 +31,7 @@
  nars_religious_symbol:0 "dove"
  nars_religious_text:0 "scriptures"
  nars_religious_head_title:0 "Prophētēs"
- nars_religious_head_title_name:0 "Panteíon"
+ nars_religious_head_title_name:0 "Politeíon"
  nars_devotee_male:0 "devotee"
  nars_devotee_male_plural:0 "devotees"
  nars_devotee_female:0 "devotee"

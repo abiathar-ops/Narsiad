@@ -1,12 +1,9 @@
 ﻿l_english:
- knos:0 "Knós"
- knos_prefix:0 "Knósi"
- knos_collective_noun:1 "Knósi"
-
- name_list_nars:0 "Knós"
- language_nars_name:0 "Knós"
- knos_clothing_gfx:0 "Knós"
- knos_opinion:0 "$knos$ Opinion"
-
- ethos_archaic_name:0 "Archaic"
- ethos_archaic_desc:2 "This culture bears the memory of a bygone age, enduring only through its tightly-held customs and preserved traditions. Sands of time drip on their dream of restoration."
+ selian:0 "Selian"
+ selian_prefix:0 "Selic"
+ selian_collective_noun:1 "Selians"
+ 
+ name_list_nars:0 "Selian"
+ language_nars_name:0 "Selian"
+ selian_clothing_gfx:0 "Selian"
+ selian_opinion:0 "$selian$ Opinion"

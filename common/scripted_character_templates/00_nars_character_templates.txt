@@ -1,11 +1,11 @@
-#Average Knós Nobody
-knos_template.1001 = {
+#Average Selian Nobody
+selian_template.1001 = {
     age = { 18 30 }
     gender = male
 	gender_female_change = 50
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:knos
+	culture = culture:selian
     random_traits = yes
 	trait = nars_naturalis
     after_creation = {
@@ -14,12 +14,12 @@ knos_template.1001 = {
 	}
 }
 
-#Average Knós Noble
-knos_template.1002 = {
+#Average Selian Noble
+selian_template.1002 = {
     age = { 18 30 }
     dynasty = generate
     faith = faith:nars_religion
-	culture = culture:knos
+	culture = culture:selian
 	trait = nars_naturalis
     random_traits_list = {
 		count = { 0 1 }
@@ -46,11 +46,11 @@ knos_template.1002 = {
 }
 
 #Evangelist
-knos_template.1011 = {
+selian_template.1011 = {
 	age = { 30 48 }
 	gender_female_change = 100
     faith = faith:nars_religion
-	culture = culture:knos
+	culture = culture:selian
     random_traits = yes
 	trait = devoted
 	random_traits_list = {
@@ -71,10 +71,10 @@ knos_template.1011 = {
 }
 
 #Mercenary Leader
-knos_template.1012 = {
+selian_template.1012 = {
 	age = { 30 45 }
 	gender_female_chance = 50
-	culture = culture:knos
+	culture = culture:selian
 	faith = faith:nars_religion
 	random_traits_list = {
 		count = 1

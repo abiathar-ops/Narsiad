@@ -9,22 +9,24 @@ tenet_nars_pantheon = {
     }
 
 	is_shown = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 	can_pick = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 
 	piety_cost = faith_tenet_cost_mid
 
 	character_modifier = {
-		church_holding_build_speed = -0.5
-		church_holding_holding_build_speed = -0.5
+		church_holding_build_speed = -0.25
+		church_holding_holding_build_speed = -0.25
 	}
 
 	parameters = {
 		building_temples_gives_development = yes
 		monastic_schools_allowed_in_every_holding_type = yes
+		inspections_unlocked_and_costs_piety = yes
+		inspection_gives_devotion = yes
 	}
 }
 
@@ -47,10 +49,10 @@ tenet_nars_erudition = {
 	}
 
 	is_shown = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 	can_pick = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 
 	character_modifier = {
@@ -66,7 +68,7 @@ tenet_nars_erudition = {
 	}
 }
 
-	# Branch Knós tenets 
+	# Branch Selian tenets 
 tenet_nars_sanguine = {
 	name = tenet_nars_sanguine_name
 	desc = tenet_nars_sanguine_desc
@@ -78,21 +80,27 @@ tenet_nars_sanguine = {
     }
 
 	is_shown = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 	can_pick = {
-		religion_tag = knos_religion
+		religion_tag = selian_religion
 	}
 	
 	parameters = {
-        warmonger = yes
 		conquest_cb_enabled = yes		
 		reincarnation_events_active = yes
+		less_likely_to_become_infirm = yes
+	}
+
+	traits = {
+		virtues = { nars_naturalis }
 	}
 
 	character_modifier = {
 		domain_tax_same_faith_mult = 0.25
 		development_growth_factor = 0.25
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		learning_per_stress_level = 2
 	}
 		
 }

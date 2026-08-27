@@ -2,3 +2,7 @@
  HOLDS_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER:0 "Holds 8 or more [kingdoms|E]"
  I_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER:1 "You hold 8 or more [kingdoms|E]"
  THEY_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER:0 "[CHARACTER.GetShortUIName|U] holds 8 or more [kingdoms|E]"
+
+ HOLDS_THREE_OR_MORE_KINGDOM_TITLES_TRIGGER:0 "Holds 3 or more [kingdoms|E]"
+ I_HOLD_THREE_OR_MORE_KINGDOM_TITLES_TRIGGER:1 "You hold 3 or more [kingdoms|E]"
+ THEY_HOLD_THREE_OR_MORE_KINGDOM_TITLES_TRIGGER:0 "[CHARACTER.GetShortUIName|U] holds 3 or more [kingdoms|E]"

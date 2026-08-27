@@ -108,7 +108,7 @@ nars_apply_setup_effect = {
     if = {
         limit = {
             OR = {
-                is_ethnically_knos = yes
+                is_ethnically_selian = yes
             }
             NOT = { has_trait = nars_naturalis }
         }

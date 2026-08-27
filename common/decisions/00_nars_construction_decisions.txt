@@ -8,7 +8,7 @@
 	sort_order = 850
 	
 	is_shown = {
-		is_knos = yes
+		is_selian = yes
 		highest_held_title_tier >= tier_kingdom
 		NOT = { government_has_flag = government_is_tribal }
 		NOT = { government_has_flag = government_is_nomadic }
@@ -22,7 +22,7 @@
 	}
 
 	is_valid = {
-		gold >= 750
+		gold >= 1000
 		OR = {
 			prestige_level >= 4
 			learning >= 25
@@ -61,7 +61,7 @@ pick_aretaic_school_barony = {
 	decision_group_type = realm
 	is_invisible = yes
 	
-	cost = { gold = 750 }
+	cost = { gold = 1000 }
 
 	widget = {
 		controller = create_holy_order
@@ -105,9 +105,9 @@ decision_establish_brothel = {
 	desc = decision_establish_brothel_desc
 	selection_tooltip = decision_establish_brothel_tooltip
 	sort_order = 850
-	
+		
 	is_shown = {
-		is_knos = yes
+		is_selian = yes
 		highest_held_title_tier >= tier_kingdom
 		OR = {
 			exists = global_var:established_aretaic_school
@@ -127,7 +127,7 @@ decision_establish_brothel = {
 	}
 
 	is_valid = {
-		gold >= 500
+		gold >= 750
 		OR = {
 			prestige_level >= 4
 			intrigue >= 25
@@ -140,6 +140,12 @@ decision_establish_brothel = {
 						HOLDER = root
 					}
 				}
+			}
+		}
+		NOR = {
+			custom_tooltip = {
+				text = establish_brothel_cooldown_tt
+				has_character_flag = establish_brothel_cooldown
 			}
 		}
 	}
@@ -188,7 +194,7 @@ pick_brothel_barony = {
 	is_invisible = yes
 	
 	cost = {
-		gold = 500
+		gold = 750
 	}
 	widget = {
 		controller = create_holy_order
@@ -207,6 +213,10 @@ pick_brothel_barony = {
 			name = established_brothel
 			value = yes
 		}
+		add_character_flag = {
+			flag = establish_brothel_cooldown
+			years = 2
+		}	
 		hidden_effect = {
 			scope:barony.title_province = {
 				add_special_building = brothel_complex_01

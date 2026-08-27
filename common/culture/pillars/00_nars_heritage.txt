@@ -5,7 +5,7 @@ heritage_nars = {
 			HERITAGE = heritage_nars
 		}
 	}
-	audio_parameter = knos
+	audio_parameter = selian
 }
 
 language_nars = {
@@ -14,7 +14,7 @@ language_nars = {
 		language_is_shown_trigger = {
 			LANGUAGE = language_nars
 		}
-		scope:character = { is_knos = yes }
+		scope:character = { is_selian = yes }
 	}
 	ai_will_do = {
 		value = 10
