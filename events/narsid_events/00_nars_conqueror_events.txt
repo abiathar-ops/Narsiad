@@ -556,7 +556,7 @@ scripted_trigger generous_vassal_trigger = {
 	ai_greed <= 0
 }
 
-#Errant Hoplites Join
+#Errant optimatoi Join
 nars_conqueror.1100 = {
     type = character_event
     title = nars_conqueror.1100.t
@@ -572,13 +572,13 @@ nars_conqueror.1100 = {
     
     # Changed to right_portrait to avoid overlapping with the player character
     right_portrait = {
-        character = scope:hoplite
+        character = scope:optimatos
         camera = camera_event_right
         animation = throne_room_one_handed_passive_1
     }
 
     immediate = {
-        # Generate the roaming Hoplite leader
+        # Generate the roaming optimatos leader
         create_character = {
             gender = male
             age = { 35 45 }
@@ -593,9 +593,9 @@ nars_conqueror.1100 = {
             trait = gallivanter
             trait = viking
             trait = adventurer
-            save_scope_as = hoplite
+            save_scope_as = optimatos
         }
-		scope:hoplite = { add_character_flag = wear_armor }
+		scope:optimatos = { add_character_flag = wear_armor }
     }
 
     # Option A: Pay gold for special soldiers
@@ -615,7 +615,7 @@ nars_conqueror.1100 = {
 			name = event_troop_default_name
 			levies = 625
 			men_at_arms = {
-				type = maa_hoplitai
+				type = maa_t1
 				stacks = 5
             }
             location = root.capital_province
@@ -623,7 +623,7 @@ nars_conqueror.1100 = {
 			inheritable = yes
 		}
         
-        scope:hoplite = {
+        scope:optimatos = {
             set_employer = root
         }
     }
@@ -644,21 +644,21 @@ nars_conqueror.1100 = {
 					name = event_troop_default_name
 					levies = 625
 					men_at_arms = {
-						type = maa_hoplitai
+						type = maa_t1
 						stacks = 5
 					}
 					location = root.capital_province
 					uses_supply = yes
 					inheritable = yes
 				}
-                scope:hoplite = {
+                scope:optimatos = {
                     set_employer = root
                 }
                 send_interface_message = {
                     title = nars_conqueror.1100.b.success_msg.t
                     desc = nars_conqueror.1100.b.success_msg.desc
                     type = event_prowess_good_desc
-                    left_icon = scope:hoplite
+                    left_icon = scope:optimatos
                 }
             }
             50 = {
@@ -672,7 +672,7 @@ nars_conqueror.1100 = {
                     title = nars_conqueror.1100.b.failure_msg.t
                     desc = nars_conqueror.1100.b.failure_msg.desc
                     type = event_prowess_bad_desc
-                    left_icon = scope:hoplite
+                    left_icon = scope:optimatos
                 }
             }
         }
@@ -692,7 +692,7 @@ nars_conqueror.1100 = {
     }
 }
 
-#A zealot priest and a hoplite
+#A zealot priest and a optimatos
 nars_conqueror.1200 = {
 	type = character_event
 	title = nars_conqueror.1200.t

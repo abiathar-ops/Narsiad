@@ -367,7 +367,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_hoplitai stacks = 12 }
+                    men_at_arms = { type = maa_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -438,7 +438,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_hoplitai stacks = 12 }
+                    men_at_arms = { type = maa_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -506,7 +506,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_hoplitai stacks = 12 }
+                    men_at_arms = { type = maa_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -688,7 +688,7 @@ nars_intro.0002 = {
             spawn_army = {
                 levies = 1250
                 men_at_arms = {
-                    type = maa_hoplitai
+                    type = maa_t1
                     stacks = 10
                 }
                 location = root.location # Safer than capital_province for landless camps

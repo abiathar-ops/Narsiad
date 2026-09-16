@@ -43,7 +43,7 @@
  decision_establish_aretaic_school: "Establish Archiving Citadel"
  decision_establish_aretaic_school_desc: "The [selians|E] possess a [culture|E] that espouses [innovation|E], and yet it's undeniable that other barbaric [realms|E] have closen the gap while the [selianes|E] was in exile. I shall expend our [gold|E] to establish an innovating [building|E] of perfected learning. A new [GetBuilding('aretaic_school_02').GetName] for [education|E]."
  decision_establish_aretaic_school_tooltip: "Found a university for the pursuit of [innovation|E]"
- decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed"
+ decision_establish_aretaic_school_effect_tooltip: "A [special_building|E] slot will be added to a [barony|E] of one of your [county|E] and the #V Aretaiké Scholí#! will be available to be constructed"
  decision_establish_aretaic_school_confirm: "Select a Barony!"
  establish_aretaic_school_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
  pick_aretaic_school_barony: "Pick the Archive's Location"
@@ -53,7 +53,7 @@
  decision_establish_brothel: "Open a Brothel-Complex"
  decision_establish_brothel_desc: "It is undeniable that ethnic [selians|E] are few in numbers. I shall expend our [gold|E] to establish a [building|E] of hedonism to cultivate a [breeding|E] programme. A [GetBuilding('brothel_complex_02').GetName], brothel-complexes fit to espouse certain necessary ideas. I shall dedicate this [building|E] of [fertility|E] to [enuo|E]."
  decision_establish_brothel_tooltip: "Found a [building|E] dedicated to the pursuit of [fertility|E]"
- decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to the [capital|E] of one of your [county|E] and the #V Hedonēion#! will be available to be constructed"
+ decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to one of your [barony|E] and the #V Hedonēion#! will be available to be constructed"
  decision_establish_brothel_confirm: "Select a Barony!"
  establish_brothel_no_barony_tt: "You must personally hold a [barony|E] that does not already have a [special_building|E] slot"
  pick_brothel_barony: "Pick the Brothel's Location"
@@ -66,13 +66,13 @@
  # ── Foundries ──
 
  decision_munitions_research: "Found the Mástiges"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [hoplites|E] with them."
- decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_mastiges').GetName] [men_at_arms|E] armed with new armaments!"
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [optimatoi|E] with them."
+ decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_t2').GetName] [men_at_arms|E] armed with new armaments!"
  decision_munitions_research_confirm: "Blood and iron!"
 
  munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
  munitions_research_3_years_tooltip: "If you complete the [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
- munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_mastiges').GetName] [men_at_arms|E]"
+ munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_t2').GetName] [men_at_arms|E]"
  munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
 
  decision_mend_narsil: "Mend Narsíl"
@@ -115,7 +115,7 @@
  decision_h_narsokratia_tooltip: "The old [selianrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [selianes|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
  decision_h_narsokratia_effect_tooltip: "Establish #v [GetTitleByKey('h_narsokratia').GetName]#! as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] convert to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [selian|E] [culture|E] and [faith|E] "
- decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [selian|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_mastiges$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_hoplitai$ #weak ([heavy_infantry|E])#!" 
+ decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [selian|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_t2$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_t1$ #weak ([heavy_infantry|E])#!" 
 
  decision_pledge_restoration: "Proclaim Oath of the $selian$"
  decision_pledge_restoration_confirm: "I am the scourge of [ROOT.Char.GetFaith.HighGodName]!"
@@ -156,10 +156,10 @@
  decision_hire_selian_1_tooltip:3 "At least #P 4#! [selianes|E] will arrive as [guests|E] to your [court|E] within the coming months"
  decision_hire_selian_1_effect_tooltip:4 "Your servants will suggest a number of suitable [selianes|E] for your court"
 
- decision_hire_selian_2:0 "Scout for a [polymetis|E]"
- decision_hire_selian_2_tooltip:0 "You will receive #P 2#! suitable [polymetis|E] prospects for you to choose for your [court|E] as a [courtier|E]"
+ decision_hire_selian_2:0 "Scout for a [polimetis|E]"
+ decision_hire_selian_2_tooltip:0 "You will receive #P 2#! suitable [polimetis|E] prospects for you to choose for your [court|E] as a [courtier|E]"
  selian_2_court_position_custom_desc: "$EFFECT_LIST_BULLET$Provides @travel_safety_icon![travel_safety|E] and @travel_speed_icon![travel_speed|E] during [travels|E]"
  decision_hire_selian_2_desc:0 "A good $selian_2_court_position$ is the key to a successful journey. I will request for a number of suitable candidates to be suggested."
 
  recruit_selian_1_cooldown_tt: "Search for [selianes|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_selian_1_cooldown' ))]"
- recruit_selian_2_cooldown_tt: "Scout for a [polymetis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_selian_2_cooldown' ))]"
+ recruit_selian_2_cooldown_tt: "Scout for a [polimetis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_selian_2_cooldown' ))]"

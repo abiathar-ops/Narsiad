@@ -189,11 +189,11 @@ create_h_narsokratia_effect = {
 			spawn_army = {
 				name = selian_troop_hegemony_name
 				men_at_arms = {
-					type = maa_mastiges
+					type = maa_t2
 					stacks = 15
 				}
 				men_at_arms = {
-					type = maa_hoplitai
+					type = maa_t1
 					stacks = 85
 				}
 				location = this.capital_province
@@ -228,7 +228,7 @@ create_h_narsokratia_effect = {
 
 nars_maa_setup_effect = {
 	create_maa_regiment = {
-			type = maa_hoplitai
+			type = maa_t1
 			check_can_recruit = no
 			size = 3
 	}

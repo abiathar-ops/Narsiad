@@ -169,7 +169,7 @@ decision_pledge_restoration = {
 		custom_tooltip = {
 			text = nars_conqueror_rally_war_tt
 			spawn_army = {
-				men_at_arms = { type = maa_hoplitai stacks = 15 }
+				men_at_arms = { type = maa_t1 stacks = 15 }
 				levies = 2750
 				inheritable = no
 				uses_supply = no

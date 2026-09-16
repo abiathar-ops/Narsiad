@@ -15,11 +15,11 @@
 @provisions_cost_special_expensive = 18
 @provisions_cost_special_bankrupting = 24
 
-maa_hoplitai = {
+maa_t1 = {
     type = heavy_infantry
 
     can_recruit = {
-	    valid_for_maa_trigger = { PARAMETER = unlock_maa_hoplitai }
+	    valid_for_maa_trigger = { PARAMETER = unlock_maa_t1 }
         NOT = {
 			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
 		}
@@ -62,12 +62,12 @@ maa_hoplitai = {
         add = counter_synergy_ai_weight_heavy_infantry
 		add = 40
     }
-    icon = narsid_hoplites
+    icon = narsid_t1
 }
 
 #Unlockable via Decision
 
-maa_mastiges = {
+maa_t2 = {
     type = gunpowder
     
     can_recruit = {
@@ -107,5 +107,5 @@ maa_mastiges = {
     
     stack = 100
    	ai_quality = { value = @cultural_maa_extra_ai_score }
-    icon = narsid_mastiges
+    icon = narsid_t2
 }

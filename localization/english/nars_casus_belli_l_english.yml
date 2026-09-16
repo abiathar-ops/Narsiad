@@ -13,7 +13,7 @@
  selian_incursion_defeat_defender: "You remain an independent ruler and repel the incursion. [attacker.GetShortUIName|U] is humiliated."
  selian_incursion_defeat: "[defender.GetShortUIName|U] remains an independent ruler and repels the incursion. [attacker.GetShortUIName|U] is humiliated."
  selian_incursion_gain_dread_tt: "Gains @dread_icon![dread|E]"
- narsokratia_devastation_tt: "The target realm suffers severe @control_icon![control|E] and @development_icon![development|E] loss as the $maa_hoplitai$ exact their incursion."
+ narsokratia_devastation_tt: "The target realm suffers severe @control_icon![control|E] and @development_icon![development|E] loss as the $maa_t1$ exact their incursion."
  selian_incursion_gain_titles_tt: "Gains all [landed|E] [titles|E] held personally by [defender.GetShortUIName], and subjugates their [vassals|E]"
  
  selian_migration_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"

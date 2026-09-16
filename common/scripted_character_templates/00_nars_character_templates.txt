@@ -28,11 +28,9 @@ selian_template.1002 = {
 		physique_good_1 = {}
 		physique_good_2 = {}
 		physique_good_3 = {}
-	}
-	random_traits_list = {
-		count = { 0 1 }
-		august = {}
-		diplomat = {}
+		beauty_good_1 = {}
+		beauty_good_2 = {}
+		beauty_good_3 = {}
 	}
 	learning = {
 		min_template_high_skill

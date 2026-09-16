@@ -162,7 +162,7 @@
 			}
 		}
 	}
-	polymetis_clothes = {
+	polimetis_clothes = {
 		dna_modifiers = {
 			accessory = {
 				mode = add

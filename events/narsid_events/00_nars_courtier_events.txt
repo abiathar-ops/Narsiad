@@ -312,7 +312,7 @@ nars_courtiers.0004 = {
 	}
 }
 
-#Polymetis
+#polimetis
 nars_courtiers.0011 = {
     type = character_event
     title = nars_courtiers.0011.t
@@ -772,7 +772,7 @@ nars_courtiers.0021 = {
 			}
 
             spawn_army = {
-                men_at_arms = { type = maa_hoplitai stacks = 15 }
+                men_at_arms = { type = maa_t1 stacks = 15 }
 				men_at_arms = { type = mangonel stacks = 10 }
                 levies = 2750
                 inheritable = no

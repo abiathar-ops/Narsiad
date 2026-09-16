@@ -2,7 +2,7 @@
 	alias = { selian selianes selianes_adj selians_adj selian_adj}
 }
 
-polymetis = {
+polimetis = {
 	parent = selians
 	alias = { sophist sophists }
 }
@@ -12,13 +12,13 @@ selian_language = {
 	alias = { selian_language_short }
 }
 
-hoplites = {
+optimatoi = {
 	parent = selians
-	alias = { hoplite }
+	alias = { optimatos }
 }
 
 mastiges = {
-	parent = hoplites
+	parent = optimatoi
 }
 
 narsokratia = {

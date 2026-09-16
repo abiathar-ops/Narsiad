@@ -11,8 +11,8 @@
  trait_nars_scion_character_desc: "The pledge for hegemonic restoration [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] bloodline has set into the world are etched in the fibers of history."
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
 
- trait_track_polymetis:0 "Metís"
- trait_track_polymetis_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
+ trait_track_polimetis:0 "Metís"
+ trait_track_polimetis_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
 
  nars_naturalis.name: "Selian"
  nars_naturalis.no_actor: "Selian-Blooded"
