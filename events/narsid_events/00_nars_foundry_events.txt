@@ -19,109 +19,86 @@ nars_artifacts.1001 = {
 		play_music_cue = mx_cue_touching_moment
 	}
 
-	option = {
-		# Sacrifice courtiers — brutal but FAST (30 days)
+	option = { # Hire foreign craftsmen — costly, but bloodless
 		name = nars_artifacts.1001.a
-		add_tyranny = 15
-		stress_impact = {
-			just = minor_stress_impact_gain
-			compassionate = miniscule_stress_impact_gain
-			content = miniscule_stress_impact_gain
+		add_internal_flag = special
+		save_scope_as = actor
+		add_character_flag = {
+			flag = took_decision_mend_narsil_flag
+			years = 10
 		}
-		random_courtier_or_guest = {
-			limit = {
-				is_adult = yes
-				is_ethnically_selian = yes
-				NOT = { is_close_family_of = root }
-				NOT = { is_spouse_of = root }
+		begin_scheme_with_agents_effect = {
+				SCHEME_TYPE = mend_narsil_scheme
+				TARGET_TYPE = target_title
+				TARGET_SCOPE = root.capital_county
+				AGENT_1 = agent_smith
+				AGENT_2 = agent_alchemist
+				AGENT_3 = agent_supplier
+				AGENT_4 = agent_theologian
+				AGENT_5 = agent_cleric
 			}
-			death = {
-				death_reason = death_murder
-				killer = root
-			}
-		}
-		hidden_effect = {
-			# Lock the decision immediately — the forge is committed
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-			set_global_variable = {
-				name = flag_mend_narsil_decision
-				value = root
-			}
-			trigger_event = {
-				id = nars_artifacts.1002
-				days = 30
-			}
-		}
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					has_trait = compassionate
-					has_trait = calm
-					has_trait = content
-				}
-			}
-		}
-	}
-
-	option = {
-		name = nars_artifacts.1001.b
-		remove_treasury_or_gold = 750
+		remove_treasury_or_gold = major_treasury_or_gold_value
 		stress_impact = {
 			sadistic = minor_stress_impact_gain
 			callous = miniscule_stress_impact_gain
 			greedy = miniscule_stress_impact_gain
 		}
-		hidden_effect = {
-			add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-			set_global_variable = {
-				name = flag_mend_narsil_decision
-				value = root
-			}
-			trigger_event = {
-				id = nars_artifacts.1003
-				days = 120
-			}
-		}
 		ai_chance = {
-			base = 100
+			base = 0
 			modifier = {
-				factor = 0
-				has_trait = greedy
+				add = 100
+				treasury >= 750
 			}
 		}
 	}
 
-	option = {
-		# Not yet — decision remains available
-		name = nars_artifacts.1001.c
+	option = { # Not yet — decision remains available
+		name = nars_artifacts.1001.b
 		add_stress = miniscule_stress_impact_gain
 		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
-				OR = {
-					has_trait = compassionate
-					has_trait = calm
-					has_trait = content
+				treasury < 750
+			}
+		}
+	}
+}
+
+nars_artifacts.1011 = {
+	hidden = yes
+
+	immediate = {
+		scope:scheme = {
+			scheme_owner = {
+				save_scope_as = owner
+				random = {
+					chance = scope:scheme.scheme_success_chance
+					save_scope_value_as = {
+						name = scheme_successful
+						value = yes
+					}
+				}
+				if = {
+					limit = { exists = scope:scheme_successful }
+					trigger_event = {
+						id = nars_artifacts.1021
+					}
+				}
+				else = {
+					trigger_event = {
+						id = nars_artifacts.1022
+					}	
 				}
 			}
 		}
 	}
 }
 
-nars_artifacts.1002 = {
+nars_artifacts.1021 = {
 	type = character_event
-
-	title = nars_artifacts.1002.t
-	desc = nars_artifacts.1002.desc
+	title = nars_artifacts.1021.t
+	desc = nars_artifacts.1021.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -131,18 +108,29 @@ nars_artifacts.1002 = {
 		camera = camera_center_large
 		animation = throne_room_one_handed_passive_1
 	}
-
-	option = { 
-		name = nars_artifacts.1002.a
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
 		create_narsil_effect = yes
+	}
+	
+	option = {
+		name = nars_artifacts.1021.a
+		scope:scheme = { end_scheme = yes }
+		add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_mend_narsil_decision
+		}
+		set_global_variable = {
+			name = flag_mend_narsil_decision
+			value = root
+		}
 	}
 }
 
-nars_artifacts.1003 = {
+nars_artifacts.1022 = {
 	type = character_event
-
-	title = nars_artifacts.1003.t
-	desc = nars_artifacts.1003.desc
+	title = nars_artifacts.1022.t
+	desc = nars_artifacts.1022.desc
 	theme = emperor
 	override_background = armory
 	override_effect_2d = { reference = smoke }
@@ -150,11 +138,19 @@ nars_artifacts.1003 = {
 	left_portrait = {
 		character = root
 		camera = camera_center_large
-		animation = throne_room_one_handed_passive_1
+		animation = map_fear
+	}	
+	immediate = {
+		play_music_cue = mx_cue_negative_effect
+		stress_impact = {
+			base = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
 	}
 
-	option = { 
-		name = nars_artifacts.1003.a
-		create_narsil_effect = yes
+	option = {
+		name = nars_artifacts.1022.a
+		scope:scheme = { end_scheme = yes }
 	}
 }

@@ -494,7 +494,7 @@ selian_expedition_cb = {
             add_prestige_experience = {
                 value = mongol_invasion_cb_prestige_experience_gain
             }
-            trigger_event = nars_courtiers.0021
+            trigger_event = nars_courtiers.0022
         }
 
         scope:defender = {

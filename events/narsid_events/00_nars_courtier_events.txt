@@ -1,5 +1,6 @@
 ﻿namespace = nars_courtiers
 
+#Standard Selian
 nars_courtiers.0001 = {
 	hidden = yes
 
@@ -311,6 +312,7 @@ nars_courtiers.0004 = {
 	}
 }
 
+#Polymetis
 nars_courtiers.0011 = {
     type = character_event
     title = nars_courtiers.0011.t
@@ -629,7 +631,41 @@ nars_courtiers.0011 = {
 	}
 }
 
-nars_courtiers.0020 = {
+#Mercs
+
+nars_courtiers.0025 = {
+    type = character_event
+    hidden = yes
+    
+    immediate = {
+        scope:scheme = {
+            scheme_owner = {
+                save_scope_as = owner
+                
+                random = {
+                    chance = scope:scheme.scheme_success_chance
+                    save_scope_value_as = { name = scheme_successful value = yes }
+                }
+                
+                if = {
+                    limit = { exists = scope:scheme_successful }
+                    # Success: Clean up variable, end scheme, trigger final event
+                    remove_variable = raise_host_cycles
+                    scope:scheme = { end_scheme = yes }
+                    trigger_event = { id = nars_courtiers.0021 }
+                }
+                else = {
+                    change_variable = {
+                        name = raise_host_cycles
+                        add = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+nars_courtiers.0021 = {
     type = character_event
     hidden = yes
 
@@ -757,17 +793,17 @@ nars_courtiers.0020 = {
 
 		root = {
             send_interface_message = {
-                title = nars_courtiers.0020.toast.t
+                title = nars_courtiers.0021.toast.t
                 left_icon = scope:new_adventurer
 				type = event_prowess_good_desc
                 right_icon = scope:target_kingdom_ruler
-                desc = nars_courtiers.0020.toast.desc
+                desc = nars_courtiers.0021.toast.desc
             }
         }
     }
 }
 
-nars_courtiers.0021 = {
+nars_courtiers.0022 = {
     type = character_event
     hidden = yes
 
@@ -804,10 +840,10 @@ nars_courtiers.0021 = {
                     }
                     
                     send_interface_message = {
-                        title = nars_courtiers.0021.vassal.t
+                        title = nars_courtiers.0022.vassal.t
                         left_icon = scope:adventurer
                         type = event_prowess_good_desc
-                        desc = nars_courtiers.0021.vassal.desc
+                        desc = nars_courtiers.0022.vassal.desc
                     }
                 }
                 else_if = {
@@ -819,10 +855,10 @@ nars_courtiers.0021 = {
 						SUZERAIN = scope:sponsor
 					}
 					send_interface_message = {
-						title = nars_courtiers.0021.tributary.t
+						title = nars_courtiers.0022.tributary.t
 						left_icon = scope:adventurer
 						type = event_prowess_good_desc
-						desc = nars_courtiers.0021.tributary.desc
+						desc = nars_courtiers.0022.tributary.desc
 					}
 				}
             }

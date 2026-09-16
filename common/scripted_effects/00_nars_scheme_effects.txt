@@ -29,6 +29,12 @@ nars_cap_schemes_and_fire_reminders_effect = {
 				munitions_research_scheme = {
 					munitions_research_scheme_prep_effect = yes
 				}
+				mend_narsil_scheme = {
+					mend_narsil_scheme_prep_effect = yes
+				}
+				raise_warhost_scheme = {
+					raise_warhost_scheme_prep_effect = yes
+				}
 			}
 		}
 		# If the player hasn't been reminded once, tell them that their scheme has hit max opportunities.
@@ -69,6 +75,34 @@ munitions_research_success_effect = {
 	set_global_variable = {
 		name = mastiges_research_complete
 		value = yes
+	}
+}
+
+mend_narsil_scheme_prep_effect = {
+	save_scope_as = scheme
+	save_scope_value_as = {
+		name = follow_up_event
+		value = event_id:nars_artifacts.1011
+	}
+	if = {
+		limit = {
+			NOT = { exists = scope:suppress_next_event }
+		}
+		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
+	}
+}
+
+raise_warhost_scheme_prep_effect = {
+	save_scope_as = scheme
+	save_scope_value_as = {
+		name = follow_up_event
+		value = event_id:nars_courtiers.0021
+	}
+	if = {
+		limit = {
+			NOT = { exists = scope:suppress_next_event }
+		}
+		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
 	}
 }
 

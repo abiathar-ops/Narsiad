@@ -79,24 +79,23 @@
  nars_titles.0001.a: "Hépou theôi..."
  
  nars_artifacts.1001.t: "Kairòn Gnôthi: Dillema"
- nars_artifacts.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [archaic|E] texts. The [artifact|E] must be quenched in the lifeblood of a [selian|E] gained from a ritual." \n\n"A sacrifice of a [selianes|E], one of your own [courtiers|E] is required to have a chance to fuse the shards or perhaps we may seek out costly reagents to stimulate our foundries.""
- nars_artifacts.1001.a: "They will be martyrs for our cause..."
- nars_artifacts.1001.b: "Find another way, anything other than this!"
- nars_artifacts.1001.c: "Now is not the time."
+ nars_artifacts.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [archaic|E] texts. The [artifact|E] must be quenched in the lifeblood of a [selian|E] gained from a ritual." \n\n"A sacrifice of a [selianes|E], one of your own [courtiers|E], will let us begin the binding rites at once—or we may seek out costly reagents to stimulate our foundries instead.""
+ nars_artifacts.1001.a: "Begin now and stoke the flame!"
+ nars_artifacts.1001.b: "Perhaps this is not the time..."
 
- nars_artifacts.1002.t: "Kairòn Gnôthi: Cruelty"
- nars_artifacts.1002.desc: "The screams of [courtiers|E] that used to admire me echoes off of the stone walls of my [capital_possessive|E] foremost foundry. The gurgles and moans of the meek victims are quickly drowned out by the hissing, [sinful|E] roar of hot alloy shards drinking the blood of my recent sacrifices, my own [courtiers|E]. \n\nAs the smith lifts the longsword from the crimson trough, the metal hums with a dark, terrible energy. [narsil|E] is whole once more. Its edge is impossibly sharp, shimmering with a faint, unnatural red hue in the torchlight. The smith falls to his knees, presenting the [artifact|E] to my hands. \n\nNow you ask yourself, how shall this blood-bound legacy be displayed to the [realm|E], to your [narsokratia|E] and fellow [selianes|E]?"
- nars_artifacts.1002.a: "However I desire, of course!"
+ nars_artifacts.1021.t: "[scheme.GetNameNoTooltip]: Success"
+ nars_artifacts.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have at last completed the binding rites. As the smith lifts the longsword from the trough, the metal hums with a strange, unnatural energy. [narsil|E] is whole once more, its edge gleaming in the torchlight.\n\nThe smith falls to his knees, presenting the [artifact|E] to my hands."
+ nars_artifacts.1021.a: "However I desire, of course!"
 
- nars_artifacts.1003.t: "Kairòn Gnôthi: Mercy"
- nars_artifacts.1003.desc: "It took vast sums of [gold|E], rare oils from the east, and the tireless, sleepless work of scholars, but the alchemical fire finally burned hot enough.\n\nStriking the anvil with rhythmic precision, the smith folds the ancient shards together. As the alloy cools, it does not sing with the dark power of a blood ritual, but it gleams with a pure, untainted [virtue|E]. \n\n[narsil|E] has been reforged through wealth and wisdom. The smith presents the masterwork, awaiting my decree on its final place of honor."
- nars_artifacts.1003.a: "However I desire, of course!"
+ nars_artifacts.1022.t: "[scheme.GetNameNoTooltip]: Failure"
+ nars_artifacts.1022.desc: "Hellfire! Hellfire!\n\nThe volatile rites meant to bind the shards of [narsil|E] go awry; the alloy resists, hissing and cracking before falling apart once more, ruined beyond this attempt.\n\nHow could such an ancient, unnatural craft ever be reliably mastered? For now, at least, [narsil|E] remains broken."
+ nars_artifacts.1022.a: "Craven..."
  
  nars_courtiers.0001.t: "An Selian Arrives"
  nars_courtiers.0001.desc: "A new Selian has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
 
- nars_courtiers.0020.toast.t: "Sponsored Host Departs!"
- nars_courtiers.0020.toast.desc: "[new_adventurer.GetTitledFirstName] gathered a host and now marches against [target_kingdom_ruler.GetTitledFirstName]!"
+ nars_courtiers.0021.toast.t: "Sponsored Host Departs!"
+ nars_courtiers.0021.toast.desc: "[new_adventurer.GetTitledFirstName] gathered a host and now marches against [target_kingdom_ruler.GetTitledFirstName]!"
 
  nars_courtiers.0011.t: "Engúa Pára d' Áta"
  nars_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [selian|E] holds, two [selianes|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [hoplite|E] and a scholar, both [polymetis|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"

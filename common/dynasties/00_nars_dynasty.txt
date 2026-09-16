@@ -2,18 +2,3 @@
 	name = name_dyn_nars_1001
 	culture = selian
 }
-
-dyn_nars_1002 = {
-	name = name_dyn_nars_1002
-	culture = selian
-}
-
-dyn_nars_1003 = {
-	name = name_dyn_nars_1003
-	culture = selian
-}
-
-dyn_nars_1004 = {
-	name = name_dyn_nars_1004
-	culture = selian
-}

@@ -1,4 +1,3 @@
-
 canton_duchy_01 = {
 	construction_time = slow_construction_time
 

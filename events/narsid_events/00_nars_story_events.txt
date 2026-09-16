@@ -341,7 +341,7 @@ nars_intro.0001 = {
                     }
                     if = {
                         limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
-                        add_realm_law = landless_adventurer_succession_law
+                        add_realm_law_skip_effects = landless_adventurer_succession_law
                     }
                     if = {
                         limit = { has_realm_law = crown_authority_0 }

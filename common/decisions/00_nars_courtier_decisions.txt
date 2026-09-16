@@ -1,19 +1,10 @@
 ﻿decision_recruit_selian_courtier = {
-	ai_check_interval = 0
+	ai_check_interval = 15
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_secret_faith.dds" 
 	}
 	sort_order = 1000
 	decision_group_type = courtier
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 60
-		empire = 60
-		hegemony = 60
-	}
 	
 	cost = {
 		prestige = major_prestige_value
@@ -145,6 +136,7 @@
 	}
 	
 	ai_potential = {
+		base = 0
 		is_selian = yes
 		is_landed_or_landless_administrative = yes
 		modifier = {
@@ -164,15 +156,6 @@ decision_recruit_selian_adventurer = {
 	desc = decision_recruit_selian_adventurer_desc
 
 	cooldown = { years = 2 }
-
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 60
-		empire = 60
-		hegemony = 60
-	}
 	
 	cost = {
 		prestige = major_prestige_value

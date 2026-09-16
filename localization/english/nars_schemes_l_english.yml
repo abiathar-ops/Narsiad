@@ -5,5 +5,13 @@
  munitions_research_scheme_SUCCESS_DESC: "You will unlock the #V Mástiges#! [men_at_arms|E] regiment and apply the [GetModifier('munitions_research_modifier').GetNameWithTooltip] to [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] for #high 30 years#!."
  munitions_research_scheme_action: "Harness Gunpowder in"
  munitions_research_scheme_invalidated_title: "@scheme_icon! Harness Gunpowder Ends"
+
+ mend_narsil_scheme: "Mend Narsíl"
+ mend_narsil_scheme_desc: "The shattered shards of [narsil|E] must be bound anew, whatever the cost."
+ mend_narsil_scheme_desc_general: "The ancient alloy of [narsil|E] refuses easy binding; only through ritual, coin, and craft may the blade be made whole once more."
+ mend_narsil_scheme_SUCCESS_DESC: "You will reforge #V [narsil|E]#! and claim it as an [artifact|E]!"
+ mend_narsil_scheme_action: "Mend Narsíl in"
+ mend_narsil_scheme_invalidated_title: "@scheme_icon! Mend Narsíl Ends"
  
- 
+ raise_warhost_scheme: "Raise Selian Host"
+ raise_warhost_scheme_desc: "We must meticulously plan, supply, and train a formidable new host. If our preparations fall short, we will simply redouble our efforts until the army is ready."

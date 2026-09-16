@@ -715,7 +715,7 @@ selian_migration_cb = {
     ignore_effect = change_title_holder
 
     # RESTRICTS TARGETS TO ONLY 100% CONTROLLED KINGDOMS (FORMED OR UNFORMED)
-    valid_target_title = {
+    valid_to_target_title = {
         scope:defender = {
             completely_controls = prev
         }

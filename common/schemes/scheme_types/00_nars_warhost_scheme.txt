@@ -1,0 +1,83 @@
+﻿raise_warhost_scheme = {
+	skill = diplomacy
+	secondary_skill = martial
+	category = personal
+	target_type = title 
+	icon = war
+
+	is_secret = no
+	is_basic = yes
+	
+	hide_target_name = yes
+	freeze_scheme_when_traveling = yes
+
+	speed_per_skill_point = 1
+	spymaster_speed_per_skill_point = 0	
+	uses_resistance = no
+	base_progress_goal = 20
+	base_maximum_success = 100 
+	minimum_success = 5
+
+	valid = {
+		root = scope:target.holder
+	}
+
+	base_success_chance = {
+		base = 15
+		
+		# Safely applies the +25% bonus ONLY if the variable has been created
+		modifier = {
+			condition = {
+				scope:owner = {
+					exists = var:raise_host_cycles
+				}
+			}
+			add = {
+				value = scope:owner.var:raise_host_cycles
+				multiply = 25
+			}
+		}
+	}
+
+	on_phase_completed = {
+		save_scope_as = scheme
+		scheme_target_title = { save_scope_as = target }
+		scheme_owner = { save_scope_as = owner }
+		
+		random = {
+			chance = scope:scheme.scheme_success_chance
+			save_scope_value_as = { name = scheme_successful value = yes }
+		}
+		
+		scope:owner = {
+			if = {
+				limit = { exists = scope:scheme_successful }
+				# SUCCESS: Clear the loop counter, end the scheme, and fire the final event
+				remove_variable = raise_host_cycles
+				scope:scheme = { end_scheme = yes }
+				trigger_event = { id = nars_courtiers.0021 }
+			}
+			else = {
+				# FAILURE: Safely check if variable exists before adding to it
+				if = {
+					limit = { exists = var:raise_host_cycles }
+					change_variable = {
+						name = raise_host_cycles
+						add = 1
+					}
+				}
+				else = {
+					# If it's the very first failure, create the variable
+					set_variable = {
+						name = raise_host_cycles
+						value = 1
+					}
+				}
+				trigger_event = { id = nars_courtiers.0027 }
+			}
+		}
+		
+		# NATIVELY LOOPS THE SCHEME
+		reset_scheme_progress = yes
+	}
+}

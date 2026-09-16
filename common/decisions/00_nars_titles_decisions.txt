@@ -8,6 +8,8 @@
 	
 	sort_order = 1000
 
+	ai_check_interval = 0
+
 	is_shown = {
 		is_ruler = yes
 		is_independent_ruler = yes
@@ -164,7 +166,6 @@ decision_pledge_restoration = {
         custom_description_no_bullet = {
             text = nars_conqueror_defensive_war_tt
         }
-		
 		custom_tooltip = {
 			text = nars_conqueror_rally_war_tt
 			spawn_army = {

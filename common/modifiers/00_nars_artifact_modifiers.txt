@@ -5,6 +5,7 @@ artifact_narsil_modifier = {
 	movement_speed = 0.4
 	dread_baseline_add = 16
 	knight_limit = 2
+	prowess = 16
 }
 
 artifact_anduril_modifier = {

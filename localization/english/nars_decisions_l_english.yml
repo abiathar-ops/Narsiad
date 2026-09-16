@@ -1,7 +1,5 @@
 ﻿l_english: 
  # ── EXISTING ENTRIES (unchanged) ──
- decision_group_type_selian: "Selian Decisions"
- decision_group_type_restorationist: "Narsokratía Decisions"
  narsokratia_kingdom_above: "Your [realm|E] requires a [rank|E] of [kingdom|E] or above!"
 
  # ── Faith ──
@@ -83,6 +81,8 @@
  decision_mend_narsil_tooltip: "Reforge the heirloom of the old [selian|E] [hegemons|E]!"
  decision_mend_narsil_confirm: "To our foundries!"
 
+ decision_raise_warhost: "Sponsor an Incursion"
+ narsil_mended_tt: "[narsil|E] has been mended by a [selian|E]"
  # ── Imperial Decisions ──
 
  decision_selian_imperial_administration: "Issue Imperial Decrees"
@@ -130,9 +130,9 @@
  nars_conqueror_if_win_defiance_tt: "\nIf you win the #v $selian_defiance_cb$:#!"
  nars_conqueror_if_lose_defiance_tt: "\nIf you lose the #v $selian_defiance_cb$:#!"
  nars_conqueror_if_lose_defiance_tt_1: "You are [imprisoned|E] by your enemies and may be [executed|E]"
- nars_conqueror_if_lose_defiance_tt_2: "You lose most of your [herd|E], [prestige|E], and [gold|E]" 
+ nars_conqueror_if_lose_defiance_tt_2: "You lose most of your [prestige|E] and [gold|E]" 
  nars_conqueror_if_lose_defiance_tt_3: "You lose #high 2#! [legitimacy_levels|E]"
- nars_conqueror_if_lose_defiance_tt_4: "Your [vassals|E] splinter and become independent"
+ nars_conqueror_if_lose_defiance_tt_4: "Your [vassals|E] splinter and become [independent|E]"
  nars_conqueror_defensive_war_will_happen_tt: "@alert_icon! #alert_trial Neighbouring [rulers|E] will declare a #v $selian_defiance_cb$#! against you!#!"
  selian_coalition_member_name_tt: "[character_war.GetShortUIName] will declare [war|E]!"
 

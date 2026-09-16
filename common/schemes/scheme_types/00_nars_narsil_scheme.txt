@@ -1,9 +1,9 @@
-munitions_research_scheme = {
+﻿mend_narsil_scheme = {
 	skill = stewardship
-	desc = "munitions_research_scheme_desc_general"
-	success_desc = "munitions_research_scheme_SUCCESS_DESC"
+	desc = "mend_narsil_scheme_desc_general"
+	success_desc = "mend_narsil_scheme_SUCCESS_DESC"
 	icon = icon_raid_estate_scheme
-	illustration = "gfx/interface/illustrations/event_scenes/docks.dds"
+	illustration = "gfx/interface/illustrations/event_scenes/armory.dds"
 	category = personal
 	target_type = title
 	cooldown = { years = 3 }
@@ -21,11 +21,11 @@ munitions_research_scheme = {
 	is_secret = no
 
 	allow = {
-		has_character_flag = took_decision_munitions_research_flag
+		has_character_flag = took_decision_mend_narsil_flag
 	}
 
 	valid = {
-		has_character_flag = took_decision_munitions_research_flag
+		has_character_flag = took_decision_mend_narsil_flag
 	}
 
 	agent_leave_threshold = -25
@@ -94,28 +94,28 @@ munitions_research_scheme = {
 					NOT = { has_variable = agents_added }
 				}
 			}
+			add_agent_slot = agent_smith
 			add_agent_slot = agent_alchemist
-			add_agent_slot = agent_draughtsman
-			add_agent_slot = agent_drillmaster
 			add_agent_slot = agent_supplier
-			add_agent_slot = agent_bureaucrat_title
+			add_agent_slot = agent_theologian
+			add_agent_slot = agent_cleric
 		}
 	}
 
 	on_phase_completed = {
 		suppress_scheme_follow_up_event_till_input_given_effect = yes
-		munitions_research_scheme_prep_effect = yes
+		mend_narsil_scheme_prep_effect = yes
 		nars_cap_schemes_and_fire_reminders_effect = yes
 	}
 
-	on_hud_click = { munitions_research_scheme_prep_effect = yes }
+	on_hud_click = { mend_narsil_scheme_prep_effect = yes }
 
 	on_semiyearly = {
 		if = {
 			limit = { 
 				scheme_owner = { is_ai = yes } 
 			}
-			munitions_research_scheme_prep_effect = yes
+			mend_narsil_scheme_prep_effect = yes
 		}
 	}
 
@@ -124,9 +124,9 @@ munitions_research_scheme = {
 			save_scope_as = owner
 			send_interface_toast = {
 				type = event_toast_effect_neutral
-				title = munitions_research_scheme_invalidated_title
+				title = mend_narsil_scheme_invalidated_title
 				if = {
-					limit = { NOT = { has_character_flag = took_decision_munitions_research_flag } }
+					limit = { NOT = { has_character_flag = took_decision_mend_narsil_flag } }
 					custom_tooltip = scheme_target_another_holder
 				}
 			}
