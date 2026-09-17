@@ -12,6 +12,21 @@
  mend_narsil_scheme_SUCCESS_DESC: "You will reforge #V [narsil|E]#! and claim it as an [artifact|E]!"
  mend_narsil_scheme_action: "Mend Narsíl in"
  mend_narsil_scheme_invalidated_title: "@scheme_icon! Mend Narsíl Ends"
- 
+
  raise_warhost_scheme: "Raise Selian Host"
  raise_warhost_scheme_desc: "We must meticulously plan, supply, and train a formidable new host. If our preparations fall short, we will simply redouble our efforts until the army is ready."
+
+ recruit_nars_scheme: "Muster $game_concept_selianes$"
+ recruit_nars_scheme_desc: "You attempt to recruit and muster $game_concept_selianes$ through diplomacy in hopes of convincing them to join your cause."
+ recruit_nars_scheme_desc_general: "The #v $recruit_nars_scheme$#! Scheme is a [personal_scheme|E] in which you attempt to recruit and muster $game_concept_selianes$ through diplomacy in hopes of convincing them to join your cause.\n\n#flavor "Not even gods fight against necessity." — $Alnars$, $anduril_name$#!"
+ recruit_nars_scheme_SUCCESS_DESC: "You recruit new $game_concept_selianes$ through diplomacy to your cause"
+ recruit_nars_scheme_action: "Muster $game_concept_selianes$"
+ recruit_nars_scheme_invalidated_title: "@scheme_icon! Muster $game_concept_selianes$ Ends"
+
+ piously_devote_scheme: "Pious Devotion"
+ piously_devote_scheme_action: "Devote Piously"
+ piously_devote_scheme_desc: "I will piously devote myself in the nearby temples, learning new passages as I spend time gleaning timeless wisdom."
+ piously_devote_scheme_desc_general: "#v $piously_devote_scheme$#! is a [personal_scheme|E] in which you attempt to gain [piety|E], [skill|E], and other [traits|E] through piously devoting yourself in service for the [gods|E] of tradition.\n\n#flavor "Not even gods fight against necessity." — $Alnars$, $anduril_name$#!"
+ piously_devote_scheme_SCHEME_SUCCESS_DESC: "You improve your skills, learning, or gain a trait and its experience"
+ SCHEME_OWNER_CYNICAL: "You are [GetTrait('cynical').GetName( owner )]: $VALUE|+0=$"
+ SCHEME_OWNER_ZEALOUS: "You are [GetTrait('zealous').GetName( owner )]: $VALUE|+0=$"

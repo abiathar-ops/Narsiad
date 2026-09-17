@@ -158,156 +158,52 @@ nars_courtiers.0001 = {
 }
 
 nars_courtiers.0002 = {
-    hidden = yes
+	hidden = yes
 
-    immediate = {
-        # Loops exactly the number of times specified
-        while = {
-            count = 5
-            
-            create_character = {
-                employer = root # Automatically adds them directly to your landless camp/court
-                culture = culture:selian
-				faith = faith:nars_religion
-                age = { 18 40 } # Prevents it from spawning babies or useless elderly characters
-                gender_female_chance = 50
-				random_traits_list = {
-					count = 2
-					wrathful = {}
-					arrogant = {}
-					diligent = {}
-					humble = {}
-					calm = {}
-					impatient = {}
-					greedy = {}
-					temperate = {}
-					ambitious = {}
-					just = {}
-					stubborn = {}
-				}
-				random_traits_list = {
-					count = 1
-					lustful = {}
-					arrogant = {}
-					chaste = {}
-				}
-				random_traits_list = {
-					count = 1
-					education_martial_2 = {}
-					education_martial_3 = {}
-					education_martial_4 = {}
-					education_learning_2 = {}
-					education_learning_3 = {}
-					education_learning_4 = {}
-					education_stewardship_2 = {}
-					education_stewardship_3 = {}
-					education_stewardship_4 = {}
-				}
-				random_traits_list = {
-					count = { 0 1 }
-					fecund = {}
-					physique_good_1 = {}
-					shrewd = {}
-					strong = {}
-				}
-                learning = { 10 25 }
-				intrigue = { 10 25 }
-				stewardship = { 10 25 }
-				diplomacy = { 10 25 }
-				martial = { 10 25 }
-				prowess = { 10 30 }
-                after_creation = {
-                    add_trait = nars_naturalis
-					nars_naturalis_set_tier_xp_effect = yes
-                }
-            }
-        }
-    }
-}
+	trigger = {
+		recruit_nars_court_has_room_trigger = yes
+	}
 
-nars_courtiers.0003 = {
-    hidden = yes
+	immediate = {
+		recruit_nars_add_courtier_effect = yes
 
-    immediate = {
-        # Loops exactly the number of times specified
-        while = {
-            count = 5
-            
-            create_character = {
-                employer = root # Automatically adds them directly to your landless camp/court
-                culture = culture:selian
-				faith = faith:nars_religion
-                age = { 18 40 } # Prevents it from spawning babies or useless elderly characters
-                gender_female_chance = 0
-				random_traits_list = {
-					count = 2
-					wrathful = {}
-					arrogant = {}
-					diligent = {}
-					humble = {}
-					calm = {}
-					impatient = {}
-					greedy = {}
-					temperate = {}
-					ambitious = {}
-					just = {}
-					stubborn = {}
+		if = {
+			limit = { recruit_nars_court_has_room_trigger = yes }
+			random = {
+				chance = 40
+				trigger_event = {
+					id = nars_courtiers.0004
+					days = { 5 15 }
 				}
-				random_traits_list = {
-					count = 1
-					lustful = {}
-					arrogant = {}
-					chaste = {}
-				}
-				random_traits_list = {
-					count = 1
-					education_martial_2 = {}
-					education_martial_3 = {}
-					education_martial_4 = {}
-					education_learning_2 = {}
-					education_learning_3 = {}
-					education_learning_4 = {}
-					education_stewardship_2 = {}
-					education_stewardship_3 = {}
-					education_stewardship_4 = {}
-				}
-				random_traits_list = {
-					count = { 0 1 }
-					fecund = {}
-					physique_good_1 = {}
-					shrewd = {}
-					strong = {}
-				}
-                learning = { 10 25 }
-				intrigue = { 10 25 }
-				stewardship = { 10 25 }
-				diplomacy = { 10 25 }
-				martial = { 10 25 }
-				prowess = { 10 30 }
-                after_creation = {
-                    remove_bad_traits = yes
-                }
-            }
-        }
-    }
+			}
+		}
+	}
 }
 
 nars_courtiers.0004 = {
 	hidden = yes
+
+	trigger = {
+		recruit_nars_court_has_room_trigger = yes
+	}
+
 	immediate = {
-		while = {
-			count = 4
-			random_courtier_or_guest = {
-				limit = {
-					is_adult = yes
-					NOT = { is_close_family_of = root }
-					NOT = { is_spouse_of = root }
-				}
-				death = {
-					death_reason = death_murder
-					killer = root
-				}
-			}
+		recruit_nars_add_courtier_effect = yes
+	}
+}
+
+nars_courtiers.0003 = {
+	hidden = yes
+
+	immediate = {
+		root = {
+			remove_short_term_gold = minor_gold_value
+			add_stress = minor_stress_impact_gain
+		}
+		send_interface_message = {
+			title = nars_courtiers.0003.t
+			desc = nars_courtiers.0003.desc
+			type = event_prowess_bad_desc
 		}
 	}
 }

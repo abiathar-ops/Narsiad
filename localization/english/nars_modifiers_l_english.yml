@@ -47,3 +47,12 @@
  nars_faithful_supplies_modifier_desc: "Devotees have provided their ruler with supplies to aid in conquests."
  nars_faithful_draft_modifier: "Faithful's Draft"
  nars_faithful_draft_modifier_desc: "The faithful have provided their ruler with additional troops to aid in conquests."
+ nars_temple_fornicator_modifier:0 "Terror-filled"
+ nars_poet_inspired_modifier:0 "Inspired"
+ nars_herbalist_inspired_modifier:0 "Inspired"
+
+ nars_focused_devotion_modifier:0 "Focused Devotion"
+ nars_focused_devotion_personal_modifier:0 "Focused Faith"
+ nars_dignified_devotion_modifier:0 "Dignified Devotion"
+ nars_dignified_devotion_personal_modifier:0 "Dignified Faith"
+ nars_hegemon_aspirant_modifier: "Aspiring Hēgemon"

@@ -1,0 +1,35 @@
+﻿piously_devote_scheme_success = {
+    random_events = {
+        100 = nars_religious.0001  # Toast: Miniscule piety gain
+        100 = nars_religious.0002  # Toast: Minor Mystic XP
+        100 = nars_religious.0003  # Toast: Minor Poet XP
+        100 = nars_religious.0004  # Toast: Minor stress loss
+        100 = nars_religious.0005 # Toast: Gain Learning XP
+
+        5 = nars_religious.1001 # Become a Poet, XP, Diplomacy Skill
+        5 = nars_religious.1002 # Gain Mystic, XP, Learning Skill
+        15 = nars_religious.1003 # Gain Piety (Massive piety if zealous)
+
+        15 = nars_religious.3001 # Shared: Seduce an Oracle?
+        15 = nars_religious.3030 # Sacrifice Sheep (Gold for benefits)
+        #25 = nars_religious.3050 # Trait Shift: Lose Cynical, Gain Zealous
+    }
+}
+
+piously_devote_scheme_failure = {
+    random_events = {
+        100 = nars_religious.0051 # Toast: Small gold loss
+        100 = nars_religious.0052 # Toast: Small prestige loss
+        75 = nars_religious.0053 # Toast: Medium gold loss
+        75 = nars_religious.0054 # Toast: Medium prestige loss
+        100 = nars_religious.0005 # Toast: Gain Learning XP (Shared silver-lining)
+
+        2 = nars_religious.2001 # Drank the libation?
+        #50 = nars_religious.2002 # Stutter then double-down on praying
+
+        2 = nars_religious.3001 # Shared: Seduce an Oracle?
+        20 = nars_religious.3010 # Broken vase (Pay or Frame someone)
+        20 = nars_religious.3020 # Pray for divine help
+        #25 = nars_religious.3051 # Trait Shift: Lose Zealous, Gain Cynical
+    }
+}

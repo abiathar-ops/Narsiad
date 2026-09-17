@@ -12,11 +12,6 @@
  game_concept_selian_language_short: "S."
  game_concept_selian_language_desc: "Selian is the language of the ancient [selianes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [selian|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
 
- game_concept_polimetis: "Polimêtis"
- game_concept_polimetis_desc: "The [Glossary( 'Polimêtis', 'POLIMETIS_GLOSS' )] are [selians|E] who are known for their pearly contributions to [learning|E] pursuits and [martial|E] [innovation|E]. They commonly serve as [courtiers|E], [councillors|E] and [commanders|E] to their respective [realms|e]."
- game_concept_sophist: "Polimêtis"
- game_concept_sophists: "Polimêtides"
-
  game_concept_narsokratia: "Narsokratía"
  game_concept_narsokratia_possessive: "Narsokratía's"
  game_concept_selianrealm: "Selian Realm"
@@ -39,22 +34,14 @@
 
  game_concept_panteion: "Politeíon"
  game_concept_panteion_possessive: "Politeíon's"
- game_concept_panteion_desc: "The [selianes|E] [Glossary('Politeíon', 'PANTEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of the [selianes|E], each embodying different [traits|E] of life, nature, and human experience. Most of the [selianes|E] worship [narses|E], the personification of [learning|E] and [innovation|E]. However, the [selianes|E] also revere other deities like [phokas|E] and [enuo|E]."
+ game_concept_panteion_desc: "The [Glossary('Politeíon', 'PANTEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of $game_concept_selianes$, each embodying different aspects of life, nature, and experience."
 
  game_concept_narsil: "Narsíl"
  game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [selian|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [selians|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
 
- #Selian MAA
- game_concept_optimatoi: "Optímātoî"
- game_concept_optimatos: "Optímātos"
- game_concept_optimatoi_desc: "The [Glossary( 'Optímātoî', 'optimatoi_GLOSS' )] were citizen-soldiers of the old [selian|E] city-states. These [men_at_arms|E] were primarily represented by free citizens who were able to afford armaments and armor. Now revived, they live to serve [narsokratia|E] once more."
-
- game_concept_mastiges: "Mástiges" 
- game_concept_mastiges_desc: "The [Glossary( 'Mástiges', 'MASTIGES_GLOSS' )] are a new [innovation|E] of the new [selianes|E] revival. Armed with newly discovered and utilized gunpowders, they are the penultimate [optimatoi|E] of the [realm|E]. Feared and formidable, it's no wonder that they are known for their ruthlessness and effectiveness in [wars|E]."
-
  game_concept_alnars: "Alnárs"
  game_concept_alnars_adj: "Alnárs'"
- game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [optimatoi|E] and a forerunner of the [selian|E] [mercenaries|E], Alnárs had slowly restored the [selianes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
+ game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and a forerunner of the [selian|E] [mercenaries|E], Alnárs had slowly restored the [selianes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
 
  game_concept_selian_incursion:0 "Selian Incursion"
  game_concept_selian_incursion_desc:3 "a [selian|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Selian Culture#!\n$EFFECT_LIST_BULLET$#V Selian Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"

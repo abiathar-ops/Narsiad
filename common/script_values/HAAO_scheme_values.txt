@@ -1,0 +1,27 @@
+﻿odds_piously_devote_scheme_misc_value = {
+	add = {
+		value = {
+			add = 15
+			desc = BASE
+		}
+		
+		add = {
+			value = scope:owner.learning
+			multiply = 0.9
+			desc = scheme_odds.learning.owner
+		}
+		
+		scope:target ?= {
+			add = {
+				value = scope:target.learning
+				multiply = 0.9
+				desc = scheme_odds.learning.target
+			}
+			add = {
+				value = "opinion(scope:owner)"
+				multiply = 0.5
+				desc = scheme_odds.target.opinion_of_owner
+			}
+		}
+	}
+}

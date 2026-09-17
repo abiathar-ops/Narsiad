@@ -1,0 +1,126 @@
+recruit_nars_add_courtier_effect = {
+	save_temporary_scope_as = host
+
+	every_realm_province = {
+		if = {
+			limit = {
+				save_temporary_scope_as = potential_province
+				NOT = {
+					any_in_list = {
+						list = pool_provinces
+						county.duchy = scope:potential_province.county.duchy
+					}
+				}
+			}
+			add_to_temporary_list = pool_provinces
+		}
+	}
+
+	every_in_list = {
+		list = pool_provinces
+		save_temporary_scope_as = pool_province
+
+		every_pool_character = {
+			province = scope:pool_province
+			limit = {
+				culture = { has_cultural_pillar = heritage_nars }
+				guest_knight_candidate_trigger = { HOST = root }
+			}
+			add_to_temporary_list = potential_nars_courtiers
+		}
+	}
+
+	random_in_list = {
+		list = potential_nars_courtiers
+		limit = { is_alive = yes }
+		weight = {
+			base = 1
+			modifier = {
+				add = {
+					value = prowess
+					subtract = 15
+					multiply = 5
+				}
+			}
+			modifier = {
+				add = {
+					value = learning
+					subtract = 15
+					multiply = 5
+				}
+			}
+		}
+		save_scope_as = selian_courtier
+	}
+
+	if = {
+		limit = { NOT = { exists = scope:selian_courtier } }
+		create_character = {
+			location = root.capital_province
+			culture = culture:selian
+			faith = faith:nars_religion
+			random_traits_list = {
+				count = 2
+				wrathful = {}
+				arrogant = {}
+				diligent = {}
+				humble = {}
+				calm = {}
+				impatient = {}
+				greedy = {}
+				temperate = {}
+				ambitious = {}
+				just = {}
+				stubborn = {}
+			}
+			random_traits_list = {
+				count = 1
+				lustful = {}
+				arrogant = {}
+				chaste = {}
+			}
+			random_traits_list = {
+				count = 1
+				education_martial_2 = {}
+				education_martial_3 = {}
+				education_martial_4 = {}
+				education_learning_2 = {}
+				education_learning_3 = {}
+				education_learning_4 = {}
+				education_stewardship_2 = {}
+				education_stewardship_3 = {}
+				education_stewardship_4 = {}
+			}
+			random_traits_list = {
+				count = { 0 1 }
+				lifestyle_blademaster = {}
+				lifestyle_herbalist = {}
+				scholar = {}
+				lifestyle_poet = {}
+			}
+			learning = { 10 25 }
+			intrigue = { 10 25 }
+			stewardship = { 10 25 }
+			diplomacy = { 10 25 }
+			martial = { 10 25 }
+			prowess = { 15 30 }
+			gender_female_chance = 50
+			save_scope_as = selian_courtier
+			after_creation = {
+				add_trait = nars_naturalis
+				nars_naturalis_set_tier_xp_effect = yes
+			}
+		}
+	}
+
+	add_courtier = scope:selian_courtier
+
+	send_interface_message = {
+		title = nars_courtiers.0001.t
+		desc = nars_courtiers.0001.desc
+		type = event_prowess_good_desc
+		left_icon = scope:selian_courtier
+	}
+
+	clear_saved_scope = selian_courtier
+}

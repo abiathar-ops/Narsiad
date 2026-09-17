@@ -66,7 +66,7 @@
  # ── Foundries ──
 
  decision_munitions_research: "Found the Mástiges"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [optimatoi|E] with them."
+ decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] with them."
  decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_t2').GetName] [men_at_arms|E] armed with new armaments!"
  decision_munitions_research_confirm: "Blood and iron!"
 
@@ -143,23 +143,16 @@
  decision_take_epithet_tooltip: "Adopt an epithet or nickname that #emp may#! reflect your temperament, deeds, and character!"
  decision_take_epithet_confirm: "My second name!"
 
- decision_recruit_selian_courtier: "Muster the Selian"
- decision_recruit_selian_courtier_desc: "The [selians|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch heralds to scale those miserable peaks and drag them down to our [court|E]. It is time to bring those damn lazy [selianes|E] hermits down!"
- decision_recruit_selian_courtier_tooltip: "Send out heralds to find [selians|E] to your [court|E]" 
- decision_recruit_selian_courtier_confirm:0 "Proceed!"
- decision_recruit_selian_adventurer: "Muster the Selian"
- decision_recruit_selian_adventurer_desc: "The [selians|E] are scattered with many of our stubborn kins still clinging to the harsh peaks of our mountain exiles. With a bit of [prestige|E], I can now dispatch scouts to scale those miserable peaks and drag them down to my [camp|E]. It is time to bring those damn lazy [selianes|E] hermits down!"
- decision_recruit_selian_adventurer_tooltip: "At least #P 4#! [selianes|E] will arrive as [guests|E] to your [camp|E] within the coming months"
- decision_recruit_selian_adventurer_confirm:0 "Proceed!"
+ decision_recruit_nars: "Muster the $game_concept_selianes$ Exiles"
+ decision_recruit_nars_desc: "Many of our stubborn $game_concept_selianes$ kins still cling to the lonely, stagnant exiles of our hidden [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )]. Mayhaps, I'll send a herald to [GetScheme('recruit_nars_scheme').GetTypeNameNoTooltip]! \n\n#Flavor "Retire not into shaded bowers of exile to nurse thy fear and feast upon thy own ease while the earth lie untamed. For man should not hide in groves, trading sacred duty for the sluggard’s peace." - $Alnars$, $anduril_name$.#!"
+ decision_recruit_nars_tooltip: "You start a #v [GetScheme('recruit_nars_scheme').GetTypeName]#! [scheme|E] indefinitely" 
+ decision_recruit_nars_confirm:0 "Send forth the Herald!"
+ decision_recruit_nars_start_tt: "You start a #v [GetScheme('recruit_nars_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$You may receive #P 1-2#! new [selianes|E] as [courtiers|E] for your [court|E]\n$EFFECT_LIST_BULLET$Occasionally, #P 2#! highly-skilled [Glossary( 'Polimêtis', 'POLIMETIS_GLOSS' )] can be recruitable for [gold_i][gold|E]\n$EFFECT_LIST_BULLET$Extremely rarely, a [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )] will pledge themselves for [gold_i][gold|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$You lose #color_red [EmptyScope.ScriptValue('minor_gold_value')]#! [gold_i][gold|E] per visit as the Herald's wage\n$EFFECT_LIST_BULLET$You gain #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E] per Herald's failure"
+ decision_recruit_nars_ongoing: "You are already performing a [GetScheme('recruit_nars_scheme').GetTypeName] [scheme|E]"
 
- decision_hire_selian_1:0 "Search for [selianes|E]"
- decision_hire_selian_1_tooltip:3 "At least #P 4#! [selianes|E] will arrive as [guests|E] to your [court|E] within the coming months"
- decision_hire_selian_1_effect_tooltip:4 "Your servants will suggest a number of suitable [selianes|E] for your court"
-
- decision_hire_selian_2:0 "Scout for a [polimetis|E]"
- decision_hire_selian_2_tooltip:0 "You will receive #P 2#! suitable [polimetis|E] prospects for you to choose for your [court|E] as a [courtier|E]"
- selian_2_court_position_custom_desc: "$EFFECT_LIST_BULLET$Provides @travel_safety_icon![travel_safety|E] and @travel_speed_icon![travel_speed|E] during [travels|E]"
- decision_hire_selian_2_desc:0 "A good $selian_2_court_position$ is the key to a successful journey. I will request for a number of suitable candidates to be suggested."
-
- recruit_selian_1_cooldown_tt: "Search for [selianes|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_selian_1_cooldown' ))]"
- recruit_selian_2_cooldown_tt: "Scout for a [polimetis|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_selian_2_cooldown' ))]"
+ decision_piously_devote: "Show Pious Devotion"
+ decision_piously_devote_desc: "Gods are known to be fickle. It is a necessity perhaps to devote time for their appeasements for, after all, they watch our every step in this world."
+ decision_piously_devote_tooltip: "It is mayhaps time for me to devote myself."
+ decision_piously_devote_confirm: "Know Thyself"
+ decision_piously_devote_tt: "You start a #v [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_mystic').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_poet').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [learning_i|E] [learning|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [diplomacy_i|E] [diplomacy|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [piety_i] [piety|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
+ decision_piously_devote_req_tt: "You are already performing a [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E]"

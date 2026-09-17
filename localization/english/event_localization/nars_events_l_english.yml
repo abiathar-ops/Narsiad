@@ -40,7 +40,7 @@
  nars_faith.1003.a: "The [panteion|E] work in mysterious, delicious ways."
 
  nars_realm.1001.t: "Philósophos Gínou: Industry"
- nars_realm.1001.desc: "Our people may have once been lost and desolate, exiled and damned, but no more! They now burn with countless fires of ambition and [virtuous|E] diligence. [buildings|E], [holdings|E], and [cities|E] spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [optimatoi|E], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [selianes|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [hegemony|E] of antiquity. Our blessed [narsokratia|E] is destined to be reborn and the hour is nigh for its restoration!"
+ nars_realm.1001.desc: "Our people may have once been lost and desolate, exiled and damned, but no more! They now burn with countless fires of ambition and [virtuous|E] diligence. [buildings|E], [holdings|E], and [cities|E] spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [selianes|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [hegemony|E] of antiquity. Our blessed [narsokratia|E] is destined to be reborn and the hour is nigh for its restoration!"
  nars_realm.1001.a: "Let the forges roar!"
  industrial_boom_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [men_at_arms|E] and [development|E] growth!"
  nars_realm.1001.b: "Not yet."
@@ -59,13 +59,13 @@
  
  #Gunpowder
  nars_gunpowder.1001.t: "Khalepà tà Kalá"
- nars_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [panteion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('maa_t2').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [optimatoi|E] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
+ nars_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [panteion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('maa_t2').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
  nars_gunpowder.1001.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
  nars_gunpowder.1001.b: "Barbarians will make our black powder."
  nars_gunpowder.1001.c: "Use a powder liable to explode? No."
 
  nars_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
- nars_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [mastiges|E]!"
+ nars_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [Glossary( 'Mástigoî', 'MASTIGES_GLOSS' )]!"
  nars_gunpowder.1021.a: "A new era dawns!"
  nars_gunpowder.1021.a.mastiges_tt: "#v You#! unlocked  [GetMaA('maa_t2').GetName] [men_at_arms|E]"
  
@@ -91,20 +91,22 @@
  nars_artifacts.1022.desc: "Hellfire! Hellfire!\n\nThe volatile rites meant to bind the shards of [narsil|E] go awry; the alloy resists, hissing and cracking before falling apart once more, ruined beyond this attempt.\n\nHow could such an ancient, unnatural craft ever be reliably mastered? For now, at least, [narsil|E] remains broken."
  nars_artifacts.1022.a: "Craven..."
  
- nars_courtiers.0001.t: "An Selian Arrives"
- nars_courtiers.0001.desc: "A new Selian has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!"
+ nars_courtiers.0001.t: "A Selian Arrives"
+ nars_courtiers.0001.desc: "A new Selian has arrived at [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]!\nYou have lost #color_red [EmptyScope.ScriptValue('minor_gold_value')]#! [gold_i][gold|E] in wages"
+ nars_courtiers.0003.t: "Herald Humiliated"
+ nars_courtiers.0003.desc: "You have gained #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E]\nYou have lost #color_red [EmptyScope.ScriptValue('minor_gold_value')]#! [gold_i][gold|E] in wages"
 
  nars_courtiers.0021.toast.t: "Sponsored Host Departs!"
  nars_courtiers.0021.toast.desc: "[new_adventurer.GetTitledFirstName] gathered a host and now marches against [target_kingdom_ruler.GetTitledFirstName]!"
 
  nars_courtiers.0011.t: "Engúa Pára d' Áta"
- nars_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [selian|E] holds, two [selianes|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [optimatos|E] and a scholar, both [polimetis|E] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"
+ nars_courtiers.0011.desc: "I sink back in my chair and feel drowsiness take me as I hear my [courtiers|E] recount the same idea for the fifteenth time. I need someone, #emp anyone#!, who can tell me about something new, something innovating! And so, I have decided to search for a new hand to assist me in my [court|E].\n\nAfter dispatching messages through [selian|E] holds, two [selianes|E] finally show up in [ROOT.Char.GetCapitalLocation.GetName]. They both are two promising candidates, a former [optimatos|E] and a scholar, both [Glossary( 'Polimêtis', 'POLIMETIS_GLOSS' )] prospects. Both of them are skilled in their own right, in [learning|E] and [martial|E] pursuits, but I must be fiscally prudent with my [gold|E] especially as a [ruler|E]. I must choose wisely now!"
  nars_courtiers.0011.a: "I will take [pugilist.GetFirstName]."
  nars_courtiers.0011.b: "Perhaps, I will take [savant.GetFirstName] instead."
  nars_courtiers.0011.d.decline: "None of them suit my needs."
  nars_courtiers.0011.d.none: "There is no one suitable here."
  nars_courtiers.0011.c: "Perhaps I'll take both!"
- nars_courtiers.0011.d.tt: "These [polimetis|E] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
+ nars_courtiers.0011.d.tt: "These [Glossary( 'Polimêtis', 'POLIMETIS_GLOSS' )] prospects are dismissed, free to roam the [realm|E] and seek their fortunes elsewhere."
 
  nars_faith_1011_toast_title: "Aeì Ho Theòs Geōmetreî"
  nars_faith_1011_toast_desc: "The Selian tradition has been imposed on the realm!"

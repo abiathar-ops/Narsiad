@@ -1,0 +1,50 @@
+﻿### Use @generic_event_theme_sound for new themes.
+### Please notify audio dept. if new themes occur.
+
+@generic_event_theme_sound = "event:/SFX/Events/Themes/sfx_event_theme_type_generic"
+
+
+nars_faith = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_faith.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_grey.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_faith"
+	}
+	background = {
+		reference = nars_faith
+	}
+}
+
+nars_war = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_red.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_war"
+	}
+	background = {
+		reference = nars_war
+	}
+}
+
+nars_emperor = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_moral.dds"
+	}
+	header_background = {
+		reference = "gfx/interface/window_event/event_header_grey.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_domain"
+	}
+	background = {
+		reference = nars_emperor
+	}
+}

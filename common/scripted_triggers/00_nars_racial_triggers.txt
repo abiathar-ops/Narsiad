@@ -1,4 +1,4 @@
-is_selian = {
+﻿is_selian = {
     or = {
         culture = { has_cultural_pillar = heritage_nars }
         has_ethnicity = selianes

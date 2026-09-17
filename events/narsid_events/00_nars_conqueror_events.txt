@@ -561,8 +561,7 @@ nars_conqueror.1100 = {
     type = character_event
     title = nars_conqueror.1100.t
     desc = nars_conqueror.1100.desc
-    theme = emperor
-    override_background = throne_room_east
+    theme = nars_war
 
     left_portrait = {
         character = root

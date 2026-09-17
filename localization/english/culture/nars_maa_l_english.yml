@@ -1,9 +1,9 @@
 ﻿l_english:
  maa_t1: "Optímātoî"
- maa_t1_flavor: "#F The [optimatoi|E] are a sacred and revered caste, raised from birth to fight and die for the [selian|E] polity.#!"
+ maa_t1_flavor: "#F The [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] are a sacred and revered caste, raised from birth to fight and die for the $Selianes$.#!"
 
- maa_t2: "Mástiges"
- maa_t2_flavor: "#F The [mastiges|E] are an ironclad square of swordsmen, pikemen, bombardiers and arquebusiers formed from the finest of armaments and soldiers.#!"
+ maa_t2: "Mástigoî"
+ maa_t2_flavor: "#F The [Glossary( 'Mástigoî', 'MASTIGES_GLOSS' )] are an ironclad square of heavy pikemen and arquebusiers formed from the finest of armaments and soldiers.#!"
 
  culture_parameter_unlock_maa_t1: "Can recruit [GetMaA('maa_t1').GetName] as [men_at_arms|E]"
 

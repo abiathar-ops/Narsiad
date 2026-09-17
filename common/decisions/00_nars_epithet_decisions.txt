@@ -12,6 +12,7 @@ decision_take_epithet = {
  	is_shown = {
  		is_selian = yes
  		is_ruler = yes
+		has_trait = nars_conqueror
  	}
 
  	is_valid = {

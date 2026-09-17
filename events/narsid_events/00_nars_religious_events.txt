@@ -1,0 +1,999 @@
+﻿namespace = nars_religious
+
+# Intro
+nars_religious.10 = {
+	type = character_event
+	window = big_event_window
+	title = nars_religious.10.t
+	desc = nars_religious.10.desc
+	theme = nars_faith
+
+	center_portrait = {
+		character = root
+		animation = personality_zealous
+		camera = camera_body_right
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		scope:owner = {
+			save_scope_as = owner
+		}
+		if = {
+			limit = { exists = var:s_chosen_deity }
+			var:s_chosen_deity = { save_scope_as = s_chosen_deity }
+		}
+	}
+
+	option = {
+		name = nars_religious.10.a
+        flavor = nars_religious_intro_tt
+		trigger = {
+			is_landed = no
+		}
+		show_as_unavailable = { always = yes }
+		add_character_modifier = {
+			modifier = nars_focused_devotion_personal_modifier
+			years = 5
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = nars_focused_devotion_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = nars_religious.10.b
+        flavor = nars_religious_intro_tt
+		add_character_modifier = {
+			modifier = nars_dignified_devotion_personal_modifier
+			years = 5
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = nars_dignified_devotion_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+    
+    option = {
+		name = nars_religious.10.c
+        flavor = nars_religious_intro_tt
+		custom_tooltip = no_change_pious_devotion_tt
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	after = {
+		add_character_flag = study_scheme_intensity_chosen
+	}
+}
+
+# Toast: Medium Piety Gain
+nars_religious.0001 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_good
+            title = nars_religious.0001.t
+            add_piety = medium_piety_gain
+            left_icon = root
+        }
+    }
+}
+
+# Minor Mystic XP
+nars_religious.0002 = {
+    hidden = yes
+
+    trigger = {
+        has_trait = lifestyle_mystic
+        has_trait_xp = {
+            trait = lifestyle_mystic
+            value < 100
+        }
+    }
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_good
+            title = nars_religious.0002.t
+            add_trait_xp = {
+                trait = lifestyle_mystic
+                value = { 10 20 }
+            }
+            left_icon = root
+        }
+    }
+}
+
+# Minor Poet XP
+nars_religious.0003 = {
+    hidden = yes
+
+    trigger = {
+        has_trait = lifestyle_poet
+        has_trait_xp = {
+            trait = lifestyle_poet
+            value < 100
+        }
+    }
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_good
+            title = nars_religious.0003.t
+            add_trait_xp = {
+                trait = lifestyle_poet
+                value = { 10 20 }
+            }
+            left_icon = root
+        }
+    }
+}
+
+# Toast: Minor Piety Gain
+nars_religious.0004 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_good
+            title = nars_religious.0004.t
+            add_piety = minor_piety_gain
+            left_icon = root
+        }
+    }
+}
+
+# Toast: Gain Learning Skill
+nars_religious.0005 = {
+    hidden = yes
+
+    trigger = {
+		learning < 15
+        is_adult = yes
+    }
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_good
+            title = nars_religious.0005.t
+            add_learning_skill = { 1 3 }
+            left_icon = root
+        }
+
+    }
+}
+
+# Small Gold Loss
+nars_religious.0051 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_bad
+            title = nars_religious.0051.t
+            remove_short_term_gold = tiny_gold_value
+            left_icon = root
+        }
+    }
+}
+
+# Small Prestige Loss
+nars_religious.0052 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_bad
+            title = nars_religious.0052.t
+            add_prestige = minor_prestige_loss
+            left_icon = root
+        }
+    }
+}
+
+# Minor Gold Loss
+nars_religious.0053 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_bad
+            title = nars_religious.0053.t
+            remove_short_term_gold = minor_gold_value
+            left_icon = root
+        }
+    }
+}
+
+# Medium Prestige Loss
+nars_religious.0054 = {
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            type = event_toast_effect_bad
+            title = nars_religious.0054.t
+            add_prestige = medium_prestige_loss
+            left_icon = root
+        }
+    }
+}
+
+# Drinking Friend's Libation 
+nars_religious.2001 = {
+	type = character_event
+	title = nars_religious.2001.t
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { has_trait = drunkard } }
+                desc = nars_religious.2001.a.desc
+            }
+            triggered_desc = {
+                trigger = { has_trait = drunkard }
+                desc = nars_religious.2001.b.desc
+            }
+        }
+    }
+	theme = nars_faith
+	left_portrait = {
+		character = root
+		animation = drink_goblet
+		camera = camera_center_large
+	}
+	option = {
+        trigger = {
+            NOT = { has_trait = drunkard }
+        }
+		name = nars_religious.2001.a
+		flavor = nars_religious.2001.flavor
+        random = {
+            chance = 5
+            add_trait = drunkard
+        }
+		add_stress = minor_stress_gain
+		add_prestige = minor_prestige_loss
+	}
+
+    option = {
+        trigger = {
+            has_trait = drunkard
+        }
+		name = nars_religious.2001.b
+		flavor = nars_religious.2001.flavor
+		add_prestige = medium_prestige_loss
+	}
+}
+
+# Oracle Seduction
+nars_religious.3001 = {
+    type = character_event
+    title = nars_religious.3001.t
+    desc = nars_religious.3001.desc
+    theme = nars_faith
+    
+    left_portrait = {
+        character = root
+        animation = map_love
+        camera = camera_event_left
+    }
+    right_portrait = {
+        character = scope:target
+        animation = flirtation_left
+        camera = camera_event_right
+    }
+
+    trigger = {
+        is_ai = no
+        NOT = {
+            AND = {
+                is_male = yes
+                has_sexuality = homosexual
+            }
+        }
+        NOT = { has_character_flag = had_nars_religious_3001_event }
+    }
+
+    immediate = {
+        add_character_flag = had_nars_religious_3001_event
+
+        create_character = {
+            location = root.location
+            template = priest_character_template
+            culture = root.culture
+            faith = root.faith
+            age = { 18 25 }
+            gender_female_chance = 100
+            save_scope_as = target
+            trait = beauty_good_3
+            trait = lustful
+            trait = ambitious
+            trait = impatient
+            trait = seducer
+            trait = devoted
+            after_creation = {
+                remove_bad_traits = yes
+                add_character_flag = need_priest_outfit
+            }
+        }   
+    }
+
+    option = {
+        name = nars_religious.3001.a # seduce the target
+        flavor = nars_religious.3001.a.flavor
+        trigger_event = nars_religious.3002
+		add_internal_flag = special
+        custom_tooltip = {
+            text = proceed_seduction_oracle_tt
+        }
+    }
+    
+    option = {
+        name = nars_religious.3001.b # begone wench
+        flavor = nars_religious.3001.b.flavor
+        add_stress = minor_stress_gain
+    }
+}
+
+nars_religious.3002 = {
+    type = character_event
+    title = nars_religious.3002.t
+    desc = nars_religious.3002.desc
+    theme = nars_faith
+    window = big_event_window
+
+    center_portrait = {
+        character = root
+        animation = flirtation
+    }
+    right_portrait = {
+        character = scope:target
+        animation = flirtation_left
+    }
+    
+    immediate = {
+        save_scope_as = owner
+        set_variable = { name = smitten_oracle value = scope:target }
+        
+        root = { add_character_flag = is_naked }
+        scope:target = { add_character_flag = is_naked }
+        owner_seduce_outcome_sex_effect = yes
+        play_music_cue = "mx_cue_seduction"
+    }
+    
+    option = {
+        name = nars_religious.3002.a # take her a lover
+        flavor = nars_religious.3002.a.flavor
+        owner_seduce_outcome_become_lovers_option_effects = yes
+        ai_chance = {
+            base = 100
+        }
+    }
+
+    option = {
+        name = nars_religious.3002.b # one night stand
+        flavor = nars_religious.3002.b.flavor
+        owner_seduce_outcome_just_sex_effects = yes
+        ai_chance = {
+            base = 0
+            ai_value_modifier = {
+                ai_greed = 0.25
+                ai_vengefulness = 0.25
+            }
+        }
+    }
+
+    after = {
+        scope:owner = {
+            remove_character_flag = is_naked
+        }
+        scope:target = {
+            remove_character_flag = is_naked
+        }
+        hidden_effect = {
+            random = {
+                chance = 10
+                trigger_event = {
+                    id = nars_religious.3003
+                    days = { 7 14 }
+                }
+            }
+        }
+    }
+}
+
+nars_religious.3003 = {
+    type = character_event
+    hidden = yes
+
+    immediate = {
+        var:smitten_oracle = {
+            save_scope_as = target
+        }
+
+        send_interface_toast = {
+            type = event_toast_effect_bad
+            title = nars_religious.3003.t
+            left_icon = root
+            right_icon = scope:target
+            custom_tooltip = nars_religious.3003.tt
+        }
+
+        scope:target = {
+            death = {
+                death_reason = death_struck_by_lightning
+            }
+        }
+
+        add_character_modifier = {
+            modifier = nars_temple_fornicator_modifier
+            years = 2
+        }
+
+        remove_variable = smitten_oracle
+    }
+}
+
+# Poet / Poet XP gain / Diplomacy Gain
+nars_religious.1001 = {
+    type = character_event
+    title = nars_religious.1001.t
+    desc = nars_religious.1001.desc
+    theme = nars_faith
+
+    left_portrait = {
+        character = root
+        animation = thinking
+        camera = camera_event_left
+    }
+
+    right_portrait = {
+        character = scope:teacher
+        animation = flirtation
+        camera = camera_event_right
+    }
+
+    immediate = {
+        create_character = {
+            location = root.location
+            template = priest_character_template
+            culture = root.culture
+            faith = root.faith
+            age = { 18 25 }
+            gender_female_chance = 100
+            save_scope_as = teacher
+            trait = lifestyle_poet
+            after_creation = {
+                remove_bad_traits = yes
+                add_character_flag = need_priest_outfit
+            }
+        }   
+    }
+    
+    option = {
+        name = nars_religious.1001.a # Inhale the poetry
+        flavor = nars_religious.1001.a.flavor
+        if = {
+            limit = {
+                has_trait = lifestyle_poet
+                has_trait_xp = {
+                    trait = lifestyle_poet
+                    value >= 100
+                }
+            }
+            add_character_modifier = {
+                modifier = nars_poet_inspired_modifier
+                months = 3
+            }
+        }
+        else_if = {
+            limit = {
+                has_trait = lifestyle_poet
+            }
+            add_trait_xp = {
+                trait = lifestyle_poet
+                value = 15
+            }
+        }
+        else = {
+            random = {
+                chance = 30
+                add_trait = lifestyle_poet
+            }
+        }
+        add_internal_flag = special
+    }
+    
+    option = {
+        name = nars_religious.1001.b # study the syntax
+        flavor = nars_religious.1001.b.flavor
+        trigger = {
+            diplomacy < 15
+            is_adult = yes
+        }
+        add_diplomacy_lifestyle_xp = 250
+        random = {
+            chance = 45
+            add_diplomacy_skill = 1
+        }
+    }
+
+    after  = {
+        scope:teacher = {
+            silent_disappearance_effect = yes
+        }
+    }
+}
+
+# Wise Man / Wise Man XP gain / Learning Gain
+nars_religious.1002 = {
+    type = character_event
+    title = nars_religious.1002.t
+    desc = nars_religious.1002.desc
+    theme = nars_faith
+
+    left_portrait = {
+        character = root
+        animation = holding_scrolls
+        camera = camera_event_left_away_3_4
+    }
+
+    right_portrait = {
+        character = scope:teacher
+        animation = chancellor
+        camera = camera_event_right
+    }
+
+    immediate = {
+        create_character = {
+            location = root.location
+            template = priest_character_template
+            culture = root.culture
+            faith = root.faith
+            age = { 60 72 }
+            gender_female_chance = 0
+            save_scope_as = teacher
+            trait = lifestyle_mystic
+            after_creation = {
+                remove_bad_traits = yes
+                add_character_flag = need_priest_outfit
+            }
+        }   
+    }
+    
+    option = {
+        name = nars_religious.1002.a # Inhale the poetry
+        flavor = nars_religious.1002.a.flavor
+        if = {
+            limit = {
+                has_trait = lifestyle_mystic
+                has_trait_xp = {
+                    trait = lifestyle_mystic
+                    value >= 100
+                }
+            }
+            add_character_modifier = {
+                modifier = nars_herbalist_inspired_modifier
+                months = 3
+            }
+        }
+        else_if = {
+            limit = {
+                has_trait = lifestyle_mystic
+            }
+            add_trait_xp = {
+                trait = lifestyle_mystic
+                value = 15
+            }
+        }
+        else = {
+            random = {
+                chance = 30
+                add_trait = lifestyle_mystic
+            }
+        }
+        add_internal_flag = special
+    }
+    
+    option = {
+        name = nars_religious.1002.b # study the syntax
+        flavor = nars_religious.1002.b.flavor
+        trigger = {
+            learning < 15
+            is_adult = yes
+        }
+        add_learning_lifestyle_xp = 250
+        random = {
+            chance = 45
+            add_learning_skill = 1
+            
+        }
+    }
+
+    after  = {
+        scope:teacher = {
+            silent_disappearance_effect = yes
+        }
+    }
+}
+
+# Gain Piety
+nars_religious.1003 = {
+    type = character_event
+    title = nars_religious.1003.t
+    desc = nars_religious.1003.desc
+    theme = nars_faith
+
+    left_portrait = {
+        character = root
+        animation = throne_room_bow_2
+        camera = camera_event_right_away
+    }
+
+    option = {
+        name = nars_religious.1003.a
+        flavor = nars_religious.1003.flavor
+        if = {
+            limit = {
+                has_trait = zealous
+            }
+            add_piety = massive_piety_gain
+        }
+        else_if = {
+            limit = {
+                piety_level >= 3
+            }
+            add_piety = major_piety_gain
+        }
+        else = {
+            add_piety = medium_piety_gain
+        }
+    }
+}
+
+# Broken Vase
+nars_religious.3010 = {
+    type = character_event
+    title = nars_religious.3010.t
+    desc = nars_religious.3010.desc
+    theme = nars_faith
+
+    left_portrait = {
+        character = root
+        animation = scheme
+    }
+
+    right_portrait = {
+        character = scope:priest
+        animation = map_fear
+    }
+
+    lower_right_portrait = {
+        character = scope:victim
+    }
+
+    immediate = {
+        create_character = {
+            location = root.location
+            template = priest_character_template
+            culture = root.culture
+            faith = root.faith
+            age = { 18 25 }
+            gender_female_chance = 100
+            save_scope_as = priest
+            trait = devoted
+            after_creation = {
+                remove_bad_traits = yes
+                add_character_flag = need_priest_outfit
+            }
+        }
+        create_character = {
+            location = root.location
+            culture = root.culture
+            faith = root.faith
+            age = { 40 56 }
+            gender_female_chance = 0
+            save_scope_as = victim
+            trait = blind
+            trait = intellect_bad_3
+            trait = honest
+            trait = compassionate
+            trait = generous
+            trait = devoted
+            after_creation = {
+                remove_bad_traits = yes
+            }
+        }   
+    }
+
+    # Pay the fine
+    option = {
+        name = nars_religious.3010.a
+        flavor = nars_religious.3010.a.flavor
+        remove_short_term_gold = medium_gold_value
+        add_piety = minor_piety_gain
+    }
+
+    # Frame innocent passerby
+    option = {
+        name = nars_religious.3010.b
+        flavor = nars_religious.3010.b.flavor
+        stress_impact = {
+			compassionate = minor_stress_impact_gain
+			just = minor_stress_impact_gain
+            honest = minor_stress_imapct_gain
+			greedy = minor_stress_impact_loss
+            sadistic = minor_stress_impact_loss
+            callous = minor_stress_impact_loss
+		}
+        random_list = {
+			50 = {
+				modifier = {
+					add = 25
+					intrigue >= 10
+				}
+				modifier = {
+					add = 25
+					intrigue >= 15
+				}
+				modifier = {
+					add = 50
+					intrigue >= 20
+				}
+				custom_tooltip = haao_lie_success_tt
+				add_intrigue_lifestyle_xp = 250
+			}
+			50 = {
+				modifier = {
+					add = 25
+					intrigue < 10
+				}
+				modifier = {
+					add = 25
+					intrigue < 5
+				}
+				custom_tooltip = haao_lie_failure_tt
+				add_piety = major_piety_loss
+				remove_short_term_gold = medium_gold_value
+			}
+		}
+    }
+
+    after = {
+        scope:victim = {
+            silent_disappearance_effect = yes
+        }
+        scope:priest = {
+            silent_disappearance_effect = yes
+        }
+    }
+} 
+
+# Pray to the Gods
+nars_religious.3020 = {
+	type = character_event
+	title = nars_religious.3020.t
+	desc = nars_religious.3020.desc
+	theme = nars_faith
+
+	left_portrait = {
+		character = root
+		animation = throne_room_kneel_2
+		camera = camera_event_right_fully_away
+	}
+
+	right_portrait = {
+		character = scope:priest
+		animation = chaplain
+	}
+
+	immediate = {
+		create_character = {
+			location = root.location
+			template = priest_character_template
+			culture = root.culture
+			faith = root.faith
+			age = { 18 25 }
+			gender_female_chance = 100
+			save_scope_as = priest
+			trait = devoted
+			after_creation = {
+				remove_bad_traits = yes
+				add_character_flag = need_priest_outfit
+			}
+		}
+	}
+	
+	option = {
+		name = nars_religious.3020.a
+		flavor = nars_religious.3020.a.flavor
+		
+        add_piety = minor_piety_gain
+		add_stress = minor_stress_gain
+
+        random = {
+			chance = 15
+			add_character_modifier = {
+                modifier = divine_guidance_modifier
+                months = 3
+            }
+		}
+		
+		stress_impact = {
+			zealous = minor_stress_impact_loss # Zealous characters find comfort in the struggle
+			impatient = minor_stress_impact_gain
+		}
+	}
+	
+	option = {
+		name = nars_religious.3020.b
+		flavor = nars_religious.3020.b.flavor
+		
+		add_piety = major_piety_loss
+		
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			cynical = minor_stress_impact_loss
+			impatient = minor_stress_impact_loss
+		}
+		
+		random = {
+			chance = 30
+			add_character_modifier = {
+                modifier = logical_thinking_modifier
+                months = 3
+            }
+		}
+	}
+
+	after = {
+		scope:priest = {
+			silent_disappearance_effect = yes
+		}
+	}
+}
+
+# Sacrifice Sheep
+nars_religious.3030 = {
+	type = character_event
+	title = nars_religious.3030.t
+	desc = nars_religious.3030.desc
+	theme = nars_faith
+
+	left_portrait = {
+		character = root
+		animation = steward
+		camera = camera_event_left_crowning_observation
+	}
+
+	right_portrait = {
+        character = scope:priest
+		animation = debating
+		camera = camera_event_right
+	}
+
+	immediate = {
+		create_character = {
+			location = root.location
+			template = priest_character_template
+			culture = root.culture
+			faith = root.faith
+			age = { 18 25 }
+			gender_female_chance = 100
+			save_scope_as = priest
+			trait = devoted
+			after_creation = {
+				remove_bad_traits = yes
+				add_character_flag = need_priest_outfit
+			}
+		}
+	}
+
+	option = {
+		name = nars_religious.3030.a
+		flavor = nars_religious.3030.a.flavor
+		
+		remove_short_term_gold = major_gold_value
+		add_piety = medium_piety_gain
+		
+        random = {
+            chance = 15
+            add_character_modifier = {
+                modifier = ep3_priest_friend_same_modifier
+                months = 3
+            }
+        }
+		
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			greedy = major_stress_impact_gain
+		}
+	}
+	
+	option = {
+		name = nars_religious.3030.b
+		flavor = nars_religious.3030.b.flavor
+		
+		remove_short_term_gold = minor_gold_value
+		add_piety = minor_piety_gain
+		
+		stress_impact = {
+			greedy = minor_stress_impact_gain
+		}
+	}
+	
+	option = {
+		name = nars_religious.3030.c
+		flavor = nars_religious.3030.c.flavor
+		
+		add_piety = minor_piety_loss
+		
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			zealous = major_stress_impact_gain
+			generous = minor_stress_impact_gain
+		}
+	}
+
+	after = {
+		scope:priest = {
+			silent_disappearance_effect = yes
+		}
+	}
+}
+
+# Cynical to Zealous
+nars_religious.3051 = {
+    type = character_event
+    title = nars_religious.3051.t
+    desc = nars_religious.3051.desc
+    theme = nars_faith
+
+    option = {
+        name = nars_religious.3051.a
+        flavor = nars_religious.3051.a.flavor
+    }
+    option = {
+        name = nars_religious.3051.b
+        flavor = nars_religious.3051.b.flavor
+    }
+}
+
+# Zealous to Cynical
+nars_religious.3052 = {
+    type = character_event
+    title = nars_religious.3052.t
+    desc = nars_religious.3052.desc
+    theme = nars_faith
+
+    option = {
+        name = nars_religious.3052.a
+        flavor = nars_religious.3052.a.flavor
+    }
+    option = {
+        name = nars_religious.3052.b
+        flavor = nars_religious.3052.b.flavor
+    }
+}

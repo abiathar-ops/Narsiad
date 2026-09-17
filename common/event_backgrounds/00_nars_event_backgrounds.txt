@@ -1,0 +1,20 @@
+﻿nars_faith = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/nars_faith.dds"
+		ambience = "event:/DLC/FP2/SFX/Events/courtyard"
+	}
+}
+
+nars_war = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/nars_war.dds"
+		ambience = "event:/DLC/FP2/SFX/Events/courtyard"
+	}
+}
+
+nars_emperor = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/nars_emperor.dds"
+		ambience = "event:/DLC/FP2/SFX/Events/courtyard"
+	}
+}

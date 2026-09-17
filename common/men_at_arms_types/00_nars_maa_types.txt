@@ -62,7 +62,7 @@ maa_t1 = {
         add = counter_synergy_ai_weight_heavy_infantry
 		add = 40
     }
-    icon = narsid_t1
+    icon = nars_t1
 }
 
 #Unlockable via Decision
@@ -107,5 +107,5 @@ maa_t2 = {
     
     stack = 100
    	ai_quality = { value = @cultural_maa_extra_ai_score }
-    icon = narsid_t2
+    icon = nars_t2
 }

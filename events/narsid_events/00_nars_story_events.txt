@@ -354,11 +354,6 @@ nars_intro.0001 = {
                         nars_laamp_camp_setup_effect = yes
                         change_provisions = starting_provisions_value 
                     }
-                    
-                    while = {
-                        count = 4
-                        trigger_event = nars_courtiers.0002
-                    }
                 }      
                 populate_location_with_contracts_effect = {
                     AREA_CHAR = scope:new_landless_adventurer
@@ -431,8 +426,6 @@ nars_intro.0001 = {
                         nars_laamp_camp_setup_effect = yes
                         change_provisions = starting_provisions_value 
                     }
-                    
-                    while = { count = 4 trigger_event = nars_courtiers.0002 }
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
@@ -499,8 +492,6 @@ nars_intro.0001 = {
                         nars_laamp_camp_setup_effect = yes
                         change_provisions = starting_provisions_value 
                     }
-                    
-                    while = { count = 4 trigger_event = nars_courtiers.0002 }
                 }      
                 populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
                 spawn_army = {
