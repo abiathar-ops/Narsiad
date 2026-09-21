@@ -49,61 +49,6 @@
     }
 }
 
-nars_update_narsokratia_value = {
-    # SCOPE: Story
-    
-    if = {
-        # Catch Landless Adventurers first
-        limit = { story_owner = { has_government = landless_adventurer_government } }
-        set_variable = { name = narsokratia_value value = 0 }
-    }
-    else_if = {
-        limit = { 
-            story_owner = { 
-                # Scoping to a title requires dropping the "tier_" prefix!
-                any_held_title = { title_tier = hegemony } 
-            } 
-        }
-        set_variable = { name = narsokratia_value value = 5 }
-    }
-    else_if = {
-        limit = { 
-            story_owner = { 
-                any_held_title = { title_tier = empire } 
-            } 
-        }
-        set_variable = { name = narsokratia_value value = 4 }
-    }
-    else_if = {
-        limit = { 
-            story_owner = { 
-                any_held_title = { title_tier = kingdom } 
-            } 
-        }
-        set_variable = { name = narsokratia_value value = 3 }
-    }
-    else_if = {
-        limit = { 
-            story_owner = { 
-                any_held_title = { title_tier = duchy } 
-            } 
-        }
-        set_variable = { name = narsokratia_value value = 2 }
-    }
-    else_if = {
-        limit = { 
-            story_owner = { 
-                any_held_title = { title_tier = county } 
-            } 
-        }
-        set_variable = { name = narsokratia_value value = 1 }
-    }
-    else = {
-        # Catch-all for unlanded courtiers
-        set_variable = { name = narsokratia_value value = 0 }
-    }
-}
-
 nars_apply_setup_effect = {
     if = {
         limit = {
@@ -113,7 +58,7 @@ nars_apply_setup_effect = {
             NOT = { has_trait = nars_naturalis }
         }
         add_trait = nars_naturalis
-        create_story = story_nars_naturalis
+        #create_story = story_nars_naturalis
         nars_naturalis_set_tier_xp_effect = yes
     }
 }

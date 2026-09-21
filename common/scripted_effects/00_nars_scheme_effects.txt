@@ -1,4 +1,4 @@
-nars_cap_schemes_and_fire_reminders_effect = {
+﻿nars_cap_schemes_and_fire_reminders_effect = {
 	if = {
 		limit = {
 			scheme_agent_charges >= opportunity_cap_value
@@ -28,9 +28,6 @@ nars_cap_schemes_and_fire_reminders_effect = {
 				trigger = scheme_type
 				munitions_research_scheme = {
 					munitions_research_scheme_prep_effect = yes
-				}
-				mend_narsil_scheme = {
-					mend_narsil_scheme_prep_effect = yes
 				}
 				raise_warhost_scheme = {
 					raise_warhost_scheme_prep_effect = yes
@@ -119,24 +116,53 @@ create_narsil_effect = {
 			type = narsil
 			visuals = narsil
             
-            # Use raw values or valid scopes instead of undefined ones
 			owner = root
 			wealth = 3000 
 			quality = 100 
 			
 			save_scope_as = newly_created_artifact
 			history = {					
-				actor = root
-				recipient = root
-				type = created # Fixed history type
+				type = created
 			}
 		}
         
-        # Correctly apply the rarity to the newly created artifact
         scope:newly_created_artifact = {
             set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+			set_variable = {
+				name = can_be_used_for_narsokratia
+				value = yes
+			}
         }
 	}
+}
+
+create_narsil_shards_effect = {
+	create_artifact = {
+		name = narsil_shards_name
+		description = narsil_shards_desc
+		modifier = artifact_narsil_shards_modifier
+		template = narsil_shards_template
+		type = narsil_shards
+		visuals = narsil_shards
+
+		owner = root
+		wealth = 3000 
+		quality = 100 	
+		
+		save_scope_as = newly_created_artifact
+		history = {					
+			type = created_before_history 
+		}
+	}        
+    scope:newly_created_artifact = {
+        set_artifact_rarity_illustrious = yes
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = {
+			name = can_be_used_for_narsil
+			value = yes
+		}
+    }
 }
 
 create_anduril_effect = {
@@ -149,7 +175,7 @@ create_anduril_effect = {
 			description = anduril_desc
 			modifier = artifact_anduril_modifier
 			template = anduril_template
-			type = anduril # Fixed a typo here (was 'andruril')
+			type = anduril 
 			visuals = anduril
             
 			owner = root
@@ -158,14 +184,228 @@ create_anduril_effect = {
             
 			save_scope_as = newly_created_artifact
 			history = {					
-				actor = root
-				recipient = root
-				type = created
+				type = created_before_history 
 			}
 		}
         
         scope:newly_created_artifact = {
             set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
         }
+	}
+}
+
+get_item_quality_effect = {
+	if = {
+		limit = {
+			NOT = { exists = scope:quality }
+		}
+		if = {
+			limit = { NOT = { exists = scope:random_quality_bonus } }
+			random_list = {
+				10 = { # Illustrious — rarest
+					modifier = {
+						add = 15
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 100 }
+						}
+					}
+					modifier = {
+						add = 8
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					save_scope_value_as = { name = random_quality_bonus value = 200 }
+				}
+				20 = { # Famed
+					modifier = {
+						add = 15
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					modifier = {
+						add = 8
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 50 }
+						}
+					}
+					save_scope_value_as = { name = random_quality_bonus value = 80 }
+				}
+				30 = { # Masterwork
+					modifier = {
+						add = 10
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 50 }
+						}
+					}
+					modifier = {
+						add = 5
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 25 }
+						}
+					}
+					save_scope_value_as = { name = random_quality_bonus value = 40 }
+				}
+				40 = { # Common — most likely
+					modifier = {
+						add = -20
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					modifier = {
+						add = -10
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 25 }
+						}
+					}
+					save_scope_value_as = { name = random_quality_bonus value = 0 }
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = quality
+			value = {
+				value = 20
+				add = scope:random_quality_bonus
+				min = 1
+				max = 200
+			}
+		}
+	}
+}
+
+get_item_wealth_effect = {
+	if = {
+		limit = {
+			NOT = { exists = scope:wealth }
+		}
+		if = {
+			limit = { NOT = { exists = scope:random_wealth_bonus } }
+			random_list = {
+				10 = { # Illustrious — rarest
+					modifier = {
+						add = 15
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 100 }
+						}
+					}
+					modifier = {
+						add = 8
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					save_scope_value_as = { name = random_wealth_bonus value = 200 }
+				}
+				20 = { # Famed
+					modifier = {
+						add = 15
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					modifier = {
+						add = 8
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 50 }
+						}
+					}
+					save_scope_value_as = { name = random_wealth_bonus value = 80 }
+				}
+				30 = { # Masterwork
+					modifier = {
+						add = 10
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 50 }
+						}
+					}
+					modifier = {
+						add = 5
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 25 }
+						}
+					}
+					save_scope_value_as = { name = random_wealth_bonus value = 40 }
+				}
+				40 = { # Common — most likely
+					modifier = {
+						add = -20
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 75 }
+						}
+					}
+					modifier = {
+						add = -10
+						scope:actor = {
+							has_trait_track = { trait = lifestyle_pottery track = potter value >= 25 }
+						}
+					}
+					save_scope_value_as = { name = random_wealth_bonus value = 0 }
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = wealth
+			value = {
+				value = 20
+				add = scope:random_wealth_bonus
+				min = 1
+				max = 200
+			}
+		}
+	}
+}
+
+produce_amphora_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	get_item_quality_effect = yes
+	get_item_wealth_effect = yes
+
+	hidden_effect_new_object = {
+		create_artifact = {
+			name = artifact_amphora_name
+			description = artifact_placeholder_description
+			type = amphora
+			visuals = urn
+			modifier = artifact_placeholder_modifier
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created
+				recipient = scope:owner
+				location = scope:owner.location
+			}
+		}
+		scope:newly_created_artifact = {
+			get_artifact_feature_references_effect = yes
+			set_artifact_description = artifact_amphora_description
+			add_scaled_artifact_modifier_minor_prestige_effect = yes
+			if = {
+				limit = {
+					OR = {
+						rarity = famed
+						rarity = illustrious
+					}
+				}
+				add_scaled_artifact_modifier_majesty_effect = yes
+			}
+			if = {
+				limit = { rarity = illustrious }
+				add_scaled_artifact_modifier_dynasty_prestige_effect = yes
+			}
+			set_variable = {
+				name = quality
+				value = scope:quality
+			}
+			set_variable = {
+				name = wealth
+				value = scope:wealth
+			}
+		}
 	}
 }

@@ -1,9 +1,9 @@
-﻿mend_narsil_scheme = {
+﻿produce_amphora_scheme = {
     skill = learning
-    desc = "mend_narsil_scheme_desc_general"
-    success_desc = "mend_narsil_scheme_SUCCESS_DESC"
-    icon = war
-    illustration = "gfx/interface/illustrations/event_scenes/nars_war.dds"
+    desc = "produce_amphora_scheme_desc_general"
+    success_desc = "produce_amphora_scheme_SUCCESS_DESC"
+    icon = icon_sacred #icon_devote_piously
+    illustration = "gfx/interface/illustrations/event_scenes/nars_temple.dds" #haao_temple
     category = personal
     target_type = character
 
@@ -31,7 +31,7 @@
         NOT = { has_trait = incapable }
         # NOT = {
         #     scope:owner = {
-        #         var:mend_narsil_success >= 10
+        #         var:produce_amphora_success >= 10
         #     }
         # }
     }
@@ -66,8 +66,8 @@
         scheme_owner = {
             save_scope_as = owner
             random_owned_story = {
-                limit = { story_type = story_mend_narsil }
-                save_scope_as = narsil_story
+                limit = { story_type = story_produce_amphora }
+                save_scope_as = amphora_story
             }
         }
 
@@ -79,35 +79,35 @@
         scope:owner = {
             if = {
                 limit = { exists = scope:scheme_successful }
-                trigger_event = { on_action = mend_narsil_scheme_success }
+                trigger_event = { on_action = produce_amphora_scheme_success }
                 if = {
-                    limit = { exists = scope:narsil_story }
-                    scope:narsil_story = {
+                    limit = { exists = scope:amphora_story }
+                    scope:amphora_story = {
                         change_variable = {
-                            name = mend_narsil_success
+                            name = produce_amphora_success
                             add = 1
                         }
                     }
                     scope:owner = {
                         set_variable = {
-                            name = mend_narsil_success
-                            value = scope:narsil_story.var:mend_narsil_success
+                            name = produce_amphora_success
+                            value = scope:amphora_story.var:produce_amphora_success
                         }
                     }
                     if = {
                         limit = {
                             scope:owner = {
-                                var:mend_narsil_success >= 10
+                                var:produce_amphora_success >= 10
                             }
                         }
                         scope:owner = {
-                            trigger_event = nars_narsil.9000
+                            trigger_event = nars_amphora.9000
                         }
                     }
                 }
             }
             else = {
-                trigger_event = { on_action = mend_narsil_scheme_failure }
+                trigger_event = { on_action = produce_amphora_scheme_failure }
             }
         }
     }
@@ -116,13 +116,13 @@
         scheme_owner = {
             save_scope_as = owner
             random_owned_story = {
-                limit = { story_type = story_mend_narsil }
-                save_scope_as = narsil_story
+                limit = { story_type = story_produce_amphora }
+                save_scope_as = amphora_story
             }
         }
         if = {
-            limit = { exists = scope:narsil_story }
-            scope:narsil_story = {
+            limit = { exists = scope:amphora_story }
+            scope:amphora_story = {
                 end_story = yes
             }
         }

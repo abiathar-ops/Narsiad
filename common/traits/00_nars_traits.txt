@@ -202,3 +202,45 @@ nars_alnars = {
 	life_expectancy = 35
 	glory_hound_opinion = 25
 }
+
+lifestyle_pottery = {
+	icon = lifestyle_pottery.dds
+	desc = trait_lifestyle_pottery_desc
+	category = lifestyle
+	shown_in_ruler_designer = no
+
+	monthly_prestige = 0.4
+	monthly_legitimacy_add = 0.8
+	courtly_opinion = 5
+
+	name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { NOT = { exists = this } }
+                desc = lifestyle_pottery.no_actor
+			}
+            desc = lifestyle_pottery.name
+        }
+    }
+
+	tracks = {
+		potter = {
+			25 = {
+				monthly_prestige = 0.4
+			}
+			50 = {
+				monthly_prestige = 0.4
+			}
+			75 = {
+				monthly_prestige = 0.4
+				courtly_opinion = 5
+			}
+			100 = {
+				monthly_prestige = 0.4
+				courtly_opinion = 5
+			}
+		}
+	}
+
+	ai_energy = 15
+}

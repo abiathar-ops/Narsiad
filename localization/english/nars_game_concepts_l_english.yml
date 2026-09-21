@@ -18,26 +18,26 @@
  game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [selian|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
 
  game_concept_narses: "Narsēs"
- game_concept_narses_desc: "Narsēs, the ancient [selianes|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [panteion|E] by its adherents."
+ game_concept_narses_desc: "Narsēs, the ancient [selianes|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [politeion|E] by its adherents."
 
  game_concept_phokas: "Phōkās"
- game_concept_phokas_desc: "Phōkās, the ancient [selianes|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [panteion|E] by its adherents."
+ game_concept_phokas_desc: "Phōkās, the ancient [selianes|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [politeion|E] by its adherents."
 
  game_concept_enuo: "Enuō"
- game_concept_enuo_desc: "Enuō, the ancient [selianes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [panteion|E] by its adherents."
+ game_concept_enuo_desc: "Enuō, the ancient [selianes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [politeion|E] by its adherents."
 
  game_concept_orphists: "Orphists"
  game_concept_archaic: "Orphic"
  game_concept_archaic_adj: "Orphic's"
  game_concept_nars_faith: "Selian Faith"
- game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [panteion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [narsokratia|E]."
+ game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [politeion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [narsokratia|E]."
 
- game_concept_panteion: "Politeíon"
- game_concept_panteion_possessive: "Politeíon's"
- game_concept_panteion_desc: "The [Glossary('Politeíon', 'PANTEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of $game_concept_selianes$, each embodying different aspects of life, nature, and experience."
+ game_concept_politeion: "Politeíon"
+ game_concept_politeion_possessive: "Politeíon's"
+ game_concept_politeion_desc: "The [Glossary('Politeíon', 'POLITEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of $game_concept_selianes$, each embodying different aspects of life, nature, and experience."
 
  game_concept_narsil: "Narsíl"
- game_concept_narsil_desc: "Narsíl is an heirloom [artifact|E] of the [selian|E] [hegemons|E]. Shattered during one of the many [civil_wars|E] among the [selians|E] during the dusk of their [narsokratia|E], Narsíl's shards have been passed down until it was possessed by [alnars|E]."
+ game_concept_narsil_desc: "The fabled hand-and-a-half longsword Narsíl is the most famous of $game_concept_selianes$ ancestral swords that was shattered during their people's fall. The $narsil_shards_name$ had since been passed down until inherited by [alnars|E]."
 
  game_concept_alnars: "Alnárs"
  game_concept_alnars_adj: "Alnárs'"

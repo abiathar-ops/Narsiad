@@ -1,4 +1,4 @@
-﻿odds_piously_devote_scheme_misc_value = {
+﻿odds_nars_scheme_misc_value = {
 	add = {
 		value = {
 			add = 15

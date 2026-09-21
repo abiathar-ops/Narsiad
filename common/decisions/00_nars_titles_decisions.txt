@@ -88,10 +88,8 @@
 	
 	effect = {
 		create_h_narsokratia_effect = yes
-		
 		trigger_event = nars_titles.0001
 		hidden_effect = {
-			change_government = administrative_government
 			local_assimilate_selian_traditions_effect = {
 				OLD_culture = culture:selian
 				NEW_culture = culture:selian
@@ -102,10 +100,6 @@
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:flag_h_narsokratia_decision
-			}
-			set_global_variable = {
-				name = flag_h_narsokratia_decision
-				value = root
 			}
 		}
 	
@@ -120,7 +114,7 @@
 
 decision_pledge_restoration = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_hostility.dds"
+        reference = "gfx/interface/illustrations/decisions/decision_domination.dds"
     }
     desc = decision_pledge_restoration_desc
     selection_tooltip = decision_pledge_restoration_tooltip
@@ -145,12 +139,18 @@ decision_pledge_restoration = {
     }
 
     is_valid = {
-        # Keep your mirrored Conqueror requirements here as they were
-        highest_held_title_tier >= tier_kingdom
-        prestige_level >= 4
-		piety_level >= 4
-        custom_tooltip = { text = nars_conqueror_decision_enough_troops current_military_strength >= 3500 }
-        calc_true_if = { amount >= 1 custom_tooltip = { text = become_conqueror_decision_enough_high_level_knights any_knight = { count >= 6 prowess >= 18 } } custom_tooltip = { text = become_conqueror_decision_enough_mediocre_knights any_knight = { count >= 12 prowess >= 15 } } }
+        custom_tooltip = {
+			text = decision_narsokratia_req_tt
+			any_character_artifact = { has_variable = can_be_used_for_narsokratia }
+		}
+		custom_tooltip = {
+			text = you_are_the_culture_head
+			culture = {
+				culture_head = root
+			}
+		}
+        prestige_level >= 5
+       	custom_tooltip = { text = decision_pledge_restoration_enough_high_level_knights any_knight = { count >= 12 prowess >= 18 }  }
     }
 
     is_valid_showing_failures_only = {
@@ -163,13 +163,17 @@ decision_pledge_restoration = {
     cost = { prestige = 5000 }
     
     effect = {
-        custom_description_no_bullet = {
-            text = nars_conqueror_defensive_war_tt
-        }
-		custom_tooltip = {
-			text = nars_conqueror_rally_war_tt
+        # custom_description_no_bullet = {
+        #     text = nars_conqueror_defensive_war_tt
+        # }
+		custom_tooltip = decision_nars_hegemony_tt
+		hidden_effect = {
+			add_character_modifier = {
+				modifier = nars_hegemon_aspirant_modifier
+				years = 5
+			}
 			spawn_army = {
-				men_at_arms = { type = maa_t1 stacks = 15 }
+				men_at_arms = { type = nars_t1 stacks = 15 }
 				levies = 2750
 				inheritable = no
 				uses_supply = no
@@ -180,26 +184,6 @@ decision_pledge_restoration = {
         
 
         add_character_flag = flag_decision_pledge_restoration
-
-        custom_description_no_bullet = {
-            text = nars_conqueror_if_win_defiance_tt
-        }
-        custom_tooltip = gain_nars_conqueror_tt
-        custom_tooltip = decision_pledge_restoration_tt
-        custom_tooltip = nars_conqueror_decision_troops
-        if = { 
-            limit = { has_dlc_feature = legends } 
-            custom_tooltip = become_conqueror_decision_legend_seed 
-        }
-
-        # 5. Lose Conditions (This is where the list used to be!)
-        custom_description_no_bullet = {
-            text = nars_conqueror_if_lose_defiance_tt
-        }
-		custom_tooltip = nars_conqueror_if_lose_defiance_tt_1
-		custom_tooltip = nars_conqueror_if_lose_defiance_tt_2
-		custom_tooltip = nars_conqueror_if_lose_defiance_tt_3
-		custom_tooltip = nars_conqueror_if_lose_defiance_tt_4
         # 6. Hidden Execution Block
 		hidden_effect = {
 			# 1. Build a list of all strictly land-bordering independent neighbors

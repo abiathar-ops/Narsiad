@@ -668,7 +668,7 @@ nars_courtiers.0021 = {
 			}
 
             spawn_army = {
-                men_at_arms = { type = maa_t1 stacks = 15 }
+                men_at_arms = { type = nars_t1 stacks = 15 }
 				men_at_arms = { type = mangonel stacks = 10 }
                 levies = 2750
                 inheritable = no

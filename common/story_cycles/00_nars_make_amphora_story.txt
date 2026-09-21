@@ -1,0 +1,33 @@
+story_produce_amphora = {
+    visible = yes
+    icon = { reference = "gfx/interface/icons/artifact/artifact_amphora.dds" }
+    background = { reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds" }
+
+    visualization = {
+        basic_counter = {
+            variable_name = "produce_amphora_success"
+            tooltip = "produce_amphora_COUNTER_TOOLTIP"
+            min = 0
+            max = 10
+            label = "produce_amphora_VALUE_LABEL"
+            min_label = "produce_amphora_VALUE_MIN_LABEL"
+            max_label = "produce_amphora_VALUE_MAX_LABEL"
+        }
+    }
+
+    on_setup = {
+        set_variable = { name = produce_amphora_success value = 0 }
+        root = {
+            set_variable = {
+                name = produce_amphora_story_ref
+                value = prev
+            }
+        }
+    }
+
+    on_owner_death = { end_story = yes }
+    on_end = {
+        debug_log = "$decision_produce_amphora$ story cycle ended on:"
+        debug_log_date = yes
+    }
+}

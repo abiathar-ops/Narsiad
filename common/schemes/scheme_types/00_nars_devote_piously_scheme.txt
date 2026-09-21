@@ -4,7 +4,7 @@ piously_devote_scheme = {
 	desc = "piously_devote_scheme_desc_general"
 	success_desc = "piously_devote_scheme_SCHEME_SUCCESS_DESC"
 	icon =	icon_sacred
-	illustration = "gfx/interface/illustrations/event_scenes/haao_temple.dds"
+	illustration = "gfx/interface/illustrations/event_scenes/nars_faith.dds"
 	category = personal
 	target_type = character
 
@@ -39,7 +39,7 @@ piously_devote_scheme = {
 	}
 
 	odds_prediction = {
-		add = odds_piously_devote_scheme_misc_value
+		add = odds_nars_scheme_misc_value
 		min = 0
 	}
 

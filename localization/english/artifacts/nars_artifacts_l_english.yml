@@ -1,6 +1,13 @@
 ﻿l_english:
- narsil_name: "Narsíl"
- narsil_desc: "Narsíl is an heirloom longsword from the old Selian hegemons. Shattered in the civil wars among the men of Selian and now mended, Narsíl awaits the inevitable day when it will rally the scattered Selians to unity."
- anduril_name: "Onduríl"
- anduril_desc: "An heirloom passed through the surviving nobles in exile, Onduríl's scrolls details the cultural knowledge regarding the ancient Selian and thus is considered a holy relic for its importance in its revival."
- anduril_tooltip: "You gain an [artifact|E], an aging scroll of wisdom. This heirloom provides significant [character|E] bonuses."
+ narsil_name:0 "Narsíl"
+ narsil_desc:0 "Narsíl is an heirloom longsword from antiquity. Shattered long ago and now mended, its mythical, cold edge rallies the $game_concept_selianes$ to your cause."
+ narsil_shards_name:0 "Shards of Narsíl"
+ narsil_shards_desc:0 "The Shards of Narsíl are the remains of an heirloom longsword from antiquity. Mythical in reputation among the $game_concept_selianes$, it awaits the inevitable day it rallies the scattered people to unity.
+ artifact_anduril: "Holy Scrolls"
+ artifact_narsil_shards: "Shards"
+ artifact_narsil: "Mythical Item"
+ anduril_name:0 "Onduríl"
+ anduril_desc:0 "A compiled written record of the teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')] alongside his personal notes."
+ anduril_tooltip:0 "You gain an [artifact|E], an aging scroll of wisdom. This heirloom provides significant [character|E] bonuses."
+ artifact_amphora_name: "Amphora"
+ artifact_amphora_description: "A personally made [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )] of [SCOPE.Custom('ArtifactQuality')] craftsmanship. It is made of [newly_created_artifact.GetFeatureText( 'generic_material_earthware' )] and encircled with depictions of [newly_created_artifact.GetFeatureText( 'decoration_pattern' )]"

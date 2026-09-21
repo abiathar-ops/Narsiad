@@ -1,235 +1,188 @@
-﻿decision_mend_narsil = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
-	}
+﻿# decision_munitions_research = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
+# 	}
+
+# 	decision_group_type = realm
 	
-	desc = decision_mend_narsil_desc
-	decision_group_type = oaths
-	selection_tooltip = decision_mend_narsil_tooltip
+# 	ai_check_interval_by_tier = {
+# 		barony = 0
+# 		county = 0
+# 		duchy = 120
+# 		kingdom = 120
+# 		empire = 120
+# 		hegemony = 120
+# 	}
 
-	is_shown = {
-		is_selian = yes
-		highest_held_title_tier >= tier_kingdom
-		top_liege = this
-		is_capable_adult = yes
-		is_landed = yes
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-			}
-		}
-	}
+# 	sort_order = 860
 
-	is_valid = {
-		gold >= 750
-		is_imprisoned = no
-		is_at_war = no
-	}
+# 	desc = decision_munitions_research_desc
+# 	selection_tooltip = decision_munitions_research_tooltip
 
-	is_valid_showing_failures_only = {
-		top_liege = this
-		is_available_adult = yes
-		is_at_war = no
-	}
-	
-	sort_order = 900
+# 	is_shown = {
+# 		is_selian = yes
+# 		is_ruler = yes
+# 		highest_held_title_tier >= tier_empire
+# 		NOT = {
+# 			is_target_in_global_variable_list = {
+# 				name = unavailable_unique_decisions
+# 				target = flag:flag_munitions_research_done
+# 			}
+# 		}
+# 	}
 
-	effect = {
-		custom_tooltip = decision_mend_narsil_effect_tooltip
-		hidden_effect = {
-			trigger_event = { id = nars_artifacts.1001 }
-		}
-	}
+# 	is_valid = {
+# 		government_has_flag = government_is_administrative
+# 		custom_tooltip = {
+# 			text = munitions_research_capital_unoccupied_tt
+# 			capital_province = { is_occupied = no }
+# 		}
+# 		OR = {
+# 			influence >= major_influence_value
+# 			treasury >= major_gold_value_static_max
+# 		}
+# 	}
 
-	ai_check_interval = 0
-}
+# 	is_valid_showing_failures_only = {
+# 		is_available = yes
+# 		NOT = { exists = involved_activity }
+# 	}
 
-decision_munitions_research = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
-	}
-
-	decision_group_type = realm
-	
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 120
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
-
-	sort_order = 860
-
-	desc = decision_munitions_research_desc
-	selection_tooltip = decision_munitions_research_tooltip
-
-	is_shown = {
-		is_selian = yes
-		is_ruler = yes
-		highest_held_title_tier >= tier_empire
-		NOT = {
-			is_target_in_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_munitions_research_done
-			}
-		}
-	}
-
-	is_valid = {
-		government_has_flag = government_is_administrative
-		custom_tooltip = {
-			text = munitions_research_capital_unoccupied_tt
-			capital_province = { is_occupied = no }
-		}
-		OR = {
-			influence >= major_influence_value
-			treasury >= major_gold_value_static_max
-		}
-	}
-
-	is_valid_showing_failures_only = {
-		is_available = yes
-		NOT = { exists = involved_activity }
-	}
-
-	effect = {
-		custom_tooltip = munitions_research_mastiges_tooltip
-		custom_tooltip = munitions_research_3_years_tooltip
-		# Lock the decision permanently on first use
+# 	effect = {
+# 		custom_tooltip = munitions_research_mastiges_tooltip
+# 		custom_tooltip = munitions_research_3_years_tooltip
+# 		# Lock the decision permanently on first use
 		
-		trigger_event = nars_gunpowder.1001
-	}
+# 		trigger_event = nars_gunpowder.1001
+# 	}
 
-	ai_potential = {
-		NOT = { has_trait = compassionate }
-		OR = {
-			gold >= massive_gold_value
-			influence >= massive_influence_value
-		}
-	}
+# 	ai_potential = {
+# 		NOT = { has_trait = compassionate }
+# 		OR = {
+# 			gold >= massive_gold_value
+# 			influence >= massive_influence_value
+# 		}
+# 	}
 
-	ai_will_do = {
-		base = 20
-		ai_value_modifier = { ai_compassion = -1 }
-		modifier = {
-			OR = {
-				has_trait = paranoid
-				has_trait = craven
-			}
-			add = 30
-		}
-		modifier = {
-			OR = {
-				martial > high_skill_rating
-				learning > high_skill_rating
-			}
-			add = 20
-		}
-		modifier = {
-			OR = {
-				has_trait = calm
-				has_trait = content
-			}
-			add = -20
-		}
-	}
-}
+# 	ai_will_do = {
+# 		base = 20
+# 		ai_value_modifier = { ai_compassion = -1 }
+# 		modifier = {
+# 			OR = {
+# 				has_trait = paranoid
+# 				has_trait = craven
+# 			}
+# 			add = 30
+# 		}
+# 		modifier = {
+# 			OR = {
+# 				martial > high_skill_rating
+# 				learning > high_skill_rating
+# 			}
+# 			add = 20
+# 		}
+# 		modifier = {
+# 			OR = {
+# 				has_trait = calm
+# 				has_trait = content
+# 			}
+# 			add = -20
+# 		}
+# 	}
+# }
 
-decision_raise_warhost = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
-	}
+# decision_raise_warhost = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
+# 	}
 
-	decision_group_type = realm
+# 	decision_group_type = realm
 	
-	ai_check_interval_by_tier = {
-		barony = 0
-		county = 0
-		duchy = 0
-		kingdom = 120
-		empire = 120
-		hegemony = 120
-	}
+# 	ai_check_interval_by_tier = {
+# 		barony = 0
+# 		county = 0
+# 		duchy = 0
+# 		kingdom = 120
+# 		empire = 120
+# 		hegemony = 120
+# 	}
 
-	sort_order = 860
+# 	sort_order = 860
 
-	selection_tooltip = decision_raise_warhost_tooltip
+# 	selection_tooltip = decision_raise_warhost_tooltip
 
-	is_shown = {
-		is_selian = yes
-		is_ruler = yes
-		highest_held_title_tier >= tier_kingdom
-		# is_target_in_global_variable_list = {
-		# 	name = unavailable_unique_decisions
-		# 	target = flag:flag_mend_narsil_decision
-		# }
-	}
+# 	is_shown = {
+# 		is_selian = yes
+# 		is_ruler = yes
+# 		highest_held_title_tier >= tier_kingdom
+# 		# is_target_in_global_variable_list = {
+# 		# 	name = unavailable_unique_decisions
+# 		# 	target = flag:flag_mend_narsil_decision
+# 		# }
+# 	}
 
-	is_valid = {
-		custom_tooltip = {
-			text = narsil_mended_tt
-			has_global_variable = flag_mend_narsil_decision
-		}
-		custom_tooltip = {
-			text = munitions_research_capital_unoccupied_tt
-			capital_province = { is_occupied = no }
-		}
-		gold >= massive_gold_value_static_max
-	}
+# 	is_valid = {
+# 		custom_tooltip = {
+# 			text = narsil_mended_tt
+# 			has_global_variable = flag_mend_narsil_decision
+# 		}
+# 		custom_tooltip = {
+# 			text = munitions_research_capital_unoccupied_tt
+# 			capital_province = { is_occupied = no }
+# 		}
+# 		gold >= massive_gold_value_static_max
+# 	}
 
-	is_valid_showing_failures_only = {
-		is_available = yes
-		NOT = { exists = involved_activity }
-	}
+# 	is_valid_showing_failures_only = {
+# 		is_available = yes
+# 		NOT = { exists = involved_activity }
+# 	}
 
-	effect = {
-		custom_tooltip = decision_raise_warhost_tt
-		begin_scheme_with_agents_effect = {
-            SCHEME_TYPE = raise_warhost_scheme
-            TARGET_TYPE = target_title
-            TARGET_SCOPE = root.capital_county
-            AGENT_1 = agent_scribe
-            AGENT_2 = agent_drillmaster
-            AGENT_3 = agent_intermediary
-            AGENT_4 = agent_planner
-            AGENT_5 = agent_supplier
-        }
-	}
+# 	effect = {
+# 		custom_tooltip = decision_raise_warhost_tt
+# 		begin_scheme_with_agents_effect = {
+#             SCHEME_TYPE = raise_warhost_scheme
+#             TARGET_TYPE = target_title
+#             TARGET_SCOPE = root.capital_county
+#             AGENT_1 = agent_scribe
+#             AGENT_2 = agent_drillmaster
+#             AGENT_3 = agent_intermediary
+#             AGENT_4 = agent_planner
+#             AGENT_5 = agent_supplier
+#         }
+# 	}
 
-	ai_potential = {
-		NOT = { has_trait = compassionate }
-		OR = {
-			gold >= massive_gold_value
-			influence >= massive_influence_value
-		}
-	}
+# 	ai_potential = {
+# 		NOT = { has_trait = compassionate }
+# 		OR = {
+# 			gold >= massive_gold_value
+# 			influence >= massive_influence_value
+# 		}
+# 	}
 
-	ai_will_do = {
-		base = 20
-		ai_value_modifier = { ai_compassion = -1 }
-		modifier = {
-			OR = {
-				has_trait = paranoid
-				has_trait = craven
-			}
-			add = 30
-		}
-		modifier = {
-			OR = {
-				martial > high_skill_rating
-				learning > high_skill_rating
-			}
-			add = 20
-		}
-		modifier = {
-			OR = {
-				has_trait = calm
-				has_trait = content
-			}
-			add = -20
-		}
-	}
-}
+# 	ai_will_do = {
+# 		base = 20
+# 		ai_value_modifier = { ai_compassion = -1 }
+# 		modifier = {
+# 			OR = {
+# 				has_trait = paranoid
+# 				has_trait = craven
+# 			}
+# 			add = 30
+# 		}
+# 		modifier = {
+# 			OR = {
+# 				martial > high_skill_rating
+# 				learning > high_skill_rating
+# 			}
+# 			add = 20
+# 		}
+# 		modifier = {
+# 			OR = {
+# 				has_trait = calm
+# 				has_trait = content
+# 			}
+# 			add = -20
+# 		}
+# 	}
+# }

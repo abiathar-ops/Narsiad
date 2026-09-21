@@ -72,8 +72,7 @@ settled_selian_dynasty_modifier = {
 pledge_restoration_dynasty_modifier = {
 	icon = blood_positive
 	glory_hound_opinion = 10
-	men_at_arms_maintenance = -0.1
-	siege_phase_time = -0.1
+	monthly_prestige = 0.25
 }
 
 embraced_selian_traditions_modifier = {
@@ -81,3 +80,10 @@ embraced_selian_traditions_modifier = {
 	monthly_prestige = 0.25
 }
 
+nars_hegemon_aspirant_modifier = {
+	icon = blood_positive
+	glory_hound_opinion = 10
+	men_at_arms_maintenance = -0.1
+	siege_phase_time = -0.1
+	enemy_hostile_scheme_success_chance_max_add = -1000
+}

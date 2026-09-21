@@ -18,19 +18,19 @@ orphists = {
 }
 
 narses = {
-	parent = panteion
+	parent = politeion
 }
 
 phokas = {
-	parent = panteion
+	parent = politeion
 }
 
 enuo = {
-	parent = panteion
+	parent = politeion
 }
 
-panteion = {
-	alias = { panteion_possessive }
+politeion = {
+	alias = { politeion_possessive }
 	parent = archaic
 }
 

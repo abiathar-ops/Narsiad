@@ -6,16 +6,12 @@ nars_intro.1001 = {
 	window = fullscreen_event
 	title = nars_intro.1001.t
 	desc = nars_intro.1001.desc
-	theme = emperor
 	override_background = { reference = fp3_fullscreen_sunder }
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
-	left_portrait = {
-		character = root
-		animation = grief
-		camera = camera_center_large
-	}
-
+    immediate = {
+        play_music_cue = mx_cue_negative_effect
+    }
 	option = {
 		trigger = {
 			NOR = {
@@ -60,6 +56,7 @@ nars_intro.1002 = {
 	immediate = {
 		intro_standard_effect = yes
         trigger_event = { id = nars_maintenance.0002 days = 1 }
+        play_music_cue = mx_cue_positive_effect
 	}
 	option = {
 		name = nars_intro.1002.a
@@ -207,7 +204,7 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                create_story = story_nars_naturalis
+                #create_story = story_nars_naturalis
             }
         }
         create_character = {
@@ -248,7 +245,7 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                create_story = story_nars_naturalis
+                #create_story = story_nars_naturalis
             }
         }
         create_character = {
@@ -289,7 +286,7 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                create_story = story_nars_naturalis
+                #create_story = story_nars_naturalis
             }
         }
 
@@ -362,7 +359,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_t1 stacks = 12 }
+                    men_at_arms = { type = nars_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -371,6 +368,7 @@ nars_intro.0001 = {
                 }
                 hidden_effect = {
                     create_anduril_effect = yes
+                    create_narsil_shards_effect = yes
                 }
                 trigger_event = { id = nars_intro.1001 days = 1 }
                 intro_standard_effect = yes
@@ -431,7 +429,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_t1 stacks = 12 }
+                    men_at_arms = { type = nars_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -497,7 +495,7 @@ nars_intro.0001 = {
                 spawn_army = {
                     name = event_troop_default_name
                     levies = 975
-                    men_at_arms = { type = maa_t1 stacks = 12 }
+                    men_at_arms = { type = nars_t1 stacks = 12 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     men_at_arms = { type = mangonel stacks = 6 }
                     location = root.location
@@ -679,7 +677,7 @@ nars_intro.0002 = {
             spawn_army = {
                 levies = 1250
                 men_at_arms = {
-                    type = maa_t1
+                    type = nars_t1
                     stacks = 10
                 }
                 location = root.location # Safer than capital_province for landless camps

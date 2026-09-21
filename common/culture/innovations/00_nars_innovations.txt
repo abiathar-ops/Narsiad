@@ -15,13 +15,13 @@ innovation_selian_maa_01 = {
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t1
+        men_at_arms = nars_t1
         damage = 10
         toughness = 5
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t2
+        men_at_arms = nars_t2
         damage = 5
         toughness = 10
     }
@@ -40,13 +40,13 @@ innovation_selian_maa_02 = {
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t1
+        men_at_arms = nars_t1
         damage = 15
         toughness = 10
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t2
+        men_at_arms = nars_t2
         damage = 10
         toughness = 15
     }
@@ -65,13 +65,13 @@ innovation_selian_maa_03 = {
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t1
+        men_at_arms = nars_t1
         damage = 30
         toughness = 15
     }
 
     maa_upgrade = {
-        men_at_arms = maa_t2
+        men_at_arms = nars_t2
         damage = 15
         toughness = 30
     }

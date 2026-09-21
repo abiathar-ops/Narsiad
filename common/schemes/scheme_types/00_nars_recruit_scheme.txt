@@ -40,19 +40,17 @@
 	}
 
 	odds_prediction = {
-		add = odds_recruit_nars_scheme_misc_value
+		add = odds_nars_scheme_misc_value
 		min = 0
 	}
 
 	# Base Chances
 	base_success_chance = {
-		base = 50
-		# Skill
+		base = 40
 		modifier = {
 			add = scope:owner.diplomacy
 			desc = "SCHEME_MY_DIPLOMACY"
 		}
-		# Personality traits
 		modifier = {
 			add = 10
 			desc = SCHEME_OWNER_GREGARIOUS

@@ -4,19 +4,19 @@
 
  # ── Faith ──
  decision_nars_faith_choice:0 "Enact Politeíon Rites"
- decision_nars_faith_choice_desc:0 "Only by [faith|E] could we [selianes|E] come to understand the roots of our old [culture|E]. My [legitimacy|E] is only a favor bestowed by the [panteion|E] and to neglect our [traditions|E] is to invite ruin on my [house|E]. Besides, while walking to a [temple|E] is tiring, arguing with my [council|E] is even worse!"
- decision_nars_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [panteion|E]"
+ decision_nars_faith_choice_desc:0 "Only by [faith|E] could we [selianes|E] come to understand the roots of our old [culture|E]. My [legitimacy|E] is only a favor bestowed by the [politeion|E] and to neglect our [traditions|E] is to invite ruin on my [house|E]. Besides, while walking to a [temple|E] is tiring, arguing with my [council|E] is even worse!"
+ decision_nars_faith_choice_tooltip:0 "Enact rites to dedicate yourself to the [politeion|E]"
  decision_nars_faith_choice_confirm:0 "Proceed!"
  
  faith_selian_1_decision_name:0 "Dedicate a Libation"
  faith_selian_1_decision_desc:0 "Enact [selian|E] rites to dedicate yourself to your [culture|E]."
  decision_libation_effect_tooltip: "You may lose some [stress|E] and gain a small amount of [piety|E]!"
- decision_libation_effect_desc: "You offer a libation to the [panteion|E] and reflect on your [faith|E]"
+ decision_libation_effect_desc: "You offer a libation to the [politeion|E] and reflect on your [faith|E]"
  decision_libation_confirm: "Pour the libation!"
 
- faith_selian_2_decision_name:0 "Ponder the [panteion|E]"
- faith_selian_2_decision_desc:0 "Decide your favored patron god of the [panteion|E]."
- change_to_faith_selian_2_decision_desc_1:0 "You [decide|E] which patron God of the [panteion|E] calls to you the most"
+ faith_selian_2_decision_name:0 "Ponder the [politeion|E]"
+ faith_selian_2_decision_desc:0 "Decide your favored patron god of the [politeion|E]."
+ change_to_faith_selian_2_decision_desc_1:0 "You [decide|E] which patron God of the [politeion|E] calls to you the most"
  change_to_faith_selian_2_decision_desc_2:0 "You gain a [modifier|E] that reflects the values of your chosen patron God!"
 
  faith_selian_3_decision_name:0 "Impose [selianes|E] Heritage"
@@ -29,12 +29,12 @@
  change_to_faith_selian_4_decision_desc_1:0 "You will sponsor an [archaic|E] missionary to try to convert a neighboring [ruler|E] of a different [faith|E] religion than [GetReligionByKey('selian_religion').GetName]!\n$EFFECT_LIST_BULLET$If successful, the [ruler|E] will convert to your [faith|E]\n$EFFECT_LIST_BULLET$In addition, if successful, you will gain a [legend_seed|E]"
 
  faith_selian_1_decision_tooltip: "Settle in to pour a libation and reflect on your [faith|E]"
- faith_selian_2_decision_tooltip: "Ponder the [panteion|E] and embody values of your patron God"
+ faith_selian_2_decision_tooltip: "Ponder the [politeion|E] and embody values of your patron God"
  faith_selian_3_decision_tooltip: "Forcibly convert your [provinces|E] to the [archaic|E] [faith|E]"
  faith_selian_4_decision_tooltip: "Sponsor an [archaic|E] missionary to spread the teachings of the [nars_faith|E] to neighbouring [realms|E]"
 
  faith_selian_1_cooldown_tt: "Dedicate a Libation is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_selian_1_cooldown' ))]"
- faith_selian_2_cooldown_tt: "Ponder the [panteion|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_selian_2_cooldown' ))]"
+ faith_selian_2_cooldown_tt: "Ponder the [politeion|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_selian_2_cooldown' ))]"
  faith_selian_3_cooldown_tt: "Impose [nars_faith|E] is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_selian_3_cooldown' ))]"
  faith_selian_4_cooldown_tt: "Sponsor [archaic|E] Missionaries is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'faith_selian_4_cooldown' ))]"
   
@@ -67,19 +67,13 @@
 
  decision_munitions_research: "Found the Mástiges"
  decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] with them."
- decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('maa_t2').GetName] [men_at_arms|E] armed with new armaments!"
+ decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('nars_t2').GetName] [men_at_arms|E] armed with new armaments!"
  decision_munitions_research_confirm: "Blood and iron!"
 
  munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
  munitions_research_3_years_tooltip: "If you complete the [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
- munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('maa_t2').GetName] [men_at_arms|E]"
+ munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('nars_t2').GetName] [men_at_arms|E]"
  munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
-
- decision_mend_narsil: "Mend Narsíl"
- decision_mend_narsil_desc: "During the [civil_wars|E] sorrounding the fall of old [narsokratia|E], the longsword [narsil|E] was shattered. Its shards however, still remains with us as an heirloom from a line of exiles. Mending and reforging the [artifact|E] is not just a [virtuous|E] undertaking but a necessity for our people."
- decision_mend_narsil_effect_tooltip: "Reforge and claim [narsil|E] as an [artifact|E]"
- decision_mend_narsil_tooltip: "Reforge the heirloom of the old [selian|E] [hegemons|E]!"
- decision_mend_narsil_confirm: "To our foundries!"
 
  decision_raise_warhost: "Sponsor an Incursion"
  narsil_mended_tt: "[narsil|E] has been mended by a [selian|E]"
@@ -115,26 +109,15 @@
  decision_h_narsokratia_tooltip: "The old [selianrealm|E] will be restored!"
  decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [selianes|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
  decision_h_narsokratia_effect_tooltip: "Establish #v [GetTitleByKey('h_narsokratia').GetName]#! as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] convert to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [selian|E] [culture|E] and [faith|E] "
- decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [selian|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $maa_t2$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $maa_t1$ #weak ([heavy_infantry|E])#!" 
+ decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [selian|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $nars_t2$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $nars_t1$ #weak ([heavy_infantry|E])#!" 
 
- decision_pledge_restoration: "Proclaim Oath of the $selian$"
+ decision_pledge_restoration: "Fulfill the $game_concept_selianes$ Oath"
  decision_pledge_restoration_confirm: "I am the scourge of [ROOT.Char.GetFaith.HighGodName]!"
  decision_pledge_restoration_tooltip: "#WEAK I sing of warfare and a man at war#!"
- decision_pledge_restoration_desc: "For far too long has my sword been sheathed, now the Earth shall drown beneath an ocean of blood for #EMP our#! glory. The sacred wars begins now!"
- decision_pledge_restoration_tt: "Your [dynasty|E] will get the #V [GetTrait('nars_scion').GetName( GetNullCharacter )]#! inheritable [fame_trait|E]"
- nars_conqueror_decision_troops: "You will get an army of seasoned veterans, consisting of [GetMaA('accolade_maa_lancers').GetName] and [GetMaA('accolade_maa_vanguards').GetName] to aid your future conquests"
- gain_nars_conqueror_tt: "You will get the #V [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! [trait|E]"
- nars_conqueror_decision_enough_troops: "You have at least 3500 [soldiers|E]"
- nars_conqueror_defensive_war_tt: "@warning_icon! #X Neighbouring [rulers|E] will declare a #v $selian_defiance_cb$#! against you!#!"
- nars_conqueror_rally_war_tt: "An [army|E] of #v undyingly loyal#! [selian|E] [soldiers|E] is formed in your [capital|E]"
- nars_conqueror_if_win_defiance_tt: "\nIf you win the #v $selian_defiance_cb$:#!"
- nars_conqueror_if_lose_defiance_tt: "\nIf you lose the #v $selian_defiance_cb$:#!"
- nars_conqueror_if_lose_defiance_tt_1: "You are [imprisoned|E] by your enemies and may be [executed|E]"
- nars_conqueror_if_lose_defiance_tt_2: "You lose most of your [prestige|E] and [gold|E]" 
- nars_conqueror_if_lose_defiance_tt_3: "You lose #high 2#! [legitimacy_levels|E]"
- nars_conqueror_if_lose_defiance_tt_4: "Your [vassals|E] splinter and become [independent|E]"
- nars_conqueror_defensive_war_will_happen_tt: "@alert_icon! #alert_trial Neighbouring [rulers|E] will declare a #v $selian_defiance_cb$#! against you!#!"
- selian_coalition_member_name_tt: "[character_war.GetShortUIName] will declare [war|E]!"
+ decision_pledge_restoration_desc: "For far too long has my sword been sheathed, now the Earth shall drown beneath an ocean of blood for #EMP our#! glory. The sacred wars begins now!\n\n#flavor "When truly asked how far and wide the boundaries of great [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] extended, our founding forefather brandished his fabled hand-and-a-half longsword Narsíl and said, 'As far as this can reach.'" - $Alnars$, $anduril_name$"
+ decision_nars_hegemony_tt: "You declare yourself to be an [GetModifier('nars_hegemon_aspirant_modifier').GetNameWithTooltip] over the [region|E]\n\nIn a week, a #v $selian_defiance_cb$#! will be ignited:\n$EFFECT_LIST_BULLET$ Independent rulers must decide whether to submit or wage war!\n$EFFECT_LIST_BULLET$ An [army|E] of #emp undyingly#! loyal [selian|E] [soldiers|E] is formed in your [capital|E]\n\nIf you win the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You will get the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E]\n$EFFECT_LIST_BULLET$ Your [dynasty|E] will get the #V [GetTrait('nars_scion').GetName( GetNullCharacter )]#! inheritable [fame_trait|E]\n$EFFECT_LIST_BULLET$ You will get an army consisting of [GetMaA('nars_t1').GetName] to aid your conquests\n\nIf you lose the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You lose most of your [prestige_i|E][prestige|E] and [gold_i|E][gold|E]\n$EFFECT_LIST_BULLET$ All of your [vassals|E] become [independent|E] from you\n$EFFECT_LIST_BULLET$ You are [imprisoned|E] by your enemies and may be [executed|E]" #replace war name with the CB reference
+ you_are_the_culture_head: "You are the [culture_head|E] of your [culture|E]"
+ decision_pledge_restoration_enough_high_level_knights: "You have at least #v 12#! knights with #v 18#! [prowess_i|E][prowess|E] or higher"
 
  # ── NEW DECISIONS ──
 
@@ -144,7 +127,7 @@
  decision_take_epithet_confirm: "My second name!"
 
  decision_recruit_nars: "Muster the $game_concept_selianes$ Exiles"
- decision_recruit_nars_desc: "Many of our stubborn $game_concept_selianes$ kins still cling to the lonely, stagnant exiles of our hidden [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )]. Mayhaps, I'll send a herald to [GetScheme('recruit_nars_scheme').GetTypeNameNoTooltip]! \n\n#Flavor "Retire not into shaded bowers of exile to nurse thy fear and feast upon thy own ease while the earth lie untamed. For man should not hide in groves, trading sacred duty for the sluggard’s peace." - $Alnars$, $anduril_name$.#!"
+ decision_recruit_nars_desc: "Many of our stubborn $game_concept_selianes$ kins still cling to the lonely, stagnant exiles of our hidden [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )]. Mayhaps, I'll send a herald to [GetScheme('recruit_nars_scheme').GetTypeNameNoTooltip]! \n\n#Flavor "Retire not into shaded bowers of exile to nurse thy fear and feast upon thy own ease while the earth lie untamed. For man should not hide in groves, trading sacred duty for the sluggard’s peace." - $Alnars$, $anduril_name$#!"
  decision_recruit_nars_tooltip: "You start a #v [GetScheme('recruit_nars_scheme').GetTypeName]#! [scheme|E] indefinitely" 
  decision_recruit_nars_confirm:0 "Send forth the Herald!"
  decision_recruit_nars_start_tt: "You start a #v [GetScheme('recruit_nars_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$You may receive #P 1-2#! new [selianes|E] as [courtiers|E] for your [court|E]\n$EFFECT_LIST_BULLET$Occasionally, #P 2#! highly-skilled [Glossary( 'Polimêtis', 'POLIMETIS_GLOSS' )] can be recruitable for [gold_i][gold|E]\n$EFFECT_LIST_BULLET$Extremely rarely, a [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )] will pledge themselves for [gold_i][gold|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$You lose #color_red [EmptyScope.ScriptValue('minor_gold_value')]#! [gold_i][gold|E] per visit as the Herald's wage\n$EFFECT_LIST_BULLET$You gain #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E] per Herald's failure"
@@ -154,5 +137,22 @@
  decision_piously_devote_desc: "Gods are known to be fickle. It is a necessity perhaps to devote time for their appeasements for, after all, they watch our every step in this world."
  decision_piously_devote_tooltip: "It is mayhaps time for me to devote myself."
  decision_piously_devote_confirm: "Know Thyself"
- decision_piously_devote_tt: "You start a #v [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_mystic').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_poet').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [learning_i|E] [learning|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [diplomacy_i|E] [diplomacy|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [piety_i] [piety|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
+ decision_piously_devote_tt: "You start a #v [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_mystic').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_poet').GetName( GetNullCharacter )] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ [learning_i|E][learning|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [diplomacy_i|E][diplomacy|E] [skill|E] #weak (up to 15)#!\n$EFFECT_LIST_BULLET$ [piety_i] [piety|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
  decision_piously_devote_req_tt: "You are already performing a [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E]"
+
+ decision_mend_narsil: "Mend Narsíl"
+ decision_mend_narsil_desc: "In the period of our exile whereby catastrophies occured upon more, the longsword of myth, [narsil|E], was shattered. Its shards still remains with us as an heirloom from a line of exiles Mayhaps, it #emp is#! high time to mend it.\n\n#flavor "Ideals do not form a reliable pillar for a lasting rule. In addition there is normally a further necessity, the belief in legitimacy." - $Alnars$, $anduril_name$."
+ decision_mend_narsil_effect_tooltip: "You start a #v [GetScheme('mend_narsil_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ You reforge and claim [narsil|E] as an [inventory_artifact|E]\n$EFFECT_LIST_BULLET$ May gain [learning_i] [learning|E] [skill|E] and [legitimacy_i][legitimacy|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
+ decision_mend_narsil_tooltip: "Reforge the heirloom of the old [selian|E] [hegemons|E]!"
+ decision_mend_narsil_req_tt: "You possess the #V $narsil_shards_name$#! [inventory_artifact|E]"
+ decision_mend_narsil_confirm: "To our foundries!"
+ decision_mend_narsil_ongoing: "You are already performing a [GetScheme('mend_narsil_scheme').GetTypeName] [scheme|E]"
+
+ decision_produce_amphora: "Produce Amphora"
+ decision_produce_amphora_desc: "In our peninsula, the art of making [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )] is a tradition closely rooted to determining whether you are 'civilized'. It is time that I prove myself.\n\n#flavor "Your mother gave an amphora—a gift, she said, of $game_concept_narses$, and the handiwork of the [politeion|E]. In this your white bones lie, Hero, mingled with the bones of dead comrades." - $Alnars$, $anduril_name$" #check if work
+ decision_produce_amphora_effect_tooltip: "You start a #v [GetScheme('produce_amphora_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ You create an #v Amphora#! [artifact|E]\n$EFFECT_LIST_BULLET$ [GetTrait('lifestyle_pottery').GetName(GetNullCharacter)] [trait|E] / [trait_level_track_xp|E]\n$EFFECT_LIST_BULLET$ May gain [learning_i] [learning|E] [skill|E] and [legitimacy_i][legitimacy|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
+ decision_produce_amphora_tooltip: "Create an #v Amphora#! [inventory_artifact|E] for yourself!"
+ decision_produce_amphora_confirm: "I #emp slowly#! work my hands..."
+ decision_produce_amphora_ongoing: "You are already performing a [GetScheme('produce_amphora_scheme').GetTypeName] [scheme|E]"
+
+ decision_narsokratia_req_tt: "You possess the #V $narsil_name$#! [inventory_artifact|E]"

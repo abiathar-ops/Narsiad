@@ -15,11 +15,11 @@
 @provisions_cost_special_expensive = 18
 @provisions_cost_special_bankrupting = 24
 
-maa_t1 = {
+nars_t1 = {
     type = heavy_infantry
 
     can_recruit = {
-	    valid_for_maa_trigger = { PARAMETER = unlock_maa_t1 }
+	    valid_for_nars_trigger = { PARAMETER = unlock_nars_t1 }
         NOT = {
 			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
 		}
@@ -67,7 +67,7 @@ maa_t1 = {
 
 #Unlockable via Decision
 
-maa_t2 = {
+nars_t2 = {
     type = gunpowder
     
     can_recruit = {

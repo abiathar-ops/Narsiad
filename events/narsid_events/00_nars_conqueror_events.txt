@@ -25,17 +25,9 @@ nars_conqueror.0001 = {
         name = nars_conqueror.0001.a
         flavor = narsokratia_event.flavor
         
-        # --- 1. CORE TRAIT & VANILLA MECHANICS ---
         add_trait = nars_conqueror
-        add_character_flag = had_laamp_conq_decision
-        
-        trigger_event = {
-            id = conqueror.0001
-            months = 4
-        }
 
-        # --- 3. LEGEND SEED ---
-        if = {
+		if = {
             limit = { has_dlc_feature = legends }
             create_legend_seed = {
                 type = heroic
@@ -44,12 +36,10 @@ nars_conqueror.0001 = {
             }
         }
 
-        # --- 4. YOUR CUSTOM MINOAN EFFECTS ---
         legend_seed_great_deed_dynasty_effect = yes
         pledge_restoration_effect = yes
         create_story = story_nars_conqueror
         
-        # Cooldown flag
         hidden_effect = {
             add_character_flag = {
                 flag = nars_realm_2_cooldown
@@ -57,7 +47,6 @@ nars_conqueror.0001 = {
             }
         }
 
-        # Vassal Opinions
         if = {
             limit = { any_vassal = { vassal_stance = belligerent } }
             every_vassal = {
@@ -614,7 +603,7 @@ nars_conqueror.1100 = {
 			name = event_troop_default_name
 			levies = 625
 			men_at_arms = {
-				type = maa_t1
+				type = nars_t1
 				stacks = 5
             }
             location = root.capital_province
@@ -643,7 +632,7 @@ nars_conqueror.1100 = {
 					name = event_troop_default_name
 					levies = 625
 					men_at_arms = {
-						type = maa_t1
+						type = nars_t1
 						stacks = 5
 					}
 					location = root.capital_province

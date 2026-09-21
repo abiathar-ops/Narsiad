@@ -92,7 +92,7 @@ nars_faith.1011 = {
 	}
 }
 
-# Ponder the Panteion
+# Ponder the POLITEION
 
 nars_faith.1031 = {
 	type = character_event
@@ -137,33 +137,33 @@ nars_faith.1031 = {
 		name = nars_faith.1031.a
 		trigger = {
 			NOR = {	
-				has_character_modifier = panteion_selian_narses
+				has_character_modifier = politeion_selian_narses
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_selian_narses }
-		set_panteion_effect = { PANTEION = panteion_selian_narses }
+		show_as_unavailable = { has_character_modifier = politeion_selian_narses }
+		set_politeion_effect = { POLITEION = politeion_selian_narses }
 	}
 
 	option = {
 		name = nars_faith.1031.b
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_selian_phokas
+				has_character_modifier = politeion_selian_phokas
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_selian_phokas }
-		set_panteion_effect = { PANTEION = panteion_selian_phokas }
+		show_as_unavailable = { has_character_modifier = politeion_selian_phokas }
+		set_politeion_effect = { POLITEION = politeion_selian_phokas }
 	}
 
 	option = {
 		name = nars_faith.1031.c
 		trigger = {
 			NOR = {
-				has_character_modifier = panteion_selian_enuo
+				has_character_modifier = politeion_selian_enuo
 			}
 		}
-		show_as_unavailable = { has_character_modifier = panteion_selian_enuo }
-		set_panteion_effect = { PANTEION = panteion_selian_enuo }
+		show_as_unavailable = { has_character_modifier = politeion_selian_enuo }
+		set_politeion_effect = { POLITEION = politeion_selian_enuo }
 	}
 
 	# Opt-Out

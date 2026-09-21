@@ -7,6 +7,12 @@
 	}
 }
 
+narsil_shards = {
+	slot = miscellaneous
+	optional_features = { book_subject book_cover_material book_topic book_title book_decoration decoration_pattern generic_material_wood decoration_material_gem decoration_material_inlay_HSB }
+	can_reforge = no
+}
+
 anduril = {
 	slot = regalia
 	required_features = {
@@ -16,4 +22,9 @@ anduril = {
 		generic_material_cloth
 		decoration_material_embroidery
 	}
+}
+
+amphora = {
+	slot = miscellaneous
+	required_features = { generic_material_earthware decoration_pattern }
 }

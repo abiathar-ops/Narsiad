@@ -1,0 +1,13 @@
+produce_amphora_scheme_success = {
+	random_events = {
+		100 = nars_amphora.0001
+	}
+}
+
+produce_amphora_scheme_failure = {
+	random_events = {
+		70 = nars_amphora.0002
+		15 = nars_amphora.0003
+		15 = nars_amphora.0004
+	}
+}

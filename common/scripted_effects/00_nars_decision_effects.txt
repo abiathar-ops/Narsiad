@@ -1,34 +1,34 @@
-set_panteion_effect = {
+set_politeion_effect = {
 	# Remove any previous personal god relation
 
 	if = {
 		limit = { is_archaic = yes }
 		if = {	
 			limit = {
-				has_character_modifier = panteion_selian_narses
+				has_character_modifier = politeion_selian_narses
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_selian_narses
+			remove_character_modifier = politeion_selian_narses
 		}
 		else_if = {	
 			limit = {
-				has_character_modifier = panteion_selian_phokas
+				has_character_modifier = politeion_selian_phokas
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_selian_phokas
+			remove_character_modifier = politeion_selian_phokas
 		}
 		else_if = {	
 			limit = {
-				has_character_modifier = panteion_selian_enuo
+				has_character_modifier = politeion_selian_enuo
 			}
 			add_piety = massive_piety_loss
-			remove_character_modifier = panteion_selian_enuo
+			remove_character_modifier = politeion_selian_enuo
 		}
 		else = {
 			add_piety = massive_piety_loss
 		}
 	}
-	add_character_modifier = $PANTEION$
+	add_character_modifier = $POLITEION$
 }
 
 pledge_restoration_effect = {

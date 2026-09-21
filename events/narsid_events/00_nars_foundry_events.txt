@@ -23,10 +23,6 @@ nars_artifacts.1001 = {
 		name = nars_artifacts.1001.a
 		add_internal_flag = special
 		save_scope_as = actor
-		add_character_flag = {
-			flag = took_decision_mend_narsil_flag
-			years = 10
-		}
 		begin_scheme_with_agents_effect = {
 				SCHEME_TYPE = mend_narsil_scheme
 				TARGET_TYPE = target_title
@@ -82,7 +78,7 @@ nars_artifacts.1011 = {
 				if = {
 					limit = { exists = scope:scheme_successful }
 					trigger_event = {
-						id = nars_artifacts.1021
+						id = nars_narsil.9000
 					}
 				}
 				else = {
@@ -91,38 +87,6 @@ nars_artifacts.1011 = {
 					}	
 				}
 			}
-		}
-	}
-}
-
-nars_artifacts.1021 = {
-	type = character_event
-	title = nars_artifacts.1021.t
-	desc = nars_artifacts.1021.desc
-	theme = emperor
-	override_background = armory
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = throne_room_one_handed_passive_1
-	}
-	immediate = {
-		play_music_cue = mx_cue_positive_effect
-		create_narsil_effect = yes
-	}
-	
-	option = {
-		name = nars_artifacts.1021.a
-		scope:scheme = { end_scheme = yes }
-		add_to_global_variable_list = {
-				name = unavailable_unique_decisions
-				target = flag:flag_mend_narsil_decision
-		}
-		set_global_variable = {
-			name = flag_mend_narsil_decision
-			value = root
 		}
 	}
 }
@@ -152,5 +116,216 @@ nars_artifacts.1022 = {
 	option = {
 		name = nars_artifacts.1022.a
 		scope:scheme = { end_scheme = yes }
+	}
+}
+
+
+namespace = nars_narsil
+
+nars_narsil.0001 = { # Gain progress (1)
+	hidden = yes
+
+	immediate = {
+		root = {
+			remove_short_term_gold = medium_gold_value
+		}
+		send_interface_message = {
+			title = nars_narsil.0001.t
+			desc = nars_narsil.0001.desc
+			type = event_prowess_good_desc
+		}
+	}
+}
+
+nars_narsil.0002 = { # Gain stress but no progress
+	hidden = yes
+
+	immediate = {
+		root = {
+			remove_short_term_gold = medium_gold_value
+			add_stress = minor_stress_impact_gain
+		}
+		send_interface_message = {
+			title = nars_narsil.0002.t
+			desc = nars_narsil.0002.desc
+			type = event_prowess_bad_desc
+		}
+	}
+}
+
+nars_narsil.0003 = { # Gain learning but no progress
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            title = nars_narsil.0003.t
+			desc = nars_narsil.0003.desc
+			type = event_prowess_good_desc
+            add_learning_skill = { 1 3 }
+        }
+    }
+}
+
+nars_narsil.0004 = { # Gain legitimacy but no progress
+    hidden = yes
+
+    immediate = {
+        send_interface_toast = {
+            title = nars_narsil.0004.t
+			desc = nars_narsil.0004.desc
+			type = event_prowess_good_desc
+            add_legitimacy = 75
+        }
+    }
+}
+
+nars_narsil.9000 = {
+	type = character_event
+	title = nars_narsil.9000.t
+	desc = nars_narsil.9000.desc
+	
+	window = big_event_window
+
+	theme = nars_war
+	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+
+	center_portrait = {
+		character = root
+		camera = camera_event_center_very_large
+		animation = marshal
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
+		every_character_artifact = {
+			limit = { has_variable = can_be_used_for_narsil } 
+			destroy_artifact = this
+		}
+	}
+	
+	option = {
+		name = nars_narsil.9000.a
+		flavor = nars_narsil.9000.flavor
+		create_narsil_effect = yes
+		hidden_effect = {
+			scope:scheme = { end_scheme = yes }
+			scope:narsil_story = { end_story = yes }
+			add_to_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:flag_mend_narsil_decision
+			}
+		}	
+	}
+}
+
+namespace = nars_amphora
+
+nars_amphora.0001 = { # Gain progress (1)
+	hidden = yes
+
+	immediate = {
+		root = {
+			remove_short_term_gold = tiny_gold_value
+		}
+		send_interface_message = {
+			title = nars_amphora.0001.t
+			desc = nars_amphora.0001.desc
+			type = event_prowess_good_desc
+		}
+	}
+}
+
+nars_amphora.0002 = { # Gain stress but no progress
+	hidden = yes
+
+	immediate = {
+		root = {
+			remove_short_term_gold = medium_gold_value
+			add_stress = minor_stress_impact_gain
+		}
+		send_interface_message = {
+			title = nars_amphora.0002.t
+			desc = nars_amphora.0002.desc
+			type = event_prowess_bad_desc
+		}
+	}
+}
+
+nars_amphora.0003 = { # Gain learning but no progress
+    hidden = yes
+
+    immediate = {
+		root = {
+			remove_short_term_gold = medium_gold_value
+		}
+        send_interface_toast = {
+            title = nars_amphora.0003.t
+			desc = nars_amphora.0003.desc
+			type = event_prowess_good_desc
+            add_learning_skill = { 1 3 }
+        }
+    }
+}
+
+nars_amphora.0004 = { # Gain legitimacy but no progress
+    hidden = yes
+
+    immediate = {
+		root = {
+			remove_short_term_gold = medium_gold_value
+		}
+        send_interface_toast = {
+            title = nars_amphora.0004.t
+			desc = nars_amphora.0004.desc
+			type = event_prowess_good_desc
+            add_legitimacy = 75
+        }
+    }
+}
+
+nars_amphora.9000 = {
+	type = character_event
+	title = nars_amphora.9000.t
+	desc = nars_amphora.9000.desc
+	
+	window = big_event_window
+
+	theme = nars_war
+
+	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
+
+	center_portrait = {
+		character = root
+		camera = camera_event_center_very_large
+		animation = war_over_tie
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
+	}
+	
+	option = {
+		name = nars_amphora.9000.a
+		flavor = nars_amphora.9000.flavor
+		add_trait = lifestyle_pottery
+		hidden_effect = {
+            add_trait_xp = {
+                trait = lifestyle_pottery
+                track = potter
+                value = 25
+            }
+        }
+		custom_tooltip = {
+			text = produce_amphora_tt
+			produce_amphora_effect = { OWNER = root }
+		}
+		hidden_effect = {
+			scope:scheme = { end_scheme = yes }
+			scope:amphora_story = { end_story = yes }
+		}	
+		add_character_flag = {
+			flag = haao_made_an_amphora
+			days = 182
+		}
 	}
 }

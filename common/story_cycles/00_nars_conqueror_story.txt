@@ -8,27 +8,7 @@ story_nars_conqueror = {
     background = {
         reference = "gfx/interface/illustrations/event_scenes/armory.dds"
     }
-
-    visualization = {
-        basic_counter = {
-            variable_name = "narsokratia_value"
-            tooltip = "NARSOKRATIA_COUNTER_TOOLTIP"
-            min = 0
-            max = 5
-            label = "NARSOKRATIA_VALUE_LABEL"
-            min_label = "NARSOKRATIA_VALUE_MIN_LABEL"
-            max_label = "NARSOKRATIA_VALUE_MAX_LABEL"
-        }
-    }
     
-    on_setup = {
-        set_variable = {
-            name = narsokratia_value
-            value = 0
-        }
-        nars_update_narsokratia_value = yes
-    }
-
     # 1. Ongoing Events
     effect_group = { 
         days = { 180 420 }

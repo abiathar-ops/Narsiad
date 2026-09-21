@@ -6,7 +6,7 @@ industrial_boom_character_modifier = {
 
 industrial_boom_province_modifier = {
 	icon = martial_positive
-	stationed_maa_toughness_mult = 0.125
+	stationed_nars_toughness_mult = 0.125
 	development_growth_factor = 0.125
 }
 
@@ -33,5 +33,5 @@ distribute_propaganda_province_modifier = {
 munitions_research_modifier = {
 	icon = martial_positive
 	stationed_maa_damage_mult = 0.25
-	stationed_maa_toughness_mult = 0.25
+	stationed_nars_toughness_mult = 0.25
 }

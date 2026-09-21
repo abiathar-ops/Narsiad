@@ -4,13 +4,16 @@
     icon = {
         reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
     }
+    
+    background = {
+        reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds"
+    }
 
     visualization = {
         character = {
             variable_name = "nars_char"
             label = "NARS_CHAR_LABEL"
         }
-        custom_string_key = NARS_NATURALIS_STORY_PRACTICAL_INFORMATION_STRING
     }
     
     on_setup = {

@@ -54,7 +54,7 @@
 		{ name = "holy_order_order_of_place" }
 	}
 
-	holy_order_maa = { maa_t1 }
+	holy_order_maa = { nars_t1 }
 
 	localization = {
 		#HighGod

@@ -45,7 +45,7 @@ canton_duchy_01 = {
 
 	province_modifier = {
 		stationed_maa_damage_mult = very_high_maa_damage_tier_3
-		stationed_maa_toughness_mult = very_high_maa_toughness_tier_3
+		stationed_nars_toughness_mult = very_high_nars_toughness_tier_3
 		defender_advantage = 10
 	}
 
@@ -117,7 +117,7 @@ canton_duchy_02 = {
 
 	province_modifier = {
 		stationed_maa_damage_mult = very_high_maa_damage_tier_5
-		stationed_maa_toughness_mult = very_high_maa_toughness_tier_5
+		stationed_nars_toughness_mult = very_high_nars_toughness_tier_5
 		defender_advantage = 20
 	}
 
@@ -189,7 +189,7 @@ canton_duchy_03 = {
 
 	province_modifier = {
 		stationed_maa_damage_mult = very_high_maa_damage_tier_8
-		stationed_maa_toughness_mult = very_high_maa_toughness_tier_8
+		stationed_nars_toughness_mult = very_high_nars_toughness_tier_8
 		defender_advantage = 30
 	}
 

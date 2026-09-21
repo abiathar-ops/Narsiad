@@ -21,3 +21,9 @@
  nars_alnars.name: "Sōtēr"
  nars_alnars.no_actor: "Savior-Deliverer"
  trait_nars_alnars_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] culture, that he rescued from the most dire of circumstances, honors him. Were it not for him, that culture could now have been extinguished"
+
+ lifestyle_pottery.name: "Kerameus"
+ lifestyle_pottery.no_actor: "Potter"
+ trait_lifestyle_pottery_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] toils of art has yielded [ROOT.GetCharacter.GetHerHis] reputation as a potter."
+ trait_track_potter:0 "Potter"
+ trait_track_potter_desc:0 "This character grows ever more experienced and vigorous with every pottery he makes"

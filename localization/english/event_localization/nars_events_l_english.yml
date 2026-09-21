@@ -9,7 +9,7 @@
  nars_intro.0001.d: "Intriguing... but alas, it is mere tall tales."
 
  nars_intro.1001.t:0 "Gnōthi Seauton"
- nars_intro.1001.desc:0 "In antiquity, the unquestionable [hegemony|E] of the [selianrealm|E] stood at the forefront of civilization. When [nomads|e] and [civil_wars|E] torn our [realm|E] asunder, they believed we were truly destroyed. \n\n#v They couldn't be more wrong.#! \n\nOur last [hegemon|E] did not deign to be the last; with brilliance, he relocated the worthiest of our [prestigious|E] [nobles|E] to dozens of hidden mountain refuges on the fringes of his wider [realm|E]. \n\nIn our absence, the other civilizations of the world scrubbed the [selianes|E] from history in a brutal ethnocide. Other [cultures|E] had so soon celebrated our obliteration on the wider world to realize their own hubristic delusions about our complete destruction. \n\nAs time passed, the world outside became unrecognizable, but we of the [selianes|E] endured in our exile. As the [regions|E] around us decayed into barbarism and [tribes|E], we preserved the flame of our [tradition|E], waiting for the perfect moment to return and reclaim our [realms|E]."
+ nars_intro.1001.desc:0 "In antiquity, the hegemony of the $game_concept_selianes$ stood at the forefront of civilization. When nomadic incursions and catastrophic plagues turned our lands asunder, they believed we were truly destroyed. \n\nAlas, that couldn't be more false.\n\nOur last ruler did not deign to be the final; he relocated numbers of our kind to dozens of hidden [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )] on the fringes of his lands, away from the covetous eyes of our once-subjugated tribal vassals. \n\nAlas even so, in the weakness that followed, various tribal clans and nomads scrubbed the remaining [selianes|E] one massacre at a time. They had so soon celebrated our realm's obliteration to know their own hubris about our complete destruction.\n\n#flavor "Though our kind is brought to the brink by wars or plague, leaving only the unlettered survivors on the peaks, from those lonely few all of our cultural ways must invariably spring anew." - $Alnars$, $anduril_name$#!"
  nars_intro.1001.a:0 "And so time goes on..."
  nars_intro.1001.b: "The time for our restoration is nigh!"
 
@@ -28,16 +28,16 @@
  nars_intro.0002.c: "I will splinter away, yes, but I will not estrange my siblings."
 
  nars_faith.1001.t: "Psukhês Iatreîon"
- nars_faith.1001.desc: "The [temple|E] is finally quiet. I stand before the [selianes|E] altar to the [panteion|E], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the [court|E] was not here to witness such perfection in [piety|E]."
- nars_faith.1001.a: "I am a true gift to the [panteion|E]."
+ nars_faith.1001.desc: "The [temple|E] is finally quiet. I stand before the [selianes|E] altar to the [politeion|E], ready to pour the evening racial. I unstopper the wine and pour it into the offering bowl with such immaculate precision and dramatic flair that it borders on the theatrical.\n\nI strike a heroic pose in the dim light, reciting the sacred hymns with a voice so resonant I briefly impress myself. The wine splashes perfectly, not a single drop wasted on the floorstones.\n\nI feel incredibly pious, and honestly, quite magnificent. It is a tragedy the rest of the [court|E] was not here to witness such perfection in [piety|E]."
+ nars_faith.1001.a: "I am a true gift to the [politeion|E]."
 
  nars_faith.1002.t: "Psukhês Iatreîon"
- nars_faith.1002.desc: "I approach the sacred [temple|E] shrine, exhaustion weighing heavily on my bones. I am supposed to find inner peace in pouring the evening libation to the [panteion|E], but all I can think about is the impending grain shortage and the dreadful smell of my [spymaster|E].\n\nI mechanically unstopper the wine, dump an unceremonious splash into the bowl, and rattle off the prayers of [selian|E] [tradition|E] at a speed that would make an auctioneer blush.\n\nWell, my [cultural|E] obligation is technically fulfilled. Am I relaxed? Not in the slightest. My shoulders are still as tight as bowstrings. But the heavens cannot say I skipped my chores."
+ nars_faith.1002.desc: "I approach the sacred [temple|E] shrine, exhaustion weighing heavily on my bones. I am supposed to find inner peace in pouring the evening libation to the [politeion|E], but all I can think about is the impending grain shortage and the dreadful smell of my [spymaster|E].\n\nI mechanically unstopper the wine, dump an unceremonious splash into the bowl, and rattle off the prayers of [selian|E] [tradition|E] at a speed that would make an auctioneer blush.\n\nWell, my [cultural|E] obligation is technically fulfilled. Am I relaxed? Not in the slightest. My shoulders are still as tight as bowstrings. But the heavens cannot say I skipped my chores."
  nars_faith.1002.a: "Right, next item on the agenda!"
 
  nars_faith.1003.t: "Psukhês Iatreîon"
- nars_faith.1003.desc: "Seeking a moment of respite from [stress|E], I retreat to the nearest [temple|E] offer a solemn libation to the [panteion|E]. I reach for a highly prized amphora of sweet, spiced wine from the southern [regions|E] famed for their vineyards, intending to pour a modest measure into the offering bowl.\n\nBefore I can second-guess my own [sinful|E] blasphemy, I tip the heavy clay jug back and down half of it in one glorious, unbroken swig. It is exquisite. I wipe my mouth with my sleeve, letting out a highly undignified belch. \n\nThe crushing [stress|E] of the day vanishes entirely until I realize I will have to pay the [steward|E] to quietly replace this incredibly expensive vintage before my [court_chaplain|E] notices."
- nars_faith.1003.a: "The [panteion|E] work in mysterious, delicious ways."
+ nars_faith.1003.desc: "Seeking a moment of respite from [stress|E], I retreat to the nearest [temple|E] offer a solemn libation to the [politeion|E]. I reach for a highly prized amphora of sweet, spiced wine from the southern [regions|E] famed for their vineyards, intending to pour a modest measure into the offering bowl.\n\nBefore I can second-guess my own [sinful|E] blasphemy, I tip the heavy clay jug back and down half of it in one glorious, unbroken swig. It is exquisite. I wipe my mouth with my sleeve, letting out a highly undignified belch. \n\nThe crushing [stress|E] of the day vanishes entirely until I realize I will have to pay the [steward|E] to quietly replace this incredibly expensive vintage before my [court_chaplain|E] notices."
+ nars_faith.1003.a: "The [politeion|E] work in mysterious, delicious ways."
 
  nars_realm.1001.t: "Philósophos Gínou: Industry"
  nars_realm.1001.desc: "Our people may have once been lost and desolate, exiled and damned, but no more! They now burn with countless fires of ambition and [virtuous|E] diligence. [buildings|E], [holdings|E], and [cities|E] spring up across the plains, in accordance with the rise of our unstoppable [development|E]. \n\nForges and armouries stockpile weapons for the growing hosts of our [men_at_arms|E] of yore, the [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )], while smithies and workshops construct ever stronger walls and towers to house the growing [armies|E]. \n\nThe [selianes|E] of our [realm|E] are restless, and each alley and street yearns for the glorious revival of the [hegemony|E] of antiquity. Our blessed [narsokratia|E] is destined to be reborn and the hour is nigh for its restoration!"
@@ -52,14 +52,14 @@
  nars_realm.1011.b: "Not yet."
  
  nars_realm.1021.t: "Philósophos Gínou: Propaganda"
- nars_realm.1021.desc: "A true [narsokratia|E] is not forged by the spear and the shadow alone; it requires the fervent devotion of the masses. The [commoners|E] are simple creatures, easily swayed by grand tales and gleaming marble.\n\nBy dispatching our most silver-tongued orators and poets to our [holdings|E], we shall weave a compelling narrative of [selianes|E] supremacy. We will tell them of our holy mandate, of the golden age of antiquity that we bring back, and of the unmatched benevolence of their masters.\n\nLet the streets ring with fabricated glories and embellished histories. When the people believe our reign is ordained by the [panteion|E] itself, their loyalty will be unshakable, and their cheers will drown out any whisper of dissent!"
+ nars_realm.1021.desc: "A true [narsokratia|E] is not forged by the spear and the shadow alone; it requires the fervent devotion of the masses. The [commoners|E] are simple creatures, easily swayed by grand tales and gleaming marble.\n\nBy dispatching our most silver-tongued orators and poets to our [holdings|E], we shall weave a compelling narrative of [selianes|E] supremacy. We will tell them of our holy mandate, of the golden age of antiquity that we bring back, and of the unmatched benevolence of their masters.\n\nLet the streets ring with fabricated glories and embellished histories. When the people believe our reign is ordained by the [politeion|E] itself, their loyalty will be unshakable, and their cheers will drown out any whisper of dissent!"
  nars_realm.1021.a: "Tell them a thousand lies and it will be truth."
  selian_propaganda_province_tt: "Your [counties|E] gain a [modifier|E] that boosts [county_opinion|E]!"
  nars_realm.1021.b: "Not yet."
  
  #Gunpowder
  nars_gunpowder.1001.t: "Khalepà tà Kalá"
- nars_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [panteion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('maa_t2').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
+ nars_gunpowder.1001.desc: "As [ROOT.Char.GetTitleAsName], it is my duty to provide our [armies|E] with state-of-the-art weaponry. This is a responsibility granted by our [politeion|E]. If [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] is to be protected, our [armies|E] must house more than cold weaponries. We must develop firearms. \n\nAlready, my [marshal|E] is forming the plans for a new [regiment|E], the [GetMaA('nars_t2').GetName]. A mix of [spearmen|E] and [gunpowder|E], they are the successors of the [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and will be formidable for the [wars|E] to come.\n\nHowever in researching this volatile substance, do I entrust my [courtiers|E] to concoct it independently, or do I hire a foreign barbarian to do the dirty work for me? The former is risky, but the latter is costly. I must choose wisely."
  nars_gunpowder.1001.a: "I will put [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] to work."
  nars_gunpowder.1001.b: "Barbarians will make our black powder."
  nars_gunpowder.1001.c: "Use a powder liable to explode? No."
@@ -67,7 +67,7 @@
  nars_gunpowder.1021.t: "[scheme.GetNameNoTooltip]: Success"
  nars_gunpowder.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have finally perfected the volatile mixture of saltpeter, sulfur, and charcoal. Outside, our [armies|E] play host to a terrifying new exercise. Lining up in disciplined ranks, [commoners|E] level their heavy iron tubes at a row of wooden targets. A deafening crack shatters the air, thick white smoke billowing across the field as lead balls obliterate the splintering wood. \n\nMy [marshal|E] deliberate a new [regiment|E]. One that blends the [spearmen|E] and the [gunpowder|E], eliminating their weaknesses and countering [heavy_infantry|E] and [heavy_cavalry|E] alike. \n\nMy [rivals|E] will soon learn to fear the thunder of our new [regiment|E] and our [region|E] will quake under the pike and shot of our new [soldiers|E], the [Glossary( 'Mástigoî', 'MASTIGES_GLOSS' )]!"
  nars_gunpowder.1021.a: "A new era dawns!"
- nars_gunpowder.1021.a.mastiges_tt: "#v You#! unlocked  [GetMaA('maa_t2').GetName] [men_at_arms|E]"
+ nars_gunpowder.1021.a.mastiges_tt: "#v You#! unlocked  [GetMaA('nars_t2').GetName] [men_at_arms|E]"
  
  # Fail Event
  nars_gunpowder.1022.t: "[scheme.GetNameNoTooltip]: Failure"
@@ -75,17 +75,13 @@
  nars_gunpowder.1022.a: "Craven..."
 
  nars_titles.0001.t: "Ánthrōpos Métron!"
- nars_titles.0001.desc: "Today, I call all [selianes|E] to declare the realization of our [cultural|E] [hegemony|E], the [narsokratia|E] remade. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E]. From this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [hegemony|E], our reborn realm of antiquity. \n\nUnder the rule of the [selianes|E], every [region|E] will finally know true, universal pacification. Under the rule of the [panteion|E], every [character|E] will finally know true, universal salvation." 
+ nars_titles.0001.desc: "Today, I call all [selianes|E] to declare the realization of our [cultural|E] [hegemony|E], the [narsokratia|E] remade. We can no longer view ourselves as a mere [realm|E] competing on the world's ever many [counties|E]. Blessed with inhuman grace and unquestionable [legitimacy|E], we are the [hegemons|E]. From this day forward, any [realm|E] or [region|E] that resists us is not a [rival|E] power, but a [revolt|E] resisting the inevitable march of our nigh-perfect [hegemony|E], our reborn realm of antiquity. \n\nUnder the rule of the [selianes|E], every [region|E] will finally know true, universal pacification. Under the rule of the [politeion|E], every [character|E] will finally know true, universal salvation." 
  nars_titles.0001.a: "Hépou theôi..."
  
  nars_artifacts.1001.t: "Kairòn Gnôthi: Dillema"
  nars_artifacts.1001.desc: "The shattered remnants of [narsil|E] lie upon the anvil, cold and unyielding. The smith bows low, his face pale in the light of the forge. "My liege," he murmurs, "...the ancient alloy refuses to bind. Our fiercest forges and kilns are not capable enough to stoke the flame capable of binding the shattered shards."\n\nHe hesitates, glancing nervously at the guards. "There is a much older way, documented in esoteric scrolls of the ancient [archaic|E] texts. The [artifact|E] must be quenched in the lifeblood of a [selian|E] gained from a ritual." \n\n"A sacrifice of a [selianes|E], one of your own [courtiers|E], will let us begin the binding rites at once—or we may seek out costly reagents to stimulate our foundries instead.""
  nars_artifacts.1001.a: "Begin now and stoke the flame!"
  nars_artifacts.1001.b: "Perhaps this is not the time..."
-
- nars_artifacts.1021.t: "[scheme.GetNameNoTooltip]: Success"
- nars_artifacts.1021.desc: "Deep in the dusty vaults of my [capital_possessive|E] armory, my [courtiers|E] have at last completed the binding rites. As the smith lifts the longsword from the trough, the metal hums with a strange, unnatural energy. [narsil|E] is whole once more, its edge gleaming in the torchlight.\n\nThe smith falls to his knees, presenting the [artifact|E] to my hands."
- nars_artifacts.1021.a: "However I desire, of course!"
 
  nars_artifacts.1022.t: "[scheme.GetNameNoTooltip]: Failure"
  nars_artifacts.1022.desc: "Hellfire! Hellfire!\n\nThe volatile rites meant to bind the shards of [narsil|E] go awry; the alloy resists, hissing and cracking before falling apart once more, ruined beyond this attempt.\n\nHow could such an ancient, unnatural craft ever be reliably mastered? For now, at least, [narsil|E] remains broken."
@@ -112,7 +108,7 @@
  nars_faith_1011_toast_desc: "The Selian tradition has been imposed on the realm!"
 
  nars_faith.1031.t: "Mustérion tês Písteōs..."
- nars_faith.1031.desc: "I am told by my [virtuous|E] vestal in front that if I ponder the [panteion|E] deeply enough, a profound burst of [piety|E] will reveal which patron God is meant to guide my [dynasty|E].\n\nThe choices are certainly imposing. Do I dedicate myself to [narses|E], whose dominion over [learning|E] sounds suspiciously like an invitation to do more paperwork? Do I seek the favor of [phokas|E] to ensure my coffers remain full enough to bribe my [rivals|E]? Or do I embrace [enuo|E], who promises glorious [wars|E] and boundless [fertility|E]; both of which sound like a dreadful amount of physical exertion. Well, perhaps I'll flip a coin to [decide|E]...? Wait, that #emp probably#! won't work, now would it?"
+ nars_faith.1031.desc: "I am told by my [virtuous|E] vestal in front that if I ponder the [politeion|E] deeply enough, a profound burst of [piety|E] will reveal which patron God is meant to guide my [dynasty|E].\n\nThe choices are certainly imposing. Do I dedicate myself to [narses|E], whose dominion over [learning|E] sounds suspiciously like an invitation to do more paperwork? Do I seek the favor of [phokas|E] to ensure my coffers remain full enough to bribe my [rivals|E]? Or do I embrace [enuo|E], who promises glorious [wars|E] and boundless [fertility|E]; both of which sound like a dreadful amount of physical exertion. Well, perhaps I'll flip a coin to [decide|E]...? Wait, that #emp probably#! won't work, now would it?"
  nars_faith.1031.a: "My mind drifts to [narses|E], to [learning|E]."
  nars_faith.1031.b: "[phokas|E]' focus on levities are quite amusing!"
  nars_faith.1031.c: "My blood boils for [enuo|E]. For #emp me#! to let loose...?"
@@ -122,7 +118,7 @@
 
  nars_faith.1041.t: "Evangelizing the [pagan.GetCulture.GetCollectiveNounNoTooltip]"
  nars_faith.1041.desc: "Haivēn's serenity belongs to the faithful scholars, but our neighbor, [pagan.GetTitledFirstName], is blissfully unaware of it, and persists in believing in [pagan.GetHerHis] superstitions and false [religions|E].\n\nSaving [pagan.GetHerHis] soul and those of [pagan.GetHerHis] [realm_possessive|E] people is a [virtuous|E] endeavor in itself, but there also #EMP earthly#! advantages to their conversion. For starters, reducing their hostility towards us and bringing them into our own sphere of influence.\n\nMy chosen missionary, [evangelizer.GetFirstName], is ready to go."
- nars_faith.1041.a: "May the [panteion|E] guide you!"
+ nars_faith.1041.a: "May the [politeion|E] guide you!"
  nars_faith.1041.a.tt: "[evangelizer.GetFirstNameNoTooltip] departs for [pagan.GetTitledFirstNamePossessiveNoTooltip] capital."
  nars_faith.1043.desc: "Emissaries from our neighbors come and go frequently enough that they all mix together in my mind. However, today's [selian|E] envoy sticks out like none before.\n\n[evangelizer.GetSheHe|U] seems to be some sort of holy [evangelizer.GetWomanMan], for starters, and instead of advancing political demands, this [evangelizer.GetFirstName] preaches of an omnipotent God, honored in temples of gold and silver that always smell of incense."
  nars_faith.1043.a: "Please, tell me more."
@@ -130,7 +126,7 @@
  nars_faith.1043.c: "Ridiculous blasphemy!"
  nars_faith.1043.c.tt: "This is sure to send a message: your preachers are not welcome here! But we should be ready for retaliation..."
  nars_faith.1046.desc_new: "My predecessor [sender.GetFirstName] had invested into the evangelism of the [pagan.GetCulture.GetCollectiveNounNoTooltip] but, unfortunately for [sender.GetHerHim], it is I who will reap the benefits of [sender.GetHerHis] efforts. [sender.GetHerHis|U] missionary [evangelizer.GetFirstName], in fact, has just returned."
- nars_faith.1046.desc_old: "Months ago, I sent my trusted [evangelizer.GetFirstName] to bring the knowledge of God to the [pagan.GetCulture.GetCollectiveNounNoTooltip]. It is with great joy that I welcome [sender.GetHerHim] back to [court|E] today, as I've been eagerly waiting for [evangelizer.GetHerHis] report.\n\nThe success of this mission could mean a great expansion of our [faith|E] and influence, but failure would be a great blow to our [realm_possessive|E] [relations|E] and the [panteion|E]'s reputation."
+ nars_faith.1046.desc_old: "Months ago, I sent my trusted [evangelizer.GetFirstName] to bring the knowledge of God to the [pagan.GetCulture.GetCollectiveNounNoTooltip]. It is with great joy that I welcome [sender.GetHerHim] back to [court|E] today, as I've been eagerly waiting for [evangelizer.GetHerHis] report.\n\nThe success of this mission could mean a great expansion of our [faith|E] and influence, but failure would be a great blow to our [realm_possessive|E] [relations|E] and the [politeion|E]'s reputation."
  nars_faith.1046.desc_success: "\n\n"I bring great news, my liege! [pagan.GetTitledFirstName|U] was eager to hear the Glad Tidings, and converted to [evangelizer.GetFaith.GetName], accompanied by many of [pagan.GetHerHis] people.", [evangelizer.GetFirstName] said with a triumphant smile on [evangelizer.GetHerHis] face."
  nars_faith.1046.desc_failure: "\n\n"I bring somber news, my liege. Unfortunately, [pagan.GetTitledFirstName] was most unresponsive to the Word of God, and sent me away empty-handed.", [evangelizer.GetFirstName] said with a forced smile on [evangelizer.GetHerHis] face."
  nars_faith.1046.a: "Excellent!"
@@ -165,3 +161,31 @@
  selian_diplomacy_target_2_joins_toast_tt: "[target_2.GetFirstNameNoTooltip] has agreed to follow your banner, but [target_1.GetFirstNameNoTooltip] stubbornly refuses."
  selian_diplomacy_neither_join_toast_t: "Entreaties Rejected"
  selian_diplomacy_neither_join_toast_tt: "Both of your siblings have rejected your demands. They will remain independent."
+
+ nars_narsil.0001.t: "Forging $narsil_name$"
+ nars_narsil.0001.desc: "You progressed the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_narsil.0002.t: "Forging $narsil_name$"
+ nars_narsil.0002.desc: "You have gained #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E]\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_narsil.0003.t: "Forging $narsil_name$"
+ nars_narsil.0003.desc: "You gained [learning_i|E][learning|E] [skill|E] insights!\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_narsil.0004.t: "Forging $narsil_name$"
+ nars_narsil.0004.desc: "You gain #v 75#! [legitimacy_i|E][legitimacy|E] from $game_concept_selianes$\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_narsil.9000.t: "[scheme.GetNameNoTooltip]: Success"
+ nars_narsil.9000.desc: "Deep in the vaults of my armory, my smiths have at last completed their toil. As one of them lifts [narsil|E] from the trough, the metal hums with a strange, unnatural energy. It is whole once more, its edge gleaming in the torchlight. The smith falls to his knees, presenting it to my hands.\n\n#flavor "The measure of a man's personage is what he does with his power." - $Alnars$, $anduril_name$"
+ nars_narsil.9000.a: "At long last, the sign of my times."
+ nars_narsil.9000.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
+
+
+ nars_amphora.0001.t: "Making $artifact_amphora_name$"
+ nars_amphora.0001.desc: "Your #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E] progressed!\nYou have lost #color_red [EmptyScope.ScriptValue('tiny_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_amphora.0002.t: "Making $artifact_amphora_name$"
+ nars_amphora.0002.desc: "You have gained #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E]\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_amphora.0003.t: "Making $artifact_amphora_name$"
+ nars_amphora.0003.desc: "You gained [learning_i|E][learning|E] [skill|E] insights!\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_amphora.0004.t: "Making $artifact_amphora_name$"
+ nars_amphora.0004.desc: "You gain #v 75#! [legitimacy_i|E][legitimacy|E] from $game_concept_selianes$\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+ nars_amphora.9000.t: "[scheme.GetNameNoTooltip]: Success"
+ nars_amphora.9000.desc: "Deep in the vaulted chambers of my workshops, my hands have at last completed their toil. As I lift the vessel from the polishing cloths, the sheen seems to catch and hold a nearby ambient torchlight. I hold my own creation, my [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )], in my hands as I revel in my own creation.\n\n#flavor "As a man takes a vessel of solid gold, the crown of his possessions, bubbling with the dew of the vine, and marvels at his own glory." - $Alnars$, $anduril_name$"
+ nars_amphora.9000.a: "At long last, my handiwork."
+ nars_amphora.9000.flavor: "An amphora of mine own..."
+ produce_amphora_tt: "You create an #v Amphora#! [inventory_artifact|E]"

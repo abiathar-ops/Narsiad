@@ -146,13 +146,63 @@
 }
 
 create_h_narsokratia_effect = {
+	# "The old one" = whatever the founder's own primary title was BEFORE this
+	# effect runs (an empire, per decision_h_narsokratia's is_shown/is_valid).
+	# Save it now, before set_primary_title_to overwrites it below, so the new
+	# hegemony's name/adjective/color can be inherited from it.
+	#
+	# Note on government type: in this mod, government (oligarchic/aristocratic/
+	# autocratic/etc, see common/governments/HAAO_government_types.txt) is a
+	# CHARACTER attribute, not something a title can carry - h_narsokratia's old
+	# static definition had no "government" field, and create_dynamic_title has
+	# no such field either. Nothing in this effect ever calls
+	# set_government_type, so root's government is never touched and simply
+	# stays whatever it already was on the old realm - i.e. it "takes after the
+	# old one" automatically, with nothing extra needed. (The only government
+	# change anywhere in this decision is vassals being pushed to administrative
+	# government by selian_vassal_conversion_effect at the very end - that's
+	# unrelated to root and unaffected by this rewrite.)
+	root = {
+		primary_title = {
+			save_scope_as = old_title
+		}
+	}
+
 	save_scope_as = new_hegemon
 
 	scope:new_hegemon = {
-		hidden_effect = { get_title = title:h_narsokratia }
 		give_nickname = nick_soter
 		custom_tooltip = decision_h_narsokratia_effect_tooltip
-		title:h_narsokratia = { save_scope_as = new_title }
+
+		# Generate a brand-new hegemony-tier title instead of referencing the old
+		# static h_narsokratia. name/adj point at loc keys (nars_titles_l_english.yml)
+		# that read scope:old_title's own name/adjective, so the hegemony ends up
+		# named after whatever realm the founder actually held, not a fixed label.
+		# create_dynamic_title automatically populates scope:new_title, same as
+		# vanilla's own hegemony-tier example in
+		# common/scripted_effects/09_mpo_greatest_of_khans_effects.txt.
+		hidden_effect = {
+			create_dynamic_title = {
+				tier = hegemony
+				name = nars_hegemony_dynamic_name
+				adj = nars_hegemony_dynamic_adj
+				article = article_CONFEDERATION_CULTURE_NAME
+			}
+			scope:new_title = {
+				set_color_from_title = scope:old_title
+				set_definitive_form = yes
+				set_can_be_named_after_dynasty = no
+				set_can_use_nomadic_naming = no
+				if = {
+					limit = { exists = scope:new_hegemon.house }
+					set_coa = scope:new_hegemon.house
+				}
+				else = {
+					generate_coa = yes
+				}
+			}
+		}
+
 		custom_tooltip = decision_h_narsokratia_troop_effect_tooltip
 		gain_heroic_legend_seed_tooltip_effect = yes
 		dynasty ?= { add_dynasty_prestige = 5000 }
@@ -161,9 +211,9 @@ create_h_narsokratia_effect = {
 			every_held_title = {
 				limit = {
 					tier = tier_kingdom
-					NOT = { de_jure_liege = title:h_narsokratia }
+					NOT = { de_jure_liege = scope:new_title }
 				}
-				set_de_jure_liege_title = title:h_narsokratia
+				set_de_jure_liege_title = scope:new_title
 			}
 		}
 		create_title_and_vassal_change = {
@@ -189,11 +239,11 @@ create_h_narsokratia_effect = {
 			spawn_army = {
 				name = selian_troop_hegemony_name
 				men_at_arms = {
-					type = maa_t2
+					type = nars_t2
 					stacks = 15
 				}
 				men_at_arms = {
-					type = maa_t1
+					type = nars_t1
 					stacks = 85
 				}
 				location = this.capital_province
@@ -206,14 +256,14 @@ create_h_narsokratia_effect = {
 			every_kingdom = {
 				limit = {
 					is_titular = no
-					NOT = { de_jure_liege = title:h_narsokratia }
+					NOT = { de_jure_liege = scope:new_title }
 					trigger_if = {
 						limit = { exists = holder }
 						holder != scope:new_hegemon
 					}
 					scope:new_hegemon = { completely_controls = prev }
 				}
-				set_de_jure_liege_title = title:h_narsokratia
+				set_de_jure_liege_title = scope:new_title
 			}
 			selian_vassal_conversion_effect = yes
 		}
@@ -228,7 +278,7 @@ create_h_narsokratia_effect = {
 
 nars_maa_setup_effect = {
 	create_maa_regiment = {
-			type = maa_t1
+			type = nars_t1
 			check_can_recruit = no
 			size = 3
 	}

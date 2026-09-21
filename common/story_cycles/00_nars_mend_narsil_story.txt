@@ -1,0 +1,33 @@
+﻿story_mend_narsil = {
+    visible = yes
+    icon = { reference = "gfx/interface/icons/artifact/artefact_icons_unique_artifact_excalibur.dds" }
+    background = { reference = "gfx/interface/illustrations/event_scenes/nars_war.dds" }
+
+    visualization = {
+        basic_counter = {
+            variable_name = "mend_narsil_success"
+            tooltip = "MEND_NARSIL_COUNTER_TOOLTIP"
+            min = 0
+            max = 10
+            label = "MEND_NARSIL_VALUE_LABEL"
+            min_label = "MEND_NARSIL_VALUE_MIN_LABEL"
+            max_label = "MEND_NARSIL_VALUE_MAX_LABEL"
+        }
+    }
+
+    on_setup = {
+        set_variable = { name = mend_narsil_success value = 0 }
+        root = {
+            set_variable = {
+                name = mend_narsil_story_ref
+                value = prev
+            }
+        }
+    }
+
+    on_owner_death = { end_story = yes }
+    on_end = {
+        debug_log = "$decision_mend_narsil$ story cycle ended on:"
+        debug_log_date = yes
+    }
+}

@@ -1,9 +1,14 @@
 narsil = {
-	icon = { reference = artefact_icons_unique_artifact_excalibur.dds }
+	icon = "artifact_narsil.dds"
 	asset = { reference = ep1_western_sword_01_a_entity }
 }
 
+narsil_shards = {
+	icon = "artifact_pouch.dds"
+	asset = ep1_indian_pouch_basic_01_a_entity
+}
+
 anduril = {
-	icon = "artifact_leaf_book.dds"
+	icon = "artifact_anduril.dds"
 	asset = ep1_indian_book_big_01_a_entity
 }
