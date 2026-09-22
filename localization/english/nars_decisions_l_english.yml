@@ -22,7 +22,7 @@
  faith_selian_3_decision_name:0 "Impose [selianes|E] Heritage"
  faith_selian_3_decision_desc:0 "Evangelize your [realm|E] to the Archaic Politeíon of our [tradition|E]."
  change_to_faith_selian_3_decision_desc_1:0 "Every [province|E] of your [realm|E] has a chance to convert to your [faith|E] and [culture|E]!\n$EFFECT_LIST_BULLET$This [decision|E] #emp will#! cause the lost of [control|E] in the converted [province|E]!"
- change_to_faith_selian_3_decision_desc_2:0 "The efficacy of this [decision|E] scales with [narsokratia|E] [title_ranks|E]!"
+ change_to_faith_selian_3_decision_desc_2:0 "The efficacy of this [decision|E] scales with [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] [title_ranks|E]!"
 
  faith_selian_4_decision_name:0 "Sponsor [archaic|E] Missionaries"
  faith_selian_4_decision_desc:0 "Sponsor an [archaic|E] missionary to spread the teachings of the [nars_faith|E] to neighbouring [realms|E]!"
@@ -80,7 +80,7 @@
  # ── Imperial Decisions ──
 
  decision_selian_imperial_administration: "Issue Imperial Decrees"
- decision_selian_imperial_administration_desc: "As the [ruler|E] of an [empire|E] held by the [selianes|E], the vast machinery of the [realm|E] rests solely in my hands. The old [narsokratia|E] of yore had thrived because it directed its boundless resources with calculated precision. It is precisely why I must issue decrees to secure our desired [hegemony|E]!"
+ decision_selian_imperial_administration_desc: "As the [ruler|E] of an [empire|E] held by the [selianes|E], the vast machinery of the [realm|E] rests solely in my hands. The old [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] of yore had thrived because it directed its boundless resources with calculated precision. It is precisely why I must issue decrees to secure our desired [hegemony|E]!"
  decision_selian_imperial_administration_tooltip: "Issue a grand decree to bolster the administration of your Empire"
  decision_selian_imperial_administration_confirm: "Send the edict!"
   

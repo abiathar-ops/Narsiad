@@ -2,7 +2,7 @@
  selian_incursion_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  selian_incursion_cb: "$game_concept_selianes$ Incursion"
  selian_incursion_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_incursion_NAME_BASE: "[selian_incursion|E] for [narsokratia|E]"
+ selian_incursion_NAME_BASE: "[selian_incursion|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  
  selian_incursion_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands and titles, personally keeping the capital while dividing the rest of the [realm|E] among your followers. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_incursion_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands and titles, dividing your former [realm|E] among [attacker.GetHerHis] followers. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
@@ -17,9 +17,9 @@
  selian_incursion_gain_titles_tt: "Gains all [landed|E] [titles|E] held personally by [defender.GetShortUIName], and subjugates their [vassals|E]"
  
  selian_migration_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_migration_cb: "[selian_migration|E] for [narsokratia|E]"
+ selian_migration_cb: "[selian_migration|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  selian_migration_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_migration_NAME_BASE: "[selian_migration|E] for [narsokratia|E]"
+ selian_migration_NAME_BASE: "[selian_migration|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
 
  selian_migration_victory_attacker: "You usurp the targeted kingdom, seizing the lands of [defender.GetShortUIName] and migrating into [defender.GetHerHis] lands. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_migration_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
@@ -36,9 +36,9 @@
  selian_migration_global_limit_tt:0 "This Migration Casus Belli can only be declared 3 times globally across the world (Used: [GetGlobalVariable('selian_migration_global_count').GetValue|0]/3)."
  
  selian_expedition_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Expedition into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_expedition_cb: "#v Selian Expedition#! for [narsokratia|E]"
+ selian_expedition_cb: "#v Selian Expedition#! for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  selian_expedition_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Expedition into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_expedition_NAME_BASE: "#v Selian Expedition#! for [narsokratia|E]"
+ selian_expedition_NAME_BASE: "#v Selian Expedition#! for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
 
  selian_expedition_victory_attacker: "You usurp the targeted kingdom, seizing the lands of [defender.GetShortUIName] and migrating into [defender.GetHerHis] lands. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_expedition_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"

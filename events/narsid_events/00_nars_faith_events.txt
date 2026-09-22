@@ -180,96 +180,95 @@ nars_faith.1031 = {
 # Sponsor Missionaries
 
 nars_faith.1041 = {
-	type = character_event
-	title = nars_faith.1041.t
-	desc = nars_faith.1041.desc
-	theme = administrative
-	override_background = fp3_zoroastrian_temple
-	override_effect_2d = { reference = smoke }
-	widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
-	left_portrait = {
-		character = root
-		animation = prayer
-	}
-	right_portrait = {
-		character = scope:evangelizer
-		animation = wedding_priest
-	}
-	lower_right_portrait = scope:pagan
+    type = character_event
+    title = nars_faith.1041.t
+    desc = nars_faith.1041.desc
+    theme = nars_faith
+    
+    left_portrait = {
+        character = root
+        animation = prayer
+    }
+    right_portrait = {
+        character = scope:evangelizer
+        animation = wedding_priest
+    }
 
-	immediate = {
-		if = {
-			limit = {
-				is_narsocratic_e_h = yes
-			}
-			random_neighboring_and_across_water_top_liege_realm_owner = {
-				limit = {
-					valid_for_selian_conversion_trigger = yes
-				}
-				save_scope_as = pagan
-			}
-		}
-		else = {
-			random_neighboring_and_across_water_realm_same_rank_owner = {
-				limit = {
-					valid_for_selian_conversion_trigger = yes
-				}
-				save_scope_as = pagan
-				create_character = {
-					location = root.location
-					template = selian_template.1011
-					culture = culture:selian
-					faith = faith:nars_religion
-					gender_female_chance = 100
-					save_scope_as = evangelizer
-					after_creation = {
-						add_trait = nars_naturalis
-					}
-				}				
-			}
-		}
-		scope:pagan.primary_title = { save_scope_as = title_to_convert }
-		random_pool_character = {
-			province = root.location
-			limit = {
-				faith = faith:nars_religion
-				learning >= decent_skill_rating
-			}
-			save_scope_as = evangelizer
-		}
-		if = {
-			limit = {
-				NOT = { exists = scope:evangelizer }
-			}
-			create_character = {
-				location = root.location
-				culture = culture:selian
-				faith = faith:nars_religion
-				template = selian_template.1011
-				gender_female_chance = 100
-				save_scope_as = evangelizer
-				after_creation = {
-					add_trait = nars_naturalis
-				}
-			}
-		}
-		add_courtier = scope:evangelizer
-		save_scope_as = sender
-		location = { save_scope_as = starting_point }
-	}
+    lower_right_portrait = scope:pagan
 
-	option = {
-		name = nars_faith.1041.a
-		custom_tooltip = nars_faith.1041.a.tt
-		scope:evangelizer = {
-			start_travel_plan = {
-				destination = scope:pagan.capital_province
-				on_arrival_event = nars_faith.1042
-				on_arrival_destinations = all
-				return_trip = no # One way
-			}
-		}
-	}
+    trigger = {
+        any_sub_realm_title = {
+            OR = {
+                tier = tier_county
+                tier = tier_barony
+            }
+            holder = {
+                valid_for_selian_conversion_trigger = yes
+            }
+        }
+    }
+
+    immediate = {
+        random_sub_realm_title = {
+            limit = {
+                OR = {
+                    tier = tier_county
+                    tier = tier_barony
+                }
+                holder = {
+                    valid_for_selian_conversion_trigger = yes
+                }
+            }
+            holder = {
+                save_scope_as = pagan
+            }
+        }
+
+        scope:pagan.primary_title = { save_scope_as = title_to_convert }
+
+        random_pool_character = {
+            province = root.location
+            limit = {
+                faith = faith:nars_religion
+                learning >= decent_skill_rating
+            }
+            save_scope_as = evangelizer
+        }
+
+        if = {
+            limit = {
+                NOT = { exists = scope:evangelizer }
+            }
+            create_character = {
+                location = root.location
+                culture = culture:selian
+                faith = faith:nars_religion
+                template = selian_template.1011
+                gender_female_chance = 100
+                save_scope_as = evangelizer
+                after_creation = {
+                    add_trait = nars_naturalis
+                }
+            }
+        }
+
+        add_courtier = scope:evangelizer
+        save_scope_as = sender
+        location = { save_scope_as = starting_point }
+    }
+
+    option = {
+        name = nars_faith.1041.a
+        custom_tooltip = nars_faith.1041.a.tt
+        scope:evangelizer = {
+            start_travel_plan = {
+                destination = scope:pagan.capital_province
+                on_arrival_event = nars_faith.1042
+                on_arrival_destinations = all
+                return_trip = no # One way
+            }
+        }
+    }
 }
 
 nars_faith.1042 = {

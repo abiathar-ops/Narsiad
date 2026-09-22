@@ -2,9 +2,8 @@
  nikator_prefix: "Nikátōr's"
 
  nars_conqueror.0001.t:0 "Mēdèn Ága, Nikátōr!"
- nars_conqueror.0001.desc: "Today, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge myself, my dynasty, and my realm as [narsokratia_possessive|E] inheritors.\n\nNeighbouring rulers in nearby regions will soon realize that they are nothing more than temporary stewards of our future lands. We, the $game_concept_selianes$, are now returned to our hegemony." 
+ nars_conqueror.0001.desc: "Today, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge myself, my dynasty, and my realm as [narsokratia_possessive|E] inheritors.\n\nNeighbouring rulers in nearby regions will soon realize that they are nothing more than temporary stewards of our future lands. We, the $game_concept_selianes$, are now returned to our [Glossary( 'Hēgemonia', 'HEGEMONIA_GLOSS' )]." 
  nars_conqueror.0001.a: "The first step; never the last!"
- nars_conqueror.0001.b: "I would rather stay here and smell the [ROOT.Char.GetCapitalLocation.Custom('get_region_flower_type_plural')]..."
  nars_dynasty_get_scion_tt: "Your [dynasty_members|E] gain the [trait|E] #v [GetTrait('nars_scion').GetName( GetNullCharacter )]#!"
  
  nars_conqueror.0002.t: "$nikator_prefix$ Folly..."
@@ -31,7 +30,7 @@
  nars_conqueror.1100.c: "I have no need for them"
 
  nars_conqueror.1200.t: "$nikator_prefix$ Pious"
- nars_conqueror.1200.desc: "An audience is requested by [portrait_faithful.GetTitledFirstName], a fervent devotee from [zealot_barony.GetName]. Flanked by a stoic [soldier|E] in polished armor, [portrait_faithful.GetSheHe] kneels before my throne.\n\n"The people of [zealot_barony.GetName] are entirely devoted to your cause, my liege," [portrait_faithful.GetSheHe] proclaims, gesturing to chests of gathered wealth and tributes. "Our lands are now secure, our [cities|E] bountiful, and our [faith|E] in your rule is absolute. We now offer these boons to fuel your pledge."\n\nI must decide how best to utilize the unwavering devotion of these people for the [narsokratia|E] before they depart."
+ nars_conqueror.1200.desc: "An audience is requested by [portrait_faithful.GetTitledFirstName], a fervent devotee from [zealot_barony.GetName]. Flanked by a stoic [soldier|E] in polished armor, [portrait_faithful.GetSheHe] kneels before my throne.\n\n"The people of [zealot_barony.GetName] are entirely devoted to your cause, my liege," [portrait_faithful.GetSheHe] proclaims, gesturing to chests of gathered wealth and tributes. "Our lands are now secure, our [cities|E] bountiful, and our [faith|E] in your rule is absolute. We now offer these boons to fuel your pledge."\n\nI must decide how best to utilize the unwavering devotion of these people for the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] before they depart."
  nars_conqueror.1200.a:0 "We shall claim this for the treasury!"
  nars_conqueror.1200.b:0 "When you see my army, feed them."
  nars_conqueror.1200.c:0 "Draft their youth into our vanguard!"

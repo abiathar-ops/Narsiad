@@ -10,7 +10,7 @@
 
  game_concept_selian_language: "Selian"
  game_concept_selian_language_short: "S."
- game_concept_selian_language_desc: "Selian is the language of the ancient [selianes|E] of old [narsokratia|E]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [selian|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
+ game_concept_selian_language_desc: "Selian is the language of the ancient [selianes|E] of old [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [selian|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
 
  game_concept_narsokratia: "Narsokratía"
  game_concept_narsokratia_possessive: "Narsokratía's"
@@ -30,7 +30,7 @@
  game_concept_archaic: "Orphic"
  game_concept_archaic_adj: "Orphic's"
  game_concept_nars_faith: "Selian Faith"
- game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [politeion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [narsokratia|E]."
+ game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [politeion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]."
 
  game_concept_politeion: "Politeíon"
  game_concept_politeion_possessive: "Politeíon's"
