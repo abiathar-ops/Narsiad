@@ -3,8 +3,8 @@
 # Feudal / Imperial
  count_feudal_male_nars:0 "Kómēs"
  count_feudal_female_nars:0 "Kómitissa"
- duke_feudal_male_nars:0 "Doûx"
- duke_feudal_female_nars:0 "Doúkissa"
+ duke_independent_male_nars:0 "Doûx"
+ duke_independent_female_nars:0 "Doúkissa"
  king_feudal_male_nars:0 "Despótēs"
  king_feudal_female_nars:0 "Despótissa"
  kingdom_feudal_male_nars:0 "Despotáton"
@@ -18,8 +18,8 @@
  count_administrative_male_nars_group:0 "Toúrmarchēs"
  count_administrative_female_nars_group:0 "Tourmárchissa"
  county_administrative_nars_group:0 "Toúrma"
- duke_administrative_male_nars_group:0 "Stratēgós"
- duke_administrative_female_nars_group:0 "Stratēgissa"
+ duke_vassal_male_nars:0 "Stratēgós"
+ duke_vassal_female_nars:0 "Stratēgissa"
  duchy_administrative_nars_group:0 "Théma"
  king_administrative_male_nars_group:0 "Katépan"
  king_administrative_female_nars_group:0 "Katépanissa"
@@ -29,7 +29,7 @@
  kingdom_administrative_independent_nars_group:0 "Despotáton"
  emperor_administrative_male_nars:0 "Ōtokrátōr"
  emperor_administrative_female_nars:0 "Ōtokráteira"
- hegemon_administrative_male_nars:0 "Hēgemṓn"
+ hegemon_administrative_male_nars:0 "Hēgemon"
  hegemon_administrative_female_nars:0 "Hēgemónissa"
 
 # Empires

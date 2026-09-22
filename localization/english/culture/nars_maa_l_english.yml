@@ -7,4 +7,4 @@
 
  culture_parameter_unlock_nars_t1: "Can recruit [GetMaA('nars_t1').GetName] as [men_at_arms|E]"
 
- event_nars_troop_name: "[selian|E] Host of [ROOT.Char.GetTitledFirstNameNoTooltip]"
+ event_nars_troop_name: "Orthotélēs of [ROOT.Char.GetTitledFirstNameNoTooltip]"

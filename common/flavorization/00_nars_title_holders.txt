@@ -1,338 +1,370 @@
 ﻿#############################################
+## Selian 
+#############################################
 
-## Selian ##
+## Barony ##
 
-## Feudal ##
-
-count_feudal_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 35
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+baron_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = barony
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-count_feudal_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 35
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+baron_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = barony
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-duke_feudal_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 37
-	governments = { clan_government tribal_government mandala_government feudal_government}
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+baron_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = barony
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-duke_feudal_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 37
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government }
-	name_lists = { name_list_nars }
+baron_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = barony
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-king_feudal_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government }
-	name_lists = { name_list_nars }
+## County ##
+
+count_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = county
+    priority = 35
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-king_feudal_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+count_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = county
+    priority = 35
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-kingdom_feudal_nars = {
-	type = title
-	tier = kingdom
-	priority = 47
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+county_independent_nars = {
+    type = title
+    tier = county
+    priority = 51
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-empire_administrative_nars = {
-	type = title
-	tier = empire
-	priority = 252
-	governments = { administrative_government meritocratic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
+count_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = county
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-empire_administrative_independent_nars = {
-	type = title
-	tier = empire
-	priority = 252
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government }
-	name_lists = { name_list_nars }
-	flavourization_rules = {
-		top_liege = no
-	}
+count_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = county
+    priority = 28
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-## Administrative
-baron_administrative_male_nars_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = barony
-	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-	
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
-}
-baron_administrative_female_nars_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = barony
-	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-	
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
-}
-count_administrative_male_nars_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-	
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
-}
-count_administrative_female_nars_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 28
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-	
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
-}
-county_administrative_nars_group = {
-	type = title
-	tier = county
-	priority = 51
-	governments = {clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-	}
+county_vassal_nars = {
+    type = title
+    tier = county
+    priority = 51
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
 }
 
-duke_administrative_male_nars_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
+## Duchy ##
 
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
+duke_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = duchy
+    priority = 37
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-
-duke_administrative_female_nars_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc. 
-		spouse_takes_title = no
-	}
+duke_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = duchy
+    priority = 37
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-king_administrative_male_nars_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
-		only_vassals = yes	}
+duke_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = duchy
+    priority = 30
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-king_administrative_female_nars_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-
-	flavourization_rules = {
-		top_liege = yes
-		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
-		only_vassals = yes	}
+duke_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = duchy
+    priority = 30
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
 }
 
-king_administrative_independent_male_nars_group = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
+## Kingdom ##
 
-	flavourization_rules = {
-		only_independent = yes
-	}
+king_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = kingdom
+    priority = 137
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-king_administrative_independent_female_nars_group = {
-	type = character
-	gender = female
-	special = holder
-	tier = kingdom
-	priority = 137
-	governments = { clan_government tribal_government mandala_government feudal_government nomadic_government administrative_government meritocratic_government republic_government }
-	name_lists = { name_list_nars }
-
-	flavourization_rules = {
-		only_independent = yes
-	}
+king_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = kingdom
+    priority = 137
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-emperor_administrative_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 252
-	governments = { celestial_government administrative_government meritocratic_government feudal_government nomadic_government clan_government tribal_government }
-	name_lists = { name_list_nars }
+kingdom_independent_nars = {
+    type = title
+    tier = kingdom
+    priority = 47
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-emperor_administrative_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 252
-	governments = { celestial_government administrative_government meritocratic_government feudal_government nomadic_government clan_government tribal_government }
-	name_lists = { name_list_nars }
+king_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = kingdom
+    priority = 137
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
 }
 
-emperor_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = empire
-	priority = 252
-	governments = { celestial_government mandala_government administrative_government meritocratic_government feudal_government nomadic_government clan_government tribal_government }
-	name_lists = { name_list_nars }
+king_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = kingdom
+    priority = 137
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
 }
 
-emperor_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = empire
-	priority = 252
-	governments = { celestial_government administrative_government meritocratic_government feudal_government nomadic_government clan_government tribal_government }
-	name_lists = { name_list_nars }
+kingdom_vassal_nars = {
+    type = title
+    tier = kingdom
+    priority = 47
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
 }
 
-hegemon_administrative_male_nars = {
-	type = character
-	gender = male
-	special = holder
-	tier = hegemony
-	priority = 300
-	governments = { celestial_government tribal_government administrative_government meritocratic_government mandala_government }
-	name_lists = { name_list_nars }
+## Empire ##
+
+emperor_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
-hegemon_administrative_female_nars = {
-	type = character
-	gender = female
-	special = holder
-	tier = hegemony
-	priority = 300
-	governments = { celestial_government tribal_government administrative_government meritocratic_government mandala_government }
-	name_lists = { name_list_nars }
+emperor_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
 }
 
+empire_independent_nars = {
+    type = title
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
+}
+
+emperor_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
+}
+
+emperor_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
+}
+
+empire_vassal_nars = {
+    type = title
+    tier = empire
+    priority = 252
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+        spouse_takes_title = no
+    }
+}
+
+## Hegemony ##
+
+hegemon_independent_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = hegemony
+    priority = 300
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
+}
+
+hegemon_independent_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = hegemony
+    priority = 300
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_independent = yes
+    }
+}
+
+hegemon_vassal_male_nars = {
+    type = character
+    gender = male
+    special = holder
+    tier = hegemony
+    priority = 300
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
+}
+
+hegemon_vassal_female_nars = {
+    type = character
+    gender = female
+    special = holder
+    tier = hegemony
+    priority = 300
+    name_lists = { name_list_nars }
+    flavourization_rules = {
+        only_vassals = yes
+    }
+}

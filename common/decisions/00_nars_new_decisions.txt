@@ -275,3 +275,135 @@ decision_produce_amphora = {
 
 	ai_check_interval = 0
 }
+
+decision_pledge_restoration = {
+    picture = {
+        reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_sunder.dds"
+    }
+    desc = decision_pledge_restoration_desc
+    selection_tooltip = decision_pledge_restoration_tooltip
+    decision_group_type = oaths
+    sort_order = 1000
+
+	cooldown = { months = 6 }
+
+    is_shown = {
+        is_ruler = yes
+        is_independent_ruler = yes
+        is_ethnically_selian = yes
+        is_selian = yes
+        highest_held_title_tier >= tier_kingdom
+        dynasty = {
+            NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
+        }
+        NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_decision_pledge_restoration
+			}
+		}
+    }
+
+    is_valid = {
+		custom_description = {
+			text = found_hegemony_decision_eight_kingdoms_held
+			any_held_title = {
+				count >= 7
+				title_tier = kingdom
+			}
+		}
+        custom_tooltip = {
+			text = decision_narsokratia_req_tt
+			any_character_artifact = { has_variable = can_be_used_for_narsokratia }
+		}
+		custom_tooltip = {
+			text = you_are_the_culture_head
+			culture = {
+				culture_head = root
+			}
+		}
+        prestige_level >= 5
+       	custom_tooltip = { text = decision_pledge_restoration_enough_high_level_knights any_knight = { count >= 12 prowess >= 18 }  }
+    }
+
+    is_valid_showing_failures_only = {
+        is_landed = yes
+        is_capable_adult = yes
+        is_imprisoned = no
+        OR = { is_archaic = yes is_selian = yes }
+    }
+    
+    cost = { prestige = 5000 }
+    
+    effect = {
+		custom_tooltip = decision_nars_hegemony_tt
+		hidden_effect = {
+			add_character_modifier = {
+				modifier = nars_hegemon_aspirant_modifier
+				years = 5
+			}
+			spawn_army = {
+				men_at_arms = { type = nars_t1 stacks = 15 }
+				levies = 2750
+				inheritable = no
+				uses_supply = no
+				location = root.capital_province
+				name = event_troop_default_name
+			}
+		}
+
+		hidden_effect = {
+			# 1. Compile list of immediate neighbors only
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					is_independent_ruler = yes
+					NOT = { has_alliance = root }
+					NOT = { has_truce = root }
+				}
+				add_to_list = selian_coalition_members
+			}
+
+			if = {
+				limit = {
+					any_in_list = { list = selian_coalition_members }
+				}
+				
+				# 2. Pick the strongest neighbor to lead the Coalition
+				ordered_in_list = {
+					list = selian_coalition_members
+					order_by = current_military_strength
+					save_scope_as = coalition_war_leader
+				}
+
+				# 3. The War Leader declares the war
+				scope:coalition_war_leader = {
+					start_war = {
+						target = root
+						target_title = root.primary_title
+						cb = selian_defiance_cb
+					}
+				}
+
+				# 4. Save the war, then forcefully drag the rest of the list into it
+				root = {
+					random_character_war = {
+						limit = { primary_attacker = scope:coalition_war_leader }
+						
+						every_in_list = {
+							list = selian_coalition_members
+							limit = {
+								NOT = { this = scope:coalition_war_leader }
+							}
+							# 'prev' scopes back to the war, adding the list character as an attacker
+							prev = {
+								add_attacker = prev
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+        
+    ai_potential = { always = no }
+}

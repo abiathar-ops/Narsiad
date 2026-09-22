@@ -664,3 +664,245 @@ selian_expedition_cb = {
 
     max_ai_diplo_distance_to_title = 500
 }
+
+selian_defiance_cb = {
+    icon = holy_war_cb
+    group = event
+
+    full_occupation_by_defender_gives_victory = no
+    attacker_capital_gives_war_score = no
+    check_all_defenders_for_ticking_war_score = yes
+    defender_ticking_warscore_delay = { months = 4 }
+    defender_ticking_warscore = 0.125
+    imprisonment_by_defender_give_war_score = no
+    defender_score_from_occupation_scale = 50
+    attacker_score_from_occupation_scale = 50
+    defender_score_from_battles_scale = 125
+    attacker_score_from_battles_scale = 125
+    ticking_war_score_targets_entire_realm = yes
+
+    occupation_participation_mult = 0.5
+    siege_participation_mult = 1
+    battle_participation_mult = 7.5
+
+    allow_hostages = no
+
+    allowed_against_character = {
+        is_landed = yes
+        highest_held_title_tier >= tier_kingdom
+    }
+
+    white_peace_possible = no
+
+    cost = {
+    }
+
+    target_titles = all
+    target_title_tier = all
+
+    on_declaration = {
+        on_declared_war = yes
+    }
+
+    should_invalidate = {
+        scope:defender = {
+            OR = {
+                # Is vassal for some reason
+                is_independent_ruler = no
+                # Is landless nobody for some reason
+                NOR = {
+                    is_landed = yes
+                    is_landless_ruler = yes
+                }
+            }
+        }
+    }
+
+    on_invalidated_desc = {
+        desc = selian_defiance_war_invalidated_message
+    }
+    
+    on_invalidated = {
+        every_war_attacker = {
+            add_prestige = medium_prestige_gain
+            add_piety = medium_piety_gain
+        }
+        scope:defender = {
+            add_prestige = medium_prestige_gain
+        }
+    }
+
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { scope:defender = { is_local_player = yes } }
+                desc = selian_defiance_loses_defender
+            }
+            triggered_desc = {
+                trigger = { scope:attacker = { is_local_player = yes } }
+                desc = selian_defiance_loses_attacker
+            }
+            desc = selian_defiance_loses_other
+        }
+    }
+
+    # ATTACKERS WIN (Selian Restoration Fails)
+    on_victory = {
+        # Legitimacy for attackers
+        add_legitimacy_attacker_victory_effect = yes
+
+        scope:defender = {            
+            primary_title = {
+                destroy_title = yes
+            }
+            
+            add_legitimacy = monumental_legitimacy_loss
+            remove_short_term_gold = ninety_percent_gold_value
+            add_prestige = negative_seventy_five_percent_prestige_value
+            add_prestige_level = -1
+
+            create_title_and_vassal_change = {
+                type = independency
+                save_scope_as = defender_realm_collapse
+                add_claim_on_loss = no
+            }
+
+            every_vassal = {
+                limit = { highest_held_title_tier >= tier_county }
+                becomes_independent = { change = scope:defender_realm_collapse }
+            }
+
+            resolve_title_and_vassal_change = scope:defender_realm_collapse
+        }
+
+        every_war_attacker = {
+            add_short_term_gold = medium_gold_value
+        }
+
+        scope:attacker = {
+            rightfully_imprison_character_less_verbose_effect = { 
+                TARGET = scope:defender
+                IMPRISONER = scope:attacker
+            }
+            add_prestige_experience = {
+                value = major_prestige_value
+            }
+            show_pow_release_message_effect = yes
+        }
+
+        # Allies on both sides get fame
+        modify_allies_of_participants_fame_values = {
+            WINNER = scope:attacker
+            FAME_BASE = major_prestige_value
+            IS_RELIGIOUS_WAR = no
+            WINNER_ALLY_FAME_SCALE = 10
+            LOSER_ALLY_FAME_SCALE = 1
+        }
+
+        laamp_as_mercenary_payout_tooltip_effect = yes
+        add_truce_attacker_victory_effect = yes
+    }
+
+    on_white_peace_desc = {}
+
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = { scope:defender = { is_local_player = yes } }
+                desc = selian_defiance_wins_defender
+            }
+            desc = selian_defiance_wins_other
+        }
+    }
+
+    # DEFENDER WINS (Attackers lose and their realms shatter)
+    on_defeat = {
+        add_to_global_variable_list = {
+            name = unavailable_unique_decisions
+            target = flag:flag_decision_pledge_restoration
+        }
+
+        scope:attacker = {
+            add_legitimacy = medium_legitimacy_loss
+            add_to_list = anti_nars_attackers
+            random_character_war = {
+				limit = {
+					using_cb = selian_defiance_cb
+				}
+                add_to_list = anti_nars_attackers
+            }
+        }
+        
+        # Truce effects
+        add_truce_attacker_defeat_effect = yes
+
+        scope:defender = {
+            add_legitimacy = monumental_legitimacy_gain
+            add_prestige = monumental_prestige_gain
+            
+            # Delete all truces with attackers so you can immediately counter-attack
+            hidden_effect = {
+                every_truce_target = {
+                    scope:defender = { cancel_truce_one_way = prev }
+                }
+            }
+            
+            trigger_event = {
+                id = nars_conqueror.0001
+                days = 1
+            } 
+        }
+
+        modify_allies_of_participants_fame_values = {
+            WINNER = scope:defender
+            FAME_BASE = major_prestige_value
+            IS_RELIGIOUS_WAR = no
+            WINNER_ALLY_FAME_SCALE = 10
+            LOSER_ALLY_FAME_SCALE = 1
+        }
+
+        scope:attacker = {
+            every_in_list = {
+			    list = anti_nars_attackers
+                every_war_attacker = {
+					create_title_and_vassal_change = {
+                        type = independency
+                        save_scope_as = attacker_realm_collapse
+                        add_claim_on_loss = no
+                    }
+
+                    every_vassal = {
+                        limit = { highest_held_title_tier >= tier_county }
+                        becomes_independent = { change = scope:attacker_realm_collapse }
+                    }
+
+                    resolve_title_and_vassal_change = scope:attacker_realm_collapse
+				}
+            }
+        }
+
+        laamp_as_mercenary_payout_tooltip_effect = yes
+    }
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+    check_defender_inheritance_validity = yes
+    transfer_behavior = transfer
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    war_name = "SELIAN_DEFIANCE_WAR_NAME"
+    my_war_name = "SELIAN_DEFIANCE_WAR_NAME_MY"
+    war_name_base = "SELIAN_DEFIANCE_WAR_NAME_BASE"
+    cb_name = "SELIAN_DEFIANCE_WAR_NAME"
+    interface_priority = 60
+
+    should_show_war_goal_subview = yes
+
+    attacker_wargoal_percentage = 0.5
+    
+    max_defender_score_from_occupation = 75
+    max_attacker_score_from_occupation = 150
+    max_ai_diplo_distance_to_title = 10000
+}

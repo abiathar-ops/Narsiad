@@ -17,15 +17,12 @@ nars_titles.0001 = {
 	}
 
 	immediate = {
-		h_narsokratia_effect_2 = yes
 		legend_seed_great_deed_title_effect = {
 			TITLE = root.primary_title
 		}
 	}
 	option = { 
 		name = nars_titles.0001.a
-		flavor = narsokratia_event.flavor
-		h_narsokratia_effect = yes
 	}
 	
 }

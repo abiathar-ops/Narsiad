@@ -146,22 +146,6 @@
 }
 
 create_h_narsokratia_effect = {
-	# "The old one" = whatever the founder's own primary title was BEFORE this
-	# effect runs (an empire, per decision_h_narsokratia's is_shown/is_valid).
-	# Save it now, before set_primary_title_to overwrites it below, so the new
-	# hegemony's name/adjective/color can be inherited from it.
-	#
-	# Note on government type: in this mod, government (oligarchic/aristocratic/
-	# autocratic/etc, see common/governments/HAAO_government_types.txt) is a
-	# CHARACTER attribute, not something a title can carry - h_narsokratia's old
-	# static definition had no "government" field, and create_dynamic_title has
-	# no such field either. Nothing in this effect ever calls
-	# set_government_type, so root's government is never touched and simply
-	# stays whatever it already was on the old realm - i.e. it "takes after the
-	# old one" automatically, with nothing extra needed. (The only government
-	# change anywhere in this decision is vassals being pushed to administrative
-	# government by selian_vassal_conversion_effect at the very end - that's
-	# unrelated to root and unaffected by this rewrite.)
 	root = {
 		primary_title = {
 			save_scope_as = old_title
@@ -171,16 +155,6 @@ create_h_narsokratia_effect = {
 	save_scope_as = new_hegemon
 
 	scope:new_hegemon = {
-		give_nickname = nick_soter
-		custom_tooltip = decision_h_narsokratia_effect_tooltip
-
-		# Generate a brand-new hegemony-tier title instead of referencing the old
-		# static h_narsokratia. name/adj point at loc keys (nars_titles_l_english.yml)
-		# that read scope:old_title's own name/adjective, so the hegemony ends up
-		# named after whatever realm the founder actually held, not a fixed label.
-		# create_dynamic_title automatically populates scope:new_title, same as
-		# vanilla's own hegemony-tier example in
-		# common/scripted_effects/09_mpo_greatest_of_khans_effects.txt.
 		hidden_effect = {
 			create_dynamic_title = {
 				tier = hegemony
@@ -189,8 +163,8 @@ create_h_narsokratia_effect = {
 				article = article_CONFEDERATION_CULTURE_NAME
 			}
 			scope:new_title = {
-				set_color_from_title = scope:old_title
-				set_definitive_form = yes
+				set_color_from_title = root.capital_county
+				set_definitive_form = no
 				set_can_be_named_after_dynasty = no
 				set_can_use_nomadic_naming = no
 				if = {
@@ -203,10 +177,10 @@ create_h_narsokratia_effect = {
 			}
 		}
 
-		custom_tooltip = decision_h_narsokratia_troop_effect_tooltip
 		gain_heroic_legend_seed_tooltip_effect = yes
+
 		dynasty ?= { add_dynasty_prestige = 5000 }
-		add_prestige = 5000
+		
 		hidden_effect = {
 			every_held_title = {
 				limit = {
@@ -237,7 +211,7 @@ create_h_narsokratia_effect = {
 		
 		hidden_effect = {
 			spawn_army = {
-				name = selian_troop_hegemony_name
+				name = event_nars_troop_name
 				men_at_arms = {
 					type = nars_t2
 					stacks = 15

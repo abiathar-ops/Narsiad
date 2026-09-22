@@ -1,8 +1,8 @@
 ﻿l_english: 
  nars_conqueror.name: "Nikátōr"
- nars_conqueror.no_actor: "Ever-Victorious"
+ nars_conqueror.no_actor: "The Victorious"
  trait_nars_conqueror_desc: "Bound by a sacred oath, this conqueror stands as the living instrument of the Selian' toil, heralding an era of eternal, ever-victorious restoration."
- trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now an incarnation of the Selian' toil for restoration and their foremost scion of war and conquest!"
+ trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now a foremost scion of war and conquest!"
  TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [selian_incursion|E] [casus_belli|E]"
  
  nars_scion.name: "Mōnarkíad"

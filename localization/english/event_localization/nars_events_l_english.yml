@@ -1,5 +1,5 @@
 ﻿l_english:
- narsokratia_event.flavor: "The vision of Narsokratía grows ever closer!"
+ narsokratia_event.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
 
  nars_intro.0001.t: "Kakías Apékhou"
  nars_intro.0001.desc: "Tales nearby tells of three progenies of the famed [alnars|E], all three [characters|E] gleaming with silvery-locks alongside unusual features that are rarely seen in this [region|E] or even anywhere for that matter. These... [selians|E] moonlighting as [mercenaries|E] and [adventurers|E] are as they are known themselves: [eleios.GetFirstNameNicknamedNoTooltipRegnal], [ilione.GetFirstNameNicknamedNoTooltipRegnal], and [strato.GetFirstNameNicknamedNoTooltipRegnal]. Their intentions are unknown and yet whispers are abound of their patriarch's demise, [alnars.GetFirstNameNicknamedNoTooltipRegnal], which would be catastrophic to the unity of their late father's camp. A schism is coming, that much is certain."
@@ -138,7 +138,7 @@
  nars_faith.1044.a: "" #AI event, leave empty
 
  nars_nickname.0010.t:0 "Êthos Dokímaze"
- nars_nickname.0010.desc:0 "To choose an epithet is to carve one's essence into the annals of our shared history. A name is more than a mere title; it is the crystallization of my deeds, my temperament, and my innermost character. How shall I be remembered by my peers, and what legacy shall I leave for posterity?"
+ nars_nickname.0010.desc:0 "To choose an epithet is to carve one's essence into the annals of our shared history. How shall I be remembered by my peers, and what legacy shall I leave for posterity?\n\n#flavor "He took the title of [Glossary( 'Hēgemon', 'HEGEMONIA_GLOSS' )], a term signifying something more than human. In this way, the power of the people passed entirely into the hands of his personage." - $Alnars$, $anduril_name$"
  nars_nickname.0010.aa:0 "I shall shed my epithet."
  nars_nickname.0010.aa.tt:0 "Casting aside your current epithet, you choose to remain without one, for now."
  nars_nickname.0010.a:0 "I am defined by my pious devotion."

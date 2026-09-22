@@ -114,8 +114,9 @@ nars_nickname.0010 = {
     type = character_event
     title = nars_nickname.0010.t
     desc = nars_nickname.0010.desc
-    theme = emperor
-    override_background = { reference = study }
+    
+    theme = nars_faith
+
     right_portrait = {
         character = root
         animation = thinking  

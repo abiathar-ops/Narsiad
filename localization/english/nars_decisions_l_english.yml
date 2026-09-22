@@ -103,28 +103,20 @@
  change_to_nars_realm_3_decision_desc_1: "$selian_propaganda_province_tt$"
 
  # ── Titles ──
-
- decision_h_narsokratia: "Restore the Mōnarkía"
- decision_h_narsokratia_confirm: "Let us rejoice!"
- decision_h_narsokratia_tooltip: "The old [selianrealm|E] will be restored!"
- decision_h_narsokratia_desc: "We are to outgrow the confines of mere [empires|E]. If a significant sum of territories on the present [realms|E] could be pacified, our [realm|E] would win enough [renown|E] in the eyes of all [selianes|E] and the other backwards [cultures|E] as the successor of the [narsokratia|E] in our historical antiquity."
- decision_h_narsokratia_effect_tooltip: "Establish #v [GetTitleByKey('h_narsokratia').GetName]#! as your [primary_title|E]\n$EFFECT_LIST_BULLET$All [vassals|E] convert to [administrative|E] [government|E]\n$EFFECT_LIST_BULLET$[vassal|E] [rulers|E] have a chance to convert to [selian|E] [culture|E] and [faith|E] "
- decision_h_narsokratia_troop_effect_tooltip: "You get an #V undyingly loyal#! [army|E] of [selian|E] [men_at_arms|E]:\n$BULLET_WITH_TAB$#V 1500#! $nars_t2$ #weak ([gunpowder|E])#!\n$BULLET_WITH_TAB$#V 8500#! $nars_t1$ #weak ([heavy_infantry|E])#!" 
-
- decision_pledge_restoration: "Fulfill the $game_concept_selianes$ Oath"
+ decision_pledge_restoration: "Restore the $game_concept_selianes$"
  decision_pledge_restoration_confirm: "I am the scourge of [ROOT.Char.GetFaith.HighGodName]!"
  decision_pledge_restoration_tooltip: "#WEAK I sing of warfare and a man at war#!"
  decision_pledge_restoration_desc: "For far too long has my sword been sheathed, now the Earth shall drown beneath an ocean of blood for #EMP our#! glory. The sacred wars begins now!\n\n#flavor "When truly asked how far and wide the boundaries of great [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] extended, our founding forefather brandished his fabled hand-and-a-half longsword Narsíl and said, 'As far as this can reach.'" - $Alnars$, $anduril_name$"
- decision_nars_hegemony_tt: "You declare yourself to be an [GetModifier('nars_hegemon_aspirant_modifier').GetNameWithTooltip] over the [region|E]\n\nIn a week, a #v $selian_defiance_cb$#! will be ignited:\n$EFFECT_LIST_BULLET$ Independent rulers must decide whether to submit or wage war!\n$EFFECT_LIST_BULLET$ An [army|E] of #emp undyingly#! loyal [selian|E] [soldiers|E] is formed in your [capital|E]\n\nIf you win the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You will get the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E]\n$EFFECT_LIST_BULLET$ Your [dynasty|E] will get the #V [GetTrait('nars_scion').GetName( GetNullCharacter )]#! inheritable [fame_trait|E]\n$EFFECT_LIST_BULLET$ You will get an army consisting of [GetMaA('nars_t1').GetName] to aid your conquests\n\nIf you lose the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You lose most of your [prestige_i|E][prestige|E] and [gold_i|E][gold|E]\n$EFFECT_LIST_BULLET$ All of your [vassals|E] become [independent|E] from you\n$EFFECT_LIST_BULLET$ You are [imprisoned|E] by your enemies and may be [executed|E]" #replace war name with the CB reference
+ decision_nars_hegemony_tt: "You declare yourself to be an [GetModifier('nars_hegemon_aspirant_modifier').GetNameWithTooltip] over the [region|E]\n\nIn a week, a #v $selian_defiance_cb$#! will be ignited:\n$EFFECT_LIST_BULLET$ [independent_rulers|E] will form a coalition to wage war against you!\n$EFFECT_LIST_BULLET$ An [army|E] of #emp undyingly#! loyal #V [GetMaA('nars_t1').GetName]#! is formed in your [capital|E]\n\nIf you win the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You establish a new [hegemony|E]-tier realm based on your old titles\n    $EFFECT_LIST_BULLET$ Your [kingdom|E]-tier titles will merge into a new [de_jure|E] title\n    $EFFECT_LIST_BULLET$ Many of your realm's [counties|E] will change into your #v Culture#!\n$EFFECT_LIST_BULLET$ You gain the #V [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! [trait|E] and #v $selian_incursion_cb$#! [casus_belli|E] \n$EFFECT_LIST_BULLET$ Familial [dynasty_members|E] will also gain the #V [GetTrait('nars_scion').GetName( GetNullCharacter )]#! [trait|E]\n$EFFECT_LIST_BULLET$ You will get an army consisting of #V [GetMaA('nars_t1').GetName]#! to aid your conquests\n$EFFECT_LIST_BULLET$ Enemy coalition [rulers|E] will have their [realm_possessive|E] [vassals|E] break away\n\nIf you lose the #v $selian_defiance_cb$#!:\n$EFFECT_LIST_BULLET$ You lose most of your [prestige_i|E][prestige|E] and [gold_i|E][gold|E]\n$EFFECT_LIST_BULLET$ All of your [vassals|E] become [independent|E] from you\n$EFFECT_LIST_BULLET$ You are [imprisoned|E] by your enemies and may be [executed|E]" #replace war name with the CB reference
  you_are_the_culture_head: "You are the [culture_head|E] of your [culture|E]"
  decision_pledge_restoration_enough_high_level_knights: "You have at least #v 12#! knights with #v 18#! [prowess_i|E][prowess|E] or higher"
 
  # ── NEW DECISIONS ──
 
- decision_take_epithet: "Adopt an Epithet"
- decision_take_epithet_desc: "The [selians|E] have always had a tradition of adopting epithets that reflect the deeds, temperament and character of themselves. For one to adopt an epithet, the [character|E] in question solidifies their ideals into a name that will be remembered by other fellow [selianes|E] and for posterity."
- decision_take_epithet_tooltip: "Adopt an epithet or nickname that #emp may#! reflect your temperament, deeds, and character!"
- decision_take_epithet_confirm: "My second name!"
+ decision_take_epithet: "Adopt Epithet"
+ decision_take_epithet_desc: "Notable $game_concept_selianes$ had epithets that reflect the deeds or temperaments remembered by the populace for posterity. It is time to decide on mine.\n\n#flavor "The $game_concept_selianes$, it is true, give some surnames from deeds, some from virtues, and some from good fortune. For it is not titles that make men illustrious, but men who make titles illustrious." - $Alnars$, $anduril_name$#!"
+ decision_take_epithet_tooltip: "Adopt an epithet or nickname that #emp may#! reflect your character!"
+ decision_take_epithet_confirm: "Hear #emp my#! second name!"
 
  decision_recruit_nars: "Muster the $game_concept_selianes$ Exiles"
  decision_recruit_nars_desc: "Many of our stubborn $game_concept_selianes$ kins still cling to the lonely, stagnant exiles of our hidden [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )]. Mayhaps, I'll send a herald to [GetScheme('recruit_nars_scheme').GetTypeNameNoTooltip]! \n\n#Flavor "Retire not into shaded bowers of exile to nurse thy fear and feast upon thy own ease while the earth lie untamed. For man should not hide in groves, trading sacred duty for the sluggard’s peace." - $Alnars$, $anduril_name$#!"
@@ -143,7 +135,7 @@
  decision_mend_narsil: "Mend Narsíl"
  decision_mend_narsil_desc: "In the period of our exile whereby catastrophies occured upon more, the longsword of myth, [narsil|E], was shattered. Its shards still remains with us as an heirloom from a line of exiles Mayhaps, it #emp is#! high time to mend it.\n\n#flavor "Ideals do not form a reliable pillar for a lasting rule. In addition there is normally a further necessity, the belief in legitimacy." - $Alnars$, $anduril_name$."
  decision_mend_narsil_effect_tooltip: "You start a #v [GetScheme('mend_narsil_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ You reforge and claim [narsil|E] as an [inventory_artifact|E]\n$EFFECT_LIST_BULLET$ May gain [learning_i] [learning|E] [skill|E] and [legitimacy_i][legitimacy|E]\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ May gain [stress_i][stress|E] and lose [gold_i][gold|E]"
- decision_mend_narsil_tooltip: "Reforge the heirloom of the old [selian|E] [hegemons|E]!"
+ decision_mend_narsil_tooltip: "Mend the ancestral longsword of the $game_concept_selianes$"
  decision_mend_narsil_req_tt: "You possess the #V $narsil_shards_name$#! [inventory_artifact|E]"
  decision_mend_narsil_confirm: "To our foundries!"
  decision_mend_narsil_ongoing: "You are already performing a [GetScheme('mend_narsil_scheme').GetTypeName] [scheme|E]"

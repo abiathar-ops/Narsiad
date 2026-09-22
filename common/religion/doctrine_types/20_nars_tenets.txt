@@ -92,10 +92,6 @@ tenet_nars_sanguine = {
 		less_likely_to_become_infirm = yes
 	}
 
-	traits = {
-		virtues = { nars_naturalis }
-	}
-
 	character_modifier = {
 		domain_tax_same_faith_mult = 0.25
 		development_growth_factor = 0.25

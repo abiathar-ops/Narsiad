@@ -1,13 +1,7 @@
 ﻿l_english:
  h_narsokratia: "Shel'ía"
- # Dynamic hegemony name/adjective for create_h_narsokratia_effect - pulls the
- # founder's OLD (pre-hegemony) primary title's own name/adjective, so the new
- # hegemony is named after whatever realm they actually held rather than a
- # fixed lore name. h_narsokratia above is no longer referenced by that effect
- # (kept only as the dormant landed_titles shell / can_create gate) but its
- # loc entry is left in place in case anything else still points at it.
- nars_hegemony_dynamic_name: "[scope:old_title.GetNameNoTooltip]"
- nars_hegemony_dynamic_adj: "[scope:old_title.GetAdjective]"
+ nars_hegemony_dynamic_name: "$game_concept_selianes$"
+ nars_hegemony_dynamic_adj: "$game_concept_selianes$"
  d_laamp_nars_1001: "Flocks of Old"
  d_laamp_nars_1001_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
  d_laamp_nars_1002: "Wayward Optímātoî"

@@ -1,6 +1,6 @@
 ﻿l_english:
  selian_incursion_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_incursion_cb: "[selian_incursion|E] for [narsokratia|E]"
+ selian_incursion_cb: "$game_concept_selianes$ Incursion"
  selian_incursion_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  selian_incursion_NAME_BASE: "[selian_incursion|E] for [narsokratia|E]"
  
@@ -55,10 +55,10 @@
  selian_expedition_global_limit_tt:0 "This Migration Casus Belli can only be declared 3 times globally across the world (Used: [GetGlobalVariable('selian_expedition_global_count').GetValue|0]/3)."
 
  # War Names
- selian_defiance_cb: "War of Disobedience"
- MINOAN_DEFIANCE_WAR_NAME: "War of Disobedience against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- MINOAN_DEFIANCE_WAR_NAME_MY: "War of Disobedience against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- MINOAN_DEFIANCE_WAR_NAME_BASE: "War of Disobedience"
+ selian_defiance_cb: "Anticipative War"
+ SELIAN_DEFIANCE_WAR_NAME: "Anticipative War against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTierPossessiveNoTooltip] [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
+ SELIAN_DEFIANCE_WAR_NAME_MY: "Anticipative War against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTierPossessiveNoTooltip] [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
+ SELIAN_DEFIANCE_WAR_NAME_BASE: "Anticipative War"
 
  # Invalidated
  selian_defiance_war_invalidated_message: "The coalition against the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] has collapsed, and the war is invalidated."
@@ -69,6 +69,6 @@
  selian_defiance_loses_other: "[attacker.GetShortUIName|U] crushes the ambitions of [defender.GetShortUIName]. The threat of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] is ended."
 
  # Defeat (Attackers Lose / Selian Defender Wins)
- selian_defiance_wins_defender: "You have defied the world! You shatter the coalition of your neighbors, securing the emergence of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] and your legacy as a hegemon potentate."
+ selian_defiance_wins_defender: "You have defied the world. You shatter the coalition of your neighbors, securing the emergence of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"
  selian_defiance_wins_attacker: "Your coalition failed to stop [defender.GetShortUIName]. The emerging [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] rises, and a new hegemon potentate is born."
  selian_defiance_wins_other: "[defender.GetShortUIName|U] successfully defies the coalition against [defender.GetHerHim], securing the dawn of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"

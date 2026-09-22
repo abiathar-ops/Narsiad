@@ -7,25 +7,56 @@ nars_conqueror.0001 = {
     desc = nars_conqueror.0001.desc
     window = big_event_window
     theme = emperor
-    override_background = throne_room_east
-    override_effect_2d = { reference = legend_glow }
+    override_background = wilderness_mountains
     widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
 
-    center_portrait = {
+    left_portrait = {
         character = root
-        animation = sword_coup_degrace
-        camera = camera_activity_horse
+        animation = war_over_win
+        camera = camera_ruler_designer_head_profile_90
     }
 
     immediate = {
         play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
+		create_h_narsokratia_effect = yes
+
+        local_assimilate_selian_traditions_effect = {
+			OLD_culture = culture:selian
+			NEW_culture = culture:selian
+			OLD_faith = faith:nars_religion
+			NEW_faith = faith:nars_religion
+			CONVERTER = root
+		}
     }
 
     option = { 
         name = nars_conqueror.0001.a
         flavor = narsokratia_event.flavor
-        
+
+		add_legitimacy = monumental_legitimacy_gain
+        give_nickname = nick_soter
         add_trait = nars_conqueror
+		
+		
+		custom_tooltip = { 
+			text = nars_dynasty_get_scion_tt
+			dynasty = {
+				every_dynasty_member = {
+					limit = {
+						is_alive = yes
+						is_selian = yes
+						NOT = { has_trait = nars_scion }
+						OR = {
+							is_close_family_of = root
+							is_extended_family_of = root
+						}
+					}
+					add_trait = nars_scion
+				}
+			}
+		}
+
+        legend_seed_great_deed_dynasty_effect = yes
 
 		if = {
             limit = { has_dlc_feature = legends }
@@ -35,49 +66,8 @@ nars_conqueror.0001 = {
                 chronicle = conqueror_chronicle
             }
         }
-
-        legend_seed_great_deed_dynasty_effect = yes
-        pledge_restoration_effect = yes
+		
         create_story = story_nars_conqueror
-        
-        hidden_effect = {
-            add_character_flag = {
-                flag = nars_realm_2_cooldown
-                years = 5
-            }
-        }
-
-        if = {
-            limit = { any_vassal = { vassal_stance = belligerent } }
-            every_vassal = {
-                vassal_stance = belligerent
-                custom = every_belligerent_vassal
-                add_opinion = { modifier = approving_opinion target = root opinion = 15 }
-            }
-        }
-        if = {
-            limit = { any_vassal = { vassal_stance = glory_hound } }
-            every_vassal = {
-                vassal_stance = glory_hound
-                custom = every_glory_hound_vassal
-                add_opinion = { modifier = approving_opinion target = root opinion = 15 }
-            }
-        }
-        if = {
-            limit = { any_vassal = { vassal_stance = parochial } }
-            every_vassal = {
-                custom = every_parochial_vassal
-                add_opinion = { modifier = disapproving_opinion opinion = -20 target = root }
-            }
-        }
-        if = {
-            limit = { any_vassal = { vassal_stance = minority } }
-            every_vassal = {
-                vassal_stance = minority
-                custom = every_minority_vassal
-                add_opinion = { modifier = disapproving_opinion target = root opinion = -20 }
-            }
-        }
     }
 }
 
