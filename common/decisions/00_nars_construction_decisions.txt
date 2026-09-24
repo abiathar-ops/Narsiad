@@ -1,10 +1,11 @@
-﻿decision_establish_aretaic_school = {
+﻿decision_establish_archive = {
 	picture = {
 		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
 	}
 	decision_group_type = realm
-	desc = decision_establish_aretaic_school_desc
-	selection_tooltip = decision_establish_aretaic_school_tooltip
+	desc = decision_establish_archive_desc
+	selection_tooltip = decision_establish_archive_tooltip
+	
 	sort_order = 850
 
 	ai_check_interval = 0
@@ -25,12 +26,9 @@
 
 	is_valid = {
 		gold >= 1000
-		OR = {
-			prestige_level >= 4
-			learning >= 25
-		}
+		prestige_level >= 4
 		custom_tooltip = {
-			text = establish_aretaic_school_no_barony_tt
+			text = establish_nars_building_no_barony_tt
 			any_held_title = {
 				title_tier = barony
 				title_province = { has_special_building_slot = no }
@@ -40,7 +38,7 @@
 	}
 
 	effect = {
-		custom_tooltip = decision_establish_aretaic_school_effect_tooltip
+		custom_tooltip = decision_establish_archive_effect_tooltip
 		open_view_data = {
 			view = decision_detail
 			data = decision:pick_aretaic_school_barony
@@ -130,12 +128,9 @@ decision_establish_brothel = {
 
 	is_valid = {
 		gold >= 750
-		OR = {
-			prestige_level >= 4
-			intrigue >= 25
-		}
+		prestige_level >= 4
 		custom_tooltip = {
-			text = establish_brothel_no_barony_tt
+			text = establish_nars_building_no_barony_tt
 			any_held_county = {
 				any_in_de_jure_hierarchy = {
 					is_barony_valid_for_brothel_complex = {
@@ -144,7 +139,10 @@ decision_establish_brothel = {
 				}
 			}
 		}
-		NOR = {
+	}
+
+	is_valid_showing_failures_only = {
+		NOT = {
 			custom_tooltip = {
 				text = establish_brothel_cooldown_tt
 				has_character_flag = establish_brothel_cooldown

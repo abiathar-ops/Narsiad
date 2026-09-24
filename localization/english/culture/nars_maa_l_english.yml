@@ -3,7 +3,7 @@
  nars_t1_flavor: "#F The [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] are a sacred and revered caste, raised from birth to fight and die for the $Selianes$.#!"
 
  nars_t2: "Mástigoî"
- nars_t2_flavor: "#F The [Glossary( 'Mástigoî', 'MASTIGES_GLOSS' )] are an ironclad square of heavy pikemen and arquebusiers formed from the finest of armaments and soldiers.#!"
+ nars_t2_flavor: "#F Handpicked from the best of the [GetMaA('nars_t1').GetName], the [Glossary( 'Mástigoî', 'MASTIGES_GLOSS' )] are formed from the finest of $game_concept_selianes$ armaments and soldiers.#!"
 
  culture_parameter_unlock_nars_t1: "Can recruit [GetMaA('nars_t1').GetName] as [men_at_arms|E]"
 

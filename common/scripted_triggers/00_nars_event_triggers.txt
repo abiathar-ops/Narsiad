@@ -8,13 +8,29 @@ recruit_nars_court_has_room_trigger = {
 }
 
 valid_for_selian_conversion_trigger = {
-	NOT = {
-        faith.religion = { is_in_family = rf_selian }
-    }
+	# The character (the land's holder) must differ from root in BOTH faith and culture.
+	NOR = {
+		faith = root.faith
+		culture = root.culture
+	}
 	is_at_war = no
 	NOR = {
 		has_character_flag = do_not_disturb_preachers
 		primary_title = { has_variable = do_not_disturb_preachers }
+	}
+}
+
+nars_faith_needs_bribe_trigger = {
+	nars_faith_conversion_resistance_value >= 15
+}
+
+nars_faith_scheme_has_targets_trigger = {
+	any_sub_realm_title = {
+		tier = tier_county
+		NOT = { faith = root.faith }
+		holder = {
+			valid_for_selian_conversion_trigger = yes
+		}
 	}
 }
 

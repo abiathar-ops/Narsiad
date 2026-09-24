@@ -6,42 +6,35 @@
  game_concept_selians_adj: "Selian's'"
  game_concept_selianes: "Seliánēs"
  game_concept_selianes_adj: "Seliánēs'"
- game_concept_selians_desc: "Selians are a long thought to be extinct people. Despite having a cultural tradition of innovation, they are notorious for their chauvinistic pride and hubris. Adept in war and prose, Selians are able to maintain their youth much longer as they inexplicably age slower than most in the world."
-
- game_concept_selian_language: "Selian"
- game_concept_selian_language_short: "S."
- game_concept_selian_language_desc: "Selian is the language of the ancient [selianes|E] of old [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]. The [language|E], especially in its classical form, is rich in idioms and proverbs, reflecting the [selian|E] values of [martial|E] ambition and the pursuit of [learning|E] endlessly."
+ game_concept_selians_desc: "The Seliánēs are a long thought to be extinct ethnicity. Despite having a tradition of art and innovation, they are notorious for their chauvinistic pride and arrogance.\n\nCharacterized by their blond-silvery locks, Selians are able to maintain their youth much longer as they inexplicably age slower than other ethnicities in the wider known world.\n\n#flavor "We are lovers of beauty, yet simple in tastes, and we cultivate minds without losing strength." - $alnars_anduril$"
 
  game_concept_narsokratia: "Narsokratía"
  game_concept_narsokratia_possessive: "Narsokratía's"
  game_concept_selianrealm: "Selian Realm"
- game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is an ancient [hegemony|E] that has defined the culture of the [selian|E] [realm|E] for centuries. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — essentially a precursor to an [GetGovernment('administrative_government').GetName] [government_form|E] in yore."
+ game_concept_narsokratia_desc: "The [Glossary( 'Narsokratía', 'NARSOKRATIA_GLOSS' )] is a purported hegemony that has defined the culture of the $game_concept_selianes$ for untold centuries before its fall. The [realm|E] is concentrated in the hands of a singular [ruler|E] that maintains a stable [region|E] through appointed [governors|E] to manage and preside over land over its [region|E] for them — a precursor to an [GetGovernment('administrative_government').GetName] [government|E].\n\n#flavor "Our laws, our religion, our traditions have their root in Seliá, wherever it is; if it is even real." - $alnars_anduril$"
 
  game_concept_narses: "Narsēs"
- game_concept_narses_desc: "Narsēs, the ancient [selianes|E] personification of [innovation|E], is worshipped by [orphists|E]. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [politeion|E] by its adherents."
+ game_concept_narses_desc: "Narsēs, the ancient [selianes|E] personification of [innovation|E], is worshipped by the $game_concept_selianes$. Embodying the ideals of fanatical [faith|E] in ambitious [learning|E], Narsēs is revered as the predominant deity of the [politeion|E] by its adherents."
 
  game_concept_phokas: "Phōkās"
- game_concept_phokas_desc: "Phōkās, the ancient [selianes|E] personification of [stewardship|E] and levity, is worshipped by [orphists|E]. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [politeion|E] by its adherents."
+ game_concept_phokas_desc: "Phōkās, the ancient [selianes|E] personification of [stewardship|E] and levity, is worshipped by the $game_concept_selianes$. Although not as prominent as [narses|E], Phōkās is revered as a major deity of the [politeion|E] by its adherents."
 
  game_concept_enuo: "Enuō"
- game_concept_enuo_desc: "Enuō, the ancient [selianes|E] personification of [war|E] and [fertility|E], is worshipped by [orphists|E]. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [politeion|E] by its adherents."
-
- game_concept_orphists: "Orphists"
- game_concept_archaic: "Orphic"
- game_concept_archaic_adj: "Orphic's"
- game_concept_nars_faith: "Selian Faith"
- game_concept_orphists_desc: "Orphists are followers of the [selianes_adj|E] [politeion|E], the conglomeration of [selian|E] deities of varying aspects. The [head_of_faith|E] of this [religion|E] oftentimes are called the $Prophētēs$ and their scriptures form the basis of [selian|E] [traditions|E] and by proxy, their [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]."
+ game_concept_enuo_desc: "Enuō, the ancient [selianes|E] personification of [war|E] and [fertility|E], is worshipped by the $game_concept_selianes$. Although not as prominent as [narses|E], Enuō is revered as a major deity of the [politeion|E] by its adherents."
 
  game_concept_politeion: "Politeíon"
  game_concept_politeion_possessive: "Politeíon's"
- game_concept_politeion_desc: "The [Glossary('Politeíon', 'POLITEION_GLOSS')] is the conglomeration of all deities of the [nars_faith|E]. They serve as a central pillar of $game_concept_selianes$, each embodying different aspects of life, nature, and experience."
+ game_concept_politeion_desc: "The [Glossary('Politeíon', 'POLITEION_GLOSS')] is the conglomeration of all deities of the $game_concept_selianes$. They serve as a central pillar of $game_concept_selianes$, each embodying different aspects of life, nature, and experience."
 
- game_concept_narsil: "Narsíl"
- game_concept_narsil_desc: "The fabled hand-and-a-half longsword Narsíl is the most famous of $game_concept_selianes$ ancestral swords that was shattered during their people's fall. The $narsil_shards_name$ had since been passed down until inherited by [alnars|E]."
+ game_concept_narsil: "$narsil_name$"
+ game_concept_narsil_desc: "The fabled hand-and-a-half longsword $narsil_name$ is the most famous of $game_concept_selianes$ ancestral swords that was shattered during their people's fall. The $narsil_shards_name$ had since been passed down until inherited by [alnars|E] '$nick_soter$' at last.\n\n#flavor "The hero pulled out his longsword, $narsil_name$, from its sheath which the Gods had bequathed to him." - $alnars_anduril$#!"
+
+ game_concept_anduril: "$anduril_name$"
+ game_concept_anduril_desc: "Compiled by [alnars|E] before his calling as the leader of the first [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )], $anduril_name$ is a scroll detailing the records of a much forgotten $game_concept_selianes$ hegemony crystallized and organized into one singular work. Along with it, additionally, are also teachings and selected works of the '$nick_soter$' himself. \n\n#flavor "These are the works of my father, which he compiled, in the hope of thereby preserving from decay what men have done, and of preventing the greatness of the $game_concept_selianes$ from losing their due meed of glory." - $Eleios$, On the $anduril_name$.#!"
 
  game_concept_alnars: "Alnárs"
  game_concept_alnars_adj: "Alnárs'"
- game_concept_alnars_desc: "Among the first to delve into the outside world with his retinue of [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and a forerunner of the [selian|E] [mercenaries|E], Alnárs had slowly restored the [selianes|E] presence in his [region|E] piece by piece, earning him the epithet of 'Sōtēr' or Savior."
+ game_concept_alnars_desc: "The first to delve onto the outside world with his retinue of [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] leading a warband of soldiers, $game_concept_alnars$ eventually consolidated $game_concept_selianes$ presence in the world piece by piece, earning him the epithet of 'Sōtēr' or Savior of the People.\n\n#flavor "I am not a king, but a general. I had not fought for any glory, but for the safety of the $game_concept_selianes$." - $alnars_anduril$"
 
  game_concept_selian_incursion:0 "Selian Incursion"
  game_concept_selian_incursion_desc:3 "a [selian|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the [GetTrait('nars_conqueror').GetName( GetNullCharacter )] [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Selian Culture#!\n$EFFECT_LIST_BULLET$#V Selian Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!"

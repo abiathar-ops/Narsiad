@@ -671,6 +671,101 @@ nars_religious.1003 = {
     }
 }
 
+#Ponder the politeion
+nars_religious.1004 = {
+	type = character_event
+	title = nars_religious.1004.t
+	desc = nars_religious.1004.desc
+	theme = nars_faith
+
+	left_portrait = {
+		character = root
+		animation = japanese_war_fan
+		camera = camera_event_center_mostly_away_right
+	}
+	right_portrait = {
+		character = scope:vestal
+		animation = personality_forgiving
+	}
+
+	immediate = {
+		hidden_effect = {
+            create_character = {
+                location = root.location
+                culture = culture:selian
+                faith = faith:nars_religion
+                template = selian_template.1011
+                gender_female_chance = 100
+                save_scope_as = vestal
+                after_creation = {
+                    add_trait = nars_naturalis
+                    add_character_flag = need_priest_outfit
+                }
+            }
+            add_courtier = scope:vestal
+            save_scope_as = sender
+            location = { save_scope_as = starting_point }
+        }
+	}
+
+	option = {
+		name = nars_religious.1004.a
+        flavor = nars_religious.1004.a.flavor
+		trigger = {
+			NOR = {	
+				has_character_modifier = politeion_selian_narses
+			}
+		}
+		show_as_unavailable = { has_character_modifier = politeion_selian_narses }
+		set_politeion_effect = { POLITEION = politeion_selian_narses }
+	}
+
+	option = {
+		name = nars_religious.1004.b
+        flavor = nars_religious.1004.b.flavor
+		trigger = {
+			NOR = {
+				has_character_modifier = politeion_selian_phokas
+			}
+		}
+		show_as_unavailable = { has_character_modifier = politeion_selian_phokas }
+		set_politeion_effect = { POLITEION = politeion_selian_phokas }
+	}
+
+	option = {
+		name = nars_religious.1004.c
+        flavor = nars_religious.1004.c.flavor
+		trigger = {
+			NOR = {
+				has_character_modifier = politeion_selian_enuo
+			}
+		}
+		show_as_unavailable = { has_character_modifier = politeion_selian_enuo }
+		set_politeion_effect = { POLITEION = politeion_selian_enuo }
+	}
+
+	# Opt-Out
+	option = {
+		name = nars_religious.1004.d
+		flavor = nars_religious.1004.flavor
+        custom_tooltip = nars_religious.1004.d.tt
+		ai_chance = {
+			base = 0
+		}
+	}
+
+    after = {
+        scope:vestal = {
+            hidden_effect = {
+                death = {
+                    death_reason = death_vanished
+                }
+            }
+        }
+    }
+}
+
+
 # Broken Vase
 nars_religious.3010 = {
     type = character_event

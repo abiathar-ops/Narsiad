@@ -1,126 +1,4 @@
-﻿namespace = nars_artifacts
-
-nars_artifacts.1001 = {
-	type = character_event
-
-	title = nars_artifacts.1001.t
-	desc = nars_artifacts.1001.desc
-	theme = emperor
-	override_background = armory
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = personality_dishonorable
-	}
-
-	immediate = {
-		play_music_cue = mx_cue_touching_moment
-	}
-
-	option = { # Hire foreign craftsmen — costly, but bloodless
-		name = nars_artifacts.1001.a
-		add_internal_flag = special
-		save_scope_as = actor
-		begin_scheme_with_agents_effect = {
-				SCHEME_TYPE = mend_narsil_scheme
-				TARGET_TYPE = target_title
-				TARGET_SCOPE = root.capital_county
-				AGENT_1 = agent_smith
-				AGENT_2 = agent_alchemist
-				AGENT_3 = agent_supplier
-				AGENT_4 = agent_theologian
-				AGENT_5 = agent_cleric
-			}
-		remove_treasury_or_gold = major_treasury_or_gold_value
-		stress_impact = {
-			sadistic = minor_stress_impact_gain
-			callous = miniscule_stress_impact_gain
-			greedy = miniscule_stress_impact_gain
-		}
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				treasury >= 750
-			}
-		}
-	}
-
-	option = { # Not yet — decision remains available
-		name = nars_artifacts.1001.b
-		add_stress = miniscule_stress_impact_gain
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				treasury < 750
-			}
-		}
-	}
-}
-
-nars_artifacts.1011 = {
-	hidden = yes
-
-	immediate = {
-		scope:scheme = {
-			scheme_owner = {
-				save_scope_as = owner
-				random = {
-					chance = scope:scheme.scheme_success_chance
-					save_scope_value_as = {
-						name = scheme_successful
-						value = yes
-					}
-				}
-				if = {
-					limit = { exists = scope:scheme_successful }
-					trigger_event = {
-						id = nars_narsil.9000
-					}
-				}
-				else = {
-					trigger_event = {
-						id = nars_artifacts.1022
-					}	
-				}
-			}
-		}
-	}
-}
-
-nars_artifacts.1022 = {
-	type = character_event
-	title = nars_artifacts.1022.t
-	desc = nars_artifacts.1022.desc
-	theme = emperor
-	override_background = armory
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		camera = camera_center_large
-		animation = map_fear
-	}	
-	immediate = {
-		play_music_cue = mx_cue_negative_effect
-		stress_impact = {
-			base = minor_stress_impact_gain
-			ambitious = minor_stress_impact_gain
-			paranoid = minor_stress_impact_gain
-		}
-	}
-
-	option = {
-		name = nars_artifacts.1022.a
-		scope:scheme = { end_scheme = yes }
-	}
-}
-
-
-namespace = nars_narsil
+﻿namespace = nars_narsil
 
 nars_narsil.0001 = { # Gain progress (1)
 	hidden = yes
@@ -153,32 +31,6 @@ nars_narsil.0002 = { # Gain stress but no progress
 	}
 }
 
-nars_narsil.0003 = { # Gain learning but no progress
-    hidden = yes
-
-    immediate = {
-        send_interface_toast = {
-            title = nars_narsil.0003.t
-			desc = nars_narsil.0003.desc
-			type = event_prowess_good_desc
-            add_learning_skill = { 1 3 }
-        }
-    }
-}
-
-nars_narsil.0004 = { # Gain legitimacy but no progress
-    hidden = yes
-
-    immediate = {
-        send_interface_toast = {
-            title = nars_narsil.0004.t
-			desc = nars_narsil.0004.desc
-			type = event_prowess_good_desc
-            add_legitimacy = 75
-        }
-    }
-}
-
 nars_narsil.9000 = {
 	type = character_event
 	title = nars_narsil.9000.t
@@ -191,7 +43,7 @@ nars_narsil.9000 = {
 
 	center_portrait = {
 		character = root
-		camera = camera_event_center_very_large
+		camera = camera_scheme_widget_microscopic
 		animation = marshal
 	}
 

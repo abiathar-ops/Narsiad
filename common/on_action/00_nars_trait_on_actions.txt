@@ -116,10 +116,6 @@ nars_intro_on_start = {
                     trigger_event = { id = nars_intro.0001 days = 1 }
                 }
                 
-                while = {
-                    count = 3
-                    trigger_event = nars_courtiers.0002 
-                }
             }
             else_if = {
                 limit = { is_selian = no }

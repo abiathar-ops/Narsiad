@@ -5,7 +5,9 @@ nars_maintenance.0001 = {
     hidden = yes
     
     immediate = {
-        nars_apply_setup_effect = yes
+        hidden_effect = {
+            nars_apply_setup_effect = yes
+        }
     }
 }
 
@@ -14,12 +16,14 @@ nars_maintenance.0002 = {
     hidden = yes
     
     immediate = {
-		every_courtier_or_guest = {
-			nars_apply_setup_effect = yes
-		}
-		every_vassal_or_below = {
-			nars_apply_setup_effect = yes
-		}
-        nars_laamp_camp_setup_effect = yes
+		hidden_effect = {
+            every_courtier_or_guest = {
+                nars_apply_setup_effect = yes
+            }
+            every_vassal_or_below = {
+                nars_apply_setup_effect = yes
+            }
+            nars_laamp_camp_setup_effect = yes
+        }
     }
 }

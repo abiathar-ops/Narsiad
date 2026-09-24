@@ -80,6 +80,7 @@ decision_piously_devote = {
 	sort_order = 900
 	
 	is_shown = {
+		is_landed = yes
 		is_alive = yes
 		is_archaic = yes
 	}
@@ -98,7 +99,10 @@ decision_piously_devote = {
 			}
 		}
 		is_imprisoned = no
-		is_incapable = no
+		NOR = {
+			has_trait = incapable
+			has_trait = infirm
+		}
 		has_contagious_deadly_disease_trigger = no
 		is_archaic = yes
 	}
@@ -133,7 +137,7 @@ decision_piously_devote = {
 	}
 
 	ai_potential = {
-		has_religion = religion:nars_religion
+		faith = faith:nars_religion
 	}
 
 	ai_will_do = {
@@ -165,6 +169,7 @@ decision_mend_narsil = {
 	}
 
 	is_valid = {
+		legitimacy_level >= 4
 		custom_tooltip = {
 			text = decision_mend_narsil_req_tt
 			any_character_artifact = { has_variable = can_be_used_for_narsil }
@@ -222,6 +227,7 @@ decision_produce_amphora = {
 	selection_tooltip = decision_produce_amphora_tooltip
 
 	is_shown = {
+		is_landed = yes
 		is_selian = yes
 		is_capable_adult = yes
 		NOT = {
@@ -241,6 +247,11 @@ decision_produce_amphora = {
 		is_available_adult = yes
 		is_imprisoned = no
 		is_at_war = no
+		NOR = {
+			has_trait = blind
+			has_trait = incapable
+			has_trait = infirm
+		}
 		custom_tooltip = {
 			text = decision_produce_amphora_ongoing
 			NOT = {
@@ -276,12 +287,12 @@ decision_produce_amphora = {
 	ai_check_interval = 0
 }
 
-decision_pledge_restoration = {
+decision_narsokratia = {
     picture = {
         reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_sunder.dds"
     }
-    desc = decision_pledge_restoration_desc
-    selection_tooltip = decision_pledge_restoration_tooltip
+    desc = decision_narsokratia_desc
+    selection_tooltip = decision_narsokratia_tooltip
     decision_group_type = oaths
     sort_order = 1000
 
@@ -294,12 +305,12 @@ decision_pledge_restoration = {
         is_selian = yes
         highest_held_title_tier >= tier_kingdom
         dynasty = {
-            NOT = { has_dynasty_modifier = pledge_restoration_dynasty_modifier }
+            NOT = { has_dynasty_modifier = narsokratia_dynasty_modifier }
         }
         NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_decision_pledge_restoration
+				target = flag:flag_decision_narsokratia
 			}
 		}
     }
@@ -323,7 +334,7 @@ decision_pledge_restoration = {
 			}
 		}
         prestige_level >= 5
-       	custom_tooltip = { text = decision_pledge_restoration_enough_high_level_knights any_knight = { count >= 12 prowess >= 18 }  }
+       	custom_tooltip = { text = decision_narsokratia_enough_high_level_knights any_knight = { count >= 12 prowess >= 18 }  }
     }
 
     is_valid_showing_failures_only = {
@@ -406,4 +417,78 @@ decision_pledge_restoration = {
 	}
         
     ai_potential = { always = no }
+}
+
+decision_sponsor_missionaries = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_delphi.dds"
+	}
+
+	desc = decision_sponsor_missionaries_desc
+	selection_tooltip = decision_sponsor_missionaries_tooltip
+	decision_group_type = realm
+
+	sort_order = 10
+
+	is_shown = {
+		is_capable_adult = yes
+		is_landed = yes
+		highest_held_title_tier >= tier_kingdom
+		is_selian = yes
+		faith = faith:nars_religion
+		NOT = { has_character_flag = cooldown_missionaries_flag }
+	}
+
+	is_valid = {
+		custom_tooltip = {
+			text = decision_sponsor_missionaries_req_tt
+			nars_faith_scheme_has_targets_trigger = yes
+		}
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	is_valid_showing_failures_only = {
+		NOT = { has_character_flag = cooldown_missionaries_flag }
+		is_available_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+		custom_tooltip = {
+			text = decision_sponsor_missionaries_ongoing
+			NOT = {
+				any_scheme = {
+					type = sponsor_missionaries_scheme
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = decision_sponsor_missionaries_effect_tooltip
+			if = {
+				limit = {
+					NOT = { any_owned_story = { story_type = story_sponsor_missionaries } }
+				}
+				create_story = story_sponsor_missionaries
+			}
+			start_scheme = {
+				type = sponsor_missionaries_scheme
+				target_character = root
+			}
+			close_view = {
+				view = decisions
+				player = root
+			}
+		}
+	}
+
+	ai_check_interval = 0
+
+	ai_potential = {
+		faith = faith:nars_religion
+	}
+
+	ai_will_do = {
+		base = 15
+	}
 }

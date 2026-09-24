@@ -1,0 +1,102 @@
+﻿sponsor_missionaries_scheme = {
+	skill = learning
+	desc = "sponsor_missionaries_scheme_desc_general"
+	success_desc = "sponsor_missionaries_scheme_SUCCESS_DESC"
+	icon = icon_sacred
+	illustration = "gfx/interface/illustrations/event_scenes/nars_faith.dds"
+	category = personal
+	target_type = character
+
+	is_secret = no
+	is_basic = yes
+
+	hide_target_name = yes
+	freeze_scheme_when_traveling = yes
+
+	speed_per_skill_point = 0
+	spymaster_speed_per_skill_point = 0
+	uses_resistance = no
+	base_progress_goal = 100
+
+	allow = {
+		age >= 12
+		is_imprisoned = no
+		NOT = { has_trait = incapable }
+	}
+
+	valid = {
+		scope:target = scope:owner
+		is_imprisoned = no
+		NOT = { has_trait = incapable }
+		scope:owner = {
+			nars_faith_scheme_has_targets_trigger = yes
+		}
+	}
+
+	base_success_chance = {
+		base = 100
+	}
+
+	on_start = {
+		set_variable = {
+			name = apply_countermeasures
+			value = flag:indirect
+		}
+	}
+
+	on_phase_completed = {
+		save_scope_as = scheme
+		scheme_owner = {
+			save_scope_as = owner
+			random_owned_story = {
+				limit = { story_type = story_sponsor_missionaries }
+				save_scope_as = sponsor_missionaries_story
+			}
+		}
+
+		scope:owner = {
+			trigger_event = nars_faith.0001
+			if = {
+                limit = { exists = scope:sponsor_missionaries_story }
+            	scope:sponsor_missionaries_story = {
+                change_variable = {
+                    name = sponsor_missionaries_success
+                    add = 1
+                    }
+                }
+                scope:owner = {
+                    set_variable = {
+                        name = sponsor_missionaries_success
+                        value = scope:sponsor_missionaries_story.var:sponsor_missionaries_success
+                    }
+                }
+                if = {
+                    limit = {
+                        scope:owner = {
+                        var:sponsor_missionaries_success >= 3
+                        }
+                    }
+                    scope:scheme = { end_scheme = yes }
+                    scope:sponsor_missionaries_story = { end_story = yes }
+                }
+            }
+		}
+		reset_scheme_progress = yes
+	}
+
+	on_invalidated = {
+		scheme_owner = {
+			save_scope_as = owner
+			random_owned_story = {
+				limit = { story_type = story_sponsor_missionaries }
+				save_scope_as = sponsor_missionaries_story
+			}
+		}
+		if = {
+			limit = { exists = scope:sponsor_missionaries_story }
+			scope:sponsor_missionaries_story = {
+				end_story = yes
+			}
+		}
+	}
+}

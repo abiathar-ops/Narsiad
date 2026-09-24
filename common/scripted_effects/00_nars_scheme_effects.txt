@@ -70,22 +70,8 @@ munitions_research_success_effect = {
 	}
 	# Unlock Mástiges recruitment globally (checked in can_recruit_maa_02_trigger)
 	set_global_variable = {
-		name = mastiges_research_complete
+		name = mastiges_recruitable
 		value = yes
-	}
-}
-
-mend_narsil_scheme_prep_effect = {
-	save_scope_as = scheme
-	save_scope_value_as = {
-		name = follow_up_event
-		value = event_id:nars_artifacts.1011
-	}
-	if = {
-		limit = {
-			NOT = { exists = scope:suppress_next_event }
-		}
-		scheme_owner = { trigger_event = scheme_critical_moments.0002 }
 	}
 }
 

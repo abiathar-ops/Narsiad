@@ -1,28 +1,9 @@
 ﻿# Basic Triggers
 
-can_recruit_elite_maa = {
-  OR = {
-    highest_held_title_tier >= tier_duchy
-    AND = {
-      is_independent_ruler = yes
-    }
-  }
-}
-
-can_recruit_guard_maa = {
-  AND = {
-  is_independent_ruler = yes
-  highest_held_title_tier >= tier_duchy
-  }
-}
-
-selian_nars_trigger = {
-  culture = { has_cultural_pillar = heritage_nars }
-}
-
 can_recruit_maa_02_trigger = {
-	selian_nars_trigger = yes
-	exists = global_var:mastiges_research_complete
+  is_selian = yes
+  top_liege = yes
+	exists = global_var:mastiges_recruitable
 }
 
 #### MAA ART TRIGGERS ####

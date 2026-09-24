@@ -193,25 +193,6 @@ nars_conqueror.0100 = {
 			}
 			save_scope_as = county_target
 		}
-		if = {
-			limit = {
-				government_has_flag = government_is_nomadic
-				scope:county_target = {
-					any_county_province = {
-						has_holding_type = nomad_holding
-					}
-				}
-			}
-			send_interface_message = {
-				type = event_diplomacy_good_with_text
-				title = nars_conqueror_feed_county_gift_herd
-				desc = nars_conqueror_feed_county_gift_desc_herd
-				left_icon = scope:county_target
-				domicile = {
-					change_herd = medium_herd_gain
-				}
-			}
-		}
 		else = {
 			send_interface_message = {
 				type = event_diplomacy_good_with_text

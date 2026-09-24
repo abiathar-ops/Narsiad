@@ -819,7 +819,7 @@ selian_defiance_cb = {
     on_defeat = {
         add_to_global_variable_list = {
             name = unavailable_unique_decisions
-            target = flag:flag_decision_pledge_restoration
+            target = flag:flag_decision_narsokratia
         }
 
         scope:attacker = {

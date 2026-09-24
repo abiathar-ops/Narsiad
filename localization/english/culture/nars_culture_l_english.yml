@@ -1,9 +1,8 @@
 ﻿l_english:
  selian:0 "Selian"
- selian_prefix:0 "Selic"
+ selian_prefix:0 "Selian"
  selian_collective_noun:1 "Selians"
  
  name_list_nars:0 "Selian"
  language_nars_name:0 "Selian"
  selian_clothing_gfx:0 "Selian"
- selian_opinion:0 "$selian$ Opinion"

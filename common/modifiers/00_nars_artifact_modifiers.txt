@@ -1,22 +1,18 @@
 artifact_narsil_modifier = {
-	domain_limit = 2
-	monthly_dynasty_prestige = 0.4
-	knight_effectiveness_mult = 0.4
-	dread_baseline_add = 16
+	monthly_legitimacy_add = 4.2
 	knight_limit = 2
-	prowess = 16
+	prowess = 12
 }
 
 artifact_narsil_shards_modifier = {
 	monthly_dynasty_prestige = 0.2
-	dread_baseline_add = 16
 	prowess = -4
 }
 
 artifact_anduril_modifier = {
 	domain_limit = 2
-	monthly_dynasty_prestige = 0.2
+	monthly_dynasty_prestige = 0.4
 	monthly_income_per_stress_level_mult = 0.4
 	monthly_income_per_stress_level_add = 0.8
-	character_capital_county_monthly_development_growth_add = 0.4
+	monthly_dynasty_prestige_mult = 0.2
 }

@@ -168,11 +168,12 @@ selian_diplomacy_entreaty_effect = {
                     scope:target_2 = { opinion: { target = root value >= 50 } }
                 }
                 
-                send_interface_toast = {
+                send_interface_message = {
                     title = selian_diplomacy_both_join_toast_t
+                    desc = selian_diplomacy_both_join_toast_tt
+                    type = event_diplomacy_good_with_text
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = selian_diplomacy_both_join_toast_tt
                 }
                 
                 scope:target_1 = {
@@ -218,11 +219,12 @@ selian_diplomacy_entreaty_effect = {
                 }
             }
             25 = {
-                send_interface_toast = {
-                    title = selian_diplomacy_target_1_joins_toast_t
+                send_interface_message = {
+                    title = selian_diplomacy_half_joins_toast_t
+                    type = event_diplomacy_good_with_text
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = selian_diplomacy_target_1_joins_toast_tt
+                    desc = selian_diplomacy_target_1_joins_toast_tt
                 }
                 scope:target_1 = {
                     hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
@@ -256,11 +258,12 @@ selian_diplomacy_entreaty_effect = {
                 }
             }
             25 = {
-                send_interface_toast = {
-                    title = selian_diplomacy_target_2_joins_toast_t
-                    left_icon = scope:target_2
-                    right_icon = scope:target_1
-                    custom_tooltip = selian_diplomacy_target_2_joins_toast_tt
+                send_interface_message = {
+                    title = selian_diplomacy_half_joins_toast_t
+                    type = event_diplomacy_good_with_text
+                    left_icon = scope:target_1
+                    right_icon = scope:target_2
+                    desc = selian_diplomacy_target_2_joins_toast_tt
                 }
 
                 scope:target_1 = {
@@ -295,11 +298,12 @@ selian_diplomacy_entreaty_effect = {
                 }
             }
             30 = {
-                send_interface_toast = {
+                send_interface_message = {
                     title = selian_diplomacy_neither_join_toast_t
+                    type = event_diplomacy_bad_with_text
                     left_icon = scope:target_1
                     right_icon = scope:target_2
-                    custom_tooltip = selian_diplomacy_neither_join_toast_tt
+                    desc = selian_diplomacy_neither_join_toast_tt
                 }
                 scope:target_1 = {
                     add_opinion = {

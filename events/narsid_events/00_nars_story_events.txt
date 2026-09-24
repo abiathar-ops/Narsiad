@@ -1,6 +1,5 @@
 ﻿namespace = nars_intro
 
-#OG Custom Characters
 nars_intro.1001 = {
 	type = character_event
 	window = fullscreen_event
@@ -9,60 +8,26 @@ nars_intro.1001 = {
 	override_background = { reference = fp3_fullscreen_sunder }
 	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
+    trigger = {
+		NOR = {
+			has_character_modifier = eleios_modifier
+			has_character_modifier = ilione_modifier
+			has_character_modifier = strato_modifier
+		}
+	}
+
     immediate = {
         play_music_cue = mx_cue_negative_effect
-    }
-	option = {
-		trigger = {
-			NOR = {
-				has_character_modifier = eleios_modifier
-				has_character_modifier = ilione_modifier
-				has_character_modifier = strato_modifier
-			}
-		}
-		name = nars_intro.1001.a
-		trigger_event = nars_intro.1002
-		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
-	}
-
-	option = {
-		trigger = {
-			is_ai = no 
-			or = {
-				has_character_modifier = eleios_modifier
-				has_character_modifier = ilione_modifier
-				has_character_modifier = strato_modifier
-			}
-		}
-		name = nars_intro.1001.b
-		trigger_event = nars_intro.0002
-		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
-	}
-}
-
-nars_intro.1002 = { 
-	type = character_event
-	window = big_event_window
-	title = nars_intro.1002.t
-	desc = nars_intro.1002.desc
-	theme = emperor
-	override_background = ce1_fullscreen_legitimizing_legend
-	widget = { gui = event_window_widget_vfx_godray container = foreground_shader_vfx_container }
-	left_portrait = {
-		character = root
-		animation = personality_callous
-		camera = camera_center_large
-	}
-	immediate = {
-		intro_standard_effect = yes
         trigger_event = { id = nars_maintenance.0002 days = 1 }
-        play_music_cue = mx_cue_positive_effect
-	}
+    }
+    
 	option = {
-		name = nars_intro.1002.a
+		name = nars_intro.1001.a
+        flavor = nars_intro.1001.a.flavor
+        intro_standard_effect = yes
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 }
-
 
 #Eleios, Ilione, and Strato
 nars_intro.0001 = {
@@ -70,28 +35,24 @@ nars_intro.0001 = {
     window = big_event_window
     title = nars_intro.0001.t
     desc = nars_intro.0001.desc
-    theme = emperor
-    override_background = fp3_zoroastrian_temple
-    override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
-    override_effect_2d = { reference = smoke }
-    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    theme = nars_faith
 
     left_portrait = {
         character = scope:eleios
-        animation = throne_room_two_handed_passive_1
-        camera = camera_event_left
+        animation = disapproval
+        camera = camera_event_right
     }
 
     center_portrait = {
         character = scope:ilione
-        animation = throne_room_one_handed_passive_1
-        camera = camera_center_large
+        animation = throne_room_two_handed_passive_1
+        camera = camera_event_center
     }
 
     right_portrait = {
         character = scope:strato
-        animation = scheme
-        camera = camera_event_right
+        animation = war_over_win
+        camera = camera_event_center_pointing_forward
     }
 
     immediate = {
@@ -196,9 +157,8 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_ktistes
                 add_character_modifier = eleios_modifier
-                
+
                 # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
@@ -237,9 +197,8 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_keraunos
                 add_character_modifier = ilione_modifier
-                
+
                 # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
@@ -278,9 +237,8 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                give_nickname = nick_kryphios
                 add_character_modifier = strato_modifier
-                
+
                 # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
@@ -310,6 +268,11 @@ nars_intro.0001 = {
                 add_prestige_level = 2
                 add_piety_level = 1
                 
+                while = {
+                    count = 2
+                    trigger_event = nars_courtiers.9000
+                }
+
                 create_title_and_vassal_change = {
                     type = created
                     save_scope_as = change
@@ -344,7 +307,7 @@ nars_intro.0001 = {
                         limit = { has_realm_law = crown_authority_0 }
                         remove_realm_law = crown_authority_0
                     }
-                    add_realm_law_skip_effects = camp_purpose_scholars
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
                     nars_naturalis_set_tier_xp_effect = yes
                     
                     domicile = { 
@@ -370,7 +333,7 @@ nars_intro.0001 = {
                     create_anduril_effect = yes
                     create_narsil_shards_effect = yes
                 }
-                trigger_event = { id = nars_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.0002 days = 1 }
                 intro_standard_effect = yes
             }
 
@@ -391,6 +354,11 @@ nars_intro.0001 = {
                 add_prestige = { 705 1000 }
                 add_prestige_level = 2
                 add_piety_level = 1
+
+                while = {
+                    count = 2
+                    trigger_event = nars_courtiers.9000
+                }
                 
                 create_title_and_vassal_change = {
                     type = created
@@ -414,9 +382,18 @@ nars_intro.0001 = {
                 scope:new_title = { save_scope_as = new_landless_adventurer_title }
                 
                 scope:new_landless_adventurer = {
-                    if = { limit = { NOT = { has_government = landless_adventurer_government } } change_government = landless_adventurer_government }
-                    if = { limit = { NOT = { has_realm_law = landless_adventurer_succession_law } } add_realm_law = landless_adventurer_succession_law }
-                    if = { limit = { has_realm_law = crown_authority_0 } remove_realm_law = crown_authority_0 }
+                    if = {
+                        limit = { NOT = { has_government = landless_adventurer_government } }
+                        change_government = landless_adventurer_government
+                    }
+                    if = {
+                        limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
+                        add_realm_law_skip_effects = landless_adventurer_succession_law
+                    }
+                    if = {
+                        limit = { has_realm_law = crown_authority_0 }
+                        remove_realm_law = crown_authority_0
+                    }
                     add_realm_law_skip_effects = camp_purpose_mercenaries
                     nars_naturalis_set_tier_xp_effect = yes
                     
@@ -436,7 +413,7 @@ nars_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nars_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.0002 days = 1 }
                 intro_standard_effect = yes
             }
 
@@ -457,6 +434,11 @@ nars_intro.0001 = {
                 add_prestige = { 705 1000 }
                 add_prestige_level = 2
                 add_piety_level = 1
+
+                while = {
+                    count = 2
+                    trigger_event = nars_courtiers.9000
+                }
                 
                 create_title_and_vassal_change = {
                     type = created
@@ -480,10 +462,19 @@ nars_intro.0001 = {
                 scope:new_title = { save_scope_as = new_landless_adventurer_title }
                 
                 scope:new_landless_adventurer = {
-                    if = { limit = { NOT = { has_government = landless_adventurer_government } } change_government = landless_adventurer_government }
-                    if = { limit = { NOT = { has_realm_law = landless_adventurer_succession_law } } add_realm_law = landless_adventurer_succession_law }
-                    if = { limit = { has_realm_law = crown_authority_0 } remove_realm_law = crown_authority_0 }
-                    add_realm_law_skip_effects = camp_purpose_brigands
+                    if = {
+                        limit = { NOT = { has_government = landless_adventurer_government } }
+                        change_government = landless_adventurer_government
+                    }
+                    if = {
+                        limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
+                        add_realm_law_skip_effects = landless_adventurer_succession_law
+                    }
+                    if = {
+                        limit = { has_realm_law = crown_authority_0 }
+                        remove_realm_law = crown_authority_0
+                    }
+                    add_realm_law_skip_effects = camp_purpose_mercenaries
                     nars_naturalis_set_tier_xp_effect = yes
                     
                     domicile = { 
@@ -502,7 +493,7 @@ nars_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nars_intro.1001 days = 1 }
+                trigger_event = { id = nars_intro.0002 days = 1 }
                 intro_standard_effect = yes
             }
         }
@@ -510,7 +501,7 @@ nars_intro.0001 = {
     
     option = {
         name = nars_intro.0001.a
-        flavor = danger_dynasty_abandon_tt
+        flavor = nars_intro.0001.a.flavor
         add_internal_flag = dangerous
         set_player_character = scope:eleios
         scope:ilione = {
@@ -524,7 +515,7 @@ nars_intro.0001 = {
     
     option = {
         name = nars_intro.0001.b
-        flavor = danger_dynasty_abandon_tt
+       flavor = nars_intro.0001.b.flavor
         add_internal_flag = dangerous
         set_player_character = scope:ilione
         scope:eleios = {
@@ -538,7 +529,7 @@ nars_intro.0001 = {
     
     option = {
         name = nars_intro.0001.c
-        flavor = danger_dynasty_abandon_tt
+        flavor = nars_intro.0001.c.flavor
         add_internal_flag = dangerous
         set_player_character = scope:strato
         scope:eleios = {
@@ -552,6 +543,8 @@ nars_intro.0001 = {
     
     option = {
         name = nars_intro.0001.d
+        flavor = nars_intro.0001.d.flavor
+        custom_tooltip = selian_incivility.tt
         ai_chance = { base = 100 }   
     }
 }
@@ -583,11 +576,12 @@ nars_intro.0002 = {
         desc = nars_intro.0002.end
     }
 
+    trigger = {
+        is_ai = no
+    }
+
     window = big_event_window
-    theme = emperor
-    override_background = fp3_zoroastrian_temple
-    override_effect_2d = { reference = smoke }
-    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    theme = nars_faith
     
     left_portrait = {
         character = root
@@ -599,11 +593,6 @@ nars_intro.0002 = {
         animation = throne_room_messenger_3
         camera = camera_event_right
     }
-    # right_portrait = {
-    #     character = scope:alnars
-    #     animation = dead_pose
-    #     camera = camera_event_right
-    # }
     lower_center_portrait = {
         character = scope:target_1
     }
@@ -611,7 +600,8 @@ nars_intro.0002 = {
         character = scope:target_2
     }
     
-    immediate = {        
+    immediate = { 
+        play_music_cue = mx_cue_negative_effect       
         father = {
             save_scope_as = alnars
         }
@@ -638,68 +628,29 @@ nars_intro.0002 = {
     }
     
     option = {
+        clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
         name = nars_intro.0002.a
+        flavor = nars_intro.0002.a.flavor
         custom_tooltip = selian_diplomacy.tt
         hidden_effect = {
             selian_diplomacy_entreaty_effect = yes
         }
     }
+
     option = {
+        clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
         name = nars_intro.0002.b
+        flavor = nars_intro.0002.b.flavor
         custom_tooltip = selian_incivility.tt
-        if = {
-            limit = {
-                has_character_modifier = eleios_modifier
-            }
-            if = {
-				limit = {
-					exists = location.kingdom.holder
-				}
-				add_pressed_claim = location.kingdom
-			}
-			else_if = {
-				limit = {
-					exists = location.duchy.holder
-				}
-				add_pressed_claim = location.duchy
-			}
-			else_if = {
-				limit = {
-					exists = location.county.holder
-				}
-				add_pressed_claim = location.county
-			}
+        hidden_effect = { 
+            set_relation_rival = {
+                reason = rival_claimant_fight
+                target = scope:target_1
+            } 
+            set_relation_rival = {
+                reason = rival_claimant_fight
+                target = scope:target_2
+            } 
         }
-        if = {
-            limit = {
-                has_character_modifier = ilione_modifier
-            }
-            spawn_army = {
-                levies = 1250
-                men_at_arms = {
-                    type = nars_t1
-                    stacks = 10
-                }
-                location = root.location # Safer than capital_province for landless camps
-                name = event_troop_default_name
-            }
-        }
-		if = {
-            limit = {
-                has_character_modifier = strato_modifier
-            }
-            custom_tooltip = intrigue_challenge
-            add_character_flag = intrigue_duel_on_attack
-        }
-        set_relation_rival = {
-            reason = rival_claimant_fight
-            target = scope:target_1
-        } 
-        set_relation_rival = {
-            reason = rival_claimant_fight
-            target = scope:target_2
-        } 
-        add_prestige = { 1250 2132 }
-        add_gold = { 1250 2750 }
     }
 }

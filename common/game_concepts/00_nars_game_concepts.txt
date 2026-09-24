@@ -1,31 +1,27 @@
 ﻿selians = {
+	parent = culture
+	texture = "gfx/interface/icons/icon_group_of_characters.dds"
 	alias = { selian selianes selianes_adj selians_adj selian_adj}
-}
-
-selian_language = {
-	parent = selians
-	alias = { selian_language_short }
 }
 
 narsokratia = {
 	parent = selian
+	texture = "gfx/interface/icons/icon_banner.dds"
 	alias = { selianrealm narsokratia_possessive }
 }
 
-orphists = {
-	parent = selian
-	alias = { archaic nars_faith archaic_adj }
-}
-
 narses = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }
 
 phokas = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }
 
 enuo = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }
 
@@ -38,10 +34,14 @@ narsil = {
 	parent = selian
 }
 
+anduril = {
+	parent = selian
+}
+
 alnars = {
 	parent = selian
+	texture = "gfx/interface/icons/icon_character.dds"
 	alias = { alnars_adj }
-	shown_in_encyclopedia = no
 }
 
 selian_incursion = {

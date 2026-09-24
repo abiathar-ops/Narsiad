@@ -7,7 +7,5 @@
 mend_narsil_scheme_failure = {
 	random_events = {
 		70 = nars_narsil.0002
-		15 = nars_narsil.0003
-		15 = nars_narsil.0004
 	}
 }

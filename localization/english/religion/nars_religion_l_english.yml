@@ -8,11 +8,11 @@
  selian_religion_desc:0 "The faith of the Selian venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
  # Selian branches
- nars_religion:0 "Shel'ia"
- nars_religion_adj:0 "Shel'ian"
- nars_religion_adherent:0 "Shel'ian"
- nars_religion_adherent_plural:0 "Shel'ians"
- nars_religion_desc:0 "Derived from the records of Selian antiquity and the new teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')], Shel'ia revolves around the concept of vigorous erudition, in which adherents are to pursue martial and learning as a path to their personal enlightenment."
+ nars_religion:0 "Selianism"
+ nars_religion_adj:0 "Selianite"
+ nars_religion_adherent:0 "Selianist"
+ nars_religion_adherent_plural:0 "Selianists"
+ nars_religion_desc:0 "Derived from the records of $game_concept_selian$ antiquity and the new teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')], $nars_religion$ revolves around the concept of vigorous erudition, in which adherents are to pursue martial and learning pursuits as a path to enlightenment."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"

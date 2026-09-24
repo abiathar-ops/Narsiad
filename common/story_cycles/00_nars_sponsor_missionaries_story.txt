@@ -1,0 +1,59 @@
+story_sponsor_missionaries = {
+    visible = yes
+    icon = { reference = "gfx/interface/icons/artifact/artifact_chronicle.dds" }
+    background = { reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds" }
+
+    visualization = {
+        basic_counter = {
+            variable_name = "sponsor_missionaries_success"
+            tooltip = "SPONSOR_MISSIONARIES_COUNTER_TOOLTIP"
+            min = 0
+            max = 3
+            label = "SPONSOR_MISSIONARIES_VALUE_LABEL"
+            min_label = "SPONSOR_MISSIONARIES_VALUE_MIN_LABEL"
+            max_label = "SPONSOR_MISSIONARIES_VALUE_MAX_LABEL"
+        }
+    }
+
+    on_setup = {
+        set_variable = { name = sponsor_missionaries_success value = 0 }
+        root = {
+            set_variable = {
+                name = sponsor_missionaries_story_ref
+                value = prev
+            }
+        }
+    }
+
+    # Safety net: end_scheme (called directly by the vanilla "Abandon Scheme" action,
+    # special_interaction = remove_scheme_interaction in 00_scheme_interactions.txt) does
+    # NOT run the scheme's own on_invalidated block, so a manually-abandoned scheme can
+    # leave this story running forever. Check periodically and self-end if the owner no
+    # longer has a sponsor_missionaries_scheme for any reason.
+    effect_group = {
+        days = 5
+        trigger = {
+            exists = var:sponsor_missionaries_story_ref
+        }
+        triggered_effect = {
+            trigger = {
+                NOT = {
+                    var:sponsor_missionaries_story_ref = {
+                        any_scheme = {
+                            type = sponsor_missionaries_scheme
+                        }
+                    }
+                }
+            }
+            effect = {
+                end_story = yes
+            }
+        }
+    }
+
+    on_owner_death = { end_story = yes }
+    on_end = {
+        debug_log = "$decision_sponsor_missionaries$ story cycle ended on:"
+        debug_log_date = yes
+    }
+}

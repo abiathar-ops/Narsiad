@@ -11,6 +11,7 @@
         15 = nars_religious.1003 # Gain Piety (Massive piety if zealous)
 
         15 = nars_religious.3001 # Shared: Seduce an Oracle?
+        15 = nars_religious.1004 # Ponder the Politeion
         15 = nars_religious.3030 # Sacrifice Sheep (Gold for benefits)
         #25 = nars_religious.3050 # Trait Shift: Lose Cynical, Gain Zealous
     }

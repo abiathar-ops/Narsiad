@@ -23,3 +23,10 @@
  produce_amphora_VALUE_MAX_LABEL: "Amphora"
  story_produce_amphora: "$decision_produce_amphora$"
  story_produce_amphora_desc: "In addition to a new amphora, with it's creation, I will gain some legitimacy as well as a chance to learn new methods of creations—mine."
+
+ story_sponsor_missionaries: "$decision_sponsor_missionaries$"
+ story_sponsor_missionaries_desc: "Missionaries funded by my gold continue their quiet work, bringing the unconverted corners of my realm into the true faith, one village at a time."
+ SPONSOR_MISSIONARIES_COUNTER_TOOLTIP: "You can dispatch a maximum of #color_green 3#! missionaries before the #v [GetScheme('sponsor_missionaries_scheme').GetTypeName]#! [scheme|E] and [story_cycle|E] ends automatically"
+ SPONSOR_MISSIONARIES_VALUE_LABEL: "#v $game_concept_selianes$ Missionaries#! already sent by you:"
+ SPONSOR_MISSIONARIES_VALUE_MIN_LABEL: " "
+ SPONSOR_MISSIONARIES_VALUE_MAX_LABEL: " "

@@ -1,2 +1,2 @@
 ﻿l_english:
- is_considered_archaic: "[ROOT.GetCharacter.GetShortUINamePossessive] [faith|E] is not considered [archaic|E]"
+ is_considered_archaic: "[ROOT.GetCharacter.GetShortUINamePossessive] [faith|E] is not considered a $game_concept_selianes$ faith"

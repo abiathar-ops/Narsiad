@@ -4,7 +4,7 @@
  nick_eupator:0 "Eupátōr"
  nick_eupator_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] celebrated for [CharYourHerHis(CHARACTER)] noble and honorable behavior, truly setting an example to other members of [CharYourHerHis(CHARACTER)] culture"
  nick_soter:0 "Sōtēr"
- nick_soter_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] honored by the culture that [CharYouSheHe(CHARACTER)] rescued from the most dire of circumstances. Were it not for [CharYouHerHim(CHARACTER)], that culture could now have been extinguished"
+ nick_soter_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] honored by the culture that [CharYouSheHe(CHARACTER)] rescued from the most dire of circumstances. Were it not for [CharYouHerHim(CHARACTER)], that culture might have now have been extinguished"
  nick_nikephoros:0 "Nikēphóros"
  nick_nikephoros_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] esteemed for [CharYourHerHis(CHARACTER)] many victories in battle or personal duels. The soldiers under [CHARACTER.GetShortUINameNoTooltipNoFormat|U]'s command march to battle confident in victory."
  nick_poietes:0 "Poiētēs"

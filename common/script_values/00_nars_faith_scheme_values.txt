@@ -1,0 +1,51 @@
+﻿nars_faith_conversion_resistance_value = {
+	value = 0
+	if = {
+		limit = { has_trait = zealous }
+		add = 20
+	}
+	if = {
+		limit = { has_trait = theologian }
+		add = 15
+	}
+	if = {
+		limit = { has_trait = stubborn }
+		add = 15
+	}
+	if = {
+		limit = { has_trait = arbitrary }
+		add = 10
+	}
+	if = {
+		limit = { has_trait = arrogant }
+		add = 10
+	}
+	if = {
+		limit = { has_trait = honest }
+		add = 5
+	}
+	if = {
+		limit = { has_trait = cynical }
+		subtract = 20
+	}
+	if = {
+		limit = { has_trait = greedy }
+		subtract = 15
+	}
+	if = {
+		limit = { has_trait = craven }
+		subtract = 15
+	}
+	if = {
+		limit = { has_trait = content }
+		subtract = 10
+	}
+	if = {
+		limit = { has_trait = deceitful }
+		subtract = 10
+	}
+	if = {
+		limit = { has_trait = trusting }
+		subtract = 5
+	}
+}

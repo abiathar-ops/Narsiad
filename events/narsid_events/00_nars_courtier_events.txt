@@ -74,25 +74,24 @@ nars_courtiers.0001 = {
 				culture = culture:selian
 				faith = faith:nars_religion
 				random_traits_list = {
-					count = 2
-					wrathful = {}
-					arrogant = {}
-					diligent = {}
-					humble = {}
-					calm = {}
-					impatient = {}
-					greedy = {}
-					temperate = {}
-					ambitious = {}
-					just = {}
-					stubborn = {}
-				}
-				random_traits_list = {
-					count = 1
-					lustful = {}
-					arrogant = {}
-					chaste = {}
-				}
+                    count = 2
+                    diligent = {}
+                    impatient = {}
+                    greedy = {}
+                    temperate = {}
+                    ambitious = {}
+                    just = {}
+                    stubborn = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    wrathful = {}
+                    calm = {}
+                    lustful = {}
+                    arrogant = {}
+                    chaste = {}
+                    humble = {}
+                }
 				random_traits_list = {
 					count = 1
 					education_martial_2 = {}
@@ -208,6 +207,70 @@ nars_courtiers.0003 = {
 	}
 }
 
+nars_courtiers.9000 = {
+    hidden = yes
+
+    immediate = {
+        while = {
+            count = 5
+            create_character = {
+                employer = root
+                location = root.capital_province
+                culture = culture:selian
+                faith = faith:nars_religion
+                random_traits_list = {
+                    count = 2
+                    diligent = {}
+                    impatient = {}
+                    greedy = {}
+                    temperate = {}
+                    ambitious = {}
+                    just = {}
+                    stubborn = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    wrathful = {}
+                    calm = {}
+                    lustful = {}
+                    arrogant = {}
+                    chaste = {}
+                    humble = {}
+                }
+                random_traits_list = {
+                    count = 1
+                    education_martial_2 = {}
+                    education_martial_3 = {}
+                    education_martial_4 = {}
+                    education_learning_2 = {}
+                    education_learning_3 = {}
+                    education_learning_4 = {}
+                    education_stewardship_2 = {}
+                    education_stewardship_3 = {}
+                    education_stewardship_4 = {}
+                }
+                random_traits_list = {
+                    count = { 0 1 }
+                    lifestyle_blademaster = {}
+                    lifestyle_herbalist = {}
+                    scholar = {}
+                    lifestyle_poet = {}
+                }
+                learning = { 10 20 }
+                intrigue = { 10 20 }
+                stewardship = { 10 20 }
+                martial = { 10 20 }
+                prowess = { 10 30 }
+                gender_female_chance = 50
+                after_creation = {
+                    add_trait = nars_naturalis
+                    nars_naturalis_set_tier_xp_effect = yes
+                }
+            }
+        }
+    }
+}
+
 #polimetis
 nars_courtiers.0011 = {
     type = character_event
@@ -247,20 +310,20 @@ nars_courtiers.0011 = {
                 random_traits_list = {
                     count = 2
                     diligent = {}
-					just = {}
-                    calm = {}
-					patient = {}
+                    impatient = {}
                     greedy = {}
-					stubborn = {}
                     temperate = {}
                     ambitious = {}
-                    vengeful = {}
+                    just = {}
+                    stubborn = {}
                 }
                 random_traits_list = {
                     count = 1
+                    wrathful = {}
+                    calm = {}
                     lustful = {}
-                    chaste = {}
                     arrogant = {}
+                    chaste = {}
                     humble = {}
                 }
                 random_traits_list = {
@@ -333,20 +396,20 @@ nars_courtiers.0011 = {
                 random_traits_list = {
                     count = 2
                     diligent = {}
-					just = {}
-                    calm = {}
-					patient = {}
+                    impatient = {}
                     greedy = {}
-					stubborn = {}
                     temperate = {}
                     ambitious = {}
-                    vengeful = {}
+                    just = {}
+                    stubborn = {}
                 }
                 random_traits_list = {
                     count = 1
+                    wrathful = {}
+                    calm = {}
                     lustful = {}
-                    chaste = {}
                     arrogant = {}
+                    chaste = {}
                     humble = {}
                 }
                 random_traits_list = {
@@ -663,8 +726,8 @@ nars_courtiers.0021 = {
 			} 
 
 			while = {
-				count = 4
-				trigger_event = nars_courtiers.0002
+				count = 2
+				trigger_event = nars_courtiers.9000
 			}
 
             spawn_army = {
@@ -763,167 +826,3 @@ nars_courtiers.0022 = {
         remove_variable = selian_sponsor
     }
 }
-
-namespace = nars_gunpowder
-
-nars_gunpowder.1001 = {
-	type = character_event
-	title = nars_gunpowder.1001.t
-	desc = nars_gunpowder.1001.desc
-	theme = emperor
-	override_background = bp1_courtyard_mena
-	override_effect_2d = { reference = smoke }
-
-	left_portrait = {
-		character = root
-		animation = debating
-	}
-	right_portrait = {
-		character = scope:aide
-		animation = war_over_tie
-	}
-
-	immediate = {
-		if = {
-			limit = { exists = cp:councillor_marshal }
-			cp:councillor_marshal = { save_scope_as = aide }
-		}
-		else_if = {
-			limit = { exists = cp:councillor_steward }
-			cp:councillor_steward = { save_scope_as = aide }
-		}
-		else_if = {
-			limit = { any_councillor = { } }
-			random_councillor = { save_scope_as = aide }
-		}
-		else_if = {
-			limit = { vassal_count >= 1 }
-			ordered_vassal = {
-				order_by = martial
-				save_scope_as = aide
-			}
-		}
-		else_if = {
-			limit = { any_courtier = { is_alive = yes } }
-			ordered_courtier = {
-				order_by = martial
-				save_scope_as = aide
-			}
-		}
-		else = {
-			random_pool_character = {
-				province = root.capital_province
-				limit = { is_adult = yes }
-				save_scope_as = aide
-			}
-		}
-	}
-
-	option = { #Use the city's native capabilities
-		name = nars_gunpowder.1001.a
-		trigger = {
-			influence >= major_influence_value
-		}
-		show_as_unavailable = { influence < massive_influence_value }
-		save_scope_as = actor
-		add_character_flag = {
-			flag = took_decision_munitions_research_flag
-			years = 10
-		}
-		begin_scheme_with_agents_effect = {
-			SCHEME_TYPE = munitions_research_scheme
-			TARGET_TYPE = target_title
-			TARGET_SCOPE = root.capital_county
-			AGENT_1 = agent_alchemist
-			AGENT_2 = agent_draughtsman
-			AGENT_3 = agent_drillmaster
-			AGENT_4 = agent_supplier
-			AGENT_5 = agent_bureaucrat_title
-		}
-		custom_tooltip = munitions_research_success_tooltip
-		change_influence = major_influence_loss
-		
-		stress_impact = {
-			compassionate = medium_stress_impact_gain
-			calm = miniscule_stress_impact_gain
-			content = miniscule_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_energy = 0.5
-			}
-			modifier = {
-				factor = 0
-				influence < massive_influence_value
-			}
-		}
-	}
-	option = { #Hire foreign craftsmen to manufacture it
-		name = nars_gunpowder.1001.b
-		trigger = {
-			treasury >= major_gold_value_static_max
-		}
-		show_as_unavailable = { treasury < massive_gold_value_static_max }
-		save_scope_as = actor
-		add_character_flag = {
-			flag = took_decision_munitions_research_flag
-			years = 10
-		}
-		begin_scheme_with_agents_effect = {
-			SCHEME_TYPE = munitions_research_scheme
-			TARGET_TYPE = target_title
-			TARGET_SCOPE = root.capital_county
-			AGENT_1 = agent_alchemist
-			AGENT_2 = agent_draughtsman
-			AGENT_3 = agent_drillmaster
-			AGENT_4 = agent_supplier
-			AGENT_5 = agent_bureaucrat_title
-		}
-		custom_tooltip = munitions_research_success_tooltip
-		remove_treasury_or_gold = major_gold_value_static_max
-		
-		stress_impact = {
-			compassionate = medium_stress_impact_gain
-			paranoid = minor_stress_impact_gain
-			calm = miniscule_stress_impact_gain
-			content = miniscule_stress_impact_gain
-		}
-		ai_chance = {
-			base = 100
-			ai_value_modifier = {
-				ai_greed = -0.5
-			}
-			modifier = {
-				factor = 0
-				treasury < massive_gold_value_static_max
-			}
-		}
-	}
-
-	option = { #Actually... never mind
-		name = nars_gunpowder.1001.c
-		remove_global_variable = flag_munitions_research_done
-		remove_from_global_variable_list = {
-			name = unavailable_unique_decisions
-			target = flag:flag_munitions_research_done
-		}
-		stress_impact = {
-			sadistic = minor_stress_impact_gain
-			callous = miniscule_stress_impact_gain
-			ambitious = miniscule_stress_impact_gain
-		}
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				OR = {
-					has_trait = compassionate
-					has_trait = calm
-					has_trait = content
-				}
-			}
-		}
-	}
-}
-
