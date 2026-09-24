@@ -453,47 +453,6 @@ nars_conqueror.0500 = {
 	}
 }
 
-#Gain Logistician
-nars_conqueror.0600 = {
-	hidden = yes
-
-	trigger = {
-		NOT = {
-			any_courtier = {
-				count > 2
-				has_trait = logistician
-			}
-		}
-	}
-
-	immediate = {
-		recruit_terrain_specialist_effect = {
-			SPECIALIST_TRAIT = logistician
-			SPECIALIST_TEMPLATE_CHARACTER = selian_template.1002
-		}
-		scope:new_commander = {
-			if = {
-				limit = {
-					NOT = {
-						has_trait = logistician
-					}
-				}
-				add_trait = logistician
-			}
-		}
-		send_interface_message = {
-			type = event_diplomacy_good_with_text
-			title = nars_conqueror_feed_logistician
-			desc = nars_conqueror_feed_logistician_desc
-			left_icon = scope:new_commander
-			show_as_tooltip = {
-				add_courtier = scope:new_commander
-			}
-		}
-	}
-}
-
-
 # Proper Events
 scripted_trigger happy_vassal_trigger = {
 	is_available_ai_adult = yes

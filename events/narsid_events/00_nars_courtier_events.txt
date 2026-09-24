@@ -590,8 +590,7 @@ nars_courtiers.0011 = {
 	}
 }
 
-#Mercs
-
+#Merc Expedition
 nars_courtiers.0025 = {
     type = character_event
     hidden = yes

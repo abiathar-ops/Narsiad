@@ -81,10 +81,6 @@
  nars_faith.0006.b.flavor: "Not now, but our faith #emp will#! spread in time."
  nars_faith.0007.desc: "Terrible tidings!\n\nNews has come from the land of [pagan.GetCulture.GetCollectiveNounNoTooltip] and, apparently, my missionary [evangelizer.GetFirstName] was killed but the barbarian [pagan.GetTitledFirstName], who wasn't satisfied with rebuking any conversion attempts, but went as far as committing the final desecration and murder a [evangelizer.GetWomanMan] of God!"
  nars_faith.0007.a: "Outrageous!"
- nars_faith.0008.a: "So be it."
- nars_faith.0004.t: "" #AI event, leave empty
- nars_faith.0004.desc: "" #AI event, leave empty
- nars_faith.0004.a: "" #AI event, leave empty
 
  nars_nickname.0010.t:0 "Êthos Dokímaze"
  nars_nickname.0010.desc:0 "To choose an epithet is to carve one's essence into the annals of our shared history. How shall I be remembered by my peers, and what legacy shall I leave for posterity?\n\n#flavor "He took the title of [Glossary( 'Hēgemon', 'HEGEMONIA_GLOSS' )], a term signifying something more than human. In this way, the power of the people passed entirely into the hands of his personage." - $alnars_anduril$"

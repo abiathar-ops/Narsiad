@@ -1,16 +1,5 @@
 namespace = nars_maintenance
 
-nars_maintenance.0001 = {
-    type = character_event
-    hidden = yes
-    
-    immediate = {
-        hidden_effect = {
-            nars_apply_setup_effect = yes
-        }
-    }
-}
-
 nars_maintenance.0002 = {
     type = character_event
     hidden = yes

@@ -2,6 +2,7 @@ ongoing_nars_conqueror_events = {
 	random_events = {
 		50 = 0
 		100 = nars_conqueror.1100 
+		100 = nars_conqueror.1200
 		100 = nars_conqueror.1300
 		100 = nars_conqueror.1400
 		100 = nars_conqueror.1500

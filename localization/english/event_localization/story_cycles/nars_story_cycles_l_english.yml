@@ -3,10 +3,7 @@
  story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
  nars_char: "[Story.GetOwner.GetTitledFirstName]"
  NARS_CHAR_LABEL: "#v You#! are of $game_concept_selianes$!"
- NARSOKRATIA_COUNTER_TOOLTIP: "[Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] [title_rank|E] determines the hierarchial position of your sovereign realm in the wider region. As you expand your [domain|E] and elevate your [realm|E] [title_tier|E], your legitimate authority over the scattered [selianes|E] solidifies, bringing you ever closer to the restoration of the ancient [hegemony|E].
- NARSOKRATIA_VALUE_LABEL: "[Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] [title_rank|E]"
- NARSOKRATIA_VALUE_MIN_LABEL: "[unlanded|E]"
- NARSOKRATIA_VALUE_MAX_LABEL: "[hegemony|E]"
+
  story_nars_conqueror: "Nikátōr"
  story_nars_conqueror_desc: "The living instrument of the Selian' toil, heralding an era of eternal, ever-victorious restoration."
  

@@ -144,6 +144,12 @@
 		WaterGodHerHis = CHARACTER_HERHIS_HIS
 		WaterGodHerHim = CHARACTER_HERHIM_HIM
 
+		SunGodName = nars_sun_god_name
+		SunGodNamePossessive =nars_sun_god_name_possessive
+		SunGodSheHe = CHARACTER_SHEHE_HE
+		SunGodHerHis = CHARACTER_HERHIS_HIS
+		SunGodHerHim = CHARACTER_HERHIM_HIM
+	
 		PantheonTerm = nars_high_god_name
 		PantheonTerm2 = nars_high_god_name_2
 		PantheonTerm3 = nars_high_god_name_3
@@ -231,6 +237,7 @@
 			#icon = dhyana
 
 			holy_site = cagliari
+			holy_site = ajaccio
     		holy_site = iglesias
     		holy_site = arborea
     		holy_site = gallura

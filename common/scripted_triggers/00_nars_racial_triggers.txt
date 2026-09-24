@@ -9,10 +9,6 @@ is_ethnically_selian = {
 	has_ethnicity = selianes
 }
 
-has_selian_blood = {
-    has_trait = nars_naturalis
-}
-
 is_archaic = {
     custom_tooltip = {
         text = is_considered_archaic

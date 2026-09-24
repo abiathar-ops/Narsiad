@@ -1057,37 +1057,3 @@ nars_religious.3030 = {
 		}
 	}
 }
-
-# Cynical to Zealous
-nars_religious.3051 = {
-    type = character_event
-    title = nars_religious.3051.t
-    desc = nars_religious.3051.desc
-    theme = nars_faith
-
-    option = {
-        name = nars_religious.3051.a
-        flavor = nars_religious.3051.a.flavor
-    }
-    option = {
-        name = nars_religious.3051.b
-        flavor = nars_religious.3051.b.flavor
-    }
-}
-
-# Zealous to Cynical
-nars_religious.3052 = {
-    type = character_event
-    title = nars_religious.3052.t
-    desc = nars_religious.3052.desc
-    theme = nars_faith
-
-    option = {
-        name = nars_religious.3052.a
-        flavor = nars_religious.3052.a.flavor
-    }
-    option = {
-        name = nars_religious.3052.b
-        flavor = nars_religious.3052.b.flavor
-    }
-}

@@ -4,8 +4,3 @@ can_recruit_nars_t2_trigger = {
 	top_liege = yes
 	exists = global_var:mastiges_recruitable
 }
-
-#### MAA ART TRIGGERS ####
-selian_maa_art_trigger = {
-	culture = { has_cultural_pillar = heritage_nars }
-}

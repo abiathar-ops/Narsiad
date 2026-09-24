@@ -1,6 +1,7 @@
 ﻿namespace = nars_faith
 
 # Impose Selian Tradition
+# ORPHANED 
 nars_faith.9000 = {
 	hidden = yes
 	type = character_event
@@ -27,7 +28,6 @@ nars_faith.9000 = {
 }
 
 # Sponsor Missionaries
-
 nars_faith.0001 = {
     type = character_event
     title = nars_faith.0001.t

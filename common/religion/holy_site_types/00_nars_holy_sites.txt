@@ -214,7 +214,7 @@ sunda = {
 	county = c_JAV_sunda
 
 	character_modifier = {
-		name = holy_site_c_JAV_sunda_effect_name
+		name = holy_site_sunda_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -224,7 +224,7 @@ cimanuk = {
 	county = c_JAV_cimanuk
 
 	character_modifier = {
-		name = holy_site_c_JAV_cimanuk_effect_name
+		name = holy_site_cimanuk_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -234,7 +234,7 @@ galuh = {
 	county = c_JAV_galuh
 
 	character_modifier = {
-		name = holy_site_c_JAV_galuh_effect_name
+		name = holy_site_galuh_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -255,7 +255,7 @@ keling = {
 	barony = b_jav_keling
 
 	character_modifier = {
-		name = holy_site_b_jav_keling_effect_name
+		name = holy_site_keling_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -266,7 +266,7 @@ dieng = {
 	barony = b_dieng
 
 	character_modifier = {
-		name = holy_site_b_dieng_effect_name
+		name = holy_site_dieng_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -276,7 +276,7 @@ janggala = {
 	county = c_JAV_janggala
 
 	character_modifier = {
-		name = holy_site_c_JAV_janggala_effect_name
+		name = holy_site_janggala_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -286,7 +286,7 @@ lumajang = {
 	county = c_JAV_lumajang
 
 	character_modifier = {
-		name = holy_site_c_JAV_lumajang_effect_name
+		name = holy_site_lumajang_effect_name
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -296,7 +296,7 @@ baghdad = {
     county = c_baghdad
     barony = b_baghdad
     character_modifier = {
-        name = holy_site_b_baghdad_effect_name
+        name = holy_site_baghdad_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -306,7 +306,7 @@ ukbara = {
     county = c_baghdad
     barony = b_ukbara
     character_modifier = {
-        name = holy_site_b_ukbara_effect_name
+        name = holy_site_ukbara_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -316,7 +316,7 @@ an_nahrawan = {
     county = c_baghdad
     barony = b_an-nahrawan
     character_modifier = {
-        name = holy_site_b_an-nahrawan_effect_name
+        name = holy_site_an_nahrawan_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -326,7 +326,7 @@ iskaf = {
     county = c_iskaf
     barony = b_iskaf
     character_modifier = {
-        name = holy_site_b_iskaf_effect_name
+        name = holy_site_iskaf_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -336,7 +336,7 @@ kaskar = {
     county = c_wasit
     barony = b_kaskar
     character_modifier = {
-        name = holy_site_b_kaskar_effect_name
+        name = holy_site_kaskar_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -346,7 +346,7 @@ wasit = {
     county = c_wasit
     barony = b_wasit
     character_modifier = {
-        name = holy_site_b_wasit_effect_name
+        name = holy_site_wasit_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -356,7 +356,7 @@ ar_rusafa = {
     county = c_rusafa
     barony = b_ar-rusafa-iraq
     character_modifier = {
-        name = holy_site_b_ar-rusafa-iraq_effect_name
+        name = holy_site_ar_rusafa_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -366,7 +366,7 @@ al_qatr = {
     county = c_rusafa
     barony = b_al-qatr
     character_modifier = {
-        name = holy_site_b_al-qatr_effect_name
+        name = holy_site_al_qatr_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -376,7 +376,7 @@ nahr_simmara = {
     county = c_rusafa
     barony = b_nahr_simmara
     character_modifier = {
-        name = holy_site_b_nahr_simmara_effect_name
+        name = holy_site_nahr_simmara_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -386,7 +386,7 @@ bayan = {
     county = c_abbadan
     barony = b_bayan
     character_modifier = {
-        name = holy_site_b_bayan_effect_name
+        name = holy_site_bayan_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -396,7 +396,7 @@ abbadan = {
     county = c_abbadan
     barony = b_abbadan
     character_modifier = {
-        name = holy_site_b_abbadan_effect_name
+        name = holy_site_abbadan_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -406,7 +406,7 @@ sarsar = {
     county = c_baghdad
     barony = b_sarsar
     character_modifier = {
-        name = holy_site_b_sarsar_effect_name
+        name = holy_site_sarsar_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -416,7 +416,7 @@ al_farasa = {
     county = c_baghdad
     barony = b_al-farasa
     character_modifier = {
-        name = holy_site_b_al-farasa_effect_name
+        name = holy_site_al_farasa_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -426,7 +426,7 @@ humaniya = {
     county = c_iskaf
     barony = b_humaniya
     character_modifier = {
-        name = holy_site_b_humaniya_effect_name
+        name = holy_site_humaniya_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -436,7 +436,7 @@ an_numaniya = {
     county = c_wasit
     barony = b_an-numaniya
     character_modifier = {
-        name = holy_site_b_an-numaniya_effect_name
+        name = holy_site_an_numaniya_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -446,7 +446,7 @@ as_saliq = {
     county = c_batiha
     barony = b_as-saliq
     character_modifier = {
-        name = holy_site_b_as-saliq_effect_name
+        name = holy_site_as_saliq_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -456,7 +456,7 @@ matara = {
     county = c_ubulla
     barony = b_matara-iraq
     character_modifier = {
-        name = holy_site_b_matara-iraq_effect_name
+        name = holy_site_matara_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -466,7 +466,7 @@ al_ubulla = {
     county = c_ubulla
     barony = b_al-ubulla
     character_modifier = {
-        name = holy_site_b_al-ubulla_effect_name
+        name = holy_site_al_ubulla_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -476,7 +476,7 @@ bajlan = {
     county = c_basra
     barony = b_bajlan
     character_modifier = {
-        name = holy_site_b_bajlan_effect_name
+        name = holy_site_bajlan_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -486,7 +486,7 @@ niani = {
     county = c_niani
     barony = b_niani
     character_modifier = {
-        name = holy_site_b_niani_effect_name
+        name = holy_site_niani_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -496,7 +496,7 @@ jelibakoro = {
     county = c_kankan
     barony = b_jelibakoro
     character_modifier = {
-        name = holy_site_b_jelibakoro_effect_name
+        name = holy_site_jelibakoro_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -506,7 +506,7 @@ suguiri = {
     county = c_bure
     barony = b_suguiri
     character_modifier = {
-        name = holy_site_b_suguiri_effect_name
+        name = holy_site_suguiri_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -516,7 +516,7 @@ kangaba = {
     county = c_tabon
     barony = b_kangaba
     character_modifier = {
-        name = holy_site_b_kangaba_effect_name
+        name = holy_site_kangaba_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -526,7 +526,7 @@ figuira = {
     county = c_niani
     barony = b_figuira
     character_modifier = {
-        name = holy_site_b_figuira_effect_name
+        name = holy_site_figuira_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -536,7 +536,7 @@ dakajalan = {
     county = c_dakajalan
     barony = b_dakajalan
     character_modifier = {
-        name = holy_site_b_dakajalan_effect_name
+        name = holy_site_dakajalan_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -546,7 +546,7 @@ kirina = {
     county = c_sibi_mali
     barony = b_kirina
     character_modifier = {
-        name = holy_site_b_kirina_effect_name
+        name = holy_site_kirina_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -556,7 +556,7 @@ tamani = {
     county = c_dodugu
     barony = b_tamani
     character_modifier = {
-        name = holy_site_b_tamani_effect_name
+        name = holy_site_tamani_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -566,7 +566,7 @@ koulikoro = {
     county = c_sibi_mali
     barony = b_koulikoro
     character_modifier = {
-        name = holy_site_b_koulikoro_effect_name
+        name = holy_site_koulikoro_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
@@ -576,7 +576,7 @@ niamina = {
     county = c_dodugu
     barony = b_niamina
     character_modifier = {
-        name = holy_site_b_niamina_effect_name
+        name = holy_site_niamina_effect_name
         monthly_county_control_growth_factor = 0.05
         development_growth_factor = 0.05
     }
