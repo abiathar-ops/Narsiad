@@ -1,22 +1,22 @@
 ﻿l_english: 
- establish_nars_building_no_barony_tt: "You or one of your [direct_vassals|E] in your [realm|E] must hold a [barony|E] that does not already have a [special_building|E] slot"
+ establish_nars_building_no_barony_tt: "You or one of your [direct_vassals|E] in your [realm|E] must currently hold a [barony|E] that does not, at this time, already have a [special_building|E] slot"
 
  decision_establish_archive: "Establish Archiving Citadel"
- decision_establish_archive_desc: "The $game_concept_selians$ possess a tradition that espouses learning, and yet it's now undeniable that our time in exile has left gaps in our knowledge. I shall expend riches to establish an innovating [GetBuilding('aretaic_school_02').GetName] for [education|E].\n\n#flavor "The roots of learning are bitter, but the fruit is sweet." - $alnars_anduril$#!"
+ decision_establish_archive_desc: "The $game_concept_selians$ possess a tradition that espouses learning, and yet it's now undeniable that our time in exile has left gaps in our knowledge. I shall expend riches to establish an innovating #v [GetBuilding('aretaic_school_02').GetName]#! for [education|E].\n\n#flavor "The roots of learning are bitter, but the fruit is sweet." - $alnars_anduril$#!"
  decision_establish_archive_tooltip: "Found a university for the pursuit of [innovation|E]"
  decision_establish_archive_effect_tooltip: "A [special_building|E] slot will be added to a [barony|E] of one of your [barony|E] and the #V Aretaiké Scholí#! will be available to be constructed"
  decision_establish_archive_confirm: "Select a Barony!"
- pick_aretaic_school_barony: "Pick the Archive's Location"
- pick_aretaic_school_barony_desc: "The intent is clear and my people inspired. My lands and realm are ripe for a new school of archive, but where exactly should it be built?"
+ pick_aretaic_school_barony: "$decision_establish_archive$"
+ pick_aretaic_school_barony_desc: "$decision_establish_archive_desc$"
  pick_aretaic_school_barony_confirm: "Clear the grounds!"
 
  decision_establish_brothel: "Open a Brothel-Complex"
- decision_establish_brothel_desc: "It is undeniable that ethnic $game_concept_selianes$ are few in numbers. I shall expend some of our riches to establish a building to flourish our fertilities. A [GetBuilding('brothel_complex_02').GetName], brothel-complexes fit to espouse certain necessary ideas. To [enuo|E], Aspect of [fertility|E], I dedicate this."
+ decision_establish_brothel_desc: "It is undeniable that ethnic $game_concept_selianes$ are few in numbers. The way forward is clear, I will expend our riches to establish a building to raise and soon flourish our numbers. A #V [GetBuilding('brothel_complex_02').GetName]#!, a brothel-complex fit to espouse certain necessary ideas. To divine, fecund [enuo|E], I dedicate this hard toil.\n\n#flavor "Muse, tell me the deeds of $game_concept_enuo$... who stirs up passion in the tribes of men, and the birds that fly in the air, and all the many creatures that dry land rears; she casts desire into their breasts, so that they all mate, two together, throughout the shadowy vales." - $alnars_anduril$#!"
  decision_establish_brothel_tooltip: "Found a [building|E] dedicated to the pursuit of [fertility|E]"
  decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to one of your [barony|E] and the #V Hedonēion#! will be available to be constructed"
  decision_establish_brothel_confirm: "Select a Barony!"
- pick_brothel_barony: "Pick the Brothel's Location"
- pick_brothel_barony_desc: "The intent is clear and my people inspired. My lands are ripe for new schools of archives for my [realm|E], but where exactly should it be built?"
+ pick_brothel_barony: "$decision_establish_brothel$"
+ pick_brothel_barony_desc: "$decision_establish_brothel_desc$"
  pick_brothel_barony_confirm: "Clear the grounds!"
 
  pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
@@ -68,7 +68,7 @@
 
  decision_sponsor_missionaries: "Sponsor Missionaries"
  decision_sponsor_missionaries_desc: "There are still pockets in my realm that cling to foreign gods and foreign ways. Gold and bribes #emp could#! succeed where the sword should not have to.\n\n#flavor "Faith moves mountains, yes, but gold moves men." - $alnars_anduril$#!"
- decision_sponsor_missionaries_effect_tooltip: "You start a #v [GetScheme('sponsor_missionaries_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ On success, unconverted [counties|E] will convert to your [faith|E]\n$EFFECT_LIST_BULLET$ May gain [piety_i][piety|E] and [opinion_i|E][opinion|E] per #v Conversion#! attempts\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ Costs [gold_i][gold|E] and [control_i|e][control|E] per #v Conversion#! attempts"
+ decision_sponsor_missionaries_effect_tooltip: "You start a #v [GetScheme('sponsor_missionaries_scheme').GetTypeName] [scheme|E]#! targeting yourself indefinitely:\n\nAnticipated Rewards:\n$EFFECT_LIST_BULLET$ On success, unconverted [counties|E] will convert to your [faith|E]\n$EFFECT_LIST_BULLET$ May gain [piety_i][piety|E] per #v Conversion#! attempts\n\nDrawbacks:\n$EFFECT_LIST_BULLET$ Costs [gold_i][gold|E] and [control_i|e][control|E] per #v Conversion#! attempts"
  decision_sponsor_missionaries_tooltip: "Fund missionaries to convert the unconverted pockets of your realm"
  decision_sponsor_missionaries_req_tt: "[counties|E] in your [realm|E] that qualifies still exists"
  decision_sponsor_missionaries_ongoing: "You are already performing a [GetScheme('sponsor_missionaries_scheme').GetTypeName] [scheme|E]"

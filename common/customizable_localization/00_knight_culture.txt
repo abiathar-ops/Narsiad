@@ -3,6 +3,12 @@
 	
 	text = {
 		trigger = {
+			culture = { has_cultural_pillar = heritage_nars }
+		}
+		localization_key = knight_nars #CONFLICT
+	}
+	text = {
+		trigger = {
 			has_government = landless_adventurer_government
 			NOR = {
 				has_trait = knight_errant
@@ -81,12 +87,6 @@
 			}
 		}
 		localization_key = knight_champion
-	}
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = heritage_nars }
-		}
-		localization_key = knight_nars #CONFLICT
 	}
 	text = {
 		localization_key = knight_default
