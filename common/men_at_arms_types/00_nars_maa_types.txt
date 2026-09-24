@@ -68,7 +68,7 @@ nars_t1 = {
 #Unlockable via Decision
 
 nars_t2 = {
-    type = gunpowder
+    type = heavy_infantry
     
     can_recruit = {
 	    can_recruit_maa_02_trigger = yes

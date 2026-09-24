@@ -304,9 +304,6 @@ decision_narsokratia = {
         is_ethnically_selian = yes
         is_selian = yes
         highest_held_title_tier >= tier_kingdom
-        dynasty = {
-            NOT = { has_dynasty_modifier = narsokratia_dynasty_modifier }
-        }
         NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions

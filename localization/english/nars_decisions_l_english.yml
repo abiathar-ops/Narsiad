@@ -1,8 +1,4 @@
 ﻿l_english: 
- # ── EXISTING ENTRIES (unchanged) ──
- narsokratia_kingdom_above: "Your [realm|E] requires a [rank|E] of [kingdom|E] or above!"
-  
- # ── Construction ──
  establish_nars_building_no_barony_tt: "You or one of your [direct_vassals|E] in your [realm|E] must hold a [barony|E] that does not already have a [special_building|E] slot"
 
  decision_establish_archive: "Establish Archiving Citadel"
@@ -26,46 +22,6 @@
  pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 
  establish_brothel_cooldown_tt: "$decision_establish_brothel$ is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'establish_brothel_cooldown' ))]"
- # ── Foundries ──
-
- decision_munitions_research: "Found the Mástiges"
- decision_munitions_research_desc: "A new substance has been disbursed from the distant [regions|E] of [GetTitleByKey('h_china').GetNameNoTier]. A black powder that is known to hold untold potential. These 'firearms' may be reliably deployed if properly researched, and already my [marshal|E] keeps droning about the potential of equipping my [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] with them."
- decision_munitions_research_tooltip: "Enable the recruitment of [GetMaA('nars_t2').GetName] [men_at_arms|E] armed with new armaments!"
- decision_munitions_research_confirm: "Blood and iron!"
-
- munitions_research_capital_unoccupied_tt: "[capital|E] is not [occupied|E]"
- munitions_research_3_years_tooltip: "If you complete the [GetScheme('munitions_research_scheme').GetTypeName] [scheme|E], your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
- munitions_research_mastiges_tooltip: "Unlocks the recruitment of the [GetMaA('nars_t2').GetName] [men_at_arms|E]"
- munitions_research_success_tooltip: "On Success, your [capital|E] will gain [GetModifier('munitions_research_modifier').GetNameWithTooltip] for #high 30 years#!"
-
- decision_raise_warhost: "Sponsor an Incursion"
- narsil_mended_tt: "[narsil|E] has been mended by a [selian|E]"
- # ── Imperial Decisions ──
-
- decision_selian_imperial_administration: "Issue Imperial Decrees"
- decision_selian_imperial_administration_desc: "As the [ruler|E] of an [empire|E] held by the [selianes|E], the vast machinery of the [realm|E] rests solely in my hands. The old [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] of yore had thrived because it directed its boundless resources with calculated precision. It is precisely why I must issue decrees to secure our desired [hegemony|E]!"
- decision_selian_imperial_administration_tooltip: "Issue a grand decree to bolster the administration of your Empire"
- decision_selian_imperial_administration_confirm: "Send the edict!"
-  
- nars_realm_1_decision_name: "Develop Industry"
- nars_realm_1_decision_desc: "Invest heavily in the development of [buildings|E] of our great empire."
- nars_realm_1_decision_tooltip: "Invest in the [development|E] of [buildings|E] of the [realm|E]!"
- nars_realm_1_cooldown_tt: "Develop Industry is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nars_realm_1_cooldown' ))]"
- change_to_nars_realm_1_decision_desc_1: "$industrial_boom_province_tt$"
-
- nars_realm_2_decision_name: "Hire Synods"
- nars_realm_2_decision_desc: "Establish a sprawling, invisible web of operatives to act as your yes and ears."
- nars_realm_2_decision_tooltip: "Establish an invisible web of intrigue for [control|E]!"
- nars_realm_2_cooldown_tt: "Hire Synods is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nars_realm_2_cooldown' ))]"
- change_to_nars_realm_2_decision_desc_1: "$spy_network_province_tt$"
-
- nars_realm_3_decision_name: "Distribute Propaganda"
- nars_realm_3_decision_desc: "Dispatch orators to weave a narrative to gain [county_opinion|E]!"
- nars_realm_3_decision_tooltip: "Dispatch orators to weave a narrative to gain [county_opinion|E]!"
- nars_realm_3_cooldown_tt: "Distribute Propaganda is on cooldown for [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'nars_realm_3_cooldown' ))]"
- change_to_nars_realm_3_decision_desc_1: "$selian_propaganda_province_tt$"
-
- # ── NEW DECISIONS ──
 
  decision_take_epithet: "Adopt Epithet"
  decision_take_epithet_desc: "Notable $game_concept_selianes$ had epithets that reflect the deeds or temperaments remembered by the populace for posterity. It is time to decide on mine.\n\n#flavor "The $game_concept_selianes$, it is true, give some surnames from deeds, some from virtues, and some from good fortune. For it is not titles that make men illustrious, but men who make titles illustrious." - $alnars_anduril$#!"
@@ -117,4 +73,3 @@
  decision_sponsor_missionaries_req_tt: "[counties|E] in your [realm|E] that qualifies still exists"
  decision_sponsor_missionaries_ongoing: "You are already performing a [GetScheme('sponsor_missionaries_scheme').GetTypeName] [scheme|E]"
  decision_sponsor_missionaries_confirm: "Honour #emp our#! providence"
-
