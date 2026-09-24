@@ -252,7 +252,7 @@ nars_intro.0001 = {
             scope:eleios = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
-                    name = d_laamp_nars_1001
+                    name = d_laamp_nars_0001
                     article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
@@ -288,7 +288,7 @@ nars_intro.0001 = {
                         holder = scope:new_landless_adventurer
                         change = scope:change
                     }
-                    set_title_name = d_laamp_nars_1001
+                    set_title_name = d_laamp_nars_0001
                     add_title_law = landless_adventurer_succession_law 
                 }
                 resolve_title_and_vassal_change = scope:change
@@ -340,7 +340,7 @@ nars_intro.0001 = {
             scope:ilione = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
-                    name = d_laamp_nars_1002
+                    name = d_laamp_nars_0002
                     article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
@@ -375,7 +375,7 @@ nars_intro.0001 = {
                         holder = scope:new_landless_adventurer
                         change = scope:change
                     }
-                    set_title_name = d_laamp_nars_1002
+                    set_title_name = d_laamp_nars_0002
                     add_title_law = landless_adventurer_succession_law 
                 }
                 resolve_title_and_vassal_change = scope:change
@@ -420,7 +420,7 @@ nars_intro.0001 = {
             scope:strato = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
-                    name = d_laamp_nars_1003
+                    name = d_laamp_nars_0003
                     article = DEFAULT_TITLE_NAME_ARTICLE
                     holder = scope:new_landless_adventurer
                     save_scope_as = new_title
@@ -455,7 +455,7 @@ nars_intro.0001 = {
                         holder = scope:new_landless_adventurer
                         change = scope:change
                     }
-                    set_title_name = d_laamp_nars_1003
+                    set_title_name = d_laamp_nars_0003
                     add_title_law = landless_adventurer_succession_law 
                 }
                 resolve_title_and_vassal_change = scope:change
@@ -631,6 +631,7 @@ nars_intro.0002 = {
         clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
         name = nars_intro.0002.a
         flavor = nars_intro.0002.a.flavor
+        add_internal_flag = special
         custom_tooltip = selian_diplomacy.tt
         hidden_effect = {
             selian_diplomacy_entreaty_effect = yes

@@ -83,8 +83,8 @@ h_narsokratia ={
 
 house_nars_1001 = h_narsokratia
 dyn_nars_1001 = h_narsokratia
-d_laamp_nars_1001 = h_narsokratia
-d_laamp_nars_1002 = h_narsokratia
-d_laamp_nars_1003 = h_narsokratia
+d_laamp_nars_0001 = h_narsokratia
+d_laamp_nars_0002 = h_narsokratia
+d_laamp_nars_0003 = h_narsokratia
 
 

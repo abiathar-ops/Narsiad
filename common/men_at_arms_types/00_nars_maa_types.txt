@@ -71,7 +71,7 @@ nars_t2 = {
     type = heavy_infantry
     
     can_recruit = {
-	    can_recruit_maa_02_trigger = yes
+	    can_recruit_nars_t2_trigger = yes
     }
 
     damage = 135

@@ -85,8 +85,7 @@ decision_piously_devote = {
 		is_archaic = yes
 	}
 
-	is_valid = {
-		piety_level >= 1	
+	is_valid = {	
 	}
 
 	is_valid_showing_failures_only = {
@@ -156,7 +155,6 @@ decision_mend_narsil = {
 
 	is_shown = {
 		is_selian = yes
-		highest_held_title_tier >= tier_kingdom
 		top_liege = this
 		is_capable_adult = yes
 		is_landed = yes
@@ -239,7 +237,6 @@ decision_produce_amphora = {
 	}
 
 	is_valid = {
-		is_imprisoned = no
 	}
 
 	is_valid_showing_failures_only = {
@@ -299,11 +296,10 @@ decision_narsokratia = {
 	cooldown = { months = 6 }
 
     is_shown = {
-        is_ruler = yes
         is_independent_ruler = yes
+		is_landed = yes
         is_ethnically_selian = yes
         is_selian = yes
-        highest_held_title_tier >= tier_kingdom
         NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions

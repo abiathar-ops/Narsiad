@@ -30,25 +30,3 @@ is_ideal_selian = {
 	}
 }
 
-is_narsocratic = {
-   culture = {
-        has_cultural_pillar = heritage_nars
-   }
-   or = {
-        highest_held_title_tier >= tier_kingdom
-        has_title = title:h_narsokratia
-   }
-}
-
-is_narsocratic_e_h = {
-    highest_held_title_tier >= tier_empire
-}
-
-is_narses_scion = {
-	AND = {
-		has_trait = nars_scion
-		is_selian = yes
-        is_archaic = yes
-	}
-}
-

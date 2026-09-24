@@ -26,8 +26,9 @@ enuo = {
 }
 
 politeion = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	alias = { politeion_possessive }
-	parent = archaic
+	parent = selian
 }
 
 narsil = {
