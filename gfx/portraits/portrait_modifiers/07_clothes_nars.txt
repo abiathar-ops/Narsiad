@@ -120,20 +120,26 @@
 			accessory = {
 				mode = add
 				gene = legwear
-				template = ccp7_nivkh_com_legwear
-				accessory = m_legwear_sec_ccp_nivkh_com_02
+				template = no_legwear
+				accessory = empty
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				accessory = empty
 			}
 			accessory = {
 				mode = add
 				gene = clothes
-				template = fp3_iranian_high_nobility_clothes
-				accessory = m_clothes_sec_fp3_iranian_nob_03_hi
+				template = ep2_religious_muslim_ihram_clothes
+				accessory = m_clothes_religious_ep2_muslim_hajj_02
 			}
 			accessory = {
 				mode = add
 				gene = hairstyles
-				template = ep3_byzantine_hairstyle
-				accessory = m_hair_ep3_byzantine_01
+				template = tgp_southeast_hairstyles
+				accessory = male_hair_fp2_iberian_muslim_03
 			}
 			accessory = {
 				mode = add

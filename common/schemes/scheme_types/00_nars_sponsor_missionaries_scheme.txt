@@ -57,31 +57,50 @@
 		scope:owner = {
 			trigger_event = nars_faith.0001
 			if = {
-                limit = { exists = scope:sponsor_missionaries_story }
-            	scope:sponsor_missionaries_story = {
-                change_variable = {
-                    name = sponsor_missionaries_success
-                    add = 1
-                    }
-                }
-                scope:owner = {
-                    set_variable = {
-                        name = sponsor_missionaries_success
-                        value = scope:sponsor_missionaries_story.var:sponsor_missionaries_success
-                    }
-                }
-                if = {
-                    limit = {
-                        scope:owner = {
-                        var:sponsor_missionaries_success >= 3
-                        }
-                    }
-                    scope:scheme = { end_scheme = yes }
-                    scope:sponsor_missionaries_story = { end_story = yes }
-                }
-            }
+				limit = { exists = scope:sponsor_missionaries_story }
+				scope:sponsor_missionaries_story = {
+					change_variable = {
+						name = sponsor_missionaries_success
+						add = 1
+					}
+				}
+				scope:owner = {
+					set_variable = {
+						name = sponsor_missionaries_success
+						value = scope:sponsor_missionaries_story.var:sponsor_missionaries_success
+					}
+				}
+				if = {
+					limit = {
+						scope:owner = {
+							var:sponsor_missionaries_success >= 3
+						}
+					}
+					scope:scheme = { end_scheme = yes }
+					scope:sponsor_missionaries_story = { end_story = yes }
+					scope:owner = {
+						add_character_flag = {
+							flag = cooldown_missionaries_flag
+							years = 10
+						}
+					}
+					save_scope_value_as = {
+						name = sponsor_missionaries_scheme_ended
+						value = yes
+					}
+				}
+			}
 		}
-		reset_scheme_progress = yes
+
+		# Only reset progress for another phase if the scheme did NOT just end above --
+		# end_scheme = yes does not immediately invalidate scope:scheme within this same
+		# effect execution, so an unconditional reset_scheme_progress here silently
+		# restarted the scheme's phase timer even after it "ended", leaving it running
+		# forever instead of stopping at 3 successes.
+		if = {
+			limit = { NOT = { exists = scope:sponsor_missionaries_scheme_ended } }
+			reset_scheme_progress = yes
+		}
 	}
 
 	on_invalidated = {

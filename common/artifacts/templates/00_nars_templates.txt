@@ -1,4 +1,4 @@
-narsil_template = {
+﻿narsil_template = {
 	can_equip = {
 		always = yes
 	}
@@ -59,6 +59,30 @@ anduril_template = {
 	fallback = {
 		stewardship = 5
 		monthly_piety = 0.5
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+ilyanil_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = yes
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		prowess = 5
+		monthly_prestige = 0.5
 	}
 	ai_score = {
 		value = 150

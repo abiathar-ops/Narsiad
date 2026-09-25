@@ -7,16 +7,18 @@
  settled_selian_dynasty_modifier_desc: "This [dynasty|E] has established itself among the [selians|E]"
  embraced_selian_traditions_modifier: "Embraced Selian Traditions"
  embraced_selian_traditions_modifier_desc: "This [ruler|E] has embraced the traditions of the [selians|E]"
+
  politeion_selian_narses: "Narsēs' Blessing"
  politeion_selian_narses_desc: "This [ruler|E] has the blessing of #v Narsēs#!"
  politeion_selian_phokas: "Phōkās' Blessing"
  politeion_selian_phokas_desc: "This [ruler|E] has the blessing of #v Phōkās#!"
  politeion_selian_enuo: "Enuō's Blessing"
  politeion_selian_enuo_desc: "This [ruler|E] has the blessing of #v Enuō#!"
- alnars_modifier: "First Prospector"
+
  eleios_modifier: "Scholared Heir"
  ilione_modifier: "Wayward Sword"
  strato_modifier: "Vile Whisperer"
+
  nars_brutal_purges_modifier: "Brutal Purges"
  nars_brutal_purges_modifier_desc: "A string of mysterious 'accidents' among foreign elites has happened"
  nars_faithful_supplies_modifier: "Pious Supplies"
@@ -31,5 +33,18 @@
  nars_focused_devotion_personal_modifier:0 "Focused Faith"
  nars_dignified_devotion_modifier:0 "Dignified Devotion"
  nars_dignified_devotion_personal_modifier:0 "Dignified Faith"
+
+ nars_lavish_evangelism_modifier:0 "Well-Invested"
+ nars_lavish_evangelism_personal_modifier:0 "Pious Patron"
+
+ nars_resolute_restoration_modifier:0 "Mastersmiths"
+ nars_resolute_restoration_personal_modifier:0 "Lavish Patron"
+
+ nars_meticulous_craftsmanship_modifier:0 "Meticulous Craftsmanship"
+ nars_meticulous_craftsmanship_personal_modifier:0 "Meticulous Potter"
+
+ nars_practical_craftsmanship_modifier:0 "Practical Craftsmanship"
+ nars_practical_craftsmanship_personal_modifier:0 "Practical Potter"
+
  nars_hegemon_aspirant_modifier: "Aspiring Hēgemon"
  nars_hegemon_aspirant_modifier_desc: "#flavor "And they shall weep" - $alnars_anduril$#!\n "

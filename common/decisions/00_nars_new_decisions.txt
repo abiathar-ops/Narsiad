@@ -210,6 +210,13 @@ decision_mend_narsil = {
 				view = decisions
 				player = root
 			}
+
+			random_scheme = {
+				type = mend_narsil_scheme
+				save_scope_as = scheme
+			}
+			save_scope_as = owner
+			trigger_event = nars_narsil.10
 		}
 	}
 
@@ -278,6 +285,13 @@ decision_produce_amphora = {
 				view = decisions
 				player = root
 			}
+
+			random_scheme = {
+				type = produce_amphora_scheme
+				save_scope_as = scheme
+			}
+			save_scope_as = owner
+			trigger_event = nars_amphora.10
 		}
 	}
 
@@ -472,6 +486,13 @@ decision_sponsor_missionaries = {
 				view = decisions
 				player = root
 			}
+
+			random_scheme = {
+				type = sponsor_missionaries_scheme
+				save_scope_as = scheme
+			}
+			save_scope_as = owner
+			trigger_event = nars_faith.10
 		}
 	}
 

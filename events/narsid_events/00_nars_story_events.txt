@@ -89,7 +89,6 @@ nars_intro.0001 = {
             after_creation = {
                 add_gold = minor_gold_value
                 add_trait = nars_naturalis
-                add_character_modifier = alnars_modifier
                 give_nickname = nick_soter
                 death = { death_reason = death_murder }
             }
@@ -142,7 +141,7 @@ nars_intro.0001 = {
             martial = 10
             stewardship = 40
             intrigue = 10
-            learning = 40
+            learning = 15
             prowess = 30
             trait = greedy
             trait = temperate
@@ -187,11 +186,11 @@ nars_intro.0001 = {
             trait = scarred
             trait = nars_naturalis
             diplomacy = 10
-            martial = 35
-            stewardship = 15
-            intrigue = 15
+            martial = 40
+            stewardship = 10
+            intrigue = 10
             learning = 15
-            prowess = 35
+            prowess = 30
             save_scope_as = ilione
             
             after_creation = {
@@ -217,10 +216,10 @@ nars_intro.0001 = {
             
             diplomacy = 10
             martial = 10
-            stewardship = 15
+            stewardship = 10
             intrigue = 40
-            learning = 10
-            prowess = 25
+            learning = 15
+            prowess = 30
             faith = faith:nars_religion
             culture = culture:selian
             trait = deceitful
@@ -230,7 +229,6 @@ nars_intro.0001 = {
             trait = pure_blooded
             trait = beauty_good_3
             trait = witch
-            trait = journaller
             trait = nars_naturalis
             save_scope_as = strato
             
@@ -354,6 +352,8 @@ nars_intro.0001 = {
                 add_prestige = { 705 1000 }
                 add_prestige_level = 2
                 add_piety_level = 1
+
+                create_ilyanil_effect = yes
 
                 while = {
                     count = 2

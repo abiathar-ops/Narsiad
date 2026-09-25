@@ -90,6 +90,36 @@ create_anduril_effect = {
 	}
 }
 
+create_ilyanil_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = ilyanil_name
+			description = ilyanil_desc
+			modifier = artifact_ilyanil_modifier
+			template = ilyanil_template
+			type = spear 
+			visuals = spear
+            
+			owner = root
+			wealth = 3000
+			quality = 100
+            
+			save_scope_as = newly_created_artifact
+			history = {					
+				type = created_before_history 
+			}
+		}
+        
+        scope:newly_created_artifact = {
+            set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+        }
+	}
+}
+
 get_item_quality_effect = {
 	if = {
 		limit = {

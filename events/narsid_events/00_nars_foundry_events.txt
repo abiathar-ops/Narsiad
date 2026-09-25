@@ -1,5 +1,65 @@
 ﻿namespace = nars_narsil
 
+# Intro
+nars_narsil.10 = {
+	type = character_event
+	window = big_event_window
+	title = nars_narsil.10.t
+	desc = nars_narsil.10.desc
+	theme = nars_war
+
+	center_portrait = {
+		character = root
+		animation = personality_zealous
+		camera = camera_body_right
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		scope:owner = {
+			save_scope_as = owner
+		}
+	}
+
+	option = {
+		name = nars_narsil.10.a
+		flavor = nars_narsil_intro_tt
+		add_character_modifier = {
+			modifier = nars_resolute_restoration_personal_modifier
+			years = 5
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = nars_resolute_restoration_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = nars_narsil.10.b
+		flavor = nars_narsil_intro_tt
+		custom_tooltip = no_change_restoration_tt
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	after = {
+		add_character_flag = narsil_scheme_intensity_chosen
+	}
+}
+
 nars_narsil.0001 = { # Gain progress (1)
 	hidden = yes
 
@@ -71,6 +131,66 @@ nars_narsil.9000 = {
 }
 
 namespace = nars_amphora
+
+# Intro
+nars_amphora.10 = {
+	type = character_event
+	window = big_event_window
+	title = nars_amphora.10.t
+	desc = nars_amphora.10.desc
+	theme = nars_war
+
+	center_portrait = {
+		character = root
+		animation = personality_zealous
+		camera = camera_body_right
+	}
+
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		scope:owner = {
+			save_scope_as = owner
+		}
+	}
+
+	option = {
+		name = nars_amphora.10.a
+		flavor = nars_amphora_intro_tt
+		add_character_modifier = {
+			modifier = nars_meticulous_craftsmanship_personal_modifier
+			years = 5
+		}
+		scope:scheme = {
+			add_scheme_modifier = {
+				type = nars_meticulous_craftsmanship_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = nars_amphora.10.b
+		flavor = nars_amphora_intro_tt
+		custom_tooltip = no_change_craftsmanship_tt
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	after = {
+		add_character_flag = amphora_scheme_intensity_chosen
+	}
+}
 
 nars_amphora.0001 = { # Gain progress (1)
 	hidden = yes

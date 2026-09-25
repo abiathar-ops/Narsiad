@@ -11,3 +11,5 @@
  anduril_tooltip:0 "You gain an [artifact|E], an aging scroll of wisdom. This heirloom provides significant [character|E] bonuses."
  artifact_amphora_name: "Amphora"
  artifact_amphora_description: "A personally made [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )] of [SCOPE.Custom('ArtifactQuality')] craftsmanship. It is made of [newly_created_artifact.GetFeatureText( 'generic_material_earthware' )] and encircled with depictions of [newly_created_artifact.GetFeatureText( 'decoration_pattern' )]"
+ ilyanil_name: "Ilyaníl"
+ ilyanil_desc: "Spear bestowed to $Ilione$ by her father, [alnars|E]. It is said that out of all his progenies, she alone is most proficient in the art of war and strife."

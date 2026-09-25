@@ -4,6 +4,12 @@ artifact_narsil_modifier = {
 	prowess = 12
 }
 
+artifact_ilyanil_modifier = {
+	monthly_martial_lifestyle_xp_gain_mult = 0.1
+	movement_speed = 0.2
+	prowess = 9
+}
+
 artifact_narsil_shards_modifier = {
 	monthly_dynasty_prestige = 0.2
 	prowess = -4

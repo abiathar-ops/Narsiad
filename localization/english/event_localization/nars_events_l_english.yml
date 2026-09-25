@@ -57,6 +57,11 @@
 
  nars_faith_9000_toast_title: "Aeì Ho Theòs Geōmetreî"
  nars_faith_9000_toast_desc: "The Selian tradition has been imposed on the realm!"
+ 
+ nars_faith.9000.t: "$nars_faith.0001.t$" #TBA intro
+ nars_faith.9000.desc: ""
+ nars_faith.9000.a: ""
+ nars_faith.9000.b: ""
 
  nars_faith.0001.t: "Homónoian Díōke"
  nars_faith.0001.desc: "Haivēn's serenity belongs to the faithful, yet [pagan.GetTitledFirstNameNoTooltip] of the [pagan.GetCulture.GetCollectiveNounNoTooltip], who answers to my crown, is blissfully unaware of it, clinging still to [pagan.GetHerHis] superstitions and false beliefs along with the people of [pagan.GetPrimaryTitle.GetName].\n\nBringing that land into the $game_concept_selianes$ faith is a virtuous endeavor in itself, strengthening the control of my rule and easing my hold over it. My chosen missionary, [evangelizer.GetFirstName], is ready to go.\n\n#flavor "I shall not cease to teach, to exhort you and in my usual way to point out to any one of you whom I happen to meet: 'You are $game_concept_selianes$... are you not ashamed of your eagerness to possess as much wealth as possible, while you do not care for nor give thought to wisdom or truth?'" - $alnars_anduril$"
@@ -95,10 +100,16 @@
  nars_nickname.0010.x:0 "My current name suffices."
  nars_nickname.0010.x.tt:0 "You choose not to adopt a new epithet at this time."
 
+ nars_narsil.9001.t: "$nars_narsil.9000.t$" #TBA
+ nars_narsil.9001.desc: ""
+ nars_narsil.9001.a: ""
+ nars_narsil.9001.b: ""
+
  nars_narsil.0001.t: "Forging $narsil_name$"
  nars_narsil.0001.desc: "You progressed the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
  nars_narsil.0002.t: "Forging $narsil_name$"
  nars_narsil.0002.desc: "You have gained #color_red [EmptyScope.ScriptValue('minor_stress_impact_gain')]#! [stress_gain_i][stress|E]\nYou have lost #color_red [EmptyScope.ScriptValue('medium_gold_value')]#! [gold_i][gold|E] in materials"
+
  nars_narsil.9000.t: "Dikaíōs Ktô"
  nars_narsil.9000.desc: "Deep in the vaults of my armory, my smiths have at last completed their toil. As one of them lifts [narsil|E] from the trough, the metal hums with a strange, unnatural energy. It is whole once more, its edge gleaming in the torchlight. The smith falls to his knees, presenting it to my hands.\n\n#flavor "The measure of a man's personage is what he does with his power." - $alnars_anduril$"
  nars_narsil.9000.a: "At long last, the sign of my times."
@@ -116,4 +127,25 @@
  nars_amphora.9000.desc: "Deep in the vaulted chambers of my workshops, my hands have at last completed their toil. As I lift the vessel from the polishing cloths, the sheen seems to catch and hold a nearby ambient torchlight. I hold my own creation, my [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )], in my hands as I revel in my own creation.\n\n#flavor "As a man takes a vessel of solid gold, the crown of his possessions, bubbling with the dew of the vine, and marvels at his own glory." - $alnars_anduril$"
  nars_amphora.9000.a: "At long last, my handiwork."
  nars_amphora.9000.flavor: "An amphora of mine own..."
+
+ nars_faith.10.t: "Peithoûs Chrýsion"
+ nars_faith.10.desc: "Coins has always moved men more readily than piety, yet purses alone will not carry the [faith|E] of the $game_concept_selianes$ into stubborn men. How boldly should my missionaries spend on their conversions, and how much am I willing to spend to hasten more lands into the fold?\n\n#flavor "He must be taught, even against his will, to accept the rites he has spurned... that he may know the divine manifest to men." - $alnars_anduril$#!"
+ nars_faith.10.a: "I will spare no expense!"
+ nars_faith.10.b: "Temperance in all things."
+ nars_faith_intro_tt: "Let coins do what we cannot."
+ no_change_evangelism_tt: "Your #v[GetScheme('sponsor_missionaries_scheme').GetTypeName]#! [scheme|E] progresses unmodified"
+
+ nars_narsil.10.t: "Xíphous Palingenesía"
+ nars_narsil.10.desc: "The shards of [narsil|E] test both my smiths' skill and my own resolve. How relentlessly should I pursue its mending, and how much of my court's peace am I willing to spend chasing its restoration?\n\n#flavor "The $game_concept_selianes$ were forging in their vast akropoleis. In their hands was thunderbolts, such as the ones $game_concept_narses$ hurls down from the sky... Elsewhere, they were shaping the terrifying sword of $game_concept_enuo$, with which she rouses men and cities to war, and eagerly polishing the armor. - $alnars_anduril$#!"
+ nars_narsil.10.a: "I will spare no expense!"
+ nars_narsil.10.b: "It'll take the time it takes."
+ nars_narsil_intro_tt: "Let the shards remember their shape."
+ no_change_restoration_tt: "Your #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E] progresses unmodified"
+
+ nars_amphora.10.t: "Keraméōs Téchnē"
+ nars_amphora.10.desc: "To shape clay into a worthy [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )] is to prove oneself among the civilized. How meticulously should I labor at the wheel, and how much comfort am I willing to trade for a masterwork?\n\n#flavor \"A vessel shaped in haste holds water no better than a cracked jar.\" - $alnars_anduril$#!"
+ nars_amphora.10.a: "I will spare no expense!"
+ nars_amphora.10.b: "It'll take the time it takes."
+ nars_amphora_intro_tt: "Let the wheel turn true."
+ no_change_craftsmanship_tt: "Your #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E] progresses unmodified"
  produce_amphora_tt: "You create an #v Amphora#! [inventory_artifact|E]"
