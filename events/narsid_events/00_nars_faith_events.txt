@@ -56,7 +56,7 @@ nars_faith.10 = {
 	}
 
 	after = {
-		add_character_flag = missionaries_scheme_intensity_chosen
+		add_character_flag = meithios_scheme_intensity_chosen
 	}
 }
 

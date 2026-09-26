@@ -28,10 +28,10 @@
  produce_amphora_scheme_action: "Produce Amphora"
  produce_amphora_scheme_invalidated_title: "@scheme_icon! Produce Amphora Ends"
 
- sponsor_missionaries_scheme: "Sponsor Missionaries"
- sponsor_missionaries_scheme_desc: "You fund missionaries to bring the unconverted pockets of your realm into the faith of the $game_concept_selianes$."
- sponsor_missionaries_scheme_desc_general: "Gold and a steady stream of willing preachers, that is what it takes to bring the stubborn into the $game_concept_selianes$ [faith|E].\n\n#flavor "Faith moves mountains, yes, but gold moves men. For what are beliefs in the face of the material." - $alnars_anduril$#!"
- sponsor_missionaries_scheme_SUCCESS_DESC: "A missionary sets out to bring a corner of your realm into the [faith|E]!"
- sponsor_missionaries_scheme_action: "Sponsor Missionaries"
- sponsor_missionaries_scheme_invalidated_title: "@scheme_icon! Sponsor Missionaries Ends"
+ sponsor_meithios_scheme: "Sponsor Meíthiōs"
+ sponsor_meithios_scheme_desc: "You fund [Glossary( 'Meíthiōs', 'MEITHIOS_GLOSS' )] to bring the unconverted pockets of your realm into the faith of the $game_concept_selianes$."
+ sponsor_meithios_scheme_desc_general: "Gold and a steady stream of willing preachers, that is what it takes to bring the stubborn into the $game_concept_selianes$ [faith|E].\n\n#flavor "Faith moves mountains, yes, but gold moves men. For what are beliefs in the face of the material." - $alnars_anduril$#!"
+ sponsor_meithios_scheme_SUCCESS_DESC: "A [Glossary( 'Meíthiōs', 'MEITHIOS_GLOSS' )] sets out to bring a corner of your realm into the [faith|E]!"
+ sponsor_meithios_scheme_action: "Sponsor Meíthiōs"
+ sponsor_meithios_scheme_invalidated_title: "@scheme_icon! $sponsor_meithios_scheme$ Ends"
 

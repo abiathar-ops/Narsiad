@@ -1,7 +1,7 @@
-﻿sponsor_missionaries_scheme = {
+﻿sponsor_meithios_scheme = {
 	skill = learning
-	desc = "sponsor_missionaries_scheme_desc_general"
-	success_desc = "sponsor_missionaries_scheme_SUCCESS_DESC"
+	desc = "sponsor_meithios_scheme_desc_general"
+	success_desc = "sponsor_meithios_scheme_SUCCESS_DESC"
 	icon = icon_sacred
 	illustration = "gfx/interface/illustrations/event_scenes/nars_faith.dds"
 	category = personal
@@ -49,43 +49,43 @@
 		scheme_owner = {
 			save_scope_as = owner
 			random_owned_story = {
-				limit = { story_type = story_sponsor_missionaries }
-				save_scope_as = sponsor_missionaries_story
+				limit = { story_type = story_sponsor_meithios }
+				save_scope_as = sponsor_meithios_story
 			}
 		}
 
 		scope:owner = {
 			trigger_event = nars_faith.0001
 			if = {
-				limit = { exists = scope:sponsor_missionaries_story }
-				scope:sponsor_missionaries_story = {
+				limit = { exists = scope:sponsor_meithios_story }
+				scope:sponsor_meithios_story = {
 					change_variable = {
-						name = sponsor_missionaries_success
+						name = sponsor_meithios_success
 						add = 1
 					}
 				}
 				scope:owner = {
 					set_variable = {
-						name = sponsor_missionaries_success
-						value = scope:sponsor_missionaries_story.var:sponsor_missionaries_success
+						name = sponsor_meithios_success
+						value = scope:sponsor_meithios_story.var:sponsor_meithios_success
 					}
 				}
 				if = {
 					limit = {
 						scope:owner = {
-							var:sponsor_missionaries_success >= 3
+							var:sponsor_meithios_success >= 3
 						}
 					}
 					scope:scheme = { end_scheme = yes }
-					scope:sponsor_missionaries_story = { end_story = yes }
+					scope:sponsor_meithios_story = { end_story = yes }
 					scope:owner = {
 						add_character_flag = {
-							flag = cooldown_missionaries_flag
+							flag = cooldown_meithios_flag
 							years = 10
 						}
 					}
 					save_scope_value_as = {
-						name = sponsor_missionaries_scheme_ended
+						name = sponsor_meithios_scheme_ended
 						value = yes
 					}
 				}
@@ -98,7 +98,7 @@
 		# restarted the scheme's phase timer even after it "ended", leaving it running
 		# forever instead of stopping at 3 successes.
 		if = {
-			limit = { NOT = { exists = scope:sponsor_missionaries_scheme_ended } }
+			limit = { NOT = { exists = scope:sponsor_meithios_scheme_ended } }
 			reset_scheme_progress = yes
 		}
 	}
@@ -107,13 +107,13 @@
 		scheme_owner = {
 			save_scope_as = owner
 			random_owned_story = {
-				limit = { story_type = story_sponsor_missionaries }
-				save_scope_as = sponsor_missionaries_story
+				limit = { story_type = story_sponsor_meithios }
+				save_scope_as = sponsor_meithios_story
 			}
 		}
 		if = {
-			limit = { exists = scope:sponsor_missionaries_story }
-			scope:sponsor_missionaries_story = {
+			limit = { exists = scope:sponsor_meithios_story }
+			scope:sponsor_meithios_story = {
 				end_story = yes
 			}
 		}

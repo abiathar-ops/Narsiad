@@ -425,13 +425,13 @@ decision_narsokratia = {
     ai_potential = { always = no }
 }
 
-decision_sponsor_missionaries = {
+decision_sponsor_meithios = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_delphi.dds"
 	}
 
-	desc = decision_sponsor_missionaries_desc
-	selection_tooltip = decision_sponsor_missionaries_tooltip
+	desc = decision_sponsor_meithios_desc
+	selection_tooltip = decision_sponsor_meithios_tooltip
 	decision_group_type = realm
 
 	sort_order = 10
@@ -442,33 +442,33 @@ decision_sponsor_missionaries = {
 		highest_held_title_tier >= tier_kingdom
 		is_selian = yes
 		faith = faith:nars_religion
-		NOT = { has_character_flag = cooldown_missionaries_flag }
+		NOT = { has_character_flag = cooldown_meithios_flag }
 	}
 
 	is_valid = {
 		custom_tooltip = {
-			text = decision_sponsor_missionaries_req_tt
+			text = decision_sponsor_meithios_req_tt
 			nars_faith_scheme_has_targets_trigger = yes
 		}
 		highest_held_title_tier >= tier_kingdom
 	}
 
 	is_valid_showing_failures_only = {
-		NOT = { has_character_flag = cooldown_missionaries_flag }
+		NOT = { has_character_flag = cooldown_meithios_flag }
 		NOT = {
 			custom_tooltip = {
-				text = sponsor_missionaries_decision_cooldown_tt
-				has_character_flag = sponsor_missionaries_decision_cooldown_flag
+				text = sponsor_meithios_decision_cooldown_tt
+				has_character_flag = sponsor_meithios_decision_cooldown_flag
 			}
 		}
 		is_available_adult = yes
 		is_imprisoned = no
 		is_at_war = no
 		custom_tooltip = {
-			text = decision_sponsor_missionaries_ongoing
+			text = decision_sponsor_meithios_ongoing
 			NOT = {
 				any_scheme = {
-					type = sponsor_missionaries_scheme
+					type = sponsor_meithios_scheme
 				}
 			}
 		}
@@ -476,15 +476,15 @@ decision_sponsor_missionaries = {
 
 	effect = {
 		custom_tooltip = {
-			text = decision_sponsor_missionaries_effect_tooltip
+			text = decision_sponsor_meithios_effect_tooltip
 			if = {
 				limit = {
-					NOT = { any_owned_story = { story_type = story_sponsor_missionaries } }
+					NOT = { any_owned_story = { story_type = story_sponsor_meithios } }
 				}
-				create_story = story_sponsor_missionaries
+				create_story = story_sponsor_meithios
 			}
 			start_scheme = {
-				type = sponsor_missionaries_scheme
+				type = sponsor_meithios_scheme
 				target_character = root
 			}
 			close_view = {
@@ -493,13 +493,13 @@ decision_sponsor_missionaries = {
 			}
 
 			random_scheme = {
-				type = sponsor_missionaries_scheme
+				type = sponsor_meithios_scheme
 				save_scope_as = scheme
 			}
 			save_scope_as = owner
 			trigger_event = nars_faith.10
 			add_character_flag = {
-				flag = sponsor_missionaries_decision_cooldown_flag
+				flag = sponsor_meithios_decision_cooldown_flag
 				months = 2
 			}
 		}

@@ -1,11 +1,11 @@
-story_sponsor_missionaries = {
+story_sponsor_meithios = {
     visible = yes
     icon = { reference = "gfx/interface/icons/artifact/artifact_chronicle.dds" }
     background = { reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds" }
 
     visualization = {
         basic_counter = {
-            variable_name = "sponsor_missionaries_success"
+            variable_name = "sponsor_meithios_success"
             tooltip = "SPONSOR_MISSIONARIES_COUNTER_TOOLTIP"
             min = 0
             max = 3
@@ -16,17 +16,17 @@ story_sponsor_missionaries = {
     }
 
     on_setup = {
-        set_variable = { name = sponsor_missionaries_success value = 0 }
+        set_variable = { name = sponsor_meithios_success value = 0 }
     }
 
     # Safety net: end_scheme (called directly by the vanilla "Abandon Scheme" action,
     # special_interaction = remove_scheme_interaction in 00_scheme_interactions.txt) does
     # NOT run the scheme's own on_invalidated block, so a manually-abandoned scheme can
     # leave this story running forever. Check periodically and self-end if the owner no
-    # longer has a sponsor_missionaries_scheme for any reason.
+    # longer has a sponsor_meithios_scheme for any reason.
     #
     # NOTE: this previously tracked the owner via a hand-rolled
-    # var:sponsor_missionaries_story_ref (set in on_setup to `prev`), but inside on_setup
+    # var:sponsor_meithios_story_ref (set in on_setup to `prev`), but inside on_setup
     # `root` IS the story itself, so `root = { value = prev }` only ever captured the
     # story, never the owning character. any_scheme run on that wrong scope always
     # failed, so this safety net fired and ended the story on its very first 5-day
@@ -43,7 +43,7 @@ story_sponsor_missionaries = {
                 NOT = {
                     story_owner = {
                         any_scheme = {
-                            type = sponsor_missionaries_scheme
+                            type = sponsor_meithios_scheme
                         }
                     }
                 }
@@ -56,7 +56,7 @@ story_sponsor_missionaries = {
 
     on_owner_death = { end_story = yes }
     on_end = {
-        debug_log = "$decision_sponsor_missionaries$ story cycle ended on:"
+        debug_log = "$decision_sponsor_meithios$ story cycle ended on:"
         debug_log_date = yes
     }
 }
