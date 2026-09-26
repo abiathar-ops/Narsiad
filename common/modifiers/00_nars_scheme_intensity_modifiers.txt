@@ -7,7 +7,7 @@ nars_lavish_evangelism_modifier = {
 
 nars_lavish_evangelism_personal_modifier = {
 	icon = merit_mixed
-	monthly_piety_mult = 0.20
+	monthly_income_mult = -0.25
 	same_faith_opinion = 15
 }
 
@@ -19,11 +19,10 @@ nars_resolute_restoration_modifier = {
 
 nars_resolute_restoration_personal_modifier = {
 	icon = merit_mixed
-	monthly_income_mult = -0.05
+	monthly_income_mult = -0.25
 	stress_gain_mult = 0.15
 }
 
-# --- Produce Amphora ---
 nars_meticulous_craftsmanship_modifier = {
 	icon = merit_positive
 	scheme_success_chance = 25
@@ -31,6 +30,6 @@ nars_meticulous_craftsmanship_modifier = {
 
 nars_meticulous_craftsmanship_personal_modifier = {
 	icon = merit_mixed
-	monthly_income_mult = -0.05
+	monthly_income_mult = -0.25
 	stress_gain_mult = 0.15
 }

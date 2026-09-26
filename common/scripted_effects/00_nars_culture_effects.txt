@@ -163,7 +163,7 @@ create_h_narsokratia_effect = {
 				article = article_CONFEDERATION_CULTURE_NAME
 			}
 			scope:new_title = {
-				set_color_from_title = root.capital_county
+				set_title_color = { 240 240 220 }
 				set_definitive_form = no
 				set_can_be_named_after_dynasty = no
 				set_can_use_nomadic_naming = no
@@ -182,10 +182,17 @@ create_h_narsokratia_effect = {
 		dynasty ?= { add_dynasty_prestige = 5000 }
 		
 		hidden_effect = {
-			every_held_title = {
+			# Fold every kingdom-tier title in the new hegemon's realm into the
+			# hegemony's de jure structure -- whether held personally or held by a
+			# vassal within the new hegemon's realm (holder.top_liege).
+			every_kingdom = {
 				limit = {
-					tier = tier_kingdom
+					is_titular = no
 					NOT = { de_jure_liege = scope:new_title }
+					OR = {
+						holder = scope:new_hegemon
+						holder.top_liege ?= scope:new_hegemon
+					}
 				}
 				set_de_jure_liege_title = scope:new_title
 			}
@@ -227,18 +234,6 @@ create_h_narsokratia_effect = {
 		}
 		
 		hidden_effect = {
-			every_kingdom = {
-				limit = {
-					is_titular = no
-					NOT = { de_jure_liege = scope:new_title }
-					trigger_if = {
-						limit = { exists = holder }
-						holder != scope:new_hegemon
-					}
-					scope:new_hegemon = { completely_controls = prev }
-				}
-				set_de_jure_liege_title = scope:new_title
-			}
 			selian_vassal_conversion_effect = yes
 		}
 		

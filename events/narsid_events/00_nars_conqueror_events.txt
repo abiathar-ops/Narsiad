@@ -18,15 +18,6 @@ nars_conqueror.0001 = {
 
     immediate = {
         play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
-		create_h_narsokratia_effect = yes
-
-        local_assimilate_selian_traditions_effect = {
-			OLD_culture = culture:selian
-			NEW_culture = culture:selian
-			OLD_faith = faith:nars_religion
-			NEW_faith = faith:nars_religion
-			CONVERTER = root
-		}
     }
 
     option = { 
@@ -492,7 +483,7 @@ nars_conqueror.1100 = {
     right_portrait = {
         character = scope:optimatos
         camera = camera_event_right
-        animation = throne_room_one_handed_passive_1
+        animation = marshal
     }
 
     immediate = {
@@ -519,7 +510,22 @@ nars_conqueror.1100 = {
     # Option A: Pay gold for special soldiers
     option = {
         name = nars_conqueror.1100.a # "I will pay you handsomely for your spears."
-        remove_treasury_or_gold = massive_gold_value
+		flavor = nars_conqueror.1100.a.flavor
+		scope:optimatos = {
+            set_employer = root
+        }
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 625
+			men_at_arms = {
+				type = nars_t1
+				stacks = 4
+            }
+            location = root.capital_province
+			uses_supply = yes
+			inheritable = yes
+		}
+        remove_treasury_or_gold = { 300 800 }
         stress_impact = {
 			generous = medium_stress_impact_loss
 			zealous = medium_stress_impact_loss
@@ -529,24 +535,10 @@ nars_conqueror.1100 = {
 			cynical = medium_stress_impact_gain
 			greedy = medium_stress_impact_gain
 		}
-        spawn_army = {
-			name = event_troop_default_name
-			levies = 625
-			men_at_arms = {
-				type = nars_t1
-				stacks = 5
-            }
-            location = root.capital_province
-			uses_supply = yes
-			inheritable = yes
-		}
-        
-        scope:optimatos = {
-            set_employer = root
-        }
     }
     option = {
         name = nars_conqueror.1100.b
+		flavor = nars_conqueror.1100.b.flavor
         
         random_list = {
             50 = {
@@ -563,7 +555,7 @@ nars_conqueror.1100 = {
 					levies = 625
 					men_at_arms = {
 						type = nars_t1
-						stacks = 5
+						stacks = 4
 					}
 					location = root.capital_province
 					uses_supply = yes
@@ -584,7 +576,7 @@ nars_conqueror.1100 = {
                     add = 30
                     diplomacy < 15
                 }
-                add_prestige = medium_prestige_loss
+				custom_tooltip = nars_conqueror.1100.tt
                 add_stress = medium_stress_gain
                 send_interface_message = {
                     title = nars_conqueror.1100.b.failure_msg.t
@@ -598,7 +590,8 @@ nars_conqueror.1100 = {
 
     option = {
         name = nars_conqueror.1100.c
-        add_prestige = minor_prestige_loss
+		flavor = nars_courtiers.0011.d.flavor
+		custom_tooltip = nars_conqueror.1100.tt
         stress_impact = {
 			zealous = medium_stress_impact_gain
 			brave = medium_stress_impact_gain

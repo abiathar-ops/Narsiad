@@ -17,12 +17,6 @@ story_sponsor_missionaries = {
 
     on_setup = {
         set_variable = { name = sponsor_missionaries_success value = 0 }
-        root = {
-            set_variable = {
-                name = sponsor_missionaries_story_ref
-                value = prev
-            }
-        }
     }
 
     # Safety net: end_scheme (called directly by the vanilla "Abandon Scheme" action,
@@ -30,15 +24,24 @@ story_sponsor_missionaries = {
     # NOT run the scheme's own on_invalidated block, so a manually-abandoned scheme can
     # leave this story running forever. Check periodically and self-end if the owner no
     # longer has a sponsor_missionaries_scheme for any reason.
+    #
+    # NOTE: this previously tracked the owner via a hand-rolled
+    # var:sponsor_missionaries_story_ref (set in on_setup to `prev`), but inside on_setup
+    # `root` IS the story itself, so `root = { value = prev }` only ever captured the
+    # story, never the owning character. any_scheme run on that wrong scope always
+    # failed, so this safety net fired and ended the story on its very first 5-day
+    # tick -- long before the scheme's first phase could ever complete. story_owner is
+    # the built-in scope link CK3 already provides for a story's owning character (see
+    # vanilla book_translation_story_cycle.txt's on_setup), so use that directly.
     effect_group = {
         days = 5
         trigger = {
-            exists = var:sponsor_missionaries_story_ref
+            exists = story_owner
         }
         triggered_effect = {
             trigger = {
                 NOT = {
-                    var:sponsor_missionaries_story_ref = {
+                    story_owner = {
                         any_scheme = {
                             type = sponsor_missionaries_scheme
                         }

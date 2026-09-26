@@ -1,7 +1,6 @@
 To do:
 1. Balance MAA
 2. Narsopolis special building 
-3. DNA making
 5. Polish decision rewards -> see Iranian Resurgence
 10. More events to Evangelizing and other ones
 12. Events for Selian scholar/knight characters gained from Aretaic School
@@ -9,22 +8,9 @@ To do:
 15. Custom Special Doctrine (e.g. Rightful Rulers of the World) to the Selians.
 16. Sponsor Expedition -> Finance with gold and influence, an adventurer band that gets a claim on a nearby realm (kingdom/empire) and them declaring war on them. Endgoal is creating another Selian State
 17. Scout Talents -> From Aretaike Scholi, find a good selian courtier and legendary characters.
-19. Narsil + Gunpowder + Develop Industry -> Foundry-based decision (all scheme based)
-20. Develop industry (Arms: Develop Industry"MAA + development?), spies (Civil: maa + control?)
-22. Cultural Reformation (Marital Revision, Tradition decision, Deviant Virtue)
-23. Culture Decision (Libation, Study the Narsian Classics)
-24. Study the Narsian Classics is a simple decision like libation but has a chance to get a trait but deals stress (need to know selian language, maybe make an ancient dialect of selian (Old Selian)?)
-28. Delete Synodian Spies, develop industry becomes a scheme and became a foundry-based decision (or make it into inquisitor (religion based) and put it on another dropdown)
-29. Courtier to 4 but nerf it
 31. Delphic Maxims for Scroll Reading Activity (https://en.wikipedia.org/wiki/Delphic_maxims)
-33. Empire decision, move mastiges to kingdom
-34. story_cycle for nars_scion
+34. story_cycle for nars_conqueror (POLISH TS)
 35. polish the casus belli to have events
 37. Echoes of History for Selians
-38. Faith Emmisary broken rn, 
 41. Hold a Triumph Decision
-42. Make an event for selian_migration  on_victory, basically an event that gives out bonuses in exchange for gold but if vassals >40 then it also gives the option to change into administrative_government
 43. Casus Belli still broken
-44. Impose faith becomes a decision, scheme like study that gives periodic conversions?
-45. Intro event to the missionary scheme explaining how it works and an option to skip waiting for the first phase at the cost of gols
-46. Bug in missionary, exits story

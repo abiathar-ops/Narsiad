@@ -748,6 +748,35 @@ selian_defiance_cb = {
 
     # ATTACKERS WIN (Selian Restoration Fails)
     on_victory = {
+        # Perspective events for the war's outcome, mirroring HAAO's
+        # disobedient_war_cb post-war events (haao_hegemony.0101/0102).
+        # Looked up first, before the defender's realm below is dismantled.
+        hidden_effect = {
+            scope:attacker = {
+                random_character_war = {
+                    limit = { using_cb = selian_defiance_cb }
+                    every_war_attacker = { add_to_list = nars_defiance_victors }
+                    every_war_defender = { add_to_list = nars_defiance_defenders }
+                }
+            }
+            every_player = {
+                limit = { is_in_list = nars_defiance_victors }
+                trigger_event = { id = nars_hegemony.0101 days = 2 }
+            }
+            # Defender-side allies (not the aspirant themselves -- they get their
+            # own dedicated nars_hegemony.0106 cutscene below)
+            every_player = {
+                limit = {
+                    is_in_list = nars_defiance_defenders
+                    NOT = { this = scope:defender }
+                }
+                trigger_event = { id = nars_hegemony.0102 days = 2 }
+            }
+            scope:defender = {
+                trigger_event = { id = nars_hegemony.0106 days = 2 }
+            }
+        }
+
         # Legitimacy for attackers
         add_legitimacy_attacker_victory_effect = yes
 
@@ -817,6 +846,35 @@ selian_defiance_cb = {
 
     # DEFENDER WINS (Attackers lose and their realms shatter)
     on_defeat = {
+        # Perspective events for the coalition's defeat, mirroring HAAO's
+        # disobedient_war_cb post-war events (haao_hegemony.0103/0104). The
+        # aspirant's own victory perspective is nars_hegemony.0105, triggered
+        # from scope:defender's effects below (replaces nars_conqueror.0001
+        # as the entry point -- 0105 itself still chains into nars_conqueror.0001
+        # for the reward/flavor beat).
+        hidden_effect = {
+            scope:defender = {
+                random_character_war = {
+                    limit = { using_cb = selian_defiance_cb }
+                    every_war_attacker = { add_to_list = nars_defiance_losers }
+                    every_war_defender = { add_to_list = nars_defiance_winners }
+                }
+            }
+            every_player = {
+                limit = { is_in_list = nars_defiance_losers }
+                trigger_event = { id = nars_hegemony.0103 days = 2 }
+            }
+            # Defender-side allies (not the aspirant themselves -- they get
+            # nars_hegemony.0105 below)
+            every_player = {
+                limit = {
+                    is_in_list = nars_defiance_winners
+                    NOT = { this = scope:defender }
+                }
+                trigger_event = { id = nars_hegemony.0104 days = 2 }
+            }
+        }
+
         add_to_global_variable_list = {
             name = unavailable_unique_decisions
             target = flag:flag_decision_narsokratia
@@ -848,7 +906,7 @@ selian_defiance_cb = {
             }
             
             trigger_event = {
-                id = nars_conqueror.0001
+                id = nars_hegemony.0105
                 days = 1
             } 
         }

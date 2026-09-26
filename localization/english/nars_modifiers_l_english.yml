@@ -37,7 +37,7 @@
  nars_lavish_evangelism_modifier:0 "Well-Invested"
  nars_lavish_evangelism_personal_modifier:0 "Pious Patron"
 
- nars_resolute_restoration_modifier:0 "Mastersmiths"
+ nars_resolute_restoration_modifier:0 "Master Smiths"
  nars_resolute_restoration_personal_modifier:0 "Lavish Patron"
 
  nars_meticulous_craftsmanship_modifier:0 "Meticulous Craftsmanship"
@@ -46,5 +46,5 @@
  nars_practical_craftsmanship_modifier:0 "Practical Craftsmanship"
  nars_practical_craftsmanship_personal_modifier:0 "Practical Potter"
 
- nars_hegemon_aspirant_modifier: "Aspiring Hēgemon"
- nars_hegemon_aspirant_modifier_desc: "#flavor "And they shall weep" - $alnars_anduril$#!\n "
+ nars_nikator_aspirant_modifier: "Aspiring Hēgemon"
+ nars_nikator_aspirant_modifier_desc: "#flavor "And they shall weep" - $alnars_anduril$#!\n "

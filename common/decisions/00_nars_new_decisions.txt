@@ -90,6 +90,12 @@ decision_piously_devote = {
 
 	is_valid_showing_failures_only = {
 		custom_tooltip = {
+			text = piously_devote_decision_cooldown_tt
+			NOT = {
+				has_character_flag = piously_devote_decision_cooldown_flag
+			}
+		}
+		custom_tooltip = {
 			text = decision_piously_devote_req_tt
 			NOT = {
 				any_scheme = {
@@ -123,6 +129,10 @@ decision_piously_devote = {
 			}
 			save_scope_as = owner
 			trigger_event = nars_religious.10
+			add_character_flag = {
+				flag = piously_devote_decision_cooldown_flag
+				months = 2
+			}
 		}
 	}
 
@@ -175,6 +185,12 @@ decision_mend_narsil = {
 	}
 
 	is_valid_showing_failures_only = {
+		NOT = {
+			custom_tooltip = {
+				text = mend_narsil_decision_cooldown_tt
+				has_character_flag = mend_narsil_decision_cooldown_flag
+			}
+		}
 		top_liege = this
 		is_available_adult = yes
 		is_imprisoned = no
@@ -217,6 +233,10 @@ decision_mend_narsil = {
 			}
 			save_scope_as = owner
 			trigger_event = nars_narsil.10
+			add_character_flag = {
+				flag = mend_narsil_decision_cooldown_flag
+				months = 2
+			}
 		}
 	}
 
@@ -247,6 +267,12 @@ decision_produce_amphora = {
 	}
 
 	is_valid_showing_failures_only = {
+		NOT = {
+			custom_tooltip = {
+				text = produce_amphora_decision_cooldown_tt
+				has_character_flag = produce_amphora_decision_cooldown_flag
+			}
+		}
 		top_liege = this
 		is_available_adult = yes
 		is_imprisoned = no
@@ -292,6 +318,10 @@ decision_produce_amphora = {
 			}
 			save_scope_as = owner
 			trigger_event = nars_amphora.10
+			add_character_flag = {
+				flag = produce_amphora_decision_cooldown_flag
+				months = 2
+			}
 		}
 	}
 
@@ -355,9 +385,17 @@ decision_narsokratia = {
     
     effect = {
 		custom_tooltip = decision_nars_hegemony_tt
+
+		send_interface_message = {
+			type = event_prowess_good_desc
+			title = narsokratia_declared_toast_title
+			desc = narsokratia_declared_toast_desc
+			left_icon = root
+		}
+
 		hidden_effect = {
 			add_character_modifier = {
-				modifier = nars_hegemon_aspirant_modifier
+				modifier = nars_nikator_aspirant_modifier
 				years = 5
 			}
 			spawn_army = {
@@ -371,7 +409,6 @@ decision_narsokratia = {
 		}
 
 		hidden_effect = {
-			# 1. Compile list of immediate neighbors only
 			every_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
 					is_independent_ruler = yes
@@ -381,45 +418,7 @@ decision_narsokratia = {
 				add_to_list = selian_coalition_members
 			}
 
-			if = {
-				limit = {
-					any_in_list = { list = selian_coalition_members }
-				}
-				
-				# 2. Pick the strongest neighbor to lead the Coalition
-				ordered_in_list = {
-					list = selian_coalition_members
-					order_by = current_military_strength
-					save_scope_as = coalition_war_leader
-				}
-
-				# 3. The War Leader declares the war
-				scope:coalition_war_leader = {
-					start_war = {
-						target = root
-						target_title = root.primary_title
-						cb = selian_defiance_cb
-					}
-				}
-
-				# 4. Save the war, then forcefully drag the rest of the list into it
-				root = {
-					random_character_war = {
-						limit = { primary_attacker = scope:coalition_war_leader }
-						
-						every_in_list = {
-							list = selian_coalition_members
-							limit = {
-								NOT = { this = scope:coalition_war_leader }
-							}
-							# 'prev' scopes back to the war, adding the list character as an attacker
-							prev = {
-								add_attacker = prev
-							}
-						}
-					}
-				}
-			}
+			trigger_event = nars_hegemony.0001
 		}
 	}
         
@@ -456,6 +455,12 @@ decision_sponsor_missionaries = {
 
 	is_valid_showing_failures_only = {
 		NOT = { has_character_flag = cooldown_missionaries_flag }
+		NOT = {
+			custom_tooltip = {
+				text = sponsor_missionaries_decision_cooldown_tt
+				has_character_flag = sponsor_missionaries_decision_cooldown_flag
+			}
+		}
 		is_available_adult = yes
 		is_imprisoned = no
 		is_at_war = no
@@ -493,6 +498,10 @@ decision_sponsor_missionaries = {
 			}
 			save_scope_as = owner
 			trigger_event = nars_faith.10
+			add_character_flag = {
+				flag = sponsor_missionaries_decision_cooldown_flag
+				months = 2
+			}
 		}
 	}
 

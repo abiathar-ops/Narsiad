@@ -39,6 +39,9 @@ nars_t1 = {
         wetlands = { damage = -25 toughness = -10 }
     }
 	
+    mercenary_fallback = no
+    holy_order_fallback = no
+    
 	counters = {
 		pikemen = 1
 		peasant_militia = 2
@@ -73,6 +76,9 @@ nars_t2 = {
     can_recruit = {
 	    can_recruit_nars_t2_trigger = yes
     }
+
+    mercenary_fallback = no
+    holy_order_fallback = no
 
     damage = 135
 	toughness = 65

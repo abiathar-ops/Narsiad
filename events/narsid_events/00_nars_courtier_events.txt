@@ -276,9 +276,7 @@ nars_courtiers.0011 = {
     type = character_event
     title = nars_courtiers.0011.t
     desc = nars_courtiers.0011.desc
-    theme = emperor
-    override_background = bp2_study_indian
-    override_effect_2d = { reference = smoke }
+    theme = nars_war
 
     left_portrait = {
         character = scope:pugilist
@@ -287,21 +285,13 @@ nars_courtiers.0011 = {
     }
     right_portrait = {
         character = scope:savant
-        animation = thinking
-		camera = camera_event_center
-    }
-
-    trigger = {
-        exists = capital_province
+        animation = holding_scrolls
+		camera = camera_event_right
     }
 	
     immediate = {
         hidden_effect = {
-            #────────────────────────────────────────────────
-            # FIRST CANDIDATE (Saved as 'pugilist' for UI)
-            #────────────────────────────────────────────────
             create_character = {
-                employer = root 
                 culture = culture:selian
                 faith = faith:nars_religion
                 age = { 21 45 } 
@@ -382,12 +372,7 @@ nars_courtiers.0011 = {
 					nars_naturalis_set_tier_xp_effect = yes
                 }
             }
-
-            #────────────────────────────────────────────────
-            # SECOND CANDIDATE (Saved as 'savant' for UI)
-            #────────────────────────────────────────────────
             create_character = {
-                employer = root 
                 culture = culture:selian
                 faith = faith:nars_religion
                 age = { 21 45 } 
@@ -469,16 +454,23 @@ nars_courtiers.0011 = {
                 }
             }
         }
-		scope:savant = { add_character_flag = wear_armor }
-		scope:pugilist = { add_character_flag = wear_armor }
     }
 
 	option = {
         name = nars_courtiers.0011.c
+        flavor = nars_courtiers.0011.c.flavor
         trigger = {
-            is_playable_character = yes
 			exists = scope:pugilist
             exists = scope:savant
+        }
+        custom_tooltip = {
+            text = nars_courtiers.0011.a.tt
+            scope:pugilist = {
+                set_employer = root
+            }
+            scope:savant = {
+                set_employer = root
+            }
         }
         pay_treasury_or_gold = {
             target = scope:pugilist
@@ -499,19 +491,16 @@ nars_courtiers.0011 = {
 	
     option = {
         name = nars_courtiers.0011.a
+        flavor = nars_courtiers.0011.a.flavor
         trigger = {
-            is_playable_character = yes
             exists = scope:pugilist
+        }
+        scope:pugilist = {
+            set_employer = root
         }
         pay_treasury_or_gold = {
             target = scope:pugilist
             value = massive_treasury_or_gold_value
-        }
-        hidden_effect = {
-            if = {
-                limit = { exists = scope:savant }
-                scope:savant = { move_to_pool = yes }
-            }
         }
         ai_chance = {
             factor = 100
@@ -524,19 +513,16 @@ nars_courtiers.0011 = {
 
     option = {
         name = nars_courtiers.0011.b
+        flavor = nars_courtiers.0011.b.flavor
         trigger = {
-            is_playable_character = yes
             exists = scope:savant
+        }
+        scope:savant = {
+            set_employer = root
         }
         pay_treasury_or_gold = {
             target = scope:savant
             value = massive_treasury_or_gold_value
-        }
-        hidden_effect = {
-            if = {
-                limit = { exists = scope:pugilist }
-                scope:pugilist = { move_to_pool = yes }
-            }
         }
         ai_chance = {
             factor = 100
@@ -548,36 +534,8 @@ nars_courtiers.0011 = {
     }
 	
     option = {
-        name = {
-            trigger = {
-                NOR = {
-                    exists = scope:pugilist
-                    exists = scope:savant
-                }
-            }
-            text = nars_courtiers.0011.d.none
-        }
-        name = {
-            trigger = {
-                OR = {
-                    exists = scope:pugilist
-                    exists = scope:savant
-                }
-            }
-            text = nars_courtiers.0011.d.decline
-        }
-        custom_tooltip = nars_courtiers.0011.d.tt
-        
-        hidden_effect = {
-            if = {
-                limit = { exists = scope:pugilist }
-                scope:pugilist = { move_to_pool = yes }
-            }
-            if = {
-                limit = { exists = scope:savant }
-                scope:savant = { move_to_pool = yes }
-            }
-        }
+        name = nars_courtiers.0011.d
+        flavor = nars_courtiers.0011.d.flavor
         ai_chance = { factor = 2 }
     }
 

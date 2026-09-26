@@ -460,7 +460,7 @@ name_list_nars = {
 		Telon Telourgos Temene Terpsias Teumasigeneis Thais_2 Thaleia Thalesigenes
 		Thalinides Thallei Thalles Thallo Thallousa Thargelion Thasios Thauminas
 		Thea Theaios Thearichos Thebades Thebon Theibagena Theibangelos Theioteles
-		Themisto Theoboulos Theodora_2 Theodota_2 Theogeita Theogenis Theogita Theognetis
+		Themisto Theoboulos Theodota_2 Theogeita Theogenis Theogita Theognetis
 		Theogonos Theokedes Theokleia Theokrine Theokrisios Theokrite Theokritos_2 Theokydes
 		Theomnasta Theomneste Theophantos Theopheidas Theophila_2 Theophile Theophiliskos Theophrasmon
 		Theophrastos_2 Theopompos Theopropis Theoteleia Theotima Theotime Theozotos Thereus

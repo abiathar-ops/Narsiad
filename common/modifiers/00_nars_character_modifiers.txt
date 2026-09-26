@@ -63,7 +63,7 @@ embraced_selian_traditions_modifier = {
 	monthly_prestige = 0.25
 }
 
-nars_hegemon_aspirant_modifier = {
+nars_nikator_aspirant_modifier = {
 	icon = blood_positive
 	glory_hound_opinion = 30
 	men_at_arms_maintenance = -0.625

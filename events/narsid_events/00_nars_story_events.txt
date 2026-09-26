@@ -643,15 +643,5 @@ nars_intro.0002 = {
         name = nars_intro.0002.b
         flavor = nars_intro.0002.b.flavor
         custom_tooltip = selian_incivility.tt
-        hidden_effect = { 
-            set_relation_rival = {
-                reason = rival_claimant_fight
-                target = scope:target_1
-            } 
-            set_relation_rival = {
-                reason = rival_claimant_fight
-                target = scope:target_2
-            } 
-        }
     }
 }
