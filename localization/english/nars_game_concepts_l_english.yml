@@ -32,9 +32,24 @@
  game_concept_anduril: "$anduril_name$"
  game_concept_anduril_desc: "Compiled by [alnars|E] before his calling as the leader of the first [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )], $anduril_name$ is a scroll detailing the records of a much forgotten $game_concept_selianes$ hegemony crystallized and organized into one singular work. Along with it, additionally, are also teachings and selected works of the '$nick_soter$' himself. \n\n#flavor "These are the works of my father, which he compiled, in the hope of thereby preserving from decay what men have done, and of preventing the greatness of the $game_concept_selianes$ from losing their due meed of glory." - $Eleios$, On the $anduril_name$.#!"
 
+ game_concept_ilyanil: "$ilyanil_name$"
+ game_concept_ilyanil_desc: "[alnars_possessive|E] weapon of choice before being gifted to [ilione|E], his second daughter. In observance to the [politeion|E], $Alnars$ saw fit to give his daughter a weapon most beloved by the Deity of War [enuo|E], the spear. Apocryphally, upon receiving the gift, $Ilione$ almost publicly wept on experiencing her father's generous albeit few and far between tender recognition.\n\n#flavor "It was said that the years of leadership was harsh for '$nick_soter$', rendering him an unfeeling cog of aspirations. It was due to this that any morsel of personal sentiments left are kept as relics for those near him." - Unknown Soldier, Recollections.#!"
+
  game_concept_alnars: "Alnárs"
- game_concept_alnars_adj: "Alnárs'"
- game_concept_alnars_desc: "The first to delve onto the outside world with his retinue of [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] leading a warband of soldiers, $game_concept_alnars$ eventually consolidated $game_concept_selianes$ presence in the world piece by piece, earning him the epithet of 'Sōtēr' or Savior of the People.\n\n#flavor "I am not a king, but a general. I had not fought for any glory, but for the safety of the $game_concept_selianes$." - $alnars_anduril$"
+ game_concept_alnars_possessive: "Alnárs'"
+ game_concept_alnars_desc: "The first to delve onto the outside world with his retinue of [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] leading a warband of soldiers, $game_concept_alnars$ eventually consolidated $game_concept_selianes$ presence in the world piece by piece, earning him the epithet of 'Sōtēr' or Savior of the People.\n\nHe is the father to [eleios|E], [ilione|E], and [strato|E].\n\n$game_concept_alnars$ in his early years compiled the records of various $game_concept_selianes$ into a unified collection of scrolls, the [anduril|E].\n\n#flavor "I am not a king, but a general. I had not fought for any glory, but for the safety of the $game_concept_selianes$." - $alnars_anduril$"
+
+ game_concept_eleios: "$Eleios$"
+ game_concept_eleios_possessive: "$Eleios$'"
+ game_concept_eleios_desc: "Heir to [alnars|E] and measured greatly even among the few detractors he has, $game_concept_eleios$ was once poised to lead after his predecessor. Alas, schemed by an unknown force, he now stands at the head of a schism, forced to compromise a fragmentation, of which his siblings exploited fully.\n\n#flavor "$Ilione$ mocked $Eleios$, claiming he only followed $Alnars$ with a writing set. The [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] knew better for $Alnars$ honored him deeply and trusted his pure intellect." - Unknown.#!"
+
+ game_concept_ilione: "$Ilione$"
+ game_concept_ilione_possessive: "$Ilione$'s"
+ game_concept_ilione_desc: "A second daughter to [alnars|E] '$nick_soter$', $game_concept_ilione$ abandoned the dream for [narsokratia|E] to fully embrace the brutal path of the [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )]. Feared as a bloodthirsty butcher by her enemies, she commands her regiments with ruthless efficiency, caring little for her controversial reputation or the whispers regarding her unashamed lasciviousness.\n\n#flavor "Order $Ilione$ to attack some thousand men in such and such a direction, it was done in a flash. But left to herself in court she was an imbecile without sense." - $Eleios$, On the Road.#!"
+
+ game_concept_strato: "$Strato$"
+ game_concept_strato_possessive: "$Strato$'s"
+ game_concept_strato_desc: "Infamous for his silver-tongued rhetoric and shrouded in vile rumors, $game_concept_strato$, third of [alnars_possessive|E] progenies, is perhaps the most cunning of the Narēsíos siblings. His foul reputation is sharply contrasted by the [Glossary( 'Sophrosyne', 'SOPHROSYNE_GLOSS' )] of his demeanour, leaving many to suffer languish in his unashamed facade.\n\n#flavor "For when a man spins a web of deceit, he must take care that his own feet are not caught in the snare." - Unknown#!"
 
  game_concept_selian_incursion:0 "Selian Incursion"
  game_concept_selian_incursion_desc:3 "A [selian|E] [casus_belli|E] allowing for the forceful annexation of an independent [rulerpossessive|E] entire [realm|E] and to distribute their former [counties|E] among your followers. Unlocked by the #v [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! [trait|E].\n\nYou can only use this [casus_belli|E] on a [top_liege|E] who does not possess any of the following:\n$EFFECT_LIST_BULLET$#V Selian Culture#!\n$EFFECT_LIST_BULLET$#V Selian Ethnicity#!\n$EFFECT_LIST_BULLET$#V Archaic Faith#!\n\n#flavor "And they shall weep." - $alnars_anduril$#!"

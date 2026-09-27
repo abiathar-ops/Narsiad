@@ -1,5 +1,5 @@
 ﻿selian_incursion_cb = {
-    icon = nars_cb
+    icon = struggle
     group = invasion
 
     target_title_tier = all
@@ -665,7 +665,7 @@
 }
 
 selian_migration_cb = {
-    icon = nars_cb
+    icon = struggle
     group = invasion
 
     interface_priority = 180

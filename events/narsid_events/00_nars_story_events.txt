@@ -97,7 +97,7 @@ nars_intro.0001 = {
         # Name and buff the dynamically generated dynasty
         scope:alnars.dynasty = {
             set_dynasty_name = "Narēsíos"
-            set_coa = h_narsokratia
+            set_coa = dynn_naresios
             hidden_effect = {
                 add_dynasty_prestige_level = 10
                 add_dynasty_prestige = 4750
@@ -105,7 +105,7 @@ nars_intro.0001 = {
         }
         scope:alnars.house = {
             set_house_name = "Narēsíos"
-            set_coa = h_narsokratia
+            set_coa = dynn_naresios
         }
         create_character = {
             template = selian_template.1002

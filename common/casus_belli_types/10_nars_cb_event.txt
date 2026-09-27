@@ -1,5 +1,5 @@
 selian_defiance_cb = {
-    icon = nars_cb
+    icon = struggle
     group = event
 
     full_occupation_by_defender_gives_victory = no
