@@ -1,5 +1,5 @@
 ﻿selian_incursion_cb = {
-    icon = undirected_great_holy_war
+    icon = nars_cb
     group = invasion
 
     target_title_tier = all
@@ -665,7 +665,7 @@
 }
 
 selian_migration_cb = {
-    icon = migration_cb
+    icon = nars_cb
     group = invasion
 
     interface_priority = 180

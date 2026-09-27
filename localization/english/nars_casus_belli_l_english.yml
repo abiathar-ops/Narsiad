@@ -34,26 +34,6 @@
 
  selian_migration_tt: "You personally take the [realm|E] [capital_possessive|E] [duchy|E] of the defender's [kingdom|E] while distributing the remaining [counties|E] to your [family|E] and [followers|E]"
  selian_migration_global_limit_tt:0 "This Migration Casus Belli can only be declared 3 times globally across the world (Used: [GetGlobalVariable('selian_migration_global_count').GetValue|0]/3)."
- 
- selian_expedition_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Expedition into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_expedition_cb: "#v Selian Expedition#! for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
- selian_expedition_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Expedition into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_expedition_NAME_BASE: "#v Selian Expedition#! for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
-
- selian_expedition_victory_attacker: "You usurp the targeted kingdom, seizing the lands of [defender.GetShortUIName] and migrating into [defender.GetHerHis] lands. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
- selian_expedition_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
- selian_expedition_victory: "[attacker.GetShortUIName|U] usurps the targeted kingdom, seizing the personal lands of [defender.GetShortUIName] and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
-
- selian_expedition_white_peace_defender: "You repel the expedition. [attacker.GetShortUIName|U] keeps their camp but abandons their campaign for your lands."
- selian_expedition_white_peace: "You fail to conquer the kingdom and must abandon your campaign, though your camp remains intact."
-
- selian_expedition_defeat_attacker: "Your expedition is a disaster. You are forced to pay reparations."
- selian_expedition_defeat_defender: "You successfully crush the expedition. [attacker.GetShortUIName|U] is forced to pay you reparations."
- selian_expedition_defeat: "[attacker.GetShortUIName|U]'s expedition is crushed by [defender.GetShortUIName]. [attacker.GetSheHe|U] is forced to pay reparations."
-
- selian_expedition_tt: "You personally take the [realm|E] [capital_possessive|E] [duchy|E] of the defender's [kingdom|E] while distributing the remaining [counties|E] to your [family|E] and [followers|E]"
- selian_expedition_global_limit_tt:0 "This Migration Casus Belli can only be declared 3 times globally across the world (Used: [GetGlobalVariable('selian_expedition_global_count').GetValue|0]/3)."
-
  # War Names
  selian_defiance_cb: "Anticipative War"
  SELIAN_DEFIANCE_WAR_NAME: "Anticipative War against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTierPossessiveNoTooltip] [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
