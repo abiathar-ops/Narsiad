@@ -56,7 +56,6 @@ nars_global_world_setup_on_action = {
                     NOT = { has_trait = nars_naturalis }
                 }
                 add_trait = nars_naturalis
-                #create_story = story_nars_naturalis
                 nars_naturalis_set_tier_xp_effect = yes
             }
             else_if = {

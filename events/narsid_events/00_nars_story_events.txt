@@ -163,7 +163,6 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                #create_story = story_nars_naturalis
             }
         }
         create_character = {
@@ -203,7 +202,6 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                #create_story = story_nars_naturalis
             }
         }
         create_character = {
@@ -242,7 +240,6 @@ nars_intro.0001 = {
                 set_mother = scope:mother
                 set_house = scope:alnars.house
                 
-                #create_story = story_nars_naturalis
             }
         }
 

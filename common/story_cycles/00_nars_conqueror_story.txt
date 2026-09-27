@@ -1,12 +1,30 @@
-story_nars_conqueror = {
-    visible = no
+﻿story_nars_conqueror = {
+    visible = yes
 
     icon = {
-        reference = "gfx/interface/icons/artifact/artefact_icons_unique_artifact_excalibur.dds"
+        reference = "gfx/interface/icons/artifact/artifact_icons_constantine.dds"
     }
 
     background = {
-        reference = "gfx/interface/illustrations/event_scenes/armory.dds"
+        reference = "gfx/interface/illustrations/event_scenes/nars_war.dds"
+    }
+
+    visualization = {
+        # character = {
+        #     variable_name = "nars_char"
+        #     label = "NARS_CHAR_LABEL"
+        # }
+        custom_string_key = "NIKATOR_STORY_PRACTICAL_INFORMATION_STRING"
+    }
+
+    on_setup = {
+        story_owner = { 
+            save_scope_as = nars_char
+        }
+        set_variable = {
+            name = nars_char
+            value = scope:nars_char
+        }
     }
     
     # 1. Ongoing Events
@@ -57,7 +75,6 @@ story_nars_conqueror = {
                                 highest_held_title_tier <= tier_county
                                 is_tributary = yes
                             }
-                            NOT = { this = character:140 }
                             is_ai = yes
                         }
                         # FIXED: Triggers custom event, not vanilla
@@ -92,15 +109,44 @@ story_nars_conqueror = {
                 story_owner = {
                     trigger_event = nars_conqueror.0002
                 }
-                # Kill the story when the event is triggered
                 end_story = yes
             }
         }
     }
 
     on_owner_death = {
-        end_story = yes
-    }
+		story_owner = {
+			if = {
+				limit = {
+					primary_heir ?= {
+						is_physically_able_adult = yes
+						OR = {
+							ai_has_cautious_personality = no
+							is_ai = no
+						}
+					}
+				}
+				primary_heir ?= {
+					add_trait = nars_conqueror
+					create_story = story_nars_conqueror
+				}
+			}
+			else = {
+				every_heir = {
+					limit = {
+						is_physically_able_adult = yes
+						OR = {
+							ai_has_cautious_personality = no
+							is_ai = no
+						}
+					}
+					add_trait = nars_conqueror
+					create_story = story_nars_conqueror
+				}
+			}
+		}
+		end_story = yes
+	}
 
     on_end = {
         debug_log = "Nikátōr story cycle ended on:"

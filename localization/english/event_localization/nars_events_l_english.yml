@@ -129,7 +129,7 @@
  nars_faith.10.a: "I will spare no expense!"
  nars_faith.10.b: "Temperance in all things."
  nars_faith_intro_tt: "Let coins do what we cannot."
- no_change_evangelism_tt: "Your #v[GetScheme('sponsor_meithios_scheme').GetTypeName]#! [scheme|E] progresses unmodified"
+ no_change_evangelism_tt: "Your #v [GetScheme('sponsor_meithios_scheme').GetTypeName]#! [scheme|E] progresses unmodified"
 
  nars_narsil.10.t: "Xíphous Palingenesía"
  nars_narsil.10.desc: "The shards of [narsil|E] test both my smiths' skill and my own resolve. How relentlessly should I pursue its mending, and how much of my coffers am I willing to spend chasing its restoration?\n\n#flavor "The $game_concept_selianes$ were forging in their vast [Glossary( 'Akropóleis', 'AKROPOLIS_GLOSS' )] with silence. They were shaping the terrifying sword of $game_concept_enuo$, with which she rouses men and cities to war. - $alnars_anduril$#!"

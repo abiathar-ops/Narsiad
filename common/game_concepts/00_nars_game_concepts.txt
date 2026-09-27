@@ -47,8 +47,10 @@ alnars = {
 
 selian_incursion = {
 	parent = casus_belli
+	texture = "gfx/interface/icons/icon_banner.dds"
 }
 
 selian_migration = {
 	parent = casus_belli
+	texture = "gfx/interface/icons/icon_banner.dds"
 }

@@ -1,11 +1,7 @@
 ﻿l_english:
- story_nars_naturalis: "Selian"
- story_nars_naturalis_desc: "A living fossil! The blood of an ancient hegemony flows through your veins, echoing forgotten glories."
- nars_char: "[Story.GetOwner.GetTitledFirstName]"
- NARS_CHAR_LABEL: "#v You#! are of $game_concept_selianes$!"
-
- story_nars_conqueror: "Nikátōr"
- story_nars_conqueror_desc: "The living instrument of the Selian' toil, heralding an era of eternal, ever-victorious restoration."
+ story_nars_conqueror: "$nars_conqueror.name$ tou $game_concept_selianes$"
+ story_nars_conqueror_desc: "Your ambition knows no bounds! You herald a new era of ever-victorious restoration of the $game_concept_selianes$."
+ NIKATOR_STORY_PRACTICAL_INFORMATION_STRING: "The #v [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! receive many powerful bonuses, such as: \n$BULLET_WITH_TAB$Access to the [selian_incursion|E] [casus_belli|E]\n$BULLET_WITH_TAB$Occassional powerful events\n\nYou will stop being the #v [GetTrait('nars_conqueror').GetNameNoTooltip( GetNullCharacter )]#! if:\n$BULLET_WITH_TAB$You are not [selianes|E] nor hold its [faith|E]\n$BULLET_WITH_TAB$Your rank is reduced to [count|E]\n$BULLET_WITH_TAB$You are not [independent|E]\n$BULLET_WITH_TAB$You become [unlanded|E]\n$BULLET_WITH_TAB$You're deep in [debt|E]\n$BULLET_WITH_TAB$You are #V [GetTrait('incapable').GetName( GetNullCharacter )]#!"
  
  MEND_NARSIL_COUNTER_TOOLTIP: "You need #color_green 10#! progress in the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]"
  MEND_NARSIL_VALUE_LABEL: "Your progress in the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]:"
@@ -22,8 +18,8 @@
  story_produce_amphora_desc: "In addition to a new amphora, with it's creation, I will gain some legitimacy as well as a chance to learn new methods of creations—mine."
 
  story_sponsor_meithios: "$decision_sponsor_meithios$"
- story_sponsor_meithios_desc: "Missionaries funded by my gold continue their quiet work, bringing the unconverted corners of my realm into the true faith, one village at a time."
+ story_sponsor_meithios_desc: "[Glossary( 'Meíthiōs', 'MEITHIOS_GLOSS' )] funded by my gold continue their quiet work, bringing the unconverted corners of my realm into the true faith, one village at a time."
  SPONSOR_MISSIONARIES_COUNTER_TOOLTIP: "You can dispatch a maximum of #color_green 3#! meithios before the #v [GetScheme('sponsor_meithios_scheme').GetTypeName]#! [scheme|E] and [story_cycle|E] ends automatically"
  SPONSOR_MISSIONARIES_VALUE_LABEL: "#v $game_concept_selianes$ Missionaries#! already sent by you:"
- SPONSOR_MISSIONARIES_VALUE_MIN_LABEL: " "
- SPONSOR_MISSIONARIES_VALUE_MAX_LABEL: " "
+ SPONSOR_MISSIONARIES_VALUE_MIN_LABEL: ""
+ SPONSOR_MISSIONARIES_VALUE_MAX_LABEL: ""

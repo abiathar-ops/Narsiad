@@ -11,7 +11,6 @@ nars_conqueror = {
 	ai_war_cooldown = -100
 	ai_amenity_spending = -0.25
 	ai_amenity_target_baseline = -0.4
-	glory_hound_opinion = 25
 	movement_speed = 0.25
 	flag = nars_conqueror_tt
 

@@ -17,7 +17,6 @@ nars_conqueror.0001 = {
     }
 
     immediate = {
-        play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_hold_triumph"
     }
 
     option = { 
@@ -28,7 +27,8 @@ nars_conqueror.0001 = {
         give_nickname = nick_soter
         add_trait = nars_conqueror
 		
-		
+		create_story = story_nars_conqueror
+
 		custom_tooltip = { 
 			text = nars_dynasty_get_scion_tt
 			dynasty = {
@@ -57,8 +57,6 @@ nars_conqueror.0001 = {
                 chronicle = conqueror_chronicle
             }
         }
-		
-        create_story = story_nars_conqueror
     }
 }
 
