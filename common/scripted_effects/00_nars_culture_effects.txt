@@ -235,13 +235,9 @@ create_h_narsokratia_effect = {
 		
 		hidden_effect = {
 			selian_vassal_conversion_effect = yes
+			selian_major_county_effect = yes
 		}
 		
-	}
-	
-	set_global_variable = {
-		name = created_h_narsokratia
-		value = yes
 	}
 }
 

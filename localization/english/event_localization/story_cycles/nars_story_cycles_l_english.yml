@@ -1,7 +1,7 @@
 ﻿l_english:
- story_nars_conqueror: "$nars_conqueror.name$ tou $game_concept_selianes$"
- story_nars_conqueror_desc: "Your ambition knows no bounds! You herald a new era of ever-victorious restoration of the $game_concept_selianes$."
- NIKATOR_STORY_PRACTICAL_INFORMATION_STRING: "The #v [GetTrait('nars_conqueror').GetName( GetNullCharacter )]#! receive many powerful bonuses, such as: \n$BULLET_WITH_TAB$Access to the [selian_incursion|E] [casus_belli|E]\n$BULLET_WITH_TAB$Occassional powerful events\n\nYou will stop being the #v [GetTrait('nars_conqueror').GetNameNoTooltip( GetNullCharacter )]#! if:\n$BULLET_WITH_TAB$You are not [selianes|E] nor hold its [faith|E]\n$BULLET_WITH_TAB$Your rank is reduced to [count|E]\n$BULLET_WITH_TAB$You are not [independent|E]\n$BULLET_WITH_TAB$You become [unlanded|E]\n$BULLET_WITH_TAB$You're deep in [debt|E]\n$BULLET_WITH_TAB$You are #V [GetTrait('incapable').GetName( GetNullCharacter )]#!"
+ story_nars_hegemon: "$nars_hegemon.name$ tou $game_concept_selianes$"
+ story_nars_hegemon_desc: "Your ambition knows no bounds! You herald a new era of ever-victorious restoration of the $game_concept_selianes$."
+ NIKATOR_STORY_PRACTICAL_INFORMATION_STRING: "The #v [GetTrait('nars_hegemon').GetName( GetNullCharacter )]#! receive many powerful bonuses, such as: \n$BULLET_WITH_TAB$Access to the [selian_incursion|E] [casus_belli|E]\n$BULLET_WITH_TAB$Occassional powerful events\n\nYou will stop being the #v [GetTrait('nars_hegemon').GetNameNoTooltip( GetNullCharacter )]#! if:\n$BULLET_WITH_TAB$You are not [selianes|E] nor hold its [faith|E]\n$BULLET_WITH_TAB$Your rank is reduced to [count|E]\n$BULLET_WITH_TAB$You are not [independent|E]\n$BULLET_WITH_TAB$You become [unlanded|E]\n$BULLET_WITH_TAB$You're deep in [debt|E]\n$BULLET_WITH_TAB$You are #V [GetTrait('incapable').GetName( GetNullCharacter )]#!"
  
  MEND_NARSIL_COUNTER_TOOLTIP: "You need #color_green 10#! progress in the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]"
  MEND_NARSIL_VALUE_LABEL: "Your progress in the #v [GetScheme('mend_narsil_scheme').GetTypeName]#! [scheme|E]:"

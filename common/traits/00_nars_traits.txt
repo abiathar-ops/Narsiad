@@ -1,4 +1,4 @@
-nars_conqueror = {
+nars_hegemon = {
 	icon = campeador.dds
 	category = fame
 	shown_in_ruler_designer = no
@@ -12,15 +12,15 @@ nars_conqueror = {
 	ai_amenity_spending = -0.25
 	ai_amenity_target_baseline = -0.4
 	movement_speed = 0.25
-	flag = nars_conqueror_tt
+	flag = nars_hegemon_tt
 
 	name = {
         first_valid = {
             triggered_desc = {
                 trigger = { NOT = { exists = this } }
-                desc = nars_conqueror.no_actor
+                desc = nars_hegemon.no_actor
 			}
-            desc = nars_conqueror.name
+            desc = nars_hegemon.name
         }
     }
 
@@ -30,9 +30,9 @@ nars_conqueror = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_nars_conqueror_desc
+				desc = trait_nars_hegemon_desc
 			}
-			desc = trait_nars_conqueror_character_desc
+			desc = trait_nars_hegemon_character_desc
 		}
 	}
 

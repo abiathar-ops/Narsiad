@@ -17,15 +17,15 @@ nars_intro.1001 = {
 	}
 
     immediate = {
-        play_music_cue = mx_cue_negative_effect
+        play_music_cue = strugglestart_cue
         trigger_event = { id = nars_maintenance.0002 days = 1 }
     }
     
 	option = {
+        clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 		name = nars_intro.1001.a
         flavor = nars_intro.1001.a.flavor
         intro_standard_effect = yes
-		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
 	}
 }
 
@@ -36,6 +36,8 @@ nars_intro.0001 = {
     title = nars_intro.0001.t
     desc = nars_intro.0001.desc
     theme = nars_faith
+
+    override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
     left_portrait = {
         character = scope:eleios
@@ -56,6 +58,7 @@ nars_intro.0001 = {
     }
 
     immediate = {
+        play_music_cue = strugglestart_cue
         create_character = {
             name = "Alnars"
             gender = male
@@ -543,6 +546,10 @@ nars_intro.0001 = {
         flavor = nars_intro.0001.d.flavor
         custom_tooltip = selian_incivility.tt
         ai_chance = { base = 100 }   
+    }
+
+    after = {
+        override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select" }
     }
 }
 

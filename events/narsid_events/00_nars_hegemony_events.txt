@@ -285,7 +285,7 @@ nars_hegemony.0105 = {
 		name = nars_hegemony.0105.a
 		flavor = nars_hegemony.flavor.win
 		add_prestige = monumental_prestige_gain
-		trigger_event = nars_conqueror.0001
+		trigger_event = nars_hegemon.0001
 	}
 }
 

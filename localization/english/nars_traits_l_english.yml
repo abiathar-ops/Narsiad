@@ -1,9 +1,9 @@
 ﻿l_english: 
- nars_conqueror.name: "Nikátōr"
- nars_conqueror.no_actor: "Victorious"
- trait_nars_conqueror_desc: "Bound by a sacred oath, [ROOT.GetCharacter.GetSheHe] stands as the herald of an era of ever-victorious restoration for his people."
- trait_nars_conqueror_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now a foremost scion of war and conquest!"
- TRAIT_FLAG_DESC_nars_conqueror_tt: "Unlocks the [selian_incursion|E] [casus_belli|E]"
+ nars_hegemon.name: "Nikátōr"
+ nars_hegemon.no_actor: "Victorious"
+ trait_nars_hegemon_desc: "Bound by a sacred oath, [ROOT.GetCharacter.GetSheHe] stands as the herald of an era of ever-victorious restoration for his people."
+ trait_nars_hegemon_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] oath has resounded through various regions. [ROOT.GetCharacter.GetSheHe|U] is now a foremost scion of war and conquest!"
+ TRAIT_FLAG_DESC_nars_hegemon_tt: "Unlocks the [selian_incursion|E] [casus_belli|E]"
  
  nars_scion.name: "Mōnarkíad"
  nars_scion.no_actor: "Politeíon-Blessed"

@@ -2,7 +2,7 @@
 	random_events = {
 		85 = nars_courtiers.0002 # Toast: 1-2 new Selian courtiers join the court
 		10  = nars_courtiers.0011 # Two Polimêtis candidates become recruitable (paid)
-		5  = nars_conqueror.1100
+		5  = nars_hegemon.1100
 	}
 }
 

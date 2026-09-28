@@ -1,4 +1,4 @@
-﻿story_nars_conqueror = {
+﻿story_nars_hegemon = {
     visible = yes
 
     icon = {
@@ -37,7 +37,7 @@
                 is_alive = yes
                 is_adult = yes
                 top_liege = this
-                has_trait = nars_conqueror
+                has_trait = nars_hegemon
             }
         }
 
@@ -47,7 +47,7 @@
                 effect = {
                     story_owner = {
                         trigger_event = {
-                            on_action = ongoing_nars_conqueror_events
+                            on_action = ongoing_nars_hegemon_events
                         }
                     }
                 }
@@ -78,7 +78,7 @@
                             is_ai = yes
                         }
                         # FIXED: Triggers custom event, not vanilla
-                        trigger_event = nars_conqueror.0002
+                        trigger_event = nars_hegemon.0002
                     }
                 }
             }
@@ -107,7 +107,7 @@
             }
             effect = {
                 story_owner = {
-                    trigger_event = nars_conqueror.0002
+                    trigger_event = nars_hegemon.0002
                 }
                 end_story = yes
             }
@@ -127,8 +127,8 @@
 					}
 				}
 				primary_heir ?= {
-					add_trait = nars_conqueror
-					create_story = story_nars_conqueror
+					add_trait = nars_hegemon
+					create_story = story_nars_hegemon
 				}
 			}
 			else = {
@@ -140,8 +140,8 @@
 							is_ai = no
 						}
 					}
-					add_trait = nars_conqueror
-					create_story = story_nars_conqueror
+					add_trait = nars_hegemon
+					create_story = story_nars_hegemon
 				}
 			}
 		}
@@ -157,7 +157,7 @@
 				limit = {
 					is_alive = yes
 				}
-				remove_trait = nars_conqueror
+				remove_trait = nars_hegemon
 			}
 		}
     }

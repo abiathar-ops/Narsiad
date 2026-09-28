@@ -182,8 +182,8 @@ selian_defiance_cb = {
         # Perspective events for the coalition's defeat, mirroring HAAO's
         # disobedient_war_cb post-war events (haao_hegemony.0103/0104). The
         # aspirant's own victory perspective is nars_hegemony.0105, triggered
-        # from scope:defender's effects below (replaces nars_conqueror.0001
-        # as the entry point -- 0105 itself still chains into nars_conqueror.0001
+        # from scope:defender's effects below (replaces nars_hegemon.0001
+        # as the entry point -- 0105 itself still chains into nars_hegemon.0001
         # for the reward/flavor beat).
         hidden_effect = {
             scope:defender = {

@@ -1,10 +1,10 @@
-﻿namespace = nars_conqueror
+﻿namespace = nars_hegemon
 
 #Get Mōnarkíad Trait
-nars_conqueror.0001 = {
+nars_hegemon.0001 = {
     type = character_event
-    title = nars_conqueror.0001.t
-    desc = nars_conqueror.0001.desc
+    title = nars_hegemon.0001.t
+    desc = nars_hegemon.0001.desc
     window = big_event_window
     theme = emperor
     override_background = wilderness_mountains
@@ -20,14 +20,14 @@ nars_conqueror.0001 = {
     }
 
     option = { 
-        name = nars_conqueror.0001.a
+        name = nars_hegemon.0001.a
         flavor = narsokratia_event.flavor
 
 		add_legitimacy = monumental_legitimacy_gain
         give_nickname = nick_soter
-        add_trait = nars_conqueror
+        add_trait = nars_hegemon
 		
-		create_story = story_nars_conqueror
+		create_story = story_nars_hegemon
 
 		custom_tooltip = { 
 			text = nars_dynasty_get_scion_tt
@@ -61,16 +61,16 @@ nars_conqueror.0001 = {
 }
 
 #Lose Nikator Trait
-nars_conqueror.0002 = {
+nars_hegemon.0002 = {
     type = character_event
-    title = nars_conqueror.0002.t
+    title = nars_hegemon.0002.t
 
     desc = {
-        desc = nars_conqueror.0002.intro
+        desc = nars_hegemon.0002.intro
         random_valid = {
             triggered_desc = {
                 trigger = { days_of_continuous_peace >= 3650 }
-                desc = nars_conqueror.0002.peace
+                desc = nars_hegemon.0002.peace
             }
             triggered_desc = {
                 trigger = {
@@ -79,26 +79,26 @@ nars_conqueror.0002 = {
                         var:lost_wars >= 3
                     }
                 }
-                desc = nars_conqueror.0002.lost_wars
+                desc = nars_hegemon.0002.lost_wars
             }
             triggered_desc = {
                 trigger = { is_ideal_selian = no }
-                desc = nars_conqueror.0002.traitor
+                desc = nars_hegemon.0002.traitor
             }
             triggered_desc = {
                 trigger = { is_independent_ruler = no }
-                desc = nars_conqueror.0002.subjugated
+                desc = nars_hegemon.0002.subjugated
             }
             triggered_desc = {
                 trigger = { has_trait = incapable }
-                desc = nars_conqueror.0002.incapable
+                desc = nars_hegemon.0002.incapable
             }
             triggered_desc = {
                 trigger = { highest_held_title_tier <= tier_duchy }
-                desc = nars_conqueror.0002.demoted
+                desc = nars_hegemon.0002.demoted
             }
         }
-        desc = nars_conqueror.0002.outro
+        desc = nars_hegemon.0002.outro
     }
     
     theme = emperor
@@ -111,14 +111,14 @@ nars_conqueror.0002 = {
     immediate = {
 		save_scope_as = root_scope
 		every_owned_story = {
-			type = story_nars_conqueror
+			type = story_nars_hegemon
 			end_story = yes
 		}
 	}
     option = {
-        name = nars_conqueror.0002.a
-        flavor = nars_conqueror.0002.a.flavor
-        remove_trait = nars_conqueror
+        name = nars_hegemon.0002.a
+        flavor = nars_hegemon.0002.a.flavor
+        remove_trait = nars_hegemon
         add_prestige_level = -2
         
         if = {
@@ -156,7 +156,7 @@ nars_conqueror.0002 = {
 # Feed messages
 
 # Small gift from County
-nars_conqueror.0100 = {
+nars_hegemon.0100 = {
 	hidden = yes
 
 	trigger = {
@@ -185,8 +185,8 @@ nars_conqueror.0100 = {
 		else = {
 			send_interface_message = {
 				type = event_diplomacy_good_with_text
-				title = nars_conqueror_feed_county_gift
-				desc = nars_conqueror_feed_county_gift_desc
+				title = nars_hegemon_feed_county_gift
+				desc = nars_hegemon_feed_county_gift_desc
 				left_icon = scope:county_target
 				add_gold = scope:county_target.title_province.available_loot
 			}
@@ -195,7 +195,7 @@ nars_conqueror.0100 = {
 }
 
 # Good Knight Joins
-nars_conqueror.0200 = {
+nars_hegemon.0200 = {
 	hidden = yes
 
 	trigger = {
@@ -294,8 +294,8 @@ nars_conqueror.0200 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nars_conqueror_feed_knight_joins
-			desc = nars_conqueror_feed_knight_joins_desc
+			title = nars_hegemon_feed_knight_joins
+			desc = nars_hegemon_feed_knight_joins_desc
 			left_icon = scope:knight
 			add_courtier = scope:knight
 			add_hook = {
@@ -307,7 +307,7 @@ nars_conqueror.0200 = {
 }
 
 # Angry Vassal is Impressed
-nars_conqueror.0300 = {
+nars_hegemon.0300 = {
 	hidden = yes
 
 	trigger = {
@@ -344,8 +344,8 @@ nars_conqueror.0300 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nars_conqueror_feed_angry_vassal
-			desc = nars_conqueror_feed_angry_vassal_desc
+			title = nars_hegemon_feed_angry_vassal
+			desc = nars_hegemon_feed_angry_vassal_desc
 			left_icon = scope:angry_vassal
 			reverse_add_opinion = {
 				modifier = impressed_opinion
@@ -357,7 +357,7 @@ nars_conqueror.0300 = {
 }
 
 # Courtier Gives you Gold
-nars_conqueror.0400 = {
+nars_hegemon.0400 = {
 	hidden = yes
 
 	trigger = {
@@ -386,8 +386,8 @@ nars_conqueror.0400 = {
 		
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nars_conqueror_feed_generous_courtier
-			desc = nars_conqueror_feed_generous_courtier_desc
+			title = nars_hegemon_feed_generous_courtier
+			desc = nars_hegemon_feed_generous_courtier_desc
 			left_icon = scope:generous_courtier
 			scope:generous_courtier = {
 				pay_short_term_gold = {
@@ -403,7 +403,7 @@ nars_conqueror.0400 = {
 }
 
 # Gain Siege Engineer
-nars_conqueror.0500 = {
+nars_hegemon.0500 = {
 	hidden = yes
 
 	trigger = {
@@ -432,8 +432,8 @@ nars_conqueror.0500 = {
 		}
 		send_interface_message = {
 			type = event_diplomacy_good_with_text
-			title = nars_conqueror_feed_siege_engineer
-			desc = nars_conqueror_feed_siege_engineer_desc
+			title = nars_hegemon_feed_siege_engineer
+			desc = nars_hegemon_feed_siege_engineer_desc
 			left_icon = scope:new_commander
 			show_as_tooltip = {
 				add_courtier = scope:new_commander
@@ -465,10 +465,10 @@ scripted_trigger generous_vassal_trigger = {
 }
 
 #Errant optimatoi Join
-nars_conqueror.1100 = {
+nars_hegemon.1100 = {
     type = character_event
-    title = nars_conqueror.1100.t
-    desc = nars_conqueror.1100.desc
+    title = nars_hegemon.1100.t
+    desc = nars_hegemon.1100.desc
     theme = nars_war
 
     left_portrait = {
@@ -507,8 +507,8 @@ nars_conqueror.1100 = {
 
     # Option A: Pay gold for special soldiers
     option = {
-        name = nars_conqueror.1100.a # "I will pay you handsomely for your spears."
-		flavor = nars_conqueror.1100.a.flavor
+        name = nars_hegemon.1100.a # "I will pay you handsomely for your spears."
+		flavor = nars_hegemon.1100.a.flavor
 		scope:optimatos = {
             set_employer = root
         }
@@ -535,8 +535,8 @@ nars_conqueror.1100 = {
 		}
     }
     option = {
-        name = nars_conqueror.1100.b
-		flavor = nars_conqueror.1100.b.flavor
+        name = nars_hegemon.1100.b
+		flavor = nars_hegemon.1100.b.flavor
         
         random_list = {
             50 = {
@@ -563,8 +563,8 @@ nars_conqueror.1100 = {
                     set_employer = root
                 }
                 send_interface_message = {
-                    title = nars_conqueror.1100.b.success_msg.t
-                    desc = nars_conqueror.1100.b.success_msg.desc
+                    title = nars_hegemon.1100.b.success_msg.t
+                    desc = nars_hegemon.1100.b.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:optimatos
                 }
@@ -574,11 +574,11 @@ nars_conqueror.1100 = {
                     add = 30
                     diplomacy < 15
                 }
-				custom_tooltip = nars_conqueror.1100.tt
+				custom_tooltip = nars_hegemon.1100.tt
                 add_stress = medium_stress_gain
                 send_interface_message = {
-                    title = nars_conqueror.1100.b.failure_msg.t
-                    desc = nars_conqueror.1100.b.failure_msg.desc
+                    title = nars_hegemon.1100.b.failure_msg.t
+                    desc = nars_hegemon.1100.b.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:optimatos
                 }
@@ -587,9 +587,9 @@ nars_conqueror.1100 = {
     }
 
     option = {
-        name = nars_conqueror.1100.c
+        name = nars_hegemon.1100.c
 		flavor = nars_courtiers.0011.d.flavor
-		custom_tooltip = nars_conqueror.1100.tt
+		custom_tooltip = nars_hegemon.1100.tt
         stress_impact = {
 			zealous = medium_stress_impact_gain
 			brave = medium_stress_impact_gain
@@ -602,10 +602,10 @@ nars_conqueror.1100 = {
 }
 
 #A zealot priest and a optimatos
-nars_conqueror.1200 = {
+nars_hegemon.1200 = {
 	type = character_event
-	title = nars_conqueror.1200.t
-	desc = nars_conqueror.1200.desc
+	title = nars_hegemon.1200.t
+	desc = nars_hegemon.1200.desc
 	theme = emperor
 	override_background = throne_room_east
 
@@ -682,7 +682,7 @@ nars_conqueror.1200 = {
 	}
 
 	option = {
-		name = nars_conqueror.1200.a
+		name = nars_hegemon.1200.a
 		
 		if = {
 			limit = {
@@ -711,7 +711,7 @@ nars_conqueror.1200 = {
 	}
 
 	option = { 
-		name = nars_conqueror.1200.b
+		name = nars_hegemon.1200.b
 		
 		trigger = {
 			NOT = {
@@ -751,7 +751,7 @@ nars_conqueror.1200 = {
 	}
 
 	option = { 
-		name = nars_conqueror.1200.c
+		name = nars_hegemon.1200.c
 		
 		trigger = {
 			NOT = {
@@ -800,15 +800,15 @@ nars_conqueror.1200 = {
 	}
 }
 
-nars_conqueror.1300 = {
+nars_hegemon.1300 = {
     type = character_event
-    title = nars_conqueror.1300.t
-    desc = nars_conqueror.1300.desc
+    title = nars_hegemon.1300.t
+    desc = nars_hegemon.1300.desc
     theme = emperor
 	override_background = throne_room_east
 
     trigger = {
-        has_trait = nars_conqueror
+        has_trait = nars_hegemon
         any_sub_realm_county = {
             NOT = { culture = culture:selian }
         }
@@ -923,7 +923,7 @@ nars_conqueror.1300 = {
 		trigger = {
 			NOT = { has_character_modifier = nars_vanguard_spoils_modifier }
 		}
-        name = nars_conqueror.1300.a
+        name = nars_hegemon.1300.a
         remove_short_term_gold = major_gold_value
         add_character_modifier = {
             modifier = nars_vanguard_spoils_modifier
@@ -940,7 +940,7 @@ nars_conqueror.1300 = {
     }
 
     option = {
-        name = nars_conqueror.1300.b
+        name = nars_hegemon.1300.b
 		trigger = {
 			scope:settlement_county = {
 				NOT = { has_county_modifier = nars_veteran_settlement_modifier }
@@ -966,7 +966,7 @@ nars_conqueror.1300 = {
 
     # Option C: Persuasion check to recruit them
     option = {
-        name = nars_conqueror.1300.c
+        name = nars_hegemon.1300.c
         random_list = {
             50 = {
                 modifier = {
@@ -977,7 +977,7 @@ nars_conqueror.1300 = {
                     add = 20
                     diplomacy >= 35
                 }       
-                custom_tooltip = nars_conqueror.1300.c.tt
+                custom_tooltip = nars_hegemon.1300.c.tt
                 add_prestige = major_prestige_value
 				hidden_effect = {
 					every_in_list = {
@@ -992,8 +992,8 @@ nars_conqueror.1300 = {
 					}
 				}
                 send_interface_message = {
-                    title = nars_conqueror.1300.c.success_msg.t
-                    desc = nars_conqueror.1300.c.success_msg.desc
+                    title = nars_hegemon.1300.c.success_msg.t
+                    desc = nars_hegemon.1300.c.success_msg.desc
                     type = event_prowess_good_desc
                     left_icon = scope:commander_1
                 }
@@ -1006,8 +1006,8 @@ nars_conqueror.1300 = {
 				add_stress = medium_stress_gain
                 add_prestige = major_prestige_loss
                 send_interface_message = {
-                    title = nars_conqueror.1300.c.failure_msg.t
-                    desc = nars_conqueror.1300.c.failure_msg.desc
+                    title = nars_hegemon.1300.c.failure_msg.t
+                    desc = nars_hegemon.1300.c.failure_msg.desc
                     type = event_prowess_bad_desc
                     left_icon = scope:commander_1
                 }
@@ -1024,14 +1024,14 @@ nars_conqueror.1300 = {
     }
 }
 
-nars_conqueror.1400 = {
+nars_hegemon.1400 = {
     type = character_event
-    title = nars_conqueror.1400.t
-    desc = nars_conqueror.1400.desc
+    title = nars_hegemon.1400.t
+    desc = nars_hegemon.1400.desc
     theme = emperor
 
     trigger = {
-        has_trait = nars_conqueror
+        has_trait = nars_hegemon
         # Must have at least one foreign vassal who rules over a county of their own culture
         any_vassal = {
             NOT = { culture = culture:selian }
@@ -1088,7 +1088,7 @@ nars_conqueror.1400 = {
 
     # Option A: Mysterious deaths (County conversion up, control down)
     option = {
-        name = nars_conqueror.1400.a
+        name = nars_hegemon.1400.a
         add_dread = 30
         scope:unrest_county = {
             change_county_control = -15
@@ -1110,7 +1110,7 @@ nars_conqueror.1400 = {
 
     # Option B: Integration (Pay gold/prestige, gain acceptance/dev)
     option = {
-        name = nars_conqueror.1400.b
+        name = nars_hegemon.1400.b
         remove_short_term_gold = 75
         add_prestige = -150
         
@@ -1145,21 +1145,21 @@ nars_conqueror.1400 = {
 
     # Option C: Do nothing
     option = {
-        name = nars_conqueror.1400.c
+        name = nars_hegemon.1400.c
         add_stress = minor_stress_gain
     }
 }
 
-nars_conqueror.1500 = {
+nars_hegemon.1500 = {
     type = character_event
-    title = nars_conqueror.1500.t
-    desc = nars_conqueror.1500.desc
+    title = nars_hegemon.1500.t
+    desc = nars_hegemon.1500.desc
     theme = emperor
 
 	override_background = throne_room_east
 
     trigger = {
-        has_trait = nars_conqueror
+        has_trait = nars_hegemon
         any_sub_realm_county = {
             count >= 1
         }
@@ -1201,7 +1201,7 @@ nars_conqueror.1500 = {
 
     # Option A: Pay him off (Major Gold -> Legend Modifier)
     option = {
-        name = nars_conqueror.1500.a
+        name = nars_hegemon.1500.a
         remove_short_term_gold = medium_gold_value
         
         scope:epic_county = {
@@ -1229,7 +1229,7 @@ nars_conqueror.1500 = {
     }
 
     option = {
-        name = nars_conqueror.1500.b
+        name = nars_hegemon.1500.b
         
         add_tyranny = 15
 		scope:arrogant_bard = {
@@ -1250,11 +1250,11 @@ nars_conqueror.1500 = {
 
     # Option C: The Prose Duel (RNG Check)
     option = {
-        name = nars_conqueror.1500.c
-        custom_tooltip = nars_conqueror.1500.c.tt
+        name = nars_hegemon.1500.c
+        custom_tooltip = nars_hegemon.1500.c.tt
         random_list = {
             50 = {
-				custom_tooltip = nars_conqueror.1500.c.success_tt
+				custom_tooltip = nars_hegemon.1500.c.success_tt
                 modifier = {
                     add = 15
                     diplomacy >= 20
@@ -1273,14 +1273,14 @@ nars_conqueror.1500 = {
 					}
 				}
                 send_interface_message = {
-                    title = nars_conqueror.1500.c.success_msg.t
-                    desc = nars_conqueror.1500.c.success_msg.desc
+                    title = nars_hegemon.1500.c.success_msg.t
+                    desc = nars_hegemon.1500.c.success_msg.desc
                     type = event_prowess_good_desc
 					left_icon = scope:arrogant_bard
                 }
             }
             50 = {
-                custom_tooltip = nars_conqueror.1500.c.failure_tt
+                custom_tooltip = nars_hegemon.1500.c.failure_tt
                 modifier = {
                     add = 25
                     diplomacy < 12
@@ -1297,8 +1297,8 @@ nars_conqueror.1500 = {
 		 	}
                 }
 				send_interface_message = {
-                    title = nars_conqueror.1500.c.failure_msg.t
-                    desc = nars_conqueror.1500.c.failure_msg.desc
+                    title = nars_hegemon.1500.c.failure_msg.t
+                    desc = nars_hegemon.1500.c.failure_msg.desc
                     type = event_prowess_good_desc
 					left_icon = scope:arrogant_bard
                 }
