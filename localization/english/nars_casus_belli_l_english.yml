@@ -1,6 +1,6 @@
 ﻿l_english:
  selian_incursion_NAME: "[ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
- selian_incursion_cb: "$game_concept_selianes$ Incursion"
+ selian_incursion_cb: "[selian_incursion|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  selian_incursion_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  selian_incursion_NAME_BASE: "[selian_incursion|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  

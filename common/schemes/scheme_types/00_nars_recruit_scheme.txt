@@ -46,7 +46,7 @@
 
 	# Base Chances
 	base_success_chance = {
-		base = 40
+		base = 55
 		modifier = {
 			add = scope:owner.diplomacy
 			desc = "SCHEME_MY_DIPLOMACY"

@@ -21,10 +21,7 @@
 
  nars_brutal_purges_modifier: "Brutal Purges"
  nars_brutal_purges_modifier_desc: "A string of mysterious 'accidents' among foreign elites has happened"
- nars_faithful_supplies_modifier: "Pious Supplies"
- nars_faithful_supplies_modifier_desc: "Devotees have provided their ruler with supplies to aid in conquests."
- nars_faithful_draft_modifier: "Faithful's Draft"
- nars_faithful_draft_modifier_desc: "The faithful have provided their ruler with additional troops to aid in conquests."
+
  nars_temple_fornicator_modifier:0 "Terror-filled"
  nars_poet_inspired_modifier:0 "Inspired"
  nars_herbalist_inspired_modifier:0 "Inspired"

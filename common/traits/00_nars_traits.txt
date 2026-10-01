@@ -110,27 +110,14 @@ nars_naturalis = {
         }
     }
 	health = 2
-	fertility = -0.50
+	fertility = -0.75
 	years_of_fertility = 75
 	life_expectancy = 75
 	inbreeding_chance = -0.75
-	# ignore_negative_culture_opinion = yes
-	# ignore_different_faith_opinion = yes
+	flag = is_immortal
 
 	ai_rationality = dominant_positive_ai_value
 	ruler_designer_cost = 240
-
-	# opposites = {
-	# 	infertile
-	# 	dull
-	# 	intellect_bad
-	# 	beauty_bad
-	# 	physique_bad
-	# 	giant
-	# 	hunchbacked
-	# 	clubfooted
-	# 	scaly
-	# }
 
 	genetic_constraint_all = beauty_3
 	genetic_constraint_men = male_beauty_3

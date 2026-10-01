@@ -1,7 +1,7 @@
 ﻿decision_recruit_nars = {
 	ai_check_interval = 15
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_akropolis.dds" 
+		reference = "gfx/interface/illustrations/decisions/nars_decision_akropolis.dds" 
 	}
 	sort_order = 1000
 	decision_group_type = courtier
@@ -21,9 +21,7 @@
 
 	is_valid_showing_failures_only = {
 		is_alive = yes
-		not = { exists = involved_activity }
 		is_imprisoned = no
-		is_at_war = no
 		is_adult = yes
 		has_contagious_deadly_disease_trigger = no
 		custom_tooltip = {
@@ -89,6 +87,7 @@ decision_piously_devote = {
 	}
 
 	is_valid_showing_failures_only = {
+		not = { exists = involved_activity }
 		custom_tooltip = {
 			text = piously_devote_decision_cooldown_tt
 			NOT = {
@@ -156,7 +155,7 @@ decision_piously_devote = {
 
 decision_mend_narsil = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_domination.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_domination.dds"
 	}
 	
 	desc = decision_mend_narsil_desc
@@ -245,7 +244,7 @@ decision_mend_narsil = {
 
 decision_produce_amphora = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/raise_tumulus.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_mound.dds"
 	}
 	
 	desc = decision_produce_amphora_desc
@@ -330,7 +329,7 @@ decision_produce_amphora = {
 
 decision_narsokratia = {
     picture = {
-        reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_sunder.dds"
+        reference = "gfx/interface/illustrations/decisions/nars_decision_basileus.dds"
     }
     desc = decision_narsokratia_desc
     selection_tooltip = decision_narsokratia_tooltip
@@ -427,7 +426,7 @@ decision_narsokratia = {
 
 decision_sponsor_meithios = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_delphi.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_march.dds"
 	}
 
 	desc = decision_sponsor_meithios_desc
@@ -463,7 +462,6 @@ decision_sponsor_meithios = {
 		}
 		is_available_adult = yes
 		is_imprisoned = no
-		is_at_war = no
 		custom_tooltip = {
 			text = decision_sponsor_meithios_ongoing
 			NOT = {

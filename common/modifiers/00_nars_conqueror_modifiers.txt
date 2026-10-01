@@ -13,33 +13,6 @@ nars_veteran_settlement_modifier = {
 
 nars_brutal_purges_modifier = {
 	icon = intrigue_negative
-	different_culture_opinion = -10
+	different_culture_opinion = -15
 	development_growth_factor = -0.01
-}
-
-nars_epic_of_nikator_modifier = {
-	icon = diplomacy_positive
-	county_opinion_add = 20
-	levy_size = 0.20
-	owned_legend_spread_mult = 0.15 
-}
-
-nars_mocked_nikator_modifier = {
-	icon = diplomacy_negative
-	county_opinion_add = -20
-	levy_size = -0.20
-	owned_legend_spread_mult = -0.15
-}
-
-nars_faithful_supplies_modifier = {
-	icon = goods_positive
-	supply_capacity_mult = 0.2
-	county_opinion_add = 10
-}
-
-nars_faithful_draft_modifier = {
-	icon = wit_positive
-	levy_reinforcement_rate = 0.3
-	county_opinion_add = 10
-	herd_conversion = 0.03
 }

@@ -19,10 +19,11 @@ nars_t1 = {
     type = heavy_infantry
 
     can_recruit = {
-	    valid_for_nars_trigger = { PARAMETER = unlock_nars_t1 }
+	    culture = { has_cultural_parameter = unlock_nars_t1 }
         NOT = {
 			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
 		}
+        is_selian = yes
     }
 
     damage = 45
@@ -74,7 +75,9 @@ nars_t2 = {
     type = heavy_infantry
     
     can_recruit = {
-	    can_recruit_nars_t2_trigger = yes
+	    is_selian = yes
+        top_liege = yes
+        exists = global_var:mastiges_recruitable
     }
 
     mercenary_fallback = no

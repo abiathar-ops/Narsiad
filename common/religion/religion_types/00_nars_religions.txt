@@ -173,15 +173,15 @@
 			nars_evil_god_samiga
 		}
 		HouseOfWorship = nars_house_of_worship
-		HouseOfWorship2 = nars_house_of_worship_2
-		HouseOfWorship3 = nars_house_of_worship_3
+		HouseOfWorship2 = nars_house_of_worship
+		HouseOfWorship3 = nars_house_of_worship
 		HouseOfWorshipPlural = nars_house_of_worship_plural
 		ReligiousSymbol = nars_religious_symbol
-		ReligiousSymbol2 = nars_religious_symbol_2
-		ReligiousSymbol3 = nars_religious_symbol_3
+		ReligiousSymbol2 = nars_religious_symbol
+		ReligiousSymbol3 = nars_religious_symbol
 		ReligiousText = nars_religious_text
-		ReligiousText2 = nars_religious_text_2
-		ReligiousText3 = nars_religious_text_3
+		ReligiousText2 = nars_religious_text
+		ReligiousText3 = nars_religious_text
 		ReligiousHeadName = nars_religious_head_title
 		ReligiousHeadTitleName = nars_religious_head_title_name
 		DevoteeMale = nars_devotee_male
@@ -205,10 +205,10 @@
 		BishopNeuterPlural = nars_bishop_plural
 		DivineRealm = nars_positive_afterlife
 		DivineRealm2 = nars_positive_afterlife_2
-		DivineRealm3 = nars_positive_afterlife_3
+		DivineRealm3 = nars_positive_afterlife
 		PositiveAfterLife = nars_positive_afterlife
 		PositiveAfterLife2 = nars_positive_afterlife_2
-		PositiveAfterLife3 = nars_positive_afterlife_3
+		PositiveAfterLife3 = nars_positive_afterlife
 		NegativeAfterLife = nars_negative_afterlife
 		NegativeAfterLife2 = nars_negative_afterlife_2
 		NegativeAfterLife3 = nars_negative_afterlife_3

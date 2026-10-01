@@ -1,5 +1,5 @@
 ﻿l_english:
- nars_hegemon.0001.t:0 "Mēdèn Ága, Nikátōr"
+ nars_hegemon.0001.t:0 "Mēdèn Ága, Nikátōr!"
  nars_hegemon.0001.desc: "Today, as a [ROOT.Char.GetTitleAsNameNoTooltip], I pledge myself, my dynasty, and my realm as [narsokratia_possessive|E] inheritors.\n\nNeighbouring rulers in nearby regions will soon realize that they are nothing more than temporary stewards of our future lands. We, the $game_concept_selianes$, are now returned to our [Glossary( 'Hēgemonia', 'HEGEMONIA_GLOSS' )]." 
  nars_hegemon.0001.a: "The first step; never the last!"
  nars_dynasty_get_scion_tt: "Your [dynasty_members|E] gain the [trait|E] #v [GetTrait('nars_scion').GetName( GetNullCharacter )]#!"
@@ -29,13 +29,6 @@
  nars_hegemon.1100.c: "I have no need for them at this moment."
  nars_hegemon.1100.tt: "You spurn #v [optimatos.GetFirstName]#! to seek their fortunes elsewhere"
 
-
- nars_hegemon.1200.t: "$nars_hegemon.0001.t$"
- nars_hegemon.1200.desc: "An audience is requested by [portrait_faithful.GetTitledFirstName], a fervent devotee from [zealot_barony.GetName]. Flanked by a stoic [soldier|E] in polished armor, [portrait_faithful.GetSheHe] kneels before my throne.\n\n"The people of [zealot_barony.GetName] are entirely devoted to your cause, my liege," [portrait_faithful.GetSheHe] proclaims, gesturing to chests of gathered wealth and tributes. "Our lands are now secure, our [cities|E] bountiful, and our [faith|E] in your rule is absolute. We now offer these boons to fuel your pledge."\n\nI must decide how best to utilize the unwavering devotion of these people for the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] before they depart."
- nars_hegemon.1200.a:0 "We shall claim this for the treasury!"
- nars_hegemon.1200.b:0 "When you see my army, feed them."
- nars_hegemon.1200.c:0 "Draft their youth into our vanguard!"
-
  nars_hegemon.1300.t: "$nars_hegemon.0001.t$"
  nars_hegemon.1300.desc: "Four seasoned and weary [commanders|E]—men whose armor bears the deep gouges of our recent incursion—stand before me in the war room. The four represent a significant and substantial core of my veteran [Glossary( 'Optímātoî', 'OPTIMATOI_GLOSS' )] and fighting men.\n\n\"The restoration requires blood, Nikátōr, and we have bled,\" their spokesman rumbles, resting a calloused hand on the hilt of his longsword. \"But a man cannot eat glory, nor shelter his family beneath an oath. The men, #emp your#! men demand their share of the boons you have gained."\n\n"Coin from the treasury, or land from the conquered.\""
  nars_hegemon.1300.a: "Empty the vaults. Let their blades strike with gilded fury!"
@@ -56,26 +49,6 @@
  nars_hegemon.1400.a: "Shadows are easily dispelled by a blade in the dark."
  nars_hegemon.1400.b: "We must bring them to the fold. Spare no expense."
  nars_hegemon.1400.c: "They are beneath my notice."
-
- nars_hegemon.1500.t: "$nars_hegemon.0001.t$"
- nars_hegemon.1500.desc: ""A [ruler|E]'s name is only worth as the things sung about him."\n\nAn obvious and unremarkable notion—if not delivered from such tone. This is a veiled threat delivered by [arrogant_bard.GetTitledFirstName], a famed wandering bard who has sauntered into my [court|E], apparently in search of a patronage.\n\n\"The sword cuts flesh, Nikátōr, but my lyre could carve reputation... or mar them,\" he says, plucking a dissonant chord. \"I have drafted an epic of your conquests. Pay me my deserved [gold|E], and I shall sing it from the hippodromes to the deepest [cities|E], cementing your [legend|E] and mandate."\n\nIt is clear that the courageous bard is driving an ultimatum."
- 
- nars_hegemon.1500.a: "Take your kraffing gold and leave, bard!"
- nars_hegemon.1500.b: "Pry the tongue from this glib ingrate!"
- nars_hegemon.1500.c: "If you are so good then prove it!"
- 
- nars_hegemon.1500.c.tt: "You challenge the bard to a battle of words"
- nars_hegemon.1500.c.success_tt: "You outwit the bard in prose, prestigously banishing him"
- nars_hegemon.1500.c.failure_tt: "The bard humiliates you and travels to [epic_county.GetNameNoTier]"
- nars_hegemon.1500.c.success_msg.t: "Silver Tongue"
- nars_hegemon.1500.c.success_msg.desc: "The bard, thoroughly humiliated before the assembled court, fled in disgrace."
- nars_hegemon.1500.c.failure_msg.t: "Mocked by a Minstrel"
- nars_hegemon.1500.c.failure_msg.desc: "True to his threat, the bard has fled to [epic_county.GetNameNoTier], his glib verses mocking you." 
- nars_epic_of_nikator_modifier: "Nikátōr's Verses"
- nars_epic_of_nikator_modifier_desc: "The locals are inspired by tales of the Nikátōr."
- 
- nars_mocked_nikator_modifier: "Defamations"
- nars_mocked_nikator_modifier_desc: "A humiliating satire regarding the ruler's lack of wit is spreading rapidly here."
  
  nars_hegemon_feed_county_gift: "[county_target.GetNameNoTooltip] Sends Gold"
  nars_hegemon_feed_county_gift_desc: "The peasants of the [county_target.GetName] are enthused with your conquests and send you gold."

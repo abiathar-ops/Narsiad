@@ -15,3 +15,7 @@ To do:
 43. Casus Belli still broken
 44. Make MAA for sieges
 45. Revamp nars_hegemon events
+brothel too op, selian incursion shouldnt change capital, change nars_hegemon events limit it so that if you get conqueror the events wont spam. Find a way to spread cultures more, fertility should be less
+46. Make aretaike scholi and brothel rely on events (so it can be timed) instead of effects
+47. Make events for them on_complete
+48. Make recruit Selians into a story that goes into a set amount of days (cost from the scheme should be given from the start(i.e. make it fixed))

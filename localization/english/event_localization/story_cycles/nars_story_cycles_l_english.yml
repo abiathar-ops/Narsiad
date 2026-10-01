@@ -10,7 +10,7 @@
  story_mend_narsil: "$decision_mend_narsil$"
  story_mend_narsil_desc: "In addition to a new armament, with $narsil_name$'s mending, I will gain unprecedented legitimacy, paving the way to a new hegemony—mine."
 
- produce_amphora_COUNTER_TOOLTIP: "You need #color_green 10#! progress in the #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E]"
+ produce_amphora_COUNTER_TOOLTIP: "You need #color_green 5#! progress in the #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E]"
  produce_amphora_VALUE_LABEL: "Your progress in the #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E]:"
  produce_amphora_VALUE_MIN_LABEL: "Clay"
  produce_amphora_VALUE_MAX_LABEL: "Amphora"

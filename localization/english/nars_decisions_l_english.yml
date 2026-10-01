@@ -18,6 +18,8 @@
  pick_brothel_barony: "$decision_establish_brothel$"
  pick_brothel_barony_desc: "$decision_establish_brothel_desc$"
  pick_brothel_barony_confirm: "Clear the grounds!"
+ establish_brothel_realm_limit_tt:0 "There are fewer than #color_green 3#! #V [GetBuilding('brothel_complex_02').GetName]#! in your realm"
+
 
  pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 

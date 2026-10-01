@@ -99,7 +99,7 @@ pick_aretaic_school_barony = {
 
 decision_establish_brothel = {
 	picture = {
-		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_mustering.dds"
 	}
 	decision_group_type = realm
 	desc = decision_establish_brothel_desc
@@ -139,6 +139,21 @@ decision_establish_brothel = {
 				}
 			}
 		}
+		custom_tooltip = {
+            text = establish_brothel_realm_limit_tt
+            top_liege = {
+                count_sub_realm_county = {
+                    limit = {
+                        any_in_de_jure_hierarchy = {
+                            title_province = {
+                                has_building_or_higher = brothel_complex_01
+                            }
+                        }
+                    }
+                    count < 3
+                }
+            }
+        }
 	}
 
 	is_valid_showing_failures_only = {
@@ -187,7 +202,7 @@ decision_establish_brothel = {
 
 pick_brothel_barony = {
 	picture = {
-		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_mustering.dds"
 	}
 	decision_group_type = realm
 	ai_goal = yes

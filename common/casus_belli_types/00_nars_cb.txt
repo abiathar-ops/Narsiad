@@ -188,12 +188,6 @@
             }
         }
 
-        ## --- 4. SET NEW CAPITAL ---
-        if = {
-            limit = { exists = scope:target_capital_county }
-            scope:attacker = { set_realm_capital = scope:target_capital_county }
-        }
-
         ## --- 5. DISTRIBUTION SETUP ---
         hidden_effect = {
             # Build duchy distribution list: every duchy from taken counties,
@@ -430,6 +424,34 @@
 
             gok_retribution_cleanup_effect = yes
             show_pow_release_message_effect = yes
+        }
+
+        # Eradicate the conquered ruling house -- the defender and every
+        # spouse/house member found in their court are put to the sword,
+        # mirroring the vanilla Eradicate House CB. The primary heir is
+        # spared so succession can still proceed.
+        show_as_tooltip = {
+            scope:defender = {
+                death = {
+                    death_reason = death_eradicated
+                    killer = scope:attacker
+                }
+            }
+            scope:defender = {
+                every_courtier = {
+                    custom = every_close_family_house_member_in_court_cb_win_desc
+                    limit = {
+                        house = scope:defender.house
+                        NOT = {
+                            scope:defender.primary_heir ?= this
+                        }
+                    }
+                    death = {
+                        death_reason = death_eradicated
+                        killer = scope:attacker
+                    }
+                }
+            }
         }
 
         add_legitimacy_attacker_victory_effect = yes
@@ -1163,6 +1185,34 @@ selian_migration_cb = {
             if = {
                 limit = { scope:attacker = { any_ally = { NOT = { in_diplomatic_range = scope:attacker } } } }
                 scope:attacker = { every_ally = { limit = { NOT = { in_diplomatic_range = scope:attacker } } break_alliance = scope:attacker } }
+            }
+
+            # Eradicate the conquered ruling house -- the defender and every
+            # spouse/house member found in their court are put to the sword,
+            # mirroring the vanilla Eradicate House CB. The primary heir is
+            # spared so succession can still proceed.
+            show_as_tooltip = {
+                scope:defender = {
+                    death = {
+                        death_reason = death_eradicated
+                        killer = scope:attacker
+                    }
+                }
+                scope:defender = {
+                    every_courtier = {
+                        custom = every_close_family_house_member_in_court_cb_win_desc
+                        limit = {
+                            house = scope:defender.house
+                            NOT = {
+                                scope:defender.primary_heir ?= this
+                            }
+                        }
+                        death = {
+                            death_reason = death_eradicated
+                            killer = scope:attacker
+                        }
+                    }
+                }
             }
 
             add_truce_attacker_victory_effect = yes

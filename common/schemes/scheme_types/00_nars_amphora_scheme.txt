@@ -97,7 +97,7 @@
                     if = {
                         limit = {
                             scope:owner = {
-                                var:produce_amphora_success >= 10
+                                var:produce_amphora_success >= 5
                             }
                         }
                         scope:owner = {
