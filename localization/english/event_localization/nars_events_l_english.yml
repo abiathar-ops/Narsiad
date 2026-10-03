@@ -1,6 +1,8 @@
 ﻿l_english:
- narsokratia_event.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
+ alale_phrase.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
+ evoe_phrase.flavor: "[Glossary( '"Evoē! Evoē! Evoē!"', 'EVOE_GLOSS' )]"
  alnars_anduril: "$Alnars$, $anduril_name$."
+ nars_construction_begin: "Hark, begin now!"
 
  nars_intro.0001.t: "Kakías Apékhou"
  nars_intro.0001.desc: "Tales nearby tells of three progenies of the famed [alnars|E], leader of the $game_concept_selianes$ [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )].\n\nThese three mercenaries who have grown in fame these past few years are [eleios.GetFirstNameNicknamedRegnal], [ilione.GetFirstNameNicknamedRegnal], and [strato.GetFirstNameNicknamedRegnal]. Their intentions here are unknown and yet whispers and rumours are abound of their father's demise, which would be catastrophic to the unity of their currently united camp. Considering their personalities, a schism is coming for their mercenary camp's ill-fated destiny.\n\n#flavor "Those long divided, must unite; those long united, one day must divide." - $alnars_anduril$#!"
@@ -109,7 +111,6 @@
  nars_narsil.9000.t: "Dikaíōs Ktô"
  nars_narsil.9000.desc: "Deep in the vaults of my armory, my smiths have at last completed their toil. As one of them lifts [narsil|E] from the trough, the metal hums with a strange, unnatural energy. It is whole once more, its edge gleaming in the torchlight. The smith falls to his knees, presenting it to my hands.\n\n#flavor "The measure of a man's personage is what he does with his power." - $alnars_anduril$"
  nars_narsil.9000.a: "At long last, the sign of my times."
- nars_narsil.9000.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
 
  nars_amphora.0001.t: "Making $artifact_amphora_name$"
  nars_amphora.0001.desc: "Your #v [GetScheme('produce_amphora_scheme').GetTypeName]#! [scheme|E] progressed!\nYou have lost #color_red [EmptyScope.ScriptValue('tiny_gold_value')]#! [gold_i][gold|E] in materials"
@@ -149,13 +150,11 @@
  nars_hegemony.0002.t: "Ídia Phúlatte"
  nars_hegemony.0002.desc: "Words flown by the winds has spread across our region that our liege-lord, [nikator_aspirant.GetFirstNameNoTooltip], has proclaimed [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] over all of this region. Heralds from the [nikator_aspirant.GetPrimaryTitle.GetNameNoTooltip] has come bearing news of our realm's rise to hegemony... and those who seek to display their disobedience to our lord's proclamation.\n\nMy blood boils at the coming war everyone knows. A storm is brewing, whispers of a coalition of disobedient rabbles. Well to war then, it is now time to take up arms against those who refuse to see my liege's [realm|E] rise and rule over all the others.\n\n#flavor "Freedom is the sure possession of those alone who have the courage to defend it." - $Ilione$, Funeral Oration of $Alnars$.#!"
  nars_hegemony.0002.a: "For this region! To arms, to arms!"
- nars_hegemony.0002.a.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
  hegemony_join_tt: "You will soon join the #v Anticipative War#!"
 
  nars_hegemony.0003.t: "Ídia Phúlatte"
  nars_hegemony.0003.desc: "Words flown by the winds has spread across our region that [nikator_aspirant.GetFirstNameNoTooltip] has proclaimed [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] over all of this region. Heralds from the [nikator_aspirant.GetPrimaryTitle.GetNameNoTooltip] has come bearing demands for submission and recognition for his hegemony.\n\nTo bend the knee is to humiliate not only myself but this realm of mine. To remain silent is to invite suspicion from every side. To reject this claim is to take up arms beside those who refuse to see one [realm|E] rise and rule over all the others.\n\n#flavor "Freedom is the sure possession of those alone who have the courage to defend it." - $Ilione$, Funeral Oration of $Alnars$.#!"
  nars_hegemony.0003.b: "For this region! To arms, to arms!"
- nars_hegemony.0003.b.flavor: "[Glossary( '"Alalē! Alalē! Alalē!"', 'ALALE_GLOSS' )]"
  nars_hegemony_submit_tt: "You submit to [nikator_aspirant.GetFirstNameNoTooltip] as a [subject|E]"
  nars_hegemony_reject_tt: "You will soon join the #v Anticipative War#!"
 
@@ -187,3 +186,16 @@
  nars_hegemony.0106.t: "$nars_hegemony.0101.t$"
  nars_hegemony.0106.desc: "The combined [realms|E] of this region and its coalition stood as a successful defiant, insurmountable wall against our forces. Our vision to forge a single, powerful hegemony under our banners has crumbled into bitter defeat, swallowed by the coalition's resistance.\n\nOur hubris has met its inevitable ending. The mantle of [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] slips through our fingers, leaving our realm weakened and exposed to the whims of our triumphant rivals.\n\n#flavor "There is one safeguard known generally, which is a security to all, but especially to democracies as against despots. What is it? Distrust." - $Strato$, Commentaries on $anduril_name$.#!"
  nars_hegemony.0106.a: "The gods judge harshly."
+
+ nars_construction.0001.title: "$building_aretaic_school_01$: Constructed!"
+ nars_construction.0001.desc: "The newly completed [special_building|E] has been built in [construction_site.GetBaseNameNoTierNoTooltip]."
+ nars_construction.0002.title: "$building_brothel_complex_01$: Constructed!"
+ nars_construction.0002.desc: "The newly completed [special_building|E] has been built in [construction_site.GetBaseNameNoTierNoTooltip]."
+ 
+ nars_construction.1001.t: "$building_aretaic_school_01$"
+ nars_construction.1001.desc: "Masons align the foundation stones as scholars and master builders gather over parchment plans. Dozens of scaffoldings already now appear in the [construction_site.GetBaseName], marking the start of an institution dedicated to virtues and education.\n\nSoon, a new [GetBuilding('aretaic_school_01').GetName] will echo with eruditions and discourse that will shape the realm—a university of learning.\n\n#flavor "No great thing is created suddenly, any more than a bunch of grapes or a fig. If you tell me that you desire a fig, I answer you that there must be time." - $alnars_anduril$#!"
+ nars_construction.1001.a.tt: "The #V [GetBuilding('aretaic_school_01').GetNameNoTooltip]#! [special_building|E] is now under construction in the [construction_site.GetBaseNameNoTooltip]"
+
+ nars_construction.1002.t: "$building_brothel_complex_01$"
+ nars_construction.1002.desc: "Behind scaffoldings and palisades in the [construction_site.GetBaseName], work begins on an opulent complex of velvet chambers, hidden alcoves, and wine cellars. Constructed pragmatically in due part to raise fertility and thus population unto the disparate $game_concept_selianes$ and their minute numbers, this structure of pleasure promises to bring immense streams of gold profits.\n\nSoon, a new [GetBuilding('brothel_complex_01').GetName] will echo with moans and copulations that will shape the realm—a den of sin, lust, and indulgence.\n\n#flavor "No great thing is created suddenly, any more than a bunch of grapes or a fig. If you tell me that you desire a fig, I answer you that there must be time." - $alnars_anduril$#!"
+ nars_construction.1002.a.tt: "The #v [GetBuilding('brothel_complex_01').GetNameNoTooltip]#! [special_building|E] is now under construction in the [construction_site.GetBaseNameNoTooltip]"

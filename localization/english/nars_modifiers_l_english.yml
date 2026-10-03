@@ -45,3 +45,6 @@
 
  nars_nikator_aspirant_modifier: "Aspiring Hēgemon"
  nars_nikator_aspirant_modifier_desc: "#flavor "And they shall weep." - $alnars_anduril$#!\n "
+
+ nars_construction_modifier: "Heavy Constructions"
+ nars_construction_modifier_desc: "A new #v Special Building#! is being constructed"

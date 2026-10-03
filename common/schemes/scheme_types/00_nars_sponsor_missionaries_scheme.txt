@@ -11,7 +11,6 @@
 	is_basic = yes
 
 	hide_target_name = yes
-	freeze_scheme_when_traveling = yes
 
 	speed_per_skill_point = 0
 	spymaster_speed_per_skill_point = 0
@@ -92,11 +91,6 @@
 			}
 		}
 
-		# Only reset progress for another phase if the scheme did NOT just end above --
-		# end_scheme = yes does not immediately invalidate scope:scheme within this same
-		# effect execution, so an unconditional reset_scheme_progress here silently
-		# restarted the scheme's phase timer even after it "ended", leaving it running
-		# forever instead of stopping at 3 successes.
 		if = {
 			limit = { NOT = { exists = scope:sponsor_meithios_scheme_ended } }
 			reset_scheme_progress = yes

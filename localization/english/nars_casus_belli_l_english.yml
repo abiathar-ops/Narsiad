@@ -52,3 +52,5 @@
  selian_defiance_wins_defender: "You have defied the world. You shatter the coalition of your neighbors, securing the emergence of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"
  selian_defiance_wins_attacker: "Your coalition failed to stop [defender.GetShortUIName]. The emerging [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] rises, and a new hegemon potentate is born."
  selian_defiance_wins_other: "[defender.GetShortUIName|U] successfully defies the coalition against [defender.GetHerHim], securing the dawn of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"
+
+ every_nars_close_family_house_member_in_court_cb_win_desc: "Every [spouse|E] and [house|E] member in [defender.GetShortUINamePossessive] [court|E]"

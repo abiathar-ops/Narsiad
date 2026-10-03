@@ -2,8 +2,7 @@ canton_duchy_01 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
-		desc = unlocks_building_desc
-		
+			
 	}
 
 	can_construct = {
@@ -77,8 +76,7 @@ canton_duchy_02 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
-		desc = unlocks_building_desc
-		
+			
 	}
 
 	can_construct = {
@@ -149,8 +147,7 @@ canton_duchy_03 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
-		desc = unlocks_building_desc
-		
+			
 	}
 
 	can_construct = {
@@ -221,8 +218,7 @@ foundry_duchy_01 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
-		desc = unlocks_building_desc
-	}
+		}
 
 	can_construct = {
 		scope:holder.culture = {
@@ -289,9 +285,7 @@ foundry_duchy_01 = {
 foundry_duchy_02 = {
 	construction_time = slow_construction_time
 
-	effect_desc = {
-		desc = unlocks_building_desc
-	
+	effect_desc = {	
 	}
 
 	can_construct = {
@@ -357,8 +351,7 @@ foundry_duchy_03 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
-		desc = unlocks_building_desc
-	
+		
 	}
 
 	can_construct = {

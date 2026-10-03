@@ -331,7 +331,10 @@ nars_intro.0001 = {
                     create_anduril_effect = yes
                     create_narsil_shards_effect = yes
                 }
-                trigger_event = { id = nars_intro.0002 days = 1 }
+                trigger_event = { 
+                    id = nars_intro.0002
+                    days = 2
+                }
                 intro_standard_effect = yes
             }
 
@@ -413,7 +416,10 @@ nars_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nars_intro.0002 days = 1 }
+                trigger_event = { 
+                    id = nars_intro.0002
+                    days = 2
+                }
                 intro_standard_effect = yes
             }
 
@@ -493,7 +499,10 @@ nars_intro.0001 = {
                     uses_supply = yes
                     inheritable = yes
                 }
-                trigger_event = { id = nars_intro.0002 days = 1 }
+                trigger_event = { 
+                    id = nars_intro.0002
+                    days = 2
+                }
                 intro_standard_effect = yes
             }
         }
@@ -580,10 +589,6 @@ nars_intro.0002 = {
         desc = nars_intro.0002.end
     }
 
-    trigger = {
-        is_ai = no
-    }
-
     window = big_event_window
     theme = nars_faith
     
@@ -621,7 +626,6 @@ nars_intro.0002 = {
         random_courtier = {
             limit = {
                 is_adult = yes
-                # Ensure we don't accidentally pick one of the siblings if they ended up in the court
                 NOT = { this = scope:target_1 }
                 NOT = { this = scope:target_2 }
             }
@@ -640,6 +644,7 @@ nars_intro.0002 = {
         hidden_effect = {
             selian_diplomacy_entreaty_effect = yes
         }
+        ai_chance = { base = 0 }
     }
 
     option = {
@@ -647,5 +652,6 @@ nars_intro.0002 = {
         name = nars_intro.0002.b
         flavor = nars_intro.0002.b.flavor
         custom_tooltip = selian_incivility.tt
+        ai_chance = { base = 100 }
     }
 }

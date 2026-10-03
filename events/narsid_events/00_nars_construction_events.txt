@@ -1,0 +1,134 @@
+﻿namespace = nars_construction
+
+nars_construction.0001 = {
+    type = character_event
+
+    hidden = yes
+
+    immediate = {
+        play_music_cue = mx_cue_positive_effect
+        random_sub_realm_county = {
+            limit = {
+                has_county_modifier = nars_construction_modifier
+            }
+            save_scope_as = construction_site
+        }
+        hidden_effect = {
+            scope:construction_site = {
+                remove_county_modifier = nars_construction_modifier
+                title_province = {
+                    remove_building = constructing_cranes_01
+                    add_special_building = aretaic_school_01
+                }
+            }
+        }
+        send_interface_message = {
+            type = event_prowess_good_desc
+            title = nars_construction.0001.title
+            desc = nars_construction.0001.desc
+            left_icon = scope:construction_site.holder
+        }
+    }
+}
+
+nars_construction.0002 = {
+    type = character_event
+    hidden = yes
+
+    immediate = {
+        play_music_cue = mx_cue_positive_effect
+        random_sub_realm_county = {
+            limit = {
+                has_county_modifier = nars_construction_modifier
+            }
+            save_scope_as = construction_site
+        }
+        hidden_effect = {
+            scope:construction_site = {
+                remove_county_modifier = nars_construction_modifier
+                title_province = {
+                    remove_building = constructing_cranes_01
+                    add_special_building = brothel_complex_01
+                }
+            }
+        }
+        send_interface_message = {
+            type = event_prowess_good_desc
+            title = nars_construction.0002.title
+            desc = nars_construction.0002.desc
+            left_icon = scope:construction_site.holder
+        }
+    }
+}
+
+nars_construction.1001 = {
+	type = character_event
+	title = nars_construction.1001.t
+	desc = nars_construction.1001.desc
+	theme = nars_faith
+
+	left_portrait = {
+		character = root
+		camera = camera_scheme_widget_microscopic
+		animation = war_over_win
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
+		random_sub_realm_county = {
+            limit = {
+                has_county_modifier = nars_construction_modifier
+            }
+            save_scope_as = construction_site
+        }
+		custom_tooltip = nars_construction.1001.a.tt
+	}
+
+	option = {
+		name = nars_construction_begin
+		flavor = evoe_phrase.flavor
+		show_as_tooltip = {
+			scope:construction_site = {
+				add_county_modifier = {
+					modifier = nars_construction_modifier
+				}
+			}
+		}
+	}
+}
+
+nars_construction.1002 = {
+	type = character_event
+	title = nars_construction.1002.t
+	desc = nars_construction.1002.desc
+	theme = nars_faith
+
+	left_portrait = {
+		character = root
+		camera = camera_scheme_widget_microscopic
+		animation = war_over_win
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_positive_effect
+		random_sub_realm_county = {
+            limit = {
+                has_county_modifier = nars_construction_modifier
+            }
+            save_scope_as = construction_site
+        }
+		custom_tooltip = nars_construction.1002.a.tt
+	}
+
+	option = {
+		name = nars_construction_begin
+		show_as_tooltip = {
+			scope:construction_site = {
+				add_county_modifier = {
+					modifier = nars_construction_modifier
+				}
+			}
+		}
+		flavor = evoe_phrase.flavor
+	}
+}

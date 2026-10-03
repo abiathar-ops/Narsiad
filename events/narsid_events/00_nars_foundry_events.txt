@@ -117,7 +117,7 @@ nars_narsil.9000 = {
 	
 	option = {
 		name = nars_narsil.9000.a
-		flavor = nars_narsil.9000.flavor
+		flavor = alale_phrase.flavor
 		create_narsil_effect = yes
 		hidden_effect = {
 			scope:scheme = { end_scheme = yes }

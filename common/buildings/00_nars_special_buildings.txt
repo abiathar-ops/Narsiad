@@ -1,4 +1,4 @@
-﻿aretaic_school_01 = {
+﻿constructing_cranes_01 = {
 	construction_time = 0
 	type = special
 	
@@ -13,11 +13,9 @@
 	type_icon = "icon_quarry.dds"
 
 	cost_gold = 0 # Paid for by the decision
-
-	next_building = aretaic_school_02
 }
 
-aretaic_school_02 = {
+aretaic_school_01 = {
 	construction_time = slow_construction_time
 	type = special
 	
@@ -32,15 +30,14 @@ aretaic_school_02 = {
 	type_icon = "icon_structure_grand_library_of_baghdad.dds"
 
 	character_modifier = {
+		monthly_dynasty_prestige = 0.2
 		diplomatic_range_mult = 0.8
 		monthly_lifestyle_xp_gain_mult = 0.25
 		cultural_head_fascination_mult = 0.25
-		stress_loss_mult = 0.2
 	}
 	# Broad bonuses for the entire capital county
 	county_modifier = {
 		development_growth = 0.2
-		development_growth_factor = 0.2
 		monthly_county_control_growth_add = 0.2
 		county_opinion_add = 20
 	}
@@ -61,30 +58,11 @@ aretaic_school_02 = {
 }
 
 brothel_complex_01 = {
-	construction_time = 0
-	type = special
-	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
-	
-	can_construct = {
-	}
-
-	type_icon = "icon_quarry.dds"
-
-	cost_gold = 0 # Paid for by the decision
-
-	next_building = brothel_complex_02
-}
-
-
-brothel_complex_02 = {
 	construction_time = slow_construction_time
 
 	effect_desc = {
 		desc = unlocks_building_desc
-	
+		desc = brothel_complex_01_tt
 	}
 
 	can_construct_potential = {
@@ -97,20 +75,14 @@ brothel_complex_02 = {
 	cost_gold = 0
 
 	character_modifier = {
-		stress_gain_mult = -0.30
-		owned_legend_spread_mult = 0.8
-	}
-
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_8
-		tax_mult = 3.6
+		monthly_income = excellent_building_tax_tier_4
+		stress_gain_mult = -0.205
+		owned_legend_spread_mult = 0.205
 	}
 
 	county_modifier = {
 		county_opinion_add = 10
-		popular_opinion = 5
-		development_growth = 0.5
-		development_growth_factor = good_building_development_growth_factor_tier_8
+		levy_size = 0.4
 	}
 
 	type_icon = "icon_brothel.dds"

@@ -1,0 +1,4 @@
+﻿nars_construction_modifier = {
+	icon = economy_negative
+	tax_mult = -0.25
+}

@@ -1,6 +1,6 @@
 ﻿decision_establish_archive = {
 	picture = {
-		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_mustering.dds"
 	}
 	decision_group_type = realm
 	desc = decision_establish_archive_desc
@@ -13,8 +13,6 @@
 	is_shown = {
 		is_selian = yes
 		highest_held_title_tier >= tier_kingdom
-		NOT = { government_has_flag = government_is_tribal }
-		NOT = { government_has_flag = government_is_nomadic }
 		NOT = { exists = global_var:established_aretaic_school }
 		any_held_title = {
 			title_tier = barony
@@ -56,7 +54,7 @@ pick_aretaic_school_barony = {
 		is_ai = no
 	}
 	picture = {
-		reference = "gfx/interface/illustrations/event_scenes/ep3_medi_market.dds"
+		reference = "gfx/interface/illustrations/decisions/nars_decision_mustering.dds"
 	}
 	decision_group_type = realm
 	is_invisible = yes
@@ -81,13 +79,26 @@ pick_aretaic_school_barony = {
 			name = established_aretaic_school
 			value = yes
 		}
+		trigger_event = {
+			 id = nars_construction.1001
+			 days = 1 
+		}
+		trigger_event = {
+			id = nars_construction.0001
+			days = { 180 365 }
+		}
 		hidden_effect = {
 			scope:barony.title_province = {
 				set_variable = {
 					name = university
 					value = yes
 				}
-				add_special_building = aretaic_school_01
+				add_special_building = constructing_cranes_01
+			}
+			scope:barony.county = {
+				add_county_modifier = {
+					modifier = nars_construction_modifier
+				}
 			}
 		}
 	}
@@ -120,10 +131,6 @@ decision_establish_brothel = {
 				HOLDER = root
 			}
 		}
-		NOR = { 
-			government_has_flag = government_is_nomadic 
-			government_has_flag = government_is_tribal
-		}
 	}
 
 	is_valid = {
@@ -139,24 +146,27 @@ decision_establish_brothel = {
 				}
 			}
 		}
-		custom_tooltip = {
-            text = establish_brothel_realm_limit_tt
-            top_liege = {
-                count_sub_realm_county = {
-                    limit = {
-                        any_in_de_jure_hierarchy = {
-                            title_province = {
-                                has_building_or_higher = brothel_complex_01
-                            }
-                        }
-                    }
-                    count < 3
-                }
-            }
-        }
 	}
 
 	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = establish_brothel_realm_limit_tt
+			top_liege = {
+				count_sub_realm_county = {
+					limit = {
+						OR = {
+							any_in_de_jure_hierarchy = {
+								title_province = {
+									has_building_or_higher = brothel_complex_01
+								}
+							}
+							has_county_modifier = nars_construction_modifier
+						}
+					}
+					count < 3
+				}
+			}
+		}
 		NOT = {
 			custom_tooltip = {
 				text = establish_brothel_cooldown_tt
@@ -190,10 +200,13 @@ decision_establish_brothel = {
         modifier = {
 			add = -50
 			any_held_county = {
-				any_in_de_jure_hierarchy = {
-					title_province = {
-						has_building_or_higher = brothel_complex_01
+				OR = {
+					any_in_de_jure_hierarchy = {
+						title_province = {
+							has_building_or_higher = brothel_complex_01
+						}
 					}
+					has_county_modifier = nars_construction_modifier
 				}
 			}
 		}
@@ -230,11 +243,24 @@ pick_brothel_barony = {
 		}
 		add_character_flag = {
 			flag = establish_brothel_cooldown
-			years = 2
+			years = 10
 		}	
+		trigger_event = {
+			 id = nars_construction.1002 
+			 days = 1 
+		}
+		trigger_event = {
+			id = nars_construction.0002
+			days = { 180 365 }
+		}
 		hidden_effect = {
 			scope:barony.title_province = {
-				add_special_building = brothel_complex_01
+				add_special_building = constructing_cranes_01
+			}
+			scope:barony.county = {
+				add_county_modifier = {
+					modifier = nars_construction_modifier
+				}
 			}
 		}
 	}
@@ -254,10 +280,13 @@ pick_brothel_barony = {
         modifier = {
 			add = -50
 			any_held_county = {
-				any_in_de_jure_hierarchy = {
-					title_province = {
-						has_building_or_higher = brothel_complex_01
+				OR = {
+					any_in_de_jure_hierarchy = {
+						title_province = {
+							has_building_or_higher = brothel_complex_01
+						}
 					}
+					has_county_modifier = nars_construction_modifier
 				}
 			}
 		}

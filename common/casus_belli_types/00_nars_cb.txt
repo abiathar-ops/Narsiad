@@ -433,13 +433,13 @@
         show_as_tooltip = {
             scope:defender = {
                 death = {
-                    death_reason = death_eradicated
+                    death_reason = death_piteously_cut_down
                     killer = scope:attacker
                 }
             }
             scope:defender = {
                 every_courtier = {
-                    custom = every_close_family_house_member_in_court_cb_win_desc
+                    custom = every_nars_close_family_house_member_in_court_cb_win_desc
                     limit = {
                         house = scope:defender.house
                         NOT = {
@@ -447,7 +447,7 @@
                         }
                     }
                     death = {
-                        death_reason = death_eradicated
+                        death_reason = death_piteously_cut_down
                         killer = scope:attacker
                     }
                 }
@@ -1153,7 +1153,6 @@ selian_migration_cb = {
                 add_gold = varangian_adventures_bounty_amount_value
                 selian_settle_county_effect = yes
                 
-                # Hidden effect to suppress "will join camp/court" notifications completely
                 hidden_effect = {
                     every_in_list = { list = vassalised_family_list limit = { NOT = { is_in_list = vassal_family_processed_list } } add_to_list = vassal_family_not_processed_list }
                     every_courtier = { limit = { is_ai = yes } add_to_list = vassal_family_not_processed_list }
@@ -1200,7 +1199,7 @@ selian_migration_cb = {
                 }
                 scope:defender = {
                     every_courtier = {
-                        custom = every_close_family_house_member_in_court_cb_win_desc
+                        custom = every_nars_close_family_house_member_in_court_cb_win_desc
                         limit = {
                             house = scope:defender.house
                             NOT = {

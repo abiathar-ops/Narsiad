@@ -2,7 +2,7 @@
  establish_nars_building_no_barony_tt: "You or one of your [direct_vassals|E] in your [realm|E] must currently hold a [barony|E] that does not, at this time, already have a [special_building|E] slot"
 
  decision_establish_archive: "Establish Archiving Citadel"
- decision_establish_archive_desc: "The $game_concept_selians$ possess a tradition that espouses learning, and yet it's now undeniable that our time in exile has left gaps in our knowledge. I shall expend riches to establish an innovating #v [GetBuilding('aretaic_school_02').GetName]#! for [education|E].\n\n#flavor "The roots of learning are bitter, but the fruit is sweet." - $alnars_anduril$#!"
+ decision_establish_archive_desc: "The $game_concept_selians$ possess a tradition that espouses learning, and yet it's now undeniable that our time in exile has left gaps in our knowledge. I shall expend riches to establish an innovating #v [GetBuilding('aretaic_school_01').GetName]#! for [education|E].\n\n#flavor "The roots of learning are bitter, but the fruit is sweet." - $alnars_anduril$#!"
  decision_establish_archive_tooltip: "Found a university for the pursuit of [innovation|E]"
  decision_establish_archive_effect_tooltip: "A [special_building|E] slot will be added to a [barony|E] of one of your [barony|E] and the #V Aretaiké Scholí#! will be available to be constructed"
  decision_establish_archive_confirm: "Select a Barony!"
@@ -11,15 +11,14 @@
  pick_aretaic_school_barony_confirm: "Clear the grounds!"
 
  decision_establish_brothel: "Open a Brothel-Complex"
- decision_establish_brothel_desc: "It is undeniable that ethnic $game_concept_selianes$ are few in numbers. The way forward is clear, I will expend our riches to establish a building to raise and soon flourish our numbers. A #V [GetBuilding('brothel_complex_02').GetName]#!, a brothel-complex fit to espouse certain necessary ideas. To divine, fecund [enuo|E], I dedicate this hard toil.\n\n#flavor "Muse, tell me the deeds of $game_concept_enuo$... who stirs up passion in the tribes of men, and the birds that fly in the air, and all the many creatures that dry land rears; she casts desire into their breasts, so that they all mate, two together, throughout the shadowy vales." - $alnars_anduril$#!"
+ decision_establish_brothel_desc: "It is undeniable that ethnic $game_concept_selianes$ are few in numbers. The way forward is clear, I will expend our riches to establish a building to raise and soon flourish our numbers. A #V [GetBuilding('brothel_complex_01').GetName]#!, a brothel-complex fit to espouse certain necessary ideas. To divine, fecund [enuo|E], I dedicate this hard toil.\n\n#flavor "Muse, tell me the deeds of $game_concept_enuo$... who stirs up passion in the tribes of men, and the birds that fly in the air, and all the many creatures that dry land rears; she casts desire into their breasts, so that they all mate, two together, throughout the shadowy vales." - $alnars_anduril$#!"
  decision_establish_brothel_tooltip: "Found a [building|E] dedicated to the pursuit of [fertility|E]"
  decision_establish_brothel_effect_tooltip: "A [special_building|E] slot will be added to one of your [barony|E] and the #V Hedonēion#! will be available to be constructed"
  decision_establish_brothel_confirm: "Select a Barony!"
  pick_brothel_barony: "$decision_establish_brothel$"
  pick_brothel_barony_desc: "$decision_establish_brothel_desc$"
  pick_brothel_barony_confirm: "Clear the grounds!"
- establish_brothel_realm_limit_tt:0 "There are fewer than #color_green 3#! #V [GetBuilding('brothel_complex_02').GetName]#! in your realm"
-
+ establish_brothel_realm_limit_tt:0 "There are more than #v 3#! [GetBuilding('brothel_complex_01').GetNameNoTooltip] in your realm"
 
  pick_special_building_barony_custom_tt: "You will now choose a held [barony|E] for your [special_building|E]\n#weak It must be the capital of its [county|E], not be [leased|E], and not already have a [special_building|E] Slot#!"
 

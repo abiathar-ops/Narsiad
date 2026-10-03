@@ -63,6 +63,7 @@ nars_hegemony.0002 = {
 
     option = { # Submit and help the Hegemon-Aspirant!
         name = nars_hegemony.0002.a
+		flavor = alale_phrase.flavor
         custom_tooltip = nars_hegemony_reject_tt
         scope:nikator_aspirant = {
             add_to_variable_list = { name = selian_coalition_members target = root }
@@ -101,7 +102,7 @@ nars_hegemony.0003 = {
 
 	option = { # Fight them
 		name = nars_hegemony.0003.b
-		flavor = nars_hegemony.0003.b.flavor
+		flavor = alale_phrase.flavor
 		custom_tooltip = nars_hegemony_reject_tt     
 
 		scope:nikator_aspirant = {
