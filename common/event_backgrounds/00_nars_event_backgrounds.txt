@@ -18,3 +18,11 @@ nars_emperor = {
 		ambience = "event:/DLC/FP2/SFX/Events/courtyard"
 	}
 }
+
+nars_brothel = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/nars_brothel.dds"
+		environment = "environment_activity_western_feast"
+		ambience = "event:/SFX/Events/Backgrounds/feasthall"
+	}
+}

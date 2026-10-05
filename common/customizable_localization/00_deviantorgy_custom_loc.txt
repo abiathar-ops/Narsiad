@@ -1,0 +1,1665 @@
+﻿
+DeviantFemaleDance = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = danced_ontable_ass
+	}
+	#
+	text = {
+		localization_key = danced_ontable_boob
+	}
+	#
+	text = {
+		localization_key = danced_ontable_pussy
+	}
+	#
+	text = {
+		localization_key = danced_ontable_cock
+	}
+}
+#female Ai suck Male Ai
+DeviantSuckCock = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = suckcock_deep
+	}
+	#
+	text = {
+		localization_key = suckcock_tip
+	}
+	#
+	text = {
+		localization_key = suckcock_ballstoo
+	}
+	#
+	text = {
+		localization_key = suckcock_keptsucking
+	}
+	text = {
+		localization_key = suckcock_aifemale_a
+	}
+	text = {
+		localization_key = suckcock_aifemale_b
+	}
+	text = {
+		localization_key = suckcock_aifemale_c
+	}
+	text = {
+		localization_key = suckcock_aifemale_d
+	}
+	text = {
+		localization_key = suckcock_aifemale_e
+	}
+	text = {
+		localization_key = suckcock_aifemale_f
+	}
+	text = {
+		localization_key = suckcock_aifemale_g
+	}
+}
+#female Ai anal Male Ai
+DeviantAnalCock = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = anal_cock_ontop
+	}
+	#
+	text = {
+		localization_key = anal_cock_doggy
+	}
+	#
+	text = {
+		localization_key = anal_cock_strangledoggy
+	}
+	#
+	text = {
+		localization_key = anal_cock_ontable
+	}
+	text = {
+		localization_key = analcock_aifemale_a
+	}
+	text = {
+		localization_key = analcock_aifemale_b
+	}
+	text = {
+		localization_key = analcock_aifemale_c
+	}
+	text = {
+		localization_key = analcock_aifemale_d
+	}
+	text = {
+		localization_key = analcock_aifemale_e
+	}
+	text = {
+		localization_key = analcock_aifemale_f
+	}
+	text = {
+		localization_key = analcock_aifemale_g
+	}
+}
+#female Ai takes on two Male Ai
+DeviantThreesome = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_threesome_spitroast
+	}
+	#
+	text = {
+		localization_key = deviant_threesome_dp
+	}
+	#
+	text = {
+		localization_key = deviant_threesome_jerkboth
+	}
+	#
+	text = {
+		localization_key = deviant_threesome_samehole
+	}
+	text = {
+		localization_key = deviant_threesome_a
+	}
+	text = {
+		localization_key = deviant_threesome_b
+	}
+	text = {
+		localization_key = deviant_threesome_c
+	}
+	text = {
+		localization_key = deviant_threesome_d
+	}
+	text = {
+		localization_key = deviant_threesome_e
+	}
+	text = {
+		localization_key = deviant_threesome_f
+	}
+	text = {
+		localization_key = deviant_threesome_g
+	}
+	text = {
+		localization_key = deviant_threesome_h
+	}
+	text = {
+		localization_key = deviant_threesome_i
+	}
+	text = {
+		localization_key = deviant_threesome_j
+	}
+	text = {
+		localization_key = deviant_threesome_k
+	}
+}
+#male player fucks around
+MaleOrgyFuckEveryHole = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_maleeveryhole_deepthroat
+	}
+	#
+	text = {
+		localization_key = deviant_maleeveryhole_hardass
+	}
+	#
+	text = {
+		localization_key = deviant_maleeveryhole_fuckpullout
+	}
+	#
+	text = {
+		localization_key = deviant_maleeveryhole_strangledoggy
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_a
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_b
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_c
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_d
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_e
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_f
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_g
+	}
+	text = {
+		localization_key = deviant_maleeveryhole_h
+	}
+}
+#female player fucks around
+FeMaleGetOrgyFucked = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_femalegetfucked_deepthroat
+	}
+	#
+	text = {
+		localization_key = deviant_femalegetfucked_hardass
+	}
+	#
+	text = {
+		localization_key = deviant_femalegetfucked_fuckpullout
+	}
+	#
+	text = {
+		localization_key = deviant_femalegetfucked_strangledoggy
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_spitroast
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_dp
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_a
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_b
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_c
+	}
+	text = {
+		localization_key = deviant_femalegetfucked_d
+	}
+}
+#female prostituting to all male guests
+FeMaleDirtyWhoreOrgyFucked = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_orgydirtywhorused_cumdump
+	}
+	#
+	text = {
+		localization_key = deviant_orgydirtywhorused_ridefist
+	}
+	#
+	text = {
+		localization_key = deviant_orgydirtywhorused_lickcumfromfloor
+	}
+	#
+	text = {
+		localization_key = deviant_orgydirtywhorused_steppedone
+	}
+}
+#female bimbo whore is allowed in
+FemaleBimboEnterOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = femalebimbo_thanksforinvite_orgy_basic
+	}
+	#
+	text = {
+		localization_key = femalebimbo_thanksforinvite_orgy_sowet
+	}
+	#
+	text = {
+		localization_key = femalebimbo_thanksforinvite_orgy_askingextra
+	}
+	#
+	text = {
+		localization_key = femalebimbo_thanksforinvite_orgy_askingallholesfull
+	}
+}
+#ai male talk to female if she fuck around
+FemaleDeviantComplimentedOnOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviantfemale_complimented_inorgy_tits
+	}
+	#
+	text = {
+		localization_key = deviantfemale_complimented_inorgy_pussy
+	}
+	#
+	text = {
+		localization_key = deviantfemale_complimented_inorgy_ass
+	}
+	#
+	text = {
+		localization_key = deviantfemale_complimented_inorgy_eyes
+	}
+	#
+	text = {
+		localization_key = deviantfemale_complimented_inorgy_lookatmycock
+	}
+	text = {
+		localization_key = deviantfemale_complimented_a
+	}
+	text = {
+		localization_key = deviantfemale_complimented_b
+	}
+	text = {
+		localization_key = deviantfemale_complimented_c
+	}
+	text = {
+		localization_key = deviantfemale_complimented_d
+	}
+	text = {
+		localization_key = deviantfemale_complimented_e
+	}
+	text = {
+		localization_key = deviantfemale_complimented_f
+	}
+	text = {
+		localization_key = deviantfemale_complimented_g
+	}
+	text = {
+		localization_key = deviantfemale_complimented_h
+	}
+	text = {
+		localization_key = deviantfemale_complimented_i
+	}
+	text = {
+		localization_key = deviantfemale_complimented_j
+	}
+	text = {
+		localization_key = deviantfemale_complimented_k
+	}
+	text = {
+		localization_key = deviantfemale_complimented_l
+	}
+	text = {
+		localization_key = deviantfemale_complimented_m
+	}
+	text = {
+		localization_key = deviantfemale_complimented_n
+	}
+	text = {
+		localization_key = deviantfemale_complimented_o
+	}
+	text = {
+		localization_key = deviantfemale_complimented_p
+	}	
+	text = {
+		localization_key = deviantfemale_complimented_q
+	}	
+	text = {
+		localization_key = deviantfemale_complimented_r
+	}	
+	text = {
+		localization_key = deviantfemale_complimented_s
+	}	
+}
+#Ai female talk to male if he fuck around
+MaleDeviantComplimentedOnOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviantmale_complimented_inorgy_cock
+	}
+	#
+	text = {
+		localization_key = deviantmale_complimented_inorgy_balls
+	}
+	#
+	text = {
+		localization_key = deviantmale_complimented_inorgy_body
+	}
+	#
+	text = {
+		localization_key = deviantmale_complimented_inorgy_stamina
+	}
+	text = {
+		localization_key = deviantmale_complimented_a
+	}
+	text = {
+		localization_key = deviantmale_complimented_b
+	}
+	text = {
+		localization_key = deviantmale_complimented_c
+	}
+	text = {
+		localization_key = deviantmale_complimented_d
+	}
+	text = {
+		localization_key = deviantmale_complimented_e
+	}
+	text = {
+		localization_key = deviantmale_complimented_f
+	}
+	text = {
+		localization_key = deviantmale_complimented_g
+	}
+	text = {
+		localization_key = deviantmale_complimented_h
+	}
+	text = {
+		localization_key = deviantmale_complimented_i
+	}
+	text = {
+		localization_key = deviantmale_complimented_j
+	}
+	text = {
+		localization_key = deviantmale_complimented_k
+	}
+	text = {
+		localization_key = deviantmale_complimented_l
+	}
+	text = {
+		localization_key = deviantmale_complimented_m
+	}
+	text = {
+		localization_key = deviantmale_complimented_n
+	}
+	text = {
+		localization_key = deviantmale_complimented_o
+	}
+	text = {
+		localization_key = deviantmale_complimented_p
+	}	
+}
+#Ai female talks to female if she fucks around
+DirtyTalkFromFemaleToFemaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_dirtypussy
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_hardnipples
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_throbbingclit
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_wantsattention
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_a
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_b
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_c
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_d
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_e
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_f
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_g
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_h
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_i
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_j
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_k
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_l
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_m
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_n
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_o
+	}
+	text = {
+		localization_key = deviant_dirtytalkfromfemale_tofemale_p
+	}	
+}
+#Ai female does to female if you fuck around
+FuckAroundActionFromFemaleToFemaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_lickpussy
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_playwithnipples
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_rubclit
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_kissyou
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_a
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_b
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_c
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_d
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_e
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tofemale_f
+	}	
+}
+
+
+#Ai male does to female if you fuck around
+FuckAroundActionFromMaleToFemaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_holdinpussy
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_sucknipples
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_slapass
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_kiss
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_a
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_b
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_c
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_d
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_e
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_f
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_g
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_h
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_i
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_j
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_k
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_l
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_m
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_n
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_o
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfrommale_tofemale_p
+	}	
+}
+
+#female AI does to male while he fucks around
+FuckAroundActionFromFemaleToMaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_licktip
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_suckballs
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_rubbreaststoyourback
+	}
+	#
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_kissyou
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_a
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_b
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_c
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_d
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_e
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_f
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_g
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_h
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_i
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_j
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_k
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_l
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_m
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_n
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_o
+	}
+	text = {
+		localization_key = deviant_fuckaroundactionfromfemale_tomale_p
+	}	
+}
+#male AI talking to male while he fucks around
+DirtyTalkFromMaleToMaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_wanttocumonhertits
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_slapherdirtypussy
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_givemeturn
+	}
+	#
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_wanttocuminher
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_makethatslutmoan
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_takeherharder
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_a
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_b
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_c
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_d
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_e
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_f
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_g
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_h
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_i
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_j
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_k
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_l
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_m
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_n
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_o
+	}
+	text = {
+		localization_key = deviant_dirtytalkfrommale_tomale_p
+	}	
+}
+
+#Ai female talks/begs to female if you win at impresing them with just charisma and looks
+BeggingFromFemaleToFemaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tofemale_wanttodofun
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tofemale_stopluringmen
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tofemale_wanthug
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tofemale_wanttouchtits
+	}
+}
+#Ai male talks/begs to female if you win at impresing them with just charisma and looks
+BeggingFromMaleToFemaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tofemale_wanttodofun
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tofemale_wantaction
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tofemale_wanthug
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tofemale_wanttouchtits
+	}
+}
+
+#Ai female talks/begs to male if you win at impresing them with just charisma and looks
+BeggingFromFemaleToMaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tomale_makingmewet
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tomale_wantholdcock
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tomale_wanthug
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfromfemale_tomale_justthetip
+	}
+}
+#Ai male talks/begs to male if you win at impresing them with just charisma and looks
+BeggingFromMaleToMaleInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tomale_stopluringwomen
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tomale_nicebody
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tomale_bathlater
+	}
+	#
+	text = {
+		localization_key = deviant_beggingfrommale_tomale_gohunting
+	}
+}
+
+#Ai female talks to female if you prostitute
+InsultFromFemaleToSlutInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_dumbgreedyslut
+	}
+	#
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_loosehole
+	}
+	#
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_dirtywhore
+	}
+	#
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_disgust
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_a
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_b
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_c
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_d
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_e
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_f
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_g
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_h
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_i
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_j
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_k
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_l
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_m
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_n
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_o
+	}
+	text = {
+		localization_key = deviant_insultfromfemale_toslut_p
+	}	
+}
+#Ai male talks to female if you prostitute
+InsultFromMaleToSlutInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_insultfrommale_toslut_dumbgreedyslut
+	}
+	#
+	text = {
+		localization_key = deviant_insultfrommale_toslut_loosehole
+	}
+	#
+	text = {
+		localization_key = deviant_insultfrommale_toslut_dirtywhore
+	}
+	#
+	text = {
+		localization_key = deviant_insultfrommale_toslut_disgust
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_a
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_b
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_c
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_d
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_e
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_f
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_g
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_h
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_i
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_j
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_k
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_l
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_m
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_n
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_o
+	}
+	text = {
+		localization_key = deviant_insultfrommale_toslut_p
+	}	
+}
+#Ai female does to female if you prostitute
+ActionFromFemaleToSlutInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_twistnipples
+	}
+	#
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_finger
+	}
+	#
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_spank
+	}
+	#
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_spit
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_a
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_b
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_c
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_d
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_e
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_f
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_g
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_h
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_i
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_j
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_k
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_l
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_m
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_n
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_o
+	}
+	text = {
+		localization_key = deviant_actionfromfemale_toslut_p
+	}	
+}
+#Ai male does to female if you prostitute
+ActionFromMaleToSlutInOrgy = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = deviant_actionfrommale_toslut_slapfacewithcock
+	}
+	#
+	text = {
+		localization_key = deviant_actionfrommale_toslut_fist
+	}
+	#
+	text = {
+		localization_key = deviant_actionfrommale_toslut_holdcockmakebeg
+	}
+	#
+	text = {
+		localization_key = deviant_actionfrommale_toslut_lubepussywithspit
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_a
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_b
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_c
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_d
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_e
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_f
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_g
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_h
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_i
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_j
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_k
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_l
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_m
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_n
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_o
+	}
+	text = {
+		localization_key = deviant_actionfrommale_toslut_p
+	}	
+}
+
+
+#Ai male masturbates
+DeviantMaleMasturbate = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = male_deviantmasturbated_publicly_hard
+	}
+	#
+	text = {
+		localization_key = male_deviantmasturbated_publicly_slow
+	}
+	#
+	text = {
+		localization_key = male_deviantmasturbated_publicly_rubflaccid
+	}
+}
+
+#Ai female if male fuck mouths
+MaleDeviantOralFemale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianmale_oral_female_hard
+	}
+	#
+	text = {
+		localization_key = devianmale_oral_female_slow
+	}
+	#
+	text = {
+		localization_key = devianmale_oral_female_tip
+	}
+	text = {
+		localization_key = devianmale_oral_female_throat
+	}
+	text = {
+		localization_key = devianmale_oral_female_a
+	}
+	text = {
+		localization_key = devianmale_oral_female_b
+	}
+	text = {
+		localization_key = devianmale_oral_female_c
+	}
+	text = {
+		localization_key = devianmale_oral_female_d
+	}
+	text = {
+		localization_key = devianmale_oral_female_e
+	}
+	text = {
+		localization_key = devianmale_oral_female_f
+	}
+	text = {
+		localization_key = devianmale_oral_female_g
+	}
+	text = {
+		localization_key = devianmale_oral_female_h
+	}
+	text = {
+		localization_key = devianmale_oral_female_i
+	}
+	text = {
+		localization_key = devianmale_oral_female_j
+	}
+	text = {
+		localization_key = devianmale_oral_female_k
+	}
+	text = {
+		localization_key = devianmale_oral_female_l
+	}
+	text = {
+		localization_key = devianmale_oral_female_m
+	}
+	text = {
+		localization_key = devianmale_oral_female_n
+	}
+	text = {
+		localization_key = devianmale_oral_female_o
+	}
+	text = {
+		localization_key = devianmale_oral_female_p
+	}	
+}
+
+#Ai female if male fuck ass
+MaleDeviantAssFemale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianmale_ass_female_hard
+	}
+	#
+	text = {
+		localization_key = devianmale_ass_female_slow
+	}
+	#
+	text = {
+		localization_key = devianmale_ass_female_tip
+	}
+	text = {
+		localization_key = devianmale_ass_female_deep
+	}
+	text = {
+		localization_key = devianmale_ass_female_a
+	}
+	text = {
+		localization_key = devianmale_ass_female_b
+	}
+	text = {
+		localization_key = devianmale_ass_female_c
+	}
+	text = {
+		localization_key = devianmale_ass_female_d
+	}
+	text = {
+		localization_key = devianmale_ass_female_e
+	}
+	text = {
+		localization_key = devianmale_ass_female_f
+	}
+	text = {
+		localization_key = devianmale_ass_female_g
+	}
+	text = {
+		localization_key = devianmale_ass_female_h
+	}
+	text = {
+		localization_key = devianmale_ass_female_i
+	}
+	text = {
+		localization_key = devianmale_ass_female_j
+	}
+	text = {
+		localization_key = devianmale_ass_female_k
+	}
+	text = {
+		localization_key = devianmale_ass_female_l
+	}
+	text = {
+		localization_key = devianmale_ass_female_m
+	}
+	text = {
+		localization_key = devianmale_ass_female_n
+	}
+	text = {
+		localization_key = devianmale_ass_female_o
+	}
+	text = {
+		localization_key = devianmale_ass_female_p
+	}	
+}
+
+#Ai female if male fuck pussy
+MaleDeviantPussyFemale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianmale_pussy_female_hard
+	}
+	#
+	text = {
+		localization_key = devianmale_pussy_female_slow
+	}
+	#
+	text = {
+		localization_key = devianmale_pussy_female_tip
+	}
+	text = {
+		localization_key = devianmale_pussy_female_deep
+	}
+	text = {
+		localization_key = devianmale_pussy_female_a
+	}
+	text = {
+		localization_key = devianmale_pussy_female_b
+	}
+	text = {
+		localization_key = devianmale_pussy_female_c
+	}
+	text = {
+		localization_key = devianmale_pussy_female_d
+	}
+	text = {
+		localization_key = devianmale_pussy_female_e
+	}
+	text = {
+		localization_key = devianmale_pussy_female_f
+	}
+	text = {
+		localization_key = devianmale_pussy_female_g
+	}
+	text = {
+		localization_key = devianmale_pussy_female_h
+	}
+	text = {
+		localization_key = devianmale_pussy_female_i
+	}
+	text = {
+		localization_key = devianmale_pussy_female_j
+	}
+	text = {
+		localization_key = devianmale_pussy_female_k
+	}
+	text = {
+		localization_key = devianmale_pussy_female_l
+	}
+	text = {
+		localization_key = devianmale_pussy_female_m
+	}
+	text = {
+		localization_key = devianmale_pussy_female_n
+	}
+	text = {
+		localization_key = devianmale_pussy_female_o
+	}
+	text = {
+		localization_key = devianmale_pussy_female_p
+	}	
+}
+
+#Ai male if female suck cock
+FemaleDeviantOralMale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianfemale_oral_male_hard
+	}
+	#
+	text = {
+		localization_key = devianfemale_oral_male_slow
+	}
+	#
+	text = {
+		localization_key = devianfemale_oral_male_tip
+	}
+	text = {
+		localization_key = devianfemale_oral_male_deep
+	}
+	text = {
+		localization_key = devianfemale_oral_male_a
+	}
+	text = {
+		localization_key = devianfemale_oral_male_b
+	}
+	text = {
+		localization_key = devianfemale_oral_male_c
+	}
+	text = {
+		localization_key = devianfemale_oral_male_d
+	}
+	text = {
+		localization_key = devianfemale_oral_male_e
+	}
+	text = {
+		localization_key = devianfemale_oral_male_f
+	}
+	text = {
+		localization_key = devianfemale_oral_male_g
+	}
+	text = {
+		localization_key = devianfemale_oral_male_h
+	}
+	text = {
+		localization_key = devianfemale_oral_male_i
+	}
+	text = {
+		localization_key = devianfemale_oral_male_j
+	}
+	text = {
+		localization_key = devianfemale_oral_male_k
+	}
+	text = {
+		localization_key = devianfemale_oral_male_l
+	}
+	text = {
+		localization_key = devianfemale_oral_male_m
+	}
+	text = {
+		localization_key = devianfemale_oral_male_n
+	}
+	text = {
+		localization_key = devianfemale_oral_male_o
+	}
+	text = {
+		localization_key = devianfemale_oral_male_p
+	}	
+}
+
+#Ai male if female anal cock
+FemaleDeviantAnalMale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianfemale_anal_male_hard
+	}
+	#
+	text = {
+		localization_key = devianfemale_anal_male_slow
+	}
+	#
+	text = {
+		localization_key = devianfemale_anal_male_tip
+	}
+	text = {
+		localization_key = devianfemale_anal_male_deep
+	}
+	text = {
+		localization_key = devianfemale_anal_male_a
+	}
+	text = {
+		localization_key = devianfemale_anal_male_b
+	}
+	text = {
+		localization_key = devianfemale_anal_male_c
+	}
+	text = {
+		localization_key = devianfemale_anal_male_d
+	}
+	text = {
+		localization_key = devianfemale_anal_male_e
+	}
+	text = {
+		localization_key = devianfemale_anal_male_f
+	}
+	text = {
+		localization_key = devianfemale_anal_male_g
+	}
+	text = {
+		localization_key = devianfemale_anal_male_h
+	}
+	text = {
+		localization_key = devianfemale_anal_male_i
+	}
+	text = {
+		localization_key = devianfemale_anal_male_j
+	}
+	text = {
+		localization_key = devianfemale_anal_male_k
+	}
+	text = {
+		localization_key = devianfemale_anal_male_l
+	}
+	text = {
+		localization_key = devianfemale_anal_male_m
+	}
+	text = {
+		localization_key = devianfemale_anal_male_n
+	}
+	text = {
+		localization_key = devianfemale_anal_male_o
+	}
+	text = {
+		localization_key = devianfemale_anal_male_p
+	}	
+}
+
+#Ai male if female fuck cock
+FemaleDeviantPussyMale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianfemale_pussy_male_hard
+	}
+	#
+	text = {
+		localization_key = devianfemale_pussy_male_slow
+	}
+	#
+	text = {
+		localization_key = devianfemale_pussy_male_tip
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_deep
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_a
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_b
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_c
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_d
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_e
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_f
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_g
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_h
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_i
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_j
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_k
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_l
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_m
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_n
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_o
+	}
+	text = {
+		localization_key = devianfemale_pussy_male_p
+	}	
+}
+
+#Ai female if male sold himself 
+MaleDeviantGotSoldToFemale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianmale_gotsold_female_playcock
+	}
+	#
+	text = {
+		localization_key = devianmale_gotsold_female_hug
+	}
+	#
+	text = {
+		localization_key = devianmale_gotsold_female_suckballs
+	}
+	text = {
+		localization_key = devianmale_gotsold_female_missionary
+	}
+	text = {
+		localization_key = devianmale_gotsold_female_cockworship
+	}
+}
+
+#Ai male if female sold herself 
+FemaleDeviantGotSoldToMale = {
+	type = character
+
+	random_valid = yes
+
+	#
+	text = {
+		localization_key = devianfemale_gotsold_male_slapfacecock
+	}
+	#
+	text = {
+		localization_key = devianfemale_gotsold_male_thighfuck
+	}
+	#
+	text = {
+		localization_key = devianfemale_gotsold_male_suckballs
+	}
+	text = {
+		localization_key = devianfemale_gotsold_male_hardmatingmissionary
+	}
+}

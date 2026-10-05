@@ -12,11 +12,11 @@
  descendants_gain_nars_scion: "Your descendants receive the mark of the [GetTrait('nars_scion').GetName( GetNullCharacter )]"
 
  trait_track_polimetis:0 "Metís"
- trait_track_polimetis_desc:0 "It rules itself first; knowledge is its power. Through wisdom and wit, it bends the world to its will."
+ trait_track_polimetis_desc:0 "\nIt rules itself first; knowledge is its power.\nThrough wisdom, it bends the world to its will."
 
- nars_naturalis.name: "Selian"
- nars_naturalis.no_actor: "Selian-Blooded"
- trait_nars_naturalis_desc: "Selian blood courses through [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] veins, alongside its unnatural boons: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level."
+ nars_naturalis.name: "$game_concept_selianes$"
+ nars_naturalis.no_actor: "$game_concept_selian$-Blooded"
+ trait_nars_naturalis_desc: "Possessing the $game_concept_selianes$ blood's unnatural boons, [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level.\nIn addition, by virtue of [ROOT.GetCharacter.GetHerHis] heritage, [ROOT.GetCharacter.GetSheHe] is ageless."
 
  nars_alnars.name: "Sōtēr"
  nars_alnars.no_actor: "Savior-Deliverer"

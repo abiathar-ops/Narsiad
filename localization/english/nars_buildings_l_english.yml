@@ -31,4 +31,4 @@
  building_type_brothel_complex_01_desc:0 "A den of decadence where the masquerade of propriety is finally dropped."
  building_brothel_complex_01:0 "Hedonēion"
  building_brothel_complex_01_desc:0 "$building_type_brothel_complex_01_desc$"
- brothel_complex_01_tt: "Enables the #v Small Orgy#! [activity|E]"
+ brothel_complex_01_tt: "Enables the [GetActivityType( 'activity_nars_orgio' ).GetName] [activity|E]"

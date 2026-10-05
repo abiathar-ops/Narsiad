@@ -110,10 +110,8 @@ nars_naturalis = {
         }
     }
 	health = 2
-	fertility = -0.75
-	years_of_fertility = 75
-	life_expectancy = 75
-	inbreeding_chance = -0.75
+	fertility = -0.95
+	inbreeding_chance = -0.95
 	flag = is_immortal
 
 	ai_rationality = dominant_positive_ai_value

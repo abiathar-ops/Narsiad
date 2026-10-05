@@ -1,0 +1,3237 @@
+
+
+namespace = nars_orgio
+
+#########################
+# nars_orgio #
+#########################
+
+nars_orgio.3001 = {
+	type = letter_event
+	opening = nars_orgio.3001.t
+	desc = nars_orgio.3001.desc
+	sender = scope:host
+	orphan = yes # deprecated by new activity system
+
+	immediate = {
+		scope:activity.activity_host = { save_scope_as = host }
+		debug_log = invitation_received
+	}
+
+  	#Yes!
+	option = {
+		name = nars_orgio.3001.a
+
+		play_music_cue = "mx_cue_sacredrite"
+		accept_activity_invite = scope:activity
+		reverse_add_opinion = {
+			target = scope:host
+			modifier = pleased_opinion
+			opinion = 10
+		}
+		ai_chance = {
+			base = 100
+			opinion_modifier = {
+				opinion_target = scope:host
+			}
+		}
+	}
+
+	#No...
+	option = {
+		name = nars_orgio.3001.b
+
+		decline_activity_invite = scope:activity
+		reverse_add_opinion = {
+			target = scope:host
+			modifier = disappointed_opinion
+			opinion = -10
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 15
+				target_is_liege_or_above = scope:host
+			}
+			ai_value_modifier = {
+				ai_boldness = 0.2
+			}
+		}
+	}
+}
+
+#No guests came
+nars_orgio.3002 = { 
+	type = activity_event
+	title = nars_orgio.3002.t
+	desc = nars_orgio.3002.desc
+
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:target
+		animation = sadness
+	}
+
+	option = {
+		name = nars_orgio.3002.a
+		
+		scope:activity = {
+			set_variable = activity_invalidated
+		}
+	}
+}
+
+
+#Uninvited guest
+scripted_trigger deviantorgy_3003_potential_guest_trigger = {
+	is_adult = yes
+	is_female = yes
+	age >= 18
+}
+
+
+nars_orgio.3003 = {
+	type = activity_event
+	title = nars_orgio.3003.t
+	desc = nars_orgio.3003.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = scope:inviter
+	right_portrait = scope:new_guest
+	
+	trigger = {
+		scope:activity = {
+			any_attending_character = {
+				NOT = { this = root }
+				NOT = { is_female = yes }
+			}
+		}
+	}
+
+	immediate = {
+		create_character = {
+			location = root.capital_province
+			template = deviantgo_hornypeasantfemale
+			save_scope_as = new_guest
+		}
+		hidden_effect = {
+			capital_province = { save_scope_as = capital }
+
+			#Find inviter
+			scope:activity = {
+				random_attending_character = {
+					limit = {
+						NOR = {
+							is_courtier_of = root
+							this = root
+						}
+						is_ai = yes
+						is_adult = yes
+					}
+					alternative_limit = {
+					 	is_ai = yes
+					 	is_adult = yes
+					}
+					alternative_limit = { is_adult = yes }
+					save_scope_as = inviter
+				}
+			}
+			scope:new_guest = {
+				add_character_flag = {
+					flag = nars_orgio_new_guest
+					days = 30
+				}
+			}
+		}
+	}
+
+	#You are very welcome!
+	option = {
+		name = nars_orgio.3003.a
+		
+		scope:new_guest = {
+			add_to_activity = scope:activity
+		}
+		reverse_add_opinion = {
+			target = scope:new_guest
+			modifier = grateful_opinion
+			opinion = 15
+		}
+		reverse_add_opinion = {
+			target = scope:inviter
+			modifier = grateful_opinion
+			opinion = 15
+		}
+		scope:activity = {
+			add_activity_log_entry = {
+				key = femalebimbo_thanksforinvite_orgy
+				character = scope:new_guest
+			}	
+		}
+	}
+	#no, invite only and she not on the list
+	option = {
+		name = nars_orgio.3003.c
+		custom_tooltip = nars_orgio.3003.c.tt
+		reverse_add_opinion = {
+			target = scope:inviter
+			modifier = disappointed_opinion
+			opinion = -15
+		}
+	}
+}
+
+
+#small orgy choice
+
+scripted_effect nars_orgio_good_outcome = {
+	scope:activity = {
+		every_attending_character = {
+			limit = { NOT = { this = root } }
+			custom = every_nars_orgio_participant
+			add_opinion = {
+				target = root
+				modifier = impressed_opinion
+				opinion = 20
+			}
+			add_stress = medium_stress_loss
+		}
+	}
+}
+
+scripted_effect nars_orgio_poor_outcome = {
+	scope:activity = {
+		every_attending_character = {
+			limit = { NOT = { this = root } }
+			custom = every_nars_orgio_participant
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -15
+			}
+		}
+	}
+	add_stress = medium_stress_gain
+}
+
+nars_orgio.3010 = { # orgy start event
+	type = activity_event
+	title = nars_orgio.3010.t
+	desc = nars_orgio.3010.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = root
+		animation = scheme
+		outfit_tags = { no_clothes }
+	}	
+	center_portrait = {
+		character = scope:first_guest
+		animation = ecstasy
+		outfit_tags = { no_clothes }
+	}
+	right_portrait = {
+		character = scope:second_guest
+		animation = flirtation_left
+		outfit_tags = { no_clothes }
+	}
+	lower_left_portrait = {
+		character = scope:third_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_center_portrait = {
+		character = scope:fourth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_right_portrait = {
+		character = scope:fifth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+
+	immediate = {
+		save_scope_as = host
+		capital_province = { save_scope_as = background_wilderness_scope } 
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					NOT = { this = root }
+				}
+				save_scope_as = first_guest
+			}
+		}	
+		scope:activity = {
+		random_attending_character = {
+				limit = {
+					location = scope:province
+					NOT = { this = scope:first_guest }
+					NOT = { this = root }
+				}
+				save_scope_as = second_guest
+			}
+		}	
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					NOT = { this = scope:first_guest }
+					NOT = { this = scope:second_guest }
+					NOT = { this = root }
+				}
+				save_scope_as = third_guest
+			}
+		}	
+		scope:activity = {
+		random_attending_character = {
+				limit = {
+					location = scope:province
+					NOT = { this = scope:first_guest }
+					NOT = { this = scope:second_guest }
+					NOT = { this = scope:third_guest }
+					NOT = { this = root }
+				}
+				save_scope_as = fourth_guest
+			}
+		}	
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					NOT = { this = scope:first_guest }
+					NOT = { this = scope:second_guest }
+					NOT = { this = scope:third_guest }
+					NOT = { this = scope:fourth_guest }
+					NOT = { this = root }
+				}
+				save_scope_as = fifth_guest
+			}
+		}	
+		scope:activity = {
+			every_attending_character = {
+				add_character_flag = is_naked
+			}
+		}
+	}
+
+	#fuck every hole to impress
+	option = {
+		trigger = {
+			this = scope:host
+			scope:host = {
+				is_female = no
+			}
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 1
+					is_female = yes
+				}
+			}
+		}
+		name = nars_orgio.3010.a
+		trigger_event = nars_orgio.3020
+		scope:activity = {
+			random_attending_character = {
+			limit = {
+				location = scope:province
+				is_female = yes
+				NOT = { this = scope:host }
+			}
+			save_scope_as = deviant_partner_female
+			}
+			add_activity_log_entry = {
+				key = maledeviant_orgyfuck_every_hole
+				character = scope:host
+			}
+		}
+		stress_impact = {
+			base = minor_stress_impact_gain
+			lustful = medium_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			chaste = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+		}
+		duel = {
+			skill = prowess
+			value = average_skill_rating
+			75 = {
+				desc = nars_orgio.3010.a.great
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:great_sexualprowessman
+				}
+				show_as_tooltip = { nars_orgio_good_outcome = yes }
+			}
+			25 = {	
+				desc = nars_orgio.3010.a.poor
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -5
+				}
+				min = 10
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:poor_sexualprowessman
+				}
+				show_as_tooltip = { nars_orgio_poor_outcome = yes }
+			}
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+
+	#get fucked as female to impress
+	option = {
+		trigger = {
+			this = scope:host
+			scope:host = {
+				is_female = yes
+			}
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 2
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.3010.b
+		trigger_event = nars_orgio.3020
+		scope:activity = {
+			add_activity_log_entry = {
+				key = femaledeviant_orgygetfuck_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { is_female = no }
+					custom = everymale_nars_orgio_participant
+					add_stress = medium_stress_loss
+				}
+			}
+		}
+		duel = {
+			skill = prowess
+			value = average_skill_rating
+			75 = {
+				desc = nars_orgio.3010.b.great
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:great_sexualprowesswoman
+				}
+				show_as_tooltip = { nars_orgio_good_outcome = yes }
+			}
+			25 = {	
+				desc = nars_orgio.3010.b.poor
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -5
+				}
+				min = 10
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:poor_sexualprowesswoman
+				}
+				show_as_tooltip = { nars_orgio_poor_outcome = yes }
+			}
+		}
+
+		stress_impact = {
+			base = minor_stress_impact_gain
+			lustful = medium_stress_impact_loss
+			chaste = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+
+	#let others desire you 
+	option = {
+		name = nars_orgio.3010.c
+		trigger = {
+			this = scope:host
+		}
+		duel = {
+			skill = diplomacy
+			value = average_skill_rating
+			75 = {
+				desc = nars_orgio.3010.c.great
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				trigger_event = nars_orgio.3030
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:great_sexualcharisma
+				}
+				#AI events if trying to impress with looks alone and winning
+				scope:activity = {
+					every_attending_character = {
+						trigger_event = nars_orgio.5020
+					}
+				}
+				show_as_tooltip = { nars_orgio_good_outcome = yes }
+			}
+			25 = {	
+				desc = nars_orgio.3010.c.poor
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -5
+				}
+				min = 10
+				save_scope_value_as = {
+					name = nars_orgio_ceremony_outcome
+					value = flag:poor_sexualcharisma
+				}
+				#AI just fuck around if not interested
+				scope:activity = {
+					every_attending_character = {
+						trigger_event = nars_orgio.5100
+					}
+				}
+				show_as_tooltip = { nars_orgio_poor_outcome = yes }
+			}
+		}
+
+		stress_impact = {
+			shy = minor_stress_impact_gain
+		}
+	}
+    #if player just watches
+	option = {
+		trigger = {
+			is_ai = no
+		}
+		name = nars_orgio.3010.e
+		custom_tooltip = nars_orgio.3010.e.tt
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = medium_stress_gain
+			sadistic = medium_stress_loss
+			shy = minor_stress_gain
+			chaste = minor_stress_gain
+			lazy = medium_stress_loss
+		}
+		scope:activity = {
+			every_attending_character = {
+				limit = { 
+					NOT = { this = scope:host }
+				}
+				custom = every_nars_orgio_participant
+				add_opinion = {
+					target = scope:host
+					modifier = annoyed_opinion
+					opinion = -10
+				}
+			}
+		}
+		#AI events for them fucking around if player watches
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+	#for AI to not trigger events
+	option = {
+		trigger = {
+			is_ai = yes
+		}
+		name = nars_orgio.3010.e
+		custom_tooltip = nars_orgio.3010.e.tt
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+	}
+
+	after = {
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = {
+					id = nars_orgio.3014
+				}
+			}
+		}
+	}
+}
+
+#Everyone reacts to the orgy by having random sex, as in might happen accidents (host and guests)
+scripted_trigger deviantorgy_3014_can_have_sex_trigger = {
+	is_adult = yes
+	NOR = {
+		has_sexuality = asexual
+		has_trait = celibate
+	}
+}
+
+scripted_trigger deviantorgy_3014_sex_partner_trigger = {
+	deviantorgy_3014_can_have_sex_trigger = yes
+	NOT = { this = root }
+	is_ai = yes
+	save_temporary_scope_as = seduction_target
+	matching_gender_and_sexuality_trigger = { CHARACTER_1 = scope:seduction_target CHARACTER_2 = root }
+}
+
+scripted_trigger deviantorgy_3014_loved_sex_partner_trigger = {
+	deviantorgy_3014_sex_partner_trigger = yes
+	OR = {
+		has_relation_lover = root
+		is_consort_of = root
+		has_relation_soulmate = root
+	}
+}
+
+scripted_trigger deviantorgy_3014_regular_sex_partner_trigger = {
+	deviantorgy_3014_sex_partner_trigger = yes
+	NOR = {
+		has_relation_lover = root
+		has_relation_soulmate = root
+		is_consort_of = root
+	}
+}
+
+scripted_effect deviantorgy_3017_soulmate_sex_effect = {
+	reverse_add_opinion = {
+		target = scope:sex_partner
+		modifier = love_opinion
+		opinion = 20
+	}
+	add_stress = major_stress_loss
+	had_sex_with_effect = { CHARACTER = scope:sex_partner PREGNANCY_CHANCE = pregnancy_chance }
+}
+
+
+nars_orgio.3014 = { 
+	type = activity_event
+	title = nars_orgio.3010.t
+	desc = {
+		#host
+		first_valid = {
+			triggered_desc = {
+				trigger = { root = scope:host }
+				desc = {
+ 					first_valid = {
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:great_sexualprowessman }
+ 							desc = nars_orgio.3014.host.great_sexualprowessman.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:poor_sexualprowessman }
+ 							desc = nars_orgio.3014.host.poor_sexualprowessman.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:great_sexualprowesswoman }
+ 							desc = nars_orgio.3014.host.great_sexualprowesswoman.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:poor_sexualprowesswoman }
+ 							desc = nars_orgio.3014.host.poor_sexualprowesswoman.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:great_sexualcharisma }
+ 							desc = nars_orgio.3014.host.great_sexualcharisma.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:poor_sexualcharisma }
+ 							desc = nars_orgio.3014.host.poor_sexualcharisma.desc
+ 						}
+ 						triggered_desc = {
+ 							trigger = { scope:nars_orgio_ceremony_outcome = flag:offering }
+ 							desc = nars_orgio.3014.host.offering.desc
+ 						}
+ 						desc = nars_orgio.3014.host.fallback.desc
+ 					}
+					desc = nars_orgio.3014.host.end.desc
+				}
+			}
+			#everyone else
+			desc = {
+				desc = nars_orgio.3014.guest.start.desc
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							OR = {
+								scope:nars_orgio_ceremony_outcome = flag:great_sexualprowessman
+								scope:nars_orgio_ceremony_outcome = flag:great_sexualprowesswoman
+								scope:nars_orgio_ceremony_outcome = flag:great_sexualcharisma
+								scope:nars_orgio_ceremony_outcome = flag:offering
+								NOT = { exists = scope:nars_orgio_ceremony_outcome }
+							}
+						}
+						desc = nars_orgio.3014.guest.good.desc
+					}
+					triggered_desc = {
+						trigger = {
+							OR = {
+								scope:nars_orgio_ceremony_outcome = flag:poor_sexualprowessman
+								scope:nars_orgio_ceremony_outcome = flag:poor_sexualprowesswoman
+								scope:nars_orgio_ceremony_outcome = flag:poor_sexualcharisma
+							}
+						}
+						desc = nars_orgio.3014.guest.bad.desc
+					}
+					desc = nars_orgio.3014.guest.fallback.desc
+				}
+				desc = nars_orgio.3014.guest.end.desc
+			}
+		}
+	}	
+
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = root
+		animation = scheme
+		outfit_tags = { no_clothes }
+	}	
+	center_portrait = {
+		character = scope:first_guest
+		animation = ecstasy
+		outfit_tags = { no_clothes }
+	}
+	right_portrait = {
+		character = scope:second_guest
+		animation = flirtation_left
+		outfit_tags = { no_clothes }
+	}
+	lower_left_portrait = {
+		character = scope:third_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_center_portrait = {
+		character = scope:fourth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_right_portrait = {
+		character = scope:fifth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+
+
+
+	immediate = {
+		#Give outcome to host
+		if = {
+			limit = { this = scope:host }
+
+			if = {
+				limit = {
+					OR = {
+						scope:nars_orgio_ceremony_outcome = flag:great_sexualprowessman
+						scope:nars_orgio_ceremony_outcome = flag:great_sexualprowesswoman
+						scope:nars_orgio_ceremony_outcome = flag:great_sexualcharisma
+						scope:nars_orgio_ceremony_outcome = flag:offering
+					}
+				}
+				nars_orgio_good_outcome = yes
+			}
+			else = {
+				nars_orgio_poor_outcome = yes
+			}
+		}
+
+
+		###What is available to do?###
+		scope:activity = {
+			#Talk to new guest
+			if = {
+				limit = { root = scope:host }
+				scope:activity = {
+					random_attending_character = {
+						limit = { has_character_flag = nars_orgio_new_guest }
+						save_scope_as = new_guest
+					}
+				}
+			}
+			#Someone to seduce
+			if = {
+				limit = {
+					root = {
+						deviantorgy_3014_can_have_sex_trigger = yes
+					}
+				}
+				#If you have a soulmate here, only sleep with them (not available if they can't sleep with you for some reason)
+				if = {
+					limit = { any_attending_character = { has_relation_soulmate = root } }
+					random_attending_character = {
+						limit = {
+							deviantorgy_3014_loved_sex_partner_trigger = yes
+							has_relation_soulmate = root
+						}
+						save_scope_as = sex_partner
+					}
+				}
+				else = {
+					random_list = {
+						#Just someone regular
+						1 = {
+							trigger = {
+								any_attending_character = {
+									deviantorgy_3014_regular_sex_partner_trigger = yes
+									accepts_incest_with_trigger = { CHARACTER = root } #Skip this one if there's only non-accepting incest options available
+								}
+							}
+							random_attending_character = {
+								limit = {
+									deviantorgy_3014_regular_sex_partner_trigger = yes
+									save_temporary_scope_as = sex_partner_check #Saved for weight modifier
+								}
+								weight = {
+									base = 10
+									modifier = {
+										has_trait = seducer
+										add = 10
+									}
+									modifier = {
+										has_trait = lustful
+										add = 10
+									}
+									modifier = {
+										has_trait = beauty_good
+										add = 10
+									}
+									modifier = {
+										has_relation_potential_lover = root
+										add = 10
+									}
+									incest_acceptance_modifier = {
+										TARGET = scope:sex_partner_check
+										SEDUCER = root
+									}
+								}
+								save_scope_as = sex_partner
+							}
+						}
+						1 = {
+							trigger = {
+								any_attending_character = {
+									deviantorgy_3014_loved_sex_partner_trigger = yes
+								}
+							}
+							random_attending_character = {
+								limit = {
+									deviantorgy_3014_loved_sex_partner_trigger = yes
+								}
+								weight = {
+									base = 1
+									modifier = {
+										is_spouse_of = root
+										add = 2
+									}
+								}
+								save_scope_as = sex_partner
+							}
+						}
+					}
+				}		
+			}
+		}
+	}
+
+	###WHAT DO I WANT TO DO?###
+
+	#is male, fuck every hole
+	option = {
+		trigger = {
+			this = scope:host
+			scope:host = {
+				is_female = no
+			}
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 1
+					is_female = yes
+				}
+			}
+		}
+		name = nars_orgio.3014.a
+		custom_tooltip = nars_orgio.3014.a.tt
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = major_stress_loss
+			sadistic = major_stress_loss
+			shy = major_stress_gain
+			chaste = major_stress_gain
+			lazy = medium_stress_gain
+		}
+		trigger_event = nars_orgio.3020
+		scope:activity = {
+			random_attending_character = {
+			limit = {
+				location = scope:province
+				is_female = yes
+				NOT = { this = scope:host }
+			}
+			save_scope_as = deviant_partner_female
+			}
+			add_activity_log_entry = {
+				key = maledeviant_orgyfuck_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { 
+						is_female = yes 
+						NOT = { this = scope:host } 
+					}
+					custom = everyfemale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = flustered_opinion
+						opinion = 20
+					}
+					add_stress = medium_stress_loss
+				}
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = no
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = respect_opinion
+						opinion = 10
+					}
+					add_stress = minor_stress_gain
+				}
+			}
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+
+	#get every hole stuffed if female
+	option = {
+		trigger = {
+			this = scope:host
+			scope:host = {
+				is_female = yes
+			}
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 2
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.3014.b
+		custom_tooltip = nars_orgio.3014.b.tt
+		trigger_event = nars_orgio.3020
+		stress_impact = {
+			base = minor_stress_gain
+			lustful = major_stress_loss
+			sadistic = minor_stress_gain
+			shy = major_stress_gain
+			chaste = major_stress_gain
+			lazy = medium_stress_gain
+		}
+		scope:activity = {
+			add_activity_log_entry = {
+				key = femaledeviant_orgygetfuck_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = no 
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = pleased_opinion
+						opinion = 20
+					}
+					add_stress = major_stress_loss
+				}
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = yes
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = flustered_opinion
+						opinion = 10
+					}
+					add_stress = minor_stress_loss
+				}
+			}
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+
+	#try to earn money if female
+	option = {
+		trigger = {
+			this = scope:host
+			scope:host = {
+				is_female = yes
+			}
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 2
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.3014.bb
+		custom_tooltip = nars_orgio.3014.bb.tt
+		stress_impact = {
+			base = major_stress_gain
+			lustful = medium_stress_loss
+			sadistic = minor_stress_gain
+			shy = major_stress_gain
+			chaste = major_stress_gain
+			lazy = medium_stress_gain
+		}
+		scope:activity = {
+			add_activity_log_entry = {
+				key = femaledeviant_orgydirtywhorused_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = no
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = disgusted_opinion
+						opinion = -20
+					}
+					add_stress = major_stress_loss
+					pay_short_term_gold = {
+						target = scope:host
+						gold = tiny_gold_value
+					}
+				}
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = yes
+					}
+					custom = everyfemale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = disgusted_opinion
+						opinion = -50
+					}
+					add_stress = minor_stress_gain
+				}
+			}	
+		}
+		#AI events if female trying to earn money
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5030
+			}
+		}
+	}
+	
+	#Seducer (sneak away)
+	option = {
+		trigger = {
+			exists = scope:sex_partner
+			NOT = { has_relation_soulmate = scope:sex_partner }
+			is_attracted_to_gender_of = scope:sex_partner
+			might_cheat_on_every_partner_trigger = yes
+			is_ai = no
+		}
+		name = nars_orgio.3014.c
+		custom_tooltip = nars_orgio.3014.c.tt
+
+		if = {
+			limit = { scope:sex_partner = { deviantorgy_3014_loved_sex_partner_trigger = yes } }
+			trigger_event = {
+				id = nars_orgio.3016
+			}
+		}
+		else = {
+			trigger_event = {
+				id = nars_orgio.3015
+			}
+		}
+
+		stress_impact = {
+			chaste = medium_stress_impact_gain
+			shy = minor_stress_impact_gain
+			rakish = minor_stress_impact_loss
+		}
+	}
+
+	#Seducer (soulmate)
+	option = {
+		trigger = {
+			exists = scope:sex_partner
+			has_relation_soulmate = scope:sex_partner
+			is_ai = no
+		}
+		name = nars_orgio.3014.e
+		highlight_portrait = scope:sex_partner
+		
+		trigger_event = {
+			id = nars_orgio.3017
+		}
+		show_as_tooltip = { deviantorgy_3017_soulmate_sex_effect = yes }
+	}
+
+	#Talk with new guest
+	option = {
+		trigger = { 
+			exists = scope:new_guest
+			is_ai = no
+		}
+		name = nars_orgio.3014.d
+		highlight_portrait = scope:new_guest
+
+		random_list = {
+			35 = { #Becomes friend and joins court
+				desc = nars_orgio.3014.d.move_in
+				compatibility_modifier = {
+					who = root
+					compatibility_target = scope:new_guest
+					multiplier = 3
+					max = 50
+					min = -30
+				}
+				send_interface_toast = {
+					title = nars_orgio.3014.d.move_in
+					left_icon = scope:new_guest
+					set_relation_friend = { reason = friend_bond_at_ceremony target = scope:new_guest }
+					add_courtier = scope:new_guest
+				}
+			}
+			50 = { #Becomes friend
+				desc = nars_orgio.3014.d.friend
+				compatibility_modifier = {
+					who = root
+					compatibility_target = scope:new_guest
+					multiplier = 2
+					max = 35
+					min = -35
+				}
+				send_interface_toast = {
+					title = nars_orgio.3014.d.friend
+					left_icon = scope:new_guest
+					set_relation_friend = { reason = friend_bond_at_ceremony target = scope:new_guest province = root.location }
+				}
+			}
+			15 = {
+				desc = nars_orgio.3014.d.enemy
+				compatibility_modifier = {
+					who = root
+					compatibility_target = scope:new_guest
+					multiplier = -3
+					max = 60
+					min = -9
+				}
+				modifier = {
+					OR = {
+						has_trait = vengeful
+						has_trait = callous
+						has_trait = sadistic
+						has_trait = wrathful
+					}
+					add = 15
+				}
+				send_interface_toast = {
+					title = nars_orgio.3014.d.enemy
+					left_icon = scope:new_guest
+					set_relation_rival = {
+						target = scope:new_guest
+						reason = rival_at_ceremony
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			shy = minor_stress_impact_gain
+		}
+		#AI events for them fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+	#Relax and indulge
+	option = {
+		trigger = { 
+			is_ai = no
+		}
+		name = nars_orgio.3014.f
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = medium_stress_gain
+			sadistic = medium_stress_loss
+			shy = minor_stress_gain
+			chaste = minor_stress_gain
+			lazy = medium_stress_loss
+		}
+		scope:activity = {
+			every_attending_character = {
+				limit = { 
+					NOT = { this = scope:host }
+				}
+				custom = every_nars_orgio_participant
+				add_opinion = {
+					target = scope:host
+					modifier = annoyed_opinion
+					opinion = -10
+				}
+			}
+		}
+		#AI events for them fucking around if player watches
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+	#for ai to not trigger events
+	option = {
+		trigger = { 
+			is_ai = yes
+		}
+		name = nars_orgio.3014.f
+		stress_impact = {
+			base = minor_stress_loss
+			gregarious = minor_stress_impact_loss
+			drunkard = minor_stress_impact_loss
+			hashishiyah = minor_stress_impact_loss
+			comfort_eater = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+		}
+	}
+}	
+
+
+#Sleep with someone (regular)
+nars_orgio.3015 = { 
+	type = activity_event
+	title = nars_orgio.3015.t
+	desc = {
+		desc = nars_orgio.3015.start.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:new_guest
+					scope:sex_partner = scope:new_guest
+				}
+				desc = nars_orgio.3015.new_guest.desc
+			}
+			desc = nars_orgio.3015.regular.desc
+		}
+		desc = nars_orgio.3015.end.desc
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:sex_partner
+		animation = flirtation
+	}
+
+	#Yes
+	option = {
+		name = nars_orgio.3015.a
+
+		progress_towards_lover_effect = {
+			CHARACTER = scope:sex_partner
+			REASON = lover_witch_sex_partner
+			OPINION = default_lover_opinion
+		}
+		had_sex_with_effect = { CHARACTER = scope:sex_partner PREGNANCY_CHANCE = pregnancy_chance }
+	}
+
+	#No
+	option = {
+		name = nars_orgio.3015.b
+		custom_tooltip = nars_orgio.3015.b.tt
+
+		reverse_add_opinion = {
+			target = scope:sex_partner
+			modifier = disappointed_opinion
+			opinion = -15
+		}
+		#AI events for them fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+}
+
+#Sleep with someone (spouse/lover -> soulmate)
+nars_orgio.3016 = { 
+	type = activity_event
+	title = nars_orgio.3016.t
+	desc = {
+		desc = nars_orgio.3015.start.desc
+		desc = nars_orgio.3016.end.desc
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:sex_partner
+		animation = love
+	}
+	
+	#Yes
+	option = {
+		name = nars_orgio.3016.a
+
+		set_relation_soulmate = { reason = soulmate_passionate_interests copy_reason = lover target = scope:sex_partner }
+		had_sex_with_effect = { CHARACTER = scope:sex_partner PREGNANCY_CHANCE = pregnancy_chance }
+	}
+
+	#No
+	option = {
+		name = nars_orgio.3016.b
+		custom_tooltip = nars_orgio.3015.b.tt
+
+		reverse_add_opinion = {
+			target = scope:sex_partner
+			modifier = disappointed_opinion
+			opinion = -15
+		}
+		#AI events for them fucking around if player watches
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+}
+
+
+#Sleep with someone (soulmate)
+nars_orgio.3017 = { 
+	type = activity_event
+	title = nars_orgio.3016.t
+	desc = {
+		desc = nars_orgio.3015.start.desc
+		desc = nars_orgio.3017.end.desc
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:sex_partner
+		animation = love
+	}
+	
+	#Yes
+	option = {
+		name = nars_orgio.3017.a
+		deviantorgy_3017_soulmate_sex_effect = yes
+	}
+
+	#No
+	option = {
+		name = nars_orgio.3017.b
+		custom_tooltip = nars_orgio.3015.b.tt
+
+		reverse_add_opinion = {
+			target = scope:sex_partner
+			modifier = disappointed_opinion
+			opinion = -15
+		}
+		#AI events for them fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+}
+
+#second stage events for fucking around and being admired
+#if fucked around
+nars_orgio.3020 = {
+	type = activity_event
+	title = nars_orgio.3020.t
+	desc = nars_orgio.3020.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:first_guest
+		animation = scheme
+		outfit_tags = { no_clothes }
+	}	
+	center_portrait = {
+		character = root
+		animation = ecstasy
+		outfit_tags = { no_clothes }
+	}
+	right_portrait = {
+		character = scope:second_guest
+		animation = flirtation_left
+		outfit_tags = { no_clothes }
+	}
+	lower_left_portrait = {
+		character = scope:third_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_center_portrait = {
+		character = scope:fourth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_right_portrait = {
+		character = scope:fifth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	
+	immediate = {
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = yes
+					NOT = { this = scope:host }
+				}
+				save_scope_as = fsex_partner_one
+			}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = yes
+					NOT = { this = scope:host }
+				}
+				save_scope_as = fsex_partner_two
+			}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = yes
+					NOT = { this = scope:host }
+				}
+				save_scope_as = fsex_partner_three
+			}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+				save_scope_as = msex_partner_one
+			}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+				save_scope_as = msex_partner_two
+			}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+				save_scope_as = msex_partner_three
+			}
+		}
+	}
+
+	# male fuck mouth
+	option = {
+		trigger = {
+			is_female = no
+		}
+		name = nars_orgio.3020.a
+		custom_tooltip = nars_orgio.3020.a.tt
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = minor_stress_loss
+			sadistic = minor_stress_loss
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = minor_stress_loss
+		}
+		#AI events fucking mouth
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5110
+			}
+		}
+	}
+	# male fuck ass
+	option = {
+		trigger = {
+			is_female = no
+		}
+		name = nars_orgio.3020.b
+		custom_tooltip = nars_orgio.3020.b.tt
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = minor_stress_loss
+			sadistic = minor_stress_loss
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = minor_stress_gain
+		}
+		#AI events fucking ass
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5111
+			}
+		}
+	}
+	#fuck pussy
+	option = {
+		trigger = {
+			is_female = no
+		}
+		name = nars_orgio.3020.c
+		custom_tooltip = nars_orgio.3020.c.tt
+		stress_impact = {
+			base = medium_stress_loss
+			lustful = minor_stress_loss
+			sadistic = minor_stress_loss
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = minor_stress_gain
+		}
+		hidden_effect = {
+			had_sex_with_effect = { 
+				CHARACTER = scope:fsex_partner_one 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+			had_sex_with_effect = { 
+				CHARACTER = scope:fsex_partner_two 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+			had_sex_with_effect = { 
+				CHARACTER = scope:fsex_partner_three 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+		}
+		#AI events fucking pussy
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5112
+			}
+		}
+	}
+	#suck cock
+	option = {
+		trigger = {
+			is_female = yes
+		}
+		name = nars_orgio.3020.d
+		custom_tooltip = nars_orgio.3020.d.tt
+		stress_impact = {
+			base = minor_stress_gain
+			lustful = minor_stress_loss
+			sadistic = minor_stress_loss
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = major_stress_gain
+		}
+		#AI events sucking cock
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5120
+			}
+		}
+	}
+	#do anal
+	option = {
+		trigger = {
+			is_female = yes
+		}
+		name = nars_orgio.3020.e
+		custom_tooltip = nars_orgio.3020.e.tt
+		stress_impact = {
+			base = minor_stress_gain
+			lustful = minor_stress_loss
+			sadistic = minor_stress_loss
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = minor_stress_gain
+		}
+		#AI events fucking anal
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5121
+			}
+		}
+	}
+	#fuck cock, just the tip
+	option = {
+		trigger = {
+			is_female = yes
+		}
+		name = nars_orgio.3020.f
+		custom_tooltip = nars_orgio.3020.f.tt
+		stress_impact = {
+			base = medium_stress_gain
+			lustful = minor_stress_loss
+			sadistic = minor_stress_gain
+			shy = medium_stress_gain
+			chaste = major_stress_gain
+			lazy = minor_stress_gain
+		}
+		hidden_effect = {
+			had_sex_with_effect = { 
+				CHARACTER = scope:msex_partner_one 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+			had_sex_with_effect = { 
+				CHARACTER = scope:msex_partner_two 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+			had_sex_with_effect = { 
+				CHARACTER = scope:msex_partner_three 
+				PREGNANCY_CHANCE = pregnancy_chance 
+			}
+		}
+		#AI events fucking cock
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5122
+			}
+		}
+	}
+	#relax a bit
+	option = {
+		name = nars_orgio.3020.g
+		custom_tooltip = nars_orgio.3020.g.tt
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = minor_stress_loss
+			sadistic = medium_stress_loss
+			shy = minor_stress_gain
+			chaste = minor_stress_gain
+			lazy = medium_stress_loss
+		}
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+}
+#if managed to entice everyone with charisma
+nars_orgio.3030 = {
+	type = activity_event
+	title = nars_orgio.3030.t
+	desc = nars_orgio.3030.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = {
+		character = scope:first_guest
+		animation = scheme
+		outfit_tags = { no_clothes }
+	}	
+	center_portrait = {
+		character = root
+		animation = flirtation_left
+		outfit_tags = { no_clothes }
+	}
+	right_portrait = {
+		character = scope:second_guest
+		animation = love
+		outfit_tags = { no_clothes }
+	}
+	lower_left_portrait = {
+		character = scope:third_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_center_portrait = {
+		character = scope:fourth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	lower_right_portrait = {
+		character = scope:fifth_guest
+		animation = throne_room_applaud_1
+		outfit_tags = { no_clothes }
+	}
+	
+	# male sell yourself
+	option = {
+		trigger = {
+			is_female = no
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 1
+					is_female = yes
+				}
+			}
+		}
+		name = nars_orgio.3030.a
+		custom_tooltip = nars_orgio.3030.a.tt
+		scope:activity = {
+			every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+					}
+					custom = every_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = disgusted_opinion
+						opinion = -10
+					}
+				}
+			random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+				save_scope_as = fbought_malehost
+				}	
+			add_activity_log_entry = {
+				key = devianmale_gotsold_female
+				character = scope:host
+				scope:fbought_malehost = {
+					pay_short_term_gold = {
+						target = scope:host
+						gold = tiny_gold_value
+					}
+				}
+			}	
+		}
+	}
+	# female sell yourself
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 1
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.3030.b
+		custom_tooltip = nars_orgio.3030.b.tt
+		scope:activity = {
+			every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+					}
+					custom = every_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = disgusted_opinion
+						opinion = -40
+					}
+				}
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+			save_scope_as = mbought_femalehost
+			}
+			add_activity_log_entry = {
+				key = devianfemale_gotsold_male
+				character = scope:host
+				scope:mbought_femalehost = {
+					pay_short_term_gold = {
+						target = scope:host
+						gold = minor_gold_value
+					}
+				}
+			}	
+		}
+	}
+	# start fucking as male
+	option = {
+		trigger = {
+			is_female = no
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 1
+					is_female = yes
+				}
+			}
+		}
+		name = nars_orgio.3030.c
+		custom_tooltip = nars_orgio.3030.c.tt
+		scope:activity = {
+			random_attending_character = {
+			limit = {
+				location = scope:province
+				is_female = yes
+				NOT = { this = scope:host }
+			}
+			save_scope_as = deviant_partner_female
+			}
+			add_activity_log_entry = {
+				key = maledeviant_orgyfuck_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { 
+						is_female = yes 
+						NOT = { this = scope:host } 
+					}
+					custom = everyfemale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = flustered_opinion
+						opinion = 40
+					}
+					add_stress = medium_stress_loss
+				}
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = no
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = reputation_opinion
+						opinion = 20
+					}
+					add_stress = minor_stress_gain
+				}
+			}
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+	# start fucking as female
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					count >= 2
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.3030.d
+		custom_tooltip = nars_orgio.3030.d.tt
+		scope:activity = {
+			add_activity_log_entry = {
+				key = femaledeviant_orgygetfuck_every_hole
+				character = scope:host
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = no 
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = grateful_opinion
+						opinion = 40
+					}
+					add_stress = major_stress_loss
+				}
+				every_attending_character = {
+					limit = { 
+						NOT = { this = scope:host }
+						is_female = yes
+					}
+					custom = everymale_nars_orgio_participant
+					add_opinion = {
+						target = scope:host
+						modifier = grateful_opinion
+						opinion = 20
+					}
+					add_stress = minor_stress_loss
+				}
+			}
+		}
+		#AI events fucking around
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5010
+			}
+		}
+	}
+
+
+	#relax a bit and say you are just going to watch, tell them to impress you
+	option = {
+		name = nars_orgio.3030.e
+		custom_tooltip = nars_orgio.3030.e.tt
+		#AI events fucking around
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = minor_stress_loss
+			sadistic = medium_stress_loss
+			shy = minor_stress_gain
+			chaste = minor_stress_gain
+			lazy = medium_stress_loss
+		}
+		scope:activity = {
+			every_attending_character = {
+				limit = { 
+					NOT = { this = scope:host }
+				}
+				custom = every_nars_orgio_participant
+				add_opinion = {
+					target = scope:host
+					modifier = disappointed_opinion
+					opinion = -20
+				}
+				add_stress = minor_stress_gain
+			}
+		}
+		scope:activity = {
+			every_attending_character = {
+				trigger_event = nars_orgio.5100
+			}
+		}
+	}
+}
+
+###Orgy end events##
+
+#End for host
+nars_orgio.3098 = { 
+	type = activity_event
+	title = nars_orgio.3098.t
+	desc = {
+		desc = nars_orgio.3098.start.desc
+		desc = nars_orgio.3098.end.desc
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = root
+
+	immediate = {
+		capital_province = { save_scope_as = background_wilderness_scope }
+		remove_character_flag = is_naked
+	}
+	
+	option = {
+		name = nars_orgio.3098.a
+	}
+}
+
+#End for guest
+nars_orgio.3099 = { 
+	type = activity_event
+	title = nars_orgio.3098.t
+	desc = {
+		desc = nars_orgio.3099.start.desc
+		desc = nars_orgio.3098.end.desc
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = root
+	immediate = {
+		remove_character_flag = is_naked
+	}
+	option = {
+		name = nars_orgio.3098.a
+		custom_tooltip = nars_orgio.3099.tt
+	}
+}
+
+
+
+#AI events
+########### female/male host fucking around #########
+#AI events males/females reacting to female/male fucking around
+nars_orgio.5010 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = root
+	trigger = {
+		is_ai = yes
+	}
+	########## AI Males reacting to female player fucking around #######
+	option = {
+		trigger = {
+			is_female = no
+			scope:host = {
+				is_female = yes
+			}
+		}
+		name = nars_orgio.5000.a
+		#male Ai speaks to you, 20 chance for nothing to limit spam in large events
+		random_list = {
+			80 = {
+				#random male AI speaks to you
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviant_orgycompliment_male
+					}
+					add_activity_log_entry = {
+						key = femaledeviant_complimented_inorgy
+						character = scope:deviant_orgycompliment_male
+					}	
+				}
+				#male AI does action to you
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviant_fuckaroundactionfrommale_male
+					}
+					add_activity_log_entry = {
+						key = fuckaroundactionfrommale_tofemale
+						character = scope:deviant_fuckaroundactionfrommale_male
+						scope:host = {
+							stress_impact = {
+							base = minor_stress_impact_loss
+							lustful = minor_stress_loss
+							chaste = minor_stress_impact_gain
+							shy = minor_stress_impact_gain
+							}
+						}
+					}
+				}	
+			}	
+			20 = {
+			}
+		}	
+	}
+
+	########## AI Males reacting to male player fucking around #######
+
+	option = {
+		trigger = {
+			is_female = no
+			scope:host = {
+				is_female = no
+			}
+		}
+		name = nars_orgio.5000.a
+		#male Ai speaks to you or jerks off, 40 chance for nothing to limit spam in large events
+		random_list = {
+			40 = {
+				#random male AI speaks to you
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviant_dirtytalkfrommale_male
+					}
+					add_activity_log_entry = {
+						key = dirtytalkfrommale_tomale
+						character = scope:deviant_dirtytalkfrommale_male
+					}	
+				}
+			}	
+			10 = {
+				scope:activity = {
+				random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+						}
+						save_scope_as = male_masturbator
+					}
+					add_activity_log_entry = {
+					key = male_deviantmasturbated_publicly
+					character = scope:male_masturbator					
+					scope:male_masturbator = {
+							stress_impact = {
+								base = minor_stress_impact_loss
+							}
+						}
+					}
+				}
+			}	
+			50 = {
+			}	
+		}	
+	}
+
+	########## AI females reacting to female player fucking around #######
+	option = {
+		trigger = {
+			is_female = yes
+			scope:host = {
+				is_female = yes
+			}
+		}
+		name = nars_orgio.5000.a
+		random_list = {
+			20 = {
+				#ai female dances
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = dancer_one
+					}
+					add_activity_log_entry = {
+						key = deviant_danced_ontable
+						character = scope:dancer_one
+						
+						every_attending_character = {
+							limit = { NOT = { this = scope:dancer_one } }
+							add_stress = minor_stress_loss
+							custom = every_nars_orgio_participant
+						}
+					}	
+				}
+			}
+			40 = {
+				#ai female comments your dirty stuff
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_dirtytalkfromfemale_female
+					}
+					add_activity_log_entry = {
+						key = dirtytalkfromfemale_tofemale
+						character = scope:deviant_dirtytalkfromfemale_female
+					}	
+				}
+			}
+			20 = {
+				#female AI does action to you
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviant_fuckaroundactionfromfemale_female
+					}
+					add_activity_log_entry = {
+						key = fuckaroundactionfromfemale_tofemale
+						character = scope:deviant_fuckaroundactionfromfemale_female
+						scope:host = {
+							stress_impact = {
+							base = minor_stress_impact_loss
+							lustful = minor_stress_loss
+							chaste = minor_stress_impact_gain
+							shy = minor_stress_impact_gain
+							}
+						}
+					}
+				}
+			}
+			20 = {
+			}	
+		}	
+	}
+	###########################################	
+	#Ai female generic fucking around oral or anal
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				scope:host = {
+					is_female = yes
+				}
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = cock_suck_female
+					}
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = cock_suck_male
+					}
+					
+					add_activity_log_entry = {
+						key = deviantsucked_cock
+						character = scope:cock_suck_female
+						scope:cock_suck_male = {
+							add_stress = minor_stress_loss
+						}
+					}
+				}	
+			}
+			40 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = rode_cock_female
+						}
+					
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = rode_cock_male
+					}
+					
+					add_activity_log_entry = {
+						key = deviantanalrode_cock
+						character = scope:rode_cock_female
+						scope:rode_cock_male = {
+							add_stress = minor_stress_loss
+						}
+					}	
+				}	
+			}
+		}	
+	}
+	#AI female trying to take two men at once
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					is_female = no
+					count >= 2
+				}
+				scope:host = {
+					is_female = yes
+				}
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = yes
+					NOT = { this = scope:host }
+				}
+				save_scope_as = deviant_threesome_female
+			}		
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+				save_scope_as = deviant_threesome_male
+			}
+			
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+					NOT = { this = scope:deviant_threesome_male }
+				}
+				save_scope_as = deviant_threesome_maletwo
+			}
+
+			add_activity_log_entry = {
+				key = deviantthreesome_cock
+				character = scope:deviant_threesome_female
+				scope:deviant_threesome_male = {
+					add_stress = minor_stress_loss
+				}
+				scope:deviant_threesome_maletwo = {
+					add_stress = minor_stress_loss
+				}
+			}
+		}	
+	}	
+	########## AI females reacting to male player fucking around #######
+	#if you male, Ai female doing things to you or talking 
+	option = {
+		trigger = {
+			is_female = yes
+			scope:host = {
+				is_female = no
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			20 = {
+				#ai female speaks to you
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_orgycompliment_female
+					}
+					add_activity_log_entry = {
+						key = maledeviant_complimented_inorgy
+						character = scope:deviant_orgycompliment_female
+					}	
+				}
+			}
+			70 = {
+				#female AI does action to you
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviant_fuckaroundactionfromfemale_male
+					}
+					add_activity_log_entry = {
+						key = fuckaroundactionfromfemale_tomale
+						character = scope:deviant_fuckaroundactionfromfemale_male
+						scope:host = {
+							stress_impact = {
+							base = minor_stress_impact_loss
+							lustful = minor_stress_loss
+							chaste = minor_stress_impact_gain
+							shy = minor_stress_impact_gain
+							}
+						}
+					}
+				}
+			}
+			10 = {
+			}	
+		}	
+	}	
+}
+
+
+
+#AI 5020 events males/female reacting to female/male presenting body and she/he winning
+nars_orgio.5020 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = root
+	trigger = {
+		is_ai = yes
+	}
+	#female reacts to female 30% talk 70 nothing
+	option = {
+		trigger = {
+			is_female = yes
+			scope:host = {
+				is_female = yes
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			30 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_beggingfromfemale_female
+					}
+					add_activity_log_entry = {
+						key = beggingfromfemale_tofemale
+						character = scope:deviant_beggingfromfemale_female
+						scope:host = {
+							reverse_add_opinion = {
+								target = scope:deviant_beggingfromfemale_female
+								modifier = impressed_opinion
+								opinion = 10
+							}
+						}
+					}	
+				}
+			}
+			70 = {
+			}
+		}		
+	}
+	#female reacts to male 30% talk 70 nothing
+	option = {
+		trigger = {
+			is_female = yes
+			scope:host = {
+				is_female = no
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			30 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_beggingfromfemale_male
+					}
+					add_activity_log_entry = {
+						key = beggingfromfemale_tomale
+						character = scope:deviant_beggingfromfemale_male
+						scope:host = {
+							reverse_add_opinion = {
+								target = scope:deviant_beggingfromfemale_male
+								modifier = flustered_opinion
+								opinion = 10
+							}
+						}
+					}	
+				}
+			}
+			70 = {
+			}
+		}		
+	}
+
+	#male reacts to female 60% talk 20 to masturbate 20 nothing
+	option = {
+		trigger = {
+			is_female = no
+			scope:host = {
+				is_female = yes
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_beggingfrommale_female
+					}
+					add_activity_log_entry = {
+						key = beggingfrommale_tofemale
+						character = scope:deviant_beggingfrommale_female
+						scope:host = {
+							reverse_add_opinion = {
+								target = scope:deviant_beggingfrommale_female
+								modifier = admiration_opinion
+								opinion = 10
+							}
+						}
+					}	
+				}
+			}
+			20 = {
+				scope:activity = {
+				random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+						}
+						save_scope_as = male_masturbator
+					}
+					add_activity_log_entry = {
+					key = male_deviantmasturbated_publicly
+					character = scope:male_masturbator					
+					scope:male_masturbator = {
+							stress_impact = {
+								base = minor_stress_impact_loss
+							}
+						}
+					}
+				}
+			}
+			20 = {
+			}	
+		}		
+	}
+	#male reacts to male 60% talk 40 nothing
+	option = {
+		trigger = {
+			is_female = no
+			scope:host = {
+				is_female = no
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			50 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_beggingfrommale_male
+					}
+					add_activity_log_entry = {
+						key = beggingfrommale_tomale
+						character = scope:deviant_beggingfrommale_male
+					}	
+					scope:host = {
+						reverse_add_opinion = {
+							target = scope:deviant_beggingfrommale_male
+							modifier = respect_opinion
+							opinion = 10
+						}
+					}
+				}
+			}
+			50 = {
+			}
+		}		
+	}
+}
+
+#AI 5030 events males/female reacting to female prostituting, actions give money
+nars_orgio.5030 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	left_portrait = root
+	trigger = {
+		is_ai = yes
+	}
+	#female reacts to slut 40 action 40 words 20 nothing
+	option = {
+		trigger = {
+			is_female = yes
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			40 = {
+				#female speaks
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_insultfemale_toslut
+					}
+					add_activity_log_entry = {
+						key = insultfemale_toslut
+						character = scope:deviant_insultfemale_toslut
+					}	
+				}
+			}
+			40 = {
+				#female does action
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_actionfemale_toslut
+					}
+					add_activity_log_entry = {
+						key = actionfemale_toslut
+						character = scope:deviant_actionfemale_toslut
+					}	
+					scope:host = {
+						stress_impact = {
+						base = minor_stress_impact_gain
+						lustful = minor_stress_loss
+						chaste = minor_stress_impact_gain
+						shy = minor_stress_impact_gain
+						}
+						reverse_add_opinion = {
+							target = scope:deviant_actionfemale_toslut
+							modifier = disgusted_opinion
+							opinion = -20
+						}
+					}
+				}
+			}
+			20 = {
+			}
+		}		
+	}
+
+	#male reacts to slut 40 action 40 words 20 nothing
+	option = {
+		trigger = {
+			is_female = no
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		random_list = {
+			#male speaks
+			40 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_insultmale_toslut
+					}
+					add_activity_log_entry = {
+						key = insultmale_toslut
+						character = scope:deviant_insultmale_toslut
+					}	
+				}
+			}
+			#male does action
+			40 = {
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = deviant_actionmale_toslut
+					}
+					add_activity_log_entry = {
+						key = actionmale_toslut
+						character = scope:deviant_actionmale_toslut
+					}	
+					scope:host = {
+						stress_impact = {
+						base = minor_stress_impact_gain
+						lustful = minor_stress_loss
+						chaste = minor_stress_impact_gain
+						shy = minor_stress_impact_gain
+						}
+						reverse_add_opinion = {
+							target = scope:deviant_actionmale_toslut
+							modifier = disgusted_opinion
+							opinion = -10
+						}
+					}
+				}
+			}
+			20 = {
+			}
+		}		
+	}
+}
+
+
+
+
+######### basic ai just fucking around, triggers from everything else you not involved ######
+
+#AI 5100 event male/female just fucking around, masturbation, talking and fucking around if women
+#AI female just fucking around, dancing, talking and fucking around if men
+nars_orgio.5100 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+	}
+########### Ai female doing ranomd stuff ########	
+	#Ai female generic fucking around
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					is_female = no
+				}
+			}
+		}
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = cock_suck_female
+					}
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = cock_suck_male
+					}
+					
+					add_activity_log_entry = {
+						key = deviantsucked_cock
+						character = scope:cock_suck_female
+						
+						scope:cock_suck_female = {
+							add_opinion = {
+								target = scope:cock_suck_male
+								modifier = flustered_opinion
+								opinion = 10
+							}
+						}
+						scope:cock_suck_male = {
+							add_stress = minor_stress_loss
+						}
+					}
+				}	
+			}
+			40 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = rode_cock_female
+						}
+					
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = no
+							NOT = { this = scope:host }
+						}
+						save_scope_as = rode_cock_male
+					}
+					
+					add_activity_log_entry = {
+						key = deviantanalrode_cock
+						character = scope:rode_cock_female
+						
+						scope:rode_cock_female = {
+							add_opinion = {
+								target = scope:rode_cock_male
+								modifier = flustered_opinion
+								opinion = 10
+							}
+						}
+						scope:rode_cock_male = {
+							add_stress = minor_stress_loss
+						}
+					}	
+				}	
+			}
+		}	
+	}
+	#female Ai fucking two guys if possible
+	option = {
+		trigger = {
+			is_female = yes
+			scope:activity = {
+				any_attending_character = {
+					NOT = {	this = scope:host }
+					is_female = no
+					count >= 2
+				}
+			}
+		}
+		name = nars_orgio.5000.a
+		custom_tooltip = nars_orgio.5000.tt
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = yes
+					NOT = { this = scope:host }
+				}
+				save_scope_as = deviant_threesome_female
+			}		
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+				}
+				save_scope_as = deviant_threesome_male
+			}
+			
+			random_attending_character = {
+				limit = {
+					location = scope:province
+					is_female = no
+					NOT = { this = scope:host }
+					NOT = { this = scope:deviant_threesome_male }
+				}
+				save_scope_as = deviant_threesome_maletwo
+			}
+			scope:deviant_threesome_female = {
+				had_sex_with_effect = { 
+					CHARACTER = scope:deviant_threesome_male 
+					PREGNANCY_CHANCE = 10 
+				}
+			}	
+			add_activity_log_entry = {
+				key = deviantthreesome_cock
+				character = scope:deviant_threesome_female
+				
+				scope:deviant_threesome_female = {
+					add_opinion = {
+						target = scope:deviant_threesome_male
+						modifier = flustered_opinion
+						opinion = 10
+					}
+					add_opinion = {
+						target = scope:deviant_threesome_maletwo
+						modifier = flustered_opinion
+						opinion = 10
+					}
+				}
+				scope:deviant_threesome_male = {
+					add_stress = minor_stress_loss
+				}
+				scope:deviant_threesome_maletwo = {
+					add_stress = minor_stress_loss
+				}
+			}
+		}	
+	}	
+	#female AI dancing or nothing
+	option = {
+		trigger = {
+			is_female = yes
+		}
+		name = nars_orgio.5000.a
+		random_list = {
+			80 = {
+				#ai female dances
+				scope:activity = {
+					random_attending_character = {
+						limit = {
+							location = scope:province
+							is_female = yes
+							NOT = { this = scope:host }
+						}
+						save_scope_as = dancer_one
+					}
+					add_activity_log_entry = {
+						key = deviant_danced_ontable
+						character = scope:dancer_one
+						
+						every_attending_character = {
+							limit = { NOT = { this = scope:dancer_one } }
+							add_stress = minor_stress_loss
+							custom = every_nars_orgio_participant
+							add_opinion = {
+								target = scope:dancer_one
+								modifier = admiration_opinion
+								opinion = 10
+							}
+						}
+					}	
+				}
+			}
+			20 = {
+			}
+		}	
+	}
+ ############## male AI random stuff	
+    #male AI just jerks off or not, maybe add random leering and having fun or something
+ 	option = {
+		trigger = {
+			is_female = no
+		}
+		name = nars_orgio.5000.a
+		#70 chance for nothing to limit spam in large events
+		random_list = {
+			30 = {
+			}	
+			20 = {
+				scope:activity = {
+				random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+						}
+						save_scope_as = male_masturbator
+					}
+					add_activity_log_entry = {
+					key = male_deviantmasturbated_publicly
+					character = scope:male_masturbator					
+					scope:male_masturbator = {
+							stress_impact = {
+								base = minor_stress_impact_loss
+							}
+						}
+					}
+				}
+			}	
+			40 = {
+			}	
+		}	
+	}	
+} 
+####################fuck around second event options################
+# if male fucks mouth, to female AI 
+nars_orgio.5110 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = yes
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantfemalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianmale_oral_female
+						character = scope:deviantfemalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 
+# if male fucks ass, to female AI 
+nars_orgio.5111 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = yes
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantfemalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianmale_ass_female
+						character = scope:deviantfemalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 
+# if male fucks pussy, to female AI 
+nars_orgio.5112 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = yes
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = yes
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantfemalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianmale_pussy_female
+						character = scope:deviantfemalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 
+# if female suck cock, to male AI 
+nars_orgio.5120 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = no
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantmalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianfemale_oral_male
+						character = scope:deviantmalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 
+# if female fuck anal, to male AI 
+nars_orgio.5121 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = no
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantmalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianfemale_anal_male
+						character = scope:deviantmalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 
+# if female fuck cock, to male AI 
+nars_orgio.5122 = { 
+	type = activity_event
+	title = nars_orgio.5000.t
+	desc = nars_orgio.5000.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+	
+	trigger = {
+		is_ai = yes
+		is_female = no
+	}
+	left_portrait = root
+	option = {
+		name = nars_orgio.5000.a
+		random_list = {
+			60 = {
+				scope:activity = {
+					random_attending_character = {
+					limit = {
+						location = scope:province
+						is_female = no
+						NOT = { this = scope:host }
+					}
+					save_scope_as = deviantmalelogpartener
+					}
+					add_activity_log_entry = {
+						key = devianfemale_pussy_male
+						character = scope:deviantmalelogpartener
+					}
+				}	
+			}
+			40 = {
+			}
+		}	
+	}	
+} 

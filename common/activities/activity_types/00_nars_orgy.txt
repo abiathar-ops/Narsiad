@@ -1,0 +1,872 @@
+﻿activity_nars_orgio = {
+	is_shown = {
+		highest_held_title_tier > tier_barony
+		is_landed = yes
+		is_ai = no
+		age >= 18
+	}
+
+	can_start_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	is_valid = {
+		NOT = {
+			has_variable = activity_invalidated
+		}
+		scope:host = {
+			is_landed = yes
+			NOT = { is_incapable = yes }
+			is_ai = no
+			age >= 18
+		}
+		# If no one shows up
+		trigger_if = {
+			limit = {
+				is_current_phase_active = yes
+			}
+			has_attending_activity_guests = yes
+		}
+	}
+
+	on_invalidated = {
+		# Host becomes unlanded
+		if = {
+			limit = {
+				scope:host = { is_landed = no }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			every_attending_character = {
+				trigger_event = activity_system.0320
+			}
+		}
+		if = {
+			limit = {
+				scope:host = { is_incapable = yes }
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+			}
+			scope:host = {
+				trigger_event = activity_system.0330
+			}
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				trigger_event = activity_system.0331
+			}
+		}
+		if = { # No one shows up
+			limit = {
+				has_attending_activity_guests = no
+			}
+			scope:activity = {
+				activity_type = { save_scope_as = activity_type }
+				activity_location = { save_scope_as = location }
+			}
+			scope:host = { trigger_event = activity_system.0100 }
+		}
+	}
+
+	on_host_death = {
+		scope:activity = {
+			set_variable = {
+				name = activity_invalidated
+			}
+		}
+	}
+
+	ai_province_filter = capital
+	wait_time_before_start = { months = 1 }
+
+	###################
+	# OPTIONS
+	###################
+
+	options = {
+		orgy_option_secrecy = {
+			orgy_security_bad = {
+				is_shown = { has_dlc_feature = advanced_activities }
+				cost = { 
+					piety = {
+						add = {
+							add = {
+								value = 200
+								desc = orgy_security_bad
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_tier
+								subtract = 10
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_era
+								subtract = 10
+							}
+							min = 0
+						}
+					}
+				}
+
+				ai_will_do = {
+					value = 0
+					# Financial preference.
+					add = activity_option_likes_cheap_expense_value
+					# Fanciness preference.
+					add = activity_option_likes_functional_food_option_value
+				}
+			}
+			orgy_security_normal = {
+				default = yes
+				cost = {
+					gold = {
+						add = {
+							add = {
+								value = 100
+								desc = orgy_security_normal
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_tier
+								subtract = 10
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_era
+								subtract = 10
+							}
+							min = 0
+						}
+					}
+					piety = {
+						add = {
+							add = {
+								value = 100
+								desc = orgy_security_normal
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_tier
+								subtract = 10
+							}
+							add = {
+								value = 10
+								multiply = activity_cost_scale_by_era
+								subtract = 10
+							}
+							min = 0
+						}
+					}
+				}
+
+				ai_will_do = {
+					value = 0
+					# Financial preference.
+					add = activity_option_likes_middling_expense_value
+					# Fanciness preference.
+					## We just use slightly reduced fanciness prefs here.
+					add = {
+						value = activity_option_likes_ostentatious_food_option_value
+						multiply = 0.5
+					}
+				}
+			}
+			orgy_security_good = {
+				is_shown = { has_dlc_feature = advanced_activities }
+
+				cost = {
+					prestige = {
+						add = {
+							add = {
+								value = 200
+								desc = orgy_security_good
+							}
+							add = {
+								value = 35
+								multiply = activity_cost_scale_by_tier
+								subtract = 35
+							}
+							add = {
+								value = 35
+								multiply = activity_cost_scale_by_era
+								subtract = 35
+							}
+						}
+					}
+				}
+
+				ai_will_do = {
+					value = 0
+					# Financial preference.
+					add = activity_option_likes_heavy_expense_value
+					# Fanciness preference.
+					add = activity_option_likes_ostentatious_food_option_value
+				}
+			}
+		}
+	}
+
+	###################
+	# PHASES
+	###################
+
+	phases = {
+		nars_orgio_phase = {
+			is_predefined = yes
+			
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+					scope:activity = { progress_activity_phase_after = { weeks = 2 } }
+					# Check that there is a female guest apart from the host.
+					if = {
+						limit = {
+							scope:activity = {
+								any_attending_character = {
+									NOT = {	this = scope:host }
+									count < 4
+								}
+							}
+						}
+						# If there are no enough guests, throw this event.
+						trigger_event = nars_orgio.3002
+					}
+					# If there are guests present
+					else = {
+						play_music_cue = "mx_cue_sacredrite"
+						
+						#chance for the whore being brought
+						random = {
+							chance = 20
+							trigger_event = {
+								id = nars_orgio.3003
+								days = 1
+							}
+						}
+
+						# (also sends event to every participant based on outcome)
+						##After, participants can choose what they want to do during the orgy
+						trigger_event = {
+							id = nars_orgio.3010
+							days = 7
+						}
+					}
+				}
+			}
+
+			on_end = {
+				# Run conclusion stuff here
+				if = {
+					limit = { this = scope:host }
+					trigger_event = nars_orgio.3098
+				}
+				else = { trigger_event =  nars_orgio.3099 }
+			}
+		}
+	}
+
+	max_guest_arrival_delay_time = { months = 2 } 
+
+
+	province_filter = capital
+
+	max_province_icons = 5
+	
+	cost = {
+		gold = {
+			add = {
+				value = activity_minor_gold_value
+				desc = hunt_base_cost
+			}
+		}
+	}
+
+	ui_predicted_cost = {
+		gold = {
+			# Base Cost
+			value = activity_minor_gold_value
+			# Make it a multiple of 5 (rounded up)
+			divide = 5 
+			ceiling = yes 
+			multiply = 5
+		}
+	}
+	cooldown = { days = 100 }
+	
+	###################
+	# ACTIVITY Special stuff
+	###################
+	
+	on_start = {
+		set_variable = {
+			name = host_var
+			value = scope:host
+		}
+		add_activity_log_entry = {
+			key = excited_to_start
+			character = scope:host
+			scope:host = {
+				stress_impact = {
+					base = minor_stress_gain
+					lustful = minor_stress_loss
+					sadistic = minor_stress_loss
+					shy = medium_stress_gain
+					chaste = medium_stress_gain
+					lazy = minor_stress_gain
+				}
+			}
+		}
+	}
+	###################
+	# GUEST HANDLING
+	###################
+
+	max_guests = 20
+
+	guest_invite_rules = {
+		defaults = {
+			2 = activity_invite_rule_courtiers
+			2 = activity_invite_rule_guests
+			2 = activity_invite_rule_vassals
+			2 = activity_invite_rule_lovers
+			4 = activity_invite_neighbouring_rulers
+			5 = activity_invite_rule_knights
+			6 = activity_invite_rule_liege
+			6 = activity_invite_rule_fellow_vassals
+			9 = activity_invite_rule_extended_family
+			9 = activity_invite_spouses
+		}
+		rules = {
+			# MP 
+			6 = activity_invite_mp
+		}
+	}
+
+	can_be_activity_guest = {
+		is_adult = yes
+		is_available = yes
+		in_diplomatic_range = scope:host
+		age >= 18
+	}
+
+	host_intents = {
+		intents = { revel_incarnalpleasure_intent }
+		default = revel_incarnalpleasure_intent
+	}
+
+	guest_intents = {
+		intents = { revel_incarnalpleasure_intent }
+		default = revel_incarnalpleasure_intent
+	}
+
+	guest_join_chance = {
+		base = -50
+		base_activity_modifier = yes
+
+		modifier = {
+			has_trait = lustful
+			add = 100
+    	}
+		modifier = {
+			has_trait = sadistic
+			add = 50
+    	}
+		modifier = {
+			has_trait = chaste
+			add = -50
+    	}
+		modifier = {
+			has_trait = shy
+			add = -50
+    	}
+		modifier = {
+			has_trait = craven
+			add = -20
+    	}
+		modifier = {
+			has_trait = deviant
+			add = 100
+    	}
+		modifier = {
+			faith = {
+				has_doctrine = tenet_carnal_exaltation
+			}
+			add = 50
+    	}
+		modifier = {
+			faith = {
+				has_doctrine = tenet_polyamory
+			}
+			add = 20
+    	}
+		modifier = {
+			faith = {
+				has_doctrine = doctrine_adultery_women_accepted
+			}
+			add = 20
+    	}
+		modifier = {
+			faith = {
+				has_doctrine = doctrine_adultery_men_accepted
+			}
+			add = 20
+    	}
+
+		# Scripted Modifiers
+		activity_guest_shared_ai_accept_modifier = yes
+	}
+	
+	on_complete = {
+		if = {
+			limit = { this = scope:host }
+			scope:host = {
+				disburse_nars_orgio_host_rewards_effect = yes
+			}
+		}
+	}
+	### Graphics
+	map_entity = {
+		trigger = {
+			activity_location.culture = {
+				OR = {
+					has_graphical_mena_culture_group_trigger = yes
+					has_graphical_steppe_culture_group_trigger = yes
+					has_graphical_african_culture_group_trigger = yes
+				}
+			}
+		}
+		reference = "building_mena_feast_01_entity"
+	}
+
+	map_entity = {
+		trigger = {
+			activity_location.culture = {
+				has_graphical_india_culture_group_trigger = yes
+			}
+		}
+		reference = "building_indian_feast_01_entity"
+	}
+	
+	map_entity = "building_western_feast_01_entity"
+
+	# Travel
+	background = { # Bridge
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				is_riverside_province = yes
+				geographical_region = world_europe
+				OR = {
+					terrain = farmlands
+					terrain = plains
+					terrain = mountains
+					terrain = hills
+				}
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds"
+		environment = "environment_travel_bridge"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+	
+	background = { # Farmland, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				terrain = farmlands
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_farm.dds"
+		environment = "environment_travel_farmlands"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+	background = { # Farmland, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				terrain = farmlands
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/farms.dds"
+		environment = "environment_event_farms"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #Desert, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_desert_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_desert.dds"
+		environment = "environment_travel_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+	background = { #Desert, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_desert_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/desert.dds"
+		environment = "environment_event_bp1_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #forest snowy
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location ?= { hunt_snowy_forest_trigger = yes }
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_hunt_snowy_forest.dds"
+		environment = "environment_hunt_snowy_forest"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day" 
+	}
+
+	background = { #forest_pine
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_forest_pine_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/forest_pine.dds"
+		environment = "environment_event_forest_pine"
+		ambience = "event:/SFX/Events/Backgrounds/coniferous_forest_day"
+	}
+
+	background = { #forest
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_forest_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/forest.dds"
+		environment = "environment_event_forest"
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #mountains, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_mountains_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_mountains.dds"
+		environment = "environment_travel_mountain_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+	background = { #mountains, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_mountains_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/mountains.dds"
+		environment = "environment_event_mountains"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
+	background = { #steppe, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_steppe_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_steppe.dds"
+		environment = "environment_travel_steppe_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/steppe_day"
+	}
+	background = { #steppe, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_steppe_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/steppe.dds"
+		environment = "environment_event_steppe"
+		ambience = "event:/SFX/Events/Backgrounds/steppe_day"
+	}
+
+	background = { #drylands (formerly desert)
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_drylands_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/drylands.dds"
+		environment = "environment_event_desert"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #wetlands
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_wetlands_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_wetlands.dds"
+		environment = "environment_event_bp1_wetlands" 
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #jungle
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_wilderness_jungle_trigger = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_jungle.dds"
+		environment = "environment_event_bp1_jungle"
+		ambience = "event:/SFX/Events/Backgrounds/deciduous_forest_day"
+	}
+
+	background = { #plains, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_plains_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_hills.dds"
+		environment = "environment_travel_hills_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+	background = { #plains, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_plains_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_plains.dds"
+		environment = "environment_event_bp1_plains"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #hills, settled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_hills_trigger = yes
+				exists = province_owner
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_hills.dds"
+		environment = "environment_travel_hills_settlement"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+	background = { #hills, unsettled
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				graphical_hills_trigger = yes
+				NOT = { exists = province_owner }
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/bp1_hills.dds"
+		environment = "environment_event_bp1_hills"
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	background = { #sea
+		trigger = {
+			NOT = { scope:host.location = scope:activity.activity_location }
+			scope:host.location = {
+				is_sea_province = yes
+			}
+		}
+		texture = "gfx/interface/illustrations/event_scenes/fp1_ocean.dds"
+		environment = "environment_event_fp1_ocean"
+		ambience = "event:/DLC/FP1/SFX/Events/event_ocean_longship"
+	}
+	# End Travel
+	background = {
+		texture = "gfx/interface/illustrations/event_scenes/feast.dds"
+		environment = "environment_event_bp1_bonfire" 
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+
+	window_characters = {
+
+		guest = {
+			camera = camera_body
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character = {
+							NOT = { has_trait = craven }
+						}
+					}
+					animation = { boredom shame flirtation lunatic admiration toast_goblet drink scheme spymaster ecstasy }
+				}
+				animation = shame
+			}
+		}
+
+		guest = {
+			camera = camera_body
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character = {
+							NOT = { has_trait = craven }
+						}
+					}
+					animation = { boredom flirtation lunatic admiration toast_goblet drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+		
+		host = {
+			camera = camera_body
+
+			effect = {
+				if = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					scope:host = {
+						add_to_list = characters
+					}
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { 
+						scope:character = {
+						NOT = { has_trait = craven } 
+						}
+					}
+					animation = { boredom flirtation lunatic admiration toast_goblet drink scheme spymaster ecstasy }
+				}
+				animation = drink
+			}
+		}
+		
+		travel_host = {
+			camera = camera_body
+			
+			effect = {
+				if = {
+					limit = {
+						NOT = {
+							scope:host.location = scope:activity.activity_location
+						}
+					}
+					scope:host = {
+						add_to_list = characters
+					}
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = {
+						scope:character.location = { is_sea_province = yes }
+					}
+					animation = { idle }
+				}
+				triggered_animation = {
+					trigger = { scope:character = { has_trait = impatient } }
+					animation = { jockey_gallop }
+				}
+				animation = jockey_walk
+			}
+		}
+
+		guest = {
+			camera = camera_body
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { 
+						scope:character = {
+						NOT = { has_trait = craven } 
+						}
+					}
+					animation = { boredom flirtation lunatic admiration toast_goblet drink scheme spymaster ecstasy }
+				}
+				animation = shame
+			}
+		}
+
+		guest = {
+			camera = camera_body
+			
+			effect = {
+				every_attending_character = {
+					limit = {
+						scope:host.location = scope:activity.activity_location
+					}
+					add_to_list = characters
+				}
+			}
+
+			scripted_animation = {
+				triggered_animation = {
+					trigger = { 
+						scope:character = {
+						NOT = { has_trait = craven } 
+						}
+					}
+					animation = { boredom flirtation lunatic admiration toast_goblet drink scheme spymaster ecstasy }
+				}
+				animation = worry
+			}
+		}
+	}
+}

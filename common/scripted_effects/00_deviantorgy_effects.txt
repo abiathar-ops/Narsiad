@@ -1,0 +1,23 @@
+﻿
+
+
+
+disburse_nars_orgio_host_rewards_effect = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = host_smalldeviant_orgy
+			tags = { completed }
+			# this line below adds the entry to the Effects section of the conclusion UI
+			show_in_conclusion = yes
+			character = scope:host
+			
+			scope:host = {
+				stress_impact = {
+					base = minor_stress_loss
+					lustful = major_stress_loss
+					sadistic = medium_stress_loss
+				}
+			}
+		}
+	}
+}
