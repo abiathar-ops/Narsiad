@@ -69,3 +69,8 @@ nars_nikator_aspirant_modifier = {
 	men_at_arms_maintenance = -0.625
 	siege_phase_time = -0.15
 }
+
+nars_fertility_blessing  = {
+	icon = fertility_positive
+	fertility = 0.95
+}

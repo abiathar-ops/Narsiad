@@ -112,3 +112,38 @@ selian_template.1012 = {
 		nars_apply_setup_effect = yes
 	}
 }
+
+# Selian Whore
+selian_template.1021 = {
+	age = { 18 20 }
+	gender_female_chance = 100
+	culture = root.culture
+	faith = root.faith
+	dynasty = none
+	random_traits = no
+
+	#Personality trait 1 (main)
+	random_traits_list = {
+		count = 1
+		lustful = {}
+	}
+	#Personality trait 2
+	random_traits_list = {
+		count = 2
+		gluttonous = {}
+		generous = {}
+		diligent = {}
+		honest = {}
+		arbitrary = {}
+		paranoid = {}
+		trusting = {}
+		compassionate = {}
+		stubborn = {}
+		fickle = {}
+		forgiving = {}
+	}
+    after_creation = {
+        add_trait = beauty_good_1
+		set_sexuality = bisexual
+	}
+}

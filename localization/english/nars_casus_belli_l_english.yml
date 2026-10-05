@@ -3,7 +3,6 @@
  selian_incursion_cb: "[selian_incursion|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  selian_incursion_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetAdjective] Incursion into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  selian_incursion_NAME_BASE: "[selian_incursion|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
- 
  selian_incursion_victory_attacker: "You take all of [defender.GetShortUINamePossessive] lands and titles, personally keeping the capital while dividing the rest of the [realm|E] among your followers. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_incursion_victory_defender: "[attacker.GetShortUIName|U] takes all of your lands and titles, dividing your former [realm|E] among [attacker.GetHerHis] followers. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_incursion_victory: "[attacker.GetShortUIName|U] takes all of [defender.GetShortUINamePossessive] lands and titles, dividing the [realm|E] among [attacker.GetHerHis] followers. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
@@ -20,14 +19,9 @@
  selian_migration_cb: "[selian_migration|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  selian_migration_NAME_MY: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetDefinitiveNamePossessive] Migration into [DEFENDER.GetPrimaryTitle.GetBaseNameNoTier]"
  selian_migration_NAME_BASE: "[selian_migration|E] for [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
-
  selian_migration_victory_attacker: "You usurp the targeted kingdom, seizing the lands of [defender.GetShortUIName] and migrating into [defender.GetHerHis] lands. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_migration_victory_defender: "[attacker.GetShortUIName|U] usurps your kingdom, seizing your personal lands and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
  selian_migration_victory: "[attacker.GetShortUIName|U] usurps the targeted kingdom, seizing the personal lands of [defender.GetShortUIName] and migrating there. The [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] grows!"
-
- selian_migration_white_peace_defender: "You repel the migration. [attacker.GetShortUIName|U] keeps their camp but abandons their campaign for your lands."
- selian_migration_white_peace: "You fail to conquer the kingdom and must abandon your campaign, though your camp remains intact."
-
  selian_migration_defeat_attacker: "Your migration is a disaster. You are forced to pay reparations."
  selian_migration_defeat_defender: "You successfully crush the migrating host. [attacker.GetShortUIName|U] is forced to pay you reparations."
  selian_migration_defeat: "[attacker.GetShortUIName|U]'s migration is crushed by [defender.GetShortUIName]. [attacker.GetSheHe|U] is forced to pay reparations."
@@ -39,18 +33,10 @@
  SELIAN_DEFIANCE_WAR_NAME: "Anticipative War against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTierPossessiveNoTooltip] [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  SELIAN_DEFIANCE_WAR_NAME_MY: "Anticipative War against [DEFENDER.GetPrimaryTitle.GetBaseNameNoTierPossessiveNoTooltip] [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]"
  SELIAN_DEFIANCE_WAR_NAME_BASE: "Anticipative War"
-
- # Invalidated
  selian_defiance_war_invalidated_message: "The coalition against the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] has collapsed, and the war is invalidated."
-
- # Victory (Attackers Win / Selian Defender Loses)
  selian_defiance_loses_defender: "The world's defiance has crushed you. Your ambition to restore the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] ends in ruin as your vassals scatter and your realm is shattered."
  selian_defiance_loses_attacker: "You have crushed the arrogant ambitions of [defender.GetShortUIName]. The threat of a restored [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] is ended, and [defender.GetHerHis] realm lies in ruins."
  selian_defiance_loses_other: "[attacker.GetShortUIName|U] crushes the ambitions of [defender.GetShortUIName]. The threat of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] is ended."
-
- # Defeat (Attackers Lose / Selian Defender Wins)
  selian_defiance_wins_defender: "You have defied the world. You shatter the coalition of your neighbors, securing the emergence of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"
  selian_defiance_wins_attacker: "Your coalition failed to stop [defender.GetShortUIName]. The emerging [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')] rises, and a new hegemon potentate is born."
  selian_defiance_wins_other: "[defender.GetShortUIName|U] successfully defies the coalition against [defender.GetHerHim], securing the dawn of the [Glossary('Narsokratía', 'NARSOKRATIA_GLOSS')]!"
-
- every_nars_close_family_house_member_in_court_cb_win_desc: "Every [spouse|E] and [house|E] member in [defender.GetShortUINamePossessive] [court|E]"

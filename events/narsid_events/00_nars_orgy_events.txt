@@ -120,7 +120,7 @@ nars_orgio.3003 = {
 	immediate = {
 		create_character = {
 			location = root.capital_province
-			template = deviantgo_hornypeasantfemale
+			template = selian_template.1021
 			save_scope_as = new_guest
 		}
 		hidden_effect = {

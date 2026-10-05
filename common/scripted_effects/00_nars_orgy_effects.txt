@@ -1,7 +1,4 @@
 ﻿
-
-
-
 disburse_nars_orgio_host_rewards_effect = {
 	scope:activity = {
 		add_activity_log_entry = {
@@ -16,6 +13,10 @@ disburse_nars_orgio_host_rewards_effect = {
 					base = minor_stress_loss
 					lustful = major_stress_loss
 					sadistic = medium_stress_loss
+				}
+				add_character_modifier = {
+					modifier = nars_fertility_blessing 
+					days = 365
 				}
 			}
 		}
