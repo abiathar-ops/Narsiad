@@ -136,7 +136,7 @@ nars_faith.0001 = {
 			random_pool_character = {
 				province = root.location
 				limit = {
-					faith = faith:nars_religion
+					faith = faith:nars_faith
 					learning >= decent_skill_rating
 				}
 				save_scope_as = evangelizer
@@ -149,7 +149,7 @@ nars_faith.0001 = {
 				create_character = {
 					location = root.location
 					culture = culture:selian
-					faith = faith:nars_religion
+					faith = faith:nars_faith
 					template = selian_template.1011
 					gender_female_chance = 100
 					save_scope_as = evangelizer

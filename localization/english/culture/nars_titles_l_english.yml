@@ -1,6 +1,4 @@
 ﻿l_english:
-### Selian ###
-# Feudal / Imperial -- independent rulers & their titles
  baron_independent_male_nars:0 "Klarōtás" 
  baron_independent_female_nars:0 "Klarōtissa"
  count_independent_male_nars:0 "Hēquétas"
@@ -17,7 +15,6 @@
  hegemon_independent_male_nars:0 "Arkhāgétās"
  hegemon_independent_female_nars:0 "Arkhāgétissa"
 
-# Administrative -- vassal rulers & their titles (governors within a realm)
  baron_vassal_male_nars:0 "Dēmarkhos" 
  baron_vassal_female_nars:0 "Dēmárkhissa"
  count_vassal_male_nars:0 "Dumás"
@@ -34,11 +31,9 @@
  emperor_vassal_male_nars:0 "Ōtokrátōr"
  emperor_vassal_female_nars:0 "Ōtokráteira"
 
-# Empires & Hegemony
  empire_vassal_nars:0 "Ōtokratéia"
  hegemony_nars_group:0 "Monarkhía"
 
-### Princes (Children) ### 
  prince_male_nars:1 "Wanáktidēs" 
  prince_female_nars:1 "Wanáktis" 
  prince_male_nars_empire:0 "Wanáktidēs"

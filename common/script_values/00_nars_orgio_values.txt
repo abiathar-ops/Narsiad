@@ -1,0 +1,74 @@
+﻿# Orgio Luxuries options (Normal / Enhanced / Lavish).
+
+# Total cost of each option. The activity charges 4/5 of it in gold and 1/5 in piety.
+# root = character planning the activity
+nars_orgio_luxuries_normal_cost = {
+	value = 100
+	add = {
+		value = 10
+		multiply = activity_cost_scale_by_tier
+		subtract = 10
+	}
+	add = {
+		value = 10
+		multiply = activity_cost_scale_by_era
+		subtract = 10
+	}
+	min = 0
+}
+
+nars_orgio_luxuries_enhanced_cost = {
+	value = 200
+	add = {
+		value = 20
+		multiply = activity_cost_scale_by_tier
+		subtract = 20
+	}
+	add = {
+		value = 20
+		multiply = activity_cost_scale_by_era
+		subtract = 20
+	}
+	min = 0
+}
+
+nars_orgio_luxuries_lavish_cost = {
+	value = 300
+	add = {
+		value = 30
+		multiply = activity_cost_scale_by_tier
+		subtract = 30
+	}
+	add = {
+		value = 30
+		multiply = activity_cost_scale_by_era
+		subtract = 30
+	}
+	min = 0
+}
+
+# Chance (%) for the host to overhear a guest's secret.
+nars_orgio_secret_chance_value = {
+	value = 15
+	if = {
+		limit = { nars_orgio_luxuries_lavish_trigger = yes }
+		value = 50
+	}
+	else_if = {
+		limit = { nars_orgio_luxuries_enhanced_trigger = yes }
+		value = 30
+	}
+}
+
+# Chance (%) for a participant to come away with the deviant trait.
+nars_orgio_deviant_chance_value = {
+	value = 5
+	if = {
+		limit = { nars_orgio_luxuries_lavish_trigger = yes }
+		value = 10
+	}
+	else_if = {
+		limit = { nars_orgio_luxuries_enhanced_trigger = yes }
+		value = 7
+	}
+}

@@ -1,0 +1,19 @@
+﻿texticon = {
+	icon = nars_t1_icon
+	iconsize = {
+		texture = "gfx/interface/icons/regimenttypes/nars_t1.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = nars_t2_icon
+	iconsize = {
+		texture = "gfx/interface/icons/regimenttypes/nars_t2.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

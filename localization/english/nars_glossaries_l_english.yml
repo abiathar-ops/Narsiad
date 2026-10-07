@@ -16,7 +16,8 @@
  OIKOS_GLOSS:0 "#bold 'Oikos'#! represents the fundamental social unit of the household, expanding into the wider family line."
  POLIS_GLOSS:0 "#bold 'Polis'#! refers to the [city-state|E] and its collective body of enfranchised citizens."
  EUNOMIA_GLOSS:0 "#bold 'Eunomia'#! represents good order, righteous governance, and the rule of just laws."
- BASILEUS_GLOSS:0 "#bold 'Basileús'#! refers to a supreme sovereign or monarch holding ultimate authority."
+ # 1.20: the base game now defines BASILEUS_GLOSS itself, so this entry is parked to avoid a duplicate key.
+ # BASILEUS_GLOSS:0 "#bold 'Basileús'#! refers to a supreme sovereign or monarch holding ultimate authority."
  AUTOKRATEIA_GLOSS:0 "#bold 'Autokrateia'#! represents the exercise of absolute, undivided power and self-governance by a single ruler."
  HEGEMONIA_GLOSS:0 "#bold 'Hēgemonia'#! refers to the political and military dominance of one sovereign state over others within a league or confederation."
  SYMMACHIA_GLOSS:0 "#bold 'Symmachia'#! represents a binding offensive and defensive military alliance forged between Greek states."

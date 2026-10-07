@@ -1,4 +1,4 @@
-narsil = {
+﻿narsil = {
 	icon = "artifact_narsil.dds"
 	asset = { reference = ep1_western_sword_01_a_entity }
 }

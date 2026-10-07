@@ -72,7 +72,7 @@ nars_courtiers.0001 = {
 			create_character = {
 				location = root.capital_province
 				culture = culture:selian
-				faith = faith:nars_religion
+				faith = faith:nars_faith
 				random_traits_list = {
                     count = 2
                     diligent = {}
@@ -217,7 +217,7 @@ nars_courtiers.9000 = {
                 employer = root
                 location = root.capital_province
                 culture = culture:selian
-                faith = faith:nars_religion
+                faith = faith:nars_faith
                 random_traits_list = {
                     count = 2
                     diligent = {}
@@ -293,7 +293,7 @@ nars_courtiers.0011 = {
         hidden_effect = {
             create_character = {
                 culture = culture:selian
-                faith = faith:nars_religion
+                faith = faith:nars_faith
                 age = { 21 45 } 
                 gender_female_chance = 50
                 
@@ -374,7 +374,7 @@ nars_courtiers.0011 = {
             }
             create_character = {
                 culture = culture:selian
-                faith = faith:nars_religion
+                faith = faith:nars_faith
                 age = { 21 45 } 
                 gender_female_chance = 50
                 

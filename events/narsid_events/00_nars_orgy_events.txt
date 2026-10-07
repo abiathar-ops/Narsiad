@@ -1,4 +1,4 @@
-
+﻿
 
 namespace = nars_orgio
 
@@ -82,6 +82,65 @@ nars_orgio.3002 = {
 		scope:activity = {
 			set_variable = activity_invalidated
 		}
+	}
+}
+
+
+#Blessing of the incense (first phase), sent to every participant
+nars_orgio.3005 = {
+	type = activity_event
+	title = nars_orgio.3005.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { this = scope:host }
+				desc = nars_orgio.3005.host.desc
+			}
+			desc = nars_orgio.3005.guest.desc
+		}
+	}
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:blessing_companion
+		animation = admiration
+	}
+
+	immediate = {
+		scope:activity = {
+			activity_host = { save_scope_as = host }
+			random_attending_character = {
+				limit = { NOT = { this = root } }
+				save_scope_as = blessing_companion
+			}
+		}
+		# Refresh rather than stack if an earlier blessing is still running.
+		hidden_effect = {
+			if = {
+				limit = { has_character_modifier = nars_fertility_blessing }
+				remove_character_modifier = nars_fertility_blessing
+			}
+		}
+	}
+
+	option = {
+		name = nars_orgio.3005.a
+		flavor = nars_orgio.3005.a.flavor
+		add_character_modifier = {
+			modifier = nars_fertility_blessing
+			years = 2
+		}
+	}
+	option = {
+		name = nars_orgio.3005.b
+		flavor =  nars_orgio.3005.b.flavor
 	}
 }
 
@@ -1960,6 +2019,64 @@ nars_orgio.3030 = {
 		}
 	}
 }
+
+#Host overhears a guest's secret (modelled on vanilla feast_default.2009)
+scripted_trigger nars_orgio_3090_secret_holder_trigger = {
+	NOT = { this = root }
+	is_adult = yes
+	any_secret = {
+		NOT = { is_known_by = root }
+	}
+}
+
+nars_orgio.3090 = {
+	type = activity_event
+	title = nars_orgio.3090.t
+	desc = nars_orgio.3090.desc
+	theme = seduction
+	override_background = {
+		reference = nars_brothel
+	}
+
+	left_portrait = {
+		character = root
+		animation = eavesdrop
+	}
+	right_portrait = {
+		character = scope:secret_holder
+		animation = worry
+	}
+
+	trigger = {
+		exists = scope:activity
+		scope:activity = {
+			any_attending_character = {
+				nars_orgio_3090_secret_holder_trigger = yes
+			}
+		}
+	}
+
+	immediate = {
+		scope:activity = {
+			random_attending_character = {
+				limit = { nars_orgio_3090_secret_holder_trigger = yes }
+				save_scope_as = secret_holder
+				random_secret = {
+					limit = { NOT = { is_known_by = root } }
+					save_scope_as = secret_to_reveal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = nars_orgio.3090.a
+		scope:secret_to_reveal = {
+			reveal_to = root
+		}
+	}
+}
+
 
 ###Orgy end events##
 

@@ -1,4 +1,4 @@
-recruit_nars_add_courtier_effect = {
+﻿recruit_nars_add_courtier_effect = {
 	save_temporary_scope_as = host
 
 	every_realm_province = {
@@ -58,7 +58,7 @@ recruit_nars_add_courtier_effect = {
 		create_character = {
 			location = root.capital_province
 			culture = culture:selian
-			faith = faith:nars_religion
+			faith = faith:nars_faith
 			random_traits_list = {
 				count = 2
 				wrathful = {}

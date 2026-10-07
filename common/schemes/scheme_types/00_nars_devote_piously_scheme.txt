@@ -1,4 +1,4 @@
-piously_devote_scheme = {
+﻿piously_devote_scheme = {
 	# Basic Setup
 	skill = learning
 	desc = "piously_devote_scheme_desc_general"

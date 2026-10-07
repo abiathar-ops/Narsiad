@@ -1,6 +1,10 @@
-rf_selian = {
+﻿rf_selian = {
 	piety_icon_group = "eastern"
 	graphical_faith = "pagan_gfx"
 	hostility_doctrine = selian_hostility_doctrine
-	doctrine_background_icon = core_tenet_banner_pagan.dds
+	# 1.20: 'doctrine_background_icon' became four tenet banners (no extension; each needs a "_small" twin in gfx/interface/icons/faith_tenets).
+	tenet_background_icon = tenet_banner_known_core
+	tenet_heretical_background_icon = tenet_banner_unknown_heretical
+	tenet_neutral_background_icon = tenet_banner_known_neutral
+	tenet_unknown_background_icon = tenet_banner_unknown_neutral
 }

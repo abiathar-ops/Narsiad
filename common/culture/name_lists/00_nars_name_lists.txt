@@ -1,4 +1,4 @@
-name_list_nars = {
+﻿name_list_nars = {
 	cadet_dynasty_names = {
 		"dynn_Abderites" "dynn_Abros" "dynn_Abydenos" "dynn_Achaiades" "dynn_Achaios" "dynn_Acharneus" "dynn_Acherdousios" "dynn_Achniades"
 		"dynn_Adramytenos" "dynn_Agiadas" "dynn_Agraios" "dynn_Agrian" "dynn_Agrias" "dynn_Agrinieus" "dynn_Agrylethen" "dynn_Aiakidas"
@@ -395,7 +395,7 @@ name_list_nars = {
 		Nion Nioumphodoros Noema Nokis Nomeinios Nommo Nomokratia Nomonia
 		Nonnos Noron Nostia Nymphe Nymphis Nympho Nyphothena Nysa_2
 		Odysseidas Oinanthis Oineides Oineus Oinion Oinondes Okea Okimon
-		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios
+		Okymenes Okythoa Olbia Oloumpicha Olympikos Olympiodoros_2 Olympion Olympios_2
 		Onasicha Onasides Onasima Onasiphilos Onchestodoros Onesiphilos Onesiphoron Onesiphoros
 		Oneso Onomantos Opheleimis Ophelema Ophelima Ophelime Ophelleis Opis
 		Opora Oropodoros Orrhippa Orsimachos Orthokles Oupatos Oupermenidas Oxytion
@@ -459,7 +459,7 @@ name_list_nars = {
 		Telesarchos_2 Telesion Telesphoros_2 Telessis Telessistrotos Telexena Tellei Tellias
 		Telon Telourgos Temene Terpsias Teumasigeneis Thais_2 Thaleia Thalesigenes
 		Thalinides Thallei Thalles Thallo Thallousa Thargelion Thasios Thauminas
-		Thea Theaios Thearichos Thebades Thebon Theibagena Theibangelos Theioteles
+		Thea_2 Theaios Thearichos Thebades Thebon Theibagena Theibangelos Theioteles
 		Themisto Theoboulos Theodota_2 Theogeita Theogenis Theogita Theognetis
 		Theogonos Theokedes Theokleia Theokrine Theokrisios Theokrite Theokritos_2 Theokydes
 		Theomnasta Theomneste Theophantos Theopheidas Theophila_2 Theophile Theophiliskos Theophrasmon
@@ -603,7 +603,7 @@ name_list_nars = {
 		Stolis Stouria Stration Strato Stratoion Stratokleia Stratola Stratylla
 		Strophe Strotia Strotto Strotyllis Strybele Syana Symmache Synete
 		Synoris Syntrophis Syra_2 Syryla Techne Telessis Telexena Temene
-		Thais_2 Thaleia Thallo Thallousa Thea Theibagena Themisto Theodora_2
+		Thais_2 Thaleia Thallo Thallousa Thea_2 Theibagena Themisto Theodora_2
 		Theodota_2 Theogeita Theogenis Theogita Theognetis Theokleia Theokrine Theokrite
 		Theomnasta Theomneste Theophila_2 Theophile Theopropis Theoteleia Theotima Theotime
 		Thermo Thermoxena Thettalia Theudosia Thiodora Thioklia Thiokrita Thiotima

@@ -1,11 +1,37 @@
 ﻿l_english:
- # Tenet: Oriental Gods (Ēchōnes)
- tenet_nars_pantheon_name:0 "Ēchōnes"  
+ tenet_nars_pantheon_name:0 "Inevitable Cycle"
+ tenet_nars_pantheon_no_actor: "Ēchōnes"
  tenet_nars_pantheon_desc:0 "For even in their scorn, they know our rise cannot be halted."
- # Tenet: Antique Traditions (Palaiā-Pātria)
- tenet_nars_sanguine_name:0 "Palaiā-Pātria"
+
+ tenet_nars_sanguine_name:0 "Old Fatherland"
+ tenet_nars_sanguine_no_actor: "Palaiā-Pātria"  
  tenet_nars_sanguine_desc:0 "Traditions of antiquity, long forgotten by the world, are preserved within our faith." 
- # Tenet: Enlightened Bastion (Prōtoplasía)
- tenet_nars_erudition_name: "Prōtoplasía" 
- tenet_nars_erudition_no_actor: "Sage-Scholars"  
+
+ tenet_nars_erudition_name:0 "First Knowledge"
+ tenet_nars_erudition_no_actor: "Prōtoplasía"  
  tenet_nars_erudition_desc:0 "Scholars who spend time in meditation leave with sharpened insight and spiritual understanding."
+
+ tenet_nars_crusade_name:0 "Deific Struggle"
+ tenet_nars_crusade_no_actor: "Theōmachē"  
+ tenet_nars_crusade_desc:0 "Through holy conquest, no border or false creed shall withstand our divine truth."
+
+ tenet_nars_banking_name:0 "Commmercial Piety"
+ tenet_nars_banking_no_actor: "Thēsorós"  
+ tenet_nars_banking_desc:0 "Wealth is a divine blessing, managed prudently to ensure prosperity for our people."
+
+ tenet_nars_vestals_name:0 "Sacred Courtesan"
+ tenet_nars_vestals_no_actor: "Aporrētoi"  
+ tenet_nars_vestals_desc:0 "Shrouded in taboo, these holy courtesans prove the gods speak clearly through passion."
+
+ nars_special_name: "Hegemons of Old"
+ nars_special_2_name: "Scholars of Yore"
+
+ nars_special_doctrine_name: "Hēgemon tou Pálai"
+ nars_special_doctrine_no_actor: "Hegemons of Old"
+ nars_special_doctrine_descriptive_name: "$nars_special_doctrine_name$"
+ nars_special_doctrine_desc:  "We are heirs to an antiquate glory, once-forgotten now risen—the true hegemons of the world."
+
+ nars_special_doctrine_2_name: "Philopolitēs"
+ nars_special_doctrine_2_no_actor: "Scholar of Yore"
+ nars_special_doctrine_2_descriptive_name: "$nars_special_doctrine_2_name$"
+ nars_special_doctrine_2_desc:  "We are scholars of a bygone era, witness to the long history—ageless scions of yore."

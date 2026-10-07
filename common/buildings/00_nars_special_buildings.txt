@@ -19,6 +19,11 @@ aretaic_school_01 = {
 	construction_time = slow_construction_time
 	type = special
 	
+	effect_desc = {
+		desc = unlocks_building_desc
+		desc = university_effect_desc
+	}
+
 	can_construct_potential = {
 		building_requirement_tribal = no
 		building_university_requirement = yes
@@ -27,19 +32,22 @@ aretaic_school_01 = {
 	can_construct = {
 	}
 
-	type_icon = "icon_structure_grand_library_of_baghdad.dds"
+	type_icon = "icon_citadel.dds"
 
 	character_modifier = {
 		monthly_dynasty_prestige = 0.2
-		diplomatic_range_mult = 0.8
-		monthly_lifestyle_xp_gain_mult = 0.25
-		cultural_head_fascination_mult = 0.25
+		same_culture_opinion = 20
+		monthly_lifestyle_xp_gain_mult = 0.2
+		cultural_head_fascination_mult = 0.2
+		learning_per_prestige_level = 2
 	}
-	# Broad bonuses for the entire capital county
 	county_modifier = {
-		development_growth = 0.2
-		monthly_county_control_growth_add = 0.2
+		development_growth = 0.4
 		county_opinion_add = 20
+	}
+	duchy_capital_county_modifier = {
+		monthly_county_control_growth_add = 0.2
+		development_growth_factor = 0.1
 	}
 	
 	cost_gold = 0 # Paid for by the decision
@@ -52,7 +60,7 @@ aretaic_school_01 = {
 		}
 	}
 	type = special
-	flag = special_university # Tells the game to treat it like a university for events/mechanics
+	flag = special_university 
 	flag = travel_point_of_interest_learning
 	flag = religious_studies_location
 }
@@ -77,15 +85,16 @@ brothel_complex_01 = {
 	character_modifier = {
 		monthly_income = excellent_building_tax_tier_4
 		stress_gain_mult = -0.205
+		intrigue_per_prestige_level = 2
 		owned_legend_spread_mult = 0.205
 	}
 
 	county_modifier = {
 		county_opinion_add = 10
-		levy_size = 0.4
+		levy_size = 0.1
 	}
 
-	type_icon = "icon_brothel.dds"
+	type_icon = "icon_inn.dds"
 
 	show_disabled = yes
 

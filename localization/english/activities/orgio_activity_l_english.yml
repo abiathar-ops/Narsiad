@@ -1,5 +1,4 @@
 ﻿l_english:
- ####ÓRGIO####
  activity_nars_orgio_tooltip:0 "Host an $activity_nars_orgio$"
  activity_nars_orgio_confirm:0 "Let the orgy begin!"
  activity_nars_orgio:0 "Orgy"
@@ -23,15 +22,21 @@
  host_nars_orgio_decision_cooldown:0 "I will be unable to host another orgy for a few months."
 
  ### OPTIONS
- orgy_option_secrecy:0 "Luxuries"
- orgy_security_bad:1 "Normal"
- orgy_security_bad_desc:2 "#weak Just my usual guards and servants will be fine. Spreading slanderous rumors is the worst they can do without proof. No person who is willing to step into the room and take part would be willing to act as a witness against me.#!"
- orgy_security_normal:1 "Enhanced"
- orgy_security_normal_desc:2 "#weak Hire temporary servants and guards who do not know what is normal, and make it clear that their hefty compensation is tied to their silence. But not that many, just replacing a select few should be enough to prevent most rumors, at least about any orgies.#!"
- orgy_security_good:1 "Lavish"
- orgy_security_good_desc:2 "#weak People might think I'm plotting something nefarious but nobody will hear a word about any orgies. My servants will be locked in the dungeon and guards are told to prepare for a siege outside the walls to keep them busy.#!"
+ orgio_option_luxuries:0 "Luxuries"
+ orgio_luxuries_normal:1 "Normal"
+ orgio_luxuries_normal_desc:2 "$EFFECT_LIST_BULLET$ Minor [stress_loss_i|E][stress_loss|E]\n$EFFECT_LIST_BULLET$ Minor [opinion_i|E][opinion|E] gain\n$EFFECT_LIST_BULLET$ Participants gain [GetModifier('nars_orgio_revelry_normal_modifier').GetNameWithTooltip] for #v 2#! years\n\n#weak Wine from my own cellars, clean linen, and a bolted door. Although, noobody is coming for the furnishings that much is certain.#!"
+ orgio_luxuries_enhanced:1 "Enhanced"
+ orgio_luxuries_enhanced_desc:2 "$EFFECT_LIST_BULLET$ Moderate [stress_loss_i|E][stress_loss|E]\n$EFFECT_LIST_BULLET$ Moderate [opinion_i|E][opinion|E] gain\n$EFFECT_LIST_BULLET$ Participants gain [GetModifier('nars_orgio_revelry_enhanced_modifier').GetNameWithTooltip] for #v 2#! years\n\n#weak Perfumed oils, imported vintages, and famed musicians paid well enough to remember absolutely nothing decorates the hall.#!"
+ orgio_luxuries_lavish:1 "Lavish"
+ orgio_luxuries_lavish_desc:2 "$EFFECT_LIST_BULLET$ Major [stress_loss_i|E][stress_loss|E]\n$EFFECT_LIST_BULLET$ Major [opinion_i|E][opinion|E] gain\n$EFFECT_LIST_BULLET$ Participants gain [GetModifier('nars_orgio_revelry_lavish_modifier').GetNameWithTooltip] for #v 2#! years\n\n#weak Silk coverings on every couch, spices from beyond these lands, and more incense than a temple burns annually. A feast for the senses.#!"
+ # Descriptions of the former security options, kept for reference:
+ # orgy_security_bad_desc:2 "#weak Just my usual guards and servants will be fine. Spreading slanderous rumors is the worst they can do without proof. No person who is willing to step into the room and take part would be willing to act as a witness against me.#!"
+ # orgy_security_normal_desc:2 "#weak Hire temporary servants and guards who do not know what is normal, and make it clear that their hefty compensation is tied to their silence. But not that many, just replacing a select few should be enough to prevent most rumors, at least about any orgies.#!"
+ # orgy_security_good_desc:2 "#weak People might think I'm plotting something nefarious but nobody will hear a word about any orgies. My servants will be locked in the dungeon and guards are told to prepare for a siege outside the walls to keep them busy.#!"
 
  ### PHASES
+ nars_orgio_blessing_phase:0 "Blessing"
+ nars_orgio_blessing_phase_desc:0 "Breathe the sacred incense and receive its blessing."
  nars_orgio_phase:0 "Órgio"
 
  ### INTENTS
@@ -43,6 +48,14 @@
  nars_orgio.3001.desc:0 "Those seeking to find a bit of pleasure are cordially invited to a night to be remembered. Being discreet is most vital and what happens in the party, stays in the party."
  nars_orgio.3001.a:0 "I can't wait!"
  nars_orgio.3001.b:0 "I would rather drink a bowl of cum."
+ #Blessing of the incense
+ nars_orgio.3005.t:0 "The Burning of the Incense"
+ nars_orgio.3005.host.desc:0 "Before a single cloak is unfastened, I have the braziers lit. An attendant casts a fistful of rare resin onto the coals, a sacred attribute to [enuo|E], and thick, sweet smoke rolls across the chamber as [ROOT.Char.GetFaith.FertilityGodName] is called upon to bless all who breathe it. My guests fall quiet. Whatever else they came here for, none of them will leave without the blessing."
+ nars_orgio.3005.guest.desc:0 "Before anything else, [host.GetTitledFirstName] has the braziers lit. An attendant casts a fistful of rare resin onto the coals, a sacred attribute to [enuo|E], and thick, sweet smoke rolls across the chamber in the name of [ROOT.Char.GetFaith.FertilityGodName]. It is said that those who breathe it will be blessed with children. I find myself breathing deeper than I meant to."
+ nars_orgio.3005.a:0 "May [ROOT.Char.GetFaith.FertilityGodName] bequeth favors upon us."
+ nars_orgio.3005.a.flavor: "The blessing of [ROOT.Char.GetFaith.FertilityGodName] takes root within me."
+ nars_orgio.3005.b:0 "I'll pretend to be blessed."
+ nars_orgio.3005.b.flavor: "I avoid the smoke of incense like a plague."
  #Uninvited guest
  nars_orgio.3003.t:0 "An Uninvited Guest"
  nars_orgio.3003.desc:1 "As my guests arrive in [capital.GetNameNoTooltip], I catch a glimpse of an unfamiliar face.\nWhen I go to greet [inviter.Custom2('MyCharacterIntroduction', ROOT.Char)], [inviter.GetSheHe] introduces the strange [new_guest.GetWomanMan] as [new_guest.GetFirstName] and slaps her ass. [inviter.GetFirstNameNoTooltip] asks if she can join our little meeting while repeating the slaps."
@@ -166,6 +179,11 @@
  nars_orgio.5000.desc:0 "If you seeing this and you not an AI bot, something went wrong."
  nars_orgio.5000.a:0 "AI options"
  nars_orgio.5000.tt:0 "AI options"
+
+ #Host overhears a secret
+ nars_orgio.3090.t:0 "Loose Lips"
+ nars_orgio.3090.desc:0 "Wine, exhaustion, and a warm body nearby loosen more than inhibitions. Resting among the cushions, I catch [secret_holder.GetTitledFirstName] murmuring to no one in particular, certain that nobody is listening.\n\nWhat [secret_holder.GetSheHe] lets slip was never meant for my ears."
+ nars_orgio.3090.a:0 "Do go on..."
 
  #End events
  nars_orgio.3098.t:1 "Until Next Time"

@@ -1,0 +1,13 @@
+﻿nars_rite = {
+	faith = nars_faith
+
+	color = { 230 228 216 }
+
+	tenets = {
+		tenet_nars_pantheon
+		tenet_nars_sanguine
+		tenet_nars_erudition
+	}
+
+	cultures = { selian }
+}

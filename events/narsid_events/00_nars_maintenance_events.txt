@@ -1,4 +1,4 @@
-namespace = nars_maintenance
+﻿namespace = nars_maintenance
 
 nars_maintenance.0002 = {
     type = character_event

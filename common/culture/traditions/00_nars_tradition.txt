@@ -1,4 +1,4 @@
-# Nars Culture Traditions should have 3 default tradition and 1 unique to the culture.
+﻿# Nars Culture Traditions should have 3 default tradition and 1 unique to the culture.
 
 tradition_nars_merchant = {
     category = societal

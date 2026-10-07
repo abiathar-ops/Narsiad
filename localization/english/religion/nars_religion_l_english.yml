@@ -1,18 +1,27 @@
 ﻿l_english:
  # Selian religion group
  rf_selian:0 "Archaic"
+ selian_hostility_doctrine_name: "$rf_selian$"
+ selian_hostility_doctrine_descriptive_name: "$rf_selian$-aligned Hostility"
+ selian_hostility_doctrine_desc: "The following religions are $rf_selian$:\n[GetReligionFamily('rf_selian').GetReligions]"
  selian_religion:0 "Selian"
- selian_religion_adj:0 "Selic"
+ selian_religion_adj:0 "Selian"
  selian_religion_adherent:0 "Selian"
  selian_religion_adherent_plural:0 "Selians"
  selian_religion_desc:0 "The faith of the Selian venerates their pantheon and its various deities. Each deity has their own aspects and worshippers extol them in their own respective ways, offering a myriad of paths to spiritual enlightenment."
 
- # Selian branches
- nars_religion:0 "Selianism"
- nars_religion_adj:0 "Selianite"
- nars_religion_adherent:0 "Selianist"
- nars_religion_adherent_plural:0 "Selianists"
- nars_religion_desc:0 "Derived from the records of $game_concept_selian$ antiquity and the new teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')], $nars_religion$ revolves around the concept of vigorous erudition, in which adherents are to pursue martial and learning pursuits as a path to enlightenment."
+ # Selian faith
+ nars_faith:0 "Selianism"
+ nars_faith_adj:0 "$game_concept_selianes$"
+ nars_faith_adherent:0 "Selianist"
+ nars_faith_adherent_plural:0 "Selianists"
+ nars_faith_desc:0 "Derived from the records of $game_concept_selian$ antiquity and the new teachings of [Glossary('$Alnars$', 'ALNARS_GLOSS')], $nars_faith$ revolves around the concept of vigorous erudition, in which adherents are to pursue martial and learning pursuits as a path to enlightenment."
+
+ # Selian rites
+ nars_rite: "$Alnars$ic Rite"
+ nars_rite_adj: "$Alnars$ic"
+ nars_rite_adherent: "$Alnars$ite"
+ nars_rite_adherent_plural: "$Alnars$ites"
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsēs"
@@ -50,8 +59,8 @@
  nars_negative_afterlife:0 "hell"
  nars_negative_afterlife_2:1 "the Pit" # Optional translation alt
  nars_negative_afterlife_3:1 "Gehenna" # Optional translation alt
- nars_witch_god_name:0 "$nars_high_god_name$"
- nars_witch_god_name_possessive:0 "$nars_high_god_name_possessive$"
+ nars_witch_god_name:0 "$game_concept_enuo$"
+ nars_witch_god_name_possessive:0 "$game_concept_enuo$'s"
  nars_creator_god_name:0 "$nars_high_god_name$"
  nars_creator_god_name_possessive:0 "$nars_high_god_name_possessive$"
  nars_health_god_name:0 "$nars_high_god_name$"

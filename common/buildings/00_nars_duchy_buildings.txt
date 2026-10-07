@@ -1,9 +1,5 @@
-canton_duchy_01 = {
+﻿akropolis_duchy_01 = {
 	construction_time = slow_construction_time
-
-	effect_desc = {
-			
-	}
 
 	can_construct = {
 		scope:holder.culture = {
@@ -36,236 +32,26 @@ canton_duchy_01 = {
 	cost_gold = expensive_building_tier_3_cost
 
 	character_modifier = {
-		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_3
-		martial = 2
+		monthly_income = 1.6
 		knight_limit = 2
-		knight_effectiveness_mult = 0.15
+		# knight_effectiveness_mult = 0.15
 	}
 
-	province_modifier = {
-		stationed_maa_damage_mult = very_high_maa_damage_tier_3
-		stationed_nars_toughness_mult = very_high_nars_toughness_tier_3
-		defender_advantage = 10
-	}
+	# province_modifier = {
+	# 	stationed_maa_damage_mult = very_high_maa_damage_tier_3
+	# 	stationed_maa_toughness_mult = very_high_maa_toughness_tier_3
+	# }
 
 	duchy_capital_county_modifier = {
-		monthly_county_control_growth_add = 0.15
-		monthly_county_control_growth_factor = 0.15
-	}
-
-	next_building = canton_duchy_02
-
-	type_icon = "icon_manor.dds"
-
-	type = duchy_capital
-
-	ai_value = {
-		base = 20
-		modifier = {
-			factor = 2
-			scope:holder.capital_province = this
-		}
-		modifier = {
-			factor = 0
-			free_building_slots > 0
-		}
-	}
-}
-
-canton_duchy_02 = {
-	construction_time = slow_construction_time
-
-	effect_desc = {
-			
-	}
-
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_selian_building_02
-		}
-	}
-
-	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
-		building_requirement_tribal = no
-	}
-
-	can_construct_showing_failures_only = {
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_selian_building_02
-			}
-		}
-	}
-
-	show_disabled = yes
-
-	is_enabled = {
-		county.holder = { has_title = prev.duchy }
-	}
-
-	cost_gold = expensive_building_tier_4_cost
-
-	character_modifier = {
-		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_5
-		martial = 3
-		knight_limit = 4
-		knight_effectiveness_mult = 0.30
-	}
-
-	province_modifier = {
-		stationed_maa_damage_mult = very_high_maa_damage_tier_5
-		stationed_nars_toughness_mult = very_high_nars_toughness_tier_5
-		defender_advantage = 20
-	}
-
-	duchy_capital_county_modifier = {
-		monthly_county_control_growth_add = 0.25
-		monthly_county_control_growth_factor = 0.25
-	}
-
-	next_building = canton_duchy_03
-
-	type_icon = "icon_manor.dds"
-
-	type = duchy_capital
-
-	ai_value = {
-		base = 20
-		modifier = {
-			factor = 2
-			scope:holder.capital_province = this
-		}
-		modifier = {
-			factor = 0
-			free_building_slots > 0
-		}
-	}
-}
-
-canton_duchy_03 = {
-	construction_time = slow_construction_time
-
-	effect_desc = {
-			
-	}
-
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_selian_building_03
-		}
-	}
-
-	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
-		building_requirement_tribal = no
-	}
-
-	can_construct_showing_failures_only = {
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_selian_building_03
-			}
-		}
-	}
-
-	show_disabled = yes
-
-	is_enabled = {
-		county.holder = { has_title = prev.duchy }
-	}
-
-	cost_gold = expensive_building_tier_5_cost
-
-	character_modifier = {
-		men_at_arms_maintenance = expensive_building_maa_maintenance_tier_8
-		martial = 5
-		knight_limit = 6
-		knight_effectiveness_mult = 0.45
-	}
-
-	province_modifier = {
-		stationed_maa_damage_mult = very_high_maa_damage_tier_8
-		stationed_nars_toughness_mult = very_high_nars_toughness_tier_8
-		defender_advantage = 30
-	}
-
-	duchy_capital_county_modifier = {
-		monthly_county_control_growth_add = 0.4
-		monthly_county_control_growth_factor = 0.40
-	}
-
-	type_icon = "icon_manor.dds"
-
-	show_disabled = yes
-
-	type = duchy_capital
-
-	ai_value = {
-		base = 20
-		modifier = {
-			factor = 2
-			scope:holder.capital_province = this
-		}
-		modifier = {
-			factor = 0
-			free_building_slots > 0
-		}
-	}
-}
-
-foundry_duchy_01 = {
-	construction_time = slow_construction_time
-
-	effect_desc = {
-		}
-
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_selian_building_01
-		}
-	}
-
-	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
-		building_requirement_tribal = no
-		scope:holder = {
-			is_selian = yes
-		}
-	}
-
-	can_construct_showing_failures_only = {
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_selian_building_01
-			}
-		}
-	}
-
-	show_disabled = yes
-
-	is_enabled = {
-		county.holder = { has_title = prev.duchy }
-	}
-
-	cost_gold = expensive_building_tier_3_cost
-
-
-	province_modifier = {
-		monthly_income = excellent_building_tax_tier_3
-		tax_mult = good_building_tax_mult_tier_3
-		build_speed = good_building_build_speed_tier_3
-		build_gold_cost = -0.07
-	}
-
-	duchy_capital_county_modifier = {
+		# monthly_county_control_growth_add = 0.15
+		# monthly_county_control_growth_factor = 0.15
 		epidemic_resistance = 15
 		additional_fort_level = great_building_fort_level_tier_4
 	}
 
-	next_building = foundry_duchy_02
+	next_building = akropolis_duchy_02
 
-	type_icon = "icon_foundry.dds"
+	type_icon = "icon_akropolis.dds"
 
 	type = duchy_capital
 
@@ -282,11 +68,8 @@ foundry_duchy_01 = {
 	}
 }
 
-foundry_duchy_02 = {
+akropolis_duchy_02 = {
 	construction_time = slow_construction_time
-
-	effect_desc = {	
-	}
 
 	can_construct = {
 		scope:holder.culture = {
@@ -315,22 +98,27 @@ foundry_duchy_02 = {
 
 	cost_gold = expensive_building_tier_4_cost
 
+	character_modifier = {
+		monthly_income = 2.4
+		knight_limit = 4
+		# knight_effectiveness_mult = 0.30
+	}
 
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_5
-		tax_mult = good_building_tax_mult_tier_5
-		build_speed = good_building_build_speed_tier_5
-		build_gold_cost = -0.12
+		stationed_maa_damage_mult = very_high_maa_damage_tier_5
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_5
 	}
 
 	duchy_capital_county_modifier = {
+		# monthly_county_control_growth_add = 0.25
+		# monthly_county_control_growth_factor = 0.25
 		epidemic_resistance = 25
 		additional_fort_level = great_building_fort_level_tier_6
 	}
 
-	next_building = foundry_duchy_03
+	next_building = akropolis_duchy_03
 
-	type_icon = "icon_foundry.dds"
+	type_icon = "icon_akropolis.dds"
 
 	type = duchy_capital
 
@@ -347,12 +135,8 @@ foundry_duchy_02 = {
 	}
 }
 
-foundry_duchy_03 = {
+akropolis_duchy_03 = {
 	construction_time = slow_construction_time
-
-	effect_desc = {
-		
-	}
 
 	can_construct = {
 		scope:holder.culture = {
@@ -381,21 +165,24 @@ foundry_duchy_03 = {
 
 	cost_gold = expensive_building_tier_5_cost
 
+	character_modifier = {
+		monthly_income = 3.2
+		knight_limit = 6
+		knight_effectiveness_mult = 0.6
+	}
+
 	province_modifier = {
-		monthly_income = 5
-		tax_mult = good_building_tax_mult_tier_8
-		build_speed = good_building_build_speed_tier_8
-		build_gold_cost = -0.2
+		stationed_maa_damage_mult = very_high_maa_damage_tier_8
+		stationed_maa_toughness_mult = very_high_maa_toughness_tier_8
 	}
 
 	duchy_capital_county_modifier = {
+		monthly_county_control_growth_add = 0.4
 		epidemic_resistance = 40
 		additional_fort_level = great_building_fort_level_tier_8
 	}
 
-	type_icon = "icon_foundry.dds"
-
-	show_disabled = yes
+	type_icon = "icon_akropolis.dds"
 
 	type = duchy_capital
 

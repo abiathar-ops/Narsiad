@@ -59,17 +59,17 @@ nars_intro.0001 = {
 
     immediate = {
         play_music_cue = strugglestart_cue
+        location = { save_scope_as = consecration_province }
         create_character = {
             name = "Alnars"
             gender = male
             age = 72
             location = root.location
             sexuality = heterosexual
-            faith = faith:nars_religion
+            faith = faith:nars_faith
             culture = culture:selian
             female = no
             
-            # Dynamic Dynasty Generation
             dynasty = generate
             random_traits = no # Prevents random diseases/bad traits
             
@@ -83,20 +83,18 @@ nars_intro.0001 = {
             trait = calm
             trait = gregarious
             trait = education_diplomacy_5
-            trait = nars_alnars
-            trait = scholar
+            trait = nars_soter
             trait = beauty_good_3
             trait = physique_good_3
             save_scope_as = alnars
             
             after_creation = {
                 add_gold = minor_gold_value
-                add_trait = nars_naturalis
                 give_nickname = nick_soter
                 death = { death_reason = death_murder }
             }
         }
-        
+
         # Name and buff the dynamically generated dynasty
         scope:alnars.dynasty = {
             set_dynasty_name = "Narēsíos"
@@ -135,7 +133,7 @@ nars_intro.0001 = {
             age = { 35 36 }
             location = root.location
             sexuality = heterosexual
-            faith = faith:nars_religion
+            faith = faith:nars_faith
             culture = culture:selian
             female = no
             random_traits = no
@@ -161,7 +159,6 @@ nars_intro.0001 = {
                 add_trait = nars_naturalis
                 add_character_modifier = eleios_modifier
 
-                # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
                 set_house = scope:alnars.house
@@ -173,7 +170,7 @@ nars_intro.0001 = {
             gender = female
             age = { 33 34 }
             location = root.location
-            faith = faith:nars_religion
+            faith = faith:nars_faith
             culture = culture:selian
             sexuality = bisexual
             female = yes
@@ -200,7 +197,6 @@ nars_intro.0001 = {
                 add_trait = nars_naturalis
                 add_character_modifier = ilione_modifier
 
-                # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
                 set_house = scope:alnars.house
@@ -221,7 +217,7 @@ nars_intro.0001 = {
             intrigue = 40
             learning = 15
             prowess = 30
-            faith = faith:nars_religion
+            faith = faith:nars_faith
             culture = culture:selian
             trait = deceitful
             trait = arbitrary
@@ -238,7 +234,6 @@ nars_intro.0001 = {
                 add_trait = nars_naturalis
                 add_character_modifier = strato_modifier
 
-                # Tie directly to Alnars, Mother, and newly generated house
                 set_father = scope:alnars
                 set_mother = scope:mother
                 set_house = scope:alnars.house
@@ -247,6 +242,24 @@ nars_intro.0001 = {
         }
 
         hidden_effect = {
+            scope:consecration_province = {
+                set_variable = hide_location_for_saint
+            }
+            pam_canonize_saint_effect = {	
+                CANONIZER = scope:eleios
+                CANDIDATE = scope:alnars
+                CONSECRATION_PROVINCE = scope:consecration_province
+                PRESET = no
+            }
+            religion:selian_religion = {
+                every_faith = {
+                    limit = {
+                        main_rite = { is_rite_enabled = yes }
+                        NOT = { has_saint_character = root }
+                    }
+                    add_saint = { character = root }
+                }
+            }
             scope:eleios = {
                 save_scope_as = new_landless_adventurer
                 create_adventurer_title = {
@@ -581,11 +594,8 @@ nars_intro.0002 = {
                 }
                 desc = nars_intro.0002.ilione
             }
-            # Strato used as fallback
             desc = nars_intro.0002.strato
         }
-        
-        # 3. The concluding paragraph
         desc = nars_intro.0002.end
     }
 
@@ -610,7 +620,7 @@ nars_intro.0002 = {
     }
     
     immediate = { 
-        play_music_cue = mx_cue_negative_effect       
+        play_music_cue = mx_cue_negative       
         father = {
             save_scope_as = alnars
         }

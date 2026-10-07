@@ -85,27 +85,23 @@
 	###################
 
 	options = {
-		orgy_option_secrecy = {
-			orgy_security_bad = {
+		orgio_option_luxuries = {
+			orgio_luxuries_normal = {
 				is_shown = { has_dlc_feature = advanced_activities }
-				cost = { 
+				# Paid 4/5 in gold and 1/5 in piety.
+				cost = {
+					gold = {
+						add = {
+							value = nars_orgio_luxuries_normal_cost
+							multiply = 0.8
+							desc = orgio_luxuries_normal
+						}
+					}
 					piety = {
 						add = {
-							add = {
-								value = 200
-								desc = orgy_security_bad
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_tier
-								subtract = 10
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_era
-								subtract = 10
-							}
-							min = 0
+							value = nars_orgio_luxuries_normal_cost
+							multiply = 0.2
+							desc = orgio_luxuries_normal
 						}
 					}
 				}
@@ -118,45 +114,22 @@
 					add = activity_option_likes_functional_food_option_value
 				}
 			}
-			orgy_security_normal = {
+			orgio_luxuries_enhanced = {
 				default = yes
+				# Paid 4/5 in gold and 1/5 in piety.
 				cost = {
 					gold = {
 						add = {
-							add = {
-								value = 100
-								desc = orgy_security_normal
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_tier
-								subtract = 10
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_era
-								subtract = 10
-							}
-							min = 0
+							value = nars_orgio_luxuries_enhanced_cost
+							multiply = 0.8
+							desc = orgio_luxuries_enhanced
 						}
 					}
 					piety = {
 						add = {
-							add = {
-								value = 100
-								desc = orgy_security_normal
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_tier
-								subtract = 10
-							}
-							add = {
-								value = 10
-								multiply = activity_cost_scale_by_era
-								subtract = 10
-							}
-							min = 0
+							value = nars_orgio_luxuries_enhanced_cost
+							multiply = 0.2
+							desc = orgio_luxuries_enhanced
 						}
 					}
 				}
@@ -173,26 +146,22 @@
 					}
 				}
 			}
-			orgy_security_good = {
+			orgio_luxuries_lavish = {
 				is_shown = { has_dlc_feature = advanced_activities }
-
+				# Paid 4/5 in gold and 1/5 in piety.
 				cost = {
-					prestige = {
+					gold = {
 						add = {
-							add = {
-								value = 200
-								desc = orgy_security_good
-							}
-							add = {
-								value = 35
-								multiply = activity_cost_scale_by_tier
-								subtract = 35
-							}
-							add = {
-								value = 35
-								multiply = activity_cost_scale_by_era
-								subtract = 35
-							}
+							value = nars_orgio_luxuries_lavish_cost
+							multiply = 0.8
+							desc = orgio_luxuries_lavish
+						}
+					}
+					piety = {
+						add = {
+							value = nars_orgio_luxuries_lavish_cost
+							multiply = 0.2
+							desc = orgio_luxuries_lavish
 						}
 					}
 				}
@@ -213,8 +182,59 @@
 	###################
 
 	phases = {
-		nars_orgio_phase = {
+		# Blessing: the incense is burned before the revels begin.
+		nars_orgio_blessing_phase = {
+			order = 1
 			is_predefined = yes
+
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+					scope:activity = { progress_activity_phase_after = { days = 5 } }
+				}
+				# Too few guests: tell the host, which invalidates the activity.
+				if = {
+					limit = {
+						this = scope:host
+						scope:activity = {
+							any_attending_character = {
+								NOT = { this = scope:host }
+								count < 4
+							}
+						}
+					}
+					trigger_event = nars_orgio.3002
+				}
+				# Otherwise every participant breathes the incense.
+				else_if = {
+					limit = {
+						scope:activity = {
+							any_attending_character = {
+								NOT = { this = scope:host }
+								count >= 4
+							}
+						}
+					}
+					trigger_event = {
+						id = nars_orgio.3005
+						days = 1
+					}
+				}
+			}
+		}
+
+		# Orgio: the revels themselves.
+		nars_orgio_phase = {
+			order = 2
+			is_predefined = yes
+
+			on_enter_phase = {
+				if = {
+					limit = { this = scope:host }
+					# Same location as the blessing, so skip the passive state.
+					scope:activity = { progress_activity_phase_after = { days = 1 } }
+				}
+			}
 			
 			on_phase_active = {
 				if = {
@@ -252,6 +272,9 @@
 							id = nars_orgio.3010
 							days = 7
 						}
+
+						# The host may overhear a guest's secret; Luxuries set the odds.
+						nars_orgio_host_secret_roll_effect = yes
 					}
 				}
 			}
@@ -390,26 +413,14 @@
 			add = 100
     	}
 		modifier = {
-			faith = {
-				has_doctrine = tenet_carnal_exaltation
-			}
-			add = 50
-    	}
-		modifier = {
-			faith = {
-				has_doctrine = tenet_polyamory
+			rite = {
+				rite_has_doctrine = doctrine_adultery_women_accepted
 			}
 			add = 20
     	}
 		modifier = {
-			faith = {
-				has_doctrine = doctrine_adultery_women_accepted
-			}
-			add = 20
-    	}
-		modifier = {
-			faith = {
-				has_doctrine = doctrine_adultery_men_accepted
+			rite = {
+				rite_has_doctrine = doctrine_adultery_men_accepted
 			}
 			add = 20
     	}
@@ -424,6 +435,9 @@
 			scope:host = {
 				disburse_nars_orgio_host_rewards_effect = yes
 			}
+		}
+		else = {
+			disburse_nars_orgio_guest_rewards_effect = yes
 		}
 	}
 	### Graphics

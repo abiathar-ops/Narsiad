@@ -1,4 +1,4 @@
-story_sponsor_meithios = {
+﻿story_sponsor_meithios = {
     visible = yes
     icon = { reference = "gfx/interface/icons/artifact/artifact_chronicle.dds" }
     background = { reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds" }

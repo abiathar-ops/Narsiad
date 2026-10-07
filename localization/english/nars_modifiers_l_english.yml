@@ -8,11 +8,11 @@
  embraced_selian_traditions_modifier: "Embraced Selian Traditions"
  embraced_selian_traditions_modifier_desc: "This [ruler|E] has embraced the traditions of the [selians|E]"
 
- politeion_selian_narses: "Narsēs' Blessing"
+ politeion_selian_narses: "Narsēs' Flock"
  politeion_selian_narses_desc: "This [ruler|E] has the blessing of #v Narsēs#!"
- politeion_selian_phokas: "Phōkās' Blessing"
+ politeion_selian_phokas: "Phōkās' Flock"
  politeion_selian_phokas_desc: "This [ruler|E] has the blessing of #v Phōkās#!"
- politeion_selian_enuo: "Enuō's Blessing"
+ politeion_selian_enuo: "Enuō's Flock"
  politeion_selian_enuo_desc: "This [ruler|E] has the blessing of #v Enuō#!"
 
  eleios_modifier: "Scholared Heir"
@@ -48,3 +48,8 @@
 
  nars_construction_modifier: "Heavy Constructions"
  nars_construction_modifier_desc: "A new #v Special Building#! is being constructed"
+
+ nars_fertility_blessing: "$game_concept_enuo$'s Blessing"
+ nars_orgio_revelry_normal_modifier: "Reveler's Ease"
+ nars_orgio_revelry_enhanced_modifier: "Reveler's Glow"
+ nars_orgio_revelry_lavish_modifier: "Reveler's Gift"

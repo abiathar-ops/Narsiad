@@ -1,4 +1,4 @@
-story_produce_amphora = {
+﻿story_produce_amphora = {
     visible = yes
     icon = { reference = "gfx/interface/icons/artifact/artifact_amphora.dds" }
     background = { reference = "gfx/interface/illustrations/event_scenes/nars_temple.dds" }

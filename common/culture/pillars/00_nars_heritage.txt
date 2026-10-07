@@ -1,4 +1,4 @@
-heritage_nars = {
+﻿heritage_nars = {
 	type = heritage
 	is_shown = {
 		heritage_is_shown_trigger = {

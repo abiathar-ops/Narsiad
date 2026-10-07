@@ -1,4 +1,4 @@
-produce_amphora_scheme_success = {
+﻿produce_amphora_scheme_success = {
 	random_events = {
 		100 = nars_amphora.0001
 	}

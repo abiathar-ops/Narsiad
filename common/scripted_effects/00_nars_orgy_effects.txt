@@ -1,4 +1,104 @@
 ﻿
+# Stress loss and a lingering modifier, scaled by the Luxuries option.
+# scope = participant
+nars_orgio_luxuries_rewards_effect = {
+	# Clear a leftover modifier from an earlier Orgio so tiers never stack.
+	hidden_effect = {
+		if = {
+			limit = { has_character_modifier = nars_orgio_revelry_normal_modifier }
+			remove_character_modifier = nars_orgio_revelry_normal_modifier
+		}
+		if = {
+			limit = { has_character_modifier = nars_orgio_revelry_enhanced_modifier }
+			remove_character_modifier = nars_orgio_revelry_enhanced_modifier
+		}
+		if = {
+			limit = { has_character_modifier = nars_orgio_revelry_lavish_modifier }
+			remove_character_modifier = nars_orgio_revelry_lavish_modifier
+		}
+	}
+	if = {
+		limit = { nars_orgio_luxuries_lavish_trigger = yes }
+		stress_impact = {
+			base = major_stress_loss
+			lustful = major_stress_loss
+			sadistic = medium_stress_loss
+		}
+		add_character_modifier = {
+			modifier = nars_orgio_revelry_lavish_modifier
+			years = 2
+		}
+	}
+	else_if = {
+		limit = { nars_orgio_luxuries_enhanced_trigger = yes }
+		stress_impact = {
+			base = medium_stress_loss
+			lustful = major_stress_loss
+			sadistic = medium_stress_loss
+		}
+		add_character_modifier = {
+			modifier = nars_orgio_revelry_enhanced_modifier
+			years = 2
+		}
+	}
+	else = {
+		stress_impact = {
+			base = minor_stress_loss
+			lustful = major_stress_loss
+			sadistic = medium_stress_loss
+		}
+		add_character_modifier = {
+			modifier = nars_orgio_revelry_normal_modifier
+			years = 2
+		}
+	}
+}
+
+# Every guest thinks better of the host, scaled by the Luxuries option.
+# scope = activity
+nars_orgio_guest_opinion_effect = {
+	every_attending_character = {
+		limit = { NOT = { this = scope:host } }
+		custom = every_nars_orgio_participant
+		if = {
+			limit = { nars_orgio_luxuries_lavish_trigger = yes }
+			add_opinion = {
+				target = scope:host
+				modifier = pleased_opinion
+				opinion = 30
+			}
+		}
+		else_if = {
+			limit = { nars_orgio_luxuries_enhanced_trigger = yes }
+			add_opinion = {
+				target = scope:host
+				modifier = pleased_opinion
+				opinion = 20
+			}
+		}
+		else = {
+			add_opinion = {
+				target = scope:host
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+	}
+}
+
+# Rolls for the host to overhear a guest's secret during the Orgio phase.
+# scope = host
+nars_orgio_host_secret_roll_effect = {
+	random = {
+		chance = nars_orgio_secret_chance_value
+		trigger_event = {
+			id = nars_orgio.3090
+			days = { 9 12 }
+		}
+	}
+}
+
+# Conclusion rewards for the host.
 disburse_nars_orgio_host_rewards_effect = {
 	scope:activity = {
 		add_activity_log_entry = {
@@ -9,16 +109,15 @@ disburse_nars_orgio_host_rewards_effect = {
 			character = scope:host
 			
 			scope:host = {
-				stress_impact = {
-					base = minor_stress_loss
-					lustful = major_stress_loss
-					sadistic = medium_stress_loss
-				}
-				add_character_modifier = {
-					modifier = nars_fertility_blessing 
-					days = 365
-				}
+				nars_orgio_luxuries_rewards_effect = yes
 			}
+			nars_orgio_guest_opinion_effect = yes
 		}
 	}
+}
+
+# Conclusion rewards for every guest.
+# scope = guest
+disburse_nars_orgio_guest_rewards_effect = {
+	nars_orgio_luxuries_rewards_effect = yes
 }

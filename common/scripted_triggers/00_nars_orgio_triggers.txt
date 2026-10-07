@@ -1,0 +1,22 @@
+﻿# Which Luxuries option the current Orgio was planned with.
+# Usable anywhere scope:activity is set.
+
+nars_orgio_luxuries_enhanced_trigger = {
+	exists = scope:activity
+	scope:activity = {
+		has_activity_option = {
+			category = orgio_option_luxuries
+			option = orgio_luxuries_enhanced
+		}
+	}
+}
+
+nars_orgio_luxuries_lavish_trigger = {
+	exists = scope:activity
+	scope:activity = {
+		has_activity_option = {
+			category = orgio_option_luxuries
+			option = orgio_luxuries_lavish
+		}
+	}
+}

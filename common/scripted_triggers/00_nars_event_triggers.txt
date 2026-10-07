@@ -1,4 +1,4 @@
-recruit_nars_court_has_room_trigger = {
+﻿recruit_nars_court_has_room_trigger = {
 	OR = {
 		is_ai = no	
 		any_courtier = {

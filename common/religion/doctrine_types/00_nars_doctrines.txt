@@ -1,0 +1,61 @@
+﻿selian_hostility_doctrine = {
+	doctrine_group_type = hostility_group
+	index = 10
+	divergence = 30
+
+	visible = no
+
+	special_parameters = {
+		hostility_levels = {
+			same_religion = righteous
+			same_family = evil
+			unrelated = evil
+		}
+	}
+}
+
+nars_special_doctrine = {
+	doctrine_group_type = nars_special
+	icon = "special_doctrine_teachings_of_jesus"
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = nars_special_doctrine_name
+			}
+			desc = nars_special_doctrine_no_actor
+		}
+	}
+
+	piety_cost = {
+		value = faith_doctrine_cost_low
+	}
+
+	parameters = {
+		divine_destiny_holy_war_cost_reduction
+	}
+}
+
+nars_special_doctrine_2 = {
+	doctrine_group_type = nars_special_2
+	icon = "special_doctrine_teachings_of_moses"
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = nars_special_doctrine_2_name
+			}
+			desc = nars_special_doctrine_2_no_actor
+		}
+	}
+
+	piety_cost = {
+		value = faith_doctrine_cost_low
+	}
+
+	parameters = {
+		has_clerical_electors
+	}
+
+	character_modifier = { learning_per_piety_level = 1 }
+}

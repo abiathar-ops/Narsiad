@@ -89,8 +89,7 @@ innovation_selian_building_01 = {
         has_cultural_pillar = heritage_nars
     }
 
-    unlock_building = canton_duchy_01
-    unlock_building = foundry_duchy_01
+    unlock_building = akropolis_duchy_01
 
     flag = global_regional
     flag = culture_era_tribal
@@ -105,8 +104,7 @@ innovation_selian_building_02 = {
         has_cultural_pillar = heritage_nars
     }
 
-    unlock_building = canton_duchy_02
-    unlock_building = foundry_duchy_02
+    unlock_building = akropolis_duchy_02
 
     flag = global_regional
     flag = culture_era_early_medieval
@@ -121,8 +119,7 @@ innovation_selian_building_03 = {
         has_cultural_pillar = heritage_nars
     }
 
-    unlock_building = canton_duchy_03
-    unlock_building = foundry_duchy_03
+    unlock_building = akropolis_duchy_03
 
     flag = global_regional
     flag = culture_era_high_medieval

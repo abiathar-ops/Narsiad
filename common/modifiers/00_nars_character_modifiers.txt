@@ -74,3 +74,21 @@ nars_fertility_blessing  = {
 	icon = fertility_positive
 	fertility = 0.95
 }
+
+# Orgio conclusion modifiers, one per Luxuries option
+nars_orgio_revelry_normal_modifier = {
+	icon = love_positive
+	attraction_opinion = 5
+}
+
+nars_orgio_revelry_enhanced_modifier = {
+	icon = love_positive
+	attraction_opinion = 10
+	owned_personal_scheme_success_chance_add = 5
+}
+
+nars_orgio_revelry_lavish_modifier = {
+	icon = love_positive
+	attraction_opinion = 15
+	owned_personal_scheme_success_chance_add = 10
+}

@@ -145,7 +145,7 @@ decision_piously_devote = {
 	}
 
 	ai_potential = {
-		faith = faith:nars_religion
+		faith = faith:nars_faith
 	}
 
 	ai_will_do = {
@@ -440,7 +440,7 @@ decision_sponsor_meithios = {
 		is_landed = yes
 		highest_held_title_tier >= tier_kingdom
 		is_selian = yes
-		faith = faith:nars_religion
+		faith = faith:nars_faith
 		NOT = { has_character_flag = cooldown_meithios_flag }
 	}
 
@@ -506,7 +506,7 @@ decision_sponsor_meithios = {
 	ai_check_interval = 0
 
 	ai_potential = {
-		faith = faith:nars_religion
+		faith = faith:nars_faith
 	}
 
 	ai_will_do = {

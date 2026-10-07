@@ -18,9 +18,9 @@
  nars_naturalis.no_actor: "$game_concept_selian$-Blooded"
  trait_nars_naturalis_desc: "Possessing the $game_concept_selianes$ blood's unnatural boons, [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] acuities will sharpen with each higher education level.\nIn addition, by virtue of [ROOT.GetCharacter.GetHerHis] heritage, [ROOT.GetCharacter.GetSheHe] is ageless."
 
- nars_alnars.name: "Sōtēr"
- nars_alnars.no_actor: "Savior-Deliverer"
- trait_nars_alnars_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] culture, that he rescued from the most dire of circumstances, honors him. Were it not for him, that culture could now have been extinguished"
+ nars_soter.name: "Sōtēr"
+ nars_soter.no_actor: "Savior-Deliverer"
+ trait_nars_soter_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] culture, that he rescued from the most dire of circumstances, honors him. Were it not for him, that culture could now have been extinguished"
 
  lifestyle_pottery.name: "Kerameus"
  lifestyle_pottery.no_actor: "Potter"

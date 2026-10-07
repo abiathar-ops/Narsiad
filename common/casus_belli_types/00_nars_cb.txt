@@ -605,10 +605,10 @@
     attacker_allies_inherit = yes
     defender_allies_inherit = yes
 
-    war_name = "selian_incursion_NAME"
-    my_war_name = "selian_incursion_NAME_MY"
-    war_name_base = "selian_incursion_NAME_BASE"
-    cb_name = "selian_incursion_NAME_BASE"
+    war_name = "SELIAN_INCURSION_WAR_NAME"
+    my_war_name = "SELIAN_INCURSION_WAR_NAME_MY"
+    war_name_base = "SELIAN_INCURSION_WAR_NAME_BASE"
+    cb_name = "SELIAN_INCURSION_CB_NAME"
 
     ticking_war_score_targets_entire_realm = yes
     attacker_wargoal_percentage = 0.8
@@ -1210,10 +1210,10 @@ selian_migration_cb = {
     attacker_allies_inherit = yes
     defender_allies_inherit = yes
 
-    war_name = "selian_migration_NAME"
-    war_name_base = "selian_migration_NAME_BASE"
-    my_war_name = "selian_migration_NAME_MY"
-    cb_name = "selian_migration_NAME_BASE"
+    war_name = "SELIAN_MIGRATION_WAR_NAME"
+    my_war_name = "SELIAN_MIGRATION_WAR_NAME_MY"
+    war_name_base = "SELIAN_MIGRATION_WAR_NAME_BASE"
+    cb_name = "SELIAN_MIGRATION_CB_NAME"
 
     use_de_jure_wargoal_only = yes
     attacker_wargoal_percentage = 0.8
@@ -1509,7 +1509,7 @@ selian_defiance_cb = {
     war_name = "SELIAN_DEFIANCE_WAR_NAME"
     my_war_name = "SELIAN_DEFIANCE_WAR_NAME_MY"
     war_name_base = "SELIAN_DEFIANCE_WAR_NAME_BASE"
-    cb_name = "SELIAN_DEFIANCE_WAR_NAME"
+    cb_name = "SELIAN_DEFIANCE_CB_NAME"
     interface_priority = 60
 
     should_show_war_goal_subview = yes

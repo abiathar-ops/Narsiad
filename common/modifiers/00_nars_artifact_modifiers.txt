@@ -1,4 +1,4 @@
-artifact_narsil_modifier = {
+﻿artifact_narsil_modifier = {
 	monthly_legitimacy_add = 4.2
 	knight_limit = 2
 	prowess = 12

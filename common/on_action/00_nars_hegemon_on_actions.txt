@@ -1,4 +1,4 @@
-ongoing_nars_hegemon_events = {
+﻿ongoing_nars_hegemon_events = {
 	random_events = {
 		50 = 0
 		100 = nars_hegemon.1100 

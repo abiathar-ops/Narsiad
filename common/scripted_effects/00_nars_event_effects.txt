@@ -1,4 +1,4 @@
-intro_standard_effect = {
+﻿intro_standard_effect = {
 	add_character_modifier = {
 		modifier = intro_modifier
 	}

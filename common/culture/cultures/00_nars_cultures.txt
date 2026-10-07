@@ -1,4 +1,4 @@
-selian = {
+﻿selian = {
 	color = { 0.98 0.92 0.84 }
 	
 	ethos = ethos_bureaucratic

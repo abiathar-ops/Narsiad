@@ -1,4 +1,4 @@
-narsil_to_court = {
+﻿narsil_to_court = {
 	in_type = sword
 	in_visuals = sword
 	out_type = pedestal

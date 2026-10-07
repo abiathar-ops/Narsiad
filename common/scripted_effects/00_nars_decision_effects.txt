@@ -1,4 +1,4 @@
-set_politeion_effect = {
+﻿set_politeion_effect = {
 	# Remove any previous personal god relation
 
 	if = {

@@ -1,0 +1,233 @@
+﻿tenet_nars_pantheon = {
+    name = {
+		first_valid = {
+            triggered_desc = {
+                desc = tenet_nars_pantheon_no_actor
+			}
+            desc = tenet_nars_pantheon_name
+        }
+	}
+	
+    desc = tenet_nars_pantheon_desc
+	icon = tenet_adorcism 
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+    }
+
+	is_shown = {
+		religion_tag = selian_religion
+	}
+	can_pick = {
+		religion_tag = selian_religion
+	}
+
+
+	character_modifier = {
+		church_holding_build_speed = -0.25
+		church_holding_holding_build_speed = -0.25
+	}
+
+	parameters = {
+		building_temples_gives_development
+		monastic_schools_allowed_in_every_holding_type
+		inspections_unlocked_and_costs_piety
+		inspection_gives_devotion
+	}
+}
+
+tenet_nars_erudition = {
+    name = {
+        first_valid = {
+            triggered_desc = {
+                desc = tenet_nars_erudition_no_actor
+			}
+            desc = tenet_nars_erudition_name
+        }
+    }
+    desc = tenet_nars_erudition_desc
+	icon = tenet_acts_of_apostles
+	# tenet_household_gods.dds
+	# tenet_celestial_hierarchy.dds
+	# tenet_consolamentum.dds
+	# tenet_filioque.dds
+	# tenet_hyperdulia.dds
+	# tenet_dulia.dds
+	# tenet_hesychasm.dds
+	# tenet_peace_of_god.dds
+	# tenet_sky_burials.dds
+	# tenet_transubstantiation.dds
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+	}
+
+	is_shown = {
+		religion_tag = selian_religion
+	}
+	can_pick = {
+		religion_tag = selian_religion
+	}
+
+	character_modifier = {
+		different_faith_county_opinion_mult = -0.2
+		development_growth_factor = 0.2
+	}
+	parameters = {
+		legalism_reduced_faction_virtues
+		children_less_likely_to_be_burdened
+		reforging_artifacts_costs_piety
+		destroying_artifacts_is_pious
+		parents_get_hooks_on_children
+	}
+}
+
+tenet_nars_sanguine = {
+	name = {
+		first_valid = {
+            triggered_desc = {
+                desc = tenet_nars_sanguine_no_actor
+			}
+            desc = tenet_nars_sanguine_name
+        }
+	}
+	desc = tenet_nars_sanguine_desc
+	icon = tenet_sky_burials
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+    }
+
+	is_shown = {
+		religion_tag = selian_religion
+	}
+	can_pick = {
+		religion_tag = selian_religion
+	}
+	
+	parameters = {
+		conquest_cb_enabled
+		reincarnation_events_active
+		less_likely_to_become_infirm
+	}
+
+	character_modifier = {
+		domain_tax_same_faith_mult = 0.25
+		development_growth_factor = 0.25
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		learning_per_stress_level = 2
+	}
+		
+}
+
+tenet_nars_banking = {
+    name = {
+		first_valid = {
+            triggered_desc = {
+                
+                desc = tenet_nars_banking_no_actor
+			}
+            desc = tenet_nars_banking_name
+        }
+	}
+    desc = tenet_nars_banking_desc
+	icon = tenet_ora_et_labora
+	# tenet_ora_et_labora.dds
+
+	can_pick = {
+		religion_tag = selian_religion
+	}
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+       }
+	parameters = {
+		better_artifacts = yes
+	}
+    character_modifier = {
+		domain_tax_mult = 0.25
+		holding_build_gold_cost = 0.25
+		development_growth_factor = 0.25
+		domain_limit = 2
+	}
+}
+
+	
+tenet_nars_crusade = {
+	name = {
+		first_valid = {
+            triggered_desc = {
+                
+                desc = tenet_nars_crusade_no_actor
+			}
+            desc = tenet_nars_crusade_name
+        }
+	}
+	desc = tenet_nars_crusade_desc
+	icon = tenet_cranial_trophies
+
+	can_pick = {
+		religion_tag = selian_religion
+	}
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+	}
+	parameters = {
+		great_holy_wars_active = yes
+		warmonger = yes
+		conquest_cb_enabled = yes
+		invasion_cb_enabled = yes
+		sanctioned_assassinations = yes
+		killing_bestows_heads = yes
+		decapitation_steals_prestige_as_piety = yes
+		clergy_can_fight = yes
+	}
+
+	character_modifier = {
+		domain_tax_same_faith_mult = 0.15
+		ai_war_chance = 0.3
+		ai_war_cooldown = -0.15
+		accolade_glory_gain_mult = 0.15
+		domain_limit = 1
+		development_growth_factor = 0.15
+	}
+}
+
+tenet_nars_vestals = {
+	name = {
+		first_valid = {
+            triggered_desc = {
+                desc = tenet_nars_vestals_no_actor
+			}
+            desc = tenet_nars_vestals_name
+        }
+	}
+	desc = tenet_nars_vestals_desc
+	icon = tenet_polyamory
+
+	parameters = {
+		safer_childbirths_active = yes
+		healthier_children_active = yes
+		piety_from_childbirth_active = yes
+		divine_marriage_opinion = 10
+		divine_marriage_piety_gain_active = yes
+		parents_get_hooks_on_children = yes
+	}
+	character_modifier = {
+		fertility = 0.25
+		stress_gain_mult = -0.25
+		stress_loss_mult = 0.25
+		development_growth_factor = 0.25
+		domain_limit = 2
+	}
+	virtues = {
+		pure_blooded 
+		incestuous 
+	}
+}

@@ -1,0 +1,18 @@
+﻿nars_faith = {
+	main_rite = nars_faith
+
+	faith_details = {
+		religion = selian_religion
+		color = { 230 228 216 }
+		icon = custom_faith_dove
+	}
+
+	tenets = {
+		tenet_nars_pantheon
+		tenet_nars_sanguine
+		tenet_nars_erudition
+		tenet_nars_crusade
+		tenet_nars_banking
+		tenet_nars_vestals
+	}
+}

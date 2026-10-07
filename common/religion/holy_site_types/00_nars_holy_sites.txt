@@ -1,119 +1,181 @@
-#Sicily
-#Sicily
-cagliari = {
-    county = c_cagliari
-    barony = b_cagliari
+﻿# Holy sites of the Selian faith.
+#
+# 1.20 format: 'character_modifier' (faith-wide while held) was split in two, and 'flag' became 'parameters':
+#   county_holder_character_modifier - the holder of the site's county, if of the faith (regular and eminent sites)
+#   faith_character_modifier         - every character of the faith, only while the site is one of the faith's eminent sites
+# Each site carries both, with the 1.19 values, so promoting or demoting a site in play works.
+# Which sites start eminent is set in common/religion/faith_types/00_nars_faiths.txt.
+#
+# 'baghdad' and 'niani' are no longer redefined here: they are base-game holy sites and the Selian faith uses those definitions.
 
-    character_modifier = {
-        name = holy_site_cagliari_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+# Sardinia and Corsica
+
+cagliari = {
+	county = c_cagliari
+	barony = b_cagliari
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 iglesias = {
-    county = c_cagliari
-    barony = b_iglesias
+	county = c_cagliari
+	barony = b_iglesias
 
-    character_modifier = {
-        name = holy_site_iglesias_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 ajaccio = {
-    county = c_ajaccio
-    barony = b_ajaccio
+	county = c_ajaccio
+	barony = b_ajaccio
 
-    character_modifier = {
-        name = holy_site_ajaccio_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 arborea = {
-    county = c_arborea
+	county = c_arborea
 
-    character_modifier = {
-        name = holy_site_arborea_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
-    flag = kerala_conversion_bonus
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	parameters = {
+		kerala_conversion_bonus
+	}
 }
 
 gallura = {
-    county = c_gallura
+	county = c_gallura
 
-    character_modifier = {
-        name = holy_site_gallura_effect_name
-    	monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
-    flag = kerala_conversion_bonus
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	parameters = {
+		kerala_conversion_bonus
+	}
 }
 
 tortoli = {
-    county = c_tortoli
+	county = c_tortoli
 
-    character_modifier = {
-        name = holy_site_tortoli_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 carbonara = {
-    county = c_tortoli
-    barony = b_carbonara
-    character_modifier = {
-        name = holy_site_carbonara_effect_name
-      	monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_tortoli
+	barony = b_carbonara
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 logudoro = {
-    county = c_logudoro
+	county = c_logudoro
 
-    character_modifier = {
-        name = holy_site_logudoro_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 galtelli = {
-    county = c_gallura
-    barony = b_galtelli
+	county = c_gallura
+	barony = b_galtelli
 
-    character_modifier = {
-        name = holy_site_galtelli_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 alghero = {
-    county = c_logudoro
-    barony = b_alghero
+	county = c_logudoro
+	barony = b_alghero
 
-    character_modifier = {
-        name = holy_site_alghero_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
-##Chinese
+# China
+
 jingzhao = {
 	county = c_jingzhao
 	barony = b_changan
 
-	character_modifier = {
-		name = holy_site_jingzhao_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -123,8 +185,12 @@ guozhou = {
 	county = c_guozhou
 	barony = b_hongnong
 
-	character_modifier = {
-		name = holy_site_guozhou_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -134,8 +200,12 @@ tongzhou = {
 	county = c_tongzhou
 	barony = b_pingyi
 
-	character_modifier = {
-		name = holy_site_tongzhou_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -145,8 +215,12 @@ shanzou = {
 	county = c_shanzhou_2
 	barony = b_shan
 
-	character_modifier = {
-		name = holy_site_shanzhou_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -156,8 +230,12 @@ dongdu = {
 	county = c_henan
 	barony = b_luoyang
 
-	character_modifier = {
-	name = holy_site_dongdu_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -167,8 +245,12 @@ kaifeng = {
 	county = c_bianzhou
 	barony = b_kaifeng
 
-	character_modifier = {
-	name = holy_site_kaifeng_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -178,8 +260,12 @@ xingyang = {
 	county = c_zhengzhou
 	barony = b_xingyang
 
-	character_modifier = {
-		name = holy_site_xingyang_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -189,8 +275,12 @@ guancheng = {
 	county = c_zhengzhou
 	barony = b_guancheng
 
-	character_modifier = {
-		name = holy_site_guancheng_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -200,21 +290,28 @@ zheng = {
 	county = c_huayin
 	barony = b_zheng
 
-	character_modifier = {
-		name = holy_site_zheng_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
 }
 
-
-##Javanese
+# Java
 
 sunda = {
 	county = c_JAV_sunda
 
-	character_modifier = {
-		name = holy_site_sunda_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -223,8 +320,12 @@ sunda = {
 cimanuk = {
 	county = c_JAV_cimanuk
 
-	character_modifier = {
-		name = holy_site_cimanuk_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -233,8 +334,12 @@ cimanuk = {
 galuh = {
 	county = c_JAV_galuh
 
-	character_modifier = {
-		name = holy_site_galuh_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -243,8 +348,12 @@ galuh = {
 mataram = {
 	county = c_JAV_mataram
 
-	character_modifier = {
-		name = holy_site_mataram_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -252,10 +361,14 @@ mataram = {
 
 keling = {
 	county = c_JAV_kalingga
-	barony = b_jav_keling
+	barony = b_JAV_Keling
 
-	character_modifier = {
-		name = holy_site_keling_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -263,10 +376,14 @@ keling = {
 
 dieng = {
 	county = c_JAV_kalingga
-	barony = b_dieng
+	barony = b_JAV_Dieng
 
-	character_modifier = {
-		name = holy_site_dieng_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -275,8 +392,12 @@ dieng = {
 janggala = {
 	county = c_JAV_janggala
 
-	character_modifier = {
-		name = holy_site_janggala_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -285,299 +406,422 @@ janggala = {
 lumajang = {
 	county = c_JAV_lumajang
 
-	character_modifier = {
-		name = holy_site_lumajang_effect_name
+	county_holder_character_modifier = {
+		development_growth_factor = 0.1
+		monthly_county_control_growth_factor = 0.1
+	}
+
+	faith_character_modifier = {
 		development_growth_factor = 0.1
 		monthly_county_control_growth_factor = 0.1
 	}
 }
 
-baghdad = {
-    county = c_baghdad
-    barony = b_baghdad
-    character_modifier = {
-        name = holy_site_baghdad_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
-}
+# Mesopotamia
 
 ukbara = {
-    county = c_baghdad
-    barony = b_ukbara
-    character_modifier = {
-        name = holy_site_ukbara_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_baghdad
+	barony = b_ukbara
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 an_nahrawan = {
-    county = c_baghdad
-    barony = b_an-nahrawan
-    character_modifier = {
-        name = holy_site_an_nahrawan_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_baghdad
+	barony = b_an-nahrawan
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 iskaf = {
-    county = c_iskaf
-    barony = b_iskaf
-    character_modifier = {
-        name = holy_site_iskaf_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_iskaf
+	barony = b_iskaf
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 kaskar = {
-    county = c_wasit
-    barony = b_kaskar
-    character_modifier = {
-        name = holy_site_kaskar_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_wasit
+	barony = b_kaskar
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 wasit = {
-    county = c_wasit
-    barony = b_wasit
-    character_modifier = {
-        name = holy_site_wasit_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_wasit
+	barony = b_wasit
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 ar_rusafa = {
-    county = c_rusafa
-    barony = b_ar-rusafa-iraq
-    character_modifier = {
-        name = holy_site_ar_rusafa_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_rusafa
+	barony = b_ar-rusafa-iraq
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 al_qatr = {
-    county = c_rusafa
-    barony = b_al-qatr
-    character_modifier = {
-        name = holy_site_al_qatr_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_rusafa
+	barony = b_al-qatr
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 nahr_simmara = {
-    county = c_rusafa
-    barony = b_nahr_simmara
-    character_modifier = {
-        name = holy_site_nahr_simmara_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_rusafa
+	barony = b_nahr_simmara
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 bayan = {
-    county = c_abbadan
-    barony = b_bayan
-    character_modifier = {
-        name = holy_site_bayan_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_abbadan
+	barony = b_bayan
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 abbadan = {
-    county = c_abbadan
-    barony = b_abbadan
-    character_modifier = {
-        name = holy_site_abbadan_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_abbadan
+	barony = b_abbadan
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 sarsar = {
-    county = c_baghdad
-    barony = b_sarsar
-    character_modifier = {
-        name = holy_site_sarsar_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_baghdad
+	barony = b_sarsar
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 al_farasa = {
-    county = c_baghdad
-    barony = b_al-farasa
-    character_modifier = {
-        name = holy_site_al_farasa_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_baghdad
+	barony = b_al-farasa
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 humaniya = {
-    county = c_iskaf
-    barony = b_humaniya
-    character_modifier = {
-        name = holy_site_humaniya_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_iskaf
+	barony = b_humaniya
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 an_numaniya = {
-    county = c_wasit
-    barony = b_an-numaniya
-    character_modifier = {
-        name = holy_site_an_numaniya_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_wasit
+	barony = b_an-numaniya
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 as_saliq = {
-    county = c_batiha
-    barony = b_as-saliq
-    character_modifier = {
-        name = holy_site_as_saliq_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_batiha
+	barony = b_as-saliq
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 matara = {
-    county = c_ubulla
-    barony = b_matara-iraq
-    character_modifier = {
-        name = holy_site_matara_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_ubulla
+	barony = b_matara-iraq
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 al_ubulla = {
-    county = c_ubulla
-    barony = b_al-ubulla
-    character_modifier = {
-        name = holy_site_al_ubulla_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_ubulla
+	barony = b_al-ubulla
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 bajlan = {
-    county = c_basra
-    barony = b_bajlan
-    character_modifier = {
-        name = holy_site_bajlan_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_basra
+	barony = b_bajlan
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
-niani = {
-    county = c_niani
-    barony = b_niani
-    character_modifier = {
-        name = holy_site_niani_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
-}
+# Mali
 
 jelibakoro = {
-    county = c_kankan
-    barony = b_jelibakoro
-    character_modifier = {
-        name = holy_site_jelibakoro_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_kankan
+	barony = b_jelibakoro
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 suguiri = {
-    county = c_bure
-    barony = b_suguiri
-    character_modifier = {
-        name = holy_site_suguiri_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_bure
+	barony = b_siguiri
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 kangaba = {
-    county = c_tabon
-    barony = b_kangaba
-    character_modifier = {
-        name = holy_site_kangaba_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_tabon
+	barony = b_kangaba
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 figuira = {
-    county = c_niani
-    barony = b_figuira
-    character_modifier = {
-        name = holy_site_figuira_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_niani
+	barony = b_figuira
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 dakajalan = {
-    county = c_dakajalan
-    barony = b_dakajalan
-    character_modifier = {
-        name = holy_site_dakajalan_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_dakajalan
+	barony = b_dakajalan
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 kirina = {
-    county = c_sibi_mali
-    barony = b_kirina
-    character_modifier = {
-        name = holy_site_kirina_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_sibi_mali
+	barony = b_kirina
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 tamani = {
-    county = c_dodugu
-    barony = b_tamani
-    character_modifier = {
-        name = holy_site_tamani_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_dodugu
+	barony = b_tamani
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 koulikoro = {
-    county = c_sibi_mali
-    barony = b_koulikoro
-    character_modifier = {
-        name = holy_site_koulikoro_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_sibi_mali
+	barony = b_koulikoro
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }
 
 niamina = {
-    county = c_dodugu
-    barony = b_niamina
-    character_modifier = {
-        name = holy_site_niamina_effect_name
-        monthly_county_control_growth_factor = 0.05
-        development_growth_factor = 0.05
-    }
+	county = c_dodugu
+	barony = b_niamina
+
+	county_holder_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
+
+	faith_character_modifier = {
+		monthly_county_control_growth_factor = 0.05
+		development_growth_factor = 0.05
+	}
 }

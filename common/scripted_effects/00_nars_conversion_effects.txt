@@ -1,4 +1,4 @@
-selian_vassal_conversion_effect = {
+﻿selian_vassal_conversion_effect = {
 	every_vassal = {
 		limit = {
 			liege = root
@@ -6,7 +6,7 @@ selian_vassal_conversion_effect = {
 		}
 		random = {
 			chance = 65
-			set_character_faith = faith:nars_religion
+			set_character_faith = faith:nars_faith
 		}
 	}
 	every_vassal = {
@@ -24,11 +24,11 @@ selian_vassal_conversion_effect = {
 selian_minor_county_effect = {
 	every_realm_county = {
 		limit = {
-			NOT = { faith = faith:nars_religion }
+			NOT = { faith = faith:nars_faith }
 		}
 		random = {
 			chance = 25
-			set_county_faith = faith:nars_religion
+			set_county_faith = faith:nars_faith
             change_county_control = minor_county_control_loss
 		}
 	}
@@ -47,11 +47,11 @@ selian_minor_county_effect = {
 selian_moderate_county_effect = {
 	every_realm_county = {
 		limit = {
-			NOT = { faith = faith:nars_religion }
+			NOT = { faith = faith:nars_faith }
 		}
 		random = {
 			chance = 50
-			set_county_faith = faith:nars_religion
+			set_county_faith = faith:nars_faith
 			change_county_control = minor_county_control_loss
 		}
 	}
@@ -70,11 +70,11 @@ selian_moderate_county_effect = {
 selian_major_county_effect = {
 	every_realm_county = {
 		limit = {
-			NOT = { faith = faith:nars_religion }
+			NOT = { faith = faith:nars_faith }
 		}
 		random = {
 			chance = 75
-			set_county_faith = faith:nars_religion
+			set_county_faith = faith:nars_faith
             change_county_control = minor_county_control_loss
 		}
 	}
@@ -107,7 +107,7 @@ selian_settle_county_effect = {
             
             # Only target the county if it actually needs a conversion
             OR = {
-                NOT = { faith = faith:nars_religion }
+                NOT = { faith = faith:nars_faith }
                 NOT = { culture = culture:selian }
             }
         }
@@ -115,9 +115,9 @@ selian_settle_county_effect = {
         # Convert Faith if needed
         if = {
             limit = {
-                NOT = { faith = faith:nars_religion }
+                NOT = { faith = faith:nars_faith }
             }
-            set_county_faith = faith:nars_religion
+            set_county_faith = faith:nars_faith
         }
         
         # Convert Culture if needed
