@@ -79,7 +79,7 @@
         scope:owner = {
             if = {
                 limit = { exists = scope:scheme_successful }
-                trigger_event = { on_action = produce_amphora_scheme_success }
+                trigger_event = nars_amphora.0001
                 if = {
                     limit = { exists = scope:amphora_story }
                     scope:amphora_story = {

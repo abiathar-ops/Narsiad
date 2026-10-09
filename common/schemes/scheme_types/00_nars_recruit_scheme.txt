@@ -101,7 +101,7 @@
 				trigger_event = { on_action = recruit_nars_scheme_success }
 			}
 			else = {
-				trigger_event = { on_action = recruit_nars_scheme_failure }
+				trigger_event = nars_courtiers.0003
 			}
 		}
 		reset_scheme_progress = yes

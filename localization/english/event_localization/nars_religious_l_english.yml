@@ -1,5 +1,5 @@
 ﻿l_english:
- nars_religious.10.t: "Epaínei Aretḗn"
+ nars_religious.10.t: "Epaínei Aretén"
  nars_religious.10.desc:0 "The sacred scrolls demand absolute dedication to the [politeion|E]. To comprehend the divine will, I must balance [Glossary( 'Eusebeia', 'EUSEBEIA_GLOSS' )] with [Glossary( 'Sophrosyne', 'SOPHROSYNE_GLOSS' )]. How fiercely should I pursue this wisdom? How much should I sacrifice my worldly comfort to proceed with measuredness and austerity?\n\n#flavor "To engage in commune with the gods continually, by prayers and offerings and devotions of every kind, is a thing most noble and helpful towards a happy life." - $alnars_anduril$#!"
  nars_religious.10.a: "I will not rest in the pursuit of faith!"
  nars_religious.10.b: "I will treat my faith with dignity."
@@ -42,7 +42,7 @@
  nars_religious.3003.t:0 "[deity_zeus_gc|E]' Thunderbolt"
  nars_religious.3003.tt:0 "The gods above have smitten [target.GetFirstNameNoTooltip]"
 
- nars_religious.1001.t:0 "Sophían Zḗlou"
+ nars_religious.1001.t:0 "Sophían Zélou"
  nars_religious.1001.desc:0 "As [teacher.GetNamePossessiveNoTooltip] voice echoes through the hall, a revelation takes root within me: sentences are statues, forged in oration and poetry, and words are the chisels that carve meaning and, further still, emotions and feelings. All listeners blindly reach to trace the unseen contours of another's thoughts with their respective hands—they perhaps derive distinct meanings from the words and proses themselves, from blind subjectiveness. \n\nTo comprehend meaning, emotions, and essence of what we understand yet depends solely on the craft of the speaker. As much as the listener's graspings of its shapeless contents.\n\n#flavor "I am no sculptor, to fashion statues that stand motionless upon the self-same pedestal. No—sweet song, embark on every cargo ship and merchant boat, and travel forth from Aegina..." - $alnars_anduril$ #!"
  nars_religious.1001.a:0 "How ironically... poetic."
  nars_religious.1001.a.flavor:0 "I am a poet, and I know it."

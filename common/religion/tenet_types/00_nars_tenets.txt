@@ -6,13 +6,13 @@ tenet_nars_endgame = {
 	name = {
 		first_valid = {
             triggered_desc = {
-                desc = tenet_nars_university_no_actor
+                desc = tenet_nars_endgame_no_actor
 			}
-            desc = tenet_nars_university_name
+            desc = tenet_nars_endgame_name
         }
 	}
-	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
+	desc = tenet_nars_endgame_desc
+	icon = tenet_nars_antiquity #tenet_household_gods
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
@@ -66,11 +66,18 @@ tenet_nars_pantheon = {
 	}
 
 	parameters = {
+		temporal_condemnation_enabled
+		temporal_condemnation_criminal
 		enable_piously_devote
 		building_temples_gives_development
 		monastic_schools_allowed_in_every_holding_type
 		inspections_unlocked_and_costs_piety
 		inspection_gives_devotion
+	}
+
+	personal_tenet_parameters = {
+		tenet_benevolent_governance_inspection_fulfillment
+		tenet_benevolent_governance_clemency_fulfillment
 	}
 }
 
@@ -113,11 +120,24 @@ tenet_nars_erudition = {
 		development_growth_factor = 0.2
 	}
 	parameters = {
+		tenet_original_sin_county_conversion_bonus
+		tenet_pentarchy_holy_site_prosperity
 		legalism_reduced_faction_virtues
-		children_less_likely_to_be_burdened
-		reforging_artifacts_costs_piety
-		destroying_artifacts_is_pious
-		parents_get_hooks_on_children
+		tenet_legalism_sinful_revocation
+		literalism_holy_war_cb_active
+	}
+
+	personal_tenet_parameters = {
+		tenet_pentarchy_development_growth_in_holy_sites
+		tenet_pentarchy_pilgrim_circuit
+		tenet_pentarchy_pilgrim_circuit_companions
+	}
+
+	traits = {
+		# Mutual recognition between patriarchates
+		virtues = {
+			loyal = { weight = 15 scale = 1 }
+		}
 	}
 }
 
@@ -146,17 +166,27 @@ tenet_nars_sanguine = {
 	}
 	
 	parameters = {
-		conquest_cb_enabled
+		allow_adopt_any_holy_site
 		reincarnation_events_active
-		less_likely_to_become_infirm
+		meditation_mechanics_active
+		#less_likely_to_become_infirm
 	}
+
+	divergence_multiplier = 1.25
 
 	character_modifier = {
 		development_growth_factor = 0.25
 		monthly_learning_lifestyle_xp_gain_mult = 0.2
 		learning_per_stress_level = 2
 	}
-		
+	
+	personal_tenet_parameters = {
+		meditation_mechanics_active
+	}
+
+	personal_tenet_modifier = {
+		character_spiritual_fulfillment_gain_mult = 0.15
+	}
 }
 
 tenet_nars_university = {
@@ -169,7 +199,7 @@ tenet_nars_university = {
         }
 	}
 	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
+	icon = tenet_khachkar
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
@@ -184,9 +214,26 @@ tenet_nars_university = {
 	}
 	
 	parameters = {
+		tenet_esotericism_mystic_education
+		tenet_esotericism_eccentric_education
+		tenet_esotericism_eccentric_bonuses
+		tenet_scholasticism_university_bonus
+		tenet_scholasticism_cheaper_adult_education
+		tenet_scholasticism_court_scholar
 	}
 
 	character_modifier = {
+		cultural_head_fascination_mult = 0.1
+		learning_scheme_phase_duration = -15
+		learning_scheme_resistance = 10
+	}
+	
+	personal_tenet_modifier = {
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}
+
+	personal_tenet_parameters = {
+		tenet_scholasticism_university_chance
 	}
 }
 
@@ -217,13 +264,33 @@ tenet_nars_banking = {
     }
 	
 	parameters = {
-		better_artifacts = yes
+		tenet_adaptive_conversion_resistance
+		better_artifacts
+		unlock_jizya_contract
+		can_build_megaliths
 	}
+
     character_modifier = {
 		domain_tax_same_faith_mult = 0.25
 		domain_tax_mult = 0.25
-		holding_build_gold_cost = 0.25
-		domain_limit = 2
+	}
+
+	traits = {
+		virtues = {
+			architect = { weight = 15 scale = 1 }
+			avaricious = { weight = 10 scale = 1 }
+		}
+		sins = {
+			lazy = { weight = 10 scale = 1 }
+		}
+	}
+
+	personal_tenet_parameters = {
+		tenet_megaliths_building_poi_double_rewards
+	}
+	personal_tenet_modifier = {
+		build_gold_cost = -0.25
+		build_speed = 0.20
 	}
 }
 
@@ -253,9 +320,25 @@ tenet_nars_artisans = {
     }
 	
 	parameters = {
-		enable_produce_amphora = yes
+		sanctify_artifacts_luxurious
+		destroying_artifacts_is_pious
+		enable_produce_amphora
+		better_artifacts
+	}
+
+	traits = {
+		virtues = {
+			lifestyle_potter = { weight = 30 scale = 2 }
+		}
 	}
     character_modifier = {
+		monthly_income = 0.15
+		monthly_income_mult = 0.2
+	}
+
+	personal_tenet_modifier = {
+		stewardship_per_piety_level = 1
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.1
 	}
 }
 
@@ -263,13 +346,13 @@ tenet_nars_statecraft = {
 	name = {
 		first_valid = {
             triggered_desc = {
-                desc = tenet_nars_university_no_actor
+                desc = tenet_nars_statecraft_no_actor
 			}
-            desc = tenet_nars_university_name
+            desc = tenet_nars_statecraft_name
         }
 	}
-	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
+	desc = tenet_nars_statecraft_desc
+	icon = tenet_divine_liturgy
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
@@ -284,9 +367,17 @@ tenet_nars_statecraft = {
 	}
 	
 	parameters = {
+		tenet_legalism_title_integration
+		same_culture_conversion_bonus_active
+		same_faith_promote_culture_bonus_active
+		tenet_legalism_lawful_authority
 	}
 
 	character_modifier = {
+		name = "tenet_communal_identity_opinion"
+		same_culture_opinion = 10
+		same_faith_different_rite_opinion = -20
+		same_faith_different_rite_county_opinion_add = -10
 	}
 }
 
@@ -294,13 +385,13 @@ tenet_nars_tolerance = {
 	name = {
 		first_valid = {
             triggered_desc = {
-                desc = tenet_nars_university_no_actor
+                desc = tenet_nars_tolerance_no_actor
 			}
-            desc = tenet_nars_university_name
+            desc = tenet_nars_tolerance_name
         }
 	}
-	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
+	desc = tenet_nars_tolerance_desc
+	icon = tenet_philanthropia
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
@@ -315,13 +406,101 @@ tenet_nars_tolerance = {
 	}
 	
 	parameters = {
+		reduced_vassal_religion_discontent
+		pacifist
 	}
 
 	character_modifier = {
+		ai_war_chance = -0.25
+		ai_war_cooldown = 5
+		different_faith_county_opinion_mult = -0.25
+		different_faith_liege_opinion = 15
+		different_faith_suzerain_opinion = 15
+		opinion_of_different_faith_liege = 15
+		opinion_of_different_faith_suzerain = 15
+	}
+
+	special_parameters = {
+		parameter_opinion_override = {
+			pacifist = 10
+		}
+
+		piety_from_long_peace = 2.5
+	}
+
+	divergence_multiplier = 1.25
+
+	traits = {
+		# Renunciation of violence is the tenet's defining act.
+		virtues = {
+			calm = { weight = 30 scale = 2 }
+		}
+		sins = {
+			wrathful = { weight = 30 scale = 2 }
+		}
+	}
+
+	personal_tenet_modifier = {
+		domain_limit = 2
 	}
 }
 
 # Enuo
+tenet_nars_militarism = {
+	name = {
+		first_valid = {
+            triggered_desc = {
+                desc = tenet_nars_militarism_no_actor
+			}
+            desc = tenet_nars_militarism_name
+        }
+	}
+	desc = tenet_nars_militarism_desc
+	icon = tenet_hesychasm
+
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		multiply = 10
+    }
+
+	is_shown = {
+		religion_tag = selian_religion
+	}
+	can_pick = {
+		religion_tag = selian_religion
+	}
+	
+	parameters = {
+		tenet_human_sacrifice_execution_piety_bonus
+		tenet_miles_christi_combat_fulfillment
+		tenet_miles_christi_holy_weapon_blessing
+		great_holy_wars_active
+		sanctify_artifacts_weapons
+		leasing_to_military_order_give_spiritual_fulfillment_personal
+		tenet_pursuit_of_power_become_conqueror
+	}
+
+	character_modifier = {
+		prowess_per_piety_level = 1
+		knight_limit = 1
+		accolade_glory_gain_mult = 0.2
+		monthly_piety_gain_per_knight_mult = 0.01
+		holy_order_hire_cost_mult = -0.15
+	}
+
+	personal_tenet_modifier = {
+		knight_limit = 2
+		monthly_piety_gain_per_knight_mult = 0.01
+		holy_order_hire_cost_mult = -0.1
+	}
+
+	divergence_multiplier = 5
+
+	personal_tenet_parameters = {
+		tenet_pursuit_of_power_war_victory_fulfillment
+	}
+}
+
 tenet_nars_crusade = {
 	name = {
 		first_valid = {
@@ -333,7 +512,7 @@ tenet_nars_crusade = {
         }
 	}
 	desc = tenet_nars_crusade_desc
-	icon = tenet_cranial_trophies
+	icon = tenet_armed_pilgrimages
 
 	is_shown = {
 		religion_tag = selian_religion
@@ -347,54 +526,28 @@ tenet_nars_crusade = {
 		multiply = 10
 	}
 	parameters = {
-		great_holy_wars_active = yes
-		warmonger = yes
-		conquest_cb_enabled = yes
-		invasion_cb_enabled = yes
-		sanctioned_assassinations = yes
-		killing_bestows_heads = yes
-		decapitation_steals_prestige_as_piety = yes
-		clergy_can_fight = yes
+		warmonger
+		conquest_cb_enabled
+		invasion_cb_enabled
+		sanctioned_assassinations
+		killing_bestows_heads
+		clergy_can_fight
+		sanctify_artifacts_weapons
+	}
+
+	personal_tenet_parameters = {
+		invasion_cb_enabled
+	}
+
+	personal_tenet_modifier = {
+		martial_per_piety_level = 1
 	}
 
 	character_modifier = {
-		domain_tax_same_faith_mult = 0.15
+		prowess_per_piety_level = 2
 		ai_war_chance = 0.3
 		ai_war_cooldown = -0.15
 		accolade_glory_gain_mult = 0.15
-		domain_limit = 1
-		development_growth_factor = 0.15
-	}
-}
-
-tenet_nars_militarism = {
-	name = {
-		first_valid = {
-            triggered_desc = {
-                desc = tenet_nars_university_no_actor
-			}
-            desc = tenet_nars_university_name
-        }
-	}
-	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
-
-	piety_cost = {
-		value = faith_tenet_cost_massive
-		multiply = 10
-    }
-
-	is_shown = {
-		religion_tag = selian_religion
-	}
-	can_pick = {
-		religion_tag = selian_religion
-	}
-	
-	parameters = {
-	}
-
-	character_modifier = {
 	}
 }
 
@@ -418,18 +571,24 @@ tenet_nars_vestals = {
 	}
 
 	parameters = {
-		safer_childbirths_active = yes
-		healthier_children_active = yes
-		piety_from_childbirth_active = yes
-		divine_marriage_opinion = 10
-		divine_marriage_piety_gain_active = yes
+		children_less_likely_to_be_burdened
+		parents_get_hooks_on_children
+		safer_childbirths_active
+		healthier_children_active
+		sanctify_artifacts_ancestral
 	}
+
+	divergence_multiplier = 3
+
+	personal_tenet_parameters = {
+		tenet_filial_piety_child_gold_request
+		tenet_filial_piety_education_completion_reward
+	}
+
 	character_modifier = {
-		fertility = 0.25
+		fertility = 0.55
 		stress_gain_mult = -0.25
 		stress_loss_mult = 0.25
-		development_growth_factor = 0.25
-		domain_limit = 2
 	}
 }
 
@@ -437,13 +596,13 @@ tenet_nars_deviance = {
 	name = {
 		first_valid = {
             triggered_desc = {
-                desc = tenet_nars_university_no_actor
+                desc = tenet_nars_deviance_no_actor
 			}
-            desc = tenet_nars_university_name
+            desc = tenet_nars_deviance_name
         }
 	}
-	desc = tenet_nars_university_desc
-	icon = tenet_sky_burials
+	desc = tenet_nars_deviance_desc
+	icon = tenet_carnal_exaltation
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
@@ -458,9 +617,24 @@ tenet_nars_deviance = {
 	}
 	
 	parameters = {
+		piety_from_seduction_active
+		tenet_carnal_exaltation_deviancy_virtuous
+		tenet_carnal_exaltation_sensual_bonus
+		tenet_carnal_exaltation_sensual_seduction
+		no_unfaithfulness_penalty_active
+		tenet_polyamory_romance_seduction_scheme_bonus
 	}
 
+	divergence_multiplier = 5
+
 	character_modifier = {
+		max_seduce_schemes_add = 2
+		attraction_opinion = 6
+	}
+
+	personal_tenet_parameters = {
+		tenet_carnal_exaltation_seduction_fulfillment
+		tenet_carnal_exaltation_commission_artifacts_debauched
 	}
 }
 

@@ -19,9 +19,37 @@
  tenet_nars_banking_no_actor: "Thēsorós"  
  tenet_nars_banking_desc:0 "Wealth is a divine blessing, managed prudently to ensure prosperity for our people."
 
- tenet_nars_vestals_name:0 "Sacred Courtesan"
- tenet_nars_vestals_no_actor: "Aporrētoi"  
- tenet_nars_vestals_desc:0 "Shrouded in taboo, these holy courtesans prove the gods speak clearly through passion."
+ tenet_nars_vestals_name:0 "Unbound Families"
+ tenet_nars_vestals_no_actor: "Akolasía"  
+ tenet_nars_vestals_desc:0 "Through $game_concept_enuo$'s blessing, the soul slips its restraints and fertility unleashes."
+
+ tenet_nars_endgame_name:0 "Now Returned"
+ tenet_nars_endgame_no_actor: "Nóstos"
+ tenet_nars_endgame_desc:0 "The long exile ends, and the lost return to the seat of their ancient dominion, as the cycle always foretold."
+
+ tenet_nars_university_name:0 "Thought Schools"
+ tenet_nars_university_no_actor: "Scholé"
+ tenet_nars_university_desc:0 "Leisure freed from toil is a sacred gift, and in the houses of study it ripens into wisdom for the whole realm."
+
+ tenet_nars_artisans_name:0 "Master Craftsmans"
+ tenet_nars_artisans_no_actor: "Tekhnē"
+ tenet_nars_artisans_desc:0 "The hands that shape clay, bronze, and stone do holy work, and a well-made vessel is its own prayer."
+
+ tenet_nars_statecraft_name:0 "Political Ethos"
+ tenet_nars_statecraft_no_actor: "Politiké"
+ tenet_nars_statecraft_desc:0 "To order a realm justly is the highest of arts, and rulers who master law and administration serve the divine design."
+
+ tenet_nars_tolerance_name:0 "Egalitarianism"
+ tenet_nars_tolerance_no_actor: "Eúnoia"
+ tenet_nars_tolerance_desc:0 "Goodwill toward the stranger and his foreign creed binds many peoples beneath one roof in peace and profit."
+
+ tenet_nars_militarism_name:0 "Discipline"
+ tenet_nars_militarism_no_actor: "Agōgé"
+ tenet_nars_militarism_desc:0 "Discipline forged in youth through drill and hardship makes soldiers worthy of the old glory."
+
+ tenet_nars_deviance_name:0 "Sacred Courtesan"
+ tenet_nars_deviance_no_actor: "Aporrētoi"
+ tenet_nars_deviance_desc:0 "Shrouded in taboo, these holy courtesans prove the gods speak clearly through passion."
 
  nars_special_name: "Hegemons of Old"
  nars_special_2_name: "Scholars of Yore"

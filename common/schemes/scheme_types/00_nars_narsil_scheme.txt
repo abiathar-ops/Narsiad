@@ -79,7 +79,7 @@
         scope:owner = {
             if = {
                 limit = { exists = scope:scheme_successful }
-                trigger_event = { on_action = mend_narsil_scheme_success }
+                trigger_event = nars_narsil.0001
                 if = {
                     limit = { exists = scope:narsil_story }
                     scope:narsil_story = {
@@ -107,7 +107,7 @@
                 }
             }
             else = {
-                trigger_event = { on_action = mend_narsil_scheme_failure }
+                trigger_event = nars_narsil.0002
             }
         }
     }

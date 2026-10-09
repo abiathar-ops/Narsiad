@@ -19,7 +19,7 @@ nars_2_rite = {
 	name = nars_2_rite
 	desc = nars_2_rite_desc
 	faith = nars_1_faith
-	icon = yumaism_05
+	icon = islam_tuareg_03 #yumaism_05 #yogacara_01 #zunist_05 #christianity_waldensian_04
 	convert = no
 	color = { 230 228 216 }
 
@@ -27,6 +27,19 @@ nars_2_rite = {
 		tenet_nars_pantheon
 		tenet_nars_sanguine
 		tenet_nars_erudition
+		tenet_nars_university
+		
+		tenet_nars_endgame
+
+		tenet_nars_banking
+		tenet_nars_artisans
+		tenet_nars_statecraft
+		tenet_nars_tolerance
+
+		tenet_nars_crusade
+		tenet_nars_militarism
+		tenet_nars_vestals
+		tenet_nars_deviance
 	}
 
 	cultures = { selian }
@@ -36,13 +49,13 @@ nars_3_rite = {
 	name = nars_3_rite
 	desc = nars_3_rite_desc
 	faith = nars_2_faith
-	icon = jingxue_05
+	icon = islam_zulfiqar_03 #islam_zulfiqar_03 #jingxue_05
 	color = { 230 228 216 }
 
 	tenets = {
-		tenet_nars_pantheon
-		tenet_nars_sanguine
-		tenet_nars_erudition
+		tenet_nars_banking
+		tenet_nars_statecraft
+		tenet_nars_artisans
 	}
 
 	cultures = { selian }
@@ -52,14 +65,14 @@ nars_4_rite = {
 	name = nars_4_rite
 	desc = nars_4_rite_desc
 	faith = nars_2_faith
-	icon = custom_faith_black_sheep_05 #jingxue_05 #vinaya_05 #
+	icon = islam_rub_el_hizb_knot_03  #ngaiism_05
 	
 	color = { 230 228 216 }
 
 	tenets = {
-		tenet_nars_pantheon
-		tenet_nars_sanguine
-		tenet_nars_erudition
+		tenet_nars_crusade
+		tenet_nars_militarism
+		tenet_nars_vestals
 	}
 
 	cultures = { selian }
