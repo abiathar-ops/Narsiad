@@ -35,3 +35,6 @@
  nars_special_doctrine_2_no_actor: "Scholar of Yore"
  nars_special_doctrine_2_descriptive_name: "$nars_special_doctrine_2_name$"
  nars_special_doctrine_2_desc:  "We are scholars of a bygone era, witness to the long history—ageless scions of yore."
+
+ doctrine_parameter_enable_produce_amphora: "Unlocks the #v $decision_produce_amphora$#! [decision|E]"
+ doctrine_parameter_enable_piously_devote: "Unlocks the #v $decision_piously_devote$#! [decision|E]"

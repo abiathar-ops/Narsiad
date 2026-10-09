@@ -267,7 +267,7 @@ nars_hegemon.0200 = {
 				location = root.capital_province
 				template = selian_template.1002
 				culture = culture:selian
-				faith = faith:nars_faith
+				faith = root.faith
 				add_trait = nars_naturalis
 				save_scope_as = knight
 				prowess = { 15 45 }
@@ -659,7 +659,7 @@ nars_hegemon.1300 = {
 			template = selian_template.1002
             gender = male
             culture = culture:selian
-            faith = faith:nars_faith
+            faith = root.faith
             save_scope_as = commander_1
 			prowess = { 15 30 }
         }
@@ -676,7 +676,7 @@ nars_hegemon.1300 = {
 			template = selian_template.1002
             gender = male
             culture = culture:selian
-            faith = faith:nars_faith
+            faith = root.faith
             save_scope_as = commander_2
 			prowess = { 15 30 }
         }
@@ -693,7 +693,7 @@ nars_hegemon.1300 = {
 			template = selian_template.1002
             gender = male
             culture = culture:selian
-            faith = faith:nars_faith
+            faith = root.faith
             save_scope_as = commander_3
 			prowess = { 15 30 }
         }
@@ -710,7 +710,7 @@ nars_hegemon.1300 = {
 			template = selian_template.1002
             gender = male
             culture = culture:selian
-            faith = faith:nars_faith
+            faith = root.faith
             save_scope_as = commander_4
 			prowess = { 15 30 }
         }
@@ -753,7 +753,7 @@ nars_hegemon.1300 = {
                 years = 3 # 10 years
             }
 			set_county_culture = culture:selian
-			set_county_faith = faith:nars_faith
+			set_county_faith = root.faith
         }
 		hidden_effect = {
 			every_in_list = {
@@ -898,7 +898,7 @@ nars_hegemon.1400 = {
                 days = 3650 # 10 years
             }
 			set_county_culture = culture:selian
-			set_county_faith = faith:nars_faith
+			set_county_faith = root.faith
         }
         
         # Mysterious deaths 

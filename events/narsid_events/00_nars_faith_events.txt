@@ -113,7 +113,10 @@ nars_faith.0001 = {
         random_sub_realm_title = {
             limit = {
                 tier = tier_county
-                NOT = { faith = root.faith } 
+                NOR = {
+                    faith = root.faith
+                    follows_selian_faith = yes
+                }
                 holder = {
                     valid_for_selian_conversion_trigger = yes
                 }
@@ -136,7 +139,7 @@ nars_faith.0001 = {
 			random_pool_character = {
 				province = root.location
 				limit = {
-					faith = faith:nars_faith
+					faith = root.faith
 					learning >= decent_skill_rating
 				}
 				save_scope_as = evangelizer
@@ -149,7 +152,7 @@ nars_faith.0001 = {
 				create_character = {
 					location = root.location
 					culture = culture:selian
-					faith = faith:nars_faith
+					faith = root.faith
 					template = selian_template.1011
 					gender_female_chance = 100
 					save_scope_as = evangelizer

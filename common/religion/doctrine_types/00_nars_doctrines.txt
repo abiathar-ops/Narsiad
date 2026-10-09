@@ -7,7 +7,7 @@
 
 	special_parameters = {
 		hostility_levels = {
-			same_religion = righteous
+			same_religion = evil
 			same_family = evil
 			unrelated = evil
 		}
@@ -16,7 +16,7 @@
 
 nars_special_doctrine = {
 	doctrine_group_type = nars_special
-	icon = "special_doctrine_teachings_of_jesus"
+	icon = "doctrine_nars_hegemon"
 
 	name = {
 		first_valid = {
@@ -33,6 +33,11 @@ nars_special_doctrine = {
 
 	parameters = {
 		divine_destiny_holy_war_cost_reduction
+	}
+
+	faith_character_modifier = {
+		prowess_per_piety_level = 1
+		different_faith_opinion = -5
 	}
 }
 
@@ -55,6 +60,12 @@ nars_special_doctrine_2 = {
 
 	parameters = {
 		has_clerical_electors
+	}
+
+	county_modifier_scaled = {
+		scale = holy_site_total_artifact_rarity
+		development_growth_factor = 0.01
+		build_speed = -0.01
 	}
 
 	character_modifier = { learning_per_piety_level = 1 }

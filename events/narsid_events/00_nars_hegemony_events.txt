@@ -276,8 +276,8 @@ nars_hegemony.0105 = {
         local_assimilate_selian_traditions_effect = {
 			OLD_culture = culture:selian
 			NEW_culture = culture:selian
-			OLD_faith = faith:nars_faith
-			NEW_faith = faith:nars_faith
+			OLD_faith = root.faith
+			NEW_faith = root.faith
 			CONVERTER = root
 		}
 	}

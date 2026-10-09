@@ -66,7 +66,7 @@ nars_intro.0001 = {
             age = 72
             location = root.location
             sexuality = heterosexual
-            faith = faith:nars_faith
+            faith = faith:nars_1_faith
             culture = culture:selian
             female = no
             
@@ -94,7 +94,6 @@ nars_intro.0001 = {
                 death = { death_reason = death_murder }
             }
         }
-
         # Name and buff the dynamically generated dynasty
         scope:alnars.dynasty = {
             set_dynasty_name = "Narēsíos"
@@ -133,7 +132,7 @@ nars_intro.0001 = {
             age = { 35 36 }
             location = root.location
             sexuality = heterosexual
-            faith = faith:nars_faith
+            faith = faith:nars_1_faith
             culture = culture:selian
             female = no
             random_traits = no
@@ -170,7 +169,7 @@ nars_intro.0001 = {
             gender = female
             age = { 33 34 }
             location = root.location
-            faith = faith:nars_faith
+            faith = faith:nars_2_faith
             culture = culture:selian
             sexuality = bisexual
             female = yes
@@ -217,7 +216,7 @@ nars_intro.0001 = {
             intrigue = 40
             learning = 15
             prowess = 30
-            faith = faith:nars_faith
+            faith = faith:nars_1_faith
             culture = culture:selian
             trait = deceitful
             trait = arbitrary

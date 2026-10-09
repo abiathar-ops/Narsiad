@@ -58,7 +58,7 @@
 		create_character = {
 			location = root.capital_province
 			culture = culture:selian
-			faith = faith:nars_faith
+			faith = root.faith
 			random_traits_list = {
 				count = 2
 				wrathful = {}

@@ -1,6 +1,59 @@
-﻿nars_rite = {
-	faith = nars_faith
+﻿nars_1_rite = {
+	name = nars_1_rite
+	desc = nars_1_rite_desc
+	faith = nars_1_faith
+	icon = vinaya_05
 
+	color = { 230 228 216 }
+
+	tenets = {
+		tenet_nars_pantheon
+		tenet_nars_sanguine
+		tenet_nars_erudition
+	}
+
+	cultures = { selian }
+}
+
+nars_2_rite = {
+	name = nars_2_rite
+	desc = nars_2_rite_desc
+	faith = nars_1_faith
+	icon = yumaism_05
+	convert = no
+	color = { 230 228 216 }
+
+	tenets = {
+		tenet_nars_pantheon
+		tenet_nars_sanguine
+		tenet_nars_erudition
+	}
+
+	cultures = { selian }
+}
+
+nars_3_rite = {
+	name = nars_3_rite
+	desc = nars_3_rite_desc
+	faith = nars_2_faith
+	icon = jingxue_05
+	color = { 230 228 216 }
+
+	tenets = {
+		tenet_nars_pantheon
+		tenet_nars_sanguine
+		tenet_nars_erudition
+	}
+
+	cultures = { selian }
+}
+
+nars_4_rite = {
+	name = nars_4_rite
+	desc = nars_4_rite_desc
+	faith = nars_2_faith
+	icon = custom_faith_black_sheep_05 #jingxue_05 #vinaya_05 #
+	
 	color = { 230 228 216 }
 
 	tenets = {

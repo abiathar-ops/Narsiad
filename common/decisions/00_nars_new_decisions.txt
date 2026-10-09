@@ -81,6 +81,7 @@ decision_piously_devote = {
 		is_landed = yes
 		is_alive = yes
 		is_archaic = yes
+		faith = { has_doctrine_parameter = enable_piously_devote }
 	}
 
 	is_valid = {	
@@ -88,6 +89,7 @@ decision_piously_devote = {
 
 	is_valid_showing_failures_only = {
 		not = { exists = involved_activity }
+		faith = { has_doctrine_parameter = enable_piously_devote }
 		custom_tooltip = {
 			text = piously_devote_decision_cooldown_tt
 			NOT = {
@@ -145,7 +147,7 @@ decision_piously_devote = {
 	}
 
 	ai_potential = {
-		faith = faith:nars_faith
+		follows_selian_faith = yes
 	}
 
 	ai_will_do = {
@@ -260,6 +262,7 @@ decision_produce_amphora = {
 				target = flag:flag_produce_amphora_decision
 			}
 		}
+		faith = { has_doctrine_parameter = enable_produce_amphora }
 	}
 
 	is_valid = {
@@ -272,6 +275,7 @@ decision_produce_amphora = {
 				has_character_flag = produce_amphora_decision_cooldown_flag
 			}
 		}
+		faith = { has_doctrine_parameter = enable_produce_amphora }
 		top_liege = this
 		is_available_adult = yes
 		is_imprisoned = no
@@ -440,7 +444,7 @@ decision_sponsor_meithios = {
 		is_landed = yes
 		highest_held_title_tier >= tier_kingdom
 		is_selian = yes
-		faith = faith:nars_faith
+		follows_selian_faith = yes
 		NOT = { has_character_flag = cooldown_meithios_flag }
 	}
 
@@ -506,7 +510,7 @@ decision_sponsor_meithios = {
 	ai_check_interval = 0
 
 	ai_potential = {
-		faith = faith:nars_faith
+		follows_selian_faith = yes
 	}
 
 	ai_will_do = {
