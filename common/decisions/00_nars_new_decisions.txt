@@ -81,7 +81,7 @@ decision_piously_devote = {
 		is_landed = yes
 		is_alive = yes
 		is_archaic = yes
-		faith = { has_doctrine_parameter = enable_piously_devote }
+		rite = { rite_has_parameter = enable_piously_devote }
 	}
 
 	is_valid = {	
@@ -89,7 +89,7 @@ decision_piously_devote = {
 
 	is_valid_showing_failures_only = {
 		not = { exists = involved_activity }
-		faith = { has_doctrine_parameter = enable_piously_devote }
+		rite = { rite_has_parameter = enable_piously_devote }
 		custom_tooltip = {
 			text = piously_devote_decision_cooldown_tt
 			NOT = {
@@ -262,7 +262,7 @@ decision_produce_amphora = {
 				target = flag:flag_produce_amphora_decision
 			}
 		}
-		faith = { has_doctrine_parameter = enable_produce_amphora }
+		rite = { rite_has_parameter = enable_produce_amphora }
 	}
 
 	is_valid = {
@@ -275,7 +275,7 @@ decision_produce_amphora = {
 				has_character_flag = produce_amphora_decision_cooldown_flag
 			}
 		}
-		faith = { has_doctrine_parameter = enable_produce_amphora }
+		rite = { rite_has_parameter = enable_produce_amphora }
 		top_liege = this
 		is_available_adult = yes
 		is_imprisoned = no

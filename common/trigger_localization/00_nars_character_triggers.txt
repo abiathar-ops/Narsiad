@@ -3,3 +3,7 @@
 	first = I_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER
 	third = THEY_HOLD_EIGHT_OR_MORE_KINGDOM_TITLES_TRIGGER
 }
+
+narsokratia_must_be_faithfully_restored_trigger = {
+	global_not = narsokratia_must_be_faithfully_restored_global_not
+}

@@ -1,21 +1,14 @@
-﻿# Selian faith definition
-# The Selian religion now has more than one faith (nars_1_faith, nars_2_faith) and more than one rite.
-# Use these instead of comparing against a single faith key (faith = faith:nars_1_faith).
-
-# Character / county / province scope: the scope's faith belongs to the Selian religion.
-follows_selian_faith = {
+﻿follows_selian_faith = {
 	custom_tooltip = {
 		text = follows_selian_faith_tt
 		faith = { religion_tag = selian_religion }
 	}
 }
 
-# Faith scope: this faith belongs to the Selian religion.
 is_selian_faith = {
 	religion_tag = selian_religion
 }
 
-# Rite scope: this rite belongs to the Selian religion (any of its faiths).
 is_selian_rite = {
 	rite_religion_tag = selian_religion
 }

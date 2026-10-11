@@ -12,17 +12,13 @@ is_ethnically_selian = {
 is_archaic = {
     custom_tooltip = {
         text = is_considered_archaic
-        faith.religion = {
-	       	is_in_family = rf_selian
-	    }
+        faith = faith:nars_1_faith
     }
 }
 
 is_ideal_selian = {
     culture = { has_cultural_pillar = heritage_nars }
     has_ethnicity = selianes
-    faith.religion = {
-		is_in_family = rf_selian
-	}
+    faith = faith:nars_1_faith
 }
 

@@ -16,10 +16,8 @@ To do:
 44. Make MAA for sieges
 45. Revamp nars_hegemon events
 brothel too op, selian incursion shouldnt change capital, change nars_hegemon events limit it so that if you get conqueror the events wont spam. Find a way to spread cultures more, fertility should be less
-46. Make aretaike scholi and brothel rely on events (so it can be timed) instead of effects
 47. Make events for them on_complete
 48. Make recruit Selians into a story that goes into a set amount of days (cost from the scheme should be given from the start(i.e. make it fixed)) Event intro should use the court diplomat. Prerequisite should be that here's at least one selian culture county in your realm. Events should remove the minus gold and stress and instead make it a net prestige cost upon making the decision.
-49. Make Amphora cooldown should be more (like 2 years minimum)
-50. Import the Small orgy activity
-51. Balance the duchy buildings or perhaps make it onlt one (Akropoleis)
 52. Research the tenets
+53. A courtier that shares your faith sends to a county to evangelize it and convert it to the root culture/faith. Not use story? Simple like evangelize slav. Make it repeatable, possible but should be executed at scheme start then if you have a scheme and cancel it, it should have a huge cooldown (to prevent people from cancelling and doing it again thus bypassing the scheme phase period for the next courtier converter)?
+54. There should be a 'Primary' tenet for the three rites. These three can't be used at the same time by a rite and so is exclusive.

@@ -268,6 +268,7 @@ nars_hegemon.0200 = {
 				template = selian_template.1002
 				culture = culture:selian
 				faith = root.faith
+				rite = root.rite
 				add_trait = nars_naturalis
 				save_scope_as = knight
 				prowess = { 15 45 }
@@ -660,6 +661,7 @@ nars_hegemon.1300 = {
             gender = male
             culture = culture:selian
             faith = root.faith
+            rite = root.rite
             save_scope_as = commander_1
 			prowess = { 15 30 }
         }
@@ -677,6 +679,7 @@ nars_hegemon.1300 = {
             gender = male
             culture = culture:selian
             faith = root.faith
+            rite = root.rite
             save_scope_as = commander_2
 			prowess = { 15 30 }
         }
@@ -694,6 +697,7 @@ nars_hegemon.1300 = {
             gender = male
             culture = culture:selian
             faith = root.faith
+            rite = root.rite
             save_scope_as = commander_3
 			prowess = { 15 30 }
         }
@@ -711,6 +715,7 @@ nars_hegemon.1300 = {
             gender = male
             culture = culture:selian
             faith = root.faith
+            rite = root.rite
             save_scope_as = commander_4
 			prowess = { 15 30 }
         }
@@ -754,6 +759,7 @@ nars_hegemon.1300 = {
             }
 			set_county_culture = culture:selian
 			set_county_faith = root.faith
+			set_county_rite = root.rite
         }
 		hidden_effect = {
 			every_in_list = {
@@ -899,6 +905,7 @@ nars_hegemon.1400 = {
             }
 			set_county_culture = culture:selian
 			set_county_faith = root.faith
+			set_county_rite = root.rite
         }
         
         # Mysterious deaths 

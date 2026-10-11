@@ -3,7 +3,7 @@
  tenet_nars_pantheon_no_actor: "Ēchōnes"
  tenet_nars_pantheon_desc:0 "For even in their scorn, they know our rise cannot be halted."
 
- tenet_nars_sanguine_name:0 "Old Fatherland"
+ tenet_nars_sanguine_name:0 "Old, Promised Land"
  tenet_nars_sanguine_no_actor: "Palaiā-Pātria"  
  tenet_nars_sanguine_desc:0 "Traditions of antiquity, long forgotten by the world, are preserved within our faith." 
 
@@ -11,15 +11,15 @@
  tenet_nars_erudition_no_actor: "Prōtoplasía"  
  tenet_nars_erudition_desc:0 "Scholars who spend time in meditation leave with sharpened insight and spiritual understanding."
 
- tenet_nars_crusade_name:0 "Deific Struggle"
+ tenet_nars_crusade_name:0 "Sacred War"
  tenet_nars_crusade_no_actor: "Theōmachē"  
  tenet_nars_crusade_desc:0 "Through holy conquest, no border or false creed shall withstand our divine truth."
 
- tenet_nars_banking_name:0 "Commmercial Piety"
+ tenet_nars_banking_name:0 "Commercial Institutions"
  tenet_nars_banking_no_actor: "Thēsorós"  
  tenet_nars_banking_desc:0 "Wealth is a divine blessing, managed prudently to ensure prosperity for our people."
 
- tenet_nars_vestals_name:0 "Unbound Families"
+ tenet_nars_vestals_name:0 "Unfethered Families"
  tenet_nars_vestals_no_actor: "Akolasía"  
  tenet_nars_vestals_desc:0 "Through $game_concept_enuo$'s blessing, the soul slips its restraints and fertility unleashes."
 
@@ -31,23 +31,23 @@
  tenet_nars_university_no_actor: "Scholé"
  tenet_nars_university_desc:0 "Leisure freed from toil is a sacred gift, and in the houses of study it ripens into wisdom for the whole realm."
 
- tenet_nars_artisans_name:0 "Master Craftsmans"
+ tenet_nars_artisans_name:0 "Master Artisans"
  tenet_nars_artisans_no_actor: "Tekhnē"
  tenet_nars_artisans_desc:0 "The hands that shape clay, bronze, and stone do holy work, and a well-made vessel is its own prayer."
 
- tenet_nars_statecraft_name:0 "Political Ethos"
+ tenet_nars_statecraft_name:0 "Statecrafts"
  tenet_nars_statecraft_no_actor: "Politiké"
  tenet_nars_statecraft_desc:0 "To order a realm justly is the highest of arts, and rulers who master law and administration serve the divine design."
 
- tenet_nars_tolerance_name:0 "Egalitarianism"
+ tenet_nars_tolerance_name:0 "Tolerance"
  tenet_nars_tolerance_no_actor: "Eúnoia"
  tenet_nars_tolerance_desc:0 "Goodwill toward the stranger and his foreign creed binds many peoples beneath one roof in peace and profit."
 
- tenet_nars_militarism_name:0 "Discipline"
- tenet_nars_militarism_no_actor: "Agōgé"
- tenet_nars_militarism_desc:0 "Discipline forged in youth through drill and hardship makes soldiers worthy of the old glory."
+ tenet_nars_warlike_name:0 "Discipline"
+ tenet_nars_warlike_no_actor: "Agōgé"
+ tenet_nars_warlike_desc:0 "Discipline forged in youth through drill and hardship makes soldiers worthy of the old glory."
 
- tenet_nars_deviance_name:0 "Sacred Courtesan"
+ tenet_nars_deviance_name:0 "Sacred Prostitutes"
  tenet_nars_deviance_no_actor: "Aporrētoi"
  tenet_nars_deviance_desc:0 "Shrouded in taboo, these holy courtesans prove the gods speak clearly through passion."
 
@@ -66,3 +66,4 @@
 
  doctrine_parameter_enable_produce_amphora: "Unlocks the #v $decision_produce_amphora$#! [decision|E]"
  doctrine_parameter_enable_piously_devote: "Unlocks the #v $decision_piously_devote$#! [decision|E]"
+ narsokratia_must_be_faithfully_restored_global_not: "[narsokratia|E] must be faithfully restored"

@@ -59,6 +59,7 @@
 			location = root.capital_province
 			culture = culture:selian
 			faith = root.faith
+			rite = root.rite
 			random_traits_list = {
 				count = 2
 				wrathful = {}

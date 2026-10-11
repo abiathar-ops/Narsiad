@@ -1,9 +1,5 @@
 ﻿l_english:
  # Selian religion group
- rf_selian:0 "Archaic"
- selian_hostility_doctrine_name: "$rf_selian$"
- selian_hostility_doctrine_descriptive_name: "$rf_selian$-aligned Hostility"
- selian_hostility_doctrine_desc: "The following religions are $rf_selian$:\n[GetReligionFamily('rf_selian').GetReligions]"
  selian_religion:0 "Selian"
  selian_religion_adj:0 "Selian"
  selian_religion_adherent:0 "Selian"
@@ -16,13 +12,7 @@
  nars_1_faith_adj:0 "Arkhaiótic"
  nars_1_faith_adherent:0 "Arkhaîos"
  nars_1_faith_adherent_plural:0 "Arkhaîoi"
- nars_1_faith_desc:0 "Made manifest by the monuments of $game_concept_selian$ antiquity, $nars_1_faith$ holds that what is oldest is truest, and that the truest belongs to the old. The $nars_1_faith_adherent_plural$ regard 'outsiders' as barbaric and are exemplified by their fierce chauvinism."
-
- nars_2_faith:0 "Kainótēs"
- nars_2_faith_adj:0 "Kainótic"
- nars_2_faith_adherent:0 "Kainós"
- nars_2_faith_adherent_plural:0 "Kainoí"
- nars_2_faith_desc:0 "Drawn in the years after [Glossary('$Alnars$', 'ALNARS_GLOSS')] surfacing, $nars_2_faith$ holds that which survives are only so through adaptation, and that the $game_concept_selianes$ must in turn oblige by it. The $nars_2_faith_adherent_plural$ look outward to other peoples and seek a more distinct path."
+ nars_1_faith_desc:0 "Made manifest by the monuments of $game_concept_selianes$ antiquity, $nars_1_faith$ holds that what is oldest is truest, and that the truest belongs to the old. The $nars_1_faith_adherent_plural$ regard 'outsiders' as barbaric and are exemplified by their fierce chauvinism."
 
  # Selian rites
  nars_1_rite: "Timés"
@@ -35,7 +25,7 @@
  nars_2_rite_adj: "Orthótētic"
  nars_2_rite_adherent: "Orthótētēs"
  nars_2_rite_adherent_plural: "Orthótētai"
- nars_2_rite_desc: "Forgotten dogma from the $game_concept_narsokratia$ of the $game_concept_selianes$, Orthótēs is a hierarchial, chauvinistic rite dating back to their time as unrivaled hegemons. Adherents believe in their unquestionable sacred mandate to dominate lesser cultures."
+ nars_2_rite_desc: "Forgotten dogma from the $game_concept_narsokratia$ of the $game_concept_selianes$, $nars_2_rite$ is a hierarchial, chauvinistic rite dating back to their time as unrivaled hegemons. Adherents believe in their unquestionable sacred mandate to dominate lesser cultures."
 
  nars_3_rite: "Ménotēs"
  nars_3_rite_adj: "Ménotētic"
@@ -47,7 +37,7 @@
  nars_4_rite_adj: "Isótic"
  nars_4_rite_adherent: "Ísos"
  nars_4_rite_adherent_plural: "Ísoi"
- nars_4_rite_desc: "An ethical and egalitarian rite, $nars_4_rite$ looks outward to the broader world, focusing heavily on mutual growth with non-$game_concept_selianes$. Adherents believe that the path forward for the $game_concept_selian$ people relies on integration with other traditions."
+ nars_4_rite_desc: "Drawn in the years after $Alnars$' surfacing, $nars_4_rite$ holds that of which survives are only so through adaptation, and that the $game_concept_selianes$ must in turn oblige by it. The $nars_4_rite_adherent_plural$ look outward to other peoples and seek a more distinct path."
 
  # Gods and Flavorization 
  nars_high_god_name:0 "Narsés"

@@ -12,11 +12,10 @@ tenet_nars_endgame = {
         }
 	}
 	desc = tenet_nars_endgame_desc
-	icon = tenet_nars_antiquity #tenet_household_gods
+	icon = tenet_acts_of_apostles #tenet_household_gods
 
 	piety_cost = {
-		value = faith_tenet_cost_massive
-		multiply = 10
+
     }
 
 	is_shown = {
@@ -24,12 +23,31 @@ tenet_nars_endgame = {
 	}
 	can_pick = {
 		religion_tag = selian_religion
+		custom_description = {
+			text = narsokratia_must_be_faithfully_restored_trigger
+			has_global_variable = nars_endgame_tenet_unlocked
+		}
 	}
 	
 	parameters = {
+		tenet_human_sacrifice_execution_piety_bonus
+		tenet_miles_christi_holy_weapon_blessing
+		parents_get_hooks_on_children
+		
 	}
 
 	character_modifier = {
+		#Periodically gets a decision to convert a duchy to selian
+	}
+
+	personal_tenet_modifier = {
+		max_personal_schemes_add = 2
+		domain_limit = 2
+	}
+
+	personal_tenet_parameters = {
+		tenet_filial_piety_child_gold_request
+		tenet_filial_piety_education_completion_reward
 	}
 }
 
@@ -45,11 +63,11 @@ tenet_nars_pantheon = {
 	}
 	
     desc = tenet_nars_pantheon_desc
-	icon = tenet_adorcism 
+	icon = tenet_bhakti
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -91,7 +109,7 @@ tenet_nars_erudition = {
         }
     }
     desc = tenet_nars_erudition_desc
-	icon = tenet_acts_of_apostles
+	icon = tenet_adorcism
 	# tenet_household_gods.dds
 	# tenet_celestial_hierarchy.dds
 	# tenet_consolamentum.dds
@@ -105,7 +123,7 @@ tenet_nars_erudition = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
 	}
 
 	is_shown = {
@@ -155,7 +173,7 @@ tenet_nars_sanguine = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -171,8 +189,6 @@ tenet_nars_sanguine = {
 		meditation_mechanics_active
 		#less_likely_to_become_infirm
 	}
-
-	divergence_multiplier = 1.25
 
 	character_modifier = {
 		development_growth_factor = 0.25
@@ -203,7 +219,7 @@ tenet_nars_university = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -260,14 +276,14 @@ tenet_nars_banking = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 	
 	parameters = {
+		tenet_tax_increase_per_piety_level
+		tenet_simony_wealth_fulfillment
 		tenet_adaptive_conversion_resistance
 		better_artifacts
-		unlock_jizya_contract
-		can_build_megaliths
 	}
 
     character_modifier = {
@@ -278,10 +294,6 @@ tenet_nars_banking = {
 	traits = {
 		virtues = {
 			architect = { weight = 15 scale = 1 }
-			avaricious = { weight = 10 scale = 1 }
-		}
-		sins = {
-			lazy = { weight = 10 scale = 1 }
 		}
 	}
 
@@ -316,7 +328,7 @@ tenet_nars_artisans = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 	
 	parameters = {
@@ -328,7 +340,7 @@ tenet_nars_artisans = {
 
 	traits = {
 		virtues = {
-			lifestyle_potter = { weight = 30 scale = 2 }
+			lifestyle_pottery = { weight = 30 scale = 2 }
 		}
 	}
     character_modifier = {
@@ -337,6 +349,7 @@ tenet_nars_artisans = {
 	}
 
 	personal_tenet_modifier = {
+		city_holding_holding_build_speed = -0.1
 		stewardship_per_piety_level = 1
 		monthly_stewardship_lifestyle_xp_gain_mult = 0.1
 	}
@@ -356,7 +369,7 @@ tenet_nars_statecraft = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -379,6 +392,15 @@ tenet_nars_statecraft = {
 		same_faith_different_rite_opinion = -20
 		same_faith_different_rite_county_opinion_add = -10
 	}
+
+	personal_tenet_parameters = {
+		same_culture_conversion_bonus_active
+	}
+
+	personal_tenet_modifier = {
+		name = "tenet_communal_identity_opinion"
+		same_culture_opinion = 10
+	}
 }
 
 tenet_nars_tolerance = {
@@ -395,7 +417,7 @@ tenet_nars_tolerance = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -428,7 +450,7 @@ tenet_nars_tolerance = {
 		piety_from_long_peace = 2.5
 	}
 
-	divergence_multiplier = 1.25
+	divergence_multiplier = 2.5
 
 	traits = {
 		# Renunciation of violence is the tenet's defining act.
@@ -443,24 +465,28 @@ tenet_nars_tolerance = {
 	personal_tenet_modifier = {
 		domain_limit = 2
 	}
+
+	personal_tenet_parameters = {
+		reduced_vassal_religion_discontent
+	}
 }
 
 # Enuo
-tenet_nars_militarism = {
+tenet_nars_warlike = {
 	name = {
 		first_valid = {
             triggered_desc = {
-                desc = tenet_nars_militarism_no_actor
+                desc = tenet_nars_warlike_no_actor
 			}
-            desc = tenet_nars_militarism_name
+            desc = tenet_nars_warlike_name
         }
 	}
-	desc = tenet_nars_militarism_desc
+	desc = tenet_nars_warlike_desc
 	icon = tenet_hesychasm
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -482,7 +508,6 @@ tenet_nars_militarism = {
 
 	character_modifier = {
 		prowess_per_piety_level = 1
-		knight_limit = 1
 		accolade_glory_gain_mult = 0.2
 		monthly_piety_gain_per_knight_mult = 0.01
 		holy_order_hire_cost_mult = -0.15
@@ -490,11 +515,8 @@ tenet_nars_militarism = {
 
 	personal_tenet_modifier = {
 		knight_limit = 2
-		monthly_piety_gain_per_knight_mult = 0.01
-		holy_order_hire_cost_mult = -0.1
+		monthly_piety_gain_per_knight_mult = 0.12
 	}
-
-	divergence_multiplier = 5
 
 	personal_tenet_parameters = {
 		tenet_pursuit_of_power_war_victory_fulfillment
@@ -523,7 +545,7 @@ tenet_nars_crusade = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
 	}
 	parameters = {
 		warmonger
@@ -578,7 +600,7 @@ tenet_nars_vestals = {
 		sanctify_artifacts_ancestral
 	}
 
-	divergence_multiplier = 3
+	divergence_multiplier = 1.25
 
 	personal_tenet_parameters = {
 		tenet_filial_piety_child_gold_request
@@ -606,7 +628,7 @@ tenet_nars_deviance = {
 
 	piety_cost = {
 		value = faith_tenet_cost_massive
-		multiply = 10
+		multiply = 5
     }
 
 	is_shown = {
@@ -625,7 +647,7 @@ tenet_nars_deviance = {
 		tenet_polyamory_romance_seduction_scheme_bonus
 	}
 
-	divergence_multiplier = 5
+	divergence_multiplier = 1.875
 
 	character_modifier = {
 		max_seduce_schemes_add = 2

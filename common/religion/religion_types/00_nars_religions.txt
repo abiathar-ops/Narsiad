@@ -1,6 +1,6 @@
 ﻿selian_religion = {
 	religion_details = {
-		family = rf_selian
+		family = rf_pagan
 		graphical_faith = "pagan_gfx"
 	}
 
@@ -35,7 +35,7 @@
 	doctrine = doctrine_clerical_gender_female_only
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
-	doctrine = doctrine_monasticism_encouraged
+	doctrine = doctrine_monasticism_absent
 	doctrine = doctrine_sacraments_central
 
 	doctrine = doctrine_scriptural 
